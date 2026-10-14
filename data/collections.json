@@ -1,0 +1,30 @@
+[
+  {
+    "id": "lalita",
+    "title": "Lalitā Sahasranāma",
+    "sanskrit": "श्री ललिता सहस्रनाम",
+    "status": "draft",
+    "available_verses": 10
+  },
+  {
+    "id": "vishnu",
+    "title": "Viṣṇu Sahasranāma",
+    "sanskrit": "श्री विष्णु सहस्रनाम",
+    "status": "planned",
+    "available_verses": 0
+  },
+  {
+    "id": "sri-suktam",
+    "title": "Śrī Sūktam",
+    "sanskrit": "श्रीसूक्तम्",
+    "status": "planned",
+    "available_verses": 0
+  },
+  {
+    "id": "purusha-suktam",
+    "title": "Puruṣa Sūktam",
+    "sanskrit": "पुरुषसूक्तम्",
+    "status": "planned",
+    "available_verses": 0
+  }
+]
