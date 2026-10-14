@@ -1,12 +1,175 @@
-let collections=[],verses=[],dhyana=[],interpretations={},script='devanagari',query='';const $=s=>document.querySelector(s);const escapeHtml=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));const E=escapeHtml;const norm=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();const dataBase = location.pathname.includes('/lalita/') ? '../data/' : 'data/';async function getJSON(url){url = url.replace(/^data\//,dataBase);let r=await fetch(url);if(!r.ok)throw Error(`Missing ${url}`);return r.json()}
-async function init(){try{collections=await getJSON('data/collections.json');if(location.pathname.includes('/lalita/')){await openCollection('lalita')}else{renderHome()}}catch(e){$('#home').insertAdjacentHTML('beforeend',`<p>Could not load JSON. Serve this folder with a local server (for example <code>python3 -m http.server 8000</code>) or host on GitHub Pages.</p>`)} }
-function renderHome(){if(!$('#collection-search'))return;let q=norm($('#collection-search').value);$('#collections').innerHTML=collections.filter(c=>norm(c.title+' '+c.sanskrit).includes(q)).map(c=>`<button class="collection" data-id="${E(c.id)}"><b>${E(c.title)}</b><div class="sanskrit">${E(c.sanskrit)}</div><div class="tag">${c.status==='planned'?'Coming later':`${c.available_verses} review ślokas available`}</div></button>`).join('');document.querySelectorAll('.collection').forEach(b=>b.onclick=()=>openCollection(b.dataset.id))}
-if($('#collection-search'))$('#collection-search').oninput=renderHome;if($('#home-button'))$('#home-button').onclick=()=>location.href='../index.html';
-async function openCollection(id){if(id!=='lalita'){alert('This collection is prepared in the index; verses will be added after review.');return}$('#home').hidden=true;$('#reader').hidden=false;$('#result-note').textContent='Loading…';try{const d=await Promise.all([getJSON('data/lalita/dhyana.json'),getJSON('data/lalita/names-interpretations-draft.json'),...Array.from({length:10},(_,i)=>getJSON(`data/lalita/verses/verse-${String(i+1).padStart(3,'0')}.json`))]);dhyana=d[0];interpretations=Object.fromEntries(d[1].map(x=>[x.number,x]));verses=d.slice(2);renderIndex();render()}catch(e){$('#result-note').textContent='Unable to load verse JSON: '+e.message}if(!location.pathname.includes('/lalita/'))history.replaceState(null,'','#lalita')}
-function readingCard(v,isDhyana){let r=v.reading||{};let selected=r[script]||[];let roman=r.iast||[];let id=isDhyana?'dhyana-'+v.verse_number:'verse-'+v.verse_number;let title=(isDhyana?'Dhyāna ':'Śloka ')+v.verse_number;let body=`<article class="card" id="${id}"><div class="card-head"><b>${E(title)}</b><span class="audio" data-audio-path="${isDhyana?`../audio/lalita/dhyana/dhyana-${String(v.verse_number).padStart(2,'0')}.mp3`:`../audio/lalita/verses/sloka-${String(v.verse_number).padStart(3,'0')}.mp3`}">♪ Audio to be added</span></div><div class="chant"><div><div class="reading-label">${script==='devanagari'?'देवनागरी':'ಕನ್ನಡ'}</div><div class="verse-script ${script}">${selected.map(E).join('\n')}</div></div><div><div class="reading-label">IAST</div><div class="verse-iast">${roman.map(E).join('\n')}</div></div></div>`;if(!isDhyana&&v.names?.length){body+='<section class="meaning-section"><h3>Divine names · Word by word</h3>';for(let name of v.names){let w=(v.word_meanings||[]).find(x=>x.iast===name.iast);let label=script==='devanagari'?(name.display_devanagari||name.sanskrit):(name.kannada_script||'—');let info=interpretations[name.number];let txt=(script==='devanagari'?info?.essential_meaning?.en:info?.essential_meaning?.kn)||(script==='devanagari'?name.english:name.kannada);if(!txt)txt='Meaning being researched';body+=`<details><summary><span class="name">${E(label)} · ${E(name.display_iast||name.iast)}</span><span class="name-meaning"> — ${E(txt)}</span></summary>`;for(let c of w?.components||[]){body+=`<div class="word"><div><span class="${script==='devanagari'?'word-dev':'word-kan'}">${E(script==='devanagari'?c.sanskrit:toKannada(c.sanskrit||''))}</span> <span class="iast">(${E(c.iast)})</span></div><div>${E(script==='devanagari'?c.english:c.kannada)}</div></div>`}if(info){let deeper=script==='devanagari'?info.traditional_interpretation?.en:info.traditional_interpretation?.kn;if(deeper)body+=`<div class="deep-meaning"><div class="reading-label">${script==='devanagari'?'Deeper traditional meaning':'ವಿಸ್ತೃತ ಸಾಂಪ್ರದಾಯಿಕ ಅರ್ಥ'}</div><p>${E(deeper)}</p></div>`;}else if(!(w?.components||[]).length){body+=`<p class="meta">${script==='devanagari'?'Word-by-word meanings pending source review.':'ಪದಾರ್ಥಗಳ ಪರಿಶೀಲನೆ ಬಾಕಿಯಿದೆ.'}</p>`}body+='</details>'}body+='</section>'}let meaning=script==='devanagari'?v.meaning?.english:v.meaning?.kannada;if(meaning)body+=`<section class="meaning-section"><h3>${script==='devanagari'?'Verse meaning':'ಶ್ಲೋಕದ ಅರ್ಥ'}</h3><p>${E(meaning)}</p></section>`;if(isDhyana&&script==='kannada'&&!v.meaning?.kannada)body+='<p class="meta">ಕನ್ನಡ ಅರ್ಥ ಪರಿಶೀಲನೆಯಲ್ಲಿದೆ.</p>';return body+='<p class="meta">Content review draft</p></article>'}
-function toKannada(s){return Array.from(s).map(c=>{let n=c.charCodeAt(0);return (n>=0x0900&&n<=0x0963)?String.fromCharCode(n+0x380):c}).join('')}
-function renderIndex(){let idx=$('#index');idx.innerHTML=Array.from({length:180},(_,i)=>`<button class="${i<verses.length?'active':'pending'}" title="${i<verses.length?'Go to verse '+(i+1):'Content not added yet'}" data-n="${i+1}">${i+1}</button>`).join('');idx.querySelectorAll('button').forEach(b=>b.onclick=()=>jump(+b.dataset.n))}
-function updateAudioPlayers(){document.querySelectorAll('[data-audio-path]').forEach(async el=>{const path=el.dataset.audioPath;try{const r=await fetch(path,{method:'HEAD'});if(!r.ok||!el.isConnected)return;const a=document.createElement('audio');a.controls=true;a.preload='none';a.src=path;el.replaceChildren(a)}catch(e){/* leave placeholder until an audio file is uploaded */}})}
-function render(){let q=norm(query);let hits=verses.filter(v=>norm(JSON.stringify(v)).includes(q));let dhits=dhyana.filter(v=>norm(JSON.stringify(v)).includes(q));$('#dhyana').hidden=!!query&&!dhits.length;$('#dhyana-cards').innerHTML=dhits.map(d=>readingCard(d,true)).join('');$('#verse-cards').innerHTML=hits.map(v=>readingCard(v,false)).join('');$('#result-note').textContent=query?`${hits.length+dhits.length} matching verses`:'Ślokas 1–10 available · 180-slot index · Remaining verses pending review';updateAudioPlayers()}
-$('#dev').onclick=()=>setScript('devanagari');$('#kn').onclick=()=>setScript('kannada');function setScript(s){script=s;$('#dev').classList.toggle('chosen',s==='devanagari');$('#kn').classList.toggle('chosen',s==='kannada');render()}
-$('#search').oninput=e=>{query=e.target.value;render()};function jump(n){let target=$('#verse-'+n);if(target)target.scrollIntoView({behavior:'smooth'});else $('#result-note').textContent=`Śloka ${n} has not been entered yet.`}$('#go').onclick=()=>jump(Number($('#goto').value));$('#goto').onkeydown=e=>{if(e.key==='Enter')jump(Number(e.target.value))};$('#to-dhyana').onclick=()=>$('#dhyana').scrollIntoView({behavior:'smooth'});init();
+(function application(){
+"use strict";
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+const langText=(en,kn)=>language==="kn"?kn:en;
+let verses=[],dhyana=[],nameData={},dhyanaData={},verseData={},language="en",searchTerm="";
+function kannadaFromDevanagari(s){
+ return Array.from(String(s??"")).map(c=>{
+ if(c==="ॐ")return "ಓಂ";
+ const n=c.codePointAt(0);
+ if(n===0x0964||n===0x0965)return c;
+ if((n>=0x0900&&n<=0x0963)||(n>=0x0966&&n<=0x096f))return String.fromCodePoint(n+0x380);
+ return c;
+ }).join("");
+}
+async function fetchJSON(p){const r=await fetch("../data/"+p);if(!r.ok)throw new Error("Missing "+p);return r.json()}
+function msg(id,en,kn){const e=$(id);if(e)e.textContent=langText(en,kn)}
+function anyMeaning(b,field){return b?.[field]?.[language]||""}
+function sourceUrl(info){
+ let u=info?.sources?.[0];return typeof u==="string"?u:(u?.url||"");
+}
+function findComponents(v,n,info){
+ if(info?.components?.length)return info.components;
+ let x=(v.word_meanings||[]).find(w=>norm(w.iast)===norm(n.iast));
+ return (x?.components||[]).map(c=>({dev:c.sanskrit||"",iast:c.iast||"",en:c.english||"",kn:c.kannada||""}));
+}
+function wordsGrid(parts){
+ if(!parts?.length)return "<p class='small-note'>"+esc(langText("This word is awaiting editorial analysis.","ಈ ಪದದ ಅರ್ಥಪರಿಶೀಲನೆ ಬಾಕಿಯಿದೆ."))+"</p>";
+ return "<div class='word-grid' role='list'>"+parts.map(c=>{
+ const written=language==="kn"?kannadaFromDevanagari(c.dev):c.dev;
+ return "<div class='word-row' role='listitem'><div class='word-original'>"+esc(written)+" <span class='word-iast'>"+esc(c.iast)+"</span></div><div class='word-translation'>"+esc(c[language]||"")+"</div></div>";
+ }).join("")+"</div>";
+}
+function noticeBox(info){
+ const x=anyMeaning(info,"notice");if(!x)return "";
+ return "<div class='notice-box'><strong>"+esc(langText("Pause & notice","ಒಮ್ಮೆ ಗಮನಿಸಿ"))+"</strong><p>"+esc(x)+"</p></div>";
+}
+function sourceLink(info){
+ const url=sourceUrl(info);
+ return /^https:\/\/[^\s"<>]+$/.test(url)?"<a class='study-source' target='_blank' rel='noopener noreferrer' href='"+esc(url)+"'>"+esc(langText("Traditional commentary ↗","ಪಾರಂಪರಿಕ ವ್ಯಾಖ್ಯಾನ ↗"))+"</a>":"";
+}
+function studySections(info,parts){
+ const deep=anyMeaning(info,"traditional_interpretation");
+ return "<div class='study-inner'><h4>"+esc(langText("Word by word","ಪದ ಪದದ ಅರ್ಥ"))+"</h4>"+wordsGrid(parts)+(deep?"<div class='deeper-reading'><h4>"+esc(langText("Deeper traditional meaning","ಆಳವಾದ ಪಾರಂಪರಿಕ ಅರ್ಥ"))+"</h4><p>"+esc(deep)+"</p></div>":"")+noticeBox(info)+sourceLink(info)+"</div>";
+}
+function makeAudio(v,isDhyana){
+ const num=String(v.verse_number).padStart(isDhyana?2:3,"0");
+ const url=isDhyana?"../audio/lalita/dhyana/dhyana-"+num+".mp3":"../audio/lalita/verses/sloka-"+num+".mp3";
+ return "<span class='audio' data-audio-path='"+esc(url)+"'>"+esc(langText("♪ Audio coming soon","♪ ಧ್ವನಿಮುದ್ರಣ ಶೀಘ್ರದಲ್ಲಿ"))+"</span>";
+}
+function nameSection(v){
+ let html="<section class='name-section'><div class='section-title'><h3>"+esc(langText("Divine names","ದೇವಿಯ ನಾಮಗಳು"))+"</h3><span>"+esc(langText("Select a name to explore each word","ಪ್ರತಿ ಪದದ ಅರ್ಥಕ್ಕೆ ನಾಮವನ್ನು ತೆರೆಯಿರಿ"))+"</span></div>";
+ for(const n of v.names||[]){
+ const info=nameData[n.studyNumber]||{},parts=findComponents(v,n,info);
+ const dev=n.display_devanagari||n.sanskrit||"",written=language==="kn"?kannadaFromDevanagari(dev):dev;
+ const essential=anyMeaning(info,"essential_meaning")||(language==="kn"?n.kannada:n.english)||langText("Meaning under review","ಅರ್ಥ ಪರಿಶೀಲನೆಯಲ್ಲಿದೆ");
+ const roman=n.display_iast||n.iast;
+ html+="<details class='name-details' data-detail-id='name-"+n.studyNumber+"'><summary><span class='name-line'><span class='name-written'>"+esc(written)+"</span><span class='name-roman'>· "+esc(roman)+"</span></span><span class='name-essence'>"+esc(essential)+"</span><span class='summary-hint'>"+esc(langText("Explore words & meaning","ಪದಾರ್ಥ ಮತ್ತು ವಿವರಣೆ"))+"</span></summary>"+studySections(info,parts)+"</details>";
+ }
+ return html+"</section>";
+}
+function dhyanaSection(v){
+ const info=dhyanaData[v.verse_number]||{};
+ const meaning=anyMeaning(info,"essential_meaning")||(language==="kn"?v.meaning?.kannada:v.meaning?.english)||"";
+ return "<section class='meaning-section verse-lesson'><div class='essential-meaning'><h3>"+esc(langText("In simple words","ಸರಳ ಅರ್ಥ"))+"</h3><p>"+esc(meaning)+"</p></div><details class='dhyana-words' data-detail-id='dhyana-"+v.verse_number+"'><summary>"+esc(langText("Explore each word","ಪ್ರತಿ ಪದದ ಅರ್ಥ ನೋಡಿ"))+" <span class='count'>"+(info.components?.length||0)+" "+esc(langText("word parts","ಪದಭಾಗಗಳು"))+"</span></summary><div class='study-inner'><h4>"+esc(langText("Word by word","ಪದ ಪದದ ಅರ್ಥ"))+"</h4>"+wordsGrid(info.components)+"</div></details>"+moreSection(info)+"</section>";
+}
+function moreSection(info){
+ const deep=anyMeaning(info,"traditional_interpretation");
+ return (deep?"<div class='deeper-reading'><h3>"+esc(langText("Deeper meaning","ಆಳವಾದ ಅರ್ಥ"))+"</h3><p>"+esc(deep)+"</p></div>":"")+noticeBox(info)+sourceLink(info);
+}
+function mainVerseSection(v){
+ const summary=language==="kn"?v.meaning?.kannada:v.meaning?.english;
+ const info=verseData[v.verse_number]||{};
+ return nameSection(v)+"<section class='meaning-section verse-lesson'><div class='essential-meaning'><h3>"+esc(langText("Meaning of this śloka","ಈ ಶ್ಲೋಕದ ಅರ್ಥ"))+"</h3><p>"+esc(summary||"")+"</p></div>"+moreSection(info)+"</section>";
+}
+function card(v,isDhyana){
+ const number=v.verse_number;
+ const reading=v.reading||{};
+ const selected=language==="kn"?(reading.devanagari||[]).map(kannadaFromDevanagari):(reading.devanagari||[]);
+ const iast=reading.iast||[];
+ const id=(isDhyana?"dhyana-":"verse-")+number;
+ const label=langText(isDhyana?"Dhyāna "+number:"Śloka "+number,isDhyana?"ಧ್ಯಾನ "+number:"ಶ್ಲೋಕ "+number);
+ return "<article class='card' id='"+id+"'><div class='card-head'><b>"+esc(label)+"</b>"+makeAudio(v,isDhyana)+"</div><div class='chant'><div><div class='reading-label'>"+esc(language==="kn"?"ಕನ್ನಡ":"देवनागरी")+"</div><div class='verse-script "+(language==="kn"?"kannada":"devanagari")+"'>"+selected.map(esc).join("\n")+"</div></div><div><div class='reading-label'>IAST</div><div class='verse-iast'>"+iast.map(esc).join("\n")+"</div></div></div>"+(isDhyana?dhyanaSection(v):mainVerseSection(v))+"<p class='meta'>"+esc(langText("Interpretation draft · Sanskrit and Kannada editorial review recommended","ವ್ಯಾಖ್ಯಾನ ಕರಡು · ಸಂಸ್ಕೃತ ಮತ್ತು ಕನ್ನಡ ಪರಿಶೀಲನೆ ಅಗತ್ಯ"))+"</p></article>";
+}
+function searchText(v,dh){
+ if(dh)return JSON.stringify(v)+" "+JSON.stringify(dhyanaData[v.verse_number]||{});
+ return JSON.stringify(v)+" "+JSON.stringify(verseData[v.verse_number]||{})+" "+(v.names||[]).map(n=>JSON.stringify(nameData[n.studyNumber]||{})).join(" ");
+}
+function savedDetails(){
+ return new Set(Array.from(document.querySelectorAll("details[data-detail-id]")).filter(d=>d.open).map(d=>d.dataset.detailId));
+}
+function restoreDetails(ids){
+ document.querySelectorAll("details[data-detail-id]").forEach(d=>{d.open=ids.has(d.dataset.detailId)});
+}
+function render(){
+ const opened=savedDetails();
+ const q=norm(searchTerm.trim());
+ const vh=verses.filter(v=>!q||norm(searchText(v,false)).includes(q));
+ const dh=dhyana.filter(v=>!q||norm(searchText(v,true)).includes(q));
+ $("#dhyana").hidden=!!q&&!dh.length;
+ $("#main-stotra").hidden=!!q&&!vh.length;
+ $("#dhyana-cards").innerHTML=dh.map(v=>card(v,true)).join("");
+ $("#verse-cards").innerHTML=vh.map(v=>card(v,false)).join("");
+ restoreDetails(opened);
+ msg("#result-note",q?((vh.length+dh.length)+" matching sections"): "Ślokas 1–10 with meanings · 180-slot index · Future verses to follow",q?((vh.length+dh.length)+" ಹೊಂದಾಣಿಕೆಯ ವಿಭಾಗಗಳು"):"೧–೧೦ ಶ್ಲೋಕಗಳು ಮತ್ತು ಅರ್ಥಗಳು · ೧೮೦ ಸ್ಥಾನಗಳ ಸೂಚಿ · ಉಳಿದ ಶ್ಲೋಕಗಳು ನಂತರ");
+ msg("#dhyana-heading","Dhyāna Ślokas","ಧ್ಯಾನ ಶ್ಲೋಕಗಳು");
+ msg("#main-heading","Lalitā Sahasranāma · First 10 Ślokas","ಲಲಿತಾ ಸಹಸ್ರನಾಮ · ಮೊದಲ ೧೦ ಶ್ಲೋಕಗಳು");
+ msg("#study-languages-label","Reading & meaning:","ಲಿಪಿ ಮತ್ತು ಅರ್ಥ:");
+ msg("#expand-all","Open all name meanings","ಎಲ್ಲ ನಾಮಗಳ ಅರ್ಥ ತೆರೆಯಿರಿ");
+ loadAudio();
+}
+function loadAudio(){
+ document.querySelectorAll("[data-audio-path]").forEach(async e=>{
+  const path=e.dataset.audioPath;
+  try{
+   const r=await fetch(path,{method:"HEAD"});
+   if(!r.ok||!e.isConnected)return;
+   const a=document.createElement("audio");a.controls=true;a.preload="none";a.src=path;
+   a.setAttribute("aria-label",langText("Chant recording","ಶ್ಲೋಕದ ಧ್ವನಿಮುದ್ರಣ"));
+   e.replaceChildren(a);
+  }catch(_){/* Recording will be uploaded later. */}
+ });
+}
+function renderIndex(){
+ const e=$("#index");e.innerHTML=Array.from({length:180},(_,i)=>{
+ const n=i+1,avail=n<=verses.length;
+ return "<button type='button' data-n='"+n+"' class='"+(avail?"available":"pending")+"' title='"+esc(avail?"Go to śloka "+n:"Śloka "+n+" pending")+"'>"+n+"</button>";
+ }).join("");
+ e.querySelectorAll("button").forEach(b=>b.onclick=()=>jump(Number(b.dataset.n)));
+}
+function jump(n){
+ if(!Number.isInteger(n)||n<1||n>verses.length){msg("#result-note","This śloka has not been added yet.","ಈ ಶ್ಲೋಕ ಇನ್ನೂ ಸೇರಿಸಿಲ್ಲ.");return}
+ if(searchTerm){searchTerm="";$("#search").value="";render()}
+ const el=$("#verse-"+n);if(el)el.scrollIntoView({behavior:"smooth",block:"start"});
+}
+function switchLanguage(kn){
+ language=kn?"kn":"en";
+ $("#dev").classList.toggle("chosen",!kn);
+ $("#kn").classList.toggle("chosen",kn);
+ $("#dev").setAttribute("aria-pressed",String(!kn));$("#kn").setAttribute("aria-pressed",String(kn));
+ render();
+}
+async function init(){
+ const paths=["lalita/dhyana.json","lalita/names-interpretations-draft.json","lalita/study-names-011-018.json","lalita/study-names-019-026.json","lalita/study-dhyana-01-02.json","lalita/study-dhyana-03-04.json","lalita/study-verses-001-010.json",...Array.from({length:10},(_,i)=>"lalita/verses/verse-"+String(i+1).padStart(3,"0")+".json")];
+ try{
+ const files=await Promise.all(paths.map(fetchJSON));
+ dhyana=files[0];
+ const old=files[1],newNames=[...files[2],...files[3]];
+ nameData=Object.fromEntries(old.map(v=>[v.number,v]));
+ newNames.forEach(x=>{nameData[x.number]={...(nameData[x.number]||{}),...x}});
+ dhyanaData=Object.fromEntries([...files[4],...files[5]].map(x=>[x.verse_number,x]));
+ verseData=Object.fromEntries(files[6].map(x=>[x.verse_number,x]));
+ verses=files.slice(7);
+ let index=0;
+ verses.forEach(v=>(v.names||[]).forEach(n=>{n.studyNumber=++index}));
+ if(index!==26)throw new Error("Expected 26 names in the first 10 verses; found "+index);
+ renderIndex();render();
+ }catch(err){
+ const n=$("#result-note");if(n)n.textContent="Unable to load study content: "+err.message;
+ }
+}
+$("#dev").onclick=()=>switchLanguage(false);
+$("#kn").onclick=()=>switchLanguage(true);
+$("#search").oninput=e=>{searchTerm=e.target.value;render()};
+$("#go").onclick=()=>jump(Number($("#goto").value));
+$("#goto").onkeydown=e=>{if(e.key==="Enter")jump(Number(e.target.value))};
+$("#to-dhyana").onclick=()=>$("#dhyana").scrollIntoView({behavior:"smooth",block:"start"});
+const expand=$("#expand-all");if(expand)expand.onclick=()=>{
+ const items=Array.from(document.querySelectorAll(".name-details"));
+ const desired=!items.every(d=>d.open);
+ items.forEach(d=>d.open=desired);
+};
+init();
+})();
