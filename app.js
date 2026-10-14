@@ -17,9 +17,6 @@ function kannadaFromDevanagari(s){
 async function fetchJSON(p){const r=await fetch("../data/"+p);if(!r.ok)throw new Error("Missing "+p);return r.json()}
 function msg(id,en,kn){const e=$(id);if(e)e.textContent=langText(en,kn)}
 function anyMeaning(b,field){return b?.[field]?.[language]||""}
-function sourceUrl(info){
- let u=info?.sources?.[0];return typeof u==="string"?u:(u?.url||"");
-}
 function findComponents(v,n,info){
  if(info?.components?.length)return info.components;
  let x=(v.word_meanings||[]).find(w=>norm(w.iast)===norm(n.iast));
@@ -32,17 +29,12 @@ function wordsGrid(parts){
  return "<div class='word-row' role='listitem'><div class='word-original'>"+esc(written)+" <span class='word-iast'>"+esc(c.iast)+"</span></div><div class='word-translation'>"+esc(c[language]||"")+"</div></div>";
  }).join("")+"</div>";
 }
-function noticeBox(info){
- const x=anyMeaning(info,"notice");if(!x)return "";
- return "<div class='notice-box'><strong>"+esc(langText("Pause & notice","ಒಮ್ಮೆ ಗಮನಿಸಿ"))+"</strong><p>"+esc(x)+"</p></div>";
-}
-function sourceLink(info){
- const url=sourceUrl(info);
- return /^https:\/\/[^\s"<>]+$/.test(url)?"<a class='study-source' target='_blank' rel='noopener noreferrer' href='"+esc(url)+"'>"+esc(langText("Traditional commentary ↗","ಪಾರಂಪರಿಕ ವ್ಯಾಖ್ಯಾನ ↗"))+"</a>":"";
+function richParagraphs(value){
+ return String(value??"").split(/\\n\\s*\\n/).filter(Boolean).map(part=>"<p>"+esc(part.trim()).replace(/\\*([^*]+)\\*/g,"<em>$1</em>").replace(/\\n/g," ")+"</p>").join("");
 }
 function studySections(info,parts){
  const deep=anyMeaning(info,"traditional_interpretation");
- return "<div class='study-inner'><h4>"+esc(langText("Word by word","ಪದ ಪದದ ಅರ್ಥ"))+"</h4>"+wordsGrid(parts)+(deep?"<div class='deeper-reading'><h4>"+esc(langText("Imagine & understand","ಕಲ್ಪಿಸಿ · ಅರ್ಥಮಾಡಿಕೊಳ್ಳಿ"))+"</h4><p>"+esc(deep)+"</p></div>":"")+noticeBox(info)+sourceLink(info)+"</div>";
+ return "<div class='study-inner'><h4>"+esc(langText("Word by word","ಪದ ಪದದ ಅರ್ಥ"))+"</h4>"+wordsGrid(parts)+(deep?"<div class='deeper-reading'><h4>"+esc(langText("Deeper meaning","ಆಳವಾದ ಅರ್ಥ"))+"</h4>"+richParagraphs(deep)+"</div>":"")+"</div>";
 }
 function makeAudio(v,isDhyana){
  const num=String(v.verse_number).padStart(isDhyana?2:3,"0");
@@ -63,11 +55,11 @@ function nameSection(v){
 function dhyanaSection(v){
  const info=dhyanaData[v.verse_number]||{};
  const meaning=anyMeaning(info,"essential_meaning")||(language==="kn"?v.meaning?.kannada:v.meaning?.english)||"";
- return "<section class='meaning-section verse-lesson'><div class='essential-meaning'><h3>"+esc(langText("In simple words","ಸರಳ ಅರ್ಥ"))+"</h3><p>"+esc(meaning)+"</p></div><details class='dhyana-words' data-detail-id='dhyana-"+v.verse_number+"'><summary>"+esc(langText("Explore each word","ಪ್ರತಿ ಪದದ ಅರ್ಥ ನೋಡಿ"))+" <span class='count'>"+(info.components?.length||0)+" "+esc(langText("word parts","ಪದಭಾಗಗಳು"))+"</span></summary><div class='study-inner'><h4>"+esc(langText("Word by word","ಪದ ಪದದ ಅರ್ಥ"))+"</h4>"+wordsGrid(info.components)+"</div></details>"+moreSection(info)+"</section>";
+ return "<section class='meaning-section verse-lesson'><div class='essential-meaning'><h3>"+esc(langText("Essential meaning","ಮುಖ್ಯ ಅರ್ಥ"))+"</h3><p>"+esc(meaning)+"</p></div><details class='dhyana-words' data-detail-id='dhyana-"+v.verse_number+"'><summary>"+esc(langText("Explore each word","ಪ್ರತಿ ಪದದ ಅರ್ಥ ನೋಡಿ"))+" <span class='count'>"+(info.components?.length||0)+" "+esc(langText("word parts","ಪದಭಾಗಗಳು"))+"</span></summary><div class='study-inner'><h4>"+esc(langText("Word by word","ಪದ ಪದದ ಅರ್ಥ"))+"</h4>"+wordsGrid(info.components)+"</div></details>"+moreSection(info)+"</section>";
 }
 function moreSection(info){
- const deep=anyMeaning(info,"traditional_interpretation"),picture=anyMeaning(info,"picture");
- return ((picture||deep)?"<div class='deeper-reading'><h3>"+esc(langText("Imagine & understand","ಕಲ್ಪಿಸಿ · ಅರ್ಥಮಾಡಿಕೊಳ್ಳಿ"))+"</h3>"+(picture?"<p class='picture-meaning'>"+esc(picture)+"</p>":"")+(deep?"<p>"+esc(deep)+"</p>":"")+"</div>":"")+noticeBox(info)+sourceLink(info);
+ const deep=anyMeaning(info,"traditional_interpretation");
+ return deep?"<div class='deeper-reading'><h3>"+esc(langText("Deeper meaning","ಆಳವಾದ ಅರ್ಥ"))+"</h3>"+richParagraphs(deep)+"</div>":"";
 }
 function mainVerseSection(v){
  const summary=language==="kn"?v.meaning?.kannada:v.meaning?.english;
