@@ -1,0 +1,62 @@
+{
+  "id": "lalita-010",
+  "collection": "lalita-sahasranama",
+  "section": "main-stotram",
+  "verse_number": 10,
+  "reading": {
+    "devanagari": [
+      "शुद्ध-विद्याङ्कुराकार-द्विजपङ्क्ति-द्वयोज्ज्वला ।",
+      "कर्पूर-वीटिकामोद-समाकर्षि-दिगन्तरा ॥ १० ॥"
+    ],
+    "iast": [
+      "śuddha-vidyāṅkurākāra-dvijapaṅkti-dvayojjvalā ।",
+      "karpūra-vīṭikāmoda-samākarṣi-digantarā ॥ 10 ॥"
+    ],
+    "kannada": [
+      "ಶುದ್ಧ-ವಿದ್ಯಾಙ್ಕುರಾಕಾರ-ದ್ವಿಜಪಙ್ಕ್ತಿ-ದ್ವಯೋಜ್ಜ್ವಲಾ ।",
+      "ಕರ್ಪೂರ-ವೀಟಿಕಾಮೋದ-ಸಮಾಕರ್ಷಿ-ದಿಗನ್ತರಾ ॥ १० ॥"
+    ]
+  },
+  "names": [
+    {
+      "number": null,
+      "sanskrit": "शुद्धविद्याङ्कुराकारद्विजपङ्क्तिद्वयोज्ज्वला",
+      "display_devanagari": "शुद्ध-विद्याङ्कुराकार-द्विजपङ्क्ति-द्वयोज्ज्वला",
+      "iast": "śuddhavidyāṅkurākāradvijapaṅktidvayojjvalā",
+      "display_iast": "śuddha-vidyāṅkurākāra-dvijapaṅkti-dvayojjvalā",
+      "kannada_script": "ಶುದ್ಧ-ವಿದ್ಯಾಙ್ಕುರಾಕಾರ-ದ್ವಿಜಪಙ್ಕ್ತಿ-ದ್ವಯೋಜ್ಜ್ವಲಾ",
+      "english": null,
+      "kannada": null,
+      "review_status": "meaning_pending",
+      "notes": "Precise Sahasranāma name number and commentary to be verified against name list."
+    },
+    {
+      "number": null,
+      "sanskrit": "कर्पूरवीटिकामोदसमाकर्षिदिगन्तरा",
+      "display_devanagari": "कर्पूर-वीटिकामोद-समाकर्षि-दिगन्तरा",
+      "iast": "karpūravīṭikāmodasamākarṣidigantarā",
+      "display_iast": "karpūra-vīṭikāmoda-samākarṣi-digantarā",
+      "kannada_script": "ಕರ್ಪೂರ-ವೀಟಿಕಾಮೋದ-ಸಮಾಕರ್ಷಿ-ದಿಗನ್ತರಾ",
+      "english": null,
+      "kannada": null,
+      "review_status": "meaning_pending",
+      "notes": "Precise Sahasranāma name number and commentary to be verified against name list."
+    }
+  ],
+  "word_meanings": [],
+  "meaning": {
+    "english": "Her two rows of teeth gleam like sprouts of pure knowledge; the fragrance of camphor-flavored betel from her mouth pervades the directions.",
+    "kannada": "ಅವಳ ಎರಡು ಸಾಲಿನ ಹಲ್ಲುಗಳು ಶುದ್ಧ ವಿದ್ಯೆಯ ಮೊಳಕೆಗಳಂತೆ ಹೊಳೆಯುತ್ತವೆ; ಕರ್ಪೂರ ಮಿಶ್ರಿತ ತಾಂಬೂಲದ ಸುಗಂಧವು ದಿಕ್ಕುಗಳನ್ನೆಲ್ಲ ಆವರಿಸುತ್ತದೆ."
+  },
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "verse_draft_name_details_pending",
+  "sources": [
+    {
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Verse reading and sense cross-check"
+    }
+  ]
+}
