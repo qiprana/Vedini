@@ -1,0 +1,235 @@
+{
+  "id": "lalita-001",
+  "collection": "lalita-sahasranama",
+  "section": "main-stotram",
+  "verse_number": 1,
+  "sanskrit": [
+    "श्रीमाता श्रीमहाराज्ञी श्रीमत्सिंहासनेश्वरी ।",
+    "चिदग्निकुण्डसम्भूता देवकार्यसमुद्यता ॥ १ ॥"
+  ],
+  "iast": [
+    "Śrīmātā Śrīmahārājñī Śrīmatsiṃhāsaneśvarī ।",
+    "Cidagnikuṇḍasambhūtā Devakāryasamudyatā ॥ 1 ॥"
+  ],
+  "names": [
+    {
+      "number": 1,
+      "sanskrit": "श्रीमाता",
+      "iast": "Śrīmātā",
+      "english": "The auspicious Divine Mother",
+      "kannada": "ಮಂಗಳಮಯಿಯಾದ ಜಗನ್ಮಾತೆ",
+      "kannada_script": "ಶ್ರೀಮಾತಾ",
+      "review_status": "draft"
+    },
+    {
+      "number": 2,
+      "sanskrit": "श्रीमहाराज्ञी",
+      "iast": "Śrīmahārājñī",
+      "english": "The glorious supreme Empress",
+      "kannada": "ವೈಭವಯುತ ಮಹಾರಾಣಿ",
+      "kannada_script": "ಶ್ರೀಮಹಾರಾಜ್ಞೀ",
+      "review_status": "draft"
+    },
+    {
+      "number": 3,
+      "sanskrit": "श्रीमत्सिंहासनेश्वरी",
+      "iast": "Śrīmatsiṃhāsaneśvarī",
+      "english": "Ruler of the resplendent throne",
+      "kannada": "ವೈಭವಯುಕ್ತ ಸಿಂಹಾಸನದ ಅಧೀಶ್ವರಿ",
+      "kannada_script": "ಶ್ರೀಮತ್ಸಿಂಹಾಸನೇಶ್ವರೀ",
+      "display_devanagari": "श्रीमत्-सिंहासनेश्वरी",
+      "display_iast": "śrīmat-siṃhāsaneśvarī",
+      "review_status": "draft"
+    },
+    {
+      "number": 4,
+      "sanskrit": "चिदग्निकुण्डसम्भूता",
+      "iast": "Cidagnikuṇḍasambhūtā",
+      "english": "Manifested from the altar of the fire of consciousness",
+      "kannada": "ಚೈತನ್ಯಾಗ್ನಿಯ ಕುಂಡದಿಂದ ಆವಿರ್ಭವಿಸಿದವಳು",
+      "kannada_script": "ಚಿದಗ್ನಿಕುಂಡಸಂಭೂತಾ",
+      "review_status": "draft"
+    },
+    {
+      "number": 5,
+      "sanskrit": "देवकार्यसमुद्यता",
+      "iast": "Devakāryasamudyatā",
+      "english": "Who arose to accomplish the purpose of the gods",
+      "kannada": "ದೇವತೆಗಳ ಕಾರ್ಯವನ್ನು ನೆರವೇರಿಸಲು ಸನ್ನದ್ಧಳಾದವಳು",
+      "kannada_script": "ದೇವಕಾರ್ಯಸಮುದ್ಯತಾ",
+      "review_status": "draft"
+    }
+  ],
+  "word_meanings": [
+    {
+      "sanskrit": "श्रीमाता",
+      "iast": "Śrīmātā",
+      "english": "The auspicious Divine Mother",
+      "kannada": "ಮಂಗಳಮಯಿಯಾದ ಜಗನ್ಮಾತೆ",
+      "components": [
+        {
+          "iast": "Śrī",
+          "english": "Auspicious; revered",
+          "kannada": "ಮಂಗಳಕರ; ಪೂಜ್ಯ",
+          "sanskrit": "श्री"
+        },
+        {
+          "iast": "Mātā",
+          "english": "Mother",
+          "kannada": "ತಾಯಿ",
+          "sanskrit": "माता"
+        }
+      ]
+    },
+    {
+      "sanskrit": "श्रीमहाराज्ञी",
+      "iast": "Śrīmahārājñī",
+      "english": "The glorious supreme Empress",
+      "kannada": "ವೈಭವಯುತ ಮಹಾರಾಣಿ",
+      "components": [
+        {
+          "iast": "Śrī",
+          "english": "Glorious; auspicious",
+          "kannada": "ವೈಭವಯುತ; ಮಂಗಳಕರ",
+          "sanskrit": "श्री"
+        },
+        {
+          "iast": "Mahā",
+          "english": "Great",
+          "kannada": "ಮಹಾ",
+          "sanskrit": "महा"
+        },
+        {
+          "iast": "Rājñī",
+          "english": "Queen",
+          "kannada": "ರಾಣಿ",
+          "sanskrit": "राज्ञी"
+        }
+      ]
+    },
+    {
+      "sanskrit": "श्रीमत्सिंहासनेश्वरी",
+      "iast": "Śrīmatsiṃhāsaneśvarī",
+      "english": "Ruler of the resplendent throne",
+      "kannada": "ವೈಭವಯುಕ್ತ ಸಿಂಹಾಸನದ ಅಧೀಶ್ವರಿ",
+      "components": [
+        {
+          "iast": "Śrīmat",
+          "english": "Splendid; glorious",
+          "kannada": "ವೈಭವಯುಕ್ತ",
+          "sanskrit": "श्रीमत्"
+        },
+        {
+          "iast": "Siṃhāsana",
+          "english": "Throne",
+          "kannada": "ಸಿಂಹಾಸನ",
+          "sanskrit": "सिंहासन"
+        },
+        {
+          "iast": "Īśvarī",
+          "english": "Sovereign goddess",
+          "kannada": "ಅಧೀಶ್ವರಿ",
+          "sanskrit": "ईश्वरी"
+        }
+      ]
+    },
+    {
+      "sanskrit": "चिदग्निकुण्डसम्भूता",
+      "iast": "Cidagnikuṇḍasambhūtā",
+      "english": "Manifested from the altar of the fire of consciousness",
+      "kannada": "ಚೈತನ್ಯಾಗ್ನಿಯ ಕುಂಡದಿಂದ ಆವಿರ್ಭವಿಸಿದವಳು",
+      "components": [
+        {
+          "iast": "Cit",
+          "english": "Consciousness",
+          "kannada": "ಚೈತನ್ಯ",
+          "sanskrit": "चित्"
+        },
+        {
+          "iast": "Agni",
+          "english": "Fire",
+          "kannada": "ಅಗ್ನಿ",
+          "sanskrit": "अग्नि"
+        },
+        {
+          "iast": "Kuṇḍa",
+          "english": "Fire pit; altar",
+          "kannada": "ಅಗ್ನಿಕುಂಡ",
+          "sanskrit": "कुण्ड"
+        },
+        {
+          "iast": "Sambhūtā",
+          "english": "Manifested; arisen",
+          "kannada": "ಆವಿರ್ಭವಿಸಿದವಳು",
+          "sanskrit": "सम्भूता"
+        }
+      ]
+    },
+    {
+      "sanskrit": "देवकार्यसमुद्यता",
+      "iast": "Devakāryasamudyatā",
+      "english": "Who arose to accomplish the purpose of the gods",
+      "kannada": "ದೇವತೆಗಳ ಕಾರ್ಯವನ್ನು ನೆರವೇರಿಸಲು ಸನ್ನದ್ಧಳಾದವಳು",
+      "components": [
+        {
+          "iast": "Deva",
+          "english": "Deities",
+          "kannada": "ದೇವತೆಗಳು",
+          "sanskrit": "देव"
+        },
+        {
+          "iast": "Kārya",
+          "english": "Purpose; task",
+          "kannada": "ಕಾರ್ಯ; ಉದ್ದೇಶ",
+          "sanskrit": "कार्य"
+        },
+        {
+          "iast": "Samudyatā",
+          "english": "Prepared; arisen for action",
+          "kannada": "ಕಾರ್ಯಕ್ಕೆ ಸನ್ನದ್ಧಳಾದವಳು",
+          "sanskrit": "समुद्यता"
+        }
+      ]
+    }
+  ],
+  "meaning": {
+    "english": "She is the auspicious Divine Mother, the supreme Empress, and the sovereign of the resplendent throne. She manifested from the fire of pure consciousness to accomplish the divine purpose of the gods.",
+    "kannada": "ಅವಳು ಮಂಗಳಮಯಿಯಾದ ಜಗನ್ಮಾತೆ, ಸರ್ವೋನ್ನತ ಮಹಾರಾಣಿ ಮತ್ತು ವೈಭವಯುಕ್ತ ಸಿಂಹಾಸನದ ಅಧೀಶ್ವರಿ. ದೇವತೆಗಳ ಕಾರ್ಯವನ್ನು ನೆರವೇರಿಸಲು ಶುದ್ಧ ಚೈತನ್ಯಾಗ್ನಿಯ ಕುಂಡದಿಂದ ಆವಿರ್ಭವಿಸಿದವಳು."
+  },
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "draft",
+  "sources": [
+    {
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "reading; IAST cross-check"
+    },
+    {
+      "url": "https://sanskritdocuments.org/doc_devii/lalita1000.html",
+      "role": "name meanings cross-check"
+    },
+    {
+      "url": "https://manblunder.com/articlesview/lalitha-sahasranamam-1-2",
+      "role": "interpretive context for first names"
+    }
+  ],
+  "reading": {
+    "devanagari": [
+      "ॐ श्रीमाता श्रीमहाराज्ञी श्रीमत्-सिंहासनेश्वरी ।",
+      "चिदग्नि-कुण्ड-सम्भूता देवकार्य-समुद्यता ॥ १ ॥"
+    ],
+    "iast": [
+      "oṃ śrīmātā śrīmahārājñī śrīmat-siṃhāsaneśvarī ।",
+      "cidagni-kuṇḍa-sambhūtā devakārya-samudyatā ॥ 1 ॥"
+    ],
+    "kannada": [
+      "ಓಂ ಶ್ರೀಮಾತಾ ಶ್ರೀಮಹಾರಾಜ್ಞೀ ಶ್ರೀಮತ್-ಸಿಂಹಾಸನೇಶ್ವರೀ ।",
+      "ಚಿದಗ್ನಿ-ಕುಂಡ-ಸಂಭೂತಾ ದೇವಕಾರ್ಯ-ಸಮುದ್ಯತಾ ॥ ೧ ॥"
+    ]
+  },
+  "reading_style": "book-hyphenated",
+  "reading_note": "Reading-style compound division follows the supplied printed book, not full grammatical sandhi separation. Review draft.",
+  "content_policy": "Draft meanings are original concise editorial paraphrases; verify against traditional commentary."
+}
