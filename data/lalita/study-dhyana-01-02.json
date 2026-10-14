@@ -1,0 +1,298 @@
+[
+  {
+    "verse_number": 1,
+    "essential_meaning": {
+      "en": "Picture the gentle Divine Mother, radiant as vermilion, crowned with jewels and the moon, holding a cup and a red lotus.",
+      "kn": "ಕುಂಕುಮದಂತೆ ಅರುಣವರ್ಣಳಾದ, ರತ್ನಕಿರೀಟ ಮತ್ತು ಚಂದ್ರನಿಂದ ಅಲಂಕೃತಳಾದ, ರತ್ನಪಾತ್ರೆ ಹಾಗೂ ಕೆಂಪು ಕಮಲ ಹಿಡಿದಿರುವ ಸೌಮ್ಯ ಜಗನ್ಮಾತೆಯನ್ನು ಧ್ಯಾನಿಸಿ."
+    },
+    "traditional_interpretation": {
+      "en": "Dhyāna prepares the mind for chanting by giving it a loving form on which to rest. The crimson hue evokes dawn and warmth; the three eyes are commonly related to a wider vision beyond ordinary sight. Her gentle smile, red lotus and beautiful crown combine royal splendor with maternal compassion. The jeweled cup is described using imagery involving bees (ali); some devotional translations explain it as filled with honey or nectar, so the exact nuance should be checked against the chosen edition.",
+      "kn": "ಧ್ಯಾನಶ್ಲೋಕವು ಜಪಕ್ಕೆ ಮೊದಲು ಮನಸ್ಸನ್ನು ಏಕಾಗ್ರಗೊಳಿಸಲು ದೇವಿಯ ಸೌಮ್ಯ ರೂಪವನ್ನು ನೀಡುತ್ತದೆ. ಅರುಣವರ್ಣವು ಬೆಳಗಿನ ಹೊತ್ತು ಮತ್ತು ಕರುಣೆಯ ಉಷ್ಣತೆಯನ್ನು ನೆನಪಿಸುತ್ತದೆ. ಮೂರು ಕಣ್ಣುಗಳು ಸಾಮಾನ್ಯ ದೃಷ್ಟಿಯನ್ನು ಮೀರಿದ ಜ್ಞಾನಕ್ಕೆ ಸಂಕೇತವೆಂದು ತಿಳಿಯಲಾಗುತ್ತದೆ. ಮೃದುವಾದ ನಗು, ಕೆಂಪು ಕಮಲ ಮತ್ತು ಕಿರೀಟದಲ್ಲಿ ವೈಭವದ ಜೊತೆಗೆ ಮಾತೃಕರುಣೆ ಕಾಣುತ್ತದೆ. ‘ಅಲಿಪೂರ್ಣ’ ಪದದಲ್ಲಿ ಜೇನುನೊಣಗಳ ಚಿತ್ರವಿದ್ದು, ಕೆಲ ಅನುವಾದಗಳು ಜೇನು ಅಥವಾ ಅಮೃತ ತುಂಬಿದ ಪಾತ್ರೆ ಎಂದು ವಿವರಿಸುತ್ತವೆ; ಆಯ್ದ ಮೂಲಪಾಠದೊಂದಿಗೆ ಈ ಸೂಕ್ಷ್ಮಾರ್ಥ ಪರಿಶೀಲಿಸಬೇಕು."
+    },
+    "notice": {
+      "en": "Close your eyes for a moment and imagine a kind smile, a red lotus and the crescent moon.",
+      "kn": "ಕ್ಷಣಕಾಲ ಕಣ್ಣು ಮುಚ್ಚಿ ಮೃದು ನಗು, ಕೆಂಪು ಕಮಲ ಮತ್ತು ಚಂದ್ರಕಲೆಯನ್ನು ಮನಸ್ಸಿನಲ್ಲಿ ಕಲ್ಪಿಸಿಕೊಳ್ಳಿ."
+    },
+    "components": [
+      {
+        "dev": "सिन्दूर",
+        "iast": "sindūra",
+        "en": "vermilion red",
+        "kn": "ಕುಂಕುಮದ ಕೆಂಪು"
+      },
+      {
+        "dev": "अरुण",
+        "iast": "aruṇa",
+        "en": "reddish; dawn-colored",
+        "kn": "ಅರುಣವರ್ಣ"
+      },
+      {
+        "dev": "विग्रहाम्",
+        "iast": "vigrahām",
+        "en": "having a form",
+        "kn": "ರೂಪವನ್ನು ಹೊಂದಿರುವವಳು"
+      },
+      {
+        "dev": "त्रि",
+        "iast": "tri",
+        "en": "three",
+        "kn": "ಮೂರು"
+      },
+      {
+        "dev": "नयनाम्",
+        "iast": "nayanām",
+        "en": "eyes",
+        "kn": "ಕಣ್ಣುಗಳು"
+      },
+      {
+        "dev": "माणिक्य",
+        "iast": "māṇikya",
+        "en": "ruby",
+        "kn": "ಮಾಣಿಕ್ಯ"
+      },
+      {
+        "dev": "मौलि",
+        "iast": "mauli",
+        "en": "crown; head",
+        "kn": "ಕಿರೀಟ; ಶಿರಸ್ಸು"
+      },
+      {
+        "dev": "स्फुरत्",
+        "iast": "sphurat",
+        "en": "sparkling",
+        "kn": "ಮಿನುಗುವ"
+      },
+      {
+        "dev": "तारानायक",
+        "iast": "tārānāyaka",
+        "en": "the moon, lord of stars",
+        "kn": "ನಕ್ಷತ್ರಗಳ ಒಡೆಯನಾದ ಚಂದ್ರ"
+      },
+      {
+        "dev": "शेखराम्",
+        "iast": "śekharām",
+        "en": "wearing as a crest",
+        "kn": "ಶಿರೋಭೂಷಣವಾಗಿ ಧರಿಸಿದವಳು"
+      },
+      {
+        "dev": "स्मितमुखीम्",
+        "iast": "smitamukhīm",
+        "en": "with a smiling face",
+        "kn": "ನಗುವ ಮುಖವುಳ್ಳವಳು"
+      },
+      {
+        "dev": "आपीन-वक्षोरुहाम्",
+        "iast": "āpīna-vakṣoruhām",
+        "en": "with full, nurturing breasts",
+        "kn": "ಪೂರ್ಣ ವಕ್ಷಸ್ಥಲವುಳ್ಳವಳು"
+      },
+      {
+        "dev": "पाणिभ्याम्",
+        "iast": "pāṇibhyām",
+        "en": "with two hands",
+        "kn": "ಎರಡು ಕೈಗಳಿಂದ"
+      },
+      {
+        "dev": "अलि",
+        "iast": "ali",
+        "en": "bee; bee imagery",
+        "kn": "ಜೇನುನೊಣ"
+      },
+      {
+        "dev": "पूर्ण",
+        "iast": "pūrṇa",
+        "en": "filled",
+        "kn": "ತುಂಬಿದ"
+      },
+      {
+        "dev": "रत्नचषकम्",
+        "iast": "ratnacaṣakam",
+        "en": "jeweled cup",
+        "kn": "ರತ್ನಾಲಂಕೃತ ಪಾತ್ರೆ"
+      },
+      {
+        "dev": "रक्तोत्पलम्",
+        "iast": "raktotpalam",
+        "en": "red lotus",
+        "kn": "ಕೆಂಪು ಕಮಲ"
+      },
+      {
+        "dev": "बिभ्रतीम्",
+        "iast": "bibhratīm",
+        "en": "holding; bearing",
+        "kn": "ಧರಿಸಿರುವವಳು"
+      },
+      {
+        "dev": "सौम्याम्",
+        "iast": "saumyām",
+        "en": "gentle; serene",
+        "kn": "ಸೌಮ್ಯಳಾದವಳು"
+      },
+      {
+        "dev": "रत्नघटस्थ",
+        "iast": "ratnaghaṭastha",
+        "en": "resting on a jeweled vessel",
+        "kn": "ರತ್ನಘಟದ ಮೇಲಿರುವ"
+      },
+      {
+        "dev": "रक्तचरणाम्",
+        "iast": "raktacaraṇām",
+        "en": "with red feet",
+        "kn": "ಕೆಂಪು ಪಾದಗಳುಳ್ಳವಳು"
+      },
+      {
+        "dev": "ध्यायेत्",
+        "iast": "dhyāyet",
+        "en": "one should meditate",
+        "kn": "ಧ್ಯಾನಿಸಬೇಕು"
+      },
+      {
+        "dev": "पराम्",
+        "iast": "parām",
+        "en": "supreme",
+        "kn": "ಪರಮ"
+      },
+      {
+        "dev": "अम्बिकाम्",
+        "iast": "ambikām",
+        "en": "Divine Mother",
+        "kn": "ಅಂಬಿಕೆ; ಜಗನ್ಮಾತೆ"
+      }
+    ],
+    "sources": [
+      "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "https://sanatana.ekatantra.com/stotras/lalita-sahasranama-the-dhyana-verses-that-open-the-recitatio"
+    ],
+    "review_status": "editorial_draft"
+  },
+  {
+    "verse_number": 2,
+    "essential_meaning": {
+      "en": "Contemplate the compassionate, dawn-red Bhavānī holding the noose, goad, bow and flower-arrows.",
+      "kn": "ಕರುಣೆಯಿಂದ ತುಂಬಿದ ದೃಷ್ಟಿಯುಳ್ಳ ಅರುಣವರ್ಣದ ಭವಾನಿಯನ್ನು, ಪಾಶ, ಅಂಕುಶ, ಬಿಲ್ಲು ಮತ್ತು ಪುಷ್ಪಬಾಣಗಳನ್ನು ಹಿಡಿದಿರುವ ರೂಪದಲ್ಲಿ ಧ್ಯಾನಿಸಿ."
+    },
+    "traditional_interpretation": {
+      "en": "Her eyes are described as waves of compassion. The four implements are explained through the following divine names as relating to attachment, aversion, the mind and the subtle senses. The closing words 'aham iti eva' give this Dhyāna a subtle non-dual dimension: in Śrīvidyā contemplation, the deepest Self is not separate from the divine consciousness invoked as Bhavānī. That philosophical reflection is distinct from the literal description of her appearance.",
+      "kn": "ದೇವಿಯ ಕಣ್ಣುಗಳು ಕರುಣೆಯ ಅಲೆಗಳಿಂದ ತುಂಬಿವೆ ಎಂದು ಹೇಳಲಾಗಿದೆ. ನಾಲ್ಕು ಆಯುಧಗಳು ಮುಂದಿನ ನಾಮಗಳಲ್ಲಿ ರಾಗ, ಕ್ರೋಧ, ಮನಸ್ಸು ಮತ್ತು ಸೂಕ್ಷ್ಮ ಇಂದ್ರಿಯವಿಷಯಗಳೊಂದಿಗೆ ಸಂಬಂಧಿಸುತ್ತವೆ. ಕೊನೆಯ ‘ಅಹಮ್ ಇತ್ಯೇವ’ ಎಂಬ ಮಾತು ಶ್ರೀವಿದ್ಯೆಯ ಅದ್ವೈತ ಚಿಂತನೆಯನ್ನು ಸೂಚಿಸುತ್ತದೆ: ಅಂತರಂಗದ ನಿಜಸ್ವರೂಪವು ಭವಾನಿಯ ದಿವ್ಯ ಚೈತನ್ಯದಿಂದ ಬೇರ್ಪಟ್ಟಿಲ್ಲ ಎಂಬ ಧ್ಯಾನಾರ್ಥ. ಇದು ರೂಪವರ್ಣನೆಯ ನೇರ ಅರ್ಥಕ್ಕಿಂತ ಆಳವಾದ ತತ್ತ್ವಚಿಂತನೆ."
+    },
+    "notice": {
+      "en": "Her eyes remind us of kindness. Name the four things in her hands.",
+      "kn": "ಆಕೆಯ ಕಣ್ಣುಗಳು ಕರುಣೆಯನ್ನು ನೆನಪಿಸುತ್ತವೆ. ಕೈಗಳಲ್ಲಿರುವ ನಾಲ್ಕು ವಸ್ತುಗಳ ಹೆಸರು ಹೇಳಿ."
+    },
+    "components": [
+      {
+        "dev": "अरुणाम्",
+        "iast": "aruṇām",
+        "en": "reddish; dawn-colored",
+        "kn": "ಅರುಣವರ್ಣಳಾದವಳು"
+      },
+      {
+        "dev": "करुणा",
+        "iast": "karuṇā",
+        "en": "compassion",
+        "kn": "ಕರುಣೆ"
+      },
+      {
+        "dev": "तरङ्गित",
+        "iast": "taraṅgita",
+        "en": "rippling in waves",
+        "kn": "ಅಲೆಗಳಂತೆ ತುಂಬಿರುವ"
+      },
+      {
+        "dev": "अक्षीम्",
+        "iast": "akṣīm",
+        "en": "eyes",
+        "kn": "ಕಣ್ಣುಗಳು"
+      },
+      {
+        "dev": "धृत",
+        "iast": "dhṛta",
+        "en": "holding",
+        "kn": "ಧರಿಸಿದ"
+      },
+      {
+        "dev": "पाश",
+        "iast": "pāśa",
+        "en": "noose",
+        "kn": "ಪಾಶ"
+      },
+      {
+        "dev": "अङ्कुश",
+        "iast": "aṅkuśa",
+        "en": "goad",
+        "kn": "ಅಂಕುಶ"
+      },
+      {
+        "dev": "पुष्पबाण",
+        "iast": "puṣpabāṇa",
+        "en": "flower-arrows",
+        "kn": "ಪುಷ್ಪಬಾಣಗಳು"
+      },
+      {
+        "dev": "चापाम्",
+        "iast": "cāpām",
+        "en": "bow",
+        "kn": "ಬಿಲ್ಲು"
+      },
+      {
+        "dev": "अणिमा",
+        "iast": "aṇimā",
+        "en": "the power of becoming minute",
+        "kn": "ಅಣಿಮಾ ಎಂಬ ಸಿದ್ಧಿ"
+      },
+      {
+        "dev": "आदिभिः",
+        "iast": "ādibhiḥ",
+        "en": "and others beginning with",
+        "kn": "ಮೊದಲಾದವುಗಳಿಂದ"
+      },
+      {
+        "dev": "आवृताम्",
+        "iast": "āvṛtām",
+        "en": "surrounded",
+        "kn": "ಆವರಿಸಲ್ಪಟ್ಟವಳು"
+      },
+      {
+        "dev": "मयूखैः",
+        "iast": "mayūkhaiḥ",
+        "en": "rays of light",
+        "kn": "ಬೆಳಕಿನ ಕಿರಣಗಳು"
+      },
+      {
+        "dev": "अहम्",
+        "iast": "aham",
+        "en": "I",
+        "kn": "ನಾನು"
+      },
+      {
+        "dev": "इति",
+        "iast": "iti",
+        "en": "thus",
+        "kn": "ಎಂದು"
+      },
+      {
+        "dev": "एव",
+        "iast": "eva",
+        "en": "indeed; just so",
+        "kn": "ನಿಜವಾಗಿಯೂ"
+      },
+      {
+        "dev": "विभावये",
+        "iast": "vibhāvaye",
+        "en": "I contemplate",
+        "kn": "ನಾನು ಧ್ಯಾನಿಸುತ್ತೇನೆ"
+      },
+      {
+        "dev": "भवानीम्",
+        "iast": "bhavānīm",
+        "en": "Bhavānī, the Goddess",
+        "kn": "ಭವಾನಿ ದೇವಿಯನ್ನು"
+      }
+    ],
+    "sources": [
+      "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "https://sanatana.ekatantra.com/stotras/lalita-sahasranama-the-dhyana-verses-that-open-the-recitatio"
+    ],
+    "review_status": "editorial_draft"
+  }
+]
