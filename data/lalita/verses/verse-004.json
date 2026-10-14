@@ -1,0 +1,62 @@
+{
+  "id": "lalita-004",
+  "collection": "lalita-sahasranama",
+  "section": "main-stotram",
+  "verse_number": 4,
+  "reading": {
+    "devanagari": [
+      "चम्पकाशोक-पुन्नाग-सौगन्धिक-लसत्कचा ।",
+      "कुरुविन्दमणि-श्रेणी-कनत्कोटीर-मण्डिता ॥ ४ ॥"
+    ],
+    "iast": [
+      "campakāśoka-punnāga-saugandhika-lasatkacā ।",
+      "kuruvindamaṇi-śreṇī-kanatkoṭīra-maṇḍitā ॥ 4 ॥"
+    ],
+    "kannada": [
+      "ಚಮ್ಪಕಾಶೋಕ-ಪುನ್ನಾಗ-ಸೌಗನ್ಧಿಕ-ಲಸತ್ಕಚಾ ।",
+      "ಕುರುವಿನ್ದಮಣಿ-ಶ್ರೇಣೀ-ಕನತ್ಕೋಟೀರ-ಮಣ್ಡಿತಾ ॥ ४ ॥"
+    ]
+  },
+  "names": [
+    {
+      "number": null,
+      "sanskrit": "चम्पकाशोकपुन्नागसौगन्धिकलसत्कचा",
+      "display_devanagari": "चम्पकाशोक-पुन्नाग-सौगन्धिक-लसत्कचा",
+      "iast": "campakāśokapunnāgasaugandhikalasatkacā",
+      "display_iast": "campakāśoka-punnāga-saugandhika-lasatkacā",
+      "kannada_script": "ಚಮ್ಪಕಾಶೋಕ-ಪುನ್ನಾಗ-ಸೌಗನ್ಧಿಕ-ಲಸತ್ಕಚಾ",
+      "english": null,
+      "kannada": null,
+      "review_status": "meaning_pending",
+      "notes": "Precise Sahasranāma name number and commentary to be verified against name list."
+    },
+    {
+      "number": null,
+      "sanskrit": "कुरुविन्दमणिश्रेणीकनत्कोटीरमण्डिता",
+      "display_devanagari": "कुरुविन्दमणि-श्रेणी-कनत्कोटीर-मण्डिता",
+      "iast": "kuruvindamaṇiśreṇīkanatkoṭīramaṇḍitā",
+      "display_iast": "kuruvindamaṇi-śreṇī-kanatkoṭīra-maṇḍitā",
+      "kannada_script": "ಕುರುವಿನ್ದಮಣಿ-ಶ್ರೇಣೀ-ಕನತ್ಕೋಟೀರ-ಮಣ್ಡಿತಾ",
+      "english": null,
+      "kannada": null,
+      "review_status": "meaning_pending",
+      "notes": "Precise Sahasranāma name number and commentary to be verified against name list."
+    }
+  ],
+  "word_meanings": [],
+  "meaning": {
+    "english": "Her beautiful hair is adorned with fragrant campaka, aśoka, and punnāga blossoms; her radiant crown is set with rows of precious rubies.",
+    "kannada": "ಅವಳ ಕೇಶವು ಚಂಪಕ, ಅಶೋಕ ಮತ್ತು ಪುನ್ನಾಗದ ಸುಗಂಧಿತ ಹೂಗಳಿಂದ ಶೋಭಿಸುತ್ತದೆ; ಮಾಣಿಕ್ಯಗಳ ಸಾಲಿನಿಂದ ಅಲಂಕರಿಸಿದ ಕಿರೀಟವು ಹೊಳೆಯುತ್ತದೆ."
+  },
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "verse_draft_name_details_pending",
+  "sources": [
+    {
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Verse reading and sense cross-check"
+    }
+  ]
+}
