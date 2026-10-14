@@ -1,0 +1,146 @@
+[
+  {
+    "id": "lalita-dhyana-01",
+    "section": "dhyana",
+    "verse_number": 1,
+    "reading": {
+      "devanagari": [
+        "सिन्दूरारुण-विग्रहां त्रिनयनां माणिक्य-मौलि-स्फुरत्",
+        "तारानायक-शेखरां स्मितमुखीम् आपीन-वक्षोरुहाम् ।",
+        "पाणिभ्याम् अलि-पूर्ण-रत्न-चषकं रक्तोत्पलं बिभ्रतीं",
+        "सौम्यां रत्नघटस्थ-रक्तचरणां ध्यायेत् पराम् अम्बिकाम् ॥"
+      ],
+      "iast": [
+        "sindūrāruṇa-vigrahāṃ trinayanāṃ māṇikya-mauli-sphurat",
+        "tārānāyaka-śekharāṃ smitamukhīm āpīna-vakṣoruhām ।",
+        "pāṇibhyām ali-pūrṇa-ratna-caṣakaṃ raktotpalaṃ bibhratīṃ",
+        "saumyāṃ ratnaghaṭastha-raktacaraṇāṃ dhyāyet parām ambikām ॥"
+      ],
+      "kannada": [
+        "ಸಿನ್ದೂರಾರುಣ-ವಿಗ್ರಹಾಂ ತ್ರಿನಯನಾಂ ಮಾಣಿಕ್ಯ-ಮೌಲಿ-ಸ್ಫುರತ್",
+        "ತಾರಾನಾಯಕ-ಶೇಖರಾಂ ಸ್ಮಿತಮುಖೀಮ್ ಆಪೀನ-ವಕ್ಷೋರುಹಾಮ್ ।",
+        "ಪಾಣಿಭ್ಯಾಮ್ ಅಲಿ-ಪೂರ್ಣ-ರತ್ನ-ಚಷಕಂ ರಕ್ತೋತ್ಪಲಂ ಬಿಭ್ರತೀಂ",
+        "ಸೌಮ್ಯಾಂ ರತ್ನಘಟಸ್ಥ-ರಕ್ತಚರಣಾಂ ಧ್ಯಾಯೇತ್ ಪರಾಮ್ ಅಮ್ಬಿಕಾಮ್ ॥"
+      ]
+    },
+    "meaning": {
+      "english": "Meditate on the Supreme Mother, radiant red as vermilion and three-eyed, adorned with a jeweled crown and the moon. She smiles gently, holding a jeweled cup and red lotus; her feet glow red, and her presence is serene.",
+      "kannada": null
+    },
+    "audio": {
+      "normal": null,
+      "slow": null
+    },
+    "review_status": "draft",
+    "source": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+    "reading_note": "Hyphenation is editorial and requires padavicchedana verification; Kannada transliteration requires proofreading."
+  },
+  {
+    "id": "lalita-dhyana-02",
+    "section": "dhyana",
+    "verse_number": 2,
+    "reading": {
+      "devanagari": [
+        "अरुणां करुणा-तरङ्गिताक्षीं",
+        "धृत-पाशाङ्कुश-पुष्पबाण-चापाम् ।",
+        "अणिमादिभिर् आवृतां मयूखैः",
+        "अहम् इत्येव विभावये भवानीम् ॥"
+      ],
+      "iast": [
+        "aruṇāṃ karuṇā-taraṅgitākṣīṃ",
+        "dhṛta-pāśāṅkuśa-puṣpabāṇa-cāpām ।",
+        "aṇimādibhir āvṛtāṃ mayūkhaiḥ",
+        "aham ityeva vibhāvaye bhavānīm ॥"
+      ],
+      "kannada": [
+        "ಅರುಣಾಂ ಕರುಣಾ-ತರಙ್ಗಿತಾಕ್ಷೀಂ",
+        "ಧೃತ-ಪಾಶಾಙ್ಕುಶ-ಪುಷ್ಪಬಾಣ-ಚಾಪಾಮ್ ।",
+        "ಅಣಿಮಾದಿಭಿರ್ ಆವೃತಾಂ ಮಯೂಖೈಃ",
+        "ಅಹಮ್ ಇತ್ಯೇವ ವಿಭಾವಯೇ ಭವಾನೀಮ್ ॥"
+      ]
+    },
+    "meaning": {
+      "english": "I contemplate Bhavānī, crimson-hued, whose gaze flows with compassion, bearing the noose, goad, flower-arrows and bow. Surrounded by the radiance of spiritual powers, she is recognized as the divine presence of the Self.",
+      "kannada": null
+    },
+    "audio": {
+      "normal": null,
+      "slow": null
+    },
+    "review_status": "draft",
+    "source": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+    "reading_note": "Hyphenation is editorial and requires padavicchedana verification; Kannada transliteration requires proofreading."
+  },
+  {
+    "id": "lalita-dhyana-03",
+    "section": "dhyana",
+    "verse_number": 3,
+    "reading": {
+      "devanagari": [
+        "ध्यायेत् पद्मासनस्थां विकसित-वदनां पद्मपत्रायताक्षीं",
+        "हेमाभां पीतवस्त्रां करकलित-लसद्-हेमपद्मां वराङ्गीम् ।",
+        "सर्वालङ्कार-युक्तां सततम् अभयदां भक्तनम्रां भवानीं",
+        "श्रीविद्यां शान्तमूर्तिं सकलसुरनुतां सर्वसम्पत्प्रदात्रीम् ॥"
+      ],
+      "iast": [
+        "dhyāyet padmāsanasthāṃ vikasita-vadanāṃ padmapatrāyatākṣīṃ",
+        "hemābhāṃ pītavastrāṃ karakalita-lasad-hemapadmāṃ varāṅgīm ।",
+        "sarvālaṅkāra-yuktāṃ satatam abhayadāṃ bhaktanamrāṃ bhavānīṃ",
+        "śrīvidyāṃ śāntamūrtiṃ sakalasuranutāṃ sarvasampatpradātrīm ॥"
+      ],
+      "kannada": [
+        "ಧ್ಯಾಯೇತ್ ಪದ್ಮಾಸನಸ್ಥಾಂ ವಿಕಸಿತ-ವದನಾಂ ಪದ್ಮಪತ್ರಾಯತಾಕ್ಷೀಂ",
+        "ಹೇಮಾಭಾಂ ಪೀತವಸ್ತ್ರಾಂ ಕರಕಲಿತ-ಲಸದ್-ಹೇಮಪದ್ಮಾಂ ವರಾಙ್ಗೀಮ್ ।",
+        "ಸರ್ವಾಲಙ್ಕಾರ-ಯುಕ್ತಾಂ ಸತತಮ್ ಅಭಯದಾಂ ಭಕ್ತನಮ್ರಾಂ ಭವಾನೀಂ",
+        "ಶ್ರೀವಿದ್ಯಾಂ ಶಾನ್ತಮೂರ್ತಿಂ ಸಕಲಸುರನುತಾಂ ಸರ್ವಸಮ್ಪತ್ಪ್ರದಾತ್ರೀಮ್ ॥"
+      ]
+    },
+    "meaning": {
+      "english": "Meditate on the lotus-seated Goddess with a blossoming face and lotus-like eyes. Golden in radiance and clothed in yellow, she holds a golden lotus, grants fearlessness, embodies sacred wisdom and peace, and bestows true abundance.",
+      "kannada": null
+    },
+    "audio": {
+      "normal": null,
+      "slow": null
+    },
+    "review_status": "draft",
+    "source": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+    "reading_note": "Hyphenation is editorial and requires padavicchedana verification; Kannada transliteration requires proofreading."
+  },
+  {
+    "id": "lalita-dhyana-04",
+    "section": "dhyana",
+    "verse_number": 4,
+    "reading": {
+      "devanagari": [
+        "सकुङ्कुम-विलेपनाम् अलिक-चुम्बि-कस्तूरिकां",
+        "समन्द-हसितेक्षणां सशर-चाप-पाशाङ्कुशाम् ।",
+        "अशेषजन-मोहिनीम् अरुण-माल्य-भूषाम्बरां",
+        "जपाकुसुम-भासुरां जपविधौ स्मरेद् अम्बिकाम् ॥"
+      ],
+      "iast": [
+        "sakuṅkuma-vilepanām alika-cumbi-kastūrikāṃ",
+        "samanda-hasitekṣaṇāṃ saśara-cāpa-pāśāṅkuśām ।",
+        "aśeṣajana-mohinīm aruṇa-mālya-bhūṣāmbarāṃ",
+        "japākusuma-bhāsurāṃ japavidhau smared ambikām ॥"
+      ],
+      "kannada": [
+        "ಸಕುಙ್ಕುಮ-ವಿಲೇಪನಾಮ್ ಅಲಿಕ-ಚುಮ್ಬಿ-ಕಸ್ತೂರಿಕಾಂ",
+        "ಸಮನ್ದ-ಹಸಿತೇಕ್ಷಣಾಂ ಸಶರ-ಚಾಪ-ಪಾಶಾಙ್ಕುಶಾಮ್ ।",
+        "ಅಶೇಷಜನ-ಮೋಹಿನೀಮ್ ಅರುಣ-ಮಾಲ್ಯ-ಭೂಷಾಮ್ಬರಾಂ",
+        "ಜಪಾಕುಸುಮ-ಭಾಸುರಾಂ ಜಪವಿಧೌ ಸ್ಮರೇದ್ ಅಮ್ಬಿಕಾಮ್ ॥"
+      ]
+    },
+    "meaning": {
+      "english": "During mantra repetition, remember Ambikā adorned with vermilion and a musk mark, smiling softly and bearing bow, arrows, noose and goad. Red garlands, garments and ornaments surround her, and she shines like the hibiscus blossom.",
+      "kannada": null
+    },
+    "audio": {
+      "normal": null,
+      "slow": null
+    },
+    "review_status": "draft",
+    "source": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+    "reading_note": "Hyphenation is editorial and requires padavicchedana verification; Kannada transliteration requires proofreading."
+  }
+]
