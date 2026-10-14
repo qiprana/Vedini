@@ -1,0 +1,62 @@
+{
+  "id": "lalita-009",
+  "collection": "lalita-sahasranama",
+  "section": "main-stotram",
+  "verse_number": 9,
+  "reading": {
+    "devanagari": [
+      "पद्मराग-शिलादर्श-परिभावि-कपोलभूः ।",
+      "नवविद्रुम-बिम्बश्री-न्यक्कारि-रदनच्छदा ॥ ९ ॥"
+    ],
+    "iast": [
+      "padmarāga-śilādarśa-paribhāvi-kapolabhūḥ ।",
+      "navavidruma-bimbaśrī-nyakkāri-radanacchadā ॥ 9 ॥"
+    ],
+    "kannada": [
+      "ಪದ್ಮರಾಗ-ಶಿಲಾದರ್ಶ-ಪರಿಭಾವಿ-ಕಪೋಲಭೂಃ ।",
+      "ನವವಿದ್ರುಮ-ಬಿಮ್ಬಶ್ರೀ-ನ್ಯಕ್ಕಾರಿ-ರದನಚ್ಛದಾ ॥ ९ ॥"
+    ]
+  },
+  "names": [
+    {
+      "number": null,
+      "sanskrit": "पद्मरागशिलादर्शपरिभाविकपोलभूः",
+      "display_devanagari": "पद्मराग-शिलादर्श-परिभावि-कपोलभूः",
+      "iast": "padmarāgaśilādarśaparibhāvikapolabhūḥ",
+      "display_iast": "padmarāga-śilādarśa-paribhāvi-kapolabhūḥ",
+      "kannada_script": "ಪದ್ಮರಾಗ-ಶಿಲಾದರ್ಶ-ಪರಿಭಾವಿ-ಕಪೋಲಭೂಃ",
+      "english": null,
+      "kannada": null,
+      "review_status": "meaning_pending",
+      "notes": "Precise Sahasranāma name number and commentary to be verified against name list."
+    },
+    {
+      "number": null,
+      "sanskrit": "नवविद्रुमबिम्बश्रीन्यक्कारिरदनच्छदा",
+      "display_devanagari": "नवविद्रुम-बिम्बश्री-न्यक्कारि-रदनच्छदा",
+      "iast": "navavidrumabimbaśrīnyakkāriradanacchadā",
+      "display_iast": "navavidruma-bimbaśrī-nyakkāri-radanacchadā",
+      "kannada_script": "ನವವಿದ್ರುಮ-ಬಿಮ್ಬಶ್ರೀ-ನ್ಯಕ್ಕಾರಿ-ರದನಚ್ಛದಾ",
+      "english": null,
+      "kannada": null,
+      "review_status": "meaning_pending",
+      "notes": "Precise Sahasranāma name number and commentary to be verified against name list."
+    }
+  ],
+  "word_meanings": [],
+  "meaning": {
+    "english": "Her cheeks outshine a mirror of ruby, and her lips surpass the rich red beauty of new coral and the bimba fruit.",
+    "kannada": "ಅವಳ ಕೆನ್ನೆಗಳು ಪದ್ಮರಾಗದ ಕನ್ನಡಿಗಿಂತಲೂ ಕಾಂತಿಯುತವಾಗಿವೆ; ತುಟಿಗಳು ಹೊಸ ಹವಳ ಮತ್ತು ಬಿಂಬಫಲದ ಕೆಂಪು ಸೊಬಗನ್ನೂ ಮೀರಿಸುತ್ತವೆ."
+  },
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "verse_draft_name_details_pending",
+  "sources": [
+    {
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Verse reading and sense cross-check"
+    }
+  ]
+}
