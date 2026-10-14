@@ -1,0 +1,440 @@
+[
+  {
+    "number": 19,
+    "essential_meaning": {
+      "en": "Her graceful nose resembles a newly opened champaka flower.",
+      "kn": "ಆಕೆಯ ಸುಂದರ ಮೂಗು ಹೊಸದಾಗಿ ಅರಳಿದ ಚಂಪಕ ಹೂವನ್ನು ಹೋಲುತ್ತದೆ."
+    },
+    "traditional_interpretation": {
+      "en": "A fresh champaka blossom becomes the poet's image for the gentle shape of her nose. The comparison invites careful, unhurried attention to the beauty of the sacred form.",
+      "kn": "ಹೊಸದಾಗಿ ಅರಳಿದ ಚಂಪಕ ಹೂವಿನ ನಾಜೂಕನ್ನು ದೇವಿಯ ಮೂಗಿನ ಸೊಬಗಿಗೆ ಹೋಲಿಸಲಾಗಿದೆ. ಈ ಉಪಮೆ ದೇವಿಯ ರೂಪವನ್ನು ಶಾಂತವಾಗಿ, ಗಮನವಿಟ್ಟು ಧ್ಯಾನಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ."
+    },
+    "notice": {
+      "en": "What shape does a fresh campaka blossom have?",
+      "kn": "ಹೊಸದಾಗಿ ಅರಳಿದ ಚಂಪಕ ಹೂವಿನ ಆಕಾರ ಹೇಗಿರುತ್ತದೆ?"
+    },
+    "components": [
+      {
+        "dev": "नव",
+        "iast": "nava",
+        "en": "new, fresh",
+        "kn": "ಹೊಸ"
+      },
+      {
+        "dev": "चम्पक",
+        "iast": "campaka",
+        "en": "champaka flower",
+        "kn": "ಚಂಪಕ ಹೂ"
+      },
+      {
+        "dev": "पुष्पाभ",
+        "iast": "puṣpābha",
+        "en": "flower-like",
+        "kn": "ಹೂವಿನಂತಹ"
+      },
+      {
+        "dev": "नासादण्ड",
+        "iast": "nāsādaṇḍa",
+        "en": "bridge of the nose",
+        "kn": "ಮೂಗಿನ ದಂಡ"
+      },
+      {
+        "dev": "विराजिता",
+        "iast": "virājitā",
+        "en": "radiant, beautiful",
+        "kn": "ಕಂಗೊಳಿಸುವವಳು"
+      }
+    ],
+    "sources": [
+      "https://manblunder.com/articlesview/lalitha-sahasranamam-19-25"
+    ],
+    "review_status": "editorial_draft"
+  },
+  {
+    "number": 20,
+    "essential_meaning": {
+      "en": "Her nose jewel is brighter than the stars.",
+      "kn": "ಆಕೆಯ ಮೂಗುತಿ ನಕ್ಷತ್ರಗಳ ಬೆಳಕನ್ನೂ ಮೀರಿಸಿ ಹೊಳೆಯುತ್ತದೆ."
+    },
+    "traditional_interpretation": {
+      "en": "The Goddess's ornament is imagined outshining the stars. This is a familiar poetic way to express extraordinary brightness and beauty, not a literal comparison of light levels.",
+      "kn": "ದೇವಿಯ ನಾಸಾಭರಣದ ಹೊಳಪು ನಕ್ಷತ್ರಗಳ ಕಾಂತಿಯನ್ನೂ ಮೀರಿಸುತ್ತದೆ ಎಂದು ಕವಿ ವರ್ಣಿಸುತ್ತಾನೆ. ಇದು ಅಸಾಧಾರಣ ಪ್ರಕಾಶವನ್ನು ಹೇಳುವ ಕಾವ್ಯೋಕ್ತಿ; ನಿಜವಾದ ಬೆಳಕಿನ ಅಳತೆಯಲ್ಲ."
+    },
+    "notice": {
+      "en": "Imagine one bright star and then an even brighter jewel.",
+      "kn": "ಒಂದು ಹೊಳೆಯುವ ನಕ್ಷತ್ರವನ್ನೂ, ಅದಕ್ಕಿಂತ ಕಾಂತಿಯುತ ಆಭರಣವನ್ನೂ ಕಲ್ಪಿಸಿಕೊಳ್ಳಿ."
+    },
+    "components": [
+      {
+        "dev": "तारा",
+        "iast": "tārā",
+        "en": "star",
+        "kn": "ನಕ್ಷತ್ರ"
+      },
+      {
+        "dev": "कान्ति",
+        "iast": "kānti",
+        "en": "radiance",
+        "kn": "ಕಾಂತಿ"
+      },
+      {
+        "dev": "तिरस्कारि",
+        "iast": "tiraskāri",
+        "en": "surpassing",
+        "kn": "ಮೀರಿಸುವ"
+      },
+      {
+        "dev": "नासाभरण",
+        "iast": "nāsābharaṇa",
+        "en": "nose ornament",
+        "kn": "ಮೂಗುತಿ"
+      },
+      {
+        "dev": "भासुरा",
+        "iast": "bhāsurā",
+        "en": "shining brightly",
+        "kn": "ಪ್ರಕಾಶಿಸುವವಳು"
+      }
+    ],
+    "sources": [
+      "https://manblunder.com/articlesview/lalitha-sahasranamam-19-25"
+    ],
+    "review_status": "editorial_draft"
+  },
+  {
+    "number": 21,
+    "essential_meaning": {
+      "en": "Her ears are lovely with clusters of kadamba flowers.",
+      "kn": "ಆಕೆಯ ಕಿವಿಗಳನ್ನು ಕದಂಬದ ಹೂಗೊಂಚಲುಗಳು ಅಲಂಕರಿಸಿವೆ."
+    },
+    "traditional_interpretation": {
+      "en": "Clusters of kadamba blossoms are arranged like ear ornaments. Tradition associates the Goddess with flowering kadamba groves; the image joins the beauty of nature to her divine presence.",
+      "kn": "ಕದಂಬ ಹೂಗಳ ಗೊಂಚಲುಗಳು ದೇವಿಯ ಕರ್ಣಾಭರಣಗಳಂತೆ ಶೋಭಿಸುತ್ತವೆ. ಪಾರಂಪರಿಕ ವರ್ಣನೆಗಳಲ್ಲಿ ಆಕೆಯನ್ನು ಕದಂಬವನದೊಂದಿಗೆ ಸಂಬಂಧಿಸಲಾಗಿದೆ; ಹೀಗೆ ಪ್ರಕೃತಿಯ ಸೌಂದರ್ಯ ಆಕೆಯ ಸಾನ್ನಿಧ್ಯವನ್ನು ನೆನಪಿಸುತ್ತದೆ."
+    },
+    "notice": {
+      "en": "‘Mañjarī’ means a group of flowers. Find a flower cluster near you.",
+      "kn": "‘ಮಂಜರಿ’ ಎಂದರೆ ಹೂಗೊಂಚಲು. ನಿಮ್ಮ ಸುತ್ತಲೂ ಒಂದು ಹೂಗೊಂಚಲನ್ನು ಹುಡುಕಿ."
+    },
+    "components": [
+      {
+        "dev": "कदम्ब",
+        "iast": "kadamba",
+        "en": "kadamba tree",
+        "kn": "ಕದಂಬ ಮರ"
+      },
+      {
+        "dev": "मञ्जरी",
+        "iast": "mañjarī",
+        "en": "cluster of blossoms",
+        "kn": "ಹೂಗೊಂಚಲು"
+      },
+      {
+        "dev": "कॢप्त",
+        "iast": "kḷpta",
+        "en": "arranged, fashioned",
+        "kn": "ಜೋಡಿಸಿದ"
+      },
+      {
+        "dev": "कर्णपूर",
+        "iast": "karṇapūra",
+        "en": "ear ornament of flowers",
+        "kn": "ಕಿವಿಯ ಹೂವಿನ ಅಲಂಕಾರ"
+      },
+      {
+        "dev": "मनोहरा",
+        "iast": "manoharā",
+        "en": "delightful",
+        "kn": "ಮನೋಹರಳಾದವಳು"
+      }
+    ],
+    "sources": [
+      "https://manblunder.com/articlesview/lalitha-sahasranamam-19-25"
+    ],
+    "review_status": "editorial_draft"
+  },
+  {
+    "number": 22,
+    "essential_meaning": {
+      "en": "The sun and moon form her pair of earrings.",
+      "kn": "ಸೂರ್ಯ ಮತ್ತು ಚಂದ್ರರು ಆಕೆಯ ಜೋಡಿ ಕಿವಿಯೋಲೆಗಳಾಗಿದ್ದಾರೆ."
+    },
+    "traditional_interpretation": {
+      "en": "The cosmic sun and moon are pictured as her two earrings. Day, night and the passage of time become small ornaments of the Divine Mother, showing how vast her presence is understood to be.",
+      "kn": "ವಿಶ್ವದ ಸೂರ್ಯ ಮತ್ತು ಚಂದ್ರರನ್ನು ದೇವಿಯ ಎರಡು ಕಿವಿಯೋಲೆಗಳೆಂದು ಚಿತ್ರಿಸಲಾಗಿದೆ. ಹಗಲು, ರಾತ್ರಿ ಮತ್ತು ಕಾಲದ ಚಲನೆಯೇ ಆಕೆಯ ಆಭರಣಗಳಾದಂತೆ; ಆಕೆಯ ವಿಶ್ವವ್ಯಾಪಕ ರೂಪವನ್ನು ಇದು ಸೂಚಿಸುತ್ತದೆ."
+    },
+    "notice": {
+      "en": "Which gives us daylight, and which shines at night?",
+      "kn": "ಹಗಲು ಬೆಳಕನ್ನು ಯಾವುದು ನೀಡುತ್ತದೆ? ರಾತ್ರಿಯಲ್ಲಿ ಯಾವುದು ಹೊಳೆಯುತ್ತದೆ?"
+    },
+    "components": [
+      {
+        "dev": "ताटङ्क",
+        "iast": "tāṭaṅka",
+        "en": "large earring",
+        "kn": "ದೊಡ್ಡ ಕಿವಿಯೋಲೆ"
+      },
+      {
+        "dev": "युगली",
+        "iast": "yugalī",
+        "en": "pair",
+        "kn": "ಜೋಡಿ"
+      },
+      {
+        "dev": "भूत",
+        "iast": "bhūta",
+        "en": "become",
+        "kn": "ಆಗಿರುವ"
+      },
+      {
+        "dev": "तपन",
+        "iast": "tapana",
+        "en": "sun",
+        "kn": "ಸೂರ್ಯ"
+      },
+      {
+        "dev": "उडुप",
+        "iast": "uḍupa",
+        "en": "moon",
+        "kn": "ಚಂದ್ರ"
+      },
+      {
+        "dev": "मण्डल",
+        "iast": "maṇḍala",
+        "en": "disc, circle",
+        "kn": "ಮಂಡಲ; ವೃತ್ತ"
+      }
+    ],
+    "sources": [
+      "https://manblunder.com/articlesview/lalitha-sahasranamam-19-25"
+    ],
+    "review_status": "editorial_draft"
+  },
+  {
+    "number": 23,
+    "essential_meaning": {
+      "en": "Her cheeks surpass the luster of a polished red-gem mirror.",
+      "kn": "ಕೆಂಪು ರತ್ನದ ಕನ್ನಡಿಗಿಂತಲೂ ಆಕೆಯ ಕೆನ್ನೆಗಳು ಹೊಳೆಯುತ್ತವೆ."
+    },
+    "traditional_interpretation": {
+      "en": "Her luminous cheeks are compared with a polished padmarāga gem and are said to be even more radiant. The repeated rosy hues tie together the gentle imagery of this section of the hymn.",
+      "kn": "ಹೊಳೆಯುವ ಪದ್ಮರಾಗ ರತ್ನದ ಕನ್ನಡಿಗೆ ದೇವಿಯ ಕೆನ್ನೆಗಳನ್ನು ಹೋಲಿಸಿ, ಅವು ಇನ್ನಷ್ಟು ಕಾಂತಿಯುತವೆಂದು ವರ್ಣಿಸಲಾಗಿದೆ. ಮರುಕಳಿಸುವ ಅರುಣಬಣ್ಣದ ಚಿತ್ರಗಳು ಈ ಭಾಗದ ಮೃದು ಸೊಬಗನ್ನು ಒಟ್ಟುಗೂಡಿಸುತ್ತವೆ."
+    },
+    "notice": {
+      "en": "What happens when sunlight touches a polished stone?",
+      "kn": "ಹೊಳಪಿನ ಕಲ್ಲಿನ ಮೇಲೆ ಸೂರ್ಯರಶ್ಮಿ ಬಿದ್ದಾಗ ಏನಾಗುತ್ತದೆ?"
+    },
+    "components": [
+      {
+        "dev": "पद्मराग",
+        "iast": "padmarāga",
+        "en": "reddish gem, ruby",
+        "kn": "ಪದ್ಮರಾಗ ರತ್ನ"
+      },
+      {
+        "dev": "शिला",
+        "iast": "śilā",
+        "en": "stone",
+        "kn": "ಶಿಲೆ"
+      },
+      {
+        "dev": "आदर्श",
+        "iast": "ādarśa",
+        "en": "mirror",
+        "kn": "ಕನ್ನಡಿ"
+      },
+      {
+        "dev": "परिभावि",
+        "iast": "paribhāvi",
+        "en": "outshining",
+        "kn": "ಮೀರಿಸುವ"
+      },
+      {
+        "dev": "कपोलभूः",
+        "iast": "kapolabhūḥ",
+        "en": "cheek region",
+        "kn": "ಕೆನ್ನೆಗಳ ಭಾಗ"
+      }
+    ],
+    "sources": [
+      "https://manblunder.com/articlesview/lalitha-sahasranamam-19-25"
+    ],
+    "review_status": "editorial_draft"
+  },
+  {
+    "number": 24,
+    "essential_meaning": {
+      "en": "Her lips outshine new coral and ripe red bimba fruit.",
+      "kn": "ಹೊಸ ಹವಳ ಮತ್ತು ಕೆಂಪು ಬಿಂಬಫಲದ ಸೊಬಗನ್ನೂ ಆಕೆಯ ತುಟಿಗಳು ಮೀರಿಸುತ್ತವೆ."
+    },
+    "traditional_interpretation": {
+      "en": "Fresh coral and the red bimba fruit are classical poetic comparisons for lips. Their color and delicacy express the beauty of the Goddess's face; the comparison is a literary image.",
+      "kn": "ತಾಜಾ ಹವಳ ಮತ್ತು ಕೆಂಪು ಬಿಂಬಫಲವು ತುಟಿಗಳಿಗೆ ನೀಡುವ ಸಂಸ್ಕೃತ ಕಾವ್ಯದ ಉಪಮಾನಗಳು. ಅವುಗಳ ಬಣ್ಣ ಮತ್ತು ನಾಜೂಕು ದೇವಿಯ ಮುಖಸೌಂದರ್ಯವನ್ನು ಚಿತ್ರಿಸುತ್ತವೆ; ಇದು ಸಾಹಿತ್ಯದ ರೂಪಕ."
+    },
+    "notice": {
+      "en": "Which color connects coral and ripe bimba fruit?",
+      "kn": "ಹವಳ ಮತ್ತು ಮಾಗಿದ ಬಿಂಬಫಲದಲ್ಲಿ ಯಾವ ಬಣ್ಣ ಸಾಮಾನ್ಯ?"
+    },
+    "components": [
+      {
+        "dev": "नव",
+        "iast": "nava",
+        "en": "fresh",
+        "kn": "ಹೊಸ"
+      },
+      {
+        "dev": "विद्रुम",
+        "iast": "vidruma",
+        "en": "coral",
+        "kn": "ಹವಳ"
+      },
+      {
+        "dev": "बिम्ब",
+        "iast": "bimba",
+        "en": "bimba fruit",
+        "kn": "ಬಿಂಬಫಲ"
+      },
+      {
+        "dev": "श्री",
+        "iast": "śrī",
+        "en": "beauty",
+        "kn": "ಸೊಬಗು"
+      },
+      {
+        "dev": "न्यक्कारि",
+        "iast": "nyakkāri",
+        "en": "surpassing",
+        "kn": "ಮೀರಿಸುವ"
+      },
+      {
+        "dev": "रदनच्छदा",
+        "iast": "radanacchadā",
+        "en": "lips, covering the teeth",
+        "kn": "ತುಟಿಗಳು"
+      }
+    ],
+    "sources": [
+      "https://manblunder.com/articlesview/lalitha-sahasranamam-19-25"
+    ],
+    "review_status": "editorial_draft"
+  },
+  {
+    "number": 25,
+    "essential_meaning": {
+      "en": "Her two rows of teeth resemble sprouts of pure knowledge.",
+      "kn": "ಶುದ್ಧ ವಿದ್ಯೆಯ ಮೊಳಕೆಗಳಂತೆ ಆಕೆಯ ಎರಡು ಸಾಲಿನ ಹಲ್ಲುಗಳು ಹೊಳೆಯುತ್ತವೆ."
+    },
+    "traditional_interpretation": {
+      "en": "Her gleaming teeth are compared to tender sprouts of śuddhavidyā, pure knowledge. Traditional interpretation finds in the two rows an image of wisdom unfolding and of underlying unity. The description now leads toward the sweetness of divine speech.",
+      "kn": "ದೇವಿಯ ಹಲ್ಲುಗಳನ್ನು ಶುದ್ಧವಿದ್ಯೆಯ ಎಳೆಯ ಮೊಳಕೆಗಳಿಗೆ ಹೋಲಿಸಲಾಗಿದೆ. ಎರಡು ಸಾಲುಗಳಲ್ಲಿ ಪಾರಂಪರಿಕ ವ್ಯಾಖ್ಯಾನವು ಜ್ಞಾನೋದಯ ಮತ್ತು ಆಂತರಿಕ ಏಕತೆಯ ರೂಪಕವನ್ನು ಕಾಣುತ್ತದೆ. ಈ ವರ್ಣನೆಯು ಮುಂದಿನ ದೇವಿಯ ವಾಣಿಮಾಧುರ್ಯದ ಕಡೆಗೆ ಸಾಗುತ್ತದೆ."
+    },
+    "notice": {
+      "en": "A tiny sprout grows over time. Learning grows with practice too.",
+      "kn": "ಚಿಕ್ಕ ಮೊಳಕೆ ನಿಧಾನವಾಗಿ ಬೆಳೆಯುತ್ತದೆ. ಅಭ್ಯಾಸದಿಂದ ಕಲಿಕೆಯೂ ಬೆಳೆಯುತ್ತದೆ."
+    },
+    "components": [
+      {
+        "dev": "शुद्ध",
+        "iast": "śuddha",
+        "en": "pure",
+        "kn": "ಶುದ್ಧ"
+      },
+      {
+        "dev": "विद्या",
+        "iast": "vidyā",
+        "en": "knowledge",
+        "kn": "ವಿದ್ಯೆ"
+      },
+      {
+        "dev": "अङ्कुर",
+        "iast": "aṅkura",
+        "en": "sprout",
+        "kn": "ಮೊಳಕೆ"
+      },
+      {
+        "dev": "आकार",
+        "iast": "ākāra",
+        "en": "form, shape",
+        "kn": "ಆಕಾರ"
+      },
+      {
+        "dev": "द्विज",
+        "iast": "dvija",
+        "en": "tooth, literally twice-born",
+        "kn": "ಹಲ್ಲು; ಎರಡು ಬಾರಿ ಹುಟ್ಟುವದು"
+      },
+      {
+        "dev": "पङ्क्ति",
+        "iast": "paṅkti",
+        "en": "row",
+        "kn": "ಸಾಲು"
+      },
+      {
+        "dev": "द्वय",
+        "iast": "dvaya",
+        "en": "two, pair",
+        "kn": "ಎರಡು"
+      },
+      {
+        "dev": "उज्ज्वला",
+        "iast": "ujjvalā",
+        "en": "radiant",
+        "kn": "ಪ್ರಕಾಶಿಸುವವಳು"
+      }
+    ],
+    "sources": [
+      "https://manblunder.com/articlesview/lalitha-sahasranamam-19-25"
+    ],
+    "review_status": "editorial_draft"
+  },
+  {
+    "number": 26,
+    "essential_meaning": {
+      "en": "The fragrance of her camphor-betel preparation reaches every direction.",
+      "kn": "ಕರ್ಪೂರ ಮಿಶ್ರಿತ ತಾಂಬೂಲದ ಸುವಾಸನೆಯು ಎಲ್ಲ ದಿಕ್ಕುಗಳಿಗೂ ಹರಡುತ್ತದೆ."
+    },
+    "traditional_interpretation": {
+      "en": "The delightful aroma of fragrant betel and camphor is imagined spreading in every direction. Devotional commentary sees this sweetness as drawing the seeker's attention toward the Goddess; it also introduces the beautiful imagery of her speech.",
+      "kn": "ಕರ್ಪೂರ ಮಿಶ್ರಿತ ಸುಗಂಧ ತಾಂಬೂಲದ ಪರಿಮಳವು ಎಲ್ಲ ದಿಕ್ಕುಗಳಿಗೂ ಹರಡುವಂತೆ ವರ್ಣಿಸಲಾಗಿದೆ. ಭಕ್ತಿಪರ ವ್ಯಾಖ್ಯಾನದಲ್ಲಿ ಈ ಮಾಧುರ್ಯವು ಸಾಧಕನ ಗಮನವನ್ನು ದೇವಿಯತ್ತ ಸೆಳೆಯುತ್ತದೆ; ಮುಂದಿನ ವಾಣಿಸೌಂದರ್ಯದ ಚಿತ್ರಕ್ಕೆ ಇದು ಮುನ್ನುಡಿ."
+    },
+    "notice": {
+      "en": "Can a familiar fragrance remind you of someone you love?",
+      "kn": "ಪರಿಚಿತ ಸುಗಂಧವು ನಿಮಗೆ ಪ್ರಿಯ ವ್ಯಕ್ತಿಯನ್ನು ನೆನಪಿಸುತ್ತದೆಯೇ?"
+    },
+    "components": [
+      {
+        "dev": "कर्पूर",
+        "iast": "karpūra",
+        "en": "camphor",
+        "kn": "ಕರ್ಪೂರ"
+      },
+      {
+        "dev": "वीटिका",
+        "iast": "vīṭikā",
+        "en": "prepared betel morsel",
+        "kn": "ತಾಂಬೂಲದ ಬೀಡಾ"
+      },
+      {
+        "dev": "आमोद",
+        "iast": "āmoda",
+        "en": "pleasant fragrance",
+        "kn": "ಸುವಾಸನೆ"
+      },
+      {
+        "dev": "समाकर्षि",
+        "iast": "samākarṣi",
+        "en": "attracting",
+        "kn": "ಆಕರ್ಷಿಸುವ"
+      },
+      {
+        "dev": "दिगन्तरा",
+        "iast": "digantarā",
+        "en": "all directions",
+        "kn": "ಎಲ್ಲ ದಿಕ್ಕುಗಳು"
+      }
+    ],
+    "sources": [
+      "https://manblunder.com/articlesview/lalitha-sahasranamam-26-31"
+    ],
+    "review_status": "editorial_draft"
+  }
+]
