@@ -103,15 +103,61 @@ function render(){
  loadAudio();
 }
 function loadAudio(){
- document.querySelectorAll("[data-audio-path]").forEach(async e=>{
-  const path=e.dataset.audioPath;
+ document.querySelectorAll("[data-audio-path]").forEach(async placeholder=>{
+  const path=placeholder.dataset.audioPath;
   try{
-   const r=await fetch(path,{method:"HEAD"});
-   if(!r.ok||!e.isConnected)return;
-   const a=document.createElement("audio");a.controls=true;a.preload="none";a.src=path;
-   a.setAttribute("aria-label",langText("Chant recording","ಶ್ಲೋಕದ ಧ್ವನಿಮುದ್ರಣ"));
-   e.replaceChildren(a);
-  }catch(_){/* Recording will be uploaded later. */}
+   const response=await fetch(path,{method:"HEAD"});
+   if(!response.ok||!placeholder.isConnected)return;
+
+   const holder=document.createElement("div");
+   holder.className="audio-player";
+   const player=document.createElement("audio");
+   player.controls=true;
+   player.preload="none";
+   player.src=path;
+   player.setAttribute("aria-label",langText("Chant recording","ಶ್ಲೋಕದ ಧ್ವನಿಮುದ್ರಣ"));
+
+   const toolbar=document.createElement("div");
+   toolbar.className="audio-toolbar";
+   function setting(labelText,ariaLabel,choices){
+    const label=document.createElement("label");
+    label.className="audio-setting";
+    const caption=document.createElement("span");
+    caption.textContent=labelText;
+    const select=document.createElement("select");
+    select.setAttribute("aria-label",ariaLabel);
+    for(const item of choices){
+     const option=document.createElement("option");
+     option.value=item[0];option.textContent=item[1];select.appendChild(option);
+    }
+    label.append(caption,select);
+    toolbar.appendChild(label);
+    return select;
+   }
+   const speed=setting(langText("Speed","ವೇಗ"),langText("Playback speed","ಪ್ಲೇಬ್ಯಾಕ್ ವೇಗ"),[
+    ["0.75","0.75×"],["0.9","0.9×"],["1","1×"],["1.1","1.1×"],["1.25","1.25×"],["1.5","1.5×"]
+   ]);
+   const repeat=setting(langText("Repeat","ಪುನರಾವರ್ತನೆ"),langText("Number of plays","ಪುನರಾವರ್ತನೆಗಳ ಸಂಖ್ಯೆ"),[
+    ["1",langText("Once","ಒಮ್ಮೆ")],["2",langText("Twice","ಎರಡು ಬಾರಿ")],
+    ["3",langText("3 times","ಮೂರು ಬಾರಿ")],["loop",langText("Continuous","ನಿರಂತರ")]
+   ]);
+   let finished=0;
+   speed.addEventListener("change",()=>{player.playbackRate=Number(speed.value)});
+   repeat.addEventListener("change",()=>{finished=0;player.loop=repeat.value==="loop"});
+   player.addEventListener("ended",()=>{
+    if(repeat.value==="loop")return;
+    finished+=1;
+    if(finished<Number(repeat.value)){
+     player.currentTime=0;
+     const restarting=player.play();
+     if(restarting&&typeof restarting.catch==="function")restarting.catch(()=>{});
+    }else{
+     finished=0;
+    }
+   });
+   holder.append(player,toolbar);
+   placeholder.replaceWith(holder);
+  }catch(_){/* Keep the placeholder until a recording is uploaded. */}
  });
 }
 function renderIndex(){
