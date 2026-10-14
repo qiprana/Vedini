@@ -1,0 +1,218 @@
+{
+  "id": "lalita-002",
+  "collection": "lalita-sahasranama",
+  "section": "main-stotram",
+  "verse_number": 2,
+  "sanskrit": [
+    "उद्यद्भानुसहस्राभा चतुर्बाहुसमन्विता ।",
+    "रागस्वरूपपाशाढ्या क्रोधाकाराङ्कुशोज्ज्वला ॥ २ ॥"
+  ],
+  "iast": [
+    "Udyadbhānusahasrābhā Caturbāhusamanvitā ।",
+    "Rāgasvarūpapāśāḍhyā Krodhākārāṅkuśojjvalā ॥ 2 ॥"
+  ],
+  "names": [
+    {
+      "number": 6,
+      "sanskrit": "उद्यद्भानुसहस्राभा",
+      "iast": "Udyadbhānusahasrābhā",
+      "english": "Radiant like a thousand rising suns",
+      "kannada": "ಉದಯಿಸುವ ಸಾವಿರ ಸೂರ್ಯರಂತೆ ಕಾಂತಿಯುಳ್ಳವಳು",
+      "kannada_script": "ಉದ್ಯದ್ಭಾನು-ಸಹಸ್ರಾಭಾ",
+      "display_devanagari": "उद्यद्भानु-सहस्राभा",
+      "display_iast": "udyadbhānu-sahasrābhā",
+      "review_status": "draft"
+    },
+    {
+      "number": 7,
+      "sanskrit": "चतुर्बाहुसमन्विता",
+      "iast": "Caturbāhusamanvitā",
+      "english": "Endowed with four arms",
+      "kannada": "ನಾಲ್ಕು ಭುಜಗಳನ್ನು ಹೊಂದಿರುವವಳು",
+      "kannada_script": "ಚತುರ್ಬಾಹುಸಮನ್ವಿತಾ",
+      "review_status": "draft"
+    },
+    {
+      "number": 8,
+      "sanskrit": "रागस्वरूपपाशाढ्या",
+      "iast": "Rāgasvarūpapāśāḍhyā",
+      "english": "Bearing a noose whose nature is attachment or love",
+      "kannada": "ರಾಗಸ್ವರೂಪವಾದ ಪಾಶವನ್ನು ಧರಿಸಿರುವವಳು",
+      "kannada_script": "ರಾಗಸ್ವರೂಪಪಾಶಾಢ್ಯಾ",
+      "review_status": "draft"
+    },
+    {
+      "number": 9,
+      "sanskrit": "क्रोधाकाराङ्कुशोज्ज्वला",
+      "iast": "Krodhākārāṅkuśojjvalā",
+      "english": "Resplendent with a goad shaped as anger",
+      "kannada": "ಕ್ರೋಧರೂಪವಾದ ಅಂಕುಶದಿಂದ ಶೋಭಿಸುವವಳು",
+      "kannada_script": "ಕ್ರೋಧಾಕಾರಾಙ್ಕುಶೋಜ್ಜ್ವಲಾ",
+      "review_status": "draft"
+    }
+  ],
+  "word_meanings": [
+    {
+      "sanskrit": "उद्यद्भानुसहस्राभा",
+      "iast": "Udyadbhānusahasrābhā",
+      "english": "Radiant like a thousand rising suns",
+      "kannada": "ಉದಯಿಸುವ ಸಾವಿರ ಸೂರ್ಯರಂತೆ ಕಾಂತಿಯುಳ್ಳವಳು",
+      "components": [
+        {
+          "iast": "Udyat",
+          "english": "Rising",
+          "kannada": "ಉದಯಿಸುವ",
+          "sanskrit": "उद्यत्"
+        },
+        {
+          "iast": "Bhānu",
+          "english": "Sun",
+          "kannada": "ಸೂರ್ಯ",
+          "sanskrit": "भानु"
+        },
+        {
+          "iast": "Sahasra",
+          "english": "Thousand",
+          "kannada": "ಸಾವಿರ",
+          "sanskrit": "सहस्र"
+        },
+        {
+          "iast": "Ābhā",
+          "english": "Radiance; appearance",
+          "kannada": "ಕಾಂತಿ",
+          "sanskrit": "आभा"
+        }
+      ]
+    },
+    {
+      "sanskrit": "चतुर्बाहुसमन्विता",
+      "iast": "Caturbāhusamanvitā",
+      "english": "Endowed with four arms",
+      "kannada": "ನಾಲ್ಕು ಭುಜಗಳನ್ನು ಹೊಂದಿರುವವಳು",
+      "components": [
+        {
+          "iast": "Catur",
+          "english": "Four",
+          "kannada": "ನಾಲ್ಕು",
+          "sanskrit": "चतुर्"
+        },
+        {
+          "iast": "Bāhu",
+          "english": "Arm",
+          "kannada": "ಭುಜ",
+          "sanskrit": "बाहु"
+        },
+        {
+          "iast": "Samanvitā",
+          "english": "Endowed with",
+          "kannada": "ಹೊಂದಿರುವವಳು",
+          "sanskrit": "समन्विता"
+        }
+      ]
+    },
+    {
+      "sanskrit": "रागस्वरूपपाशाढ्या",
+      "iast": "Rāgasvarūpapāśāḍhyā",
+      "english": "Bearing a noose whose nature is attachment or love",
+      "kannada": "ರಾಗಸ್ವರೂಪವಾದ ಪಾಶವನ್ನು ಧರಿಸಿರುವವಳು",
+      "components": [
+        {
+          "iast": "Rāga",
+          "english": "Attachment; affection",
+          "kannada": "ರಾಗ; ಅನುರಾಗ",
+          "sanskrit": "राग"
+        },
+        {
+          "iast": "Svarūpa",
+          "english": "Essential form",
+          "kannada": "ಸ್ವರೂಪ",
+          "sanskrit": "स्वरूप"
+        },
+        {
+          "iast": "Pāśa",
+          "english": "Noose",
+          "kannada": "ಪಾಶ",
+          "sanskrit": "पाश"
+        },
+        {
+          "iast": "Āḍhyā",
+          "english": "Endowed with",
+          "kannada": "ಹೊಂದಿರುವವಳು",
+          "sanskrit": "आढ्या"
+        }
+      ]
+    },
+    {
+      "sanskrit": "क्रोधाकाराङ्कुशोज्ज्वला",
+      "iast": "Krodhākārāṅkuśojjvalā",
+      "english": "Resplendent with a goad shaped as anger",
+      "kannada": "ಕ್ರೋಧರೂಪವಾದ ಅಂಕುಶದಿಂದ ಶೋಭಿಸುವವಳು",
+      "components": [
+        {
+          "iast": "Krodha",
+          "english": "Anger",
+          "kannada": "ಕ್ರೋಧ",
+          "sanskrit": "क्रोध"
+        },
+        {
+          "iast": "Ākāra",
+          "english": "Form",
+          "kannada": "ಆಕಾರ; ರೂಪ",
+          "sanskrit": "आकार"
+        },
+        {
+          "iast": "Aṅkuśa",
+          "english": "Elephant goad",
+          "kannada": "ಅಂಕುಶ",
+          "sanskrit": "अङ्कुश"
+        },
+        {
+          "iast": "Ujjvalā",
+          "english": "Radiant; shining",
+          "kannada": "ಪ್ರಕಾಶಿಸುವವಳು",
+          "sanskrit": "उज्ज्वला"
+        }
+      ]
+    }
+  ],
+  "meaning": {
+    "english": "She shines like a thousand rising suns and has four arms. She bears the noose associated with attachment and the radiant goad associated with anger.",
+    "kannada": "ಅವಳು ಉದಯಿಸುವ ಸಾವಿರ ಸೂರ್ಯರಂತೆ ಪ್ರಕಾಶಿಸುತ್ತಾಳೆ; ನಾಲ್ಕು ಭುಜಗಳನ್ನು ಹೊಂದಿದ್ದಾಳೆ. ರಾಗಸ್ವರೂಪದ ಪಾಶವನ್ನೂ ಕ್ರೋಧರೂಪದ ಪ್ರಕಾಶಮಾನ ಅಂಕುಶವನ್ನೂ ಧರಿಸಿದ್ದಾಳೆ."
+  },
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "draft",
+  "sources": [
+    {
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "reading; IAST cross-check"
+    },
+    {
+      "url": "https://sanskritdocuments.org/doc_devii/lalita1000.html",
+      "role": "name meanings cross-check"
+    },
+    {
+      "url": "https://manblunder.com/articlesview/lalitha-sahasranamam-1-2",
+      "role": "interpretive context for first names"
+    }
+  ],
+  "reading": {
+    "devanagari": [
+      "उद्यद्भानु-सहस्राभा चतुर्बाहु-समन्विता ।",
+      "रागस्वरूप-पाशाढ्या क्रोधाकाराङ्कुशोज्ज्वला ॥ २ ॥"
+    ],
+    "iast": [
+      "udyadbhānu-sahasrābhā caturbāhu-samanvitā ।",
+      "rāgasvarūpa-pāśāḍhyā krodhākārāṅkuśojjvalā ॥ 2 ॥"
+    ],
+    "kannada": [
+      "ಉದ್ಯದ್ಭಾನು-ಸಹಸ್ರಾಭಾ ಚತುರ್ಬಾಹು-ಸಮನ್ವಿತಾ ।",
+      "ರಾಗಸ್ವರೂಪ-ಪಾಶಾಢ್ಯಾ ಕ್ರೋಧಾಕಾರಾಂಕುಶೋಜ್ಜ್ವಲಾ ॥ ೨ ॥"
+    ]
+  },
+  "reading_style": "book-hyphenated",
+  "reading_note": "Reading-style compound division follows the supplied printed book, not full grammatical sandhi separation. Review draft.",
+  "content_policy": "Draft meanings are original concise editorial paraphrases; verify against traditional commentary."
+}
