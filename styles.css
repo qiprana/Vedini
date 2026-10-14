@@ -95,3 +95,12 @@ button:focus-visible,summary:focus-visible,a:focus-visible,input:focus-visible{o
  .word-translation{font-size:15px}
 }
 @media(max-width:480px){.word-row{grid-template-columns:1fr;gap:2px}}
+
+
+/* Chant audio controls */
+.audio-player{display:flex;align-items:center;flex-wrap:wrap;gap:9px 15px;max-width:100%}
+.audio-player audio{height:35px;width:min(290px,100%);max-width:100%}
+.audio-toolbar{display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px}
+.audio-setting{display:inline-flex;align-items:center;gap:5px;font:600 12px/1.4 system-ui,sans-serif;color:#30483b}
+.audio-setting select{background:#fff;border:1px solid #718a79;color:#243b2c;border-radius:7px;padding:6px 7px;font:13px/1.4 system-ui,sans-serif;min-height:34px}
+@media(max-width:680px){.card-head{align-items:flex-start;flex-wrap:wrap}.audio-player{width:100%}.audio-player audio{width:100%}.audio-toolbar{width:100%}}
