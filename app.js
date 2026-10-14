@@ -95,9 +95,9 @@ function render(){
  $("#dhyana-cards").innerHTML=dh.map(v=>card(v,true)).join("");
  $("#verse-cards").innerHTML=vh.map(v=>card(v,false)).join("");
  restoreDetails(opened);
- msg("#result-note",q?((vh.length+dh.length)+" matching sections"): "Ślokas 1–15 with meanings · 180-slot index · Future verses to follow",q?((vh.length+dh.length)+" ಹೊಂದಾಣಿಕೆಯ ವಿಭಾಗಗಳು"):"೧–೧೫ ಶ್ಲೋಕಗಳು ಮತ್ತು ಅರ್ಥಗಳು · ೧೮೦ ಸ್ಥಾನಗಳ ಸೂಚಿ · ಉಳಿದ ಶ್ಲೋಕಗಳು ನಂತರ");
+ msg("#result-note",q?((vh.length+dh.length)+" matching sections"): "Ślokas 1–20 with meanings · 180-slot index · Future verses to follow",q?((vh.length+dh.length)+" ಹೊಂದಾಣಿಕೆಯ ವಿಭಾಗಗಳು"):"೧–೨೦ ಶ್ಲೋಕಗಳು ಮತ್ತು ಅರ್ಥಗಳು · ೧೮೦ ಸ್ಥಾನಗಳ ಸೂಚಿ · ಉಳಿದ ಶ್ಲೋಕಗಳು ನಂತರ");
  msg("#dhyana-heading","Dhyāna Ślokas","ಧ್ಯಾನ ಶ್ಲೋಕಗಳು");
- msg("#main-heading","Lalitā Sahasranāma · First 15 Ślokas","ಲಲಿತಾ ಸಹಸ್ರನಾಮ · ಮೊದಲ ೧೫ ಶ್ಲೋಕಗಳು");
+ msg("#main-heading","Lalitā Sahasranāma · First 20 Ślokas","ಲಲಿತಾ ಸಹಸ್ರನಾಮ · ಮೊದಲ ೨೦ ಶ್ಲೋಕಗಳು");
  msg("#study-languages-label","Reading & meaning:","ಲಿಪಿ ಮತ್ತು ಅರ್ಥ:");
  msg("#expand-all","Open all name meanings","ಎಲ್ಲ ನಾಮಗಳ ಅರ್ಥ ತೆರೆಯಿರಿ");
  loadAudio();
@@ -134,7 +134,7 @@ function switchLanguage(kn){
  render();
 }
 async function init(){
- const paths=["lalita/dhyana.json","lalita/names-interpretations-draft.json","lalita/study-names-011-018.json","lalita/study-names-019-026.json","lalita/study-dhyana-01-02.json","lalita/study-dhyana-03-04.json","lalita/study-verses-001-010.json",...Array.from({length:15},(_,i)=>"lalita/verses/verse-"+String(i+1).padStart(3,"0")+".json")];
+ const paths=["lalita/dhyana.json","lalita/names-interpretations-draft.json","lalita/study-names-011-018.json","lalita/study-names-019-026.json","lalita/study-dhyana-01-02.json","lalita/study-dhyana-03-04.json","lalita/study-verses-001-010.json",...Array.from({length:20},(_,i)=>"lalita/verses/verse-"+String(i+1).padStart(3,"0")+".json")];
  try{
  const files=await Promise.all(paths.map(fetchJSON));
  dhyana=files[0];
@@ -146,7 +146,7 @@ async function init(){
  verses=files.slice(7);
  let index=0;
  verses.forEach(v=>{if(v.study?.traditional_interpretation)verseData[v.verse_number]=v.study;(v.names||[]).forEach(n=>{n.studyNumber=++index;if(n.essential_meaning&&n.traditional_interpretation)nameData[n.studyNumber]={...(nameData[n.studyNumber]||{}),...n};});});
- if(index!==36)throw new Error("Expected 36 names in the first 15 verses; found "+index);
+ if(index!==48)throw new Error("Expected 48 names in the first 20 verses; found "+index);
  renderIndex();render();
  }catch(err){
  const n=$("#result-note");if(n)n.textContent="Unable to load study content: "+err.message;
