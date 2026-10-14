@@ -1,0 +1,62 @@
+{
+  "id": "lalita-006",
+  "collection": "lalita-sahasranama",
+  "section": "main-stotram",
+  "verse_number": 6,
+  "reading": {
+    "devanagari": [
+      "वदनस्मर-माङ्गल्य-गृहतोरण-चिल्लिका ।",
+      "वक्त्रलक्ष्मी-परीवाह-चलन्मीनाभ-लोचना ॥ ६ ॥"
+    ],
+    "iast": [
+      "vadanasmara-māṅgalya-gṛhatoraṇa-cillikā ।",
+      "vaktralakṣmī-parīvāha-calanmīnābha-locanā ॥ 6 ॥"
+    ],
+    "kannada": [
+      "ವದನಸ್ಮರ-ಮಾಙ್ಗಲ್ಯ-ಗೃಹತೋರಣ-ಚಿಲ್ಲಿಕಾ ।",
+      "ವಕ್ತ್ರಲಕ್ಷ್ಮೀ-ಪರೀವಾಹ-ಚಲನ್ಮೀನಾಭ-ಲೋಚನಾ ॥ ६ ॥"
+    ]
+  },
+  "names": [
+    {
+      "number": null,
+      "sanskrit": "वदनस्मरमाङ्गल्यगृहतोरणचिल्लिका",
+      "display_devanagari": "वदनस्मर-माङ्गल्य-गृहतोरण-चिल्लिका",
+      "iast": "vadanasmaramāṅgalyagṛhatoraṇacillikā",
+      "display_iast": "vadanasmara-māṅgalya-gṛhatoraṇa-cillikā",
+      "kannada_script": "ವದನಸ್ಮರ-ಮಾಙ್ಗಲ್ಯ-ಗೃಹತೋರಣ-ಚಿಲ್ಲಿಕಾ",
+      "english": null,
+      "kannada": null,
+      "review_status": "meaning_pending",
+      "notes": "Precise Sahasranāma name number and commentary to be verified against name list."
+    },
+    {
+      "number": null,
+      "sanskrit": "वक्त्रलक्ष्मीपरीवाहचलन्मीनाभलोचना",
+      "display_devanagari": "वक्त्रलक्ष्मी-परीवाह-चलन्मीनाभ-लोचना",
+      "iast": "vaktralakṣmīparīvāhacalanmīnābhalocanā",
+      "display_iast": "vaktralakṣmī-parīvāha-calanmīnābha-locanā",
+      "kannada_script": "ವಕ್ತ್ರಲಕ್ಷ್ಮೀ-ಪರೀವಾಹ-ಚಲನ್ಮೀನಾಭ-ಲೋಚನಾ",
+      "english": null,
+      "kannada": null,
+      "review_status": "meaning_pending",
+      "notes": "Precise Sahasranāma name number and commentary to be verified against name list."
+    }
+  ],
+  "word_meanings": [],
+  "meaning": {
+    "english": "Her arched eyebrows are like the festive gateway of the dwelling of Love; her lively eyes resemble fish moving through the stream of her face’s beauty.",
+    "kannada": "ಅವಳ ಬಾಗಿದ ಹುಬ್ಬುಗಳು ಮನ್ಮಥನ ಮಂಗಳಗೃಹದ ತೋರಣದಂತಿವೆ; ಮುಖಸೌಂದರ್ಯದ ಪ್ರವಾಹದಲ್ಲಿ ಚಲಿಸುವ ಮೀನುಗಳಂತೆ ಅವಳ ಕಣ್ಣುಗಳು ಕಂಗೊಳಿಸುತ್ತವೆ."
+  },
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "verse_draft_name_details_pending",
+  "sources": [
+    {
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Verse reading and sense cross-check"
+    }
+  ]
+}
