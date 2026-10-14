@@ -30,7 +30,7 @@ function wordsGrid(parts){
  }).join("")+"</div>";
 }
 function richParagraphs(value){
- return String(value??"").split(/\\n\\s*\\n/).filter(Boolean).map(part=>"<p>"+esc(part.trim()).replace(/\\*([^*]+)\\*/g,"<em>$1</em>").replace(/\\n/g," ")+"</p>").join("");
+ return String(value??"").split("\n\n").map(p=>p.trim()).filter(Boolean).map(p=>"<p>"+esc(p).replace(/\*([^*]+)\*/g,"<em>$1</em>").replace(/\n/g," ")+"</p>").join("");
 }
 function studySections(info,parts){
  const deep=anyMeaning(info,"traditional_interpretation");
