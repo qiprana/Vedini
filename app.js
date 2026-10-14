@@ -42,7 +42,7 @@ function sourceLink(info){
 }
 function studySections(info,parts){
  const deep=anyMeaning(info,"traditional_interpretation");
- return "<div class='study-inner'><h4>"+esc(langText("Word by word","ಪದ ಪದದ ಅರ್ಥ"))+"</h4>"+wordsGrid(parts)+(deep?"<div class='deeper-reading'><h4>"+esc(langText("Deeper traditional meaning","ಆಳವಾದ ಪಾರಂಪರಿಕ ಅರ್ಥ"))+"</h4><p>"+esc(deep)+"</p></div>":"")+noticeBox(info)+sourceLink(info)+"</div>";
+ return "<div class='study-inner'><h4>"+esc(langText("Word by word","ಪದ ಪದದ ಅರ್ಥ"))+"</h4>"+wordsGrid(parts)+(deep?"<div class='deeper-reading'><h4>"+esc(langText("Imagine & understand","ಕಲ್ಪಿಸಿ · ಅರ್ಥಮಾಡಿಕೊಳ್ಳಿ"))+"</h4><p>"+esc(deep)+"</p></div>":"")+noticeBox(info)+sourceLink(info)+"</div>";
 }
 function makeAudio(v,isDhyana){
  const num=String(v.verse_number).padStart(isDhyana?2:3,"0");
@@ -56,7 +56,7 @@ function nameSection(v){
  const dev=n.display_devanagari||n.sanskrit||"",written=language==="kn"?kannadaFromDevanagari(dev):dev;
  const essential=anyMeaning(info,"essential_meaning")||(language==="kn"?n.kannada:n.english)||langText("Meaning under review","ಅರ್ಥ ಪರಿಶೀಲನೆಯಲ್ಲಿದೆ");
  const roman=n.display_iast||n.iast;
- html+="<details class='name-details' data-detail-id='name-"+n.studyNumber+"'><summary><span class='name-line'><span class='name-written'>"+esc(written)+"</span><span class='name-roman'>· "+esc(roman)+"</span></span><span class='name-essence'>"+esc(essential)+"</span><span class='summary-hint'>"+esc(langText("Explore words & meaning","ಪದಾರ್ಥ ಮತ್ತು ವಿವರಣೆ"))+"</span></summary>"+studySections(info,parts)+"</details>";
+ html+="<details class='name-details' data-detail-id='name-"+n.studyNumber+"'><summary><span class='name-line'><span class='name-number'>"+n.studyNumber+".</span><span class='name-written'>"+esc(written)+"</span><span class='name-roman'>· "+esc(roman)+"</span><span class='name-essence'>— "+esc(essential)+"</span></span></summary>"+studySections(info,parts)+"</details>";
  }
  return html+"</section>";
 }
@@ -66,8 +66,8 @@ function dhyanaSection(v){
  return "<section class='meaning-section verse-lesson'><div class='essential-meaning'><h3>"+esc(langText("In simple words","ಸರಳ ಅರ್ಥ"))+"</h3><p>"+esc(meaning)+"</p></div><details class='dhyana-words' data-detail-id='dhyana-"+v.verse_number+"'><summary>"+esc(langText("Explore each word","ಪ್ರತಿ ಪದದ ಅರ್ಥ ನೋಡಿ"))+" <span class='count'>"+(info.components?.length||0)+" "+esc(langText("word parts","ಪದಭಾಗಗಳು"))+"</span></summary><div class='study-inner'><h4>"+esc(langText("Word by word","ಪದ ಪದದ ಅರ್ಥ"))+"</h4>"+wordsGrid(info.components)+"</div></details>"+moreSection(info)+"</section>";
 }
 function moreSection(info){
- const deep=anyMeaning(info,"traditional_interpretation");
- return (deep?"<div class='deeper-reading'><h3>"+esc(langText("Deeper meaning","ಆಳವಾದ ಅರ್ಥ"))+"</h3><p>"+esc(deep)+"</p></div>":"")+noticeBox(info)+sourceLink(info);
+ const deep=anyMeaning(info,"traditional_interpretation"),picture=anyMeaning(info,"picture");
+ return ((picture||deep)?"<div class='deeper-reading'><h3>"+esc(langText("Imagine & understand","ಕಲ್ಪಿಸಿ · ಅರ್ಥಮಾಡಿಕೊಳ್ಳಿ"))+"</h3>"+(picture?"<p class='picture-meaning'>"+esc(picture)+"</p>":"")+(deep?"<p>"+esc(deep)+"</p>":"")+"</div>":"")+noticeBox(info)+sourceLink(info);
 }
 function mainVerseSection(v){
  const summary=language==="kn"?v.meaning?.kannada:v.meaning?.english;
