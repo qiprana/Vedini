@@ -1,0 +1,170 @@
+[
+  {
+    "number": 1,
+    "verse_number": 1,
+    "devanagari": "श्रीमाता",
+    "iast": "Śrīmātā",
+    "kannada_script": "ಶ್ರೀಮಾತಾ",
+    "display_devanagari": "श्रीमाता",
+    "display_iast": "Śrīmātā",
+    "meaning": {
+      "en": "The auspicious Divine Mother",
+      "kn": "ಮಂಗಳಮಯಿಯಾದ ಜಗನ್ಮಾತೆ"
+    },
+    "review_status": "draft"
+  },
+  {
+    "number": 2,
+    "verse_number": 1,
+    "devanagari": "श्रीमहाराज्ञी",
+    "iast": "Śrīmahārājñī",
+    "kannada_script": "ಶ್ರೀಮಹಾರಾಜ್ಞೀ",
+    "display_devanagari": "श्रीमहाराज्ञी",
+    "display_iast": "Śrīmahārājñī",
+    "meaning": {
+      "en": "The glorious supreme Empress",
+      "kn": "ವೈಭವಯುತ ಮಹಾರಾಣಿ"
+    },
+    "review_status": "draft"
+  },
+  {
+    "number": 3,
+    "verse_number": 1,
+    "devanagari": "श्रीमत्सिंहासनेश्वरी",
+    "iast": "Śrīmatsiṃhāsaneśvarī",
+    "kannada_script": "ಶ್ರೀಮತ್ಸಿಂಹಾಸನೇಶ್ವರೀ",
+    "display_devanagari": "श्रीमत्-सिंहासनेश्वरी",
+    "display_iast": "śrīmat-siṃhāsaneśvarī",
+    "meaning": {
+      "en": "Ruler of the resplendent throne",
+      "kn": "ವೈಭವಯುಕ್ತ ಸಿಂಹಾಸನದ ಅಧೀಶ್ವರಿ"
+    },
+    "review_status": "draft"
+  },
+  {
+    "number": 4,
+    "verse_number": 1,
+    "devanagari": "चिदग्निकुण्डसम्भूता",
+    "iast": "Cidagnikuṇḍasambhūtā",
+    "kannada_script": "ಚಿದಗ್ನಿಕುಂಡಸಂಭೂತಾ",
+    "display_devanagari": "चिदग्निकुण्डसम्भूता",
+    "display_iast": "Cidagnikuṇḍasambhūtā",
+    "meaning": {
+      "en": "Manifested from the altar of the fire of consciousness",
+      "kn": "ಚೈತನ್ಯಾಗ್ನಿಯ ಕುಂಡದಿಂದ ಆವಿರ್ಭವಿಸಿದವಳು"
+    },
+    "review_status": "draft"
+  },
+  {
+    "number": 5,
+    "verse_number": 1,
+    "devanagari": "देवकार्यसमुद्यता",
+    "iast": "Devakāryasamudyatā",
+    "kannada_script": "ದೇವಕಾರ್ಯಸಮುದ್ಯತಾ",
+    "display_devanagari": "देवकार्यसमुद्यता",
+    "display_iast": "Devakāryasamudyatā",
+    "meaning": {
+      "en": "Who arose to accomplish the purpose of the gods",
+      "kn": "ದೇವತೆಗಳ ಕಾರ್ಯವನ್ನು ನೆರವೇರಿಸಲು ಸನ್ನದ್ಧಳಾದವಳು"
+    },
+    "review_status": "draft"
+  },
+  {
+    "number": 6,
+    "verse_number": 2,
+    "devanagari": "उद्यद्भानुसहस्राभा",
+    "iast": "Udyadbhānusahasrābhā",
+    "kannada_script": "",
+    "display_devanagari": "उद्यद्भानु-सहस्राभा",
+    "display_iast": "udyadbhānu-sahasrābhā",
+    "meaning": {
+      "en": "Radiant like a thousand rising suns",
+      "kn": "ಉದಯಿಸುವ ಸಾವಿರ ಸೂರ್ಯರಂತೆ ಕಾಂತಿಯುಳ್ಳವಳು"
+    },
+    "review_status": "draft"
+  },
+  {
+    "number": 7,
+    "verse_number": 2,
+    "devanagari": "चतुर्बाहुसमन्विता",
+    "iast": "Caturbāhusamanvitā",
+    "kannada_script": "",
+    "display_devanagari": "चतुर्बाहुसमन्विता",
+    "display_iast": "Caturbāhusamanvitā",
+    "meaning": {
+      "en": "Endowed with four arms",
+      "kn": "ನಾಲ್ಕು ಭುಜಗಳನ್ನು ಹೊಂದಿರುವವಳು"
+    },
+    "review_status": "draft"
+  },
+  {
+    "number": 8,
+    "verse_number": 2,
+    "devanagari": "रागस्वरूपपाशाढ्या",
+    "iast": "Rāgasvarūpapāśāḍhyā",
+    "kannada_script": "",
+    "display_devanagari": "रागस्वरूपपाशाढ्या",
+    "display_iast": "Rāgasvarūpapāśāḍhyā",
+    "meaning": {
+      "en": "Bearing a noose whose nature is attachment or love",
+      "kn": "ರಾಗಸ್ವರೂಪವಾದ ಪಾಶವನ್ನು ಧರಿಸಿರುವವಳು"
+    },
+    "review_status": "draft"
+  },
+  {
+    "number": 9,
+    "verse_number": 2,
+    "devanagari": "क्रोधाकाराङ्कुशोज्ज्वला",
+    "iast": "Krodhākārāṅkuśojjvalā",
+    "kannada_script": "",
+    "display_devanagari": "क्रोधाकाराङ्कुशोज्ज्वला",
+    "display_iast": "Krodhākārāṅkuśojjvalā",
+    "meaning": {
+      "en": "Resplendent with a goad shaped as anger",
+      "kn": "ಕ್ರೋಧರೂಪವಾದ ಅಂಕುಶದಿಂದ ಶೋಭಿಸುವವಳು"
+    },
+    "review_status": "draft"
+  },
+  {
+    "number": 10,
+    "verse_number": 3,
+    "devanagari": "मनोरूपेक्षुकोदण्डा",
+    "iast": "Manorūpekṣukodaṇḍā",
+    "kannada_script": "",
+    "display_devanagari": "मनोरूपेक्षुकोदण्डा",
+    "display_iast": "Manorūpekṣukodaṇḍā",
+    "meaning": {
+      "en": "Holding a sugarcane bow representing the mind",
+      "kn": "ಮನಸ್ಸಿನ ಸ್ವರೂಪವಾದ ಕಬ್ಬಿನ ಬಿಲ್ಲನ್ನು ಹೊಂದಿರುವವಳು"
+    },
+    "review_status": "draft"
+  },
+  {
+    "number": 11,
+    "verse_number": 3,
+    "devanagari": "पञ्चतन्मात्रसायका",
+    "iast": "Pañcatanmātrasāyakā",
+    "kannada_script": "",
+    "display_devanagari": "पञ्चतन्मात्रसायका",
+    "display_iast": "Pañcatanmātrasāyakā",
+    "meaning": {
+      "en": "Whose arrows represent the five subtle sense elements",
+      "kn": "ಐದು ತನ್ಮಾತ್ರೆಗಳ ರೂಪದ ಬಾಣಗಳನ್ನು ಹೊಂದಿರುವವಳು"
+    },
+    "review_status": "draft"
+  },
+  {
+    "number": 12,
+    "verse_number": 3,
+    "devanagari": "निजारुणप्रभापूरमज्जद्ब्रह्माण्डमण्डला",
+    "iast": "Nijāruṇaprabhāpūramajjadbrahmāṇḍamaṇḍalā",
+    "kannada_script": "",
+    "display_devanagari": "निजारुणप्रभापूरमज्जद्ब्रह्माण्डमण्डला",
+    "display_iast": "Nijāruṇaprabhāpūramajjadbrahmāṇḍamaṇḍalā",
+    "meaning": {
+      "en": "Whose own crimson radiance immerses the whole cosmic sphere",
+      "kn": "ತನ್ನ ಕೆಂಪು ಕಾಂತಿಯ ಪ್ರವಾಹದಲ್ಲಿ ಬ್ರಹ್ಮಾಂಡವನ್ನು ಮುಳುಗಿಸುವವಳು"
+    },
+    "review_status": "draft"
+  }
+]
