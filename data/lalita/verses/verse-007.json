@@ -1,0 +1,62 @@
+{
+  "id": "lalita-007",
+  "collection": "lalita-sahasranama",
+  "section": "main-stotram",
+  "verse_number": 7,
+  "reading": {
+    "devanagari": [
+      "नवचम्पक-पुष्पाभ-नासादण्ड-विराजिता ।",
+      "ताराकान्ति-तिरस्कारि-नासाभरण-भासुरा ॥ ७ ॥"
+    ],
+    "iast": [
+      "navacampaka-puṣpābha-nāsādaṇḍa-virājitā ।",
+      "tārākānti-tiraskāri-nāsābharaṇa-bhāsurā ॥ 7 ॥"
+    ],
+    "kannada": [
+      "ನವಚಮ್ಪಕ-ಪುಷ್ಪಾಭ-ನಾಸಾದಣ್ಡ-ವಿರಾಜಿತಾ ।",
+      "ತಾರಾಕಾನ್ತಿ-ತಿರಸ್ಕಾರಿ-ನಾಸಾಭರಣ-ಭಾಸುರಾ ॥ ७ ॥"
+    ]
+  },
+  "names": [
+    {
+      "number": null,
+      "sanskrit": "नवचम्पकपुष्पाभनासादण्डविराजिता",
+      "display_devanagari": "नवचम्पक-पुष्पाभ-नासादण्ड-विराजिता",
+      "iast": "navacampakapuṣpābhanāsādaṇḍavirājitā",
+      "display_iast": "navacampaka-puṣpābha-nāsādaṇḍa-virājitā",
+      "kannada_script": "ನವಚಮ್ಪಕ-ಪುಷ್ಪಾಭ-ನಾಸಾದಣ್ಡ-ವಿರಾಜಿತಾ",
+      "english": null,
+      "kannada": null,
+      "review_status": "meaning_pending",
+      "notes": "Precise Sahasranāma name number and commentary to be verified against name list."
+    },
+    {
+      "number": null,
+      "sanskrit": "ताराकान्तितिरस्कारिनासाभरणभासुरा",
+      "display_devanagari": "ताराकान्ति-तिरस्कारि-नासाभरण-भासुरा",
+      "iast": "tārākāntitiraskārināsābharaṇabhāsurā",
+      "display_iast": "tārākānti-tiraskāri-nāsābharaṇa-bhāsurā",
+      "kannada_script": "ತಾರಾಕಾನ್ತಿ-ತಿರಸ್ಕಾರಿ-ನಾಸಾಭರಣ-ಭಾಸುರಾ",
+      "english": null,
+      "kannada": null,
+      "review_status": "meaning_pending",
+      "notes": "Precise Sahasranāma name number and commentary to be verified against name list."
+    }
+  ],
+  "word_meanings": [],
+  "meaning": {
+    "english": "Her graceful nose is compared to a fresh campaka blossom, while the brilliance of its ornament surpasses the shining stars.",
+    "kannada": "ಅವಳ ಸುಂದರ ನಾಸಿಕೆಯು ಹೊಸ ಚಂಪಕ ಹೂವನ್ನು ಹೋಲುತ್ತದೆ; ನಾಸಾಭರಣದ ಕಾಂತಿಯು ನಕ್ಷತ್ರಗಳ ಹೊಳಪನ್ನೂ ಮೀರಿಸುತ್ತದೆ."
+  },
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "verse_draft_name_details_pending",
+  "sources": [
+    {
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Verse reading and sense cross-check"
+    }
+  ]
+}
