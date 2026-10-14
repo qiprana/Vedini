@@ -1,0 +1,62 @@
+{
+  "id": "lalita-005",
+  "collection": "lalita-sahasranama",
+  "section": "main-stotram",
+  "verse_number": 5,
+  "reading": {
+    "devanagari": [
+      "अष्टमीचन्द्र-विभ्राज-दलिकस्थल-शोभिता ।",
+      "मुखचन्द्र-कलङ्काभ-मृगनाभि-विशेषका ॥ ५ ॥"
+    ],
+    "iast": [
+      "aṣṭamīcandra-vibhrāja-dalikasthala-śobhitā ।",
+      "mukhacandra-kalaṅkābha-mṛganābhi-viśeṣakā ॥ 5 ॥"
+    ],
+    "kannada": [
+      "ಅಷ್ಟಮೀಚನ್ದ್ರ-ವಿಭ್ರಾಜ-ದಲಿಕಸ್ಥಲ-ಶೋಭಿತಾ ।",
+      "ಮುಖಚನ್ದ್ರ-ಕಲಙ್ಕಾಭ-ಮೃಗನಾಭಿ-ವಿಶೇಷಕಾ ॥ ५ ॥"
+    ]
+  },
+  "names": [
+    {
+      "number": null,
+      "sanskrit": "अष्टमीचन्द्रविभ्राजदलिकस्थलशोभिता",
+      "display_devanagari": "अष्टमीचन्द्र-विभ्राज-दलिकस्थल-शोभिता",
+      "iast": "aṣṭamīcandravibhrājadalikasthalaśobhitā",
+      "display_iast": "aṣṭamīcandra-vibhrāja-dalikasthala-śobhitā",
+      "kannada_script": "ಅಷ್ಟಮೀಚನ್ದ್ರ-ವಿಭ್ರಾಜ-ದಲಿಕಸ್ಥಲ-ಶೋಭಿತಾ",
+      "english": null,
+      "kannada": null,
+      "review_status": "meaning_pending",
+      "notes": "Precise Sahasranāma name number and commentary to be verified against name list."
+    },
+    {
+      "number": null,
+      "sanskrit": "मुखचन्द्रकलङ्काभमृगनाभिविशेषका",
+      "display_devanagari": "मुखचन्द्र-कलङ्काभ-मृगनाभि-विशेषका",
+      "iast": "mukhacandrakalaṅkābhamṛganābhiviśeṣakā",
+      "display_iast": "mukhacandra-kalaṅkābha-mṛganābhi-viśeṣakā",
+      "kannada_script": "ಮುಖಚನ್ದ್ರ-ಕಲಙ್ಕಾಭ-ಮೃಗನಾಭಿ-ವಿಶೇಷಕಾ",
+      "english": null,
+      "kannada": null,
+      "review_status": "meaning_pending",
+      "notes": "Precise Sahasranāma name number and commentary to be verified against name list."
+    }
+  ],
+  "word_meanings": [],
+  "meaning": {
+    "english": "Her forehead resembles the luminous eighth-day moon; her musk mark adorns her moonlike face like the delicate mark upon the moon.",
+    "kannada": "ಅವಳ ಹಣೆಯು ಅಷ್ಟಮಿಯ ಚಂದ್ರನಂತೆ ಪ್ರಕಾಶಿಸುತ್ತದೆ; ಚಂದ್ರನ ಕಲಂಕವನ್ನು ಹೋಲುವ ಕಸ್ತೂರಿ ತಿಲಕವು ಚಂದ್ರಮುಖವನ್ನು ಅಲಂಕರಿಸಿದೆ."
+  },
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "verse_draft_name_details_pending",
+  "sources": [
+    {
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Verse reading and sense cross-check"
+    }
+  ]
+}
