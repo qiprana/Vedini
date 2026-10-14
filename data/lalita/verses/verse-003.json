@@ -1,0 +1,193 @@
+{
+  "id": "lalita-003",
+  "collection": "lalita-sahasranama",
+  "section": "main-stotram",
+  "verse_number": 3,
+  "sanskrit": [
+    "मनोरूपेक्षुकोदण्डा पञ्चतन्मात्रसायका ।",
+    "निजारुणप्रभापूरमज्जद्ब्रह्माण्डमण्डला ॥ ३ ॥"
+  ],
+  "iast": [
+    "Manorūpekṣukodaṇḍā Pañcatanmātrasāyakā ।",
+    "Nijāruṇaprabhāpūramajjadbrahmāṇḍamaṇḍalā ॥ 3 ॥"
+  ],
+  "names": [
+    {
+      "number": 10,
+      "sanskrit": "मनोरूपेक्षुकोदण्डा",
+      "iast": "Manorūpekṣukodaṇḍā",
+      "english": "Holding a sugarcane bow representing the mind",
+      "kannada": "ಮನಸ್ಸಿನ ಸ್ವರೂಪವಾದ ಕಬ್ಬಿನ ಬಿಲ್ಲನ್ನು ಹೊಂದಿರುವವಳು",
+      "kannada_script": "ಮನೋರೂಪೇಕ್ಷುಕೋದಣ್ಡಾ",
+      "review_status": "draft"
+    },
+    {
+      "number": 11,
+      "sanskrit": "पञ्चतन्मात्रसायका",
+      "iast": "Pañcatanmātrasāyakā",
+      "english": "Whose arrows represent the five subtle sense elements",
+      "kannada": "ಐದು ತನ್ಮಾತ್ರೆಗಳ ರೂಪದ ಬಾಣಗಳನ್ನು ಹೊಂದಿರುವವಳು",
+      "kannada_script": "ಪಞ್ಚತನ್ಮಾತ್ರಸಾಯಕಾ",
+      "review_status": "draft"
+    },
+    {
+      "number": 12,
+      "sanskrit": "निजारुणप्रभापूरमज्जद्ब्रह्माण्डमण्डला",
+      "iast": "Nijāruṇaprabhāpūramajjadbrahmāṇḍamaṇḍalā",
+      "english": "Whose own crimson radiance immerses the whole cosmic sphere",
+      "kannada": "ತನ್ನ ಕೆಂಪು ಕಾಂತಿಯ ಪ್ರವಾಹದಲ್ಲಿ ಬ್ರಹ್ಮಾಂಡವನ್ನು ಮುಳುಗಿಸುವವಳು",
+      "kannada_script": "ನಿಜಾರುಣಪ್ರಭಾಪೂರಮಜ್ಜದ್ಬ್ರಹ್ಮಾಣ್ಡಮಣ್ಡಲಾ",
+      "review_status": "draft"
+    }
+  ],
+  "word_meanings": [
+    {
+      "sanskrit": "मनोरूपेक्षुकोदण्डा",
+      "iast": "Manorūpekṣukodaṇḍā",
+      "english": "Holding a sugarcane bow representing the mind",
+      "kannada": "ಮನಸ್ಸಿನ ಸ್ವರೂಪವಾದ ಕಬ್ಬಿನ ಬಿಲ್ಲನ್ನು ಹೊಂದಿರುವವಳು",
+      "components": [
+        {
+          "iast": "Manas",
+          "english": "Mind",
+          "kannada": "ಮನಸ್ಸು",
+          "sanskrit": "मनस्"
+        },
+        {
+          "iast": "Rūpa",
+          "english": "Form; nature",
+          "kannada": "ರೂಪ; ಸ್ವರೂಪ",
+          "sanskrit": "रूप"
+        },
+        {
+          "iast": "Ikṣu",
+          "english": "Sugarcane",
+          "kannada": "ಕಬ್ಬು",
+          "sanskrit": "इक्षु"
+        },
+        {
+          "iast": "Kodaṇḍa",
+          "english": "Bow",
+          "kannada": "ಬಿಲ್ಲು",
+          "sanskrit": "कोदण्ड"
+        }
+      ]
+    },
+    {
+      "sanskrit": "पञ्चतन्मात्रसायका",
+      "iast": "Pañcatanmātrasāyakā",
+      "english": "Whose arrows represent the five subtle sense elements",
+      "kannada": "ಐದು ತನ್ಮಾತ್ರೆಗಳ ರೂಪದ ಬಾಣಗಳನ್ನು ಹೊಂದಿರುವವಳು",
+      "components": [
+        {
+          "iast": "Pañca",
+          "english": "Five",
+          "kannada": "ಐದು",
+          "sanskrit": "पञ्च"
+        },
+        {
+          "iast": "Tanmātra",
+          "english": "Subtle sense element",
+          "kannada": "ತನ್ಮಾತ್ರೆ",
+          "sanskrit": "तन्मात्र"
+        },
+        {
+          "iast": "Sāyaka",
+          "english": "Arrow",
+          "kannada": "ಬಾಣ",
+          "sanskrit": "सायक"
+        }
+      ]
+    },
+    {
+      "sanskrit": "निजारुणप्रभापूरमज्जद्ब्रह्माण्डमण्डला",
+      "iast": "Nijāruṇaprabhāpūramajjadbrahmāṇḍamaṇḍalā",
+      "english": "Whose own crimson radiance immerses the whole cosmic sphere",
+      "kannada": "ತನ್ನ ಕೆಂಪು ಕಾಂತಿಯ ಪ್ರವಾಹದಲ್ಲಿ ಬ್ರಹ್ಮಾಂಡವನ್ನು ಮುಳುಗಿಸುವವಳು",
+      "components": [
+        {
+          "iast": "Nija",
+          "english": "Own",
+          "kannada": "ತನ್ನದೇ",
+          "sanskrit": "निज"
+        },
+        {
+          "iast": "Aruṇa",
+          "english": "Crimson; reddish",
+          "kannada": "ಕೆಂಪು; ಅರುಣ",
+          "sanskrit": "अरुण"
+        },
+        {
+          "iast": "Prabhā",
+          "english": "Radiance",
+          "kannada": "ಕಾಂತಿ",
+          "sanskrit": "प्रभा"
+        },
+        {
+          "iast": "Pūra",
+          "english": "Flood; fullness",
+          "kannada": "ಪ್ರವಾಹ; ಪೂರ್ಣತೆ",
+          "sanskrit": "पूर"
+        },
+        {
+          "iast": "Majjat",
+          "english": "Immersed",
+          "kannada": "ಮುಳುಗಿರುವ",
+          "sanskrit": "मज्जत्"
+        },
+        {
+          "iast": "Brahmāṇḍa",
+          "english": "Universe; cosmic egg",
+          "kannada": "ಬ್ರಹ್ಮಾಂಡ",
+          "sanskrit": "ब्रह्माण्ड"
+        },
+        {
+          "iast": "Maṇḍala",
+          "english": "Sphere; expanse",
+          "kannada": "ಮಂಡಲ; ವ್ಯಾಪ್ತಿ",
+          "sanskrit": "मण्डल"
+        }
+      ]
+    }
+  ],
+  "meaning": {
+    "english": "Her sugarcane bow represents the mind, and her arrows represent the five subtle sense elements. The entire cosmic expanse is immersed in the flood of her own crimson radiance.",
+    "kannada": "ಅವಳ ಕಬ್ಬಿನ ಬಿಲ್ಲು ಮನಸ್ಸಿನ ಸ್ವರೂಪವಾಗಿದೆ; ಬಾಣಗಳು ಐದು ತನ್ಮಾತ್ರೆಗಳನ್ನು ಸೂಚಿಸುತ್ತವೆ. ಅವಳದೇ ಅರುಣ ಕಾಂತಿಯ ಪ್ರವಾಹದಲ್ಲಿ ಸಮಸ್ತ ಬ್ರಹ್ಮಾಂಡವು ಮುಳುಗಿದೆ."
+  },
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "draft",
+  "sources": [
+    {
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "reading; IAST cross-check"
+    },
+    {
+      "url": "https://sanskritdocuments.org/doc_devii/lalita1000.html",
+      "role": "name meanings cross-check"
+    },
+    {
+      "url": "https://manblunder.com/articlesview/lalitha-sahasranamam-1-2",
+      "role": "interpretive context for first names"
+    }
+  ],
+  "reading": {
+    "devanagari": [
+      "मनोरूपेक्षु-कोदण्डा पञ्चतन्मात्र-सायका ।",
+      "निजारुण-प्रभापूर-मज्जद्ब्रह्माण्ड-मण्डला ॥ ३ ॥"
+    ],
+    "iast": [
+      "manorūpekṣu-kodaṇḍā pañcatanmātra-sāyakā ।",
+      "nijāruṇa-prabhāpūra-majjadbrahmāṇḍa-maṇḍalā ॥ 3 ॥"
+    ],
+    "kannada": [
+      "ಮನೋರೂಪೇಕ್ಷು-ಕೋದಂಡಾ ಪಂಚತನ್ಮಾತ್ರ-ಸಾಯಕಾ ।",
+      "ನಿಜಾರುಣ-ಪ್ರಭಾಪೂರ-ಮಜ್ಜದ್ಬ್ರಹ್ಮಾಂಡ-ಮಂಡಲಾ ॥ ೩ ॥"
+    ]
+  },
+  "reading_style": "book-hyphenated",
+  "reading_note": "Reading-style compound division follows the supplied printed book, not full grammatical sandhi separation. Review draft.",
+  "content_policy": "Draft meanings are original concise editorial paraphrases; verify against traditional commentary."
+}
