@@ -1,0 +1,62 @@
+{
+  "id": "lalita-008",
+  "collection": "lalita-sahasranama",
+  "section": "main-stotram",
+  "verse_number": 8,
+  "reading": {
+    "devanagari": [
+      "कदम्बमञ्जरी-कॢप्त-कर्णपूर-मनोहरा ।",
+      "ताटङ्क-युगली-भूत-तपनोडुप-मण्डला ॥ ८ ॥"
+    ],
+    "iast": [
+      "kadambamañjarī-kḷpta-karṇapūra-manoharā ।",
+      "tāṭaṅka-yugalī-bhūta-tapanoḍupa-maṇḍalā ॥ 8 ॥"
+    ],
+    "kannada": [
+      "ಕದಮ್ಬಮಞ್ಜರೀ-ಕೢಪ್ತ-ಕರ್ಣಪೂರ-ಮನೋಹರಾ ।",
+      "ತಾಟಙ್ಕ-ಯುಗಲೀ-ಭೂತ-ತಪನೋಡುಪ-ಮಣ್ಡಲಾ ॥ ८ ॥"
+    ]
+  },
+  "names": [
+    {
+      "number": null,
+      "sanskrit": "कदम्बमञ्जरीकॢप्तकर्णपूरमनोहरा",
+      "display_devanagari": "कदम्बमञ्जरी-कॢप्त-कर्णपूर-मनोहरा",
+      "iast": "kadambamañjarīkḷptakarṇapūramanoharā",
+      "display_iast": "kadambamañjarī-kḷpta-karṇapūra-manoharā",
+      "kannada_script": "ಕದಮ್ಬಮಞ್ಜರೀ-ಕೢಪ್ತ-ಕರ್ಣಪೂರ-ಮನೋಹರಾ",
+      "english": null,
+      "kannada": null,
+      "review_status": "meaning_pending",
+      "notes": "Precise Sahasranāma name number and commentary to be verified against name list."
+    },
+    {
+      "number": null,
+      "sanskrit": "ताटङ्कयुगलीभूततपनोडुपमण्डला",
+      "display_devanagari": "ताटङ्क-युगली-भूत-तपनोडुप-मण्डला",
+      "iast": "tāṭaṅkayugalībhūtatapanoḍupamaṇḍalā",
+      "display_iast": "tāṭaṅka-yugalī-bhūta-tapanoḍupa-maṇḍalā",
+      "kannada_script": "ತಾಟಙ್ಕ-ಯುಗಲೀ-ಭೂತ-ತಪನೋಡುಪ-ಮಣ್ಡಲಾ",
+      "english": null,
+      "kannada": null,
+      "review_status": "meaning_pending",
+      "notes": "Precise Sahasranāma name number and commentary to be verified against name list."
+    }
+  ],
+  "word_meanings": [],
+  "meaning": {
+    "english": "She is beautiful with ear ornaments resembling kadamba blossoms; the sun and moon appear as her pair of great earrings.",
+    "kannada": "ಕದಂಬ ಹೂಗೊಂಚಲುಗಳನ್ನು ಹೋಲುವ ಕರ್ಣಾಭರಣಗಳಿಂದ ಅವಳು ಮನೋಹರಳಾಗಿದ್ದಾಳೆ; ಸೂರ್ಯ ಮತ್ತು ಚಂದ್ರರು ಅವಳ ಜೋಡಿ ತಾಟಂಕಗಳಂತಿದ್ದಾರೆ."
+  },
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "verse_draft_name_details_pending",
+  "sources": [
+    {
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Verse reading and sense cross-check"
+    }
+  ]
+}
