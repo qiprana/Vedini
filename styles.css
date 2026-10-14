@@ -2,3 +2,65 @@
 /* Vedini: balance Devanagari and Kannada reading proportions */
 .verse-script.devanagari {font-size: 20px;}
 @media(max-width:700px){.verse-script.devanagari{font-size:18px;}}
+
+
+/* Vedini study reader: clarity, contrast and accessible reading */
+:root{--ink:#292b27;--muted:#4c514b;--accent:#304f43;--edge:#a5b9aa;--paper:#fffefa}
+body{color:var(--ink)}
+.card{background:var(--paper);border:1.5px solid var(--edge);box-shadow:0 2px 8px rgba(45,61,48,.06);padding:22px clamp(14px,2vw,28px);margin:24px 0}
+.card-head{background:#e6eee7;border-left:4px solid var(--accent);padding:10px 14px;border-radius:4px}
+.card-head b{font-size:20px;color:#304b40}
+.chant{gap:25px;padding:10px 0 18px}
+.verse-script.devanagari{font-size:22px;line-height:1.92;color:#242b26}
+.verse-script.kannada{font-size:23px;line-height:1.92;color:#242b26}
+.verse-iast{font-size:19px;line-height:1.9;color:#343c36}
+.reading-label{font:600 12px/1.5 system-ui,sans-serif;color:#3f5848;letter-spacing:.07em}
+.name-section,.meaning-section{border-top:1px solid #cbd7ce;margin-top:12px;padding-top:18px}
+.section-title{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 18px}
+.section-title h3{font-size:19px;font-weight:600;color:var(--ink);margin:0 0 7px}
+.section-title span{font:13px system-ui,sans-serif;color:var(--muted)}
+.name-details{border:1px solid #c8d6ca;border-radius:9px;margin:12px 0;background:#fff;padding:0;overflow:hidden}
+.name-details[open]{border-color:#879f8d}
+.name-details summary{position:relative;display:flex;flex-direction:column;gap:5px;cursor:pointer;padding:13px 18px 13px 34px;background:#fafcf9;line-height:1.6;list-style:none}
+.name-details summary::-webkit-details-marker{display:none}
+.name-details summary:before{content:'▸';position:absolute;left:13px;top:15px;color:#304f43;font-size:18px}
+.name-details[open] summary:before{content:'▾'}
+.name-details summary:hover{background:#eff5ef}
+.name-line{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px}
+.name-written{font-weight:700;font-size:19px;color:#243329}
+.name-roman{font-size:17px;color:#3c5142}
+.name-essence{font-size:16px;color:#293c30;font-weight:400}
+.summary-hint{font:12px system-ui,sans-serif;color:#536458}
+.study-inner{padding:15px 18px 18px;background:#fff}
+.study-inner h4,.deeper-reading h3,.essential-meaning h3{margin:4px 0 12px;font-size:17px;font-weight:650;color:#2c493b}
+.word-grid{border:1px solid #c9d6cb;border-radius:8px;overflow:hidden}
+.word-row{display:grid;grid-template-columns:minmax(180px,42%) 1fr;align-items:start;border-bottom:1px solid #e2e8e1;padding:10px 13px;gap:16px}
+.word-row:nth-child(odd){background:#f5f8f4}
+.word-row:last-child{border-bottom:0}
+.word-original{font-size:18px;font-weight:600;color:#263d30}
+.word-iast{font:14px/1.6 Georgia,serif;color:#4b6552;margin-left:7px;font-weight:400}
+.word-translation{color:#26312a;font-size:16px;line-height:1.65}
+.deeper-reading{background:#f2f6f1;border-left:3px solid #648877;border-radius:5px;padding:15px 18px;margin-top:18px}
+.deeper-reading h3,.deeper-reading h4{margin:0 0 8px}
+.deeper-reading p,.essential-meaning p{font-size:17px;line-height:1.82;color:#2c332e;margin:0}
+.essential-meaning{padding:6px 0 12px}
+.notice-box{background:#fff9ed;border-left:3px solid #ad8251;padding:13px 16px;margin-top:16px;border-radius:4px}
+.notice-box strong{font:700 14px system-ui,sans-serif;color:#664a2c}
+.notice-box p{margin:7px 0 0;font-size:16px;line-height:1.7;color:#403a31}
+.study-source{display:inline-block;color:#23533d;text-decoration:underline;font:13px system-ui,sans-serif;margin-top:14px}
+.dhyana-words{border:1px solid #9bad9b;border-radius:8px;margin:14px 0;padding:0}
+.dhyana-words summary{background:#eef4ec;color:#244a35;padding:12px 16px;cursor:pointer;font-weight:600}
+.dhyana-words .count{font-size:13px;color:#405747;font-weight:400;margin-left:8px}
+.meta{color:#516154;font:12px/1.6 system-ui,sans-serif;margin-top:20px}
+button:focus-visible,summary:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #215f9f;outline-offset:3px}
+#expand-all{border:1px solid #536e59;background:#ecf3ec;color:#294531;border-radius:8px;padding:9px 12px;cursor:pointer;font:14px system-ui,sans-serif}
+#expand-all:hover{background:#dfece0}
+@media(max-width:750px){
+.verse-script.devanagari{font-size:21px}
+.verse-script.kannada{font-size:22px}
+.verse-iast{font-size:18px}
+.word-row{grid-template-columns:1fr;gap:2px}
+.name-written{font-size:18px}
+.name-roman{font-size:16px}
+.card{padding:15px 12px}
+}
