@@ -114,12 +114,19 @@ function showResultList(q){
  msg("#search-results-heading",matches.length+" matching sections","ಹೊಂದಾಣಿಕೆಯ ವಿಭಾಗಗಳು: "+matches.length);
  msg("#result-note","Searching available ślokas and name explanations","ಲಭ್ಯವಿರುವ ಶ್ಲೋಕಗಳು ಮತ್ತು ನಾಮವಿವರಣೆಗಳಲ್ಲಿ ಹುಡುಕಾಟ");
 }
+function renderGroupTabs(){
+ const root=$("#verse-group-tabs");if(!root)return;
+ const count=Math.ceil(verses.length/pageSize);
+ root.innerHTML=Array.from({length:count},(_,i)=>{const start=i*pageSize+1,end=Math.min(verses.length,start+pageSize-1);return "<button type='button' class='group-tab "+(i===pageIndex?"current":"")+"' aria-current='"+(i===pageIndex?"page":"false")+"' data-group='"+i+"'>"+start+"–"+end+"</button>"}).join("");
+ root.querySelectorAll("button[data-group]").forEach(btn=>btn.onclick=()=>openGroup(Number(btn.dataset.group)));
+}
 function updateNavigation(){
  const searching=!!searchTerm.trim();
  $("#dhyana").hidden=searching||view!=="dhyana";
  $("#main-stotra").hidden=searching||view!=="verses";
  $("#search-results").hidden=!searching;
  $("#range-navigation").hidden=searching||view!=="verses";
+ $("#verse-group-tabs").hidden=searching||view!=="verses";
  $("#bottom-navigation").hidden=searching||view!=="verses";
  const dv=view==="dhyana";
  $("#tab-dhyana").classList.toggle("chosen",dv);
@@ -128,6 +135,7 @@ function updateNavigation(){
  $("#tab-verses").setAttribute("aria-selected",String(!dv));
  const totalPages=Math.ceil(verses.length/pageSize);
  $("#range-select").value=String(pageIndex);
+ renderGroupTabs();
  for(const id of ["previous-group","bottom-previous"])$("#"+id).disabled=pageIndex<=0;
  for(const id of ["next-group","bottom-next"])$("#"+id).disabled=pageIndex>=totalPages-1;
  const start=pageIndex*pageSize+1,end=Math.min(verses.length,start+pageSize-1);
