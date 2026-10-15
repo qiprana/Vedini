@@ -104,3 +104,36 @@ button:focus-visible,summary:focus-visible,a:focus-visible,input:focus-visible{o
 .audio-setting{display:inline-flex;align-items:center;gap:5px;font:600 12px/1.4 system-ui,sans-serif;color:#30483b}
 .audio-setting select{background:#fff;border:1px solid #718a79;color:#243b2c;border-radius:7px;padding:6px 7px;font:13px/1.4 system-ui,sans-serif;min-height:34px}
 @media(max-width:680px){.card-head{align-items:flex-start;flex-wrap:wrap}.audio-player{width:100%}.audio-player audio{width:100%}.audio-toolbar{width:100%}}
+
+
+/* Paged study reader. At most five main cards in the DOM at once. */
+.reader-nav{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;padding:12px;margin:15px 0 8px;border:1px solid #b5c7b6;background:#f9fcf8;border-radius:12px}
+.reader-tabs{display:flex;gap:7px;flex-wrap:wrap}
+.reader-tabs button,.jump-controls button,.pager button{border:1px solid #819d87;border-radius:8px;padding:9px 12px;background:#fff;color:#294b36;cursor:pointer;font:600 14px/1.4 system-ui,sans-serif}
+.reader-tabs button.chosen{background:#345442;color:#fff;border-color:#345442}
+.jump-controls{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font:600 13px/1.4 system-ui,sans-serif;color:#334e3b}
+.jump-controls input{width:83px}
+.range-navigation{display:flex;align-items:center;gap:12px;flex-wrap:wrap;justify-content:space-between;background:#eff5ef;border:1px solid #ccdbcd;border-radius:11px;padding:10px 13px;margin:12px 0}
+.range-control{display:flex;align-items:center;gap:8px;font:600 13px/1.4 system-ui,sans-serif;color:#2d4736}
+.range-control select{min-height:37px;min-width:108px;border:1px solid #819d87;border-radius:8px;padding:7px 12px;background:#fff;color:#25412f;font:14px system-ui,sans-serif}
+.pager{display:flex;gap:10px;align-items:center;justify-content:center;flex-wrap:wrap}
+.pager button:disabled{opacity:.43;cursor:default}
+.pager button:not(:disabled):hover,.jump-controls button:hover{background:#e0ece1}
+#page-position,#bottom-position{font:600 14px/1.4 system-ui,sans-serif;color:#36553d;min-width:140px;text-align:center}
+.bottom-navigation{justify-content:center;margin-top:20px}
+.search-result{display:flex;flex-direction:column;gap:3px;text-align:left;background:#fffefb;border:1px solid #bacdbb;border-radius:10px;padding:13px 16px;margin:10px 0;cursor:pointer;color:#2b382e;width:100%}
+.search-result:hover{background:#eff7ed}
+.result-heading{font-weight:700;font-size:16px}
+.result-reading{font:15px/1.6 Georgia,serif;color:#43574b}
+.result-meaning{font-size:14px;color:#4f5f53}
+.no-results{color:#4e5d51}
+.selected-verse{border-color:#668a74}
+[hidden]{display:none!important}
+@media(max-width:670px){
+.reader-nav{align-items:stretch}
+.reader-tabs,.jump-controls{width:100%}
+.reader-tabs button{flex:1}
+.range-navigation{justify-content:center}
+.range-control,.pager{width:100%;justify-content:center}
+.pager button{flex:1}
+}
