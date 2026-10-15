@@ -6,11 +6,11 @@
   "reading": {
     "devanagari": [
       "तडिल्लता-समरुचिः षट्चक्रोपरि-संस्थिता ।",
-      "महासक्तिः कुण्डलिनी बिसतन्तु-तनीयसी ॥ ४० ॥"
+      "महाशक्तिः कुण्डलिनी बिसतन्तु-तनीयसी ॥ ४० ॥"
     ],
     "iast": [
       "taḍillatā-samaruciḥ ṣaṭcakropari-saṃsthitā ।",
-      "mahāsaktiḥ kuṇḍalinī bisatantu-tanīyasī ॥ 40 ॥"
+      "mahāśaktiḥ kuṇḍalinī bisatantu-tanīyasī ॥ 40 ॥"
     ]
   },
   "meaning": {
@@ -114,8 +114,8 @@
     },
     {
       "number": 109,
-      "sanskrit": "महासक्तिः",
-      "display_devanagari": "महासक्तिः",
+      "sanskrit": "महाशक्तिः",
+      "display_devanagari": "महाशक्तिः",
       "iast": "mahāśaktiḥ",
       "display_iast": "mahāśaktiḥ",
       "english": "The supreme and limitless divine power.",
@@ -223,5 +223,6 @@
       "role": "commentary context"
     }
   ],
-  "review_status": "editorial_draft"
+  "review_status": "editorial_draft",
+  "reading_note": "Textual variants occur at name 109: some commentaries read mahāsaktiḥ (महासक्तिः, fond of great union/festivity), while other editions read mahāśaktiḥ (महाशक्तिः, supreme power). Vedini displays the latter reading; review against chosen recitation tradition before audio."
 }
