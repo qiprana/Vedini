@@ -254,6 +254,26 @@ function loadAudio(){
     ["1",langText("Once","ಒಮ್ಮೆ")],["2",langText("Twice","ಎರಡು ಬಾರಿ")],
     ["3",langText("3 times","ಮೂರು ಬಾರಿ")],["loop",langText("Continuous","ನಿರಂತರ")]
    ]);
+   if(path.includes("/verses/sloka-")){
+    const warmPath=path.replace(".mp3","-warm.mp3");
+    try{
+     const warmResponse=await fetch(warmPath,{method:"HEAD"});
+     if(warmResponse.ok&&placeholder.isConnected){
+      const voice=setting(langText("Voice","ಧ್ವನಿ"),langText("Chanting voice","ಪಠಣದ ಧ್ವನಿ"),[
+       ["original",langText("Original","ಮೂಲ")],["warm",langText("Warm, deeper","ಮೃದು ಗಂಭೀರ")]
+      ]);
+      voice.addEventListener("change",()=>{
+       const wasPlaying=!player.paused;
+       const oldTime=player.currentTime;
+       player.pause();
+       player.src=voice.value==="warm"?warmPath:path;
+       player.load();
+       player.currentTime=oldTime;
+       if(wasPlaying){const p=player.play();if(p&&p.catch)p.catch(()=>{});}
+      });
+     }
+    }catch(_){/* Warm version not uploaded yet. */}
+   }
    let finished=0;
    speed.addEventListener("change",()=>{player.playbackRate=Number(speed.value)});
    repeat.addEventListener("change",()=>{finished=0;player.loop=repeat.value==="loop"});
