@@ -19,7 +19,7 @@ from pathlib import Path
 def get_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--start", type=int, default=1, help="First main śloka (default 1)")
-    p.add_argument("--end", type=int, default=15, help="Last main śloka (default 15)")
+    p.add_argument("--end", type=int, default=40, help="Last main śloka (default 40)")
     p.add_argument("--speed", type=float, default=1.05, help="CowChant speed (default 1.05)")
     p.add_argument("--device", choices=["auto", "mps", "cuda", "cpu"], default="auto")
     p.add_argument("--meter", default="auto", help="Override meter if desired (default: auto-detect)")
@@ -37,6 +37,12 @@ def reading_for_cowchant(verse: dict) -> str:
     lines = verse.get("reading", {}).get("devanagari", [])
     if not isinstance(lines, list) or not lines or not all(isinstance(x, str) and x.strip() for x in lines):
         raise ValueError(f"Verse {verse.get('verse_number')} has no usable Devanagari reading")
+    # Prefer a separate reviewed audio reading when one exists; otherwise use displayed padavicchedana.
+    preferred = verse.get("audio_text", {}).get("devanagari")
+    if isinstance(preferred, list) and preferred and all(isinstance(x, str) and x.strip() for x in preferred):
+        lines = preferred
+    elif isinstance(preferred, str) and preferred.strip():
+        lines = [preferred]
     result = "\n".join(lines)
     # Read printed compound breaks as short word boundaries; keep the spoken letters intact.
     result = re.sub(r"[-‐‑–—]", " ", result)
