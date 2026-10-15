@@ -1,0 +1,259 @@
+{
+  "id": "lalita-023",
+  "verse_number": 23,
+  "collection": "lalita-sahasranama",
+  "section": "main-stotram",
+  "reading": {
+    "devanagari": [
+      "महापद्माटवी-संस्था कदम्बवन-वासिनी ।",
+      "सुधासागर-मध्यस्था कामाक्षी कामदायिनी ॥ २३ ॥"
+    ],
+    "iast": [
+      "mahāpadmāṭavī-saṃsthā kadambavana-vāsinī ।",
+      "sudhāsāgara-madhyasthā kāmākṣī kāmadāyinī ॥ 23 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "She abides in a great forest of lotuses and in kadamba groves, at the heart of an ocean of nectar; as Kāmākṣī she grants fulfillment.",
+    "kannada": "ವಿಶಾಲ ಕಮಲವನ ಮತ್ತು ಕದಂಬವನದಲ್ಲಿ, ಅಮೃತಸಾಗರದ ಮಧ್ಯದಲ್ಲಿ ದೇವಿಯು ನೆಲೆಸಿದ್ದಾಳೆ. ಕಾಮಾಕ್ಷಿಯಾಗಿ ಮಂಗಳಕರ ಬಯಕೆಗಳನ್ನು ಪೂರೈಸುತ್ತಾಳೆ."
+  },
+  "study": {
+    "traditional_interpretation": {
+      "en": "The residence of Lalitā is now portrayed through three sensory images: lotuses unfolding, a fragrant forest, and an ocean of nectar. The lotus often symbolizes clarity arising unstained from uncertain conditions; *sudhā*, nectar, suggests the sweetness of an immortal spiritual fulfillment. *Kāma* is desire, and the name Kāmākṣī permits both a devotional image of gracious eyes and deeper reflection on how desire becomes transformed when directed toward the highest good.",
+      "kn": "ಲಲಿತೆಯ ನಿವಾಸವು ಇಲ್ಲಿ ಮೂರು ಚಿತ್ರಗಳಲ್ಲಿ ಕಾಣುತ್ತದೆ: ಅರಳುವ ಕಮಲ, ಪರಿಮಳದ ಕದಂಬವನ ಮತ್ತು ಅಮೃತಸಾಗರ. ಕಮಲವು ಪ್ರತಿಕೂಲ ಪರಿಸ್ಥಿತಿಯ ಮಧ್ಯೆಯೂ ನಿರ್ಮಲವಾಗಿ ಅರಳುವ ಸ್ಪಷ್ಟ ಅರಿವಿನ ಸಂಕೇತ; ‘ಸುಧಾ’ ಎಂಬ ಅಮೃತವು ಅಮರವಾದ ಆಧ್ಯಾತ್ಮಿಕ ಪೂರ್ಣತೆಯ ಮಾಧುರ್ಯವನ್ನು ಸೂಚಿಸಬಹುದು. ‘ಕಾಮ’ ಎಂದರೆ ಬಯಕೆ; ಕಾಮಾಕ್ಷಿಯ ಕರುಣೆಯ ದೃಷ್ಟಿಯು ಉನ್ನತ ಹಿತದ ಕಡೆಗೆ ತಿರುಗಿದ ಬಯಕೆಯ ಪರಿವರ್ತನೆಯನ್ನು ನೆನಪಿಸುತ್ತದೆ."
+    }
+  },
+  "names": [
+    {
+      "number": 59,
+      "sanskrit": "महापद्माटवीसंस्था",
+      "display_devanagari": "महापद्माटवी-संस्था",
+      "iast": "mahāpadmāṭavīsaṃsthā",
+      "display_iast": "mahāpadmāṭavī-saṃsthā",
+      "english": "Dwelling in an immense lotus forest.",
+      "kannada": "ವಿಶಾಲ ಕಮಲವನದಲ್ಲಿ ನೆಲೆಸಿರುವವಳು.",
+      "essential_meaning": {
+        "en": "Dwelling in an immense lotus forest.",
+        "kn": "ವಿಶಾಲ ಕಮಲವನದಲ್ಲಿ ನೆಲೆಸಿರುವವಳು."
+      },
+      "traditional_interpretation": {
+        "en": "*Mahā* means great, *padma* lotus, and *aṭavī* a forest. A whole forest of lotuses makes the Goddess’s abode a landscape of unfolding beauty. The lotus grows through muddy water yet remains visually pristine; its use here can invite contemplation of inward purity amid changing circumstances.",
+        "kn": "‘ಮಹಾ’ ವಿಶಾಲ; ‘ಪದ್ಮ’ ಕಮಲ; ‘ಅಟವೀ’ ಅರಣ್ಯ. ಕಮಲಗಳ ಸಮುದಾಯವೇ ದೇವಿಯ ನಿವಾಸವಾಗಿ ವರ್ಣಿಸಲಾಗಿದೆ. ಕೆಸರಿನ ನೀರಿನಲ್ಲೂ ನಿರ್ಮಲವಾಗಿ ಅರಳುವ ಕಮಲವು ಬದಲಾವಣೆಗಳ ನಡುವೆ ಅಂತರಂಗದ ಪಾವಿತ್ರ್ಯವನ್ನು ನೆನಪಿಸಬಹುದು."
+      },
+      "components": [
+        {
+          "dev": "महा",
+          "iast": "mahā",
+          "en": "great",
+          "kn": "ಮಹಾ"
+        },
+        {
+          "dev": "पद्म",
+          "iast": "padma",
+          "en": "lotus",
+          "kn": "ಕಮಲ"
+        },
+        {
+          "dev": "अटवी",
+          "iast": "aṭavī",
+          "en": "forest",
+          "kn": "ಅರಣ್ಯ"
+        },
+        {
+          "dev": "संस्था",
+          "iast": "saṃsthā",
+          "en": "abiding",
+          "kn": "ನೆಲೆಗೊಂಡವಳು"
+        }
+      ],
+      "review_status": "editorial_draft",
+      "sources": [
+        {
+          "url": "https://www.siva.sh/shri-lalita-sahasranama-stotra/21-25",
+          "role": "text"
+        }
+      ]
+    },
+    {
+      "number": 60,
+      "sanskrit": "कदम्बवनवासिनी",
+      "display_devanagari": "कदम्बवन-वासिनी",
+      "iast": "kadambavanavāsinī",
+      "display_iast": "kadambavana-vāsinī",
+      "english": "Dwelling in a grove of kadamba trees.",
+      "kannada": "ಕದಂಬವನದಲ್ಲಿ ವಾಸಿಸುವವಳು.",
+      "essential_meaning": {
+        "en": "Dwelling in a grove of kadamba trees.",
+        "kn": "ಕದಂಬವನದಲ್ಲಿ ವಾಸಿಸುವವಳು."
+      },
+      "traditional_interpretation": {
+        "en": "*Kadamba* is a fragrant flowering tree, *vana* a grove, and *vāsinī* one who resides there. This name links the Divine Mother intimately with a living landscape rather than only with jewels or palaces. The recurring kadamba imagery lends continuity to the earlier names describing her flower ornaments.",
+        "kn": "‘ಕದಂಬ’ ಪರಿಮಳದ ಹೂ ಬಿಡುವ ಮರ; ‘ವನ’ ಕಾಡು; ‘ವಾಸಿನೀ’ ಅಲ್ಲಿ ವಾಸಿಸುವವಳು. ದೇವಿಯನ್ನು ರತ್ನಗೃಹಕ್ಕೆ ಮಾತ್ರವಲ್ಲ, ಜೀವಂತ ಪ್ರಕೃತಿಗೂ ಸಂಬಂಧಿಸುವ ನಾಮವಿದು. ಹಿಂದಿನ ಕದಂಬ ಹೂಗಳ ವರ್ಣನೆಯೊಂದಿಗೆ ಈ ಚಿತ್ರವು ಸಂಬಂಧ ಹೊಂದುತ್ತದೆ."
+      },
+      "components": [
+        {
+          "dev": "कदम्ब",
+          "iast": "kadamba",
+          "en": "kadamba tree",
+          "kn": "ಕದಂಬಮರ"
+        },
+        {
+          "dev": "वन",
+          "iast": "vana",
+          "en": "grove",
+          "kn": "ವನ"
+        },
+        {
+          "dev": "वासिनी",
+          "iast": "vāsinī",
+          "en": "resident",
+          "kn": "ವಾಸಿಸುವವಳು"
+        }
+      ],
+      "review_status": "editorial_draft",
+      "sources": [
+        {
+          "url": "https://www.siva.sh/shri-lalita-sahasranama-stotra/21-25",
+          "role": "text"
+        }
+      ]
+    },
+    {
+      "number": 61,
+      "sanskrit": "सुधासागरमध्यस्था",
+      "display_devanagari": "सुधासागर-मध्यस्था",
+      "iast": "sudhāsāgaramadhyasthā",
+      "display_iast": "sudhāsāgara-madhyasthā",
+      "english": "Abiding at the center of an ocean of nectar.",
+      "kannada": "ಅಮೃತಸಾಗರದ ಮಧ್ಯದಲ್ಲಿ ನೆಲೆಸಿರುವವಳು.",
+      "essential_meaning": {
+        "en": "Abiding at the center of an ocean of nectar.",
+        "kn": "ಅಮೃತಸಾಗರದ ಮಧ್ಯದಲ್ಲಿ ನೆಲೆಸಿರುವವಳು."
+      },
+      "traditional_interpretation": {
+        "en": "*Sudhā* means nectar or ambrosia; *sāgara* ocean; *madhya* center. Nectar conveys undying sweetness in sacred imagery. Contemplatively, a sea of nectar can point toward *ānanda*, the fullness of inner bliss, beyond temporary pleasant sensations. Its center becomes the still place in which such fulfillment is recognized.",
+        "kn": "‘ಸುಧಾ’ ಅಮೃತ; ‘ಸಾಗರ’ ಸಮುದ್ರ; ‘ಮಧ್ಯ’ ಕೇಂದ್ರ. ಪವಿತ್ರ ರೂಪಕದಲ್ಲಿ ಅಮೃತವು ಅಮರ ಮಾಧುರ್ಯದ ಸಂಕೇತ. ಧ್ಯಾನದಲ್ಲಿ ಅಮೃತಸಾಗರವು ಕ್ಷಣಿಕ ಸುಖವನ್ನು ಮೀರಿದ ‘ಆನಂದ’ದ ಪೂರ್ಣತೆಯನ್ನು ಸೂಚಿಸಬಹುದು; ಅದರ ಮಧ್ಯಭಾಗವು ಆ ಪೂರ್ಣತೆಯನ್ನು ಅರಿಯುವ ಸ್ಥಿರ ಕೇಂದ್ರ."
+      },
+      "components": [
+        {
+          "dev": "सुधा",
+          "iast": "sudhā",
+          "en": "nectar",
+          "kn": "ಅಮೃತ"
+        },
+        {
+          "dev": "सागर",
+          "iast": "sāgara",
+          "en": "ocean",
+          "kn": "ಸಾಗರ"
+        },
+        {
+          "dev": "मध्य",
+          "iast": "madhya",
+          "en": "center",
+          "kn": "ಮಧ್ಯ"
+        },
+        {
+          "dev": "स्था",
+          "iast": "sthā",
+          "en": "abiding",
+          "kn": "ನೆಲೆಗೊಂಡವಳು"
+        }
+      ],
+      "review_status": "editorial_draft",
+      "sources": [
+        {
+          "url": "https://www.siva.sh/shri-lalita-sahasranama-stotra/21-25",
+          "role": "text"
+        }
+      ]
+    },
+    {
+      "number": 62,
+      "sanskrit": "कामाक्षी",
+      "display_devanagari": "कामाक्षी",
+      "iast": "kāmākṣī",
+      "display_iast": "kāmākṣī",
+      "english": "The gracious Goddess Kāmākṣī.",
+      "kannada": "ಕರುಣೆಯ ದೃಷ್ಟಿಯುಳ್ಳ ಕಾಮಾಕ್ಷಿ.",
+      "essential_meaning": {
+        "en": "The gracious Goddess Kāmākṣī.",
+        "kn": "ಕರುಣೆಯ ದೃಷ್ಟಿಯುಳ್ಳ ಕಾಮಾಕ್ಷಿ."
+      },
+      "traditional_interpretation": {
+        "en": "*Kāma* means desire, love, or longing; *akṣi* means eye. Kāmākṣī is a revered name of Lalitā, particularly associated with Kanchipuram. Her compassionate gaze suggests desire refined by understanding: instead of receiving everything the mind happens to crave, one seeks what truly leads to well-being and freedom.",
+        "kn": "‘ಕಾಮ’ ಬಯಕೆ ಅಥವಾ ಪ್ರೀತಿ; ‘ಅಕ್ಷಿ’ ಕಣ್ಣು. ಕಾಂಚೀಪುರದೊಂದಿಗೆ ವಿಶೇಷವಾಗಿ ಸಂಬಂಧಿಸಿರುವ ಕಾಮಾಕ್ಷಿ ಲಲಿತೆಯ ಪ್ರಸಿದ್ಧ ನಾಮ. ಆಕೆಯ ಕರುಣಾದೃಷ್ಟಿಯು ಪ್ರತಿಯೊಂದು ಆಸೆಯನ್ನು ಈಡೇರಿಸುವುದಕ್ಕಿಂತ, ನಿಜವಾದ ಹಿತ ಮತ್ತು ಮುಕ್ತಿಗೆ ದಾರಿಮಾಡುವ ಬಯಕೆಯ ವಿವೇಕವನ್ನು ನೆನಪಿಸುತ್ತದೆ."
+      },
+      "components": [
+        {
+          "dev": "काम",
+          "iast": "kāma",
+          "en": "desire, love",
+          "kn": "ಬಯಕೆ; ಪ್ರೀತಿ"
+        },
+        {
+          "dev": "अक्षी",
+          "iast": "akṣī",
+          "en": "eyes",
+          "kn": "ಕಣ್ಣುಗಳು"
+        }
+      ],
+      "review_status": "editorial_draft",
+      "sources": [
+        {
+          "url": "https://www.siva.sh/shri-lalita-sahasranama-stotra/21-25",
+          "role": "text"
+        }
+      ]
+    },
+    {
+      "number": 63,
+      "sanskrit": "कामदायिनी",
+      "display_devanagari": "कामदायिनी",
+      "iast": "kāmadāyinī",
+      "display_iast": "kāmadāyinī",
+      "english": "Bestower of worthy aspirations.",
+      "kannada": "ಶುಭಬಯಕೆಗಳನ್ನು ಪೂರೈಸುವವಳು.",
+      "essential_meaning": {
+        "en": "Bestower of worthy aspirations.",
+        "kn": "ಶುಭಬಯಕೆಗಳನ್ನು ಪೂರೈಸುವವಳು."
+      },
+      "traditional_interpretation": {
+        "en": "*Kāma* is a wish or aspiration; *dāyinī* means giver. The name praises the Goddess as the source of fulfillment. In a deeper devotional reading, the highest gift is not an endless succession of fulfilled wishes but growth in discernment, so that longing itself comes to rest in spiritual completeness.",
+        "kn": "‘ಕಾಮ’ ಇಚ್ಛೆ ಅಥವಾ ಬಯಕೆ; ‘ದಾಯಿನೀ’ ಕೊಡುವವಳು. ದೇವಿಯು ಪೂರ್ಣತೆಯನ್ನು ನೀಡುವ ಮೂಲವೆಂದು ಈ ನಾಮ ಸ್ತುತಿಸುತ್ತದೆ. ಆಳವಾದ ಭಕ್ತಿಪರ ಅರ್ಥದಲ್ಲಿ ನಿರಂತರ ಆಸೆಗಳ ಈಡೇರಿಕೆಯಲ್ಲ, ಬಯಕೆಗೂ ವಿವೇಕ ಬಂದು ಆಧ್ಯಾತ್ಮಿಕ ಪೂರ್ಣತೆಯಲ್ಲಿ ನೆಲೆಸುವುದೇ ಶ್ರೇಷ್ಠ ವರ."
+      },
+      "components": [
+        {
+          "dev": "काम",
+          "iast": "kāma",
+          "en": "desire",
+          "kn": "ಬಯಕೆ"
+        },
+        {
+          "dev": "दायिनी",
+          "iast": "dāyinī",
+          "en": "bestower",
+          "kn": "ನೀಡುವವಳು"
+        }
+      ],
+      "review_status": "editorial_draft",
+      "sources": [
+        {
+          "url": "https://www.siva.sh/shri-lalita-sahasranama-stotra/21-25",
+          "role": "text"
+        }
+      ]
+    }
+  ],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "sources": [
+    {
+      "url": "https://www.siva.sh/shri-lalita-sahasranama-stotra/21-25",
+      "role": "Sanskrit text and cross-check"
+    }
+  ],
+  "review_status": "editorial_draft"
+}
