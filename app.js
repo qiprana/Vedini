@@ -5,7 +5,7 @@ const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&
 const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
 const langText=(en,kn)=>language==="kn"?kn:en;
 let verses=[],dhyana=[],nameData={},dhyanaData={},verseData={},language="en",searchTerm="";
-const pageSize=5,plannedVerses=180;
+const pageSize=10,plannedVerses=180;
 let view="verses",pageIndex=0,selectedVerse=1;
 
 function kannadaFromDevanagari(s){
@@ -27,9 +27,9 @@ function findComponents(v,n,info){
 }
 function wordsGrid(parts){
  if(!parts?.length)return "<p class='small-note'>"+esc(langText("This word is awaiting editorial analysis.","ಈ ಪದದ ಅರ್ಥಪರಿಶೀಲನೆ ಬಾಕಿಯಿದೆ."))+"</p>";
- return "<div class='word-grid' role='list'>"+parts.map(c=>{
+ return "<div class='word-grid compact-words' role='list'>"+parts.map(c=>{
  const written=language==="kn"?kannadaFromDevanagari(c.dev):c.dev;
- return "<div class='word-row' role='listitem'><div class='word-original'>"+esc(written)+" <span class='word-iast'>"+esc(c.iast)+"</span></div><div class='word-translation'>"+esc(c[language]||"")+"</div></div>";
+ return "<div class='word-row word-chip' role='listitem'><div class='word-original'>"+esc(written)+" <span class='word-iast'>"+esc(c.iast)+"</span></div><div class='word-translation'>"+esc(c[language]||"")+"</div></div>";
  }).join("")+"</div>";
 }
 function richParagraphs(value){
@@ -138,7 +138,7 @@ function updateNavigation(){
  msg("#main-heading","Lalitā Sahasranāma · Ślokas "+start+"–"+end,"ಲಲಿತಾ ಸಹಸ್ರನಾಮ · ಶ್ಲೋಕಗಳು "+start+"–"+end);
  msg("#study-languages-label","Reading & meaning:","ಲಿಪಿ ಮತ್ತು ಅರ್ಥ:");
  msg("#expand-all",dv?"Expand all word meanings":"Expand all name meanings",dv?"ಎಲ್ಲ ಪದಾರ್ಥಗಳನ್ನು ತೆರೆಯಿರಿ":"ಎಲ್ಲ ನಾಮಗಳ ಅರ್ಥ ತೆರೆಯಿರಿ");
- if(!searching)msg("#result-note",verses.length+" ślokas available · "+plannedVerses+" planned · Five at a time","ಲಭ್ಯ: "+verses.length+" ಶ್ಲೋಕಗಳು · ಯೋಜಿತ: "+plannedVerses+" · ಒಂದು ಪುಟದಲ್ಲಿ ಐದು");
+ if(!searching)msg("#result-note",verses.length+" ślokas available · "+plannedVerses+" planned · Ten at a time","ಲಭ್ಯ: "+verses.length+" ಶ್ಲೋಕಗಳು · ಯೋಜಿತ: "+plannedVerses+" · ಒಂದು ಪುಟದಲ್ಲಿ ಹತ್ತು");
 }
 function render(){
  const opened=savedDetails();
@@ -274,6 +274,7 @@ function loadAudio(){
     ["0.75","0.75×"],["0.9","0.9×"],["1","1×"],
     ["1.1","1.1×"],["1.25","1.25×"],["1.5","1.5×"]
    ]);
+   speed.value="0.9";player.playbackRate=0.9;
    const repeat=setting(langText("Repeat","ಪುನರಾವರ್ತನೆ"),langText("Number of plays","ಪುನರಾವರ್ತನೆಗಳ ಸಂಖ್ಯೆ"),[
     ["1",langText("Once","ಒಮ್ಮೆ")],["2",langText("Twice","ಎರಡು ಬಾರಿ")],
     ["3",langText("3 times","ಮೂರು ಬಾರಿ")],
