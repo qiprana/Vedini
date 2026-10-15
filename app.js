@@ -218,18 +218,24 @@ function loadInitialLocation(){
 function loadAudio(){
  document.querySelectorAll("[data-audio-path]").forEach(async placeholder=>{
   const path=placeholder.dataset.audioPath;
+  const numberMatch=path.match(/\/verses\/sloka-(\d{3})\.mp3$/);
+  const verseNumber=numberMatch?Number(numberMatch[1]):null;
+  const originalConfirmed=verseNumber!==null&&verseNumber>=1&&verseNumber<=15;
   try{
-   const response=await fetch(path,{method:"HEAD"});
-   if(!response.ok||!placeholder.isConnected)return;
-
+   // The published MP3s for verses 1–15 are already verified.
+   // Do not hide these players if a browser blocks or caches HEAD requests.
+   if(!originalConfirmed){
+    const response=await fetch(path,{method:"HEAD"});
+    if(!response.ok)return;
+   }
+   if(!placeholder.isConnected)return;
    const holder=document.createElement("div");
    holder.className="audio-player";
    const player=document.createElement("audio");
    player.controls=true;
-   player.preload="none";
+   player.preload="metadata";
    player.src=path;
    player.setAttribute("aria-label",langText("Chant recording","ಶ್ಲೋಕದ ಧ್ವನಿಮುದ್ರಣ"));
-
    const toolbar=document.createElement("div");
    toolbar.className="audio-toolbar";
    function setting(labelText,ariaLabel,choices){
@@ -247,50 +253,69 @@ function loadAudio(){
     toolbar.appendChild(label);
     return select;
    }
+   const warmPath=numberMatch?path.replace(/\.mp3$/,"-warm-deep.mp3"):null;
+   // These two alternatives have been verified in GitHub.
+   let hasWarm=verseNumber===1||verseNumber===2;
+   if(warmPath&&!hasWarm){
+    try{
+     const response=await fetch(warmPath,{method:"HEAD"});
+     hasWarm=response.ok;
+    }catch(_){/* Only the original voice will be shown. */}
+   }
+   if(!placeholder.isConnected)return;
+   let voice=null;
+   if(hasWarm){
+    voice=setting(langText("Voice","ಧ್ವನಿ"),langText("Choose chanting voice","ಪಠಣದ ಧ್ವನಿಯನ್ನು ಆರಿಸಿ"),[
+     ["original",langText("Original","ಮೂಲ")],
+     ["warm",langText("Warm, deeper","ಮೃದು ಗಂಭೀರ")]
+    ]);
+   }
    const speed=setting(langText("Speed","ವೇಗ"),langText("Playback speed","ಪ್ಲೇಬ್ಯಾಕ್ ವೇಗ"),[
-    ["0.75","0.75×"],["0.9","0.9×"],["1","1×"],["1.1","1.1×"],["1.25","1.25×"],["1.5","1.5×"]
+    ["0.75","0.75×"],["0.9","0.9×"],["1","1×"],
+    ["1.1","1.1×"],["1.25","1.25×"],["1.5","1.5×"]
    ]);
    const repeat=setting(langText("Repeat","ಪುನರಾವರ್ತನೆ"),langText("Number of plays","ಪುನರಾವರ್ತನೆಗಳ ಸಂಖ್ಯೆ"),[
     ["1",langText("Once","ಒಮ್ಮೆ")],["2",langText("Twice","ಎರಡು ಬಾರಿ")],
-    ["3",langText("3 times","ಮೂರು ಬಾರಿ")],["loop",langText("Continuous","ನಿರಂತರ")]
+    ["3",langText("3 times","ಮೂರು ಬಾರಿ")],
+    ["loop",langText("Continuous","ನಿರಂತರ")]
    ]);
-   if(path.includes("/verses/sloka-")){
-    const warmPath=path.replace(".mp3","-warm-deep.mp3");
-    try{
-     const warmResponse=await fetch(warmPath,{method:"HEAD"});
-     if(warmResponse.ok&&placeholder.isConnected){
-      const voice=setting(langText("Voice","ಧ್ವನಿ"),langText("Chanting voice","ಪಠಣದ ಧ್ವನಿ"),[
-       ["original",langText("Original","ಮೂಲ")],["warm",langText("Warm, deeper","ಮೃದು ಗಂಭೀರ")]
-      ]);
-      voice.addEventListener("change",()=>{
-       const wasPlaying=!player.paused;
-       const oldTime=player.currentTime;
-       player.pause();
-       player.src=voice.value==="warm"?warmPath:path;
-       player.load();
-       player.currentTime=oldTime;
-       if(wasPlaying){const p=player.play();if(p&&p.catch)p.catch(()=>{});}
-      });
-     }
-    }catch(_){/* Warm version not uploaded yet. */}
+   let completed=0;
+   if(voice){
+    voice.addEventListener("change",()=>{
+     const wasPlaying=!player.paused;
+     const previousTime=Number.isFinite(player.currentTime)?player.currentTime:0;
+     completed=0;
+     player.pause();
+     player.src=voice.value==="warm"?warmPath:path;
+     player.load();
+     player.playbackRate=Number(speed.value);
+     player.addEventListener("loadedmetadata",()=>{
+      if(previousTime>0&&Number.isFinite(player.duration)){
+       try{player.currentTime=Math.min(previousTime,Math.max(0,player.duration-0.1));}catch(_){}
+      }
+      if(wasPlaying){
+       const playResult=player.play();
+       if(playResult&&typeof playResult.catch==="function")playResult.catch(()=>{});
+      }
+     },{once:true});
+    });
    }
-   let finished=0;
    speed.addEventListener("change",()=>{player.playbackRate=Number(speed.value)});
-   repeat.addEventListener("change",()=>{finished=0;player.loop=repeat.value==="loop"});
+   repeat.addEventListener("change",()=>{completed=0;player.loop=repeat.value==="loop"});
    player.addEventListener("ended",()=>{
     if(repeat.value==="loop")return;
-    finished+=1;
-    if(finished<Number(repeat.value)){
+    completed+=1;
+    if(completed<Number(repeat.value)){
      player.currentTime=0;
-     const restarting=player.play();
-     if(restarting&&typeof restarting.catch==="function")restarting.catch(()=>{});
+     const replay=player.play();
+     if(replay&&typeof replay.catch==="function")replay.catch(()=>{});
     }else{
-     finished=0;
+     completed=0;
     }
    });
    holder.append(player,toolbar);
    placeholder.replaceWith(holder);
-  }catch(_){/* Keep the placeholder until a recording is uploaded. */}
+  }catch(_){/* Keep placeholder if recording is not available. */}
  });
 }
 function switchLanguage(kn){
