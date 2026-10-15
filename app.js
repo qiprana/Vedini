@@ -255,7 +255,7 @@ function loadAudio(){
     ["3",langText("3 times","ಮೂರು ಬಾರಿ")],["loop",langText("Continuous","ನಿರಂತರ")]
    ]);
    if(path.includes("/verses/sloka-")){
-    const warmPath=path.replace(".mp3","-warm.mp3");
+    const warmPath=path.replace(".mp3","-warm-deep.mp3");
     try{
      const warmResponse=await fetch(warmPath,{method:"HEAD"});
      if(warmResponse.ok&&placeholder.isConnected){
