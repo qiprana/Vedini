@@ -176,3 +176,10 @@ header p{color:#845c4b;font-size:18px}
 .quick-buttons button{width:38px;height:36px;background:#fffdf8;border:1px solid #abc3ad;border-radius:8px;color:#315544;cursor:pointer;font:700 13px system-ui,sans-serif}
 .quick-buttons button.quick-current,.quick-buttons button:hover{background:#315544;color:#fff;border-color:#315544}
 @media(max-width:530px){.verse-quick-index{gap:8px}.quick-label{width:100%}.quick-buttons{width:100%;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}.quick-buttons button{width:100%}}
+
+
+.verse-group-tabs{display:flex;gap:8px;overflow-x:auto;padding:12px 2px 8px;scrollbar-width:thin;scroll-snap-type:x proximity}
+.verse-group-tabs .group-tab{flex:0 0 auto;min-width:102px;background:#fbf8ee;border:1.5px solid #c4cdb8;color:#365545;padding:11px 17px;border-radius:11px 11px 2px 2px;cursor:pointer;font:700 15px/1.4 system-ui,sans-serif;scroll-snap-align:start}
+.verse-group-tabs .group-tab.current{background:#355847;color:#fff;border-color:#355847;border-bottom:3px solid #be9770;box-shadow:0 2px 9px #35584718}
+.verse-group-tabs .group-tab:not(.current):hover{background:#e9f0e4}
+@media(max-width:670px){.verse-group-tabs{margin-inline:-8px;padding-inline:8px}.verse-group-tabs .group-tab{min-width:91px;padding:10px 13px}.range-control{display:none}}
