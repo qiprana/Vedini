@@ -140,10 +140,19 @@ function updateNavigation(){
  msg("#expand-all",dv?"Expand all word meanings":"Expand all name meanings",dv?"ಎಲ್ಲ ಪದಾರ್ಥಗಳನ್ನು ತೆರೆಯಿರಿ":"ಎಲ್ಲ ನಾಮಗಳ ಅರ್ಥ ತೆರೆಯಿರಿ");
  if(!searching)msg("#result-note",verses.length+" ślokas available · "+plannedVerses+" planned · Ten at a time","ಲಭ್ಯ: "+verses.length+" ಶ್ಲೋಕಗಳು · ಯೋಜಿತ: "+plannedVerses+" · ಒಂದು ಪುಟದಲ್ಲಿ ಹತ್ತು");
 }
+function updateQuickIndex(){
+ const root=$("#verse-quick-index");if(!root)return;
+ if(view!=="verses"||searchTerm.trim()){root.hidden=true;return;}
+ root.hidden=false;
+ const start=pageIndex*pageSize+1,end=Math.min(verses.length,start+pageSize-1);
+ root.innerHTML="<span class='quick-label'>"+esc(langText("In this group","ಈ ವಿಭಾಗದಲ್ಲಿ"))+"</span><div class='quick-buttons'>"+Array.from({length:end-start+1},(_,i)=>{const n=start+i;return "<button type='button' aria-label='Śloka "+n+"' data-quick='"+n+"' class='"+(n===selectedVerse?"quick-current":"")+"'>"+n+"</button>"}).join("")+"</div>";
+ root.querySelectorAll("button[data-quick]").forEach(b=>b.onclick=()=>jump(Number(b.dataset.quick)));
+}
 function render(){
  const opened=savedDetails();
  const q=norm(searchTerm.trim());
  updateNavigation();
+ updateQuickIndex();
  if(q){
   $("#dhyana-cards").innerHTML="";
   $("#verse-cards").innerHTML="";
@@ -327,7 +336,7 @@ function switchLanguage(kn){
  render();
 }
 async function init(){
- const paths=["lalita/dhyana.json","lalita/names-interpretations-draft.json","lalita/study-names-011-018.json","lalita/study-names-019-026.json","lalita/study-dhyana-01-02.json","lalita/study-dhyana-03-04.json","lalita/study-verses-001-010.json",...Array.from({length:20},(_,i)=>"lalita/verses/verse-"+String(i+1).padStart(3,"0")+".json")];
+ const paths=["lalita/dhyana.json","lalita/names-interpretations-draft.json","lalita/study-names-011-018.json","lalita/study-names-019-026.json","lalita/study-dhyana-01-02.json","lalita/study-dhyana-03-04.json","lalita/study-verses-001-010.json",...Array.from({length:40},(_,i)=>"lalita/verses/verse-"+String(i+1).padStart(3,"0")+".json")];
  try{
  const files=await Promise.all(paths.map(fetchJSON));
  dhyana=files[0];
@@ -339,7 +348,7 @@ async function init(){
  verses=files.slice(7);
  let index=0;
  verses.forEach(v=>{if(v.study?.traditional_interpretation)verseData[v.verse_number]=v.study;(v.names||[]).forEach(n=>{n.studyNumber=++index;if(n.essential_meaning&&n.traditional_interpretation)nameData[n.studyNumber]={...(nameData[n.studyNumber]||{}),...n};});});
- if(index!==48)throw new Error("Expected 48 names in the first 20 verses; found "+index);
+ if(index!==111)throw new Error("Expected 111 names in the first 40 verses; found "+index);
  initializeRanges();const initial=loadInitialLocation();render();if(initial)scrollToElement(initial);
  }catch(err){
  const n=$("#result-note");if(n)n.textContent="Unable to load study content: "+err.message;
