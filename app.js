@@ -27,9 +27,9 @@ function findComponents(v,n,info){
 }
 function wordsGrid(parts){
  if(!parts?.length)return "<p class='small-note'>"+esc(langText("This word is awaiting editorial analysis.","ಈ ಪದದ ಅರ್ಥಪರಿಶೀಲನೆ ಬಾಕಿಯಿದೆ."))+"</p>";
- return "<div class='word-grid compact-words' role='list'>"+parts.map(c=>{
- const written=language==="kn"?kannadaFromDevanagari(c.dev):c.dev;
- return "<div class='word-row word-chip' role='listitem'><div class='word-original'>"+esc(written)+" <span class='word-iast'>"+esc(c.iast)+"</span></div><div class='word-translation'>"+esc(c[language]||"")+"</div></div>";
+ return "<div class='word-grid glossary' role='list'>"+parts.map(c=>{
+  const written=language==="kn"?kannadaFromDevanagari(c.dev):c.dev;
+  return "<div class='word-row glossary-row' role='listitem'><div class='word-original'><strong class='word-dev'>"+esc(written)+"</strong><span class='word-iast'>"+esc(c.iast)+"</span></div><div class='word-translation'>"+esc(c[language]||"")+"</div></div>";
  }).join("")+"</div>";
 }
 function richParagraphs(value){
@@ -125,28 +125,24 @@ function updateNavigation(){
  $("#dhyana").hidden=searching||view!=="dhyana";
  $("#main-stotra").hidden=searching||view!=="verses";
  $("#search-results").hidden=!searching;
- $("#range-navigation").hidden=searching||view!=="verses";
  $("#verse-group-tabs").hidden=searching||view!=="verses";
  $("#bottom-navigation").hidden=searching||view!=="verses";
+ $("#sticky-verse-navigation").hidden=searching||view!=="verses";
  const dv=view==="dhyana";
  $("#tab-dhyana").classList.toggle("chosen",dv);
  $("#tab-verses").classList.toggle("chosen",!dv);
  $("#tab-dhyana").setAttribute("aria-selected",String(dv));
  $("#tab-verses").setAttribute("aria-selected",String(!dv));
  const totalPages=Math.ceil(verses.length/pageSize);
- $("#range-select").value=String(pageIndex);
  renderGroupTabs();
- for(const id of ["previous-group","bottom-previous"])$("#"+id).disabled=pageIndex<=0;
- for(const id of ["next-group","bottom-next"])$("#"+id).disabled=pageIndex>=totalPages-1;
+ $("#bottom-previous").disabled=pageIndex<=0;
+ $("#bottom-next").disabled=pageIndex>=totalPages-1;
  const start=pageIndex*pageSize+1,end=Math.min(verses.length,start+pageSize-1);
  const rangeText=langText("Ślokas "+start+"–"+end+" of "+verses.length,"ಶ್ಲೋಕಗಳು "+start+"–"+end+" / "+verses.length);
- $("#page-position").textContent=rangeText;
  $("#bottom-position").textContent=rangeText;
  msg("#dhyana-heading","Dhyāna Ślokas","ಧ್ಯಾನ ಶ್ಲೋಕಗಳು");
  msg("#main-heading","Lalitā Sahasranāma · Ślokas "+start+"–"+end,"ಲಲಿತಾ ಸಹಸ್ರನಾಮ · ಶ್ಲೋಕಗಳು "+start+"–"+end);
- msg("#study-languages-label","Reading & meaning:","ಲಿಪಿ ಮತ್ತು ಅರ್ಥ:");
- msg("#expand-all",dv?"Expand all word meanings":"Expand all name meanings",dv?"ಎಲ್ಲ ಪದಾರ್ಥಗಳನ್ನು ತೆರೆಯಿರಿ":"ಎಲ್ಲ ನಾಮಗಳ ಅರ್ಥ ತೆರೆಯಿರಿ");
- if(!searching)msg("#result-note",verses.length+" ślokas available · "+plannedVerses+" planned · Ten at a time","ಲಭ್ಯ: "+verses.length+" ಶ್ಲೋಕಗಳು · ಯೋಜಿತ: "+plannedVerses+" · ಒಂದು ಪುಟದಲ್ಲಿ ಹತ್ತು");
+ msg("#study-languages-label","Script & meaning","ಲಿಪಿ ಮತ್ತು ಅರ್ಥ:");
 }
 function updateQuickIndex(){
  const root=$("#verse-quick-index");if(!root)return;
@@ -214,13 +210,6 @@ function jump(n,writeURL=true){
  searchTerm="";$("#search").value="";$("#goto").value=String(n);
  if(writeURL)saveLocation("sloka",n);
  render();scrollToElement("verse-"+n);
-}
-function initializeRanges(){
- const el=$("#range-select"),count=Math.ceil(verses.length/pageSize);
- el.innerHTML=Array.from({length:count},(_,i)=>{
-  const from=i*pageSize+1,to=Math.min(verses.length,from+pageSize-1);
-  return "<option value='"+i+"'>"+from+"–"+to+"</option>";
- }).join("");
 }
 function loadInitialLocation(){
  const params=new URLSearchParams(window.location.search);
@@ -357,7 +346,7 @@ async function init(){
  let index=0;
  verses.forEach(v=>{if(v.study?.traditional_interpretation)verseData[v.verse_number]=v.study;(v.names||[]).forEach(n=>{n.studyNumber=++index;if(n.essential_meaning&&n.traditional_interpretation)nameData[n.studyNumber]={...(nameData[n.studyNumber]||{}),...n};});});
  if(index!==111)throw new Error("Expected 111 names in the first 40 verses; found "+index);
- initializeRanges();const initial=loadInitialLocation();render();if(initial)scrollToElement(initial);
+ const initial=loadInitialLocation();render();if(initial)scrollToElement(initial);
  }catch(err){
  const n=$("#result-note");if(n)n.textContent="Unable to load study content: "+err.message;
  }
@@ -369,16 +358,8 @@ $("#go").onclick=()=>jump(Number($("#goto").value));
 $("#goto").onkeydown=e=>{if(e.key==="Enter")jump(Number(e.target.value))};
 $("#tab-dhyana").onclick=()=>showDhyana(1);
 $("#tab-verses").onclick=()=>openGroup(pageIndex);
-$("#range-select").onchange=e=>openGroup(Number(e.target.value));
-$("#previous-group").onclick=()=>openGroup(pageIndex-1);
-$("#next-group").onclick=()=>openGroup(pageIndex+1);
 $("#bottom-previous").onclick=()=>openGroup(pageIndex-1);
 $("#bottom-next").onclick=()=>openGroup(pageIndex+1);
 window.addEventListener("popstate",()=>{searchTerm="";$("#search").value="";const target=loadInitialLocation();render();if(target)scrollToElement(target);});
-const expand=$("#expand-all");if(expand)expand.onclick=()=>{
- const items=Array.from(document.querySelectorAll(".name-details"));
- const desired=!items.every(d=>d.open);
- items.forEach(d=>d.open=desired);
-};
 init();
 })();
