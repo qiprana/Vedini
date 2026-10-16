@@ -183,3 +183,80 @@ header p{color:#845c4b;font-size:18px}
 .verse-group-tabs .group-tab.current{background:#355847;color:#fff;border-color:#355847;border-bottom:3px solid #be9770;box-shadow:0 2px 9px #35584718}
 .verse-group-tabs .group-tab:not(.current):hover{background:#e9f0e4}
 @media(max-width:670px){.verse-group-tabs{margin-inline:-8px;padding-inline:8px}.verse-group-tabs .group-tab{min-width:91px;padding:10px 13px}.range-control{display:none}}
+
+
+/* Vedini reader v5 — compact header, sticky navigation, readable glossary */
+.reader-page{max-width:1260px}
+.reader-page .reader-header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:11px clamp(14px,2.5vw,25px);background:linear-gradient(100deg,#e8f1e8,#fff1dc);border:1px solid #dfd0ba;border-radius:14px}
+.reader-home-link{font:650 14px/1.5 system-ui,sans-serif;color:#315543;text-decoration:none;white-space:nowrap}
+.reader-home-link:hover{text-decoration:underline}
+.reader-identity{display:flex;align-items:baseline;gap:15px;flex-wrap:wrap;justify-content:flex-end}
+.reader-brand{font:500 clamp(26px,3vw,37px)/1.15 Georgia,serif;color:#284d3e;letter-spacing:-.02em}
+.reader-tagline{font:14px Georgia,serif;color:#9a644e}
+.reader-page .top{margin:8px 0 1px}
+.reader-page #reader-title{font-size:clamp(22px,2.5vw,30px);font-weight:500;margin:5px 0;color:#2c4537}
+.reader-page .reader-nav{background:transparent;border:0;padding:7px 0 9px;margin:0;gap:9px}
+.reader-page .reader-tabs button{min-height:43px;font-size:15px;padding:9px 18px}
+.reader-page .jump-controls{font-size:14px}
+.reader-page .jump-controls button{min-height:40px}
+.reader-page .toolbar{gap:14px;padding:9px 0 14px}
+.reader-page .language-controls{display:flex;align-items:center;flex-wrap:wrap;gap:12px}
+.reader-page #study-languages-label{font:700 14px/1.4 system-ui,sans-serif;color:#34483d}
+.reader-page .language-toggle{display:flex;gap:7px}
+.reader-page .language-toggle .toggle{display:inline-flex;align-items:center;justify-content:center;min-height:50px;min-width:138px;padding:7px 20px;border:2px solid #a8bfa9;border-radius:11px;font-size:21px;font-weight:700;color:#29463a;background:#fffcf6;cursor:pointer}
+.reader-page .language-toggle .toggle.chosen{background:#315647;color:#fff;border-color:#315647;box-shadow:0 2px 8px #35584726}
+.reader-page .language-toggle .toggle:not(.chosen):hover{background:#e6efe5}
+.reader-page #search{flex:1 1 230px;max-width:330px;min-height:44px;font-size:15px}
+.reader-page #result-note{margin:0;font-size:14px;color:#8b4e38}
+.reader-page #result-note:empty{display:none}
+.reader-page .sticky-verse-navigation{position:sticky;top:0;z-index:20;background:#fffaf2;border:1px solid #d2ddca;border-radius:12px;padding:8px 10px 9px;margin:10px 0 15px;box-shadow:0 7px 16px #2d513117}
+.reader-page .verse-group-tabs{margin:0;overflow-x:auto;padding:2px 0 9px;gap:7px;scrollbar-width:thin}
+.reader-page .verse-group-tabs .group-tab{min-width:92px;padding:9px 14px;font-size:15px;border-radius:8px}
+.reader-page .verse-quick-index{margin:0;background:transparent;border:0;border-top:1px solid #dedccc;padding:9px 0 0;display:flex;gap:10px}
+.reader-page .quick-label{font:700 12px/1.4 system-ui,sans-serif;color:#6f6554}
+.reader-page .quick-buttons{display:flex;gap:6px;flex-wrap:wrap}
+.reader-page .quick-buttons button{width:42px;height:38px;font-size:15px;border-radius:8px}
+.reader-page #main-heading{font-size:21px;margin:13px 0 4px;color:#355242}
+.reader-page .card{scroll-margin-top:147px}
+.reader-page .word-grid.glossary{display:block;border:1px solid #d4ded4;border-radius:10px;background:#fff;overflow:hidden}
+.reader-page .word-grid.glossary .glossary-row{display:grid!important;grid-template-columns:minmax(0,43%) minmax(0,57%)!important;align-items:center;gap:12px!important;background:#fff!important;border:0!important;border-bottom:1px solid #e5e9e1!important;border-radius:0!important;margin:0!important;padding:10px 14px!important;min-width:0}
+.reader-page .word-grid.glossary .glossary-row:nth-child(odd){background:#f7f9f5!important}
+.reader-page .word-grid.glossary .glossary-row:last-child{border-bottom:0!important}
+.reader-page .glossary .word-original{display:flex;gap:7px 12px;align-items:baseline;flex-wrap:wrap;min-width:0;font-weight:400}
+.reader-page .glossary .word-dev{font-family:'Noto Serif Devanagari','Kohinoor Devanagari','Noto Serif Kannada','Kannada MN',serif;font-size:21px;font-weight:650;line-height:1.65;color:#213a2d;overflow-wrap:anywhere}
+.reader-page .glossary .word-iast{font:16px/1.5 Georgia,serif;color:#4b6d5b;margin:0}
+.reader-page .glossary .word-translation{font:17px/1.6 Georgia,serif;color:#303a32;margin:0}
+.reader-page .study-inner{padding:14px clamp(10px,2vw,18px)}
+.reader-page .study-inner h4{font-size:18px}
+.reader-page .name-section .section-title span{font-size:14px}
+@media(max-width:760px){
+ .reader-page .reader-header{padding:8px 12px}.reader-brand{font-size:28px}.reader-tagline{font-size:12px}
+ .reader-page .reader-nav{gap:10px}
+ .reader-page .language-controls{width:100%;justify-content:space-between}
+ .reader-page .language-toggle{flex:1;justify-content:flex-end}
+ .reader-page .language-toggle .toggle{min-width:0;flex:1;font-size:19px;padding:8px 11px}
+ .reader-page #search{max-width:none;width:100%}
+ .reader-page .sticky-verse-navigation{top:0;padding:7px;margin-inline:-7px}
+ .reader-page .verse-group-tabs{margin:0}
+ .reader-page .quick-buttons{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:4px;width:100%}
+ .reader-page .quick-buttons button{width:100%;height:36px;min-width:0}
+ .reader-page .card{scroll-margin-top:140px}
+ .reader-page .word-grid.glossary .glossary-row{grid-template-columns:minmax(0,48%) minmax(0,52%)!important;padding:10px 11px!important}
+ .reader-page .glossary .word-dev{font-size:19px}
+ .reader-page .glossary .word-translation{font-size:16px}
+}
+@media(max-width:500px){
+ .reader-page .reader-identity{gap:3px;text-align:right}
+ .reader-page .reader-tagline{display:none}
+ .reader-page .language-controls{gap:8px}
+ .reader-page #study-languages-label{width:100%}
+ .reader-page .language-toggle{width:100%}
+ .reader-page .language-toggle .toggle{font-size:20px}
+ .reader-page .quick-buttons{grid-template-columns:repeat(5,minmax(0,1fr))}
+ .reader-page .sticky-verse-navigation{padding:7px}
+ .reader-page .card{scroll-margin-top:180px}
+ .reader-page .word-grid.glossary .glossary-row{grid-template-columns:1fr!important;gap:1px!important;padding:11px 12px!important}
+ .reader-page .glossary .word-dev{font-size:20px}
+ .reader-page .glossary .word-iast{font-size:15px}
+ .reader-page .glossary .word-translation{font-size:17px;padding-top:1px}
+}
