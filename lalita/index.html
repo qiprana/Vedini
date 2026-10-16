@@ -1,1 +1,70 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Lalitā Sahasranāma | Vedini</title><link rel="stylesheet" href="../styles.css?v=20261015-4"></head><body><main class="page"><header><small>संस्कृत स्तोत्र संग्रह</small><h1>Vedini</h1><p>Listen · Chant · Understand</p><a href="../index.html" class="back">Collections</a></header><section id="home" hidden></section><section id="reader"><div class="top"><a href="../index.html" class="back">← Vedini Home</a><h2 id="reader-title">Lalitā Sahasranāma</h2></div><nav class="reader-nav" aria-label="Śloka navigation"><div class="reader-tabs" role="tablist" aria-label="Collection sections"><button type="button" id="tab-dhyana" role="tab" aria-selected="false">Dhyāna (4)</button><button type="button" id="tab-verses" class="chosen" role="tab" aria-selected="true">Main Ślokas</button></div><div class="jump-controls"><label for="goto">Jump to śloka</label><input id="goto" type="number" min="1" max="180" placeholder="1–180" aria-label="Go to verse"><button type="button" id="go">Go</button></div></nav><div class="verse-group-tabs" id="verse-group-tabs" aria-label="Choose śloka group"></div><div class="range-navigation" id="range-navigation"><div class="range-control"><label for="range-select">Group</label><select id="range-select" aria-label="Select group of five ślokas"></select></div><div class="pager"><button type="button" id="previous-group">← Previous</button><span id="page-position" aria-live="polite"></span><button type="button" id="next-group">Next →</button></div></div><div class="toolbar"><label><span id="study-languages-label">Reading & meaning:</span> <button class="toggle chosen" id="dev">देवनागरी</button><button class="toggle" id="kn">ಕನ್ನಡ</button></label><button type="button" id="expand-all">Open all name meanings</button><input id="search" type="search" placeholder="Search verses and names…" aria-label="Search verses"></div><div class="notice" id="result-note"></div><section id="search-results" hidden><h2 id="search-results-heading">Search results</h2><div id="search-result-list"></div></section><section id="dhyana"><h2 id="dhyana-heading">Dhyāna Ślokas</h2><div id="dhyana-cards"></div></section><nav id="verse-quick-index" class="verse-quick-index" aria-label="Jump within this group of ten"></nav><section id="main-stotra"><h2 id="main-heading">Lalitā Sahasranāma · Ślokas 1–10</h2><div id="verse-cards"></div></section><nav class="range-navigation bottom-navigation" id="bottom-navigation" aria-label="Next and previous śloka groups"><div class="pager"><button type="button" id="bottom-previous">← Previous</button><span id="bottom-position" aria-live="polite"></span><button type="button" id="bottom-next">Next →</button></div></nav><p class="foot">Draft content for review. Ślokas 1–40 are available as editorial drafts. Recordings are added as available.</p></section></main><script src="../app.js?v=20261015-4"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Listen, chant and explore the meanings of Lalitā Sahasranāma on Vedini.">
+  <title>Lalitā Sahasranāma | Vedini</title>
+  <link rel="stylesheet" href="../styles.css?v=20261015-5">
+</head>
+<body>
+<main class="page reader-page">
+  <header class="reader-header">
+    <a href="../index.html" class="reader-home-link">← Vedini Home</a>
+    <div class="reader-identity">
+      <span class="reader-brand">Vedini</span>
+      <span class="reader-tagline">Listen · Chant · Understand</span>
+    </div>
+  </header>
+  <section id="reader">
+    <div class="top"><h1 id="reader-title">Lalitā Sahasranāma</h1></div>
+    <nav class="reader-nav" aria-label="Reader sections and direct navigation">
+      <div class="reader-tabs" role="tablist" aria-label="Sections">
+        <button type="button" id="tab-dhyana" role="tab" aria-selected="false">Dhyāna (4)</button>
+        <button type="button" id="tab-verses" class="chosen" role="tab" aria-selected="true">Main Ślokas</button>
+      </div>
+      <div class="jump-controls">
+        <label for="goto">Go to śloka</label>
+        <input id="goto" type="number" min="1" max="180" placeholder="1–180" aria-label="Śloka number">
+        <button type="button" id="go">Go</button>
+      </div>
+    </nav>
+    <div class="toolbar">
+      <div class="language-controls">
+        <span id="study-languages-label">Script &amp; meaning</span>
+        <div class="language-toggle" role="group" aria-label="Choose Sanskrit script and translation language">
+          <button type="button" class="toggle chosen" id="dev" aria-pressed="true" lang="hi">देवनागरी</button>
+          <button type="button" class="toggle" id="kn" aria-pressed="false" lang="kn">ಕನ್ನಡ</button>
+        </div>
+      </div>
+      <input id="search" type="search" placeholder="Search ślokas and names…" aria-label="Search ślokas and names">
+    </div>
+    <div id="sticky-verse-navigation" class="sticky-verse-navigation" aria-label="Quick śloka navigation">
+      <nav class="verse-group-tabs" id="verse-group-tabs" aria-label="Choose ten-śloka group"></nav>
+      <nav id="verse-quick-index" class="verse-quick-index" aria-label="Jump to a śloka in this group"></nav>
+    </div>
+    <div class="notice" id="result-note" role="status" aria-live="polite"></div>
+    <section id="search-results" hidden>
+      <h2 id="search-results-heading">Search results</h2>
+      <div id="search-result-list"></div>
+    </section>
+    <section id="dhyana">
+      <h2 id="dhyana-heading">Dhyāna Ślokas</h2>
+      <div id="dhyana-cards"></div>
+    </section>
+    <section id="main-stotra">
+      <h2 id="main-heading">Ślokas 1–10</h2>
+      <div id="verse-cards"></div>
+    </section>
+    <nav class="bottom-navigation" id="bottom-navigation" aria-label="Next and previous ten-śloka groups">
+      <div class="pager">
+        <button type="button" id="bottom-previous">← Previous ten</button>
+        <span id="bottom-position" aria-live="polite"></span>
+        <button type="button" id="bottom-next">Next ten →</button>
+      </div>
+    </nav>
+    <p class="foot">Interpretations are editorial drafts. Sanskrit and Kannada readings are being reviewed as the collection grows.</p>
+  </section>
+</main>
+<script src="../app.js?v=20261015-5"></script>
+</body></html>
