@@ -141,7 +141,7 @@ function updateNavigation(){
  const rangeText=langText("Ślokas "+start+"–"+end+" of "+verses.length,"ಶ್ಲೋಕಗಳು "+start+"–"+end+" / "+verses.length);
  $("#bottom-position").textContent=rangeText;
  msg("#dhyana-heading","Dhyāna Ślokas","ಧ್ಯಾನ ಶ್ಲೋಕಗಳು");
- msg("#main-heading","Lalitā Sahasranāma · Ślokas "+start+"–"+end,"ಲಲಿತಾ ಸಹಸ್ರನಾಮ · ಶ್ಲೋಕಗಳು "+start+"–"+end);
+ msg("#main-heading","Ślokas "+start+"–"+end,"ಶ್ಲೋಕಗಳು "+start+"–"+end);
  msg("#study-languages-label","Script & meaning","ಲಿಪಿ ಮತ್ತು ಅರ್ಥ:");
 }
 function updateQuickIndex(){
@@ -150,7 +150,7 @@ function updateQuickIndex(){
  root.hidden=false;
  const start=pageIndex*pageSize+1,end=Math.min(verses.length,start+pageSize-1);
  root.innerHTML="<span class='quick-label'>"+esc(langText("In this group","ಈ ವಿಭಾಗದಲ್ಲಿ"))+"</span><div class='quick-buttons'>"+Array.from({length:end-start+1},(_,i)=>{const n=start+i;return "<button type='button' aria-label='Śloka "+n+"' data-quick='"+n+"' class='"+(n===selectedVerse?"quick-current":"")+"'>"+n+"</button>"}).join("")+"</div>";
- root.querySelectorAll("button[data-quick]").forEach(b=>b.onclick=()=>jump(Number(b.dataset.quick)));
+ root.querySelectorAll("button[data-quick]").forEach(b=>b.onclick=()=>{const number=Number(b.dataset.quick);selectedVerse=number;saveLocation("sloka",number);root.querySelectorAll("button[data-quick]").forEach(btn=>btn.classList.toggle("quick-current",Number(btn.dataset.quick)===number));document.querySelectorAll("#verse-cards .card").forEach(card=>card.classList.toggle("selected-verse",card.id==="verse-"+number));scrollToElement("verse-"+number);});
 }
 function render(){
  const opened=savedDetails();
