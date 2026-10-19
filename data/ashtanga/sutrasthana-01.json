@@ -1,0 +1,947 @@
+{
+  "collection": "Aṣṭāṅga Hṛdayam",
+  "section": "Sūtrasthāna",
+  "chapter": 1,
+  "chapter_name": "Āyuṣkāmīya",
+  "status": "editorial_draft",
+  "sources": [
+    {
+      "name": "Aṣṭāṅga Hṛdayam — Part 1",
+      "pages": "1–5",
+      "note": "User-provided study PDF; Sanskrit reviewed against rendered pages; meanings newly paraphrased."
+    },
+    {
+      "name": "Aṣṭāṅga Hṛdayam — Part 2",
+      "pages": "1–7",
+      "note": "Used for the 120-chapter sthāna index."
+    }
+  ],
+  "editorial_note": "Initial reading edition: opening prose and numbered ślokas 1–10. Later material from the source PDFs will be added after Sanskrit and word segmentation checks.",
+  "entries": [
+    {
+      "id": "01",
+      "label": "Śloka 1",
+      "topic": "Invocation: the incomparable physician",
+      "reading": {
+        "devanagari": [
+          "रागादिरोगान् सततानुषक्तान् अशेषकायप्रसृतानशेषान् ।",
+          "औत्सुक्यमोहारतिदान् जघान योऽपूर्ववैद्याय नमोऽस्तु तस्मै ॥ १ ॥"
+        ],
+        "iast": [
+          "rāgādi-rogān satatānuṣaktān-aśeṣa-kāya-prasṛtān-aśeṣān ।",
+          "autsukya-mohāratidān jaghāna yo’pūrva-vaidyāya namo’stu-tasmai ॥ 1 ॥"
+        ]
+      },
+      "words": [
+        {
+          "dev": "रागादि",
+          "iast": "rāgādi",
+          "meaning": "attachment and related afflictions"
+        },
+        {
+          "dev": "रोगान्",
+          "iast": "rogān",
+          "meaning": "diseases"
+        },
+        {
+          "dev": "सतत",
+          "iast": "satata",
+          "meaning": "continually"
+        },
+        {
+          "dev": "अनुषक्तान्",
+          "iast": "anuṣaktān",
+          "meaning": "closely bound or persisting"
+        },
+        {
+          "dev": "अशेष",
+          "iast": "aśeṣa",
+          "meaning": "without remainder; all"
+        },
+        {
+          "dev": "काय",
+          "iast": "kāya",
+          "meaning": "body"
+        },
+        {
+          "dev": "प्रसृतान्",
+          "iast": "prasṛtān",
+          "meaning": "spread throughout"
+        },
+        {
+          "dev": "औत्सुक्य",
+          "iast": "autsukya",
+          "meaning": "anxiety or agitation"
+        },
+        {
+          "dev": "मोह",
+          "iast": "moha",
+          "meaning": "delusion or confusion"
+        },
+        {
+          "dev": "अरति",
+          "iast": "arati",
+          "meaning": "restlessness, discontent"
+        },
+        {
+          "dev": "दान्",
+          "iast": "dān",
+          "meaning": "giving rise to"
+        },
+        {
+          "dev": "जघान",
+          "iast": "jaghāna",
+          "meaning": "destroyed or removed"
+        },
+        {
+          "dev": "अपूर्व",
+          "iast": "apūrva",
+          "meaning": "extraordinary; without precedent"
+        },
+        {
+          "dev": "वैद्याय",
+          "iast": "vaidyāya",
+          "meaning": "to the healer or physician"
+        },
+        {
+          "dev": "नमः अस्तु",
+          "iast": "namo’stu",
+          "meaning": "let there be reverence"
+        },
+        {
+          "dev": "तस्मै",
+          "iast": "tasmai",
+          "meaning": "to that one"
+        }
+      ],
+      "summary": "The opening pays homage to the extraordinary physician who dispels pervasive afflictions rooted in attachment and its related states, which disturb body and mind with anxiety, confusion and unrest.",
+      "source": {
+        "file": "Aṣṭāṅga Hṛdayam — Part 1 (user-supplied PDF)",
+        "pdf_pages": [
+          1
+        ]
+      },
+      "note": "The PDF's opening invocation is traditionally read before the chapter declaration.",
+      "review_status": "editorial_draft"
+    },
+    {
+      "id": "prose-01",
+      "label": "Opening prose",
+      "topic": "The chapter begins",
+      "reading": {
+        "devanagari": [
+          "अथात आयुष्कामीयमध्यायं व्याख्यास्यामः ।",
+          "इति ह स्माहुरात्रेयादयो महर्षयः ॥"
+        ],
+        "iast": [
+          "athāta āyuṣkāmīyam-adhyāyaṁ vyākhyāsyāmaḥ ।",
+          "iti ha smāhur-ātreyādayo maharṣayaḥ ॥"
+        ]
+      },
+      "words": [
+        {
+          "dev": "अथात",
+          "iast": "athāta",
+          "meaning": "now, therefore"
+        },
+        {
+          "dev": "आयुष्कामीयम्",
+          "iast": "āyuṣkāmīyam",
+          "meaning": "on the desire for long life"
+        },
+        {
+          "dev": "अध्यायम्",
+          "iast": "adhyāyaṁ",
+          "meaning": "chapter"
+        },
+        {
+          "dev": "व्याख्यास्यामः",
+          "iast": "vyākhyāsyāmaḥ",
+          "meaning": "we shall explain"
+        },
+        {
+          "dev": "इति",
+          "iast": "iti",
+          "meaning": "thus"
+        },
+        {
+          "dev": "ह स्म आहुः",
+          "iast": "ha sma āhuḥ",
+          "meaning": "so it was said"
+        },
+        {
+          "dev": "आत्रेयादयः",
+          "iast": "ātreyādayaḥ",
+          "meaning": "Ātreya and the other sages"
+        },
+        {
+          "dev": "महर्षयः",
+          "iast": "maharṣayaḥ",
+          "meaning": "great sages"
+        }
+      ],
+      "summary": "The sages, beginning with Ātreya, introduce the chapter devoted to the aspiration for a long and meaningful life.",
+      "source": {
+        "file": "Aṣṭāṅga Hṛdayam — Part 1 (user-supplied PDF)",
+        "pdf_pages": [
+          1
+        ]
+      },
+      "note": "A prose opening follows śloka 1; it is not counted as a separate numbered verse.",
+      "review_status": "editorial_draft"
+    },
+    {
+      "id": "02",
+      "label": "Śloka 2",
+      "topic": "The reason to study Āyurveda",
+      "reading": {
+        "devanagari": [
+          "आयुःकामयमानेन धर्मार्थसुखसाधनम् ।",
+          "आयुर्वेदोपदेशेषु विधेयः परमादरः ॥ २ ॥"
+        ],
+        "iast": [
+          "āyuḥ-kāmayamānena dharmārtha-sukha-sādhanam ।",
+          "āyurvedopadeśeṣu vidheyaḥ paramādaraḥ ॥ 2 ॥"
+        ]
+      },
+      "words": [
+        {
+          "dev": "आयुः",
+          "iast": "āyuḥ",
+          "meaning": "life; longevity"
+        },
+        {
+          "dev": "कामयमानेन",
+          "iast": "kāmayamānena",
+          "meaning": "by someone desiring"
+        },
+        {
+          "dev": "धर्म",
+          "iast": "dharma",
+          "meaning": "duty; virtuous living"
+        },
+        {
+          "dev": "अर्थ",
+          "iast": "artha",
+          "meaning": "means of livelihood, resources"
+        },
+        {
+          "dev": "सुख",
+          "iast": "sukha",
+          "meaning": "well-being and happiness"
+        },
+        {
+          "dev": "साधनम्",
+          "iast": "sādhanam",
+          "meaning": "means of achieving"
+        },
+        {
+          "dev": "आयुर्वेद",
+          "iast": "āyurveda",
+          "meaning": "the science of life"
+        },
+        {
+          "dev": "उपदेशेषु",
+          "iast": "upadeśeṣu",
+          "meaning": "in its teachings"
+        },
+        {
+          "dev": "विधेयः",
+          "iast": "vidheyaḥ",
+          "meaning": "to be practiced or applied"
+        },
+        {
+          "dev": "परमादरः",
+          "iast": "paramādaraḥ",
+          "meaning": "with the highest respect and care"
+        }
+      ],
+      "summary": "Anyone seeking long life as the means to dharma, artha and sukha should approach the teachings of Āyurveda with sincere attention and apply them respectfully.",
+      "source": {
+        "file": "Aṣṭāṅga Hṛdayam — Part 1 (user-supplied PDF)",
+        "pdf_pages": [
+          1,
+          2
+        ]
+      },
+      "note": "",
+      "review_status": "editorial_draft"
+    },
+    {
+      "id": "03",
+      "label": "Śloka 3",
+      "topic": "How the teaching was transmitted",
+      "reading": {
+        "devanagari": [
+          "ब्रह्मा स्मृत्वायुषो वेदं प्रजापतिमजिग्रहत् ।",
+          "सोऽश्विनौ तौ सहस्राक्षं सोऽत्रिपुत्रादिकान् मुनीन् ॥ ३ ॥"
+        ],
+        "iast": [
+          "brahmā smṛtvāyuṣo-vedaṁ prajāpatim-ajigrahat ।",
+          "so'śvinau tau sahasrākṣaṁ so'tri-putrādikān-munīn ॥ 3 ॥"
+        ]
+      },
+      "words": [
+        {
+          "dev": "ब्रह्मा",
+          "iast": "brahmā",
+          "meaning": "Brahmā"
+        },
+        {
+          "dev": "स्मृत्वा",
+          "iast": "smṛtvā",
+          "meaning": "having recalled"
+        },
+        {
+          "dev": "आयुषो वेदम्",
+          "iast": "āyuṣo vedaṁ",
+          "meaning": "knowledge of life"
+        },
+        {
+          "dev": "प्रजापतिम्",
+          "iast": "prajāpatim",
+          "meaning": "Prajāpati (Dakṣa)"
+        },
+        {
+          "dev": "अजिग्रहत्",
+          "iast": "ajigrahat",
+          "meaning": "imparted or passed on"
+        },
+        {
+          "dev": "अश्विनौ",
+          "iast": "aśvinau",
+          "meaning": "the two Aśvinī Kumāras"
+        },
+        {
+          "dev": "सहस्राक्षम्",
+          "iast": "sahasrākṣam",
+          "meaning": "Indra, the thousand-eyed"
+        },
+        {
+          "dev": "अत्रिपुत्रादिकान्",
+          "iast": "atri-putrādikān",
+          "meaning": "Atri's son and other sages"
+        },
+        {
+          "dev": "मुनीन्",
+          "iast": "munīn",
+          "meaning": "sages"
+        }
+      ],
+      "summary": "The lineage is traced from Brahmā to Dakṣa Prajāpati, the Aśvinī Kumāras, Indra and then the sages. This verse begins the account of how Āyurveda was transmitted.",
+      "source": {
+        "file": "Aṣṭāṅga Hṛdayam — Part 1 (user-supplied PDF)",
+        "pdf_pages": [
+          2
+        ]
+      },
+      "note": "",
+      "review_status": "editorial_draft"
+    },
+    {
+      "id": "04",
+      "label": "Śloka 4",
+      "topic": "The Aṣṭāṅga Hṛdayam draws the essentials together",
+      "reading": {
+        "devanagari": [
+          "तेऽग्निवेशादिकांस्ते तु पृथक् तन्त्राणि तेनिरे ।",
+          "तेभ्योऽतिविप्रकीर्णेभ्यः प्रायः सारतरोच्चयः ।",
+          "क्रियतेऽष्टाङ्गहृदयं नातिसंक्षेपविस्तरम् ॥ ४ ॥"
+        ],
+        "iast": [
+          "te'gniveśādikāṁste tu pṛthak tantrāṇi tenire ।",
+          "tebhyo’ti-viprakīrṇebhyaḥ prāyaḥ sārataroccayaḥ ।",
+          "kriyate’ṣṭāṅga-hṛdayam nāti-saṅkṣepa-vistaram ॥ 4 ॥"
+        ]
+      },
+      "words": [
+        {
+          "dev": "अग्निवेशादिकान्",
+          "iast": "agniveśādikān",
+          "meaning": "Agniveśa and the other students"
+        },
+        {
+          "dev": "पृथक्",
+          "iast": "pṛthak",
+          "meaning": "separately"
+        },
+        {
+          "dev": "तन्त्राणि",
+          "iast": "tantrāṇi",
+          "meaning": "treatises or systems"
+        },
+        {
+          "dev": "तेनिरे",
+          "iast": "tenire",
+          "meaning": "composed and spread"
+        },
+        {
+          "dev": "तेभ्यः",
+          "iast": "tebhyaḥ",
+          "meaning": "from those works"
+        },
+        {
+          "dev": "अतिविप्रकीर्णेभ्यः",
+          "iast": "ati-viprakīrṇebhyaḥ",
+          "meaning": "widely scattered among many texts"
+        },
+        {
+          "dev": "प्रायः",
+          "iast": "prāyaḥ",
+          "meaning": "chiefly; for the most part"
+        },
+        {
+          "dev": "सारतर",
+          "iast": "sāratara",
+          "meaning": "the more essential portions"
+        },
+        {
+          "dev": "उच्चयः",
+          "iast": "uccayaḥ",
+          "meaning": "a gathering or selection"
+        },
+        {
+          "dev": "क्रियते",
+          "iast": "kriyate",
+          "meaning": "is being composed"
+        },
+        {
+          "dev": "अष्टाङ्गहृदयम्",
+          "iast": "aṣṭāṅga-hṛdayam",
+          "meaning": "Aṣṭāṅga Hṛdayam"
+        },
+        {
+          "dev": "नाति",
+          "iast": "nāti",
+          "meaning": "not excessively"
+        },
+        {
+          "dev": "संक्षेप",
+          "iast": "saṅkṣepa",
+          "meaning": "abbreviated"
+        },
+        {
+          "dev": "विस्तरम्",
+          "iast": "vistaram",
+          "meaning": "extensive"
+        }
+      ],
+      "summary": "After Agniveśa and other pupils produced individual treatises, Aṣṭāṅga Hṛdayam presents a considered selection of their essential material, aiming to be neither excessively brief nor overly expansive.",
+      "source": {
+        "file": "Aṣṭāṅga Hṛdayam — Part 1 (user-supplied PDF)",
+        "pdf_pages": [
+          2,
+          3
+        ]
+      },
+      "note": "The PDF distributes the wording of śloka 4 across a preceding half-verse and the following page. This study card groups the material for continuity.",
+      "review_status": "editorial_draft"
+    },
+    {
+      "id": "05",
+      "label": "Śloka 5",
+      "topic": "The eight branches of Āyurveda",
+      "reading": {
+        "devanagari": [
+          "कायबालग्रहोर्ध्वाङ्गशल्यदंष्ट्राजरावृषान् ।",
+          "अष्टावङ्गानि तस्याहुश्चिकित्सा येषु संश्रिता ॥ ५ ॥"
+        ],
+        "iast": [
+          "kāya-bāla-grahordhvāṅga-śalya-daṁṣṭrā-jarā-vṛṣān ।",
+          "aṣṭāvaṅgāni tasyāhuś-cikitsā yeṣu saṁśritāḥ ॥ 5 ॥"
+        ]
+      },
+      "words": [
+        {
+          "dev": "काय",
+          "iast": "kāya",
+          "meaning": "general or internal medicine"
+        },
+        {
+          "dev": "बाल",
+          "iast": "bāla",
+          "meaning": "child care and related medicine"
+        },
+        {
+          "dev": "ग्रह",
+          "iast": "graha",
+          "meaning": "mental and graha-related disorders"
+        },
+        {
+          "dev": "ऊर्ध्वाङ्ग",
+          "iast": "ūrdhvāṅga",
+          "meaning": "ailments of head and neck"
+        },
+        {
+          "dev": "शल्य",
+          "iast": "śalya",
+          "meaning": "surgical treatment"
+        },
+        {
+          "dev": "दंष्ट्रा",
+          "iast": "daṁṣṭrā",
+          "meaning": "toxicology; poisonous bites"
+        },
+        {
+          "dev": "जरा",
+          "iast": "jarā",
+          "meaning": "ageing and rejuvenation"
+        },
+        {
+          "dev": "वृष",
+          "iast": "vṛṣa",
+          "meaning": "fertility and reproductive vitality"
+        },
+        {
+          "dev": "अष्टौ",
+          "iast": "aṣṭau",
+          "meaning": "eight"
+        },
+        {
+          "dev": "अङ्गानि",
+          "iast": "aṅgāni",
+          "meaning": "branches or limbs"
+        },
+        {
+          "dev": "चिकित्सा",
+          "iast": "cikitsā",
+          "meaning": "treatment or care"
+        },
+        {
+          "dev": "संश्रिता",
+          "iast": "saṁśritāḥ",
+          "meaning": "resting upon; dependent on"
+        }
+      ],
+      "summary": "Āyurveda is organized into eight branches, spanning internal care, childhood, mental and graha-related conditions, head and neck disorders, surgery, toxicology, rejuvenation and reproductive vitality.",
+      "source": {
+        "file": "Aṣṭāṅga Hṛdayam — Part 1 (user-supplied PDF)",
+        "pdf_pages": [
+          3
+        ]
+      },
+      "note": "",
+      "review_status": "editorial_draft"
+    },
+    {
+      "id": "06",
+      "label": "Śloka 6",
+      "topic": "Three doṣas and their two states",
+      "reading": {
+        "devanagari": [
+          "वायुः पित्तं कफश्चेति त्रयो दोषाः समासतः ।",
+          "विकृता अविकृता देहं घ्नन्ति ते वर्तयन्ति च ॥ ६ ॥"
+        ],
+        "iast": [
+          "vāyuḥ pittaṁ kaphaśceti trayo doṣāḥ samāsataḥ ।",
+          "vikṛtā-'vikṛtā dehaṁ ghnanti te vartayanti ca ॥ 6 ॥"
+        ]
+      },
+      "words": [
+        {
+          "dev": "वायुः",
+          "iast": "vāyuḥ",
+          "meaning": "vāta; the movement principle"
+        },
+        {
+          "dev": "पित्तम्",
+          "iast": "pittaṁ",
+          "meaning": "pitta"
+        },
+        {
+          "dev": "कफः",
+          "iast": "kaphaḥ",
+          "meaning": "kapha"
+        },
+        {
+          "dev": "इति",
+          "iast": "iti",
+          "meaning": "thus"
+        },
+        {
+          "dev": "त्रयः",
+          "iast": "trayaḥ",
+          "meaning": "three"
+        },
+        {
+          "dev": "दोषाः",
+          "iast": "doṣāḥ",
+          "meaning": "doṣas"
+        },
+        {
+          "dev": "समासतः",
+          "iast": "samāsataḥ",
+          "meaning": "in brief"
+        },
+        {
+          "dev": "विकृताः",
+          "iast": "vikṛtāḥ",
+          "meaning": "disturbed or imbalanced"
+        },
+        {
+          "dev": "अविकृताः",
+          "iast": "avikṛtāḥ",
+          "meaning": "not disturbed; balanced"
+        },
+        {
+          "dev": "देहम्",
+          "iast": "dehaṁ",
+          "meaning": "the body"
+        },
+        {
+          "dev": "घ्नन्ति",
+          "iast": "ghnanti",
+          "meaning": "injure or destroy"
+        },
+        {
+          "dev": "वर्तयन्ति",
+          "iast": "vartayanti",
+          "meaning": "maintain and support"
+        }
+      ],
+      "summary": "The three doṣas—vāta, pitta and kapha—are introduced. When disordered they contribute to illness; when in balance they support and sustain bodily function.",
+      "source": {
+        "file": "Aṣṭāṅga Hṛdayam — Part 1 (user-supplied PDF)",
+        "pdf_pages": [
+          3,
+          4
+        ]
+      },
+      "note": "The PDF prints this second line with a sandhi/avagraha variant; the study display separates vikṛtā and avikṛtā for reading.",
+      "review_status": "editorial_draft"
+    },
+    {
+      "id": "07",
+      "label": "Śloka 7",
+      "topic": "Where the doṣas predominate",
+      "reading": {
+        "devanagari": [
+          "ते व्यापिनोऽपि हृन्नाभ्योरधोमध्योर्ध्वसंश्रयाः ।",
+          "वयोऽहोरात्रिभुक्तानां तेऽन्तमध्यादिगाः क्रमात् ॥ ७ ॥"
+        ],
+        "iast": [
+          "te vyāpino ’pi hṛnnābhyor-adho-madhyordhva-saṁśrayāḥ ।",
+          "vayo‘ho-rātri-bhuktānāṁ te‘nta-madhyādigāḥ kramāt ॥ 7 ॥"
+        ]
+      },
+      "words": [
+        {
+          "dev": "ते",
+          "iast": "te",
+          "meaning": "those three doṣas"
+        },
+        {
+          "dev": "व्यापिनः",
+          "iast": "vyāpinaḥ",
+          "meaning": "pervading the whole body"
+        },
+        {
+          "dev": "अपि",
+          "iast": "api",
+          "meaning": "although"
+        },
+        {
+          "dev": "हृद्",
+          "iast": "hṛd",
+          "meaning": "heart"
+        },
+        {
+          "dev": "नाभि",
+          "iast": "nābhi",
+          "meaning": "navel"
+        },
+        {
+          "dev": "अधः",
+          "iast": "adhaḥ",
+          "meaning": "below"
+        },
+        {
+          "dev": "मध्य",
+          "iast": "madhya",
+          "meaning": "middle"
+        },
+        {
+          "dev": "ऊर्ध्व",
+          "iast": "ūrdhva",
+          "meaning": "above"
+        },
+        {
+          "dev": "संश्रयाः",
+          "iast": "saṁśrayāḥ",
+          "meaning": "their principal seats"
+        },
+        {
+          "dev": "वयः",
+          "iast": "vayaḥ",
+          "meaning": "life stages"
+        },
+        {
+          "dev": "अहः",
+          "iast": "ahaḥ",
+          "meaning": "day"
+        },
+        {
+          "dev": "रात्रि",
+          "iast": "rātri",
+          "meaning": "night"
+        },
+        {
+          "dev": "भुक्तानाम्",
+          "iast": "bhuktānām",
+          "meaning": "stages after eating"
+        },
+        {
+          "dev": "अन्त",
+          "iast": "anta",
+          "meaning": "end"
+        },
+        {
+          "dev": "आदि",
+          "iast": "ādi",
+          "meaning": "beginning"
+        },
+        {
+          "dev": "क्रमात्",
+          "iast": "kramāt",
+          "meaning": "in the stated order"
+        }
+      ],
+      "summary": "Though present throughout the body, vāta is especially associated with the region below the navel, pitta with the middle region, and kapha with the region above the heart. Their patterns are also described across life, time of day and digestion.",
+      "source": {
+        "file": "Aṣṭāṅga Hṛdayam — Part 1 (user-supplied PDF)",
+        "pdf_pages": [
+          4
+        ]
+      },
+      "note": "",
+      "review_status": "editorial_draft"
+    },
+    {
+      "id": "08",
+      "label": "Śloka 8",
+      "topic": "Agni and the nature of koṣṭha",
+      "reading": {
+        "devanagari": [
+          "तैर्भवेद्विषमस्तीक्ष्णो मन्दश्चाग्निः समैः समः ।",
+          "कोष्ठः क्रूरो मृदुर्मध्यो मध्यः स्यात्तैः समैरपि ॥ ८ ॥"
+        ],
+        "iast": [
+          "tair-bhaved-viṣamas-tīkṣṇo mandaś-cāgniḥ samai samaḥ ।",
+          "koṣṭhaḥ krūro mṛdur-madhyo madhyaḥ syāttaiḥ samair-api ॥ 8 ॥"
+        ]
+      },
+      "words": [
+        {
+          "dev": "तैः",
+          "iast": "tair",
+          "meaning": "through those doṣas"
+        },
+        {
+          "dev": "भवेत्",
+          "iast": "bhavet",
+          "meaning": "becomes"
+        },
+        {
+          "dev": "विषमः",
+          "iast": "viṣamaḥ",
+          "meaning": "irregular or unpredictable"
+        },
+        {
+          "dev": "तीक्ष्णः",
+          "iast": "tīkṣṇaḥ",
+          "meaning": "sharp or intense"
+        },
+        {
+          "dev": "मन्दः",
+          "iast": "mandaḥ",
+          "meaning": "slow or weak"
+        },
+        {
+          "dev": "अग्निः",
+          "iast": "agniḥ",
+          "meaning": "digestive and metabolic fire"
+        },
+        {
+          "dev": "समैः",
+          "iast": "samaiḥ",
+          "meaning": "when balanced"
+        },
+        {
+          "dev": "समः",
+          "iast": "samaḥ",
+          "meaning": "in equilibrium"
+        },
+        {
+          "dev": "कोष्ठः",
+          "iast": "koṣṭhaḥ",
+          "meaning": "bowel or digestive tract"
+        },
+        {
+          "dev": "क्रूरः",
+          "iast": "krūraḥ",
+          "meaning": "hard/dry tendency"
+        },
+        {
+          "dev": "मृदुः",
+          "iast": "mṛduḥ",
+          "meaning": "soft tendency"
+        },
+        {
+          "dev": "मध्यः",
+          "iast": "madhyaḥ",
+          "meaning": "moderate"
+        }
+      ],
+      "summary": "Doṣa patterns are associated with different types of agni—irregular, intense, slow or balanced—and koṣṭha—hard, soft or moderate. Balanced doṣas are associated with balanced agni and a moderate koṣṭha.",
+      "source": {
+        "file": "Aṣṭāṅga Hṛdayam — Part 1 (user-supplied PDF)",
+        "pdf_pages": [
+          4,
+          5
+        ]
+      },
+      "note": "The PDF discusses agni and koṣṭha consecutively, with the latter appearing on the next page.",
+      "review_status": "editorial_draft"
+    },
+    {
+      "id": "09",
+      "label": "Śloka 9",
+      "topic": "Constitution begins at conception",
+      "reading": {
+        "devanagari": [
+          "शुक्रार्तवस्थैर्जन्मादौ विषेणेव विषक्रिमेः ॥ ९ ॥"
+        ],
+        "iast": [
+          "śukrārtava-sthair-janmādau viṣeṇeva viṣakrimeḥ ॥ 9 ॥"
+        ]
+      },
+      "words": [
+        {
+          "dev": "शुक्र",
+          "iast": "śukra",
+          "meaning": "male reproductive seed"
+        },
+        {
+          "dev": "आर्तव",
+          "iast": "ārtava",
+          "meaning": "female reproductive seed"
+        },
+        {
+          "dev": "स्थैः",
+          "iast": "sthair",
+          "meaning": "situated in; established at"
+        },
+        {
+          "dev": "जन्मादौ",
+          "iast": "janmādau",
+          "meaning": "at the beginning of life"
+        },
+        {
+          "dev": "विषेण इव",
+          "iast": "viṣeṇeva",
+          "meaning": "just as with poison"
+        },
+        {
+          "dev": "विषक्रिमेः",
+          "iast": "viṣakrimeḥ",
+          "meaning": "for a venomous creature"
+        }
+      ],
+      "summary": "The text places the beginning of one's doṣic constitution at conception. It uses an analogy involving a venomous creature and its own poison to explain the enduring nature of constitution.",
+      "source": {
+        "file": "Aṣṭāṅga Hṛdayam — Part 1 (user-supplied PDF)",
+        "pdf_pages": [
+          5
+        ]
+      },
+      "note": "The source presents this as a partial śloka continued by the explanation in śloka 10.",
+      "review_status": "editorial_draft"
+    },
+    {
+      "id": "10",
+      "label": "Śloka 10",
+      "topic": "Prakṛti: constitution and its groupings",
+      "reading": {
+        "devanagari": [
+          "तैश्च तिस्रः प्रकृतयो हीनमध्योत्तमाः पृथक् ।",
+          "समधातुः समस्तासु श्रेष्ठा निन्द्या द्विदोषजाः ॥ १० ॥"
+        ],
+        "iast": [
+          "taiśca tisraḥ prakṛtayo hīna-madhyottamāḥ pṛthak ।",
+          "samadhātuḥ samastāsu śreṣṭhā nindyā dvidoṣajāḥ ॥ 10 ॥"
+        ]
+      },
+      "words": [
+        {
+          "dev": "तैः",
+          "iast": "taiḥ",
+          "meaning": "from those three doṣas"
+        },
+        {
+          "dev": "तिस्रः",
+          "iast": "tisraḥ",
+          "meaning": "three"
+        },
+        {
+          "dev": "प्रकृतयः",
+          "iast": "prakṛtayaḥ",
+          "meaning": "constitutional types"
+        },
+        {
+          "dev": "हीन",
+          "iast": "hīna",
+          "meaning": "lower-ranked in the text"
+        },
+        {
+          "dev": "मध्य",
+          "iast": "madhya",
+          "meaning": "intermediate"
+        },
+        {
+          "dev": "उत्तमाः",
+          "iast": "uttamāḥ",
+          "meaning": "higher-ranked"
+        },
+        {
+          "dev": "पृथक्",
+          "iast": "pṛthak",
+          "meaning": "separately"
+        },
+        {
+          "dev": "समधातुः",
+          "iast": "samadhātuḥ",
+          "meaning": "balanced bodily constitution"
+        },
+        {
+          "dev": "समस्तासु",
+          "iast": "samastāsu",
+          "meaning": "in all combined"
+        },
+        {
+          "dev": "श्रेष्ठा",
+          "iast": "śreṣṭhā",
+          "meaning": "considered best"
+        },
+        {
+          "dev": "निन्द्या",
+          "iast": "nindyā",
+          "meaning": "criticized in this traditional ranking"
+        },
+        {
+          "dev": "द्विदोषजाः",
+          "iast": "dvidoṣajāḥ",
+          "meaning": "born of a two-doṣa combination"
+        }
+      ],
+      "summary": "The text describes constitutions characterized by individual doṣas, a balanced three-doṣa type, and combinations of two doṣas. It assigns traditional rankings to these types; these are part of the source's classical framework, not a judgment of personal worth.",
+      "source": {
+        "file": "Aṣṭāṅga Hṛdayam — Part 1 (user-supplied PDF)",
+        "pdf_pages": [
+          5
+        ]
+      },
+      "note": "",
+      "review_status": "editorial_draft"
+    }
+  ]
+}
