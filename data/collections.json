@@ -26,5 +26,14 @@
     "sanskrit": "पुरुषसूक्तम्",
     "status": "planned",
     "available_verses": 0
+  },
+  {
+    "id": "ashtanga",
+    "title": "Aṣṭāṅga Hṛdayam",
+    "sanskrit": "अष्टाङ्गहृदयम्",
+    "status": "editorial_draft",
+    "available_verses": 10,
+    "chapter": "Sūtrasthāna 1",
+    "path": "ashtanga/index.html"
   }
 ]
