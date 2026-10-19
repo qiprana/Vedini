@@ -304,3 +304,39 @@ header p{color:#845c4b;font-size:18px}
 @media(max-width:960px){.reader-page .verse-content-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px}.reader-page .verse-reading-panel{padding:13px}.reader-page .verse-reading-panel .verse-script.devanagari,.reader-page .verse-reading-panel .verse-script.kannada{font-size:21px!important}.reader-page .verse-reading-panel .verse-iast{font-size:19px!important}}
 @media(max-width:720px){.reader-page .verse-content-grid{grid-template-columns:1fr}.reader-page .verse-reading-panel{padding:16px}.reader-page .verse-reading-panel .verse-script.devanagari,.reader-page .verse-reading-panel .verse-script.kannada{font-size:23px!important}.reader-page .verse-reading-panel .verse-iast{font-size:20px!important}.reader-page .name-summary-layout .name-essence{margin-left:27px}.reader-page .practice-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.reader-page .practice-fields label{justify-content:space-between}.reader-page .practice-fields select{min-width:75px;max-width:100%}}
 @media(max-width:440px){.reader-page .practice-fields{grid-template-columns:1fr 1fr;gap:9px}.reader-page .practice-fields label{flex-direction:column;align-items:stretch;gap:4px}.reader-page .practice-fields select{width:100%}.reader-page .practice-actions button{flex:1}.reader-page .practice-intro span{font-size:13px}}
+
+
+/* Vedini compact name/meaning pairing and protected Sanskrit verse endings */
+.reader-page .verse-content-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px;align-items:stretch}
+.reader-page .verse-reading-panel{height:100%;padding:15px 18px}
+.reader-page .verse-names-panel{height:100%}
+.reader-page .name-study-list{border:1px solid #cddbcf;border-radius:10px;overflow:hidden}
+.reader-page .name-study-list .compact-name-row{margin:0;border:0;border-bottom:1px solid #d7e1d7;border-radius:0;background:#fffdfa}
+.reader-page .name-study-list .compact-name-row:last-child{border-bottom:0}
+.reader-page .name-study-list .compact-name-row summary{display:block;padding:11px 13px 11px 27px;background:transparent}
+.reader-page .name-study-list .compact-name-row summary:before{left:10px;top:13px;font-size:14px}
+.reader-page .name-study-list .compact-name-row[open]{background:#fff}
+.reader-page .name-study-list .compact-name-row[open] summary{background:#eaf3e9}
+.reader-page .name-summary-grid{display:grid;grid-template-columns:minmax(0,55%) minmax(0,45%);gap:12px;align-items:start}
+.reader-page .name-identity-inline{display:flex;flex-wrap:wrap;align-items:baseline;gap:1px 8px;min-width:0;line-height:1.55}
+.reader-page .name-identity-inline .name-number{font-size:13px;min-width:auto;margin:0;color:#45634c}
+.reader-page .name-identity-inline .name-written{font-size:clamp(17px,1.55vw,20px);font-weight:650;line-height:1.5;overflow-wrap:anywhere}
+.reader-page .name-identity-inline .name-roman{font-size:clamp(14px,1.3vw,16px);color:#4b6958;line-height:1.5;overflow-wrap:anywhere}
+.reader-page .name-summary-grid .name-essence{font-size:clamp(14px,1.4vw,16px);line-height:1.57;color:#303a32;margin:0;font-weight:400;overflow-wrap:anywhere}
+.reader-page .name-study-list .study-inner{padding:13px}
+.reader-page .verse-reading-panel .verse-script,.reader-page .verse-reading-panel .verse-iast{white-space:normal!important}
+.reader-page .verse-line{display:block;min-width:0;margin:6px 0 14px;line-height:1.75;overflow-wrap:normal;word-break:normal}
+.reader-page .verse-line .line-content{display:inline-block;white-space:nowrap;max-width:none;vertical-align:top;line-height:1.75}
+.reader-page .verse-line.wrapped .line-content{display:inline;white-space:normal;overflow-wrap:normal}
+.reader-page .verse-ending{white-space:nowrap;display:inline;word-break:keep-all}
+.reader-page .verse-reading-panel .verse-script.devanagari,.reader-page .verse-reading-panel .verse-script.kannada{font-size:clamp(19px,1.8vw,23px)!important}
+.reader-page .verse-reading-panel .verse-iast{font-size:clamp(18px,1.65vw,21px)!important}
+.reader-page .verse-reading-panel .reading-label{margin-top:6px}
+.reader-page .verse-reading-panel .iast-heading{margin-top:18px}
+.reader-page .verse-meaning-panel .verse-overall-meaning{margin:13px 0 3px;padding:0;border:1px solid #d6dfd3;border-radius:9px;overflow:hidden}
+.reader-page .verse-overall-meaning summary{padding:10px 14px;background:#f1f6ef;color:#315744;font:650 15px/1.6 system-ui,sans-serif}
+.reader-page .verse-overall-meaning p{font:16px/1.8 Georgia,serif;padding:12px 14px;margin:0}
+.reader-page .verse-meaning-panel .deeper-reading{margin-top:8px}
+@media(max-width:980px){.reader-page .name-summary-grid{grid-template-columns:minmax(0,52%) minmax(0,48%);gap:8px}.reader-page .verse-reading-panel{padding:12px}.reader-page .name-study-list .compact-name-row summary{padding:10px 10px 10px 25px}}
+@media(max-width:720px){.reader-page .verse-content-grid{grid-template-columns:1fr}.reader-page .verse-reading-panel{height:auto;padding:16px}.reader-page .name-summary-grid{grid-template-columns:minmax(0,53%) minmax(0,47%)}.reader-page .name-identity-inline .name-written{font-size:19px}.reader-page .name-identity-inline .name-roman{font-size:15px}.reader-page .name-summary-grid .name-essence{font-size:15px}}
+@media(max-width:440px){.reader-page .name-summary-grid{grid-template-columns:minmax(0,55%) minmax(0,45%);gap:7px}.reader-page .name-identity-inline .name-written{font-size:17px}.reader-page .name-identity-inline .name-roman{font-size:14px}.reader-page .name-summary-grid .name-essence{font-size:14px}.reader-page .name-study-list .compact-name-row summary{padding:10px 8px 10px 23px}}
