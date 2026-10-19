@@ -45,38 +45,44 @@ function makeAudio(v,isDhyana){
  return "<span class='audio' data-audio-path='"+esc(url)+"'>"+esc(langText("♪ Audio coming soon","♪ ಧ್ವನಿಮುದ್ರಣ ಶೀಘ್ರದಲ್ಲಿ"))+"</span>";
 }
 function nameSection(v){
- let html="<section class='name-section'><div class='section-title'><h3>"+esc(langText("Divine names","ದೇವಿಯ ನಾಮಗಳು"))+"</h3><span>"+esc(langText("Select a name to explore each word","ಪ್ರತಿ ಪದದ ಅರ್ಥಕ್ಕೆ ನಾಮವನ್ನು ತೆರೆಯಿರಿ"))+"</span></div>";
+ let html="<section class='name-section' aria-label='"+esc(langText("Divine names","ದೇವಿಯ ನಾಮಗಳು"))+"'><div class='section-title'><h3>"+esc(langText("Divine names","ದೇವಿಯ ನಾಮಗಳು"))+"</h3><span>"+(v.names||[]).length+" "+esc(langText("names","ನಾಮಗಳು"))+"</span></div>";
  for(const n of v.names||[]){
- const info=nameData[n.studyNumber]||{},parts=findComponents(v,n,info);
- const dev=n.display_devanagari||n.sanskrit||"",written=language==="kn"?kannadaFromDevanagari(dev):dev;
- const essential=anyMeaning(info,"essential_meaning")||(language==="kn"?n.kannada:n.english)||langText("Meaning under review","ಅರ್ಥ ಪರಿಶೀಲನೆಯಲ್ಲಿದೆ");
- const roman=n.display_iast||n.iast;
- html+="<details class='name-details' data-detail-id='name-"+n.studyNumber+"'><summary><span class='name-line'><span class='name-number'>"+n.studyNumber+".</span><span class='name-written'>"+esc(written)+"</span><span class='name-roman'>· "+esc(roman)+"</span><span class='name-essence'>— "+esc(essential)+"</span></span></summary>"+studySections(info,parts)+"</details>";
+  const info=nameData[n.studyNumber]||{},parts=findComponents(v,n,info);
+  const writtenSource=n.display_devanagari||n.sanskrit||"";
+  const written=language==="kn"?kannadaFromDevanagari(writtenSource):writtenSource;
+  const essential=anyMeaning(info,"essential_meaning")||(language==="kn"?n.kannada:n.english)||langText("Meaning under review","ಅರ್ಥ ಪರಿಶೀಲನೆಯಲ್ಲಿದೆ");
+  const roman=n.display_iast||n.iast||"";
+  html+="<details class='name-details' data-detail-id='name-"+n.studyNumber+"'><summary><span class='name-summary-layout'><span class='name-identity'><span class='name-number'>"+n.studyNumber+".</span><span class='name-script-stack'><span class='name-written'>"+esc(written)+"</span><span class='name-roman'>"+esc(roman)+"</span></span></span><span class='name-essence'>"+esc(essential)+"</span></span></summary>"+studySections(info,parts)+"</details>";
  }
  return html+"</section>";
 }
-function dhyanaSection(v){
+function dhyanaWordsPanel(v){
  const info=dhyanaData[v.verse_number]||{};
- const meaning=anyMeaning(info,"essential_meaning")||(language==="kn"?v.meaning?.kannada:v.meaning?.english)||"";
- return "<section class='meaning-section verse-lesson'><div class='essential-meaning'><h3>"+esc(langText("Essential meaning","ಮುಖ್ಯ ಅರ್ಥ"))+"</h3><p>"+esc(meaning)+"</p></div><details class='dhyana-words' data-detail-id='dhyana-"+v.verse_number+"'><summary>"+esc(langText("Explore each word","ಪ್ರತಿ ಪದದ ಅರ್ಥ ನೋಡಿ"))+" <span class='count'>"+(info.components?.length||0)+" "+esc(langText("word parts","ಪದಭಾಗಗಳು"))+"</span></summary><div class='study-inner'><h4>"+esc(langText("Word by word","ಪದ ಪದದ ಅರ್ಥ"))+"</h4>"+wordsGrid(info.components)+"</div></details>"+moreSection(info)+"</section>";
+ return "<section class='name-section dhyana-study' aria-label='"+esc(langText("Study the words","ಪದಗಳ ಅಧ್ಯಯನ"))+"'><div class='section-title'><h3>"+esc(langText("Word by word","ಪದ ಪದದ ಅರ್ಥ"))+"</h3></div><details class='dhyana-words' data-detail-id='dhyana-"+v.verse_number+"'><summary>"+esc(langText("Explore the Sanskrit words","ಸಂಸ್ಕೃತ ಪದಗಳನ್ನು ತಿಳಿಯಿರಿ"))+" <span class='count'>"+(info.components?.length||0)+" "+esc(langText("word parts","ಪದಭಾಗಗಳು"))+"</span></summary><div class='study-inner'>"+wordsGrid(info.components)+"</div></details></section>";
 }
 function moreSection(info){
  const deep=anyMeaning(info,"traditional_interpretation");
  return deep?"<div class='deeper-reading'><h3>"+esc(langText("Deeper meaning","ಆಳವಾದ ಅರ್ಥ"))+"</h3>"+richParagraphs(deep)+"</div>":"";
 }
-function mainVerseSection(v){
+function dhyanaVerseMeaning(v){
+ const info=dhyanaData[v.verse_number]||{};
+ const meaning=anyMeaning(info,"essential_meaning")||(language==="kn"?v.meaning?.kannada:v.meaning?.english)||"";
+ return "<section class='meaning-section verse-lesson'><div class='essential-meaning'><h3>"+esc(langText("Meaning of this Dhyāna śloka","ಈ ಧ್ಯಾನ ಶ್ಲೋಕದ ಅರ್ಥ"))+"</h3><p>"+esc(meaning)+"</p></div>"+moreSection(info)+"</section>";
+}
+function mainVerseMeaning(v){
  const summary=language==="kn"?v.meaning?.kannada:v.meaning?.english;
  const info=verseData[v.verse_number]||{};
- return nameSection(v)+"<section class='meaning-section verse-lesson'><div class='essential-meaning'><h3>"+esc(langText("Meaning of this śloka","ಈ ಶ್ಲೋಕದ ಅರ್ಥ"))+"</h3><p>"+esc(summary||"")+"</p></div>"+moreSection(info)+"</section>";
+ return "<section class='meaning-section verse-lesson'><div class='essential-meaning'><h3>"+esc(langText("Meaning of this śloka","ಈ ಶ್ಲೋಕದ ಅರ್ಥ"))+"</h3><p>"+esc(summary||"")+"</p></div>"+moreSection(info)+"</section>";
 }
 function card(v,isDhyana){
- const number=v.verse_number;
- const reading=v.reading||{};
+ const number=v.verse_number,reading=v.reading||{};
  const selected=language==="kn"?(reading.devanagari||[]).map(kannadaFromDevanagari):(reading.devanagari||[]);
  const iast=reading.iast||[];
  const id=(isDhyana?"dhyana-":"verse-")+number;
  const label=langText(isDhyana?"Dhyāna "+number:"Śloka "+number,isDhyana?"ಧ್ಯಾನ "+number:"ಶ್ಲೋಕ "+number);
- return "<article class='card' id='"+id+"'><div class='card-head'><b>"+esc(label)+"</b>"+makeAudio(v,isDhyana)+"</div><div class='chant'><div><div class='reading-label'>"+esc(language==="kn"?"ಕನ್ನಡ":"देवनागरी")+"</div><div class='verse-script "+(language==="kn"?"kannada":"devanagari")+"'>"+selected.map(esc).join("\n")+"</div></div><div><div class='reading-label'>IAST</div><div class='verse-iast'>"+iast.map(esc).join("\n")+"</div></div></div>"+(isDhyana?dhyanaSection(v):mainVerseSection(v))+"<p class='meta'>"+esc(langText("Interpretation draft · Sanskrit and Kannada editorial review recommended","ವ್ಯಾಖ್ಯಾನ ಕರಡು · ಸಂಸ್ಕೃತ ಮತ್ತು ಕನ್ನಡ ಪರಿಶೀಲನೆ ಅಗತ್ಯ"))+"</p></article>";
+ const left="<section class='verse-reading-panel' aria-label='"+esc(langText("Śloka and transliteration","ಶ್ಲೋಕ ಮತ್ತು ಲಿಪ್ಯಂತರ"))+"'><h3 class='panel-heading'>"+esc(langText("Śloka","ಶ್ಲೋಕ"))+"</h3><div class='reading-label'>"+esc(language==="kn"?"ಕನ್ನಡ":"देवनागरी")+"</div><div class='verse-script "+(language==="kn"?"kannada":"devanagari")+"'>"+selected.map(esc).join("\n")+"</div><div class='reading-label iast-heading'>IAST</div><div class='verse-iast'>"+iast.map(esc).join("\n")+"</div></section>";
+ const right="<div class='verse-names-panel'>"+(isDhyana?dhyanaWordsPanel(v):nameSection(v))+"</div>";
+ return "<article class='card vedini-study-card' id='"+id+"'><div class='card-head'><b>"+esc(label)+"</b>"+makeAudio(v,isDhyana)+"</div><div class='verse-content-grid'>"+left+right+"</div><div class='verse-meaning-panel'>"+(isDhyana?dhyanaVerseMeaning(v):mainVerseMeaning(v))+"</div><p class='meta'>"+esc(langText("Interpretation draft · Sanskrit and Kannada editorial review recommended","ವ್ಯಾಖ್ಯಾನ ಕರಡು · ಸಂಸ್ಕೃತ ಮತ್ತು ಕನ್ನಡ ಪರಿಶೀಲನೆ ಅಗತ್ಯ"))+"</p></article>";
 }
 function searchText(v,dh){
  if(dh)return JSON.stringify(v)+" "+JSON.stringify(dhyanaData[v.verse_number]||{});
