@@ -331,6 +331,84 @@ function loadAudio(){
   }catch(_){/* Keep placeholder if recording is not available. */}
  });
 }
+const practice={active:false,paused:false,current:1,end:1,reps:1,played:0,token:0};
+function practiceStatus(message){const e=$("#practice-status");if(e)e.textContent=message;}
+function practiceSyncButtons(){
+ $("#practice-play").disabled=practice.active;
+ $("#practice-pause").disabled=!practice.active;
+ $("#practice-pause").textContent=practice.paused?"Resume":"Pause";
+ $("#practice-stop").disabled=!practice.active;
+}
+function practiceStop(message="Stopped"){
+ const audio=$("#practice-audio");practice.token++;practice.active=false;practice.paused=false;audio.pause();audio.removeAttribute("src");audio.load();practiceSyncButtons();practiceStatus(message);
+}
+function practiceAudioPath(n){
+ const stem="../audio/lalita/verses/sloka-"+String(n).padStart(3,"0");
+ const voice=$("#practice-voice").value;
+ return stem+((voice==="warm"&&(n===1||n===2))?"-warm-deep":"")+".mp3";
+}
+function practiceAdvance(token){
+ if(token!==practice.token||!practice.active)return;
+ if(practice.played<practice.reps){
+  practicePlayCurrent(token);return;
+ }
+ practice.current++;practice.played=0;
+ if(practice.current>practice.end){practiceStop("Completed selected range");return;}
+ practicePlayCurrent(token);
+}
+function practicePlayCurrent(token){
+ if(token!==practice.token||!practice.active)return;
+ const audio=$("#practice-audio");
+ practice.played++;
+ const n=practice.current;
+ practiceStatus("Playing śloka "+n+" · repetition "+practice.played+" of "+practice.reps);
+ const source=practiceAudioPath(n);
+ audio.pause();audio.src=source;audio.playbackRate=Number($("#practice-speed").value);audio.load();
+ const started=audio.play();
+ if(started&&typeof started.catch==="function")started.catch(()=>{
+  if(token!==practice.token||!practice.active||practice.paused)return;
+  practiceStop("Unable to play śloka "+n+". Check the MP3 file.");
+ });
+ // Follow the active verse across reader groups without interrupting this player.
+ if(pageIndex!==Math.floor((n-1)/pageSize)||view!=="verses"||searchTerm.trim()){
+  view="verses";pageIndex=Math.floor((n-1)/pageSize);selectedVerse=n;
+  searchTerm="";$("#search").value="";render();
+ }else{
+  selectedVerse=n;
+  document.querySelectorAll("#verse-cards .card").forEach(e=>e.classList.toggle("selected-verse",e.id==="verse-"+n));
+  updateQuickIndex();
+ }
+}
+function initPractice(){
+ const a=$("#practice-from"),b=$("#practice-to"),audio=$("#practice-audio");
+ if(!a||!b||!audio)return;
+ const options=verses.map(v=>"<option value='"+v.verse_number+"'>"+v.verse_number+"</option>").join("");
+ a.innerHTML=options;b.innerHTML=options;a.value="1";b.value=String(Math.min(10,verses.length));
+ function clampRange(changed){
+  if(Number(a.value)>Number(b.value)){if(changed==="from")b.value=a.value;else a.value=b.value;}
+ }
+ a.addEventListener("change",()=>clampRange("from"));
+ b.addEventListener("change",()=>clampRange("to"));
+ $("#practice-play").addEventListener("click",()=>{
+  const from=Number(a.value),to=Number(b.value);
+  if(!Number.isInteger(from)||!Number.isInteger(to)||from<1||to>verses.length||from>to){practiceStatus("Select a valid range.");return;}
+  // Pause any individual verse player before beginning the uninterrupted range.
+  document.querySelectorAll(".audio-player audio").forEach(e=>e.pause());
+  practice.token++;practice.active=true;practice.paused=false;practice.current=from;practice.end=to;practice.reps=Number($("#practice-repeat").value);practice.played=0;
+  practiceSyncButtons();practicePlayCurrent(practice.token);
+ });
+ $("#practice-pause").addEventListener("click",()=>{
+  if(!practice.active)return;
+  if(practice.paused){practice.paused=false;const p=audio.play();if(p&&p.catch)p.catch(()=>practiceStop("Unable to resume"));practiceStatus("Resumed śloka "+practice.current+" · repetition "+practice.played+" of "+practice.reps);}
+  else{audio.pause();practice.paused=true;practiceStatus("Paused at śloka "+practice.current+" · repetition "+practice.played+" of "+practice.reps);}
+  practiceSyncButtons();
+ });
+ $("#practice-stop").addEventListener("click",()=>practiceStop());
+ $("#practice-speed").addEventListener("change",()=>audio.playbackRate=Number($("#practice-speed").value));
+ audio.addEventListener("ended",()=>{if(practice.active&&!practice.paused){if(practice.played>=practice.reps){practice.current++;practice.played=0;if(practice.current>practice.end){practiceStop("Completed selected range");return;}}practicePlayCurrent(practice.token)}});
+ audio.addEventListener("error",()=>{if(practice.active)practiceStop("Audio unavailable for śloka "+practice.current+".")});
+ practiceSyncButtons();
+}
 function switchLanguage(kn){
  language=kn?"kn":"en";
  $("#dev").classList.toggle("chosen",!kn);
@@ -352,7 +430,7 @@ async function init(){
  let index=0;
  verses.forEach(v=>{if(v.study?.traditional_interpretation)verseData[v.verse_number]=v.study;(v.names||[]).forEach(n=>{n.studyNumber=++index;if(n.essential_meaning&&n.traditional_interpretation)nameData[n.studyNumber]={...(nameData[n.studyNumber]||{}),...n};});});
  if(index!==111)throw new Error("Expected 111 names in the first 40 verses; found "+index);
- const initial=loadInitialLocation();render();if(initial)scrollToElement(initial);
+ initPractice();const initial=loadInitialLocation();render();if(initial)scrollToElement(initial);
  }catch(err){
  const n=$("#result-note");if(n)n.textContent="Unable to load study content: "+err.message;
  }
