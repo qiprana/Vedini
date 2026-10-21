@@ -1,0 +1,43 @@
+{
+  "id": "lalita-044",
+  "verse_number": 44,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "निर्लेपा निर्मला नित्या निराकारा निराकुला ।",
+      "निर्गुणा निष्कला शान्ता निष्कामा निरुपप्लवा ४४ ॥"
+    ],
+    "iast": [
+      "nirlepā nirmalā nityā nirākārā nirākulā ।",
+      "nirguṇā niṣkalā śāntā niṣkāmā nirupaplavā 44 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "Eternal and formless, she is free of attachment, desire and disturbance.",
+    "kannada": "ನಿತ್ಯಳೂ ನಿರಾಕಾರಳೂ ಆದ ಆಕೆ ಆಸಕ್ತಿ ಮತ್ತು ಬಯಕೆಗಳಿಂದ ಮುಕ್ತಳಾಗಿದ್ದಾಳೆ."
+  },
+  "names": [],
+  "study": {
+    "traditional_interpretation": {
+      "en": null,
+      "kn": null
+    }
+  },
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "sources": [
+    {
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Sanskrit source"
+    },
+    {
+      "url": "https://manblunder.com/articles/lalitha-sahasranama",
+      "role": "Name commentary index"
+    }
+  ],
+  "review_status": "editorial_draft",
+  "reading_note": "Provisional Sanskrit and bilingual overall-meaning draft. Individual nāma segmentation, component glosses and Manblunder interpretations have not been checked."
+}
