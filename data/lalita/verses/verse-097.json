@@ -1,0 +1,32 @@
+{
+  "id": "lalita-097",
+  "verse_number": 97,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "वज्रेश्वरी वामदेवी वयोऽवस्थाविवर्जिता ।",
+      "सिद्धेश्वरी सिद्धविद्या सिद्धमाता यशस्विनी ॥ ९७ ॥"
+    ],
+    "iast": [
+      "vajreśvarī vāmadevī vayo’vasthāvivarjitā ।",
+      "siddheśvarī siddhavidyā siddhamātā yaśasvinī ॥ 97 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; requires cross-check against Shlokam"
+    }
+  ]
+}
