@@ -459,7 +459,7 @@ async function init(){
  verses=files.slice(7);
  let index=0;
  verses.forEach(v=>{if(v.study?.traditional_interpretation)verseData[v.verse_number]=v.study;(v.names||[]).forEach(n=>{n.studyNumber=++index;if(n.essential_meaning&&n.traditional_interpretation)nameData[n.studyNumber]={...(nameData[n.studyNumber]||{}),...n};});});
- if(index!==111)throw new Error("Expected 111 names in the first 40 verses; found "+index);
+ if(index<111)throw new Error("Expected at least 111 names across the loaded verses; found "+index);
  initPractice();const initial=loadInitialLocation();render();if(initial)scrollToElement(initial);
  }catch(err){
  const n=$("#result-note");if(n)n.textContent="Unable to load study content: "+err.message;
