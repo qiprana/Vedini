@@ -1,0 +1,43 @@
+{
+  "id": "lalita-059",
+  "verse_number": 59,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "मनुविद्या चन्द्रविद्या चन्द्रमण्डल-मध्यगा ।",
+      "चारुरूपा चारुहासा चारुचन्द्र-कलाधरा ५९ ॥"
+    ],
+    "iast": [
+      "manuvidyā candravidyā candramaṇḍala-madhyagā ।",
+      "cārurūpā cāruhāsā cārucandra-kalādharā 59 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "She dwells in the lunar sphere and radiates beauty and grace.",
+    "kannada": "ಚಂದ್ರಮಂಡಲದಲ್ಲಿ ನೆಲೆಸಿರುವ ಆಕೆ ಸೌಂದರ್ಯ ಮತ್ತು ಕೃಪೆಯಿಂದ ಹೊಳೆಯುತ್ತಾಳೆ."
+  },
+  "names": [],
+  "study": {
+    "traditional_interpretation": {
+      "en": null,
+      "kn": null
+    }
+  },
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "sources": [
+    {
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Sanskrit source"
+    },
+    {
+      "url": "https://manblunder.com/articles/lalitha-sahasranama",
+      "role": "Name commentary index"
+    }
+  ],
+  "review_status": "editorial_draft",
+  "reading_note": "Provisional Sanskrit and bilingual overall-meaning draft. Individual nāma segmentation, component glosses and Manblunder interpretations have not been checked."
+}
