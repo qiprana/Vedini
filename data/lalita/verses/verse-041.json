@@ -1,0 +1,43 @@
+{
+  "id": "lalita-041",
+  "verse_number": 41,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "भवानी भावनागम्या भवारण्य-कुठारिका ।",
+      "भद्रप्रिया भद्रमूर्तिर्भक्त-सौभाग्यदायिनी ४१ ॥"
+    ],
+    "iast": [
+      "bhavānī bhāvanāgamyā bhavāraṇya-kuṭhārikā ।",
+      "bhadrapriyā bhadramūrtir bhakta-saubhāgyadāyinī 41 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "She is reached by contemplation, cuts worldly bondage, and blesses devotees.",
+    "kannada": "ಧ್ಯಾನದಿಂದ ಅರಿಯಬಹುದಾದ ಆಕೆ ಸಂಸಾರಬಂಧವನ್ನು ನಿವಾರಿಸಿ ಭಕ್ತರಿಗೆ ಮಂಗಳ ನೀಡುತ್ತಾಳೆ."
+  },
+  "names": [],
+  "study": {
+    "traditional_interpretation": {
+      "en": null,
+      "kn": null
+    }
+  },
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "sources": [
+    {
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Sanskrit source"
+    },
+    {
+      "url": "https://manblunder.com/articles/lalitha-sahasranama",
+      "role": "Name commentary index"
+    }
+  ],
+  "review_status": "editorial_draft",
+  "reading_note": "Provisional Sanskrit and bilingual overall-meaning draft. Individual nāma segmentation, component glosses and Manblunder interpretations have not been checked."
+}
