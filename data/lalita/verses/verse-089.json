@@ -1,0 +1,32 @@
+{
+  "id": "lalita-089",
+  "verse_number": 89,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "शिवप्रिया शिवपरा शिष्टेष्टा शिष्टपूजिता ।",
+      "अप्रमेया स्वप्रकाशा मनोवाचामगोचरा ॥ ८९ ॥"
+    ],
+    "iast": [
+      "śivapriyā śivaparā śiṣṭeṣṭā śiṣṭapūjitā ।",
+      "aprameyā svaprakāśā manovācāmagocarā ॥ 89 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; requires cross-check against Shlokam"
+    }
+  ]
+}
