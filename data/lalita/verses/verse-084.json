@@ -1,0 +1,32 @@
+{
+  "id": "lalita-084",
+  "verse_number": 84,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "सद्यःप्रसादिनी विश्वसाक्षिणी साक्षिवर्जिता ।",
+      "षडङ्गदेवतायुक्ता षाड्गुण्यपरिपूरिता ॥ ८४ ॥"
+    ],
+    "iast": [
+      "sadyaḥprasādinī viśvasākṣiṇī sākṣivarjitā ।",
+      "ṣaḍaṅgadevatāyuktā ṣāḍguṇyaparipūritā ॥ 84 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; requires cross-check against Shlokam"
+    }
+  ]
+}
