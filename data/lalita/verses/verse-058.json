@@ -1,0 +1,43 @@
+{
+  "id": "lalita-058",
+  "verse_number": 58,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "चतुःषष्ट्युपचाराढ्या चतुःषष्टिकलामयी ।",
+      "महाचतुः-षष्टिकोटि-योगिनी-गणसेविता ५८ ॥"
+    ],
+    "iast": [
+      "catuḥṣaṣṭyupacārāḍhyā catuḥṣaṣṭikalāmayī ।",
+      "mahācatuḥ-ṣaṣṭikoṭi-yoginī-gaṇasevitā 58 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "She is worshipped with sixty-four offerings and embodies sixty-four arts.",
+    "kannada": "ಆಕೆಯು ಅರವತ್ತನಾಲ್ಕು ಉಪಚಾರಗಳಿಂದ ಪೂಜಿತಳೂ ಅರವತ್ತನಾಲ್ಕು ಕಲೆಗಳ ಸ್ವರೂಪಿಣಿಯೂ ಆಗಿದ್ದಾಳೆ."
+  },
+  "names": [],
+  "study": {
+    "traditional_interpretation": {
+      "en": null,
+      "kn": null
+    }
+  },
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "sources": [
+    {
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Sanskrit source"
+    },
+    {
+      "url": "https://manblunder.com/articles/lalitha-sahasranama",
+      "role": "Name commentary index"
+    }
+  ],
+  "review_status": "editorial_draft",
+  "reading_note": "Provisional Sanskrit and bilingual overall-meaning draft. Individual nāma segmentation, component glosses and Manblunder interpretations have not been checked."
+}
