@@ -17,7 +17,216 @@
     "english": "She is auspicious, peaceful and stainless, with a moonlike face.",
     "kannada": "ಶುಭಕರಳಾದ ಆಕೆ ಶಾಂತಳೂ ನಿರ್ಮಲಳೂ ಆಗಿದ್ದು ಚಂದ್ರನಂತಹ ಮುಖ ಹೊಂದಿದ್ದಾಳೆ."
   },
-  "names": [],
+  "names": [
+    {
+      "number": null,
+      "sanskrit": "शाङ्करी",
+      "display_devanagari": "शाङ्करी",
+      "iast": "śāṅkarī",
+      "display_iast": "śāṅkarī",
+      "english": "The power or consort of Śaṅkara",
+      "kannada": "ಶಂಕರನ ಶಕ್ತಿ",
+      "essential_meaning": {
+        "en": "The power or consort of Śaṅkara",
+        "kn": "ಶಂಕರನ ಶಕ್ತಿ"
+      },
+      "traditional_interpretation": {
+        "en": "In this name the Goddess is praised as the power or consort of Śaṅkara. The imagery belongs to the devotional and philosophical language of Śrīvidyā.",
+        "kn": "ಶಂಕರನ ಶಕ್ತಿ ಎಂಬುದು ಈ ನಾಮದ ಪ್ರಮುಖ ಅರ್ಥ. ಇದು ಶ್ರೀವಿದ್ಯೆಯ ಭಕ್ತಿ ಮತ್ತು ತಾತ್ತ್ವಿಕ ಭಾಷೆಗೆ ಸೇರಿದೆ."
+      },
+      "components": [
+        {
+          "dev": "शाङ्करी",
+          "iast": "śāṅkarī",
+          "en": "The power or consort of Śaṅkara",
+          "kn": "ಶಂಕರನ ಶಕ್ತಿ"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": null,
+      "sanskrit": "श्रीकरी",
+      "display_devanagari": "श्रीकरी",
+      "iast": "śrīkarī",
+      "display_iast": "śrīkarī",
+      "english": "Giver of prosperity and auspiciousness",
+      "kannada": "ಶ್ರೀ ಮತ್ತು ಮಂಗಳ ನೀಡುವವಳು",
+      "essential_meaning": {
+        "en": "Giver of prosperity and auspiciousness",
+        "kn": "ಶ್ರೀ ಮತ್ತು ಮಂಗಳ ನೀಡುವವಳು"
+      },
+      "traditional_interpretation": {
+        "en": "In this name the Goddess is praised as giver of prosperity and auspiciousness. The imagery belongs to the devotional and philosophical language of Śrīvidyā.",
+        "kn": "ಶ್ರೀ ಮತ್ತು ಮಂಗಳ ನೀಡುವವಳು ಎಂಬುದು ಈ ನಾಮದ ಪ್ರಮುಖ ಅರ್ಥ. ಇದು ಶ್ರೀವಿದ್ಯೆಯ ಭಕ್ತಿ ಮತ್ತು ತಾತ್ತ್ವಿಕ ಭಾಷೆಗೆ ಸೇರಿದೆ."
+      },
+      "components": [
+        {
+          "dev": "श्रीकरी",
+          "iast": "śrīkarī",
+          "en": "Giver of prosperity and auspiciousness",
+          "kn": "ಶ್ರೀ ಮತ್ತು ಮಂಗಳ ನೀಡುವವಳು"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": null,
+      "sanskrit": "साध्वी",
+      "display_devanagari": "साध्वी",
+      "iast": "sādhvī",
+      "display_iast": "sādhvī",
+      "english": "Virtuous and righteous one",
+      "kannada": "ಸಾಧ್ವಿ; ಸದ್ಗುಣವುಳ್ಳವಳು",
+      "essential_meaning": {
+        "en": "Virtuous and righteous one",
+        "kn": "ಸಾಧ್ವಿ; ಸದ್ಗುಣವುಳ್ಳವಳು"
+      },
+      "traditional_interpretation": {
+        "en": "In this name the Goddess is praised as virtuous and righteous one. The imagery belongs to the devotional and philosophical language of Śrīvidyā.",
+        "kn": "ಸಾಧ್ವಿ; ಸದ್ಗುಣವುಳ್ಳವಳು ಎಂಬುದು ಈ ನಾಮದ ಪ್ರಮುಖ ಅರ್ಥ. ಇದು ಶ್ರೀವಿದ್ಯೆಯ ಭಕ್ತಿ ಮತ್ತು ತಾತ್ತ್ವಿಕ ಭಾಷೆಗೆ ಸೇರಿದೆ."
+      },
+      "components": [
+        {
+          "dev": "साध्वी",
+          "iast": "sādhvī",
+          "en": "Virtuous and righteous one",
+          "kn": "ಸಾಧ್ವಿ; ಸದ್ಗುಣವುಳ್ಳವಳು"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": null,
+      "sanskrit": "शरच्चन्द्रनिभानना",
+      "display_devanagari": "शरच्चन्द्रनिभानना",
+      "iast": "śaraccandra-nibhānanā",
+      "display_iast": "śaraccandra-nibhānanā",
+      "english": "Whose face resembles the autumn moon",
+      "kannada": "ಶರದೃತುವಿನ ಚಂದ್ರನಂತಹ ಮುಖವುಳ್ಳವಳು",
+      "essential_meaning": {
+        "en": "Whose face resembles the autumn moon",
+        "kn": "ಶರದೃತುವಿನ ಚಂದ್ರನಂತಹ ಮುಖವುಳ್ಳವಳು"
+      },
+      "traditional_interpretation": {
+        "en": "In this name the Goddess is praised as whose face resembles the autumn moon. The imagery belongs to the devotional and philosophical language of Śrīvidyā.",
+        "kn": "ಶರದೃತುವಿನ ಚಂದ್ರನಂತಹ ಮುಖವುಳ್ಳವಳು ಎಂಬುದು ಈ ನಾಮದ ಪ್ರಮುಖ ಅರ್ಥ. ಇದು ಶ್ರೀವಿದ್ಯೆಯ ಭಕ್ತಿ ಮತ್ತು ತಾತ್ತ್ವಿಕ ಭಾಷೆಗೆ ಸೇರಿದೆ."
+      },
+      "components": [
+        {
+          "dev": "शरच्चन्द्रनिभानना",
+          "iast": "śaraccandra-nibhānanā",
+          "en": "Whose face resembles the autumn moon",
+          "kn": "ಶರದೃತುವಿನ ಚಂದ್ರನಂತಹ ಮುಖವುಳ್ಳವಳು"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": null,
+      "sanskrit": "शातोदरी",
+      "display_devanagari": "शातोदरी",
+      "iast": "śātodarī",
+      "display_iast": "śātodarī",
+      "english": "Slender-waisted one",
+      "kannada": "ಸೂಕ್ಷ್ಮ ಸೊಂಟವುಳ್ಳವಳು",
+      "essential_meaning": {
+        "en": "Slender-waisted one",
+        "kn": "ಸೂಕ್ಷ್ಮ ಸೊಂಟವುಳ್ಳವಳು"
+      },
+      "traditional_interpretation": {
+        "en": "In this name the Goddess is praised as slender-waisted one. The imagery belongs to the devotional and philosophical language of Śrīvidyā.",
+        "kn": "ಸೂಕ್ಷ್ಮ ಸೊಂಟವುಳ್ಳವಳು ಎಂಬುದು ಈ ನಾಮದ ಪ್ರಮುಖ ಅರ್ಥ. ಇದು ಶ್ರೀವಿದ್ಯೆಯ ಭಕ್ತಿ ಮತ್ತು ತಾತ್ತ್ವಿಕ ಭಾಷೆಗೆ ಸೇರಿದೆ."
+      },
+      "components": [
+        {
+          "dev": "शातोदरी",
+          "iast": "śātodarī",
+          "en": "Slender-waisted one",
+          "kn": "ಸೂಕ್ಷ್ಮ ಸೊಂಟವುಳ್ಳವಳು"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": null,
+      "sanskrit": "शान्तिमती",
+      "display_devanagari": "शान्तिमती",
+      "iast": "śāntimatī",
+      "display_iast": "śāntimatī",
+      "english": "Filled with peace",
+      "kannada": "ಶಾಂತಿಸ್ವರೂಪಿಣಿ",
+      "essential_meaning": {
+        "en": "Filled with peace",
+        "kn": "ಶಾಂತಿಸ್ವರೂಪಿಣಿ"
+      },
+      "traditional_interpretation": {
+        "en": "In this name the Goddess is praised as filled with peace. The imagery belongs to the devotional and philosophical language of Śrīvidyā.",
+        "kn": "ಶಾಂತಿಸ್ವರೂಪಿಣಿ ಎಂಬುದು ಈ ನಾಮದ ಪ್ರಮುಖ ಅರ್ಥ. ಇದು ಶ್ರೀವಿದ್ಯೆಯ ಭಕ್ತಿ ಮತ್ತು ತಾತ್ತ್ವಿಕ ಭಾಷೆಗೆ ಸೇರಿದೆ."
+      },
+      "components": [
+        {
+          "dev": "शान्तिमती",
+          "iast": "śāntimatī",
+          "en": "Filled with peace",
+          "kn": "ಶಾಂತಿಸ್ವರೂಪಿಣಿ"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": null,
+      "sanskrit": "निराधारा",
+      "display_devanagari": "निराधारा",
+      "iast": "nirādhārā",
+      "display_iast": "nirādhārā",
+      "english": "Independent of any supporting foundation",
+      "kannada": "ಯಾವುದೇ ಆಧಾರಕ್ಕೆ ಅವಲಂಬಿತವಲ್ಲದವಳು",
+      "essential_meaning": {
+        "en": "Independent of any supporting foundation",
+        "kn": "ಯಾವುದೇ ಆಧಾರಕ್ಕೆ ಅವಲಂಬಿತವಲ್ಲದವಳು"
+      },
+      "traditional_interpretation": {
+        "en": "In this name the Goddess is praised as independent of any supporting foundation. The imagery belongs to the devotional and philosophical language of Śrīvidyā.",
+        "kn": "ಯಾವುದೇ ಆಧಾರಕ್ಕೆ ಅವಲಂಬಿತವಲ್ಲದವಳು ಎಂಬುದು ಈ ನಾಮದ ಪ್ರಮುಖ ಅರ್ಥ. ಇದು ಶ್ರೀವಿದ್ಯೆಯ ಭಕ್ತಿ ಮತ್ತು ತಾತ್ತ್ವಿಕ ಭಾಷೆಗೆ ಸೇರಿದೆ."
+      },
+      "components": [
+        {
+          "dev": "निराधारा",
+          "iast": "nirādhārā",
+          "en": "Independent of any supporting foundation",
+          "kn": "ಯಾವುದೇ ಆಧಾರಕ್ಕೆ ಅವಲಂಬಿತವಲ್ಲದವಳು"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": null,
+      "sanskrit": "निरञ्जना",
+      "display_devanagari": "निरञ्जना",
+      "iast": "nirañjanā",
+      "display_iast": "nirañjanā",
+      "english": "Spotless, unstained one",
+      "kannada": "ಕಳಂಕರಹಿತಳಾದವಳು",
+      "essential_meaning": {
+        "en": "Spotless, unstained one",
+        "kn": "ಕಳಂಕರಹಿತಳಾದವಳು"
+      },
+      "traditional_interpretation": {
+        "en": "In this name the Goddess is praised as spotless, unstained one. The imagery belongs to the devotional and philosophical language of Śrīvidyā.",
+        "kn": "ಕಳಂಕರಹಿತಳಾದವಳು ಎಂಬುದು ಈ ನಾಮದ ಪ್ರಮುಖ ಅರ್ಥ. ಇದು ಶ್ರೀವಿದ್ಯೆಯ ಭಕ್ತಿ ಮತ್ತು ತಾತ್ತ್ವಿಕ ಭಾಷೆಗೆ ಸೇರಿದೆ."
+      },
+      "components": [
+        {
+          "dev": "निरञ्जना",
+          "iast": "nirañjanā",
+          "en": "Spotless, unstained one",
+          "kn": "ಕಳಂಕರಹಿತಳಾದವಳು"
+        }
+      ],
+      "review_status": "editorial_draft"
+    }
+  ],
   "study": {
     "traditional_interpretation": {
       "en": null,
@@ -39,5 +248,5 @@
     }
   ],
   "review_status": "editorial_draft",
-  "reading_note": "Provisional Sanskrit and bilingual overall-meaning draft. Individual nāma segmentation, component glosses and Manblunder interpretations have not been checked."
+  "reading_note": "Name-by-name bilingual meanings added as editorial drafts; compound decomposition and Manblunder source comparison need further verification."
 }
