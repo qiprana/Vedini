@@ -1,0 +1,39 @@
+{
+  "id": "lalita-66",
+  "verse_number": 66,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "उन्मेष-निमिषोत्पन्न-विपन्न-भुवनावली ।",
+      "सहस्र-शीर्षवदना सहस्राक्षी सहस्रपात् ६६ ॥"
+    ],
+    "iast": [
+      "unmeṣa-nimiṣotpanna-vipanna-bhuvanāvalī ।",
+      "sahasra-śīrṣavadanā sahasrākṣī sahasrapāt 66 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "Worlds arise and dissolve with her blinking; she has myriad eyes and forms.",
+    "kannada": "ಆಕೆಯ ಕಣ್ಣರೆಪ್ಪೆಗಳ ಚಲನೆಯಿಂದ ಲೋಕಗಳು ಹುಟ್ಟಿ ಲಯವಾಗಿ, ಆಕೆ ಅನಂತ ರೂಪಗಳಲ್ಲಿ ನೆಲೆಸುತ್ತಾಳೆ."
+  },
+  "names": [],
+  "study": {
+    "traditional_interpretation": {
+      "en": null,
+      "kn": null
+    }
+  },
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "editorial_draft",
+  "reading_note": "Individual names and traditional commentary pending review.",
+  "sources": [
+    {
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "source"
+    }
+  ]
+}
