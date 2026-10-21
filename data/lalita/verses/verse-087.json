@@ -1,0 +1,32 @@
+{
+  "id": "lalita-087",
+  "verse_number": 87,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "व्यापिनी विविधाकारा विद्याविद्यास्वरूपिणी ।",
+      "महाकामेशनयनकुमुदाह्लादकौमुदी ॥ ८७ ॥"
+    ],
+    "iast": [
+      "vyāpinī vividhākārā vidyāvidyāsvarūpiṇī ।",
+      "mahākāmeśanayanakumudāhlādakaumudī ॥ 87 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; requires cross-check against Shlokam"
+    }
+  ]
+}
