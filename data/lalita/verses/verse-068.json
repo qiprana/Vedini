@@ -1,0 +1,39 @@
+{
+  "id": "lalita-68",
+  "verse_number": 68,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "श्रुति-सीमन्त-सिन्दूरी-कृत-पादाब्ज-धूलिका ।",
+      "सकलागम-सन्दोह-शुक्ति-सम्पुट-मौक्तिका ६८ ॥"
+    ],
+    "iast": [
+      "śruti-sīmanta-sindūrī-kṛta-pādābja-dhūlikā ।",
+      "sakalāgama-sandoha-śukti-sampuṭa-mauktikā 68 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "She is honored by the Vedas and treasured within the Āgamas.",
+    "kannada": "ವೇದಗಳಿಂದ ಸ್ತುತಿಸಲ್ಪಡುವ ಆಕೆ ಆಗಮಗಳೊಳಗಿನ ಮುತ್ತಿನಂತಿದ್ದಾಳೆ."
+  },
+  "names": [],
+  "study": {
+    "traditional_interpretation": {
+      "en": null,
+      "kn": null
+    }
+  },
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "editorial_draft",
+  "reading_note": "Individual names and traditional commentary pending review.",
+  "sources": [
+    {
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "source"
+    }
+  ]
+}
