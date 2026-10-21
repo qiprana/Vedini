@@ -1,0 +1,32 @@
+{
+  "id": "lalita-085",
+  "verse_number": 85,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "नित्यक्लिन्ना निरुपमा निर्वाणसुखदायिनी ।",
+      "नित्याषोडशिकारूपा श्रीकण्ठार्धशरीरिणी ॥ ८५ ॥"
+    ],
+    "iast": [
+      "nityaklinnā nirupamā nirvāṇasukhadāyinī ।",
+      "nityāṣoḍaśikārūpā śrīkaṇṭhārdhaśarīriṇī ॥ 85 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; requires cross-check against Shlokam"
+    }
+  ]
+}
