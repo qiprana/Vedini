@@ -1,0 +1,43 @@
+{
+  "id": "lalita-048",
+  "verse_number": 48,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "निष्क्रोधा क्रोधशमनी निर्लोभा लोभनाशिनी ।",
+      "निःसंशया संशयघ्नी निर्भवा भवनाशिनी ४८ ॥"
+    ],
+    "iast": [
+      "niṣkrodhā krodhaśamanī nirlobhā lobhanāśinī ।",
+      "niḥsaṃśayā saṃśayaghnī nirbhavā bhavanāśinī 48 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "She subdues anger, greed, doubt and the cycle of becoming.",
+    "kannada": "ಆಕೆ ಕ್ರೋಧ, ಲೋಭ, ಸಂಶಯ ಹಾಗೂ ಸಂಸಾರಬಂಧವನ್ನು ದೂರಮಾಡುತ್ತಾಳೆ."
+  },
+  "names": [],
+  "study": {
+    "traditional_interpretation": {
+      "en": null,
+      "kn": null
+    }
+  },
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "sources": [
+    {
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Sanskrit source"
+    },
+    {
+      "url": "https://manblunder.com/articles/lalitha-sahasranama",
+      "role": "Name commentary index"
+    }
+  ],
+  "review_status": "editorial_draft",
+  "reading_note": "Provisional Sanskrit and bilingual overall-meaning draft. Individual nāma segmentation, component glosses and Manblunder interpretations have not been checked."
+}
