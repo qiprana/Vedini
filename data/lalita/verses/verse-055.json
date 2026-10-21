@@ -1,0 +1,43 @@
+{
+  "id": "lalita-055",
+  "verse_number": 55,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "महाभोगा महैश्वर्या महावीर्या महाबला ।",
+      "महाबुद्धिर् महासिद्धिर् महायोगेश्वरेश्वरी ५५ ॥"
+    ],
+    "iast": [
+      "mahābhogā mahaiśvaryā mahāvīryā mahābalā ।",
+      "mahābuddhir mahāsiddhir mahāyogeśvareśvarī 55 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "She embodies great sovereignty, strength, wisdom and yogic accomplishment.",
+    "kannada": "ಆಕೆ ಮಹಾ ಐಶ್ವರ್ಯ, ಬಲ, ಬುದ್ಧಿ ಮತ್ತು ಯೋಗಸಿದ್ಧಿಗಳ ಅಧಿಷ್ಠಾತ್ರಿಯಾಗಿದ್ದಾಳೆ."
+  },
+  "names": [],
+  "study": {
+    "traditional_interpretation": {
+      "en": null,
+      "kn": null
+    }
+  },
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "sources": [
+    {
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Sanskrit source"
+    },
+    {
+      "url": "https://manblunder.com/articles/lalitha-sahasranama",
+      "role": "Name commentary index"
+    }
+  ],
+  "review_status": "editorial_draft",
+  "reading_note": "Provisional Sanskrit and bilingual overall-meaning draft. Individual nāma segmentation, component glosses and Manblunder interpretations have not been checked."
+}
