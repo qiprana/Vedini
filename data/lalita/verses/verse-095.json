@@ -1,0 +1,32 @@
+{
+  "id": "lalita-095",
+  "verse_number": 95,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "तेजोवती त्रिनयना लोलाक्षीकामरूपिणी ।",
+      "मालिनी हंसिनी माता मलयाचलवासिनी ॥ ९५ ॥"
+    ],
+    "iast": [
+      "tejovatī trinayanā lolākṣīkāmarūpiṇī ।",
+      "mālinī haṃsinī mātā malayācalavāsinī ॥ 95 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; requires cross-check against Shlokam"
+    }
+  ]
+}
