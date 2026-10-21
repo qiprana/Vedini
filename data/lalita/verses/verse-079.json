@@ -1,0 +1,39 @@
+{
+  "id": "lalita-79",
+  "verse_number": 79,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "तापत्रयाग्नि-सन्तप्त-समाह्लादन-चन्द्रिका ।",
+      "तरुणी तापसाराध्या तनुमध्या तमोऽपहा ७९ ॥"
+    ],
+    "iast": [
+      "tāpatrayāgni-santapta-samāhlādana-candrikā ।",
+      "taruṇī tāpasārādhyā tanumadhyā tamo'pahā 79 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "She is cooling moonlight to those troubled by suffering and dispels darkness.",
+    "kannada": "ದುಃಖದಿಂದ ಬಳಲುವವರಿಗೆ ತಂಪಾದ ಚಂದ್ರಕಾಂತಿಯಂತೆ ಆಕೆ ಅಂಧಕಾರವನ್ನು ನಿವಾರಿಸುತ್ತಾಳೆ."
+  },
+  "names": [],
+  "study": {
+    "traditional_interpretation": {
+      "en": null,
+      "kn": null
+    }
+  },
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "editorial_draft",
+  "reading_note": "Individual names and traditional commentary pending review.",
+  "sources": [
+    {
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "source"
+    }
+  ]
+}
