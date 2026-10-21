@@ -1,0 +1,32 @@
+{
+  "id": "lalita-081",
+  "verse_number": 81,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "परा प्रत्यक्चितीरूपा पश्यन्ती परदेवता ।",
+      "मध्यमा वैखरीरूपा भक्तमानसहंसिका ॥ ८१ ॥"
+    ],
+    "iast": [
+      "parā pratyakcitīrūpā paśyantī paradevatā ।",
+      "madhyamā vaikharīrūpā bhaktamānasahaṃsikā ॥ 81 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; requires cross-check against Shlokam"
+    }
+  ]
+}
