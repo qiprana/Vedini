@@ -1,0 +1,39 @@
+{
+  "id": "lalita-70",
+  "verse_number": 70,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "नारायणी नादरूपा नामरूप-विवर्जिता ।",
+      "ह्रींकारी ह्रीमती हृद्या हेयोपादेय-वर्जिता ७० ॥"
+    ],
+    "iast": [
+      "nārāyaṇī nādarūpā nāmarūpa-vivarjitā ।",
+      "hrīṃkārī hrīmatī hṛdyā heyopādeya-varjitā 70 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "She is primordial sound and transcends name, form and dualities.",
+    "kannada": "ಆಕೆ ಆದಿನಾದದ ಸ್ವರೂಪಿಣಿಯಾಗಿ ನಾಮರೂಪ ಮತ್ತು ದ್ವಂದ್ವಗಳಾಚೆ ಇದ್ದಾಳೆ."
+  },
+  "names": [],
+  "study": {
+    "traditional_interpretation": {
+      "en": null,
+      "kn": null
+    }
+  },
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "editorial_draft",
+  "reading_note": "Individual names and traditional commentary pending review.",
+  "sources": [
+    {
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "source"
+    }
+  ]
+}
