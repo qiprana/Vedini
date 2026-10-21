@@ -1,0 +1,39 @@
+{
+  "id": "lalita-65",
+  "verse_number": 65,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "भानुमण्डल-मध्यस्था भैरवी भगमालिनी ।",
+      "पद्मासना भगवती पद्मनाभ-सहोदरी ६५ ॥"
+    ],
+    "iast": [
+      "bhānumaṇḍala-madhyasthā bhairavī bhagamālinī ।",
+      "padmāsanā bhagavatī padmanābha-sahodarī 65 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "She dwells in the solar sphere and is the radiant, lotus-seated Goddess.",
+    "kannada": "ಸೂರ್ಯಮಂಡಲದಲ್ಲಿ ನೆಲೆಸಿರುವ ಆಕೆ ಪದ್ಮಾಸನೆಯಾದ ಭಗವತಿಯಾಗಿದ್ದಾಳೆ."
+  },
+  "names": [],
+  "study": {
+    "traditional_interpretation": {
+      "en": null,
+      "kn": null
+    }
+  },
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "editorial_draft",
+  "reading_note": "Individual names and traditional commentary pending review.",
+  "sources": [
+    {
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "source"
+    }
+  ]
+}
