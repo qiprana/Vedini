@@ -1,0 +1,32 @@
+{
+  "id": "lalita-181",
+  "verse_number": 181,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "अभ्यासातिशयज्ञाता षडध्वातीतरूपिणी ।",
+      "अव्याजकरुणामूर्तिरज्ञानध्वान्तदीपिका ॥ १८१ ॥"
+    ],
+    "iast": [
+      "abhyāsātiśayajñātā ṣaḍadhvātītarūpiṇī ।",
+      "avyājakaruṇāmūrtirajñānadhvāntadīpikā ॥ 181 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "lalita-150",
+  "verse_number": 150,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "मार्ताण्डभैरवाराध्या मन्त्रिणीन्यस्तराज्यधूः ।",
+      "त्रिपुरेशी जयत्सेना निस्त्रैगुण्या परापरा ॥ १५० ॥"
+    ],
+    "iast": [
+      "mārtāṇḍabhairavārādhyā mantriṇīnyastarājyadhūḥ ।",
+      "tripureśī jayatsenā nistraiguṇyā parāparā ॥ 150 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

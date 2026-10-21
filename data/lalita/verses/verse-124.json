@@ -1,0 +1,32 @@
+{
+  "id": "lalita-124",
+  "verse_number": 124,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "आदिशक्तिरमेयात्मा परमा पावनाकृतिः ।",
+      "अनेककोटिब्रह्माण्डजननी दिव्यविग्रहा ॥ १२४ ॥"
+    ],
+    "iast": [
+      "ādiśaktirameyātmā paramā pāvanākṛtiḥ ।",
+      "anekakoṭibrahmāṇḍajananī divyavigrahā ॥ 124 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

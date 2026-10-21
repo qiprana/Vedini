@@ -1,0 +1,32 @@
+{
+  "id": "lalita-108",
+  "verse_number": 108,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "मज्जासंस्था हंसवतीमुख्यशक्तिसमन्विता ।",
+      "हरिद्रा न्नैकरसिका हाकिनीरूपधारिणी ॥ १०८ ॥"
+    ],
+    "iast": [
+      "majjāsaṃsthā haṃsavatīmukhyaśaktisamanvitā ।",
+      "haridrā nnaikarasikā hākinīrūpadhāriṇī ॥ 108 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

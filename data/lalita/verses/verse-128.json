@@ -1,0 +1,32 @@
+{
+  "id": "lalita-128",
+  "verse_number": 128,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "सर्ववेदान्तसंवेद्या सत्यानन्दस्वरूपिणी ।",
+      "लोपामुद्रा र्चिता लीलाकॢप्तब्रह्माण्डमण्डला ॥ १२८ ॥"
+    ],
+    "iast": [
+      "sarvavedāntasaṃvedyā satyānandasvarūpiṇī ।",
+      "lopāmudrā rcitā līlākḷptabrahmāṇḍamaṇḍalā ॥ 128 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

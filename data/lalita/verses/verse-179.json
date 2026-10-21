@@ -1,0 +1,32 @@
+{
+  "id": "lalita-179",
+  "verse_number": 179,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "दशमुद्रा समाराध्या त्रिपुराश्रीवशङ्करी ।",
+      "ज्ञानमुद्रा ज्ञानगम्या ज्ञानज्ञेयस्वरूपिणी ॥ १७९ ॥"
+    ],
+    "iast": [
+      "daśamudrā samārādhyā tripurāśrīvaśaṅkarī ।",
+      "jñānamudrā jñānagamyā jñānajñeyasvarūpiṇī ॥ 179 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "lalita-155",
+  "verse_number": 155,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "ब्रह्माणी ब्रह्म जननी बहुरूपा बुधार्चिता ।",
+      "प्रसवित्री प्रचण्डाऽऽज्ञा प्रतिष्ठा प्रकटाकृतिः ॥ १५५ ॥"
+    ],
+    "iast": [
+      "brahmāṇī brahma jananī bahurūpā budhārcitā ।",
+      "prasavitrī pracaṇḍā’’jñā pratiṣṭhā prakaṭākṛtiḥ ॥ 155 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

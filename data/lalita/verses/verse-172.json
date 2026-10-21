@@ -1,0 +1,32 @@
+{
+  "id": "lalita-172",
+  "verse_number": 172,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "स्तोत्रप्रिया स्तुतिमती श्रुतिसंस्तुतवैभवा ।",
+      "मनस्विनी मानवती महेशी मङ्गलाकृतिः ॥ १७२ ॥"
+    ],
+    "iast": [
+      "stotrapriyā stutimatī śrutisaṃstutavaibhavā ।",
+      "manasvinī mānavatī maheśī maṅgalākṛtiḥ ॥ 172 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "lalita-162",
+  "verse_number": 162,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "अजा क्षयविनिर्मुक्ता मुग्धा क्षिप्रप्रसादिनी ।",
+      "अन्तर्मुखसमाराध्या बहिर्मुखसुदुर्लभा ॥ १६२ ॥"
+    ],
+    "iast": [
+      "ajā kṣayavinirmuktā mugdhā kṣipraprasādinī ।",
+      "antarmukhasamārādhyā bahirmukhasudurlabhā ॥ 162 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

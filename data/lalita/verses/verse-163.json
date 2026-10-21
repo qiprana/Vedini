@@ -1,0 +1,32 @@
+{
+  "id": "lalita-163",
+  "verse_number": 163,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "त्रयी त्रिवर्गनिलया त्रिस्था त्रिपुरमालिनी ।",
+      "निरामया निरालम्बा स्वात्मारामा सुधासृतिः ॥ १६३ ॥"
+    ],
+    "iast": [
+      "trayī trivarganilayā tristhā tripuramālinī ।",
+      "nirāmayā nirālambā svātmārāmā sudhāsṛtiḥ ॥ 163 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

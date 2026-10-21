@@ -1,0 +1,32 @@
+{
+  "id": "lalita-123",
+  "verse_number": 123,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "कलात्मिका कलानाथा काव्यालापविनोदिनी ।",
+      "सचामररमावाणीसव्यदक्षिणसेविता ॥ १२३ ॥"
+    ],
+    "iast": [
+      "kalātmikā kalānāthā kāvyālāpavinodinī ।",
+      "sacāmararamāvāṇīsavyadakṣiṇasevitā ॥ 123 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

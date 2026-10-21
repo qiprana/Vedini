@@ -1,0 +1,32 @@
+{
+  "id": "lalita-127",
+  "verse_number": 127,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "विश्वगर्भा स्वर्णगर्भाऽवरदा वागधीश्वरी ।",
+      "ध्यानगम्याऽपरिच्छेद्या ज्ञानदा ज्ञानविग्रहा ॥ १२७ ॥"
+    ],
+    "iast": [
+      "viśvagarbhā svarṇagarbhā’varadā vāgadhīśvarī ।",
+      "dhyānagamyā’paricchedyā jñānadā jñānavigrahā ॥ 127 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

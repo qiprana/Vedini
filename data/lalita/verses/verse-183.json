@@ -1,0 +1,32 @@
+{
+  "id": "lalita-183",
+  "verse_number": 183,
+  "section": "conclusion",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "श्रीशिवा शिवशक्त्यैक्यरूपिणी ललिताम्बिका ।",
+      "एवं श्रीललितादेव्या नाम्नां साहस्रकं जगुः ॥ १८३ ॥"
+    ],
+    "iast": [
+      "śrīśivā śivaśaktyaikyarūpiṇī lalitāmbikā ।",
+      "evaṃ śrīlalitādevyā nāmnāṃ sāhasrakaṃ jaguḥ ॥ 183 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

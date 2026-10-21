@@ -1,0 +1,32 @@
+{
+  "id": "lalita-139",
+  "verse_number": 139,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "कुलोत्तीर्णा भगाराध्या माया मधुमती मही ।",
+      "गणाम्बा गुह्यकाराध्या कोमलाङ्गी गुरुप्रिया ॥ १३९ ॥"
+    ],
+    "iast": [
+      "kulottīrṇā bhagārādhyā māyā madhumatī mahī ।",
+      "gaṇāmbā guhyakārādhyā komalāṅgī gurupriyā ॥ 139 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

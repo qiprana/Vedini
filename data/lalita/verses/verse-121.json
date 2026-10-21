@@ -1,0 +1,33 @@
+{
+  "id": "lalita-121",
+  "verse_number": 121,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "दरान्दोलितदीर्घाक्षी दरहासोज्ज्वलन्मुखी ।",
+      "गुरुमूर्दिर्गुणनिधिर्गोमाता गुहजन्मभूः ॥ १२१ ॥"
+    ],
+    "iast": [
+      "darāndolitadīrghākṣī darahāsojjvalanmukhī ।",
+      "gurumūrdirguṇanidhirgomātā guhajanmabhūḥ ॥ 121 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ],
+  "reading_note": "Source misnumbers verse 121 as 212; corrected by sequence."
+}

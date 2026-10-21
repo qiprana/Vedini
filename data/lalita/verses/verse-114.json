@@ -1,0 +1,32 @@
+{
+  "id": "lalita-114",
+  "verse_number": 114,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "ताम्बूलपूरितमुखी दाडिमीकुसुमप्रभा ।",
+      "मृगाक्षी मोहिनी मुख्या मृडानी मित्ररूपिणी ॥ ११४ ॥"
+    ],
+    "iast": [
+      "tāmbūlapūritamukhī dāḍimīkusumaprabhā ।",
+      "mṛgākṣī mohinī mukhyā mṛḍānī mitrarūpiṇī ॥ 114 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

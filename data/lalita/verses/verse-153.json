@@ -1,0 +1,32 @@
+{
+  "id": "lalita-153",
+  "verse_number": 153,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "परं ज्योतिः परं धाम परमाणुः परात्परा ।",
+      "पाशहस्ता पाशहन्त्री परमन्त्रविभेदिनी ॥ १५३ ॥"
+    ],
+    "iast": [
+      "paraṃ jyotiḥ paraṃ dhāma paramāṇuḥ parātparā ।",
+      "pāśahastā pāśahantrī paramantravibhedinī ॥ 153 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

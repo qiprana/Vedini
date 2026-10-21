@@ -1,0 +1,32 @@
+{
+  "id": "lalita-144",
+  "verse_number": 144,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "भाग्याब्धिचन्द्रि का भक्तचित्तकेकिघनाघना ।",
+      "रोगपर्वतदम्भोलिर्मृत्युदारुकुठारिका ॥ १४४ ॥"
+    ],
+    "iast": [
+      "bhāgyābdhicandri kā bhaktacittakekighanāghanā ।",
+      "rogaparvatadambholirmṛtyudārukuṭhārikā ॥ 144 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

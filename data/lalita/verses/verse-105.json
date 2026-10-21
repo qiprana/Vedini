@@ -1,0 +1,32 @@
+{
+  "id": "lalita-105",
+  "verse_number": 105,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "मेदोनिष्ठा मधुप्रीता बन्धिन्यादिसमन्विता ।",
+      "दध्यन्नासक्तहृदया काकिनीरूपधारिणी ॥ १०५ ॥"
+    ],
+    "iast": [
+      "medoniṣṭhā madhuprītā bandhinyādisamanvitā ।",
+      "dadhyannāsaktahṛdayā kākinīrūpadhāriṇī ॥ 105 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

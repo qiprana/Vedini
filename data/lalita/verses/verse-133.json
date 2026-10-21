@@ -1,0 +1,32 @@
+{
+  "id": "lalita-133",
+  "verse_number": 133,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "भाषारूपा बृहत्सेना भावाभावविवर्जिता ।",
+      "सुखाराध्या शुभकरी शोभना सुलभा गतिः ॥ १३३ ॥"
+    ],
+    "iast": [
+      "bhāṣārūpā bṛhatsenā bhāvābhāvavivarjitā ।",
+      "sukhārādhyā śubhakarī śobhanā sulabhā gatiḥ ॥ 133 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

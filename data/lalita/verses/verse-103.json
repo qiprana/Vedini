@@ -1,0 +1,32 @@
+{
+  "id": "lalita-103",
+  "verse_number": 103,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "रक्तवर्णा मांसनिष्ठा गुडान्नप्रीतमानसा ।",
+      "समस्तभक्तसुखदा लाकिन्यम्बास्वरूपिणी ॥ १०३ ॥"
+    ],
+    "iast": [
+      "raktavarṇā māṃsaniṣṭhā guḍānnaprītamānasā ।",
+      "samastabhaktasukhadā lākinyambāsvarūpiṇī ॥ 103 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

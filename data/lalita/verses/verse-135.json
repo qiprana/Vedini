@@ -1,0 +1,32 @@
+{
+  "id": "lalita-135",
+  "verse_number": 135,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "राज्यलक्ष्मीः कोशनाथा चतुरङ्गबलेश्वरी ।",
+      "साम्राज्यदायिनी सत्यसन्धा सागरमेखला ॥ १३५ ॥"
+    ],
+    "iast": [
+      "rājyalakṣmīḥ kośanāthā caturaṅgabaleśvarī ।",
+      "sāmrājyadāyinī satyasandhā sāgaramekhalā ॥ 135 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

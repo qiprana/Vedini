@@ -1,0 +1,32 @@
+{
+  "id": "lalita-159",
+  "verse_number": 159,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "जन्ममृत्युजरातप्तजनविश्रान्तिदायिनी ।",
+      "सर्वोपनिषदुद्घुष्टा शान्त्यतीतकलात्मिका ॥ १५९ ॥"
+    ],
+    "iast": [
+      "janmamṛtyujarātaptajanaviśrāntidāyinī ।",
+      "sarvopaniṣadudghuṣṭā śāntyatītakalātmikā ॥ 159 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

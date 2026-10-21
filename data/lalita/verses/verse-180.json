@@ -1,0 +1,32 @@
+{
+  "id": "lalita-180",
+  "verse_number": 180,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "योनिमुद्रा त्रिखण्डेशी त्रिगुणाऽम्बा त्रिकोणगा ।",
+      "अनघाऽद्भुतचारित्रा वाञ्छितार्थप्रदायिनी ॥ १८० ॥"
+    ],
+    "iast": [
+      "yonimudrā trikhaṇḍeśī triguṇā’mbā trikoṇagā ।",
+      "anaghā’dbhutacāritrā vāñchitārthapradāyinī ॥ 180 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

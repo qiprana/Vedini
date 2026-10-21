@@ -1,0 +1,32 @@
+{
+  "id": "lalita-182",
+  "verse_number": 182,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "आबालगोपविदिता सर्वानुल्लङ्घ्यशासना ।",
+      "श्रीचक्रराजनिलया श्रीमत्त्रिपुरसुन्दरी ॥ १८२ ॥"
+    ],
+    "iast": [
+      "ābālagopaviditā sarvānullaṅghyaśāsanā ।",
+      "śrīcakrarājanilayā śrīmattripurasundarī ॥ 182 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "lalita-177",
+  "verse_number": 177,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "बन्धूककुसुमप्रख्या बाला लीलाविनोदिनी ।",
+      "सुमङ्गली सुखकरी सुवेषाढ्या सुवासिनी ॥ १७७ ॥"
+    ],
+    "iast": [
+      "bandhūkakusumaprakhyā bālā līlāvinodinī ।",
+      "sumaṅgalī sukhakarī suveṣāḍhyā suvāsinī ॥ 177 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

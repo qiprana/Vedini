@@ -1,0 +1,32 @@
+{
+  "id": "lalita-142",
+  "verse_number": 142,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "मिथ्याजगदधिष्ठाना मुक्तिदा मुक्तिरूपिणी ।",
+      "लास्यप्रिया लयकरी लज्जा रम्भादिवन्दिता ॥ १४२ ॥"
+    ],
+    "iast": [
+      "mithyājagadadhiṣṭhānā muktidā muktirūpiṇī ।",
+      "lāsyapriyā layakarī lajjā rambhādivanditā ॥ 142 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

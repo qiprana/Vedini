@@ -1,0 +1,32 @@
+{
+  "id": "lalita-119",
+  "verse_number": 119,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "कटाक्षकिङ्करीभूतकमलाकोटिसेविता ।",
+      "शिरःस्थिता चन्द्र निभा भालस्थेन्द्र धनुःप्रभा ॥ ११९ ॥"
+    ],
+    "iast": [
+      "kaṭākṣakiṅkarībhūtakamalākoṭisevitā ।",
+      "śiraḥsthitā candra nibhā bhālasthendra dhanuḥprabhā ॥ 119 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

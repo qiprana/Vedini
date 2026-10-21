@@ -1,0 +1,32 @@
+{
+  "id": "lalita-170",
+  "verse_number": 170,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "चैतन्यार्घ्यसमाराध्या चैतन्यकुसुमप्रिया ।",
+      "सदोदिता सदातुष्टा तरुणादित्यपाटला ॥ १७० ॥"
+    ],
+    "iast": [
+      "caitanyārghyasamārādhyā caitanyakusumapriyā ।",
+      "sadoditā sadātuṣṭā taruṇādityapāṭalā ॥ 170 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

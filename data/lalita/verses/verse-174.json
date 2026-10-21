@@ -1,0 +1,32 @@
+{
+  "id": "lalita-174",
+  "verse_number": 174,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "व्योमकेशी विमानस्था वज्रिणी वामकेश्वरी ।",
+      "पञ्चयज्ञप्रिया पञ्चप्रेतमञ्चाधिशायिनी ॥ १७४ ॥"
+    ],
+    "iast": [
+      "vyomakeśī vimānasthā vajriṇī vāmakeśvarī ।",
+      "pañcayajñapriyā pañcapretamañcādhiśāyinī ॥ 174 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

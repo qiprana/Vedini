@@ -1,0 +1,32 @@
+{
+  "id": "lalita-111",
+  "verse_number": 111,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "पुण्यकीर्तिः पुण्यलभ्या पुण्यश्रवणकीर्तना ।",
+      "पुलोमजार्चिता बन्धमोचनी बन्धुरालका ॥ १११ ॥"
+    ],
+    "iast": [
+      "puṇyakīrtiḥ puṇyalabhyā puṇyaśravaṇakīrtanā ।",
+      "pulomajārcitā bandhamocanī bandhurālakā ॥ 111 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

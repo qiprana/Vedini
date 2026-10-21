@@ -1,0 +1,32 @@
+{
+  "id": "lalita-106",
+  "verse_number": 106,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "मूलाधाराम्बुजारूढा पञ्चवक्त्राऽस्थिसंस्थिता ।",
+      "अङ्कुशादिप्रहरणा वरदादिनिषेविता ॥ १०६ ॥"
+    ],
+    "iast": [
+      "mūlādhārāmbujārūḍhā pañcavaktrā’sthisaṃsthitā ।",
+      "aṅkuśādipraharaṇā varadādiniṣevitā ॥ 106 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

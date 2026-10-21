@@ -1,0 +1,32 @@
+{
+  "id": "lalita-161",
+  "verse_number": 161,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "कार्यकारणनिर्मुक्ता कामकेलितरङ्गिता ।",
+      "कनत्कनकताटङ्का लीलाविग्रहधारिणी ॥ १६१ ॥"
+    ],
+    "iast": [
+      "kāryakāraṇanirmuktā kāmakelitaraṅgitā ।",
+      "kanatkanakatāṭaṅkā līlāvigrahadhāriṇī ॥ 161 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

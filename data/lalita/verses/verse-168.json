@@ -1,0 +1,32 @@
+{
+  "id": "lalita-168",
+  "verse_number": 168,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "तत्त्वाधिका तत्त्वमयी तत्त्वमर्थस्वरूपिणी ।",
+      "सामगानप्रिया सौम्या सदाशिवकुटुम्बिनी ॥ १६८ ॥"
+    ],
+    "iast": [
+      "tattvādhikā tattvamayī tattvamarthasvarūpiṇī ।",
+      "sāmagānapriyā saumyā sadāśivakuṭumbinī ॥ 168 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

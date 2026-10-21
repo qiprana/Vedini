@@ -1,0 +1,32 @@
+{
+  "id": "lalita-126",
+  "verse_number": 126,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "त्र्\\! यक्षरी दिव्यगन्धाढ्या सिन्दूरतिलकाञ्चिता ।",
+      "उमा शैलेन्द्र तनया गौरी गन्धर्वसेविता ॥ १२६ ॥"
+    ],
+    "iast": [
+      "tr\\! yakṣarī divyagandhāḍhyā sindūratilakāñcitā ।",
+      "umā śailendra tanayā gaurī gandharvasevitā ॥ 126 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

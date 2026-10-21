@@ -1,0 +1,32 @@
+{
+  "id": "lalita-134",
+  "verse_number": 134,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "राजराजेश्वरी राज्यदायिनी राज्यवल्लभा ।",
+      "राजत्कृपा राजपीठनिवेशितनिजाश्रिता ॥ १३४ ॥"
+    ],
+    "iast": [
+      "rājarājeśvarī rājyadāyinī rājyavallabhā ।",
+      "rājatkṛpā rājapīṭhaniveśitanijāśritā ॥ 134 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

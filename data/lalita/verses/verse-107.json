@@ -1,0 +1,32 @@
+{
+  "id": "lalita-107",
+  "verse_number": 107,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "मुद्गौदनासक्तचित्ता साकिन्यम्बास्वरूपिणी ।",
+      "आज्ञाचक्राब्जनिलया शुक्लवर्णा षडानना ॥ १०७ ॥"
+    ],
+    "iast": [
+      "mudgaudanāsaktacittā sākinyambāsvarūpiṇī ।",
+      "ājñācakrābjanilayā śuklavarṇā ṣaḍānanā ॥ 107 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

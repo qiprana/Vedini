@@ -5,7 +5,7 @@ const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&
 const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
 const langText=(en,kn)=>language==="kn"?kn:en;
 let verses=[],dhyana=[],nameData={},dhyanaData={},verseData={},language="en",searchTerm="";
-const pageSize=10,plannedVerses=180;
+const pageSize=10,plannedVerses=183;
 let view="verses",pageIndex=0,selectedVerse=1;
 
 function kannadaFromDevanagari(s){
@@ -447,7 +447,7 @@ function switchLanguage(kn){
  render();
 }
 async function init(){
- const paths=["lalita/dhyana.json","lalita/names-interpretations-draft.json","lalita/study-names-011-018.json","lalita/study-names-019-026.json","lalita/study-dhyana-01-02.json","lalita/study-dhyana-03-04.json","lalita/study-verses-001-010.json",...Array.from({length:80},(_,i)=>"lalita/verses/verse-"+String(i+1).padStart(3,"0")+".json")];
+ const paths=["lalita/dhyana.json","lalita/names-interpretations-draft.json","lalita/study-names-011-018.json","lalita/study-names-019-026.json","lalita/study-dhyana-01-02.json","lalita/study-dhyana-03-04.json","lalita/study-verses-001-010.json",...Array.from({length:183},(_,i)=>"lalita/verses/verse-"+String(i+1).padStart(3,"0")+".json")];
  try{
  const files=await Promise.all(paths.map(fetchJSON));
  dhyana=files[0];

@@ -1,0 +1,32 @@
+{
+  "id": "lalita-129",
+  "verse_number": 129,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "अदृश्या दृश्यरहिता विज्ञात्री वेद्यवर्जिता ।",
+      "योगिनी योगदा योग्या योगानन्दा युगन्धरा ॥ १२९ ॥"
+    ],
+    "iast": [
+      "adṛśyā dṛśyarahitā vijñātrī vedyavarjitā ।",
+      "yoginī yogadā yogyā yogānandā yugandharā ॥ 129 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

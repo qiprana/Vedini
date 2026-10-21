@@ -1,0 +1,32 @@
+{
+  "id": "lalita-175",
+  "verse_number": 175,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "पञ्चमी पञ्चभूतेशी पञ्चसङ्ख्योपचारिणी ।",
+      "शाश्वती शाश्वतैश्वर्या शर्मदा शम्भुमोहिनी ॥ १७५ ॥"
+    ],
+    "iast": [
+      "pañcamī pañcabhūteśī pañcasaṅkhyopacāriṇī ।",
+      "śāśvatī śāśvataiśvaryā śarmadā śambhumohinī ॥ 175 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

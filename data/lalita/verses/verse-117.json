@@ -1,0 +1,32 @@
+{
+  "id": "lalita-117",
+  "verse_number": 117,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "महाकैलासनिलया मृणालमृदुदोर्लता ।",
+      "महनीया दयामूर्तिर्महासाम्राज्यशालिनी ॥ ११७ ॥"
+    ],
+    "iast": [
+      "mahākailāsanilayā mṛṇālamṛdudorlatā ।",
+      "mahanīyā dayāmūrtirmahāsāmrājyaśālinī ॥ 117 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

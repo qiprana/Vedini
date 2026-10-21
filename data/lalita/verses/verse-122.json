@@ -1,0 +1,32 @@
+{
+  "id": "lalita-122",
+  "verse_number": 122,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "देवेशी दण्डनीतिस्था दहराकाशरूपिणी ।",
+      "प्रतिपन्मुख्यराकान्ततिथिमण्डलपूजिता ॥ १२२ ॥"
+    ],
+    "iast": [
+      "deveśī daṇḍanītisthā daharākāśarūpiṇī ।",
+      "pratipanmukhyarākāntatithimaṇḍalapūjitā ॥ 122 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

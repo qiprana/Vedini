@@ -1,0 +1,32 @@
+{
+  "id": "lalita-173",
+  "verse_number": 173,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "विश्वमाता जगद्धात्री विशालाक्षी विरागिणी ।",
+      "प्रगल्भा परमोदारा परामोदा मनोमयी ॥ १७३ ॥"
+    ],
+    "iast": [
+      "viśvamātā jagaddhātrī viśālākṣī virāgiṇī ।",
+      "pragalbhā paramodārā parāmodā manomayī ॥ 173 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

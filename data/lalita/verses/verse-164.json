@@ -1,0 +1,32 @@
+{
+  "id": "lalita-164",
+  "verse_number": 164,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "संसारपङ्कनिर्मग्नसमुद्धरणपण्डिता ।",
+      "यज्ञप्रिया यज्ञकर्त्री यजमानस्वरूपिणी ॥ १६४ ॥"
+    ],
+    "iast": [
+      "saṃsārapaṅkanirmagnasamuddharaṇapaṇḍitā ।",
+      "yajñapriyā yajñakartrī yajamānasvarūpiṇī ॥ 164 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

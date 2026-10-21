@@ -1,0 +1,32 @@
+{
+  "id": "lalita-160",
+  "verse_number": 160,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "गम्भीरा गगनान्तस्था गर्विता गानलोलुपा ।",
+      "कल्पनारहिता काष्ठाऽकान्ता कान्तार्धविग्रहा ॥ १६० ॥"
+    ],
+    "iast": [
+      "gambhīrā gaganāntasthā garvitā gānalolupā ।",
+      "kalpanārahitā kāṣṭhā’kāntā kāntārdhavigrahā ॥ 160 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

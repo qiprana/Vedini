@@ -1,0 +1,32 @@
+{
+  "id": "lalita-156",
+  "verse_number": 156,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "प्राणेश्वरी प्राणदात्री पञ्चाशत्पीठरूपिणी ।",
+      "विशृङ्खला विविक्तस्था वीरमाता वियत्प्रसूः ॥ १५६ ॥"
+    ],
+    "iast": [
+      "prāṇeśvarī prāṇadātrī pañcāśatpīṭharūpiṇī ।",
+      "viśṛṅkhalā viviktasthā vīramātā viyatprasūḥ ॥ 156 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

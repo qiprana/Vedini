@@ -1,0 +1,32 @@
+{
+  "id": "lalita-113",
+  "verse_number": 113,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "अग्रगण्याऽचिन्तरूपा कलिकल्मषनाशिनी ।",
+      "कात्यायनी कालहन्त्री कमलाक्षनिषेविता ॥ ११३ ॥"
+    ],
+    "iast": [
+      "agragaṇyā’cintarūpā kalikalmaṣanāśinī ।",
+      "kātyāyanī kālahantrī kamalākṣaniṣevitā ॥ 113 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

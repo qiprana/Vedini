@@ -1,0 +1,32 @@
+{
+  "id": "lalita-115",
+  "verse_number": 115,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "नित्यतृप्ता भक्तनिधिर्नियन्त्री निखिलेश्वरी ।",
+      "मैत्र्\\! यादिवासनालभ्या महाप्रलयसाक्षिणी ॥ ११५ ॥"
+    ],
+    "iast": [
+      "nityatṛptā bhaktanidhirniyantrī nikhileśvarī ।",
+      "maitr\\! yādivāsanālabhyā mahāpralayasākṣiṇī ॥ 115 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

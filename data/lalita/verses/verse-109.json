@@ -1,0 +1,32 @@
+{
+  "id": "lalita-109",
+  "verse_number": 109,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "सहस्रदलपद्मस्था सर्ववर्णोपशोभिता ।",
+      "सर्वायुधधरा शुक्लसंस्थिता सर्वतोमुखी ॥ १०९ ॥"
+    ],
+    "iast": [
+      "sahasradalapadmasthā sarvavarṇopaśobhitā ।",
+      "sarvāyudhadharā śuklasaṃsthitā sarvatomukhī ॥ 109 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

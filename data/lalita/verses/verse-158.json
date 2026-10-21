@@ -1,0 +1,32 @@
+{
+  "id": "lalita-158",
+  "verse_number": 158,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "छन्दःसारा शास्त्रसारा मन्त्रसारा तलोदरी ।",
+      "उदारकीर्तिरुद्दामवैभवा वर्णरूपिणी ॥ १५८ ॥"
+    ],
+    "iast": [
+      "chandaḥsārā śāstrasārā mantrasārā talodarī ।",
+      "udārakīrtiruddāmavaibhavā varṇarūpiṇī ॥ 158 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "lalita-125",
+  "verse_number": 125,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "क्लीङ्कारी केवला गुह्या कैवल्यपददायिनी ।",
+      "त्रिपुरा त्रिजगद्वन्द्या त्रिमूर्तिस्त्रिदशेश्वरी ॥ १२५ ॥"
+    ],
+    "iast": [
+      "klīṅkārī kevalā guhyā kaivalyapadadāyinī ।",
+      "tripurā trijagadvandyā trimūrtistridaśeśvarī ॥ 125 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; verify readings"
+    }
+  ]
+}
