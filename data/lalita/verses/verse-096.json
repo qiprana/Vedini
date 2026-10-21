@@ -1,0 +1,32 @@
+{
+  "id": "lalita-096",
+  "verse_number": 96,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "सुमुखी नलिनी सुभ्रूः शोभना सुरनायिका ।",
+      "कालकण्ठी कान्तिमती क्षोभिणी सूक्ष्मरूपिणी ॥ ९६ ॥"
+    ],
+    "iast": [
+      "sumukhī nalinī subhrūḥ śobhanā suranāyikā ।",
+      "kālakaṇṭhī kāntimatī kṣobhiṇī sūkṣmarūpiṇī ॥ 96 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; requires cross-check against Shlokam"
+    }
+  ]
+}
