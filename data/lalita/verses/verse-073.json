@@ -1,0 +1,39 @@
+{
+  "id": "lalita-73",
+  "verse_number": 73,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "काम्या कामकलारूपा कदम्ब-कुसुम-प्रिया ।",
+      "कल्याणी जगतीकन्दा करुणा-रस-सागरा ७३ ॥"
+    ],
+    "iast": [
+      "kāmyā kāmakalārūpā kadamba-kusuma-priyā ।",
+      "kalyāṇī jagatīkandā karuṇā-rasa-sāgarā 73 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "She is auspicious and an ocean of compassion, fond of kadamba flowers.",
+    "kannada": "ಕದಂಬಪುಷ್ಪಪ್ರಿಯಳಾದ ಆಕೆ ಮಂಗಳಮಯಿಯೂ ಕರುಣಾಸಾಗರಳೂ ಆಗಿದ್ದಾಳೆ."
+  },
+  "names": [],
+  "study": {
+    "traditional_interpretation": {
+      "en": null,
+      "kn": null
+    }
+  },
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "editorial_draft",
+  "reading_note": "Individual names and traditional commentary pending review.",
+  "sources": [
+    {
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "source"
+    }
+  ]
+}
