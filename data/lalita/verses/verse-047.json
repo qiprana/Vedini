@@ -1,0 +1,43 @@
+{
+  "id": "lalita-047",
+  "verse_number": 47,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "निश्चिन्ता निरहंकारा निर्मोहा मोहनाशिनी ।",
+      "निर्ममा ममताहन्त्री निष्पापा पापनाशिनी ४७ ॥"
+    ],
+    "iast": [
+      "niścintā nirahaṃkārā nirmohā mohanāśinī ।",
+      "nirmamā mamatāhantrī niṣpāpā pāpanāśinī 47 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "She is free from anxiety, ego and delusion and destroys wrongdoing.",
+    "kannada": "ಚಿಂತೆ, ಅಹಂಕಾರ ಮತ್ತು ಮೋಹಗಳಿಂದ ಮುಕ್ತಳಾದ ಆಕೆ ಪಾಪವನ್ನು ನಿವಾರಿಸುತ್ತಾಳೆ."
+  },
+  "names": [],
+  "study": {
+    "traditional_interpretation": {
+      "en": null,
+      "kn": null
+    }
+  },
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "sources": [
+    {
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Sanskrit source"
+    },
+    {
+      "url": "https://manblunder.com/articles/lalitha-sahasranama",
+      "role": "Name commentary index"
+    }
+  ],
+  "review_status": "editorial_draft",
+  "reading_note": "Provisional Sanskrit and bilingual overall-meaning draft. Individual nāma segmentation, component glosses and Manblunder interpretations have not been checked."
+}
