@@ -1,0 +1,32 @@
+{
+  "id": "lalita-086",
+  "verse_number": 86,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "प्रभावती प्रभारूपा प्रसिद्धा परमेश्वरी ।",
+      "मूलप्रकृतिरव्यक्ता व्यक्ताव्यक्तस्वरूपिणी ॥ ८६ ॥"
+    ],
+    "iast": [
+      "prabhāvatī prabhārūpā prasiddhā parameśvarī ।",
+      "mūlaprakṛtiravyaktā vyaktāvyaktasvarūpiṇī ॥ 86 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; requires cross-check against Shlokam"
+    }
+  ]
+}
