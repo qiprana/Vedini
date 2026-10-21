@@ -4,123 +4,453 @@
   "entries": [
     {
       "number": 491,
-      "components": [],
-      "review_status": "segmentation_pending",
-      "whole_name_english": "Surrounded by kAlarAtri and other shaktis"
+      "components": [
+        {
+          "dev": "कालरात्रि",
+          "iast": "kālarātri",
+          "en": "Kālarātri",
+          "kn": "ಕಾಲರಾತ್ರಿ"
+        },
+        {
+          "dev": "आदि",
+          "iast": "ādi",
+          "en": "And others",
+          "kn": "ಮೊದಲಾದ"
+        },
+        {
+          "dev": "शक्ति",
+          "iast": "śakti",
+          "en": "Divine powers",
+          "kn": "ಶಕ್ತಿಗಳು"
+        },
+        {
+          "dev": "ओघ",
+          "iast": "ogha",
+          "en": "Multitude",
+          "kn": "ಸಮೂಹ"
+        },
+        {
+          "dev": "वृता",
+          "iast": "vṛtā",
+          "en": "Surrounded by",
+          "kn": "ಆವೃತಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
     },
     {
       "number": 492,
-      "components": [],
-      "review_status": "segmentation_pending",
-      "whole_name_english": "Fond of food offerings containing ghee, oil and other substances containing fats"
+      "components": [
+        {
+          "dev": "स्निग्ध",
+          "iast": "snigdha",
+          "en": "Rich or unctuous",
+          "kn": "ಸ್ನಿಗ್ಧ"
+        },
+        {
+          "dev": "ओदन",
+          "iast": "odana",
+          "en": "Cooked rice",
+          "kn": "ಅನ್ನ"
+        },
+        {
+          "dev": "प्रिया",
+          "iast": "priyā",
+          "en": "Fond of",
+          "kn": "ಪ್ರಿಯಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
     },
     {
       "number": 493,
-      "components": [],
-      "review_status": "segmentation_pending",
-      "whole_name_english": "The one who bestows boons on great warriors"
+      "components": [
+        {
+          "dev": "महा",
+          "iast": "mahā",
+          "en": "Great",
+          "kn": "ಮಹಾ"
+        },
+        {
+          "dev": "वीर",
+          "iast": "vīra",
+          "en": "Heroic person",
+          "kn": "ವೀರ"
+        },
+        {
+          "dev": "इन्द्र",
+          "iast": "indra",
+          "en": "Chief",
+          "kn": "ಮುಖ್ಯಸ್ಥ"
+        },
+        {
+          "dev": "वरदा",
+          "iast": "varadā",
+          "en": "Giver of boons",
+          "kn": "ವರದಾತೆ"
+        }
+      ],
+      "review_status": "manual_compound_draft"
     },
     {
       "number": 494,
-      "components": [],
-      "review_status": "segmentation_pending",
-      "whole_name_english": "In the form of the rAkiNi deity"
+      "components": [
+        {
+          "dev": "राकिणी",
+          "iast": "rākiṇī",
+          "en": "Rākiṇī deity",
+          "kn": "ರಾಕಿಣಿ"
+        },
+        {
+          "dev": "अम्बा",
+          "iast": "ambā",
+          "en": "Divine mother",
+          "kn": "ಅಂಬೆ"
+        },
+        {
+          "dev": "स्वरूपिणी",
+          "iast": "svarūpiṇī",
+          "en": "Having the form of",
+          "kn": "ಸ್ವರೂಪಿಣಿ"
+        }
+      ],
+      "review_status": "manual_compound_draft"
     },
     {
       "number": 495,
-      "components": [],
-      "review_status": "segmentation_pending",
-      "whole_name_english": "The one who resides in the ten-petaled lotus in the maNipUraka chakra"
+      "components": [
+        {
+          "dev": "मणिपूर",
+          "iast": "maṇipūra",
+          "en": "Maṇipūra chakra",
+          "kn": "ಮಣಿಪೂರ"
+        },
+        {
+          "dev": "अब्ज",
+          "iast": "abja",
+          "en": "Lotus",
+          "kn": "ಕಮಲ"
+        },
+        {
+          "dev": "निलया",
+          "iast": "nilayā",
+          "en": "Dwelling in",
+          "kn": "ನೆಲೆಸಿರುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
     },
     {
       "number": 496,
-      "components": [],
-      "review_status": "segmentation_pending",
-      "whole_name_english": "Possessor of three faces"
+      "components": [
+        {
+          "dev": "वदन",
+          "iast": "vadana",
+          "en": "Face",
+          "kn": "ಮುಖ"
+        },
+        {
+          "dev": "त्रय",
+          "iast": "traya",
+          "en": "Three",
+          "kn": "ಮೂರು"
+        },
+        {
+          "dev": "संयुता",
+          "iast": "saṃyutā",
+          "en": "Endowed with",
+          "kn": "ಹೊಂದಿರುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
     },
     {
       "number": 497,
-      "components": [],
-      "review_status": "segmentation_pending",
-      "whole_name_english": "Holder of the vajra (lightning bolt) and other weapons"
+      "components": [
+        {
+          "dev": "वज्र",
+          "iast": "vajra",
+          "en": "Thunderbolt",
+          "kn": "ವಜ್ರ"
+        },
+        {
+          "dev": "आदि",
+          "iast": "ādi",
+          "en": "And other",
+          "kn": "ಮೊದಲಾದ"
+        },
+        {
+          "dev": "आयुध",
+          "iast": "āyudha",
+          "en": "Weapons",
+          "kn": "ಆಯುಧಗಳು"
+        },
+        {
+          "dev": "उपेता",
+          "iast": "upetā",
+          "en": "Equipped with",
+          "kn": "ಹೊಂದಿರುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
     },
     {
       "number": 498,
-      "components": [],
-      "review_status": "segmentation_pending",
-      "whole_name_english": "Surrounded by DAmarI and other attending deities"
+      "components": [
+        {
+          "dev": "डामरी",
+          "iast": "ḍāmarī",
+          "en": "Ḍāmarī deity",
+          "kn": "ಡಾಮರಿ"
+        },
+        {
+          "dev": "आदिभिः",
+          "iast": "ādibhiḥ",
+          "en": "Along with others",
+          "kn": "ಇತರರೊಂದಿಗೆ"
+        },
+        {
+          "dev": "आवृता",
+          "iast": "āvṛtā",
+          "en": "Surrounded by",
+          "kn": "ಆವೃತಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
     },
     {
       "number": 499,
       "components": [
         {
-          "dev": "",
+          "dev": "रक्त",
           "iast": "rakta",
           "en": "Red",
           "kn": "ಕೆಂಪು"
         },
         {
-          "dev": "",
+          "dev": "वर्णा",
           "iast": "varṇā",
-          "en": "Color",
-          "kn": "ವರ್ಣ"
+          "en": "In complexion",
+          "kn": "ವರ್ಣವುಳ್ಳವಳು"
         }
       ],
-      "review_status": "automated_exact_component_match_needs_review"
+      "review_status": "manual_compound_draft"
     },
     {
       "number": 500,
-      "components": [],
-      "review_status": "segmentation_pending",
-      "whole_name_english": "The one who presides over the flesh in living beings"
+      "components": [
+        {
+          "dev": "मांस",
+          "iast": "māṃsa",
+          "en": "Flesh or muscle tissue",
+          "kn": "ಮಾಂಸ"
+        },
+        {
+          "dev": "निष्ठा",
+          "iast": "niṣṭhā",
+          "en": "Established in",
+          "kn": "ನೆಲೆಸಿರುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
     },
     {
       "number": 501,
-      "components": [],
-      "review_status": "segmentation_pending",
-      "whole_name_english": "Fond of sweet rice made with raw sugar"
+      "components": [
+        {
+          "dev": "गुड",
+          "iast": "guḍa",
+          "en": "Jaggery",
+          "kn": "ಬೆಲ್ಲ"
+        },
+        {
+          "dev": "अन्न",
+          "iast": "anna",
+          "en": "Food",
+          "kn": "ಅನ್ನ"
+        },
+        {
+          "dev": "प्रीत",
+          "iast": "prīta",
+          "en": "Pleased by",
+          "kn": "ಸಂತುಷ್ಟ"
+        },
+        {
+          "dev": "मानसा",
+          "iast": "mānasā",
+          "en": "In mind",
+          "kn": "ಮನಸ್ಸುಳ್ಳವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
     },
     {
       "number": 502,
-      "components": [],
-      "review_status": "segmentation_pending",
-      "whole_name_english": "The one who confers happiness on all Her devotees"
+      "components": [
+        {
+          "dev": "समस्त",
+          "iast": "samasta",
+          "en": "All",
+          "kn": "ಎಲ್ಲ"
+        },
+        {
+          "dev": "भक्त",
+          "iast": "bhakta",
+          "en": "Devotees",
+          "kn": "ಭಕ್ತರು"
+        },
+        {
+          "dev": "सुख",
+          "iast": "sukha",
+          "en": "Happiness",
+          "kn": "ಸುಖ"
+        },
+        {
+          "dev": "दा",
+          "iast": "dā",
+          "en": "Giver",
+          "kn": "ನೀಡುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
     },
     {
       "number": 503,
-      "components": [],
-      "review_status": "segmentation_pending",
-      "whole_name_english": "In the form of the lAkinI yoginI"
+      "components": [
+        {
+          "dev": "लाकिनी",
+          "iast": "lākinī",
+          "en": "Lākiṇī deity",
+          "kn": "ಲಾಕಿನಿ"
+        },
+        {
+          "dev": "अम्बा",
+          "iast": "ambā",
+          "en": "Divine mother",
+          "kn": "ಅಂಬೆ"
+        },
+        {
+          "dev": "स्वरूपिणी",
+          "iast": "svarūpiṇī",
+          "en": "Having the form of",
+          "kn": "ಸ್ವರೂಪಿಣಿ"
+        }
+      ],
+      "review_status": "manual_compound_draft"
     },
     {
       "number": 504,
-      "components": [],
-      "review_status": "segmentation_pending",
-      "whole_name_english": "The one who resides in the six-petaled lotus in the svAdhiShTAna, kAkinI yoginI"
+      "components": [
+        {
+          "dev": "स्वाधिष्ठान",
+          "iast": "svādhiṣṭhāna",
+          "en": "Svādhiṣṭhāna chakra",
+          "kn": "ಸ್ವಾಧಿಷ್ಠಾನ"
+        },
+        {
+          "dev": "अम्बुज",
+          "iast": "ambuja",
+          "en": "Lotus",
+          "kn": "ಕಮಲ"
+        },
+        {
+          "dev": "गता",
+          "iast": "gatā",
+          "en": "Situated in",
+          "kn": "ನೆಲೆಸಿರುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
     },
     {
       "number": 505,
-      "components": [],
-      "review_status": "segmentation_pending",
-      "whole_name_english": "Possessor of four beautiful faces"
+      "components": [
+        {
+          "dev": "चतुर्",
+          "iast": "catur",
+          "en": "Four",
+          "kn": "ನಾಲ್ಕು"
+        },
+        {
+          "dev": "वक्त्र",
+          "iast": "vaktra",
+          "en": "Face",
+          "kn": "ಮುಖ"
+        },
+        {
+          "dev": "मनोहरा",
+          "iast": "manoharā",
+          "en": "Beautiful and captivating",
+          "kn": "ಮನೋಹರಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
     },
     {
       "number": 506,
-      "components": [],
-      "review_status": "segmentation_pending",
-      "whole_name_english": "The one who possesses the trident and other weapons (i.e., noose, skull and abhaya)"
+      "components": [
+        {
+          "dev": "शूल",
+          "iast": "śūla",
+          "en": "Trident",
+          "kn": "ತ್ರಿಶೂಲ"
+        },
+        {
+          "dev": "आदि",
+          "iast": "ādi",
+          "en": "And other",
+          "kn": "ಮೊದಲಾದ"
+        },
+        {
+          "dev": "आयुध",
+          "iast": "āyudha",
+          "en": "Weapons",
+          "kn": "ಆಯುಧಗಳು"
+        },
+        {
+          "dev": "सम्पन्ना",
+          "iast": "sampannā",
+          "en": "Possessing",
+          "kn": "ಹೊಂದಿರುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
     },
     {
       "number": 507,
-      "components": [],
-      "review_status": "segmentation_pending",
-      "whole_name_english": "Yellow in color"
+      "components": [
+        {
+          "dev": "पीत",
+          "iast": "pīta",
+          "en": "Yellow",
+          "kn": "ಹಳದಿ"
+        },
+        {
+          "dev": "वर्णा",
+          "iast": "varṇā",
+          "en": "In complexion",
+          "kn": "ವರ್ಣವುಳ್ಳವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
     },
     {
       "number": 508,
-      "components": [],
-      "review_status": "segmentation_pending",
-      "whole_name_english": "Very proud"
+      "components": [
+        {
+          "dev": "अति",
+          "iast": "ati",
+          "en": "Very",
+          "kn": "ಅತಿ"
+        },
+        {
+          "dev": "गर्विता",
+          "iast": "garvitā",
+          "en": "Proud",
+          "kn": "ಗರ್ವಿತಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
     },
     {
       "number": 509,
