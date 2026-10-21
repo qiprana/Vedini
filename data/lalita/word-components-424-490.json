@@ -1,0 +1,1266 @@
+{
+  "scope": "Ślokas 91–100, names 424–490",
+  "review_status": "editorial_draft",
+  "entries": [
+    {
+      "number": 424,
+      "components": [
+        {
+          "dev": "",
+          "iast": "tattva",
+          "en": "Principle",
+          "kn": "ತತ್ತ್ವ"
+        },
+        {
+          "dev": "",
+          "iast": "āsanā",
+          "en": "Seat",
+          "kn": "ಆಸನ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 425,
+      "components": [
+        {
+          "dev": "",
+          "iast": "tat",
+          "en": "That",
+          "kn": "ತತ್"
+        }
+      ],
+      "review_status": "single_lexeme"
+    },
+    {
+      "number": 426,
+      "components": [
+        {
+          "dev": "",
+          "iast": "tvaṃ",
+          "en": "Thou",
+          "kn": "ತ್ವಂ"
+        }
+      ],
+      "review_status": "single_lexeme"
+    },
+    {
+      "number": 427,
+      "components": [
+        {
+          "dev": "",
+          "iast": "ayī",
+          "en": "O Mother",
+          "kn": "ಅಯೀ"
+        }
+      ],
+      "review_status": "single_lexeme"
+    },
+    {
+      "number": 428,
+      "components": [
+        {
+          "dev": "",
+          "iast": "pañca",
+          "en": "Five",
+          "kn": "ಐದು"
+        },
+        {
+          "dev": "",
+          "iast": "kośa",
+          "en": "Sheath",
+          "kn": "ಕೋಶ"
+        },
+        {
+          "dev": "",
+          "iast": "antara",
+          "en": "Within",
+          "kn": "ಒಳಗೆ"
+        },
+        {
+          "dev": "",
+          "iast": "sthitā",
+          "en": "Situated",
+          "kn": "ಸ್ಥಿತಾ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 429,
+      "components": [
+        {
+          "dev": "",
+          "iast": "niḥ",
+          "en": "Without",
+          "kn": "ರಹಿತ"
+        },
+        {
+          "dev": "",
+          "iast": "sīma",
+          "en": "Limit",
+          "kn": "ಮಿತಿ"
+        },
+        {
+          "dev": "",
+          "iast": "mahimā",
+          "en": "Greatness",
+          "kn": "ಮಹಿಮೆ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 430,
+      "components": [
+        {
+          "dev": "",
+          "iast": "nitya",
+          "en": "Eternal",
+          "kn": "ನಿತ್ಯ"
+        },
+        {
+          "dev": "",
+          "iast": "yauvanā",
+          "en": "Youth",
+          "kn": "ಯೌವನ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 431,
+      "components": [
+        {
+          "dev": "",
+          "iast": "mada",
+          "en": "Rapture",
+          "kn": "ಮದ"
+        },
+        {
+          "dev": "",
+          "iast": "śālinī",
+          "en": "Possessing",
+          "kn": "ಹೊಂದಿರುವವಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 432,
+      "components": [
+        {
+          "dev": "",
+          "iast": "mada",
+          "en": "Rapture",
+          "kn": "ಮದ"
+        },
+        {
+          "dev": "",
+          "iast": "ghūrṇita",
+          "en": "Rolling",
+          "kn": "ತಿರುಗುವ"
+        },
+        {
+          "dev": "",
+          "iast": "rakta",
+          "en": "Red",
+          "kn": "ಕೆಂಪು"
+        },
+        {
+          "dev": "",
+          "iast": "akṣī",
+          "en": "Eyes",
+          "kn": "ಕಣ್ಣು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 433,
+      "components": [
+        {
+          "dev": "",
+          "iast": "mada",
+          "en": "Rapture",
+          "kn": "ಮದ"
+        },
+        {
+          "dev": "",
+          "iast": "pāṭala",
+          "en": "Rosy",
+          "kn": "ಗುಲಾಬಿ"
+        },
+        {
+          "dev": "",
+          "iast": "gaṇḍa",
+          "en": "Cheek",
+          "kn": "ಕೆನ್ನೆ"
+        },
+        {
+          "dev": "",
+          "iast": "bhūḥ",
+          "en": "Surface",
+          "kn": "ಭಾಗ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 434,
+      "components": [
+        {
+          "dev": "",
+          "iast": "candana",
+          "en": "Sandalwood",
+          "kn": "ಚಂದನ"
+        },
+        {
+          "dev": "",
+          "iast": "drava",
+          "en": "Paste",
+          "kn": "ಲೇಪ"
+        },
+        {
+          "dev": "",
+          "iast": "digdha",
+          "en": "Smeared",
+          "kn": "ಲೇಪಿತ"
+        },
+        {
+          "dev": "",
+          "iast": "aṅgī",
+          "en": "Bodied",
+          "kn": "ಅಂಗವುಳ್ಳವಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 435,
+      "components": [
+        {
+          "dev": "",
+          "iast": "cāmpeya",
+          "en": "Champaka",
+          "kn": "ಚಂಪಕ"
+        },
+        {
+          "dev": "",
+          "iast": "kusuma",
+          "en": "Flower",
+          "kn": "ಪುಷ್ಪ"
+        },
+        {
+          "dev": "",
+          "iast": "priyā",
+          "en": "Beloved",
+          "kn": "ಪ್ರಿಯ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 436,
+      "components": [
+        {
+          "dev": "",
+          "iast": "kuśalā",
+          "en": "Skillful",
+          "kn": "ಕುಶಲ"
+        }
+      ],
+      "review_status": "single_lexeme"
+    },
+    {
+      "number": 437,
+      "components": [
+        {
+          "dev": "",
+          "iast": "komala",
+          "en": "Tender",
+          "kn": "ಕೋಮಲ"
+        },
+        {
+          "dev": "",
+          "iast": "ākārā",
+          "en": "Form",
+          "kn": "ಆಕಾರ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 438,
+      "components": [
+        {
+          "dev": "",
+          "iast": "kurukullā",
+          "en": "Kurukullā",
+          "kn": "ಕುರುಕುಲ್ಲಾ"
+        }
+      ],
+      "review_status": "single_lexeme"
+    },
+    {
+      "number": 439,
+      "components": [
+        {
+          "dev": "",
+          "iast": "kula",
+          "en": "Kula",
+          "kn": "ಕುಲ"
+        },
+        {
+          "dev": "",
+          "iast": "īśvarī",
+          "en": "Goddess",
+          "kn": "ಈಶ್ವರಿ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 440,
+      "components": [
+        {
+          "dev": "",
+          "iast": "kula",
+          "en": "Kula",
+          "kn": "ಕುಲ"
+        },
+        {
+          "dev": "",
+          "iast": "kuṇḍa",
+          "en": "Basin",
+          "kn": "ಕುಂಡ"
+        },
+        {
+          "dev": "",
+          "iast": "ālayā",
+          "en": "Abode",
+          "kn": "ಆಲಯ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 441,
+      "components": [
+        {
+          "dev": "",
+          "iast": "kaula",
+          "en": "Kaula",
+          "kn": "ಕೌಲ"
+        },
+        {
+          "dev": "",
+          "iast": "mārga",
+          "en": "Path",
+          "kn": "ಮಾರ್ಗ"
+        },
+        {
+          "dev": "",
+          "iast": "tatpara",
+          "en": "Devoted",
+          "kn": "ತತ್ಪರ"
+        },
+        {
+          "dev": "",
+          "iast": "sevitā",
+          "en": "Honored",
+          "kn": "ಸೇವಿತ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 442,
+      "components": [
+        {
+          "dev": "",
+          "iast": "kumāra",
+          "en": "Kumāra",
+          "kn": "ಕುಮಾರ"
+        },
+        {
+          "dev": "",
+          "iast": "gaṇanātha",
+          "en": "Gaṇeśa",
+          "kn": "ಗಣನಾಥ"
+        },
+        {
+          "dev": "",
+          "iast": "ambā",
+          "en": "Mother",
+          "kn": "ಅಂಬೆ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 443,
+      "components": [
+        {
+          "dev": "",
+          "iast": "tuṣṭiḥ",
+          "en": "Contentment",
+          "kn": "ತೃಪ್ತಿ"
+        }
+      ],
+      "review_status": "single_lexeme"
+    },
+    {
+      "number": 444,
+      "components": [
+        {
+          "dev": "",
+          "iast": "puṣṭiḥ",
+          "en": "Nourishment",
+          "kn": "ಪುಷ್ಟಿ"
+        }
+      ],
+      "review_status": "single_lexeme"
+    },
+    {
+      "number": 445,
+      "components": [
+        {
+          "dev": "",
+          "iast": "matiḥ",
+          "en": "Intelligence",
+          "kn": "ಮತಿ"
+        }
+      ],
+      "review_status": "single_lexeme"
+    },
+    {
+      "number": 446,
+      "components": [
+        {
+          "dev": "",
+          "iast": "dhṛtiḥ",
+          "en": "Steadiness",
+          "kn": "ಧೃತಿ"
+        }
+      ],
+      "review_status": "single_lexeme"
+    },
+    {
+      "number": 447,
+      "components": [
+        {
+          "dev": "",
+          "iast": "śāntiḥ",
+          "en": "Peace",
+          "kn": "ಶಾಂತಿ"
+        }
+      ],
+      "review_status": "single_lexeme"
+    },
+    {
+      "number": 448,
+      "components": [
+        {
+          "dev": "",
+          "iast": "svasti",
+          "en": "Wellbeing",
+          "kn": "ಸ್ವಸ್ತಿ"
+        },
+        {
+          "dev": "",
+          "iast": "matī",
+          "en": "Possessing",
+          "kn": "ಹೊಂದಿರುವವಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 449,
+      "components": [
+        {
+          "dev": "",
+          "iast": "kāntiḥ",
+          "en": "Radiance",
+          "kn": "ಕಾಂತಿ"
+        }
+      ],
+      "review_status": "single_lexeme"
+    },
+    {
+      "number": 450,
+      "components": [
+        {
+          "dev": "",
+          "iast": "nandinī",
+          "en": "Delightful",
+          "kn": "ನಂದಿನಿ"
+        }
+      ],
+      "review_status": "single_lexeme"
+    },
+    {
+      "number": 451,
+      "components": [
+        {
+          "dev": "",
+          "iast": "vighna",
+          "en": "Obstacle",
+          "kn": "ವಿಘ್ನ"
+        },
+        {
+          "dev": "",
+          "iast": "nāśinī",
+          "en": "Destroyer",
+          "kn": "ನಾಶಿನಿ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 452,
+      "components": [
+        {
+          "dev": "",
+          "iast": "tejas",
+          "en": "Splendor",
+          "kn": "ತೇಜಸ್ಸು"
+        },
+        {
+          "dev": "",
+          "iast": "vatī",
+          "en": "Possessing",
+          "kn": "ಹೊಂದಿರುವವಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 453,
+      "components": [
+        {
+          "dev": "",
+          "iast": "tri",
+          "en": "Three",
+          "kn": "ಮೂರು"
+        },
+        {
+          "dev": "",
+          "iast": "nayanā",
+          "en": "Eyes",
+          "kn": "ಕಣ್ಣು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 454,
+      "components": [
+        {
+          "dev": "",
+          "iast": "lola",
+          "en": "Moving",
+          "kn": "ಚಂಚಲ"
+        },
+        {
+          "dev": "",
+          "iast": "akṣī",
+          "en": "Eyes",
+          "kn": "ಕಣ್ಣು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 455,
+      "components": [
+        {
+          "dev": "",
+          "iast": "mālinī",
+          "en": "Garlanded",
+          "kn": "ಮಾಲಿನಿ"
+        }
+      ],
+      "review_status": "single_lexeme"
+    },
+    {
+      "number": 456,
+      "components": [
+        {
+          "dev": "",
+          "iast": "haṃsinī",
+          "en": "Swan-like",
+          "kn": "ಹಂಸಿನಿ"
+        }
+      ],
+      "review_status": "single_lexeme"
+    },
+    {
+      "number": 457,
+      "components": [
+        {
+          "dev": "",
+          "iast": "mātā",
+          "en": "Mother",
+          "kn": "ತಾಯಿ"
+        }
+      ],
+      "review_status": "single_lexeme"
+    },
+    {
+      "number": 458,
+      "components": [
+        {
+          "dev": "",
+          "iast": "malaya",
+          "en": "Malaya",
+          "kn": "ಮಲಯ"
+        },
+        {
+          "dev": "",
+          "iast": "acala",
+          "en": "Mountain",
+          "kn": "ಪರ್ವತ"
+        },
+        {
+          "dev": "",
+          "iast": "vāsinī",
+          "en": "Resident",
+          "kn": "ವಾಸಿನಿ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 459,
+      "components": [
+        {
+          "dev": "",
+          "iast": "su",
+          "en": "Beautiful",
+          "kn": "ಸುಂದರ"
+        },
+        {
+          "dev": "",
+          "iast": "mukhī",
+          "en": "Faced",
+          "kn": "ಮುಖವುಳ್ಳವಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 460,
+      "components": [
+        {
+          "dev": "",
+          "iast": "nalinī",
+          "en": "Lotus",
+          "kn": "ನಳಿನಿ"
+        }
+      ],
+      "review_status": "single_lexeme"
+    },
+    {
+      "number": 461,
+      "components": [
+        {
+          "dev": "",
+          "iast": "su",
+          "en": "Beautiful",
+          "kn": "ಸುಂದರ"
+        },
+        {
+          "dev": "",
+          "iast": "bhrūḥ",
+          "en": "Eyebrows",
+          "kn": "ಹುಬ್ಬು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 462,
+      "components": [
+        {
+          "dev": "",
+          "iast": "śobhanā",
+          "en": "Auspicious",
+          "kn": "ಶೋಭನೆ"
+        }
+      ],
+      "review_status": "single_lexeme"
+    },
+    {
+      "number": 463,
+      "components": [
+        {
+          "dev": "",
+          "iast": "sura",
+          "en": "Gods",
+          "kn": "ದೇವತೆ"
+        },
+        {
+          "dev": "",
+          "iast": "nāyikā",
+          "en": "Leader",
+          "kn": "ನಾಯಕಿ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 464,
+      "components": [
+        {
+          "dev": "",
+          "iast": "kāla",
+          "en": "Dark",
+          "kn": "ಕಪ್ಪು"
+        },
+        {
+          "dev": "",
+          "iast": "kaṇṭhī",
+          "en": "Throated",
+          "kn": "ಕಂಠ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 465,
+      "components": [
+        {
+          "dev": "",
+          "iast": "kānti",
+          "en": "Radiance",
+          "kn": "ಕಾಂತಿ"
+        },
+        {
+          "dev": "",
+          "iast": "matī",
+          "en": "Possessing",
+          "kn": "ಹೊಂದಿರುವವಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 466,
+      "components": [
+        {
+          "dev": "",
+          "iast": "kṣobhiṇī",
+          "en": "Stirring",
+          "kn": "ಕ್ಷೋಭಿಣಿ"
+        }
+      ],
+      "review_status": "single_lexeme"
+    },
+    {
+      "number": 467,
+      "components": [
+        {
+          "dev": "",
+          "iast": "sūkṣma",
+          "en": "Subtle",
+          "kn": "ಸೂಕ್ಷ್ಮ"
+        },
+        {
+          "dev": "",
+          "iast": "rūpiṇī",
+          "en": "Form",
+          "kn": "ರೂಪಿಣಿ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 468,
+      "components": [
+        {
+          "dev": "",
+          "iast": "vajra",
+          "en": "Vajra",
+          "kn": "ವಜ್ರ"
+        },
+        {
+          "dev": "",
+          "iast": "īśvarī",
+          "en": "Goddess",
+          "kn": "ಈಶ್ವರಿ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 469,
+      "components": [
+        {
+          "dev": "",
+          "iast": "vāma",
+          "en": "Vāma",
+          "kn": "ವಾಮ"
+        },
+        {
+          "dev": "",
+          "iast": "devī",
+          "en": "Goddess",
+          "kn": "ದೇವಿ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 470,
+      "components": [
+        {
+          "dev": "",
+          "iast": "vayas",
+          "en": "Age",
+          "kn": "ವಯಸ್ಸು"
+        },
+        {
+          "dev": "",
+          "iast": "avasthā",
+          "en": "State",
+          "kn": "ಅವಸ್ಥೆ"
+        },
+        {
+          "dev": "",
+          "iast": "vivarjitā",
+          "en": "Free from",
+          "kn": "ರಹಿತ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 471,
+      "components": [
+        {
+          "dev": "",
+          "iast": "siddha",
+          "en": "Adept",
+          "kn": "ಸಿದ್ಧ"
+        },
+        {
+          "dev": "",
+          "iast": "īśvarī",
+          "en": "Goddess",
+          "kn": "ಈಶ್ವರಿ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 472,
+      "components": [
+        {
+          "dev": "",
+          "iast": "siddha",
+          "en": "Adept",
+          "kn": "ಸಿದ್ಧ"
+        },
+        {
+          "dev": "",
+          "iast": "vidyā",
+          "en": "Knowledge",
+          "kn": "ವಿದ್ಯೆ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 473,
+      "components": [
+        {
+          "dev": "",
+          "iast": "siddha",
+          "en": "Adept",
+          "kn": "ಸಿದ್ಧ"
+        },
+        {
+          "dev": "",
+          "iast": "mātā",
+          "en": "Mother",
+          "kn": "ತಾಯಿ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 474,
+      "components": [
+        {
+          "dev": "",
+          "iast": "yaśasvinī",
+          "en": "Renowned",
+          "kn": "ಯಶಸ್ವಿನಿ"
+        }
+      ],
+      "review_status": "single_lexeme"
+    },
+    {
+      "number": 475,
+      "components": [
+        {
+          "dev": "",
+          "iast": "viśuddhi",
+          "en": "Viśuddhi",
+          "kn": "ವಿಶುದ್ಧಿ"
+        },
+        {
+          "dev": "",
+          "iast": "cakra",
+          "en": "Center",
+          "kn": "ಚಕ್ರ"
+        },
+        {
+          "dev": "",
+          "iast": "nilayā",
+          "en": "Abode",
+          "kn": "ನಿಲಯ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 476,
+      "components": [
+        {
+          "dev": "",
+          "iast": "ā",
+          "en": "Slightly",
+          "kn": "ಸ್ವಲ್ಪ"
+        },
+        {
+          "dev": "",
+          "iast": "rakta",
+          "en": "Red",
+          "kn": "ಕೆಂಪು"
+        },
+        {
+          "dev": "",
+          "iast": "varṇā",
+          "en": "Color",
+          "kn": "ವರ್ಣ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 477,
+      "components": [
+        {
+          "dev": "",
+          "iast": "tri",
+          "en": "Three",
+          "kn": "ಮೂರು"
+        },
+        {
+          "dev": "",
+          "iast": "locanā",
+          "en": "Eyes",
+          "kn": "ಕಣ್ಣು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 478,
+      "components": [
+        {
+          "dev": "",
+          "iast": "khaṭvāṅga",
+          "en": "Staff",
+          "kn": "ಖಟ್ವಾಂಗ"
+        },
+        {
+          "dev": "",
+          "iast": "ādi",
+          "en": "And others",
+          "kn": "ಮೊದಲಾದ"
+        },
+        {
+          "dev": "",
+          "iast": "praharaṇā",
+          "en": "Weapons",
+          "kn": "ಆಯುಧ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 479,
+      "components": [
+        {
+          "dev": "",
+          "iast": "vadana",
+          "en": "Face",
+          "kn": "ಮುಖ"
+        },
+        {
+          "dev": "",
+          "iast": "eka",
+          "en": "One",
+          "kn": "ಒಂದು"
+        },
+        {
+          "dev": "",
+          "iast": "samanvitā",
+          "en": "Endowed",
+          "kn": "ಹೊಂದಿರುವವಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 480,
+      "components": [
+        {
+          "dev": "",
+          "iast": "pāyasa",
+          "en": "Milk pudding",
+          "kn": "ಪಾಯಸ"
+        },
+        {
+          "dev": "",
+          "iast": "anna",
+          "en": "Food",
+          "kn": "ಅನ್ನ"
+        },
+        {
+          "dev": "",
+          "iast": "priyā",
+          "en": "Beloved",
+          "kn": "ಪ್ರಿಯ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 481,
+      "components": [
+        {
+          "dev": "",
+          "iast": "tvak",
+          "en": "Skin",
+          "kn": "ತ್ವಕ್"
+        },
+        {
+          "dev": "",
+          "iast": "sthā",
+          "en": "Situated",
+          "kn": "ಸ್ಥಿತಾ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 482,
+      "components": [
+        {
+          "dev": "",
+          "iast": "paśu",
+          "en": "Bound being",
+          "kn": "ಪಶು"
+        },
+        {
+          "dev": "",
+          "iast": "loka",
+          "en": "World",
+          "kn": "ಲೋಕ"
+        },
+        {
+          "dev": "",
+          "iast": "bhayaṅkarī",
+          "en": "Fearsome",
+          "kn": "ಭಯಂಕರಿ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 483,
+      "components": [
+        {
+          "dev": "",
+          "iast": "amṛta",
+          "en": "Nectar",
+          "kn": "ಅಮೃತ"
+        },
+        {
+          "dev": "",
+          "iast": "ādi",
+          "en": "And others",
+          "kn": "ಮೊದಲಾದ"
+        },
+        {
+          "dev": "",
+          "iast": "mahā",
+          "en": "Great",
+          "kn": "ಮಹಾ"
+        },
+        {
+          "dev": "",
+          "iast": "śakti",
+          "en": "Power",
+          "kn": "ಶಕ್ತಿ"
+        },
+        {
+          "dev": "",
+          "iast": "saṃvṛtā",
+          "en": "Surrounded",
+          "kn": "ಆವೃತಾ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 484,
+      "components": [
+        {
+          "dev": "",
+          "iast": "ḍākinī",
+          "en": "Ḍākinī",
+          "kn": "ಡಾಕಿನಿ"
+        },
+        {
+          "dev": "",
+          "iast": "īśvarī",
+          "en": "Goddess",
+          "kn": "ಈಶ್ವರಿ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 485,
+      "components": [
+        {
+          "dev": "",
+          "iast": "anāhata",
+          "en": "Anāhata",
+          "kn": "ಅನಾಹತ"
+        },
+        {
+          "dev": "",
+          "iast": "abja",
+          "en": "Lotus",
+          "kn": "ಕಮಲ"
+        },
+        {
+          "dev": "",
+          "iast": "nilayā",
+          "en": "Abode",
+          "kn": "ನಿಲಯ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 486,
+      "components": [
+        {
+          "dev": "",
+          "iast": "śyāma",
+          "en": "Dark",
+          "kn": "ಶ್ಯಾಮ"
+        },
+        {
+          "dev": "",
+          "iast": "ābhā",
+          "en": "Luster",
+          "kn": "ಪ್ರಭೆ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 487,
+      "components": [
+        {
+          "dev": "",
+          "iast": "vadana",
+          "en": "Face",
+          "kn": "ಮುಖ"
+        },
+        {
+          "dev": "",
+          "iast": "dvayā",
+          "en": "Twofold",
+          "kn": "ಎರಡು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 488,
+      "components": [
+        {
+          "dev": "",
+          "iast": "daṃṣṭrā",
+          "en": "Fang",
+          "kn": "ದಂಷ್ಟ್ರಾ"
+        },
+        {
+          "dev": "",
+          "iast": "ujjvalā",
+          "en": "Bright",
+          "kn": "ಉಜ್ಜ್ವಲ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 489,
+      "components": [
+        {
+          "dev": "",
+          "iast": "akṣa",
+          "en": "Bead",
+          "kn": "ಅಕ್ಷ"
+        },
+        {
+          "dev": "",
+          "iast": "mālā",
+          "en": "Garland",
+          "kn": "ಮಾಲೆ"
+        },
+        {
+          "dev": "",
+          "iast": "ādi",
+          "en": "And others",
+          "kn": "ಮೊದಲಾದ"
+        },
+        {
+          "dev": "",
+          "iast": "dharā",
+          "en": "Bearing",
+          "kn": "ಧರಿಸಿದವಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 490,
+      "components": [
+        {
+          "dev": "",
+          "iast": "rudhira",
+          "en": "Blood",
+          "kn": "ರಕ್ತ"
+        },
+        {
+          "dev": "",
+          "iast": "saṃsthitā",
+          "en": "Established",
+          "kn": "ನೆಲೆಸಿರುವವಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    }
+  ]
+}
