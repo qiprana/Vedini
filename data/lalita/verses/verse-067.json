@@ -1,0 +1,39 @@
+{
+  "id": "lalita-67",
+  "verse_number": 67,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "आब्रह्म-कीट-जननी वर्णाश्रम-विधायिनी ।",
+      "निजाज्ञारूप-निगमा पुण्यापुण्य-फलप्रदा ६७ ॥"
+    ],
+    "iast": [
+      "ābrahma-kīṭa-jananī varṇāśrama-vidhāyinī ।",
+      "nijājñārūpa-nigamā puṇyāpuṇya-phalapradā 67 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "Mother of all beings, she bestows the fruits of actions.",
+    "kannada": "ಸಕಲ ಜೀವಿಗಳ ತಾಯಿಯಾದ ಆಕೆ ಕರ್ಮಫಲವನ್ನು ನೀಡುತ್ತಾಳೆ."
+  },
+  "names": [],
+  "study": {
+    "traditional_interpretation": {
+      "en": null,
+      "kn": null
+    }
+  },
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "editorial_draft",
+  "reading_note": "Individual names and traditional commentary pending review.",
+  "sources": [
+    {
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "source"
+    }
+  ]
+}
