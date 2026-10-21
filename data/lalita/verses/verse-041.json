@@ -17,7 +17,164 @@
     "english": "She is reached by contemplation, cuts worldly bondage, and blesses devotees.",
     "kannada": "ಧ್ಯಾನದಿಂದ ಅರಿಯಬಹುದಾದ ಆಕೆ ಸಂಸಾರಬಂಧವನ್ನು ನಿವಾರಿಸಿ ಭಕ್ತರಿಗೆ ಮಂಗಳ ನೀಡುತ್ತಾಳೆ."
   },
-  "names": [],
+  "names": [
+    {
+      "number": null,
+      "sanskrit": "भवानी",
+      "display_devanagari": "भवानी",
+      "iast": "bhavānī",
+      "display_iast": "bhavānī",
+      "english": "The consort of Bhava (Śiva); the mother who gives life",
+      "kannada": "ಭವನಾದ ಶಿವನ ಸಹಧರ್ಮಿಣಿ; ಜೀವದಾತೆ",
+      "essential_meaning": {
+        "en": "The consort of Bhava (Śiva); the mother who gives life",
+        "kn": "ಭವನಾದ ಶಿವನ ಸಹಧರ್ಮಿಣಿ; ಜೀವದಾತೆ"
+      },
+      "traditional_interpretation": {
+        "en": "Bhavānī points to the Goddess as Śiva’s inseparable power, and as the source of living existence.",
+        "kn": "ಭವಾನಿಯು ಶಿವನ ಅವಿಭಾಜ್ಯ ಶಕ್ತಿಯೂ ಜೀವದ ಮೂಲವೂ ಆಗಿದ್ದಾಳೆ."
+      },
+      "components": [
+        {
+          "dev": "भवानी",
+          "iast": "bhavānī",
+          "en": "The consort of Bhava (Śiva); the mother who gives life",
+          "kn": "ಭವನಾದ ಶಿವನ ಸಹಧರ್ಮಿಣಿ; ಜೀವದಾತೆ"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": null,
+      "sanskrit": "भावनागम्या",
+      "display_devanagari": "भावनागम्या",
+      "iast": "bhāvanāgamyā",
+      "display_iast": "bhāvanāgamyā",
+      "english": "She who is approached through contemplation",
+      "kannada": "ಧ್ಯಾನದ ಮೂಲಕ ಅರಿಯಬಹುದಾದವಳು",
+      "essential_meaning": {
+        "en": "She who is approached through contemplation",
+        "kn": "ಧ್ಯಾನದ ಮೂಲಕ ಅರಿಯಬಹುದಾದವಳು"
+      },
+      "traditional_interpretation": {
+        "en": "Bhāvanā is attentive contemplation; the name directs practice inward rather than only toward external ritual.",
+        "kn": "ಭಾವನಾ ಎಂದರೆ ಆಂತರಿಕ ಚಿಂತನೆ; ಈ ನಾಮವು ಬಾಹ್ಯ ಆಚರಣೆಯ ಜೊತೆಗೆ ಅಂತರಂಗದ ಸಾಧನೆಯನ್ನು ಸೂಚಿಸುತ್ತದೆ."
+      },
+      "components": [
+        {
+          "dev": "भावनागम्या",
+          "iast": "bhāvanāgamyā",
+          "en": "She who is approached through contemplation",
+          "kn": "ಧ್ಯಾನದ ಮೂಲಕ ಅರಿಯಬಹುದಾದವಳು"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": null,
+      "sanskrit": "भवारण्यकुठारिका",
+      "display_devanagari": "भवारण्यकुठारिका",
+      "iast": "bhavāraṇya-kuṭhārikā",
+      "display_iast": "bhavāraṇya-kuṭhārikā",
+      "english": "The axe that cuts the forest of worldly becoming",
+      "kannada": "ಸಂಸಾರವೆಂಬ ಅರಣ್ಯವನ್ನು ಕಡಿಯುವ ಕೊಡಲಿ",
+      "essential_meaning": {
+        "en": "The axe that cuts the forest of worldly becoming",
+        "kn": "ಸಂಸಾರವೆಂಬ ಅರಣ್ಯವನ್ನು ಕಡಿಯುವ ಕೊಡಲಿ"
+      },
+      "traditional_interpretation": {
+        "en": "The forest symbolizes entanglement in repetitive becoming; the axe is the liberating power of discernment.",
+        "kn": "ಅರಣ್ಯವು ಸಂಸಾರಬಂಧದ ರೂಪಕ; ಕೊಡಲಿಯು ವಿಮೋಚಕ ವಿವೇಕಶಕ್ತಿಯ ಸಂಕೇತ."
+      },
+      "components": [
+        {
+          "dev": "भवारण्यकुठारिका",
+          "iast": "bhavāraṇya-kuṭhārikā",
+          "en": "The axe that cuts the forest of worldly becoming",
+          "kn": "ಸಂಸಾರವೆಂಬ ಅರಣ್ಯವನ್ನು ಕಡಿಯುವ ಕೊಡಲಿ"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": null,
+      "sanskrit": "भद्रप्रिया",
+      "display_devanagari": "भद्रप्रिया",
+      "iast": "bhadrapriyā",
+      "display_iast": "bhadrapriyā",
+      "english": "She who loves what is auspicious",
+      "kannada": "ಮಂಗಳಕರವಾದುದನ್ನು ಪ್ರೀತಿಸುವವಳು",
+      "essential_meaning": {
+        "en": "She who loves what is auspicious",
+        "kn": "ಮಂಗಳಕರವಾದುದನ್ನು ಪ್ರೀತಿಸುವವಳು"
+      },
+      "traditional_interpretation": {
+        "en": "The name joins auspicious goodness with the Divine Mother’s affection.",
+        "kn": "ಮಂಗಳಮಯವಾದುದರ ಮೇಲಿನ ದೇವಿಯ ಪ್ರೀತಿಯನ್ನು ಈ ನಾಮವು ಸೂಚಿಸುತ್ತದೆ."
+      },
+      "components": [
+        {
+          "dev": "भद्रप्रिया",
+          "iast": "bhadrapriyā",
+          "en": "She who loves what is auspicious",
+          "kn": "ಮಂಗಳಕರವಾದುದನ್ನು ಪ್ರೀತಿಸುವವಳು"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": null,
+      "sanskrit": "भद्रमूर्तिः",
+      "display_devanagari": "भद्रमूर्तिः",
+      "iast": "bhadramūrtiḥ",
+      "display_iast": "bhadramūrtiḥ",
+      "english": "She whose form is auspiciousness",
+      "kannada": "ಮಂಗಳಸ್ವರೂಪಿಣಿ",
+      "essential_meaning": {
+        "en": "She whose form is auspiciousness",
+        "kn": "ಮಂಗಳಸ್ವರೂಪಿಣಿ"
+      },
+      "traditional_interpretation": {
+        "en": "Auspiciousness is not merely something she gives; it belongs to her very nature.",
+        "kn": "ಮಂಗಳವು ಅವಳು ಕೊಡುವ ವರ ಮಾತ್ರವಲ್ಲ; ಅವಳ ಸ್ವಭಾವವೇ ಮಂಗಳಮಯ."
+      },
+      "components": [
+        {
+          "dev": "भद्रमूर्तिः",
+          "iast": "bhadramūrtiḥ",
+          "en": "She whose form is auspiciousness",
+          "kn": "ಮಂಗಳಸ್ವರೂಪಿಣಿ"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": null,
+      "sanskrit": "भक्तसौभाग्यदायिनी",
+      "display_devanagari": "भक्तसौभाग्यदायिनी",
+      "iast": "bhakta-saubhāgya-dāyinī",
+      "display_iast": "bhakta-saubhāgya-dāyinī",
+      "english": "Bestower of good fortune upon devotees",
+      "kannada": "ಭಕ್ತರಿಗೆ ಸೌಭಾಗ್ಯ ನೀಡುವವಳು",
+      "essential_meaning": {
+        "en": "Bestower of good fortune upon devotees",
+        "kn": "ಭಕ್ತರಿಗೆ ಸೌಭಾಗ್ಯ ನೀಡುವವಳು"
+      },
+      "traditional_interpretation": {
+        "en": "The devotional reading describes her grace as the source of spiritual and worldly well-being.",
+        "kn": "ಭಕ್ತಿಯ ಪರಂಪರೆಯಲ್ಲಿ ಆಕೆಯ ಅನುಗ್ರಹವನ್ನು ಆಧ್ಯಾತ್ಮಿಕ ಮತ್ತು ಲೌಕಿಕ ಕ್ಷೇಮದ ಮೂಲವಾಗಿ ಕಾಣುತ್ತಾರೆ."
+      },
+      "components": [
+        {
+          "dev": "भक्तसौभाग्यदायिनी",
+          "iast": "bhakta-saubhāgya-dāyinī",
+          "en": "Bestower of good fortune upon devotees",
+          "kn": "ಭಕ್ತರಿಗೆ ಸೌಭಾಗ್ಯ ನೀಡುವವಳು"
+        }
+      ],
+      "review_status": "editorial_draft"
+    }
+  ],
   "study": {
     "traditional_interpretation": {
       "en": null,
@@ -39,5 +196,5 @@
     }
   ],
   "review_status": "editorial_draft",
-  "reading_note": "Provisional Sanskrit and bilingual overall-meaning draft. Individual nāma segmentation, component glosses and Manblunder interpretations have not been checked."
+  "reading_note": "Name-by-name bilingual meanings added as editorial drafts; compound decomposition and Manblunder source comparison need further verification."
 }
