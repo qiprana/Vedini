@@ -1,0 +1,43 @@
+{
+  "id": "lalita-053",
+  "verse_number": 53,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "सर्व-यन्त्रात्मिका सर्व-तन्त्ररूपा मनोन्मनी ।",
+      "माहेश्वरी महादेवी महालक्ष्मीर् मृडप्रिया ५३ ॥"
+    ],
+    "iast": [
+      "sarva-yantrātmikā sarva-tantrarūpā manonmanī ।",
+      "māheśvarī mahādevī mahālakṣmīr mṛḍapriyā 53 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "She pervades sacred yantras and tantras and is the great Goddess.",
+    "kannada": "ಯಂತ್ರತಂತ್ರಗಳ ಸ್ವರೂಪಿಣಿಯಾದ ಆಕೆ ಮಹಾದೇವಿಯೂ ಮಹಾಲಕ್ಷ್ಮಿಯೂ ಆಗಿದ್ದಾಳೆ."
+  },
+  "names": [],
+  "study": {
+    "traditional_interpretation": {
+      "en": null,
+      "kn": null
+    }
+  },
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "sources": [
+    {
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Sanskrit source"
+    },
+    {
+      "url": "https://manblunder.com/articles/lalitha-sahasranama",
+      "role": "Name commentary index"
+    }
+  ],
+  "review_status": "editorial_draft",
+  "reading_note": "Provisional Sanskrit and bilingual overall-meaning draft. Individual nāma segmentation, component glosses and Manblunder interpretations have not been checked."
+}
