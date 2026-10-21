@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "सहस्रदलपद्मस्था सर्ववर्णोपशोभिता ।",
-      "सर्वायुधधरा शुक्लसंस्थिता सर्वतोमुखी ॥ १०९ ॥"
+      "सहस्रदल-पद्मस्था सर्व-वर्णोप-शोभिता ।",
+      "सर्वायुधधरा शुक्ल-संस्थिता सर्वतोमुखी ॥ १०९ ॥"
     ],
     "iast": [
-      "sahasradalapadmasthā sarvavarṇopaśobhitā ।",
-      "sarvāyudhadharā śuklasaṃsthitā sarvatomukhī ॥ 109 ॥"
+      "sahasradala-padmasthā sarva-varṇopa-śobhitā ।",
+      "sarvāyudhadharā śukla-saṃsthitā sarvatomukhī ॥ 109 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

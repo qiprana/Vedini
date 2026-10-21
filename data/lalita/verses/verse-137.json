@@ -5,11 +5,11 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "देशकालापरिच्छिन्ना सर्वगा सर्वमोहिनी ।",
+      "देश-कालापरिच्छिन्ना सर्वगा सर्वमोहिनी ।",
       "सरस्वती शास्त्रमयी गुहाम्बा गुह्यरूपिणी ॥ १३७ ॥"
     ],
     "iast": [
-      "deśakālāparicchinnā sarvagā sarvamohinī ।",
+      "deśa-kālāparicchinnā sarvagā sarvamohinī ।",
       "sarasvatī śāstramayī guhāmbā guhyarūpiṇī ॥ 137 ॥"
     ]
   },
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

@@ -6,11 +6,11 @@
   "reading": {
     "devanagari": [
       "व्योमकेशी विमानस्था वज्रिणी वामकेश्वरी ।",
-      "पञ्चयज्ञप्रिया पञ्चप्रेतमञ्चाधिशायिनी ॥ १७४ ॥"
+      "पञ्चयज्ञ-प्रिया पञ्च-प्रेत-मञ्चाधिशायिनी ॥ १७४ ॥"
     ],
     "iast": [
       "vyomakeśī vimānasthā vajriṇī vāmakeśvarī ।",
-      "pañcayajñapriyā pañcapretamañcādhiśāyinī ॥ 174 ॥"
+      "pañcayajña-priyā pañca-preta-mañcādhiśāyinī ॥ 174 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

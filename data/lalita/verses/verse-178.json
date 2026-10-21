@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "सुवासिन्यर्चनप्रीताऽऽशोभना शुद्धमानसा ।",
-      "बिन्दुतर्पणसन्तुष्टा पूर्वजा त्रिपुराम्बिका ॥ १७८ ॥"
+      "सुवासिन्यर्चन-प्रीताऽऽशोभना शुद्धमानसा ।",
+      "बिन्दु-तर्पण-सन्तुष्टा पूर्वजा त्रिपुराम्बिका ॥ १७८ ॥"
     ],
     "iast": [
-      "suvāsinyarcanaprītā’’śobhanā śuddhamānasā ।",
-      "bindutarpaṇasantuṣṭā pūrvajā tripurāmbikā ॥ 178 ॥"
+      "suvāsinyarcana-prītā”śobhanā śuddhamānasā ।",
+      "bindu-tarpaṇa-santuṣṭā pūrvajā tripurāmbikā ॥ 178 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

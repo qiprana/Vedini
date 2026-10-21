@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "पुण्यकीर्तिः पुण्यलभ्या पुण्यश्रवणकीर्तना ।",
-      "पुलोमजार्चिता बन्धमोचनी बन्धुरालका ॥ १११ ॥"
+      "पुण्यकीर्तिः पुण्यलभ्या पुण्यश्रवण-कीर्तना ।",
+      "पुलोमजार्चिता बन्ध-मोचनी बन्धुरालका ॥ १११ ॥"
     ],
     "iast": [
-      "puṇyakīrtiḥ puṇyalabhyā puṇyaśravaṇakīrtanā ।",
-      "pulomajārcitā bandhamocanī bandhurālakā ॥ 111 ॥"
+      "puṇyakīrtiḥ puṇyalabhyā puṇyaśravaṇa-kīrtanā ।",
+      "pulomajārcitā bandha-mocanī bandhurālakā ॥ 111 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

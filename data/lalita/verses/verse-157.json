@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "मुकुन्दा मुक्तिनिलया मूलविग्रहरूपिणी ।",
-      "भावज्ञा भवरोगघ्नी भवचक्रप्रवर्तिनी ॥ १५७ ॥"
+      "मुकुन्दा मुक्तिनिलया मूलविग्रह-रूपिणी ।",
+      "भावज्ञा भवरोगघ्नी भवचक्र-प्रवर्तिनी ॥ १५७ ॥"
     ],
     "iast": [
-      "mukundā muktinilayā mūlavigraharūpiṇī ।",
-      "bhāvajñā bhavarogaghnī bhavacakrapravartinī ॥ 157 ॥"
+      "mukundā muktinilayā mūlavigraha-rūpiṇī ।",
+      "bhāvajñā bhavarogaghnī bhavacakra-pravartinī ॥ 157 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

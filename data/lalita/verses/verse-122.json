@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "देवेशी दण्डनीतिस्था दहराकाशरूपिणी ।",
-      "प्रतिपन्मुख्यराकान्ततिथिमण्डलपूजिता ॥ १२२ ॥"
+      "देवेशी दण्डनीतिस्था दहराकाश-रूपिणी ।",
+      "प्रतिपन्मुख्य-राकान्त-तिथि-मण्डल-पूजिता ॥ १२२ ॥"
     ],
     "iast": [
-      "deveśī daṇḍanītisthā daharākāśarūpiṇī ।",
-      "pratipanmukhyarākāntatithimaṇḍalapūjitā ॥ 122 ॥"
+      "deveśī daṇḍanītisthā daharākāśa-rūpiṇī ।",
+      "pratipanmukhya-rākānta-tithi-maṇḍala-pūjitā ॥ 122 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

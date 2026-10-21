@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "राजराजेश्वरी राज्यदायिनी राज्यवल्लभा ।",
-      "राजत्कृपा राजपीठनिवेशितनिजाश्रिता ॥ १३४ ॥"
+      "राज-राजेश्वरी राज्य-दायिनी राज्य-वल्लभा ।",
+      "राजत्कृपा राजपीठ-निवेशित-निजाश्रिता ॥ १३४ ॥"
     ],
     "iast": [
-      "rājarājeśvarī rājyadāyinī rājyavallabhā ।",
-      "rājatkṛpā rājapīṭhaniveśitanijāśritā ॥ 134 ॥"
+      "rāja-rājeśvarī rājya-dāyinī rājya-vallabhā ।",
+      "rājatkṛpā rājapīṭha-niveśita-nijāśritā ॥ 134 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

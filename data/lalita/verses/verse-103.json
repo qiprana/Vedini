@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "रक्तवर्णा मांसनिष्ठा गुडान्नप्रीतमानसा ।",
-      "समस्तभक्तसुखदा लाकिन्यम्बास्वरूपिणी ॥ १०३ ॥"
+      "रक्तवर्णा मांसनिष्ठा गुडान्न-प्रीत-मानसा ।",
+      "समस्तभक्त-सुखदा लाकिन्यम्बा-स्वरूपिणी ॥ १०३ ॥"
     ],
     "iast": [
-      "raktavarṇā māṃsaniṣṭhā guḍānnaprītamānasā ।",
-      "samastabhaktasukhadā lākinyambāsvarūpiṇī ॥ 103 ॥"
+      "raktavarṇā māṃsaniṣṭhā guḍānna-prīta-mānasā ।",
+      "samastabhakta-sukhadā lākinyambā-svarūpiṇī ॥ 103 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

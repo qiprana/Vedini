@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "आदिशक्तिरमेयात्मा परमा पावनाकृतिः ।",
-      "अनेककोटिब्रह्माण्डजननी दिव्यविग्रहा ॥ १२४ ॥"
+      "आदिशक्तिर् अमेयाऽऽत्मा परमा पावनाकृतिः ।",
+      "अनेककोटि-ब्रह्माण्ड-जननी दिव्यविग्रहा ॥ १२४ ॥"
     ],
     "iast": [
-      "ādiśaktirameyātmā paramā pāvanākṛtiḥ ।",
-      "anekakoṭibrahmāṇḍajananī divyavigrahā ॥ 124 ॥"
+      "ādiśaktir ameyā”tmā paramā pāvanākṛtiḥ ।",
+      "anekakoṭi-brahmāṇḍa-jananī divyavigrahā ॥ 124 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

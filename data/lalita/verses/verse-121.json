@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "दरान्दोलितदीर्घाक्षी दरहासोज्ज्वलन्मुखी ।",
-      "गुरुमूर्दिर्गुणनिधिर्गोमाता गुहजन्मभूः ॥ १२१ ॥"
+      "दरान्दोलित-दीर्घाक्षी दर-हासोज्ज्वलन्-मुखी ।",
+      "गुरुमूर्तिर् गुणनिधिर् गोमाता गुहजन्मभूः ॥ १२१ ॥"
     ],
     "iast": [
-      "darāndolitadīrghākṣī darahāsojjvalanmukhī ।",
-      "gurumūrdirguṇanidhirgomātā guhajanmabhūḥ ॥ 121 ॥"
+      "darāndolita-dīrghākṣī dara-hāsojjvalan-mukhī ।",
+      "gurumūrtir guṇanidhir gomātā guhajanmabhūḥ ॥ 121 ॥"
     ]
   },
   "meaning": {
@@ -22,12 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
-  ],
-  "reading_note": "Source misnumbers verse 121 as 212; corrected by sequence."
+  ]
 }

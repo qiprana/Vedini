@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "ओड्याणपीठनिलया बिन्दुमण्डलवासिनी ।",
-      "रहोयागक्रमाराध्या रहस्तर्पणतर्पिता ॥ ८३ ॥"
+      "ओड्याणपीठ-निलया बिन्दु-मण्डलवासिनी ।",
+      "रहोयाग-क्रमाराध्या रहस्तर्पण-तर्पिता ॥ ८३ ॥"
     ],
     "iast": [
-      "oḍyāṇapīṭhanilayā bindumaṇḍalavāsinī ।",
-      "rahoyāgakramārādhyā rahastarpaṇatarpitā ॥ 83 ॥"
+      "oḍyāṇapīṭha-nilayā bindu-maṇḍalavāsinī ।",
+      "rahoyāga-kramārādhyā rahastarpaṇa-tarpitā ॥ 83 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; requires cross-check against Shlokam"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

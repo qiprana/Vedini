@@ -5,11 +5,11 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "बन्धूककुसुमप्रख्या बाला लीलाविनोदिनी ।",
+      "बन्धूक-कुसुमप्रख्या बाला लीलाविनोदिनी ।",
       "सुमङ्गली सुखकरी सुवेषाढ्या सुवासिनी ॥ १७७ ॥"
     ],
     "iast": [
-      "bandhūkakusumaprakhyā bālā līlāvinodinī ।",
+      "bandhūka-kusumaprakhyā bālā līlāvinodinī ।",
       "sumaṅgalī sukhakarī suveṣāḍhyā suvāsinī ॥ 177 ॥"
     ]
   },
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

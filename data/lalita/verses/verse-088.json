@@ -5,11 +5,11 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "भक्तहार्दतमोभेदभानुमद्भानुसन्ततिः ।",
+      "भक्त-हार्द-तमोभेद-भानुमद्भानु-सन्ततिः ।",
       "शिवदूती शिवाराध्या शिवमूर्तिः शिवङ्करी ॥ ८८ ॥"
     ],
     "iast": [
-      "bhaktahārdatamobhedabhānumadbhānusantatiḥ ।",
+      "bhakta-hārda-tamobheda-bhānumadbhānu-santatiḥ ।",
       "śivadūtī śivārādhyā śivamūrtiḥ śivaṅkarī ॥ 88 ॥"
     ]
   },
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; requires cross-check against Shlokam"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

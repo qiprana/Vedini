@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "भवदावसुधावृष्टिः पापारण्यदवानला ।",
-      "दौर्भाग्यतूलवातूला जराध्वान्तरविप्रभा ॥ १४३ ॥"
+      "भवदाव-सुधावृष्टिः पापारण्य-दवानला ।",
+      "दौर्भाग्य-तूलवातूला जराध्वान्त-रविप्रभा ॥ १४३ ॥"
     ],
     "iast": [
-      "bhavadāvasudhāvṛṣṭiḥ pāpāraṇyadavānalā ।",
-      "daurbhāgyatūlavātūlā jarādhvāntaraviprabhā ॥ 143 ॥"
+      "bhavadāva-sudhāvṛṣṭiḥ pāpāraṇya-davānalā ।",
+      "daurbhāgya-tūlavātūlā jarādhvānta-raviprabhā ॥ 143 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

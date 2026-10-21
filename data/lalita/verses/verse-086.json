@@ -6,11 +6,11 @@
   "reading": {
     "devanagari": [
       "प्रभावती प्रभारूपा प्रसिद्धा परमेश्वरी ।",
-      "मूलप्रकृतिरव्यक्ता व्यक्ताव्यक्तस्वरूपिणी ॥ ८६ ॥"
+      "मूलप्रकृतिर् अव्यक्ता व्यक्ताव्यक्त-स्वरूपिणी ॥ ८६ ॥"
     ],
     "iast": [
       "prabhāvatī prabhārūpā prasiddhā parameśvarī ।",
-      "mūlaprakṛtiravyaktā vyaktāvyaktasvarūpiṇī ॥ 86 ॥"
+      "mūlaprakṛtir avyaktā vyaktāvyakta-svarūpiṇī ॥ 86 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; requires cross-check against Shlokam"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

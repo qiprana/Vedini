@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "चैतन्यार्घ्यसमाराध्या चैतन्यकुसुमप्रिया ।",
-      "सदोदिता सदातुष्टा तरुणादित्यपाटला ॥ १७० ॥"
+      "चैतन्यार्घ्य-समाराध्या चैतन्य-कुसुमप्रिया ।",
+      "सदोदिता सदातुष्टा तरुणादित्य-पाटला ॥ १७० ॥"
     ],
     "iast": [
-      "caitanyārghyasamārādhyā caitanyakusumapriyā ।",
-      "sadoditā sadātuṣṭā taruṇādityapāṭalā ॥ 170 ॥"
+      "caitanyārghya-samārādhyā caitanya-kusumapriyā ।",
+      "sadoditā sadātuṣṭā taruṇāditya-pāṭalā ॥ 170 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "दीक्षिता दैत्यशमनी सर्वलोकवशङ्करी ।",
-      "सर्वार्थदात्री सावित्री सच्चिदानन्दरूपिणी ॥ १३६ ॥"
+      "दीक्षिता दैत्यशमनी सर्वलोक-वशङ्करी ।",
+      "सर्वार्थदात्री सावित्री सच्चिदानन्द-रूपिणी ॥ १३६ ॥"
     ],
     "iast": [
-      "dīkṣitā daityaśamanī sarvalokavaśaṅkarī ।",
-      "sarvārthadātrī sāvitrī saccidānandarūpiṇī ॥ 136 ॥"
+      "dīkṣitā daityaśamanī sarvaloka-vaśaṅkarī ।",
+      "sarvārthadātrī sāvitrī saccidānanda-rūpiṇī ॥ 136 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

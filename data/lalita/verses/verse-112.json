@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "विमर्शरूपिणी विद्या वियदादिजगत्प्रसूः ।",
-      "सर्वव्याधिप्रशमनी सर्वमृत्युनिवारिणी ॥ ११२ ॥"
+      "विमर्शरूपिणी विद्या वियदादि-जगत्प्रसूः ।",
+      "सर्वव्याधि-प्रशमनी सर्वमृत्यु-निवारिणी ॥ ११२ ॥"
     ],
     "iast": [
-      "vimarśarūpiṇī vidyā viyadādijagatprasūḥ ।",
-      "sarvavyādhipraśamanī sarvamṛtyunivāriṇī ॥ 112 ॥"
+      "vimarśarūpiṇī vidyā viyadādi-jagatprasūḥ ।",
+      "sarvavyādhi-praśamanī sarvamṛtyu-nivāriṇī ॥ 112 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

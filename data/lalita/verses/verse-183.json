@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "श्रीशिवा शिवशक्त्यैक्यरूपिणी ललिताम्बिका ।",
-      "एवं श्रीललितादेव्या नाम्नां साहस्रकं जगुः ॥ १८३ ॥"
+      "श्रीशिवा शिव-शक्त्यैक्य-रूपिणी ललिताम्बिका ।",
+      "एवं श्रीललिता देव्या नाम्नां साहस्रकं जगुः ॥"
     ],
     "iast": [
-      "śrīśivā śivaśaktyaikyarūpiṇī lalitāmbikā ।",
-      "evaṃ śrīlalitādevyā nāmnāṃ sāhasrakaṃ jaguḥ ॥ 183 ॥"
+      "śrīśivā śiva-śaktyaikya-rūpiṇī lalitāmbikā ।",
+      "evaṃ śrīlalitā devyā nāmnāṃ sāhasrakaṃ jaguḥ ।."
     ]
   },
   "meaning": {
@@ -22,11 +22,12 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
-  ]
+  ],
+  "reading_note": "Shlokam prints the final concluding couplet without a verse number; 183 is an internal navigation identifier."
 }

@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "इच्छाशक्तिज्ञानशक्तिक्रियाशक्तिस्वरूपिणी ।",
-      "सर्वाधारा सुप्रतिष्ठा सदसद्रू पधारिणी ॥ १३० ॥"
+      "इच्छाशक्ति-ज्ञानशक्ति-क्रियाशक्ति-स्वरूपिणी ।",
+      "सर्वाधारा सुप्रतिष्ठा सदसद्रूप-धारिणी ॥ १३० ॥"
     ],
     "iast": [
-      "icchāśaktijñānaśaktikriyāśaktisvarūpiṇī ।",
-      "sarvādhārā supratiṣṭhā sadasadrū padhāriṇī ॥ 130 ॥"
+      "icchāśakti-jñānaśakti-kriyāśakti-svarūpiṇī ।",
+      "sarvādhārā supratiṣṭhā sadasadrūpa-dhāriṇī ॥ 130 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

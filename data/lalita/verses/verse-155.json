@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "ब्रह्माणी ब्रह्म जननी बहुरूपा बुधार्चिता ।",
+      "ब्रह्माणी ब्रह्मजननी बहुरूपा बुधार्चिता ।",
       "प्रसवित्री प्रचण्डाऽऽज्ञा प्रतिष्ठा प्रकटाकृतिः ॥ १५५ ॥"
     ],
     "iast": [
-      "brahmāṇī brahma jananī bahurūpā budhārcitā ।",
-      "prasavitrī pracaṇḍā’’jñā pratiṣṭhā prakaṭākṛtiḥ ॥ 155 ॥"
+      "brahmāṇī brahmajananī bahurūpā budhārcitā ।",
+      "prasavitrī pracaṇḍā”jñā pratiṣṭhā prakaṭākṛtiḥ ॥ 155 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

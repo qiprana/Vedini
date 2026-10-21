@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "स्वाधिष्ठानाम्बुजगता चतुर्वक्त्रमनोहरा ।",
-      "शूलाद्यायुधसम्पन्ना पीतवर्णाऽतिगर्विता ॥ १०४ ॥"
+      "स्वाधिष्ठानाम्बुज-गता चतुर्वक्त्र-मनोहरा ।",
+      "शूलाद्यायुध-सम्पन्ना पीतवर्णाऽतिगर्विता ॥ १०४ ॥"
     ],
     "iast": [
-      "svādhiṣṭhānāmbujagatā caturvaktramanoharā ।",
-      "śūlādyāyudhasampannā pītavarṇā’tigarvitā ॥ 104 ॥"
+      "svādhiṣṭhānāmbuja-gatā caturvaktra-manoharā ।",
+      "śūlādyāyudha-sampannā pītavarṇā’tigarvitā ॥ 104 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

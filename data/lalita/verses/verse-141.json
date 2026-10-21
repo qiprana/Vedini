@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "चित्कलाऽऽनन्दकलिका प्रेमरूपा प्रियङ्करी ।",
-      "नामपारायणप्रीता नन्दिविद्या नटेश्वरी ॥ १४१ ॥"
+      "चित्कलाऽऽनन्द-कलिका प्रेमरूपा प्रियङ्करी ।",
+      "नामपारायण-प्रीता नन्दिविद्या नटेश्वरी ॥ १४१ ॥"
     ],
     "iast": [
-      "citkalā’’nandakalikā premarūpā priyaṅkarī ।",
-      "nāmapārāyaṇaprītā nandividyā naṭeśvarī ॥ 141 ॥"
+      "citkalā”nanda-kalikā premarūpā priyaṅkarī ।",
+      "nāmapārāyaṇa-prītā nandividyā naṭeśvarī ॥ 141 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

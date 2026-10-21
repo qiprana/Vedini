@@ -6,11 +6,11 @@
   "reading": {
     "devanagari": [
       "परा प्रत्यक्चितीरूपा पश्यन्ती परदेवता ।",
-      "मध्यमा वैखरीरूपा भक्तमानसहंसिका ॥ ८१ ॥"
+      "मध्यमा वैखरीरूपा भक्त-मानस-हंसिका ॥ ८१ ॥"
     ],
     "iast": [
       "parā pratyakcitīrūpā paśyantī paradevatā ।",
-      "madhyamā vaikharīrūpā bhaktamānasahaṃsikā ॥ 81 ॥"
+      "madhyamā vaikharīrūpā bhakta-mānasa-haṃsikā ॥ 81 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; requires cross-check against Shlokam"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

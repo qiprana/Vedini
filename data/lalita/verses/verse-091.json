@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "तत्त्वासना तत्त्वमयी पञ्चकोशान्तरस्थिता ।",
-      "निस्सीममहिमा नित्ययौवना मदशालिनी ॥ ९१ ॥"
+      "तत्त्वासना तत्त्वमयी पञ्च-कोशान्तर-स्थिता ।",
+      "निःसीम-महिमा नित्य-यौवना मदशालिनी ॥ ९१ ॥"
     ],
     "iast": [
-      "tattvāsanā tattvamayī pañcakośāntarasthitā ।",
-      "nissīmamahimā nityayauvanā madaśālinī ॥ 91 ॥"
+      "tattvāsanā tattvamayī pañca-kośāntara-sthitā ।",
+      "niḥsīma-mahimā nitya-yauvanā madaśālinī ॥ 91 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; requires cross-check against Shlokam"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

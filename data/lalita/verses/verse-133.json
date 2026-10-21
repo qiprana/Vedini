@@ -5,11 +5,11 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "भाषारूपा बृहत्सेना भावाभावविवर्जिता ।",
+      "भाषारूपा बृहत्सेना भावाभाव-विवर्जिता ।",
       "सुखाराध्या शुभकरी शोभना सुलभा गतिः ॥ १३३ ॥"
     ],
     "iast": [
-      "bhāṣārūpā bṛhatsenā bhāvābhāvavivarjitā ।",
+      "bhāṣārūpā bṛhatsenā bhāvābhāva-vivarjitā ।",
       "sukhārādhyā śubhakarī śobhanā sulabhā gatiḥ ॥ 133 ॥"
     ]
   },
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

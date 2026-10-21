@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "सर्ववेदान्तसंवेद्या सत्यानन्दस्वरूपिणी ।",
-      "लोपामुद्रा र्चिता लीलाकॢप्तब्रह्माण्डमण्डला ॥ १२८ ॥"
+      "सर्ववेदान्त-संवेद्या सत्यानन्द-स्वरूपिणी ।",
+      "लोपामुद्रार्चिता लीला-कॢप्त-ब्रह्माण्ड-मण्डला ॥ १२८ ॥"
     ],
     "iast": [
-      "sarvavedāntasaṃvedyā satyānandasvarūpiṇī ।",
-      "lopāmudrā rcitā līlākḷptabrahmāṇḍamaṇḍalā ॥ 128 ॥"
+      "sarvavedānta-saṃvedyā satyānanda-svarūpiṇī ।",
+      "lopāmudrārcitā līlā-kḷpta-brahmāṇḍa-maṇḍalā ॥ 128 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

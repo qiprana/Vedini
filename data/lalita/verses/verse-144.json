@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "भाग्याब्धिचन्द्रि का भक्तचित्तकेकिघनाघना ।",
-      "रोगपर्वतदम्भोलिर्मृत्युदारुकुठारिका ॥ १४४ ॥"
+      "भाग्याब्धि-चन्द्रिका भक्त-चित्तकेकि-घनाघना ।",
+      "रोगपर्वत-दम्भोलिर् मृत्युदारु-कुठारिका ॥ १४४ ॥"
     ],
     "iast": [
-      "bhāgyābdhicandri kā bhaktacittakekighanāghanā ।",
-      "rogaparvatadambholirmṛtyudārukuṭhārikā ॥ 144 ॥"
+      "bhāgyābdhi-candrikā bhakta-cittakeki-ghanāghanā ।",
+      "rogaparvata-dambholir mṛtyudāru-kuṭhārikā ॥ 144 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

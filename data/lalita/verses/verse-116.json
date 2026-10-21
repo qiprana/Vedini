@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "परा शक्तिः परा निष्ठा प्रज्ञानघनरूपिणी ।",
-      "माध्वीपानालसा मत्ता मातृकावर्णरूपिणी ॥ ११६ ॥"
+      "परा शक्तिः परा निष्ठा प्रज्ञानघन-रूपिणी ।",
+      "माध्वीपानालसा मत्ता मातृका-वर्ण-रूपिणी ॥ ११६ ॥"
     ],
     "iast": [
-      "parā śaktiḥ parā niṣṭhā prajñānaghanarūpiṇī ।",
-      "mādhvīpānālasā mattā mātṛkāvarṇarūpiṇī ॥ 116 ॥"
+      "parā śaktiḥ parā niṣṭhā prajñānaghana-rūpiṇī ।",
+      "mādhvīpānālasā mattā mātṛkā-varṇa-rūpiṇī ॥ 116 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

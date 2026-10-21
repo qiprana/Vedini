@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "संसारपङ्कनिर्मग्नसमुद्धरणपण्डिता ।",
-      "यज्ञप्रिया यज्ञकर्त्री यजमानस्वरूपिणी ॥ १६४ ॥"
+      "संसारपङ्क-निर्मग्न-समुद्धरण-पण्डिता ।",
+      "यज्ञप्रिया यज्ञकर्त्री यजमान-स्वरूपिणी ॥ १६४ ॥"
     ],
     "iast": [
-      "saṃsārapaṅkanirmagnasamuddharaṇapaṇḍitā ।",
-      "yajñapriyā yajñakartrī yajamānasvarūpiṇī ॥ 164 ॥"
+      "saṃsārapaṅka-nirmagna-samuddharaṇa-paṇḍitā ।",
+      "yajñapriyā yajñakartrī yajamāna-svarūpiṇī ॥ 164 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

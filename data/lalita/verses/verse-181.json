@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "अभ्यासातिशयज्ञाता षडध्वातीतरूपिणी ।",
-      "अव्याजकरुणामूर्तिरज्ञानध्वान्तदीपिका ॥ १८१ ॥"
+      "अभ्यासातिशय-ज्ञाता षडध्वातीत-रूपिणी ।",
+      "अव्याज-करुणा-मूर्तिर् अज्ञान-ध्वान्त-दीपिका ॥ १८१ ॥"
     ],
     "iast": [
-      "abhyāsātiśayajñātā ṣaḍadhvātītarūpiṇī ।",
-      "avyājakaruṇāmūrtirajñānadhvāntadīpikā ॥ 181 ॥"
+      "abhyāsātiśaya-jñātā ṣaḍadhvātīta-rūpiṇī ।",
+      "avyāja-karuṇā-mūrtir ajñāna-dhvānta-dīpikā ॥ 181 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

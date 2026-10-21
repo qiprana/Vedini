@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "कलात्मिका कलानाथा काव्यालापविनोदिनी ।",
-      "सचामररमावाणीसव्यदक्षिणसेविता ॥ १२३ ॥"
+      "कलात्मिका कलानाथा काव्यालाप-विनोदिनी ।",
+      "सचामर-रमा-वाणी-सव्य-दक्षिण-सेविता ॥ १२३ ॥"
     ],
     "iast": [
-      "kalātmikā kalānāthā kāvyālāpavinodinī ।",
-      "sacāmararamāvāṇīsavyadakṣiṇasevitā ॥ 123 ॥"
+      "kalātmikā kalānāthā kāvyālāpa-vinodinī ।",
+      "sacāmara-ramā-vāṇī-savya-dakṣiṇa-sevitā ॥ 123 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

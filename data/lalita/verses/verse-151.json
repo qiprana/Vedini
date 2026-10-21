@@ -5,11 +5,11 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "सत्यज्ञानानन्दरूपा सामरस्यपरायणा ।",
+      "सत्य-ज्ञानानन्द-रूपा सामरस्य-परायणा ।",
       "कपर्दिनी कलामाला कामधुक् कामरूपिणी ॥ १५१ ॥"
     ],
     "iast": [
-      "satyajñānānandarūpā sāmarasyaparāyaṇā ।",
+      "satya-jñānānanda-rūpā sāmarasya-parāyaṇā ।",
       "kapardinī kalāmālā kāmadhuk kāmarūpiṇī ॥ 151 ॥"
     ]
   },
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

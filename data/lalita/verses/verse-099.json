@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "पायसान्नप्रिया त्वक्स्था पशुलोकभयङ्करी ।",
-      "अमृतादिमहाशक्तिसंवृता डाकिनीश्वरी ॥ ९९ ॥"
+      "पायसान्नप्रिया त्वक्स्था पशुलोक-भयङ्करी ।",
+      "अमृतादि-महाशक्ति-संवृता डाकिनीश्वरी ॥ ९९ ॥"
     ],
     "iast": [
-      "pāyasānnapriyā tvaksthā paśulokabhayaṅkarī ।",
-      "amṛtādimahāśaktisaṃvṛtā ḍākinīśvarī ॥ 99 ॥"
+      "pāyasānnapriyā tvaksthā paśuloka-bhayaṅkarī ।",
+      "amṛtādi-mahāśakti-saṃvṛtā ḍākinīśvarī ॥ 99 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

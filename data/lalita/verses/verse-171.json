@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "दक्षिणादक्षिणाराध्या दरस्मेरमुखाम्बुजा ।",
-      "कौलिनीकेवलाऽनर्घ्यकैवल्यपददायिनी ॥ १७१ ॥"
+      "दक्षिणा-दक्षिणाराध्या दरस्मेर-मुखाम्बुजा ।",
+      "कौलिनी-केवलाऽनर्घ्य-कैवल्य-पददायिनी ॥ १७१ ॥"
     ],
     "iast": [
-      "dakṣiṇādakṣiṇārādhyā darasmeramukhāmbujā ।",
-      "kaulinīkevalā’narghyakaivalyapadadāyinī ॥ 171 ॥"
+      "dakṣiṇā-dakṣiṇārādhyā darasmera-mukhāmbujā ।",
+      "kaulinī-kevalā’narghya-kaivalya-padadāyinī ॥ 171 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

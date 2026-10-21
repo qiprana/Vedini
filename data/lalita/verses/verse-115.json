@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "नित्यतृप्ता भक्तनिधिर्नियन्त्री निखिलेश्वरी ।",
-      "मैत्र्\\! यादिवासनालभ्या महाप्रलयसाक्षिणी ॥ ११५ ॥"
+      "नित्यतृप्ता भक्तनिधिर् नियन्त्री निखिलेश्वरी ।",
+      "मैत्र्यादि-वासनालभ्या महाप्रलय-साक्षिणी ॥ ११५ ॥"
     ],
     "iast": [
-      "nityatṛptā bhaktanidhirniyantrī nikhileśvarī ।",
-      "maitr\\! yādivāsanālabhyā mahāpralayasākṣiṇī ॥ 115 ॥"
+      "nityatṛptā bhaktanidhir niyantrī nikhileśvarī ।",
+      "maitryādi-vāsanālabhyā mahāpralaya-sākṣiṇī ॥ 115 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

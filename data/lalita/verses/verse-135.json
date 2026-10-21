@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "राज्यलक्ष्मीः कोशनाथा चतुरङ्गबलेश्वरी ।",
-      "साम्राज्यदायिनी सत्यसन्धा सागरमेखला ॥ १३५ ॥"
+      "राज्यलक्ष्मीः कोशनाथा चतुरङ्ग-बलेश्वरी ।",
+      "साम्राज्य-दायिनी सत्यसन्धा सागरमेखला ॥ १३५ ॥"
     ],
     "iast": [
-      "rājyalakṣmīḥ kośanāthā caturaṅgabaleśvarī ।",
-      "sāmrājyadāyinī satyasandhā sāgaramekhalā ॥ 135 ॥"
+      "rājyalakṣmīḥ kośanāthā caturaṅga-baleśvarī ।",
+      "sāmrājya-dāyinī satyasandhā sāgaramekhalā ॥ 135 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

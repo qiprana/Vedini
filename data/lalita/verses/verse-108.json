@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "मज्जासंस्था हंसवतीमुख्यशक्तिसमन्विता ।",
-      "हरिद्रा न्नैकरसिका हाकिनीरूपधारिणी ॥ १०८ ॥"
+      "मज्जासंस्था हंसवती-मुख्य-शक्ति-समन्विता ।",
+      "हरिद्रान्नैक-रसिका हाकिनी-रूप-धारिणी ॥ १०८ ॥"
     ],
     "iast": [
-      "majjāsaṃsthā haṃsavatīmukhyaśaktisamanvitā ।",
-      "haridrā nnaikarasikā hākinīrūpadhāriṇī ॥ 108 ॥"
+      "majjāsaṃsthā haṃsavatī-mukhya-śakti-samanvitā ।",
+      "haridrānnaika-rasikā hākinī-rūpa-dhāriṇī ॥ 108 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

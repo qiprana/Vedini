@@ -6,11 +6,11 @@
   "reading": {
     "devanagari": [
       "महेश्वरी महाकाली महाग्रासा महाशना ।",
-      "अपर्णा चण्डिका चण्डमुण्डासुरनिषूदिनी ॥ १४५ ॥"
+      "अपर्णा चण्डिका चण्डमुण्डासुर-निषूदिनी ॥ १४५ ॥"
     ],
     "iast": [
       "maheśvarī mahākālī mahāgrāsā mahāśanā ।",
-      "aparṇā caṇḍikā caṇḍamuṇḍāsuraniṣūdinī ॥ 145 ॥"
+      "aparṇā caṇḍikā caṇḍamuṇḍāsura-niṣūdinī ॥ 145 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

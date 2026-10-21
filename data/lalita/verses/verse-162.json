@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "अजा क्षयविनिर्मुक्ता मुग्धा क्षिप्रप्रसादिनी ।",
-      "अन्तर्मुखसमाराध्या बहिर्मुखसुदुर्लभा ॥ १६२ ॥"
+      "अजा क्षयविनिर्मुक्ता मुग्धा क्षिप्र-प्रसादिनी ।",
+      "अन्तर्मुख-समाराध्या बहिर्मुख-सुदुर्लभा ॥ १६२ ॥"
     ],
     "iast": [
-      "ajā kṣayavinirmuktā mugdhā kṣipraprasādinī ।",
-      "antarmukhasamārādhyā bahirmukhasudurlabhā ॥ 162 ॥"
+      "ajā kṣayavinirmuktā mugdhā kṣipra-prasādinī ।",
+      "antarmukha-samārādhyā bahirmukha-sudurlabhā ॥ 162 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

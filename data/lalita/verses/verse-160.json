@@ -6,11 +6,11 @@
   "reading": {
     "devanagari": [
       "गम्भीरा गगनान्तस्था गर्विता गानलोलुपा ।",
-      "कल्पनारहिता काष्ठाऽकान्ता कान्तार्धविग्रहा ॥ १६० ॥"
+      "कल्पना-रहिता काष्ठाऽकान्ता कान्तार्ध-विग्रहा ॥ १६० ॥"
     ],
     "iast": [
       "gambhīrā gaganāntasthā garvitā gānalolupā ।",
-      "kalpanārahitā kāṣṭhā’kāntā kāntārdhavigrahā ॥ 160 ॥"
+      "kalpanā-rahitā kāṣṭhā’kāntā kāntārdha-vigrahā ॥ 160 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

@@ -5,11 +5,11 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "अष्टमूर्तिरजाजेत्री लोकयात्राविधायिनी ।",
+      "अष्टमूर्तिर् अजाजैत्री लोकयात्रा-विधायिनी ।",
       "एकाकिनी भूमरूपा निर्द्वैता द्वैतवर्जिता ॥ १३१ ॥"
     ],
     "iast": [
-      "aṣṭamūrtirajājetrī lokayātrāvidhāyinī ।",
+      "aṣṭamūrtir ajājaitrī lokayātrā-vidhāyinī ।",
       "ekākinī bhūmarūpā nirdvaitā dvaitavarjitā ॥ 131 ॥"
     ]
   },
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

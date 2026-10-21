@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "व्यापिनी विविधाकारा विद्याविद्यास्वरूपिणी ।",
-      "महाकामेशनयनकुमुदाह्लादकौमुदी ॥ ८७ ॥"
+      "व्यापिनी विविधाकारा विद्याविद्या-स्वरूपिणी ।",
+      "महाकामेश-नयन-कुमुदाह्लाद-कौमुदी ॥ ८७ ॥"
     ],
     "iast": [
-      "vyāpinī vividhākārā vidyāvidyāsvarūpiṇī ।",
-      "mahākāmeśanayanakumudāhlādakaumudī ॥ 87 ॥"
+      "vyāpinī vividhākārā vidyāvidyā-svarūpiṇī ।",
+      "mahākāmeśa-nayana-kumudāhlāda-kaumudī ॥ 87 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; requires cross-check against Shlokam"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

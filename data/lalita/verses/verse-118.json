@@ -6,11 +6,11 @@
   "reading": {
     "devanagari": [
       "आत्मविद्या महाविद्या श्रीविद्या कामसेविता ।",
-      "श्रीषोडशाक्षरीविद्या त्रिकूटा कामकोटिका ॥ ११८ ॥"
+      "श्री-षोडशाक्षरी-विद्या त्रिकूटा कामकोटिका ॥ ११८ ॥"
     ],
     "iast": [
       "ātmavidyā mahāvidyā śrīvidyā kāmasevitā ।",
-      "śrīṣoḍaśākṣarīvidyā trikūṭā kāmakoṭikā ॥ 118 ॥"
+      "śrī-ṣoḍaśākṣarī-vidyā trikūṭā kāmakoṭikā ॥ 118 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

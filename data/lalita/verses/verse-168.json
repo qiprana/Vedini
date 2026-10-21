@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "तत्त्वाधिका तत्त्वमयी तत्त्वमर्थस्वरूपिणी ।",
-      "सामगानप्रिया सौम्या सदाशिवकुटुम्बिनी ॥ १६८ ॥"
+      "तत्त्वाधिका तत्त्वमयी तत्त्वमर्थ-स्वरूपिणी ।",
+      "सामगानप्रिया सौम्या सदाशिव-कुटुम्बिनी ॥ १६८ ॥"
     ],
     "iast": [
-      "tattvādhikā tattvamayī tattvamarthasvarūpiṇī ।",
-      "sāmagānapriyā saumyā sadāśivakuṭumbinī ॥ 168 ॥"
+      "tattvādhikā tattvamayī tattvamartha-svarūpiṇī ।",
+      "sāmagānapriyā saumyā sadāśiva-kuṭumbinī ॥ 168 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

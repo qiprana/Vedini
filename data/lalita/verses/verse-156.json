@@ -5,11 +5,11 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "प्राणेश्वरी प्राणदात्री पञ्चाशत्पीठरूपिणी ।",
-      "विशृङ्खला विविक्तस्था वीरमाता वियत्प्रसूः ॥ १५६ ॥"
+      "प्राणेश्वरी प्राणदात्री पञ्चाशत्पीठ-रूपिणी ।",
+      "विश‍ृङ्खला विविक्तस्था वीरमाता वियत्प्रसूः ॥ १५६ ॥"
     ],
     "iast": [
-      "prāṇeśvarī prāṇadātrī pañcāśatpīṭharūpiṇī ।",
+      "prāṇeśvarī prāṇadātrī pañcāśatpīṭha-rūpiṇī ।",
       "viśṛṅkhalā viviktasthā vīramātā viyatprasūḥ ॥ 156 ॥"
     ]
   },
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

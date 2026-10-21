@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "checked_against_shlokam",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
       "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
-      "role": "Primary Sanskrit and IAST reading; verse 101"
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

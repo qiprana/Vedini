@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "परं ज्योतिः परं धाम परमाणुः परात्परा ।",
-      "पाशहस्ता पाशहन्त्री परमन्त्रविभेदिनी ॥ १५३ ॥"
+      "परंज्योतिः परंधाम परमाणुः परात्परा ।",
+      "पाशहस्ता पाशहन्त्री परमन्त्र-विभेदिनी ॥ १५३ ॥"
     ],
     "iast": [
-      "paraṃ jyotiḥ paraṃ dhāma paramāṇuḥ parātparā ।",
-      "pāśahastā pāśahantrī paramantravibhedinī ॥ 153 ॥"
+      "paraṃjyotiḥ paraṃdhāma paramāṇuḥ parātparā ।",
+      "pāśahastā pāśahantrī paramantra-vibhedinī ॥ 153 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

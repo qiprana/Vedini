@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "नित्यक्लिन्ना निरुपमा निर्वाणसुखदायिनी ।",
-      "नित्याषोडशिकारूपा श्रीकण्ठार्धशरीरिणी ॥ ८५ ॥"
+      "नित्यक्लिन्ना निरुपमा निर्वाण-सुख-दायिनी ।",
+      "नित्या-षोडशिका-रूपा श्रीकण्ठार्ध-शरीरिणी ॥ ८५ ॥"
     ],
     "iast": [
-      "nityaklinnā nirupamā nirvāṇasukhadāyinī ।",
-      "nityāṣoḍaśikārūpā śrīkaṇṭhārdhaśarīriṇī ॥ 85 ॥"
+      "nityaklinnā nirupamā nirvāṇa-sukha-dāyinī ।",
+      "nityā-ṣoḍaśikā-rūpā śrīkaṇṭhārdha-śarīriṇī ॥ 85 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; requires cross-check against Shlokam"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

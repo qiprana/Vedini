@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "अनाहताब्जनिलया श्यामाभा वदनद्वया ।",
-      "दंष्ट्रोज्ज्वलाऽक्षमालादिधरा रुधिरसंस्थिता ॥ १०० ॥"
+      "अनाहताब्ज-निलया श्यामाभा वदनद्वया ।",
+      "दंष्ट्रोज्ज्वलाऽक्ष-मालादि-धरा रुधिरसंस्थिता ॥ १०० ॥"
     ],
     "iast": [
-      "anāhatābjanilayā śyāmābhā vadanadvayā ।",
-      "daṃṣṭrojjvalā’kṣamālādidharā rudhirasaṃsthitā ॥ 100 ॥"
+      "anāhatābja-nilayā śyāmābhā vadanadvayā ।",
+      "daṃṣṭrojjvalā’kṣa-mālādi-dharā rudhirasaṃsthitā ॥ 100 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

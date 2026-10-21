@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "मदघूर्णितरक्ताक्षी मदपाटलगण्डभूः ।",
-      "चन्दनद्र वदिग्धाङ्गी चाम्पेयकुसुमप्रिया ॥ ९२ ॥"
+      "मदघूर्णित-रक्ताक्षी मदपाटल-गण्डभूः ।",
+      "चन्दन-द्रव-दिग्धाङ्गी चाम्पेय-कुसुम-प्रिया ॥ ९२ ॥"
     ],
     "iast": [
-      "madaghūrṇitaraktākṣī madapāṭalagaṇḍabhūḥ ।",
-      "candanadra vadigdhāṅgī cāmpeyakusumapriyā ॥ 92 ॥"
+      "madaghūrṇita-raktākṣī madapāṭala-gaṇḍabhūḥ ।",
+      "candana-drava-digdhāṅgī cāmpeya-kusuma-priyā ॥ 92 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; requires cross-check against Shlokam"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

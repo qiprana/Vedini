@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "सर्वोपाधिविनिर्मुक्ता सदाशिवपतिव्रता ।",
-      "सम्प्रदायेश्वरी साध्वी गुरुमण्डलरूपिणी ॥ १३८ ॥"
+      "सर्वोपाधि-विनिर्मुक्ता सदाशिव-पतिव्रता ।",
+      "सम्प्रदायेश्वरी साध्वी गुरुमण्डल-रूपिणी ॥ १३८ ॥"
     ],
     "iast": [
-      "sarvopādhivinirmuktā sadāśivapativratā ।",
-      "sampradāyeśvarī sādhvī gurumaṇḍalarūpiṇī ॥ 138 ॥"
+      "sarvopādhi-vinirmuktā sadāśiva-pativratā ।",
+      "sampradāyeśvarī sādhvī gurumaṇḍala-rūpiṇī ॥ 138 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

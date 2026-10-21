@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "त्र्\\! यक्षरी दिव्यगन्धाढ्या सिन्दूरतिलकाञ्चिता ।",
-      "उमा शैलेन्द्र तनया गौरी गन्धर्वसेविता ॥ १२६ ॥"
+      "त्र्यक्षरी दिव्य-गन्धाढ्या सिन्दूर-तिलकाञ्चिता ।",
+      "उमा शैलेन्द्रतनया गौरी गन्धर्व-सेविता ॥ १२६ ॥"
     ],
     "iast": [
-      "tr\\! yakṣarī divyagandhāḍhyā sindūratilakāñcitā ।",
-      "umā śailendra tanayā gaurī gandharvasevitā ॥ 126 ॥"
+      "tryakṣarī divya-gandhāḍhyā sindūra-tilakāñcitā ।",
+      "umā śailendratanayā gaurī gandharva-sevitā ॥ 126 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

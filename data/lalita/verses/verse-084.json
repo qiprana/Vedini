@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "सद्यःप्रसादिनी विश्वसाक्षिणी साक्षिवर्जिता ।",
-      "षडङ्गदेवतायुक्ता षाड्गुण्यपरिपूरिता ॥ ८४ ॥"
+      "सद्यःप्रसादिनी विश्व-साक्षिणी साक्षिवर्जिता ।",
+      "षडङ्गदेवता-युक्ता षाड्गुण्य-परिपूरिता ॥ ८४ ॥"
     ],
     "iast": [
-      "sadyaḥprasādinī viśvasākṣiṇī sākṣivarjitā ।",
-      "ṣaḍaṅgadevatāyuktā ṣāḍguṇyaparipūritā ॥ 84 ॥"
+      "sadyaḥprasādinī viśva-sākṣiṇī sākṣivarjitā ।",
+      "ṣaḍaṅgadevatā-yuktā ṣāḍguṇya-paripūritā ॥ 84 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; requires cross-check against Shlokam"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

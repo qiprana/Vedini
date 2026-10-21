@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "अग्रगण्याऽचिन्तरूपा कलिकल्मषनाशिनी ।",
-      "कात्यायनी कालहन्त्री कमलाक्षनिषेविता ॥ ११३ ॥"
+      "अग्रगण्याऽचिन्त्यरूपा कलिकल्मष-नाशिनी ।",
+      "कात्यायनी कालहन्त्री कमलाक्ष-निषेविता ॥ ११३ ॥"
     ],
     "iast": [
-      "agragaṇyā’cintarūpā kalikalmaṣanāśinī ।",
-      "kātyāyanī kālahantrī kamalākṣaniṣevitā ॥ 113 ॥"
+      "agragaṇyā’cintyarūpā kalikalmaṣa-nāśinī ।",
+      "kātyāyanī kālahantrī kamalākṣa-niṣevitā ॥ 113 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

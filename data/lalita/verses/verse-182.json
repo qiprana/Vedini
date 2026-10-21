@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "आबालगोपविदिता सर्वानुल्लङ्घ्यशासना ।",
-      "श्रीचक्रराजनिलया श्रीमत्त्रिपुरसुन्दरी ॥ १८२ ॥"
+      "आबाल-गोप-विदिता सर्वानुल्लङ्घ्य-शासना ।",
+      "श्रीचक्रराज-निलया श्रीमत्-त्रिपुरसुन्दरी ॥ १८२ ॥"
     ],
     "iast": [
-      "ābālagopaviditā sarvānullaṅghyaśāsanā ।",
-      "śrīcakrarājanilayā śrīmattripurasundarī ॥ 182 ॥"
+      "ābāla-gopa-viditā sarvānullaṅghya-śāsanā ।",
+      "śrīcakrarāja-nilayā śrīmat-tripurasundarī ॥ 182 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

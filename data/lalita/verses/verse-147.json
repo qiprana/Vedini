@@ -5,11 +5,11 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "स्वर्गापवर्गदा शुद्धा जपापुष्पनिभाकृतिः ।",
+      "स्वर्गापवर्गदा शुद्धा जपापुष्प-निभाकृतिः ।",
       "ओजोवती द्युतिधरा यज्ञरूपा प्रियव्रता ॥ १४७ ॥"
     ],
     "iast": [
-      "svargāpavargadā śuddhā japāpuṣpanibhākṛtiḥ ।",
+      "svargāpavargadā śuddhā japāpuṣpa-nibhākṛtiḥ ।",
       "ojovatī dyutidharā yajñarūpā priyavratā ॥ 147 ॥"
     ]
   },
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

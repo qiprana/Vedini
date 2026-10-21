@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "मिथ्याजगदधिष्ठाना मुक्तिदा मुक्तिरूपिणी ।",
+      "मिथ्या-जगदधिष्ठाना मुक्तिदा मुक्तिरूपिणी ।",
       "लास्यप्रिया लयकरी लज्जा रम्भादिवन्दिता ॥ १४२ ॥"
     ],
     "iast": [
-      "mithyājagadadhiṣṭhānā muktidā muktirūpiṇī ।",
-      "lāsyapriyā layakarī lajjā rambhādivanditā ॥ 142 ॥"
+      "mithyā-jagadadhiṣṭhānā muktidā muktirūpiṇī ।",
+      "lāsyapriyā layakrī lajjā rambhādivanditā ॥ 142 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

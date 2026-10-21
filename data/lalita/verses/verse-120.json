@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "हृदयस्था रविप्रख्या त्रिकोणान्तरदीपिका ।",
-      "दाक्षायणी दैत्यहन्त्री दक्षयज्ञविनाशिनी ॥ १२० ॥"
+      "हृदयस्था रविप्रख्या त्रिकोणान्तर-दीपिका ।",
+      "दाक्षायणी दैत्यहन्त्री दक्षयज्ञ-विनाशिनी ॥ १२० ॥"
     ],
     "iast": [
-      "hṛdayasthā raviprakhyā trikoṇāntaradīpikā ।",
-      "dākṣāyaṇī daityahantrī dakṣayajñavināśinī ॥ 120 ॥"
+      "hṛdayasthā raviprakhyā trikoṇāntara-dīpikā ।",
+      "dākṣāyaṇī daityahantrī dakṣayajña-vināśinī ॥ 120 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

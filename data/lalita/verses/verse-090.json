@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "चिच्छक्तिश्चेतनारूपा जडशक्तिर्जडात्मिका ।",
-      "गायत्री व्याहृतिः सन्ध्या द्विजवृन्दनिषेविता ॥ ९० ॥"
+      "चिच्छक्तिश् चेतनारूपा जडशक्तिर् जडात्मिका ।",
+      "गायत्री व्याहृतिः सन्ध्या द्विजबृन्द-निषेविता ॥ ९० ॥"
     ],
     "iast": [
-      "cicchaktiścetanārūpā jaḍaśaktirjaḍātmikā ।",
-      "gāyatrī vyāhṛtiḥ sandhyā dvijavṛndaniṣevitā ॥ 90 ॥"
+      "cicchaktiś cetanārūpā jaḍaśaktir jaḍātmikā ।",
+      "gāyatrī vyāhṛtiḥ sandhyā dvijabṛnda-niṣevitā ॥ 90 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; requires cross-check against Shlokam"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

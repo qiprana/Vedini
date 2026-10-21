@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "धर्माधारा धनाध्यक्षा धनधान्यविवर्धिनी ।",
-      "विप्रप्रिया विप्ररूपा विश्वभ्रमणकारिणी ॥ १६५ ॥"
+      "धर्माधारा धनाध्यक्षा धनधान्य-विवर्धिनी ।",
+      "विप्रप्रिया विप्ररूपा विश्वभ्रमण-कारिणी ॥ १६५ ॥"
     ],
     "iast": [
-      "dharmādhārā dhanādhyakṣā dhanadhānyavivardhinī ।",
-      "viprapriyā viprarūpā viśvabhramaṇakāriṇī ॥ 165 ॥"
+      "dharmādhārā dhanādhyakṣā dhanadhānya-vivardhinī ।",
+      "viprapriyā viprarūpā viśvabhramaṇa-kāriṇī ॥ 165 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

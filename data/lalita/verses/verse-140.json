@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "स्वतन्त्रा सर्वतन्त्रेशी दक्षिणामूर्तिरूपिणी ।",
-      "सनकादिसमाराध्या शिवज्ञानप्रदायिनी ॥ १४० ॥"
+      "स्वतन्त्रा सर्वतन्त्रेशी दक्षिणामूर्ति-रूपिणी ।",
+      "सनकादि-समाराध्या शिवज्ञान-प्रदायिनी ॥ १४० ॥"
     ],
     "iast": [
-      "svatantrā sarvatantreśī dakṣiṇāmūrtirūpiṇī ।",
-      "sanakādisamārādhyā śivajñānapradāyinī ॥ 140 ॥"
+      "svatantrā sarvatantreśī dakṣiṇāmūrti-rūpiṇī ।",
+      "sanakādi-samārādhyā śivajñāna-pradāyinī ॥ 140 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

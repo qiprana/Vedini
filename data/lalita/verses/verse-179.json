@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "दशमुद्रा समाराध्या त्रिपुराश्रीवशङ्करी ।",
-      "ज्ञानमुद्रा ज्ञानगम्या ज्ञानज्ञेयस्वरूपिणी ॥ १७९ ॥"
+      "दशमुद्रा-समाराध्या त्रिपुराश्री-वशङ्करी ।",
+      "ज्ञानमुद्रा ज्ञानगम्या ज्ञानज्ञेय-स्वरूपिणी ॥ १७९ ॥"
     ],
     "iast": [
-      "daśamudrā samārādhyā tripurāśrīvaśaṅkarī ।",
-      "jñānamudrā jñānagamyā jñānajñeyasvarūpiṇī ॥ 179 ॥"
+      "daśamudrā-samārādhyā tripurāśrī-vaśaṅkarī ।",
+      "jñānamudrā jñānagamyā jñānajñeya-svarūpiṇī ॥ 179 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

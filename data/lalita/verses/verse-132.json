@@ -5,11 +5,11 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "अन्नदा वसुदा वृद्धा ब्रह्मात्मैक्यस्वरूपिणी ।",
+      "अन्नदा वसुदा वृद्धा ब्रह्मात्मैक्य-स्वरूपिणी ।",
       "बृहती ब्राह्मणी ब्राह्मी ब्रह्मानन्दा बलिप्रिया ॥ १३२ ॥"
     ],
     "iast": [
-      "annadā vasudā vṛddhā brahmātmaikyasvarūpiṇī ।",
+      "annadā vasudā vṛddhā brahmātmaikya-svarūpiṇī ।",
       "bṛhatī brāhmaṇī brāhmī brahmānandā balipriyā ॥ 132 ॥"
     ]
   },
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

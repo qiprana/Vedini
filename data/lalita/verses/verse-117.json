@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "महाकैलासनिलया मृणालमृदुदोर्लता ।",
-      "महनीया दयामूर्तिर्महासाम्राज्यशालिनी ॥ ११७ ॥"
+      "महाकैलास-निलया मृणाल-मृदु-दोर्लता ।",
+      "महनीया दयामूर्तिर् महासाम्राज्य-शालिनी ॥ ११७ ॥"
     ],
     "iast": [
-      "mahākailāsanilayā mṛṇālamṛdudorlatā ।",
-      "mahanīyā dayāmūrtirmahāsāmrājyaśālinī ॥ 117 ॥"
+      "mahākailāsa-nilayā mṛṇāla-mṛdu-dorlatā ।",
+      "mahanīyā dayāmūrtir mahāsāmrājya-śālinī ॥ 117 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

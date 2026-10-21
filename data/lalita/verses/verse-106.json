@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "मूलाधाराम्बुजारूढा पञ्चवक्त्राऽस्थिसंस्थिता ।",
-      "अङ्कुशादिप्रहरणा वरदादिनिषेविता ॥ १०६ ॥"
+      "मूलाधाराम्बुजारूढा पञ्च-वक्त्राऽस्थि-संस्थिता ।",
+      "अङ्कुशादि-प्रहरणा वरदादि-निषेविता ॥ १०६ ॥"
     ],
     "iast": [
-      "mūlādhārāmbujārūḍhā pañcavaktrā’sthisaṃsthitā ।",
-      "aṅkuśādipraharaṇā varadādiniṣevitā ॥ 106 ॥"
+      "mūlādhārāmbujārūḍhā pañca-vaktrā’sthi-saṃsthitā ।",
+      "aṅkuśādi-praharaṇā varadādi-niṣevitā ॥ 106 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

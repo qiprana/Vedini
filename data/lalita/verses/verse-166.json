@@ -6,11 +6,11 @@
   "reading": {
     "devanagari": [
       "विश्वग्रासा विद्रुमाभा वैष्णवी विष्णुरूपिणी ।",
-      "अयोनिर्योनिनिलया कूटस्था कुलरूपिणी ॥ १६६ ॥"
+      "अयोनिर् योनिनिलया कूटस्था कुलरूपिणी ॥ १६६ ॥"
     ],
     "iast": [
       "viśvagrāsā vidrumābhā vaiṣṇavī viṣṇurūpiṇī ।",
-      "ayoniryoninilayā kūṭasthā kularūpiṇī ॥ 166 ॥"
+      "ayonir yoninilayā kūṭasthā kularūpiṇī ॥ 166 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

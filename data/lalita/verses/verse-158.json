@@ -6,11 +6,11 @@
   "reading": {
     "devanagari": [
       "छन्दःसारा शास्त्रसारा मन्त्रसारा तलोदरी ।",
-      "उदारकीर्तिरुद्दामवैभवा वर्णरूपिणी ॥ १५८ ॥"
+      "उदारकीर्तिर् उद्दामवैभवा वर्णरूपिणी ॥ १५८ ॥"
     ],
     "iast": [
       "chandaḥsārā śāstrasārā mantrasārā talodarī ।",
-      "udārakīrtiruddāmavaibhavā varṇarūpiṇī ॥ 158 ॥"
+      "udārakīrtir uddāmavaibhavā varṇarūpiṇī ॥ 158 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

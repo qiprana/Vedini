@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "मुद्गौदनासक्तचित्ता साकिन्यम्बास्वरूपिणी ।",
-      "आज्ञाचक्राब्जनिलया शुक्लवर्णा षडानना ॥ १०७ ॥"
+      "मुद्गौदनासक्त-चित्ता साकिन्यम्बा-स्वरूपिणी ।",
+      "आज्ञा-चक्राब्ज-निलया शुक्लवर्णा षडानना ॥ १०७ ॥"
     ],
     "iast": [
-      "mudgaudanāsaktacittā sākinyambāsvarūpiṇī ।",
-      "ājñācakrābjanilayā śuklavarṇā ṣaḍānanā ॥ 107 ॥"
+      "mudgaudanāsakta-cittā sākinyambā-svarūpiṇī ।",
+      "ājñā-cakrābja-nilayā śuklavarṇā ṣaḍānanā ॥ 107 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

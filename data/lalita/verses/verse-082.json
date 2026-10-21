@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "कामेश्वरप्राणनाडी कृतज्ञा कामपूजिता ।",
-      "शृङ्गाररससम्पूर्णा जया जालन्धरस्थिता ॥ ८२ ॥"
+      "कामेश्वर-प्राणनाडी कृतज्ञा कामपूजिता ।",
+      "श‍ृङ्गार-रस-सम्पूर्णा जया जालन्धर-स्थिता ॥ ८२ ॥"
     ],
     "iast": [
-      "kāmeśvaraprāṇanāḍī kṛtajñā kāmapūjitā ।",
-      "śṛṅgārarasasampūrṇā jayā jālandharasthitā ॥ 82 ॥"
+      "kāmeśvara-prāṇanāḍī kṛtajñā kāmapūjitā ।",
+      "śṛṅgāra-rasa-sampūrṇā jayā jālandhara-sthitā ॥ 82 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; requires cross-check against Shlokam"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "क्लीङ्कारी केवला गुह्या कैवल्यपददायिनी ।",
-      "त्रिपुरा त्रिजगद्वन्द्या त्रिमूर्तिस्त्रिदशेश्वरी ॥ १२५ ॥"
+      "क्लींकारी केवला गुह्या कैवल्य-पददायिनी ।",
+      "त्रिपुरा त्रिजगद्वन्द्या त्रिमूर्तिस् त्रिदशेश्वरी ॥ १२५ ॥"
     ],
     "iast": [
-      "klīṅkārī kevalā guhyā kaivalyapadadāyinī ।",
-      "tripurā trijagadvandyā trimūrtistridaśeśvarī ॥ 125 ॥"
+      "klīṃkārī kevalā guhyā kaivalya-padadāyinī ।",
+      "tripurā trijagadvandyā trimūrtis tridaśeśvarī ॥ 125 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

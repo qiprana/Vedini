@@ -5,11 +5,11 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "स्तोत्रप्रिया स्तुतिमती श्रुतिसंस्तुतवैभवा ।",
+      "स्तोत्रप्रिया स्तुतिमती श्रुति-संस्तुत-वैभवा ।",
       "मनस्विनी मानवती महेशी मङ्गलाकृतिः ॥ १७२ ॥"
     ],
     "iast": [
-      "stotrapriyā stutimatī śrutisaṃstutavaibhavā ।",
+      "stotrapriyā stutimatī śruti-saṃstuta-vaibhavā ।",
       "manasvinī mānavatī maheśī maṅgalākṛtiḥ ॥ 172 ॥"
     ]
   },
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }

@@ -5,11 +5,11 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "मूर्ताऽमूर्ताऽनित्यतृप्ता मुनिमानसहंसिका ।",
+      "मूर्ताऽमूर्ताऽनित्यतृप्ता मुनिमानस-हंसिका ।",
       "सत्यव्रता सत्यरूपा सर्वान्तर्यामिनी सती ॥ १५४ ॥"
     ],
     "iast": [
-      "mūrtā’mūrtā’nityatṛptā munimānasahaṃsikā ।",
+      "mūrtā’mūrtā’nityatṛptā munimānasa-haṃsikā ।",
       "satyavratā satyarūpā sarvāntaryāminī satī ॥ 154 ॥"
     ]
   },
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "source_text_review_pending",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit spelling, hyphens, IAST and punctuation"
     }
   ]
 }
