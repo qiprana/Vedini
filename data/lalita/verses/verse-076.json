@@ -1,0 +1,39 @@
+{
+  "id": "lalita-76",
+  "verse_number": 76,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "क्षेत्रस्वरूपा क्षेत्रेशी क्षेत्र-क्षेत्रज्ञ-पालिनी ।",
+      "क्षयवृद्धि-विनिर्मुक्ता क्षेत्रपाल-समर्चिता ७६ ॥"
+    ],
+    "iast": [
+      "kṣetrasvarūpā kṣetreśī kṣetra-kṣetrajña-pālinī ।",
+      "kṣayavṛddhi-vinirmuktā kṣetrapāla-samarcitā 76 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "She guards the field and knower of the field, beyond growth and decay.",
+    "kannada": "ಕ್ಷೇತ್ರ ಮತ್ತು ಕ್ಷೇತ್ರಜ್ಞನ ರಕ್ಷಕಿಯಾದ ಆಕೆ ವೃದ್ಧಿಕ್ಷಯಗಳಾಚೆ ಇದ್ದಾಳೆ."
+  },
+  "names": [],
+  "study": {
+    "traditional_interpretation": {
+      "en": null,
+      "kn": null
+    }
+  },
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "editorial_draft",
+  "reading_note": "Individual names and traditional commentary pending review.",
+  "sources": [
+    {
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "source"
+    }
+  ]
+}
