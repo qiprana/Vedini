@@ -449,17 +449,17 @@ function switchLanguage(kn){
 async function init(){
  const paths=["lalita/dhyana.json","lalita/names-interpretations-draft.json","lalita/study-names-011-018.json","lalita/study-names-019-026.json","lalita/study-dhyana-01-02.json","lalita/study-dhyana-03-04.json","lalita/study-verses-001-010.json",...Array.from({length:183},(_,i)=>"lalita/verses/verse-"+String(i+1).padStart(3,"0")+".json")];
  try{
- const files=await Promise.all(paths.map(fetchJSON));
+ const [files,briefNames]=await Promise.all([Promise.all(paths.map(fetchJSON)),fetchJSON("lalita/brief-names-draft.json")]);
  dhyana=files[0];
  const old=files[1],newNames=[...files[2],...files[3]];
  nameData=Object.fromEntries(old.map(v=>[v.number,v]));
  newNames.forEach(x=>{nameData[x.number]={...(nameData[x.number]||{}),...x}});
  dhyanaData=Object.fromEntries([...files[4],...files[5]].map(x=>[x.verse_number,x]));
  verseData=Object.fromEntries(files[6].map(x=>[x.verse_number,x]));
- verses=files.slice(7);
+ verses=files.slice(7); const byVerse=new Map(); briefNames.forEach(n=>{if(!byVerse.has(n.verse_number))byVerse.set(n.verse_number,[]);byVerse.get(n.verse_number).push(n);});verses.forEach(v=>{if(!(v.names||[]).length)v.names=(byVerse.get(v.verse_number)||[]).map(n=>({...n,display_devanagari:n.sanskrit,display_iast:n.iast}));});
  let index=0;
  verses.forEach(v=>{if(v.study?.traditional_interpretation)verseData[v.verse_number]=v.study;(v.names||[]).forEach(n=>{n.studyNumber=++index;if(n.essential_meaning&&n.traditional_interpretation)nameData[n.studyNumber]={...(nameData[n.studyNumber]||{}),...n};});});
- if(index<111)throw new Error("Expected at least 111 names across the loaded verses; found "+index);
+ if(index<111)throw new Error("At least the first 111 names are expected; found "+index);
  initPractice();const initial=loadInitialLocation();render();if(initial)scrollToElement(initial);
  }catch(err){
  const n=$("#result-note");if(n)n.textContent="Unable to load study content: "+err.message;
