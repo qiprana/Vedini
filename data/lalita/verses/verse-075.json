@@ -1,0 +1,39 @@
+{
+  "id": "lalita-75",
+  "verse_number": 75,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "विश्वाधिका वेदवेद्या विन्ध्याचल-निवासिनी ।",
+      "विधात्री वेदजननी विष्णुमाया विलासिनी ७५ ॥"
+    ],
+    "iast": [
+      "viśvādhikā vedavedyā vindhyācala-nivāsinī ।",
+      "vidhātrī vedajananī viṣṇumāyā vilāsinī 75 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "She transcends the world, is known through the Vedas and dwells in Vindhya.",
+    "kannada": "ಜಗತ್ತನ್ನು ಮೀರುವ ಆಕೆ ವೇದಗಳಿಂದ ಅರಿಯಲ್ಪಡುವ ವಿಂಧ್ಯನಿವಾಸಿನಿಯಾಗಿದ್ದಾಳೆ."
+  },
+  "names": [],
+  "study": {
+    "traditional_interpretation": {
+      "en": null,
+      "kn": null
+    }
+  },
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "editorial_draft",
+  "reading_note": "Individual names and traditional commentary pending review.",
+  "sources": [
+    {
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "source"
+    }
+  ]
+}
