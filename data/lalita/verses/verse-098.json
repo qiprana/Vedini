@@ -1,0 +1,32 @@
+{
+  "id": "lalita-098",
+  "verse_number": 98,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "विशुद्धिचक्रनिलयाऽऽरक्तवर्णा त्रिलोचना ।",
+      "खट्वाङ्गादिप्रहरणा वदनैकसमन्विता ॥ ९८ ॥"
+    ],
+    "iast": [
+      "viśuddhicakranilayā’’raktavarṇā trilocanā ।",
+      "khaṭvāṅgādipraharaṇā vadanaikasamanvitā ॥ 98 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; requires cross-check against Shlokam"
+    }
+  ]
+}
