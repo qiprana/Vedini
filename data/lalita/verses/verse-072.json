@@ -1,0 +1,39 @@
+{
+  "id": "lalita-72",
+  "verse_number": 72,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "रमा राकेन्दुवदना रतिरूपा रतिप्रिया ।",
+      "रक्षाकरी राक्षसघ्नी रामा रमणलम्पटा ७२ ॥"
+    ],
+    "iast": [
+      "ramā rākenduvadanā ratirūpā ratipriyā ।",
+      "rakṣākarī rākṣasaghnī rāmā ramaṇalampaṭā 72 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "She is moon-faced, loving and protective, destroyer of evil.",
+    "kannada": "ಚಂದ್ರಮುಖಿಯಾದ ಆಕೆ ಪ್ರೀತಿ ಮತ್ತು ರಕ್ಷಣೆಯನ್ನು ನೀಡಿ ದುಷ್ಟಶಕ್ತಿಗಳನ್ನು ಸಂಹರಿಸುತ್ತಾಳೆ."
+  },
+  "names": [],
+  "study": {
+    "traditional_interpretation": {
+      "en": null,
+      "kn": null
+    }
+  },
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "editorial_draft",
+  "reading_note": "Individual names and traditional commentary pending review.",
+  "sources": [
+    {
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "source"
+    }
+  ]
+}
