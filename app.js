@@ -447,7 +447,7 @@ function switchLanguage(kn){
  render();
 }
 async function init(){
- const paths=["lalita/dhyana.json","lalita/names-interpretations-draft.json","lalita/study-names-011-018.json","lalita/study-names-019-026.json","lalita/study-dhyana-01-02.json","lalita/study-dhyana-03-04.json","lalita/study-verses-001-010.json",...Array.from({length:40},(_,i)=>"lalita/verses/verse-"+String(i+1).padStart(3,"0")+".json")];
+ const paths=["lalita/dhyana.json","lalita/names-interpretations-draft.json","lalita/study-names-011-018.json","lalita/study-names-019-026.json","lalita/study-dhyana-01-02.json","lalita/study-dhyana-03-04.json","lalita/study-verses-001-010.json",...Array.from({length:80},(_,i)=>"lalita/verses/verse-"+String(i+1).padStart(3,"0")+".json")];
  try{
  const files=await Promise.all(paths.map(fetchJSON));
  dhyana=files[0];
