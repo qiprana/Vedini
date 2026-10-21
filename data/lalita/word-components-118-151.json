@@ -1,0 +1,629 @@
+{
+  "scope": "Ślokas 42–45, nāmas 118–151",
+  "entries": [
+    {
+      "number": 118,
+      "components": [
+        {
+          "dev": "भक्ति",
+          "iast": "bhakti",
+          "en": "Devotion",
+          "kn": "ಭಕ್ತಿ"
+        },
+        {
+          "dev": "प्रिया",
+          "iast": "priyā",
+          "en": "Fond of",
+          "kn": "ಪ್ರೀತಿಸುವವಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 119,
+      "components": [
+        {
+          "dev": "भक्ति",
+          "iast": "bhakti",
+          "en": "Devotion",
+          "kn": "ಭಕ್ತಿ"
+        },
+        {
+          "dev": "गम्या",
+          "iast": "gamyā",
+          "en": "Accessible through",
+          "kn": "ಮೂಲಕ ಅರಿಯಬಹುದಾದವಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 120,
+      "components": [
+        {
+          "dev": "भक्ति",
+          "iast": "bhakti",
+          "en": "Devotion",
+          "kn": "ಭಕ್ತಿ"
+        },
+        {
+          "dev": "वश्या",
+          "iast": "vaśyā",
+          "en": "Moved by; responsive to",
+          "kn": "ಒಲಿಯುವವಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 121,
+      "components": [
+        {
+          "dev": "भय",
+          "iast": "bhaya",
+          "en": "Fear",
+          "kn": "ಭಯ"
+        },
+        {
+          "dev": "अपहा",
+          "iast": "apahā",
+          "en": "Remover",
+          "kn": "ನಿವಾರಿಸುವವಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 122,
+      "components": [
+        {
+          "dev": "शम्भु",
+          "iast": "śambhu",
+          "en": "Śambhu (Śiva)",
+          "kn": "ಶಂಭು (ಶಿವ)"
+        },
+        {
+          "dev": "ई",
+          "iast": "ī",
+          "en": "His feminine divine counterpart",
+          "kn": "ಅವನ ದೇವೀಶಕ್ತಿ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 123,
+      "components": [
+        {
+          "dev": "शारदा",
+          "iast": "śāradā",
+          "en": "Śāradā (Sarasvatī)",
+          "kn": "ಶಾರದೆ (ಸರಸ್ವತಿ)"
+        },
+        {
+          "dev": "आराध्या",
+          "iast": "ārādhyā",
+          "en": "Worshipped by",
+          "kn": "ಆರಾಧಿಸಲ್ಪಡುವವಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 124,
+      "components": [
+        {
+          "dev": "शर्व",
+          "iast": "śarva",
+          "en": "Śarva (Śiva)",
+          "kn": "ಶರ್ವ (ಶಿವ)"
+        },
+        {
+          "dev": "आणी",
+          "iast": "āṇī",
+          "en": "His divine consort",
+          "kn": "ಅವನ ಶಕ್ತಿ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 125,
+      "components": [
+        {
+          "dev": "शर्म",
+          "iast": "śarma",
+          "en": "Happiness; peace",
+          "kn": "ಸುಖ; ಶಾಂತಿ"
+        },
+        {
+          "dev": "दायिनी",
+          "iast": "dāyinī",
+          "en": "Bestower",
+          "kn": "ನೀಡುವವಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 126,
+      "components": [
+        {
+          "dev": "शङ्कर",
+          "iast": "śaṅkara",
+          "en": "Śaṅkara (Śiva)",
+          "kn": "ಶಂಕರ (ಶಿವ)"
+        },
+        {
+          "dev": "ई",
+          "iast": "ī",
+          "en": "Feminine divine power",
+          "kn": "ದೇವೀಶಕ್ತಿ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 127,
+      "components": [
+        {
+          "dev": "श्री",
+          "iast": "śrī",
+          "en": "Prosperity; auspiciousness",
+          "kn": "ಶ್ರೀ; ಮಂಗಳ"
+        },
+        {
+          "dev": "करी",
+          "iast": "karī",
+          "en": "Bringing about",
+          "kn": "ಉಂಟುಮಾಡುವವಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 128,
+      "components": [
+        {
+          "dev": "साधु",
+          "iast": "sādhu",
+          "en": "Virtuous; good",
+          "kn": "ಸದ್ಗುಣ"
+        },
+        {
+          "dev": "ई",
+          "iast": "ī",
+          "en": "She who embodies this quality",
+          "kn": "ಈ ಗುಣದ ಸ್ವರೂಪಿಣಿ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 129,
+      "components": [
+        {
+          "dev": "शरत्",
+          "iast": "śarat",
+          "en": "Autumn",
+          "kn": "ಶರದೃತು"
+        },
+        {
+          "dev": "चन्द्र",
+          "iast": "candra",
+          "en": "Moon",
+          "kn": "ಚಂದ್ರ"
+        },
+        {
+          "dev": "निभ",
+          "iast": "nibha",
+          "en": "Resembling",
+          "kn": "ಹೋಲುವ"
+        },
+        {
+          "dev": "आनना",
+          "iast": "ānanā",
+          "en": "Faced",
+          "kn": "ಮುಖವುಳ್ಳವಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 130,
+      "components": [
+        {
+          "dev": "शात",
+          "iast": "śāta",
+          "en": "Slender; delicate",
+          "kn": "ಸೂಕ್ಷ್ಮ"
+        },
+        {
+          "dev": "उदरी",
+          "iast": "udarī",
+          "en": "Bellied or waisted",
+          "kn": "ಉದರವುಳ್ಳವಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 131,
+      "components": [
+        {
+          "dev": "शान्ति",
+          "iast": "śānti",
+          "en": "Peace",
+          "kn": "ಶಾಂತಿ"
+        },
+        {
+          "dev": "मती",
+          "iast": "matī",
+          "en": "Possessing",
+          "kn": "ಹೊಂದಿರುವವಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 132,
+      "components": [
+        {
+          "dev": "निर्",
+          "iast": "nir",
+          "en": "Without",
+          "kn": "ಇಲ್ಲದ"
+        },
+        {
+          "dev": "आधारा",
+          "iast": "ādhārā",
+          "en": "External support",
+          "kn": "ಹೊರಗಿನ ಆಧಾರ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 133,
+      "components": [
+        {
+          "dev": "निर्",
+          "iast": "nir",
+          "en": "Without",
+          "kn": "ರಹಿತ"
+        },
+        {
+          "dev": "अञ्जन",
+          "iast": "añjana",
+          "en": "Stain or taint",
+          "kn": "ಕಳಂಕ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 134,
+      "components": [
+        {
+          "dev": "निर्",
+          "iast": "nir",
+          "en": "Without",
+          "kn": "ರಹಿತ"
+        },
+        {
+          "dev": "लेप",
+          "iast": "lepa",
+          "en": "Stain; attachment",
+          "kn": "ಲೇಪ; ಅಂಟಿಕೆ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 135,
+      "components": [
+        {
+          "dev": "निर्",
+          "iast": "nir",
+          "en": "Without",
+          "kn": "ರಹಿತ"
+        },
+        {
+          "dev": "मल",
+          "iast": "mala",
+          "en": "Impurity",
+          "kn": "ಮಲಿನತೆ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 136,
+      "components": [
+        {
+          "dev": "नित्य",
+          "iast": "nitya",
+          "en": "Eternal",
+          "kn": "ನಿತ್ಯ"
+        },
+        {
+          "dev": "आ",
+          "iast": "ā",
+          "en": "Feminine adjectival ending",
+          "kn": "ಸ್ತ್ರೀಲಿಂಗ ರೂಪ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 137,
+      "components": [
+        {
+          "dev": "निर्",
+          "iast": "nir",
+          "en": "Without",
+          "kn": "ರಹಿತ"
+        },
+        {
+          "dev": "आकार",
+          "iast": "ākāra",
+          "en": "Form",
+          "kn": "ಆಕಾರ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 138,
+      "components": [
+        {
+          "dev": "निर्",
+          "iast": "nir",
+          "en": "Without",
+          "kn": "ರಹಿತ"
+        },
+        {
+          "dev": "आकुल",
+          "iast": "ākula",
+          "en": "Agitation or confusion",
+          "kn": "ಚಂಚಲತೆ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 139,
+      "components": [
+        {
+          "dev": "निर्",
+          "iast": "nir",
+          "en": "Beyond; without",
+          "kn": "ಮೀರಿದ"
+        },
+        {
+          "dev": "गुण",
+          "iast": "guṇa",
+          "en": "Qualities of nature",
+          "kn": "ಪ್ರಕೃತಿಯ ಗುಣಗಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 140,
+      "components": [
+        {
+          "dev": "निष्",
+          "iast": "niṣ",
+          "en": "Without",
+          "kn": "ರಹಿತ"
+        },
+        {
+          "dev": "कला",
+          "iast": "kalā",
+          "en": "Part or division",
+          "kn": "ಭಾಗ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 141,
+      "components": [
+        {
+          "dev": "शान्त",
+          "iast": "śānta",
+          "en": "Peaceful",
+          "kn": "ಶಾಂತ"
+        },
+        {
+          "dev": "आ",
+          "iast": "ā",
+          "en": "Feminine ending",
+          "kn": "ಸ್ತ್ರೀಲಿಂಗ ರೂಪ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 142,
+      "components": [
+        {
+          "dev": "निष्",
+          "iast": "niṣ",
+          "en": "Without",
+          "kn": "ರಹಿತ"
+        },
+        {
+          "dev": "काम",
+          "iast": "kāma",
+          "en": "Desire",
+          "kn": "ಆಸೆ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 143,
+      "components": [
+        {
+          "dev": "निर्",
+          "iast": "nir",
+          "en": "Without",
+          "kn": "ರಹಿತ"
+        },
+        {
+          "dev": "उपप्लव",
+          "iast": "upaplava",
+          "en": "Disturbance or calamity",
+          "kn": "ಕ್ಷೋಭೆ; ಆಪತ್ತು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 144,
+      "components": [
+        {
+          "dev": "नित्य",
+          "iast": "nitya",
+          "en": "Eternally",
+          "kn": "ನಿತ್ಯವೂ"
+        },
+        {
+          "dev": "मुक्ता",
+          "iast": "muktā",
+          "en": "Liberated",
+          "kn": "ಮುಕ್ತಳಾದವಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 145,
+      "components": [
+        {
+          "dev": "निर्",
+          "iast": "nir",
+          "en": "Without",
+          "kn": "ರಹಿತ"
+        },
+        {
+          "dev": "विकार",
+          "iast": "vikāra",
+          "en": "Change or modification",
+          "kn": "ಬದಲಾವಣೆ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 146,
+      "components": [
+        {
+          "dev": "निष्",
+          "iast": "niṣ",
+          "en": "Beyond; free from",
+          "kn": "ಮೀರಿದ"
+        },
+        {
+          "dev": "प्रपञ्च",
+          "iast": "prapañca",
+          "en": "Manifest multiplicity",
+          "kn": "ಪ್ರಪಂಚದ ವೈವಿಧ್ಯ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 147,
+      "components": [
+        {
+          "dev": "निर्",
+          "iast": "nir",
+          "en": "Without",
+          "kn": "ರಹಿತ"
+        },
+        {
+          "dev": "आश्रय",
+          "iast": "āśraya",
+          "en": "Dependence or support",
+          "kn": "ಆಶ್ರಯ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 148,
+      "components": [
+        {
+          "dev": "नित्य",
+          "iast": "nitya",
+          "en": "Ever",
+          "kn": "ಎಂದೆಂದಿಗೂ"
+        },
+        {
+          "dev": "शुद्धा",
+          "iast": "śuddhā",
+          "en": "Pure",
+          "kn": "ಶುದ್ಧಳಾದವಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 149,
+      "components": [
+        {
+          "dev": "नित्य",
+          "iast": "nitya",
+          "en": "Ever",
+          "kn": "ಎಂದೆಂದಿಗೂ"
+        },
+        {
+          "dev": "बुद्धा",
+          "iast": "buddhā",
+          "en": "Awakened or knowing",
+          "kn": "ಜ್ಞಾನಸ್ವರೂಪಿಣಿ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 150,
+      "components": [
+        {
+          "dev": "निर्",
+          "iast": "nir",
+          "en": "Without",
+          "kn": "ರಹಿತ"
+        },
+        {
+          "dev": "अवद्य",
+          "iast": "avadya",
+          "en": "Blame or fault",
+          "kn": "ದೋಷ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 151,
+      "components": [
+        {
+          "dev": "निर्",
+          "iast": "nir",
+          "en": "Without",
+          "kn": "ರಹಿತ"
+        },
+        {
+          "dev": "अन्तर",
+          "iast": "antara",
+          "en": "Interval or separation",
+          "kn": "ಅಂತರ; ವಿರಾಮ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    }
+  ]
+}
