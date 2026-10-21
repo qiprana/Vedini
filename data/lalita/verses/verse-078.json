@@ -1,0 +1,39 @@
+{
+  "id": "lalita-78",
+  "verse_number": 78,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "भक्तिमत्-कल्पलतिका पशुपाश-विमोचिनी ।",
+      "संहृताशेष-पाषण्डा सदाचार-प्रवर्तिका ७८ ॥"
+    ],
+    "iast": [
+      "bhaktimat-kalpalatikā paśupāśa-vimocinī ।",
+      "saṃhṛtāśeṣa-pāṣaṇḍā sadācāra-pravartikā 78 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "She frees beings from bondage and establishes right conduct.",
+    "kannada": "ಭಕ್ತರನ್ನು ಬಂಧನದಿಂದ ಮುಕ್ತಗೊಳಿಸಿ ಸದಾಚಾರವನ್ನು ಆಕೆ ಸ್ಥಾಪಿಸುತ್ತಾಳೆ."
+  },
+  "names": [],
+  "study": {
+    "traditional_interpretation": {
+      "en": null,
+      "kn": null
+    }
+  },
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "editorial_draft",
+  "reading_note": "Individual names and traditional commentary pending review.",
+  "sources": [
+    {
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "source"
+    }
+  ]
+}
