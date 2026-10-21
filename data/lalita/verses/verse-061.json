@@ -1,0 +1,39 @@
+{
+  "id": "lalita-61",
+  "verse_number": 61,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "पञ्च-प्रेतासनासीना पञ्चब्रह्म-स्वरूपिणी ।",
+      "चिन्मयी परमानन्दा विज्ञान-घनरूपिणी ६१ ॥"
+    ],
+    "iast": [
+      "pañca-pretāsanāsīnā pañcabrahma-svarūpiṇī ।",
+      "cinmayī paramānandā vijñāna-ghanarūpiṇī 61 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "She is pure consciousness, supreme bliss and the essence of five Brahmans.",
+    "kannada": "ಆಕೆ ಪಂಚಬ್ರಹ್ಮಸ್ವರೂಪಿಣಿಯೂ ಪರಮಾನಂದ ಚೈತನ್ಯಸ್ವರೂಪಿಣಿಯೂ ಆಗಿದ್ದಾಳೆ."
+  },
+  "names": [],
+  "study": {
+    "traditional_interpretation": {
+      "en": null,
+      "kn": null
+    }
+  },
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "editorial_draft",
+  "reading_note": "Individual names and traditional commentary pending review.",
+  "sources": [
+    {
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "source"
+    }
+  ]
+}
