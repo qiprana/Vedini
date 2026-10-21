@@ -1,0 +1,39 @@
+{
+  "id": "lalita-62",
+  "verse_number": 62,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "ध्यान-ध्यातृ-ध्येयरूपा धर्माधर्म-विवर्जिता ।",
+      "विश्वरूपा जागरिणी स्वपन्ती तैजसात्मिका ६२ ॥"
+    ],
+    "iast": [
+      "dhyāna-dhyātṛ-dhyeyarūpā dharmādharma-vivarjitā ।",
+      "viśvarūpā jāgariṇī svapantī taijasātmikā 62 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "She is meditation, meditator and object, beyond virtue and vice.",
+    "kannada": "ಆಕೆ ಧ್ಯಾನ, ಧ್ಯಾತೃ ಮತ್ತು ಧ್ಯೇಯಸ್ವರೂಪಿಣಿಯಾಗಿ ಧರ್ಮಾಧರ್ಮಗಳಾಚೆ ಇದ್ದಾಳೆ."
+  },
+  "names": [],
+  "study": {
+    "traditional_interpretation": {
+      "en": null,
+      "kn": null
+    }
+  },
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "editorial_draft",
+  "reading_note": "Individual names and traditional commentary pending review.",
+  "sources": [
+    {
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "source"
+    }
+  ]
+}
