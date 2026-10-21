@@ -26,6 +26,16 @@ function findComponents(v,n,info){
  let x=(v.word_meanings||[]).find(w=>norm(w.iast)===norm(n.iast));
  return (x?.components||[]).length>1?(x.components).map(c=>({dev:c.sanskrit||"",iast:c.iast||"",en:c.english||"",kn:c.kannada||""})):[];
 }
+function iastToDevanagari(value){
+ const consonants={"kh":"ख","gh":"घ","ch":"छ","jh":"झ","ṭh":"ठ","ḍh":"ढ","th":"थ","dh":"ध","ph":"फ","bh":"भ","k":"क","g":"ग","ṅ":"ङ","c":"च","j":"ज","ñ":"ञ","ṭ":"ट","ḍ":"ड","ṇ":"ण","t":"त","d":"द","n":"न","p":"प","b":"ब","m":"म","y":"य","r":"र","l":"ल","v":"व","ś":"श","ṣ":"ष","s":"स","h":"ह"};
+ const independent={"a":"अ","ā":"आ","i":"इ","ī":"ई","u":"उ","ū":"ऊ","ṛ":"ऋ","e":"ए","ai":"ऐ","o":"ओ","au":"औ"};
+ const marks={"a":"","ā":"ा","i":"ि","ī":"ी","u":"ु","ū":"ू","ṛ":"ृ","e":"े","ai":"ै","o":"ो","au":"ौ"};
+ const ck=Object.keys(consonants).sort((a,b)=>b.length-a.length),vk=Object.keys(marks).sort((a,b)=>b.length-a.length);
+ let out="",i=0;
+ while(i<value.length){let tail=value.slice(i),c=ck.find(k=>tail.startsWith(k));if(c){out+=consonants[c];i+=c.length;let v=vk.find(k=>value.slice(i).startsWith(k));if(v){out+=marks[v];i+=v.length;}else out+="्";continue;}
+ let v=vk.find(k=>tail.startsWith(k));if(v){out+=independent[v];i+=v.length;continue;}out+=({"ṃ":"ं","ṁ":"ं","ḥ":"ः","-":"-"," ":" "})[value[i]]??value[i];i++;
+ }return out;
+}
 function wordsGrid(parts){
  if(!parts?.length)return "<p class='small-note'>"+esc(langText("This word is awaiting editorial analysis.","ಈ ಪದದ ಅರ್ಥಪರಿಶೀಲನೆ ಬಾಕಿಯಿದೆ."))+"</p>";
  return "<div class='word-grid glossary' role='list'>"+parts.map(c=>{
@@ -460,8 +470,8 @@ async function init(){
  verses=files.slice(7); const byVerse=new Map(); briefNames.forEach(n=>{if(!byVerse.has(n.verse_number))byVerse.set(n.verse_number,[]);byVerse.get(n.verse_number).push(n);});verses.forEach(v=>{if(!(v.names||[]).length)v.names=(byVerse.get(v.verse_number)||[]).map(n=>({...n,display_devanagari:n.sanskrit,display_iast:n.iast}));});
  let index=0;
  verses.forEach(v=>{if(v.study?.traditional_interpretation)verseData[v.verse_number]=v.study;(v.names||[]).forEach(n=>{n.studyNumber=++index;if(n.essential_meaning&&n.traditional_interpretation)nameData[n.studyNumber]={...(nameData[n.studyNumber]||{}),...n};});});
- const componentDrafts=await Promise.all(["lalita/word-components-032-040.json","lalita/word-components-041-060.json","lalita/word-components-112-117.json","lalita/word-components-118-151.json","lalita/word-components-152-192.json"].map(fetchJSON));
- componentDrafts.flatMap(d=>d.entries).forEach(e=>{nameData[e.number]={...(nameData[e.number]||{}),components:e.components};});
+ const componentDrafts=await Promise.all(["lalita/word-components-032-040.json","lalita/word-components-041-060.json","lalita/word-components-112-117.json","lalita/word-components-118-151.json","lalita/word-components-152-192.json","lalita/word-components-193-304.json"].map(fetchJSON));
+ componentDrafts.flatMap(d=>d.entries).forEach(e=>{nameData[e.number]={...(nameData[e.number]||{}),components:e.components.map(c=>({...c,dev:c.dev||iastToDevanagari(c.iast)}))};});
  if(index<111)throw new Error("At least the first 111 names are expected; found "+index);
  initPractice();const initial=loadInitialLocation();render();if(initial)scrollToElement(initial);
  }catch(err){
