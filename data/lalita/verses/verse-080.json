@@ -1,0 +1,39 @@
+{
+  "id": "lalita-80",
+  "verse_number": 80,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "चितिस्तत्पद-लक्ष्यार्था चिदेकरस-रूपिणी ।",
+      "स्वात्मानन्द-लवीभूत-ब्रह्माद्यानन्द-सन्ततिः ८० ॥"
+    ],
+    "iast": [
+      "citistatpada-lakṣyārthā cidekarasa-rūpiṇī ।",
+      "svātmānanda-lavībhūta-brahmādyānanda-santatiḥ 80 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "She is pure consciousness, the meaning of That, and limitless inner bliss.",
+    "kannada": "ಶುದ್ಧಚೈತನ್ಯಸ್ವರೂಪಿಣಿಯಾದ ಆಕೆ ಅನಂತ ಆತ್ಮಾನಂದದ ಮೂಲವಾಗಿದ್ದಾಳೆ."
+  },
+  "names": [],
+  "study": {
+    "traditional_interpretation": {
+      "en": null,
+      "kn": null
+    }
+  },
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "editorial_draft",
+  "reading_note": "Individual names and traditional commentary pending review.",
+  "sources": [
+    {
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "source"
+    }
+  ]
+}
