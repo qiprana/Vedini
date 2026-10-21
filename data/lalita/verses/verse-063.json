@@ -1,0 +1,39 @@
+{
+  "id": "lalita-63",
+  "verse_number": 63,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "सुप्ता प्राज्ञात्मिका तुर्या सर्वावस्था-विवर्जिता ।",
+      "सृष्टिकर्त्री ब्रह्मरूपा गोप्त्री गोविन्दरूपिणी ६३ ॥"
+    ],
+    "iast": [
+      "suptā prājñātmikā turyā sarvāvasthā-vivarjitā ।",
+      "sṛṣṭikartrī brahmarūpā goptrī govindarūpiṇī 63 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "She transcends states of consciousness and creates and preserves the universe.",
+    "kannada": "ಎಲ್ಲ ಅವಸ್ಥೆಗಳನ್ನೂ ಮೀರಿದ ಆಕೆ ಸೃಷ್ಟಿ ಮತ್ತು ಪಾಲನೆಯನ್ನು ನಿರ್ವಹಿಸುತ್ತಾಳೆ."
+  },
+  "names": [],
+  "study": {
+    "traditional_interpretation": {
+      "en": null,
+      "kn": null
+    }
+  },
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "editorial_draft",
+  "reading_note": "Individual names and traditional commentary pending review.",
+  "sources": [
+    {
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "source"
+    }
+  ]
+}
