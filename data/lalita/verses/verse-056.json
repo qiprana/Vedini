@@ -1,0 +1,43 @@
+{
+  "id": "lalita-056",
+  "verse_number": 56,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "महातन्त्रा महामन्त्रा महायन्त्रा महासना ।",
+      "महायाग-क्रमाराध्या महाभैरव-पूजिता ५६ ॥"
+    ],
+    "iast": [
+      "mahātantrā mahāmantrā mahāyantrā mahāsanā ।",
+      "mahāyāga-kramārādhyā mahābhairava-pūjitā 56 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "She is the essence of great tantra, mantra, yantra and sacred worship.",
+    "kannada": "ಮಹಾತಂತ್ರ, ಮಂತ್ರ, ಯಂತ್ರ ಮತ್ತು ಯಾಗದ ಸ್ವರೂಪಿಣಿಯಾದ ಆಕೆ ಪೂಜಿತಳಾಗಿದ್ದಾಳೆ."
+  },
+  "names": [],
+  "study": {
+    "traditional_interpretation": {
+      "en": null,
+      "kn": null
+    }
+  },
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "sources": [
+    {
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Sanskrit source"
+    },
+    {
+      "url": "https://manblunder.com/articles/lalitha-sahasranama",
+      "role": "Name commentary index"
+    }
+  ],
+  "review_status": "editorial_draft",
+  "reading_note": "Provisional Sanskrit and bilingual overall-meaning draft. Individual nāma segmentation, component glosses and Manblunder interpretations have not been checked."
+}
