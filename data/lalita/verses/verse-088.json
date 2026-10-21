@@ -1,0 +1,32 @@
+{
+  "id": "lalita-088",
+  "verse_number": 88,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "भक्तहार्दतमोभेदभानुमद्भानुसन्ततिः ।",
+      "शिवदूती शिवाराध्या शिवमूर्तिः शिवङ्करी ॥ ८८ ॥"
+    ],
+    "iast": [
+      "bhaktahārdatamobhedabhānumadbhānusantatiḥ ।",
+      "śivadūtī śivārādhyā śivamūrtiḥ śivaṅkarī ॥ 88 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; requires cross-check against Shlokam"
+    }
+  ]
+}
