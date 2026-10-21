@@ -1,0 +1,43 @@
+{
+  "id": "lalita-060",
+  "verse_number": 60,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "चराचर-जगन्नाथा चक्रराज-निकेतना ।",
+      "पार्वती पद्मनयना पद्मराग-समप्रभा ६० ॥"
+    ],
+    "iast": [
+      "carācara-jagannāthā cakrarāja-niketanā ।",
+      "pārvatī padmanayanā padmarāga-samaprabhā 60 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "She rules the moving and unmoving universe and dwells in the Śrīcakra.",
+    "kannada": "ಚರಾಚರಜಗತ್ತಿನ ಅಧಿಪತಿಯಾದ ಆಕೆ ಶ್ರೀಚಕ್ರದಲ್ಲಿ ನೆಲೆಸಿದ್ದಾಳೆ."
+  },
+  "names": [],
+  "study": {
+    "traditional_interpretation": {
+      "en": null,
+      "kn": null
+    }
+  },
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "sources": [
+    {
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Sanskrit source"
+    },
+    {
+      "url": "https://manblunder.com/articles/lalitha-sahasranama",
+      "role": "Name commentary index"
+    }
+  ],
+  "review_status": "editorial_draft",
+  "reading_note": "Provisional Sanskrit and bilingual overall-meaning draft. Individual nāma segmentation, component glosses and Manblunder interpretations have not been checked."
+}
