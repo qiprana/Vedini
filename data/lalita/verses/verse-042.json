@@ -1,0 +1,43 @@
+{
+  "id": "lalita-042",
+  "verse_number": 42,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "भक्तिप्रिया भक्तिगम्या भक्तिवश्या भयापहा ।",
+      "शाम्भवी शारदाराध्या शर्वाणी शर्मदायिनी ४२ ॥"
+    ],
+    "iast": [
+      "bhaktipriyā bhaktigamyā bhaktivaśyā bhayāpahā ।",
+      "śāmbhavī śāradārādhyā śarvāṇī śarmadāyinī 42 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "She loves devotion, removes fear and gives peace.",
+    "kannada": "ಭಕ್ತಿಪ್ರಿಯಳಾದ ಆಕೆ ಭಯವನ್ನು ಹೋಗಲಾಡಿಸಿ ಶಾಂತಿ ನೀಡುತ್ತಾಳೆ."
+  },
+  "names": [],
+  "study": {
+    "traditional_interpretation": {
+      "en": null,
+      "kn": null
+    }
+  },
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "sources": [
+    {
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Sanskrit source"
+    },
+    {
+      "url": "https://manblunder.com/articles/lalitha-sahasranama",
+      "role": "Name commentary index"
+    }
+  ],
+  "review_status": "editorial_draft",
+  "reading_note": "Provisional Sanskrit and bilingual overall-meaning draft. Individual nāma segmentation, component glosses and Manblunder interpretations have not been checked."
+}
