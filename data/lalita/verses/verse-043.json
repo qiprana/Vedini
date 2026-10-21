@@ -1,0 +1,43 @@
+{
+  "id": "lalita-043",
+  "verse_number": 43,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "शाङ्करी श्रीकरी साध्वी शरच्चन्द्र-निभानना ।",
+      "शातोदरी शान्तिमती निराधारा निरञ्जना ४३ ॥"
+    ],
+    "iast": [
+      "śāṅkarī śrīkarī sādhvī śaraccandra-nibhānanā ।",
+      "śātodarī śāntimatī nirādhārā nirañjanā 43 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "She is auspicious, peaceful and stainless, with a moonlike face.",
+    "kannada": "ಶುಭಕರಳಾದ ಆಕೆ ಶಾಂತಳೂ ನಿರ್ಮಲಳೂ ಆಗಿದ್ದು ಚಂದ್ರನಂತಹ ಮುಖ ಹೊಂದಿದ್ದಾಳೆ."
+  },
+  "names": [],
+  "study": {
+    "traditional_interpretation": {
+      "en": null,
+      "kn": null
+    }
+  },
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "sources": [
+    {
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Sanskrit source"
+    },
+    {
+      "url": "https://manblunder.com/articles/lalitha-sahasranama",
+      "role": "Name commentary index"
+    }
+  ],
+  "review_status": "editorial_draft",
+  "reading_note": "Provisional Sanskrit and bilingual overall-meaning draft. Individual nāma segmentation, component glosses and Manblunder interpretations have not been checked."
+}
