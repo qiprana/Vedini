@@ -1,0 +1,43 @@
+{
+  "id": "lalita-051",
+  "verse_number": 51,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "दुष्टदूरा दुराचार-शमनी दोषवर्जिता ।",
+      "सर्वज्ञा सान्द्रकरुणा समानाधिक-वर्जिता ५१ ॥"
+    ],
+    "iast": [
+      "duṣṭadūrā durācāra-śamanī doṣavarjitā ।",
+      "sarvajñā sāndrakaruṇā samānādhika-varjitā 51 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "All-knowing and compassionate, she dispels harmful conduct.",
+    "kannada": "ಸರ್ವಜ್ಞಳೂ ಕರುಣಾಮಯಳೂ ಆದ ಆಕೆ ದುಷ್ಟನಡತೆಯನ್ನು ನಿವಾರಿಸುತ್ತಾಳೆ."
+  },
+  "names": [],
+  "study": {
+    "traditional_interpretation": {
+      "en": null,
+      "kn": null
+    }
+  },
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "sources": [
+    {
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Sanskrit source"
+    },
+    {
+      "url": "https://manblunder.com/articles/lalitha-sahasranama",
+      "role": "Name commentary index"
+    }
+  ],
+  "review_status": "editorial_draft",
+  "reading_note": "Provisional Sanskrit and bilingual overall-meaning draft. Individual nāma segmentation, component glosses and Manblunder interpretations have not been checked."
+}
