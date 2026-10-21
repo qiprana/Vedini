@@ -22,8 +22,9 @@ function msg(id,en,kn){const e=$(id);if(e)e.textContent=langText(en,kn)}
 function anyMeaning(b,field){return b?.[field]?.[language]||""}
 function findComponents(v,n,info){
  if(info?.components?.length)return info.components;
+ if((n.components||[]).length>1)return n.components;
  let x=(v.word_meanings||[]).find(w=>norm(w.iast)===norm(n.iast));
- return (x?.components||[]).map(c=>({dev:c.sanskrit||"",iast:c.iast||"",en:c.english||"",kn:c.kannada||""}));
+ return (x?.components||[]).length>1?(x.components).map(c=>({dev:c.sanskrit||"",iast:c.iast||"",en:c.english||"",kn:c.kannada||""})):[];
 }
 function wordsGrid(parts){
  if(!parts?.length)return "<p class='small-note'>"+esc(langText("This word is awaiting editorial analysis.","ಈ ಪದದ ಅರ್ಥಪರಿಶೀಲನೆ ಬಾಕಿಯಿದೆ."))+"</p>";
@@ -459,7 +460,7 @@ async function init(){
  verses=files.slice(7); const byVerse=new Map(); briefNames.forEach(n=>{if(!byVerse.has(n.verse_number))byVerse.set(n.verse_number,[]);byVerse.get(n.verse_number).push(n);});verses.forEach(v=>{if(!(v.names||[]).length)v.names=(byVerse.get(v.verse_number)||[]).map(n=>({...n,display_devanagari:n.sanskrit,display_iast:n.iast}));});
  let index=0;
  verses.forEach(v=>{if(v.study?.traditional_interpretation)verseData[v.verse_number]=v.study;(v.names||[]).forEach(n=>{n.studyNumber=++index;if(n.essential_meaning&&n.traditional_interpretation)nameData[n.studyNumber]={...(nameData[n.studyNumber]||{}),...n};});});
- const componentDrafts=await Promise.all(["lalita/word-components-032-040.json","lalita/word-components-041-060.json"].map(fetchJSON));
+ const componentDrafts=await Promise.all(["lalita/word-components-032-040.json","lalita/word-components-041-060.json","lalita/word-components-112-117.json"].map(fetchJSON));
  componentDrafts.flatMap(d=>d.entries).forEach(e=>{nameData[e.number]={...(nameData[e.number]||{}),components:e.components};});
  if(index<111)throw new Error("At least the first 111 names are expected; found "+index);
  initPractice();const initial=loadInitialLocation();render();if(initial)scrollToElement(initial);
