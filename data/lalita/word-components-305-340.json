@@ -1,0 +1,629 @@
+{
+  "scope": "Ślokas 71–75, divine names 305–340",
+  "entries": [
+    {
+      "number": 305,
+      "components": [
+        {
+          "dev": "राज",
+          "iast": "rāja",
+          "en": "King",
+          "kn": "ರಾಜ"
+        },
+        {
+          "dev": "राज",
+          "iast": "rāja",
+          "en": "King",
+          "kn": "ರಾಜ"
+        },
+        {
+          "dev": "अर्चिता",
+          "iast": "arcitā",
+          "en": "Worshipped",
+          "kn": "ಪೂಜಿತಳು"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": 306,
+      "components": [
+        {
+          "dev": "राज्ञी",
+          "iast": "rājñī",
+          "en": "Queen",
+          "kn": "ರಾಣಿ"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": 307,
+      "components": [
+        {
+          "dev": "रम्या",
+          "iast": "ramyā",
+          "en": "Lovely",
+          "kn": "ಸುಂದರಳಾದವಳು"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": 308,
+      "components": [
+        {
+          "dev": "राजीव",
+          "iast": "rājīva",
+          "en": "Lotus",
+          "kn": "ಕಮಲ"
+        },
+        {
+          "dev": "लोचना",
+          "iast": "locanā",
+          "en": "Eyes",
+          "kn": "ಕಣ್ಣುಳ್ಳವಳು"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": 309,
+      "components": [
+        {
+          "dev": "रञ्जनी",
+          "iast": "rañjanī",
+          "en": "Bringer of delight",
+          "kn": "ಆನಂದ ನೀಡುವವಳು"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": 310,
+      "components": [
+        {
+          "dev": "रमणी",
+          "iast": "ramaṇī",
+          "en": "Delightful woman",
+          "kn": "ರಮಣಿ"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": 311,
+      "components": [
+        {
+          "dev": "रस्या",
+          "iast": "rasyā",
+          "en": "Worthy of enjoyment",
+          "kn": "ಆಸ್ವಾದನೀಯ"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": 312,
+      "components": [
+        {
+          "dev": "रणत्",
+          "iast": "raṇat",
+          "en": "Tinkling",
+          "kn": "ಝೇಂಕಾರ"
+        },
+        {
+          "dev": "किङ्किणी",
+          "iast": "kiṅkiṇī",
+          "en": "Little bells",
+          "kn": "ಕಿರುಗೆಜ್ಜೆಗಳು"
+        },
+        {
+          "dev": "मेखला",
+          "iast": "mekhalā",
+          "en": "Waist girdle",
+          "kn": "ಮೇಖಲೆ"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": 313,
+      "components": [
+        {
+          "dev": "रमा",
+          "iast": "ramā",
+          "en": "Ramā, Lakṣmī",
+          "kn": "ರಮಾ, ಲಕ್ಷ್ಮಿ"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": 314,
+      "components": [
+        {
+          "dev": "राका",
+          "iast": "rākā",
+          "en": "Full moon",
+          "kn": "ಹುಣ್ಣಿಮೆ"
+        },
+        {
+          "dev": "इन्दु",
+          "iast": "indu",
+          "en": "Moon",
+          "kn": "ಚಂದ್ರ"
+        },
+        {
+          "dev": "वदना",
+          "iast": "vadanā",
+          "en": "Faced",
+          "kn": "ಮುಖವುಳ್ಳವಳು"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": 315,
+      "components": [
+        {
+          "dev": "रति",
+          "iast": "rati",
+          "en": "Rati, delight",
+          "kn": "ರತಿ"
+        },
+        {
+          "dev": "रूपा",
+          "iast": "rūpā",
+          "en": "Having the form",
+          "kn": "ರೂಪವುಳ್ಳವಳು"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": 316,
+      "components": [
+        {
+          "dev": "रति",
+          "iast": "rati",
+          "en": "Rati, delight",
+          "kn": "ರತಿ"
+        },
+        {
+          "dev": "प्रिया",
+          "iast": "priyā",
+          "en": "Beloved of",
+          "kn": "ಪ್ರೀತಿಸುವವಳು"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": 317,
+      "components": [
+        {
+          "dev": "रक्षा",
+          "iast": "rakṣā",
+          "en": "Protection",
+          "kn": "ರಕ್ಷಣೆ"
+        },
+        {
+          "dev": "करी",
+          "iast": "karī",
+          "en": "Giver or maker",
+          "kn": "ಮಾಡುವವಳು"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": 318,
+      "components": [
+        {
+          "dev": "राक्षस",
+          "iast": "rākṣasa",
+          "en": "Demon",
+          "kn": "ರಾಕ್ಷಸ"
+        },
+        {
+          "dev": "घ्नी",
+          "iast": "ghnī",
+          "en": "Destroyer",
+          "kn": "ನಾಶಮಾಡುವವಳು"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": 319,
+      "components": [
+        {
+          "dev": "रामा",
+          "iast": "rāmā",
+          "en": "She who delights",
+          "kn": "ಆನಂದ ನೀಡುವವಳು"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": 320,
+      "components": [
+        {
+          "dev": "रमण",
+          "iast": "ramaṇa",
+          "en": "Beloved consort",
+          "kn": "ಪ್ರಿಯತಮ"
+        },
+        {
+          "dev": "लम्पटा",
+          "iast": "lampaṭā",
+          "en": "Deeply devoted",
+          "kn": "ಅತೀವ ಅನುರಕ್ತಳು"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": 321,
+      "components": [
+        {
+          "dev": "काम्या",
+          "iast": "kāmyā",
+          "en": "Desired; worthy of being sought",
+          "kn": "ಬಯಸಬಹುದಾದವಳು"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": 322,
+      "components": [
+        {
+          "dev": "काम",
+          "iast": "kāma",
+          "en": "Desire",
+          "kn": "ಕಾಮ"
+        },
+        {
+          "dev": "कला",
+          "iast": "kalā",
+          "en": "Subtle aspect",
+          "kn": "ಕಲೆ"
+        },
+        {
+          "dev": "रूपा",
+          "iast": "rūpā",
+          "en": "Having the form",
+          "kn": "ಸ್ವರೂಪಿಣಿ"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": 323,
+      "components": [
+        {
+          "dev": "कदम्ब",
+          "iast": "kadamba",
+          "en": "Kadamba tree",
+          "kn": "ಕದಂಬ"
+        },
+        {
+          "dev": "कुसुम",
+          "iast": "kusuma",
+          "en": "Flower",
+          "kn": "ಹೂವು"
+        },
+        {
+          "dev": "प्रिया",
+          "iast": "priyā",
+          "en": "Fond of",
+          "kn": "ಪ್ರೀತಿಸುವವಳು"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": 324,
+      "components": [
+        {
+          "dev": "कल्याणी",
+          "iast": "kalyāṇī",
+          "en": "Auspicious one",
+          "kn": "ಮಂಗಳಕರಳಾದವಳು"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": 325,
+      "components": [
+        {
+          "dev": "जगती",
+          "iast": "jagatī",
+          "en": "World",
+          "kn": "ಜಗತ್ತು"
+        },
+        {
+          "dev": "कन्दा",
+          "iast": "kandā",
+          "en": "Root or source",
+          "kn": "ಮೂಲ"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": 326,
+      "components": [
+        {
+          "dev": "करुणा",
+          "iast": "karuṇā",
+          "en": "Compassion",
+          "kn": "ಕರುಣೆ"
+        },
+        {
+          "dev": "रस",
+          "iast": "rasa",
+          "en": "Essence",
+          "kn": "ರಸ"
+        },
+        {
+          "dev": "सागरा",
+          "iast": "sāgarā",
+          "en": "Ocean",
+          "kn": "ಸಾಗರ"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": 327,
+      "components": [
+        {
+          "dev": "कला",
+          "iast": "kalā",
+          "en": "Art",
+          "kn": "ಕಲೆ"
+        },
+        {
+          "dev": "वती",
+          "iast": "vatī",
+          "en": "Possessing",
+          "kn": "ಹೊಂದಿರುವವಳು"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": 328,
+      "components": [
+        {
+          "dev": "कला",
+          "iast": "kalā",
+          "en": "Art; beauty",
+          "kn": "ಕಲೆ"
+        },
+        {
+          "dev": "आलापा",
+          "iast": "ālāpā",
+          "en": "Speech or conversation",
+          "kn": "ಮಾತು"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": 329,
+      "components": [
+        {
+          "dev": "कान्ता",
+          "iast": "kāntā",
+          "en": "Beautiful; beloved",
+          "kn": "ಸುಂದರಳಾದವಳು"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": 330,
+      "components": [
+        {
+          "dev": "कादम्बरी",
+          "iast": "kādambarī",
+          "en": "Kādambarī drink",
+          "kn": "ಕಾದಂಬರೀ ಪಾನೀಯ"
+        },
+        {
+          "dev": "प्रिया",
+          "iast": "priyā",
+          "en": "Fond of",
+          "kn": "ಪ್ರೀತಿಸುವವಳು"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": 331,
+      "components": [
+        {
+          "dev": "वर",
+          "iast": "vara",
+          "en": "Boon",
+          "kn": "ವರ"
+        },
+        {
+          "dev": "दा",
+          "iast": "dā",
+          "en": "Bestower",
+          "kn": "ನೀಡುವವಳು"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": 332,
+      "components": [
+        {
+          "dev": "वाम",
+          "iast": "vāma",
+          "en": "Lovely",
+          "kn": "ಸುಂದರ"
+        },
+        {
+          "dev": "नयना",
+          "iast": "nayanā",
+          "en": "Eyes",
+          "kn": "ಕಣ್ಣುಳ್ಳವಳು"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": 333,
+      "components": [
+        {
+          "dev": "वारुणी",
+          "iast": "vāruṇī",
+          "en": "Vāruṇī drink",
+          "kn": "ವಾರುಣಿ ಪಾನೀಯ"
+        },
+        {
+          "dev": "मद",
+          "iast": "mada",
+          "en": "Intoxication",
+          "kn": "ಮದ"
+        },
+        {
+          "dev": "विह्वला",
+          "iast": "vihvalā",
+          "en": "Enraptured",
+          "kn": "ಪರವಶಳಾದವಳು"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": 334,
+      "components": [
+        {
+          "dev": "विश्व",
+          "iast": "viśva",
+          "en": "Universe",
+          "kn": "ವಿಶ್ವ"
+        },
+        {
+          "dev": "अधिका",
+          "iast": "adhikā",
+          "en": "Beyond",
+          "kn": "ಮೀರಿದವಳು"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": 335,
+      "components": [
+        {
+          "dev": "वेद",
+          "iast": "veda",
+          "en": "Vedas",
+          "kn": "ವೇದ"
+        },
+        {
+          "dev": "वेद्या",
+          "iast": "vedyā",
+          "en": "Knowable through",
+          "kn": "ಅರಿಯಬಹುದಾದವಳು"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": 336,
+      "components": [
+        {
+          "dev": "विन्ध्य",
+          "iast": "vindhya",
+          "en": "Vindhya",
+          "kn": "ವಿಂಧ್ಯ"
+        },
+        {
+          "dev": "अचल",
+          "iast": "acala",
+          "en": "Mountain",
+          "kn": "ಪರ್ವತ"
+        },
+        {
+          "dev": "निवासिनी",
+          "iast": "nivāsinī",
+          "en": "Resident",
+          "kn": "ನಿವಾಸಿನಿ"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": 337,
+      "components": [
+        {
+          "dev": "विधात्री",
+          "iast": "vidhātrī",
+          "en": "Creator and sustainer",
+          "kn": "ಸೃಷ್ಟಿಕರ್ತ್ರಿ"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": 338,
+      "components": [
+        {
+          "dev": "वेद",
+          "iast": "veda",
+          "en": "Vedas",
+          "kn": "ವೇದ"
+        },
+        {
+          "dev": "जननी",
+          "iast": "jananī",
+          "en": "Mother",
+          "kn": "ಜನನಿ"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": 339,
+      "components": [
+        {
+          "dev": "विष्णु",
+          "iast": "viṣṇu",
+          "en": "Viṣṇu",
+          "kn": "ವಿಷ್ಣು"
+        },
+        {
+          "dev": "माया",
+          "iast": "māyā",
+          "en": "Creative power",
+          "kn": "ಮಾಯಾಶಕ್ತಿ"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": 340,
+      "components": [
+        {
+          "dev": "विलासिनी",
+          "iast": "vilāsinī",
+          "en": "Playful one",
+          "kn": "ವಿಲಾಸಿನಿ"
+        }
+      ],
+      "review_status": "editorial_draft"
+    }
+  ]
+}
