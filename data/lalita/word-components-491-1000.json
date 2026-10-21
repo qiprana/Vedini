@@ -1,0 +1,3570 @@
+{
+  "scope": "Ślokas 101–183, names 491–1000",
+  "method": "Conservative automated exact matching of IAST against reviewed and drafted component lexicon; candidates require Sanskrit review, unmatched names explicitly pending. Not sourced from Manblunder commentary.",
+  "entries": [
+    {
+      "number": 491,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Surrounded by kAlarAtri and other shaktis"
+    },
+    {
+      "number": 492,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Fond of food offerings containing ghee, oil and other substances containing fats"
+    },
+    {
+      "number": 493,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who bestows boons on great warriors"
+    },
+    {
+      "number": 494,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "In the form of the rAkiNi deity"
+    },
+    {
+      "number": 495,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who resides in the ten-petaled lotus in the maNipUraka chakra"
+    },
+    {
+      "number": 496,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Possessor of three faces"
+    },
+    {
+      "number": 497,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Holder of the vajra (lightning bolt) and other weapons"
+    },
+    {
+      "number": 498,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Surrounded by DAmarI and other attending deities"
+    },
+    {
+      "number": 499,
+      "components": [
+        {
+          "dev": "",
+          "iast": "rakta",
+          "en": "Red",
+          "kn": "ಕೆಂಪು"
+        },
+        {
+          "dev": "",
+          "iast": "varṇā",
+          "en": "Color",
+          "kn": "ವರ್ಣ"
+        }
+      ],
+      "review_status": "automated_exact_component_match_needs_review"
+    },
+    {
+      "number": 500,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who presides over the flesh in living beings"
+    },
+    {
+      "number": 501,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Fond of sweet rice made with raw sugar"
+    },
+    {
+      "number": 502,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who confers happiness on all Her devotees"
+    },
+    {
+      "number": 503,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "In the form of the lAkinI yoginI"
+    },
+    {
+      "number": 504,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who resides in the six-petaled lotus in the svAdhiShTAna, kAkinI yoginI"
+    },
+    {
+      "number": 505,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Possessor of four beautiful faces"
+    },
+    {
+      "number": 506,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who possesses the trident and other weapons (i.e., noose, skull and abhaya)"
+    },
+    {
+      "number": 507,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Yellow in color"
+    },
+    {
+      "number": 508,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Very proud"
+    },
+    {
+      "number": 509,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who resides in the fat in living beings"
+    },
+    {
+      "number": 510,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Fond of honey and other offerings made with honey"
+    },
+    {
+      "number": 511,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Accompanied by bandhini and other shaktis"
+    },
+    {
+      "number": 512,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Particularly fond of offerings made with curd"
+    },
+    {
+      "number": 513,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "In the form of kAkinI yoginI"
+    },
+    {
+      "number": 514,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Resident in the lotus in the mUlAdhAra"
+    },
+    {
+      "number": 515,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Possessor of five faces"
+    },
+    {
+      "number": 516,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who resides in the bones"
+    },
+    {
+      "number": 517,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Holder of the goad and other weapons"
+    },
+    {
+      "number": 518,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Attended by varadA and other shaktis"
+    },
+    {
+      "number": 519,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Particularly fond of food offerings made of mudga, a lentil"
+    },
+    {
+      "number": 520,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "In the form of sAkinI yoginI"
+    },
+    {
+      "number": 521,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who resides in the two-petaled lotus in the AjnAchakra"
+    },
+    {
+      "number": 522,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "White in color"
+    },
+    {
+      "number": 523,
+      "components": [
+        {
+          "dev": "",
+          "iast": "ṣaḍ",
+          "en": "Six",
+          "kn": "ಆರು"
+        },
+        {
+          "dev": "",
+          "iast": "ānanā",
+          "en": "Faced",
+          "kn": "ಮುಖವುಳ್ಳವಳು"
+        }
+      ],
+      "review_status": "automated_exact_component_match_needs_review"
+    },
+    {
+      "number": 524,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Presiding deity of the bone marrow"
+    },
+    {
+      "number": 525,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Accompanied by the shaktis hamsavatI and kShamAvati (in the two petals of the lotus)"
+    },
+    {
+      "number": 526,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Fond of food seasoned with turmeric"
+    },
+    {
+      "number": 527,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "In the form of hAkinI devI"
+    },
+    {
+      "number": 528,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who resides in the thousand-petaled lotus"
+    },
+    {
+      "number": 529,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Radiant in many colors"
+    },
+    {
+      "number": 530,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Holder of all the known weapons"
+    },
+    {
+      "number": 531,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who resides in the semen"
+    },
+    {
+      "number": 532,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Possessor of faces turned in all directions"
+    },
+    {
+      "number": 533,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Pleased by all offerings of food"
+    },
+    {
+      "number": 534,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "In the form of the yAkinI yoginI"
+    },
+    {
+      "number": 535,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Object of the invocation 'svAhA' at the end of mantras chanted while offering oblations to the fire in yAga ceremonies"
+    },
+    {
+      "number": 536,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Object of the 'svadhA' invocation at the end of mantras"
+    },
+    {
+      "number": 537,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "In the form of ignorance or nescience"
+    },
+    {
+      "number": 538,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "In the form of wisdom (knowledge)"
+    },
+    {
+      "number": 539,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "In the form of the vedas"
+    },
+    {
+      "number": 540,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "In the form of smRiti (works based on the meaning of vedas)"
+    },
+    {
+      "number": 541,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Best; She who is not excelled by anyone"
+    },
+    {
+      "number": 542,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "She whose fame is sacred or righteous"
+    },
+    {
+      "number": 543,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Attained only by righteous souls"
+    },
+    {
+      "number": 544,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who bestows merit on anyone who hears of Her and praises Her"
+    },
+    {
+      "number": 545,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Worshipped by pulomaja (Indra's wife)"
+    },
+    {
+      "number": 546,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Free from bonds; She who gives release from bondage"
+    },
+    {
+      "number": 547,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "She whose hair forms curly or wavy locks"
+    },
+    {
+      "number": 548,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "In the form of vimarsha (reflection or meaning)"
+    },
+    {
+      "number": 549,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "In the form of knowledge"
+    },
+    {
+      "number": 550,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Mother of the universe, which is the aggregate of all the elements starting with the ether"
+    },
+    {
+      "number": 551,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Remover of all diseases and sorrows"
+    },
+    {
+      "number": 552,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who guards Her devotees from all"
+    },
+    {
+      "number": 553,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "To be considered the foremost"
+    },
+    {
+      "number": 554,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Of a form beyond the reach of thought"
+    },
+    {
+      "number": 555,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Destroyer of the sins of the age of kali"
+    },
+    {
+      "number": 556,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Daughter of a sage named kata"
+    },
+    {
+      "number": 557,
+      "components": [
+        {
+          "dev": "",
+          "iast": "kāla",
+          "en": "Dark",
+          "kn": "ಕಪ್ಪು"
+        },
+        {
+          "dev": "",
+          "iast": "hantrī",
+          "en": "Destroyer",
+          "kn": "ನಾಶಮಾಡುವವಳು"
+        }
+      ],
+      "review_status": "automated_exact_component_match_needs_review"
+    },
+    {
+      "number": 558,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "She in whom viShNu takes refuge"
+    },
+    {
+      "number": 559,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "She whose mouth is full from chewing betel"
+    },
+    {
+      "number": 560,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who shines like a pomegranate flower"
+    },
+    {
+      "number": 561,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "She whose eyes are long and beautiful like those of a doe"
+    },
+    {
+      "number": 562,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Enchanting"
+    },
+    {
+      "number": 563,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "First"
+    },
+    {
+      "number": 564,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Wife of mRiDa (shiva)"
+    },
+    {
+      "number": 565,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Friend of everyone (universe)"
+    },
+    {
+      "number": 566,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Eternally contented"
+    },
+    {
+      "number": 567,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Treasure of the devotees"
+    },
+    {
+      "number": 568,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who controls and guides all beings on the right path"
+    },
+    {
+      "number": 569,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Ruler of all"
+    },
+    {
+      "number": 570,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "To be attained by love and other good dispositions"
+    },
+    {
+      "number": 571,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Witness to the great dissolution"
+    },
+    {
+      "number": 572,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Original, supreme power"
+    },
+    {
+      "number": 573,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Supreme end, the supreme abidance"
+    },
+    {
+      "number": 574,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Pure, condensed knowledge"
+    },
+    {
+      "number": 575,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Languid from drinking wine; She who is not eager for anything"
+    },
+    {
+      "number": 576,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Intoxicated"
+    },
+    {
+      "number": 577,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "In the form of the letters of the alphabet"
+    },
+    {
+      "number": 578,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who resides in the great kailAsa"
+    },
+    {
+      "number": 579,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "She whose arms are as soft and cool as the lotus stem"
+    },
+    {
+      "number": 580,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Adorable"
+    },
+    {
+      "number": 581,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Personification of compassion"
+    },
+    {
+      "number": 582,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who controls the great empire of the three worlds"
+    },
+    {
+      "number": 583,
+      "components": [
+        {
+          "dev": "",
+          "iast": "ātma",
+          "en": "Self",
+          "kn": "ಆತ್ಮ"
+        },
+        {
+          "dev": "",
+          "iast": "vidyā",
+          "en": "Knowledge",
+          "kn": "ವಿದ್ಯೆ"
+        }
+      ],
+      "review_status": "automated_exact_component_match_needs_review"
+    },
+    {
+      "number": 584,
+      "components": [
+        {
+          "dev": "",
+          "iast": "mahā",
+          "en": "Great",
+          "kn": "ಮಹಾ"
+        },
+        {
+          "dev": "",
+          "iast": "vidyā",
+          "en": "Knowledge",
+          "kn": "ವಿದ್ಯೆ"
+        }
+      ],
+      "review_status": "automated_exact_component_match_needs_review"
+    },
+    {
+      "number": 585,
+      "components": [
+        {
+          "dev": "",
+          "iast": "śrī",
+          "en": "Prosperity; auspiciousness",
+          "kn": "ಶ್ರೀ; ಮಂಗಳ"
+        },
+        {
+          "dev": "",
+          "iast": "vidyā",
+          "en": "Knowledge",
+          "kn": "ವಿದ್ಯೆ"
+        }
+      ],
+      "review_status": "automated_exact_component_match_needs_review"
+    },
+    {
+      "number": 586,
+      "components": [
+        {
+          "dev": "",
+          "iast": "kāma",
+          "en": "Desire",
+          "kn": "ಆಸೆ"
+        },
+        {
+          "dev": "",
+          "iast": "sevitā",
+          "en": "Attended",
+          "kn": "ಸೇವಿತ"
+        }
+      ],
+      "review_status": "automated_exact_component_match_needs_review"
+    },
+    {
+      "number": 587,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "In the form of the sixteen-syllabled mantra"
+    },
+    {
+      "number": 588,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "In the three parts (of pa~nchadashI mantra)"
+    },
+    {
+      "number": 589,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "She, of whom kAma (shiva) is a part or an approximate form"
+    },
+    {
+      "number": 590,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Attended by millions of lakShmis who are subdued by Hern mere glances"
+    },
+    {
+      "number": 591,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who resides in the head"
+    },
+    {
+      "number": 592,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Resplendent like the moon"
+    },
+    {
+      "number": 593,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who resides in the forehead (between the eyebrows)"
+    },
+    {
+      "number": 594,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Resplendent like the rainbow"
+    },
+    {
+      "number": 595,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who resides in the heart"
+    },
+    {
+      "number": 596,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who shines with the special brilliance of the sun"
+    },
+    {
+      "number": 597,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who shines as a light within the triangle"
+    },
+    {
+      "number": 598,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "SatIdevI, the daughter of dakSha prajApati"
+    },
+    {
+      "number": 599,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Killer of demons"
+    },
+    {
+      "number": 600,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Destroyer of the sacrifice conducted by dakSha"
+    },
+    {
+      "number": 601,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Possessor of long, tremulous eyes"
+    },
+    {
+      "number": 602,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "She whose face is radiant with a smile"
+    },
+    {
+      "number": 603,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Possessor of assumed a severe form or one who has assumed the form of the guru"
+    },
+    {
+      "number": 604,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Treasure house of all good qualities"
+    },
+    {
+      "number": 605,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who became surabhI, the cow that grants all wishes"
+    },
+    {
+      "number": 606,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Mother of guhA (subramaNya)"
+    },
+    {
+      "number": 607,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Protector of the gods"
+    },
+    {
+      "number": 608,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who maintains the rules of jusstice without the slightest error"
+    },
+    {
+      "number": 609,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Subtle self in the heart"
+    },
+    {
+      "number": 610,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Worshipped daily starting with pratipad (first day of the lunar half-month) and ending with the full moon"
+    },
+    {
+      "number": 611,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "In the form of the kalAs"
+    },
+    {
+      "number": 612,
+      "components": [
+        {
+          "dev": "",
+          "iast": "kalā",
+          "en": "Part or division",
+          "kn": "ಭಾಗ"
+        },
+        {
+          "dev": "",
+          "iast": "nāthā",
+          "en": "Ruler",
+          "kn": "ನಾಥೆ"
+        }
+      ],
+      "review_status": "automated_exact_component_match_needs_review"
+    },
+    {
+      "number": 613,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who delights in hearing poetry"
+    },
+    {
+      "number": 614,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Attended by lakShmI on the left side and sarasvatI on the right side, bearing ceremonial fans"
+    },
+    {
+      "number": 615,
+      "components": [
+        {
+          "dev": "",
+          "iast": "ādi",
+          "en": "Beginning",
+          "kn": "ಆದಿ"
+        },
+        {
+          "dev": "",
+          "iast": "śaktiḥ",
+          "en": "Power",
+          "kn": "ಶಕ್ತಿ"
+        }
+      ],
+      "review_status": "automated_exact_component_match_needs_review"
+    },
+    {
+      "number": 616,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Not measurable by any means"
+    },
+    {
+      "number": 617,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Self in all"
+    },
+    {
+      "number": 618,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Supreme"
+    },
+    {
+      "number": 619,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Of sacred form"
+    },
+    {
+      "number": 620,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Creator of many crores of worlds"
+    },
+    {
+      "number": 621,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Possessor of a divine body"
+    },
+    {
+      "number": 622,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Creator of the syllable 'klIM'"
+    },
+    {
+      "number": 623,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Absolute, as She is complete, independent and without any attributes"
+    },
+    {
+      "number": 624,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "To be known in secret"
+    },
+    {
+      "number": 625,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who bestows liberation"
+    },
+    {
+      "number": 626,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Older than the three (trinity of brahmA viShNu and shiva)"
+    },
+    {
+      "number": 627,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Adored by the inhabitants of all three worlds"
+    },
+    {
+      "number": 628,
+      "components": [
+        {
+          "dev": "",
+          "iast": "tri",
+          "en": "Three",
+          "kn": "ಮೂರು"
+        },
+        {
+          "dev": "",
+          "iast": "mūrtiḥ",
+          "en": "Embodiment or form",
+          "kn": "ಸ್ವರೂಪ"
+        }
+      ],
+      "review_status": "automated_exact_component_match_needs_review"
+    },
+    {
+      "number": 629,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Ruler of the gods"
+    },
+    {
+      "number": 630,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "She whose form consists of three letters or syllables (Om = a u m)"
+    },
+    {
+      "number": 631,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Richly endowed with divine fragrance"
+    },
+    {
+      "number": 632,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who shines witha vermillion mark on Her forehead; She who is decorated with a special paste made of vermilion"
+    },
+    {
+      "number": 633,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "PArvatI devI"
+    },
+    {
+      "number": 634,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Daughter of himavat, the king of the mountains"
+    },
+    {
+      "number": 635,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Possessor of a fair complexion"
+    },
+    {
+      "number": 636,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Served by gandharvas (like vishvAvasu)"
+    },
+    {
+      "number": 637,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who contains the whole universe in Her womb"
+    },
+    {
+      "number": 638,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Cause of the universe"
+    },
+    {
+      "number": 639,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Destroyer of the unholy"
+    },
+    {
+      "number": 640,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who presides over speech"
+    },
+    {
+      "number": 641,
+      "components": [
+        {
+          "dev": "",
+          "iast": "dhyāna",
+          "en": "Meditation",
+          "kn": "ಧ್ಯಾನ"
+        },
+        {
+          "dev": "",
+          "iast": "gamyā",
+          "en": "Accessible or reached through",
+          "kn": "ಮೂಲಕ ಅರಿಯಬಹುದಾದವಳು"
+        }
+      ],
+      "review_status": "automated_exact_component_match_needs_review"
+    },
+    {
+      "number": 642,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "She whose limits cannot be ascertained (unlimited)"
+    },
+    {
+      "number": 643,
+      "components": [
+        {
+          "dev": "",
+          "iast": "jñāna",
+          "en": "Knowledge",
+          "kn": "ಜ್ಞಾನ"
+        },
+        {
+          "dev": "",
+          "iast": "dā",
+          "en": "Giver",
+          "kn": "ದಾತೆ"
+        }
+      ],
+      "review_status": "automated_exact_component_match_needs_review"
+    },
+    {
+      "number": 644,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Sthe embodiment of knowledge itself"
+    },
+    {
+      "number": 645,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Known by all of vedAnta"
+    },
+    {
+      "number": 646,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "She whose form is existence and bliss"
+    },
+    {
+      "number": 647,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Worshipped by lopAmudrA (wife of sage agastya)"
+    },
+    {
+      "number": 648,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Possessor of created and maintained the universe purely as a sport"
+    },
+    {
+      "number": 649,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Not perceived by sense organs (normal eyes)"
+    },
+    {
+      "number": 650,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Possessor of nothing to see"
+    },
+    {
+      "number": 651,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who knows the truth of the physical universe"
+    },
+    {
+      "number": 652,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Possessor of nothing left to know"
+    },
+    {
+      "number": 653,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Constantly united with parAshiva; She who possesses the power of yoga"
+    },
+    {
+      "number": 654,
+      "components": [
+        {
+          "dev": "",
+          "iast": "yoga",
+          "en": "Yoga",
+          "kn": "ಯೋಗ"
+        },
+        {
+          "dev": "",
+          "iast": "dā",
+          "en": "Giver",
+          "kn": "ದಾತೆ"
+        }
+      ],
+      "review_status": "automated_exact_component_match_needs_review"
+    },
+    {
+      "number": 655,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who deserves yoga of all kinds"
+    },
+    {
+      "number": 656,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Bliss attained through yoga; She who enjoys the bliss of yoga"
+    },
+    {
+      "number": 657,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Bearer of the yugas"
+    },
+    {
+      "number": 658,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "In the form of the powers of will, knowledge and action"
+    },
+    {
+      "number": 659,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Support of all"
+    },
+    {
+      "number": 660,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Firmly established"
+    },
+    {
+      "number": 661,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who assumes the forms of both being and non-being"
+    },
+    {
+      "number": 662,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Possessor of eight forms"
+    },
+    {
+      "number": 663,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who conquers ignorance"
+    },
+    {
+      "number": 664,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who directs the course of the worlds"
+    },
+    {
+      "number": 665,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Lone one"
+    },
+    {
+      "number": 666,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Aggregate of all existing things"
+    },
+    {
+      "number": 667,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Without the sense of duality"
+    },
+    {
+      "number": 668,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Beyond duality"
+    },
+    {
+      "number": 669,
+      "components": [
+        {
+          "dev": "",
+          "iast": "anna",
+          "en": "Food",
+          "kn": "ಅನ್ನ"
+        },
+        {
+          "dev": "",
+          "iast": "dā",
+          "en": "Giver",
+          "kn": "ದಾತೆ"
+        }
+      ],
+      "review_status": "automated_exact_component_match_needs_review"
+    },
+    {
+      "number": 670,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Giver of wealth"
+    },
+    {
+      "number": 671,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Ancient"
+    },
+    {
+      "number": 672,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "She whose nature is the union of brahman and Atman"
+    },
+    {
+      "number": 673,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Immense"
+    },
+    {
+      "number": 674,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Predominantly sAttvic"
+    },
+    {
+      "number": 675,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who presides over speech"
+    },
+    {
+      "number": 676,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Ever immersed in the bliss of brahman"
+    },
+    {
+      "number": 677,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Especially fond of sacrificial offerings"
+    },
+    {
+      "number": 678,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "In the form of language"
+    },
+    {
+      "number": 679,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Possessor of a vast army"
+    },
+    {
+      "number": 680,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Beyond being and non-being"
+    },
+    {
+      "number": 681,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Easily worshipped"
+    },
+    {
+      "number": 682,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who does good"
+    },
+    {
+      "number": 683,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Attained through a bright and easy path"
+    },
+    {
+      "number": 684,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Ruler of kings and emperors"
+    },
+    {
+      "number": 685,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Giver of dominion"
+    },
+    {
+      "number": 686,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Protector of all the dominions"
+    },
+    {
+      "number": 687,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Possessor of a compassion that captivates everyone"
+    },
+    {
+      "number": 688,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who establishes on royal thrones of those who take refuge in Her"
+    },
+    {
+      "number": 689,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Embodiment of the prosperity of the world"
+    },
+    {
+      "number": 690,
+      "components": [
+        {
+          "dev": "",
+          "iast": "kośa",
+          "en": "Sheath",
+          "kn": "ಕೋಶ"
+        },
+        {
+          "dev": "",
+          "iast": "nāthā",
+          "en": "Ruler",
+          "kn": "ನಾಥೆ"
+        }
+      ],
+      "review_status": "automated_exact_component_match_needs_review"
+    },
+    {
+      "number": 691,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who commands armies of four types"
+    },
+    {
+      "number": 692,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Bestower of imperial dominion"
+    },
+    {
+      "number": 693,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Devoted to (or maintains) truth"
+    },
+    {
+      "number": 694,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Girdled by the oceans"
+    },
+    {
+      "number": 695,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Under a vow"
+    },
+    {
+      "number": 696,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Destroyer of the demons, wicked forces"
+    },
+    {
+      "number": 697,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who keeps all the worlds under Her control"
+    },
+    {
+      "number": 698,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Bestower of all desires"
+    },
+    {
+      "number": 699,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Creative power in the universe"
+    },
+    {
+      "number": 700,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Of the nature of existence, consciousness and bliss"
+    },
+    {
+      "number": 701,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Not limited by time and space; She who is not measured by time and space"
+    },
+    {
+      "number": 702,
+      "components": [
+        {
+          "dev": "",
+          "iast": "sarva",
+          "en": "All",
+          "kn": "ಎಲ್ಲ"
+        },
+        {
+          "dev": "",
+          "iast": "gā",
+          "en": "Residing",
+          "kn": "ವಾಸ"
+        }
+      ],
+      "review_status": "automated_exact_component_match_needs_review"
+    },
+    {
+      "number": 703,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who deludes all"
+    },
+    {
+      "number": 704,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "In the form of knowledge"
+    },
+    {
+      "number": 705,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "In the form of the scriptures; She whose limbs are the scriptures"
+    },
+    {
+      "number": 706,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Mother of guha (subramaNya); She who dwells in the cave of the heart"
+    },
+    {
+      "number": 707,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Possessor of a secret form"
+    },
+    {
+      "number": 708,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Free from all limitations"
+    },
+    {
+      "number": 709,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "SadAshiva's devoted wife"
+    },
+    {
+      "number": 710,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Guardian of sacred traditions"
+    },
+    {
+      "number": 711,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who possesses equanimity"
+    },
+    {
+      "number": 712,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Symbol 'I' (Other versions show 711/712 as sAdhvI eventhough it is a repetition.)"
+    },
+    {
+      "number": 713,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who embodies in Herself the lineage of Gurus"
+    },
+    {
+      "number": 714,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who transcends the senses"
+    },
+    {
+      "number": 715,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Worshipped in the sun's disc"
+    },
+    {
+      "number": 716,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Illusion"
+    },
+    {
+      "number": 717,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "She whose nature is as sweet as honey"
+    },
+    {
+      "number": 718,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Goddess earth"
+    },
+    {
+      "number": 719,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Mother of shiva's attendants"
+    },
+    {
+      "number": 720,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Worshipped by guhyakas (a kind of devAs)"
+    },
+    {
+      "number": 721,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Possessor of beautiful limbs"
+    },
+    {
+      "number": 722,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Beloved of the gurus"
+    },
+    {
+      "number": 723,
+      "components": [
+        {
+          "dev": "",
+          "iast": "sva",
+          "en": "Own",
+          "kn": "ಸ್ವ"
+        },
+        {
+          "dev": "",
+          "iast": "tantrā",
+          "en": "Tantra-form",
+          "kn": "ತಂತ್ರರೂಪ"
+        }
+      ],
+      "review_status": "automated_exact_component_match_needs_review"
+    },
+    {
+      "number": 724,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Goddess of all tantras"
+    },
+    {
+      "number": 725,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "In the form of dakShiNAmUrti"
+    },
+    {
+      "number": 726,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Worshipped by sanaka and other sages"
+    },
+    {
+      "number": 727,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who bestows the knowledge of siva"
+    },
+    {
+      "number": 728,
+      "components": [
+        {
+          "dev": "",
+          "iast": "cit",
+          "en": "Consciousness",
+          "kn": "ಚೈತನ್ಯ"
+        },
+        {
+          "dev": "",
+          "iast": "kalā",
+          "en": "Part or division",
+          "kn": "ಭಾಗ"
+        }
+      ],
+      "review_status": "automated_exact_component_match_needs_review"
+    },
+    {
+      "number": 729,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Bud of bliss"
+    },
+    {
+      "number": 730,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Pure love"
+    },
+    {
+      "number": 731,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Bestower of what is dear to Her devotees"
+    },
+    {
+      "number": 732,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Pleased by the repetition of Her names"
+    },
+    {
+      "number": 733,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Deity worshipped by the nandi mantra"
+    },
+    {
+      "number": 734,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Wife of natesha (shiva)"
+    },
+    {
+      "number": 735,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Basis of the illusory universe"
+    },
+    {
+      "number": 736,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Giver of liberation"
+    },
+    {
+      "number": 737,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "In the form of liberation"
+    },
+    {
+      "number": 738,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Fond of the lAsya dance"
+    },
+    {
+      "number": 739,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who causes absorption"
+    },
+    {
+      "number": 740,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who exists as modesty in living beings"
+    },
+    {
+      "number": 741,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Adored by the celestial damsels such as rambhA"
+    },
+    {
+      "number": 742,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Rain of nectar falling on the forest fire of worldly existence"
+    },
+    {
+      "number": 743,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Like wild fire to the forest of sins"
+    },
+    {
+      "number": 744,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Gale that drives away the cotton wisps of misfortune"
+    },
+    {
+      "number": 745,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Sunlight that dispels the darkness of old age"
+    },
+    {
+      "number": 746,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Full moon to the ocean of good fortune"
+    },
+    {
+      "number": 747,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Cloud that gladdens the peacocks who are the hearts of Her devotees"
+    },
+    {
+      "number": 748,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Thunderbolt that shatters the mountain of disease"
+    },
+    {
+      "number": 749,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Axe that cuts down the tree of death"
+    },
+    {
+      "number": 750,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Supreme goddess"
+    },
+    {
+      "number": 751,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Great kAli"
+    },
+    {
+      "number": 752,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who devours everything great; She who is the great devourer"
+    },
+    {
+      "number": 753,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who eats everything that is great"
+    },
+    {
+      "number": 754,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who owes no debt"
+    },
+    {
+      "number": 755,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Angry (at the wicked)"
+    },
+    {
+      "number": 756,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who killed chaNDa, muNDa and other asuras"
+    },
+    {
+      "number": 757,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "In the form of both the perishable and imperishable Atman"
+    },
+    {
+      "number": 758,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Ruler of all worlds"
+    },
+    {
+      "number": 759,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who supports the universe"
+    },
+    {
+      "number": 760,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who bestows the three goals of life"
+    },
+    {
+      "number": 761,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Seat of all prosperity"
+    },
+    {
+      "number": 762,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Possessor of three eyes"
+    },
+    {
+      "number": 763,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Essence of the three gunas"
+    },
+    {
+      "number": 764,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who bestows heaven and liberation"
+    },
+    {
+      "number": 765,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Purest"
+    },
+    {
+      "number": 766,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "She whose body is like the hibiscus flower"
+    },
+    {
+      "number": 767,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Full of vitality"
+    },
+    {
+      "number": 768,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Full of light and splendor; She who has an aura of light"
+    },
+    {
+      "number": 769,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "In the form of sacrifice"
+    },
+    {
+      "number": 770,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Fond of vows"
+    },
+    {
+      "number": 771,
+      "components": [
+        {
+          "dev": "",
+          "iast": "dur",
+          "en": "Difficult",
+          "kn": "ಕಷ್ಟಕರ"
+        },
+        {
+          "dev": "",
+          "iast": "ārādhyā",
+          "en": "Worshipped by",
+          "kn": "ಆರಾಧಿಸಲ್ಪಡುವವಳು"
+        }
+      ],
+      "review_status": "automated_exact_component_match_needs_review"
+    },
+    {
+      "number": 772,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Difficult to control"
+    },
+    {
+      "number": 773,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Fond of the pATali flower (the pale red trumpet flower)"
+    },
+    {
+      "number": 774,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Great; She who is in the form of mahatti (nArada's vINa)"
+    },
+    {
+      "number": 775,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who resides in the meru mountain"
+    },
+    {
+      "number": 776,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Fond of the mandAra flowers"
+    },
+    {
+      "number": 777,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Worshipped by heroic persons"
+    },
+    {
+      "number": 778,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "In the form of the cosmic whole"
+    },
+    {
+      "number": 779,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Without rajas (desire and anger)"
+    },
+    {
+      "number": 780,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who faces all directions"
+    },
+    {
+      "number": 781,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Indwelling self"
+    },
+    {
+      "number": 782,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Transcendental ether (which is the material cause of the cosmic and individual bodies)"
+    },
+    {
+      "number": 783,
+      "components": [
+        {
+          "dev": "",
+          "iast": "prāṇa",
+          "en": "Vitality",
+          "kn": "ಪ್ರಾಣ"
+        },
+        {
+          "dev": "",
+          "iast": "dā",
+          "en": "Giver",
+          "kn": "ದಾತೆ"
+        }
+      ],
+      "review_status": "automated_exact_component_match_needs_review"
+    },
+    {
+      "number": 784,
+      "components": [
+        {
+          "dev": "",
+          "iast": "prāṇa",
+          "en": "Vitality",
+          "kn": "ಪ್ರಾಣ"
+        },
+        {
+          "dev": "",
+          "iast": "rūpiṇī",
+          "en": "Form",
+          "kn": "ರೂಪಿಣಿ"
+        }
+      ],
+      "review_status": "automated_exact_component_match_needs_review"
+    },
+    {
+      "number": 785,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Worshipped by mArtANDabhairava"
+    },
+    {
+      "number": 786,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Possessor of entrusted Her regal responsibilities to Her mantriNi"
+    },
+    {
+      "number": 787,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Goddess of tripura"
+    },
+    {
+      "number": 788,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Possessor of an army which is accustomed only to victory"
+    },
+    {
+      "number": 789,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Devoid of the three guNas"
+    },
+    {
+      "number": 790,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Both parA and aparA"
+    },
+    {
+      "number": 791,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Truth, knowledge and bliss"
+    },
+    {
+      "number": 792,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Immersed in a state of steady wisdom"
+    },
+    {
+      "number": 793,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Wife of kapardi (shiva, one with matted hair)"
+    },
+    {
+      "number": 794,
+      "components": [
+        {
+          "dev": "",
+          "iast": "kalā",
+          "en": "Part or division",
+          "kn": "ಭಾಗ"
+        },
+        {
+          "dev": "",
+          "iast": "mālā",
+          "en": "Garland",
+          "kn": "ಮಾಲೆ"
+        }
+      ],
+      "review_status": "automated_exact_component_match_needs_review"
+    },
+    {
+      "number": 795,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who fulfills all desires"
+    },
+    {
+      "number": 796,
+      "components": [
+        {
+          "dev": "",
+          "iast": "kāma",
+          "en": "Desire",
+          "kn": "ಆಸೆ"
+        },
+        {
+          "dev": "",
+          "iast": "rūpiṇī",
+          "en": "Form",
+          "kn": "ರೂಪಿಣಿ"
+        }
+      ],
+      "review_status": "automated_exact_component_match_needs_review"
+    },
+    {
+      "number": 797,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Treasurehouse of all arts"
+    },
+    {
+      "number": 798,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Art of poetry"
+    },
+    {
+      "number": 799,
+      "components": [
+        {
+          "dev": "",
+          "iast": "rasa",
+          "en": "Essence",
+          "kn": "ರಸ"
+        },
+        {
+          "dev": "",
+          "iast": "jñā",
+          "en": "Knowing",
+          "kn": "ತಿಳಿದವಳು"
+        }
+      ],
+      "review_status": "automated_exact_component_match_needs_review"
+    },
+    {
+      "number": 800,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Treasurehouse of rasa"
+    },
+    {
+      "number": 801,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Always full of vigor, nourishment"
+    },
+    {
+      "number": 802,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Ancient"
+    },
+    {
+      "number": 803,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Worthy of worship by all"
+    },
+    {
+      "number": 804,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Complete; She who gives bourishment to all"
+    },
+    {
+      "number": 805,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Possessor of eyes like lotus petals"
+    },
+    {
+      "number": 806,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Supreme light"
+    },
+    {
+      "number": 807,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Supreme abode"
+    },
+    {
+      "number": 808,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Subtlest particle"
+    },
+    {
+      "number": 809,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Tshe most supreme of the supreme ones"
+    },
+    {
+      "number": 810,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Holder of a noose in Her hand"
+    },
+    {
+      "number": 811,
+      "components": [
+        {
+          "dev": "",
+          "iast": "pāśa",
+          "en": "Bond",
+          "kn": "ಪಾಶ"
+        },
+        {
+          "dev": "",
+          "iast": "hantrī",
+          "en": "Destroyer",
+          "kn": "ನಾಶಮಾಡುವವಳು"
+        }
+      ],
+      "review_status": "automated_exact_component_match_needs_review"
+    },
+    {
+      "number": 812,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who breaks the spell of the evil mantras of the enemies"
+    },
+    {
+      "number": 813,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Possessor of forms"
+    },
+    {
+      "number": 814,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Possessor of no definite form"
+    },
+    {
+      "number": 815,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Satisfied even by our perishable offerings"
+    },
+    {
+      "number": 816,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Swan in the mAnasa lake of the minds of sages"
+    },
+    {
+      "number": 817,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who abides firmly in truth"
+    },
+    {
+      "number": 818,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Truth itself"
+    },
+    {
+      "number": 819,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Dweller in inside all"
+    },
+    {
+      "number": 820,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Reality, the eternal being"
+    },
+    {
+      "number": 821,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Tail that is brahman; the support for all"
+    },
+    {
+      "number": 822,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Brahman"
+    },
+    {
+      "number": 823,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Mother"
+    },
+    {
+      "number": 824,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Possessor of a multitude of forms"
+    },
+    {
+      "number": 825,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Worshipped by the wise"
+    },
+    {
+      "number": 826,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Mother of the universe"
+    },
+    {
+      "number": 827,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Full of awe-inspiring wrath"
+    },
+    {
+      "number": 828,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Divine commandment herself"
+    },
+    {
+      "number": 829,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Foundation"
+    },
+    {
+      "number": 830,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Manifested in the form of the universe"
+    },
+    {
+      "number": 831,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who lords over the five prANas and the senses"
+    },
+    {
+      "number": 832,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Giver of life"
+    },
+    {
+      "number": 833,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Possessor of fifty centers of worship"
+    },
+    {
+      "number": 834,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Unfettered, free in every way"
+    },
+    {
+      "number": 835,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who abides in secluded places"
+    },
+    {
+      "number": 836,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Mother of the valiant"
+    },
+    {
+      "number": 837,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Mother to the ether"
+    },
+    {
+      "number": 838,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Giver of salvation"
+    },
+    {
+      "number": 839,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Abode of salvation"
+    },
+    {
+      "number": 840,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Root form of everything"
+    },
+    {
+      "number": 841,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Knower of all thoughts and sentiments"
+    },
+    {
+      "number": 842,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who eradicates the diseases of the cycle of birth and death"
+    },
+    {
+      "number": 843,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who turns the wheel of the cycle of birth and death"
+    },
+    {
+      "number": 844,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Essence of all the vedas"
+    },
+    {
+      "number": 845,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Essence of all scriptures"
+    },
+    {
+      "number": 846,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Essence of all mantras"
+    },
+    {
+      "number": 847,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Slender-waisted"
+    },
+    {
+      "number": 848,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who possesses exalted fame"
+    },
+    {
+      "number": 849,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "She whose prowess is unlimited"
+    },
+    {
+      "number": 850,
+      "components": [
+        {
+          "dev": "",
+          "iast": "varṇa",
+          "en": "Class",
+          "kn": "ವರ್ಣ"
+        },
+        {
+          "dev": "",
+          "iast": "rūpiṇī",
+          "en": "Form",
+          "kn": "ರೂಪಿಣಿ"
+        }
+      ],
+      "review_status": "automated_exact_component_match_needs_review"
+    },
+    {
+      "number": 851,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Giver of peace and repose to those who are afflicted by birth, death and decrepitude"
+    },
+    {
+      "number": 852,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Celebrated by all the upaniShads"
+    },
+    {
+      "number": 853,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who transcends the state of peace"
+    },
+    {
+      "number": 854,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Unfathomable"
+    },
+    {
+      "number": 855,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who resides in the ether, space"
+    },
+    {
+      "number": 856,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Proud"
+    },
+    {
+      "number": 857,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who delights in music"
+    },
+    {
+      "number": 858,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Free from imaginary attributes"
+    },
+    {
+      "number": 859,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Dweller in in the highest state (beyond which there is nothing)"
+    },
+    {
+      "number": 860,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who ends all sins and sorrows"
+    },
+    {
+      "number": 861,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Half the body of Her husband"
+    },
+    {
+      "number": 862,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Free from the bond of cause and effect"
+    },
+    {
+      "number": 863,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Overflowing with pleasure in the union with kAmeshvara"
+    },
+    {
+      "number": 864,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Wearing glittering gold ear ornaments"
+    },
+    {
+      "number": 865,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who assumes various glorious forms as a sport"
+    },
+    {
+      "number": 866,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Possessor of no birth"
+    },
+    {
+      "number": 867,
+      "components": [
+        {
+          "dev": "",
+          "iast": "kṣaya",
+          "en": "Decay",
+          "kn": "ಕ್ಷಯ"
+        },
+        {
+          "dev": "",
+          "iast": "vinirmuktā",
+          "en": "Free from",
+          "kn": "ಮುಕ್ತಳಾದವಳು"
+        }
+      ],
+      "review_status": "automated_exact_component_match_needs_review"
+    },
+    {
+      "number": 868,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Captivating in Her beauty"
+    },
+    {
+      "number": 869,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Quickly pleased"
+    },
+    {
+      "number": 870,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "To be worshipped internally (mentally)"
+    },
+    {
+      "number": 871,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Difficult to attain by those whose attention is directed outwards"
+    },
+    {
+      "number": 872,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Three vedas"
+    },
+    {
+      "number": 873,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Abode of the threefold aims of human life"
+    },
+    {
+      "number": 874,
+      "components": [
+        {
+          "dev": "",
+          "iast": "tri",
+          "en": "Three",
+          "kn": "ಮೂರು"
+        },
+        {
+          "dev": "",
+          "iast": "sthā",
+          "en": "Dwelling",
+          "kn": "ನೆಲೆಸುವವಳು"
+        }
+      ],
+      "review_status": "automated_exact_component_match_needs_review"
+    },
+    {
+      "number": 875,
+      "components": [
+        {
+          "dev": "",
+          "iast": "tripura",
+          "en": "Three realms",
+          "kn": "ತ್ರಿಪುರ"
+        },
+        {
+          "dev": "",
+          "iast": "mālinī",
+          "en": "Garlanded",
+          "kn": "ಮಾಲಿನಿ"
+        }
+      ],
+      "review_status": "automated_exact_component_match_needs_review"
+    },
+    {
+      "number": 876,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Free from diseases of all kinds"
+    },
+    {
+      "number": 877,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who depends on none"
+    },
+    {
+      "number": 878,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who rejoices in Her own self"
+    },
+    {
+      "number": 879,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Source of nectar"
+    },
+    {
+      "number": 880,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Skilled in raising those who are immersed in the mire of transmigratory life"
+    },
+    {
+      "number": 881,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Fond all sacrifices and other rituals"
+    },
+    {
+      "number": 882,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Doer of sacrificial rites"
+    },
+    {
+      "number": 883,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "In the form of yajamAna, who directs sacrificial rites"
+    },
+    {
+      "number": 884,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Support of the code for righteous living"
+    },
+    {
+      "number": 885,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who oversees wealth"
+    },
+    {
+      "number": 886,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who increases wealth and harvests"
+    },
+    {
+      "number": 887,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Fond of the learned"
+    },
+    {
+      "number": 888,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "In the form of a knower of the self"
+    },
+    {
+      "number": 889,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who makes the universe go around through Her power of illusion"
+    },
+    {
+      "number": 890,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who devours the universe"
+    },
+    {
+      "number": 891,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who shines like coral (with Her red complexion)"
+    },
+    {
+      "number": 892,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "In the form of viShNu"
+    },
+    {
+      "number": 893,
+      "components": [
+        {
+          "dev": "",
+          "iast": "viṣṇu",
+          "en": "Viṣṇu",
+          "kn": "ವಿಷ್ಣು"
+        },
+        {
+          "dev": "",
+          "iast": "rūpiṇī",
+          "en": "Form",
+          "kn": "ರೂಪಿಣಿ"
+        }
+      ],
+      "review_status": "automated_exact_component_match_needs_review"
+    },
+    {
+      "number": 894,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Without origin"
+    },
+    {
+      "number": 895,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Seat of all origins"
+    },
+    {
+      "number": 896,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who remains unchanged like the anvil"
+    },
+    {
+      "number": 897,
+      "components": [
+        {
+          "dev": "",
+          "iast": "kula",
+          "en": "Kula",
+          "kn": "ಕುಲ"
+        },
+        {
+          "dev": "",
+          "iast": "rūpiṇī",
+          "en": "Form",
+          "kn": "ರೂಪಿಣಿ"
+        }
+      ],
+      "review_status": "automated_exact_component_match_needs_review"
+    },
+    {
+      "number": 898,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Fond of the assembly of warriors"
+    },
+    {
+      "number": 899,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Heroic"
+    },
+    {
+      "number": 900,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who abstains from actions"
+    },
+    {
+      "number": 901,
+      "components": [
+        {
+          "dev": "",
+          "iast": "nāda",
+          "en": "Sound",
+          "kn": "ನಾದ"
+        },
+        {
+          "dev": "",
+          "iast": "rūpiṇī",
+          "en": "Form",
+          "kn": "ರೂಪಿಣಿ"
+        }
+      ],
+      "review_status": "automated_exact_component_match_needs_review"
+    },
+    {
+      "number": 902,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who realizes the knowledge of brahman"
+    },
+    {
+      "number": 903,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Capable of creation"
+    },
+    {
+      "number": 904,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Expert in everything"
+    },
+    {
+      "number": 905,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Seated in the baindava (spot between the eyebrows) chakra"
+    },
+    {
+      "number": 906,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who transcends all cosmic categories"
+    },
+    {
+      "number": 907,
+      "components": [
+        {
+          "dev": "",
+          "iast": "tattva",
+          "en": "Principle",
+          "kn": "ತತ್ತ್ವ"
+        },
+        {
+          "dev": "",
+          "iast": "mayī",
+          "en": "Consisting of",
+          "kn": "ಸ್ವರೂಪಿಣಿ"
+        }
+      ],
+      "review_status": "automated_exact_component_match_needs_review"
+    },
+    {
+      "number": 908,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Meaning of tat (that) and tvam (thou)"
+    },
+    {
+      "number": 909,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Fond of the chanting of the sAma veda"
+    },
+    {
+      "number": 910,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Benign and gentle in nature; of a cool, gentle nature as the moon"
+    },
+    {
+      "number": 911,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Wife of sadAshiva"
+    },
+    {
+      "number": 912,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who occupies (or can be reached by) both the left and right paths of worship"
+    },
+    {
+      "number": 913,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Remover of all dangers"
+    },
+    {
+      "number": 914,
+      "components": [
+        {
+          "dev": "",
+          "iast": "sva",
+          "en": "Own",
+          "kn": "ಸ್ವ"
+        },
+        {
+          "dev": "",
+          "iast": "sthā",
+          "en": "Dwelling",
+          "kn": "ನೆಲೆಸುವವಳು"
+        }
+      ],
+      "review_status": "automated_exact_component_match_needs_review"
+    },
+    {
+      "number": 915,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Sweet in Her inherent nature"
+    },
+    {
+      "number": 916,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Wise; She who gives wisdom"
+    },
+    {
+      "number": 917,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Worshipped by the wise"
+    },
+    {
+      "number": 918,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Worshipped with consciousness as the oblation"
+    },
+    {
+      "number": 919,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Fond of the flower that is consciousness"
+    },
+    {
+      "number": 920,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Ever shining"
+    },
+    {
+      "number": 921,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Ever pleased"
+    },
+    {
+      "number": 922,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Rosy like the morning sun"
+    },
+    {
+      "number": 923,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Adored by both right and left-handed worshippers"
+    },
+    {
+      "number": 924,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "She whose lotus face holds a sweet smile"
+    },
+    {
+      "number": 925,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Worshipped as pure knowledge (consciousness) by the spiritual aspirants following the kaula path"
+    },
+    {
+      "number": 926,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who confers the priceless fruit of final liberation"
+    },
+    {
+      "number": 927,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Fond of hymns in Her praise"
+    },
+    {
+      "number": 928,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "True object, the essence, of all praises"
+    },
+    {
+      "number": 929,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "She whose glory is celebrated in the shrutis"
+    },
+    {
+      "number": 930,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Well-known for Her mind"
+    },
+    {
+      "number": 931,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "High-minded; She who has great fame"
+    },
+    {
+      "number": 932,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Wife of mahesha (shiva)"
+    },
+    {
+      "number": 933,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Of auspicious form"
+    },
+    {
+      "number": 934,
+      "components": [
+        {
+          "dev": "",
+          "iast": "viśva",
+          "en": "Universe",
+          "kn": "ವಿಶ್ವ"
+        },
+        {
+          "dev": "",
+          "iast": "mātā",
+          "en": "Mother",
+          "kn": "ತಾಯಿ"
+        }
+      ],
+      "review_status": "automated_exact_component_match_needs_review"
+    },
+    {
+      "number": 935,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Mother who protects and sustains the world"
+    },
+    {
+      "number": 936,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Possessor of large eyes"
+    },
+    {
+      "number": 937,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Dispassionate"
+    },
+    {
+      "number": 938,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Skillful and confident"
+    },
+    {
+      "number": 939,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Supremely generous"
+    },
+    {
+      "number": 940,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Supremely joyful"
+    },
+    {
+      "number": 941,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "In the form of the mind"
+    },
+    {
+      "number": 942,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Possessor of the sky as Her hair"
+    },
+    {
+      "number": 943,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Seated in Her celestial chariot; She who journeys in Her celestial chariot along with the gods"
+    },
+    {
+      "number": 944,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who bears the vajrA (thunderbolt) weapon"
+    },
+    {
+      "number": 945,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Presiding deity of the vamakeshvara tantra"
+    },
+    {
+      "number": 946,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Fond of the five forms of sacrifices (agnihotrA, darshapUrnamAsa, chAturmAsya, goyaj~na and somayaj~na)"
+    },
+    {
+      "number": 947,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who reclines on a couch made of the five corpses"
+    },
+    {
+      "number": 948,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Fifth (after brahmA, viShNu, rudra and Ishvara)"
+    },
+    {
+      "number": 949,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Goddess of the five elements"
+    },
+    {
+      "number": 950,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Worshipped using five objects (fragrance, flower, incense, lamp and food) of worship"
+    },
+    {
+      "number": 951,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Eternal"
+    },
+    {
+      "number": 952,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Holder of eternal sovereignty"
+    },
+    {
+      "number": 953,
+      "components": [
+        {
+          "dev": "",
+          "iast": "śarma",
+          "en": "Happiness; peace",
+          "kn": "ಸುಖ; ಶಾಂತಿ"
+        },
+        {
+          "dev": "",
+          "iast": "dā",
+          "en": "Giver",
+          "kn": "ದಾತೆ"
+        }
+      ],
+      "review_status": "automated_exact_component_match_needs_review"
+    },
+    {
+      "number": 954,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who deludes shiva"
+    },
+    {
+      "number": 955,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Mother earth"
+    },
+    {
+      "number": 956,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Daughter of dhara (himavat)"
+    },
+    {
+      "number": 957,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who possessses great wealth; She who is extremely blessed"
+    },
+    {
+      "number": 958,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Righteous"
+    },
+    {
+      "number": 959,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who promotes righteousness"
+    },
+    {
+      "number": 960,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who transcends the worlds"
+    },
+    {
+      "number": 961,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who transcends the guNAs"
+    },
+    {
+      "number": 962,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who transcends everything"
+    },
+    {
+      "number": 963,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Of the nature of peace and bliss"
+    },
+    {
+      "number": 964,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who resembles the bandhUka flower in beauty and grace"
+    },
+    {
+      "number": 965,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who never forsakes the nature of a child"
+    },
+    {
+      "number": 966,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who delights in Her sport"
+    },
+    {
+      "number": 967,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Eternally auspicious; She who never becomes a widow"
+    },
+    {
+      "number": 968,
+      "components": [
+        {
+          "dev": "",
+          "iast": "sukha",
+          "en": "Happiness",
+          "kn": "ಸುಖ"
+        },
+        {
+          "dev": "",
+          "iast": "karī",
+          "en": "Bringing about",
+          "kn": "ಉಂಟುಮಾಡುವವಳು"
+        }
+      ],
+      "review_status": "automated_exact_component_match_needs_review"
+    },
+    {
+      "number": 969,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Very attractive in Her beautiful rich garments and ornaments"
+    },
+    {
+      "number": 970,
+      "components": [
+        {
+          "dev": "",
+          "iast": "su",
+          "en": "Beautiful",
+          "kn": "ಸುಂದರ"
+        },
+        {
+          "dev": "",
+          "iast": "vāsinī",
+          "en": "Resident",
+          "kn": "ವಾಸಿನಿ"
+        }
+      ],
+      "review_status": "automated_exact_component_match_needs_review"
+    },
+    {
+      "number": 971,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Pleased by the worship performed by married women"
+    },
+    {
+      "number": 972,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Always radiant"
+    },
+    {
+      "number": 973,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Of pure mind; one who purifies the mind of Her worshipers"
+    },
+    {
+      "number": 974,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Pleased by offerings to the bindu (of shrIchakra)"
+    },
+    {
+      "number": 975,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Ahead of everyone; first born"
+    },
+    {
+      "number": 976,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Mother of the tripuras (three cities)"
+    },
+    {
+      "number": 977,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Worshipped by ten mudras (sarva sa~NkShobhini, sarvavidrAvinI, sarvAkarshini, sarvavashankari, sarvonmAdinI, sarvamahankusha, sarvakhechari,…"
+    },
+    {
+      "number": 978,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "She for whom tripurAshrI is under control"
+    },
+    {
+      "number": 979,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "In the form of the j~nAna mudrA"
+    },
+    {
+      "number": 980,
+      "components": [
+        {
+          "dev": "",
+          "iast": "jñāna",
+          "en": "Knowledge",
+          "kn": "ಜ್ಞಾನ"
+        },
+        {
+          "dev": "",
+          "iast": "gamyā",
+          "en": "Accessible or reached through",
+          "kn": "ಮೂಲಕ ಅರಿಯಬಹುದಾದವಳು"
+        }
+      ],
+      "review_status": "automated_exact_component_match_needs_review"
+    },
+    {
+      "number": 981,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Both knowledge and the known"
+    },
+    {
+      "number": 982,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "In the form of the yonimudrA"
+    },
+    {
+      "number": 983,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Ruler of the tenth mudrA, the trikhaNDa"
+    },
+    {
+      "number": 984,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Endowed with the three guNas of sattva, rajas and tamas"
+    },
+    {
+      "number": 985,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Mother of all beings; mother of the universe"
+    },
+    {
+      "number": 986,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "The one who resides in the triangle"
+    },
+    {
+      "number": 987,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Sinless"
+    },
+    {
+      "number": 988,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "She whose deeds are marvelous"
+    },
+    {
+      "number": 989,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Giver of all the desired objects"
+    },
+    {
+      "number": 990,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Known only through the exceedingly streneous practice of spiritual discipline"
+    },
+    {
+      "number": 991,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "She whose form transcends the six paths"
+    },
+    {
+      "number": 992,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Pure compassion"
+    },
+    {
+      "number": 993,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Bright lamp that dispels the darkness of ignorance"
+    },
+    {
+      "number": 994,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Known well by all, even by children and cowherds"
+    },
+    {
+      "number": 995,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "She whose commands are not disobeyed by anyone"
+    },
+    {
+      "number": 996,
+      "components": [
+        {
+          "dev": "",
+          "iast": "śrī",
+          "en": "Prosperity; auspiciousness",
+          "kn": "ಶ್ರೀ; ಮಂಗಳ"
+        },
+        {
+          "dev": "",
+          "iast": "cakra",
+          "en": "Circle",
+          "kn": "ಚಕ್ರ"
+        },
+        {
+          "dev": "",
+          "iast": "rāja",
+          "en": "Royal",
+          "kn": "ರಾಜ"
+        },
+        {
+          "dev": "",
+          "iast": "nilayā",
+          "en": "Abode",
+          "kn": "ನಿಲಯ"
+        }
+      ],
+      "review_status": "automated_exact_component_match_needs_review"
+    },
+    {
+      "number": 997,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Divine tripurasundarI devI"
+    },
+    {
+      "number": 998,
+      "components": [
+        {
+          "dev": "",
+          "iast": "śrī",
+          "en": "Prosperity; auspiciousness",
+          "kn": "ಶ್ರೀ; ಮಂಗಳ"
+        },
+        {
+          "dev": "",
+          "iast": "śivā",
+          "en": "Śivā",
+          "kn": "ಶಿವಾ"
+        }
+      ],
+      "review_status": "automated_exact_component_match_needs_review"
+    },
+    {
+      "number": 999,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Union of shiva and shaktI into one form"
+    },
+    {
+      "number": 1000,
+      "components": [],
+      "review_status": "segmentation_pending",
+      "whole_name_english": "Divine mother lalitA"
+    }
+  ]
+}
