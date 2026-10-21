@@ -1,0 +1,43 @@
+{
+  "id": "lalita-057",
+  "verse_number": 57,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "महेश्वर-महाकल्प-महाताण्डव-साक्षिणी ।",
+      "महाकामेश-महिषी महात्रिपुर-सुन्दरी ५७ ॥"
+    ],
+    "iast": [
+      "maheśvara-mahākalpa-mahātāṇḍava-sākṣiṇī ।",
+      "mahākāmeśa-mahiṣī mahātripura-sundarī 57 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "She witnesses Śiva's cosmic dance and is Mahātripurasundarī.",
+    "kannada": "ಶಿವನ ವಿಶ್ವನೃತ್ಯದ ಸಾಕ್ಷಿಯಾದ ಆಕೆ ಮಹಾತ್ರಿಪುರಸುಂದರಿಯಾಗಿದ್ದಾಳೆ."
+  },
+  "names": [],
+  "study": {
+    "traditional_interpretation": {
+      "en": null,
+      "kn": null
+    }
+  },
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "sources": [
+    {
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Sanskrit source"
+    },
+    {
+      "url": "https://manblunder.com/articles/lalitha-sahasranama",
+      "role": "Name commentary index"
+    }
+  ],
+  "review_status": "editorial_draft",
+  "reading_note": "Provisional Sanskrit and bilingual overall-meaning draft. Individual nāma segmentation, component glosses and Manblunder interpretations have not been checked."
+}
