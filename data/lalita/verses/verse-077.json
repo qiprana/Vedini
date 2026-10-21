@@ -1,0 +1,39 @@
+{
+  "id": "lalita-77",
+  "verse_number": 77,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "विजया विमला वन्द्या वन्दारु-जन-वत्सला ।",
+      "वाग्वादिनी वामकेशी वह्निमण्डल-वासिनी ७७ ॥"
+    ],
+    "iast": [
+      "vijayā vimalā vandyā vandāru-jana-vatsalā ।",
+      "vāgvādinī vāmakeśī vahnimaṇḍala-vāsinī 77 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "Victorious and pure, she cherishes devotees and dwells in fire.",
+    "kannada": "ವಿಜಯಿನಿಯೂ ನಿರ್ಮಲಳೂ ಆದ ಆಕೆ ಭಕ್ತರನ್ನು ಪ್ರೀತಿಸಿ ಅಗ್ನಿಮಂಡಲದಲ್ಲಿ ನೆಲೆಸುತ್ತಾಳೆ."
+  },
+  "names": [],
+  "study": {
+    "traditional_interpretation": {
+      "en": null,
+      "kn": null
+    }
+  },
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "editorial_draft",
+  "reading_note": "Individual names and traditional commentary pending review.",
+  "sources": [
+    {
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "source"
+    }
+  ]
+}
