@@ -1,0 +1,32 @@
+{
+  "id": "lalita-090",
+  "verse_number": 90,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "चिच्छक्तिश्चेतनारूपा जडशक्तिर्जडात्मिका ।",
+      "गायत्री व्याहृतिः सन्ध्या द्विजवृन्दनिषेविता ॥ ९० ॥"
+    ],
+    "iast": [
+      "cicchaktiścetanārūpā jaḍaśaktirjaḍātmikā ।",
+      "gāyatrī vyāhṛtiḥ sandhyā dvijavṛndaniṣevitā ॥ 90 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; requires cross-check against Shlokam"
+    }
+  ]
+}
