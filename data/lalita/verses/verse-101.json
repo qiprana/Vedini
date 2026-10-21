@@ -5,12 +5,12 @@
   "collection": "lalita-sahasranama",
   "reading": {
     "devanagari": [
-      "कालरात्र्\\! यादिशक्त्यौघवृता स्निग्धौदनप्रिया ।",
-      "महावीरेन्द्र वरदा राकिण्यम्बास्वरूपिणी ॥ १०१ ॥"
+      "कालरात्र्यादि-शक्त्यौघ-वृता स्निग्धौदनप्रिया ।",
+      "महावीरेन्द्र-वरदा राकिण्यम्बा-स्वरूपिणी ॥ १०१ ॥"
     ],
     "iast": [
-      "kālarātr\\! yādiśaktyaughavṛtā snigdhaudanapriyā ।",
-      "mahāvīrendra varadā rākiṇyambāsvarūpiṇī ॥ 101 ॥"
+      "kālarātryādi-śaktyaugha-vṛtā snigdhaudanapriyā ।",
+      "mahāvīrendra-varadā rākiṇyambā-svarūpiṇī ॥ 101 ॥"
     ]
   },
   "meaning": {
@@ -22,11 +22,11 @@
     "normal": null,
     "slow": null
   },
-  "review_status": "source_text_draft",
+  "review_status": "checked_against_shlokam",
   "sources": [
     {
-      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
-      "role": "Numbered Sanskrit source; verify readings"
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Primary Sanskrit and IAST reading; verse 101"
     }
   ]
 }
