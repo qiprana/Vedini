@@ -454,266 +454,913 @@
     },
     {
       "number": 509,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "मेद",
+          "iast": "meda",
+          "en": "Fat tissue",
+          "kn": "ಮೇದೋ ಧಾತು"
+        },
+        {
+          "dev": "निष्ठा",
+          "iast": "niṣṭhā",
+          "en": "Situated in",
+          "kn": "ನೆಲೆಸಿರುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "The one who resides in the fat in living beings"
     },
     {
       "number": 510,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "मधु",
+          "iast": "madhu",
+          "en": "Honey",
+          "kn": "ಜೇನು"
+        },
+        {
+          "dev": "प्रीता",
+          "iast": "prītā",
+          "en": "Pleased by",
+          "kn": "ಪ್ರಿಯಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Fond of honey and other offerings made with honey"
     },
     {
       "number": 511,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "बन्धिनी",
+          "iast": "bandhinī",
+          "en": "Bandhinī deity",
+          "kn": "ಬಂಧಿನೀ ದೇವತೆ"
+        },
+        {
+          "dev": "आदि",
+          "iast": "ādi",
+          "en": "And others",
+          "kn": "ಮೊದಲಾದ"
+        },
+        {
+          "dev": "समन्विता",
+          "iast": "samanvitā",
+          "en": "Accompanied by",
+          "kn": "ಸಹಿತಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Accompanied by bandhini and other shaktis"
     },
     {
       "number": 512,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "दधि",
+          "iast": "dadhi",
+          "en": "Curds",
+          "kn": "ಮೊಸರು"
+        },
+        {
+          "dev": "अन्न",
+          "iast": "anna",
+          "en": "Food",
+          "kn": "ಅನ್ನ"
+        },
+        {
+          "dev": "आसक्त",
+          "iast": "āsakta",
+          "en": "Fond of",
+          "kn": "ಆಸಕ್ತ"
+        },
+        {
+          "dev": "हृदया",
+          "iast": "hṛdayā",
+          "en": "At heart",
+          "kn": "ಹೃದಯವುಳ್ಳವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Particularly fond of offerings made with curd"
     },
     {
       "number": 513,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "काकिनी",
+          "iast": "kākinī",
+          "en": "Kākinī deity",
+          "kn": "ಕಾಕಿನೀ ದೇವತೆ"
+        },
+        {
+          "dev": "रूप",
+          "iast": "rūpa",
+          "en": "Form",
+          "kn": "ರೂಪ"
+        },
+        {
+          "dev": "धारिणी",
+          "iast": "dhāriṇī",
+          "en": "Bearing",
+          "kn": "ಧರಿಸುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "In the form of kAkinI yoginI"
     },
     {
       "number": 514,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "मूलाधार",
+          "iast": "mūlādhāra",
+          "en": "Mūlādhāra centre",
+          "kn": "ಮೂಲಾಧಾರ ಚಕ್ರ"
+        },
+        {
+          "dev": "अम्बुज",
+          "iast": "ambuja",
+          "en": "Lotus",
+          "kn": "ಕಮಲ"
+        },
+        {
+          "dev": "आरूढा",
+          "iast": "ārūḍhā",
+          "en": "Mounted upon",
+          "kn": "ಆರೂಢಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Resident in the lotus in the mUlAdhAra"
     },
     {
       "number": 515,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "पञ्च",
+          "iast": "pañca",
+          "en": "Five",
+          "kn": "ಐದು"
+        },
+        {
+          "dev": "वक्त्रा",
+          "iast": "vaktrā",
+          "en": "Faced",
+          "kn": "ಮುಖವುಳ್ಳವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Possessor of five faces"
     },
     {
       "number": 516,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "अस्थि",
+          "iast": "asthi",
+          "en": "Bone tissue",
+          "kn": "ಅಸ್ಥಿ ಧಾತು"
+        },
+        {
+          "dev": "संस्थिता",
+          "iast": "saṃsthitā",
+          "en": "Established in",
+          "kn": "ನೆಲೆಸಿರುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "The one who resides in the bones"
     },
     {
       "number": 517,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "अङ्कुश",
+          "iast": "aṅkuśa",
+          "en": "Goad",
+          "kn": "ಅಂಕುಶ"
+        },
+        {
+          "dev": "आदि",
+          "iast": "ādi",
+          "en": "And other",
+          "kn": "ಮೊದಲಾದ"
+        },
+        {
+          "dev": "प्रहरणा",
+          "iast": "praharaṇā",
+          "en": "Weapons",
+          "kn": "ಆಯುಧಗಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Holder of the goad and other weapons"
     },
     {
       "number": 518,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "वरदा",
+          "iast": "varadā",
+          "en": "Varadā deity",
+          "kn": "ವರದಾ ದೇವತೆ"
+        },
+        {
+          "dev": "आदि",
+          "iast": "ādi",
+          "en": "And others",
+          "kn": "ಮೊದಲಾದ"
+        },
+        {
+          "dev": "निषेविता",
+          "iast": "niṣevitā",
+          "en": "Attended by",
+          "kn": "ಸೇವಿತಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Attended by varadA and other shaktis"
     },
     {
       "number": 519,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "मुद्ग",
+          "iast": "mudga",
+          "en": "Green gram",
+          "kn": "ಹೆಸರುಕಾಳು"
+        },
+        {
+          "dev": "ओदन",
+          "iast": "odana",
+          "en": "Cooked rice",
+          "kn": "ಅನ್ನ"
+        },
+        {
+          "dev": "आसक्त",
+          "iast": "āsakta",
+          "en": "Fond of",
+          "kn": "ಆಸಕ್ತ"
+        },
+        {
+          "dev": "चित्ता",
+          "iast": "cittā",
+          "en": "In mind",
+          "kn": "ಚಿತ್ತವುಳ್ಳವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Particularly fond of food offerings made of mudga, a lentil"
     },
     {
       "number": 520,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "साकिनी",
+          "iast": "sākinī",
+          "en": "Sākinī deity",
+          "kn": "ಸಾಕಿನೀ ದೇವತೆ"
+        },
+        {
+          "dev": "अम्बा",
+          "iast": "ambā",
+          "en": "Mother",
+          "kn": "ಅಂಬೆ"
+        },
+        {
+          "dev": "स्वरूपिणी",
+          "iast": "svarūpiṇī",
+          "en": "Embodiment",
+          "kn": "ಸ್ವರೂಪಿಣಿ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "In the form of sAkinI yoginI"
     },
     {
       "number": 521,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "आज्ञा",
+          "iast": "ājñā",
+          "en": "Ājñā chakra",
+          "kn": "ಆಜ್ಞಾ ಚಕ್ರ"
+        },
+        {
+          "dev": "चक्र",
+          "iast": "cakra",
+          "en": "Wheel or centre",
+          "kn": "ಚಕ್ರ"
+        },
+        {
+          "dev": "अब्ज",
+          "iast": "abja",
+          "en": "Lotus",
+          "kn": "ಕಮಲ"
+        },
+        {
+          "dev": "निलया",
+          "iast": "nilayā",
+          "en": "Dwelling in",
+          "kn": "ನೆಲೆಸಿರುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "The one who resides in the two-petaled lotus in the AjnAchakra"
     },
     {
       "number": 522,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "शुक्ल",
+          "iast": "śukla",
+          "en": "White",
+          "kn": "ಬಿಳಿ"
+        },
+        {
+          "dev": "वर्णा",
+          "iast": "varṇā",
+          "en": "Complexioned",
+          "kn": "ವರ್ಣವುಳ್ಳವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "White in color"
     },
     {
       "number": 523,
       "components": [
         {
-          "dev": "",
+          "dev": "षड्",
           "iast": "ṣaḍ",
           "en": "Six",
           "kn": "ಆರು"
         },
         {
-          "dev": "",
+          "dev": "आनना",
           "iast": "ānanā",
-          "en": "Faced",
-          "kn": "ಮುಖವುಳ್ಳವಳು"
+          "en": "Faces",
+          "kn": "ಮುಖಗಳು"
         }
       ],
-      "review_status": "automated_exact_component_match_needs_review"
+      "review_status": "manual_compound_draft"
     },
     {
       "number": 524,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "मज्जा",
+          "iast": "majjā",
+          "en": "Marrow tissue",
+          "kn": "ಮಜ್ಜಾ ಧಾತು"
+        },
+        {
+          "dev": "संस्था",
+          "iast": "saṃsthā",
+          "en": "Established in",
+          "kn": "ನೆಲೆಸಿರುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Presiding deity of the bone marrow"
     },
     {
       "number": 525,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "हंसवती",
+          "iast": "haṃsavatī",
+          "en": "Haṃsavatī deity",
+          "kn": "ಹಂಸವತೀ ದೇವತೆ"
+        },
+        {
+          "dev": "मुख्य",
+          "iast": "mukhya",
+          "en": "Chief among",
+          "kn": "ಪ್ರಮುಖ"
+        },
+        {
+          "dev": "शक्ति",
+          "iast": "śakti",
+          "en": "Powers",
+          "kn": "ಶಕ್ತಿಗಳು"
+        },
+        {
+          "dev": "समन्विता",
+          "iast": "samanvitā",
+          "en": "Accompanied by",
+          "kn": "ಸಹಿತಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Accompanied by the shaktis hamsavatI and kShamAvati (in the two petals of the lotus)"
     },
     {
       "number": 526,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "हरिद्रा",
+          "iast": "haridrā",
+          "en": "Turmeric",
+          "kn": "ಅರಿಶಿನ"
+        },
+        {
+          "dev": "अन्न",
+          "iast": "anna",
+          "en": "Food",
+          "kn": "ಅನ್ನ"
+        },
+        {
+          "dev": "एक",
+          "iast": "eka",
+          "en": "Especially or solely",
+          "kn": "ವಿಶೇಷವಾಗಿ"
+        },
+        {
+          "dev": "रसिका",
+          "iast": "rasikā",
+          "en": "Fond of",
+          "kn": "ರುಚಿಯುಳ್ಳವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Fond of food seasoned with turmeric"
     },
     {
       "number": 527,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "हाकिनी",
+          "iast": "hākinī",
+          "en": "Hākinī deity",
+          "kn": "ಹಾಕಿನೀ ದೇವತೆ"
+        },
+        {
+          "dev": "रूप",
+          "iast": "rūpa",
+          "en": "Form",
+          "kn": "ರೂಪ"
+        },
+        {
+          "dev": "धारिणी",
+          "iast": "dhāriṇī",
+          "en": "Bearing",
+          "kn": "ಧರಿಸುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "In the form of hAkinI devI"
     },
     {
       "number": 528,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "सहस्र",
+          "iast": "sahasra",
+          "en": "Thousand",
+          "kn": "ಸಾವಿರ"
+        },
+        {
+          "dev": "दल",
+          "iast": "dala",
+          "en": "Petals",
+          "kn": "ದಳಗಳು"
+        },
+        {
+          "dev": "पद्म",
+          "iast": "padma",
+          "en": "Lotus",
+          "kn": "ಕಮಲ"
+        },
+        {
+          "dev": "स्था",
+          "iast": "sthā",
+          "en": "Situated in",
+          "kn": "ನೆಲೆಸಿರುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "The one who resides in the thousand-petaled lotus"
     },
     {
       "number": 529,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "सर्व",
+          "iast": "sarva",
+          "en": "All",
+          "kn": "ಎಲ್ಲ"
+        },
+        {
+          "dev": "वर्ण",
+          "iast": "varṇa",
+          "en": "Colours",
+          "kn": "ಬಣ್ಣಗಳು"
+        },
+        {
+          "dev": "उपशोभिता",
+          "iast": "upaśobhitā",
+          "en": "Adorned with",
+          "kn": "ಅಲಂಕರಿಸಲ್ಪಟ್ಟವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Radiant in many colors"
     },
     {
       "number": 530,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "सर्व",
+          "iast": "sarva",
+          "en": "All",
+          "kn": "ಎಲ್ಲ"
+        },
+        {
+          "dev": "आयुध",
+          "iast": "āyudha",
+          "en": "Weapons",
+          "kn": "ಆಯುಧಗಳು"
+        },
+        {
+          "dev": "धरा",
+          "iast": "dharā",
+          "en": "Bearing",
+          "kn": "ಧರಿಸಿರುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Holder of all the known weapons"
     },
     {
       "number": 531,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "शुक्ल",
+          "iast": "śukla",
+          "en": "White; reproductive essence",
+          "kn": "ಶುಕ್ಲ ಧಾತು"
+        },
+        {
+          "dev": "संस्थिता",
+          "iast": "saṃsthitā",
+          "en": "Established in",
+          "kn": "ನೆಲೆಸಿರುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "The one who resides in the semen"
     },
     {
       "number": 532,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "सर्वतः",
+          "iast": "sarvataḥ",
+          "en": "On every side",
+          "kn": "ಎಲ್ಲ ದಿಕ್ಕುಗಳಲ್ಲಿ"
+        },
+        {
+          "dev": "मुखी",
+          "iast": "mukhī",
+          "en": "Faced",
+          "kn": "ಮುಖವುಳ್ಳವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Possessor of faces turned in all directions"
     },
     {
       "number": 533,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "सर्व",
+          "iast": "sarva",
+          "en": "All",
+          "kn": "ಎಲ್ಲ"
+        },
+        {
+          "dev": "ओदन",
+          "iast": "odana",
+          "en": "Cooked rice",
+          "kn": "ಅನ್ನ"
+        },
+        {
+          "dev": "प्रीत",
+          "iast": "prīta",
+          "en": "Pleased by",
+          "kn": "ಸಂತುಷ್ಟ"
+        },
+        {
+          "dev": "चित्ता",
+          "iast": "cittā",
+          "en": "In mind",
+          "kn": "ಚಿತ್ತವುಳ್ಳವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Pleased by all offerings of food"
     },
     {
       "number": 534,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "याकिनी",
+          "iast": "yākinī",
+          "en": "Yākinī deity",
+          "kn": "ಯಾಕಿನೀ ದೇವತೆ"
+        },
+        {
+          "dev": "अम्बा",
+          "iast": "ambā",
+          "en": "Mother",
+          "kn": "ಅಂಬೆ"
+        },
+        {
+          "dev": "स्वरूपिणी",
+          "iast": "svarūpiṇī",
+          "en": "Embodiment",
+          "kn": "ಸ್ವರೂಪಿಣಿ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "In the form of the yAkinI yoginI"
     },
     {
       "number": 535,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "स्वाहा",
+          "iast": "svāhā",
+          "en": "Svāhā offering invocation",
+          "kn": "ಸ್ವಾಹಾ ಆಹುತಿ ಮಂತ್ರ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Object of the invocation 'svAhA' at the end of mantras chanted while offering oblations to the fire in yAga ceremonies"
     },
     {
       "number": 536,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "स्वधा",
+          "iast": "svadhā",
+          "en": "Svadhā ancestral offering invocation",
+          "kn": "ಸ್ವಧಾ ಪಿತೃ ತರ್ಪಣ ಮಂತ್ರ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Object of the 'svadhA' invocation at the end of mantras"
     },
     {
       "number": 537,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "अमति",
+          "iast": "amati",
+          "en": "Beyond ordinary thought; absence of intellect",
+          "kn": "ಸಾಮಾನ್ಯ ಚಿಂತನೆಗೆ ಅತೀತ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "In the form of ignorance or nescience"
     },
     {
       "number": 538,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "मेधा",
+          "iast": "medhā",
+          "en": "Intelligence and retention",
+          "kn": "ಮೇಧಾಶಕ್ತಿ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "In the form of wisdom (knowledge)"
     },
     {
       "number": 539,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "श्रुति",
+          "iast": "śruti",
+          "en": "Vedic revelation",
+          "kn": "ಶ್ರುತಿ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "In the form of the vedas"
     },
     {
       "number": 540,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "स्मृति",
+          "iast": "smṛti",
+          "en": "Remembrance",
+          "kn": "ಸ್ಮೃತಿ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "In the form of smRiti (works based on the meaning of vedas)"
     },
     {
       "number": 541,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "अनुत्तमा",
+          "iast": "anuttamā",
+          "en": "With none superior",
+          "kn": "ಅತ್ಯುನ್ನತಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Best; She who is not excelled by anyone"
     },
     {
       "number": 542,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "पुण्य",
+          "iast": "puṇya",
+          "en": "Merit",
+          "kn": "ಪುಣ್ಯ"
+        },
+        {
+          "dev": "कीर्तिः",
+          "iast": "kīrtiḥ",
+          "en": "Fame or glory",
+          "kn": "ಕೀರ್ತಿ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "She whose fame is sacred or righteous"
     },
     {
       "number": 543,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "पुण्य",
+          "iast": "puṇya",
+          "en": "Merit",
+          "kn": "ಪುಣ್ಯ"
+        },
+        {
+          "dev": "लभ्या",
+          "iast": "labhyā",
+          "en": "Attainable through",
+          "kn": "ಲಭ್ಯಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Attained only by righteous souls"
     },
     {
       "number": 544,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "पुण्य",
+          "iast": "puṇya",
+          "en": "Auspicious merit",
+          "kn": "ಪುಣ್ಯ"
+        },
+        {
+          "dev": "श्रवण",
+          "iast": "śravaṇa",
+          "en": "Hearing",
+          "kn": "ಕೇಳುವುದು"
+        },
+        {
+          "dev": "कीर्तना",
+          "iast": "kīrtanā",
+          "en": "Recitation and praise",
+          "kn": "ಕೀರ್ತನೆ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "The one who bestows merit on anyone who hears of Her and praises Her"
     },
     {
       "number": 545,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "पुलोमजा",
+          "iast": "pulomajā",
+          "en": "Indrāṇī, daughter of Puloman",
+          "kn": "ಪುಲೋಮಜಾ ಇಂದ್ರಾಣಿ"
+        },
+        {
+          "dev": "अर्चिता",
+          "iast": "arcitā",
+          "en": "Worshipped by",
+          "kn": "ಪೂಜಿತಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Worshipped by pulomaja (Indra's wife)"
     },
     {
       "number": 546,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "बन्ध",
+          "iast": "bandha",
+          "en": "Bondage",
+          "kn": "ಬಂಧನ"
+        },
+        {
+          "dev": "मोचनी",
+          "iast": "mocanī",
+          "en": "Liberator",
+          "kn": "ಮುಕ್ತಗೊಳಿಸುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Free from bonds; She who gives release from bondage"
     },
     {
       "number": 547,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "बर्बर",
+          "iast": "barbara",
+          "en": "Curly or wavy",
+          "kn": "ಗುಂಗುರು"
+        },
+        {
+          "dev": "अलका",
+          "iast": "alakā",
+          "en": "Locks of hair",
+          "kn": "ಕೇಶಗಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "She whose hair forms curly or wavy locks"
     },
     {
       "number": 548,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "विमर्श",
+          "iast": "vimarśa",
+          "en": "Self-reflective consciousness",
+          "kn": "ವಿಮರ್ಶ ಚೈತನ್ಯ"
+        },
+        {
+          "dev": "रूपिणी",
+          "iast": "rūpiṇī",
+          "en": "Having the form",
+          "kn": "ರೂಪಿಣಿ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "In the form of vimarsha (reflection or meaning)"
     },
     {
       "number": 549,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "विद्या",
+          "iast": "vidyā",
+          "en": "Knowledge",
+          "kn": "ವಿದ್ಯೆ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "In the form of knowledge"
     },
     {
       "number": 550,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "वियत्",
+          "iast": "viyat",
+          "en": "Space or ether",
+          "kn": "ಆಕಾಶ"
+        },
+        {
+          "dev": "आदि",
+          "iast": "ādi",
+          "en": "And the other elements",
+          "kn": "ಮೊದಲಾದ ಭೂತಗಳು"
+        },
+        {
+          "dev": "जगत्",
+          "iast": "jagat",
+          "en": "Universe",
+          "kn": "ಜಗತ್ತು"
+        },
+        {
+          "dev": "प्रसूः",
+          "iast": "prasūḥ",
+          "en": "Mother or source",
+          "kn": "ಜನನಿ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Mother of the universe, which is the aggregate of all the elements starting with the ether"
     },
     {
