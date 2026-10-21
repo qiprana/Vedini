@@ -1,0 +1,32 @@
+{
+  "id": "lalita-093",
+  "verse_number": 93,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "कुशला कोमलाकारा कुरुकुल्ला कुलेश्वरी ।",
+      "कुलकुण्डालया कौलमार्गतत्परसेविता ॥ ९३ ॥"
+    ],
+    "iast": [
+      "kuśalā komalākārā kurukullā kuleśvarī ।",
+      "kulakuṇḍālayā kaulamārgatatparasevitā ॥ 93 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; requires cross-check against Shlokam"
+    }
+  ]
+}
