@@ -1,0 +1,32 @@
+{
+  "id": "lalita-091",
+  "verse_number": 91,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "तत्त्वासना तत्त्वमयी पञ्चकोशान्तरस्थिता ।",
+      "निस्सीममहिमा नित्ययौवना मदशालिनी ॥ ९१ ॥"
+    ],
+    "iast": [
+      "tattvāsanā tattvamayī pañcakośāntarasthitā ।",
+      "nissīmamahimā nityayauvanā madaśālinī ॥ 91 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "",
+    "kannada": ""
+  },
+  "names": [],
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "source_text_draft",
+  "sources": [
+    {
+      "url": "https://github.com/sanskrit/raw_etexts/blob/master/kAvyam/padyam/peterFreund/stotram/lalita_sahasranama.md",
+      "role": "Numbered Sanskrit source; requires cross-check against Shlokam"
+    }
+  ]
+}
