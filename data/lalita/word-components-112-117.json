@@ -1,0 +1,120 @@
+{
+  "scope": "Śloka 41, names 112–117",
+  "review_status": "compound_analysis_draft",
+  "entries": [
+    {
+      "number": 112,
+      "components": [
+        {
+          "dev": "भव",
+          "iast": "bhava",
+          "en": "Śiva; also existence",
+          "kn": "ಶಿವ; ಭವ"
+        },
+        {
+          "dev": "आनी",
+          "iast": "ānī",
+          "en": "She who is related to or belongs to",
+          "kn": "ಸಂಬಂಧಿತಳು"
+        }
+      ]
+    },
+    {
+      "number": 113,
+      "components": [
+        {
+          "dev": "भावना",
+          "iast": "bhāvanā",
+          "en": "Contemplation, meditation",
+          "kn": "ಧ್ಯಾನ, ಮನನ"
+        },
+        {
+          "dev": "गम्या",
+          "iast": "gamyā",
+          "en": "Accessible or reached through",
+          "kn": "ಮೂಲಕ ಅರಿಯಬಹುದಾದವಳು"
+        }
+      ]
+    },
+    {
+      "number": 114,
+      "components": [
+        {
+          "dev": "भव",
+          "iast": "bhava",
+          "en": "Worldly existence",
+          "kn": "ಸಂಸಾರ"
+        },
+        {
+          "dev": "अरण्य",
+          "iast": "araṇya",
+          "en": "Forest",
+          "kn": "ಅರಣ್ಯ"
+        },
+        {
+          "dev": "कुठारिका",
+          "iast": "kuṭhārikā",
+          "en": "Axe that cuts through",
+          "kn": "ಕಡಿಯುವ ಕೊಡಲಿ"
+        }
+      ]
+    },
+    {
+      "number": 115,
+      "components": [
+        {
+          "dev": "भद्र",
+          "iast": "bhadra",
+          "en": "Auspicious, beneficial",
+          "kn": "ಮಂಗಳಕರ"
+        },
+        {
+          "dev": "प्रिया",
+          "iast": "priyā",
+          "en": "Beloved or fond of",
+          "kn": "ಪ್ರೀತಿಸುವವಳು"
+        }
+      ]
+    },
+    {
+      "number": 116,
+      "components": [
+        {
+          "dev": "भद्र",
+          "iast": "bhadra",
+          "en": "Auspiciousness",
+          "kn": "ಮಂಗಳ"
+        },
+        {
+          "dev": "मूर्तिः",
+          "iast": "mūrtiḥ",
+          "en": "Embodiment or form",
+          "kn": "ಸ್ವರೂಪ"
+        }
+      ]
+    },
+    {
+      "number": 117,
+      "components": [
+        {
+          "dev": "भक्त",
+          "iast": "bhakta",
+          "en": "Devotee",
+          "kn": "ಭಕ್ತ"
+        },
+        {
+          "dev": "सौभाग्य",
+          "iast": "saubhāgya",
+          "en": "Good fortune, blessedness",
+          "kn": "ಸೌಭಾಗ್ಯ"
+        },
+        {
+          "dev": "दायिनी",
+          "iast": "dāyinī",
+          "en": "Bestower",
+          "kn": "ನೀಡುವವಳು"
+        }
+      ]
+    }
+  ]
+}
