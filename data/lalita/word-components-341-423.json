@@ -1,0 +1,1710 @@
+{
+  "scope": "Ślokas 76–90, names 341–423",
+  "review_status": "editorial_draft",
+  "entries": [
+    {
+      "number": 341,
+      "components": [
+        {
+          "dev": "",
+          "iast": "kṣetra",
+          "en": "Field or body",
+          "kn": "ಕ್ಷೇತ್ರ"
+        },
+        {
+          "dev": "",
+          "iast": "svarūpā",
+          "en": "Embodiment",
+          "kn": "ಸ್ವರೂಪ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 342,
+      "components": [
+        {
+          "dev": "",
+          "iast": "kṣetra",
+          "en": "Field or body",
+          "kn": "ಕ್ಷೇತ್ರ"
+        },
+        {
+          "dev": "",
+          "iast": "īśī",
+          "en": "Ruler",
+          "kn": "ಈಶ್ವರಿ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 343,
+      "components": [
+        {
+          "dev": "",
+          "iast": "kṣetra",
+          "en": "Field or body",
+          "kn": "ಕ್ಷೇತ್ರ"
+        },
+        {
+          "dev": "",
+          "iast": "kṣetrajña",
+          "en": "Knower of field",
+          "kn": "ಕ್ಷೇತ್ರಜ್ಞ"
+        },
+        {
+          "dev": "",
+          "iast": "pālinī",
+          "en": "Protector",
+          "kn": "ಪಾಲಕಿ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 344,
+      "components": [
+        {
+          "dev": "",
+          "iast": "kṣaya",
+          "en": "Decay",
+          "kn": "ಕ್ಷಯ"
+        },
+        {
+          "dev": "",
+          "iast": "vṛddhi",
+          "en": "Growth",
+          "kn": "ವೃದ್ಧಿ"
+        },
+        {
+          "dev": "",
+          "iast": "vinirmuktā",
+          "en": "Free from",
+          "kn": "ಮುಕ್ತಳಾದವಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 345,
+      "components": [
+        {
+          "dev": "",
+          "iast": "kṣetrapāla",
+          "en": "Field guardian",
+          "kn": "ಕ್ಷೇತ್ರಪಾಲ"
+        },
+        {
+          "dev": "",
+          "iast": "samarcitā",
+          "en": "Worshipped",
+          "kn": "ಪೂಜಿತಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 346,
+      "components": [
+        {
+          "dev": "",
+          "iast": "vijayā",
+          "en": "Ever-victorious",
+          "kn": ""
+        }
+      ],
+      "review_status": "needs_gloss_review"
+    },
+    {
+      "number": 347,
+      "components": [
+        {
+          "dev": "",
+          "iast": "vimalā",
+          "en": "Without a trace of impurity",
+          "kn": ""
+        }
+      ],
+      "review_status": "needs_gloss_review"
+    },
+    {
+      "number": 348,
+      "components": [
+        {
+          "dev": "",
+          "iast": "vandyā",
+          "en": "Adorable, worthy of worship",
+          "kn": ""
+        }
+      ],
+      "review_status": "needs_gloss_review"
+    },
+    {
+      "number": 349,
+      "components": [
+        {
+          "dev": "",
+          "iast": "vandāru",
+          "en": "Worshipper",
+          "kn": "ಭಕ್ತ"
+        },
+        {
+          "dev": "",
+          "iast": "jana",
+          "en": "People",
+          "kn": "ಜನ"
+        },
+        {
+          "dev": "",
+          "iast": "vatsalā",
+          "en": "Affectionate",
+          "kn": "ವಾತ್ಸಲ್ಯವುಳ್ಳವಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 350,
+      "components": [
+        {
+          "dev": "",
+          "iast": "vāk",
+          "en": "Speech",
+          "kn": "ವಾಕ್"
+        },
+        {
+          "dev": "",
+          "iast": "vādinī",
+          "en": "Speaker",
+          "kn": "ವಾದಿನಿ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 351,
+      "components": [
+        {
+          "dev": "",
+          "iast": "vāma",
+          "en": "Lovely",
+          "kn": "ಸುಂದರ"
+        },
+        {
+          "dev": "",
+          "iast": "keśī",
+          "en": "Hair",
+          "kn": "ಕೇಶ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 352,
+      "components": [
+        {
+          "dev": "",
+          "iast": "vahni",
+          "en": "Fire",
+          "kn": "ಅಗ್ನಿ"
+        },
+        {
+          "dev": "",
+          "iast": "maṇḍala",
+          "en": "Sphere",
+          "kn": "ಮಂಡಲ"
+        },
+        {
+          "dev": "",
+          "iast": "vāsinī",
+          "en": "Resident",
+          "kn": "ವಾಸಿನಿ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 353,
+      "components": [
+        {
+          "dev": "",
+          "iast": "bhaktimat",
+          "en": "Devotee",
+          "kn": "ಭಕ್ತ"
+        },
+        {
+          "dev": "",
+          "iast": "kalpa",
+          "en": "Wish-granting",
+          "kn": "ಕಲ್ಪ"
+        },
+        {
+          "dev": "",
+          "iast": "latikā",
+          "en": "Creeper",
+          "kn": "ಬಳ್ಳಿ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 354,
+      "components": [
+        {
+          "dev": "",
+          "iast": "paśu",
+          "en": "Bound being",
+          "kn": "ಬಂಧಿತ ಜೀವ"
+        },
+        {
+          "dev": "",
+          "iast": "pāśa",
+          "en": "Bond",
+          "kn": "ಪಾಶ"
+        },
+        {
+          "dev": "",
+          "iast": "vimocinī",
+          "en": "Liberator",
+          "kn": "ವಿಮೋಚಕಿ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 355,
+      "components": [
+        {
+          "dev": "",
+          "iast": "saṃhṛta",
+          "en": "Destroyed",
+          "kn": "ನಾಶಮಾಡಿದ"
+        },
+        {
+          "dev": "",
+          "iast": "aśeṣa",
+          "en": "All",
+          "kn": "ಸಮಸ್ತ"
+        },
+        {
+          "dev": "",
+          "iast": "pāṣaṇḍā",
+          "en": "False creed",
+          "kn": "ಪಾಷಂಡ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 356,
+      "components": [
+        {
+          "dev": "",
+          "iast": "sat",
+          "en": "Good",
+          "kn": "ಸತ್"
+        },
+        {
+          "dev": "",
+          "iast": "ācāra",
+          "en": "Conduct",
+          "kn": "ಆಚಾರ"
+        },
+        {
+          "dev": "",
+          "iast": "pravartikā",
+          "en": "Promoter",
+          "kn": "ಪ್ರವರ್ತಕಿ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 357,
+      "components": [
+        {
+          "dev": "",
+          "iast": "tāpa",
+          "en": "Suffering",
+          "kn": "ತಾಪ"
+        },
+        {
+          "dev": "",
+          "iast": "traya",
+          "en": "Threefold",
+          "kn": "ಮೂರು"
+        },
+        {
+          "dev": "",
+          "iast": "agni",
+          "en": "Fire",
+          "kn": "ಅಗ್ನಿ"
+        },
+        {
+          "dev": "",
+          "iast": "santapta",
+          "en": "Scorched",
+          "kn": "ಬಳಲಿದ"
+        },
+        {
+          "dev": "",
+          "iast": "samāhlādana",
+          "en": "Refreshing",
+          "kn": "ಆಹ್ಲಾದಕರ"
+        },
+        {
+          "dev": "",
+          "iast": "candrikā",
+          "en": "Moonlight",
+          "kn": "ಚಂದ್ರಿಕಾ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 358,
+      "components": [
+        {
+          "dev": "",
+          "iast": "taruṇī",
+          "en": "Ever young",
+          "kn": ""
+        }
+      ],
+      "review_status": "needs_gloss_review"
+    },
+    {
+      "number": 359,
+      "components": [
+        {
+          "dev": "",
+          "iast": "tāpasa",
+          "en": "Ascetic",
+          "kn": "ತಪಸ್ವಿ"
+        },
+        {
+          "dev": "",
+          "iast": "ārādhyā",
+          "en": "Worshipped",
+          "kn": "ಆರಾಧಿತಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 360,
+      "components": [
+        {
+          "dev": "",
+          "iast": "tanu",
+          "en": "Slender",
+          "kn": "ಸಣ್ಣ"
+        },
+        {
+          "dev": "",
+          "iast": "madhyā",
+          "en": "Waist",
+          "kn": "ನಡು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 361,
+      "components": [
+        {
+          "dev": "",
+          "iast": "tamas",
+          "en": "Darkness",
+          "kn": "ಕತ್ತಲೆ"
+        },
+        {
+          "dev": "",
+          "iast": "apahā",
+          "en": "Remover",
+          "kn": "ನಿವಾರಿಸುವವಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 362,
+      "components": [
+        {
+          "dev": "",
+          "iast": "citiḥ",
+          "en": "In the form of pure intelligence",
+          "kn": ""
+        }
+      ],
+      "review_status": "needs_gloss_review"
+    },
+    {
+      "number": 363,
+      "components": [
+        {
+          "dev": "",
+          "iast": "tat",
+          "en": "That",
+          "kn": "ತತ್"
+        },
+        {
+          "dev": "",
+          "iast": "pada",
+          "en": "Word",
+          "kn": "ಪದ"
+        },
+        {
+          "dev": "",
+          "iast": "lakṣya",
+          "en": "Indicated",
+          "kn": "ಲಕ್ಷ್ಯ"
+        },
+        {
+          "dev": "",
+          "iast": "arthā",
+          "en": "Meaning",
+          "kn": "ಅರ್ಥ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 364,
+      "components": [
+        {
+          "dev": "",
+          "iast": "cit",
+          "en": "Consciousness",
+          "kn": "ಚೈತನ್ಯ"
+        },
+        {
+          "dev": "",
+          "iast": "eka",
+          "en": "One",
+          "kn": "ಏಕ"
+        },
+        {
+          "dev": "",
+          "iast": "rasa",
+          "en": "Essence",
+          "kn": "ರಸ"
+        },
+        {
+          "dev": "",
+          "iast": "rūpiṇī",
+          "en": "Embodiment",
+          "kn": "ರೂಪಿಣಿ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 365,
+      "components": [
+        {
+          "dev": "",
+          "iast": "sva",
+          "en": "Own",
+          "kn": "ಸ್ವ"
+        },
+        {
+          "dev": "",
+          "iast": "ātma",
+          "en": "Self",
+          "kn": "ಆತ್ಮ"
+        },
+        {
+          "dev": "",
+          "iast": "ānanda",
+          "en": "Bliss",
+          "kn": "ಆನಂದ"
+        },
+        {
+          "dev": "",
+          "iast": "lava",
+          "en": "Fraction",
+          "kn": "ಅಂಶ"
+        },
+        {
+          "dev": "",
+          "iast": "bhūta",
+          "en": "Become",
+          "kn": "ಆದ"
+        },
+        {
+          "dev": "",
+          "iast": "brahma",
+          "en": "Brahmā",
+          "kn": "ಬ್ರಹ್ಮ"
+        },
+        {
+          "dev": "",
+          "iast": "ādi",
+          "en": "And others",
+          "kn": "ಮೊದಲಾದ"
+        },
+        {
+          "dev": "",
+          "iast": "ānanda",
+          "en": "Bliss",
+          "kn": "ಆನಂದ"
+        },
+        {
+          "dev": "",
+          "iast": "santatiḥ",
+          "en": "Continuum",
+          "kn": "ಸಂತತಿ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 366,
+      "components": [
+        {
+          "dev": "",
+          "iast": "parā",
+          "en": "Supreme; She who transcends all",
+          "kn": ""
+        }
+      ],
+      "review_status": "needs_gloss_review"
+    },
+    {
+      "number": 367,
+      "components": [
+        {
+          "dev": "",
+          "iast": "pratyak",
+          "en": "Inward",
+          "kn": "ಒಳಗಿನ"
+        },
+        {
+          "dev": "",
+          "iast": "citi",
+          "en": "Awareness",
+          "kn": "ಚೈತನ್ಯ"
+        },
+        {
+          "dev": "",
+          "iast": "rūpā",
+          "en": "Of the nature of unmanifested consciousness or of unmanifested brahman",
+          "kn": ""
+        }
+      ],
+      "review_status": "needs_gloss_review"
+    },
+    {
+      "number": 368,
+      "components": [
+        {
+          "dev": "",
+          "iast": "paśyantī",
+          "en": "PashyantI, the second level of sound after parA in the svAdhiShTAna chakra",
+          "kn": ""
+        }
+      ],
+      "review_status": "needs_gloss_review"
+    },
+    {
+      "number": 369,
+      "components": [
+        {
+          "dev": "",
+          "iast": "para",
+          "en": "Highest",
+          "kn": "ಪರ"
+        },
+        {
+          "dev": "",
+          "iast": "devatā",
+          "en": "Deities",
+          "kn": "ದೇವತೆ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 370,
+      "components": [
+        {
+          "dev": "",
+          "iast": "madhyamā",
+          "en": "The one who stays in the middle",
+          "kn": ""
+        }
+      ],
+      "review_status": "needs_gloss_review"
+    },
+    {
+      "number": 371,
+      "components": [
+        {
+          "dev": "",
+          "iast": "vaikharī",
+          "en": "Articulated speech",
+          "kn": "ವೈಖರಿ"
+        },
+        {
+          "dev": "",
+          "iast": "rūpā",
+          "en": "In the form of vaikharI (sound in the manifested, audible form)",
+          "kn": ""
+        }
+      ],
+      "review_status": "needs_gloss_review"
+    },
+    {
+      "number": 372,
+      "components": [
+        {
+          "dev": "",
+          "iast": "bhakta",
+          "en": "Devotee",
+          "kn": "ಭಕ್ತ"
+        },
+        {
+          "dev": "",
+          "iast": "mānasa",
+          "en": "Mind",
+          "kn": "ಮನಸ್ಸು"
+        },
+        {
+          "dev": "",
+          "iast": "haṃsikā",
+          "en": "Swan",
+          "kn": "ಹಂಸ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 373,
+      "components": [
+        {
+          "dev": "",
+          "iast": "kāmeśvara",
+          "en": "Kāmeśvara",
+          "kn": "ಕಾಮೇಶ್ವರ"
+        },
+        {
+          "dev": "",
+          "iast": "prāṇa",
+          "en": "Vitality",
+          "kn": "ಪ್ರಾಣ"
+        },
+        {
+          "dev": "",
+          "iast": "nāḍī",
+          "en": "Channel",
+          "kn": "ನಾಡಿ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 374,
+      "components": [
+        {
+          "dev": "",
+          "iast": "kṛta",
+          "en": "Done",
+          "kn": "ಮಾಡಿದ"
+        },
+        {
+          "dev": "",
+          "iast": "jñā",
+          "en": "Knower",
+          "kn": "ತಿಳಿದವಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 375,
+      "components": [
+        {
+          "dev": "",
+          "iast": "kāma",
+          "en": "Kāma",
+          "kn": "ಕಾಮ"
+        },
+        {
+          "dev": "",
+          "iast": "pūjitā",
+          "en": "Worshipped",
+          "kn": "ಪೂಜಿತಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 376,
+      "components": [
+        {
+          "dev": "",
+          "iast": "śṛṅgāra",
+          "en": "Love",
+          "kn": "ಶೃಂಗಾರ"
+        },
+        {
+          "dev": "",
+          "iast": "rasa",
+          "en": "Essence",
+          "kn": "ರಸ"
+        },
+        {
+          "dev": "",
+          "iast": "sampūrṇā",
+          "en": "Full",
+          "kn": "ಪರಿಪೂರ್ಣ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 377,
+      "components": [
+        {
+          "dev": "",
+          "iast": "jayā",
+          "en": "Victorious always and everywhere",
+          "kn": ""
+        }
+      ],
+      "review_status": "needs_gloss_review"
+    },
+    {
+      "number": 378,
+      "components": [
+        {
+          "dev": "",
+          "iast": "jālandhara",
+          "en": "Jālandhara",
+          "kn": "ಜಾಲಂಧರ"
+        },
+        {
+          "dev": "",
+          "iast": "sthitā",
+          "en": "Present",
+          "kn": "ನೆಲೆಸಿದವಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 379,
+      "components": [
+        {
+          "dev": "",
+          "iast": "oḍyāṇa",
+          "en": "Oḍyāṇa",
+          "kn": "ಒಡ್ಯಾಣ"
+        },
+        {
+          "dev": "",
+          "iast": "pīṭha",
+          "en": "Seat",
+          "kn": "ಪೀಠ"
+        },
+        {
+          "dev": "",
+          "iast": "nilayā",
+          "en": "Abode",
+          "kn": "ನಿಲಯ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 380,
+      "components": [
+        {
+          "dev": "",
+          "iast": "bindu",
+          "en": "Point",
+          "kn": "ಬಿಂದು"
+        },
+        {
+          "dev": "",
+          "iast": "maṇḍala",
+          "en": "Sphere",
+          "kn": "ಮಂಡಲ"
+        },
+        {
+          "dev": "",
+          "iast": "vāsinī",
+          "en": "Resident",
+          "kn": "ವಾಸಿನಿ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 381,
+      "components": [
+        {
+          "dev": "",
+          "iast": "raho",
+          "en": "Secret",
+          "kn": "ರಹಸ್ಯ"
+        },
+        {
+          "dev": "",
+          "iast": "yāga",
+          "en": "Worship rite",
+          "kn": "ಯಾಗ"
+        },
+        {
+          "dev": "",
+          "iast": "krama",
+          "en": "Method",
+          "kn": "ಕ್ರಮ"
+        },
+        {
+          "dev": "",
+          "iast": "ārādhyā",
+          "en": "Worshipped",
+          "kn": "ಆರಾಧಿತಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 382,
+      "components": [
+        {
+          "dev": "",
+          "iast": "rahas",
+          "en": "Secrecy",
+          "kn": "ರಹಸ್ಯ"
+        },
+        {
+          "dev": "",
+          "iast": "tarpaṇa",
+          "en": "Offering",
+          "kn": "ತರ್ಪಣ"
+        },
+        {
+          "dev": "",
+          "iast": "tarpitā",
+          "en": "Satisfied",
+          "kn": "ತೃಪ್ತಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 383,
+      "components": [
+        {
+          "dev": "",
+          "iast": "sadyaḥ",
+          "en": "Immediately",
+          "kn": "ತಕ್ಷಣ"
+        },
+        {
+          "dev": "",
+          "iast": "prasādinī",
+          "en": "Gracious",
+          "kn": "ಅನುಗ್ರಹಿಣಿ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 384,
+      "components": [
+        {
+          "dev": "",
+          "iast": "viśva",
+          "en": "Universe",
+          "kn": "ವಿಶ್ವ"
+        },
+        {
+          "dev": "",
+          "iast": "sākṣiṇī",
+          "en": "Witness",
+          "kn": "ಸಾಕ್ಷಿ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 385,
+      "components": [
+        {
+          "dev": "",
+          "iast": "sākṣi",
+          "en": "Witness",
+          "kn": "ಸಾಕ್ಷಿ"
+        },
+        {
+          "dev": "",
+          "iast": "varjitā",
+          "en": "Without",
+          "kn": "ರಹಿತ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 386,
+      "components": [
+        {
+          "dev": "",
+          "iast": "ṣaḍ",
+          "en": "Six",
+          "kn": "ಆರು"
+        },
+        {
+          "dev": "",
+          "iast": "aṅga",
+          "en": "Limbs",
+          "kn": "ಅಂಗ"
+        },
+        {
+          "dev": "",
+          "iast": "devatā",
+          "en": "Deities",
+          "kn": "ದೇವತೆ"
+        },
+        {
+          "dev": "",
+          "iast": "yuktā",
+          "en": "Accompanied",
+          "kn": "ಸಹಿತಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 387,
+      "components": [
+        {
+          "dev": "",
+          "iast": "ṣaḍ",
+          "en": "Six",
+          "kn": "ಆರು"
+        },
+        {
+          "dev": "",
+          "iast": "guṇa",
+          "en": "Qualities",
+          "kn": "ಗುಣ"
+        },
+        {
+          "dev": "",
+          "iast": "paripūritā",
+          "en": "Filled",
+          "kn": "ಪೂರ್ಣ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 388,
+      "components": [
+        {
+          "dev": "",
+          "iast": "nitya",
+          "en": "Always",
+          "kn": "ನಿತ್ಯ"
+        },
+        {
+          "dev": "",
+          "iast": "klinnā",
+          "en": "Compassionate",
+          "kn": "ಕರುಣಾಮಯಿ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 389,
+      "components": [
+        {
+          "dev": "",
+          "iast": "nir",
+          "en": "Without",
+          "kn": "ರಹಿತ"
+        },
+        {
+          "dev": "",
+          "iast": "upamā",
+          "en": "Comparison",
+          "kn": "ಉಪಮೆ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 390,
+      "components": [
+        {
+          "dev": "",
+          "iast": "nirvāṇa",
+          "en": "Liberation",
+          "kn": "ಮೋಕ್ಷ"
+        },
+        {
+          "dev": "",
+          "iast": "sukha",
+          "en": "Joy",
+          "kn": "ಸುಖ"
+        },
+        {
+          "dev": "",
+          "iast": "dāyinī",
+          "en": "Bestower",
+          "kn": "ದಾಯಿನಿ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 391,
+      "components": [
+        {
+          "dev": "",
+          "iast": "nityā",
+          "en": "Daily goddess",
+          "kn": "ನಿತ್ಯಾ"
+        },
+        {
+          "dev": "",
+          "iast": "ṣoḍaśikā",
+          "en": "Sixteenfold",
+          "kn": "ಹದಿನಾರು"
+        },
+        {
+          "dev": "",
+          "iast": "rūpā",
+          "en": "In the form of the sixteen daily deities (i.e., kAmeshvari, bhagamAlinI, nityaklinnA, bheruNDA, vahnivAsinI, mahAvajreshvarI, shivadUtI,…",
+          "kn": ""
+        }
+      ],
+      "review_status": "needs_gloss_review"
+    },
+    {
+      "number": 392,
+      "components": [
+        {
+          "dev": "",
+          "iast": "śrīkaṇṭha",
+          "en": "Śiva",
+          "kn": "ಶಿವ"
+        },
+        {
+          "dev": "",
+          "iast": "ardha",
+          "en": "Half",
+          "kn": "ಅರ್ಧ"
+        },
+        {
+          "dev": "",
+          "iast": "śarīriṇī",
+          "en": "Having body",
+          "kn": "ಶರೀರಿಣಿ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 393,
+      "components": [
+        {
+          "dev": "",
+          "iast": "prabhā",
+          "en": "Light",
+          "kn": "ಪ್ರಭೆ"
+        },
+        {
+          "dev": "",
+          "iast": "vatī",
+          "en": "Possessing",
+          "kn": "ಹೊಂದಿರುವವಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 394,
+      "components": [
+        {
+          "dev": "",
+          "iast": "prabhā",
+          "en": "Light",
+          "kn": "ಪ್ರಭೆ"
+        },
+        {
+          "dev": "",
+          "iast": "rūpā",
+          "en": "Effulgence",
+          "kn": ""
+        }
+      ],
+      "review_status": "needs_gloss_review"
+    },
+    {
+      "number": 395,
+      "components": [
+        {
+          "dev": "",
+          "iast": "prasiddhā",
+          "en": "Celebrated",
+          "kn": ""
+        }
+      ],
+      "review_status": "needs_gloss_review"
+    },
+    {
+      "number": 396,
+      "components": [
+        {
+          "dev": "",
+          "iast": "parama",
+          "en": "Supreme",
+          "kn": "ಪರಮ"
+        },
+        {
+          "dev": "",
+          "iast": "īśvarī",
+          "en": "Queen",
+          "kn": "ಈಶ್ವರಿ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 397,
+      "components": [
+        {
+          "dev": "",
+          "iast": "mūla",
+          "en": "Source",
+          "kn": "ಮೂಲ"
+        },
+        {
+          "dev": "",
+          "iast": "prakṛtiḥ",
+          "en": "Nature",
+          "kn": "ಪ್ರಕೃತಿ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 398,
+      "components": [
+        {
+          "dev": "",
+          "iast": "avyaktā",
+          "en": "Unmanifested",
+          "kn": ""
+        }
+      ],
+      "review_status": "needs_gloss_review"
+    },
+    {
+      "number": 399,
+      "components": [
+        {
+          "dev": "",
+          "iast": "vyakta",
+          "en": "Manifest",
+          "kn": "ವ್ಯಕ್ತ"
+        },
+        {
+          "dev": "",
+          "iast": "avyakta",
+          "en": "In the manifested and unmanifested forms",
+          "kn": ""
+        },
+        {
+          "dev": "",
+          "iast": "svarūpiṇī",
+          "en": "Embodiment",
+          "kn": "ಸ್ವರೂಪಿಣಿ"
+        }
+      ],
+      "review_status": "needs_gloss_review"
+    },
+    {
+      "number": 400,
+      "components": [
+        {
+          "dev": "",
+          "iast": "vyāpinī",
+          "en": "All-pervading",
+          "kn": ""
+        }
+      ],
+      "review_status": "needs_gloss_review"
+    },
+    {
+      "number": 401,
+      "components": [
+        {
+          "dev": "",
+          "iast": "vividha",
+          "en": "Many",
+          "kn": "ವಿವಿಧ"
+        },
+        {
+          "dev": "",
+          "iast": "ākārā",
+          "en": "Shapes",
+          "kn": "ಆಕಾರ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 402,
+      "components": [
+        {
+          "dev": "",
+          "iast": "vidyā",
+          "en": "Knowledge",
+          "kn": "ವಿದ್ಯೆ"
+        },
+        {
+          "dev": "",
+          "iast": "avidyā",
+          "en": "Ignorance",
+          "kn": "ಅವಿದ್ಯೆ"
+        },
+        {
+          "dev": "",
+          "iast": "svarūpiṇī",
+          "en": "Embodiment",
+          "kn": "ಸ್ವರೂಪಿಣಿ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 403,
+      "components": [
+        {
+          "dev": "",
+          "iast": "mahā",
+          "en": "Great",
+          "kn": "ಮಹಾ"
+        },
+        {
+          "dev": "",
+          "iast": "kāmeśa",
+          "en": "Kāmeśa",
+          "kn": "ಕಾಮೇಶ"
+        },
+        {
+          "dev": "",
+          "iast": "nayana",
+          "en": "Eye",
+          "kn": "ಕಣ್ಣು"
+        },
+        {
+          "dev": "",
+          "iast": "kumuda",
+          "en": "Water lily",
+          "kn": "ನೈದಿಲೆ"
+        },
+        {
+          "dev": "",
+          "iast": "āhlāda",
+          "en": "Delight",
+          "kn": "ಆಹ್ಲಾದ"
+        },
+        {
+          "dev": "",
+          "iast": "kaumudī",
+          "en": "Moonlight",
+          "kn": "ಚಂದ್ರಕಾಂತಿ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 404,
+      "components": [
+        {
+          "dev": "",
+          "iast": "bhakta",
+          "en": "Devotee",
+          "kn": "ಭಕ್ತ"
+        },
+        {
+          "dev": "",
+          "iast": "hārda",
+          "en": "Heart",
+          "kn": "ಹೃದಯ"
+        },
+        {
+          "dev": "",
+          "iast": "tamas",
+          "en": "Darkness",
+          "kn": "ಕತ್ತಲೆ"
+        },
+        {
+          "dev": "",
+          "iast": "bheda",
+          "en": "Dispersal",
+          "kn": "ಭೇದ"
+        },
+        {
+          "dev": "",
+          "iast": "bhānumat",
+          "en": "Radiant",
+          "kn": "ಪ್ರಕಾಶಮಾನ"
+        },
+        {
+          "dev": "",
+          "iast": "bhānu",
+          "en": "Sun",
+          "kn": "ಸೂರ್ಯ"
+        },
+        {
+          "dev": "",
+          "iast": "santatiḥ",
+          "en": "Continuum",
+          "kn": "ಸಂತತಿ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 405,
+      "components": [
+        {
+          "dev": "",
+          "iast": "śiva",
+          "en": "Śiva",
+          "kn": "ಶಿವ"
+        },
+        {
+          "dev": "",
+          "iast": "dūtī",
+          "en": "Messenger",
+          "kn": "ದೂತಿ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 406,
+      "components": [
+        {
+          "dev": "",
+          "iast": "śiva",
+          "en": "Śiva",
+          "kn": "ಶಿವ"
+        },
+        {
+          "dev": "",
+          "iast": "ārādhyā",
+          "en": "Worshipped",
+          "kn": "ಆರಾಧಿತಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 407,
+      "components": [
+        {
+          "dev": "",
+          "iast": "śiva",
+          "en": "Śiva",
+          "kn": "ಶಿವ"
+        },
+        {
+          "dev": "",
+          "iast": "mūrtiḥ",
+          "en": "Form",
+          "kn": "ಮೂರ್ತಿ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 408,
+      "components": [
+        {
+          "dev": "",
+          "iast": "śivaṃ",
+          "en": "Auspiciousness",
+          "kn": "ಮಂಗಳ"
+        },
+        {
+          "dev": "",
+          "iast": "karī",
+          "en": "Bringing",
+          "kn": "ನೀಡುವವಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 409,
+      "components": [
+        {
+          "dev": "",
+          "iast": "śiva",
+          "en": "Śiva",
+          "kn": "ಶಿವ"
+        },
+        {
+          "dev": "",
+          "iast": "priyā",
+          "en": "Dear",
+          "kn": "ಪ್ರಿಯ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 410,
+      "components": [
+        {
+          "dev": "",
+          "iast": "śiva",
+          "en": "Śiva",
+          "kn": "ಶಿವ"
+        },
+        {
+          "dev": "",
+          "iast": "parā",
+          "en": "Solely devoted to shiva",
+          "kn": ""
+        }
+      ],
+      "review_status": "needs_gloss_review"
+    },
+    {
+      "number": 411,
+      "components": [
+        {
+          "dev": "",
+          "iast": "śiṣṭa",
+          "en": "Good people",
+          "kn": "ಶಿಷ್ಟರು"
+        },
+        {
+          "dev": "",
+          "iast": "iṣṭā",
+          "en": "Beloved",
+          "kn": "ಇಷ್ಟ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 412,
+      "components": [
+        {
+          "dev": "",
+          "iast": "śiṣṭa",
+          "en": "Good people",
+          "kn": "ಶಿಷ್ಟರು"
+        },
+        {
+          "dev": "",
+          "iast": "pūjitā",
+          "en": "Worshipped",
+          "kn": "ಪೂಜಿತಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 413,
+      "components": [
+        {
+          "dev": "",
+          "iast": "aprameyā",
+          "en": "Immeasurable by the senses",
+          "kn": ""
+        }
+      ],
+      "review_status": "needs_gloss_review"
+    },
+    {
+      "number": 414,
+      "components": [
+        {
+          "dev": "",
+          "iast": "sva",
+          "en": "Own",
+          "kn": "ಸ್ವ"
+        },
+        {
+          "dev": "",
+          "iast": "prakāśā",
+          "en": "Radiance",
+          "kn": "ಪ್ರಕಾಶ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 415,
+      "components": [
+        {
+          "dev": "",
+          "iast": "manas",
+          "en": "Mind",
+          "kn": "ಮನಸ್ಸು"
+        },
+        {
+          "dev": "",
+          "iast": "vācām",
+          "en": "Of speech",
+          "kn": "ಮಾತಿನ"
+        },
+        {
+          "dev": "",
+          "iast": "agocarā",
+          "en": "Beyond perception",
+          "kn": "ಅಗೋಚರ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 416,
+      "components": [
+        {
+          "dev": "",
+          "iast": "cit",
+          "en": "Consciousness",
+          "kn": "ಚೈತನ್ಯ"
+        },
+        {
+          "dev": "",
+          "iast": "śaktiḥ",
+          "en": "Power",
+          "kn": "ಶಕ್ತಿ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 417,
+      "components": [
+        {
+          "dev": "",
+          "iast": "cetanā",
+          "en": "Conscious",
+          "kn": "ಚೇತನ"
+        },
+        {
+          "dev": "",
+          "iast": "rūpā",
+          "en": "Pure consciousness",
+          "kn": ""
+        }
+      ],
+      "review_status": "needs_gloss_review"
+    },
+    {
+      "number": 418,
+      "components": [
+        {
+          "dev": "",
+          "iast": "jaḍa",
+          "en": "Inert",
+          "kn": "ಜಡ"
+        },
+        {
+          "dev": "",
+          "iast": "śaktiḥ",
+          "en": "Power",
+          "kn": "ಶಕ್ತಿ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 419,
+      "components": [
+        {
+          "dev": "",
+          "iast": "jaḍa",
+          "en": "Inert",
+          "kn": "ಜಡ"
+        },
+        {
+          "dev": "",
+          "iast": "ātmikā",
+          "en": "Essence",
+          "kn": "ಆತ್ಮಸ್ವರೂಪಿಣಿ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 420,
+      "components": [
+        {
+          "dev": "",
+          "iast": "gāyatrī",
+          "en": "GAyatrI mantra",
+          "kn": ""
+        }
+      ],
+      "review_status": "needs_gloss_review"
+    },
+    {
+      "number": 421,
+      "components": [
+        {
+          "dev": "",
+          "iast": "vyāhṛtiḥ",
+          "en": "In the nature of utterance; She who presides over the power of speech",
+          "kn": ""
+        }
+      ],
+      "review_status": "needs_gloss_review"
+    },
+    {
+      "number": 422,
+      "components": [
+        {
+          "dev": "",
+          "iast": "sandhyā",
+          "en": "In the form of twilight",
+          "kn": ""
+        }
+      ],
+      "review_status": "needs_gloss_review"
+    },
+    {
+      "number": 423,
+      "components": [
+        {
+          "dev": "",
+          "iast": "dvija",
+          "en": "Twice-born",
+          "kn": "ದ್ವಿಜ"
+        },
+        {
+          "dev": "",
+          "iast": "vṛnda",
+          "en": "Group",
+          "kn": "ವೃಂದ"
+        },
+        {
+          "dev": "",
+          "iast": "niṣevitā",
+          "en": "Honored by",
+          "kn": "ಸೇವಿತಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    }
+  ]
+}
