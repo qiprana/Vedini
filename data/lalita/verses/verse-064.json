@@ -1,0 +1,39 @@
+{
+  "id": "lalita-64",
+  "verse_number": 64,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "संहारिणी रुद्ररूपा तिरोधान-करीश्वरी ।",
+      "सदाशिवाऽनुग्रहदा पञ्चकृत्य-परायणा ६४ ॥"
+    ],
+    "iast": [
+      "saṃhāriṇī rudrarūpā tirodhāna-karīśvarī ।",
+      "sadāśivā'nugrahadā pañcakṛtya-parāyaṇā 64 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "She performs dissolution, concealment and grace, the five cosmic acts.",
+    "kannada": "ಸಂಹಾರ, ತಿರೋಧಾನ ಮತ್ತು ಅನುಗ್ರಹ ಸೇರಿದಂತೆ ಪಂಚಕೃತ್ಯಗಳನ್ನು ಆಕೆ ನಿರ್ವಹಿಸುತ್ತಾಳೆ."
+  },
+  "names": [],
+  "study": {
+    "traditional_interpretation": {
+      "en": null,
+      "kn": null
+    }
+  },
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "editorial_draft",
+  "reading_note": "Individual names and traditional commentary pending review.",
+  "sources": [
+    {
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "source"
+    }
+  ]
+}
