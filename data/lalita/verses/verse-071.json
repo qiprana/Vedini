@@ -1,0 +1,39 @@
+{
+  "id": "lalita-71",
+  "verse_number": 71,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "राजराजार्चिता राज्ञी रम्या राजीवलोचना ।",
+      "रञ्जनी रमणी रस्या रणत्किङ्किणि-मेखला ७१ ॥"
+    ],
+    "iast": [
+      "rājarājārcitā rājñī ramyā rājīvalocanā ।",
+      "rañjanī ramaṇī rasyā raṇatkiṅkiṇi-mekhalā 71 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "The gracious queen is worshipped by kings and has lotus-like eyes.",
+    "kannada": "ರಾಜರಿಂದ ಪೂಜಿತಳಾದ ಈ ರಾಣಿ ಕಮಲದಂತಹ ಕಣ್ಣುಗಳಿಂದ ಸುಂದರಳಾಗಿದ್ದಾಳೆ."
+  },
+  "names": [],
+  "study": {
+    "traditional_interpretation": {
+      "en": null,
+      "kn": null
+    }
+  },
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "editorial_draft",
+  "reading_note": "Individual names and traditional commentary pending review.",
+  "sources": [
+    {
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "source"
+    }
+  ]
+}
