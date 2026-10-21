@@ -17,7 +17,216 @@
     "english": "She loves devotion, removes fear and gives peace.",
     "kannada": "ಭಕ್ತಿಪ್ರಿಯಳಾದ ಆಕೆ ಭಯವನ್ನು ಹೋಗಲಾಡಿಸಿ ಶಾಂತಿ ನೀಡುತ್ತಾಳೆ."
   },
-  "names": [],
+  "names": [
+    {
+      "number": null,
+      "sanskrit": "भक्तिप्रिया",
+      "display_devanagari": "भक्तिप्रिया",
+      "iast": "bhaktipriyā",
+      "display_iast": "bhaktipriyā",
+      "english": "Lover of devotion",
+      "kannada": "ಭಕ್ತಿಯನ್ನು ಪ್ರೀತಿಸುವವಳು",
+      "essential_meaning": {
+        "en": "Lover of devotion",
+        "kn": "ಭಕ್ತಿಯನ್ನು ಪ್ರೀತಿಸುವವಳು"
+      },
+      "traditional_interpretation": {
+        "en": "In this name the Goddess is praised as lover of devotion. The imagery belongs to the devotional and philosophical language of Śrīvidyā.",
+        "kn": "ಭಕ್ತಿಯನ್ನು ಪ್ರೀತಿಸುವವಳು ಎಂಬುದು ಈ ನಾಮದ ಪ್ರಮುಖ ಅರ್ಥ. ಇದು ಶ್ರೀವಿದ್ಯೆಯ ಭಕ್ತಿ ಮತ್ತು ತಾತ್ತ್ವಿಕ ಭಾಷೆಗೆ ಸೇರಿದೆ."
+      },
+      "components": [
+        {
+          "dev": "भक्तिप्रिया",
+          "iast": "bhaktipriyā",
+          "en": "Lover of devotion",
+          "kn": "ಭಕ್ತಿಯನ್ನು ಪ್ರೀತಿಸುವವಳು"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": null,
+      "sanskrit": "भक्तिगम्या",
+      "display_devanagari": "भक्तिगम्या",
+      "iast": "bhaktigamyā",
+      "display_iast": "bhaktigamyā",
+      "english": "Accessible through devotion",
+      "kannada": "ಭಕ್ತಿಯಿಂದ ಅರಿಯಬಹುದಾದವಳು",
+      "essential_meaning": {
+        "en": "Accessible through devotion",
+        "kn": "ಭಕ್ತಿಯಿಂದ ಅರಿಯಬಹುದಾದವಳು"
+      },
+      "traditional_interpretation": {
+        "en": "In this name the Goddess is praised as accessible through devotion. The imagery belongs to the devotional and philosophical language of Śrīvidyā.",
+        "kn": "ಭಕ್ತಿಯಿಂದ ಅರಿಯಬಹುದಾದವಳು ಎಂಬುದು ಈ ನಾಮದ ಪ್ರಮುಖ ಅರ್ಥ. ಇದು ಶ್ರೀವಿದ್ಯೆಯ ಭಕ್ತಿ ಮತ್ತು ತಾತ್ತ್ವಿಕ ಭಾಷೆಗೆ ಸೇರಿದೆ."
+      },
+      "components": [
+        {
+          "dev": "भक्तिगम्या",
+          "iast": "bhaktigamyā",
+          "en": "Accessible through devotion",
+          "kn": "ಭಕ್ತಿಯಿಂದ ಅರಿಯಬಹುದಾದವಳು"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": null,
+      "sanskrit": "भक्तिवश्या",
+      "display_devanagari": "भक्तिवश्या",
+      "iast": "bhaktivaśyā",
+      "display_iast": "bhaktivaśyā",
+      "english": "Moved by the devotion of her worshippers",
+      "kannada": "ಭಕ್ತರ ಪ್ರೀತಿಗೆ ಒಲಿಯುವವಳು",
+      "essential_meaning": {
+        "en": "Moved by the devotion of her worshippers",
+        "kn": "ಭಕ್ತರ ಪ್ರೀತಿಗೆ ಒಲಿಯುವವಳು"
+      },
+      "traditional_interpretation": {
+        "en": "In this name the Goddess is praised as moved by the devotion of her worshippers. The imagery belongs to the devotional and philosophical language of Śrīvidyā.",
+        "kn": "ಭಕ್ತರ ಪ್ರೀತಿಗೆ ಒಲಿಯುವವಳು ಎಂಬುದು ಈ ನಾಮದ ಪ್ರಮುಖ ಅರ್ಥ. ಇದು ಶ್ರೀವಿದ್ಯೆಯ ಭಕ್ತಿ ಮತ್ತು ತಾತ್ತ್ವಿಕ ಭಾಷೆಗೆ ಸೇರಿದೆ."
+      },
+      "components": [
+        {
+          "dev": "भक्तिवश्या",
+          "iast": "bhaktivaśyā",
+          "en": "Moved by the devotion of her worshippers",
+          "kn": "ಭಕ್ತರ ಪ್ರೀತಿಗೆ ಒಲಿಯುವವಳು"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": null,
+      "sanskrit": "भयापहा",
+      "display_devanagari": "भयापहा",
+      "iast": "bhayāpahā",
+      "display_iast": "bhayāpahā",
+      "english": "Remover of fear",
+      "kannada": "ಭಯವನ್ನು ನಿವಾರಿಸುವವಳು",
+      "essential_meaning": {
+        "en": "Remover of fear",
+        "kn": "ಭಯವನ್ನು ನಿವಾರಿಸುವವಳು"
+      },
+      "traditional_interpretation": {
+        "en": "In this name the Goddess is praised as remover of fear. The imagery belongs to the devotional and philosophical language of Śrīvidyā.",
+        "kn": "ಭಯವನ್ನು ನಿವಾರಿಸುವವಳು ಎಂಬುದು ಈ ನಾಮದ ಪ್ರಮುಖ ಅರ್ಥ. ಇದು ಶ್ರೀವಿದ್ಯೆಯ ಭಕ್ತಿ ಮತ್ತು ತಾತ್ತ್ವಿಕ ಭಾಷೆಗೆ ಸೇರಿದೆ."
+      },
+      "components": [
+        {
+          "dev": "भयापहा",
+          "iast": "bhayāpahā",
+          "en": "Remover of fear",
+          "kn": "ಭಯವನ್ನು ನಿವಾರಿಸುವವಳು"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": null,
+      "sanskrit": "शाम्भवी",
+      "display_devanagari": "शाम्भवी",
+      "iast": "śāmbhavī",
+      "display_iast": "śāmbhavī",
+      "english": "The divine power associated with Śambhu",
+      "kannada": "ಶಂಭುವಿನ ಶಕ್ತಿಯಾದವಳು",
+      "essential_meaning": {
+        "en": "The divine power associated with Śambhu",
+        "kn": "ಶಂಭುವಿನ ಶಕ್ತಿಯಾದವಳು"
+      },
+      "traditional_interpretation": {
+        "en": "In this name the Goddess is praised as the divine power associated with Śambhu. The imagery belongs to the devotional and philosophical language of Śrīvidyā.",
+        "kn": "ಶಂಭುವಿನ ಶಕ್ತಿಯಾದವಳು ಎಂಬುದು ಈ ನಾಮದ ಪ್ರಮುಖ ಅರ್ಥ. ಇದು ಶ್ರೀವಿದ್ಯೆಯ ಭಕ್ತಿ ಮತ್ತು ತಾತ್ತ್ವಿಕ ಭಾಷೆಗೆ ಸೇರಿದೆ."
+      },
+      "components": [
+        {
+          "dev": "शाम्भवी",
+          "iast": "śāmbhavī",
+          "en": "The divine power associated with Śambhu",
+          "kn": "ಶಂಭುವಿನ ಶಕ್ತಿಯಾದವಳು"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": null,
+      "sanskrit": "शारदाराध्या",
+      "display_devanagari": "शारदाराध्या",
+      "iast": "śāradārādhyā",
+      "display_iast": "śāradārādhyā",
+      "english": "Worshipped by Śāradā",
+      "kannada": "ಶಾರದೆಯಿಂದ ಆರಾಧಿತಳಾದವಳು",
+      "essential_meaning": {
+        "en": "Worshipped by Śāradā",
+        "kn": "ಶಾರದೆಯಿಂದ ಆರಾಧಿತಳಾದವಳು"
+      },
+      "traditional_interpretation": {
+        "en": "In this name the Goddess is praised as worshipped by Śāradā. The imagery belongs to the devotional and philosophical language of Śrīvidyā.",
+        "kn": "ಶಾರದೆಯಿಂದ ಆರಾಧಿತಳಾದವಳು ಎಂಬುದು ಈ ನಾಮದ ಪ್ರಮುಖ ಅರ್ಥ. ಇದು ಶ್ರೀವಿದ್ಯೆಯ ಭಕ್ತಿ ಮತ್ತು ತಾತ್ತ್ವಿಕ ಭಾಷೆಗೆ ಸೇರಿದೆ."
+      },
+      "components": [
+        {
+          "dev": "शारदाराध्या",
+          "iast": "śāradārādhyā",
+          "en": "Worshipped by Śāradā",
+          "kn": "ಶಾರದೆಯಿಂದ ಆರಾಧಿತಳಾದವಳು"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": null,
+      "sanskrit": "शर्वाणी",
+      "display_devanagari": "शर्वाणी",
+      "iast": "śarvāṇī",
+      "display_iast": "śarvāṇī",
+      "english": "The consort of Śarva (Śiva)",
+      "kannada": "ಶರ್ವನಾದ ಶಿವನ ಸಹಧರ್ಮಿಣಿ",
+      "essential_meaning": {
+        "en": "The consort of Śarva (Śiva)",
+        "kn": "ಶರ್ವನಾದ ಶಿವನ ಸಹಧರ್ಮಿಣಿ"
+      },
+      "traditional_interpretation": {
+        "en": "In this name the Goddess is praised as the consort of Śarva (Śiva). The imagery belongs to the devotional and philosophical language of Śrīvidyā.",
+        "kn": "ಶರ್ವನಾದ ಶಿವನ ಸಹಧರ್ಮಿಣಿ ಎಂಬುದು ಈ ನಾಮದ ಪ್ರಮುಖ ಅರ್ಥ. ಇದು ಶ್ರೀವಿದ್ಯೆಯ ಭಕ್ತಿ ಮತ್ತು ತಾತ್ತ್ವಿಕ ಭಾಷೆಗೆ ಸೇರಿದೆ."
+      },
+      "components": [
+        {
+          "dev": "शर्वाणी",
+          "iast": "śarvāṇī",
+          "en": "The consort of Śarva (Śiva)",
+          "kn": "ಶರ್ವನಾದ ಶಿವನ ಸಹಧರ್ಮಿಣಿ"
+        }
+      ],
+      "review_status": "editorial_draft"
+    },
+    {
+      "number": null,
+      "sanskrit": "शर्मदायिनी",
+      "display_devanagari": "शर्मदायिनी",
+      "iast": "śarmadāyinī",
+      "display_iast": "śarmadāyinī",
+      "english": "Giver of happiness and peace",
+      "kannada": "ಸುಖ ಮತ್ತು ಶಾಂತಿಯನ್ನು ನೀಡುವವಳು",
+      "essential_meaning": {
+        "en": "Giver of happiness and peace",
+        "kn": "ಸುಖ ಮತ್ತು ಶಾಂತಿಯನ್ನು ನೀಡುವವಳು"
+      },
+      "traditional_interpretation": {
+        "en": "In this name the Goddess is praised as giver of happiness and peace. The imagery belongs to the devotional and philosophical language of Śrīvidyā.",
+        "kn": "ಸುಖ ಮತ್ತು ಶಾಂತಿಯನ್ನು ನೀಡುವವಳು ಎಂಬುದು ಈ ನಾಮದ ಪ್ರಮುಖ ಅರ್ಥ. ಇದು ಶ್ರೀವಿದ್ಯೆಯ ಭಕ್ತಿ ಮತ್ತು ತಾತ್ತ್ವಿಕ ಭಾಷೆಗೆ ಸೇರಿದೆ."
+      },
+      "components": [
+        {
+          "dev": "शर्मदायिनी",
+          "iast": "śarmadāyinī",
+          "en": "Giver of happiness and peace",
+          "kn": "ಸುಖ ಮತ್ತು ಶಾಂತಿಯನ್ನು ನೀಡುವವಳು"
+        }
+      ],
+      "review_status": "editorial_draft"
+    }
+  ],
   "study": {
     "traditional_interpretation": {
       "en": null,
@@ -39,5 +248,5 @@
     }
   ],
   "review_status": "editorial_draft",
-  "reading_note": "Provisional Sanskrit and bilingual overall-meaning draft. Individual nāma segmentation, component glosses and Manblunder interpretations have not been checked."
+  "reading_note": "Name-by-name bilingual meanings added as editorial drafts; compound decomposition and Manblunder source comparison need further verification."
 }
