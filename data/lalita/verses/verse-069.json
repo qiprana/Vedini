@@ -1,0 +1,39 @@
+{
+  "id": "lalita-69",
+  "verse_number": 69,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "पुरुषार्थप्रदा पूर्णा भोगिनी भुवनेश्वरी ।",
+      "अम्बिकाऽनादि-निधना हरिब्रह्मेन्द्र-सेविता ६९ ॥"
+    ],
+    "iast": [
+      "puruṣārthapradā pūrṇā bhoginī bhuvaneśvarī ।",
+      "ambikā'nādi-nidhanā haribrahmendra-sevitā 69 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "She grants life's four aims and is the beginningless and endless Mother.",
+    "kannada": "ನಾಲ್ಕು ಪುರುಷಾರ್ಥಗಳನ್ನು ನೀಡುವ ಆಕೆ ಆದಿಯಂತ್ಯರಹಿತ ಜಗನ್ಮಾತೆಯಾಗಿದ್ದಾಳೆ."
+  },
+  "names": [],
+  "study": {
+    "traditional_interpretation": {
+      "en": null,
+      "kn": null
+    }
+  },
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "review_status": "editorial_draft",
+  "reading_note": "Individual names and traditional commentary pending review.",
+  "sources": [
+    {
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "source"
+    }
+  ]
+}
