@@ -1,0 +1,744 @@
+{
+  "scope": "Ślokas 46–50, divine names 152–192",
+  "source_note": "Original literal Sanskrit morpheme explanations; review sandhi and grammatical endings before treating as philologically definitive.",
+  "entries": [
+    {
+      "number": 152,
+      "components": [
+        {
+          "dev": "निष्",
+          "iast": "niṣ",
+          "en": "Without",
+          "kn": "ರಹಿತ"
+        },
+        {
+          "dev": "कारण",
+          "iast": "kāraṇa",
+          "en": "Cause",
+          "kn": "ಕಾರಣ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 153,
+      "components": [
+        {
+          "dev": "निष्",
+          "iast": "niṣ",
+          "en": "Without",
+          "kn": "ರಹಿತ"
+        },
+        {
+          "dev": "कलङ्क",
+          "iast": "kalaṅka",
+          "en": "Stain",
+          "kn": "ಕಳಂಕ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 154,
+      "components": [
+        {
+          "dev": "निर्",
+          "iast": "nir",
+          "en": "Without",
+          "kn": "ರಹಿತ"
+        },
+        {
+          "dev": "उपाधि",
+          "iast": "upādhi",
+          "en": "Limiting condition",
+          "kn": "ಉಪಾಧಿ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 155,
+      "components": [
+        {
+          "dev": "निर्",
+          "iast": "nir",
+          "en": "Without",
+          "kn": "ರಹಿತ"
+        },
+        {
+          "dev": "ईश्वर",
+          "iast": "īśvara",
+          "en": "A superior ruler",
+          "kn": "ಮೇಲಿನ ಅಧಿಪತಿ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 156,
+      "components": [
+        {
+          "dev": "निः",
+          "iast": "niḥ",
+          "en": "Without",
+          "kn": "ರಹಿತ"
+        },
+        {
+          "dev": "राग",
+          "iast": "rāga",
+          "en": "Attachment or passion",
+          "kn": "ರಾಗ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 157,
+      "components": [
+        {
+          "dev": "राग",
+          "iast": "rāga",
+          "en": "Attachment or passion",
+          "kn": "ರಾಗ"
+        },
+        {
+          "dev": "मथनी",
+          "iast": "mathanī",
+          "en": "Crusher or destroyer",
+          "kn": "ನಾಶಮಾಡುವವಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 158,
+      "components": [
+        {
+          "dev": "निर्",
+          "iast": "nir",
+          "en": "Without",
+          "kn": "ರಹಿತ"
+        },
+        {
+          "dev": "मद",
+          "iast": "mada",
+          "en": "Pride",
+          "kn": "ಮದ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 159,
+      "components": [
+        {
+          "dev": "मद",
+          "iast": "mada",
+          "en": "Pride",
+          "kn": "ಮದ"
+        },
+        {
+          "dev": "नाशिनी",
+          "iast": "nāśinī",
+          "en": "Destroyer",
+          "kn": "ನಾಶಮಾಡುವವಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 160,
+      "components": [
+        {
+          "dev": "निः",
+          "iast": "niḥ",
+          "en": "Without",
+          "kn": "ರಹಿತ"
+        },
+        {
+          "dev": "चिन्ता",
+          "iast": "cintā",
+          "en": "Worry",
+          "kn": "ಚಿಂತೆ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 161,
+      "components": [
+        {
+          "dev": "निर्",
+          "iast": "nir",
+          "en": "Without",
+          "kn": "ರಹಿತ"
+        },
+        {
+          "dev": "अहङ्कार",
+          "iast": "ahaṅkāra",
+          "en": "Ego-identification",
+          "kn": "ಅಹಂಕಾರ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 162,
+      "components": [
+        {
+          "dev": "निर्",
+          "iast": "nir",
+          "en": "Without",
+          "kn": "ರಹಿತ"
+        },
+        {
+          "dev": "मोह",
+          "iast": "moha",
+          "en": "Delusion",
+          "kn": "ಮೋಹ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 163,
+      "components": [
+        {
+          "dev": "मोह",
+          "iast": "moha",
+          "en": "Delusion",
+          "kn": "ಮೋಹ"
+        },
+        {
+          "dev": "नाशिनी",
+          "iast": "nāśinī",
+          "en": "Destroyer",
+          "kn": "ನಾಶಮಾಡುವವಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 164,
+      "components": [
+        {
+          "dev": "निर्",
+          "iast": "nir",
+          "en": "Without",
+          "kn": "ರಹಿತ"
+        },
+        {
+          "dev": "मम",
+          "iast": "mama",
+          "en": "Mine, sense of ownership",
+          "kn": "ನನ್ನದು ಎಂಬ ಭಾವ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 165,
+      "components": [
+        {
+          "dev": "ममता",
+          "iast": "mamatā",
+          "en": "Possessiveness",
+          "kn": "ಮಮಕಾರ"
+        },
+        {
+          "dev": "हन्त्री",
+          "iast": "hantrī",
+          "en": "Destroyer",
+          "kn": "ನಾಶಮಾಡುವವಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 166,
+      "components": [
+        {
+          "dev": "निष्",
+          "iast": "niṣ",
+          "en": "Without",
+          "kn": "ರಹಿತ"
+        },
+        {
+          "dev": "पाप",
+          "iast": "pāpa",
+          "en": "Sin or wrong action",
+          "kn": "ಪಾಪ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 167,
+      "components": [
+        {
+          "dev": "पाप",
+          "iast": "pāpa",
+          "en": "Sin",
+          "kn": "ಪಾಪ"
+        },
+        {
+          "dev": "नाशिनी",
+          "iast": "nāśinī",
+          "en": "Destroyer",
+          "kn": "ನಾಶಮಾಡುವವಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 168,
+      "components": [
+        {
+          "dev": "निष्",
+          "iast": "niṣ",
+          "en": "Without",
+          "kn": "ರಹಿತ"
+        },
+        {
+          "dev": "क्रोध",
+          "iast": "krodha",
+          "en": "Anger",
+          "kn": "ಕ್ರೋಧ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 169,
+      "components": [
+        {
+          "dev": "क्रोध",
+          "iast": "krodha",
+          "en": "Anger",
+          "kn": "ಕ್ರೋಧ"
+        },
+        {
+          "dev": "शमनी",
+          "iast": "śamanī",
+          "en": "Pacifier",
+          "kn": "ಶಮನಗೊಳಿಸುವವಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 170,
+      "components": [
+        {
+          "dev": "निर्",
+          "iast": "nir",
+          "en": "Without",
+          "kn": "ರಹಿತ"
+        },
+        {
+          "dev": "लोभ",
+          "iast": "lobha",
+          "en": "Greed",
+          "kn": "ಲೋಭ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 171,
+      "components": [
+        {
+          "dev": "लोभ",
+          "iast": "lobha",
+          "en": "Greed",
+          "kn": "ಲೋಭ"
+        },
+        {
+          "dev": "नाशिनी",
+          "iast": "nāśinī",
+          "en": "Destroyer",
+          "kn": "ನಾಶಮಾಡುವವಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 172,
+      "components": [
+        {
+          "dev": "निः",
+          "iast": "niḥ",
+          "en": "Without",
+          "kn": "ರಹಿತ"
+        },
+        {
+          "dev": "संशय",
+          "iast": "saṃśaya",
+          "en": "Doubt",
+          "kn": "ಸಂಶಯ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 173,
+      "components": [
+        {
+          "dev": "संशय",
+          "iast": "saṃśaya",
+          "en": "Doubt",
+          "kn": "ಸಂಶಯ"
+        },
+        {
+          "dev": "घ्नी",
+          "iast": "ghnī",
+          "en": "Destroyer",
+          "kn": "ನಾಶಮಾಡುವವಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 174,
+      "components": [
+        {
+          "dev": "निर्",
+          "iast": "nir",
+          "en": "Without",
+          "kn": "ರಹಿತ"
+        },
+        {
+          "dev": "भव",
+          "iast": "bhava",
+          "en": "Becoming or birth",
+          "kn": "ಜನ್ಮ; ಭವ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 175,
+      "components": [
+        {
+          "dev": "भव",
+          "iast": "bhava",
+          "en": "Worldly becoming",
+          "kn": "ಸಂಸಾರ"
+        },
+        {
+          "dev": "नाशिनी",
+          "iast": "nāśinī",
+          "en": "Destroyer",
+          "kn": "ನಿವಾರಿಸುವವಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 176,
+      "components": [
+        {
+          "dev": "निर्",
+          "iast": "nir",
+          "en": "Without",
+          "kn": "ರಹಿತ"
+        },
+        {
+          "dev": "विकल्प",
+          "iast": "vikalpa",
+          "en": "Conceptual distinctions",
+          "kn": "ವಿಕಲ್ಪ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 177,
+      "components": [
+        {
+          "dev": "निर्",
+          "iast": "nir",
+          "en": "Without",
+          "kn": "ರಹಿತ"
+        },
+        {
+          "dev": "आबाधा",
+          "iast": "ābādhā",
+          "en": "Disturbance",
+          "kn": "ಬಾಧೆ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 178,
+      "components": [
+        {
+          "dev": "निर्",
+          "iast": "nir",
+          "en": "Without",
+          "kn": "ರಹಿತ"
+        },
+        {
+          "dev": "भेद",
+          "iast": "bheda",
+          "en": "Difference or division",
+          "kn": "ಭೇದ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 179,
+      "components": [
+        {
+          "dev": "भेद",
+          "iast": "bheda",
+          "en": "Division",
+          "kn": "ಭೇದ"
+        },
+        {
+          "dev": "नाशिनी",
+          "iast": "nāśinī",
+          "en": "Destroyer",
+          "kn": "ನಿವಾರಿಸುವವಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 180,
+      "components": [
+        {
+          "dev": "निर्",
+          "iast": "nir",
+          "en": "Without",
+          "kn": "ರಹಿತ"
+        },
+        {
+          "dev": "नाश",
+          "iast": "nāśa",
+          "en": "Destruction",
+          "kn": "ನಾಶ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 181,
+      "components": [
+        {
+          "dev": "मृत्यु",
+          "iast": "mṛtyu",
+          "en": "Death",
+          "kn": "ಮರಣ"
+        },
+        {
+          "dev": "मथनी",
+          "iast": "mathanī",
+          "en": "Crusher or vanquisher",
+          "kn": "ಜಯಿಸುವವಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 182,
+      "components": [
+        {
+          "dev": "निष्",
+          "iast": "niṣ",
+          "en": "Without",
+          "kn": "ರಹಿತ"
+        },
+        {
+          "dev": "क्रिया",
+          "iast": "kriyā",
+          "en": "Action",
+          "kn": "ಕ್ರಿಯೆ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 183,
+      "components": [
+        {
+          "dev": "निष्",
+          "iast": "niṣ",
+          "en": "Without",
+          "kn": "ರಹಿತ"
+        },
+        {
+          "dev": "परिग्रह",
+          "iast": "parigraha",
+          "en": "Possessive accumulation",
+          "kn": "ಸಂಗ್ರಹ; ಸ್ವಾಮಿತ್ವ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 184,
+      "components": [
+        {
+          "dev": "निः",
+          "iast": "niḥ",
+          "en": "Without",
+          "kn": "ರಹಿತ"
+        },
+        {
+          "dev": "तुला",
+          "iast": "tulā",
+          "en": "Comparison",
+          "kn": "ಹೋಲಿಕೆ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 185,
+      "components": [
+        {
+          "dev": "नील",
+          "iast": "nīla",
+          "en": "Dark blue or black",
+          "kn": "ನೀಲಿ; ಕಪ್ಪು"
+        },
+        {
+          "dev": "चिकुरा",
+          "iast": "cikurā",
+          "en": "Hair locks",
+          "kn": "ಕೇಶ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 186,
+      "components": [
+        {
+          "dev": "निर्",
+          "iast": "nir",
+          "en": "Without",
+          "kn": "ರಹಿತ"
+        },
+        {
+          "dev": "अपाय",
+          "iast": "apāya",
+          "en": "Loss or danger",
+          "kn": "ಅಪಾಯ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 187,
+      "components": [
+        {
+          "dev": "निर्",
+          "iast": "nir",
+          "en": "Without",
+          "kn": "ರಹಿತ"
+        },
+        {
+          "dev": "अत्यय",
+          "iast": "atyaya",
+          "en": "Transgression or destruction",
+          "kn": "ಮೀರಿಕೆ; ನಾಶ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 188,
+      "components": [
+        {
+          "dev": "दुर्",
+          "iast": "dur",
+          "en": "Difficult",
+          "kn": "ಕಷ್ಟಕರ"
+        },
+        {
+          "dev": "लभा",
+          "iast": "labhā",
+          "en": "To obtain",
+          "kn": "ಪಡೆಯಬಹುದಾದವಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 189,
+      "components": [
+        {
+          "dev": "दुर्",
+          "iast": "dur",
+          "en": "Difficult",
+          "kn": "ಕಷ್ಟಕರ"
+        },
+        {
+          "dev": "गमा",
+          "iast": "gamā",
+          "en": "To approach",
+          "kn": "ತಲುಪಬಹುದಾದವಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 190,
+      "components": [
+        {
+          "dev": "दुर्ग",
+          "iast": "durga",
+          "en": "Fortress; inaccessible refuge",
+          "kn": "ದುರ್ಗ; ಕೋಟೆ"
+        },
+        {
+          "dev": "आ",
+          "iast": "ā",
+          "en": "Feminine nominal ending",
+          "kn": "ಸ್ತ್ರೀಲಿಂಗ ಪ್ರತ್ಯಯ"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 191,
+      "components": [
+        {
+          "dev": "दुःख",
+          "iast": "duḥkha",
+          "en": "Suffering",
+          "kn": "ದುಃಖ"
+        },
+        {
+          "dev": "हन्त्री",
+          "iast": "hantrī",
+          "en": "Destroyer",
+          "kn": "ನಿವಾರಿಸುವವಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    },
+    {
+      "number": 192,
+      "components": [
+        {
+          "dev": "सुख",
+          "iast": "sukha",
+          "en": "Happiness",
+          "kn": "ಸುಖ"
+        },
+        {
+          "dev": "प्रदा",
+          "iast": "pradā",
+          "en": "Bestower",
+          "kn": "ನೀಡುವವಳು"
+        }
+      ],
+      "review_status": "compound_analysis_draft"
+    }
+  ]
+}
