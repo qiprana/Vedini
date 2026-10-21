@@ -1,0 +1,43 @@
+{
+  "id": "lalita-045",
+  "verse_number": 45,
+  "section": "main-stotram",
+  "collection": "lalita-sahasranama",
+  "reading": {
+    "devanagari": [
+      "नित्यमुक्ता निर्विकारा निष्प्रपञ्चा निराश्रया ।",
+      "नित्यशुद्धा नित्यबुद्धा निरवद्या निरन्तरा ४५ ॥"
+    ],
+    "iast": [
+      "nityamuktā nirvikārā niṣprapañcā nirāśrayā ।",
+      "nityaśuddhā nityabuddhā niravadyā nirantarā 45 ॥"
+    ]
+  },
+  "meaning": {
+    "english": "She is eternally free, unchanging, pure and awakened.",
+    "kannada": "ಅವಳು ನಿತ್ಯಮುಕ್ತಳೂ ಬದಲಾವಣೆಯಿಲ್ಲದವಳೂ ಪರಿಶುದ್ಧಳೂ ಜಾಗೃತಳೂ ಆಗಿದ್ದಾಳೆ."
+  },
+  "names": [],
+  "study": {
+    "traditional_interpretation": {
+      "en": null,
+      "kn": null
+    }
+  },
+  "audio": {
+    "normal": null,
+    "slow": null
+  },
+  "sources": [
+    {
+      "url": "https://shlokam.org/shloka/lalitha-sahasranamam.htm",
+      "role": "Sanskrit source"
+    },
+    {
+      "url": "https://manblunder.com/articles/lalitha-sahasranama",
+      "role": "Name commentary index"
+    }
+  ],
+  "review_status": "editorial_draft",
+  "reading_note": "Provisional Sanskrit and bilingual overall-meaning draft. Individual nāma segmentation, component glosses and Manblunder interpretations have not been checked."
+}
