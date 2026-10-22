@@ -1,0 +1,486 @@
+{
+  "scope": "Verses 104-183",
+  "review_status": "thematic_overall_draft; requires verse-specific revision",
+  "verses": [
+    {
+      "verse_number": 104,
+      "en": "The sequence invites attentive care for embodied life and its many interdependent processes.",
+      "kn": "ಈ ಕ್ರಮವು ದೇಹಧಾರಿತ ಜೀವನ ಮತ್ತು ಅದರ ಪರಸ್ಪರ ಅವಲಂಬಿತ ಪ್ರಕ್ರಿಯೆಗಳ ಬಗ್ಗೆ ಕಾಳಜಿಯನ್ನು ಸೂಚಿಸುತ್ತದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 105,
+      "en": "An inner center serves as a focus for steady practice, not a claim of extraordinary achievement.",
+      "kn": "ಒಳಗಿನ ಕೇಂದ್ರವು ಸ್ಥಿರ ಅಭ್ಯಾಸಕ್ಕೆ ಆಧಾರವಾಗಿದೆ; ಅಪೂರ್ವ ಸಾಧನೆಯ ಹಕ್ಕು ಹೇಳುವುದಕ್ಕೆ ಅಲ್ಲ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 106,
+      "en": "The Divine is contemplated through nourishment, strength and the living body.",
+      "kn": "ಪೋಷಣೆ, ಶಕ್ತಿ ಮತ್ತು ಜೀವಂತ ದೇಹದ ಮೂಲಕ ದೈವತ್ವವನ್ನು ಧ್ಯಾನಿಸಲಾಗಿದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 107,
+      "en": "The imagery turns ordinary experience into an occasion for awareness and gratitude.",
+      "kn": "ಈ ಚಿತ್ರಣವು ಸಾಮಾನ್ಯ ಅನುಭವವನ್ನೂ ಜಾಗೃತಿ ಮತ್ತು ಕೃತಜ್ಞತೆಗೆ ಅವಕಾಶವನ್ನಾಗಿ ಮಾಡುತ್ತದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 108,
+      "en": "Compassion is expressed through courage, discernment and practical support.",
+      "kn": "ಕರುಣೆಯು ಧೈರ್ಯ, ವಿವೇಕ ಮತ್ತು ಪ್ರಾಯೋಗಿಕ ನೆರವಿನ ಮೂಲಕ ವ್ಯಕ್ತವಾಗುತ್ತದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 109,
+      "en": "Knowledge and devotion are brought together in a view of life as an interconnected whole.",
+      "kn": "ಜ್ಞಾನ ಮತ್ತು ಭಕ್ತಿ ಪರಸ್ಪರ ಸಂಬಂಧಿತ ಸಮಗ್ರ ಜೀವನದ ದೃಷ್ಟಿಯಲ್ಲಿ ಒಂದಾಗುತ್ತವೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 110,
+      "en": "The vastness of divine power asks for humility and responsibility in our own actions.",
+      "kn": "ದೈವಶಕ್ತಿಯ ಅಪಾರತೆಯು ನಮ್ಮ ಕ್ರಿಯೆಗಳಲ್ಲಿ ವಿನಯ ಮತ್ತು ಜವಾಬ್ದಾರಿಯನ್ನು ನೆನಪಿಸುತ್ತದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 111,
+      "en": "Awareness is pictured as a source of steadiness through changing conditions.",
+      "kn": "ಬದಲಾಗುವ ಪರಿಸ್ಥಿತಿಗಳಲ್ಲಿಯೂ ಸ್ಥಿರತೆಯ ಮೂಲವಾಗಿ ಜಾಗೃತಿಯನ್ನು ಚಿತ್ರಿಸಲಾಗಿದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 112,
+      "en": "Sacred practice becomes meaningful when it shapes our everyday conduct.",
+      "kn": "ದಿನನಿತ್ಯದ ನಡೆಯಲ್ಲಿ ಬದಲಾವಣೆ ತಂದಾಗ ಪವಿತ್ರ ಅಭ್ಯಾಸ ಅರ್ಥಪೂರ್ಣವಾಗುತ್ತದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 113,
+      "en": "Love and clarity can guide even difficult transformations without unnecessary harshness.",
+      "kn": "ಪ್ರೀತಿ ಮತ್ತು ಸ್ಪಷ್ಟತೆ ಅನಗತ್ಯ ಕಠೋರತೆಯಿಲ್ಲದೆ ಕಠಿಣ ಪರಿವರ್ತನೆಗಳಿಗೆ ದಾರಿ ತೋರಬಹುದು.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 114,
+      "en": "Freedom invites us to loosen limiting attachments while remaining engaged with life.",
+      "kn": "ಜೀವನದಲ್ಲಿ ತೊಡಗಿಕೊಂಡೇ ಸೀಮಿತ ಆಸಕ್ತಿಗಳ ಹಿಡಿತ ಬಿಡಲು ಸ್ವಾತಂತ್ರ್ಯ ಆಹ್ವಾನಿಸುತ್ತದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 115,
+      "en": "Many forms of beauty and strength are understood as expressions of a deeper unity.",
+      "kn": "ಸೌಂದರ್ಯ ಮತ್ತು ಶಕ್ತಿಯ ಹಲವು ರೂಪಗಳು ಆಳವಾದ ಐಕ್ಯದ ಅಭಿವ್ಯಕ್ತಿಗಳಾಗಿವೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 116,
+      "en": "The names ask how knowledge can lead to more generous and thoughtful relationships.",
+      "kn": "ಜ್ಞಾನವು ಹೆಚ್ಚು ಉದಾರ ಮತ್ತು ವಿವೇಕಪೂರ್ಣ ಸಂಬಂಧಗಳಿಗೆ ಹೇಗೆ ದಾರಿ ಮಾಡುತ್ತದೆ ಎಂದು ನಾಮಗಳು ಕೇಳುತ್ತವೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 117,
+      "en": "The sacred is not confined to one image; it is approached through reflection and experience.",
+      "kn": "ಪವಿತ್ರತೆ ಒಂದೇ ರೂಪಕ್ಕೆ ಸೀಮಿತವಲ್ಲ; ಚಿಂತನೆ ಮತ್ತು ಅನುಭವದಿಂದ ಅದನ್ನು ಸಮೀಪಿಸಲಾಗುತ್ತದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 118,
+      "en": "The movement between stillness and activity suggests balance rather than opposition.",
+      "kn": "ನಿಶ್ಚಲತೆ ಮತ್ತು ಕ್ರಿಯೆಯ ನಡುವಿನ ಚಲನೆ ವಿರೋಧಕ್ಕಿಂತ ಸಮತೋಲನವನ್ನು ಸೂಚಿಸುತ್ತದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 119,
+      "en": "Nurturing and protection appear as complementary dimensions of compassionate power.",
+      "kn": "ಪೋಷಣೆ ಮತ್ತು ರಕ್ಷಣೆ ಕರುಣಾಮಯ ಶಕ್ತಿಯ ಪರಸ್ಪರ ಪೂರಕ ಅಂಶಗಳಾಗಿ ಕಾಣುತ್ತವೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 120,
+      "en": "The sequence invites attentive care for embodied life and its many interdependent processes.",
+      "kn": "ಈ ಕ್ರಮವು ದೇಹಧಾರಿತ ಜೀವನ ಮತ್ತು ಅದರ ಪರಸ್ಪರ ಅವಲಂಬಿತ ಪ್ರಕ್ರಿಯೆಗಳ ಬಗ್ಗೆ ಕಾಳಜಿಯನ್ನು ಸೂಚಿಸುತ್ತದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 121,
+      "en": "An inner center serves as a focus for steady practice, not a claim of extraordinary achievement.",
+      "kn": "ಒಳಗಿನ ಕೇಂದ್ರವು ಸ್ಥಿರ ಅಭ್ಯಾಸಕ್ಕೆ ಆಧಾರವಾಗಿದೆ; ಅಪೂರ್ವ ಸಾಧನೆಯ ಹಕ್ಕು ಹೇಳುವುದಕ್ಕೆ ಅಲ್ಲ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 122,
+      "en": "The Divine is contemplated through nourishment, strength and the living body.",
+      "kn": "ಪೋಷಣೆ, ಶಕ್ತಿ ಮತ್ತು ಜೀವಂತ ದೇಹದ ಮೂಲಕ ದೈವತ್ವವನ್ನು ಧ್ಯಾನಿಸಲಾಗಿದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 123,
+      "en": "The imagery turns ordinary experience into an occasion for awareness and gratitude.",
+      "kn": "ಈ ಚಿತ್ರಣವು ಸಾಮಾನ್ಯ ಅನುಭವವನ್ನೂ ಜಾಗೃತಿ ಮತ್ತು ಕೃತಜ್ಞತೆಗೆ ಅವಕಾಶವನ್ನಾಗಿ ಮಾಡುತ್ತದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 124,
+      "en": "Compassion is expressed through courage, discernment and practical support.",
+      "kn": "ಕರುಣೆಯು ಧೈರ್ಯ, ವಿವೇಕ ಮತ್ತು ಪ್ರಾಯೋಗಿಕ ನೆರವಿನ ಮೂಲಕ ವ್ಯಕ್ತವಾಗುತ್ತದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 125,
+      "en": "Knowledge and devotion are brought together in a view of life as an interconnected whole.",
+      "kn": "ಜ್ಞಾನ ಮತ್ತು ಭಕ್ತಿ ಪರಸ್ಪರ ಸಂಬಂಧಿತ ಸಮಗ್ರ ಜೀವನದ ದೃಷ್ಟಿಯಲ್ಲಿ ಒಂದಾಗುತ್ತವೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 126,
+      "en": "The vastness of divine power asks for humility and responsibility in our own actions.",
+      "kn": "ದೈವಶಕ್ತಿಯ ಅಪಾರತೆಯು ನಮ್ಮ ಕ್ರಿಯೆಗಳಲ್ಲಿ ವಿನಯ ಮತ್ತು ಜವಾಬ್ದಾರಿಯನ್ನು ನೆನಪಿಸುತ್ತದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 127,
+      "en": "Awareness is pictured as a source of steadiness through changing conditions.",
+      "kn": "ಬದಲಾಗುವ ಪರಿಸ್ಥಿತಿಗಳಲ್ಲಿಯೂ ಸ್ಥಿರತೆಯ ಮೂಲವಾಗಿ ಜಾಗೃತಿಯನ್ನು ಚಿತ್ರಿಸಲಾಗಿದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 128,
+      "en": "Sacred practice becomes meaningful when it shapes our everyday conduct.",
+      "kn": "ದಿನನಿತ್ಯದ ನಡೆಯಲ್ಲಿ ಬದಲಾವಣೆ ತಂದಾಗ ಪವಿತ್ರ ಅಭ್ಯಾಸ ಅರ್ಥಪೂರ್ಣವಾಗುತ್ತದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 129,
+      "en": "Love and clarity can guide even difficult transformations without unnecessary harshness.",
+      "kn": "ಪ್ರೀತಿ ಮತ್ತು ಸ್ಪಷ್ಟತೆ ಅನಗತ್ಯ ಕಠೋರತೆಯಿಲ್ಲದೆ ಕಠಿಣ ಪರಿವರ್ತನೆಗಳಿಗೆ ದಾರಿ ತೋರಬಹುದು.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 130,
+      "en": "Freedom invites us to loosen limiting attachments while remaining engaged with life.",
+      "kn": "ಜೀವನದಲ್ಲಿ ತೊಡಗಿಕೊಂಡೇ ಸೀಮಿತ ಆಸಕ್ತಿಗಳ ಹಿಡಿತ ಬಿಡಲು ಸ್ವಾತಂತ್ರ್ಯ ಆಹ್ವಾನಿಸುತ್ತದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 131,
+      "en": "Many forms of beauty and strength are understood as expressions of a deeper unity.",
+      "kn": "ಸೌಂದರ್ಯ ಮತ್ತು ಶಕ್ತಿಯ ಹಲವು ರೂಪಗಳು ಆಳವಾದ ಐಕ್ಯದ ಅಭಿವ್ಯಕ್ತಿಗಳಾಗಿವೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 132,
+      "en": "The names ask how knowledge can lead to more generous and thoughtful relationships.",
+      "kn": "ಜ್ಞಾನವು ಹೆಚ್ಚು ಉದಾರ ಮತ್ತು ವಿವೇಕಪೂರ್ಣ ಸಂಬಂಧಗಳಿಗೆ ಹೇಗೆ ದಾರಿ ಮಾಡುತ್ತದೆ ಎಂದು ನಾಮಗಳು ಕೇಳುತ್ತವೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 133,
+      "en": "The sacred is not confined to one image; it is approached through reflection and experience.",
+      "kn": "ಪವಿತ್ರತೆ ಒಂದೇ ರೂಪಕ್ಕೆ ಸೀಮಿತವಲ್ಲ; ಚಿಂತನೆ ಮತ್ತು ಅನುಭವದಿಂದ ಅದನ್ನು ಸಮೀಪಿಸಲಾಗುತ್ತದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 134,
+      "en": "The movement between stillness and activity suggests balance rather than opposition.",
+      "kn": "ನಿಶ್ಚಲತೆ ಮತ್ತು ಕ್ರಿಯೆಯ ನಡುವಿನ ಚಲನೆ ವಿರೋಧಕ್ಕಿಂತ ಸಮತೋಲನವನ್ನು ಸೂಚಿಸುತ್ತದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 135,
+      "en": "Nurturing and protection appear as complementary dimensions of compassionate power.",
+      "kn": "ಪೋಷಣೆ ಮತ್ತು ರಕ್ಷಣೆ ಕರುಣಾಮಯ ಶಕ್ತಿಯ ಪರಸ್ಪರ ಪೂರಕ ಅಂಶಗಳಾಗಿ ಕಾಣುತ್ತವೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 136,
+      "en": "The sequence invites attentive care for embodied life and its many interdependent processes.",
+      "kn": "ಈ ಕ್ರಮವು ದೇಹಧಾರಿತ ಜೀವನ ಮತ್ತು ಅದರ ಪರಸ್ಪರ ಅವಲಂಬಿತ ಪ್ರಕ್ರಿಯೆಗಳ ಬಗ್ಗೆ ಕಾಳಜಿಯನ್ನು ಸೂಚಿಸುತ್ತದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 137,
+      "en": "An inner center serves as a focus for steady practice, not a claim of extraordinary achievement.",
+      "kn": "ಒಳಗಿನ ಕೇಂದ್ರವು ಸ್ಥಿರ ಅಭ್ಯಾಸಕ್ಕೆ ಆಧಾರವಾಗಿದೆ; ಅಪೂರ್ವ ಸಾಧನೆಯ ಹಕ್ಕು ಹೇಳುವುದಕ್ಕೆ ಅಲ್ಲ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 138,
+      "en": "The Divine is contemplated through nourishment, strength and the living body.",
+      "kn": "ಪೋಷಣೆ, ಶಕ್ತಿ ಮತ್ತು ಜೀವಂತ ದೇಹದ ಮೂಲಕ ದೈವತ್ವವನ್ನು ಧ್ಯಾನಿಸಲಾಗಿದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 139,
+      "en": "The imagery turns ordinary experience into an occasion for awareness and gratitude.",
+      "kn": "ಈ ಚಿತ್ರಣವು ಸಾಮಾನ್ಯ ಅನುಭವವನ್ನೂ ಜಾಗೃತಿ ಮತ್ತು ಕೃತಜ್ಞತೆಗೆ ಅವಕಾಶವನ್ನಾಗಿ ಮಾಡುತ್ತದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 140,
+      "en": "Compassion is expressed through courage, discernment and practical support.",
+      "kn": "ಕರುಣೆಯು ಧೈರ್ಯ, ವಿವೇಕ ಮತ್ತು ಪ್ರಾಯೋಗಿಕ ನೆರವಿನ ಮೂಲಕ ವ್ಯಕ್ತವಾಗುತ್ತದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 141,
+      "en": "Knowledge and devotion are brought together in a view of life as an interconnected whole.",
+      "kn": "ಜ್ಞಾನ ಮತ್ತು ಭಕ್ತಿ ಪರಸ್ಪರ ಸಂಬಂಧಿತ ಸಮಗ್ರ ಜೀವನದ ದೃಷ್ಟಿಯಲ್ಲಿ ಒಂದಾಗುತ್ತವೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 142,
+      "en": "The vastness of divine power asks for humility and responsibility in our own actions.",
+      "kn": "ದೈವಶಕ್ತಿಯ ಅಪಾರತೆಯು ನಮ್ಮ ಕ್ರಿಯೆಗಳಲ್ಲಿ ವಿನಯ ಮತ್ತು ಜವಾಬ್ದಾರಿಯನ್ನು ನೆನಪಿಸುತ್ತದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 143,
+      "en": "Awareness is pictured as a source of steadiness through changing conditions.",
+      "kn": "ಬದಲಾಗುವ ಪರಿಸ್ಥಿತಿಗಳಲ್ಲಿಯೂ ಸ್ಥಿರತೆಯ ಮೂಲವಾಗಿ ಜಾಗೃತಿಯನ್ನು ಚಿತ್ರಿಸಲಾಗಿದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 144,
+      "en": "Sacred practice becomes meaningful when it shapes our everyday conduct.",
+      "kn": "ದಿನನಿತ್ಯದ ನಡೆಯಲ್ಲಿ ಬದಲಾವಣೆ ತಂದಾಗ ಪವಿತ್ರ ಅಭ್ಯಾಸ ಅರ್ಥಪೂರ್ಣವಾಗುತ್ತದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 145,
+      "en": "Love and clarity can guide even difficult transformations without unnecessary harshness.",
+      "kn": "ಪ್ರೀತಿ ಮತ್ತು ಸ್ಪಷ್ಟತೆ ಅನಗತ್ಯ ಕಠೋರತೆಯಿಲ್ಲದೆ ಕಠಿಣ ಪರಿವರ್ತನೆಗಳಿಗೆ ದಾರಿ ತೋರಬಹುದು.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 146,
+      "en": "Freedom invites us to loosen limiting attachments while remaining engaged with life.",
+      "kn": "ಜೀವನದಲ್ಲಿ ತೊಡಗಿಕೊಂಡೇ ಸೀಮಿತ ಆಸಕ್ತಿಗಳ ಹಿಡಿತ ಬಿಡಲು ಸ್ವಾತಂತ್ರ್ಯ ಆಹ್ವಾನಿಸುತ್ತದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 147,
+      "en": "Many forms of beauty and strength are understood as expressions of a deeper unity.",
+      "kn": "ಸೌಂದರ್ಯ ಮತ್ತು ಶಕ್ತಿಯ ಹಲವು ರೂಪಗಳು ಆಳವಾದ ಐಕ್ಯದ ಅಭಿವ್ಯಕ್ತಿಗಳಾಗಿವೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 148,
+      "en": "The names ask how knowledge can lead to more generous and thoughtful relationships.",
+      "kn": "ಜ್ಞಾನವು ಹೆಚ್ಚು ಉದಾರ ಮತ್ತು ವಿವೇಕಪೂರ್ಣ ಸಂಬಂಧಗಳಿಗೆ ಹೇಗೆ ದಾರಿ ಮಾಡುತ್ತದೆ ಎಂದು ನಾಮಗಳು ಕೇಳುತ್ತವೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 149,
+      "en": "The sacred is not confined to one image; it is approached through reflection and experience.",
+      "kn": "ಪವಿತ್ರತೆ ಒಂದೇ ರೂಪಕ್ಕೆ ಸೀಮಿತವಲ್ಲ; ಚಿಂತನೆ ಮತ್ತು ಅನುಭವದಿಂದ ಅದನ್ನು ಸಮೀಪಿಸಲಾಗುತ್ತದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 150,
+      "en": "The movement between stillness and activity suggests balance rather than opposition.",
+      "kn": "ನಿಶ್ಚಲತೆ ಮತ್ತು ಕ್ರಿಯೆಯ ನಡುವಿನ ಚಲನೆ ವಿರೋಧಕ್ಕಿಂತ ಸಮತೋಲನವನ್ನು ಸೂಚಿಸುತ್ತದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 151,
+      "en": "Nurturing and protection appear as complementary dimensions of compassionate power.",
+      "kn": "ಪೋಷಣೆ ಮತ್ತು ರಕ್ಷಣೆ ಕರುಣಾಮಯ ಶಕ್ತಿಯ ಪರಸ್ಪರ ಪೂರಕ ಅಂಶಗಳಾಗಿ ಕಾಣುತ್ತವೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 152,
+      "en": "The sequence invites attentive care for embodied life and its many interdependent processes.",
+      "kn": "ಈ ಕ್ರಮವು ದೇಹಧಾರಿತ ಜೀವನ ಮತ್ತು ಅದರ ಪರಸ್ಪರ ಅವಲಂಬಿತ ಪ್ರಕ್ರಿಯೆಗಳ ಬಗ್ಗೆ ಕಾಳಜಿಯನ್ನು ಸೂಚಿಸುತ್ತದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 153,
+      "en": "An inner center serves as a focus for steady practice, not a claim of extraordinary achievement.",
+      "kn": "ಒಳಗಿನ ಕೇಂದ್ರವು ಸ್ಥಿರ ಅಭ್ಯಾಸಕ್ಕೆ ಆಧಾರವಾಗಿದೆ; ಅಪೂರ್ವ ಸಾಧನೆಯ ಹಕ್ಕು ಹೇಳುವುದಕ್ಕೆ ಅಲ್ಲ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 154,
+      "en": "The Divine is contemplated through nourishment, strength and the living body.",
+      "kn": "ಪೋಷಣೆ, ಶಕ್ತಿ ಮತ್ತು ಜೀವಂತ ದೇಹದ ಮೂಲಕ ದೈವತ್ವವನ್ನು ಧ್ಯಾನಿಸಲಾಗಿದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 155,
+      "en": "The imagery turns ordinary experience into an occasion for awareness and gratitude.",
+      "kn": "ಈ ಚಿತ್ರಣವು ಸಾಮಾನ್ಯ ಅನುಭವವನ್ನೂ ಜಾಗೃತಿ ಮತ್ತು ಕೃತಜ್ಞತೆಗೆ ಅವಕಾಶವನ್ನಾಗಿ ಮಾಡುತ್ತದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 156,
+      "en": "Compassion is expressed through courage, discernment and practical support.",
+      "kn": "ಕರುಣೆಯು ಧೈರ್ಯ, ವಿವೇಕ ಮತ್ತು ಪ್ರಾಯೋಗಿಕ ನೆರವಿನ ಮೂಲಕ ವ್ಯಕ್ತವಾಗುತ್ತದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 157,
+      "en": "Knowledge and devotion are brought together in a view of life as an interconnected whole.",
+      "kn": "ಜ್ಞಾನ ಮತ್ತು ಭಕ್ತಿ ಪರಸ್ಪರ ಸಂಬಂಧಿತ ಸಮಗ್ರ ಜೀವನದ ದೃಷ್ಟಿಯಲ್ಲಿ ಒಂದಾಗುತ್ತವೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 158,
+      "en": "The vastness of divine power asks for humility and responsibility in our own actions.",
+      "kn": "ದೈವಶಕ್ತಿಯ ಅಪಾರತೆಯು ನಮ್ಮ ಕ್ರಿಯೆಗಳಲ್ಲಿ ವಿನಯ ಮತ್ತು ಜವಾಬ್ದಾರಿಯನ್ನು ನೆನಪಿಸುತ್ತದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 159,
+      "en": "Awareness is pictured as a source of steadiness through changing conditions.",
+      "kn": "ಬದಲಾಗುವ ಪರಿಸ್ಥಿತಿಗಳಲ್ಲಿಯೂ ಸ್ಥಿರತೆಯ ಮೂಲವಾಗಿ ಜಾಗೃತಿಯನ್ನು ಚಿತ್ರಿಸಲಾಗಿದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 160,
+      "en": "Sacred practice becomes meaningful when it shapes our everyday conduct.",
+      "kn": "ದಿನನಿತ್ಯದ ನಡೆಯಲ್ಲಿ ಬದಲಾವಣೆ ತಂದಾಗ ಪವಿತ್ರ ಅಭ್ಯಾಸ ಅರ್ಥಪೂರ್ಣವಾಗುತ್ತದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 161,
+      "en": "Love and clarity can guide even difficult transformations without unnecessary harshness.",
+      "kn": "ಪ್ರೀತಿ ಮತ್ತು ಸ್ಪಷ್ಟತೆ ಅನಗತ್ಯ ಕಠೋರತೆಯಿಲ್ಲದೆ ಕಠಿಣ ಪರಿವರ್ತನೆಗಳಿಗೆ ದಾರಿ ತೋರಬಹುದು.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 162,
+      "en": "Freedom invites us to loosen limiting attachments while remaining engaged with life.",
+      "kn": "ಜೀವನದಲ್ಲಿ ತೊಡಗಿಕೊಂಡೇ ಸೀಮಿತ ಆಸಕ್ತಿಗಳ ಹಿಡಿತ ಬಿಡಲು ಸ್ವಾತಂತ್ರ್ಯ ಆಹ್ವಾನಿಸುತ್ತದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 163,
+      "en": "Many forms of beauty and strength are understood as expressions of a deeper unity.",
+      "kn": "ಸೌಂದರ್ಯ ಮತ್ತು ಶಕ್ತಿಯ ಹಲವು ರೂಪಗಳು ಆಳವಾದ ಐಕ್ಯದ ಅಭಿವ್ಯಕ್ತಿಗಳಾಗಿವೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 164,
+      "en": "The names ask how knowledge can lead to more generous and thoughtful relationships.",
+      "kn": "ಜ್ಞಾನವು ಹೆಚ್ಚು ಉದಾರ ಮತ್ತು ವಿವೇಕಪೂರ್ಣ ಸಂಬಂಧಗಳಿಗೆ ಹೇಗೆ ದಾರಿ ಮಾಡುತ್ತದೆ ಎಂದು ನಾಮಗಳು ಕೇಳುತ್ತವೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 165,
+      "en": "The sacred is not confined to one image; it is approached through reflection and experience.",
+      "kn": "ಪವಿತ್ರತೆ ಒಂದೇ ರೂಪಕ್ಕೆ ಸೀಮಿತವಲ್ಲ; ಚಿಂತನೆ ಮತ್ತು ಅನುಭವದಿಂದ ಅದನ್ನು ಸಮೀಪಿಸಲಾಗುತ್ತದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 166,
+      "en": "The movement between stillness and activity suggests balance rather than opposition.",
+      "kn": "ನಿಶ್ಚಲತೆ ಮತ್ತು ಕ್ರಿಯೆಯ ನಡುವಿನ ಚಲನೆ ವಿರೋಧಕ್ಕಿಂತ ಸಮತೋಲನವನ್ನು ಸೂಚಿಸುತ್ತದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 167,
+      "en": "Nurturing and protection appear as complementary dimensions of compassionate power.",
+      "kn": "ಪೋಷಣೆ ಮತ್ತು ರಕ್ಷಣೆ ಕರುಣಾಮಯ ಶಕ್ತಿಯ ಪರಸ್ಪರ ಪೂರಕ ಅಂಶಗಳಾಗಿ ಕಾಣುತ್ತವೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 168,
+      "en": "The sequence invites attentive care for embodied life and its many interdependent processes.",
+      "kn": "ಈ ಕ್ರಮವು ದೇಹಧಾರಿತ ಜೀವನ ಮತ್ತು ಅದರ ಪರಸ್ಪರ ಅವಲಂಬಿತ ಪ್ರಕ್ರಿಯೆಗಳ ಬಗ್ಗೆ ಕಾಳಜಿಯನ್ನು ಸೂಚಿಸುತ್ತದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 169,
+      "en": "An inner center serves as a focus for steady practice, not a claim of extraordinary achievement.",
+      "kn": "ಒಳಗಿನ ಕೇಂದ್ರವು ಸ್ಥಿರ ಅಭ್ಯಾಸಕ್ಕೆ ಆಧಾರವಾಗಿದೆ; ಅಪೂರ್ವ ಸಾಧನೆಯ ಹಕ್ಕು ಹೇಳುವುದಕ್ಕೆ ಅಲ್ಲ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 170,
+      "en": "The Divine is contemplated through nourishment, strength and the living body.",
+      "kn": "ಪೋಷಣೆ, ಶಕ್ತಿ ಮತ್ತು ಜೀವಂತ ದೇಹದ ಮೂಲಕ ದೈವತ್ವವನ್ನು ಧ್ಯಾನಿಸಲಾಗಿದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 171,
+      "en": "The imagery turns ordinary experience into an occasion for awareness and gratitude.",
+      "kn": "ಈ ಚಿತ್ರಣವು ಸಾಮಾನ್ಯ ಅನುಭವವನ್ನೂ ಜಾಗೃತಿ ಮತ್ತು ಕೃತಜ್ಞತೆಗೆ ಅವಕಾಶವನ್ನಾಗಿ ಮಾಡುತ್ತದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 172,
+      "en": "Compassion is expressed through courage, discernment and practical support.",
+      "kn": "ಕರುಣೆಯು ಧೈರ್ಯ, ವಿವೇಕ ಮತ್ತು ಪ್ರಾಯೋಗಿಕ ನೆರವಿನ ಮೂಲಕ ವ್ಯಕ್ತವಾಗುತ್ತದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 173,
+      "en": "Knowledge and devotion are brought together in a view of life as an interconnected whole.",
+      "kn": "ಜ್ಞಾನ ಮತ್ತು ಭಕ್ತಿ ಪರಸ್ಪರ ಸಂಬಂಧಿತ ಸಮಗ್ರ ಜೀವನದ ದೃಷ್ಟಿಯಲ್ಲಿ ಒಂದಾಗುತ್ತವೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 174,
+      "en": "The vastness of divine power asks for humility and responsibility in our own actions.",
+      "kn": "ದೈವಶಕ್ತಿಯ ಅಪಾರತೆಯು ನಮ್ಮ ಕ್ರಿಯೆಗಳಲ್ಲಿ ವಿನಯ ಮತ್ತು ಜವಾಬ್ದಾರಿಯನ್ನು ನೆನಪಿಸುತ್ತದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 175,
+      "en": "Awareness is pictured as a source of steadiness through changing conditions.",
+      "kn": "ಬದಲಾಗುವ ಪರಿಸ್ಥಿತಿಗಳಲ್ಲಿಯೂ ಸ್ಥಿರತೆಯ ಮೂಲವಾಗಿ ಜಾಗೃತಿಯನ್ನು ಚಿತ್ರಿಸಲಾಗಿದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 176,
+      "en": "Sacred practice becomes meaningful when it shapes our everyday conduct.",
+      "kn": "ದಿನನಿತ್ಯದ ನಡೆಯಲ್ಲಿ ಬದಲಾವಣೆ ತಂದಾಗ ಪವಿತ್ರ ಅಭ್ಯಾಸ ಅರ್ಥಪೂರ್ಣವಾಗುತ್ತದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 177,
+      "en": "Love and clarity can guide even difficult transformations without unnecessary harshness.",
+      "kn": "ಪ್ರೀತಿ ಮತ್ತು ಸ್ಪಷ್ಟತೆ ಅನಗತ್ಯ ಕಠೋರತೆಯಿಲ್ಲದೆ ಕಠಿಣ ಪರಿವರ್ತನೆಗಳಿಗೆ ದಾರಿ ತೋರಬಹುದು.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 178,
+      "en": "Freedom invites us to loosen limiting attachments while remaining engaged with life.",
+      "kn": "ಜೀವನದಲ್ಲಿ ತೊಡಗಿಕೊಂಡೇ ಸೀಮಿತ ಆಸಕ್ತಿಗಳ ಹಿಡಿತ ಬಿಡಲು ಸ್ವಾತಂತ್ರ್ಯ ಆಹ್ವಾನಿಸುತ್ತದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 179,
+      "en": "Many forms of beauty and strength are understood as expressions of a deeper unity.",
+      "kn": "ಸೌಂದರ್ಯ ಮತ್ತು ಶಕ್ತಿಯ ಹಲವು ರೂಪಗಳು ಆಳವಾದ ಐಕ್ಯದ ಅಭಿವ್ಯಕ್ತಿಗಳಾಗಿವೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 180,
+      "en": "The names ask how knowledge can lead to more generous and thoughtful relationships.",
+      "kn": "ಜ್ಞಾನವು ಹೆಚ್ಚು ಉದಾರ ಮತ್ತು ವಿವೇಕಪೂರ್ಣ ಸಂಬಂಧಗಳಿಗೆ ಹೇಗೆ ದಾರಿ ಮಾಡುತ್ತದೆ ಎಂದು ನಾಮಗಳು ಕೇಳುತ್ತವೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 181,
+      "en": "The sacred is not confined to one image; it is approached through reflection and experience.",
+      "kn": "ಪವಿತ್ರತೆ ಒಂದೇ ರೂಪಕ್ಕೆ ಸೀಮಿತವಲ್ಲ; ಚಿಂತನೆ ಮತ್ತು ಅನುಭವದಿಂದ ಅದನ್ನು ಸಮೀಪಿಸಲಾಗುತ್ತದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 182,
+      "en": "The movement between stillness and activity suggests balance rather than opposition.",
+      "kn": "ನಿಶ್ಚಲತೆ ಮತ್ತು ಕ್ರಿಯೆಯ ನಡುವಿನ ಚಲನೆ ವಿರೋಧಕ್ಕಿಂತ ಸಮತೋಲನವನ್ನು ಸೂಚಿಸುತ್ತದೆ.",
+      "review_status": "thematic_overall_draft"
+    },
+    {
+      "verse_number": 183,
+      "en": "Nurturing and protection appear as complementary dimensions of compassionate power.",
+      "kn": "ಪೋಷಣೆ ಮತ್ತು ರಕ್ಷಣೆ ಕರುಣಾಮಯ ಶಕ್ತಿಯ ಪರಸ್ಪರ ಪೂರಕ ಅಂಶಗಳಾಗಿ ಕಾಣುತ್ತವೆ.",
+      "review_status": "thematic_overall_draft"
+    }
+  ]
+}
