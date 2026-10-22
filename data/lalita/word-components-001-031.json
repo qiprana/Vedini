@@ -1,0 +1,1158 @@
+{
+  "scope": "Names 1–31",
+  "review_status": "editorial_draft",
+  "entries": [
+    {
+      "number": 1,
+      "components": [
+        {
+          "dev": "श्री",
+          "iast": "śrī",
+          "en": "Auspicious",
+          "kn": "ಶ್ರೀ"
+        },
+        {
+          "dev": "माता",
+          "iast": "mātā",
+          "en": "Mother",
+          "kn": "ತಾಯಿ"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 2,
+      "components": [
+        {
+          "dev": "श्री",
+          "iast": "śrī",
+          "en": "Glorious",
+          "kn": "ಶ್ರೀ"
+        },
+        {
+          "dev": "महा",
+          "iast": "mahā",
+          "en": "Great",
+          "kn": "ಮಹಾ"
+        },
+        {
+          "dev": "राज्ञी",
+          "iast": "rājñī",
+          "en": "Queen",
+          "kn": "ರಾಣಿ"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 3,
+      "components": [
+        {
+          "dev": "श्रीमत्",
+          "iast": "śrīmat",
+          "en": "Glorious",
+          "kn": "ಶ್ರೀಮತ್"
+        },
+        {
+          "dev": "सिंहासन",
+          "iast": "siṃhāsana",
+          "en": "Throne",
+          "kn": "ಸಿಂಹಾಸನ"
+        },
+        {
+          "dev": "ईश्वरी",
+          "iast": "īśvarī",
+          "en": "Sovereign",
+          "kn": "ಈಶ್ವರಿ"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 4,
+      "components": [
+        {
+          "dev": "चित्",
+          "iast": "cit",
+          "en": "Consciousness",
+          "kn": "ಚೈತನ್ಯ"
+        },
+        {
+          "dev": "अग्नि",
+          "iast": "agni",
+          "en": "Fire",
+          "kn": "ಅಗ್ನಿ"
+        },
+        {
+          "dev": "कुण्ड",
+          "iast": "kuṇḍa",
+          "en": "Fire pit",
+          "kn": "ಕುಂಡ"
+        },
+        {
+          "dev": "सम्भूता",
+          "iast": "sambhūtā",
+          "en": "Manifested from",
+          "kn": "ಉದ್ಭವಿಸಿದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 5,
+      "components": [
+        {
+          "dev": "देव",
+          "iast": "deva",
+          "en": "Gods",
+          "kn": "ದೇವತೆಗಳು"
+        },
+        {
+          "dev": "कार्य",
+          "iast": "kārya",
+          "en": "Purpose",
+          "kn": "ಕಾರ್ಯ"
+        },
+        {
+          "dev": "समुद्यता",
+          "iast": "samudyatā",
+          "en": "Arisen to accomplish",
+          "kn": "ಸನ್ನದ್ಧಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 6,
+      "components": [
+        {
+          "dev": "उद्यत्",
+          "iast": "udyat",
+          "en": "Rising",
+          "kn": "ಉದಯಿಸುವ"
+        },
+        {
+          "dev": "भानु",
+          "iast": "bhānu",
+          "en": "Sun",
+          "kn": "ಸೂರ್ಯ"
+        },
+        {
+          "dev": "सहस्र",
+          "iast": "sahasra",
+          "en": "Thousand",
+          "kn": "ಸಾವಿರ"
+        },
+        {
+          "dev": "आभा",
+          "iast": "ābhā",
+          "en": "Radiance",
+          "kn": "ಪ್ರಭೆ"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 7,
+      "components": [
+        {
+          "dev": "चतुर्",
+          "iast": "catur",
+          "en": "Four",
+          "kn": "ನಾಲ್ಕು"
+        },
+        {
+          "dev": "बाहु",
+          "iast": "bāhu",
+          "en": "Arms",
+          "kn": "ತೋಳುಗಳು"
+        },
+        {
+          "dev": "समन्विता",
+          "iast": "samanvitā",
+          "en": "Endowed with",
+          "kn": "ಹೊಂದಿರುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 8,
+      "components": [
+        {
+          "dev": "राग",
+          "iast": "rāga",
+          "en": "Attachment or love",
+          "kn": "ರಾಗ"
+        },
+        {
+          "dev": "स्वरूप",
+          "iast": "svarūpa",
+          "en": "Essential form",
+          "kn": "ಸ್ವರೂಪ"
+        },
+        {
+          "dev": "पाश",
+          "iast": "pāśa",
+          "en": "Noose",
+          "kn": "ಪಾಶ"
+        },
+        {
+          "dev": "आढ्या",
+          "iast": "āḍhyā",
+          "en": "Equipped with",
+          "kn": "ಸಮೃದ್ಧಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 9,
+      "components": [
+        {
+          "dev": "क्रोध",
+          "iast": "krodha",
+          "en": "Anger",
+          "kn": "ಕ್ರೋಧ"
+        },
+        {
+          "dev": "आकार",
+          "iast": "ākāra",
+          "en": "Form",
+          "kn": "ಆಕಾರ"
+        },
+        {
+          "dev": "अङ्कुश",
+          "iast": "aṅkuśa",
+          "en": "Goad",
+          "kn": "ಅಂಕುಶ"
+        },
+        {
+          "dev": "उज्ज्वला",
+          "iast": "ujjvalā",
+          "en": "Shining",
+          "kn": "ಪ್ರಕಾಶಿಸುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 10,
+      "components": [
+        {
+          "dev": "मनो",
+          "iast": "mano",
+          "en": "Mind",
+          "kn": "ಮನಸ್ಸು"
+        },
+        {
+          "dev": "रूप",
+          "iast": "rūpa",
+          "en": "Form",
+          "kn": "ರೂಪ"
+        },
+        {
+          "dev": "इक्षु",
+          "iast": "ikṣu",
+          "en": "Sugarcane",
+          "kn": "ಕಬ್ಬು"
+        },
+        {
+          "dev": "कोदण्डा",
+          "iast": "kodaṇḍā",
+          "en": "Bow",
+          "kn": "ಬಿಲ್ಲು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 11,
+      "components": [
+        {
+          "dev": "पञ्च",
+          "iast": "pañca",
+          "en": "Five",
+          "kn": "ಐದು"
+        },
+        {
+          "dev": "तन्मात्र",
+          "iast": "tanmātra",
+          "en": "Subtle elements",
+          "kn": "ತನ್ಮಾತ್ರೆಗಳು"
+        },
+        {
+          "dev": "सायका",
+          "iast": "sāyakā",
+          "en": "Arrows",
+          "kn": "ಬಾಣಗಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 12,
+      "components": [
+        {
+          "dev": "निज",
+          "iast": "nija",
+          "en": "Own",
+          "kn": "ಸ್ವಂತ"
+        },
+        {
+          "dev": "अरुण",
+          "iast": "aruṇa",
+          "en": "Crimson",
+          "kn": "ಕೆಂಪು"
+        },
+        {
+          "dev": "प्रभा",
+          "iast": "prabhā",
+          "en": "Radiance",
+          "kn": "ಪ್ರಭೆ"
+        },
+        {
+          "dev": "पूर",
+          "iast": "pūra",
+          "en": "Flood",
+          "kn": "ಪ್ರವಾಹ"
+        },
+        {
+          "dev": "मज्जत्",
+          "iast": "majjat",
+          "en": "Immersed",
+          "kn": "ಮುಳುಗಿದ"
+        },
+        {
+          "dev": "ब्रह्माण्ड",
+          "iast": "brahmāṇḍa",
+          "en": "Universe",
+          "kn": "ಬ್ರಹ್ಮಾಂಡ"
+        },
+        {
+          "dev": "मण्डला",
+          "iast": "maṇḍalā",
+          "en": "Sphere",
+          "kn": "ಮಂಡಲ"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 13,
+      "components": [
+        {
+          "dev": "चम्पक",
+          "iast": "campaka",
+          "en": "Campaka flower",
+          "kn": "ಚಂಪಕ"
+        },
+        {
+          "dev": "अशोक",
+          "iast": "aśoka",
+          "en": "Aśoka flower",
+          "kn": "ಅಶೋಕ"
+        },
+        {
+          "dev": "पुन्नाग",
+          "iast": "punnāga",
+          "en": "Punnāga flower",
+          "kn": "ಪುನ್ನಾಗ"
+        },
+        {
+          "dev": "सौगन्धिक",
+          "iast": "saugandhika",
+          "en": "Fragrant flowers",
+          "kn": "ಸುಗಂಧಿ ಹೂಗಳು"
+        },
+        {
+          "dev": "लसत्",
+          "iast": "lasat",
+          "en": "Shining",
+          "kn": "ಹೊಳೆಯುವ"
+        },
+        {
+          "dev": "कचा",
+          "iast": "kacā",
+          "en": "Hair",
+          "kn": "ಕೇಶ"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 14,
+      "components": [
+        {
+          "dev": "कुरुविन्द",
+          "iast": "kuruvinda",
+          "en": "Ruby",
+          "kn": "ಮಾಣಿಕ್ಯ"
+        },
+        {
+          "dev": "मणि",
+          "iast": "maṇi",
+          "en": "Gem",
+          "kn": "ರತ್ನ"
+        },
+        {
+          "dev": "श्रेणी",
+          "iast": "śreṇī",
+          "en": "Row",
+          "kn": "ಸಾಲು"
+        },
+        {
+          "dev": "कनत्",
+          "iast": "kanat",
+          "en": "Shining",
+          "kn": "ಹೊಳೆಯುವ"
+        },
+        {
+          "dev": "कोटीर",
+          "iast": "koṭīra",
+          "en": "Crown",
+          "kn": "ಕಿರೀಟ"
+        },
+        {
+          "dev": "मण्डिता",
+          "iast": "maṇḍitā",
+          "en": "Adorned",
+          "kn": "ಅಲಂಕರಿತಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 15,
+      "components": [
+        {
+          "dev": "अष्टमी",
+          "iast": "aṣṭamī",
+          "en": "Eighth lunar day",
+          "kn": "ಅಷ್ಟಮಿ"
+        },
+        {
+          "dev": "चन्द्र",
+          "iast": "candra",
+          "en": "Moon",
+          "kn": "ಚಂದ್ರ"
+        },
+        {
+          "dev": "विभ्राजत्",
+          "iast": "vibhrājat",
+          "en": "Shining",
+          "kn": "ಪ್ರಕಾಶಿಸುವ"
+        },
+        {
+          "dev": "अलिक",
+          "iast": "alika",
+          "en": "Forehead",
+          "kn": "ಹಣೆ"
+        },
+        {
+          "dev": "स्थल",
+          "iast": "sthala",
+          "en": "Region",
+          "kn": "ಭಾಗ"
+        },
+        {
+          "dev": "शोभिता",
+          "iast": "śobhitā",
+          "en": "Beautified",
+          "kn": "ಶೋಭಿತಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 16,
+      "components": [
+        {
+          "dev": "मुख",
+          "iast": "mukha",
+          "en": "Face",
+          "kn": "ಮುಖ"
+        },
+        {
+          "dev": "चन्द्र",
+          "iast": "candra",
+          "en": "Moon",
+          "kn": "ಚಂದ್ರ"
+        },
+        {
+          "dev": "कलङ्क",
+          "iast": "kalaṅka",
+          "en": "Mark",
+          "kn": "ಕಲೆ"
+        },
+        {
+          "dev": "आभ",
+          "iast": "ābha",
+          "en": "Resembling",
+          "kn": "ಹೋಲುವ"
+        },
+        {
+          "dev": "मृगनाभि",
+          "iast": "mṛganābhi",
+          "en": "Musk",
+          "kn": "ಕಸ್ತೂರಿ"
+        },
+        {
+          "dev": "विशेषका",
+          "iast": "viśeṣakā",
+          "en": "Forehead mark",
+          "kn": "ತಿಲಕ"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 17,
+      "components": [
+        {
+          "dev": "वदन",
+          "iast": "vadana",
+          "en": "Face",
+          "kn": "ಮುಖ"
+        },
+        {
+          "dev": "स्मर",
+          "iast": "smara",
+          "en": "God of love",
+          "kn": "ಮನ್ಮಥ"
+        },
+        {
+          "dev": "माङ्गल्य",
+          "iast": "māṅgalya",
+          "en": "Auspicious wedding",
+          "kn": "ಮಾಂಗಲ್ಯ"
+        },
+        {
+          "dev": "गृह",
+          "iast": "gṛha",
+          "en": "House",
+          "kn": "ಮನೆ"
+        },
+        {
+          "dev": "तोरण",
+          "iast": "toraṇa",
+          "en": "Archway",
+          "kn": "ತೋರಣ"
+        },
+        {
+          "dev": "चिल्लिका",
+          "iast": "cillikā",
+          "en": "Eyebrow",
+          "kn": "ಹುಬ್ಬು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 18,
+      "components": [
+        {
+          "dev": "वक्त्र",
+          "iast": "vaktra",
+          "en": "Face",
+          "kn": "ಮುಖ"
+        },
+        {
+          "dev": "लक्ष्मी",
+          "iast": "lakṣmī",
+          "en": "Beauty",
+          "kn": "ಸೌಂದರ್ಯ"
+        },
+        {
+          "dev": "परीवाह",
+          "iast": "parīvāha",
+          "en": "Stream",
+          "kn": "ಪ್ರವಾಹ"
+        },
+        {
+          "dev": "चलत्",
+          "iast": "calat",
+          "en": "Moving",
+          "kn": "ಚಲಿಸುವ"
+        },
+        {
+          "dev": "मीन",
+          "iast": "mīna",
+          "en": "Fish",
+          "kn": "ಮೀನು"
+        },
+        {
+          "dev": "आभ",
+          "iast": "ābha",
+          "en": "Resembling",
+          "kn": "ಹೋಲುವ"
+        },
+        {
+          "dev": "लोचना",
+          "iast": "locanā",
+          "en": "Eyes",
+          "kn": "ಕಣ್ಣುಗಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 19,
+      "components": [
+        {
+          "dev": "नव",
+          "iast": "nava",
+          "en": "Fresh",
+          "kn": "ತಾಜಾ"
+        },
+        {
+          "dev": "चम्पक",
+          "iast": "campaka",
+          "en": "Campaka flower",
+          "kn": "ಚಂಪಕ"
+        },
+        {
+          "dev": "पुष्प",
+          "iast": "puṣpa",
+          "en": "Flower",
+          "kn": "ಹೂವು"
+        },
+        {
+          "dev": "आभ",
+          "iast": "ābha",
+          "en": "Resembling",
+          "kn": "ಹೋಲುವ"
+        },
+        {
+          "dev": "नासा",
+          "iast": "nāsā",
+          "en": "Nose",
+          "kn": "ಮೂಗು"
+        },
+        {
+          "dev": "दण्ड",
+          "iast": "daṇḍa",
+          "en": "Bridge or shaft",
+          "kn": "ದಂಡ"
+        },
+        {
+          "dev": "विराजिता",
+          "iast": "virājitā",
+          "en": "Resplendent",
+          "kn": "ಶೋಭಿಸುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 20,
+      "components": [
+        {
+          "dev": "तारा",
+          "iast": "tārā",
+          "en": "Star",
+          "kn": "ನಕ್ಷತ್ರ"
+        },
+        {
+          "dev": "कान्ति",
+          "iast": "kānti",
+          "en": "Luster",
+          "kn": "ಕಾಂತಿ"
+        },
+        {
+          "dev": "तिरस्कारी",
+          "iast": "tiraskārī",
+          "en": "Outshining",
+          "kn": "ಮೀರಿಸುವ"
+        },
+        {
+          "dev": "नासा",
+          "iast": "nāsā",
+          "en": "Nose",
+          "kn": "ಮೂಗು"
+        },
+        {
+          "dev": "आभरण",
+          "iast": "ābharaṇa",
+          "en": "Ornament",
+          "kn": "ಆಭರಣ"
+        },
+        {
+          "dev": "भासुरा",
+          "iast": "bhāsurā",
+          "en": "Radiant",
+          "kn": "ಪ್ರಕಾಶಿಸುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 21,
+      "components": [
+        {
+          "dev": "कदम्ब",
+          "iast": "kadamba",
+          "en": "Kadamba",
+          "kn": "ಕದಂಬ"
+        },
+        {
+          "dev": "मञ्जरी",
+          "iast": "mañjarī",
+          "en": "Flower cluster",
+          "kn": "ಹೂಗೊಂಚಲು"
+        },
+        {
+          "dev": "क्लृप्त",
+          "iast": "kḷpta",
+          "en": "Fashioned",
+          "kn": "ನಿರ್ಮಿಸಿದ"
+        },
+        {
+          "dev": "कर्ण",
+          "iast": "karṇa",
+          "en": "Ear",
+          "kn": "ಕಿವಿ"
+        },
+        {
+          "dev": "पूर",
+          "iast": "pūra",
+          "en": "Ear ornament",
+          "kn": "ಕಿವಿಯ ಅಲಂಕಾರ"
+        },
+        {
+          "dev": "मनोहरा",
+          "iast": "manoharā",
+          "en": "Captivating",
+          "kn": "ಮನೋಹರಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 22,
+      "components": [
+        {
+          "dev": "ताटङ्क",
+          "iast": "tāṭaṅka",
+          "en": "Earring",
+          "kn": "ತಾಟಂಕ"
+        },
+        {
+          "dev": "युगली",
+          "iast": "yugalī",
+          "en": "Pair",
+          "kn": "ಜೋಡಿ"
+        },
+        {
+          "dev": "भूत",
+          "iast": "bhūta",
+          "en": "Become",
+          "kn": "ಆದ"
+        },
+        {
+          "dev": "तपन",
+          "iast": "tapana",
+          "en": "Sun",
+          "kn": "ಸೂರ್ಯ"
+        },
+        {
+          "dev": "उडुप",
+          "iast": "uḍupa",
+          "en": "Moon",
+          "kn": "ಚಂದ್ರ"
+        },
+        {
+          "dev": "मण्डला",
+          "iast": "maṇḍalā",
+          "en": "Discs",
+          "kn": "ಮಂಡಲಗಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 23,
+      "components": [
+        {
+          "dev": "पद्मराग",
+          "iast": "padmarāga",
+          "en": "Ruby",
+          "kn": "ಮಾಣಿಕ್ಯ"
+        },
+        {
+          "dev": "शिला",
+          "iast": "śilā",
+          "en": "Stone",
+          "kn": "ಶಿಲೆ"
+        },
+        {
+          "dev": "आदर्श",
+          "iast": "ādarśa",
+          "en": "Mirror",
+          "kn": "ಕನ್ನಡಿ"
+        },
+        {
+          "dev": "परिभावि",
+          "iast": "paribhāvi",
+          "en": "Surpassing",
+          "kn": "ಮೀರಿಸುವ"
+        },
+        {
+          "dev": "कपोल",
+          "iast": "kapola",
+          "en": "Cheek",
+          "kn": "ಕೆನ್ನೆ"
+        },
+        {
+          "dev": "भूः",
+          "iast": "bhūḥ",
+          "en": "Surface",
+          "kn": "ಭಾಗ"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 24,
+      "components": [
+        {
+          "dev": "नव",
+          "iast": "nava",
+          "en": "Fresh",
+          "kn": "ಹೊಸ"
+        },
+        {
+          "dev": "विद्रुम",
+          "iast": "vidruma",
+          "en": "Coral",
+          "kn": "ಹವಳ"
+        },
+        {
+          "dev": "बिम्ब",
+          "iast": "bimba",
+          "en": "Bimba fruit",
+          "kn": "ಬಿಂಬ ಹಣ್ಣು"
+        },
+        {
+          "dev": "श्री",
+          "iast": "śrī",
+          "en": "Beauty",
+          "kn": "ಸೌಂದರ್ಯ"
+        },
+        {
+          "dev": "न्यक्कारि",
+          "iast": "nyakkāri",
+          "en": "Outshining",
+          "kn": "ಮೀರಿಸುವ"
+        },
+        {
+          "dev": "रदन",
+          "iast": "radana",
+          "en": "Teeth",
+          "kn": "ಹಲ್ಲು"
+        },
+        {
+          "dev": "च्छदा",
+          "iast": "cchadā",
+          "en": "Lip covering",
+          "kn": "ತುಟಿಗಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 25,
+      "components": [
+        {
+          "dev": "शुद्ध",
+          "iast": "śuddha",
+          "en": "Pure",
+          "kn": "ಶುದ್ಧ"
+        },
+        {
+          "dev": "विद्या",
+          "iast": "vidyā",
+          "en": "Knowledge",
+          "kn": "ವಿದ್ಯೆ"
+        },
+        {
+          "dev": "अङ्कुर",
+          "iast": "aṅkura",
+          "en": "Sprout",
+          "kn": "ಮೊಳೆ"
+        },
+        {
+          "dev": "आकार",
+          "iast": "ākāra",
+          "en": "Form",
+          "kn": "ಆಕಾರ"
+        },
+        {
+          "dev": "द्विज",
+          "iast": "dvija",
+          "en": "Teeth",
+          "kn": "ಹಲ್ಲುಗಳು"
+        },
+        {
+          "dev": "पङ्क्ति",
+          "iast": "paṅkti",
+          "en": "Row",
+          "kn": "ಸಾಲು"
+        },
+        {
+          "dev": "द्वय",
+          "iast": "dvaya",
+          "en": "Pair",
+          "kn": "ಜೋಡಿ"
+        },
+        {
+          "dev": "उज्ज्वला",
+          "iast": "ujjvalā",
+          "en": "Radiant",
+          "kn": "ಉಜ್ಜ್ವಲ"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 26,
+      "components": [
+        {
+          "dev": "कर्पूर",
+          "iast": "karpūra",
+          "en": "Camphor",
+          "kn": "ಕರ್ಪೂರ"
+        },
+        {
+          "dev": "वीटिका",
+          "iast": "vīṭikā",
+          "en": "Betel roll",
+          "kn": "ವೀಟಿಕೆ"
+        },
+        {
+          "dev": "आमोद",
+          "iast": "āmoda",
+          "en": "Fragrance",
+          "kn": "ಸುವಾಸನೆ"
+        },
+        {
+          "dev": "समाकर्षि",
+          "iast": "samākarṣi",
+          "en": "Attracting",
+          "kn": "ಆಕರ್ಷಿಸುವ"
+        },
+        {
+          "dev": "दिगन्तरा",
+          "iast": "digantarā",
+          "en": "Directions",
+          "kn": "ದಿಕ್ಕುಗಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 27,
+      "components": [
+        {
+          "dev": "निज",
+          "iast": "nija",
+          "en": "Own",
+          "kn": "ಸ್ವಂತ"
+        },
+        {
+          "dev": "सल्लाप",
+          "iast": "sallāpa",
+          "en": "Conversation",
+          "kn": "ಮಾತುಕತೆ"
+        },
+        {
+          "dev": "माधुर्य",
+          "iast": "mādhurya",
+          "en": "Sweetness",
+          "kn": "ಮಾಧುರ್ಯ"
+        },
+        {
+          "dev": "विनिर्भर्त्सित",
+          "iast": "vinirbhartsita",
+          "en": "Surpassing",
+          "kn": "ಮೀರಿಸಿದ"
+        },
+        {
+          "dev": "कच्छपी",
+          "iast": "kacchapī",
+          "en": "Vīṇā called Kacchapī",
+          "kn": "ಕಚ್ಛಪಿ ವೀಣೆ"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 28,
+      "components": [
+        {
+          "dev": "मन्द",
+          "iast": "manda",
+          "en": "Gentle",
+          "kn": "ಮಂದ"
+        },
+        {
+          "dev": "स्मित",
+          "iast": "smita",
+          "en": "Smile",
+          "kn": "ನಗು"
+        },
+        {
+          "dev": "प्रभा",
+          "iast": "prabhā",
+          "en": "Radiance",
+          "kn": "ಪ್ರಭೆ"
+        },
+        {
+          "dev": "पूर",
+          "iast": "pūra",
+          "en": "Flood",
+          "kn": "ಪ್ರವಾಹ"
+        },
+        {
+          "dev": "मज्जत्",
+          "iast": "majjat",
+          "en": "Immersed",
+          "kn": "ಮುಳುಗಿದ"
+        },
+        {
+          "dev": "कामेश",
+          "iast": "kāmeśa",
+          "en": "Kāmeśa",
+          "kn": "ಕಾಮೇಶ"
+        },
+        {
+          "dev": "मानसा",
+          "iast": "mānasā",
+          "en": "Mind",
+          "kn": "ಮನಸ್ಸು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 29,
+      "components": [
+        {
+          "dev": "अनाकलित",
+          "iast": "anākalita",
+          "en": "Unimagined",
+          "kn": "ಊಹಿಸಲಾರದ"
+        },
+        {
+          "dev": "सादृश्य",
+          "iast": "sādṛśya",
+          "en": "Resemblance",
+          "kn": "ಹೋಲಿಕೆ"
+        },
+        {
+          "dev": "चिबुक",
+          "iast": "cibuka",
+          "en": "Chin",
+          "kn": "ಗಲ್ಲ"
+        },
+        {
+          "dev": "श्री",
+          "iast": "śrī",
+          "en": "Beauty",
+          "kn": "ಸೌಂದರ್ಯ"
+        },
+        {
+          "dev": "विराजिता",
+          "iast": "virājitā",
+          "en": "Resplendent",
+          "kn": "ಶೋಭಿಸುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 30,
+      "components": [
+        {
+          "dev": "कामेश",
+          "iast": "kāmeśa",
+          "en": "Kāmeśa",
+          "kn": "ಕಾಮೇಶ"
+        },
+        {
+          "dev": "बद्ध",
+          "iast": "baddha",
+          "en": "Tied",
+          "kn": "ಕಟ್ಟಿದ"
+        },
+        {
+          "dev": "माङ्गल्य",
+          "iast": "māṅgalya",
+          "en": "Marriage thread",
+          "kn": "ಮಾಂಗಲ್ಯ"
+        },
+        {
+          "dev": "सूत्र",
+          "iast": "sūtra",
+          "en": "Thread",
+          "kn": "ದಾರ"
+        },
+        {
+          "dev": "शोभित",
+          "iast": "śobhita",
+          "en": "Adorned",
+          "kn": "ಶೋಭಿತ"
+        },
+        {
+          "dev": "कन्धरा",
+          "iast": "kandharā",
+          "en": "Neck",
+          "kn": "ಕಂಠ"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 31,
+      "components": [
+        {
+          "dev": "कनक",
+          "iast": "kanaka",
+          "en": "Gold",
+          "kn": "ಚಿನ್ನ"
+        },
+        {
+          "dev": "अङ्गद",
+          "iast": "aṅgada",
+          "en": "Armlet",
+          "kn": "ತೋಳುಬಳೆ"
+        },
+        {
+          "dev": "केयूर",
+          "iast": "keyūra",
+          "en": "Arm ornament",
+          "kn": "ಕೇಯೂರ"
+        },
+        {
+          "dev": "कमनीय",
+          "iast": "kamanīya",
+          "en": "Lovely",
+          "kn": "ಸುಂದರ"
+        },
+        {
+          "dev": "भुज",
+          "iast": "bhuja",
+          "en": "Arms",
+          "kn": "ತೋಳುಗಳು"
+        },
+        {
+          "dev": "अन्विता",
+          "iast": "anvitā",
+          "en": "Adorned with",
+          "kn": "ಹೊಂದಿರುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    }
+  ]
+}
