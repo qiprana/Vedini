@@ -4,7 +4,7 @@ const $=s=>document.querySelector(s);
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
 const langText=(en,kn)=>language==="kn"?kn:en;
-let verses=[],dhyana=[],nameData={},dhyanaData={},verseData={},language="en",searchTerm="";
+let verses=[],dhyana=[],nameData={},dhyanaData={},verseData={},language="en",searchTerm="",highlightTerm="";
 const pageSize=10,plannedVerses=183;
 let view="verses",pageIndex=0,selectedVerse=1;
 
@@ -36,6 +36,16 @@ function iastToDevanagari(value){
  let v=vk.find(k=>tail.startsWith(k));if(v){out+=independent[v];i+=v.length;continue;}out+=({"ṃ":"ं","ṁ":"ं","ḥ":"ः","-":"-"," ":" "})[value[i]]??value[i];i++;
  }return out;
 }
+function highlighted(value){
+ const source=String(value??""),q=norm(highlightTerm.trim());
+ if(!q)return esc(source);
+ const chars=Array.from(source),normalized=[],start=[],end=[];
+ let offset=0;
+ for(const ch of chars){const folded=norm(ch);for(const c of Array.from(folded)){normalized.push(c);start.push(offset);end.push(offset+ch.length)}offset+=ch.length;}
+ const at=normalized.join("").indexOf(q);
+ if(at<0)return esc(source);
+ return esc(source.slice(0,start[at]))+"<mark class='search-hit'>"+esc(source.slice(start[at],end[at+q.length-1]))+"</mark>"+esc(source.slice(end[at+q.length-1]));
+}
 function wordsGrid(parts){
  if(!parts?.length)return "<p class='small-note'>"+esc(langText("This word is awaiting editorial analysis.","ಈ ಪದದ ಅರ್ಥಪರಿಶೀಲನೆ ಬಾಕಿಯಿದೆ."))+"</p>";
  return "<div class='word-grid glossary' role='list'>"+parts.map(c=>{
@@ -63,7 +73,7 @@ function nameSection(v){
   const written=language==="kn"?kannadaFromDevanagari(writtenSource):writtenSource;
   const essential=anyMeaning(info,"essential_meaning")||(language==="kn"?n.kannada:n.english)||langText("Meaning under review","ಅರ್ಥ ಪರಿಶೀಲನೆಯಲ್ಲಿದೆ");
   const roman=n.display_iast||n.iast||"";
-  html+="<details class='name-details compact-name-row' data-detail-id='name-"+n.studyNumber+"'><summary><span class='name-summary-grid'><span class='name-identity-inline'><span class='name-number'>"+n.studyNumber+".</span><span class='name-written'>"+esc(written)+"</span><span class='name-roman'>"+esc(roman)+"</span></span><span class='name-essence'>"+esc(essential)+"</span></span></summary>"+studySections(info,parts)+"</details>";
+  html+="<details class='name-details compact-name-row' data-detail-id='name-"+n.studyNumber+"'><summary><span class='name-summary-grid'><span class='name-identity-inline'><span class='name-number'>"+n.studyNumber+".</span><span class='name-written'>"+highlighted(written)+"</span><span class='name-roman'>"+highlighted(roman)+"</span></span><span class='name-essence'>"+esc(essential)+"</span></span></summary>"+studySections(info,parts)+"</details>";
  }
  return html+"</div></section>";
 }
@@ -94,7 +104,7 @@ function verseLine(s){
  const value=String(s??"").trim();
  // Keep the last word and its danda/verse number in the same typographic unit.
  const m=value.match(/^(.*?)(\S+)\s+(॥(?:\s*[0-9०-९೦-೯]+\s*॥)?|।)$/u);
- const display=m?esc(m[1])+"<span class='verse-ending'>"+esc(m[2])+"&nbsp;"+esc(m[3].replace(/\s+/g,"\u00a0"))+"</span>":esc(value);
+ const display=m?highlighted(m[1])+"<span class='verse-ending'>"+highlighted(m[2])+"&nbsp;"+esc(m[3].replace(/\s+/g,"\u00a0"))+"</span>":highlighted(value);
  return "<div class='verse-line'><span class='line-content'>"+display+"</span></div>";
 }
 function fitVerseLines(){
@@ -136,6 +146,7 @@ function restoreDetails(ids){
 }
 
 function showResultList(q){
+ highlightTerm=searchTerm.trim();
  const entries=[
   ...dhyana.map(v=>({type:"dhyana",v})),
   ...verses.map(v=>({type:"verses",v}))
@@ -149,13 +160,13 @@ function showResultList(q){
    const v=x.v,dh=x.type==="dhyana",label=dh?langText("Dhyāna","ಧ್ಯಾನ"):langText("Śloka","ಶ್ಲೋಕ");
    const first=v.reading?.iast?.[0]||"";
    const meaning=language==="kn"?v.meaning?.kannada:v.meaning?.english;
-   return "<button class='search-result' type='button' data-kind='"+x.type+"' data-number='"+v.verse_number+"'><span class='result-heading'>"+esc(label+" "+v.verse_number)+" <span aria-hidden='true'>→</span></span><span class='result-reading'>"+esc(first)+"</span><span class='result-meaning'>"+esc(meaning||"")+"</span></button>";
+   return "<button class='search-result' type='button' data-kind='"+x.type+"' data-number='"+v.verse_number+"'><span class='result-heading'>"+esc(label+" "+v.verse_number)+" <span aria-hidden='true'>→</span></span><span class='result-reading'>"+highlighted(first)+"</span><span class='result-meaning'>"+highlighted(meaning||"")+"</span></button>";
   }).join("");
   if(matches.length>40)list.innerHTML+="<p class='small-note'>"+esc(langText("Showing the first 40 matching sections. Refine the search for more precise results.","ಮೊದಲ ೪೦ ಫಲಿತಾಂಶಗಳು ಮಾತ್ರ ಕಾಣುತ್ತಿವೆ. ಹುಡುಕಾಟವನ್ನು ನಿರ್ದಿಷ್ಟಗೊಳಿಸಿ."))+"</p>";
  }
  list.querySelectorAll("button[data-number]").forEach(b=>b.addEventListener("click",()=>{
   const n=Number(b.dataset.number);
-  if(b.dataset.kind==="dhyana")showDhyana(n);else jump(n);
+  highlightTerm=searchTerm.trim();if(b.dataset.kind==="dhyana")showDhyana(n);else jump(n);
  }));
  msg("#search-results-heading",matches.length+" matching sections","ಹೊಂದಾಣಿಕೆಯ ವಿಭಾಗಗಳು: "+matches.length);
  msg("#result-note","Searching available ślokas and name explanations","ಲಭ್ಯವಿರುವ ಶ್ಲೋಕಗಳು ಮತ್ತು ನಾಮವಿವರಣೆಗಳಲ್ಲಿ ಹುಡುಕಾಟ");
@@ -472,9 +483,9 @@ async function init(){
  verses.forEach(v=>{if(v.study?.traditional_interpretation)verseData[v.verse_number]=v.study;(v.names||[]).forEach(n=>{n.studyNumber=++index;if(n.essential_meaning&&n.traditional_interpretation)nameData[n.studyNumber]={...(nameData[n.studyNumber]||{}),...n};});});
  const componentDrafts=await Promise.all(["lalita/word-components-001-031.json","lalita/word-components-032-040.json","lalita/word-components-041-060.json","lalita/word-components-061-111.json","lalita/word-components-112-117.json","lalita/word-components-118-151.json","lalita/word-components-152-192.json","lalita/word-components-193-304.json","lalita/word-components-305-340.json","lalita/word-components-341-423.json","lalita/word-components-424-490.json","lalita/word-components-491-1000.json"].map(fetchJSON));
  componentDrafts.flatMap(d=>d.entries).filter(e=>e.components?.length&&e.review_status!=="automated_exact_component_match_needs_review").forEach(e=>{nameData[e.number]={...(nameData[e.number]||{}),components:e.components.map(c=>({...c,dev:c.dev||iastToDevanagari(c.iast)}))};});
-  const deeperDraft=await fetchJSON("lalita/deeper-meanings-001-005.json");
- deeperDraft.names.forEach(e=>{nameData[e.number]={...(nameData[e.number]||{}),traditional_interpretation:{en:e.en,kn:e.kn}};});
- deeperDraft.verses.forEach(e=>{verseData[e.verse_number]={...(verseData[e.verse_number]||{}),traditional_interpretation:{en:e.en,kn:e.kn}};});
+  const deeperDrafts=await Promise.all(["lalita/deeper-meanings-001-005.json","lalita/deeper-meanings-006-010.json"].map(fetchJSON));
+ deeperDrafts.flatMap(d=>d.names).forEach(e=>{nameData[e.number]={...(nameData[e.number]||{}),traditional_interpretation:{en:e.en,kn:e.kn}};});
+ deeperDrafts.flatMap(d=>d.verses).forEach(e=>{verseData[e.verse_number]={...(verseData[e.verse_number]||{}),traditional_interpretation:{en:e.en,kn:e.kn}};});
  if(index<111)throw new Error("At least the first 111 names are expected; found "+index);
  initPractice();const initial=loadInitialLocation();render();if(initial)scrollToElement(initial);
  }catch(err){
