@@ -7425,362 +7425,1037 @@
     },
     {
       "number": 851,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "जन्म",
+          "iast": "janma",
+          "en": "Birth",
+          "kn": "ಜನನ"
+        },
+        {
+          "dev": "मृत्यु",
+          "iast": "mṛtyu",
+          "en": "Death",
+          "kn": "ಮರಣ"
+        },
+        {
+          "dev": "जरा",
+          "iast": "jarā",
+          "en": "Old age",
+          "kn": "ಮುದುಪು"
+        },
+        {
+          "dev": "तप्त",
+          "iast": "tapta",
+          "en": "Afflicted",
+          "kn": "ಬಳಲಿದ"
+        },
+        {
+          "dev": "जन",
+          "iast": "jana",
+          "en": "People",
+          "kn": "ಜನರು"
+        },
+        {
+          "dev": "विश्रान्ति",
+          "iast": "viśrānti",
+          "en": "Rest",
+          "kn": "ವಿಶ್ರಾಂತಿ"
+        },
+        {
+          "dev": "दायिनी",
+          "iast": "dāyinī",
+          "en": "Bestower",
+          "kn": "ನೀಡುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Giver of peace and repose to those who are afflicted by birth, death and decrepitude"
     },
     {
       "number": 852,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "सर्व",
+          "iast": "sarva",
+          "en": "All",
+          "kn": "ಸರ್ವ"
+        },
+        {
+          "dev": "उपनिषद्",
+          "iast": "upaniṣad",
+          "en": "Upaniṣads",
+          "kn": "ಉಪನಿಷತ್ತುಗಳು"
+        },
+        {
+          "dev": "उद्घुष्टा",
+          "iast": "udghuṣṭā",
+          "en": "Proclaimed by",
+          "kn": "ಘೋಷಿತಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Celebrated by all the upaniShads"
     },
     {
       "number": 853,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "शान्ति",
+          "iast": "śānti",
+          "en": "Peace",
+          "kn": "ಶಾಂತಿ"
+        },
+        {
+          "dev": "अतीत",
+          "iast": "atīta",
+          "en": "Beyond",
+          "kn": "ಮೀರಿದ"
+        },
+        {
+          "dev": "कला",
+          "iast": "kalā",
+          "en": "Aspect",
+          "kn": "ಕಲೆ"
+        },
+        {
+          "dev": "आत्मिका",
+          "iast": "ātmikā",
+          "en": "Having as essence",
+          "kn": "ಸ್ವರೂಪಿಣಿ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "The one who transcends the state of peace"
     },
     {
       "number": 854,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "गम्भीरा",
+          "iast": "gambhīrā",
+          "en": "Profound",
+          "kn": "ಗಂಭೀರಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Unfathomable"
     },
     {
       "number": 855,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "गगन",
+          "iast": "gagana",
+          "en": "Sky",
+          "kn": "ಆಕಾಶ"
+        },
+        {
+          "dev": "अन्त",
+          "iast": "anta",
+          "en": "End",
+          "kn": "ಅಂತ್ಯ"
+        },
+        {
+          "dev": "स्था",
+          "iast": "sthā",
+          "en": "Situated",
+          "kn": "ಸ್ಥಿತಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "The one who resides in the ether, space"
     },
     {
       "number": 856,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "गर्विता",
+          "iast": "garvitā",
+          "en": "Proud",
+          "kn": "ಗರ್ವಿತಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Proud"
     },
     {
       "number": 857,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "गान",
+          "iast": "gāna",
+          "en": "Singing",
+          "kn": "ಗಾನ"
+        },
+        {
+          "dev": "लोलुपा",
+          "iast": "lolupā",
+          "en": "Fond of",
+          "kn": "ಆಸಕ್ತಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "The one who delights in music"
     },
     {
       "number": 858,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "कल्पना",
+          "iast": "kalpanā",
+          "en": "Imagining",
+          "kn": "ಕಲ್ಪನೆ"
+        },
+        {
+          "dev": "रहिता",
+          "iast": "rahitā",
+          "en": "Free from",
+          "kn": "ರಹಿತಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Free from imaginary attributes"
     },
     {
       "number": 859,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "काष्ठा",
+          "iast": "kāṣṭhā",
+          "en": "Ultimate limit or culmination",
+          "kn": "ಪರಮ ಮಿತಿ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Dweller in in the highest state (beyond which there is nothing)"
     },
     {
       "number": 860,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "अकान्ता",
+          "iast": "akāntā",
+          "en": "Beyond limitation of beauty or consort",
+          "kn": "ಅಕಾಂತಾ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "The one who ends all sins and sorrows"
     },
     {
       "number": 861,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "कान्त",
+          "iast": "kānta",
+          "en": "Beloved",
+          "kn": "ಪ್ರಿಯತಮ"
+        },
+        {
+          "dev": "अर्ध",
+          "iast": "ardha",
+          "en": "Half",
+          "kn": "ಅರ್ಧ"
+        },
+        {
+          "dev": "विग्रहा",
+          "iast": "vigrahā",
+          "en": "Body or form",
+          "kn": "ರೂಪ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Half the body of Her husband"
     },
     {
       "number": 862,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "कार्य",
+          "iast": "kārya",
+          "en": "Effect",
+          "kn": "ಕಾರ್ಯ"
+        },
+        {
+          "dev": "कारण",
+          "iast": "kāraṇa",
+          "en": "Cause",
+          "kn": "ಕಾರಣ"
+        },
+        {
+          "dev": "निर्मुक्ता",
+          "iast": "nirmuktā",
+          "en": "Free from",
+          "kn": "ಮುಕ್ತಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Free from the bond of cause and effect"
     },
     {
       "number": 863,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "काम",
+          "iast": "kāma",
+          "en": "Love",
+          "kn": "ಕಾಮ"
+        },
+        {
+          "dev": "केलि",
+          "iast": "keli",
+          "en": "Play",
+          "kn": "ಕ್ರೀಡೆ"
+        },
+        {
+          "dev": "तरङ्गिता",
+          "iast": "taraṅgitā",
+          "en": "Thrilled or rippling",
+          "kn": "ತರಂಗಿತಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Overflowing with pleasure in the union with kAmeshvara"
     },
     {
       "number": 864,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "कनत्",
+          "iast": "kanat",
+          "en": "Shining",
+          "kn": "ಹೊಳೆಯುವ"
+        },
+        {
+          "dev": "कनक",
+          "iast": "kanaka",
+          "en": "Gold",
+          "kn": "ಚಿನ್ನ"
+        },
+        {
+          "dev": "ताटङ्का",
+          "iast": "tāṭaṅkā",
+          "en": "Earrings",
+          "kn": "ತಾಟಂಕ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Wearing glittering gold ear ornaments"
     },
     {
       "number": 865,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "लीला",
+          "iast": "līlā",
+          "en": "Divine play",
+          "kn": "ಲೀಲೆ"
+        },
+        {
+          "dev": "विग्रह",
+          "iast": "vigraha",
+          "en": "Form",
+          "kn": "ವಿಗ್ರಹ"
+        },
+        {
+          "dev": "धारिणी",
+          "iast": "dhāriṇī",
+          "en": "Bearing",
+          "kn": "ಧರಿಸುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "The one who assumes various glorious forms as a sport"
     },
     {
       "number": 866,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "अजा",
+          "iast": "ajā",
+          "en": "Unborn",
+          "kn": "ಜನ್ಮರಹಿತಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Possessor of no birth"
     },
     {
       "number": 867,
       "components": [
         {
-          "dev": "",
+          "dev": "क्षय",
           "iast": "kṣaya",
           "en": "Decay",
           "kn": "ಕ್ಷಯ"
         },
         {
-          "dev": "",
+          "dev": "विनिर्मुक्ता",
           "iast": "vinirmuktā",
-          "en": "Free from",
+          "en": "Entirely free from",
           "kn": "ಮುಕ್ತಳಾದವಳು"
         }
       ],
-      "review_status": "automated_exact_component_match_needs_review"
+      "review_status": "manual_compound_draft"
     },
     {
       "number": 868,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "मुग्धा",
+          "iast": "mugdhā",
+          "en": "Charming",
+          "kn": "ಮುಗ್ಧಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Captivating in Her beauty"
     },
     {
       "number": 869,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "क्षिप्र",
+          "iast": "kṣipra",
+          "en": "Quickly",
+          "kn": "ಬೇಗ"
+        },
+        {
+          "dev": "प्रसादिनी",
+          "iast": "prasādinī",
+          "en": "Gracious",
+          "kn": "ಅನುಗ್ರಹಿಸುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Quickly pleased"
     },
     {
       "number": 870,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "अन्तर्",
+          "iast": "antar",
+          "en": "Inward",
+          "kn": "ಒಳಗಿನ"
+        },
+        {
+          "dev": "मुख",
+          "iast": "mukha",
+          "en": "Facing",
+          "kn": "ಮುಖ"
+        },
+        {
+          "dev": "समाराध्या",
+          "iast": "samārādhyā",
+          "en": "Worshipped well",
+          "kn": "ಆರಾಧಿತಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "To be worshipped internally (mentally)"
     },
     {
       "number": 871,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "बहिर्",
+          "iast": "bahir",
+          "en": "Outward",
+          "kn": "ಹೊರಗಿನ"
+        },
+        {
+          "dev": "मुख",
+          "iast": "mukha",
+          "en": "Facing",
+          "kn": "ಮುಖ"
+        },
+        {
+          "dev": "सु",
+          "iast": "su",
+          "en": "Very",
+          "kn": "ಅತ್ಯಂತ"
+        },
+        {
+          "dev": "दुर्लभा",
+          "iast": "durlabhā",
+          "en": "Hard to obtain",
+          "kn": "ದುರ್ಲಭಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Difficult to attain by those whose attention is directed outwards"
     },
     {
       "number": 872,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "त्रयी",
+          "iast": "trayī",
+          "en": "Three Vedas",
+          "kn": "ತ್ರಯೀ ವೇದ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Three vedas"
     },
     {
       "number": 873,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "त्रि",
+          "iast": "tri",
+          "en": "Three",
+          "kn": "ಮೂರು"
+        },
+        {
+          "dev": "वर्ग",
+          "iast": "varga",
+          "en": "Goals of life",
+          "kn": "ಪುರುಷಾರ್ಥಗಳು"
+        },
+        {
+          "dev": "निलया",
+          "iast": "nilayā",
+          "en": "Abode",
+          "kn": "ನಿಲಯ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Abode of the threefold aims of human life"
     },
     {
       "number": 874,
       "components": [
         {
-          "dev": "",
+          "dev": "त्रि",
           "iast": "tri",
           "en": "Three",
           "kn": "ಮೂರು"
         },
         {
-          "dev": "",
+          "dev": "स्था",
           "iast": "sthā",
-          "en": "Dwelling",
-          "kn": "ನೆಲೆಸುವವಳು"
+          "en": "Situated",
+          "kn": "ಸ್ಥಿತಳಾದವಳು"
         }
       ],
-      "review_status": "automated_exact_component_match_needs_review"
+      "review_status": "manual_compound_draft"
     },
     {
       "number": 875,
       "components": [
         {
-          "dev": "",
-          "iast": "tripura",
-          "en": "Three realms",
-          "kn": "ತ್ರಿಪುರ"
+          "dev": "त्रि",
+          "iast": "tri",
+          "en": "Three",
+          "kn": "ಮೂರು"
         },
         {
-          "dev": "",
+          "dev": "पुर",
+          "iast": "pura",
+          "en": "Cities",
+          "kn": "ಪುರಗಳು"
+        },
+        {
+          "dev": "मालिनी",
           "iast": "mālinī",
-          "en": "Garlanded",
+          "en": "Wearing a garland",
           "kn": "ಮಾಲಿನಿ"
         }
       ],
-      "review_status": "automated_exact_component_match_needs_review"
+      "review_status": "manual_compound_draft"
     },
     {
       "number": 876,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "निर्",
+          "iast": "nir",
+          "en": "Without",
+          "kn": "ರಹಿತ"
+        },
+        {
+          "dev": "आमया",
+          "iast": "āmayā",
+          "en": "Disease",
+          "kn": "ರೋಗ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Free from diseases of all kinds"
     },
     {
       "number": 877,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "निर्",
+          "iast": "nir",
+          "en": "Without",
+          "kn": "ರಹಿತ"
+        },
+        {
+          "dev": "आलम्बा",
+          "iast": "ālambā",
+          "en": "Support",
+          "kn": "ಆಧಾರ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "The one who depends on none"
     },
     {
       "number": 878,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "स्व",
+          "iast": "sva",
+          "en": "Own",
+          "kn": "ಸ್ವ"
+        },
+        {
+          "dev": "आत्म",
+          "iast": "ātma",
+          "en": "Self",
+          "kn": "ಆತ್ಮ"
+        },
+        {
+          "dev": "आरामा",
+          "iast": "ārāmā",
+          "en": "Delighting in",
+          "kn": "ರಮಿಸುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "The one who rejoices in Her own self"
     },
     {
       "number": 879,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "सुधा",
+          "iast": "sudhā",
+          "en": "Nectar",
+          "kn": "ಅಮೃತ"
+        },
+        {
+          "dev": "स्रुतिः",
+          "iast": "srutiḥ",
+          "en": "Flow",
+          "kn": "ಹರಿವು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Source of nectar"
     },
     {
       "number": 880,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "संसार",
+          "iast": "saṃsāra",
+          "en": "Worldly existence",
+          "kn": "ಸಂಸಾರ"
+        },
+        {
+          "dev": "पङ्क",
+          "iast": "paṅka",
+          "en": "Mud",
+          "kn": "ಕೆಸರು"
+        },
+        {
+          "dev": "निर्मग्न",
+          "iast": "nirmagna",
+          "en": "Sunk in",
+          "kn": "ಮುಳುಗಿದ"
+        },
+        {
+          "dev": "समुद्धरण",
+          "iast": "samuddharaṇa",
+          "en": "Rescue or raising",
+          "kn": "ಉದ್ಧಾರ"
+        },
+        {
+          "dev": "पण्डिता",
+          "iast": "paṇḍitā",
+          "en": "Expert",
+          "kn": "ನಿಪುಣಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Skilled in raising those who are immersed in the mire of transmigratory life"
     },
     {
       "number": 881,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "यज्ञ",
+          "iast": "yajña",
+          "en": "Sacrifice",
+          "kn": "ಯಜ್ಞ"
+        },
+        {
+          "dev": "प्रिया",
+          "iast": "priyā",
+          "en": "Fond of",
+          "kn": "ಪ್ರೀತಿಸುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Fond all sacrifices and other rituals"
     },
     {
       "number": 882,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "यज्ञ",
+          "iast": "yajña",
+          "en": "Sacrifice",
+          "kn": "ಯಜ್ಞ"
+        },
+        {
+          "dev": "कर्त्री",
+          "iast": "kartrī",
+          "en": "Performer",
+          "kn": "ಕರ್ತ್ರಿ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Doer of sacrificial rites"
     },
     {
       "number": 883,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "यजमान",
+          "iast": "yajamāna",
+          "en": "Sacrificer",
+          "kn": "ಯಜಮಾನ"
+        },
+        {
+          "dev": "स्वरूपिणी",
+          "iast": "svarūpiṇī",
+          "en": "Embodiment",
+          "kn": "ಸ್ವರೂಪಿಣಿ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "In the form of yajamAna, who directs sacrificial rites"
     },
     {
       "number": 884,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "धर्म",
+          "iast": "dharma",
+          "en": "Dharma",
+          "kn": "ಧರ್ಮ"
+        },
+        {
+          "dev": "आधारा",
+          "iast": "ādhārā",
+          "en": "Support",
+          "kn": "ಆಧಾರ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Support of the code for righteous living"
     },
     {
       "number": 885,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "धन",
+          "iast": "dhana",
+          "en": "Wealth",
+          "kn": "ಧನ"
+        },
+        {
+          "dev": "अध्यक्षा",
+          "iast": "adhyakṣā",
+          "en": "Overseer",
+          "kn": "ಅಧ್ಯಕ್ಷೆ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "The one who oversees wealth"
     },
     {
       "number": 886,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "धन",
+          "iast": "dhana",
+          "en": "Wealth",
+          "kn": "ಧನ"
+        },
+        {
+          "dev": "धान्य",
+          "iast": "dhānya",
+          "en": "Grain",
+          "kn": "ಧಾನ್ಯ"
+        },
+        {
+          "dev": "विवर्धिनी",
+          "iast": "vivardhinī",
+          "en": "Increaser",
+          "kn": "ಹೆಚ್ಚಿಸುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "The one who increases wealth and harvests"
     },
     {
       "number": 887,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "विप्र",
+          "iast": "vipra",
+          "en": "Wise or priestly person",
+          "kn": "ವಿಪ್ರ"
+        },
+        {
+          "dev": "प्रिया",
+          "iast": "priyā",
+          "en": "Fond of",
+          "kn": "ಪ್ರೀತಿಸುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Fond of the learned"
     },
     {
       "number": 888,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "विप्र",
+          "iast": "vipra",
+          "en": "Wise person",
+          "kn": "ವಿಪ್ರ"
+        },
+        {
+          "dev": "रूपा",
+          "iast": "rūpā",
+          "en": "Having the form",
+          "kn": "ರೂಪ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "In the form of a knower of the self"
     },
     {
       "number": 889,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "विश्व",
+          "iast": "viśva",
+          "en": "Universe",
+          "kn": "ವಿಶ್ವ"
+        },
+        {
+          "dev": "भ्रमण",
+          "iast": "bhramaṇa",
+          "en": "Movement",
+          "kn": "ಸಂಚಾರ"
+        },
+        {
+          "dev": "कारिणी",
+          "iast": "kāriṇī",
+          "en": "Causing",
+          "kn": "ಮಾಡುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "The one who makes the universe go around through Her power of illusion"
     },
     {
       "number": 890,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "विश्व",
+          "iast": "viśva",
+          "en": "Universe",
+          "kn": "ವಿಶ್ವ"
+        },
+        {
+          "dev": "ग्रासा",
+          "iast": "grāsā",
+          "en": "Devouring",
+          "kn": "ಗ್ರಸಿಸುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "The one who devours the universe"
     },
     {
       "number": 891,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "विद्रुम",
+          "iast": "vidruma",
+          "en": "Coral",
+          "kn": "ಹವಳ"
+        },
+        {
+          "dev": "आभा",
+          "iast": "ābhā",
+          "en": "Luster",
+          "kn": "ಕಾಂತಿ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "The one who shines like coral (with Her red complexion)"
     },
     {
       "number": 892,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "वैष्णवी",
+          "iast": "vaiṣṇavī",
+          "en": "Vaiṣṇavī goddess",
+          "kn": "ವೈಷ್ಣವಿ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "In the form of viShNu"
     },
     {
       "number": 893,
       "components": [
         {
-          "dev": "",
+          "dev": "विष्णु",
           "iast": "viṣṇu",
           "en": "Viṣṇu",
           "kn": "ವಿಷ್ಣು"
         },
         {
-          "dev": "",
+          "dev": "रूपिणी",
           "iast": "rūpiṇī",
           "en": "Form",
           "kn": "ರೂಪಿಣಿ"
         }
       ],
-      "review_status": "automated_exact_component_match_needs_review"
+      "review_status": "manual_compound_draft"
     },
     {
       "number": 894,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "अयोनिः",
+          "iast": "ayoniḥ",
+          "en": "Without a womb or origin",
+          "kn": "ಅಯೋನಿ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Without origin"
     },
     {
       "number": 895,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "योनि",
+          "iast": "yoni",
+          "en": "Womb or source",
+          "kn": "ಯೋನಿ"
+        },
+        {
+          "dev": "निलया",
+          "iast": "nilayā",
+          "en": "Abode",
+          "kn": "ನಿಲಯ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Seat of all origins"
     },
     {
       "number": 896,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "कूट",
+          "iast": "kūṭa",
+          "en": "Unchanging peak",
+          "kn": "ಕೂಟ"
+        },
+        {
+          "dev": "स्था",
+          "iast": "sthā",
+          "en": "Established",
+          "kn": "ಸ್ಥಿತಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "The one who remains unchanged like the anvil"
     },
     {
       "number": 897,
       "components": [
         {
-          "dev": "",
+          "dev": "कुल",
           "iast": "kula",
           "en": "Kula",
           "kn": "ಕುಲ"
         },
         {
-          "dev": "",
+          "dev": "रूपिणी",
           "iast": "rūpiṇī",
-          "en": "Form",
+          "en": "Having the form",
           "kn": "ರೂಪಿಣಿ"
         }
       ],
-      "review_status": "automated_exact_component_match_needs_review"
+      "review_status": "manual_compound_draft"
     },
     {
       "number": 898,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "वीर",
+          "iast": "vīra",
+          "en": "Heroic aspirants",
+          "kn": "ವೀರರು"
+        },
+        {
+          "dev": "गोष्ठी",
+          "iast": "goṣṭhī",
+          "en": "Assembly",
+          "kn": "ಗೋಷ್ಠಿ"
+        },
+        {
+          "dev": "प्रिया",
+          "iast": "priyā",
+          "en": "Fond of",
+          "kn": "ಪ್ರಿಯಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Fond of the assembly of warriors"
     },
     {
       "number": 899,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "वीरा",
+          "iast": "vīrā",
+          "en": "Heroic",
+          "kn": "ವೀರಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Heroic"
     },
     {
       "number": 900,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "नैष्कर्म्या",
+          "iast": "naiṣkarmyā",
+          "en": "Beyond binding action",
+          "kn": "ನೈಷ್ಕರ್ಮ್ಯಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "The one who abstains from actions"
     },
     {
