@@ -340,3 +340,6 @@ header p{color:#845c4b;font-size:18px}
 @media(max-width:980px){.reader-page .name-summary-grid{grid-template-columns:minmax(0,52%) minmax(0,48%);gap:8px}.reader-page .verse-reading-panel{padding:12px}.reader-page .name-study-list .compact-name-row summary{padding:10px 10px 10px 25px}}
 @media(max-width:720px){.reader-page .verse-content-grid{grid-template-columns:1fr}.reader-page .verse-reading-panel{height:auto;padding:16px}.reader-page .name-summary-grid{grid-template-columns:minmax(0,53%) minmax(0,47%)}.reader-page .name-identity-inline .name-written{font-size:19px}.reader-page .name-identity-inline .name-roman{font-size:15px}.reader-page .name-summary-grid .name-essence{font-size:15px}}
 @media(max-width:440px){.reader-page .name-summary-grid{grid-template-columns:minmax(0,55%) minmax(0,45%);gap:7px}.reader-page .name-identity-inline .name-written{font-size:17px}.reader-page .name-identity-inline .name-roman{font-size:14px}.reader-page .name-summary-grid .name-essence{font-size:14px}.reader-page .name-study-list .compact-name-row summary{padding:10px 8px 10px 23px}}
+
+/* Search matches stay visible after opening a result */
+.reader-page mark.search-hit{background:#f9db79;color:#352812;border-radius:3px;padding:0 2px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
