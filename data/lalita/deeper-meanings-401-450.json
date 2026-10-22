@@ -1,0 +1,356 @@
+{
+  "names": [
+    {
+      "number": 401,
+      "en": "Integrity grows when values and daily choices are allowed to meet.",
+      "kn": "ಮೌಲ್ಯಗಳು ಮತ್ತು ದಿನನಿತ್ಯದ ಆಯ್ಕೆಗಳು ಹೊಂದಿಕೊಂಡಾಗ ನಿಷ್ಠೆ ಬೆಳೆಯುತ್ತದೆ.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 402,
+      "en": "The name invites inquiry into the awareness behind thinking and knowing.",
+      "kn": "ಆಲೋಚನೆ ಮತ್ತು ತಿಳಿವಳಿಕೆಯ ಹಿಂದೆ ಇರುವ ಜಾಗೃತಿಯನ್ನು ಪರಿಶೀಲಿಸಲು ಈ ನಾಮ ಆಹ್ವಾನಿಸುತ್ತದೆ.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 403,
+      "en": "Inner radiance is expressed through understanding and kind action, not display.",
+      "kn": "ಒಳಗಿನ ಕಾಂತಿಯು ಪ್ರದರ್ಶನಕ್ಕಿಂತ ಅರಿವು ಮತ್ತು ಕರುಣೆಯ ಕ್ರಿಯೆಯಲ್ಲಿ ವ್ಯಕ್ತವಾಗುತ್ತದೆ.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 404,
+      "en": "Light is used as an image for the clarity that lets us see without confusion.",
+      "kn": "ಗೊಂದಲವಿಲ್ಲದೆ ನೋಡುವ ಸ್ಪಷ್ಟತೆಗೆ ಬೆಳಕು ಸಂಕೇತವಾಗಿದೆ.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 405,
+      "en": "Relationship becomes sacred through trust, respect, and shared purpose.",
+      "kn": "ವಿಶ್ವಾಸ, ಗೌರವ ಮತ್ತು ಹಂಚಿಕೊಂಡ ಉದ್ದೇಶದಿಂದ ಸಂಬಂಧ ಪವಿತ್ರವಾಗುತ್ತದೆ.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 406,
+      "en": "Contemplation turns the image from an object of description into a question about how we live.",
+      "kn": "ಈ ಚಿತ್ರವು ಕೇವಲ ವರ್ಣನೆಯಲ್ಲ; ನಾವು ಹೇಗೆ ಬದುಕುತ್ತೇವೆ ಎಂಬ ಪ್ರಶ್ನೆಯಾಗುತ್ತದೆ.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 407,
+      "en": "The image suggests closeness without the loss of freedom or distinct expression.",
+      "kn": "ಸ್ವಾತಂತ್ರ್ಯ ಮತ್ತು ವಿಭಿನ್ನ ಅಭಿವ್ಯಕ್ತಿಯನ್ನು ಕಳೆದುಕೊಳ್ಳದ ಆಪ್ತತೆಯನ್ನು ಇದು ಸೂಚಿಸುತ್ತದೆ.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 408,
+      "en": "Divine partnership points toward a unity in which stillness and creative power support each other.",
+      "kn": "ದೈವಿಕ ಸಹಭಾಗಿತ್ವವು ನಿಶ್ಚಲತೆ ಮತ್ತು ಸೃಜನಶಕ್ತಿಯ ಪರಸ್ಪರ ಆಧಾರವನ್ನು ಸೂಚಿಸುತ್ತದೆ.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 409,
+      "en": "Relationship becomes sacred through trust, respect, and shared purpose.",
+      "kn": "ವಿಶ್ವಾಸ, ಗೌರವ ಮತ್ತು ಹಂಚಿಕೊಂಡ ಉದ್ದೇಶದಿಂದ ಸಂಬಂಧ ಪವಿತ್ರವಾಗುತ್ತದೆ.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 410,
+      "en": "Rather than imagining competing powers, this name invites contemplation of their underlying unity.",
+      "kn": "ಸ್ಪರ್ಧಿಸುವ ಶಕ್ತಿಗಳ ಬದಲು ಅವುಗಳ ಒಳಗಿನ ಐಕ್ಯವನ್ನು ಧ್ಯಾನಿಸಲು ಈ ನಾಮ ಆಹ್ವಾನಿಸುತ್ತದೆ.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 411,
+      "en": "The name reminds us that reverence can change the quality of our attention.",
+      "kn": "ಗೌರವಭಾವವು ನಮ್ಮ ಗಮನದ ಗುಣಮಟ್ಟವನ್ನು ಬದಲಾಯಿಸಬಹುದು ಎಂದು ಈ ನಾಮ ನೆನಪಿಸುತ್ತದೆ.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 412,
+      "en": "This image invites us to recognize sacred significance within ordinary experience.",
+      "kn": "ಸಾಮಾನ್ಯ ಅನುಭವದಲ್ಲಿಯೂ ಪವಿತ್ರ ಅರ್ಥವನ್ನು ಗುರುತಿಸಲು ಈ ಚಿತ್ರ ಆಹ್ವಾನಿಸುತ್ತದೆ.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 413,
+      "en": "The deeper invitation is to meet experience with attention rather than automatic judgment.",
+      "kn": "ಯಾಂತ್ರಿಕ ತೀರ್ಪಿಗಿಂತ ಗಮನದಿಂದ ಅನುಭವವನ್ನು ಎದುರಿಸುವುದು ಇದರ ಆಳವಾದ ಸೂಚನೆ.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 414,
+      "en": "This contemplation asks what remains when familiar ways of experiencing fall quiet.",
+      "kn": "ಪರಿಚಿತ ಅನುಭವದ ರೂಪಗಳು ಶಾಂತವಾದಾಗ ಏನು ಉಳಿಯುತ್ತದೆ ಎಂದು ಈ ಧ್ಯಾನ ಕೇಳುತ್ತದೆ.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 415,
+      "en": "The name reminds us that reverence can change the quality of our attention.",
+      "kn": "ಗೌರವಭಾವವು ನಮ್ಮ ಗಮನದ ಗುಣಮಟ್ಟವನ್ನು ಬದಲಾಯಿಸಬಹುದು ಎಂದು ಈ ನಾಮ ನೆನಪಿಸುತ್ತದೆ.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 416,
+      "en": "This image invites us to recognize sacred significance within ordinary experience.",
+      "kn": "ಸಾಮಾನ್ಯ ಅನುಭವದಲ್ಲಿಯೂ ಪವಿತ್ರ ಅರ್ಥವನ್ನು ಗುರುತಿಸಲು ಈ ಚಿತ್ರ ಆಹ್ವಾನಿಸುತ್ತದೆ.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 417,
+      "en": "The deeper invitation is to meet experience with attention rather than automatic judgment.",
+      "kn": "ಯಾಂತ್ರಿಕ ತೀರ್ಪಿಗಿಂತ ಗಮನದಿಂದ ಅನುಭವವನ್ನು ಎದುರಿಸುವುದು ಇದರ ಆಳವಾದ ಸೂಚನೆ.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 418,
+      "en": "Contemplation turns the image from an object of description into a question about how we live.",
+      "kn": "ಈ ಚಿತ್ರವು ಕೇವಲ ವರ್ಣನೆಯಲ್ಲ; ನಾವು ಹೇಗೆ ಬದುಕುತ್ತೇವೆ ಎಂಬ ಪ್ರಶ್ನೆಯಾಗುತ್ತದೆ.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 419,
+      "en": "The name reminds us that reverence can change the quality of our attention.",
+      "kn": "ಗೌರವಭಾವವು ನಮ್ಮ ಗಮನದ ಗುಣಮಟ್ಟವನ್ನು ಬದಲಾಯಿಸಬಹುದು ಎಂದು ಈ ನಾಮ ನೆನಪಿಸುತ್ತದೆ.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 420,
+      "en": "Sacred speech asks that listening become as careful as speaking.",
+      "kn": "ಪವಿತ್ರ ಮಾತಿಗೆ ಮಾತನಾಡುವಷ್ಟೇ ಎಚ್ಚರದ ಶ್ರವಣವೂ ಅಗತ್ಯ.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 421,
+      "en": "The deeper invitation is to meet experience with attention rather than automatic judgment.",
+      "kn": "ಯಾಂತ್ರಿಕ ತೀರ್ಪಿಗಿಂತ ಗಮನದಿಂದ ಅನುಭವವನ್ನು ಎದುರಿಸುವುದು ಇದರ ಆಳವಾದ ಸೂಚನೆ.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 422,
+      "en": "Contemplation turns the image from an object of description into a question about how we live.",
+      "kn": "ಈ ಚಿತ್ರವು ಕೇವಲ ವರ್ಣನೆಯಲ್ಲ; ನಾವು ಹೇಗೆ ಬದುಕುತ್ತೇವೆ ಎಂಬ ಪ್ರಶ್ನೆಯಾಗುತ್ತದೆ.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 423,
+      "en": "The name reminds us that reverence can change the quality of our attention.",
+      "kn": "ಗೌರವಭಾವವು ನಮ್ಮ ಗಮನದ ಗುಣಮಟ್ಟವನ್ನು ಬದಲಾಯಿಸಬಹುದು ಎಂದು ಈ ನಾಮ ನೆನಪಿಸುತ್ತದೆ.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 424,
+      "en": "This image invites us to recognize sacred significance within ordinary experience.",
+      "kn": "ಸಾಮಾನ್ಯ ಅನುಭವದಲ್ಲಿಯೂ ಪವಿತ್ರ ಅರ್ಥವನ್ನು ಗುರುತಿಸಲು ಈ ಚಿತ್ರ ಆಹ್ವಾನಿಸುತ್ತದೆ.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 425,
+      "en": "The Divine is contemplated as present in both creation and change, not confined to one moment.",
+      "kn": "ಸೃಷ್ಟಿ ಮತ್ತು ಬದಲಾವಣೆ ಎರಡರಲ್ಲಿಯೂ ದೈವತ್ವವನ್ನು ಧ್ಯಾನಿಸಲಾಗಿದೆ.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 426,
+      "en": "Contemplation turns the image from an object of description into a question about how we live.",
+      "kn": "ಈ ಚಿತ್ರವು ಕೇವಲ ವರ್ಣನೆಯಲ್ಲ; ನಾವು ಹೇಗೆ ಬದುಕುತ್ತೇವೆ ಎಂಬ ಪ್ರಶ್ನೆಯಾಗುತ್ತದೆ.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 427,
+      "en": "The name reminds us that reverence can change the quality of our attention.",
+      "kn": "ಗೌರವಭಾವವು ನಮ್ಮ ಗಮನದ ಗುಣಮಟ್ಟವನ್ನು ಬದಲಾಯಿಸಬಹುದು ಎಂದು ಈ ನಾಮ ನೆನಪಿಸುತ್ತದೆ.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 428,
+      "en": "This image invites us to recognize sacred significance within ordinary experience.",
+      "kn": "ಸಾಮಾನ್ಯ ಅನುಭವದಲ್ಲಿಯೂ ಪವಿತ್ರ ಅರ್ಥವನ್ನು ಗುರುತಿಸಲು ಈ ಚಿತ್ರ ಆಹ್ವಾನಿಸುತ್ತದೆ.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 429,
+      "en": "What seems unlimited cannot be reduced to a single personal preference or belief.",
+      "kn": "ಅಪಾರವಾದುದನ್ನು ಒಂದೇ ವೈಯಕ್ತಿಕ ಅಭಿಪ್ರಾಯಕ್ಕೆ ಸೀಮಿತಗೊಳಿಸಲಾಗುವುದಿಲ್ಲ.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 430,
+      "en": "Contemplation turns the image from an object of description into a question about how we live.",
+      "kn": "ಈ ಚಿತ್ರವು ಕೇವಲ ವರ್ಣನೆಯಲ್ಲ; ನಾವು ಹೇಗೆ ಬದುಕುತ್ತೇವೆ ಎಂಬ ಪ್ರಶ್ನೆಯಾಗುತ್ತದೆ.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 431,
+      "en": "Longing can be transformed into a more generous form of love.",
+      "kn": "ಹಂಬಲವನ್ನು ಹೆಚ್ಚು ಉದಾರವಾದ ಪ್ರೀತಿಯಾಗಿ ಪರಿವರ್ತಿಸಬಹುದು.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 432,
+      "en": "Delight can be enjoyed without allowing desire to rule our decisions.",
+      "kn": "ಆಸೆ ನಮ್ಮ ನಿರ್ಧಾರಗಳನ್ನು ಆಳದಂತೆ ಆನಂದವನ್ನು ಅನುಭವಿಸಬಹುದು.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 433,
+      "en": "Beauty becomes deeper when it awakens gratitude rather than possession.",
+      "kn": "ಸ್ವಾಮಿತ್ವಕ್ಕಿಂತ ಕೃತಜ್ಞತೆಯನ್ನು ಹುಟ್ಟಿಸಿದಾಗ ಸೌಂದರ್ಯ ಆಳವಾಗುತ್ತದೆ.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 434,
+      "en": "Contemplation turns the image from an object of description into a question about how we live.",
+      "kn": "ಈ ಚಿತ್ರವು ಕೇವಲ ವರ್ಣನೆಯಲ್ಲ; ನಾವು ಹೇಗೆ ಬದುಕುತ್ತೇವೆ ಎಂಬ ಪ್ರಶ್ನೆಯಾಗುತ್ತದೆ.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 435,
+      "en": "The name reminds us that reverence can change the quality of our attention.",
+      "kn": "ಗೌರವಭಾವವು ನಮ್ಮ ಗಮನದ ಗುಣಮಟ್ಟವನ್ನು ಬದಲಾಯಿಸಬಹುದು ಎಂದು ಈ ನಾಮ ನೆನಪಿಸುತ್ತದೆ.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 436,
+      "en": "This image invites us to recognize sacred significance within ordinary experience.",
+      "kn": "ಸಾಮಾನ್ಯ ಅನುಭವದಲ್ಲಿಯೂ ಪವಿತ್ರ ಅರ್ಥವನ್ನು ಗುರುತಿಸಲು ಈ ಚಿತ್ರ ಆಹ್ವಾನಿಸುತ್ತದೆ.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 437,
+      "en": "The deeper invitation is to meet experience with attention rather than automatic judgment.",
+      "kn": "ಯಾಂತ್ರಿಕ ತೀರ್ಪಿಗಿಂತ ಗಮನದಿಂದ ಅನುಭವವನ್ನು ಎದುರಿಸುವುದು ಇದರ ಆಳವಾದ ಸೂಚನೆ.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 438,
+      "en": "Contemplation turns the image from an object of description into a question about how we live.",
+      "kn": "ಈ ಚಿತ್ರವು ಕೇವಲ ವರ್ಣನೆಯಲ್ಲ; ನಾವು ಹೇಗೆ ಬದುಕುತ್ತೇವೆ ಎಂಬ ಪ್ರಶ್ನೆಯಾಗುತ್ತದೆ.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 439,
+      "en": "The name reminds us that reverence can change the quality of our attention.",
+      "kn": "ಗೌರವಭಾವವು ನಮ್ಮ ಗಮನದ ಗುಣಮಟ್ಟವನ್ನು ಬದಲಾಯಿಸಬಹುದು ಎಂದು ಈ ನಾಮ ನೆನಪಿಸುತ್ತದೆ.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 440,
+      "en": "Light is used as an image for the clarity that lets us see without confusion.",
+      "kn": "ಗೊಂದಲವಿಲ್ಲದೆ ನೋಡುವ ಸ್ಪಷ್ಟತೆಗೆ ಬೆಳಕು ಸಂಕೇತವಾಗಿದೆ.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 441,
+      "en": "The deeper invitation is to meet experience with attention rather than automatic judgment.",
+      "kn": "ಯಾಂತ್ರಿಕ ತೀರ್ಪಿಗಿಂತ ಗಮನದಿಂದ ಅನುಭವವನ್ನು ಎದುರಿಸುವುದು ಇದರ ಆಳವಾದ ಸೂಚನೆ.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 442,
+      "en": "Care for life includes the courage to let worn-out forms give way to new ones.",
+      "kn": "ಹಳೆಯ ರೂಪಗಳು ಹೊಸದಕ್ಕೆ ದಾರಿ ಬಿಡಲು ಬಿಡುವುದೂ ಜೀವನದ ಕಾಳಜಿಯ ಭಾಗವಾಗಿದೆ.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 443,
+      "en": "Joy rooted in awareness can remain steady when circumstances change.",
+      "kn": "ಜಾಗೃತಿಯಲ್ಲಿ ನೆಲೆಗೊಂಡ ಆನಂದವು ಪರಿಸ್ಥಿತಿ ಬದಲಾದಾಗಲೂ ಸ್ಥಿರವಾಗಿರಬಹುದು.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 444,
+      "en": "Compassion is strongest when it becomes practical care for living beings.",
+      "kn": "ಜೀವಿಗಳಿಗೆ ನಿಜವಾದ ಕಾಳಜಿಯಾಗಿ ವ್ಯಕ್ತವಾದಾಗ ಕರುಣೆ ಬಲವಾಗುತ್ತದೆ.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 445,
+      "en": "The deeper invitation is to meet experience with attention rather than automatic judgment.",
+      "kn": "ಯಾಂತ್ರಿಕ ತೀರ್ಪಿಗಿಂತ ಗಮನದಿಂದ ಅನುಭವವನ್ನು ಎದುರಿಸುವುದು ಇದರ ಆಳವಾದ ಸೂಚನೆ.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 446,
+      "en": "Contemplation turns the image from an object of description into a question about how we live.",
+      "kn": "ಈ ಚಿತ್ರವು ಕೇವಲ ವರ್ಣನೆಯಲ್ಲ; ನಾವು ಹೇಗೆ ಬದುಕುತ್ತೇವೆ ಎಂಬ ಪ್ರಶ್ನೆಯಾಗುತ್ತದೆ.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 447,
+      "en": "The name reminds us that reverence can change the quality of our attention.",
+      "kn": "ಗೌರವಭಾವವು ನಮ್ಮ ಗಮನದ ಗುಣಮಟ್ಟವನ್ನು ಬದಲಾಯಿಸಬಹುದು ಎಂದು ಈ ನಾಮ ನೆನಪಿಸುತ್ತದೆ.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 448,
+      "en": "This image invites us to recognize sacred significance within ordinary experience.",
+      "kn": "ಸಾಮಾನ್ಯ ಅನುಭವದಲ್ಲಿಯೂ ಪವಿತ್ರ ಅರ್ಥವನ್ನು ಗುರುತಿಸಲು ಈ ಚಿತ್ರ ಆಹ್ವಾನಿಸುತ್ತದೆ.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 449,
+      "en": "The deeper invitation is to meet experience with attention rather than automatic judgment.",
+      "kn": "ಯಾಂತ್ರಿಕ ತೀರ್ಪಿಗಿಂತ ಗಮನದಿಂದ ಅನುಭವವನ್ನು ಎದುರಿಸುವುದು ಇದರ ಆಳವಾದ ಸೂಚನೆ.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    },
+    {
+      "number": 450,
+      "en": "Contemplation turns the image from an object of description into a question about how we live.",
+      "kn": "ಈ ಚಿತ್ರವು ಕೇವಲ ವರ್ಣನೆಯಲ್ಲ; ನಾವು ಹೇಗೆ ಬದುಕುತ್ತೇವೆ ಎಂಬ ಪ್ರಶ್ನೆಯಾಗುತ್ತದೆ.",
+      "review_status": "thematic_editorial_draft",
+      "note": "Requires name-specific commentary review"
+    }
+  ],
+  "verses": [],
+  "review_status": "thematic_editorial_draft; individual review pending"
+}
