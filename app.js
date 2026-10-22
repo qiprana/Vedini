@@ -488,6 +488,8 @@ async function init(){
  deeperDrafts.flatMap(d=>d.verses).forEach(e=>{verseData[e.verse_number]={...(verseData[e.verse_number]||{}),traditional_interpretation:{en:e.en,kn:e.kn}};});
  const overallDraft=await fetchJSON("lalita/deeper-overall-022-052.json");
  overallDraft.verses.forEach(e=>{verseData[e.verse_number]={...(verseData[e.verse_number]||{}),traditional_interpretation:{en:e.en,kn:e.kn}};});
+ const nextOverall=await fetchJSON("lalita/deeper-overall-053-103.json");
+ nextOverall.verses.forEach(e=>{verseData[e.verse_number]={...(verseData[e.verse_number]||{}),traditional_interpretation:{en:e.en,kn:e.kn}};});
  if(index<111)throw new Error("At least the first 111 names are expected; found "+index);
  initPractice();const initial=loadInitialLocation();render();if(initial)scrollToElement(initial);
  }catch(err){
