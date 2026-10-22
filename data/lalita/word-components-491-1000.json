@@ -2204,128 +2204,485 @@
     },
     {
       "number": 591,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "शिरः",
+          "iast": "śiraḥ",
+          "en": "Head",
+          "kn": "ತಲೆ"
+        },
+        {
+          "dev": "",
+          "iast": "sthitā",
+          "en": "Situated",
+          "kn": "ನೆಲೆಸಿರುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "The one who resides in the head"
     },
     {
       "number": 592,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "चन्द्र",
+          "iast": "candra",
+          "en": "Moon",
+          "kn": "ಚಂದ್ರ"
+        },
+        {
+          "dev": "निभा",
+          "iast": "nibhā",
+          "en": "Resembling",
+          "kn": "ಹೋಲುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Resplendent like the moon"
     },
     {
       "number": 593,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "भाल",
+          "iast": "bhāla",
+          "en": "Forehead",
+          "kn": "ಹಣೆ"
+        },
+        {
+          "dev": "स्था",
+          "iast": "sthā",
+          "en": "Situated",
+          "kn": "ನೆಲೆಸಿರುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "The one who resides in the forehead (between the eyebrows)"
     },
     {
       "number": 594,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "इन्द्र",
+          "iast": "indra",
+          "en": "Indra",
+          "kn": "ಇಂದ್ರ"
+        },
+        {
+          "dev": "धनुः",
+          "iast": "dhanuḥ",
+          "en": "Bow or rainbow",
+          "kn": "ಬಿಲ್ಲು"
+        },
+        {
+          "dev": "प्रभा",
+          "iast": "prabhā",
+          "en": "Radiance",
+          "kn": "ಪ್ರಭೆ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Resplendent like the rainbow"
     },
     {
       "number": 595,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "हृदय",
+          "iast": "hṛdaya",
+          "en": "Heart",
+          "kn": "ಹೃದಯ"
+        },
+        {
+          "dev": "स्था",
+          "iast": "sthā",
+          "en": "Situated",
+          "kn": "ನೆಲೆಸಿರುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "The one who resides in the heart"
     },
     {
       "number": 596,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "रवि",
+          "iast": "ravi",
+          "en": "Sun",
+          "kn": "ಸೂರ್ಯ"
+        },
+        {
+          "dev": "प्रख्या",
+          "iast": "prakhyā",
+          "en": "Resembling",
+          "kn": "ಹೋಲುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "The one who shines with the special brilliance of the sun"
     },
     {
       "number": 597,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "त्रिकोण",
+          "iast": "trikoṇa",
+          "en": "Triangle",
+          "kn": "ತ್ರಿಕೋಣ"
+        },
+        {
+          "dev": "अन्तर",
+          "iast": "antara",
+          "en": "Inside",
+          "kn": "ಒಳಗೆ"
+        },
+        {
+          "dev": "दीपिका",
+          "iast": "dīpikā",
+          "en": "Lamp or flame",
+          "kn": "ದೀಪ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "The one who shines as a light within the triangle"
     },
     {
       "number": 598,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "dākṣāyaṇī",
+          "en": "Daughter of Dakṣa",
+          "kn": "ದಾಕ್ಷಾಯಣಿ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "SatIdevI, the daughter of dakSha prajApati"
     },
     {
       "number": 599,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "daitya",
+          "en": "Demon",
+          "kn": "ದೈತ್ಯ"
+        },
+        {
+          "dev": "",
+          "iast": "hantrī",
+          "en": "Destroyer",
+          "kn": "ಸಂಹಾರಿಣಿ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Killer of demons"
     },
     {
       "number": 600,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "dakṣa",
+          "en": "Dakṣa",
+          "kn": "ದಕ್ಷ"
+        },
+        {
+          "dev": "",
+          "iast": "yajña",
+          "en": "Sacrifice",
+          "kn": "ಯಜ್ಞ"
+        },
+        {
+          "dev": "",
+          "iast": "vināśinī",
+          "en": "Destroyer",
+          "kn": "ನಾಶಿನಿ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Destroyer of the sacrifice conducted by dakSha"
     },
     {
       "number": 601,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "dara",
+          "en": "Slightly",
+          "kn": "ಸ್ವಲ್ಪ"
+        },
+        {
+          "dev": "",
+          "iast": "āndolita",
+          "en": "Moving",
+          "kn": "ಚಲಿಸುವ"
+        },
+        {
+          "dev": "",
+          "iast": "dīrgha",
+          "en": "Long",
+          "kn": "ಉದ್ದ"
+        },
+        {
+          "dev": "",
+          "iast": "akṣī",
+          "en": "Eyes",
+          "kn": "ಕಣ್ಣು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Possessor of long, tremulous eyes"
     },
     {
       "number": 602,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "dara",
+          "en": "Gentle",
+          "kn": "ಮಂದ"
+        },
+        {
+          "dev": "",
+          "iast": "hāsa",
+          "en": "Smile",
+          "kn": "ನಗು"
+        },
+        {
+          "dev": "",
+          "iast": "ujjvalat",
+          "en": "Shining",
+          "kn": "ಹೊಳೆಯುವ"
+        },
+        {
+          "dev": "",
+          "iast": "mukhī",
+          "en": "Faced",
+          "kn": "ಮುಖವುಳ್ಳವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "She whose face is radiant with a smile"
     },
     {
       "number": 603,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "guru",
+          "en": "Teacher",
+          "kn": "ಗುರು"
+        },
+        {
+          "dev": "",
+          "iast": "mūrtiḥ",
+          "en": "Embodiment",
+          "kn": "ಮೂರ್ತಿ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Possessor of assumed a severe form or one who has assumed the form of the guru"
     },
     {
       "number": 604,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "guṇa",
+          "en": "Quality",
+          "kn": "ಗುಣ"
+        },
+        {
+          "dev": "",
+          "iast": "nidhiḥ",
+          "en": "Treasure",
+          "kn": "ನಿಧಿ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Treasure house of all good qualities"
     },
     {
       "number": 605,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "go",
+          "en": "Cow",
+          "kn": "ಗೋವು"
+        },
+        {
+          "dev": "",
+          "iast": "mātā",
+          "en": "Mother",
+          "kn": "ತಾಯಿ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "The one who became surabhI, the cow that grants all wishes"
     },
     {
       "number": 606,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "guha",
+          "en": "Guha or Skanda",
+          "kn": "ಗುಹ ಅಥವಾ ಸ್ಕಂದ"
+        },
+        {
+          "dev": "",
+          "iast": "janma",
+          "en": "Birth",
+          "kn": "ಜನನ"
+        },
+        {
+          "dev": "",
+          "iast": "bhūḥ",
+          "en": "Source or birthplace",
+          "kn": "ಜನ್ಮಸ್ಥಾನ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Mother of guhA (subramaNya)"
     },
     {
       "number": 607,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "deva",
+          "en": "Deity",
+          "kn": "ದೇವತೆ"
+        },
+        {
+          "dev": "",
+          "iast": "īśī",
+          "en": "Sovereign",
+          "kn": "ಈಶ್ವರಿ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Protector of the gods"
     },
     {
       "number": 608,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "daṇḍa",
+          "en": "Discipline or punishment",
+          "kn": "ದಂಡ"
+        },
+        {
+          "dev": "",
+          "iast": "nīti",
+          "en": "Policy or justice",
+          "kn": "ನೀತಿ"
+        },
+        {
+          "dev": "स्था",
+          "iast": "sthā",
+          "en": "Established in",
+          "kn": "ನೆಲೆಸಿರುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "The one who maintains the rules of jusstice without the slightest error"
     },
     {
       "number": 609,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "dahara",
+          "en": "Subtle inner space",
+          "kn": "ದಹರ"
+        },
+        {
+          "dev": "",
+          "iast": "ākāśa",
+          "en": "Space",
+          "kn": "ಆಕಾಶ"
+        },
+        {
+          "dev": "",
+          "iast": "rūpiṇī",
+          "en": "Embodiment",
+          "kn": "ರೂಪಿಣಿ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Subtle self in the heart"
     },
     {
       "number": 610,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "pratipad",
+          "en": "First lunar day",
+          "kn": "ಪ್ರತಿಪದೆ"
+        },
+        {
+          "dev": "",
+          "iast": "mukhya",
+          "en": "Beginning with",
+          "kn": "ಮುಖ್ಯವಾಗಿ"
+        },
+        {
+          "dev": "",
+          "iast": "rākā",
+          "en": "Full moon",
+          "kn": "ಹುಣ್ಣಿಮೆ"
+        },
+        {
+          "dev": "",
+          "iast": "anta",
+          "en": "Ending with",
+          "kn": "ಅಂತ್ಯ"
+        },
+        {
+          "dev": "",
+          "iast": "tithi",
+          "en": "Lunar day",
+          "kn": "ತಿಥಿ"
+        },
+        {
+          "dev": "",
+          "iast": "maṇḍala",
+          "en": "Circle",
+          "kn": "ಮಂಡಲ"
+        },
+        {
+          "dev": "",
+          "iast": "pūjitā",
+          "en": "Worshipped",
+          "kn": "ಪೂಜಿತಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Worshipped daily starting with pratipad (first day of the lunar half-month) and ending with the full moon"
     },
     {
       "number": 611,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "kalā",
+          "en": "Creative power or art",
+          "kn": "ಕಲೆ"
+        },
+        {
+          "dev": "",
+          "iast": "ātmikā",
+          "en": "Having the essence",
+          "kn": "ಆತ್ಮಸ್ವರೂಪಿಣಿ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "In the form of the kalAs"
     },
     {
@@ -2334,28 +2691,90 @@
         {
           "dev": "",
           "iast": "kalā",
-          "en": "Part or division",
-          "kn": "ಭಾಗ"
+          "en": "Digit of the moon",
+          "kn": "ಚಂದ್ರಕಲೆ"
         },
         {
           "dev": "",
           "iast": "nāthā",
-          "en": "Ruler",
+          "en": "Mistress or lord",
           "kn": "ನಾಥೆ"
         }
       ],
-      "review_status": "automated_exact_component_match_needs_review"
+      "review_status": "manual_compound_draft"
     },
     {
       "number": 613,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "kāvya",
+          "en": "Poetry",
+          "kn": "ಕಾವ್ಯ"
+        },
+        {
+          "dev": "",
+          "iast": "ālāpa",
+          "en": "Recital or speech",
+          "kn": "ಆಲಾಪ"
+        },
+        {
+          "dev": "",
+          "iast": "vinodinī",
+          "en": "Delighting in",
+          "kn": "ಆನಂದಿಸುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "The one who delights in hearing poetry"
     },
     {
       "number": 614,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "sa",
+          "en": "Together with",
+          "kn": "ಜೊತೆಗೆ"
+        },
+        {
+          "dev": "",
+          "iast": "cāmara",
+          "en": "Fly-whisk",
+          "kn": "ಚಾಮರ"
+        },
+        {
+          "dev": "",
+          "iast": "ramā",
+          "en": "Lakṣmī",
+          "kn": "ಲಕ್ಷ್ಮಿ"
+        },
+        {
+          "dev": "",
+          "iast": "vāṇī",
+          "en": "Sarasvatī",
+          "kn": "ಸರಸ್ವತಿ"
+        },
+        {
+          "dev": "",
+          "iast": "savya",
+          "en": "Left",
+          "kn": "ಎಡ"
+        },
+        {
+          "dev": "",
+          "iast": "dakṣiṇa",
+          "en": "Right",
+          "kn": "ಬಲ"
+        },
+        {
+          "dev": "",
+          "iast": "sevitā",
+          "en": "Attended by",
+          "kn": "ಸೇವಿತಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Attended by lakShmI on the left side and sarasvatI on the right side, bearing ceremonial fans"
     },
     {
@@ -2364,7 +2783,7 @@
         {
           "dev": "",
           "iast": "ādi",
-          "en": "Beginning",
+          "en": "Primordial",
           "kn": "ಆದಿ"
         },
         {
@@ -2374,78 +2793,228 @@
           "kn": "ಶಕ್ತಿ"
         }
       ],
-      "review_status": "automated_exact_component_match_needs_review"
+      "review_status": "manual_compound_draft"
     },
     {
       "number": 616,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "ameyā",
+          "en": "Immeasurable",
+          "kn": "ಅಮೇಯ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Not measurable by any means"
     },
     {
       "number": 617,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "ātmā",
+          "en": "Self",
+          "kn": "ಆತ್ಮ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Self in all"
     },
     {
       "number": 618,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "paramā",
+          "en": "Supreme",
+          "kn": "ಪರಮ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Supreme"
     },
     {
       "number": 619,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "pāvana",
+          "en": "Purifying",
+          "kn": "ಪಾವನ"
+        },
+        {
+          "dev": "",
+          "iast": "ākṛtiḥ",
+          "en": "Form",
+          "kn": "ಆಕೃತಿ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Of sacred form"
     },
     {
       "number": 620,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "aneka",
+          "en": "Many",
+          "kn": "ಅನೇಕ"
+        },
+        {
+          "dev": "",
+          "iast": "koṭi",
+          "en": "Crores",
+          "kn": "ಕೋಟಿ"
+        },
+        {
+          "dev": "",
+          "iast": "brahmāṇḍa",
+          "en": "Universes",
+          "kn": "ಬ್ರಹ್ಮಾಂಡಗಳು"
+        },
+        {
+          "dev": "",
+          "iast": "jananī",
+          "en": "Mother",
+          "kn": "ಜನನಿ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Creator of many crores of worlds"
     },
     {
       "number": 621,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "divya",
+          "en": "Divine",
+          "kn": "ದಿವ್ಯ"
+        },
+        {
+          "dev": "",
+          "iast": "vigrahā",
+          "en": "Form",
+          "kn": "ವಿಗ್ರಹ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Possessor of a divine body"
     },
     {
       "number": 622,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "klīṃ",
+          "en": "Klīṃ sacred syllable",
+          "kn": "ಕ್ಲೀಂ"
+        },
+        {
+          "dev": "",
+          "iast": "kārī",
+          "en": "Embodiment of",
+          "kn": "ಸ್ವರೂಪಿಣಿ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Creator of the syllable 'klIM'"
     },
     {
       "number": 623,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "kevalā",
+          "en": "Alone or absolute",
+          "kn": "ಕೇವಲ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Absolute, as She is complete, independent and without any attributes"
     },
     {
       "number": 624,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "guhyā",
+          "en": "Secret or hidden",
+          "kn": "ಗುಹ್ಯ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "To be known in secret"
     },
     {
       "number": 625,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "kaivalya",
+          "en": "Liberation or absolute oneness",
+          "kn": "ಕೈವಲ್ಯ"
+        },
+        {
+          "dev": "",
+          "iast": "pada",
+          "en": "State",
+          "kn": "ಪದ"
+        },
+        {
+          "dev": "",
+          "iast": "dāyinī",
+          "en": "Bestower",
+          "kn": "ದಾಯಿನಿ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "The one who bestows liberation"
     },
     {
       "number": 626,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "tri",
+          "en": "Three",
+          "kn": "ಮೂರು"
+        },
+        {
+          "dev": "",
+          "iast": "purā",
+          "en": "Cities or realms",
+          "kn": "ಪುರಗಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Older than the three (trinity of brahmA viShNu and shiva)"
     },
     {
       "number": 627,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "tri",
+          "en": "Three",
+          "kn": "ಮೂರು"
+        },
+        {
+          "dev": "",
+          "iast": "jagat",
+          "en": "Worlds",
+          "kn": "ಜಗತ್ತು"
+        },
+        {
+          "dev": "",
+          "iast": "vandyā",
+          "en": "Venerated by",
+          "kn": "ವಂದನೀಯಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Adored by the inhabitants of all three worlds"
     },
     {
@@ -2460,82 +3029,244 @@
         {
           "dev": "",
           "iast": "mūrtiḥ",
-          "en": "Embodiment or form",
-          "kn": "ಸ್ವರೂಪ"
+          "en": "Forms",
+          "kn": "ಮೂರ್ತಿ"
         }
       ],
-      "review_status": "automated_exact_component_match_needs_review"
+      "review_status": "manual_compound_draft"
     },
     {
       "number": 629,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "tridaśa",
+          "en": "Thirty gods or deities",
+          "kn": "ದೇವತೆಗಳು"
+        },
+        {
+          "dev": "",
+          "iast": "īśvarī",
+          "en": "Sovereign",
+          "kn": "ಈಶ್ವರಿ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Ruler of the gods"
     },
     {
       "number": 630,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "tri",
+          "en": "Three",
+          "kn": "ಮೂರು"
+        },
+        {
+          "dev": "",
+          "iast": "akṣarī",
+          "en": "Syllabled",
+          "kn": "ಅಕ್ಷರವುಳ್ಳವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "She whose form consists of three letters or syllables (Om = a u m)"
     },
     {
       "number": 631,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "divya",
+          "en": "Divine",
+          "kn": "ದಿವ್ಯ"
+        },
+        {
+          "dev": "",
+          "iast": "gandha",
+          "en": "Fragrance",
+          "kn": "ಸುಗಂಧ"
+        },
+        {
+          "dev": "",
+          "iast": "āḍhyā",
+          "en": "Endowed with",
+          "kn": "ಸಮೃದ್ಧಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Richly endowed with divine fragrance"
     },
     {
       "number": 632,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "sindūra",
+          "en": "Vermilion",
+          "kn": "ಸಿಂಧೂರ"
+        },
+        {
+          "dev": "",
+          "iast": "tilaka",
+          "en": "Forehead mark",
+          "kn": "ತಿಲಕ"
+        },
+        {
+          "dev": "",
+          "iast": "añcitā",
+          "en": "Adorned",
+          "kn": "ಅಲಂಕರಿತಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "The one who shines witha vermillion mark on Her forehead; She who is decorated with a special paste made of vermilion"
     },
     {
       "number": 633,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "umā",
+          "en": "Umā",
+          "kn": "ಉಮಾ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "PArvatI devI"
     },
     {
       "number": 634,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "śaila",
+          "en": "Mountain",
+          "kn": "ಪರ್ವತ"
+        },
+        {
+          "dev": "इन्द्र",
+          "iast": "indra",
+          "en": "King",
+          "kn": "ರಾಜ"
+        },
+        {
+          "dev": "",
+          "iast": "tanayā",
+          "en": "Daughter",
+          "kn": "ಮಗಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Daughter of himavat, the king of the mountains"
     },
     {
       "number": 635,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "gaurī",
+          "en": "Gaurī",
+          "kn": "ಗೌರಿ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Possessor of a fair complexion"
     },
     {
       "number": 636,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "gandharva",
+          "en": "Celestial musicians",
+          "kn": "ಗಂಧರ್ವರು"
+        },
+        {
+          "dev": "",
+          "iast": "sevitā",
+          "en": "Served by",
+          "kn": "ಸೇವಿತಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Served by gandharvas (like vishvAvasu)"
     },
     {
       "number": 637,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "viśva",
+          "en": "Universe",
+          "kn": "ವಿಶ್ವ"
+        },
+        {
+          "dev": "",
+          "iast": "garbhā",
+          "en": "Womb or source",
+          "kn": "ಗರ್ಭ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "The one who contains the whole universe in Her womb"
     },
     {
       "number": 638,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "svarṇa",
+          "en": "Gold",
+          "kn": "ಚಿನ್ನ"
+        },
+        {
+          "dev": "",
+          "iast": "garbhā",
+          "en": "Womb or source",
+          "kn": "ಗರ್ಭ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Cause of the universe"
     },
     {
       "number": 639,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "avara",
+          "en": "Lower or inferior",
+          "kn": "ಕೀಳಾದ"
+        },
+        {
+          "dev": "",
+          "iast": "dā",
+          "en": "Giver",
+          "kn": "ನೀಡುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Destroyer of the unholy"
     },
     {
       "number": 640,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "vāk",
+          "en": "Speech",
+          "kn": "ವಾಕ್"
+        },
+        {
+          "dev": "",
+          "iast": "adhīśvarī",
+          "en": "Sovereign",
+          "kn": "ಅಧೀಶ್ವರಿ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "The one who presides over speech"
     },
     {
@@ -2550,16 +3281,23 @@
         {
           "dev": "",
           "iast": "gamyā",
-          "en": "Accessible or reached through",
-          "kn": "ಮೂಲಕ ಅರಿಯಬಹುದಾದವಳು"
+          "en": "Reachable through",
+          "kn": "ಪ್ರಾಪ್ಯಳಾದವಳು"
         }
       ],
-      "review_status": "automated_exact_component_match_needs_review"
+      "review_status": "manual_compound_draft"
     },
     {
       "number": 642,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "aparicchedyā",
+          "en": "Beyond limitation or delimitation",
+          "kn": "ಅಪರಿಚ್ಛೇದ್ಯಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "She whose limits cannot be ascertained (unlimited)"
     },
     {
@@ -2578,48 +3316,157 @@
           "kn": "ದಾತೆ"
         }
       ],
-      "review_status": "automated_exact_component_match_needs_review"
+      "review_status": "manual_compound_draft"
     },
     {
       "number": 644,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "jñāna",
+          "en": "Knowledge",
+          "kn": "ಜ್ಞಾನ"
+        },
+        {
+          "dev": "",
+          "iast": "vigrahā",
+          "en": "Embodiment",
+          "kn": "ವಿಗ್ರಹ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Sthe embodiment of knowledge itself"
     },
     {
       "number": 645,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "sarva",
+          "en": "All",
+          "kn": "ಸರ್ವ"
+        },
+        {
+          "dev": "",
+          "iast": "vedānta",
+          "en": "Upaniṣadic teaching",
+          "kn": "ವೇದಾಂತ"
+        },
+        {
+          "dev": "",
+          "iast": "saṃvedyā",
+          "en": "Knowable through",
+          "kn": "ಅರಿಯಬಹುದಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Known by all of vedAnta"
     },
     {
       "number": 646,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "satya",
+          "en": "Truth",
+          "kn": "ಸತ್ಯ"
+        },
+        {
+          "dev": "",
+          "iast": "ānanda",
+          "en": "Bliss",
+          "kn": "ಆನಂದ"
+        },
+        {
+          "dev": "",
+          "iast": "svarūpiṇī",
+          "en": "Embodiment",
+          "kn": "ಸ್ವರೂಪಿಣಿ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "She whose form is existence and bliss"
     },
     {
       "number": 647,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "lopāmudrā",
+          "en": "Lopāmudrā",
+          "kn": "ಲೋಪಾಮುದ್ರಾ"
+        },
+        {
+          "dev": "",
+          "iast": "arcitā",
+          "en": "Worshipped by",
+          "kn": "ಪೂಜಿತಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Worshipped by lopAmudrA (wife of sage agastya)"
     },
     {
       "number": 648,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "līlā",
+          "en": "Divine play",
+          "kn": "ಲೀಲೆ"
+        },
+        {
+          "dev": "",
+          "iast": "kḷpta",
+          "en": "Created",
+          "kn": "ಕಲ್ಪಿಸಿದ"
+        },
+        {
+          "dev": "",
+          "iast": "brahmāṇḍa",
+          "en": "Universe",
+          "kn": "ಬ್ರಹ್ಮಾಂಡ"
+        },
+        {
+          "dev": "",
+          "iast": "maṇḍalā",
+          "en": "Sphere",
+          "kn": "ಮಂಡಲ"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Possessor of created and maintained the universe purely as a sport"
     },
     {
       "number": 649,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "adṛśyā",
+          "en": "Invisible",
+          "kn": "ಅದೃಶ್ಯಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Not perceived by sense organs (normal eyes)"
     },
     {
       "number": 650,
-      "components": [],
-      "review_status": "segmentation_pending",
+      "components": [
+        {
+          "dev": "",
+          "iast": "dṛśya",
+          "en": "Visible or seen",
+          "kn": "ದೃಶ್ಯ"
+        },
+        {
+          "dev": "",
+          "iast": "rahitā",
+          "en": "Without",
+          "kn": "ರಹಿತಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft",
       "whole_name_english": "Possessor of nothing to see"
     },
     {
