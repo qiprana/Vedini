@@ -486,6 +486,8 @@ async function init(){
   const deeperDrafts=await Promise.all(["lalita/deeper-meanings-001-005.json","lalita/deeper-meanings-006-010.json","lalita/deeper-meanings-011-025.json","lalita/deeper-meanings-026-050.json","lalita/deeper-meanings-051-100.json","lalita/deeper-meanings-101-150.json","lalita/deeper-meanings-151-200.json"].map(fetchJSON));
  deeperDrafts.flatMap(d=>d.names).forEach(e=>{nameData[e.number]={...(nameData[e.number]||{}),traditional_interpretation:{en:e.en,kn:e.kn}};});
  deeperDrafts.flatMap(d=>d.verses).forEach(e=>{verseData[e.verse_number]={...(verseData[e.verse_number]||{}),traditional_interpretation:{en:e.en,kn:e.kn}};});
+ const overallDraft=await fetchJSON("lalita/deeper-overall-022-052.json");
+ overallDraft.verses.forEach(e=>{verseData[e.verse_number]={...(verseData[e.verse_number]||{}),traditional_interpretation:{en:e.en,kn:e.kn}};});
  if(index<111)throw new Error("At least the first 111 names are expected; found "+index);
  initPractice();const initial=loadInitialLocation();render();if(initial)scrollToElement(initial);
  }catch(err){
