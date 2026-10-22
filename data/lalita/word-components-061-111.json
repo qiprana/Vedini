@@ -1,0 +1,1674 @@
+{
+  "scope": "Divine names 61–111, early ślokas",
+  "review_status": "editorial_draft",
+  "entries": [
+    {
+      "number": 61,
+      "components": [
+        {
+          "dev": "सुधा",
+          "iast": "sudhā",
+          "en": "Nectar",
+          "kn": "ಅಮೃತ"
+        },
+        {
+          "dev": "सागर",
+          "iast": "sāgara",
+          "en": "Ocean",
+          "kn": "ಸಾಗರ"
+        },
+        {
+          "dev": "मध्य",
+          "iast": "madhya",
+          "en": "Middle",
+          "kn": "ಮಧ್ಯ"
+        },
+        {
+          "dev": "स्था",
+          "iast": "sthā",
+          "en": "Situated",
+          "kn": "ನೆಲೆಸಿರುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 62,
+      "components": [
+        {
+          "dev": "काम",
+          "iast": "kāma",
+          "en": "Desire",
+          "kn": "ಕಾಮ"
+        },
+        {
+          "dev": "अक्षी",
+          "iast": "akṣī",
+          "en": "Eyed",
+          "kn": "ಕಣ್ಣುಳ್ಳವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 63,
+      "components": [
+        {
+          "dev": "काम",
+          "iast": "kāma",
+          "en": "Desired blessings",
+          "kn": "ಅಭೀಷ್ಟಗಳು"
+        },
+        {
+          "dev": "दायिनी",
+          "iast": "dāyinī",
+          "en": "Giver",
+          "kn": "ನೀಡುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 64,
+      "components": [
+        {
+          "dev": "देव",
+          "iast": "deva",
+          "en": "Gods",
+          "kn": "ದೇವತೆಗಳು"
+        },
+        {
+          "dev": "ऋषि",
+          "iast": "ṛṣi",
+          "en": "Sages",
+          "kn": "ಋಷಿಗಳು"
+        },
+        {
+          "dev": "गण",
+          "iast": "gaṇa",
+          "en": "Groups",
+          "kn": "ಗಣಗಳು"
+        },
+        {
+          "dev": "सङ्घात",
+          "iast": "saṅghāta",
+          "en": "Assemblies",
+          "kn": "ಸಮೂಹ"
+        },
+        {
+          "dev": "स्तूयमान",
+          "iast": "stūyamāna",
+          "en": "Praised",
+          "kn": "ಸ್ತುತಿಸಲ್ಪಡುವ"
+        },
+        {
+          "dev": "आत्म",
+          "iast": "ātma",
+          "en": "Own",
+          "kn": "ಸ್ವಂತ"
+        },
+        {
+          "dev": "वैभवा",
+          "iast": "vaibhavā",
+          "en": "Splendor",
+          "kn": "ವೈಭವ"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 65,
+      "components": [
+        {
+          "dev": "भण्डासुर",
+          "iast": "bhaṇḍāsura",
+          "en": "Bhaṇḍāsura",
+          "kn": "ಭಂಡಾಸುರ"
+        },
+        {
+          "dev": "वध",
+          "iast": "vadha",
+          "en": "Slaying",
+          "kn": "ಸಂಹಾರ"
+        },
+        {
+          "dev": "उद्युक्त",
+          "iast": "udyukta",
+          "en": "Ready",
+          "kn": "ಸಿದ್ಧ"
+        },
+        {
+          "dev": "शक्ति",
+          "iast": "śakti",
+          "en": "Divine powers",
+          "kn": "ಶಕ್ತಿಗಳು"
+        },
+        {
+          "dev": "सेना",
+          "iast": "senā",
+          "en": "Army",
+          "kn": "ಸೇನೆ"
+        },
+        {
+          "dev": "समन्विता",
+          "iast": "samanvitā",
+          "en": "Accompanied by",
+          "kn": "ಸಹಿತಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 66,
+      "components": [
+        {
+          "dev": "सम्पत्करी",
+          "iast": "sampatkarī",
+          "en": "Sampatkarī goddess",
+          "kn": "ಸಂಪತ್ಕರಿ"
+        },
+        {
+          "dev": "समारूढ",
+          "iast": "samārūḍha",
+          "en": "Mounted by",
+          "kn": "ಆರೋಹಿಸಿದ"
+        },
+        {
+          "dev": "सिन्धुर",
+          "iast": "sindhura",
+          "en": "Elephant",
+          "kn": "ಆನೆ"
+        },
+        {
+          "dev": "व्रज",
+          "iast": "vraja",
+          "en": "Herd",
+          "kn": "ಸಮೂಹ"
+        },
+        {
+          "dev": "सेविता",
+          "iast": "sevitā",
+          "en": "Attended by",
+          "kn": "ಸೇವಿತಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 67,
+      "components": [
+        {
+          "dev": "अश्वारूढा",
+          "iast": "aśvārūḍhā",
+          "en": "Aśvārūḍhā goddess",
+          "kn": "ಅಶ್ವಾರೂಢಾ"
+        },
+        {
+          "dev": "अधिष्ठित",
+          "iast": "adhiṣṭhita",
+          "en": "Commanded",
+          "kn": "ಅಧಿಷ್ಠಿತ"
+        },
+        {
+          "dev": "अश्व",
+          "iast": "aśva",
+          "en": "Horses",
+          "kn": "ಕುದುರೆಗಳು"
+        },
+        {
+          "dev": "कोटि",
+          "iast": "koṭi",
+          "en": "Crores",
+          "kn": "ಕೋಟಿಗಳು"
+        },
+        {
+          "dev": "कोटिभिः",
+          "iast": "koṭibhiḥ",
+          "en": "By multitudes",
+          "kn": "ಕೋಟಿಗಳಿಂದ"
+        },
+        {
+          "dev": "आवृता",
+          "iast": "āvṛtā",
+          "en": "Surrounded",
+          "kn": "ಸುತ್ತುವರಿದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 68,
+      "components": [
+        {
+          "dev": "चक्रराज",
+          "iast": "cakrarāja",
+          "en": "Royal Śrīcakra",
+          "kn": "ಚಕ್ರರಾಜ"
+        },
+        {
+          "dev": "रथ",
+          "iast": "ratha",
+          "en": "Chariot",
+          "kn": "ರಥ"
+        },
+        {
+          "dev": "आरूढ",
+          "iast": "ārūḍha",
+          "en": "Mounted",
+          "kn": "ಆರೋಹಿಸಿದ"
+        },
+        {
+          "dev": "सर्व",
+          "iast": "sarva",
+          "en": "All",
+          "kn": "ಎಲ್ಲ"
+        },
+        {
+          "dev": "आयुध",
+          "iast": "āyudha",
+          "en": "Weapons",
+          "kn": "ಆಯುಧಗಳು"
+        },
+        {
+          "dev": "परिष्कृता",
+          "iast": "pariṣkṛtā",
+          "en": "Equipped",
+          "kn": "ಅಲಂಕರಿತಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 69,
+      "components": [
+        {
+          "dev": "गेयचक्र",
+          "iast": "geyacakra",
+          "en": "Geyacakra",
+          "kn": "ಗೇಯಚಕ್ರ"
+        },
+        {
+          "dev": "रथ",
+          "iast": "ratha",
+          "en": "Chariot",
+          "kn": "ರಥ"
+        },
+        {
+          "dev": "आरूढ",
+          "iast": "ārūḍha",
+          "en": "Mounted",
+          "kn": "ಆರೋಹಿಸಿದ"
+        },
+        {
+          "dev": "मन्त्रिणी",
+          "iast": "mantriṇī",
+          "en": "Mantriṇī goddess",
+          "kn": "ಮಂತ್ರಿಣಿ"
+        },
+        {
+          "dev": "परिसेविता",
+          "iast": "parisevitā",
+          "en": "Attended by",
+          "kn": "ಸೇವಿತಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 70,
+      "components": [
+        {
+          "dev": "किरिचक्र",
+          "iast": "kiricakra",
+          "en": "Kiricakra",
+          "kn": "ಕಿರಿಚಕ್ರ"
+        },
+        {
+          "dev": "रथ",
+          "iast": "ratha",
+          "en": "Chariot",
+          "kn": "ರಥ"
+        },
+        {
+          "dev": "आरूढ",
+          "iast": "ārūḍha",
+          "en": "Mounted",
+          "kn": "ಆರೋಹಿಸಿದ"
+        },
+        {
+          "dev": "दण्डनाथा",
+          "iast": "daṇḍanāthā",
+          "en": "Daṇḍanāthā goddess",
+          "kn": "ದಂಡನಾಥಾ"
+        },
+        {
+          "dev": "पुरस्कृता",
+          "iast": "puraskṛtā",
+          "en": "Led or preceded by",
+          "kn": "ಮುನ್ನಡೆಸಲ್ಪಟ್ಟವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 71,
+      "components": [
+        {
+          "dev": "ज्वालामालिनिका",
+          "iast": "jvālāmālinikā",
+          "en": "Jvālāmālinī goddess",
+          "kn": "ಜ್ವಾಲಾಮಾಲಿನಿ"
+        },
+        {
+          "dev": "क्षिप्त",
+          "iast": "kṣipta",
+          "en": "Cast or constructed",
+          "kn": "ನಿರ್ಮಿಸಿದ"
+        },
+        {
+          "dev": "वह्नि",
+          "iast": "vahni",
+          "en": "Fire",
+          "kn": "ಅಗ್ನಿ"
+        },
+        {
+          "dev": "प्राकार",
+          "iast": "prākāra",
+          "en": "Fortification",
+          "kn": "ಪ್ರಾಕಾರ"
+        },
+        {
+          "dev": "मध्य",
+          "iast": "madhya",
+          "en": "Middle",
+          "kn": "ಮಧ್ಯ"
+        },
+        {
+          "dev": "गा",
+          "iast": "gā",
+          "en": "Dwelling in",
+          "kn": "ನೆಲೆಸಿರುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 72,
+      "components": [
+        {
+          "dev": "भण्ड",
+          "iast": "bhaṇḍa",
+          "en": "Bhaṇḍa",
+          "kn": "ಭಂಡ"
+        },
+        {
+          "dev": "सैन्य",
+          "iast": "sainya",
+          "en": "Army",
+          "kn": "ಸೈನ್ಯ"
+        },
+        {
+          "dev": "वध",
+          "iast": "vadha",
+          "en": "Destruction",
+          "kn": "ಸಂಹಾರ"
+        },
+        {
+          "dev": "उद्युक्त",
+          "iast": "udyukta",
+          "en": "Prepared",
+          "kn": "ಸಿದ್ಧ"
+        },
+        {
+          "dev": "शक्ति",
+          "iast": "śakti",
+          "en": "Goddess power",
+          "kn": "ಶಕ್ತಿ"
+        },
+        {
+          "dev": "विक्रम",
+          "iast": "vikrama",
+          "en": "Valor",
+          "kn": "ಪರಾಕ್ರಮ"
+        },
+        {
+          "dev": "हर्षिता",
+          "iast": "harṣitā",
+          "en": "Delighted",
+          "kn": "ಹರ್ಷಿತಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 73,
+      "components": [
+        {
+          "dev": "नित्या",
+          "iast": "nityā",
+          "en": "Nityā goddesses",
+          "kn": "ನಿತ್ಯಾದೇವತೆಗಳು"
+        },
+        {
+          "dev": "पराक्रम",
+          "iast": "parākrama",
+          "en": "Valor",
+          "kn": "ಪರಾಕ್ರಮ"
+        },
+        {
+          "dev": "आटोप",
+          "iast": "āṭopa",
+          "en": "Majestic display",
+          "kn": "ಆಡಂಬರ"
+        },
+        {
+          "dev": "निरीक्षण",
+          "iast": "nirīkṣaṇa",
+          "en": "Watching",
+          "kn": "ನೋಡುವುದು"
+        },
+        {
+          "dev": "समुत्सुका",
+          "iast": "samutsukā",
+          "en": "Eager",
+          "kn": "ಉತ್ಸುಕಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 74,
+      "components": [
+        {
+          "dev": "भण्ड",
+          "iast": "bhaṇḍa",
+          "en": "Bhaṇḍa",
+          "kn": "ಭಂಡ"
+        },
+        {
+          "dev": "पुत्र",
+          "iast": "putra",
+          "en": "Sons",
+          "kn": "ಪುತ್ರರು"
+        },
+        {
+          "dev": "वध",
+          "iast": "vadha",
+          "en": "Slaying",
+          "kn": "ಸಂಹಾರ"
+        },
+        {
+          "dev": "उद्युक्त",
+          "iast": "udyukta",
+          "en": "Ready",
+          "kn": "ಸಿದ್ಧ"
+        },
+        {
+          "dev": "बाला",
+          "iast": "bālā",
+          "en": "Bālā goddess",
+          "kn": "ಬಾಲಾ"
+        },
+        {
+          "dev": "विक्रम",
+          "iast": "vikrama",
+          "en": "Valor",
+          "kn": "ವೀರ್ಯ"
+        },
+        {
+          "dev": "नन्दिता",
+          "iast": "nanditā",
+          "en": "Delighted",
+          "kn": "ಹರ್ಷಿತಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 75,
+      "components": [
+        {
+          "dev": "मन्त्रिणी",
+          "iast": "mantriṇī",
+          "en": "Mantriṇī goddess",
+          "kn": "ಮಂತ್ರಿಣಿ"
+        },
+        {
+          "dev": "अम्बा",
+          "iast": "ambā",
+          "en": "Mother",
+          "kn": "ಅಂಬೆ"
+        },
+        {
+          "dev": "विरचित",
+          "iast": "viracita",
+          "en": "Accomplished",
+          "kn": "ನೆರವೇರಿಸಿದ"
+        },
+        {
+          "dev": "विषङ्ग",
+          "iast": "viṣaṅga",
+          "en": "Viṣaṅga demon",
+          "kn": "ವಿಷಂಗ"
+        },
+        {
+          "dev": "वध",
+          "iast": "vadha",
+          "en": "Slaying",
+          "kn": "ಸಂಹಾರ"
+        },
+        {
+          "dev": "तोषिता",
+          "iast": "toṣitā",
+          "en": "Pleased",
+          "kn": "ತೃಪ್ತಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 76,
+      "components": [
+        {
+          "dev": "विशुक्र",
+          "iast": "viśukra",
+          "en": "Viśukra demon",
+          "kn": "ವಿಶುಕ್ರ"
+        },
+        {
+          "dev": "प्राण",
+          "iast": "prāṇa",
+          "en": "Life",
+          "kn": "ಪ್ರಾಣ"
+        },
+        {
+          "dev": "हरण",
+          "iast": "haraṇa",
+          "en": "Taking away",
+          "kn": "ಹರಣ"
+        },
+        {
+          "dev": "वाराही",
+          "iast": "vārāhī",
+          "en": "Vārāhī goddess",
+          "kn": "ವಾರಾಹಿ"
+        },
+        {
+          "dev": "वीर्य",
+          "iast": "vīrya",
+          "en": "Valor",
+          "kn": "ವೀರ್ಯ"
+        },
+        {
+          "dev": "नन्दिता",
+          "iast": "nanditā",
+          "en": "Delighted",
+          "kn": "ಹರ್ಷಿತಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 77,
+      "components": [
+        {
+          "dev": "कामेश्वर",
+          "iast": "kāmeśvara",
+          "en": "Kāmeśvara",
+          "kn": "ಕಾಮೇಶ್ವರ"
+        },
+        {
+          "dev": "मुख",
+          "iast": "mukha",
+          "en": "Face",
+          "kn": "ಮುಖ"
+        },
+        {
+          "dev": "आलोक",
+          "iast": "āloka",
+          "en": "Glance",
+          "kn": "ನೋಟ"
+        },
+        {
+          "dev": "कल्पित",
+          "iast": "kalpita",
+          "en": "Manifested",
+          "kn": "ಸೃಷ್ಟಿಸಿದ"
+        },
+        {
+          "dev": "श्री",
+          "iast": "śrī",
+          "en": "Auspicious",
+          "kn": "ಶ್ರೀ"
+        },
+        {
+          "dev": "गणेश्वर",
+          "iast": "gaṇeśvara",
+          "en": "Gaṇeśa",
+          "kn": "ಗಣೇಶ್ವರ"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 78,
+      "components": [
+        {
+          "dev": "महा",
+          "iast": "mahā",
+          "en": "Great",
+          "kn": "ಮಹಾ"
+        },
+        {
+          "dev": "गणेश",
+          "iast": "gaṇeśa",
+          "en": "Gaṇeśa",
+          "kn": "ಗಣೇಶ"
+        },
+        {
+          "dev": "निर्भिन्न",
+          "iast": "nirbhinna",
+          "en": "Broken",
+          "kn": "ಭೇದಿಸಿದ"
+        },
+        {
+          "dev": "विघ्न",
+          "iast": "vighna",
+          "en": "Obstacle",
+          "kn": "ವಿಘ್ನ"
+        },
+        {
+          "dev": "यन्त्र",
+          "iast": "yantra",
+          "en": "Device",
+          "kn": "ಯಂತ್ರ"
+        },
+        {
+          "dev": "प्रहर्षिता",
+          "iast": "praharṣitā",
+          "en": "Overjoyed",
+          "kn": "ಹರ್ಷಿತಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 79,
+      "components": [
+        {
+          "dev": "भण्डासुर",
+          "iast": "bhaṇḍāsura",
+          "en": "Bhaṇḍāsura",
+          "kn": "ಭಂಡಾಸುರ"
+        },
+        {
+          "dev": "इन्द्र",
+          "iast": "indra",
+          "en": "Lord",
+          "kn": "ಅಧಿಪತಿ"
+        },
+        {
+          "dev": "निर्मुक्त",
+          "iast": "nirmukta",
+          "en": "Launched",
+          "kn": "ಬಿಟ್ಟ"
+        },
+        {
+          "dev": "शस्त्र",
+          "iast": "śastra",
+          "en": "Weapon",
+          "kn": "ಶಸ್ತ್ರ"
+        },
+        {
+          "dev": "प्रत्यस्त्र",
+          "iast": "pratyastra",
+          "en": "Counterweapon",
+          "kn": "ಪ್ರತ್ಯಸ್ತ್ರ"
+        },
+        {
+          "dev": "वर्षिणी",
+          "iast": "varṣiṇī",
+          "en": "Raining forth",
+          "kn": "ವರ್ಷಿಸುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 80,
+      "components": [
+        {
+          "dev": "कर",
+          "iast": "kara",
+          "en": "Hand",
+          "kn": "ಕೈ"
+        },
+        {
+          "dev": "अङ्गुलि",
+          "iast": "aṅguli",
+          "en": "Finger",
+          "kn": "ಬೆರಳು"
+        },
+        {
+          "dev": "नख",
+          "iast": "nakha",
+          "en": "Nail",
+          "kn": "ಉಗುರು"
+        },
+        {
+          "dev": "उत्पन्न",
+          "iast": "utpanna",
+          "en": "Generated",
+          "kn": "ಉದ್ಭವಿಸಿದ"
+        },
+        {
+          "dev": "नारायण",
+          "iast": "nārāyaṇa",
+          "en": "Viṣṇu",
+          "kn": "ನಾರಾಯಣ"
+        },
+        {
+          "dev": "दश",
+          "iast": "daśa",
+          "en": "Ten",
+          "kn": "ಹತ್ತು"
+        },
+        {
+          "dev": "आकृतिः",
+          "iast": "ākṛtiḥ",
+          "en": "Forms",
+          "kn": "ಆಕೃತಿಗಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 81,
+      "components": [
+        {
+          "dev": "महा",
+          "iast": "mahā",
+          "en": "Great",
+          "kn": "ಮಹಾ"
+        },
+        {
+          "dev": "पाशुपत",
+          "iast": "pāśupata",
+          "en": "Pāśupata weapon",
+          "kn": "ಪಾಶುಪತಾಸ್ತ್ರ"
+        },
+        {
+          "dev": "अस्त्र",
+          "iast": "astra",
+          "en": "Weapon",
+          "kn": "ಅಸ್ತ್ರ"
+        },
+        {
+          "dev": "अग्नि",
+          "iast": "agni",
+          "en": "Fire",
+          "kn": "ಅಗ್ನಿ"
+        },
+        {
+          "dev": "निर्दग्ध",
+          "iast": "nirdagdha",
+          "en": "Burnt",
+          "kn": "ಸುಟ್ಟ"
+        },
+        {
+          "dev": "असुर",
+          "iast": "asura",
+          "en": "Demons",
+          "kn": "ಅಸುರರು"
+        },
+        {
+          "dev": "सैनिका",
+          "iast": "sainikā",
+          "en": "Soldiers",
+          "kn": "ಸೈನಿಕರು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 82,
+      "components": [
+        {
+          "dev": "कामेश्वर",
+          "iast": "kāmeśvara",
+          "en": "Kāmeśvara",
+          "kn": "ಕಾಮೇಶ್ವರ"
+        },
+        {
+          "dev": "अस्त्र",
+          "iast": "astra",
+          "en": "Weapon",
+          "kn": "ಅಸ್ತ್ರ"
+        },
+        {
+          "dev": "निर्दग्ध",
+          "iast": "nirdagdha",
+          "en": "Burnt",
+          "kn": "ದಹಿಸಿದ"
+        },
+        {
+          "dev": "स",
+          "iast": "sa",
+          "en": "Together with",
+          "kn": "ಜೊತೆಗೆ"
+        },
+        {
+          "dev": "भण्डासुर",
+          "iast": "bhaṇḍāsura",
+          "en": "Bhaṇḍāsura",
+          "kn": "ಭಂಡಾಸುರ"
+        },
+        {
+          "dev": "शून्यका",
+          "iast": "śūnyakā",
+          "en": "Made empty",
+          "kn": "ಶೂನ್ಯಗೊಳಿಸಿದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 83,
+      "components": [
+        {
+          "dev": "ब्रह्म",
+          "iast": "brahma",
+          "en": "Brahmā",
+          "kn": "ಬ್ರಹ್ಮ"
+        },
+        {
+          "dev": "उपेन्द्र",
+          "iast": "upendra",
+          "en": "Viṣṇu",
+          "kn": "ಉಪೇಂದ್ರ"
+        },
+        {
+          "dev": "महेन्द्र",
+          "iast": "mahendra",
+          "en": "Indra",
+          "kn": "ಮಹೇಂದ್ರ"
+        },
+        {
+          "dev": "आदि",
+          "iast": "ādi",
+          "en": "And others",
+          "kn": "ಮೊದಲಾದ"
+        },
+        {
+          "dev": "देव",
+          "iast": "deva",
+          "en": "Deities",
+          "kn": "ದೇವತೆಗಳು"
+        },
+        {
+          "dev": "संस्तुत",
+          "iast": "saṃstuta",
+          "en": "Praised",
+          "kn": "ಸ್ತುತಿಸಲ್ಪಟ್ಟ"
+        },
+        {
+          "dev": "वैभवा",
+          "iast": "vaibhavā",
+          "en": "Greatness",
+          "kn": "ವೈಭವ"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 84,
+      "components": [
+        {
+          "dev": "हर",
+          "iast": "hara",
+          "en": "Śiva",
+          "kn": "ಹರ"
+        },
+        {
+          "dev": "नेत्र",
+          "iast": "netra",
+          "en": "Eye",
+          "kn": "ಕಣ್ಣು"
+        },
+        {
+          "dev": "अग्नि",
+          "iast": "agni",
+          "en": "Fire",
+          "kn": "ಅಗ್ನಿ"
+        },
+        {
+          "dev": "सन्दग्ध",
+          "iast": "sandagdha",
+          "en": "Burnt",
+          "kn": "ಸುಟ್ಟ"
+        },
+        {
+          "dev": "काम",
+          "iast": "kāma",
+          "en": "Kāma",
+          "kn": "ಕಾಮದೇವ"
+        },
+        {
+          "dev": "सञ्जीवन",
+          "iast": "sañjīvana",
+          "en": "Restoring life",
+          "kn": "ಪುನರ್ಜೀವನ"
+        },
+        {
+          "dev": "औषधिः",
+          "iast": "auṣadhiḥ",
+          "en": "Herb or medicine",
+          "kn": "ಔಷಧಿ"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 85,
+      "components": [
+        {
+          "dev": "श्रीमत्",
+          "iast": "śrīmat",
+          "en": "Glorious",
+          "kn": "ಶ್ರೀಮತ್"
+        },
+        {
+          "dev": "वाग्भव",
+          "iast": "vāgbhava",
+          "en": "Vāgbhava mantra",
+          "kn": "ವಾಗ್ಭವ"
+        },
+        {
+          "dev": "कूट",
+          "iast": "kūṭa",
+          "en": "Section",
+          "kn": "ಕೂಟ"
+        },
+        {
+          "dev": "एक",
+          "iast": "eka",
+          "en": "One",
+          "kn": "ಒಂದು"
+        },
+        {
+          "dev": "स्वरूप",
+          "iast": "svarūpa",
+          "en": "Form",
+          "kn": "ಸ್ವರೂಪ"
+        },
+        {
+          "dev": "मुख",
+          "iast": "mukha",
+          "en": "Face",
+          "kn": "ಮುಖ"
+        },
+        {
+          "dev": "पङ्कजा",
+          "iast": "paṅkajā",
+          "en": "Lotus",
+          "kn": "ಕಮಲ"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 86,
+      "components": [
+        {
+          "dev": "कण्ठ",
+          "iast": "kaṇṭha",
+          "en": "Throat",
+          "kn": "ಕಂಠ"
+        },
+        {
+          "dev": "अधः",
+          "iast": "adhaḥ",
+          "en": "Below",
+          "kn": "ಕೆಳಗೆ"
+        },
+        {
+          "dev": "कटि",
+          "iast": "kaṭi",
+          "en": "Waist",
+          "kn": "ಸೊಂಟ"
+        },
+        {
+          "dev": "पर्यन्त",
+          "iast": "paryanta",
+          "en": "As far as",
+          "kn": "ವರೆಗೆ"
+        },
+        {
+          "dev": "मध्य",
+          "iast": "madhya",
+          "en": "Middle",
+          "kn": "ಮಧ್ಯ"
+        },
+        {
+          "dev": "कूट",
+          "iast": "kūṭa",
+          "en": "Mantra group",
+          "kn": "ಕೂಟ"
+        },
+        {
+          "dev": "स्वरूपिणी",
+          "iast": "svarūpiṇī",
+          "en": "Embodiment",
+          "kn": "ಸ್ವರೂಪಿಣಿ"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 87,
+      "components": [
+        {
+          "dev": "शक्ति",
+          "iast": "śakti",
+          "en": "Śakti",
+          "kn": "ಶಕ್ತಿ"
+        },
+        {
+          "dev": "कूट",
+          "iast": "kūṭa",
+          "en": "Mantra section",
+          "kn": "ಕೂಟ"
+        },
+        {
+          "dev": "एकता",
+          "iast": "ekatā",
+          "en": "Oneness",
+          "kn": "ಏಕತ್ವ"
+        },
+        {
+          "dev": "आपन्न",
+          "iast": "āpanna",
+          "en": "Assumed",
+          "kn": "ಪಡೆದ"
+        },
+        {
+          "dev": "कटि",
+          "iast": "kaṭi",
+          "en": "Waist",
+          "kn": "ಸೊಂಟ"
+        },
+        {
+          "dev": "अधः",
+          "iast": "adhaḥ",
+          "en": "Below",
+          "kn": "ಕೆಳಗೆ"
+        },
+        {
+          "dev": "भाग",
+          "iast": "bhāga",
+          "en": "Part",
+          "kn": "ಭಾಗ"
+        },
+        {
+          "dev": "धारिणी",
+          "iast": "dhāriṇī",
+          "en": "Bearing",
+          "kn": "ಧರಿಸುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 88,
+      "components": [
+        {
+          "dev": "मूल",
+          "iast": "mūla",
+          "en": "Root",
+          "kn": "ಮೂಲ"
+        },
+        {
+          "dev": "मन्त्र",
+          "iast": "mantra",
+          "en": "Mantra",
+          "kn": "ಮಂತ್ರ"
+        },
+        {
+          "dev": "आत्मिका",
+          "iast": "ātmikā",
+          "en": "Embodied as",
+          "kn": "ಸ್ವರೂಪಿಣಿ"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 89,
+      "components": [
+        {
+          "dev": "मूल",
+          "iast": "mūla",
+          "en": "Root",
+          "kn": "ಮೂಲ"
+        },
+        {
+          "dev": "कूट",
+          "iast": "kūṭa",
+          "en": "Mantra group",
+          "kn": "ಕೂಟ"
+        },
+        {
+          "dev": "त्रय",
+          "iast": "traya",
+          "en": "Three",
+          "kn": "ಮೂರು"
+        },
+        {
+          "dev": "कलेवरा",
+          "iast": "kalevarā",
+          "en": "Body",
+          "kn": "ದೇಹ"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 90,
+      "components": [
+        {
+          "dev": "कुल",
+          "iast": "kula",
+          "en": "Kula tradition",
+          "kn": "ಕುಲ"
+        },
+        {
+          "dev": "अमृत",
+          "iast": "amṛta",
+          "en": "Nectar",
+          "kn": "ಅಮೃತ"
+        },
+        {
+          "dev": "एक",
+          "iast": "eka",
+          "en": "One",
+          "kn": "ಒಂದು"
+        },
+        {
+          "dev": "रसिका",
+          "iast": "rasikā",
+          "en": "Enjoying",
+          "kn": "ಆಸ್ವಾದಿಸುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 91,
+      "components": [
+        {
+          "dev": "कुल",
+          "iast": "kula",
+          "en": "Kula tradition",
+          "kn": "ಕುಲ"
+        },
+        {
+          "dev": "सङ्केत",
+          "iast": "saṅketa",
+          "en": "Esoteric conventions",
+          "kn": "ಸಂಕೇತ"
+        },
+        {
+          "dev": "पालिनी",
+          "iast": "pālinī",
+          "en": "Protector",
+          "kn": "ಪಾಲಕಿ"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 92,
+      "components": [
+        {
+          "dev": "कुल",
+          "iast": "kula",
+          "en": "Kula",
+          "kn": "ಕುಲ"
+        },
+        {
+          "dev": "अङ्गना",
+          "iast": "aṅganā",
+          "en": "Woman",
+          "kn": "ಅಂಗನೆ"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 93,
+      "components": [
+        {
+          "dev": "कुल",
+          "iast": "kula",
+          "en": "Kula",
+          "kn": "ಕುಲ"
+        },
+        {
+          "dev": "अन्तः",
+          "iast": "antaḥ",
+          "en": "Within",
+          "kn": "ಒಳಗೆ"
+        },
+        {
+          "dev": "स्था",
+          "iast": "sthā",
+          "en": "Residing",
+          "kn": "ನೆಲೆಸಿರುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 94,
+      "components": [
+        {
+          "dev": "कौलिनी",
+          "iast": "kaulinī",
+          "en": "Kaulinī",
+          "kn": "ಕೌಲಿನಿ"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 95,
+      "components": [
+        {
+          "dev": "कुल",
+          "iast": "kula",
+          "en": "Kula",
+          "kn": "ಕುಲ"
+        },
+        {
+          "dev": "योगिनी",
+          "iast": "yoginī",
+          "en": "Yoginī",
+          "kn": "ಯೋಗಿನಿ"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 96,
+      "components": [
+        {
+          "dev": "अकुला",
+          "iast": "akulā",
+          "en": "Beyond kula",
+          "kn": "ಅಕುಲಾ"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 97,
+      "components": [
+        {
+          "dev": "समय",
+          "iast": "samaya",
+          "en": "Samaya tradition",
+          "kn": "ಸಮಯ"
+        },
+        {
+          "dev": "अन्तः",
+          "iast": "antaḥ",
+          "en": "Within",
+          "kn": "ಒಳಗೆ"
+        },
+        {
+          "dev": "स्था",
+          "iast": "sthā",
+          "en": "Residing",
+          "kn": "ನೆಲೆಸಿರುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 98,
+      "components": [
+        {
+          "dev": "समय",
+          "iast": "samaya",
+          "en": "Samaya tradition",
+          "kn": "ಸಮಯ"
+        },
+        {
+          "dev": "आचार",
+          "iast": "ācāra",
+          "en": "Practice",
+          "kn": "ಆಚಾರ"
+        },
+        {
+          "dev": "तत्परा",
+          "iast": "tatparā",
+          "en": "Devoted",
+          "kn": "ತತ್ಪರಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 99,
+      "components": [
+        {
+          "dev": "मूलाधार",
+          "iast": "mūlādhāra",
+          "en": "Mūlādhāra",
+          "kn": "ಮೂಲಾಧಾರ"
+        },
+        {
+          "dev": "एक",
+          "iast": "eka",
+          "en": "One",
+          "kn": "ಒಂದು"
+        },
+        {
+          "dev": "निलया",
+          "iast": "nilayā",
+          "en": "Abode",
+          "kn": "ನಿಲಯ"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 100,
+      "components": [
+        {
+          "dev": "ब्रह्म",
+          "iast": "brahma",
+          "en": "Brahmā",
+          "kn": "ಬ್ರಹ್ಮ"
+        },
+        {
+          "dev": "ग्रन्थि",
+          "iast": "granthi",
+          "en": "Knot",
+          "kn": "ಗ್ರಂಥಿ"
+        },
+        {
+          "dev": "विभेदिनी",
+          "iast": "vibhedinī",
+          "en": "Piercing through",
+          "kn": "ಭೇದಿಸುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 101,
+      "components": [
+        {
+          "dev": "मणिपूर",
+          "iast": "maṇipūra",
+          "en": "Maṇipūra",
+          "kn": "ಮಣಿಪೂರ"
+        },
+        {
+          "dev": "अन्तः",
+          "iast": "antaḥ",
+          "en": "Within",
+          "kn": "ಒಳಗೆ"
+        },
+        {
+          "dev": "उदिता",
+          "iast": "uditā",
+          "en": "Arisen",
+          "kn": "ಉದಿತಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 102,
+      "components": [
+        {
+          "dev": "विष्णु",
+          "iast": "viṣṇu",
+          "en": "Viṣṇu",
+          "kn": "ವಿಷ್ಣು"
+        },
+        {
+          "dev": "ग्रन्थि",
+          "iast": "granthi",
+          "en": "Knot",
+          "kn": "ಗ್ರಂಥಿ"
+        },
+        {
+          "dev": "विभेदिनी",
+          "iast": "vibhedinī",
+          "en": "Piercing through",
+          "kn": "ಭೇದಿಸುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 103,
+      "components": [
+        {
+          "dev": "आज्ञा",
+          "iast": "ājñā",
+          "en": "Ājñā",
+          "kn": "ಆಜ್ಞಾ"
+        },
+        {
+          "dev": "चक्र",
+          "iast": "cakra",
+          "en": "Chakra",
+          "kn": "ಚಕ್ರ"
+        },
+        {
+          "dev": "अन्तराल",
+          "iast": "antarāla",
+          "en": "Interior",
+          "kn": "ಅಂತರಾಳ"
+        },
+        {
+          "dev": "स्था",
+          "iast": "sthā",
+          "en": "Residing",
+          "kn": "ಸ್ಥಿತಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 104,
+      "components": [
+        {
+          "dev": "रुद्र",
+          "iast": "rudra",
+          "en": "Rudra",
+          "kn": "ರುದ್ರ"
+        },
+        {
+          "dev": "ग्रन्थि",
+          "iast": "granthi",
+          "en": "Knot",
+          "kn": "ಗ್ರಂಥಿ"
+        },
+        {
+          "dev": "विभेदिनी",
+          "iast": "vibhedinī",
+          "en": "Piercing through",
+          "kn": "ಭೇದಿಸುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 105,
+      "components": [
+        {
+          "dev": "सहस्रार",
+          "iast": "sahasrāra",
+          "en": "Thousand-petaled chakra",
+          "kn": "ಸಹಸ್ರಾರ"
+        },
+        {
+          "dev": "अम्बुज",
+          "iast": "ambuja",
+          "en": "Lotus",
+          "kn": "ಕಮಲ"
+        },
+        {
+          "dev": "आरूढा",
+          "iast": "ārūḍhā",
+          "en": "Ascended",
+          "kn": "ಆರೂಢಳಾದವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 106,
+      "components": [
+        {
+          "dev": "सुधा",
+          "iast": "sudhā",
+          "en": "Nectar",
+          "kn": "ಅಮೃತ"
+        },
+        {
+          "dev": "सार",
+          "iast": "sāra",
+          "en": "Essence",
+          "kn": "ಸಾರ"
+        },
+        {
+          "dev": "अभिवर्षिणी",
+          "iast": "abhivarṣiṇī",
+          "en": "Showering",
+          "kn": "ವರ್ಷಿಸುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 107,
+      "components": [
+        {
+          "dev": "तडित्",
+          "iast": "taḍit",
+          "en": "Lightning",
+          "kn": "ಮಿಂಚು"
+        },
+        {
+          "dev": "लता",
+          "iast": "latā",
+          "en": "Creeper",
+          "kn": "ಲತೆ"
+        },
+        {
+          "dev": "सम",
+          "iast": "sama",
+          "en": "Resembling",
+          "kn": "ಹೋಲುವ"
+        },
+        {
+          "dev": "रुचिः",
+          "iast": "ruciḥ",
+          "en": "Radiance",
+          "kn": "ಕಾಂತಿ"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 108,
+      "components": [
+        {
+          "dev": "षट्",
+          "iast": "ṣaṭ",
+          "en": "Six",
+          "kn": "ಆರು"
+        },
+        {
+          "dev": "चक्र",
+          "iast": "cakra",
+          "en": "Chakras",
+          "kn": "ಚಕ್ರಗಳು"
+        },
+        {
+          "dev": "उपरि",
+          "iast": "upari",
+          "en": "Above",
+          "kn": "ಮೇಲೆ"
+        },
+        {
+          "dev": "संस्थिता",
+          "iast": "saṃsthitā",
+          "en": "Situated",
+          "kn": "ನೆಲೆಸಿರುವವಳು"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 109,
+      "components": [
+        {
+          "dev": "महा",
+          "iast": "mahā",
+          "en": "Great",
+          "kn": "ಮಹಾ"
+        },
+        {
+          "dev": "शक्तिः",
+          "iast": "śaktiḥ",
+          "en": "Power",
+          "kn": "ಶಕ್ತಿ"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 110,
+      "components": [
+        {
+          "dev": "कुण्डलिनी",
+          "iast": "kuṇḍalinī",
+          "en": "Kuṇḍalinī",
+          "kn": "ಕುಂಡಲಿನಿ"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    },
+    {
+      "number": 111,
+      "components": [
+        {
+          "dev": "बिस",
+          "iast": "bisa",
+          "en": "Lotus fiber",
+          "kn": "ಕಮಲದ ನಾರು"
+        },
+        {
+          "dev": "तन्तु",
+          "iast": "tantu",
+          "en": "Thread",
+          "kn": "ನೂಲು"
+        },
+        {
+          "dev": "तनीयसी",
+          "iast": "tanīyasī",
+          "en": "Extremely fine",
+          "kn": "ಅತಿ ಸೂಕ್ಷ್ಮ"
+        }
+      ],
+      "review_status": "manual_compound_draft"
+    }
+  ]
+}
