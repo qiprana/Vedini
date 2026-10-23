@@ -1,30 +1,51 @@
 # Vedini — Sacred Chants · Words · Meanings
 
-An ink-and-paper sacred chanting library, part of Aatmik Joy. Static HTML/CSS/JS and JSON, deployable on GitHub Pages.
+Vedini is a static study and chanting library for Lalitā Sahasranāma, designed for GitHub Pages.
 
-## Current review milestone
-- Four Dhyāna verses (draft)
-- Lalitā Sahasranāma main verses 1–10, with Devanagari and IAST based on Shlokam
-- Names 1–12: earlier draft metadata and meanings; the remaining names in verses 4–10 are **meaning_pending**, not invented.
-- English and Kannada verse sense summaries for verses 4–10 are preliminary editorial drafts.
-- Audio references are null placeholders.
+## Lalitā Sahasranāma content milestone
 
-## Sources and editorial discipline
-Text: https://shlokam.org/shloka/lalitha-sahasranamam.htm
-Cross-check: https://sanskritdocuments.org/doc_devii/lalita1000.html
-Deeper interpretation reference: https://manblunder.com/articlesview/lalitha-sahasranamam-1-2
-Traditional interpretations and exact namāvali numbering must be independently verified before approval. The Kannada script is mechanically transliterated from Devanagari and needs proof-reading.
+The main reader now contains the full **183 ślokas** and **1,000 divine names** with:
+
+- Devanagari and IAST reading text
+- preserved chanting-style hyphenation
+- word-by-word component meanings
+- individual deeper meaning for every divine name
+- overall śloka meaning
+- contextual deeper meaning for every śloka
+- English and Kannada reading modes
+- search, navigation, range practice and existing audio playback
+
+The source-review layer preserves individually source-checked explanations where available and supplies original editorial synthesis for the remaining coverage. Editorial synthesis is informed by the repository's literal-name mapping and traditional Śrīvidyā themes; it is not presented as verbatim commentary or independent scholarly certification.
+
+## Remaining project task
+
+Audio generation/review/upload for ślokas **41–183**.
+
+Use:
+
+```bash
+conda activate vagdhenu
+bash scripts/generate_lalita_41_183.sh
+```
+
+Generated files belong in:
+
+```text
+audio/lalita/verses/sloka-041.mp3
+...
+audio/lalita/verses/sloka-183.mp3
+```
 
 ## Preview locally
-`python3 -m http.server 8000` in this folder, then open http://localhost:8000. Python is only a preview server; GitHub Pages runs the static files without Python.
 
-## GitHub Pages
-Create a public repo called `Vedini` under `qiprana`; upload the directory *contents* to root. In Settings → Pages choose Deploy from branch, main, /(root). Site URL: https://qiprana.github.io/Vedini/
+```bash
+python3 -m http.server 8000
+```
 
-## Editing
-Keep text under `data/lalita/verses/`, and update translations and name records after source review. Do not change current UI functionality to add new verses.
+Then open `http://localhost:8000/lalita/`.
 
-## Navigation
-- `index.html` — Vedini homepage
-- `lalita/index.html` — Lalitā Sahasranāma reader
-- `data/lalita/verses` — first ten JSON verse drafts
+## Deployment
+
+GitHub Pages publishes from `main` at:
+
+`https://qiprana.github.io/Vedini/lalita/`
