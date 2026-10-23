@@ -282,13 +282,14 @@ function loadInitialLocation(){
 function loadAudio(){
  document.querySelectorAll("[data-audio-path]").forEach(async placeholder=>{
   const path=placeholder.dataset.audioPath;
-  const numberMatch=path.match(/\/verses\/sloka-(\d{3})\.mp3$/);
+  const isDhyana=path.includes("/audio/lalita/dhyana/");
+  const numberMatch=path.match(/\/verses\/VD\/sloka-(\d{3})\.mp3$/);
   const verseNumber=numberMatch?Number(numberMatch[1]):null;
-  const originalConfirmed=verseNumber!==null&&verseNumber>=1&&verseNumber<=15;
+  const vdConfirmed=verseNumber!==null&&verseNumber>=1&&verseNumber<=40;
   try{
-   // The published MP3s for verses 1–15 are already verified.
-   // Do not hide these players if a browser blocks or caches HEAD requests.
-   if(!originalConfirmed){
+   // VD recordings for ślokas 1–40 are committed and verified in GitHub.
+   // Render these players directly even if a browser blocks or caches HEAD.
+   if(!vdConfirmed){
     const response=await fetch(path,{method:"HEAD"});
     if(!response.ok)return;
    }
