@@ -1,5 +1,5 @@
 {
-  "version": "20261023-source-review-3",
+  "version": "20261023-source-review-4",
   "sources": {
     "mb19": {
       "url": "https://manblunder.com/articlesview/lalitha-sahasranamam-19-25",
@@ -36,6 +36,38 @@
     "mb59": {
       "url": "https://manblunder.com/articlesview/lalitha-sahasranamam-59-63",
       "label": "Manblunder · names 59–63"
+    },
+    "mb64": {
+      "url": "https://manblunder.com/articlesview/lalitha-sahasranamam-64-65",
+      "label": "Manblunder · names 64–65"
+    },
+    "mb66": {
+      "url": "https://manblunder.com/articlesview/lalitha-sahasranamam-66-67",
+      "label": "Manblunder · names 66–67"
+    },
+    "mb68": {
+      "url": "https://manblunder.com/articlesview/lalitha-sahasranamam-68-69",
+      "label": "Manblunder · names 68–69"
+    },
+    "mb70": {
+      "url": "https://manblunder.com/articlesview/lalitha-sahasranamam-70",
+      "label": "Manblunder · name 70"
+    },
+    "mb71": {
+      "url": "https://manblunder.com/articlesview/lalitha-sahasranamam-71",
+      "label": "Manblunder · name 71"
+    },
+    "mb72": {
+      "url": "https://manblunder.com/articlesview/lalitha-sahasranamam-72-76",
+      "label": "Manblunder · names 72–76"
+    },
+    "mb77": {
+      "url": "https://manblunder.com/articlesview/lalitha-sahasranamam-77-80",
+      "label": "Manblunder · names 77–80"
+    },
+    "mb81": {
+      "url": "https://manblunder.com/articlesview/lalitha-sahasranamam-81-82",
+      "label": "Manblunder · names 81–82"
     }
   },
   "names": [
@@ -441,6 +473,177 @@
       "kn": "ಅವಳು ಬಯಸಿದುದನ್ನು ನೀಡುವವಳು. ಆದರೆ ಶ್ರೀವಿದ್ಯಾ ವ್ಯಾಖ್ಯಾನದಲ್ಲಿ ಇದರ ಅರ್ಥ ಹೆಚ್ಚು ಆಳವಾದುದು: ಶಿವನತ್ತ ಕರೆದೊಯ್ಯುವ ಮಾರ್ಗವೇ ಶಕ್ತಿ. ಲಲಿತೆ ಕೇವಲ ಲೋಕಿಕ ಆಸೆಗಳನ್ನು ಪೂರೈಸುವುದಲ್ಲ; ಶುದ್ಧ ಚೈತನ್ಯವನ್ನು ಅರಿಯಲು ಅಡ್ಡಿಯಾಗಿರುವ ಆವರಣವನ್ನು ತೆಗೆದು ಭಕ್ತನನ್ನು ಕಾಮೇಶ್ವರನತ್ತ ಕರೆದೊಯ್ಯುತ್ತಾಳೆ. ಕಾಮದಾಯಿನಿಯ ಪರಮ ವರವು ಸಂಪಾದನೆ ಅಲ್ಲ, ದೈವಸ್ವರೂಪದ ಪ್ರಾಪ್ತಿ.",
       "source_ids": [
         "mb59"
+      ],
+      "status": "source_checked_expanded_summary"
+    },
+    {
+      "number": 64,
+      "en": "Her own majesty is praised by assemblies of devas and ṛṣis. The significance is not that the Mother requires praise to establish Her greatness; rather, those who represent cosmic powers and realised wisdom recognise the source from which their own capacities arise. Their praise places Lalitā above the hierarchy of the gods while keeping Her intimately present to the sages who know truth directly.",
+      "kn": "ಅವಳ ಸ್ವವೈಭವವನ್ನು ದೇವತೆಗಳೂ ಋಷಿಗಳೂ ಸಮೂಹವಾಗಿ ಸ್ತುತಿಸುತ್ತಾರೆ. ತಾಯಿಯ ಮಹಿಮೆಗೆ ಸ್ತುತಿಯ ಅವಶ್ಯಕತೆ ಇದೆ ಎಂಬುದಲ್ಲ ಇದರ ಅರ್ಥ; ವಿಶ್ವಶಕ್ತಿಗಳನ್ನು ಪ್ರತಿನಿಧಿಸುವ ದೇವತೆಗಳೂ, ಸತ್ಯವನ್ನು ಅನುಭವಿಸಿದ ಋಷಿಗಳೂ ತಮ್ಮ ಶಕ್ತಿಯ ಮೂಲವನ್ನು ಅವಳಲ್ಲೇ ಗುರುತಿಸುತ್ತಾರೆ. ಹೀಗಾಗಿ ಲಲಿತೆ ದೇವತೆಗಳಿಗಿಂತ ಮೇಲಿರುವ ಪರಶಕ್ತಿಯಾಗಿಯೂ, ಜ್ಞಾನಿಗಳಿಗೆ ಆತ್ಮೀಯವಾಗಿ ಅನುಭವವಾಗುವ ತಾಯಿಯಾಗಿಯೂ ಕಾಣಿಸುತ್ತಾಳೆ.",
+      "source_ids": [
+        "mb64"
+      ],
+      "status": "source_checked_expanded_summary"
+    },
+    {
+      "number": 65,
+      "en": "She is accompanied by the armies of Śaktis prepared to destroy Bhaṇḍāsura. In the narrative, Bhaṇḍa is not defeated by isolated force: the Mother’s many powers arise in ordered cooperation around Her. Spiritually this can be understood as the Divine mobilising every power needed to overcome hardened ignorance and obstruction. Lalitā remains the centre; the many Śaktis are expressions of Her one will.",
+      "kn": "ಭಂಡಾಸುರನ ಸಂಹಾರಕ್ಕೆ ಸಿದ್ಧವಾದ ಶಕ್ತಿಸೇನೆಯಿಂದ ಅವಳು ಸುತ್ತುವರಿದಿದ್ದಾಳೆ. ಕಥೆಯಲ್ಲಿ ಭಂಡನು ಒಂದೇ ಬಲದಿಂದ ಸೋಲುವುದಿಲ್ಲ; ತಾಯಿಯ ಅನೇಕ ಶಕ್ತಿಗಳು ಕ್ರಮಬದ್ಧವಾಗಿ ಅವಳ ಸುತ್ತ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತವೆ. ಆಧ್ಯಾತ್ಮಿಕವಾಗಿ, ಗಾಢ ಅಜ್ಞಾನ ಮತ್ತು ಅಡ್ಡಿಗಳನ್ನು ನಿವಾರಿಸಲು ಅಗತ್ಯವಿರುವ ಎಲ್ಲಾ ಶಕ್ತಿಗಳೂ ದೈವದಿಂದಲೇ ಉದ್ಭವಿಸುತ್ತವೆ ಎಂದು ಗ್ರಹಿಸಬಹುದು. ಕೇಂದ್ರದಲ್ಲಿ ಲಲಿತೆಯೇ; ಅನೇಕ ಶಕ್ತಿಗಳು ಅವಳ ಒಂದೇ ಸಂಕಲ್ಪದ ರೂಪಗಳು.",
+      "source_ids": [
+        "mb64"
+      ],
+      "status": "source_checked_expanded_summary"
+    },
+    {
+      "number": 66,
+      "en": "Sampatkarī leads the elephant forces serving the Mother. The elephant traditionally conveys strength, weight and royal authority; here that strength is disciplined and placed in divine service. The name shows that power becomes auspicious when it is governed by wisdom and aligned with the Mother’s purpose rather than driven by pride.",
+      "kn": "ಸಂಪತ್ಕರಿ ತಾಯಿಗೆ ಸೇವೆ ಮಾಡುವ ಗಜಸೇನೆಯ ನಾಯಕಿ. ಆನೆ ಬಲ, ಗಂಭೀರತೆ ಮತ್ತು ರಾಜಾಧಿಕಾರದ ಸಂಕೇತ; ಇಲ್ಲಿ ಆ ಬಲವು ಶಿಸ್ತುಗೊಂಡು ದೈವಕಾರ್ಯಕ್ಕೆ ಸಮರ್ಪಿತವಾಗಿದೆ. ಜ್ಞಾನದಿಂದ ನಿಯಂತ್ರಿತವಾಗಿ ತಾಯಿಯ ಉದ್ದೇಶಕ್ಕೆ ಹೊಂದಿದಾಗ ಮಾತ್ರ ಶಕ್ತಿ ಮಂಗಳಕರವಾಗುತ್ತದೆ ಎಂಬುದನ್ನು ಈ ನಾಮ ಸೂಚಿಸುತ್ತದೆ.",
+      "source_ids": [
+        "mb66"
+      ],
+      "status": "source_checked_expanded_summary"
+    },
+    {
+      "number": 67,
+      "en": "Aśvārūḍhā commands vast hosts of horses. Horses suggest speed, vitality and directed momentum. In Lalitā’s army these energies are not restless; they are brought under intelligent command. The image teaches that Śakti includes dynamic force, but true divine power moves with direction and purpose rather than uncontrolled impulse.",
+      "kn": "ಅಶ್ವಾರೂಢಾ ಅಪಾರ ಕುದುರೆಸೇನೆಯನ್ನು ನಡೆಸುತ್ತಾಳೆ. ಕುದುರೆಗಳು ವೇಗ, ಜೀವಶಕ್ತಿ ಮತ್ತು ಚಲನೆಯ ಸಂಕೇತ. ಲಲಿತೆಯ ಸೇನೆಯಲ್ಲಿ ಈ ಶಕ್ತಿಗಳು ಚಂಚಲವಲ್ಲ; ಜ್ಞಾನಪೂರ್ಣ ನಿಯಂತ್ರಣದೊಳಿವೆ. ಶಕ್ತಿ ಚಲನಶೀಲವಾದರೂ, ದೈವಿಕ ಬಲವು ಅಸಂಯಮಿತ ವೇಗವಲ್ಲ—ಸ್ಪಷ್ಟ ದಿಕ್ಕು ಮತ್ತು ಉದ್ದೇಶ ಹೊಂದಿದ ಚಲನೆ ಎಂಬುದನ್ನು ಈ ಚಿತ್ರ ತಿಳಿಸುತ್ತದೆ.",
+      "source_ids": [
+        "mb66"
+      ],
+      "status": "source_checked_expanded_summary"
+    },
+    {
+      "number": 68,
+      "en": "Lalitā herself rides the Cakrarāja chariot, the royal chariot identified with Śrīcakra, equipped with every weapon. This is a powerful Śrīvidyā image: the sacred diagram is not merely something worshipped externally; it is Her vehicle, the ordered field through which Her sovereignty acts. Every weapon represents a precise divine capacity used to restore dharma and dissolve obstruction.",
+      "kn": "ಲಲಿತೆ ಸ್ವತಃ ಚಕ್ರರಾಜರಥದಲ್ಲಿ—ಶ್ರೀಚಕ್ರದೊಂದಿಗೆ ಗುರುತಿಸಲ್ಪಡುವ ರಾಜರಥದಲ್ಲಿ—ಸರ್ವಾಯುಧಸಜ್ಜಳಾಗಿ ವಿರಾಜಿಸುತ್ತಾಳೆ. ಇದು ಶ್ರೀವಿದ್ಯೆಯ ಮಹತ್ವದ ಚಿತ್ರ: ಶ್ರೀಚಕ್ರವು ಹೊರಗೆ ಪೂಜಿಸುವ ಯಂತ್ರ ಮಾತ್ರವಲ್ಲ; ಅವಳ ಅಧಿಪತ್ಯ ಕಾರ್ಯನಿರ್ವಹಿಸುವ ಕ್ರಮಬದ್ಧ ಕ್ಷೇತ್ರವೇ ಅವಳ ವಾಹನ. ಪ್ರತಿಯೊಂದು ಆಯುಧವೂ ಧರ್ಮವನ್ನು ಪುನಃಸ್ಥಾಪಿಸಿ ಅಡ್ಡಿಗಳನ್ನು ಕರಗಿಸುವ ನಿರ್ದಿಷ್ಟ ದೈವಶಕ್ತಿಯನ್ನು ಸೂಚಿಸುತ್ತದೆ.",
+      "source_ids": [
+        "mb68"
+      ],
+      "status": "source_checked_expanded_summary"
+    },
+    {
+      "number": 69,
+      "en": "Mantriṇī, the Goddess of counsel and sacred speech, accompanies Lalitā on the Geyacakra chariot. Her presence shows that the Mother’s sovereignty is not brute force; it includes intelligence, mantra, language and strategy. In Śrīvidyā, Mantriṇī—also known as Śyāmalā—is one of Lalitā’s principal powers, expressing wisdom that gives direction to action.",
+      "kn": "ಮಂತ್ರಿಣಿ—ಮಂತ್ರ, ವಾಣಿ ಮತ್ತು ದೈವಬುದ್ಧಿಯ ದೇವಿ—ಗೇಯಚಕ್ರರಥದಲ್ಲಿ ಲಲಿತೆಯನ್ನು ಸೇವಿಸುತ್ತಾಳೆ. ತಾಯಿಯ ಅಧಿಪತ್ಯವು ಕೇವಲ ಬಲಪ್ರಯೋಗವಲ್ಲ; ಅದರಲ್ಲಿ ಜ್ಞಾನ, ಮಂತ್ರ, ವಾಕ್ಷಕ್ತಿ ಮತ್ತು ಯುಕ್ತಿಯೂ ಸೇರಿವೆ. ಶ್ರೀವಿದ್ಯೆಯಲ್ಲಿ ಶ್ಯಾಮಲೆಯೆಂದೂ ಪ್ರಸಿದ್ಧಳಾದ ಮಂತ್ರಿಣಿ ಲಲಿತೆಯ ಪ್ರಮುಖ ಶಕ್ತಿಗಳಲ್ಲೊಬ್ಬಳು; ಕ್ರಿಯೆಗೆ ದಿಕ್ಕು ನೀಡುವ ಜ್ಞಾನಶಕ್ತಿಯನ್ನು ಅವಳು ವ್ಯಕ್ತಪಡಿಸುತ್ತಾಳೆ.",
+      "source_ids": [
+        "mb68"
+      ],
+      "status": "source_checked_expanded_summary"
+    },
+    {
+      "number": 70,
+      "en": "Daṇḍanāthā, identified with Vārāhī, proceeds before the Mother on the Kiricakra chariot. She represents command, discipline and the power to enforce divine order. Lalitā’s compassion is therefore not passive softness; when disorder causes harm, Her power can become firm, protective and decisive. Vārāhī is that aspect of Śakti which protects the sacred order by confronting what violates it.",
+      "kn": "ದಂಡನಾಥಾ, ವಾರಾಹಿಯ ರೂಪದಲ್ಲಿ, ಕಿರಿಚಕ್ರರಥದಲ್ಲಿ ತಾಯಿಯ ಮುಂದಾಳತ್ವ ವಹಿಸುತ್ತಾಳೆ. ಅವಳು ನಿಯಮ, ಶಿಸ್ತು ಮತ್ತು ದೈವಕ್ರಮವನ್ನು ಸ್ಥಾಪಿಸುವ ಶಕ್ತಿಯ ಪ್ರತಿನಿಧಿ. ಲಲಿತೆಯ ಕರುಣೆ ನಿಷ್ಕ್ರಿಯ ಮೃದುತೆ ಅಲ್ಲ; ಅಕ್ರಮದಿಂದ ಹಾನಿ ಉಂಟಾದಾಗ ಅವಳ ಶಕ್ತಿ ದೃಢ, ರಕ್ಷಕ ಮತ್ತು ನಿರ್ಣಾಯಕವಾಗುತ್ತದೆ. ಪವಿತ್ರ ಕ್ರಮವನ್ನು ಭಂಗಪಡಿಸುವುದನ್ನು ಎದುರಿಸಿ ರಕ್ಷಿಸುವ ಶಕ್ತಿಯೇ ವಾರಾಹಿ.",
+      "source_ids": [
+        "mb70"
+      ],
+      "status": "source_checked_expanded_summary"
+    },
+    {
+      "number": 71,
+      "en": "Jvālāmālinī creates a fortress of fire around the Mother’s army. Fire here is both protection and purification: it marks a sacred boundary that hostile forces cannot cross. The image suggests that spiritual life also requires containment. What is sacred must sometimes be guarded, not from the world in fear, but so that clarity and practice are not continually invaded by destructive tendencies.",
+      "kn": "ಜ್ವಾಲಾಮಾಲಿನಿ ತಾಯಿಯ ಸೇನೆಯ ಸುತ್ತ ಅಗ್ನಿಪ್ರಾಕಾರವನ್ನು ನಿರ್ಮಿಸುತ್ತಾಳೆ. ಇಲ್ಲಿ ಅಗ್ನಿ ರಕ್ಷಣೆಯೂ ಶುದ್ಧೀಕರಣವೂ ಆಗಿದೆ; ಶತ್ರುಶಕ್ತಿಗಳು ದಾಟಲಾರದ ಪವಿತ್ರ ಮಿತಿಯನ್ನು ಅದು ರೂಪಿಸುತ್ತದೆ. ಆಧ್ಯಾತ್ಮಿಕ ಜೀವನಕ್ಕೂ ರಕ್ಷಿತ ಆವರಣ ಅಗತ್ಯವೆಂಬ ಅರ್ಥ ಇಲ್ಲಿ ಕಾಣಬಹುದು. ಭಯದಿಂದ ಜಗತ್ತನ್ನು ತಳ್ಳುವುದಲ್ಲ; ಸ್ಪಷ್ಟತೆ ಮತ್ತು ಸಾಧನೆಯನ್ನು ವಿನಾಶಕಾರಿ ಪ್ರವೃತ್ತಿಗಳು ನಿರಂತರವಾಗಿ ಕದಡದಂತೆ ಪವಿತ್ರವಾದುದನ್ನು ಕಾಯುವುದು.",
+      "source_ids": [
+        "mb71"
+      ],
+      "status": "source_checked_expanded_summary"
+    },
+    {
+      "number": 72,
+      "en": "She rejoices in the valour of the Śaktis who rise to destroy Bhaṇḍa’s army. The Mother does not eclipse the powers that serve Her; She delights in their strength. This gives the battle narrative an important relational quality: divine sovereignty empowers many forms of Śakti and allows each to fulfil its particular function within the whole.",
+      "kn": "ಭಂಡನ ಸೈನ್ಯವನ್ನು ಸಂಹರಿಸಲು ಉದಯಿಸಿದ ಶಕ್ತಿಗಳ ಪರಾಕ್ರಮದಲ್ಲಿ ತಾಯಿ ಹರ್ಷಿಸುತ್ತಾಳೆ. ಅವಳನ್ನು ಸೇವಿಸುವ ಶಕ್ತಿಗಳನ್ನು ಅವಳು ಮರೆಮಾಡುವುದಿಲ್ಲ; ಅವರ ಬಲದಲ್ಲೇ ಆನಂದಿಸುತ್ತದೆ. ಹೀಗಾಗಿ ದೈವಾಧಿಪತ್ಯವು ಎಲ್ಲ ಶಕ್ತಿಗಳನ್ನು ತನ್ನೊಳಗೆ ನುಂಗುವುದಲ್ಲ, ಪ್ರತಿಯೊಂದು ಶಕ್ತಿಗೂ ಸಮಗ್ರ ದೈವಕಾರ್ಯದಲ್ಲಿ ತನ್ನದೇ ಪಾತ್ರವನ್ನು ಪೂರ್ಣಗೊಳಿಸಲು ಅವಕಾಶ ನೀಡುವುದೆಂಬ ಅರ್ಥ ಬರುತ್ತದೆ.",
+      "source_ids": [
+        "mb72"
+      ],
+      "status": "source_checked_expanded_summary"
+    },
+    {
+      "number": 73,
+      "en": "She watches with eager delight the magnificent courage of the Nityā goddesses. The Nityās are not ordinary attendants; they are eternal powers closely associated with the lunar phases and the inner worship of Śrīvidyā. Their participation shows that Lalitā’s victory is enacted through timeless cosmic powers, not merely through a mythic battlefield event.",
+      "kn": "ನಿತ್ಯಾದೇವತೆಗಳ ಮಹಾಪರಾಕ್ರಮವನ್ನು ತಾಯಿ ಉತ್ಸುಕತೆಯಿಂದ ನೋಡುವಳು. ನಿತ್ಯಾಗಳು ಸಾಮಾನ್ಯ ಸಹಾಯಕಿಯರಲ್ಲ; ಚಂದ್ರಕಲಗಳು ಮತ್ತು ಶ್ರೀವಿದ್ಯೆಯ ಅಂತರಂಗಾರಾಧನೆಯೊಂದಿಗೆ ಸಂಬಂಧಿಸಿದ ನಿತ್ಯಶಕ್ತಿಗಳು. ಅವರ ಯುದ್ಧಪಾತ್ರವು ಲಲಿತೆಯ ಜಯವು ಕೇವಲ ಪೌರಾಣಿಕ ಸಮರಘಟನೆ ಅಲ್ಲ, ಕಾಲಾತೀತ ದೈವಶಕ್ತಿಗಳ ಮೂಲಕ ನಡೆಯುವ ವಿಶ್ವಮಟ್ಟದ ಕ್ರಿಯೆ ಎಂದು ಸೂಚಿಸುತ್ತದೆ.",
+      "source_ids": [
+        "mb72"
+      ],
+      "status": "source_checked_expanded_summary"
+    },
+    {
+      "number": 74,
+      "en": "She is delighted by Bālā’s courage in destroying Bhaṇḍa’s sons. Bālā is the youthful form of the Goddess, yet Her youth does not imply incompleteness. The episode shows that the Divine Mother’s power is whole even when appearing in a childlike form. In Śrīvidyā, Bālā carries innocence and immense spiritual potency together.",
+      "kn": "ಭಂಡನ ಪುತ್ರರನ್ನು ಸಂಹರಿಸಿದ ಬಾಲಾದೇವಿಯ ಪರಾಕ್ರಮದಲ್ಲಿ ಲಲಿತೆ ಆನಂದಿಸುತ್ತಾಳೆ. ಬಾಲಾ ದೇವಿಯ ಕಿರಿಯ ರೂಪವಾದರೂ, ಅವಳ ಬಾಲ್ಯ ಅಪೂರ್ಣತೆಯ ಸಂಕೇತವಲ್ಲ. ಬಾಲರೂಪದಲ್ಲಿಯೂ ದೇವಿಶಕ್ತಿ ಸಂಪೂರ್ಣವಾಗಿರುತ್ತದೆ ಎಂಬುದನ್ನು ಈ ಘಟನೆಯು ತೋರಿಸುತ್ತದೆ. ಶ್ರೀವಿದ್ಯೆಯಲ್ಲಿ ಬಾಲಾ ನಿರ್ದೋಷಿತ್ವ ಮತ್ತು ಅಪಾರ ಆಧ್ಯಾತ್ಮಿಕ ಶಕ್ತಿಯನ್ನು ಒಂದಾಗಿ ಹೊತ್ತಿರುತ್ತಾಳೆ.",
+      "source_ids": [
+        "mb72"
+      ],
+      "status": "source_checked_expanded_summary"
+    },
+    {
+      "number": 75,
+      "en": "She is pleased when Mantriṇī destroys Viṣaṅga. The episode highlights wisdom as a conquering force. Mantriṇī’s domain is mantra, counsel and refined intelligence; her victory suggests that some forms of obstruction are not overcome by raw force but by clarity, speech and discriminating knowledge guided by the Mother.",
+      "kn": "ವಿಷಂಗನನ್ನು ಮಂತ್ರಿಣಿ ಸಂಹರಿಸಿದಾಗ ತಾಯಿ ಸಂತೋಷಗೊಳ್ಳುತ್ತಾಳೆ. ಈ ಘಟನೆಯಲ್ಲಿ ಜ್ಞಾನವೇ ಜಯಶಕ್ತಿಯಾಗಿ ಕಾಣುತ್ತದೆ. ಮಂತ್ರಿಣಿಯ ಕ್ಷೇತ್ರ ಮಂತ್ರ, ವಾಕ್ಷಕ್ತಿ, ಸಲಹೆ ಮತ್ತು ಸೂಕ್ಷ್ಮ ಬುದ್ಧಿ. ಕೆಲವು ಅಡ್ಡಿಗಳನ್ನು ಕೇವಲ ಬಲದಿಂದಲ್ಲ, ಸ್ಪಷ್ಟತೆ, ಶುದ್ಧ ವಾಣಿ ಮತ್ತು ವಿವೇಕಜ್ಞಾನದಿಂದ ಗೆಲ್ಲಬೇಕು ಎಂಬುದನ್ನು ಅವಳ ವಿಜಯ ಸೂಚಿಸುತ್ತದೆ.",
+      "source_ids": [
+        "mb72"
+      ],
+      "status": "source_checked_expanded_summary"
+    },
+    {
+      "number": 76,
+      "en": "She rejoices in Vārāhī’s power when Viśukra is destroyed. Vārāhī is the force of disciplined action and protection; her victory complements Mantriṇī’s wisdom. Together the two show a recurring Śrīvidyā principle: right understanding and decisive action are both needed. Lalitā contains and coordinates both.",
+      "kn": "ವಿಶುಕ್ರನನ್ನು ವಾರಾಹಿ ಸಂಹರಿಸಿದಾಗ ತಾಯಿ ಅವಳ ಶಕ್ತಿಯಲ್ಲಿ ಹರ್ಷಿಸುತ್ತಾಳೆ. ವಾರಾಹಿ ಶಿಸ್ತುಬದ್ಧ ಕ್ರಿಯೆ ಮತ್ತು ರಕ್ಷಣೆಯ ಶಕ್ತಿ; ಅವಳ ವಿಜಯ ಮಂತ್ರಿಣಿಯ ಜ್ಞಾನಶಕ್ತಿಗೆ ಪೂರಕ. ಸರಿಯಾದ ಅರಿವು ಮತ್ತು ನಿರ್ಣಾಯಕ ಕ್ರಿಯೆ ಎರಡೂ ಅಗತ್ಯವೆಂಬ ಶ್ರೀವಿದ್ಯೆಯ ತತ್ತ್ವ ಇಲ್ಲಿ ವ್ಯಕ್ತವಾಗುತ್ತದೆ. ಈ ಎರಡನ್ನೂ ಲಲಿತೆಯೇ ಒಳಗೊಂಡು ಸಮನ್ವಯಗೊಳಿಸುತ್ತಾಳೆ.",
+      "source_ids": [
+        "mb72"
+      ],
+      "status": "source_checked_expanded_summary"
+    },
+    {
+      "number": 77,
+      "en": "From the mutual glance of Kāmeśvara and Lalitā, Gaṇeśa is manifested. This is not ordinary biological imagery but a theological one: when consciousness and Śakti meet in perfect unity, the power that removes obstruction arises spontaneously. Gaṇeśa is therefore born from divine harmony itself and immediately serves the Mother’s purpose.",
+      "kn": "ಕಾಮೇಶ್ವರ ಮತ್ತು ಲಲಿತೆಯ ಪರಸ್ಪರ ದೃಷ್ಟಿಯಿಂದ ಗಣೇಶನು ಪ್ರಕಟವಾಗುತ್ತಾನೆ. ಇದು ಸಾಮಾನ್ಯ ಜನನದ ಚಿತ್ರವಲ್ಲ; ಚೈತನ್ಯ ಮತ್ತು ಶಕ್ತಿ ಸಂಪೂರ್ಣ ಐಕ್ಯದಲ್ಲಿ ಭೇಟಿಯಾದಾಗ ವಿಘ್ನಗಳನ್ನು ನಿವಾರಿಸುವ ಶಕ್ತಿ ಸಹಜವಾಗಿ ಉದ್ಭವಿಸುತ್ತದೆ ಎಂಬ ತತ್ತ್ವರೂಪಕ. ಹೀಗಾಗಿ ಗಣೇಶನು ದೈವಸಮರಸ್ಯದಿಂದಲೇ ಹೊರಹೊಮ್ಮಿ ತಾಯಿಯ ಕಾರ್ಯಕ್ಕೆ ಸೇವಕನಾಗುತ್ತಾನೆ.",
+      "source_ids": [
+        "mb77"
+      ],
+      "status": "source_checked_expanded_summary"
+    },
+    {
+      "number": 78,
+      "en": "She is overjoyed when Mahāgaṇeśa breaks the great obstacle-machine placed in the path of Her forces. The image makes Gaṇeśa’s traditional role concrete: obstacles can be deliberately constructed by ignorance, fear or hostile intention, yet divine intelligence can dismantle the mechanism itself rather than merely struggle against its symptoms.",
+      "kn": "ಮಹಾಗಣೇಶನು ತಾಯಿಯ ಸೇನೆಗೆ ಅಡ್ಡಿಯಾಗಿದ್ದ ಮಹಾವಿಘ್ನಯಂತ್ರವನ್ನು ಭೇದಿಸಿದಾಗ ಲಲಿತೆ ಪರಮಹರ್ಷಗೊಳ್ಳುತ್ತಾಳೆ. ಗಣೇಶನ ವಿಘ್ನಹರತ್ವ ಇಲ್ಲಿ ಸ್ಪಷ್ಟವಾಗುತ್ತದೆ: ಅಜ್ಞಾನ, ಭಯ ಅಥವಾ ವಿರೋಧಶಕ್ತಿಗಳು ಅಡ್ಡಿಗಳನ್ನು ಕಟ್ಟಿಬಿಡಬಹುದು; ದೈವಬುದ್ಧಿ ಅವುಗಳ ಲಕ್ಷಣಗಳೊಂದಿಗೆ ಹೋರಾಡುವುದಷ್ಟೇ ಅಲ್ಲ, ಅಡ್ಡಿಯ ಮೂಲಯಂತ್ರಣೆಯನ್ನೇ ಒಡೆಯಬಲ್ಲದು.",
+      "source_ids": [
+        "mb77"
+      ],
+      "status": "source_checked_expanded_summary"
+    },
+    {
+      "number": 79,
+      "en": "When Bhaṇḍāsura releases weapons, She showers forth the exact counter-weapons. Her response is proportionate and intelligent, not indiscriminate. Divine protection here is shown as precise: each destructive force is met by the power appropriate to neutralise it. This is Śakti as perfect responsiveness rather than uncontrolled aggression.",
+      "kn": "ಭಂಡಾಸುರನು ಶಸ್ತ್ರಗಳನ್ನು ಪ್ರಯೋಗಿಸಿದಾಗ ಅವಳು ತಕ್ಕ ಪ್ರತ್ಯಸ್ತ್ರಗಳನ್ನು ಸುರಿಸುತ್ತಾಳೆ. ಅವಳ ಪ್ರತಿಕ್ರಿಯೆ ಅಂಧಬಲವಲ್ಲ; ನಿಖರ ಮತ್ತು ಸಮಚಿತ್ತ. ಪ್ರತಿಯೊಂದು ವಿನಾಶಕಾರಿ ಶಕ್ತಿಗೂ ಅದನ್ನು ನಿಷ್ಪ್ರಭಗೊಳಿಸುವ ಸೂಕ್ತ ಶಕ್ತಿ ಎದುರಾಗುತ್ತದೆ. ಹೀಗಾಗಿ ಶಕ್ತಿ ಇಲ್ಲಿ ನಿಯಂತ್ರಣವಿಲ್ಲದ ಆಕ್ರಮಣವಲ್ಲ, ಪರಿಪೂರ್ಣ ಪ್ರತಿಸ್ಪಂದನಶೀಲ ದೈವಬುದ್ಧಿ.",
+      "source_ids": [
+        "mb77"
+      ],
+      "status": "source_checked_expanded_summary"
+    },
+    {
+      "number": 80,
+      "en": "From Her fingernails arise the ten forms of Nārāyaṇa. The astonishing image places even the celebrated avatāras within the limitless creative power of the Mother. Without diminishing Viṣṇu, the hymn expresses a Śākta vision: the powers that preserve and restore cosmic order are manifestations arising from Her own being.",
+      "kn": "ಅವಳ ಬೆರಳಿನ ನಖಗಳಿಂದ ನಾರಾಯಣನ ಹತ್ತು ರೂಪಗಳು ಉದ್ಭವಿಸುತ್ತವೆ. ಪ್ರಸಿದ್ಧ ಅವತಾರಗಳನ್ನೇ ತಾಯಿಯ ಅಪಾರ ಸೃಜನಶಕ್ತಿಯೊಳಗೆ ಸ್ಥಾಪಿಸುವ ಆಶ್ಚರ್ಯಕರ ಚಿತ್ರ ಇದು. ವಿಷ್ಣುವಿನ ಮಹಿಮೆಯನ್ನು ಕಡಿಮೆ ಮಾಡುವುದಲ್ಲ; ವಿಶ್ವಕ್ರಮವನ್ನು ರಕ್ಷಿಸಿ ಪುನಃಸ್ಥಾಪಿಸುವ ಅವತಾರಶಕ್ತಿಗಳೂ ದೇವಿಯ ಸ್ವಸ್ವರೂಪದಿಂದಲೇ ಪ್ರಕಟವಾಗುತ್ತವೆ ಎಂಬ ಶಾಕ್ತ ದೃಷ್ಟಿಯನ್ನು ಸ್ತೋತ್ರ ವ್ಯಕ್ತಪಡಿಸುತ್ತದೆ.",
+      "source_ids": [
+        "mb77"
+      ],
+      "status": "source_checked_expanded_summary"
+    },
+    {
+      "number": 81,
+      "en": "She burns Bhaṇḍa’s armies with the great Pāśupata weapon. Pāśupata is associated with Śiva, yet here it operates through Lalitā, again showing the inseparability of Śiva and Śakti. The destruction is not mere violence; within the sacred narrative it represents the consuming of forces that have become irreconcilably opposed to divine order.",
+      "kn": "ಮಹಾಪಾಶುಪತಾಸ್ತ್ರದಿಂದ ಅವಳು ಭಂಡನ ಸೈನ್ಯವನ್ನು ದಹಿಸುತ್ತಾಳೆ. ಪಾಶುಪತಾಸ್ತ್ರ ಶಿವನೊಂದಿಗೆ ಸಂಬಂಧಿಸಿದರೂ ಇಲ್ಲಿ ಅದು ಲಲಿತೆಯ ಮೂಲಕ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ; ಶಿವಶಕ್ತಿಯ ಅವಿಭಾಜ್ಯತೆ ಮತ್ತೊಮ್ಮೆ ಸ್ಪಷ್ಟವಾಗುತ್ತದೆ. ಈ ಸಂಹಾರವನ್ನು ಸಾಮಾನ್ಯ ಹಿಂಸೆಯಾಗಿ ನೋಡಬಾರದು; ದೈವಕ್ರಮಕ್ಕೆ ಸಂಪೂರ್ಣ ವಿರೋಧಿಯಾದ ವಿನಾಶಕಾರಿ ಶಕ್ತಿಗಳ ಅಂತ್ಯವೆಂಬ ಪವಿತ್ರ ಕಥಾರ್ಥ ಇದಾಗಿದೆ.",
+      "source_ids": [
+        "mb81"
+      ],
+      "status": "source_checked_expanded_summary"
+    },
+    {
+      "number": 82,
+      "en": "With Kāmeśvara’s weapon She burns Bhaṇḍāsura himself and makes his city Śūnyaka empty. The climax completes the war between divine order and obstruction. Because the final weapon bears Kāmeśvara’s name, the victory again belongs to the unity of Śiva and Śakti. What is destroyed is not existence, but the hardened structure that opposed the return of harmony.",
+      "kn": "ಕಾಮೇಶ್ವರಾಸ್ತ್ರದಿಂದ ಅವಳು ಭಂಡಾಸುರನನ್ನೂ ಅವನ ನಗರವಾದ ಶೂನ್ಯಕವನ್ನೂ ದಹಿಸುತ್ತಾಳೆ. ದೈವಕ್ರಮ ಮತ್ತು ಅಡ್ಡಿಶಕ್ತಿಯ ಸಮರ ಇಲ್ಲಿ ಪೂರ್ಣಗೊಳ್ಳುತ್ತದೆ. ಅಂತಿಮ ಅಸ್ತ್ರ ಕಾಮೇಶ್ವರನ ಹೆಸರನ್ನು ಹೊತ್ತಿರುವುದರಿಂದ ಜಯವು ಮತ್ತೆ ಶಿವಶಕ್ತಿಯ ಐಕ್ಯಕ್ಕೆ ಸೇರಿದೆ. ನಾಶವಾಗುವುದು ಅಸ್ತಿತ್ವವಲ್ಲ; ಸಮರಸ್ಯದ ಪುನರಾಗಮನಕ್ಕೆ ವಿರೋಧಿಸಿದ ಗಟ್ಟಿಯಾದ ಅಸುರಿಕ ರಚನೆ.",
+      "source_ids": [
+        "mb81"
       ],
       "status": "source_checked_expanded_summary"
     },
