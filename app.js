@@ -62,7 +62,7 @@ function studySections(info,parts){
 }
 function makeAudio(v,isDhyana){
  const num=String(v.verse_number).padStart(isDhyana?2:3,"0");
- const url=isDhyana?"../audio/lalita/dhyana/dhyana-"+num+".mp3":"../audio/lalita/verses/sloka-"+num+".mp3";
+ const url=isDhyana?"../audio/lalita/dhyana/dhyana-"+num+".mp3":"../audio/lalita/verses/VD/sloka-"+num+".mp3";
  return "<span class='audio' data-audio-path='"+esc(url)+"'>"+esc(langText("♪ Audio coming soon","♪ ಧ್ವನಿಮುದ್ರಣ ಶೀಘ್ರದಲ್ಲಿ"))+"</span>";
 }
 function nameSection(v){
@@ -317,21 +317,10 @@ function loadAudio(){
     toolbar.appendChild(label);
     return select;
    }
-   const warmPath=numberMatch?path.replace(/\.mp3$/,"-warm-deep.mp3"):null;
-   // These two alternatives have been verified in GitHub.
-   let hasWarm=verseNumber===1||verseNumber===2;
-   if(warmPath&&!hasWarm){
-    try{
-     const response=await fetch(warmPath,{method:"HEAD"});
-     hasWarm=response.ok;
-    }catch(_){/* Only the original voice will be shown. */}
-   }
-   if(!placeholder.isConnected)return;
    let voice=null;
-   if(hasWarm){
-    voice=setting(langText("Voice","ಧ್ವನಿ"),langText("Choose chanting voice","ಪಠಣದ ಧ್ವನಿಯನ್ನು ಆರಿಸಿ"),[
-     ["original",langText("Original","ಮೂಲ")],
-     ["warm",langText("Warm, deeper","ಮೃದು ಗಂಭೀರ")]
+   if(!isDhyana){
+    voice=setting(langText("Singer","ಗಾಯಕ"),langText("Choose singer","ಗಾಯಕನನ್ನು ಆರಿಸಿ"),[
+     ["VD","VD"],["MSS","MSS"],["KMP","KMP"]
     ]);
    }
    const speed=setting(langText("Speed","ವೇಗ"),langText("Playback speed","ಪ್ಲೇಬ್ಯಾಕ್ ವೇಗ"),[
@@ -351,7 +340,8 @@ function loadAudio(){
      const previousTime=Number.isFinite(player.currentTime)?player.currentTime:0;
      completed=0;
      player.pause();
-     player.src=voice.value==="warm"?warmPath:path;
+     const singer=voice.value;
+     player.src=path.replace("/VD/","/"+singer+"/");
      player.load();
      player.playbackRate=Number(speed.value);
      player.addEventListener("loadedmetadata",()=>{
@@ -395,9 +385,8 @@ function practiceStop(message="Stopped"){
  const audio=$("#practice-audio");practice.token++;practice.active=false;practice.paused=false;audio.pause();audio.removeAttribute("src");audio.load();practiceSyncButtons();practiceStatus(message);
 }
 function practiceAudioPath(n){
- const stem="../audio/lalita/verses/sloka-"+String(n).padStart(3,"0");
- const voice=$("#practice-voice").value;
- return stem+((voice==="warm"&&(n===1||n===2))?"-warm-deep":"")+".mp3";
+ const singer=$("#practice-voice").value;
+ return "../audio/lalita/verses/"+singer+"/sloka-"+String(n).padStart(3,"0")+".mp3";
 }
 function practiceAdvance(token){
  if(token!==practice.token||!practice.active)return;
