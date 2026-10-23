@@ -1,0 +1,23 @@
+{
+  "version": "20261022-source-review-2",
+  "purpose": "Replace generic reflections with source-based devotional and philosophical explanations.",
+  "target_name_count": 1000,
+  "source_checked_name_count": 62,
+  "source_checked_name_ranges": [[1,40],[541,552],[572,577],[997,1000]],
+  "names_still_to_rewrite": 938,
+  "target_verse_count": 183,
+  "source_checked_overall_verses": [1,111,112,116,183],
+  "overall_verses_still_to_rewrite": 178,
+  "deeper_meaning_source": "Manblunder: individual articles linked from each reviewed entry; name 1000 uses the author's overview because its individual article was unavailable.",
+  "overall_meaning_source": "Shlokam, paraphrased in English and Kannada for reviewed entries.",
+  "layout": ["Overall sloka meaning", "Deeper meaning"],
+  "optional_label_removed": true,
+  "generic_reflections": "Withdrawn from rendering and search, not deleted from the repository. Pending sections are explicitly labelled.",
+  "preserved": ["Original Sanskrit readings and hyphens", "All word-by-word datasets", "Divine-name records including user-selected Barbaralaka 547", "Existing audio and player", "Search and navigation code", "Meditation study content"],
+  "verification": {
+    "source_summaries": "Checked against the cited pages; editorial paraphrases, not quotations or scholarly certification.",
+    "browser_tests": "Offline Chromium integration fixture: overall-first order, no optional label, generic-text suppression, preserved component rows, source links, pending states, English/Kannada switch, mobile overflow and safe fetch-failure handling.",
+    "live_visual_verification": false,
+    "full_collection_source_verification": false
+  }
+}
