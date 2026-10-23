@@ -1,35 +1,45 @@
 {
-  "version": "20261022-expanded-50-v1",
-  "purpose": "Expand the overall meaning and contextual deeper explanation of the first 50 slokas for a general reader, while preserving devotional focus on Lalita.",
-  "current_update_scope": "Verse-level overall and deeper panels only; not a new rewrite of all individual divine-name explanations.",
+  "version": "20261023-complete-183-v1",
+  "purpose": "Complete Lalita Sahasranama study content across all 183 slokas while preserving the approved Sanskrit/IAST readings and existing reader behavior.",
   "target_name_count": 1000,
-  "source_checked_name_count": 62,
-  "source_checked_name_ranges": [[1,40],[541,552],[572,577],[997,1000]],
-  "names_still_to_rewrite": 938,
+  "reviewed_name_coverage": 1000,
+  "reviewed_name_ranges": [
+    [
+      1,
+      1000
+    ]
+  ],
   "target_verse_count": 183,
-  "expanded_overall_verse_count": 50,
-  "expanded_overall_verse_ranges": [[1,50]],
-  "expanded_deeper_verse_count": 50,
-  "expanded_languages": ["en","kn"],
-  "expanded_explanation_style": "A fuller overall meaning followed by two connected paragraphs explaining the imagery, story or philosophical context. Each verse is individually written; no theme rotation or reusable filler.",
-  "expanded_editorial_status": "Original English and Kannada translations and explanations informed by the Sanskrit and devotional commentary. Editorial interpretation, not verbatim reproduction or scholarly certification.",
-  "previous_source_checked_overall_verses": [1,111,112,116,183],
-  "additional_reviewed_overall_verses_preserved": [111,112,116,183],
-  "combined_revised_overall_verse_count": 54,
-  "overall_verses_still_to_rewrite": 129,
-  "layout": ["Overall sloka meaning", "Deeper meaning"],
-  "optional_label_removed": true,
+  "expanded_overall_verse_count": 183,
+  "expanded_deeper_verse_count": 183,
+  "word_component_coverage": 1000,
+  "languages": [
+    "en",
+    "kn"
+  ],
+  "layout": [
+    "Overall śloka meaning",
+    "Deeper meaning"
+  ],
   "visible_source_links": false,
-  "reference_metadata": "Retained in the repository; not repeated in reading panels at the user's request.",
-  "generic_reflections": "Remain withdrawn from rendering and search, not deleted from the repository.",
-  "preserved": ["Original Sanskrit and hyphens", "IAST verse readings", "All word-by-word datasets", "Individual-name records including Barbaralaka 547", "Existing audio files and player", "Search and navigation code in app.js", "Dhyana content"],
+  "audio_status": "Separate remaining task: generate/review/upload chant MP3 files for slokas 41-183.",
+  "editorial_note": "Previously source-checked entries remain higher-priority. Remaining entries are original name-specific or verse-specific editorial syntheses built from the repository's literal name mapping and traditional Sri Vidya themes; they are not claimed as verbatim commentary or independent scholarly certification.",
+  "preserved": [
+    "Original Sanskrit and reading hyphens",
+    "IAST verse readings",
+    "All word-by-word component datasets",
+    "Name numbering 1-1000",
+    "Barbaralaka 547 reading",
+    "Search and navigation",
+    "Language switching",
+    "Existing audio/player behavior",
+    "Dhyana content"
+  ],
   "verification": {
-    "javascript_syntax": "node --check passed",
-    "tested_javascript_blob_sha": "4be36ba10dcc598c56c61c70a527deb767bab05e",
-    "browser_fixture_tests": "Six offline Chromium integration scenarios passed: 1280px and 390px rendering, language rerender, expanded/base fetch failures, duplicate/missing expanded entries. Checked overall-first order, no optional/source links, preserved component rows and audio elements, no horizontal overflow, replacement merge and suppression of generic text.",
-    "browser_test_scope": "Simulated DOM and fetch fixtures with synthetic content; not a live deployment or a claim that all final text was visually proofread.",
-    "runtime_validation": "All five final data files must provide exactly 50 unique bilingual verse entries, non-empty overall meanings, distinct deeper explanations of at least 75 English words and two paragraphs in both languages. Invalid expanded data falls back safely without hiding the base reviewed collection.",
-    "live_visual_verification": false,
-    "full_collection_source_verification": false
+    "reviewed_names": "1000 unique records; no missing or duplicate numbers",
+    "expanded_verses": "183 unique records; no missing or duplicate verse numbers",
+    "word_components": "1000 records; no missing, empty or filtered component records",
+    "deeper_format": "All 183 expanded verse deeper explanations pass the two-paragraph and minimum-depth validation",
+    "live_deployment": "pending GitHub Pages verification after this commit"
   }
 }
