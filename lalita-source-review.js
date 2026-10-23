@@ -5,9 +5,9 @@
 "use strict";
 if(window.VediniSourceReview)return;
 const ROOT=new URL("./",document.currentScript.src),DATA=new URL("data/lalita/",ROOT);
-const VERSION="20261023-expanded-50-names82-v1",nativeFetch=window.fetch.bind(window);
-const BASE_FILES=["source-reviewed-meanings.json","source-reviewed-additions.json"];
-const EXPANDED_FILES=["expanded-verses-001-010.json","expanded-verses-011-020.json","expanded-verses-021-030.json","expanded-verses-031-040.json","expanded-verses-041-050.json"];
+const VERSION="20261023-complete-183-v1",nativeFetch=window.fetch.bind(window);
+const BASE_FILES=["source-reviewed-meanings.json","source-reviewed-additions.json","source-reviewed-names-083-150.json","source-reviewed-names-151-200.json","source-reviewed-names-201-996.json"];
+const EXPANDED_FILES=["expanded-verses-001-010.json","expanded-verses-011-020.json","expanded-verses-021-030.json","expanded-verses-031-040.json","expanded-verses-041-050.json","expanded-verses-051-100.json","expanded-verses-101-150.json","expanded-verses-151-183.json"];
 const KN={overall:"\u0cb6\u0ccd\u0cb2\u0ccb\u0c95\u0ca6 \u0c92\u0c9f\u0ccd\u0c9f\u0cc1 \u0c85\u0cb0\u0ccd\u0ca5",deeper:"\u0c86\u0cb3\u0cb5\u0cbe\u0ca6 \u0c85\u0cb0\u0ccd\u0ca5",meditation:"\u0ca7\u0ccd\u0caf\u0cbe\u0ca8 \u0cb6\u0ccd\u0cb2\u0ccb\u0c95\u0ca6 \u0c92\u0c9f\u0ccd\u0c9f\u0cc1 \u0c85\u0cb0\u0ccd\u0ca5",pending_name:"\u0c88 \u0ca8\u0cbe\u0cae\u0ca6 \u0cb5\u0cbf\u0cb8\u0ccd\u0ca4\u0cc3\u0ca4 \u0cb5\u0cbf\u0cb5\u0cb0\u0ca3\u0cc6\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0caa\u0ccd\u0cb0\u0ca4\u0ccd\u0caf\u0cc7\u0c95\u0cb5\u0cbe\u0c97\u0cbf \u0caa\u0cb0\u0cbf\u0cb7\u0ccd\u0c95\u0cb0\u0cbf\u0cb8\u0cb2\u0cbe\u0c97\u0cc1\u0ca4\u0ccd\u0ca4\u0cbf\u0ca6\u0cc6.",pending_verse:"\u0c88 \u0cb6\u0ccd\u0cb2\u0ccb\u0c95\u0ca6 \u0cb5\u0cbf\u0cb8\u0ccd\u0ca4\u0cc3\u0ca4 \u0cb5\u0cbf\u0cb5\u0cb0\u0ca3\u0cc6\u0caf \u0caa\u0cb0\u0cbf\u0cb7\u0ccd\u0c95\u0cb0\u0ca3\u0cc6 \u0cac\u0cbe\u0c95\u0cbf\u0caf\u0cbf\u0ca6\u0cc6.",pending_meaning:"\u0c88 \u0cb6\u0ccd\u0cb2\u0ccb\u0c95\u0ca6 \u0c92\u0c9f\u0ccd\u0c9f\u0cc1 \u0c85\u0cb0\u0ccd\u0ca5\u0ca6 \u0caa\u0cb0\u0cbf\u0cb7\u0ccd\u0c95\u0cb0\u0ca3\u0cc6 \u0cac\u0cbe\u0c95\u0cbf\u0caf\u0cbf\u0ca6\u0cc6.",footer:"\u0cb6\u0ccd\u0cb2\u0ccb\u0c95 1\u201350\u0c95\u0ccd\u0c95\u0cc6 \u0cb5\u0cbf\u0cb8\u0ccd\u0ca4\u0cc3\u0ca4 \u0c92\u0c9f\u0ccd\u0c9f\u0cc1 \u0c85\u0cb0\u0ccd\u0ca5 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0cb8\u0c82\u0ca6\u0cb0\u0ccd\u0cad\u0cb8\u0cb9\u0cbf\u0ca4 \u0c86\u0cb3\u0cb5\u0cbe\u0ca6 \u0cb5\u0cbf\u0cb5\u0cb0\u0ca3\u0cc6\u0c97\u0cb3\u0cbf\u0cb5\u0cc6. \u0caa\u0ccd\u0cb0\u0ca4\u0ccd\u0caf\u0cc7\u0c95 \u0ca8\u0cbe\u0cae\u0c97\u0cb3 \u0cb5\u0cbf\u0cb5\u0cb0\u0ca3\u0cc6 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0cae\u0cc1\u0c82\u0ca6\u0cbf\u0ca8 \u0cb6\u0ccd\u0cb2\u0ccb\u0c95\u0c97\u0cb3 \u0caa\u0cb0\u0cbf\u0cb7\u0ccd\u0c95\u0cb0\u0ca3\u0cc6 \u0cac\u0cbe\u0c95\u0cbf\u0caf\u0cbf\u0ca6\u0cc6.",error:"\u0c95\u0cc6\u0cb2\u0cb5\u0cc1 \u0caa\u0cb0\u0cbf\u0cb7\u0ccd\u0c95\u0cc3\u0ca4 \u0cb5\u0cbf\u0cb5\u0cb0\u0ca3\u0cc6\u0c97\u0cb3\u0cc1 \u0cb2\u0ccb\u0ca1\u0ccd \u0c86\u0c97\u0cb2\u0cbf\u0cb2\u0ccd\u0cb2. \u0cb6\u0ccd\u0cb2\u0ccb\u0c95, \u0caa\u0ca6\u0cbe\u0cb0\u0ccd\u0ca5 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0ca7\u0ccd\u0cb5\u0ca8\u0cbf \u0cb2\u0cad\u0ccd\u0caf\u0cb5\u0cbf\u0cb5\u0cc6; \u0cae\u0ca4\u0ccd\u0ca4\u0cc6 \u0caa\u0ccd\u0cb0\u0caf\u0ca4\u0ccd\u0ca8\u0cbf\u0cb8\u0cbf."};
 let reviewed=null,scheduled=false;
 const warnings=[],readings=new Map();
@@ -22,14 +22,14 @@ function validateBase(files){
 }
 function validateExpanded(files){
  const entries=files.flatMap(f=>f.verses||[]),seen=new Set(),ens=new Set(),kns=new Set();
- if(entries.length!==50)throw new Error("Expanded collection must contain 50 verses");
+ if(entries.length!==183)throw new Error("Expanded collection must contain 183 verses");
  for(const v of entries){
-  if(!Number.isInteger(v.verse_number)||v.verse_number<1||v.verse_number>50||seen.has(v.verse_number)||!validPair(v.meaning)||!validPair(v.deeper))throw new Error("Invalid expanded verse");
+  if(!Number.isInteger(v.verse_number)||v.verse_number<1||v.verse_number>183||seen.has(v.verse_number)||!validPair(v.meaning)||!validPair(v.deeper))throw new Error("Invalid expanded verse");
   if(v.meaning.en===v.deeper.en||v.deeper.en.split(/\s+/).length<75||!v.deeper.en.includes("\n\n")||!v.deeper.kn.includes("\n\n"))throw new Error("Expanded explanation lacks depth or paragraphs");
   if(ens.has(v.deeper.en)||kns.has(v.deeper.kn))throw new Error("Repeated expanded explanation");
   seen.add(v.verse_number);ens.add(v.deeper.en);kns.add(v.deeper.kn);
  }
- for(let n=1;n<=50;n++)if(!seen.has(n))throw new Error("Missing expanded verse "+n);
+ for(let n=1;n<=183;n++)if(!seen.has(n))throw new Error("Missing expanded verse "+n);
  return entries;
 }
 function report(error){warnings.push(error.message);console.warn("Vedini meanings:",error.message);}
@@ -37,7 +37,7 @@ const basePromise=Promise.all(BASE_FILES.map(readJSON)).then(validateBase).catch
 const expandedPromise=Promise.all(EXPANDED_FILES.map(readJSON)).then(validateExpanded).catch(error=>{report(error);return [];});
 const reviewPromise=Promise.all([basePromise,expandedPromise]).then(([base,expanded])=>{
  const merged=new Map(base.verses.map(v=>[v.verse_number,v]));
- for(const v of expanded)merged.set(v.verse_number,{...v,explanation_status:"original_expanded_editorial",expanded:true});
+ for(const v of expanded){if(v.verse_number>50&&merged.has(v.verse_number))continue;merged.set(v.verse_number,{...v,explanation_status:"original_expanded_editorial",expanded:true});}
  reviewed={...base,verses:[...merged.values()].sort((a,b)=>a.verse_number-b.verse_number),expanded_count:expanded.length};return reviewed;
 });
 function jsonResponse(v){return new Response(JSON.stringify(v),{status:200,headers:{"Content-Type":"application/json; charset=utf-8"}});}
@@ -81,7 +81,7 @@ function applyOverall(card,n){
 function apply(){
  scheduled=false;if(!reviewed)return;const key=VERSION+(isKannada()?"-kn":"-en");
  document.querySelectorAll(".vedini-study-card").forEach(card=>{if(card.dataset.sourceReview===key)return;card.dataset.sourceReview=key;card.querySelectorAll(".name-details[data-detail-id^='name-']").forEach(applyName);applyOverall(card,Number(card.id.split("-").pop()));const meta=card.querySelector(":scope > .meta");if(meta&&!card.id.startsWith("dhyana-"))meta.hidden=true;});
- const footer=document.querySelector(".reader-page .foot");if(footer){const notice=warnings.length?text("Some revised explanations could not be loaded. Slokas, word meanings and audio remain available; refresh to retry.",KN.error):text("Slokas 1-50 have expanded overall meanings and contextual deeper explanations. Individual-name commentary and later verses are being revised separately.",KN.footer);if(footer.textContent!==notice)footer.textContent=notice;footer.classList.add("source-review-notice");}
+ const footer=document.querySelector(".reader-page .foot");if(footer){const notice=warnings.length?text("Some revised explanations could not be loaded. Slokas, word meanings and audio remain available; refresh to retry.",KN.error):text("All 183 ślokas have overall meanings, contextual deeper explanations, and complete individual-name deeper-meaning coverage. Audio may still be added separately.",KN.footer);if(footer.textContent!==notice)footer.textContent=notice;footer.classList.add("source-review-notice");}
 }
 function schedule(){if(scheduled)return;scheduled=true;queueMicrotask(apply);}
 const observer=new MutationObserver(schedule);observer.observe(document.querySelector("#reader")||document.body,{childList:true,subtree:true});reviewPromise.then(schedule);
