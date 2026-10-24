@@ -1,6 +1,6 @@
 {
-  "version": "20261024-mss-dhyana-phrases-v1",
-  "description": "Phrase-by-phrase Dhyana mapping for MSS clips phrase_0001.mp3 through phrase_0032.mp3.",
+  "version": "20261024-mss-dhyana-phrases-v2",
+  "description": "Phrase-by-phrase Dhyana mapping aligned to MSS clips phrase_0001.mp3 through phrase_0032.mp3. Dhyana 2 begins with अरुणां करुणा-तरङ्गिताक्षीं as one clip.",
   "phrases": [
     {
       "verse": 1,
@@ -69,22 +69,14 @@
     {
       "verse": 2,
       "clip": 9,
-      "dev": "अरुणां",
-      "iast": "aruṇāṃ",
-      "en": "She is crimson-red, like the glow of dawn.",
-      "kn": "ಅವಳು ಪ್ರಭಾತದಂತೆ ಅರುಣವರ್ಣಳಾಗಿದ್ದಾಳೆ."
+      "dev": "अरुणां करुणा-तरङ्गिताक्षीं",
+      "iast": "aruṇāṃ karuṇā-taraṅgitākṣīṃ",
+      "en": "She is crimson-red, like the glow of dawn, and her eyes ripple with waves of compassion.",
+      "kn": "ಅವಳು ಪ್ರಭಾತದಂತೆ ಅರುಣವರ್ಣಳಾಗಿದ್ದು, ಅವಳ ಕಣ್ಣುಗಳು ಕರುಣೆಯ ಅಲೆಗಳಿಂದ ತುಂಬಿವೆ."
     },
     {
       "verse": 2,
       "clip": 10,
-      "dev": "करुणा-तरङ्गिताक्षीं",
-      "iast": "karuṇā-taraṅgitākṣīṃ",
-      "en": "Her eyes ripple with waves of compassion.",
-      "kn": "ಅವಳ ಕಣ್ಣುಗಳು ಕರುಣೆಯ ಅಲೆಗಳಿಂದ ತುಂಬಿವೆ."
-    },
-    {
-      "verse": 2,
-      "clip": 11,
       "dev": "धृत-पाशाङ्कुश",
       "iast": "dhṛta-pāśāṅkuśa",
       "en": "She holds the noose and the goad.",
@@ -92,7 +84,7 @@
     },
     {
       "verse": 2,
-      "clip": 12,
+      "clip": 11,
       "dev": "पुष्पबाण-चापाम्",
       "iast": "puṣpabāṇa-cāpām",
       "en": "She bears the bow and flower-arrows.",
@@ -100,7 +92,7 @@
     },
     {
       "verse": 2,
-      "clip": 13,
+      "clip": 12,
       "dev": "अणिमादिभिर् आवृतां",
       "iast": "aṇimādibhir āvṛtāṃ",
       "en": "She is surrounded by Aṇimā and the other divine spiritual powers.",
@@ -108,7 +100,7 @@
     },
     {
       "verse": 2,
-      "clip": 14,
+      "clip": 13,
       "dev": "मयूखैः",
       "iast": "mayūkhaiḥ",
       "en": "These powers surround her like rays of light.",
@@ -116,7 +108,7 @@
     },
     {
       "verse": 2,
-      "clip": 15,
+      "clip": 14,
       "dev": "अहम् इत्येव",
       "iast": "aham ityeva",
       "en": "As the very awareness expressed by ‘I am’.",
@@ -124,7 +116,7 @@
     },
     {
       "verse": 2,
-      "clip": 16,
+      "clip": 15,
       "dev": "विभावये भवानीम्",
       "iast": "vibhāvaye bhavānīm",
       "en": "I contemplate Bhavānī in this way.",
@@ -132,7 +124,7 @@
     },
     {
       "verse": 3,
-      "clip": 17,
+      "clip": 16,
       "dev": "ध्यायेत् पद्मासनस्थां",
       "iast": "dhyāyet padmāsanasthāṃ",
       "en": "Meditate on her seated upon a lotus.",
@@ -140,7 +132,7 @@
     },
     {
       "verse": 3,
-      "clip": 18,
+      "clip": 17,
       "dev": "विकसित-वदनां पद्मपत्रायताक्षीं",
       "iast": "vikasita-vadanāṃ padmapatrāyatākṣīṃ",
       "en": "Her face is blossoming and radiant, and her long eyes resemble lotus petals.",
@@ -148,7 +140,7 @@
     },
     {
       "verse": 3,
-      "clip": 19,
+      "clip": 18,
       "dev": "हेमाभां पीतवस्त्रां",
       "iast": "hemābhāṃ pītavastrāṃ",
       "en": "She shines with a golden radiance and is clothed in yellow garments.",
@@ -156,7 +148,7 @@
     },
     {
       "verse": 3,
-      "clip": 20,
+      "clip": 19,
       "dev": "करकलित-लसद्-हेमपद्मां वराङ्गीम्",
       "iast": "karakalita-lasad-hemapadmāṃ varāṅgīm",
       "en": "In her hand shines a golden lotus; her divine form is exquisitely beautiful.",
@@ -164,7 +156,7 @@
     },
     {
       "verse": 3,
-      "clip": 21,
+      "clip": 20,
       "dev": "सर्वालङ्कार-युक्तां",
       "iast": "sarvālaṅkāra-yuktāṃ",
       "en": "She is adorned with every auspicious ornament.",
@@ -172,7 +164,7 @@
     },
     {
       "verse": 3,
-      "clip": 22,
+      "clip": 21,
       "dev": "सततम् अभयदां भक्तनम्रां भवानीं",
       "iast": "satatam abhayadāṃ bhaktanamrāṃ bhavānīṃ",
       "en": "Bhavānī continually grants fearlessness and bends graciously toward her devotees.",
@@ -180,7 +172,7 @@
     },
     {
       "verse": 3,
-      "clip": 23,
+      "clip": 22,
       "dev": "श्रीविद्यां शान्तमूर्तिं",
       "iast": "śrīvidyāṃ śāntamūrtiṃ",
       "en": "She is Śrīvidyā herself, the sacred wisdom, and the embodiment of profound peace.",
@@ -188,7 +180,7 @@
     },
     {
       "verse": 3,
-      "clip": 24,
+      "clip": 23,
       "dev": "सकलसुरनुतां सर्वसम्पत्प्रदात्रीम्",
       "iast": "sakalasuranutāṃ sarvasampatpradātrīm",
       "en": "All the devas praise her, and she bestows every form of true abundance.",
@@ -196,7 +188,7 @@
     },
     {
       "verse": 4,
-      "clip": 25,
+      "clip": 24,
       "dev": "सकुङ्कुम-विलेपनाम्",
       "iast": "sakuṅkuma-vilepanām",
       "en": "She is anointed with fragrant kuṅkuma.",
@@ -204,7 +196,7 @@
     },
     {
       "verse": 4,
-      "clip": 26,
+      "clip": 25,
       "dev": "अलिक-चुम्बि-कस्तूरिकां",
       "iast": "alika-cumbi-kastūrikāṃ",
       "en": "A musk mark adorns her forehead near the curls that touch it.",
@@ -212,7 +204,7 @@
     },
     {
       "verse": 4,
-      "clip": 27,
+      "clip": 26,
       "dev": "समन्द-हसितेक्षणां",
       "iast": "samanda-hasitekṣaṇāṃ",
       "en": "Her glance is accompanied by a soft and gentle smile.",
@@ -220,7 +212,7 @@
     },
     {
       "verse": 4,
-      "clip": 28,
+      "clip": 27,
       "dev": "सशर-चाप-पाशाङ्कुशाम्",
       "iast": "saśara-cāpa-pāśāṅkuśām",
       "en": "She holds arrows, bow, noose and goad.",
@@ -228,7 +220,7 @@
     },
     {
       "verse": 4,
-      "clip": 29,
+      "clip": 28,
       "dev": "अशेषजन-मोहिनीम्",
       "iast": "aśeṣajana-mohinīm",
       "en": "Her divine beauty enchants all beings without exception.",
@@ -236,7 +228,7 @@
     },
     {
       "verse": 4,
-      "clip": 30,
+      "clip": 29,
       "dev": "अरुण-माल्य-भूषाम्बरां",
       "iast": "aruṇa-mālya-bhūṣāmbarāṃ",
       "en": "She is adorned with red garlands, ornaments and garments.",
@@ -244,7 +236,7 @@
     },
     {
       "verse": 4,
-      "clip": 31,
+      "clip": 30,
       "dev": "जपाकुसुम-भासुरां",
       "iast": "japākusuma-bhāsurāṃ",
       "en": "She shines brilliantly like the red hibiscus flower.",
@@ -252,11 +244,19 @@
     },
     {
       "verse": 4,
+      "clip": 31,
+      "dev": "जपविधौ",
+      "iast": "japavidhau",
+      "en": "During the practice of japa.",
+      "kn": "ಜಪದ ವಿಧಾನದಲ್ಲಿ, ಜಪ ಮಾಡುವಾಗ."
+    },
+    {
+      "verse": 4,
       "clip": 32,
-      "dev": "जपविधौ स्मरेद् अम्बिकाम्",
-      "iast": "japavidhau smared ambikām",
-      "en": "During japa, one should remember and contemplate Ambikā.",
-      "kn": "ಜಪ ಮಾಡುವಾಗ ಅಂಬಿಕೆಯನ್ನು ಸ್ಮರಿಸಿ ಧ್ಯಾನಿಸಬೇಕು."
+      "dev": "स्मरेद् अम्बिकाम्",
+      "iast": "smared ambikām",
+      "en": "One should remember and contemplate Ambikā.",
+      "kn": "ಅಂಬಿಕೆಯನ್ನು ಸ್ಮರಿಸಿ ಧ್ಯಾನಿಸಬೇಕು."
     }
   ]
 }
