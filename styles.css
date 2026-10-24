@@ -433,3 +433,74 @@ header p{color:#845c4b;font-size:18px}
  .reader-page .dhyana-phrase-row{grid-template-columns:38px 1fr;gap:8px}
  .reader-page .dhyana-phrase-meaning{grid-column:2;padding-top:2px}
 }
+
+
+/* Unified Vedini navigation across all pages */
+.site-tabs{
+ display:flex;
+ align-items:center;
+ justify-content:flex-start;
+ gap:9px;
+ flex-wrap:wrap;
+ margin:0 0 20px;
+ padding:4px 0 14px;
+ border-bottom:1px solid #d8cfbf;
+}
+.site-tab{
+ display:inline-flex;
+ align-items:center;
+ justify-content:center;
+ min-height:40px;
+ padding:8px 15px;
+ border:1px solid #a6bda9;
+ border-radius:999px;
+ background:#fffdf8;
+ color:#2f5946;
+ text-decoration:none;
+ font:700 13px/1.2 system-ui,sans-serif;
+ white-space:nowrap;
+ box-shadow:0 2px 6px #355a4310;
+}
+.site-tab:hover,.site-tab:focus{
+ background:#eaf3e9;
+ border-color:#64856c;
+ outline:none;
+}
+.site-tab.active{
+ background:#315744;
+ color:#fff;
+ border-color:#315744;
+}
+.reader-page .reader-header{
+ display:block;
+}
+.reader-page .reader-header .site-tabs{
+ width:100%;
+}
+.reader-page .reader-identity{
+ margin-top:4px;
+}
+@media(max-width:640px){
+ .site-tabs{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+ .site-tab{width:100%;padding:8px 9px;font-size:12px}
+}
+
+/* Make Dhyana phrase audio unmistakable and full-width */
+.reader-page .dhyana-phrase-section{
+ margin:12px 0 18px;
+ padding:13px;
+ border:1px solid #b7cdb9;
+ border-radius:12px;
+ background:linear-gradient(120deg,#edf5eb,#fff7ea);
+}
+.reader-page .dhyana-phrase-section .section-title{
+ margin-bottom:9px;
+}
+.reader-page .dhyana-phrase-section .section-title h3:after{
+ content:" · MSS audio";
+ font:600 12px/1.2 system-ui,sans-serif;
+ color:#7a6c58;
+}
+.reader-page .dhyana-phrase-play{
+ box-shadow:0 2px 5px #3157441c;
+}
