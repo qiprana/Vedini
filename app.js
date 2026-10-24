@@ -312,7 +312,9 @@ function loadAudio(){
     select.setAttribute("aria-label",ariaLabel);
     for(const item of choices){
      const option=document.createElement("option");
-     option.value=item[0];option.textContent=item[1];select.appendChild(option);
+     option.value=item[0];option.textContent=item[1];
+     if(item[0]==="MSS")option.disabled=true;
+     select.appendChild(option);
     }
     label.append(caption,select);
     toolbar.appendChild(label);
@@ -321,7 +323,7 @@ function loadAudio(){
    let voice=null;
    if(!isDhyana){
     voice=setting(langText("Singer","ಗಾಯಕ"),langText("Choose singer","ಗಾಯಕನನ್ನು ಆರಿಸಿ"),[
-     ["VD","VD"],["MSS","MSS"],["KMP","KMP"]
+     ["VD","VD"],["KMP","KMP"],["MSS","MSS · coming soon"]
     ]);
    }
    const speed=setting(langText("Speed","ವೇಗ"),langText("Playback speed","ಪ್ಲೇಬ್ಯಾಕ್ ವೇಗ"),[
