@@ -285,9 +285,9 @@ function loadAudio(){
   const isDhyana=path.includes("/audio/lalita/dhyana/");
   const numberMatch=path.match(/\/verses\/VD\/sloka-(\d{3})\.mp3$/);
   const verseNumber=numberMatch?Number(numberMatch[1]):null;
-  const vdConfirmed=verseNumber!==null&&verseNumber>=1&&verseNumber<=40;
+  const vdConfirmed=verseNumber!==null&&verseNumber>=1&&verseNumber<=183;
   try{
-   // VD recordings for ślokas 1–40 are committed and verified in GitHub.
+   // VD recordings for ślokas 1–183 are committed and verified in GitHub.
    // Render these players directly even if a browser blocks or caches HEAD.
    if(!vdConfirmed){
     const response=await fetch(path,{method:"HEAD"});
