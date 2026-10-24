@@ -343,3 +343,32 @@ header p{color:#845c4b;font-size:18px}
 
 /* Search matches stay visible after opening a result */
 .reader-page mark.search-hit{background:#f9db79;color:#352812;border-radius:3px;padding:0 2px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+
+
+/* Vedini information navigation */
+.reader-page .reader-header{gap:14px;align-items:center}
+.reader-page .reader-info-links{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.reader-page .reader-info-links .info-tab{
+ display:inline-flex;align-items:center;justify-content:center;
+ min-height:38px;padding:7px 13px;border:1px solid #a6bda9;border-radius:999px;
+ background:#fffdf8;color:#2f5946;text-decoration:none;
+ font:700 13px/1.2 system-ui,sans-serif;white-space:nowrap;
+ box-shadow:0 2px 6px #355a4310;
+}
+.reader-page .reader-info-links .info-tab:hover,
+.reader-page .reader-info-links .info-tab:focus{
+ background:#eaf3e9;border-color:#64856c;outline:none;
+}
+.reader-page .reader-info-links .home-tab{
+ background:#315744;color:#fff;border-color:#315744;
+}
+@media(max-width:760px){
+ .reader-page .reader-header{align-items:flex-start;flex-direction:column}
+ .reader-page .reader-info-links{width:100%;gap:7px}
+ .reader-page .reader-info-links .info-tab{font-size:12px;min-height:36px;padding:7px 11px}
+ .reader-page .reader-identity{width:100%;text-align:left}
+}
+@media(max-width:440px){
+ .reader-page .reader-info-links{display:grid;grid-template-columns:auto 1fr 1.35fr}
+ .reader-page .reader-info-links .info-tab{width:100%;padding:7px 8px}
+}
