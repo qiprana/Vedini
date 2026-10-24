@@ -7,6 +7,22 @@ const langText=(en,kn)=>language==="kn"?kn:en;
 let verses=[],dhyana=[],nameData={},dhyanaData={},verseData={},language="en",searchTerm="",highlightTerm="";
 const pageSize=10,plannedVerses=183;
 let view="verses",pageIndex=0,selectedVerse=1;
+let activeAudioElement=null;
+function claimAudioFocus(audio){
+ if(!audio)return;
+ document.querySelectorAll("audio").forEach(other=>{
+  if(other!==audio&&!other.paused)other.pause();
+ });
+ if(activeAudioElement&&activeAudioElement!==audio&&!activeAudioElement.paused){
+  activeAudioElement.pause();
+ }
+ activeAudioElement=audio;
+}
+function installAudioFocus(audio){
+ if(!audio||audio.dataset.audioFocusInstalled==="1")return;
+ audio.dataset.audioFocusInstalled="1";
+ audio.addEventListener("play",()=>claimAudioFocus(audio));
+}
 
 function kannadaFromDevanagari(s){
  return Array.from(String(s??"")).map(c=>{
@@ -301,6 +317,7 @@ function loadAudio(){
    player.preload="metadata";
    player.src=path;
    player.setAttribute("aria-label",langText("Chant recording","ಶ್ಲೋಕದ ಧ್ವನಿಮುದ್ರಣ"));
+   installAudioFocus(player);
    const toolbar=document.createElement("div");
    toolbar.className="audio-toolbar";
    function setting(labelText,ariaLabel,choices){
@@ -426,6 +443,7 @@ function practicePlayCurrent(token){
 function initPractice(){
  const a=$("#practice-from"),b=$("#practice-to"),audio=$("#practice-audio");
  if(!a||!b||!audio)return;
+ installAudioFocus(audio);
  const options=verses.map(v=>"<option value='"+v.verse_number+"'>"+v.verse_number+"</option>").join("");
  a.innerHTML=options;b.innerHTML=options;a.value="1";b.value=String(Math.min(10,verses.length));
  function clampRange(changed){
@@ -437,7 +455,7 @@ function initPractice(){
   const from=Number(a.value),to=Number(b.value);
   if(!Number.isInteger(from)||!Number.isInteger(to)||from<1||to>verses.length||from>to){practiceStatus("Select a valid range.");return;}
   // Pause any individual verse player before beginning the uninterrupted range.
-  document.querySelectorAll(".audio-player audio").forEach(e=>e.pause());
+  claimAudioFocus(audio);
   practice.token++;practice.active=true;practice.paused=false;practice.current=from;practice.end=to;practice.reps=Number($("#practice-repeat").value);practice.played=0;
   practiceSyncButtons();practicePlayCurrent(practice.token);
  });
