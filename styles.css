@@ -372,3 +372,46 @@ header p{color:#845c4b;font-size:18px}
  .reader-page .reader-info-links{display:grid;grid-template-columns:auto 1fr 1.35fr}
  .reader-page .reader-info-links .info-tab{width:100%;padding:7px 8px}
 }
+
+
+/* Lalita Sahasranama introductory panel */
+.reader-page .about-lalita{
+ margin:0 0 16px;
+ border:1px solid #cfdacb;
+ border-radius:12px;
+ background:linear-gradient(120deg,#f7f4e9,#edf4eb);
+ overflow:hidden;
+}
+.reader-page .about-lalita summary{
+ cursor:pointer;
+ list-style:none;
+ padding:12px 16px;
+ color:#315744;
+ font:700 16px/1.5 Georgia,serif;
+ display:flex;
+ align-items:center;
+ gap:8px;
+}
+.reader-page .about-lalita summary::-webkit-details-marker{display:none}
+.reader-page .about-lalita summary:before{
+ content:"▸";
+ font:700 14px/1 system-ui,sans-serif;
+ color:#6e8a71;
+ transition:transform .15s ease;
+}
+.reader-page .about-lalita[open] summary:before{transform:rotate(90deg)}
+.reader-page .about-lalita-body{
+ padding:0 16px 14px 38px;
+ border-top:1px solid #dbe3d8;
+}
+.reader-page .about-lalita-body p{
+ margin:10px 0 0;
+ max-width:980px;
+ color:#3f4b42;
+ font:16px/1.75 Georgia,serif;
+}
+@media(max-width:600px){
+ .reader-page .about-lalita summary{font-size:15px;padding:11px 13px}
+ .reader-page .about-lalita-body{padding:0 13px 13px 32px}
+ .reader-page .about-lalita-body p{font-size:15px;line-height:1.7}
+}
