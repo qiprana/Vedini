@@ -77,8 +77,18 @@ function studySections(info,parts){
  return "<div class='study-inner'><h4>"+esc(langText("Word by word","ಪದ ಪದದ ಅರ್ಥ"))+"</h4>"+wordsGrid(parts)+(deep?"<div class='deeper-reading'><h4>"+esc(langText("Deeper meaning","ಆಳವಾದ ಅರ್ಥ"))+"</h4>"+richParagraphs(deep)+"</div>":"")+"</div>";
 }
 function makeAudio(v,isDhyana){
- const num=String(v.verse_number).padStart(isDhyana?2:3,"0");
- const url=isDhyana?"../audio/lalita/dhyana/dhyana-"+num+".mp3":"../audio/lalita/verses/VD/sloka-"+num+".mp3";
+ if(isDhyana){
+  const rows=dhyanaPhraseData[v.verse_number]||[];
+  const clips=[];
+  rows.forEach(row=>{
+   const list=Array.isArray(row.clips)?row.clips:[row.clip];
+   list.filter(Boolean).forEach(n=>clips.push(n));
+  });
+  const paths=clips.map(n=>"../audio/lalita/verses/MSS/phrase_"+String(n).padStart(4,"0")+".mp3");
+  return "<button type='button' class='dhyana-play-all' data-dhyana-play-all='"+esc(paths.join("|"))+"' aria-label='"+esc(langText("Play all MSS audio for this Dhyāna śloka","ಈ ಧ್ಯಾನ ಶ್ಲೋಕದ ಎಲ್ಲಾ MSS ಧ್ವನಿಯನ್ನು ಪ್ಲೇ ಮಾಡಿ"))+"'>▶ "+esc(langText("Play all MSS","ಎಲ್ಲಾ MSS ಪ್ಲೇ ಮಾಡಿ"))+"</button>";
+ }
+ const num=String(v.verse_number).padStart(3,"0");
+ const url="../audio/lalita/verses/VD/sloka-"+num+".mp3";
  return "<span class='audio' data-audio-path='"+esc(url)+"'>"+esc(langText("♪ Audio coming soon","♪ ಧ್ವನಿಮುದ್ರಣ ಶೀಘ್ರದಲ್ಲಿ"))+"</span>";
 }
 function nameSection(v){
@@ -162,6 +172,61 @@ function stopDhyanaPhraseButton(button){
   try{button._audio.currentTime=0;}catch(_){}
  }
  button.classList.remove("playing");
+}
+function stopAllDhyanaAudio(exceptButton){
+ document.querySelectorAll(".dhyana-phrase-play.playing").forEach(button=>{
+  if(button!==exceptButton)stopDhyanaPhraseButton(button);
+ });
+ document.querySelectorAll(".dhyana-play-all.playing").forEach(button=>{
+  if(button!==exceptButton&&button._bufferSource){
+   try{button._bufferSource.stop();}catch(_){}
+   button._bufferSource=null;
+   button.classList.remove("playing");
+  }
+ });
+ document.querySelectorAll("audio").forEach(a=>{if(!a.paused)a.pause();});
+}
+function initDhyanaPlayAll(){
+ document.querySelectorAll("[data-dhyana-play-all]").forEach(button=>{
+  if(button.dataset.bound==="1")return;
+  button.dataset.bound="1";
+  button.addEventListener("click",async()=>{
+   const sources=(button.dataset.dhyanaPlayAll||"").split("|").filter(Boolean);
+   if(!sources.length)return;
+   if(button.classList.contains("playing")){
+    if(button._bufferSource){try{button._bufferSource.stop();}catch(_){}}
+    button._bufferSource=null;
+    button.classList.remove("playing");
+    button.textContent="▶ "+langText("Play all MSS","ಎಲ್ಲಾ MSS ಪ್ಲೇ ಮಾಡಿ");
+    return;
+   }
+   stopAllDhyanaAudio(button);
+   button.disabled=true;
+   try{
+    if(!button._mergedBuffer)button._mergedBuffer=await buildMergedAudioBuffer(sources);
+    const {ctx,buffer}=button._mergedBuffer;
+    const source=ctx.createBufferSource();
+    source.buffer=buffer;
+    source.connect(ctx.destination);
+    button._bufferSource=source;
+    button.classList.add("playing");
+    button.textContent="■ "+langText("Stop MSS","MSS ನಿಲ್ಲಿಸಿ");
+    source.onended=()=>{
+     if(button._bufferSource===source){
+      button._bufferSource=null;
+      button.classList.remove("playing");
+      button.textContent="▶ "+langText("Play all MSS","ಎಲ್ಲಾ MSS ಪ್ಲೇ ಮಾಡಿ");
+     }
+    };
+    source.start(0);
+   }catch(err){
+    button.classList.remove("playing");
+    button.textContent="▶ "+langText("Play all MSS","ಎಲ್ಲಾ MSS ಪ್ಲೇ ಮಾಡಿ");
+   }finally{
+    button.disabled=false;
+   }
+  });
+ });
 }
 function initDhyanaPhraseAudio(){
  document.querySelectorAll("[data-phrase-audio]").forEach(button=>{
@@ -386,6 +451,7 @@ function render(){
  requestAnimationFrame(fitVerseLines);
  loadAudio();
  initDhyanaPhraseAudio();
+ initDhyanaPlayAll();
  initDhyanaQuickNav();
 }
 function saveLocation(kind,n){
