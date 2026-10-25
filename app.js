@@ -91,6 +91,11 @@ function makeAudio(v,isDhyana){
  const url="../audio/lalita/verses/VD/sloka-"+num+".mp3";
  return "<span class='audio' data-audio-path='"+esc(url)+"'>"+esc(langText("♪ Audio coming soon","♪ ಧ್ವನಿಮುದ್ರಣ ಶೀಘ್ರದಲ್ಲಿ"))+"</span>";
 }
+const MSS_NAME_AUDIO_MAX=707;
+function nameAudioPath(nameNumber){
+ const clip=Number(nameNumber)+32;
+ return "../audio/lalita/verses/MSS/phrase_"+String(clip).padStart(4,"0")+".mp3";
+}
 function nameSection(v){
  let html="<section class='name-section' aria-label='"+esc(langText("Divine names","ದೇವಿಯ ನಾಮಗಳು"))+"'><div class='section-title'><h3>"+esc(langText("Divine names","ದೇವಿಯ ನಾಮಗಳು"))+"</h3><span>"+(v.names||[]).length+" "+esc(langText("names","ನಾಮಗಳು"))+"</span></div><div class='name-study-list'>";
  for(const n of v.names||[]){
@@ -99,9 +104,62 @@ function nameSection(v){
   const written=language==="kn"?kannadaFromDevanagari(writtenSource):writtenSource;
   const essential=anyMeaning(info,"essential_meaning")||(language==="kn"?n.kannada:n.english)||langText("Meaning under review","ಅರ್ಥ ಪರಿಶೀಲನೆಯಲ್ಲಿದೆ");
   const roman=n.display_iast||n.iast||"";
-  html+="<details class='name-details compact-name-row' data-detail-id='name-"+n.studyNumber+"'><summary><span class='name-audio-placeholder' aria-label='"+esc(langText("Audio placeholder","ಧ್ವನಿ ಸ್ಥಳಧಾರಕ"))+"' title='"+esc(langText("Audio coming soon","ಧ್ವನಿಮುದ್ರಣ ಶೀಘ್ರದಲ್ಲಿ"))+"'>♪</span><span class='name-summary-grid'><span class='name-identity-inline'><span class='name-number'>"+n.studyNumber+".</span><span class='name-written'>"+highlighted(written)+"</span><span class='name-roman'>"+highlighted(roman)+"</span></span><span class='name-essence'>"+esc(essential)+"</span></span></summary>"+studySections(info,parts)+"</details>";
+  const hasAudio=Number(n.studyNumber)<=MSS_NAME_AUDIO_MAX;
+  const audio=hasAudio
+   ?"<button type='button' class='name-audio-button' data-name-audio='"+esc(nameAudioPath(n.studyNumber))+"' aria-label='"+esc(langText("Play MSS audio for name "+n.studyNumber,"ನಾಮ "+n.studyNumber+" MSS ಧ್ವನಿ ಪ್ಲೇ ಮಾಡಿ"))+"' title='"+esc(langText("Play MSS","MSS ಪ್ಲೇ ಮಾಡಿ"))+"'>♪</button>"
+   :"<span class='name-audio-button unavailable' aria-hidden='true' title='"+esc(langText("MSS audio not uploaded yet","MSS ಧ್ವನಿ ಇನ್ನೂ ಅಪ್ಲೋಡ್ ಆಗಿಲ್ಲ"))+"'>♪</span>";
+  html+="<div class='name-audio-card'>"+audio+"<details class='name-details compact-name-row' data-detail-id='name-"+n.studyNumber+"'><summary><span class='name-summary-grid'><span class='name-identity-inline'><span class='name-number'>"+n.studyNumber+".</span><span class='name-written'>"+highlighted(written)+"</span><span class='name-roman'>"+highlighted(roman)+"</span></span><span class='name-essence'>"+esc(essential)+"</span></span></summary>"+studySections(info,parts)+"</details></div>";
  }
  return html+"</div></section>";
+}
+function initNameAudio(){
+ document.querySelectorAll("[data-name-audio]").forEach(button=>{
+  if(button.dataset.bound==="1")return;
+  button.dataset.bound="1";
+  button.addEventListener("click",async event=>{
+   event.preventDefault();
+   event.stopPropagation();
+
+   if(button._audio&&!button._audio.paused){
+    button._audio.pause();
+    try{button._audio.currentTime=0;}catch(_){}
+    button.classList.remove("playing");
+    return;
+   }
+
+   document.querySelectorAll(".name-audio-button.playing").forEach(other=>{
+    if(other!==button&&other._audio){
+     other._audio.pause();
+     try{other._audio.currentTime=0;}catch(_){}
+     other.classList.remove("playing");
+    }
+   });
+   document.querySelectorAll(".dhyana-phrase-play.playing").forEach(other=>stopDhyanaPhraseButton(other));
+   document.querySelectorAll(".dhyana-play-all.playing").forEach(other=>{
+    if(other._bufferSource){try{other._bufferSource.stop();}catch(_){}}
+    other._bufferSource=null;
+    other.classList.remove("playing");
+   });
+
+   let audio=button._audio;
+   if(!audio){
+    audio=document.createElement("audio");
+    audio.preload="none";
+    audio.src=button.dataset.nameAudio;
+    installAudioFocus(audio);
+    button._audio=audio;
+    audio.addEventListener("ended",()=>button.classList.remove("playing"));
+    audio.addEventListener("error",()=>button.classList.remove("playing"));
+   }
+   try{
+    claimAudioFocus(audio);
+    button.classList.add("playing");
+    await audio.play();
+   }catch(_){
+    button.classList.remove("playing");
+   }
+  });
+ });
 }
 function dhyanaPhraseComponents(v,row){
  const info=dhyanaData[v.verse_number]||{};
@@ -444,6 +502,7 @@ function render(){
  restoreDetails(opened);
  requestAnimationFrame(fitVerseLines);
  loadAudio();
+ initNameAudio();
  initDhyanaPhraseAudio();
  initDhyanaPlayAll();
  initDhyanaQuickNav();
