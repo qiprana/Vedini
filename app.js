@@ -574,10 +574,16 @@ function searchText(v,dh){
  return JSON.stringify(v)+" "+JSON.stringify(verseData[v.verse_number]||{})+" "+(v.names||[]).map(n=>JSON.stringify(nameData[n.studyNumber]||{})).join(" ");
 }
 function savedDetails(){
- return new Set(Array.from(document.querySelectorAll("details[data-detail-id]")).filter(d=>d.open).map(d=>d.dataset.detailId));
+ // Meaning disclosures always start collapsed on a fresh render; preserve only
+ // the deliberately opened name/word study cards.
+ return new Set(Array.from(document.querySelectorAll("details[data-detail-id]"))
+  .filter(d=>d.open&&!d.matches(".meaning-toggle, .verse-overall-meaning"))
+  .map(d=>d.dataset.detailId));
 }
 function restoreDetails(ids){
- document.querySelectorAll("details[data-detail-id]").forEach(d=>{d.open=ids.has(d.dataset.detailId)});
+ document.querySelectorAll("details[data-detail-id]").forEach(d=>{
+  d.open=!d.matches(".meaning-toggle, .verse-overall-meaning")&&ids.has(d.dataset.detailId);
+ });
 }
 
 function showResultList(q){
@@ -646,13 +652,61 @@ function initDhyanaQuickNav(){
   };
  });
 }
+function selectVisibleVerse(number){
+ if(!Number.isInteger(number)||number<1||number>verses.length)return;
+ selectedVerse=number;
+ const root=$("#verse-quick-index");
+ if(root){
+  root.querySelectorAll("button[data-quick]").forEach(button=>{
+   const active=Number(button.dataset.quick)===number;
+   button.classList.toggle("quick-current",active);
+   if(active)button.setAttribute("aria-current","location");
+   else button.removeAttribute("aria-current");
+  });
+ }
+ const goto=$("#goto");if(goto)goto.value=String(number);
+ document.querySelectorAll("#verse-cards .card").forEach(card=>
+  card.classList.toggle("selected-verse",card.id==="verse-"+number)
+ );
+}
 function updateQuickIndex(){
  const root=$("#verse-quick-index");if(!root)return;
  if(view!=="verses"||searchTerm.trim()){root.hidden=true;return;}
  root.hidden=false;
  const start=pageIndex*pageSize+1,end=Math.min(verses.length,start+pageSize-1);
- root.innerHTML="<span class='quick-label'>"+esc(langText("In this group","ಈ ವಿಭಾಗದಲ್ಲಿ"))+"</span><div class='quick-buttons'>"+Array.from({length:end-start+1},(_,i)=>{const n=start+i;return "<button type='button' aria-label='Śloka "+n+"' data-quick='"+n+"' class='"+(n===selectedVerse?"quick-current":"")+"'>"+n+"</button>"}).join("")+"</div>";
- root.querySelectorAll("button[data-quick]").forEach(b=>b.onclick=()=>{const number=Number(b.dataset.quick);selectedVerse=number;saveLocation("sloka",number);root.querySelectorAll("button[data-quick]").forEach(btn=>btn.classList.toggle("quick-current",Number(btn.dataset.quick)===number));document.querySelectorAll("#verse-cards .card").forEach(card=>card.classList.toggle("selected-verse",card.id==="verse-"+number));scrollToElement("verse-"+number);});
+ root.innerHTML="<span class='quick-label'>"+esc(langText("In this group","ಈ ವಿಭಾಗದಲ್ಲಿ"))+"</span><div class='quick-buttons'>"+Array.from({length:end-start+1},(_,i)=>{const n=start+i;return "<button type='button' aria-label='Śloka "+n+"' data-quick='"+n+"' class='"+(n===selectedVerse?"quick-current":"")+"'"+(n===selectedVerse?" aria-current='location'":"")+">"+n+"</button>"}).join("")+"</div>";
+ root.querySelectorAll("button[data-quick]").forEach(b=>b.onclick=()=>{
+  const number=Number(b.dataset.quick);
+  selectVisibleVerse(number);
+  saveLocation("sloka",number);
+  scrollToElement("verse-"+number);
+ });
+}
+// Passive, animation-frame-throttled scroll tracking: update the highlighted number
+// without re-rendering ślokas or interrupting a playing recording.
+let verseScrollQueued=false;
+function updateVerseIndexFromScroll(){
+ if(view!=="verses"||searchTerm.trim())return;
+ const cards=Array.from(document.querySelectorAll("#verse-cards .card"));
+ if(!cards.length)return;
+ const sticky=$("#sticky-verse-navigation");
+ const stickyBottom=sticky&&!sticky.hidden?sticky.getBoundingClientRect().bottom:0;
+ const readingLine=Math.max(stickyBottom+18,window.innerHeight*0.28);
+ let current=cards[0];
+ for(const card of cards){
+  if(card.getBoundingClientRect().top<=readingLine)current=card;
+  else break;
+ }
+ const number=Number(current.id.replace("verse-",""));
+ if(number!==selectedVerse)selectVisibleVerse(number);
+}
+function queueVerseScrollUpdate(){
+ if(verseScrollQueued)return;
+ verseScrollQueued=true;
+ requestAnimationFrame(()=>{
+  verseScrollQueued=false;
+  updateVerseIndexFromScroll();
+ });
 }
 function render(){
  stopNameAudio();
@@ -677,6 +731,8 @@ function render(){
  }
  restoreDetails(opened);
  requestAnimationFrame(fitVerseLines);
+ // After layout settles, sync the index to the śloka actually in view.
+ requestAnimationFrame(queueVerseScrollUpdate);
  loadAudio();
  initNameAudio();
  initDhyanaPhraseAudio();
@@ -1032,7 +1088,11 @@ $("#tab-dhyana").onclick=()=>showDhyana(1);
 $("#tab-verses").onclick=()=>openGroup(pageIndex);
 $("#bottom-previous").onclick=()=>openGroup(pageIndex-1);
 $("#bottom-next").onclick=()=>openGroup(pageIndex+1);
-window.addEventListener("resize",()=>requestAnimationFrame(fitVerseLines));
+window.addEventListener("scroll",queueVerseScrollUpdate,{passive:true});
+window.addEventListener("resize",()=>{
+ requestAnimationFrame(fitVerseLines);
+ queueVerseScrollUpdate();
+});
 if(document.fonts?.ready)document.fonts.ready.then(()=>requestAnimationFrame(fitVerseLines));
 window.addEventListener("popstate",()=>{searchTerm="";$("#search").value="";const target=loadInitialLocation();render();if(target)scrollToElement(target);});
 init();
