@@ -108,7 +108,14 @@ function nameAudioClips(nameNumber){
  if(n===22)return [61,62];
  if(n===23)return [63];
  if(n===24)return [64,65];
- const clip=n<=11?n+32:n<=19?n+37:n<=21?n+39:n+41;
+ if(n===25)return [66,67];
+ if(n===26)return [68,69];
+ if(n===27)return [70];
+ if(n===28)return [71];
+ if(n===29)return [72];
+ if(n===30)return [73];
+ if(n===31)return [74,75];
+ const clip=n<=11?n+32:n<=19?n+37:n<=21?n+39:n<=24?n+41:n+44;
  return clip<=MSS_LAST_CLIP?[clip]:[];
 }
 function nameAudioPaths(nameNumber){
