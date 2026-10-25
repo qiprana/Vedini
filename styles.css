@@ -579,3 +579,70 @@ header p{color:#845c4b;font-size:18px}
  .reader-page .dhyana-phrase-text,
  .reader-page .dhyana-phrase-meaning{grid-column:1}
 }
+
+
+/* Dhyana phrase controls - corrected layout */
+.reader-page .dhyana-phrase-row{
+ display:grid;
+ grid-template-columns:auto minmax(0,1.1fr) minmax(0,.9fr);
+ gap:10px 14px;
+ align-items:start;
+ padding:12px 14px;
+}
+.reader-page .dhyana-phrase-controls{
+ display:flex;
+ align-items:center;
+ gap:7px;
+ flex-wrap:nowrap;
+ min-width:max-content;
+}
+.reader-page .dhyana-word-toggle{
+ min-height:34px;
+ padding:6px 10px;
+ border:1px solid #9db3a0;
+ border-radius:999px;
+ background:#fffdf8;
+ color:#315744;
+ font:700 11px/1.2 system-ui,sans-serif;
+ cursor:pointer;
+ white-space:nowrap;
+}
+.reader-page .dhyana-word-toggle:hover,
+.reader-page .dhyana-word-toggle:focus{
+ background:#eaf3e9;
+ border-color:#64856c;
+ outline:none;
+}
+.reader-page .dhyana-inline-words{
+ grid-column:1 / -1;
+ margin:2px 0 0;
+ padding:10px 12px;
+ border-top:1px solid #d9e1d7;
+ background:#fffdfa;
+}
+.reader-page .dhyana-inline-words>summary{
+ display:none;
+}
+.reader-page .dhyana-inline-wordbody{
+ margin:0;
+ padding:0;
+ border:0;
+ background:transparent;
+ min-width:0;
+}
+@media(max-width:760px){
+ .reader-page .dhyana-phrase-row{
+  grid-template-columns:1fr;
+  gap:8px;
+ }
+ .reader-page .dhyana-phrase-controls,
+ .reader-page .dhyana-phrase-text,
+ .reader-page .dhyana-phrase-meaning,
+ .reader-page .dhyana-inline-words{
+  grid-column:1;
+ }
+ .reader-page .dhyana-phrase-controls{
+  min-width:0;
+  flex-wrap:wrap;
+ }
+}
