@@ -1,6 +1,6 @@
 {
-  "version": "20261024-mss-dhyana-phrases-v12",
-  "description": "Dhyana 4 corrected to separate clips 25, 26, and 27 into three distinct phrase cards.",
+  "version": "20261024-mss-dhyana-phrases-v13",
+  "description": "Dhyana 4 ending clips 31 and 32 merged into one displayed phrase card.",
   "phrases": [
     {
       "verse": 1,
@@ -234,19 +234,14 @@
     },
     {
       "verse": 4,
-      "clip": 31,
-      "dev": "जपविधौ",
-      "iast": "japavidhau",
-      "en": "During the practice of japa.",
-      "kn": "ಜಪದ ವಿಧಾನದಲ್ಲಿ, ಜಪ ಮಾಡುವಾಗ."
-    },
-    {
-      "verse": 4,
-      "clip": 32,
-      "dev": "स्मरेद् अम्बिकाम्",
-      "iast": "smared ambikām",
-      "en": "One should remember and contemplate Ambikā.",
-      "kn": "ಅಂಬಿಕೆಯನ್ನು ಸ್ಮರಿಸಿ ಧ್ಯಾನಿಸಬೇಕು."
+      "clips": [
+        31,
+        32
+      ],
+      "dev": "जपविधौ स्मरेद् अम्बिकाम्",
+      "iast": "japavidhau smared ambikām",
+      "en": "During the practice of japa, one should remember and contemplate Ambikā.",
+      "kn": "ಜಪ ಮಾಡುವಾಗ ಅಂಬಿಕೆಯನ್ನು ಸ್ಮರಿಸಿ ಧ್ಯಾನಿಸಬೇಕು."
     }
   ]
 }
