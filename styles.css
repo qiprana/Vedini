@@ -1012,3 +1012,17 @@ header p{color:#845c4b;font-size:18px}
   padding-left:38px;
  }
 }
+
+/* Divine-name study rows have no individual audio controls.
+   Leave only the disclosure arrow beside each name; the śloka header owns playback. */
+.reader-page .name-study-list > .compact-name-row > summary {
+ padding-left:30px;
+}
+.reader-page .name-study-list > .compact-name-row > summary::before {
+ left:11px;
+}
+@media(max-width:720px) {
+ .reader-page .name-study-list > .compact-name-row > summary {
+  padding-left:27px;
+ }
+}
