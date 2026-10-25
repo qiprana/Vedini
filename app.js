@@ -109,54 +109,54 @@ function initDhyanaPhraseAudio(){
  document.querySelectorAll("[data-phrase-audio]").forEach(button=>{
   if(button.dataset.bound==="1")return;
   button.dataset.bound="1";
-  button.addEventListener("click",()=>{
+  button.addEventListener("click",async()=>{
    const sources=(button.dataset.phraseAudios||button.dataset.phraseAudio||"").split("|").filter(Boolean);
    if(!sources.length)return;
 
-   if(button._queue&&button._queue.some(a=>!a.paused)){
-    button._queue.forEach(a=>{a.pause();try{a.currentTime=0;}catch(_){ }});
+   if(button._audio&&!button._audio.paused){
+    button._audio.pause();
+    try{button._audio.currentTime=0;}catch(_){}
     button.classList.remove("playing");
-    button._queue=null;
     return;
    }
 
-   const queue=sources.map(src=>{
-    const a=document.createElement("audio");
-    a.preload="auto";
-    a.src=src;
-    installAudioFocus(a);
-    return a;
-   });
-   button._queue=queue;
-   let current=0;
+   button.disabled=true;
+   try{
+    let playUrl=sources[0];
+    if(sources.length>1){
+     if(!button._mergedAudioUrl){
+      const responses=await Promise.all(sources.map(src=>fetch(src)));
+      if(responses.some(r=>!r.ok))throw new Error("Could not load all audio clips");
+      const buffers=await Promise.all(responses.map(r=>r.arrayBuffer()));
+      const blob=new Blob(buffers,{type:"audio/mpeg"});
+      button._mergedAudioUrl=URL.createObjectURL(blob);
+     }
+     playUrl=button._mergedAudioUrl;
+    }
 
-   const stopQueue=()=>{
-    queue.forEach(a=>{a.pause();try{a.currentTime=0;}catch(_){ }});
+    let audio=button._audio;
+    if(!audio){
+     audio=document.createElement("audio");
+     audio.preload="auto";
+     installAudioFocus(audio);
+     button._audio=audio;
+     audio.addEventListener("ended",()=>button.classList.remove("playing"));
+     audio.addEventListener("pause",()=>{if(audio.ended||audio.currentTime===0)button.classList.remove("playing")});
+    }
+    if(audio.src!==playUrl){
+     audio.src=playUrl;
+     audio.load();
+    }
+    try{audio.currentTime=0;}catch(_){}
+    claimAudioFocus(audio);
+    button.classList.add("playing");
+    const p=audio.play();
+    if(p&&typeof p.catch==="function")await p;
+   }catch(err){
     button.classList.remove("playing");
-    if(button._queue===queue)button._queue=null;
-   };
-
-   queue.forEach((audio,i)=>{
-    audio.addEventListener("ended",()=>{
-      if(button._queue!==queue)return;
-      if(i+1<queue.length){
-        current=i+1;
-        claimAudioFocus(queue[current]);
-        const nextPlay=queue[current].play();
-        if(nextPlay&&typeof nextPlay.catch==="function"){
-          nextPlay.catch(stopQueue);
-        }
-      }else{
-        button.classList.remove("playing");
-        button._queue=null;
-      }
-    });
-   });
-
-   claimAudioFocus(queue[0]);
-   button.classList.add("playing");
-   const firstPlay=queue[0].play();
-   if(firstPlay&&typeof firstPlay.catch==="function")firstPlay.catch(stopQueue);
+   }finally{
+    button.disabled=false;
+   }
   });
  });
 }
@@ -549,7 +549,7 @@ function switchLanguage(kn){
 async function init(){
  const paths=["lalita/dhyana.json","lalita/names-interpretations-draft.json","lalita/study-names-011-018.json","lalita/study-names-019-026.json","lalita/study-dhyana-01-02.json","lalita/study-dhyana-03-04.json","lalita/study-verses-001-010.json",...Array.from({length:183},(_,i)=>"lalita/verses/verse-"+String(i+1).padStart(3,"0")+".json")];
  try{
- const [files,briefNames,dhyanaPhrases]=await Promise.all([Promise.all(paths.map(fetchJSON)),fetchJSON("lalita/brief-names-draft.json"),fetchJSON("lalita/dhyana-mss-phrases.json?v=20261024-v7b")]);
+ const [files,briefNames,dhyanaPhrases]=await Promise.all([Promise.all(paths.map(fetchJSON)),fetchJSON("lalita/brief-names-draft.json"),fetchJSON("lalita/dhyana-mss-phrases.json?v=20261024-v7c")]);
  dhyana=files[0];
  dhyanaPhraseData=Object.fromEntries([1,2,3,4].map(v=>[v,(dhyanaPhrases.phrases||[]).filter(p=>p.verse===v)]));
  const old=files[1],newNames=[...files[2],...files[3]];
