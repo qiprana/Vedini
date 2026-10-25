@@ -93,6 +93,14 @@ function nameSection(v){
  }
  return html+"</div></section>";
 }
+function dhyanaPhraseComponents(v,row){
+ const info=dhyanaData[v.verse_number]||{};
+ const phrase=norm(row.iast).replace(/[-–—]/g," ");
+ return (info.components||[]).filter(component=>{
+  const key=norm(component.iast||"").replace(/[-–—]/g," ").trim();
+  return key&&phrase.includes(key);
+ });
+}
 function dhyanaPhrasePanel(v){
  const rows=dhyanaPhraseData[v.verse_number]||[];
  if(!rows.length)return "";
@@ -101,8 +109,9 @@ function dhyanaPhrasePanel(v){
   const meaning=language==="kn"?row.kn:row.en;
   const clipList=Array.isArray(row.clips)?row.clips:[row.clip];
   const paths=clipList.map(n=>"../audio/lalita/verses/MSS/phrase_"+String(n).padStart(4,"0")+".mp3");
-  const path=paths[0];
-  return "<div class='dhyana-phrase-row'><button type='button' class='dhyana-phrase-play' data-phrase-audio='"+esc(path)+"' data-phrase-audios='"+esc(paths.join("|"))+"' aria-label='"+esc(langText("Play phrase","ಪದಗುಚ್ಛವನ್ನು ಪ್ಲೇ ಮಾಡಿ"))+"'>♪</button><div class='dhyana-phrase-text'><div class='dhyana-phrase-script'>"+highlighted(written)+"</div><div class='dhyana-phrase-iast'>"+highlighted(row.iast)+"</div></div><div class='dhyana-phrase-meaning'>"+esc(meaning)+"</div></div>";
+  const parts=dhyanaPhraseComponents(v,row);
+  const words=parts.length?"<details class='dhyana-inline-words'><summary>"+esc(langText("Word by word","ಪದ ಪದದ ಅರ್ಥ"))+"</summary><div class='dhyana-inline-wordbody'>"+wordsGrid(parts)+"</div></details>":"";
+  return "<div class='dhyana-phrase-row'><div class='dhyana-phrase-controls'><button type='button' class='dhyana-phrase-play' data-phrase-audio='"+esc(paths[0])+"' data-phrase-audios='"+esc(paths.join("|"))+"' aria-label='"+esc(langText("Play phrase","ಪದಗುಚ್ಛವನ್ನು ಪ್ಲೇ ಮಾಡಿ"))+"'>♪</button>"+words+"</div><div class='dhyana-phrase-text'><div class='dhyana-phrase-script'>"+highlighted(written)+"</div><div class='dhyana-phrase-iast'>"+highlighted(row.iast)+"</div></div><div class='dhyana-phrase-meaning'>"+esc(meaning)+"</div></div>";
  }).join("")+"</div></section>";
 }
 function initDhyanaPhraseAudio(){
@@ -284,6 +293,16 @@ function updateNavigation(){
  msg("#main-heading","Ślokas "+start+"–"+end,"ಶ್ಲೋಕಗಳು "+start+"–"+end);
  msg("#study-languages-label","Script & meaning","ಲಿಪಿ ಮತ್ತು ಅರ್ಥ:");
 }
+function initDhyanaQuickNav(){
+ const root=$("#dhyana-quick-nav");if(!root)return;
+ root.querySelectorAll("[data-dhyana-jump]").forEach(btn=>{
+  btn.onclick=()=>{
+   const n=Number(btn.dataset.dhyanaJump);
+   showDhyana(n);
+   requestAnimationFrame(()=>document.querySelector("#dhyana-"+n)?.scrollIntoView({behavior:"smooth",block:"start"}));
+  };
+ });
+}
 function updateQuickIndex(){
  const root=$("#verse-quick-index");if(!root)return;
  if(view!=="verses"||searchTerm.trim()){root.hidden=true;return;}
@@ -316,6 +335,7 @@ function render(){
  requestAnimationFrame(fitVerseLines);
  loadAudio();
  initDhyanaPhraseAudio();
+ initDhyanaQuickNav();
 }
 function saveLocation(kind,n){
  const url=new URL(window.location.href);
