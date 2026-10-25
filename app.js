@@ -155,7 +155,24 @@ function nameAudioClips(nameNumber){
  if(n===73)return [133,134];
  if(n===74)return [135,136];
  if(n===75)return [137,138];
- const clip=n<=11?n+32:n<=19?n+37:n<=21?n+39:n<=24?n+41:n<=32?n+44:n<=40?n+51:n<=71?n+54:n<=72?n+60:n+63;
+ if(n===77)return [140,141];
+ if(n===78)return [142,143];
+ if(n===79)return [144];
+ if(n===80)return [145,146];
+ if(n===81)return [147,148];
+ if(n===82)return [149,150];
+ if(n===83)return [151];
+ if(n===84)return [152,153];
+ if(n===85)return [154,155];
+ if(n===86)return [156,157];
+ if(n===87)return [158,159];
+ if(n===88)return [160];
+ if(n===89)return [161];
+ if(n===90)return [162];
+ if(n===91)return [163];
+ if(n===92)return [164]; // Shared clip for names 92-93.
+ if(n===93)return []; // Included in combined 92-93 card.
+ const clip=n<=11?n+32:n<=19?n+37:n<=21?n+39:n<=24?n+41:n<=32?n+44:n<=40?n+51:n<=71?n+54:n<=72?n+60:n<=76?n+63:n+71;
  return clip<=MSS_LAST_CLIP?[clip]:[];
 }
 function nameAudioPaths(nameNumber){
@@ -174,7 +191,7 @@ function verseMssAudioPaths(v){
  }
  return clips.map(mssClipPath);
 }
-const COMBINED_MSS_NAME_PAIRS={49:50,53:54,62:63};
+const COMBINED_MSS_NAME_PAIRS={49:50,53:54,62:63,92:93};
 function nameSection(v){
  const names=v.names||[];
  let html="<section class='name-section' aria-label='"+esc(langText("Divine names","ದೇವಿಯ ನಾಮಗಳು"))+"'><div class='section-title'><h3>"+esc(langText("Divine names","ದೇವಿಯ ನಾಮಗಳು"))+"</h3><span>"+names.length+" "+esc(langText("names","ನಾಮಗಳು"))+"</span></div><div class='name-study-list'>";
