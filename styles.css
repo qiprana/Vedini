@@ -811,3 +811,32 @@ header p{color:#845c4b;font-size:18px}
   left:10px;width:28px;height:28px;font-size:14px;
  }
 }
+
+
+/* Dhyana-level Play all MSS control */
+.reader-page .dhyana-play-all{
+ border:1px solid #78967f;
+ border-radius:999px;
+ background:#eef5ec;
+ color:#315744;
+ padding:8px 13px;
+ font:700 12px/1.2 system-ui,sans-serif;
+ cursor:pointer;
+ white-space:nowrap;
+ box-shadow:0 2px 6px #31574412;
+}
+.reader-page .dhyana-play-all:hover,
+.reader-page .dhyana-play-all:focus{
+ background:#e1eee0;
+ border-color:#5f7f67;
+ outline:none;
+}
+.reader-page .dhyana-play-all.playing{
+ background:#315744;
+ color:#fff;
+ border-color:#315744;
+}
+.reader-page .dhyana-play-all:disabled{
+ opacity:.65;
+ cursor:wait;
+}
