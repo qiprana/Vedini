@@ -1,6 +1,6 @@
 {
-  "version": "20261024-mss-dhyana-phrases-v7",
-  "description": "Dhyana MSS mapping supports multi-clip phrases; सततम् अभयदां भक्तनम्रां भवानीं plays clips 20 then 21.",
+  "version": "20261024-mss-dhyana-phrases-v8",
+  "description": "Dhyana MSS mapping supports multi-clip phrases; सकलसुरनुतां सर्वसम्पत्प्रदात्रीम् plays clips 23 then 24.",
   "phrases": [
     {
       "verse": 1,
@@ -175,15 +175,18 @@
     },
     {
       "verse": 3,
-      "clip": 23,
       "dev": "सकलसुरनुतां सर्वसम्पत्प्रदात्रीम्",
       "iast": "sakalasuranutāṃ sarvasampatpradātrīm",
       "en": "All the devas praise her, and she bestows every form of true abundance.",
-      "kn": "ಎಲ್ಲ ದೇವತೆಗಳೂ ಅವಳನ್ನು ಸ್ತುತಿಸುತ್ತಾರೆ; ಅವಳು ಸಮಸ್ತ ಸತ್ಯಸಂಪತ್ತನ್ನು ಅನುಗ್ರಹಿಸುತ್ತಾಳೆ."
+      "kn": "ಎಲ್ಲ ದೇವತೆಗಳೂ ಅವಳನ್ನು ಸ್ತುತಿಸುತ್ತಾರೆ; ಅವಳು ಸಮಸ್ತ ಸತ್ಯಸಂಪತ್ತನ್ನು ಅನುಗ್ರಹಿಸುತ್ತಾಳೆ.",
+      "clips": [
+        23,
+        24
+      ]
     },
     {
       "verse": 4,
-      "clip": 24,
+      "clip": 25,
       "dev": "सकुङ्कुम-विलेपनाम्",
       "iast": "sakuṅkuma-vilepanām",
       "en": "She is anointed with fragrant kuṅkuma.",
@@ -191,7 +194,7 @@
     },
     {
       "verse": 4,
-      "clip": 25,
+      "clip": 26,
       "dev": "अलिक-चुम्बि-कस्तूरिकां",
       "iast": "alika-cumbi-kastūrikāṃ",
       "en": "A musk mark adorns her forehead near the curls that touch it.",
@@ -199,7 +202,7 @@
     },
     {
       "verse": 4,
-      "clip": 26,
+      "clip": 27,
       "dev": "समन्द-हसितेक्षणां",
       "iast": "samanda-hasitekṣaṇāṃ",
       "en": "Her glance is accompanied by a soft and gentle smile.",
@@ -207,7 +210,7 @@
     },
     {
       "verse": 4,
-      "clip": 27,
+      "clip": 28,
       "dev": "सशर-चाप-पाशाङ्कुशाम्",
       "iast": "saśara-cāpa-pāśāṅkuśām",
       "en": "She holds arrows, bow, noose and goad.",
@@ -215,7 +218,7 @@
     },
     {
       "verse": 4,
-      "clip": 28,
+      "clip": 29,
       "dev": "अशेषजन-मोहिनीम्",
       "iast": "aśeṣajana-mohinīm",
       "en": "Her divine beauty enchants all beings without exception.",
@@ -223,7 +226,7 @@
     },
     {
       "verse": 4,
-      "clip": 29,
+      "clip": 30,
       "dev": "अरुण-माल्य-भूषाम्बरां",
       "iast": "aruṇa-mālya-bhūṣāmbarāṃ",
       "en": "She is adorned with red garlands, ornaments and garments.",
@@ -231,7 +234,7 @@
     },
     {
       "verse": 4,
-      "clip": 30,
+      "clip": 31,
       "dev": "जपाकुसुम-भासुरां",
       "iast": "japākusuma-bhāsurāṃ",
       "en": "She shines brilliantly like the red hibiscus flower.",
@@ -239,7 +242,7 @@
     },
     {
       "verse": 4,
-      "clip": 31,
+      "clip": 32,
       "dev": "जपविधौ",
       "iast": "japavidhau",
       "en": "During the practice of japa.",
@@ -247,7 +250,7 @@
     },
     {
       "verse": 4,
-      "clip": 32,
+      "clip": 33,
       "dev": "स्मरेद् अम्बिकाम्",
       "iast": "smared ambikām",
       "en": "One should remember and contemplate Ambikā.",
