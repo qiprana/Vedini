@@ -123,7 +123,17 @@ function nameAudioClips(nameNumber){
  if(n===38)return [86,87];
  if(n===39)return [88,89];
  if(n===40)return [90,91];
- const clip=n<=11?n+32:n<=19?n+37:n<=21?n+39:n<=24?n+41:n<=32?n+44:n+51;
+ if(n===41)return [92,93];
+ if(n===42)return [94];
+ if(n===43)return [95];
+ if(n===44)return [96,97];
+ if(n===45)return [98,99];
+ if(n===46)return [100,101];
+ if(n===47)return [102];
+ if(n===48)return [103];
+ if(n===49)return [104];
+ if(n===50)return []; // Combined with name 49 in the same spoken phrase.
+ const clip=n<=11?n+32:n<=19?n+37:n<=21?n+39:n<=24?n+41:n<=32?n+44:n<=40?n+51:n+54;
  return clip<=MSS_LAST_CLIP?[clip]:[];
 }
 function nameAudioPaths(nameNumber){
@@ -143,19 +153,34 @@ function verseMssAudioPaths(v){
  return clips.map(mssClipPath);
 }
 function nameSection(v){
- let html="<section class='name-section' aria-label='"+esc(langText("Divine names","ದೇವಿಯ ನಾಮಗಳು"))+"'><div class='section-title'><h3>"+esc(langText("Divine names","ದೇವಿಯ ನಾಮಗಳು"))+"</h3><span>"+(v.names||[]).length+" "+esc(langText("names","ನಾಮಗಳು"))+"</span></div><div class='name-study-list'>";
- for(const n of v.names||[]){
+ const names=v.names||[];
+ let html="<section class='name-section' aria-label='"+esc(langText("Divine names","ದೇವಿಯ ನಾಮಗಳು"))+"'><div class='section-title'><h3>"+esc(langText("Divine names","ದೇವಿಯ ನಾಮಗಳು"))+"</h3><span>"+names.length+" "+esc(langText("names","ನಾಮಗಳು"))+"</span></div><div class='name-study-list'>";
+ for(const n of names){
+  // Names 49 and 50 share MSS clip 0104. Show them together without losing either interpretation.
+  const joined=n.studyNumber===49?names.find(x=>x.studyNumber===50):null;
+  if(n.studyNumber===50&&names.some(x=>x.studyNumber===49))continue;
   const info=nameData[n.studyNumber]||{},parts=findComponents(v,n,info);
-  const writtenSource=n.display_devanagari||n.sanskrit||"";
-  const written=language==="kn"?kannadaFromDevanagari(writtenSource):writtenSource;
-  const essential=anyMeaning(info,"essential_meaning")||(language==="kn"?n.kannada:n.english)||langText("Meaning under review","ಅರ್ಥ ಪರಿಶೀಲನೆಯಲ್ಲಿದೆ");
-  const roman=n.display_iast||n.iast||"";
+  const joinedInfo=joined?(nameData[joined.studyNumber]||{}):null;
+  const joinedParts=joined?findComponents(v,joined,joinedInfo):[];
+  const nameInScript=item=>{
+   const dev=item.display_devanagari||item.sanskrit||"";
+   return language==="kn"?kannadaFromDevanagari(dev):dev;
+  };
+  const romanFor=item=>item.display_iast||item.iast||"";
+  const meaningFor=(item,data)=>anyMeaning(data,"essential_meaning")||(language==="kn"?item.kannada:item.english)||langText("Meaning under review","ಅರ್ಥ ಪರಿಶೀಲನೆಯಲ್ಲಿದೆ");
+  const written=nameInScript(n)+(joined?" "+nameInScript(joined):"");
+  const roman=romanFor(n)+(joined?" "+romanFor(joined):"");
+  const essential=meaningFor(n,info)+(joined?" · "+meaningFor(joined,joinedInfo):"");
+  const label=joined?n.studyNumber+"–"+joined.studyNumber:String(n.studyNumber);
   const audioPaths=nameAudioPaths(n.studyNumber);
   const hasAudio=audioPaths.length>0;
   const audio=hasAudio
-   ?"<button type='button' class='name-audio-button' data-name-audio='"+esc(audioPaths[0])+"' data-name-audios='"+esc(audioPaths.join("|"))+"' aria-label='"+esc(langText("Play MSS audio for name "+n.studyNumber,"ನಾಮ "+n.studyNumber+" MSS ಧ್ವನಿ ಪ್ಲೇ ಮಾಡಿ"))+"' title='"+esc(langText("Play MSS","MSS ಪ್ಲೇ ಮಾಡಿ"))+"'>♪</button>"
+   ?"<button type='button' class='name-audio-button' data-name-audio='"+esc(audioPaths[0])+"' data-name-audios='"+esc(audioPaths.join("|"))+"' aria-label='"+esc(langText("Play MSS audio for name "+label,"ನಾಮ "+label+" MSS ಧ್ವನಿ ಪ್ಲೇ ಮಾಡಿ"))+"' title='"+esc(langText("Play MSS","MSS ಪ್ಲೇ ಮಾಡಿ"))+"'>♪</button>"
    :"<span class='name-audio-button unavailable' aria-hidden='true' title='"+esc(langText("MSS audio not uploaded yet","MSS ಧ್ವನಿ ಇನ್ನೂ ಅಪ್ಲೋಡ್ ಆಗಿಲ್ಲ"))+"'>♪</span>";
-  html+="<div class='name-audio-card'>"+audio+"<details class='name-details compact-name-row' data-detail-id='name-"+n.studyNumber+"'><summary><span class='name-summary-grid'><span class='name-identity-inline'><span class='name-number'>"+n.studyNumber+".</span><span class='name-written'>"+highlighted(written)+"</span><span class='name-roman'>"+highlighted(roman)+"</span></span><span class='name-essence'>"+esc(essential)+"</span></span></summary>"+studySections(info,parts)+"</details></div>";
+  const sections=joined
+   ?"<div class='combined-name-study'><div class='combined-name-part'><h4>"+esc(n.studyNumber+". "+nameInScript(n))+"</h4>"+studySections(info,parts)+"</div><div class='combined-name-part'><h4>"+esc(joined.studyNumber+". "+nameInScript(joined))+"</h4>"+studySections(joinedInfo,joinedParts)+"</div></div>"
+   :studySections(info,parts);
+  html+="<div class='name-audio-card'>"+audio+"<details class='name-details compact-name-row' data-detail-id='name-"+n.studyNumber+"'><summary><span class='name-summary-grid'><span class='name-identity-inline'><span class='name-number'>"+esc(label)+".</span><span class='name-written'>"+highlighted(written)+"</span><span class='name-roman'>"+highlighted(roman)+"</span></span><span class='name-essence'>"+highlighted(essential)+"</span></span></summary>"+sections+"</details></div>";
  }
  return html+"</div></section>";
 }
