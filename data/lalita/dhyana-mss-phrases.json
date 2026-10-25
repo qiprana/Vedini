@@ -1,6 +1,6 @@
 {
-  "version": "20261024-mss-dhyana-phrases-v13",
-  "description": "Dhyana 4 ending clips 31 and 32 merged into one displayed phrase card.",
+  "version": "20261024-mss-dhyana-phrases-v14",
+  "description": "Dhyana phrase mapping with exact component indices for complete word-by-word rendering.",
   "phrases": [
     {
       "verse": 1,
@@ -8,7 +8,12 @@
       "dev": "सिन्दूरारुण-विग्रहां",
       "iast": "sindūrāruṇa-vigrahāṃ",
       "en": "She whose form is vermilion-red, glowing with the warm radiance of dawn.",
-      "kn": "ಕುಂಕುಮದ ಅರುಣವರ್ಣದ ದಿವ್ಯರೂಪವನ್ನು ಹೊಂದಿರುವವಳು."
+      "kn": "ಕುಂಕುಮದ ಅರುಣವರ್ಣದ ದಿವ್ಯರೂಪವನ್ನು ಹೊಂದಿರುವವಳು.",
+      "component_indices": [
+        0,
+        1,
+        2
+      ]
     },
     {
       "verse": 1,
@@ -16,7 +21,14 @@
       "dev": "त्रिनयनां माणिक्य-मौलि-स्फुरत्",
       "iast": "trinayanāṃ māṇikya-mauli-sphurat",
       "en": "She is three-eyed, with a jeweled crown shining brilliantly.",
-      "kn": "ಮೂರು ಕಣ್ಣುಗಳೊಂದಿಗೆ, ಮಣಿರತ್ನಗಳಿಂದ ಅಲಂಕರಿಸಿದ ಪ್ರಕಾಶಮಾನ ಕಿರೀಟವನ್ನು ಧರಿಸಿರುವವಳು."
+      "kn": "ಮೂರು ಕಣ್ಣುಗಳೊಂದಿಗೆ, ಮಣಿರತ್ನಗಳಿಂದ ಅಲಂಕರಿಸಿದ ಪ್ರಕಾಶಮಾನ ಕಿರೀಟವನ್ನು ಧರಿಸಿರುವವಳು.",
+      "component_indices": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
     },
     {
       "verse": 1,
@@ -24,7 +36,11 @@
       "dev": "तारानायक-शेखरां",
       "iast": "tārānāyaka-śekharāṃ",
       "en": "She wears the moon, the lord of the stars, as the crest upon her crown.",
-      "kn": "ನಕ್ಷತ್ರಗಳ ಅಧಿಪತಿಯಾದ ಚಂದ್ರನನ್ನು ಶಿರೋಭೂಷಣವಾಗಿ ಧರಿಸಿರುವವಳು."
+      "kn": "ನಕ್ಷತ್ರಗಳ ಅಧಿಪತಿಯಾದ ಚಂದ್ರನನ್ನು ಶಿರೋಭೂಷಣವಾಗಿ ಧರಿಸಿರುವವಳು.",
+      "component_indices": [
+        8,
+        9
+      ]
     },
     {
       "verse": 1,
@@ -32,7 +48,11 @@
       "dev": "स्मितमुखीम् आपीन-वक्षोरुहाम्",
       "iast": "smitamukhīm āpīna-vakṣoruhām",
       "en": "Her face carries a gentle smile, and her full bosom evokes the nourishing tenderness of the Mother.",
-      "kn": "ಮೃದುನಗುವ ಮುಖವುಳ್ಳವಳು; ಅವಳ ಪೂರ್ಣ ವಕ್ಷಸ್ಥಲವು ಜಗನ್ಮಾತೆಯ ಪೋಷಕತ್ವವನ್ನು ಸೂಚಿಸುತ್ತದೆ."
+      "kn": "ಮೃದುನಗುವ ಮುಖವುಳ್ಳವಳು; ಅವಳ ಪೂರ್ಣ ವಕ್ಷಸ್ಥಲವು ಜಗನ್ಮಾತೆಯ ಪೋಷಕತ್ವವನ್ನು ಸೂಚಿಸುತ್ತದೆ.",
+      "component_indices": [
+        10,
+        11
+      ]
     },
     {
       "verse": 1,
@@ -40,7 +60,13 @@
       "dev": "पाणिभ्याम् अलि-पूर्ण-रत्न-चषकं",
       "iast": "pāṇibhyām ali-pūrṇa-ratna-caṣakaṃ",
       "en": "In her hands she holds a jeweled cup, described with the imagery of sweetness that draws bees.",
-      "kn": "ತನ್ನ ಕೈಗಳಲ್ಲಿ ಜೇನುನೊಣಗಳನ್ನು ಆಕರ್ಷಿಸುವ ಮಧುರತೆಯ ಚಿತ್ರಣವಿರುವ ರತ್ನಪಾತ್ರೆಯನ್ನು ಹಿಡಿದಿರುವವಳು."
+      "kn": "ತನ್ನ ಕೈಗಳಲ್ಲಿ ಜೇನುನೊಣಗಳನ್ನು ಆಕರ್ಷಿಸುವ ಮಧುರತೆಯ ಚಿತ್ರಣವಿರುವ ರತ್ನಪಾತ್ರೆಯನ್ನು ಹಿಡಿದಿರುವವಳು.",
+      "component_indices": [
+        12,
+        13,
+        14,
+        15
+      ]
     },
     {
       "verse": 1,
@@ -48,7 +74,11 @@
       "dev": "रक्तोत्पलं बिभ्रतीं",
       "iast": "raktotpalaṃ bibhratīṃ",
       "en": "She also bears a red lotus.",
-      "kn": "ಅವಳು ಕೆಂಪು ಕಮಲವನ್ನೂ ಧರಿಸಿರುವವಳು."
+      "kn": "ಅವಳು ಕೆಂಪು ಕಮಲವನ್ನೂ ಧರಿಸಿರುವವಳು.",
+      "component_indices": [
+        16,
+        17
+      ]
     },
     {
       "verse": 1,
@@ -56,7 +86,12 @@
       "dev": "सौम्यां रत्नघटस्थ-रक्तचरणां",
       "iast": "saumyāṃ ratnaghaṭastha-raktacaraṇāṃ",
       "en": "She is serene and gentle, with red feet resting upon a jeweled vessel.",
-      "kn": "ಸೌಮ್ಯಸ್ವರೂಪಿಣಿಯಾಗಿ, ರತ್ನಘಟದ ಮೇಲೆ ವಿರಾಜಿಸುವ ಕೆಂಪು ಪಾದಗಳನ್ನು ಹೊಂದಿರುವವಳು."
+      "kn": "ಸೌಮ್ಯಸ್ವರೂಪಿಣಿಯಾಗಿ, ರತ್ನಘಟದ ಮೇಲೆ ವಿರಾಜಿಸುವ ಕೆಂಪು ಪಾದಗಳನ್ನು ಹೊಂದಿರುವವಳು.",
+      "component_indices": [
+        18,
+        19,
+        20
+      ]
     },
     {
       "verse": 1,
@@ -64,7 +99,12 @@
       "dev": "ध्यायेत् पराम् अम्बिकाम्",
       "iast": "dhyāyet parām ambikām",
       "en": "One should meditate upon her as the Supreme Mother, Ambikā.",
-      "kn": "ಅವಳನ್ನು ಪರಮ ಜಗನ್ಮಾತೆಯಾದ ಅಂಬಿಕೆಯಾಗಿ ಧ್ಯಾನಿಸಬೇಕು."
+      "kn": "ಅವಳನ್ನು ಪರಮ ಜಗನ್ಮಾತೆಯಾದ ಅಂಬಿಕೆಯಾಗಿ ಧ್ಯಾನಿಸಬೇಕು.",
+      "component_indices": [
+        21,
+        22,
+        23
+      ]
     },
     {
       "verse": 2,
@@ -72,7 +112,13 @@
       "dev": "अरुणां करुणा-तरङ्गिताक्षीं",
       "iast": "aruṇāṃ karuṇā-taraṅgitākṣīṃ",
       "en": "She is crimson-red, like the glow of dawn, and her eyes ripple with waves of compassion.",
-      "kn": "ಅವಳು ಪ್ರಭಾತದಂತೆ ಅರುಣವರ್ಣಳಾಗಿದ್ದು, ಅವಳ ಕಣ್ಣುಗಳು ಕರುಣೆಯ ಅಲೆಗಳಿಂದ ತುಂಬಿವೆ."
+      "kn": "ಅವಳು ಪ್ರಭಾತದಂತೆ ಅರುಣವರ್ಣಳಾಗಿದ್ದು, ಅವಳ ಕಣ್ಣುಗಳು ಕರುಣೆಯ ಅಲೆಗಳಿಂದ ತುಂಬಿವೆ.",
+      "component_indices": [
+        0,
+        1,
+        2,
+        3
+      ]
     },
     {
       "verse": 2,
@@ -80,7 +126,12 @@
       "dev": "धृत-पाशाङ्कुश",
       "iast": "dhṛta-pāśāṅkuśa",
       "en": "She holds the noose and the goad.",
-      "kn": "ಅವಳು ಪಾಶ ಮತ್ತು ಅಂಕುಶವನ್ನು ಹಿಡಿದಿರುವವಳು."
+      "kn": "ಅವಳು ಪಾಶ ಮತ್ತು ಅಂಕುಶವನ್ನು ಹಿಡಿದಿರುವವಳು.",
+      "component_indices": [
+        4,
+        5,
+        6
+      ]
     },
     {
       "verse": 2,
@@ -88,7 +139,11 @@
       "dev": "पुष्पबाण-चापाम्",
       "iast": "puṣpabāṇa-cāpām",
       "en": "She bears the bow and flower-arrows.",
-      "kn": "ಅವಳು ಬಿಲ್ಲು ಮತ್ತು ಪುಷ್ಪಬಾಣಗಳನ್ನು ಧರಿಸಿರುವವಳು."
+      "kn": "ಅವಳು ಬಿಲ್ಲು ಮತ್ತು ಪುಷ್ಪಬಾಣಗಳನ್ನು ಧರಿಸಿರುವವಳು.",
+      "component_indices": [
+        7,
+        8
+      ]
     },
     {
       "verse": 2,
@@ -96,7 +151,13 @@
       "dev": "अणिमादिभिर् आवृतां मयूखैः",
       "iast": "aṇimādibhir āvṛtāṃ mayūkhaiḥ",
       "en": "She is surrounded by Aṇimā and the other divine spiritual powers, shining around her like rays of light.",
-      "kn": "ಅಣಿಮಾ ಮೊದಲಾದ ದಿವ್ಯ ಸಿದ್ಧಿಶಕ್ತಿಗಳು ಪ್ರಕಾಶಕಿರಣಗಳಂತೆ ಅವಳ ಸುತ್ತ ಆವರಿಸಿವೆ."
+      "kn": "ಅಣಿಮಾ ಮೊದಲಾದ ದಿವ್ಯ ಸಿದ್ಧಿಶಕ್ತಿಗಳು ಪ್ರಕಾಶಕಿರಣಗಳಂತೆ ಅವಳ ಸುತ್ತ ಆವರಿಸಿವೆ.",
+      "component_indices": [
+        9,
+        10,
+        11,
+        12
+      ]
     },
     {
       "verse": 2,
@@ -104,7 +165,14 @@
       "dev": "अहम् इत्येव विभावये भवानीम्",
       "iast": "aham ityeva vibhāvaye bhavānīm",
       "en": "I contemplate Bhavānī as the very awareness expressed by ‘I am’.",
-      "kn": "‘ನಾನು’ ಎಂಬ ಮೂಲಜಾಗೃತಿಯ ಸ್ವರೂಪವಾಗಿ ಭವಾನಿಯನ್ನು ಧ್ಯಾನಿಸುತ್ತೇನೆ."
+      "kn": "‘ನಾನು’ ಎಂಬ ಮೂಲಜಾಗೃತಿಯ ಸ್ವರೂಪವಾಗಿ ಭವಾನಿಯನ್ನು ಧ್ಯಾನಿಸುತ್ತೇನೆ.",
+      "component_indices": [
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
     },
     {
       "verse": 3,
@@ -112,7 +180,11 @@
       "dev": "ध्यायेत् पद्मासनस्थां",
       "iast": "dhyāyet padmāsanasthāṃ",
       "en": "Meditate on her seated upon a lotus.",
-      "kn": "ಪದ್ಮಾಸನದಲ್ಲಿ ವಿರಾಜಿಸುವ ಅವಳನ್ನು ಧ್ಯಾನಿಸಬೇಕು."
+      "kn": "ಪದ್ಮಾಸನದಲ್ಲಿ ವಿರಾಜಿಸುವ ಅವಳನ್ನು ಧ್ಯಾನಿಸಬೇಕು.",
+      "component_indices": [
+        0,
+        1
+      ]
     },
     {
       "verse": 3,
@@ -120,7 +192,10 @@
       "dev": "विकसित-वदनां",
       "iast": "vikasita-vadanāṃ",
       "en": "Her face is blossoming and radiant.",
-      "kn": "ಅವಳ ಮುಖವು ಅರಳಿದ ಹೂವಿನಂತೆ ಪ್ರಕಾಶಮಾನವಾಗಿದೆ."
+      "kn": "ಅವಳ ಮುಖವು ಅರಳಿದ ಹೂವಿನಂತೆ ಪ್ರಕಾಶಮಾನವಾಗಿದೆ.",
+      "component_indices": [
+        2
+      ]
     },
     {
       "verse": 3,
@@ -128,7 +203,10 @@
       "dev": "पद्मपत्रायताक्षीं",
       "iast": "padmapatrāyatākṣīṃ",
       "en": "Her long eyes resemble lotus petals.",
-      "kn": "ಅವಳ ದೀರ್ಘ ಕಣ್ಣುಗಳು ಕಮಲದಳಗಳಂತಿವೆ."
+      "kn": "ಅವಳ ದೀರ್ಘ ಕಣ್ಣುಗಳು ಕಮಲದಳಗಳಂತಿವೆ.",
+      "component_indices": [
+        3
+      ]
     },
     {
       "verse": 3,
@@ -136,7 +214,11 @@
       "dev": "हेमाभां पीतवस्त्रां",
       "iast": "hemābhāṃ pītavastrāṃ",
       "en": "She shines with a golden radiance and is clothed in yellow garments.",
-      "kn": "ಅವಳು ಚಿನ್ನದಂತೆ ಹೊಳೆಯುತ್ತಾ ಹಳದಿ ವಸ್ತ್ರಗಳನ್ನು ಧರಿಸಿದ್ದಾಳೆ."
+      "kn": "ಅವಳು ಚಿನ್ನದಂತೆ ಹೊಳೆಯುತ್ತಾ ಹಳದಿ ವಸ್ತ್ರಗಳನ್ನು ಧರಿಸಿದ್ದಾಳೆ.",
+      "component_indices": [
+        4,
+        5
+      ]
     },
     {
       "verse": 3,
@@ -144,7 +226,13 @@
       "dev": "करकलित-लसद्-हेमपद्मां वराङ्गीम्",
       "iast": "karakalita-lasad-hemapadmāṃ varāṅgīm",
       "en": "In her hand shines a golden lotus; her divine form is exquisitely beautiful.",
-      "kn": "ಅವಳ ಕೈಯಲ್ಲಿ ಹೊಳೆಯುವ ಚಿನ್ನದ ಕಮಲವಿದೆ; ಅವಳ ದಿವ್ಯರೂಪವು ಅತ್ಯಂತ ಸುಂದರವಾಗಿದೆ."
+      "kn": "ಅವಳ ಕೈಯಲ್ಲಿ ಹೊಳೆಯುವ ಚಿನ್ನದ ಕಮಲವಿದೆ; ಅವಳ ದಿವ್ಯರೂಪವು ಅತ್ಯಂತ ಸುಂದರವಾಗಿದೆ.",
+      "component_indices": [
+        6,
+        7,
+        8,
+        9
+      ]
     },
     {
       "verse": 3,
@@ -152,7 +240,10 @@
       "dev": "सर्वालङ्कार-युक्तां",
       "iast": "sarvālaṅkāra-yuktāṃ",
       "en": "She is adorned with every auspicious ornament.",
-      "kn": "ಅವಳು ಎಲ್ಲಾ ಮಂಗಳಕರ ಆಭರಣಗಳಿಂದ ಅಲಂಕರಿಸಲ್ಪಟ್ಟಿದ್ದಾಳೆ."
+      "kn": "ಅವಳು ಎಲ್ಲಾ ಮಂಗಳಕರ ಆಭರಣಗಳಿಂದ ಅಲಂಕರಿಸಲ್ಪಟ್ಟಿದ್ದಾಳೆ.",
+      "component_indices": [
+        10
+      ]
     },
     {
       "verse": 3,
@@ -163,6 +254,12 @@
       "clips": [
         20,
         21
+      ],
+      "component_indices": [
+        11,
+        12,
+        13,
+        14
       ]
     },
     {
@@ -171,7 +268,11 @@
       "dev": "श्रीविद्यां शान्तमूर्तिं",
       "iast": "śrīvidyāṃ śāntamūrtiṃ",
       "en": "She is Śrīvidyā herself, the sacred wisdom, and the embodiment of profound peace.",
-      "kn": "ಅವಳೇ ಶ್ರೀವಿದ್ಯೆ ಎಂಬ ಪವಿತ್ರಜ್ಞಾನ; ಅವಳು ಆಳವಾದ ಶಾಂತಿಯ ಸ್ವರೂಪಿಣಿ."
+      "kn": "ಅವಳೇ ಶ್ರೀವಿದ್ಯೆ ಎಂಬ ಪವಿತ್ರಜ್ಞಾನ; ಅವಳು ಆಳವಾದ ಶಾಂತಿಯ ಸ್ವರೂಪಿಣಿ.",
+      "component_indices": [
+        15,
+        16
+      ]
     },
     {
       "verse": 3,
@@ -182,6 +283,10 @@
       "clips": [
         23,
         24
+      ],
+      "component_indices": [
+        17,
+        18
       ]
     },
     {
@@ -190,7 +295,14 @@
       "dev": "सकुङ्कुम-विलेपनाम् अलिक-चुम्बि-कस्तूरिकां",
       "iast": "sakuṅkuma-vilepanām alika-cumbi-kastūrikāṃ",
       "en": "She is anointed with fragrant kuṅkuma, with a musk mark adorning her forehead near the curls that touch it.",
-      "kn": "ಅವಳು ಸುಗಂಧಮಯ ಕುಂಕುಮದಿಂದ ಅಲಂಕರಿಸಲ್ಪಟ್ಟಿದ್ದು, ಲಲಾಟದಲ್ಲಿ ಕಸ್ತೂರಿ ತಿಲಕವಿದೆ; ಅದನ್ನು ಮುಟ್ಟುವಂತೆ ಕೇಶಲತಿಗಳು ಅಲಂಕರಿಸುತ್ತವೆ."
+      "kn": "ಅವಳು ಸುಗಂಧಮಯ ಕುಂಕುಮದಿಂದ ಅಲಂಕರಿಸಲ್ಪಟ್ಟಿದ್ದು, ಲಲಾಟದಲ್ಲಿ ಕಸ್ತೂರಿ ತಿಲಕವಿದೆ; ಅದನ್ನು ಮುಟ್ಟುವಂತೆ ಕೇಶಲತಿಗಳು ಅಲಂಕರಿಸುತ್ತವೆ.",
+      "component_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
     },
     {
       "verse": 4,
@@ -198,7 +310,12 @@
       "dev": "समन्द हसितेक्षणां",
       "iast": "samanda hasitekṣaṇāṃ",
       "en": "Her glance is accompanied by a soft and gentle smile.",
-      "kn": "ಅವಳ ದೃಷ್ಟಿಯಲ್ಲಿ ಮೃದು ಮತ್ತು ಸೌಮ್ಯ ನಗು ಹೊಳೆಯುತ್ತದೆ."
+      "kn": "ಅವಳ ದೃಷ್ಟಿಯಲ್ಲಿ ಮೃದು ಮತ್ತು ಸೌಮ್ಯ ನಗು ಹೊಳೆಯುತ್ತದೆ.",
+      "component_indices": [
+        5,
+        6,
+        7
+      ]
     },
     {
       "verse": 4,
@@ -206,7 +323,13 @@
       "dev": "सशर-चाप-पाशाङ्कुशाम्",
       "iast": "saśara-cāpa-pāśāṅkuśām",
       "en": "She holds arrows, bow, noose and goad.",
-      "kn": "ಅವಳು ಬಾಣ, ಬಿಲ್ಲು, ಪಾಶ ಮತ್ತು ಅಂಕುಶವನ್ನು ಹಿಡಿದಿರುವವಳು."
+      "kn": "ಅವಳು ಬಾಣ, ಬಿಲ್ಲು, ಪಾಶ ಮತ್ತು ಅಂಕುಶವನ್ನು ಹಿಡಿದಿರುವವಳು.",
+      "component_indices": [
+        8,
+        9,
+        10,
+        11
+      ]
     },
     {
       "verse": 4,
@@ -214,7 +337,11 @@
       "dev": "अशेषजन-मोहिनीम्",
       "iast": "aśeṣajana-mohinīm",
       "en": "Her divine beauty enchants all beings without exception.",
-      "kn": "ಅವಳ ದಿವ್ಯಸೌಂದರ್ಯವು ಎಲ್ಲಾ ಜೀವಿಗಳನ್ನೂ ಮೋಹಗೊಳಿಸುತ್ತದೆ."
+      "kn": "ಅವಳ ದಿವ್ಯಸೌಂದರ್ಯವು ಎಲ್ಲಾ ಜೀವಿಗಳನ್ನೂ ಮೋಹಗೊಳಿಸುತ್ತದೆ.",
+      "component_indices": [
+        12,
+        13
+      ]
     },
     {
       "verse": 4,
@@ -222,7 +349,13 @@
       "dev": "अरुण-माल्य-भूषाम्बरां",
       "iast": "aruṇa-mālya-bhūṣāmbarāṃ",
       "en": "She is adorned with red garlands, ornaments and garments.",
-      "kn": "ಅವಳು ಅರುಣವರ್ಣದ ಹಾರಗಳು, ಆಭರಣಗಳು ಮತ್ತು ವಸ್ತ್ರಗಳಿಂದ ಅಲಂಕರಿಸಲ್ಪಟ್ಟಿದ್ದಾಳೆ."
+      "kn": "ಅವಳು ಅರುಣವರ್ಣದ ಹಾರಗಳು, ಆಭರಣಗಳು ಮತ್ತು ವಸ್ತ್ರಗಳಿಂದ ಅಲಂಕರಿಸಲ್ಪಟ್ಟಿದ್ದಾಳೆ.",
+      "component_indices": [
+        14,
+        15,
+        16,
+        17
+      ]
     },
     {
       "verse": 4,
@@ -230,7 +363,11 @@
       "dev": "जपाकुसुम-भासुरां",
       "iast": "japākusuma-bhāsurāṃ",
       "en": "She shines brilliantly like the red hibiscus flower.",
-      "kn": "ಅವಳು ಕೆಂಪು ಜಪಾಕುಸುಮದಂತೆ ಪ್ರಕಾಶಮಾನವಾಗಿ ಹೊಳೆಯುತ್ತಾಳೆ."
+      "kn": "ಅವಳು ಕೆಂಪು ಜಪಾಕುಸುಮದಂತೆ ಪ್ರಕಾಶಮಾನವಾಗಿ ಹೊಳೆಯುತ್ತಾಳೆ.",
+      "component_indices": [
+        18,
+        19
+      ]
     },
     {
       "verse": 4,
@@ -241,7 +378,12 @@
       "dev": "जपविधौ स्मरेद् अम्बिकाम्",
       "iast": "japavidhau smared ambikām",
       "en": "During the practice of japa, one should remember and contemplate Ambikā.",
-      "kn": "ಜಪ ಮಾಡುವಾಗ ಅಂಬಿಕೆಯನ್ನು ಸ್ಮರಿಸಿ ಧ್ಯಾನಿಸಬೇಕು."
+      "kn": "ಜಪ ಮಾಡುವಾಗ ಅಂಬಿಕೆಯನ್ನು ಸ್ಮರಿಸಿ ಧ್ಯಾನಿಸಬೇಕು.",
+      "component_indices": [
+        20,
+        21,
+        22
+      ]
     }
   ]
 }
