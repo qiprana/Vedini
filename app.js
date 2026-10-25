@@ -115,7 +115,15 @@ function nameAudioClips(nameNumber){
  if(n===29)return [72];
  if(n===30)return [73];
  if(n===31)return [74,75];
- const clip=n<=11?n+32:n<=19?n+37:n<=21?n+39:n<=24?n+41:n+44;
+ if(n===33)return [77,78];
+ if(n===34)return [79];
+ if(n===35)return [80,81];
+ if(n===36)return [82,83];
+ if(n===37)return [84,85];
+ if(n===38)return [86,87];
+ if(n===39)return [88,89];
+ if(n===40)return [90,91];
+ const clip=n<=11?n+32:n<=19?n+37:n<=21?n+39:n<=24?n+41:n<=32?n+44:n+51;
  return clip<=MSS_LAST_CLIP?[clip]:[];
 }
 function nameAudioPaths(nameNumber){
