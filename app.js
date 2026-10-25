@@ -132,7 +132,20 @@ function nameAudioClips(nameNumber){
  if(n===47)return [102];
  if(n===48)return [103];
  if(n===49)return [104];
- if(n===50)return []; // Combined with name 49 in the same spoken phrase.
+ if(n===50)return []; // Combined with name 49, using clip 104.
+ if(n===53)return [107]; // Combined display for names 53-54.
+ if(n===54)return []; // Clip 107 belongs to the shared 53-54 card.
+ if(n===55)return [108];
+ if(n===56)return [109];
+ if(n===57)return [110];
+ if(n===58)return [111];
+ if(n===59)return [112];
+ if(n===60)return [113];
+ if(n===61)return [114];
+ if(n===62)return [115]; // Combined display for names 62-63.
+ if(n===63)return []; // Clip 115 belongs to the shared 62-63 card.
+ if(n===64)return [116,117];
+ if(n===65)return [118,119];
  const clip=n<=11?n+32:n<=19?n+37:n<=21?n+39:n<=24?n+41:n<=32?n+44:n<=40?n+51:n+54;
  return clip<=MSS_LAST_CLIP?[clip]:[];
 }
@@ -152,13 +165,15 @@ function verseMssAudioPaths(v){
  }
  return clips.map(mssClipPath);
 }
+const COMBINED_MSS_NAME_PAIRS={49:50,53:54,62:63};
 function nameSection(v){
  const names=v.names||[];
  let html="<section class='name-section' aria-label='"+esc(langText("Divine names","ದೇವಿಯ ನಾಮಗಳು"))+"'><div class='section-title'><h3>"+esc(langText("Divine names","ದೇವಿಯ ನಾಮಗಳು"))+"</h3><span>"+names.length+" "+esc(langText("names","ನಾಮಗಳು"))+"</span></div><div class='name-study-list'>";
  for(const n of names){
-  // Names 49 and 50 share MSS clip 0104. Show them together without losing either interpretation.
-  const joined=n.studyNumber===49?names.find(x=>x.studyNumber===50):null;
-  if(n.studyNumber===50&&names.some(x=>x.studyNumber===49))continue;
+  // Display paired divine names as one chantable row, preserving each name's study details.
+  const joinedNumber=COMBINED_MSS_NAME_PAIRS[n.studyNumber];
+  const joined=joinedNumber?names.find(x=>x.studyNumber===joinedNumber):null;
+  if(Object.entries(COMBINED_MSS_NAME_PAIRS).some(([first,last])=>Number(last)===n.studyNumber&&names.some(x=>x.studyNumber===Number(first))))continue;
   const info=nameData[n.studyNumber]||{},parts=findComponents(v,n,info);
   const joinedInfo=joined?(nameData[joined.studyNumber]||{}):null;
   const joinedParts=joined?findComponents(v,joined,joinedInfo):[];
