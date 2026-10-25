@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Listen, chant and explore the meanings of Lalitā Sahasranāma on Vedini.">
   <title>Lalitā Sahasranāma | Vedini</title>
-  <link rel="stylesheet" href="../styles.css?v=20261024-dhyana-playall-v1">
+  <link rel="stylesheet" href="../styles.css?v=20261024-controls-reorder-v1">
 </head>
 <body>
 <main class="page reader-page">
@@ -30,20 +30,8 @@
         <p>The hymn appears in the <em>Brahmāṇḍa Purāṇa</em> as part of the Lalitopākhyāna and is traditionally recited both as devotion and as contemplation. Vedini presents it śloka by śloka so you can listen, chant, read the Sanskrit, understand each divine name word by word, and gradually enter the deeper meaning of the text.</p>
       </div>
     </details>
-    <nav class="reader-nav" aria-label="Reader sections and direct navigation">
-      <div class="reader-tabs" role="tablist" aria-label="Sections">
-        <button type="button" id="tab-dhyana" role="tab" aria-selected="false">Dhyāna (4)</button>
-        <button type="button" id="tab-verses" class="chosen" role="tab" aria-selected="true">Main Ślokas</button>
-      </div>
-      <div class="jump-controls">
-        <label for="goto">Go to śloka</label>
-        <input id="goto" type="number" min="1" max="183" placeholder="1–183" aria-label="Śloka number">
-        <button type="button" id="go">Go</button>
-      </div>
-    </nav>
-    <div class="toolbar">
+    <div class="toolbar reader-top-tools">
       <div class="language-controls">
-        <span id="study-languages-label">Script &amp; meaning</span>
         <div class="language-toggle" role="group" aria-label="Choose Sanskrit script and translation language">
           <button type="button" class="toggle chosen" id="dev" aria-pressed="true" lang="hi">देवनागरी</button>
           <button type="button" class="toggle" id="kn" aria-pressed="false" lang="kn">ಕನ್ನಡ</button>
@@ -63,6 +51,17 @@
  <div class="practice-actions"><button id="practice-play" type="button">▶ Play range</button><button id="practice-pause" type="button" disabled>Pause</button><button id="practice-stop" type="button" disabled>Stop</button><span id="practice-status" role="status" aria-live="polite">Ready to practice</span></div>
  <audio id="practice-audio" preload="none"></audio>
  </section>
+    <nav class="reader-nav reader-mode-nav" aria-label="Reader sections and direct navigation">
+      <div class="reader-tabs" role="tablist" aria-label="Sections">
+        <button type="button" id="tab-dhyana" role="tab" aria-selected="false">Dhyāna (4)</button>
+        <button type="button" id="tab-verses" class="chosen" role="tab" aria-selected="true">Main Ślokas</button>
+      </div>
+      <div class="jump-controls">
+        <label for="goto">Go to śloka</label>
+        <input id="goto" type="number" min="1" max="183" placeholder="1–183" aria-label="Śloka number">
+        <button type="button" id="go">Go</button>
+      </div>
+    </nav>
  <div id="sticky-verse-navigation" class="sticky-verse-navigation" aria-label="Quick śloka navigation">
       <nav class="verse-group-tabs" id="verse-group-tabs" aria-label="Choose ten-śloka group"></nav>
       <nav id="verse-quick-index" class="verse-quick-index" aria-label="Jump to a śloka in this group"></nav>
