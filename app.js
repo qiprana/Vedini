@@ -120,6 +120,49 @@ function dhyanaPhrasePanel(v){
   return "<div class='dhyana-phrase-card'><button type='button' class='dhyana-phrase-play' data-phrase-audio='"+esc(paths[0])+"' data-phrase-audios='"+esc(paths.join("|"))+"' aria-label='"+esc(langText("Play phrase","ಪದಗುಚ್ಛವನ್ನು ಪ್ಲೇ ಮಾಡಿ"))+"'>♪</button><details class='name-details compact-name-row dhyana-phrase-details' data-detail-id='"+detailId+"'><summary><span class='name-summary-grid'><span class='name-identity-inline'><span class='name-written'>"+highlighted(written)+"</span><span class='name-roman'>"+highlighted(row.iast)+"</span></span><span class='name-essence'>"+esc(meaning)+"</span></span></summary><div class='study-inner'><h4>"+esc(langText("Word by word","ಪದ ಪದದ ಅರ್ಥ"))+"</h4>"+wordsGrid(parts)+"</div></details></div>";
  }).join("")+"</div></section>";
 }
+let vediniAudioContext=null;
+async function buildMergedAudioBuffer(sources){
+ if(!vediniAudioContext)vediniAudioContext=new (window.AudioContext||window.webkitAudioContext)();
+ const ctx=vediniAudioContext;
+ if(ctx.state==="suspended")await ctx.resume();
+ const responses=await Promise.all(sources.map(src=>fetch(src)));
+ if(responses.some(r=>!r.ok))throw new Error("Could not load phrase audio");
+ const arrays=await Promise.all(responses.map(r=>r.arrayBuffer()));
+ const decoded=await Promise.all(arrays.map(buf=>ctx.decodeAudioData(buf.slice(0))));
+ const rate=decoded[0].sampleRate;
+ const channels=Math.max(...decoded.map(b=>b.numberOfChannels));
+ const totalFrames=decoded.reduce((sum,b)=>sum+Math.round(b.duration*rate),0);
+ const merged=ctx.createBuffer(channels,totalFrames,rate);
+ let offset=0;
+ for(const b of decoded){
+  const frames=Math.round(b.duration*rate);
+  for(let ch=0;ch<channels;ch++){
+   const sourceData=b.getChannelData(Math.min(ch,b.numberOfChannels-1));
+   const target=merged.getChannelData(ch);
+   if(b.sampleRate===rate){
+    target.set(sourceData,offset);
+   }else{
+    for(let i=0;i<frames;i++){
+     const srcIndex=Math.min(sourceData.length-1,Math.floor(i*b.sampleRate/rate));
+     target[offset+i]=sourceData[srcIndex];
+    }
+   }
+  }
+  offset+=frames;
+ }
+ return {ctx,buffer:merged};
+}
+function stopDhyanaPhraseButton(button){
+ if(button._bufferSource){
+  try{button._bufferSource.stop();}catch(_){}
+  button._bufferSource=null;
+ }
+ if(button._audio&&!button._audio.paused){
+  button._audio.pause();
+  try{button._audio.currentTime=0;}catch(_){}
+ }
+ button.classList.remove("playing");
+}
 function initDhyanaPhraseAudio(){
  document.querySelectorAll("[data-phrase-audio]").forEach(button=>{
   if(button.dataset.bound==="1")return;
@@ -128,47 +171,48 @@ function initDhyanaPhraseAudio(){
    const sources=(button.dataset.phraseAudios||button.dataset.phraseAudio||"").split("|").filter(Boolean);
    if(!sources.length)return;
 
-   if(button._audio&&!button._audio.paused){
-    button._audio.pause();
-    try{button._audio.currentTime=0;}catch(_){}
-    button.classList.remove("playing");
+   if(button.classList.contains("playing")){
+    stopDhyanaPhraseButton(button);
     return;
    }
 
+   document.querySelectorAll(".dhyana-phrase-play.playing").forEach(other=>{
+    if(other!==button)stopDhyanaPhraseButton(other);
+   });
+   document.querySelectorAll("audio").forEach(a=>{if(!a.paused)a.pause();});
+
    button.disabled=true;
    try{
-    let playUrl=sources[0];
-    if(sources.length>1){
-     if(!button._mergedAudioUrl){
-      const responses=await Promise.all(sources.map(src=>fetch(src)));
-      if(responses.some(r=>!r.ok))throw new Error("Could not load all audio clips");
-      const buffers=await Promise.all(responses.map(r=>r.arrayBuffer()));
-      const blob=new Blob(buffers,{type:"audio/mpeg"});
-      button._mergedAudioUrl=URL.createObjectURL(blob);
-     }
-     playUrl=button._mergedAudioUrl;
-    }
-
-    let audio=button._audio;
-    if(!audio){
-     audio=document.createElement("audio");
-     audio.preload="auto";
-     installAudioFocus(audio);
-     button._audio=audio;
-     audio.addEventListener("ended",()=>button.classList.remove("playing"));
-     audio.addEventListener("pause",()=>{if(audio.ended||audio.currentTime===0)button.classList.remove("playing")});
-    }
-    if(audio.src!==playUrl){
-     audio.src=playUrl;
-     audio.load();
-    }
-    try{audio.currentTime=0;}catch(_){}
-    claimAudioFocus(audio);
     button.classList.add("playing");
-    const p=audio.play();
-    if(p&&typeof p.catch==="function")await p;
+    if(sources.length===1){
+     let audio=button._audio;
+     if(!audio){
+      audio=document.createElement("audio");
+      audio.preload="auto";
+      button._audio=audio;
+      installAudioFocus(audio);
+      audio.addEventListener("ended",()=>button.classList.remove("playing"));
+     }
+     audio.src=sources[0];
+     audio.load();
+     await audio.play();
+    }else{
+     if(!button._mergedBuffer)button._mergedBuffer=await buildMergedAudioBuffer(sources);
+     const {ctx,buffer}=button._mergedBuffer;
+     const source=ctx.createBufferSource();
+     source.buffer=buffer;
+     source.connect(ctx.destination);
+     button._bufferSource=source;
+     source.onended=()=>{
+      if(button._bufferSource===source){
+       button._bufferSource=null;
+       button.classList.remove("playing");
+      }
+     };
+     source.start(0);
+    }
    }catch(err){
-    button.classList.remove("playing");
+    stopDhyanaPhraseButton(button);
    }finally{
     button.disabled=false;
    }
