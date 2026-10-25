@@ -703,3 +703,77 @@ header p{color:#845c4b;font-size:18px}
  color:#52675a;
  white-space:nowrap;
 }
+
+
+/* Dhyana phrases use the same expandable study-card pattern as divine names */
+.reader-page .dhyana-phrase-list{
+ border:0;
+ background:transparent;
+ display:flex;
+ flex-direction:column;
+ gap:8px;
+}
+.reader-page .dhyana-phrase-card{
+ display:grid;
+ grid-template-columns:48px minmax(0,1fr);
+ gap:9px;
+ align-items:start;
+}
+.reader-page .dhyana-phrase-card>.dhyana-phrase-play{
+ margin-top:10px;
+ width:38px;
+ height:38px;
+}
+.reader-page .dhyana-phrase-details{
+ margin:0;
+ width:100%;
+ min-width:0;
+}
+.reader-page .dhyana-phrase-details>summary{
+ background:#e8f1e5;
+}
+.reader-page .dhyana-phrase-details .name-summary-grid{
+ grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);
+ gap:16px;
+ align-items:center;
+}
+.reader-page .dhyana-phrase-details .name-identity-inline{
+ display:flex;
+ flex-wrap:wrap;
+ align-items:baseline;
+ gap:6px 12px;
+ min-width:0;
+}
+.reader-page .dhyana-phrase-details .name-written{
+ font-size:20px;
+}
+.reader-page .dhyana-phrase-details .name-roman{
+ font-size:15px;
+}
+.reader-page .dhyana-phrase-details .name-essence{
+ font-size:15px;
+ line-height:1.55;
+}
+.reader-page .dhyana-phrase-details .study-inner{
+ padding:18px 22px 20px;
+}
+.reader-page .dhyana-study{
+ display:none !important;
+}
+@media(max-width:720px){
+ .reader-page .dhyana-phrase-card{
+  grid-template-columns:42px minmax(0,1fr);
+  gap:7px;
+ }
+ .reader-page .dhyana-phrase-details .name-summary-grid{
+  grid-template-columns:1fr;
+  gap:7px;
+ }
+ .reader-page .dhyana-phrase-details .name-identity-inline{
+  display:block;
+ }
+ .reader-page .dhyana-phrase-details .name-written,
+ .reader-page .dhyana-phrase-details .name-roman{
+  display:block;
+ }
+}
