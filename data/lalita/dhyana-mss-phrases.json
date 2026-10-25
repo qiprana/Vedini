@@ -1,6 +1,6 @@
 {
-  "version": "20261024-mss-dhyana-phrases-v9",
-  "description": "Dhyana MSS mapping with Dhyana 4 clips 25-26 merged into one displayed phrase/study card.",
+  "version": "20261024-mss-dhyana-phrases-v10",
+  "description": "Dhyana MSS mapping with Dhyana 4 clips 25-27 merged into one displayed phrase/study card.",
   "phrases": [
     {
       "verse": 1,
@@ -188,20 +188,13 @@
       "verse": 4,
       "clips": [
         25,
-        26
+        26,
+        27
       ],
-      "dev": "सकुङ्कुम-विलेपनाम् अलिक-चुम्बि-कस्तूरिकां",
-      "iast": "sakuṅkuma-vilepanām alika-cumbi-kastūrikāṃ",
-      "en": "She is anointed with fragrant kuṅkuma, with a musk mark adorning her forehead near the curls that touch it.",
-      "kn": "ಅವಳು ಸುಗಂಧಮಯ ಕುಂಕುಮದಿಂದ ಅಲಂಕರಿಸಲ್ಪಟ್ಟಿದ್ದು, ಲಲಾಟದಲ್ಲಿ ಕಸ್ತೂರಿ ತಿಲಕವಿದೆ; ಅದನ್ನು ಮುಟ್ಟುವಂತೆ ಕೇಶಲತಿಗಳು ಅಲಂಕರಿಸುತ್ತವೆ."
-    },
-    {
-      "verse": 4,
-      "clip": 27,
-      "dev": "समन्द-हसितेक्षणां",
-      "iast": "samanda-hasitekṣaṇāṃ",
-      "en": "Her glance is accompanied by a soft and gentle smile.",
-      "kn": "ಅವಳ ದೃಷ್ಟಿಯಲ್ಲಿ ಮೃದು ಮತ್ತು ಸೌಮ್ಯ ನಗು ಹೊಳೆಯುತ್ತದೆ."
+      "dev": "सकुङ्कुम-विलेपनाम् अलिक-चुम्बि-कस्तूरिकां समन्द-हसितेक्षणां",
+      "iast": "sakuṅkuma-vilepanām alika-cumbi-kastūrikāṃ samanda-hasitekṣaṇāṃ",
+      "en": "She is anointed with fragrant kuṅkuma, with a musk mark adorning her forehead near the curls that touch it, and her glance is accompanied by a soft and gentle smile.",
+      "kn": "ಅವಳು ಸುಗಂಧಮಯ ಕುಂಕುಮದಿಂದ ಅಲಂಕರಿಸಲ್ಪಟ್ಟಿದ್ದು, ಲಲಾಟದಲ್ಲಿ ಕಸ್ತೂರಿ ತಿಲಕವಿದೆ; ಅದನ್ನು ಮುಟ್ಟುವಂತೆ ಕೇಶಲತಿಗಳು ಅಲಂಕರಿಸುತ್ತವೆ, ಮತ್ತು ಅವಳ ದೃಷ್ಟಿಯಲ್ಲಿ ಮೃದು ಹಾಗೂ ಸೌಮ್ಯ ನಗು ಹೊಳೆಯುತ್ತದೆ."
     },
     {
       "verse": 4,
