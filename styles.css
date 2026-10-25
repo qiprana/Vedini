@@ -1026,3 +1026,69 @@ header p{color:#845c4b;font-size:18px}
   padding-left:27px;
  }
 }
+
+
+/* Kannada reading mode: prefer a sturdy, highly legible Kannada face on
+   macOS / iOS / Android / Windows. These styles do not affect Devanagari. */
+.reader-page.kannada-mode .verse-script.kannada,
+.reader-page.kannada-mode .name-written,
+.reader-page.kannada-mode .word-dev,
+.reader-page.kannada-mode .word-translation,
+.reader-page.kannada-mode .name-essence,
+.reader-page.kannada-mode .verse-meaning-panel p,
+.reader-page.kannada-mode .meaning-section p,
+.reader-page.kannada-mode .deeper-reading p,
+.reader-page.kannada-mode .study-inner h4,
+.reader-page.kannada-mode .combined-name-part > h4,
+.reader-page.kannada-mode .small-note,
+.reader-page.kannada-mode .dhyana-phrase-details .name-written {
+ font-family:"Noto Sans Kannada","Kannada Sangam MN","Nirmala UI","Tunga",sans-serif;
+ color:#203025;
+}
+/* Earlier shared verse rules forced 400 !important, causing thin Kannada. */
+.reader-page.kannada-mode .verse-reading-panel .verse-script.kannada {
+ font-weight:650 !important;
+ font-size:clamp(23px,2.15vw,27px) !important;
+ line-height:2 !important;
+ color:#1e3024 !important;
+}
+.reader-page.kannada-mode .name-identity-inline .name-written,
+.reader-page.kannada-mode .dhyana-phrase-details .name-written,
+.reader-page.kannada-mode .combined-name-part > h4 {
+ font-weight:700;
+ font-size:clamp(19px,1.65vw,22px);
+ line-height:1.75;
+}
+.reader-page.kannada-mode .word-dev {
+ font-weight:700;
+ font-size:20px;
+ line-height:1.85;
+ color:#1d3225;
+}
+.reader-page.kannada-mode .word-translation,
+.reader-page.kannada-mode .name-summary-grid .name-essence,
+.reader-page.kannada-mode .verse-meaning-panel p,
+.reader-page.kannada-mode .meaning-section p,
+.reader-page.kannada-mode .deeper-reading p,
+.reader-page.kannada-mode .small-note {
+ font-weight:550;
+ font-size:clamp(16px,1.35vw,18px);
+ line-height:1.85;
+ color:#27372c;
+}
+.reader-page.kannada-mode .study-inner h4 {
+ font-weight:700;
+ line-height:1.7;
+}
+@media(max-width:720px){
+ .reader-page.kannada-mode .verse-reading-panel .verse-script.kannada {
+  font-size:24px !important;
+  line-height:1.95 !important;
+ }
+ .reader-page.kannada-mode .name-identity-inline .name-written {
+  font-size:20px;
+ }
+ .reader-page.kannada-mode .name-summary-grid .name-essence {
+  font-size:16px;
+ }
+}
