@@ -777,3 +777,37 @@ header p{color:#845c4b;font-size:18px}
   display:block;
  }
 }
+
+
+/* Reserved audio position for every divine name; preserves existing card layout */
+.reader-page .compact-name-row>summary{
+ position:relative;
+ padding-left:54px;
+}
+.reader-page .compact-name-row>summary .name-audio-placeholder{
+ position:absolute;
+ left:14px;
+ top:50%;
+ transform:translateY(-50%);
+ width:30px;
+ height:30px;
+ border:1px solid #9bb39f;
+ border-radius:50%;
+ display:inline-flex;
+ align-items:center;
+ justify-content:center;
+ background:#f6faf4;
+ color:#315744;
+ font:700 15px/1 system-ui,sans-serif;
+ box-shadow:0 2px 5px #31574412;
+ pointer-events:none;
+}
+.reader-page .compact-name-row[open]>summary .name-audio-placeholder{
+ background:#eef5ec;
+}
+@media(max-width:600px){
+ .reader-page .compact-name-row>summary{padding-left:48px}
+ .reader-page .compact-name-row>summary .name-audio-placeholder{
+  left:10px;width:28px;height:28px;font-size:14px;
+ }
+}
