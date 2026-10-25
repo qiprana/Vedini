@@ -1,0 +1,766 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HSPT Vocabulary Trainer</title>
+  <style>
+    :root{--bg:#f7f2e8;--paper:#fffdf7;--ink:#263028;--muted:#6d746e;--accent:#667a63;--accent2:#b56f4f;--line:#ded7ca;--good:#4f7c57;--bad:#a45348;--gold:#b8933e}
+    *{box-sizing:border-box} body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:linear-gradient(180deg,#f8f4ec,#f1eadf);color:var(--ink)}
+    button,input,select{font:inherit} button{cursor:pointer}
+    .shell{max-width:1180px;margin:auto;padding:24px}
+    header{background:rgba(255,253,247,.94);border:1px solid var(--line);border-radius:24px;padding:22px 24px;box-shadow:0 12px 30px rgba(75,65,50,.08);position:sticky;top:12px;z-index:20;backdrop-filter:blur(10px)}
+    .title-row{display:flex;gap:16px;justify-content:space-between;align-items:flex-start;flex-wrap:wrap}.eyebrow{font-size:.78rem;text-transform:uppercase;letter-spacing:.14em;color:var(--accent2);font-weight:800}h1{font-size:clamp(1.6rem,4vw,2.5rem);margin:.15rem 0 .35rem}.sub{color:var(--muted);max-width:760px;line-height:1.5}
+    .progress-card{min-width:230px;background:#eef2ea;border-radius:16px;padding:14px 16px}.bar{height:10px;background:#dfe6dc;border-radius:999px;overflow:hidden}.bar>span{display:block;height:100%;background:var(--accent);width:0}.small{font-size:.88rem;color:var(--muted)}
+    nav{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}.tab{border:1px solid var(--line);background:var(--paper);padding:10px 14px;border-radius:999px;color:var(--ink)}.tab.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+    main{padding:22px 0 48px}.panel{display:none}.panel.active{display:block}.controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:16px}.controls input,.controls select{padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:#fff}.btn{border:0;border-radius:12px;padding:10px 14px;background:var(--accent);color:#fff}.btn.secondary{background:#fff;color:var(--ink);border:1px solid var(--line)}.btn.warn{background:var(--accent2)}
+    .batch-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}.batch-card,.word-card,.quiz-card,.stats-card{background:var(--paper);border:1px solid var(--line);border-radius:18px;box-shadow:0 8px 20px rgba(75,65,50,.05)}.batch-card{padding:18px}.batch-card h3{margin:0 0 6px}.pill{display:inline-block;padding:4px 8px;border-radius:999px;background:#ecefe8;font-size:.78rem;margin-right:6px}.word-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}.word-card{padding:18px}.word-top{display:flex;justify-content:space-between;gap:12px}.word{font-size:1.25rem;font-weight:800}.pos{color:var(--accent2);font-size:.9rem}.meaning{margin:8px 0;color:#374039}.example{font-style:italic;color:#5f625f}.extras{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px;font-size:.9rem}.tag{background:#f0eee7;border-radius:10px;padding:8px}.actions{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}.mini{padding:7px 10px;border-radius:10px;border:1px solid var(--line);background:#fff}.mini.on{background:#f4e6a8;border-color:#d3b95a}.mini.good{background:#e5f2e7}.mini.bad{background:#f7e7e3}
+    .quiz-wrap{max-width:780px;margin:auto}.quiz-card{padding:24px}.qmeta{display:flex;justify-content:space-between;gap:12px;color:var(--muted);font-size:.9rem}.question{font-size:1.35rem;font-weight:800;margin:18px 0}.answers{display:grid;gap:10px}.answer{padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:#fff;text-align:left}.answer.correct{border-color:var(--good);background:#eaf4eb}.answer.wrong{border-color:var(--bad);background:#faece9}.feedback{margin-top:14px;font-weight:700}.quiz-actions{display:flex;justify-content:space-between;gap:10px;margin-top:18px;flex-wrap:wrap}.test-list{display:grid;gap:18px;margin-top:18px}.test-question{padding:18px;border:1px solid var(--line);border-radius:16px;background:#fffdf9}.test-question .question{font-size:1.08rem;margin:0 0 12px}.answer input{margin-right:8px}
+    .stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}.stats-card{padding:18px}.big{font-size:2rem;font-weight:800}.empty{padding:32px;text-align:center;color:var(--muted);background:var(--paper);border:1px dashed var(--line);border-radius:16px}
+    footer{color:var(--muted);font-size:.85rem;text-align:center;padding:12px}.hidden{display:none!important}@media(max-width:620px){.shell{padding:12px}header{top:6px;padding:18px}.word-list{grid-template-columns:1fr}.extras{grid-template-columns:1fr}.question{font-size:1.18rem}}
+  
+    .daily-hero{background:linear-gradient(135deg,#eef5e8,#fff7df);border:1px solid var(--line);border-radius:20px;padding:20px;margin-bottom:16px}
+    .daily-hero h2{margin:0 0 6px}.daily-meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}.day-chip{background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 10px;font-size:.85rem}
+    .library-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}.library-card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:15px}.library-card h3{margin:0 0 5px}.track-badge{display:inline-block;font-size:.74rem;padding:3px 7px;border-radius:999px;background:#e7eee4;color:#445544;margin-left:6px}.track-badge.hspt{background:#f3e8df;color:#704b3a}
+    .daily-progress{height:12px;background:#dfe6dc;border-radius:999px;overflow:hidden;margin-top:10px}.daily-progress span{display:block;height:100%;background:var(--accent)}
+</style>
+</head>
+<body>
+<div class="shell">
+<header>
+  <div class="title-row"><div><div class="eyebrow">HSPT Study App</div><h1>Vocabulary Trainer</h1><div class="sub">Learn in mixed batches of 100. Tests are cumulative, so older words keep returning. Missed and starred words are automatically emphasized.</div></div><div class="progress-card"><strong id="progressText">0 of 0 learned</strong><div class="bar"><span id="progressBar"></span></div><div class="small" id="streakText">0 marked difficult</div></div></div>
+  <nav>
+    <button class="tab active" data-tab="learn">HSPT Learn</button><button class="tab" data-tab="test">HSPT Test</button><button class="tab" data-tab="review">Review Mistakes</button><button class="tab" data-tab="progress">HSPT Progress</button><button class="tab" data-tab="daily">10 Words a Day</button><button class="tab" data-tab="library">Word Library</button>
+  </nav>
+</header>
+<main>
+<section id="learn" class="panel active"><div class="controls"><label>Batch <select id="learnBatch"></select></label><input id="search" placeholder="Search a word or meaning" /><button class="btn secondary" id="showDifficult">Difficult only</button></div><div id="wordList" class="word-list"></div></section>
+<section id="test" class="panel"><div class="quiz-wrap"><div class="controls"><label>Through batch <select id="testBatch"></select></label><label>Questions <select id="testCount"><option>10</option><option>20</option><option selected>25</option><option>50</option><option>100</option></select></label><button class="btn warn" id="startTest">Create test</button></div><div class="small" style="margin:-6px 0 16px">All selected questions appear together. Answer them at your own pace, then submit once at the end.</div><div id="testArea"></div></div></section>
+<section id="review" class="panel"><div class="controls"><button class="btn" id="startReview">Test missed & difficult words</button><button class="btn secondary" id="clearMistakes">Clear mistake history</button></div><div id="reviewArea"></div></section>
+<section id="progress" class="panel"><div id="stats" class="stats-grid"></div><h3>Batch progress</h3><div id="batchStats" class="batch-grid"></div></section>
+
+<section id="daily" class="panel">
+  <div class="daily-hero">
+    <div class="eyebrow">3rd Grade Vocabulary</div>
+    <h2>10 Words a Day</h2>
+    <div class="sub">A gentle daily track that starts with familiar words and gradually introduces richer vocabulary. Learn 10, mark them as learned, then take the 10-word check.</div>
+    <div class="daily-meta"><span class="day-chip" id="dailyOverall">0 of 100 learned</span><span class="day-chip" id="daysComplete">0 days complete</span></div>
+    <div class="daily-progress"><span id="dailyProgressBar" style="width:0%"></span></div>
+  </div>
+  <div class="controls"><label>Day <select id="dailyDay"></select></label><button class="btn secondary" id="prevDay">Previous day</button><button class="btn secondary" id="nextDay">Next day</button><button class="btn warn" id="dailyTest">Test today's 10</button></div>
+  <div id="dailyWords" class="word-list"></div>
+  <div id="dailyQuiz" style="margin-top:18px"></div>
+</section>
+<section id="library" class="panel">
+  <div class="daily-hero"><div class="eyebrow">Growing Collection</div><h2>Word Library</h2><div class="sub">Search every word in the app. This library combines the HSPT list and the 3rd-grade daily collection.</div></div>
+  <div class="controls"><input id="librarySearch" placeholder="Search word, meaning, synonym..." /><label>Collection <select id="libraryTrack"><option value="all">All words</option><option value="grade3">3rd Grade</option><option value="hspt">HSPT</option></select></label></div>
+  <div id="libraryResults" class="library-grid"></div>
+</section>
+</main>
+<footer>Your progress is saved only in this browser using local storage.</footer>
+</div>
+<script>
+const WORDS = [
+['abbreviate','v.','to shorten','The editor asked me to abbreviate the long title.','shorten','expand'],
+['abdicate','v.','to give up power','The king chose to abdicate the throne.','resign','retain'],
+['abhor','v.','despise','She abhors cruelty to animals.','detest','admire'],
+['abide','v.','to follow, observe','Everyone must abide by the rules.','obey','disobey'],
+['abnormal','adj.','not normal, average','The test showed an abnormal result.','unusual','normal'],
+['abode','n.','residence','The cabin became their summer abode.','home',''],
+['abrasive','adj.','irritating','His abrasive tone upset the group.','harsh','gentle'],
+['abrupt','adj.','sudden','The meeting came to an abrupt end.','sudden','gradual'],
+['absolution','n.','forgiveness','He asked for absolution after admitting the mistake.','forgiveness','blame'],
+['absolve','v.','to free from guilt','The evidence helped absolve her of blame.','clear','accuse'],
+['abstain','v.','to hold back','He chose to abstain from dessert.','refrain','indulge'],
+['abundant','adj.','plentiful','Rainfall was abundant this spring.','plentiful','scarce'],
+['accelerate','v.','advance','The car began to accelerate.','speed up','slow'],
+['acclaim','v.','to praise','Critics acclaimed the new play.','praise','criticize'],
+['accolade','n.','strong praise','The scientist received an accolade for her work.','honor','criticism'],
+['accommodate','v.','to make room','The hall can accommodate two hundred guests.','fit','exclude'],
+['accountable','adj.','responsible for','Managers are accountable for the results.','responsible','unanswerable'],
+['accumulate','v.','to collect','Dust began to accumulate on the shelf.','collect','disperse'],
+['accuse','v.','to blame','Do not accuse someone without evidence.','blame','defend'],
+['acrid','adj.','bitter','Acrid smoke filled the room.','bitter','sweet'],
+['adamant','adj.','determined','She was adamant about finishing the project.','firm','wavering'],
+['adaptable','adj.','able to change','An adaptable student adjusts quickly.','flexible','rigid'],
+['adept','adj.','skillful','He is adept at solving puzzles.','skillful','clumsy'],
+['adhere','v.','to attach, to stick','The label would not adhere to the wet jar.','stick','detach'],
+['adjacent','adj.','next to','Our classroom is adjacent to the library.','neighboring','distant'],
+['admonish','v.','to warn','The coach admonished the team for being late.','warn','praise'],
+['adorn','v.','to decorate','Flowers adorned the entrance.','decorate','strip'],
+['adversary','n.','opponent','She defeated a strong adversary.','opponent','ally'],
+['adverse','adj.','opposing','They continued despite adverse conditions.','unfavorable','favorable'],
+['adversity','n.','difficulty, misfortune','He remained calm during adversity.','hardship','fortune'],
+['advocate','v.','to support','She advocates for safer streets.','support','oppose'],
+['aesthetic','adj.','about beauty','The room has strong aesthetic appeal.','artistic','ugly'],
+['affluent','adj.','wealthy','The affluent neighborhood has large homes.','wealthy','poor'],
+['affront','n.','deliberate act','His rude remark felt like an affront.','insult','compliment'],
+['aggravate','v.','to make worse','Running may aggravate the injury.','worsen','improve'],
+['aggressive','adj.','forceful','The team used an aggressive strategy.','forceful','passive'],
+['agitate','v.','to shake, disturb','The news began to agitate the crowd.','disturb','calm'],
+['ailment','n.','mild illness','A cold is a common ailment.','illness','health'],
+['ajar','adj.','slightly open','The door was left ajar.','partly open','closed'],
+['alleviate','v.','to lessen','Medicine helped alleviate the pain.','ease','worsen'],
+['allocate','v.','to give out','The teacher allocated time for review.','assign','withhold'],
+['allot','v.','to allocate, to give out','Each group was allotted ten minutes.','assign','withhold'],
+['aloof','adj.','indifferent','He seemed aloof during the conversation.','distant','friendly'],
+['alter','v.','change','We had to alter the plan.','change','preserve'],
+['altercation','n.','disagreement','A minor altercation broke out in the hallway.','argument','agreement'],
+['altruistic','adj.','unselfish','Her altruistic act helped many families.','selfless','selfish'],
+['amass','v.','to gather, to accumulate','He amassed a large collection of stamps.','gather','scatter'],
+['ambiguous','adj.','unclear','The ambiguous directions confused us.','unclear','clear'],
+['ambivalent','adj.','uncertain','She felt ambivalent about moving.','uncertain','decisive'],
+['amiable','adj.','friendly','The new teacher is amiable and patient.','friendly','hostile'],
+['amicable','adj.','civil, cordial','They reached an amicable agreement.','cordial','hostile'],
+['amiss','adj.','wrong','Something seemed amiss with the schedule.','wrong','right'],
+['ample','adj.','plenty, enough','We had ample time to finish.','plentiful','insufficient'],
+['amplify','v.','to increase','The microphone will amplify your voice.','increase','reduce'],
+['analyze','v.','to examine','Scientists analyze the data carefully.','examine','ignore'],
+['anecdote','n.','story','He told a funny anecdote from childhood.','story',''],
+['animate','v.','to make alive','The artist animated the character.','enliven','dull'],
+['animosity','n.','hostility','Years of rivalry created animosity.','hostility','friendship'],
+['antagonist','n.','opponent, enemy','The antagonist tries to stop the hero.','enemy','ally'],
+['antagonize','v.','to provoke','Do not antagonize someone who is already upset.','provoke','soothe'],
+['anticipate','v.','foresee','We anticipate heavy traffic tomorrow.','expect','doubt'],
+['antidote','n.','a cure for poison','The doctor administered an antidote.','remedy','poison'],
+['apathy','n.','indifference','Apathy can keep people from taking action.','indifference','concern'],
+['apex','n.','peak','The climbers reached the apex of the mountain.','peak','base'],
+['appalling','adj.','shocking','The storm caused appalling damage.','shocking','pleasant'],
+['appeal','n.','urgent request','The charity made an appeal for donations.','request',''],
+['apprehensive','adj.','nervous','She felt apprehensive before the exam.','anxious','confident'],
+['arbitrary','adj.','based on a whim','The arbitrary rule seemed unfair.','random','reasoned'],
+['archaic','adj.','very old','That expression sounds archaic today.','ancient','modern'],
+['arduous','adj.','difficult','The hike was long and arduous.','difficult','easy'],
+['arid','adj.','dry','Cacti thrive in arid regions.','dry','moist'],
+['arrogant','adj.','pompous, cocky','His arrogant manner annoyed everyone.','proud','humble'],
+['asperity','n.','harshness of tone','She spoke with asperity after the argument.','harshness','gentleness'],
+['aspire','v.','to strive','He aspires to become a doctor.','strive','settle'],
+['assent','v.','to agree','The committee assented to the proposal.','agree','object'],
+['assist','v.','to help','Volunteers assisted the visitors.','help','hinder'],
+['astute','adj.','sharp','The astute investor noticed the pattern.','shrewd','naive'],
+['atone','v.','to make amends','He apologized to atone for the mistake.','repent','offend'],
+['atrocious','adj.','awful','The weather was atrocious all weekend.','terrible','excellent'],
+['atypical','adj.','unusual','Snow in May is atypical here.','unusual','typical'],
+['audible','adj.','able to be heard','Her whisper was barely audible.','hearable','inaudible'],
+['augment','v.','to make greater','The grant will augment the school budget.','increase','decrease'],
+['authentic','adj.','real','The museum displayed an authentic artifact.','genuine','fake'],
+['averse','adj.','opposed to','He is averse to taking unnecessary risks.','opposed','willing'],
+['avert','v.','to avoid','Quick action helped avert a crisis.','prevent','cause'],
+['avid','adj.','eager','She is an avid reader.','eager','indifferent'],
+['baffle','v.','to confuse','The riddle baffled the class.','confuse','clarify'],
+['banal','adj.','boring','The speech was banal and predictable.','dull','original'],
+['banter','n.','teasing','Friendly banter filled the room.','teasing','seriousness'],
+['barter','v.','to bargain or to negotiate','They bartered for a lower price.','bargain',''],
+['belated','adj.','after the event','He sent a belated birthday card.','late','timely'],
+['belittle','v.','to put down','Never belittle someone for asking a question.','demean','praise'],
+['belligerent','adj.','warlike','The belligerent response increased tension.','hostile','peaceful'],
+['benefit','v.','to gain an advantage','Students benefit from regular practice.','gain','suffer'],
+['benevolent','adj.','charitable','The benevolent donor funded the library.','kind','malevolent'],
+['benign','adj.','favorable','The doctor said the growth was benign.','harmless','harmful'],
+['berate','v.','to scold','The manager berated him for being careless.','scold','praise'],
+['biased','adj.','partial','A judge should not be biased.','partial','impartial'],
+['bizarre','adj.','odd','The story had a bizarre ending.','strange','ordinary'],
+['blatant','adj.','obvious','It was a blatant attempt to cheat.','obvious','subtle'],
+['bleak','adj.','barren','The winter landscape looked bleak.','barren','lush'],
+['blithe','adj.','happy','She gave a blithe wave and walked away.','cheerful','gloomy'],
+['boisterous','adj.','noisy, rowdy','The boisterous crowd cheered loudly.','rowdy','quiet'],
+['bolster','v.','to support','Strong evidence can bolster an argument.','support','weaken'],
+['brash','adj.','bold','His brash confidence surprised everyone.','bold','timid'],
+['brazen','adj.','bold','The thief made a brazen escape.','bold','shy'],
+['brisk','adj.','fast, active','We took a brisk walk after lunch.','quick','slow'],
+['broach','v.','to bring up','She broached the subject carefully.','introduce','avoid'],
+['buttress','v.','to reinforce','Facts buttress the main argument.','reinforce','undermine'],
+['callous','adj.','careless','His callous remark hurt her feelings.','insensitive','compassionate'],
+['candid','adj.','frank, open','She gave a candid answer.','frank','evasive'],
+['cantankerous','adj.','grouchy','The cantankerous neighbor complained often.','grouchy','pleasant'],
+['captivate','v.','to enchant','The story captivated the audience.','enchant','bore'],
+['caustic','adj.','corrosive','The chemical is highly caustic.','corrosive','mild'],
+['censure','v.','to criticize harshly','Officials censured the dishonest behavior.','criticize','praise'],
+['ceremonious','adj.','formal','The event was highly ceremonious.','formal','casual'],
+['champion','v.','to defend or support','She champions equal access to education.','support','oppose'],
+['chaotic','adj.','disorderly','The room became chaotic after the alarm.','disorderly','orderly'],
+['chastise','v.','to scold','The teacher chastised him for cheating.','scold','commend'],
+['cherish','v.','to hold dear','She cherishes memories of her grandparents.','treasure','reject'],
+['choleric','adj.','irritable','His choleric mood made conversation difficult.','irritable','calm'],
+['circumvent','v.','to go around','They found a way to circumvent the obstacle.','bypass','confront'],
+['clamor','n.','commotion','A clamor rose from the crowd.','noise','silence'],
+['clandestine','adj.','secretive','They held a clandestine meeting.','secret','open'],
+['clemency','n.','mercy','The prisoner asked for clemency.','mercy','severity'],
+['coarse','adj.','rough','The fabric felt coarse against the skin.','rough','smooth'],
+['cohesive','adj.','sticking together','The team became a cohesive unit.','united','fragmented'],
+['collaborate','v.','to work together','Students collaborated on the project.','cooperate','compete'],
+['commence','v.','to begin','The ceremony will commence at noon.','begin','end'],
+['commend','v.','to praise','The principal commended her honesty.','praise','criticize'],
+['compassion','n.','sympathy','He showed compassion toward the injured animal.','sympathy','cruelty'],
+['compel','v.','to obligate, force','The law may compel companies to comply.','force','deter'],
+['competent','adj.','able','She is a competent and reliable worker.','capable','incapable'],
+['compilation','n.','collection','The book is a compilation of essays.','collection',''],
+['compile','v.','to collect','We compiled the results into a report.','collect','scatter'],
+['complacent','adj.','at ease, happy','Success made the team complacent.','self-satisfied','vigilant'],
+['compliant','adj.','inclined to obey rules','The compliant student followed directions.','obedient','defiant'],
+['comply','v.','to accept, consent','Please comply with the safety rules.','obey','resist'],
+['composure','n.','feeling of calm','She kept her composure under pressure.','calm','panic'],
+['comprehensive','adj.','all-inclusive','The guide gives a comprehensive overview.','complete','limited'],
+['compromise','v.','to give and take','Both sides agreed to compromise.','settle','insist'],
+['conceal','v.','to hide','He tried to conceal the gift.','hide','reveal'],
+['concede','v.','admit','She conceded that the other team played better.','admit','deny'],
+['conceited','adj.','overly proud','His conceited attitude annoyed the group.','vain','humble'],
+['concise','adj.','to the point','Her answer was concise and clear.','brief','wordy'],
+['conclude','v.','to end','We concluded the meeting at five.','finish','begin'],
+['concord','n.','agreement','The treaty restored concord between the nations.','agreement','conflict'],
+['concur','v.','to agree','I concur with your conclusion.','agree','disagree'],
+['condescend','v.','to stoop or humble','He condescended to answer the question.','patronize','respect'],
+['condescending','adj.','snobby','Her condescending tone sounded insulting.','patronizing','respectful'],
+['condone','v.','to allow','The school does not condone bullying.','permit','forbid'],
+['confiscate','v.','to take away','The teacher confiscated the phone.','seize','return'],
+['conflagration','n.','a destructive fire','The conflagration destroyed several buildings.','inferno',''],
+['congenial','adj.','pleasing, friendly','He found his coworkers congenial.','pleasant','unfriendly'],
+['consequently','adv.','as a result','It rained heavily; consequently, the game was canceled.','therefore',''],
+['conservative','adj.','cautious','She took a conservative approach to investing.','cautious','reckless'],
+['consolidate','v.','to combine','The company consolidated two departments.','combine','separate'],
+['conspicuous','adj.','obvious','His bright coat was conspicuous in the crowd.','noticeable','hidden'],
+['conspiracy','n.','scheme','Police uncovered a conspiracy.','plot',''],
+['construct','v.','to build','Workers constructed a new bridge.','build','destroy'],
+['contagious','adj.','communicable','The illness is highly contagious.','infectious','noninfectious'],
+['contaminate','v.','to make impure','Chemicals can contaminate drinking water.','pollute','purify'],
+['content','adj.','satisfied','She felt content with the result.','satisfied','dissatisfied'],
+['credible','adj.','believable','The witness gave a credible account.','believable','doubtful'],
+['critical','adj.','fault-finding','The reviewer was highly critical of the film.','judgmental','approving'],
+['crucial','adj.','necessary','Timing is crucial in this experiment.','essential','unimportant'],
+['culprit','n.','one at fault','The broken vase revealed the likely culprit.','offender','victim'],
+['cunning','adj.','sly, scheming','The cunning fox escaped the trap.','sly','naive'],
+['cursory','adj.','hasty','He gave the paper only a cursory glance.','hasty','thorough'],
+['cynical','adj.','doubtful','She was cynical about the promise.','skeptical','trusting'],
+['debilitating','adj.','weakening','The illness had a debilitating effect.','weakening','strengthening'],
+['debunk','v.','to expose falseness','The article debunked the rumor.','disprove','confirm'],
+['decipher','v.','to figure out','We deciphered the coded message.','decode','confuse'],
+['declare','v.','to announce','They declared the winner at noon.','announce','conceal'],
+['decree','v.','to command','The ruler decreed a new law.','command','request'],
+['defer','v.','to put off','We deferred the decision until Monday.','postpone','advance'],
+['deficient','adj.','lacking','The diet was deficient in iron.','lacking','abundant'],
+['defile','v.','violate, corrupt','Vandals defiled the monument.','corrupt','purify'],
+['delay','v.','suspend, put off','Bad weather delayed the flight.','postpone','hasten'],
+['delegate','v.','to assign','The manager delegated tasks to the team.','assign','retain'],
+['delicate','adj.','fragile','Handle the delicate glass carefully.','fragile','sturdy'],
+['delinquent','adj.','overdue','The account became delinquent after missed payments.','overdue','current'],
+['deplete','v.','to consume or use up','The long drought depleted the reservoir.','exhaust','replenish'],
+['deplorable','adj.','shameful','The neglected conditions were deplorable.','shameful','admirable'],
+['derelict','adj.','neglected','They explored a derelict building.','abandoned','maintained'],
+['desecrate','v.','to violate','Vandals desecrated the memorial.','violate','honor'],
+['desist','v.','to stop','The officer ordered them to desist.','stop','continue'],
+['despair','n.','loss of hope','He refused to give in to despair.','hopelessness','hope'],
+['destitute','adj.','very poor','The charity helps destitute families.','impoverished','wealthy'],
+['deter','v.','to hinder','Bright lights may deter thieves.','discourage','encourage'],
+['detrimental','adj.','harmful','Too little sleep is detrimental to health.','harmful','beneficial'],
+['deviate','v.','to differ from','Do not deviate from the instructions.','diverge','conform'],
+['devious','adj.','sneaky','The villain used a devious plan.','sneaky','honest'],
+['dexterity','n.','expertise','The pianist played with great dexterity.','skill','clumsiness'],
+['diction','n.','speech','Clear diction makes a speaker easier to understand.','speech',''],
+['dilapidated','adj.','falling apart','They restored a dilapidated house.','run-down','well-kept'],
+['diligent','adj.','showing carefulness','The diligent student reviewed every night.','hardworking','careless'],
+['diminish','v.','to decrease','The noise began to diminish.','decrease','increase'],
+['disadvantage','n.','a hurt or loss','Lack of sleep is a disadvantage during an exam.','drawback','advantage'],
+['disagreement','n.','controversy, conflict','The issue caused a disagreement.','conflict','agreement'],
+['discern','v.','to discover','She could discern a pattern in the data.','detect','miss'],
+['disclose','v.','to reveal','The company disclosed the results.','reveal','conceal'],
+['discredit','v.','to cause disbelief','False claims can discredit a source.','disgrace','validate'],
+['discrete','adj.','separate or distinct','The data were divided into discrete groups.','separate','continuous'],
+['discriminate','v.','to show prejudice','It is wrong to discriminate against others.','prejudge','treat equally'],
+['disdain','n.','hate or indifference','She looked at the mess with disdain.','scorn','respect'],
+['disheveled','adj.','messy','He arrived with disheveled hair.','untidy','neat'],
+['dismal','adj.','dreary','The team had a dismal season.','dreary','cheerful'],
+['dismantle','v.','to take apart','Workers dismantled the old machine.','disassemble','assemble'],
+['disparage','v.','to belittle','Do not disparage someone else’s effort.','belittle','praise'],
+['dispute','v.','to argue','The neighbors disputed the property line.','argue','agree'],
+['disregard','v.','to ignore','He disregarded the warning sign.','ignore','heed'],
+['dissent','n.','lack of agreement','There was dissent within the committee.','disagreement','agreement'],
+['distinct','adj.','separate','The two sounds are distinct.','separate','similar'],
+['distort','v.','to alter','A funhouse mirror can distort your reflection.','twist','clarify'],
+['distraught','adj.','upset','She was distraught after losing her wallet.','upset','calm'],
+['distribute','v.','to separate, place','Volunteers distributed food to families.','hand out','collect'],
+['diverse','adj.','different','The city has a diverse population.','varied','uniform'],
+['divulge','v.','to reveal','He refused to divulge the secret.','reveal','conceal'],
+['docile','adj.','tame','The docile horse was easy to handle.','tame','wild'],
+['dominate','v.','to overpower, defeat','One team dominated the game.','overpower','yield'],
+['dormant','adj.','inactive','The volcano has been dormant for years.','inactive','active'],
+['dubious','adj.','doubtful','I am dubious about that claim.','doubtful','certain'],
+['durable','adj.','sturdy, strong','This backpack is durable.','sturdy','fragile'],
+['duress','n.','threat, hardship','He signed the document under duress.','pressure','freedom'],
+['eccentric','adj.','unusual','The eccentric inventor had unusual habits.','odd','conventional'],
+['ecstatic','adj.','very happy','She was ecstatic about the good news.','thrilled','miserable'],
+['edible','adj.','meant to be eaten','These berries are edible.','safe to eat','inedible'],
+['effusive','adj.','expressing pleasure','He gave an effusive welcome.','enthusiastic','reserved'],
+['elated','adj.','excited, happy','The team was elated after winning.','joyful','dejected'],
+['elegant','adj.','classy, graceful','She wore an elegant dress.','graceful','clumsy'],
+['elicit','v.','to evoke, draw out','The question elicited several responses.','draw out','suppress'],
+['elite','adj.','the best','Only elite athletes qualified.','top','ordinary'],
+['eloquent','adj.','skillful with words','The speaker gave an eloquent speech.','articulate','inarticulate'],
+['meek','adj.','shy, compliant','The meek child spoke softly.','submissive','bold'],
+['melancholy','adj.','sad','The song had a melancholy tone.','sad','cheerful'],
+['merge','v.','to combine, incorporate','The two lanes merge ahead.','combine','separate'],
+['merit','n.','praise, excellence','The proposal has considerable merit.','value','fault'],
+['meticulous','adj.','precise','She kept meticulous notes.','precise','careless'],
+['misconception','n.','wrong idea','That belief is a common misconception.','false belief','truth'],
+['miscreant','n.','villain','The story’s miscreant was finally caught.','villain','hero'],
+['mitigate','v.','to lessen','Trees can mitigate summer heat.','lessen','intensify'],
+['modify','v.','to change, adjust','We modified the design slightly.','adjust','preserve'],
+['monotonous','adj.','boring','The long lecture became monotonous.','tedious','varied'],
+['moral','adj.','ethical','She faced a moral decision.','ethical','immoral'],
+['morose','adj.','gloomy','He became morose after the loss.','gloomy','cheerful'],
+['muddle','v.','to make a mess','Do not muddle the files.','confuse','organize'],
+['mundane','adj.','usual, ordinary','The task was mundane but necessary.','ordinary','extraordinary'],
+['municipality','n.','community','The municipality approved the new park.','town',''],
+['mythical','adj.','existing in myth','Dragons are mythical creatures.','legendary','real'],
+['naive','adj.','trusting','He was naive about the risks.','innocent','worldly'],
+['negligent','adj.','careless','The negligent driver ignored the warning.','careless','careful'],
+['nimble','adj.','moving with ease','The nimble cat jumped onto the fence.','agile','clumsy'],
+['nocturnal','adj.','happening at night','Owls are nocturnal animals.','nighttime','daytime'],
+['noisome','adj.','offensive','A noisome odor came from the drain.','foul','pleasant'],
+['nomad','n.','one who moves often','The nomad traveled from place to place.','wanderer','settler'],
+['nomadic','adj.','wandering','The group lived a nomadic life.','wandering','settled'],
+['nonchalant','adj.','easygoing','He seemed nonchalant about the delay.','casual','anxious'],
+['notorious','adj.','infamous','The area was notorious for traffic.','infamous','respected'],
+['novice','n.','beginner','A novice may need extra instruction.','beginner','expert'],
+['noxious','adj.','deadly','The fumes were noxious.','harmful','harmless'],
+['objective','adj.','unbiased','A judge should remain objective.','impartial','biased'],
+['obliterate','v.','to eliminate','The storm obliterated the old shed.','destroy','preserve'],
+['oblivious','adj.','unaware','He was oblivious to the noise.','unaware','aware'],
+['obscure','v.','to conceal','Clouds obscured the moon.','hide','reveal'],
+['obsolete','adj.','outdated','That device is now obsolete.','outdated','current'],
+['obstacle','n.','deterrent, hurdle','Lack of time was an obstacle.','barrier','aid'],
+['obstruct','v.','to block','A fallen tree obstructed the road.','block','clear'],
+['ominous','adj.','foretelling','Dark clouds looked ominous.','threatening','reassuring'],
+['omnipotent','adj.','all powerful','The myth describes an omnipotent ruler.','all-powerful','powerless'],
+['opaque','adj.','cloudy','The opaque glass blocked the view.','cloudy','transparent'],
+['opulent','adj.','luxurious','They stayed in an opulent hotel.','luxurious','plain'],
+['oration','n.','a speech','The mayor delivered an oration.','speech',''],
+['ornate','adj.','fancy, decorated','The room had an ornate ceiling.','decorated','plain'],
+['orthodox','adj.','traditional','They followed an orthodox approach.','traditional','unconventional'],
+['ostracize','v.','to exclude','It is cruel to ostracize a classmate.','exclude','include'],
+['pacify','v.','to calm','She tried to pacify the crying child.','calm','agitate'],
+['palatable','adj.','pleasant in taste','The soup was simple but palatable.','tasty','unpleasant'],
+['paltry','adj.','meager, cheap','They offered a paltry reward.','meager','generous'],
+['parched','adj.','thirsty','After the hike, everyone was parched.','thirsty','refreshed'],
+['passive','adj.','not aggressive','He remained passive during the argument.','submissive','aggressive'],
+['pathetic','adj.','sad, pitiful','The injured bird looked pathetic.','pitiful','impressive'],
+['patron','n.','sponsor, advocate','A local patron supported the arts program.','sponsor','opponent'],
+['pedigree','n.','line of descent','The dog has a documented pedigree.','lineage',''],
+['perceptive','adj.','quick to notice','The perceptive student noticed the error.','observant','oblivious'],
+['perpetual','adj.','ongoing','The machine made a perpetual hum.','continuous','temporary'],
+['perplex','v.','to confuse, puzzle','The strange clue perplexed us.','confuse','clarify'],
+['persist','v.','to continue despite difficulty','She persisted until she solved the problem.','continue','quit'],
+['perturb','v.','to upset','The sudden change perturbed him.','upset','calm'],
+['peruse','v.','to look over','She perused the menu before ordering.','examine','ignore'],
+['petite','adj.','small','She is petite and energetic.','small','large'],
+['philanthropy','n.','generosity','The hospital was built through philanthropy.','generosity','stinginess'],
+['pilot','v.','to steer','She piloted the boat across the lake.','steer','drift'],
+['pinnacle','n.','peak','Winning the award was the pinnacle of his career.','peak','bottom'],
+['pious','adj.','religious','The pious man attended services daily.','devout','irreverent'],
+['pivotal','adj.','important','Her decision was pivotal to the outcome.','crucial','minor'],
+['placate','v.','to calm or pacify','He brought flowers to placate her.','soothe','anger'],
+['placid','adj.','calm','The lake was placid at sunrise.','calm','turbulent'],
+['plausible','adj.','believable','Her explanation sounded plausible.','believable','unlikely'],
+['plethora','n.','excess','The website offers a plethora of choices.','abundance','scarcity'],
+['plight','n.','unfortunate condition','The article described the refugees’ plight.','hardship','fortune'],
+['poise','n.','balance, equilibrium','The dancer moved with poise.','balance','awkwardness'],
+['poised','adj.','balanced','She remained poised during the interview.','composed','flustered'],
+['ponder','v.','to think about','He paused to ponder the question.','consider','ignore'],
+['potent','adj.','powerful','The medicine is very potent.','powerful','weak'],
+['precision','n.','closeness, exactness','The machine cuts with great precision.','accuracy','imprecision'],
+['precocious','adj.','mentally mature','The precocious child read at an advanced level.','advanced','immature'],
+['predominant','adj.','great in number','Blue was the predominant color.','dominant','minor'],
+['preface','n.','introduction','The author explains the book in the preface.','introduction','conclusion'],
+['premonition','n.','hunch','She had a premonition that something would change.','hunch','certainty'],
+['prerogative','n.','an official right','It is the chairperson’s prerogative to call the meeting.','right','restriction'],
+['preserve','v.','to keep, to safeguard','We should preserve historic buildings.','protect','destroy'],
+['pretentious','adj.','overly important','The restaurant seemed pretentious.','showy','modest'],
+['prevalent','adj.','widespread','Seasonal allergies are prevalent in spring.','widespread','rare'],
+['preview','v.','to view before','We previewed the movie trailer.','view beforehand','review later'],
+['principal','adj.','main','The principal reason was cost.','main','minor'],
+['prior','adj.','before','She had no prior experience.','earlier','later'],
+['proclaim','v.','to announce','The mayor proclaimed a day of celebration.','announce','conceal'],
+['procrastinate','v.','to put off','Do not procrastinate on your homework.','delay','act promptly'],
+['proficient','adj.','skillful','She is proficient in French.','skilled','inexperienced'],
+['prohibit','v.','to forbid','The rules prohibit running in the hallway.','forbid','allow'],
+['prolific','adj.','creative, productive','The prolific writer published many books.','productive','unproductive'],
+['prolong','v.','to lengthen','The rain prolonged the game.','extend','shorten'],
+['prompt','adj.','on time','Thank you for your prompt reply.','timely','late'],
+['provoke','v.','to anger','His comment provoked an argument.','anger','soothe'],
+['prudent','adj.','careful','Saving money is a prudent choice.','careful','reckless'],
+['pungent','adj.','sharp smelling','The cheese had a pungent odor.','strong-smelling','mild'],
+['pursue','v.','to follow','The detective pursued the suspect.','follow','avoid'],
+['qualified','adj.','accomplished','She is qualified for the position.','capable','unqualified'],
+['quandary','n.','dilemma','He faced a quandary about which school to choose.','dilemma','solution'],
+['quarrelsome','adj.','disagreeable','The quarrelsome neighbors argued often.','argumentative','peaceable'],
+['quench','v.','to put out','Water helped quench the fire.','extinguish','ignite'],
+['querulous','adj.','complaining','The querulous customer complained about everything.','complaining','content'],
+['radiant','adj.','beaming','She looked radiant in the sunlight.','glowing','dull'],
+['radical','adj.','extreme','They proposed a radical change.','extreme','moderate'],
+['rampant','adj.','widespread','Rumors were rampant after the announcement.','widespread','limited'],
+['ratify','v.','to approve','The council ratified the agreement.','approve','reject'],
+['rational','adj.','reasonable','We need a rational explanation.','reasonable','irrational'],
+['ravenous','adj.','starving','After practice, he was ravenous.','famished','full'],
+['recalcitrant','adj.','disobedient','The recalcitrant student refused to cooperate.','defiant','obedient'],
+['reclusive','adj.','isolated','The reclusive author rarely appeared in public.','isolated','social'],
+['reconcile','v.','to resolve','They reconciled their differences.','resolve','divide'],
+['rectify','v.','to fix','We must rectify the error.','correct','worsen'],
+['recuperate','v.','to recover','She stayed home to recuperate.','recover','decline'],
+['redundant','adj.','repetitious','The last sentence was redundant.','repetitive','necessary'],
+['refine','v.','to improve, purify','The team refined the design.','improve','degrade'],
+['reflective','adj.','thoughtful','He wrote a reflective essay.','thoughtful','thoughtless'],
+['refurbish','v.','to fix up','They refurbished the old theater.','renovate','damage'],
+['refute','v.','to contradict','The evidence refuted the claim.','disprove','confirm'],
+['regimen','n.','routine','The athlete followed a strict training regimen.','routine',''],
+['reimburse','v.','to pay back','The company reimbursed her travel costs.','repay','charge'],
+['rejuvenate','v.','to make new again','A vacation can rejuvenate you.','revive','exhaust'],
+['relic','n.','antique','The museum displayed an ancient relic.','artifact','modern item'],
+['relinquish','v.','to release','He reluctantly relinquished control.','release','retain'],
+['reluctance','n.','hesitation','She agreed with some reluctance.','hesitation','eagerness'],
+['remorse','n.','sense of guilt','He felt remorse after lying.','guilt','indifference'],
+['repeal','v.','to revoke, rescind','Lawmakers voted to repeal the rule.','revoke','enact'],
+['replenish','v.','to refill, to put back','Drink water to replenish lost fluids.','refill','deplete'],
+['reprimand','v.','to scold','The coach reprimanded the player.','scold','praise'],
+['reprisal','n.','retaliation','They feared reprisal for speaking out.','retaliation','forgiveness'],
+['reproach','v.','to express disapproval','She reproached him for being careless.','criticize','commend'],
+['reputable','adj.','distinguished','Choose a reputable source.','respected','disreputable'],
+['resolve','v.','to decide, to agree','They resolved the dispute peacefully.','settle','prolong'],
+['restore','v.','to make new','Workers restored the old painting.','renew','damage'],
+['resume','v.','to continue','Classes will resume on Monday.','continue','stop'],
+['retain','v.','to keep','This container helps retain heat.','keep','release'],
+['reticent','adj.','quiet','The reticent student rarely volunteered answers.','reserved','talkative'],
+['retort','n.','witty response','She had a clever retort ready.','reply',''],
+['retract','v.','to take back','The newspaper retracted the false statement.','withdraw','repeat'],
+['revere','v.','to admire','Many people revere the scientist.','admire','despise'],
+['revive','v.','to bring back to life','Rain revived the dry plants.','restore','kill'],
+['rickety','adj.','flimsy','The rickety chair wobbled.','flimsy','sturdy'],
+['rigor','n.','adversity, difficulty','The course is known for its academic rigor.','difficulty','ease'],
+['rigorous','adj.','harsh, exact','The experiment followed rigorous standards.','strict','lenient'],
+['robust','adj.','strong, healthy','The plant remained robust all summer.','strong','frail'],
+['routine','adj.','ordinary, normal','The checkup was routine.','ordinary','unusual'],
+['sage','adj.','wise','She offered sage advice.','wise','foolish'],
+['sage','n.','a wise person','The villagers sought advice from the sage.','wise person','fool'],
+['salvage','v.','save from','They salvaged books from the flooded room.','save','destroy'],
+['satiate','v.','to fill, to satisfy','The meal satiated his hunger.','satisfy','deprive'],
+['saunter','v.','to linger, to stroll','They sauntered through the park.','stroll','rush'],
+['scheme','n.','a ploy or trick','The villain devised a scheme.','plot',''],
+['scrutinize','v.','to inspect, to analyze','The editor scrutinized every detail.','inspect','glance'],
+['sedentary','adj.','need for sitting','A sedentary lifestyle involves little movement.','inactive','active'],
+['serene','adj.','calm','The garden felt serene.','peaceful','agitated'],
+['sever','v.','to cut off','The storm severed the power line.','cut','join'],
+['severe','adj.','harsh','The area experienced severe weather.','harsh','mild'],
+['shrewd','adj.','clever','The shrewd negotiator noticed every detail.','clever','naive'],
+['significant','adj.','important','This is a significant improvement.','important','minor'],
+['simulate','v.','to imitate','The drill simulated an emergency.','imitate','differ'],
+['skeptical','adj.','doubtful','She was skeptical of the claim.','doubtful','convinced'],
+['slovenly','adj.','dirty, careless','His slovenly work needed revision.','messy','neat'],
+['solace','n.','comfort','Music gave her solace.','comfort','distress'],
+['somber','adj.','gloomy','The ceremony had a somber mood.','gloomy','cheerful'],
+['sparse','adj.','scarce, limited','Vegetation was sparse in the desert.','scant','abundant'],
+['spiteful','adj.','malicious','The spiteful remark was meant to hurt.','malicious','kind'],
+['spontaneous','adj.','impulsive','They took a spontaneous trip.','impulsive','planned'],
+['sporadic','adj.','intermittent','Rainfall was sporadic all week.','intermittent','constant'],
+['squander','v.','to waste','Do not squander your study time.','waste','conserve'],
+['stagnant','adj.','not moving','The stagnant water smelled unpleasant.','still','flowing'],
+['staunch','adj.','loyal','She is a staunch supporter of the team.','loyal','disloyal'],
+['stealthy','adj.','secretive, quiet','The cat made a stealthy approach.','sneaky','obvious'],
+['sterile','adj.','germ-free','The instruments must remain sterile.','germ-free','contaminated'],
+['stern','adj.','severe, rigid','The teacher gave a stern warning.','strict','gentle'],
+['stimulate','v.','to provoke','The discussion stimulated new ideas.','encourage','suppress'],
+['strife','n.','a struggle','Years of strife divided the region.','conflict','peace'],
+['stringent','adj.','rigid','The lab follows stringent safety rules.','strict','lenient'],
+['subsequent','adj.','following','Subsequent events changed the plan.','following','previous'],
+['substantial','adj.','important, significant','They made substantial progress.','considerable','minor'],
+['subtle','adj.','indirect, faint','There was a subtle change in tone.','faint','obvious'],
+['succinct','adj.','to the point, brief','Her summary was succinct.','concise','verbose'],
+['suitable','adj.','appropriate, adequate','This room is suitable for the meeting.','appropriate','unsuitable'],
+['sullen','adj.','gloomy','He became sullen after the loss.','gloomy','cheerful'],
+['superficial','adj.','near the surface','The cut was superficial.','shallow','deep'],
+['superfluous','adj.','excessive, unnecessary','Remove any superfluous details.','unnecessary','essential'],
+['suppress','v.','to prevent, to constrain','The medicine suppressed the cough.','restrain','encourage'],
+['surge','n.','a rush','A surge of water entered the street.','rush','decline'],
+['surplus','n.','an excess','The farm produced a surplus of corn.','excess','shortage'],
+['sustain','v.','to keep going','Good habits sustain progress.','maintain','stop'],
+['swelter','v.','to be very warm','We sweltered in the summer heat.','overheat','freeze'],
+['sympathy','n.','sorrow, compassion','She expressed sympathy for the family.','compassion','indifference'],
+['taciturn','adj.','quiet','The taciturn man spoke only when necessary.','reserved','talkative'],
+['tactile','adj.','relative to touch','The exhibit offers tactile activities.','touch-related','visual'],
+['taint','v.','to pollute','Smoke can taint the air.','contaminate','purify'],
+['tangible','adj.','able to be touched','The sculpture is tangible.','physical','intangible'],
+['tarnish','v.','to damage, blemish','The scandal tarnished his reputation.','damage','enhance'],
+['taunt','v.','to tease','It is cruel to taunt others.','mock','encourage'],
+['tedious','adj.','dull, time-consuming','The task was tedious but necessary.','boring','exciting'],
+['temperate','adj.','mild, moderate','The region has a temperate climate.','mild','extreme'],
+['tempest','n.','a violent windstorm','The ship survived the tempest.','storm','calm'],
+['tenacious','adj.','persistent','The tenacious runner refused to quit.','persistent','yielding'],
+['tense','adj.','nervous, anxious, rigid','The room felt tense before the announcement.','anxious','relaxed'],
+['tenuous','adj.','weak, fragile','The connection between the ideas was tenuous.','weak','strong'],
+['terse','adj.','to the point','His terse reply ended the conversation.','brief','wordy'],
+['thrive','v.','to do well','Plants thrive in good soil.','prosper','decline'],
+['throb','v.','pulse','His ankle began to throb.','pulse',''],
+['timid','adj.','shy','The timid child stayed close to her mother.','shy','bold'],
+['tirade','n.','a long outburst','He launched into an angry tirade.','rant','praise'],
+['tolerant','adj.','accepting','A tolerant community respects differences.','accepting','intolerant'],
+['toxic','adj.','poisonous','The chemical is toxic.','poisonous','harmless'],
+['trance','n.','stupor','He stared at the screen as if in a trance.','stupor','alertness'],
+['transform','v.','to change completely','The renovation transformed the room.','change','preserve'],
+['transgression','n.','a violation of a law, a misdoing','The act was treated as a serious transgression.','offense','good deed'],
+['transient','adj.','passing quickly','The pain was transient.','temporary','permanent'],
+['transitory','adj.','brief, fleeting','The excitement was transitory.','brief','lasting'],
+['translucent','adj.','clear','The translucent curtain let in light.','semi-clear','opaque'],
+['traverse','v.','to cross','They traversed the valley on foot.','cross','remain'],
+['tremble','v.','to shake','Her hands began to tremble.','shake','steady'],
+['trivial','adj.','unimportant','Do not argue over trivial details.','minor','important'],
+['truant','n.','one who is absent','The truant skipped school repeatedly.','absentee','attendee'],
+['turmoil','n.','an uneasy state','The sudden change caused turmoil.','confusion','calm'],
+['tycoon','n.','one with money','The business tycoon owned several companies.','magnate',''],
+['tyrant','n.','an unjust ruler','The people rebelled against the tyrant.','despot','fair ruler'],
+['ultimate','adj.','last, highest','Winning the championship was the ultimate goal.','final','initial'],
+['undaunted','adj.','not discouraged','She remained undaunted by the setback.','fearless','discouraged'],
+['undermine','v.','weaken','Rumors can undermine trust.','weaken','strengthen'],
+['uniform','adj.','the same','The boxes were uniform in size.','consistent','varied'],
+['unique','adj.','the only one','Each fingerprint is unique.','one-of-a-kind','common'],
+['unkempt','adj.','messy','His unkempt hair needed brushing.','messy','neat'],
+['unorthodox','adj.','not traditional','She tried an unorthodox solution.','unconventional','traditional'],
+['unqualified','adj.','not fit, inexperienced','He was unqualified for the technical role.','inexperienced','qualified'],
+['unsung','adj.','overlooked','The nurse was an unsung hero.','unrecognized','celebrated'],
+['usurp','v.','to take over','The general tried to usurp power.','seize','relinquish'],
+['utilize','v.','to use','We can utilize this space for storage.','use','waste'],
+['utmost','adj.','highest, best','She handled the task with utmost care.','greatest','least'],
+['vacant','adj.','empty','The apartment has been vacant for months.','empty','occupied'],
+['vague','adj.','unclear','His instructions were vague.','unclear','specific'],
+['vain','adj.','egotistical','He was too vain to admit the mistake.','conceited','humble'],
+['valid','adj.','right, genuine','That is a valid concern.','legitimate','invalid'],
+['validate','v.','to approve','The experiment validated the theory.','confirm','invalidate'],
+['vanquish','v.','to conquer','The hero vanquished the enemy.','defeat','surrender'],
+['variegated','adj.','mixed in color','The plant has variegated leaves.','multicolored','uniform'],
+['verbose','adj.','wordy','The essay was too verbose.','wordy','concise'],
+['verge','n.','brink','The team was on the verge of victory.','edge','center'],
+['viable','adj.','reasonable','The plan is viable with more funding.','workable','impossible'],
+['vicious','adj.','cruel, violent','The dog became vicious when threatened.','cruel','gentle'],
+['vigilant','adj.','watchful','Guards remained vigilant all night.','watchful','careless'],
+['vigorous','adj.','energetic','He took a vigorous walk.','energetic','weak'],
+['vindicate','v.','to confirm','New evidence vindicated her account.','justify','condemn'],
+['virtually','adv.','essentially','The town was virtually empty.','essentially',''],
+['vital','adj.','essential','Water is vital for life.','essential','unimportant'],
+['vitality','n.','energy, spirit','Regular exercise can improve vitality.','energy','fatigue'],
+['vivacious','adj.','lively, full of life','Her vivacious personality energized the room.','lively','dull'],
+['volatile','adj.','quickly changing','The weather has been volatile.','unstable','stable'],
+['voracious','adj.','hungry','He has a voracious appetite for books.','ravenous','satisfied'],
+['vulgar','adj.','rude','The comedian avoided vulgar jokes.','crude','refined'],
+['vulnerable','adj.','defenseless','Young plants are vulnerable to frost.','defenseless','protected'],
+['wage','n.','compensation, pay','Workers earned a fair wage.','pay',''],
+['wage','v.','to do or to conduct','The army waged a long campaign.','conduct',''],
+['wary','adj.','cautious','Be wary of suspicious links.','cautious','trusting'],
+['waver','v.','to go back and forth','Her confidence began to waver.','hesitate','decide'],
+['wearisome','adj.','tiresome','The repetitive task became wearisome.','tiresome','refreshing'],
+['weary','adj.','exhausted','The hikers were weary by sunset.','tired','rested'],
+['whimsical','adj.','carefree','The book has whimsical illustrations.','playful','serious'],
+['wily','adj.','crafty, sly','The wily fox escaped again.','sly','naive'],
+['wretched','adj.','miserable','They endured wretched conditions.','miserable','comfortable'],
+['yearn','v.','to want','She yearned to travel abroad.','long for','reject'],
+['youthful','adj.','young','He has a youthful appearance.','young','aged'],
+['zeal','n.','eager desire','She studied with great zeal.','enthusiasm','apathy'],
+['zealot','n.','fanatic','The zealot refused to consider another view.','fanatic','moderate'],
+['zenith','n.','the top, peak','Her career reached its zenith.','peak','nadir']
+].map((x,i)=>({id:i+1,word:x[0],pos:x[1],meaning:x[2],example:x[3],synonym:x[4],antonym:x[5],batch:Math.floor(i/100)+1}));
+
+const GRADE3_WORDS = [
+['brave','adj.','not afraid to do something hard','Maya was brave when she spoke in front of the class.','courageous','afraid'],
+['calm','adj.','peaceful and not upset','He stayed calm during the loud storm.','peaceful','upset'],
+['clever','adj.','quick to understand or solve things','The clever fox found a way out.','smart','foolish'],
+['eager','adj.','very ready and excited to do something','Lena was eager to open her new book.','excited','reluctant'],
+['gentle','adj.','kind and careful, not rough','Be gentle with the tiny kitten.','kind','rough'],
+['honest','adj.','truthful and fair','An honest person tells the truth.','truthful','dishonest'],
+['notice','v.','to see or become aware of something','Did you notice the rainbow after the rain?','observe','ignore'],
+['protect','v.','to keep safe from harm','Helmets protect your head when you ride a bike.','guard','harm'],
+['swift','adj.','moving very quickly','The swift rabbit ran across the field.','fast','slow'],
+['wander','v.','to move around without a clear direction','We wandered through the garden looking at flowers.','roam','stay'],
+['ancient','adj.','very old','We saw pictures of an ancient temple.','old','modern'],
+['arrive','v.','to reach a place','The bus will arrive at eight o’clock.','reach','depart'],
+['bundle','n.','a group of things tied or gathered together','Dad carried a bundle of sticks.','group','single item'],
+['cheerful','adj.','happy and positive','Her cheerful smile made everyone feel welcome.','happy','gloomy'],
+['delicate','adj.','easy to break or damage','The butterfly has delicate wings.','fragile','sturdy'],
+['enormous','adj.','very large','An enormous whale swam beside the boat.','huge','tiny'],
+['gather','v.','to bring things together','We gathered leaves for the art project.','collect','scatter'],
+['journey','n.','a trip from one place to another','Their journey across the state took six hours.','trip','stay'],
+['prefer','v.','to like one thing more than another','I prefer apples to candy.','favor','dislike'],
+['sturdy','adj.','strong and not easily broken','The sturdy table held all the books.','strong','fragile'],
+['admire','v.','to respect or like something very much','I admire my sister for helping others.','respect','dislike'],
+['bother','v.','to annoy or disturb','The buzzing fly began to bother me.','annoy','soothe'],
+['combine','v.','to put things together','Combine the flour and water in the bowl.','join','separate'],
+['discover','v.','to find something for the first time','We discovered a bird nest in the tree.','find','lose'],
+['familiar','adj.','known because you have seen or heard it before','That song sounds familiar to me.','known','unfamiliar'],
+['include','v.','to have as part of a group','The kit will include paper, glue, and scissors.','contain','exclude'],
+['locate','v.','to find where something is','Can you locate your town on the map?','find','misplace'],
+['ordinary','adj.','common or not special','It looked like an ordinary rock until it sparkled.','common','unusual'],
+['separate','v.','to move or keep apart','Separate the red blocks from the blue ones.','divide','combine'],
+['vanish','v.','to disappear suddenly','The rabbit seemed to vanish into the tall grass.','disappear','appear'],
+['attempt','v.','to try to do something','She will attempt the difficult puzzle again.','try','quit'],
+['compare','v.','to look at how things are alike or different','Compare the two stories before you answer.','examine','ignore'],
+['describe','v.','to tell what something is like','Describe the animal using three details.','explain','hide'],
+['exact','adj.','completely correct or precise','Please give the exact number of marbles.','precise','approximate'],
+['fortunate','adj.','lucky or having good things happen','We were fortunate to find the lost dog quickly.','lucky','unlucky'],
+['grateful','adj.','thankful','I am grateful for your help.','thankful','ungrateful'],
+['imitate','v.','to copy how someone or something acts','The child tried to imitate the bird’s whistle.','copy','differ'],
+['mischief','n.','playful trouble or bad behavior','The puppy got into mischief while we were gone.','trouble','good behavior'],
+['predict','v.','to say what you think will happen','Can you predict how the story will end?','forecast','doubt'],
+['rare','adj.','not common or often seen','A blue lobster is very rare.','uncommon','common'],
+['assist','v.','to help','Two students assisted the teacher with the books.','help','hinder'],
+['cautious','adj.','careful to avoid danger or mistakes','Be cautious when crossing a busy street.','careful','careless'],
+['confident','adj.','sure of yourself or your ability','She felt confident before the spelling test.','self-assured','uncertain'],
+['evidence','n.','facts or clues that show something is true','The muddy footprints were evidence that someone came inside.','proof','guess'],
+['frequent','adj.','happening often','Frequent practice helps you improve.','common','rare'],
+['gloomy','adj.','dark, sad, or without much hope','The rainy sky made the afternoon feel gloomy.','dreary','cheerful'],
+['interrupt','v.','to stop someone while they are speaking or doing something','Please do not interrupt while she is reading.','disturb','continue'],
+['nervous','adj.','worried or uneasy','He felt nervous before the race.','anxious','relaxed'],
+['observe','v.','to watch carefully','We observed the caterpillar for several days.','watch','ignore'],
+['result','n.','what happens because of an action','The result of the experiment surprised us.','outcome','cause'],
+['approach','v.','to come closer to something','We watched the deer approach the pond.','near','retreat'],
+['conclude','v.','to decide after thinking about the facts','From the clues, we can conclude that it rained.','decide','question'],
+['effort','n.','hard work used to do something','Her effort helped the team finish on time.','work','laziness'],
+['essential','adj.','very important or necessary','Water is essential for life.','necessary','optional'],
+['flexible','adj.','able to bend or change easily','The flexible branch bent in the wind.','bendable','rigid'],
+['identify','v.','to name or recognize something','Can you identify the bird in this picture?','recognize','confuse'],
+['patient','adj.','able to wait calmly','Be patient while your turn is coming.','calm','impatient'],
+['purpose','n.','the reason something is done','The purpose of a map is to help us find places.','reason','accident'],
+['respond','v.','to answer or react','Please respond when your name is called.','answer','ignore'],
+['similar','adj.','almost the same','The twins wore similar jackets.','alike','different'],
+['accurate','adj.','correct and without mistakes','Her answer was accurate.','correct','wrong'],
+['benefit','n.','something helpful or good','Exercise has many benefits for your body.','advantage','harm'],
+['contrast','v.','to show how things are different','Contrast winter weather with summer weather.','differentiate','match'],
+['drowsy','adj.','sleepy','The warm room made me feel drowsy.','sleepy','alert'],
+['examine','v.','to look at something carefully','The scientist examined the rock with a magnifying glass.','inspect','glance'],
+['fragrant','adj.','having a pleasant smell','The fragrant flowers filled the room with a sweet scent.','sweet-smelling','odorless'],
+['indicate','v.','to show or point out','The arrow indicates which way to go.','show','hide'],
+['method','n.','a way of doing something','We learned a new method for solving the problem.','way','guess'],
+['require','v.','to need something','Plants require sunlight and water.','need','dispense with'],
+['variety','n.','a number of different kinds','The market sells a variety of fruits.','selection','sameness'],
+['appropriate','adj.','right or suitable for the situation','Boots are appropriate for walking in snow.','suitable','unsuitable'],
+['consequence','n.','a result of an action','A consequence of staying up late is feeling tired.','result','cause'],
+['generous','adj.','willing to give or share','The generous child shared her art supplies with the class.','giving','selfish'],
+['gradual','adj.','happening slowly over time','The gradual climb became steeper near the top.','slow','sudden'],
+['investigate','v.','to look for facts or clues','The class investigated why some plants grew faster.','examine','ignore'],
+['maintain','v.','to keep something in good condition or continue it','We maintain the garden by watering it often.','keep','neglect'],
+['numerous','adj.','many in number','Numerous stars filled the night sky.','many','few'],
+['recognize','v.','to know something because you have seen it before','I recognized the tune right away.','identify','misidentify'],
+['sufficient','adj.','enough for a need','We had sufficient water for the hike.','enough','insufficient'],
+['typical','adj.','usual for a person, thing, or situation','Rain is typical in this season.','usual','unusual'],
+['analyze','v.','to study something carefully to understand it','We analyzed the chart before answering.','study','ignore'],
+['complex','adj.','made of many connected parts; not simple','The machine has a complex system of gears.','complicated','simple'],
+['demonstrate','v.','to show how something works','The teacher demonstrated how to use the ruler.','show','conceal'],
+['efficient','adj.','working well without wasting time or energy','The new route is more efficient.','effective','wasteful'],
+['generate','v.','to produce or create','Wind turbines generate electricity.','produce','destroy'],
+['interpret','v.','to explain the meaning of something','We interpreted the graph together.','explain','misunderstand'],
+['persuade','v.','to convince someone to think or do something','She persuaded her friend to join the club.','convince','discourage'],
+['relevant','adj.','connected to the subject being discussed','Use only facts that are relevant to the question.','related','unrelated'],
+['specific','adj.','clear and exact, not general','Give one specific example from the story.','exact','general'],
+['strategy','n.','a careful plan for reaching a goal','Her strategy was to solve the easiest questions first.','plan','guess'],
+['abundant','adj.','more than enough; plentiful','Wildflowers were abundant after the spring rain.','plentiful','scarce'],
+['adapt','v.','to change so something works in a new situation','Animals adapt to changes in their environment.','adjust','resist'],
+['curious','adj.','wanting to know or learn more','The curious child asked many questions.','inquisitive','uninterested'],
+['decrease','v.','to become less or make something less','The temperature will decrease tonight.','reduce','increase'],
+['expand','v.','to become larger or make something larger','Heat can make metal expand.','grow','shrink'],
+['infer','v.','to figure something out from clues','From the wet sidewalk, we can infer that it rained.','deduce','guess blindly'],
+['necessary','adj.','needed or required','A ticket is necessary to enter the show.','required','unnecessary'],
+['resource','n.','something useful that helps you do or learn something','A dictionary is a useful resource for writers.','tool','obstacle'],
+['temporary','adj.','lasting only a short time','The road closure is temporary.','short-term','permanent'],
+['unique','adj.','one of a kind or unlike anything else','Each snowflake has a unique pattern.','special','ordinary']
+].map((x,i)=>({id:'g'+(i+1),word:x[0],pos:x[1],meaning:x[2],example:x[3],synonym:x[4],antonym:x[5],day:Math.floor(i/10)+1,track:'grade3'}));
+
+const state=JSON.parse(localStorage.getItem('hspt_vocab_state')||'{}');state.learned=state.learned||{};state.difficult=state.difficult||{};state.missed=state.missed||{};state.answers=state.answers||{correct:0,total:0};
+const save=()=>localStorage.setItem('hspt_vocab_state',JSON.stringify(state));
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const totalBatches=Math.ceil(WORDS.length/100);
+function initSelect(el){el.innerHTML=Array.from({length:totalBatches},(_,i)=>`<option value="${i+1}">Batch ${i+1} (${i*100+1}–${Math.min(WORDS.length,(i+1)*100)})</option>`).join('')}
+["#learnBatch","#testBatch"].forEach(s=>initSelect($(s)));
+function updateHeader(){const learned=Object.keys(state.learned).length,diff=Object.keys(state.difficult).length;$('#progressText').textContent=`${learned} of ${WORDS.length} learned`;$('#progressBar').style.width=`${WORDS.length?learned/WORDS.length*100:0}%`;$('#streakText').textContent=`${diff} marked difficult`}
+let learnOrder={};
+function shuffledBatch(b){if(!learnOrder[b])learnOrder[b]=shuffle(WORDS.filter(w=>w.batch===b));return learnOrder[b]}
+function renderLearn(){const b=Number($('#learnBatch').value),q=$('#search').value.trim().toLowerCase(),only=$('#showDifficult').classList.contains('on');let list=shuffledBatch(b);if(q)list=list.filter(w=>(w.word+' '+w.meaning+' '+w.synonym+' '+w.antonym).toLowerCase().includes(q));if(only)list=list.filter(w=>state.difficult[w.id]);$('#wordList').innerHTML=list.length?list.map(w=>`<article class="word-card"><div class="word-top"><div><div class="word">${w.word}</div><div class="pos">${w.pos}</div></div><span class="pill">#${w.id}</span></div><div class="meaning">${w.meaning}</div><div class="example">“${w.example}”</div><div class="extras"><div class="tag"><b>Synonym</b><br>${w.synonym||'—'}</div><div class="tag"><b>Antonym</b><br>${w.antonym||'—'}</div></div><div class="actions"><button class="mini ${state.learned[w.id]?'good':''}" onclick="toggleLearned(${w.id})">${state.learned[w.id]?'✓ Learned':'Mark learned'}</button><button class="mini ${state.difficult[w.id]?'on':''}" onclick="toggleDifficult(${w.id})">★ Difficult</button></div></article>`).join(''):'<div class="empty">No words match this filter.</div>'}
+window.toggleLearned=id=>{state.learned[id]?delete state.learned[id]:state.learned[id]=1;save();
+const grade3State=JSON.parse(localStorage.getItem('grade3_vocab_state')||'{}');grade3State.learned=grade3State.learned||{};grade3State.missed=grade3State.missed||{};
+const saveGrade3=()=>localStorage.setItem('grade3_vocab_state',JSON.stringify(grade3State));
+const totalDays=Math.ceil(GRADE3_WORDS.length/10);
+$('#dailyDay').innerHTML=Array.from({length:totalDays},(_,i)=>`<option value="${i+1}">Day ${i+1} · Words ${i*10+1}–${Math.min(GRADE3_WORDS.length,(i+1)*10)}</option>`).join('');
+function updateDailyProgress(){const learned=Object.keys(grade3State.learned).length;let complete=0;for(let d=1;d<=totalDays;d++){const set=GRADE3_WORDS.filter(w=>w.day===d);if(set.length&&set.every(w=>grade3State.learned[w.id]))complete++}$('#dailyOverall').textContent=`${learned} of ${GRADE3_WORDS.length} learned`;$('#daysComplete').textContent=`${complete} day${complete===1?'':'s'} complete`;$('#dailyProgressBar').style.width=`${GRADE3_WORDS.length?learned/GRADE3_WORDS.length*100:0}%`}
+function renderDaily(){const day=Number($('#dailyDay').value)||1;const words=GRADE3_WORDS.filter(w=>w.day===day);$('#dailyWords').innerHTML=words.map((w,i)=>`<article class="word-card"><div class="word-top"><div><div class="word">${w.word}</div><div class="pos">${w.pos}</div></div><span class="pill">Day ${day} · ${i+1}/10</span></div><div class="meaning">${w.meaning}</div><div class="example">“${w.example}”</div><div class="extras"><div class="tag"><b>Synonym</b><br>${w.synonym||'—'}</div><div class="tag"><b>Antonym</b><br>${w.antonym||'—'}</div></div><div class="actions"><button class="mini ${grade3State.learned[w.id]?'good':''}" onclick="toggleGrade3('${w.id}')">${grade3State.learned[w.id]?'✓ Learned':'Mark learned'}</button></div></article>`).join('');updateDailyProgress();$('#dailyQuiz').innerHTML=''}
+window.toggleGrade3=id=>{grade3State.learned[id]?delete grade3State.learned[id]:grade3State.learned[id]=1;saveGrade3();renderDaily();renderLibrary()};
+function buildGrade3Quiz(){const day=Number($('#dailyDay').value)||1,pool=GRADE3_WORDS.filter(w=>w.day===day);const questions=pool.map(w=>makeSimpleQuestion(w,pool));const host=$('#dailyQuiz');host.innerHTML=`<div class="quiz-card"><div class="qmeta"><span>Day ${day} check</span><span>10 questions</span></div><div class="test-list">${questions.map((q,i)=>`<section class="test-question" data-gq="${i}"><div class="question"><span class="pill">${i+1}</span> ${q.prompt}</div><div class="answers">${q.opts.map(o=>`<label class="answer"><input type="radio" name="gq${i}" value="${encodeURIComponent(o)}"> <span>${o}</span></label>`).join('')}</div><div class="feedback hidden"></div></section>`).join('')}</div><div class="quiz-actions"><button class="btn" id="submitDaily">Submit 10-word check</button></div></div>`;$('#submitDaily').onclick=()=>{const missing=[];questions.forEach((q,i)=>{if(!host.querySelector(`input[name="gq${i}"]:checked`))missing.push(i+1)});if(missing.length){alert(`Please answer all 10 questions. Missing: ${missing.join(', ')}`);return}let score=0;questions.forEach((q,i)=>{const sec=host.querySelector(`[data-gq="${i}"]`),sel=decodeURIComponent(sec.querySelector(`input[name="gq${i}"]:checked`).value),ok=sel===q.correct;sec.querySelectorAll('.answer').forEach(label=>{const val=decodeURIComponent(label.querySelector('input').value);if(val===q.correct)label.classList.add('correct');if(label.querySelector('input').checked&&!ok)label.classList.add('wrong');label.querySelector('input').disabled=true});const f=sec.querySelector('.feedback');f.classList.remove('hidden');f.textContent=ok?'Correct':`Correct answer: ${q.correct}`;if(ok){score++;grade3State.learned[q.word.id]=1}else{grade3State.missed[q.word.id]=(grade3State.missed[q.word.id]||0)+1}});saveGrade3();updateDailyProgress();$('#submitDaily').remove();host.querySelector('.quiz-card').insertAdjacentHTML('beforeend',`<div class="stats-card" style="margin-top:16px"><div class="big">${score}/10</div><b>${score>=9?'Excellent!':score>=7?'Good work — review the missed words.':'Review today’s words and try again.'}</b></div>`);renderDailyCardsOnly()}}
+function renderDailyCardsOnly(){const day=Number($('#dailyDay').value)||1;const words=GRADE3_WORDS.filter(w=>w.day===day);$('#dailyWords').innerHTML=words.map((w,i)=>`<article class="word-card"><div class="word-top"><div><div class="word">${w.word}</div><div class="pos">${w.pos}</div></div><span class="pill">Day ${day} · ${i+1}/10</span></div><div class="meaning">${w.meaning}</div><div class="example">“${w.example}”</div><div class="extras"><div class="tag"><b>Synonym</b><br>${w.synonym||'—'}</div><div class="tag"><b>Antonym</b><br>${w.antonym||'—'}</div></div><div class="actions"><button class="mini ${grade3State.learned[w.id]?'good':''}" onclick="toggleGrade3('${w.id}')">${grade3State.learned[w.id]?'✓ Learned':'Mark learned'}</button></div></article>`).join('')}
+function makeSimpleQuestion(w,pool){const type=Math.random()<.65?'meaning':'word';if(type==='meaning'){const wrong=shuffle(pool.filter(x=>x.id!==w.id).map(x=>x.meaning)).slice(0,3);return {word:w,prompt:`What does “${w.word}” mean?`,correct:w.meaning,opts:shuffle([w.meaning,...wrong])}}const wrong=shuffle(pool.filter(x=>x.id!==w.id).map(x=>x.word)).slice(0,3);return {word:w,prompt:`Which word means “${w.meaning}”?`,correct:w.word,opts:shuffle([w.word,...wrong])}}
+function renderLibrary(){const q=($('#librarySearch')?.value||'').trim().toLowerCase(),track=$('#libraryTrack')?.value||'all';const hspt=WORDS.map(w=>({...w,track:'hspt'}));let all=[...GRADE3_WORDS,...hspt];if(track!=='all')all=all.filter(w=>w.track===track);if(q)all=all.filter(w=>(w.word+' '+w.meaning+' '+(w.synonym||'')+' '+(w.antonym||'')).toLowerCase().includes(q));all=all.sort((a,b)=>a.word.localeCompare(b.word));$('#libraryResults').innerHTML=all.slice(0,250).map(w=>`<article class="library-card"><h3>${w.word}<span class="track-badge ${w.track==='hspt'?'hspt':''}">${w.track==='hspt'?'HSPT':'3rd Grade'}</span></h3><div class="pos">${w.pos}</div><div class="meaning">${w.meaning}</div><div class="small">${w.example||''}</div></article>`).join('')||'<div class="empty">No matching words.</div>'}
+$('#dailyDay').onchange=renderDaily;$('#dailyTest').onclick=buildGrade3Quiz;$('#prevDay').onclick=()=>{const e=$('#dailyDay');e.value=Math.max(1,Number(e.value)-1);renderDaily()};$('#nextDay').onclick=()=>{const e=$('#dailyDay');e.value=Math.min(totalDays,Number(e.value)+1);renderDaily()};$('#librarySearch').oninput=renderLibrary;$('#libraryTrack').onchange=renderLibrary;
+
+updateHeader();renderLearn();renderDaily();renderLibrary();};window.toggleDifficult=id=>{state.difficult[id]?delete state.difficult[id]:state.difficult[id]=1;save();
+const grade3State=JSON.parse(localStorage.getItem('grade3_vocab_state')||'{}');grade3State.learned=grade3State.learned||{};grade3State.missed=grade3State.missed||{};
+const saveGrade3=()=>localStorage.setItem('grade3_vocab_state',JSON.stringify(grade3State));
+const totalDays=Math.ceil(GRADE3_WORDS.length/10);
+$('#dailyDay').innerHTML=Array.from({length:totalDays},(_,i)=>`<option value="${i+1}">Day ${i+1} · Words ${i*10+1}–${Math.min(GRADE3_WORDS.length,(i+1)*10)}</option>`).join('');
+function updateDailyProgress(){const learned=Object.keys(grade3State.learned).length;let complete=0;for(let d=1;d<=totalDays;d++){const set=GRADE3_WORDS.filter(w=>w.day===d);if(set.length&&set.every(w=>grade3State.learned[w.id]))complete++}$('#dailyOverall').textContent=`${learned} of ${GRADE3_WORDS.length} learned`;$('#daysComplete').textContent=`${complete} day${complete===1?'':'s'} complete`;$('#dailyProgressBar').style.width=`${GRADE3_WORDS.length?learned/GRADE3_WORDS.length*100:0}%`}
+function renderDaily(){const day=Number($('#dailyDay').value)||1;const words=GRADE3_WORDS.filter(w=>w.day===day);$('#dailyWords').innerHTML=words.map((w,i)=>`<article class="word-card"><div class="word-top"><div><div class="word">${w.word}</div><div class="pos">${w.pos}</div></div><span class="pill">Day ${day} · ${i+1}/10</span></div><div class="meaning">${w.meaning}</div><div class="example">“${w.example}”</div><div class="extras"><div class="tag"><b>Synonym</b><br>${w.synonym||'—'}</div><div class="tag"><b>Antonym</b><br>${w.antonym||'—'}</div></div><div class="actions"><button class="mini ${grade3State.learned[w.id]?'good':''}" onclick="toggleGrade3('${w.id}')">${grade3State.learned[w.id]?'✓ Learned':'Mark learned'}</button></div></article>`).join('');updateDailyProgress();$('#dailyQuiz').innerHTML=''}
+window.toggleGrade3=id=>{grade3State.learned[id]?delete grade3State.learned[id]:grade3State.learned[id]=1;saveGrade3();renderDaily();renderLibrary()};
+function buildGrade3Quiz(){const day=Number($('#dailyDay').value)||1,pool=GRADE3_WORDS.filter(w=>w.day===day);const questions=pool.map(w=>makeSimpleQuestion(w,pool));const host=$('#dailyQuiz');host.innerHTML=`<div class="quiz-card"><div class="qmeta"><span>Day ${day} check</span><span>10 questions</span></div><div class="test-list">${questions.map((q,i)=>`<section class="test-question" data-gq="${i}"><div class="question"><span class="pill">${i+1}</span> ${q.prompt}</div><div class="answers">${q.opts.map(o=>`<label class="answer"><input type="radio" name="gq${i}" value="${encodeURIComponent(o)}"> <span>${o}</span></label>`).join('')}</div><div class="feedback hidden"></div></section>`).join('')}</div><div class="quiz-actions"><button class="btn" id="submitDaily">Submit 10-word check</button></div></div>`;$('#submitDaily').onclick=()=>{const missing=[];questions.forEach((q,i)=>{if(!host.querySelector(`input[name="gq${i}"]:checked`))missing.push(i+1)});if(missing.length){alert(`Please answer all 10 questions. Missing: ${missing.join(', ')}`);return}let score=0;questions.forEach((q,i)=>{const sec=host.querySelector(`[data-gq="${i}"]`),sel=decodeURIComponent(sec.querySelector(`input[name="gq${i}"]:checked`).value),ok=sel===q.correct;sec.querySelectorAll('.answer').forEach(label=>{const val=decodeURIComponent(label.querySelector('input').value);if(val===q.correct)label.classList.add('correct');if(label.querySelector('input').checked&&!ok)label.classList.add('wrong');label.querySelector('input').disabled=true});const f=sec.querySelector('.feedback');f.classList.remove('hidden');f.textContent=ok?'Correct':`Correct answer: ${q.correct}`;if(ok){score++;grade3State.learned[q.word.id]=1}else{grade3State.missed[q.word.id]=(grade3State.missed[q.word.id]||0)+1}});saveGrade3();updateDailyProgress();$('#submitDaily').remove();host.querySelector('.quiz-card').insertAdjacentHTML('beforeend',`<div class="stats-card" style="margin-top:16px"><div class="big">${score}/10</div><b>${score>=9?'Excellent!':score>=7?'Good work — review the missed words.':'Review today’s words and try again.'}</b></div>`);renderDailyCardsOnly()}}
+function renderDailyCardsOnly(){const day=Number($('#dailyDay').value)||1;const words=GRADE3_WORDS.filter(w=>w.day===day);$('#dailyWords').innerHTML=words.map((w,i)=>`<article class="word-card"><div class="word-top"><div><div class="word">${w.word}</div><div class="pos">${w.pos}</div></div><span class="pill">Day ${day} · ${i+1}/10</span></div><div class="meaning">${w.meaning}</div><div class="example">“${w.example}”</div><div class="extras"><div class="tag"><b>Synonym</b><br>${w.synonym||'—'}</div><div class="tag"><b>Antonym</b><br>${w.antonym||'—'}</div></div><div class="actions"><button class="mini ${grade3State.learned[w.id]?'good':''}" onclick="toggleGrade3('${w.id}')">${grade3State.learned[w.id]?'✓ Learned':'Mark learned'}</button></div></article>`).join('')}
+function makeSimpleQuestion(w,pool){const type=Math.random()<.65?'meaning':'word';if(type==='meaning'){const wrong=shuffle(pool.filter(x=>x.id!==w.id).map(x=>x.meaning)).slice(0,3);return {word:w,prompt:`What does “${w.word}” mean?`,correct:w.meaning,opts:shuffle([w.meaning,...wrong])}}const wrong=shuffle(pool.filter(x=>x.id!==w.id).map(x=>x.word)).slice(0,3);return {word:w,prompt:`Which word means “${w.meaning}”?`,correct:w.word,opts:shuffle([w.word,...wrong])}}
+function renderLibrary(){const q=($('#librarySearch')?.value||'').trim().toLowerCase(),track=$('#libraryTrack')?.value||'all';const hspt=WORDS.map(w=>({...w,track:'hspt'}));let all=[...GRADE3_WORDS,...hspt];if(track!=='all')all=all.filter(w=>w.track===track);if(q)all=all.filter(w=>(w.word+' '+w.meaning+' '+(w.synonym||'')+' '+(w.antonym||'')).toLowerCase().includes(q));all=all.sort((a,b)=>a.word.localeCompare(b.word));$('#libraryResults').innerHTML=all.slice(0,250).map(w=>`<article class="library-card"><h3>${w.word}<span class="track-badge ${w.track==='hspt'?'hspt':''}">${w.track==='hspt'?'HSPT':'3rd Grade'}</span></h3><div class="pos">${w.pos}</div><div class="meaning">${w.meaning}</div><div class="small">${w.example||''}</div></article>`).join('')||'<div class="empty">No matching words.</div>'}
+$('#dailyDay').onchange=renderDaily;$('#dailyTest').onclick=buildGrade3Quiz;$('#prevDay').onclick=()=>{const e=$('#dailyDay');e.value=Math.max(1,Number(e.value)-1);renderDaily()};$('#nextDay').onclick=()=>{const e=$('#dailyDay');e.value=Math.min(totalDays,Number(e.value)+1);renderDaily()};$('#librarySearch').oninput=renderLibrary;$('#libraryTrack').onchange=renderLibrary;
+
+updateHeader();renderLearn();renderDaily();renderLibrary();};
+function shuffle(a){return [...a].sort(()=>Math.random()-.5)}
+function pickWeighted(pool){const weighted=[];pool.forEach(w=>{let n=1;if(state.missed[w.id])n+=3;if(state.difficult[w.id])n+=2;if(w.batch===Math.max(...pool.map(x=>x.batch)))n+=2;for(let i=0;i<n;i++)weighted.push(w)});return weighted[Math.floor(Math.random()*weighted.length)]}
+function optionsFor(answer,field,pool){const vals=[answer[field],...shuffle(pool.filter(w=>w.id!==answer.id).map(w=>w[field]).filter(Boolean)).slice(0,3)];return shuffle([...new Set(vals)]).slice(0,4)}
+function makeQuestion(w,pool){const types=['meaning','word','synonym','antonym','sentence'].filter(t=>!(t==='antonym'&&!w.antonym)||!(t==='synonym'&&!w.synonym));const type=types[Math.floor(Math.random()*types.length)];let prompt,correct,opts;
+ if(type==='meaning'){prompt=`What does “${w.word}” mean?`;correct=w.meaning;opts=optionsFor(w,'meaning',pool)}
+ else if(type==='word'){prompt=`Which word means “${w.meaning}”?`;correct=w.word;opts=shuffle([w.word,...shuffle(pool.filter(x=>x.id!==w.id).map(x=>x.word)).slice(0,3)])}
+ else if(type==='synonym'){prompt=`Which is closest in meaning to “${w.word}”?`;correct=w.synonym;const fake=shuffle(pool.filter(x=>x.id!==w.id).map(x=>x.synonym).filter(Boolean)).slice(0,3);opts=shuffle([correct,...fake])}
+ else if(type==='antonym'){prompt=`Which is the best antonym of “${w.word}”?`;correct=w.antonym;const fake=shuffle(pool.filter(x=>x.id!==w.id).map(x=>x.antonym).filter(Boolean)).slice(0,3);opts=shuffle([correct,...fake])}
+ else {prompt=w.example.replace(new RegExp(w.word,'ig'),'_____');correct=w.word;opts=shuffle([w.word,...shuffle(pool.filter(x=>x.id!==w.id).map(x=>x.word)).slice(0,3)])}
+ return {word:w,prompt,correct,opts:[...new Set(opts)].slice(0,4),type}}
+function buildQuiz(area,batch,count,specialPool=null){
+ let pool=specialPool||WORDS.filter(w=>w.batch<=batch);
+ if(!pool.length){$(area).innerHTML='<div class="empty">No words available yet.</div>';return}
+ const questions=[],used=new Set();
+ while(questions.length<Math.min(count,pool.length)){
+  const w=pickWeighted(pool);if(used.has(w.id))continue;used.add(w.id);questions.push(makeQuestion(w,pool));
+ }
+ const host=$(area);
+ host.innerHTML=`<div class="quiz-card"><div class="qmeta"><span>${questions.length} questions</span><span>Answer all, then submit</span></div><div class="test-list">${questions.map((q,i)=>`<section class="test-question" data-q="${i}"><div class="question"><span class="pill">${i+1}</span> ${q.prompt}</div><div class="answers">${q.opts.map((o,j)=>`<label class="answer"><input type="radio" name="q${i}" value="${encodeURIComponent(o)}"> <span>${o}</span></label>`).join('')}</div><div class="feedback hidden"></div></section>`).join('')}</div><div class="quiz-actions"><button class="btn" id="submitTest">Submit test</button></div></div>`;
+ $('#submitTest').onclick=()=>{
+  const unanswered=[];
+  questions.forEach((q,i)=>{if(!host.querySelector(`input[name="q${i}"]:checked`))unanswered.push(i+1)});
+  if(unanswered.length){alert(`Please answer all questions before submitting. Missing: ${unanswered.join(', ')}`);return}
+  let score=0;
+  questions.forEach((q,i)=>{
+   const section=host.querySelector(`[data-q="${i}"]`),selected=decodeURIComponent(section.querySelector(`input[name="q${i}"]:checked`).value),ok=selected===q.correct;
+   section.querySelectorAll('.answer').forEach(label=>{const val=decodeURIComponent(label.querySelector('input').value);if(val===q.correct)label.classList.add('correct');if(label.querySelector('input').checked&&!ok)label.classList.add('wrong');label.querySelector('input').disabled=true});
+   const feedback=section.querySelector('.feedback');feedback.classList.remove('hidden');feedback.textContent=ok?'Correct':`Correct answer: ${q.correct}`;
+   if(ok){score++;state.learned[q.word.id]=1}else{state.missed[q.word.id]=(state.missed[q.word.id]||0)+1}
+   state.answers.total++;if(ok)state.answers.correct++;
+  });
+  save();updateHeader();
+  $('#submitTest').remove();
+  host.querySelector('.quiz-card').insertAdjacentHTML('beforeend',`<div class="quiz-card" style="margin-top:18px"><div class="big">${score}/${questions.length}</div><h3>Test complete</h3><p>${score===questions.length?'Excellent — perfect score.':score/questions.length>=.8?'Strong work. Review the missed words once more.':'Keep reviewing. Missed words are now prioritized in future tests.'}</p><button class="btn" id="newTest">Create another test</button></div>`);
+  $('#newTest').onclick=()=>buildQuiz(area,batch,count,specialPool);
+ };
+}
+function renderProgress(){const learned=Object.keys(state.learned).length,diff=Object.keys(state.difficult).length,missed=Object.keys(state.missed).length,acc=state.answers.total?Math.round(state.answers.correct/state.answers.total*100):0;$('#stats').innerHTML=`<div class="stats-card"><div class="small">Learned</div><div class="big">${learned}</div></div><div class="stats-card"><div class="small">Difficult</div><div class="big">${diff}</div></div><div class="stats-card"><div class="small">Missed words</div><div class="big">${missed}</div></div><div class="stats-card"><div class="small">Accuracy</div><div class="big">${acc}%</div></div>`;$('#batchStats').innerHTML=Array.from({length:totalBatches},(_,i)=>{const b=i+1,all=WORDS.filter(w=>w.batch===b),done=all.filter(w=>state.learned[w.id]).length;return `<div class="batch-card"><h3>Batch ${b}</h3><div>${done}/${all.length} learned</div><div class="bar" style="margin-top:10px"><span style="width:${all.length?done/all.length*100:0}%"></span></div></div>`}).join('')}
+$$('.tab').forEach(t=>t.onclick=()=>{$$('.tab').forEach(x=>x.classList.remove('active'));$$('.panel').forEach(x=>x.classList.remove('active'));t.classList.add('active');$('#'+t.dataset.tab).classList.add('active');if(t.dataset.tab==='progress')renderProgress()});
+$('#learnBatch').onchange=()=>{learnOrder[Number($('#learnBatch').value)]=shuffle(WORDS.filter(w=>w.batch===Number($('#learnBatch').value)));renderLearn()};$('#search').oninput=renderLearn;$('#showDifficult').onclick=e=>{e.target.classList.toggle('on');renderLearn()};$('#startTest').onclick=()=>buildQuiz('#testArea',Number($('#testBatch').value),Number($('#testCount').value));$('#startReview').onclick=()=>{const pool=WORDS.filter(w=>state.missed[w.id]||state.difficult[w.id]);buildQuiz('#reviewArea',totalBatches,Math.min(30,pool.length),pool)};$('#clearMistakes').onclick=()=>{if(confirm('Clear all saved mistake history?')){state.missed={};save();renderProgress();$('#reviewArea').innerHTML=''}};
+
+const grade3State=JSON.parse(localStorage.getItem('grade3_vocab_state')||'{}');grade3State.learned=grade3State.learned||{};grade3State.missed=grade3State.missed||{};
+const saveGrade3=()=>localStorage.setItem('grade3_vocab_state',JSON.stringify(grade3State));
+const totalDays=Math.ceil(GRADE3_WORDS.length/10);
+$('#dailyDay').innerHTML=Array.from({length:totalDays},(_,i)=>`<option value="${i+1}">Day ${i+1} · Words ${i*10+1}–${Math.min(GRADE3_WORDS.length,(i+1)*10)}</option>`).join('');
+function updateDailyProgress(){const learned=Object.keys(grade3State.learned).length;let complete=0;for(let d=1;d<=totalDays;d++){const set=GRADE3_WORDS.filter(w=>w.day===d);if(set.length&&set.every(w=>grade3State.learned[w.id]))complete++}$('#dailyOverall').textContent=`${learned} of ${GRADE3_WORDS.length} learned`;$('#daysComplete').textContent=`${complete} day${complete===1?'':'s'} complete`;$('#dailyProgressBar').style.width=`${GRADE3_WORDS.length?learned/GRADE3_WORDS.length*100:0}%`}
+function renderDaily(){const day=Number($('#dailyDay').value)||1;const words=GRADE3_WORDS.filter(w=>w.day===day);$('#dailyWords').innerHTML=words.map((w,i)=>`<article class="word-card"><div class="word-top"><div><div class="word">${w.word}</div><div class="pos">${w.pos}</div></div><span class="pill">Day ${day} · ${i+1}/10</span></div><div class="meaning">${w.meaning}</div><div class="example">“${w.example}”</div><div class="extras"><div class="tag"><b>Synonym</b><br>${w.synonym||'—'}</div><div class="tag"><b>Antonym</b><br>${w.antonym||'—'}</div></div><div class="actions"><button class="mini ${grade3State.learned[w.id]?'good':''}" onclick="toggleGrade3('${w.id}')">${grade3State.learned[w.id]?'✓ Learned':'Mark learned'}</button></div></article>`).join('');updateDailyProgress();$('#dailyQuiz').innerHTML=''}
+window.toggleGrade3=id=>{grade3State.learned[id]?delete grade3State.learned[id]:grade3State.learned[id]=1;saveGrade3();renderDaily();renderLibrary()};
+function buildGrade3Quiz(){const day=Number($('#dailyDay').value)||1,pool=GRADE3_WORDS.filter(w=>w.day===day);const questions=pool.map(w=>makeSimpleQuestion(w,pool));const host=$('#dailyQuiz');host.innerHTML=`<div class="quiz-card"><div class="qmeta"><span>Day ${day} check</span><span>10 questions</span></div><div class="test-list">${questions.map((q,i)=>`<section class="test-question" data-gq="${i}"><div class="question"><span class="pill">${i+1}</span> ${q.prompt}</div><div class="answers">${q.opts.map(o=>`<label class="answer"><input type="radio" name="gq${i}" value="${encodeURIComponent(o)}"> <span>${o}</span></label>`).join('')}</div><div class="feedback hidden"></div></section>`).join('')}</div><div class="quiz-actions"><button class="btn" id="submitDaily">Submit 10-word check</button></div></div>`;$('#submitDaily').onclick=()=>{const missing=[];questions.forEach((q,i)=>{if(!host.querySelector(`input[name="gq${i}"]:checked`))missing.push(i+1)});if(missing.length){alert(`Please answer all 10 questions. Missing: ${missing.join(', ')}`);return}let score=0;questions.forEach((q,i)=>{const sec=host.querySelector(`[data-gq="${i}"]`),sel=decodeURIComponent(sec.querySelector(`input[name="gq${i}"]:checked`).value),ok=sel===q.correct;sec.querySelectorAll('.answer').forEach(label=>{const val=decodeURIComponent(label.querySelector('input').value);if(val===q.correct)label.classList.add('correct');if(label.querySelector('input').checked&&!ok)label.classList.add('wrong');label.querySelector('input').disabled=true});const f=sec.querySelector('.feedback');f.classList.remove('hidden');f.textContent=ok?'Correct':`Correct answer: ${q.correct}`;if(ok){score++;grade3State.learned[q.word.id]=1}else{grade3State.missed[q.word.id]=(grade3State.missed[q.word.id]||0)+1}});saveGrade3();updateDailyProgress();$('#submitDaily').remove();host.querySelector('.quiz-card').insertAdjacentHTML('beforeend',`<div class="stats-card" style="margin-top:16px"><div class="big">${score}/10</div><b>${score>=9?'Excellent!':score>=7?'Good work — review the missed words.':'Review today’s words and try again.'}</b></div>`);renderDailyCardsOnly()}}
+function renderDailyCardsOnly(){const day=Number($('#dailyDay').value)||1;const words=GRADE3_WORDS.filter(w=>w.day===day);$('#dailyWords').innerHTML=words.map((w,i)=>`<article class="word-card"><div class="word-top"><div><div class="word">${w.word}</div><div class="pos">${w.pos}</div></div><span class="pill">Day ${day} · ${i+1}/10</span></div><div class="meaning">${w.meaning}</div><div class="example">“${w.example}”</div><div class="extras"><div class="tag"><b>Synonym</b><br>${w.synonym||'—'}</div><div class="tag"><b>Antonym</b><br>${w.antonym||'—'}</div></div><div class="actions"><button class="mini ${grade3State.learned[w.id]?'good':''}" onclick="toggleGrade3('${w.id}')">${grade3State.learned[w.id]?'✓ Learned':'Mark learned'}</button></div></article>`).join('')}
+function makeSimpleQuestion(w,pool){const type=Math.random()<.65?'meaning':'word';if(type==='meaning'){const wrong=shuffle(pool.filter(x=>x.id!==w.id).map(x=>x.meaning)).slice(0,3);return {word:w,prompt:`What does “${w.word}” mean?`,correct:w.meaning,opts:shuffle([w.meaning,...wrong])}}const wrong=shuffle(pool.filter(x=>x.id!==w.id).map(x=>x.word)).slice(0,3);return {word:w,prompt:`Which word means “${w.meaning}”?`,correct:w.word,opts:shuffle([w.word,...wrong])}}
+function renderLibrary(){const q=($('#librarySearch')?.value||'').trim().toLowerCase(),track=$('#libraryTrack')?.value||'all';const hspt=WORDS.map(w=>({...w,track:'hspt'}));let all=[...GRADE3_WORDS,...hspt];if(track!=='all')all=all.filter(w=>w.track===track);if(q)all=all.filter(w=>(w.word+' '+w.meaning+' '+(w.synonym||'')+' '+(w.antonym||'')).toLowerCase().includes(q));all=all.sort((a,b)=>a.word.localeCompare(b.word));$('#libraryResults').innerHTML=all.slice(0,250).map(w=>`<article class="library-card"><h3>${w.word}<span class="track-badge ${w.track==='hspt'?'hspt':''}">${w.track==='hspt'?'HSPT':'3rd Grade'}</span></h3><div class="pos">${w.pos}</div><div class="meaning">${w.meaning}</div><div class="small">${w.example||''}</div></article>`).join('')||'<div class="empty">No matching words.</div>'}
+$('#dailyDay').onchange=renderDaily;$('#dailyTest').onclick=buildGrade3Quiz;$('#prevDay').onclick=()=>{const e=$('#dailyDay');e.value=Math.max(1,Number(e.value)-1);renderDaily()};$('#nextDay').onclick=()=>{const e=$('#dailyDay');e.value=Math.min(totalDays,Number(e.value)+1);renderDaily()};$('#librarySearch').oninput=renderLibrary;$('#libraryTrack').onchange=renderLibrary;
+
+updateHeader();renderLearn();renderDaily();renderLibrary();
+</script>
+</body>
+</html>
