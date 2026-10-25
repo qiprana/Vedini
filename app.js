@@ -72,9 +72,10 @@ function wordsGrid(parts){
 function richParagraphs(value){
  return String(value??"").split("\n\n").map(p=>p.trim()).filter(Boolean).map(p=>"<p>"+esc(p).replace(/\*([^*]+)\*/g,"<em>$1</em>").replace(/\n/g," ")+"</p>").join("");
 }
-function studySections(info,parts){
+function studySections(info,parts,nameNumber){
  const deep=anyMeaning(info,"traditional_interpretation");
- return "<div class='study-inner'><h4>"+esc(langText("Word by word","ಪದ ಪದದ ಅರ್ಥ"))+"</h4>"+wordsGrid(parts)+(deep?"<div class='deeper-reading'><h4>"+esc(langText("Deeper meaning","ಆಳವಾದ ಅರ್ಥ"))+"</h4>"+richParagraphs(deep)+"</div>":"")+"</div>";
+ const id=nameNumber?" data-detail-id='name-deep-"+nameNumber+"'":"";
+ return "<div class='study-inner'><h4>"+esc(langText("Word by word","ಪದ ಪದದ ಅರ್ಥ"))+"</h4>"+wordsGrid(parts)+(deep?"<details class='meaning-toggle name-deeper-meaning'"+id+"><summary>"+esc(langText("Deeper meaning","ಆಳವಾದ ಅರ್ಥ"))+"</summary><div class='deeper-reading'>"+richParagraphs(deep)+"</div></details>":"")+"</div>";
 }
 function makeAudio(v,isDhyana){
  if(isDhyana){
@@ -216,7 +217,7 @@ function nameSection(v){
  const names=v.names||[];
  let html="<section class='name-section' aria-label='"+esc(langText("Divine names","ದೇವಿಯ ನಾಮಗಳು"))+"'><div class='section-title'><h3>"+esc(langText("Divine names","ದೇವಿಯ ನಾಮಗಳು"))+"</h3><span>"+names.length+" "+esc(langText("names","ನಾಮಗಳು"))+"</span></div><div class='name-study-list'>";
  for(const n of names){
-  // Display every divine name and interpretation; audio plays once at the śloka level.
+  // Keep each compact name play button separate from the śloka-level audio player.
   if(COMBINED_MSS_NAME_CHILDREN.has(n.studyNumber))continue;
   const joined=(COMBINED_MSS_NAME_GROUPS[n.studyNumber]||[]).map(number=>names.find(x=>x.studyNumber===number)).filter(Boolean);
   const grouped=[n,...joined];
@@ -232,9 +233,13 @@ function nameSection(v){
   const essential=grouped.map(item=>meaningFor(item,nameData[item.studyNumber]||{})).join(" · ");
   const label=grouped.length>1?n.studyNumber+"–"+grouped[grouped.length-1].studyNumber:String(n.studyNumber);
   const sections=grouped.length>1
-   ?"<div class='combined-name-study'>"+grouped.map(item=>"<div class='combined-name-part'><h4>"+esc(item.studyNumber+". "+nameInScript(item))+"</h4>"+studySections(nameData[item.studyNumber]||{},findComponents(v,item,nameData[item.studyNumber]||{}))+"</div>").join("")+"</div>"
-   :studySections(info,parts);
-  html+="<details class='name-details compact-name-row' data-detail-id='name-"+n.studyNumber+"'><summary><span class='name-summary-grid'><span class='name-identity-inline'><span class='name-number'>"+esc(label)+".</span><span class='name-written'>"+highlighted(written)+"</span><span class='name-roman'>"+highlighted(roman)+"</span></span><span class='name-essence'>"+highlighted(essential)+"</span></span></summary>"+sections+"</details>";
+   ?"<div class='combined-name-study'>"+grouped.map(item=>"<div class='combined-name-part'><h4>"+esc(item.studyNumber+". "+nameInScript(item))+"</h4>"+studySections(nameData[item.studyNumber]||{},findComponents(v,item,nameData[item.studyNumber]||{}),item.studyNumber)+"</div>").join("")+"</div>"
+   :studySections(info,parts,n.studyNumber);
+  const clips=nameAudioClips(n.studyNumber);
+  const audio=clips.length
+   ?"<button type='button' class='name-audio-button' data-name-clips='"+esc(clips.join(","))+"' aria-label='"+esc(langText("Play MSS for name "+label,"ನಾಮ "+label+" MSS ಧ್ವನಿಯನ್ನು ಪ್ಲೇ ಮಾಡಿ"))+"' title='"+esc(langText("Play name","ನಾಮವನ್ನು ಪ್ಲೇ ಮಾಡಿ"))+"'>♪</button>"
+   :"<span class='name-audio-button unavailable' aria-hidden='true'>♪</span>";
+  html+="<div class='name-audio-card'>"+audio+"<details class='name-details compact-name-row' data-detail-id='name-"+n.studyNumber+"'><summary><span class='name-summary-grid'><span class='name-identity-inline'><span class='name-number'>"+esc(label)+".</span><span class='name-written'>"+highlighted(written)+"</span><span class='name-roman'>"+highlighted(roman)+"</span></span><span class='name-essence'>"+highlighted(essential)+"</span></span></summary>"+sections+"</details></div>";
  }
  return html+"</div></section>";
 }
@@ -271,6 +276,64 @@ async function mergedAudioUrl(sources){
  const url=URL.createObjectURL(audioBufferToWavBlob(merged.buffer));
  mergedAudioUrlCache.set(key,url);
  return url;
+}
+// Lightweight, shared player for the small divine-name buttons.
+// Short MSS clips play in their recorded order without downloading or merging every clip.
+let nameAudioPlayer=null,nameAudioActiveButton=null,nameAudioQueue=[],nameAudioIndex=0;
+function stopNameAudio(){
+ if(nameAudioPlayer){
+  nameAudioPlayer.pause();
+  nameAudioPlayer.removeAttribute("src");
+  nameAudioPlayer.load();
+ }
+ if(nameAudioActiveButton)nameAudioActiveButton.classList.remove("playing");
+ nameAudioActiveButton=null;nameAudioQueue=[];nameAudioIndex=0;
+}
+function initNameAudio(){
+ document.querySelectorAll(".name-audio-button[data-name-clips]").forEach(button=>{
+  if(button.dataset.bound==="1")return;
+  button.dataset.bound="1";
+  button.addEventListener("click",event=>{
+   event.preventDefault();
+   event.stopPropagation();
+   if(nameAudioActiveButton===button&&nameAudioPlayer&&!nameAudioPlayer.paused){
+    stopNameAudio();
+    return;
+   }
+   stopNameAudio();
+   nameAudioQueue=button.dataset.nameClips.split(",").map(Number).filter(n=>Number.isInteger(n)&&n>0&&n<=MSS_LAST_CLIP).map(mssClipPath);
+   if(!nameAudioQueue.length)return;
+   if(!nameAudioPlayer){
+    nameAudioPlayer=document.createElement("audio");
+    nameAudioPlayer.preload="none";
+    installAudioFocus(nameAudioPlayer);
+    nameAudioPlayer.addEventListener("ended",()=>{
+     if(!nameAudioActiveButton)return;
+     if(nameAudioIndex+1<nameAudioQueue.length){
+      nameAudioIndex++;
+      nameAudioPlayer.src=nameAudioQueue[nameAudioIndex];
+      nameAudioPlayer.load();
+      const played=nameAudioPlayer.play();
+      if(played&&played.catch)played.catch(stopNameAudio);
+     }else{
+      stopNameAudio();
+     }
+    });
+    nameAudioPlayer.addEventListener("pause",()=>{
+     if(nameAudioActiveButton)nameAudioActiveButton.classList.remove("playing");
+    });
+    nameAudioPlayer.addEventListener("error",stopNameAudio);
+   }
+   nameAudioActiveButton=button;
+   nameAudioIndex=0;
+   nameAudioPlayer.src=nameAudioQueue[0];
+   nameAudioPlayer.load();
+   nameAudioPlayer.playbackRate=0.9;
+   const started=nameAudioPlayer.play();
+   if(started&&started.catch)started.catch(stopNameAudio);
+   button.classList.add("playing");
+  });
+ });
 }
 function dhyanaPhraseComponents(v,row){
  const info=dhyanaData[v.verse_number]||{};
@@ -452,24 +515,25 @@ function dhyanaWordsPanel(v){
  const count=info.components?.length||0;
  return "<section class='name-section dhyana-study' aria-label='"+esc(langText("Study the words","ಪದಗಳ ಅಧ್ಯಯನ"))+"'><div class='name-study-list'><details class='name-details compact-name-row dhyana-word-card' data-detail-id='dhyana-"+v.verse_number+"'><summary><span class='name-summary-grid'><span class='name-identity-inline'><span class='name-written'>"+esc(langText("Word by word","ಪದ ಪದದ ಅರ್ಥ"))+"</span></span><span class='name-essence'>"+count+" "+esc(langText("word parts","ಪದಭಾಗಗಳು"))+"</span></span></summary><div class='study-inner'><h4>"+esc(langText("Word by word","ಪದ ಪದದ ಅರ್ಥ"))+"</h4>"+wordsGrid(info.components)+"</div></details></div></section>";
 }
-function moreSection(info){
+function moreSection(info,isDhyana,number){
  const deep=anyMeaning(info,"traditional_interpretation");
- return deep?"<div class='deeper-reading'><h3>"+esc(langText("Deeper meaning","ಆಳವಾದ ಅರ್ಥ"))+"</h3>"+richParagraphs(deep)+"</div>":"";
+ if(!deep)return "";
+ return "<details class='meaning-toggle verse-deeper-meaning' data-detail-id='deep-"+(isDhyana?"d":"v")+number+"'><summary>"+esc(langText("Deeper meaning","ಆಳವಾದ ಅರ್ಥ"))+"</summary><div class='deeper-reading'>"+richParagraphs(deep)+"</div></details>";
 }
 function optionalVerseMeaning(meaning,isDhyana,number){
  if(!meaning)return "";
- const label=isDhyana?langText("Overall meditation meaning (optional)","ಧ್ಯಾನ ಶ್ಲೋಕದ ಒಟ್ಟು ಅರ್ಥ (ಐಚ್ಛಿಕ)"):langText("Overall śloka meaning (optional)","ಶ್ಲೋಕದ ಒಟ್ಟು ಅರ್ಥ (ಐಚ್ಛಿಕ)");
+ const label=isDhyana?langText("Overall meaning","ಒಟ್ಟಾರೆ ಅರ್ಥ"):langText("Overall meaning","ಒಟ್ಟಾರೆ ಅರ್ಥ");
  return "<details class='verse-overall-meaning' data-detail-id='overall-"+(isDhyana?"d":"v")+number+"'><summary>"+esc(label)+"</summary><p>"+esc(meaning)+"</p></details>";
 }
 function dhyanaVerseMeaning(v){
  const info=dhyanaData[v.verse_number]||{};
  const meaning=anyMeaning(info,"essential_meaning")||(language==="kn"?v.meaning?.kannada:v.meaning?.english)||"";
- return "<section class='meaning-section verse-lesson'>"+moreSection(info)+optionalVerseMeaning(meaning,true,v.verse_number)+"</section>";
+ return "<section class='meaning-section verse-lesson'>"+optionalVerseMeaning(meaning,true,v.verse_number)+moreSection(info,true,v.verse_number)+"</section>";
 }
 function mainVerseMeaning(v){
  const summary=language==="kn"?v.meaning?.kannada:v.meaning?.english;
  const info=verseData[v.verse_number]||{};
- return "<section class='meaning-section verse-lesson'>"+moreSection(info)+optionalVerseMeaning(summary,false,v.verse_number)+"</section>";
+ return "<section class='meaning-section verse-lesson'>"+optionalVerseMeaning(summary,false,v.verse_number)+moreSection(info,false,v.verse_number)+"</section>";
 }
 function verseLine(s){
  const value=String(s??"").trim();
@@ -591,6 +655,7 @@ function updateQuickIndex(){
  root.querySelectorAll("button[data-quick]").forEach(b=>b.onclick=()=>{const number=Number(b.dataset.quick);selectedVerse=number;saveLocation("sloka",number);root.querySelectorAll("button[data-quick]").forEach(btn=>btn.classList.toggle("quick-current",Number(btn.dataset.quick)===number));document.querySelectorAll("#verse-cards .card").forEach(card=>card.classList.toggle("selected-verse",card.id==="verse-"+number));scrollToElement("verse-"+number);});
 }
 function render(){
+ stopNameAudio();
  const opened=savedDetails();
  const q=norm(searchTerm.trim());
  updateNavigation();
@@ -613,6 +678,7 @@ function render(){
  restoreDetails(opened);
  requestAnimationFrame(fitVerseLines);
  loadAudio();
+ initNameAudio();
  initDhyanaPhraseAudio();
  initDhyanaPlayAll();
  initDhyanaQuickNav();
