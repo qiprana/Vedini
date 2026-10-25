@@ -1093,3 +1093,81 @@ header p{color:#845c4b;font-size:18px}
   font-size:16px;
  }
 }
+
+
+/* Restore small per-name MSS buttons; full-sloka audio remains one player. */
+.reader-page .name-audio-card {
+ grid-template-columns:42px minmax(0,1fr);
+ gap:5px;
+}
+.reader-page .name-audio-card > .name-audio-button {
+ width:34px;
+ height:34px;
+ margin:8px 0 0 3px;
+ font-size:17px;
+}
+.reader-page .name-audio-card > .compact-name-row > summary,
+.reader-page .name-study-list > .name-audio-card > .compact-name-row > summary {
+ padding-left:29px;
+}
+.reader-page .name-audio-card > .compact-name-row > summary::before {left:10px;}
+
+/* Consistent accessible tap targets and compact disclosures for mobile reading. */
+.reader-page .verse-meaning-panel .meaning-toggle,
+.reader-page .name-details .meaning-toggle {
+ display:block;
+ border:1px solid #d6dfd3;
+ border-radius:9px;
+ padding:0;
+ margin:8px 0;
+ background:#f7faf5;
+ overflow:hidden;
+}
+.reader-page .verse-meaning-panel .meaning-toggle > summary,
+.reader-page .name-details .meaning-toggle > summary,
+.reader-page .name-study-list .compact-name-row .name-deeper-meaning > summary {
+ display:block;
+ position:relative;
+ background:#edf4eb;
+ color:#294e38;
+ padding:12px 36px 12px 14px;
+ font:650 15px/1.5 system-ui,sans-serif;
+ min-height:44px;
+ cursor:pointer;
+ list-style:none;
+}
+.reader-page .meaning-toggle > summary::-webkit-details-marker {display:none;}
+.reader-page .meaning-toggle > summary::before,
+.reader-page .name-details .meaning-toggle > summary::before,
+.reader-page .name-study-list .compact-name-row .name-deeper-meaning > summary::before {
+ content:"▸";
+ position:absolute;
+ top:50%;
+ left:auto;
+ right:13px;
+ transform:translateY(-50%);
+ color:#315744;
+ font-size:16px;
+}
+.reader-page .meaning-toggle[open] > summary::before,
+.reader-page .name-details .meaning-toggle[open] > summary::before,
+.reader-page .name-study-list .compact-name-row .name-deeper-meaning[open] > summary::before {content:"▾";}
+.reader-page .meaning-toggle > .deeper-reading {
+ margin:0;
+ border:0;
+ border-radius:0;
+ background:#fff;
+ padding:14px;
+}
+.reader-page .verse-meaning-panel .meaning-toggle.verse-overall-meaning {margin:8px 0;}
+.reader-page .verse-meaning-panel .meaning-toggle.verse-overall-meaning > p {
+ padding:12px 14px;
+ margin:0;
+}
+@media(max-width:720px) {
+ .reader-page .name-audio-card {grid-template-columns:39px minmax(0,1fr);gap:4px;}
+ .reader-page .name-audio-card > .name-audio-button {width:34px;height:34px;margin:8px 0 0 1px;}
+ .reader-page .name-audio-card > .compact-name-row > summary {padding-left:27px;}
+ .reader-page .verse-meaning-panel {padding-top:9px;}
+ .reader-page .verse-meaning-panel .meaning-toggle {margin:6px 0;}
+}
