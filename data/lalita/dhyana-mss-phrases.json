@@ -1,6 +1,6 @@
 {
-  "version": "20261024-mss-dhyana-phrases-v8",
-  "description": "Dhyana MSS mapping supports multi-clip phrases; सकलसुरनुतां सर्वसम्पत्प्रदात्रीम् plays clips 23 then 24.",
+  "version": "20261024-mss-dhyana-phrases-v9",
+  "description": "Dhyana MSS mapping with Dhyana 4 clips 25-26 merged into one displayed phrase/study card.",
   "phrases": [
     {
       "verse": 1,
@@ -186,19 +186,14 @@
     },
     {
       "verse": 4,
-      "clip": 25,
-      "dev": "सकुङ्कुम-विलेपनाम्",
-      "iast": "sakuṅkuma-vilepanām",
-      "en": "She is anointed with fragrant kuṅkuma.",
-      "kn": "ಅವಳು ಸುಗಂಧಮಯ ಕುಂಕುಮದಿಂದ ಅಲಂಕರಿಸಲ್ಪಟ್ಟಿದ್ದಾಳೆ."
-    },
-    {
-      "verse": 4,
-      "clip": 26,
-      "dev": "अलिक-चुम्बि-कस्तूरिकां",
-      "iast": "alika-cumbi-kastūrikāṃ",
-      "en": "A musk mark adorns her forehead near the curls that touch it.",
-      "kn": "ಅವಳ ಲಲಾಟದಲ್ಲಿ ಕಸ್ತೂರಿ ತಿಲಕವಿದೆ; ಅದನ್ನು ಮುಟ್ಟುವಂತೆ ಕೇಶಲತಿಗಳು ಅಲಂಕರಿಸುತ್ತವೆ."
+      "clips": [
+        25,
+        26
+      ],
+      "dev": "सकुङ्कुम-विलेपनाम् अलिक-चुम्बि-कस्तूरिकां",
+      "iast": "sakuṅkuma-vilepanām alika-cumbi-kastūrikāṃ",
+      "en": "She is anointed with fragrant kuṅkuma, with a musk mark adorning her forehead near the curls that touch it.",
+      "kn": "ಅವಳು ಸುಗಂಧಮಯ ಕುಂಕುಮದಿಂದ ಅಲಂಕರಿಸಲ್ಪಟ್ಟಿದ್ದು, ಲಲಾಟದಲ್ಲಿ ಕಸ್ತೂರಿ ತಿಲಕವಿದೆ; ಅದನ್ನು ಮುಟ್ಟುವಂತೆ ಕೇಶಲತಿಗಳು ಅಲಂಕರಿಸುತ್ತವೆ."
     },
     {
       "verse": 4,
