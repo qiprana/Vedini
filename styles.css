@@ -1045,12 +1045,13 @@ header p{color:#845c4b;font-size:18px}
  font-family:"Noto Sans Kannada","Kannada Sangam MN","Nirmala UI","Tunga",sans-serif;
  color:#203025;
 }
-/* Earlier shared verse rules forced 400 !important, causing thin Kannada. */
+/* Match Devanagari śloka scale and ink color; a medium weight
+   keeps Kannada legible without the heavy/dark appearance. */
 .reader-page.kannada-mode .verse-reading-panel .verse-script.kannada {
- font-weight:650 !important;
- font-size:clamp(23px,2.15vw,27px) !important;
- line-height:2 !important;
- color:#1e3024 !important;
+ font-weight:500 !important;
+ font-size:clamp(19px,1.8vw,23px) !important;
+ line-height:1.9 !important;
+ color:#26392e !important;
 }
 .reader-page.kannada-mode .name-identity-inline .name-written,
 .reader-page.kannada-mode .dhyana-phrase-details .name-written,
@@ -1082,8 +1083,8 @@ header p{color:#845c4b;font-size:18px}
 }
 @media(max-width:720px){
  .reader-page.kannada-mode .verse-reading-panel .verse-script.kannada {
-  font-size:24px !important;
-  line-height:1.95 !important;
+  font-size:clamp(19px,1.8vw,23px) !important;
+  line-height:1.9 !important;
  }
  .reader-page.kannada-mode .name-identity-inline .name-written {
   font-size:20px;
