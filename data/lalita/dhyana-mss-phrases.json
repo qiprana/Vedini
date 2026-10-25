@@ -1,6 +1,6 @@
 {
-  "version": "20261024-mss-dhyana-phrases-v11",
-  "description": "Dhyana 4 split after samanda; no browser merge across the former first and second displayed cards.",
+  "version": "20261024-mss-dhyana-phrases-v12",
+  "description": "Dhyana 4 corrected to separate clips 25, 26, and 27 into three distinct phrase cards.",
   "phrases": [
     {
       "verse": 1,
@@ -187,26 +187,30 @@
     {
       "verse": 4,
       "clip": 25,
-      "dev": "सकुङ्कुम-विलेपनाम् अलिक-चुम्बि-कस्तूरिकां समन्द",
-      "iast": "sakuṅkuma-vilepanām alika-cumbi-kastūrikāṃ samanda",
-      "en": "She is anointed with fragrant kuṅkuma, with a musk mark adorning her forehead near the curls that touch it; gentle and soft...",
-      "kn": "ಅವಳು ಸುಗಂಧಮಯ ಕುಂಕುಮದಿಂದ ಅಲಂಕರಿಸಲ್ಪಟ್ಟಿದ್ದು, ಲಲಾಟದಲ್ಲಿ ಕಸ್ತೂರಿ ತಿಲಕವಿದೆ; ಮೃದು ಹಾಗೂ ಸೌಮ್ಯವಾಗಿ..."
+      "dev": "सकुङ्कुम-विलेपनाम् अलिक-चुम्बि-कस्तूरिकां",
+      "iast": "sakuṅkuma-vilepanām alika-cumbi-kastūrikāṃ",
+      "en": "She is anointed with fragrant kuṅkuma, with a musk mark adorning her forehead near the curls that touch it.",
+      "kn": "ಅವಳು ಸುಗಂಧಮಯ ಕುಂಕುಮದಿಂದ ಅಲಂಕರಿಸಲ್ಪಟ್ಟಿದ್ದು, ಲಲಾಟದಲ್ಲಿ ಕಸ್ತೂರಿ ತಿಲಕವಿದೆ; ಅದನ್ನು ಮುಟ್ಟುವಂತೆ ಕೇಶಲತಿಗಳು ಅಲಂಕರಿಸುತ್ತವೆ."
     },
     {
       "verse": 4,
-      "clips": [
-        26,
-        27,
-        28
-      ],
-      "dev": "हसितेक्षणां सशर-चाप-पाशाङ्कुशाम्",
-      "iast": "hasitekṣaṇāṃ saśara-cāpa-pāśāṅkuśām",
-      "en": "Her glance is smiling and gentle; she holds arrows, bow, noose and goad.",
-      "kn": "ಅವಳ ದೃಷ್ಟಿಯಲ್ಲಿ ಮೃದು ನಗು ಹೊಳೆಯುತ್ತದೆ; ಅವಳು ಬಾಣ, ಬಿಲ್ಲು, ಪಾಶ ಮತ್ತು ಅಂಕುಶವನ್ನು ಹಿಡಿದಿರುವವಳು."
+      "clip": 26,
+      "dev": "समन्द हसितेक्षणां",
+      "iast": "samanda hasitekṣaṇāṃ",
+      "en": "Her glance is accompanied by a soft and gentle smile.",
+      "kn": "ಅವಳ ದೃಷ್ಟಿಯಲ್ಲಿ ಮೃದು ಮತ್ತು ಸೌಮ್ಯ ನಗು ಹೊಳೆಯುತ್ತದೆ."
     },
     {
       "verse": 4,
-      "clip": 29,
+      "clip": 27,
+      "dev": "सशर-चाप-पाशाङ्कुशाम्",
+      "iast": "saśara-cāpa-pāśāṅkuśām",
+      "en": "She holds arrows, bow, noose and goad.",
+      "kn": "ಅವಳು ಬಾಣ, ಬಿಲ್ಲು, ಪಾಶ ಮತ್ತು ಅಂಕುಶವನ್ನು ಹಿಡಿದಿರುವವಳು."
+    },
+    {
+      "verse": 4,
+      "clip": 28,
       "dev": "अशेषजन-मोहिनीम्",
       "iast": "aśeṣajana-mohinīm",
       "en": "Her divine beauty enchants all beings without exception.",
@@ -214,7 +218,7 @@
     },
     {
       "verse": 4,
-      "clip": 30,
+      "clip": 29,
       "dev": "अरुण-माल्य-भूषाम्बरां",
       "iast": "aruṇa-mālya-bhūṣāmbarāṃ",
       "en": "She is adorned with red garlands, ornaments and garments.",
@@ -222,7 +226,7 @@
     },
     {
       "verse": 4,
-      "clip": 31,
+      "clip": 30,
       "dev": "जपाकुसुम-भासुरां",
       "iast": "japākusuma-bhāsurāṃ",
       "en": "She shines brilliantly like the red hibiscus flower.",
@@ -230,7 +234,7 @@
     },
     {
       "verse": 4,
-      "clip": 32,
+      "clip": 31,
       "dev": "जपविधौ",
       "iast": "japavidhau",
       "en": "During the practice of japa.",
@@ -238,7 +242,7 @@
     },
     {
       "verse": 4,
-      "clip": 33,
+      "clip": 32,
       "dev": "स्मरेद् अम्बिकाम्",
       "iast": "smared ambikām",
       "en": "One should remember and contemplate Ambikā.",
