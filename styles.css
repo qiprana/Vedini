@@ -646,3 +646,33 @@ header p{color:#845c4b;font-size:18px}
   flex-wrap:wrap;
  }
 }
+
+
+/* Final Dhyana study layout: one original word-by-word dropdown per sloka */
+.reader-page .dhyana-phrase-row{
+ display:grid;
+ grid-template-columns:42px minmax(0,1.05fr) minmax(0,.95fr);
+ gap:10px 14px;
+ align-items:center;
+ padding:12px 14px;
+}
+.reader-page .dhyana-phrase-controls{
+ display:flex;
+ align-items:center;
+ min-width:0;
+}
+.reader-page .dhyana-word-toggle,
+.reader-page .dhyana-inline-words{
+ display:none !important;
+}
+.reader-page .dhyana-study{
+ margin-top:12px;
+}
+@media(max-width:720px){
+ .reader-page .dhyana-phrase-row{
+  grid-template-columns:38px 1fr;
+ }
+ .reader-page .dhyana-phrase-controls{grid-column:1}
+ .reader-page .dhyana-phrase-text{grid-column:2}
+ .reader-page .dhyana-phrase-meaning{grid-column:2}
+}
