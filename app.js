@@ -916,6 +916,11 @@ function initPractice(){
 }
 function switchLanguage(kn){
  language=kn?"kn":"en";
+ const reader=$(".reader-page");
+ if(reader){
+  reader.classList.toggle("kannada-mode",kn);
+  reader.setAttribute("lang",kn?"kn":"en");
+ }
  $("#dev").classList.toggle("chosen",!kn);
  $("#kn").classList.toggle("chosen",kn);
  $("#dev").setAttribute("aria-pressed",String(!kn));$("#kn").setAttribute("aria-pressed",String(kn));
