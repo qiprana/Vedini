@@ -96,7 +96,7 @@ const MSS_LAST_CLIP=739;
 function mssClipPath(clip){
  return "../audio/lalita/verses/MSS/phrase_"+String(clip).padStart(4,"0")+".mp3";
 }
-const MSS_REVIEWED_NAME_AUDIO_160_391={
+const MSS_REVIEWED_NAME_AUDIO_160_451={
  160:[202],
  162:[203],
  164:[204],
@@ -240,7 +240,43 @@ const MSS_REVIEWED_NAME_AUDIO_160_391={
  387:[349],
  388:[350],
  390:[351],
- 391:[352]
+ 391:[352],
+ 392:[353],
+ 393:[354],
+ 395:[355],
+ 397:[356],
+ 399:[357],
+ 400:[358],
+ 402:[359],
+ 403:[360,361],
+ 404:[362,363],
+ 405:[364],
+ 407:[365],
+ 409:[366],
+ 411:[367],
+ 413:[368],
+ 415:[369],
+ 416:[370],
+ 418:[371],
+ 420:[372],
+ 423:[373],
+ 424:[374],
+ 428:[375],
+ 429:[376],
+ 431:[377],
+ 432:[378],
+ 433:[379],
+ 434:[380],
+ 435:[381],
+ 436:[382],
+ 438:[383],
+ 440:[384],
+ 441:[385],
+ 442:[386],
+ 443:[387],
+ 447:[388],
+ 449:[389],
+ 451:[390]
 };
 function nameAudioClips(nameNumber){
  const n=Number(nameNumber);
@@ -376,12 +412,12 @@ function nameAudioClips(nameNumber){
  if(n===157)return []; // Included in the preceding combined name card.
  if(n===158)return [201];
  if(n===159)return []; // Included in the preceding combined name card.
- // Reviewed MSS assignments from handwritten sheets: divine names 160-391.
- // A clip that spans multiple names belongs to the first; remaining names keep
- // their separate text and meaning but have no individual audio button.
- // Names without recordings, including 296 and 371, are deliberately skipped.
- // Names 392 onward remain unassigned until reviewed.
- if(n>=160)return MSS_REVIEWED_NAME_AUDIO_160_391[n]||[];
+ // Reviewed MSS assignments from handwritten sheets: divine names 160-451.
+ // Every divine name remains an individual row. A shared phrase clip belongs
+ // to the first name in its bracket, with no audio button on the following names.
+ // Names without a specified clip (including 410 and 430) are left unassigned.
+ // Names 452 onward remain unassigned pending review.
+ if(n>=160)return MSS_REVIEWED_NAME_AUDIO_160_451[n]||[];
  const clip=n<=11?n+32:n<=19?n+37:n<=21?n+39:n<=24?n+41:n<=32?n+44:n<=40?n+51:n<=71?n+54:n<=72?n+60:n<=76?n+63:n<=93?n+71:n<=109?n+67:n<=125?n+60:n+42;
  return clip<=MSS_LAST_CLIP?[clip]:[];
 }
