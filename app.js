@@ -99,8 +99,10 @@ function dhyanaPhrasePanel(v){
  return "<section class='dhyana-phrase-section'><div class='section-title'><h3>"+esc(langText("Phrase-by-phrase","ಪದಗುಚ್ಛದ ಅರ್ಥ"))+"</h3><span>"+rows.length+" "+esc(langText("phrases","ಪದಗುಚ್ಛಗಳು"))+"</span></div><div class='dhyana-phrase-list'>"+rows.map(row=>{
   const written=language==="kn"?kannadaFromDevanagari(row.dev):row.dev;
   const meaning=language==="kn"?row.kn:row.en;
-  const path="../audio/lalita/verses/MSS/phrase_"+String(row.clip).padStart(4,"0")+".mp3";
-  return "<div class='dhyana-phrase-row'><button type='button' class='dhyana-phrase-play' data-phrase-audio='"+esc(path)+"' aria-label='"+esc(langText("Play phrase","ಪದಗುಚ್ಛವನ್ನು ಪ್ಲೇ ಮಾಡಿ"))+"'>♪</button><div class='dhyana-phrase-text'><div class='dhyana-phrase-script'>"+highlighted(written)+"</div><div class='dhyana-phrase-iast'>"+highlighted(row.iast)+"</div></div><div class='dhyana-phrase-meaning'>"+esc(meaning)+"</div></div>";
+  const clipList=Array.isArray(row.clips)?row.clips:[row.clip];
+  const paths=clipList.map(n=>"../audio/lalita/verses/MSS/phrase_"+String(n).padStart(4,"0")+".mp3");
+  const path=paths[0];
+  return "<div class='dhyana-phrase-row'><button type='button' class='dhyana-phrase-play' data-phrase-audio='"+esc(path)+"' data-phrase-audios='"+esc(paths.join("|"))+"' aria-label='"+esc(langText("Play phrase","ಪದಗುಚ್ಛವನ್ನು ಪ್ಲೇ ಮಾಡಿ"))+"'>♪</button><div class='dhyana-phrase-text'><div class='dhyana-phrase-script'>"+highlighted(written)+"</div><div class='dhyana-phrase-iast'>"+highlighted(row.iast)+"</div></div><div class='dhyana-phrase-meaning'>"+esc(meaning)+"</div></div>";
  }).join("")+"</div></section>";
 }
 function initDhyanaPhraseAudio(){
@@ -108,23 +110,38 @@ function initDhyanaPhraseAudio(){
   if(button.dataset.bound==="1")return;
   button.dataset.bound="1";
   button.addEventListener("click",()=>{
-   let audio=button._audio;
-   if(!audio){
-    audio=document.createElement("audio");
-    audio.preload="metadata";
-    audio.src=button.dataset.phraseAudio;
-    installAudioFocus(audio);
-    button._audio=audio;
-    audio.addEventListener("ended",()=>button.classList.remove("playing"));
-    audio.addEventListener("pause",()=>{if(audio.currentTime!==0)button.classList.remove("playing")});
+   const sources=(button.dataset.phraseAudios||button.dataset.phraseAudio||"").split("|").filter(Boolean);
+   if(!sources.length)return;
+   if(button._audio&&!button._audio.paused){
+    button._stopRequested=true;
+    button._audio.pause();
+    button._audio.currentTime=0;
+    button.classList.remove("playing");
+    return;
    }
-   if(!audio.paused){
-    audio.pause();audio.currentTime=0;button.classList.remove("playing");return;
-   }
-   claimAudioFocus(audio);
-   button.classList.add("playing");
-   const p=audio.play();
-   if(p&&typeof p.catch==="function")p.catch(()=>button.classList.remove("playing"));
+   let index=0;
+   const audio=button._audio||document.createElement("audio");
+   button._audio=audio;
+   installAudioFocus(audio);
+   button._stopRequested=false;
+   const playCurrent=()=>{
+    audio.src=sources[index];
+    audio.load();
+    claimAudioFocus(audio);
+    button.classList.add("playing");
+    const p=audio.play();
+    if(p&&typeof p.catch==="function")p.catch(()=>button.classList.remove("playing"));
+   };
+   audio.onended=()=>{
+    if(button._stopRequested){button.classList.remove("playing");return;}
+    index+=1;
+    if(index<sources.length)playCurrent();
+    else button.classList.remove("playing");
+   };
+   audio.onpause=()=>{
+    if(button._stopRequested)button.classList.remove("playing");
+   };
+   playCurrent();
   });
  });
 }
@@ -517,7 +534,7 @@ function switchLanguage(kn){
 async function init(){
  const paths=["lalita/dhyana.json","lalita/names-interpretations-draft.json","lalita/study-names-011-018.json","lalita/study-names-019-026.json","lalita/study-dhyana-01-02.json","lalita/study-dhyana-03-04.json","lalita/study-verses-001-010.json",...Array.from({length:183},(_,i)=>"lalita/verses/verse-"+String(i+1).padStart(3,"0")+".json")];
  try{
- const [files,briefNames,dhyanaPhrases]=await Promise.all([Promise.all(paths.map(fetchJSON)),fetchJSON("lalita/brief-names-draft.json"),fetchJSON("lalita/dhyana-mss-phrases.json?v=20261024-v5")]);
+ const [files,briefNames,dhyanaPhrases]=await Promise.all([Promise.all(paths.map(fetchJSON)),fetchJSON("lalita/brief-names-draft.json"),fetchJSON("lalita/dhyana-mss-phrases.json?v=20261024-v7")]);
  dhyana=files[0];
  dhyanaPhraseData=Object.fromEntries([1,2,3,4].map(v=>[v,(dhyanaPhrases.phrases||[]).filter(p=>p.verse===v)]));
  const old=files[1],newNames=[...files[2],...files[3]];
