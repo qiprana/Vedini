@@ -895,3 +895,49 @@ header p{color:#845c4b;font-size:18px}
  }
  .reader-page .reader-mode-nav .jump-controls{margin-top:10px}
 }
+
+
+/* Dhyana phrase header: keep audio separate from expand control */
+.reader-page .dhyana-phrase-card{
+ display:grid;
+ grid-template-columns:56px minmax(0,1fr);
+ gap:12px;
+ align-items:start;
+}
+.reader-page .dhyana-phrase-card>.dhyana-phrase-play{
+ position:static;
+ margin:12px 0 0 4px;
+ width:40px;
+ height:40px;
+ align-self:start;
+ justify-self:start;
+ z-index:1;
+}
+.reader-page .dhyana-phrase-details{
+ min-width:0;
+ width:100%;
+}
+.reader-page .dhyana-phrase-details>summary{
+ position:relative;
+ padding-left:42px;
+}
+.reader-page .dhyana-phrase-details>summary::before{
+ left:14px;
+}
+@media(max-width:720px){
+ .reader-page .dhyana-phrase-card{
+  grid-template-columns:48px minmax(0,1fr);
+  gap:8px;
+ }
+ .reader-page .dhyana-phrase-card>.dhyana-phrase-play{
+  width:36px;
+  height:36px;
+  margin:10px 0 0 2px;
+ }
+ .reader-page .dhyana-phrase-details>summary{
+  padding-left:38px;
+ }
+ .reader-page .dhyana-phrase-details>summary::before{
+  left:12px;
+ }
+}
