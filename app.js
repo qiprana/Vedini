@@ -98,6 +98,8 @@ function mssClipPath(clip){
 function nameAudioClips(nameNumber){
  const n=Number(nameNumber);
  if(n===12)return [44,45];
+ if(n===13)return [46,47];
+ if(n===14)return [47,48];
  const clip=n<=11?n+32:n+33;
  return clip<=MSS_LAST_CLIP?[clip]:[];
 }
@@ -105,7 +107,17 @@ function nameAudioPaths(nameNumber){
  return nameAudioClips(nameNumber).map(mssClipPath);
 }
 function verseMssAudioPaths(v){
- return (v.names||[]).flatMap(n=>nameAudioPaths(n.studyNumber));
+ const seen=new Set();
+ const clips=[];
+ for(const n of v.names||[]){
+  for(const clip of nameAudioClips(n.studyNumber)){
+   if(!seen.has(clip)){
+    seen.add(clip);
+    clips.push(clip);
+   }
+  }
+ }
+ return clips.map(mssClipPath);
 }
 function nameSection(v){
  let html="<section class='name-section' aria-label='"+esc(langText("Divine names","ದೇವಿಯ ನಾಮಗಳು"))+"'><div class='section-title'><h3>"+esc(langText("Divine names","ದೇವಿಯ ನಾಮಗಳು"))+"</h3><span>"+(v.names||[]).length+" "+esc(langText("names","ನಾಮಗಳು"))+"</span></div><div class='name-study-list'>";
