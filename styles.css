@@ -504,3 +504,78 @@ header p{color:#845c4b;font-size:18px}
 .reader-page .dhyana-phrase-play{
  box-shadow:0 2px 5px #3157441c;
 }
+
+
+/* Dhyana quick access */
+.reader-page .dhyana-quick-nav{
+ display:flex;
+ gap:8px;
+ flex-wrap:wrap;
+ margin:0 0 14px;
+ position:sticky;
+ top:0;
+ z-index:8;
+ padding:8px 0;
+ background:#fffaf2f2;
+ backdrop-filter:blur(5px);
+}
+.reader-page .dhyana-quick-nav button{
+ border:1px solid #9eb49f;
+ border-radius:999px;
+ background:#fffdf8;
+ color:#315744;
+ padding:8px 14px;
+ font:700 12px/1.2 system-ui,sans-serif;
+ cursor:pointer;
+}
+.reader-page .dhyana-quick-nav button:hover,
+.reader-page .dhyana-quick-nav button:focus{
+ background:#eaf3e9;
+ border-color:#64856c;
+ outline:none;
+}
+
+/* Keep phrase audio and word-by-word together */
+.reader-page .dhyana-phrase-row{
+ grid-template-columns:minmax(150px,auto) minmax(0,1.05fr) minmax(0,.95fr);
+ align-items:start;
+}
+.reader-page .dhyana-phrase-controls{
+ display:flex;
+ gap:7px;
+ align-items:flex-start;
+ flex-wrap:wrap;
+}
+.reader-page .dhyana-inline-words{margin:0}
+.reader-page .dhyana-inline-words summary{
+ cursor:pointer;
+ list-style:none;
+ min-height:34px;
+ display:inline-flex;
+ align-items:center;
+ padding:6px 10px;
+ border:1px solid #9db3a0;
+ border-radius:999px;
+ background:#fffdf8;
+ color:#315744;
+ font:700 11px/1.2 system-ui,sans-serif;
+ white-space:nowrap;
+}
+.reader-page .dhyana-inline-words summary::-webkit-details-marker{display:none}
+.reader-page .dhyana-inline-words summary:before{content:"▾";margin-right:5px;font-size:10px}
+.reader-page .dhyana-inline-words[open] summary{background:#eaf3e9}
+.reader-page .dhyana-inline-wordbody{
+ margin-top:7px;
+ padding:8px;
+ border:1px solid #d7e1d5;
+ border-radius:8px;
+ background:#fff;
+ min-width:240px;
+}
+@media(max-width:720px){
+ .reader-page .dhyana-quick-nav{display:grid;grid-template-columns:1fr 1fr}
+ .reader-page .dhyana-phrase-row{grid-template-columns:1fr}
+ .reader-page .dhyana-phrase-controls,
+ .reader-page .dhyana-phrase-text,
+ .reader-page .dhyana-phrase-meaning{grid-column:1}
+}
