@@ -96,7 +96,7 @@ const MSS_LAST_CLIP=739;
 function mssClipPath(clip){
  return "../audio/lalita/verses/MSS/phrase_"+String(clip).padStart(4,"0")+".mp3";
 }
-const MSS_REVIEWED_NAME_AUDIO_160_277={
+const MSS_REVIEWED_NAME_AUDIO_160_391={
  160:[202],
  162:[203],
  164:[204],
@@ -165,7 +165,82 @@ const MSS_REVIEWED_NAME_AUDIO_160_277={
  268:[269],
  270:[270],
  272:[271],
- 273:[272]
+ 273:[272],
+ 275:[273],
+ 276:[274],
+ 278:[275],
+ 280:[276],
+ 281:[277,278],
+ 282:[279],
+ 283:[280],
+ 285:[281],
+ 286:[282],
+ 287:[283],
+ 288:[284],
+ 289:[285,286],
+ 290:[287,288],
+ 291:[289],
+ 293:[290],
+ 295:[291],
+ 297:[292],
+ 298:[293],
+ 300:[294],
+ 302:[295],
+ 305:[296],
+ 307:[297],
+ 309:[298],
+ 312:[299],
+ 313:[300],
+ 315:[301],
+ 318:[302],
+ 321:[303],
+ 323:[304],
+ 324:[305],
+ 326:[306],
+ 327:[307],
+ 329:[308],
+ 331:[309],
+ 333:[310],
+ 334:[311],
+ 336:[312],
+ 337:[313],
+ 339:[314],
+ 341:[315],
+ 343:[316],
+ 344:[317],
+ 345:[318],
+ 346:[319],
+ 349:[320],
+ 350:[321],
+ 352:[322],
+ 353:[323],
+ 354:[324],
+ 355:[325],
+ 357:[326,327],
+ 358:[328],
+ 360:[329],
+ 362:[330],
+ 364:[331],
+ 365:[332,333],
+ 366:[334],
+ 368:[335],
+ 370:[336],
+ 372:[337],
+ 373:[338],
+ 374:[339],
+ 376:[340],
+ 377:[341],
+ 379:[342],
+ 380:[343],
+ 381:[344],
+ 382:[345],
+ 383:[346],
+ 384:[347],
+ 386:[348],
+ 387:[349],
+ 388:[350],
+ 390:[351],
+ 391:[352]
 };
 function nameAudioClips(nameNumber){
  const n=Number(nameNumber);
@@ -301,10 +376,12 @@ function nameAudioClips(nameNumber){
  if(n===157)return []; // Included in the preceding combined name card.
  if(n===158)return [201];
  if(n===159)return []; // Included in the preceding combined name card.
- // Reviewed MSS assignments from the handwritten sheets: divine names 160-277.
- // Each shared clip belongs to the first name. Following names have no individual audio.
- // Names 275-277 and later names remain without clips until a new sheet confirms them.
- if(n>=160)return MSS_REVIEWED_NAME_AUDIO_160_277[n]||[];
+ // Reviewed MSS assignments from handwritten sheets: divine names 160-391.
+ // A clip that spans multiple names belongs to the first; remaining names keep
+ // their separate text and meaning but have no individual audio button.
+ // Names without recordings, including 296 and 371, are deliberately skipped.
+ // Names 392 onward remain unassigned until reviewed.
+ if(n>=160)return MSS_REVIEWED_NAME_AUDIO_160_391[n]||[];
  const clip=n<=11?n+32:n<=19?n+37:n<=21?n+39:n<=24?n+41:n<=32?n+44:n<=40?n+51:n<=71?n+54:n<=72?n+60:n<=76?n+63:n<=93?n+71:n<=109?n+67:n<=125?n+60:n+42;
  return clip<=MSS_LAST_CLIP?[clip]:[];
 }
