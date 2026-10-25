@@ -247,35 +247,24 @@ function verseMssAudioPaths(v){
  }
  return clips.map(mssClipPath);
 }
-const COMBINED_MSS_NAME_GROUPS={49:[50],53:[54],62:[63],92:[93],94:[95,96],97:[98],108:[109],110:[111],112:[113],115:[116],118:[119],120:[121],122:[123],124:[125],134:[135,136],137:[138],139:[140,141],142:[143],144:[145],146:[147],148:[149],150:[151],152:[153],154:[155],156:[157],158:[159]};
-const COMBINED_MSS_NAME_CHILDREN=new Set(Object.values(COMBINED_MSS_NAME_GROUPS).flat());
 function nameSection(v){
  const names=v.names||[];
  let html="<section class='name-section' aria-label='"+esc(langText("Divine names","ದೇವಿಯ ನಾಮಗಳು"))+"'><div class='section-title'><h3>"+esc(langText("Divine names","ದೇವಿಯ ನಾಮಗಳು"))+"</h3><span>"+names.length+" "+esc(langText("names","ನಾಮಗಳು"))+"</span></div><div class='name-study-list'>";
  for(const n of names){
-  // Keep each compact name play button separate from the śloka-level audio player.
-  if(COMBINED_MSS_NAME_CHILDREN.has(n.studyNumber))continue;
-  const joined=(COMBINED_MSS_NAME_GROUPS[n.studyNumber]||[]).map(number=>names.find(x=>x.studyNumber===number)).filter(Boolean);
-  const grouped=[n,...joined];
-  const info=nameData[n.studyNumber]||{},parts=findComponents(v,n,info);
-  const nameInScript=item=>{
-   const dev=item.display_devanagari||item.sanskrit||"";
-   return language==="kn"?kannadaFromDevanagari(dev):dev;
-  };
-  const romanFor=item=>item.display_iast||item.iast||"";
-  const meaningFor=(item,data)=>anyMeaning(data,"essential_meaning")||(language==="kn"?item.kannada:item.english)||langText("Meaning under review","ಅರ್ಥ ಪರಿಶೀಲನೆಯಲ್ಲಿದೆ");
-  const written=grouped.map(nameInScript).join(" ");
-  const roman=grouped.map(romanFor).join(" ");
-  const essential=grouped.map(item=>meaningFor(item,nameData[item.studyNumber]||{})).join(" · ");
-  const label=grouped.length>1?n.studyNumber+"–"+grouped[grouped.length-1].studyNumber:String(n.studyNumber);
-  const sections=grouped.length>1
-   ?"<div class='combined-name-study'>"+grouped.map(item=>"<div class='combined-name-part'><h4>"+esc(item.studyNumber+". "+nameInScript(item))+"</h4>"+studySections(nameData[item.studyNumber]||{},findComponents(v,item,nameData[item.studyNumber]||{}),item.studyNumber)+"</div>").join("")+"</div>"
-   :studySections(info,parts,n.studyNumber);
-  const clips=nameAudioClips(n.studyNumber);
+  // Always show every divine name in its own row, even if the MSS recording spans more than one name.
+  const number=n.studyNumber;
+  const info=nameData[number]||{},parts=findComponents(v,n,info);
+  const dev=n.display_devanagari||n.sanskrit||"";
+  const written=language==="kn"?kannadaFromDevanagari(dev):dev;
+  const roman=n.display_iast||n.iast||"";
+  const essential=anyMeaning(info,"essential_meaning")||(language==="kn"?n.kannada:n.english)||langText("Meaning under review","ಅರ್ಥ ಪರಿಶೀಲನೆಯಲ್ಲಿದೆ");
+  const sections=studySections(info,parts,number);
+  // A shared phrase's assigned name has a button; names with no clip have none.
+  const clips=nameAudioClips(number);
   const audio=clips.length
-   ?"<button type='button' class='name-audio-button' data-name-clips='"+esc(clips.join(","))+"' aria-label='"+esc(langText("Play MSS for name "+label,"ನಾಮ "+label+" MSS ಧ್ವನಿಯನ್ನು ಪ್ಲೇ ಮಾಡಿ"))+"' title='"+esc(langText("Play name","ನಾಮವನ್ನು ಪ್ಲೇ ಮಾಡಿ"))+"'>♪</button>"
-   :""; // No ♪ control when this name has no assigned recording.
-  html+="<div class='name-audio-card'>"+audio+"<details class='name-details compact-name-row' data-detail-id='name-"+n.studyNumber+"'><summary><span class='name-summary-grid'><span class='name-identity-inline'><span class='name-number'>"+esc(label)+".</span><span class='name-written'>"+highlighted(written)+"</span><span class='name-roman'>"+highlighted(roman)+"</span></span><span class='name-essence'>"+highlighted(essential)+"</span></span></summary>"+sections+"</details></div>";
+   ?"<button type='button' class='name-audio-button' data-name-clips='"+esc(clips.join(","))+"' aria-label='"+esc(langText("Play MSS for name "+number,"ನಾಮ "+number+" MSS ಧ್ವನಿಯನ್ನು ಪ್ಲೇ ಮಾಡಿ"))+"' title='"+esc(langText("Play name","ನಾಮವನ್ನು ಪ್ಲೇ ಮಾಡಿ"))+"'>♪</button>"
+   :"";
+  html+="<div class='name-audio-card'>"+audio+"<details class='name-details compact-name-row' data-detail-id='name-"+number+"'><summary><span class='name-summary-grid'><span class='name-identity-inline'><span class='name-number'>"+esc(number)+".</span><span class='name-written'>"+highlighted(written)+"</span><span class='name-roman'>"+highlighted(roman)+"</span></span><span class='name-essence'>"+highlighted(essential)+"</span></span></summary>"+sections+"</details></div>";
  }
  return html+"</div></section>";
 }
