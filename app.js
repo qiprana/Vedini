@@ -178,7 +178,23 @@ function nameAudioClips(nameNumber){
  if(n===98)return []; // Included in combined 97-98 card.
  if(n>=99&&n<=108)return [n+68]; // Names 99-108 map to 167-176.
  if(n===109)return []; // Included in combined 108-109 card.
- const clip=n<=11?n+32:n<=19?n+37:n<=21?n+39:n<=24?n+41:n<=32?n+44:n<=40?n+51:n<=71?n+54:n<=72?n+60:n<=76?n+63:n<=93?n+71:n+67;
+ if(n===110)return [177]; // Combined 110-111.
+ if(n===111)return [];
+ if(n===112)return [178]; // Combined 112-113.
+ if(n===113)return [];
+ if(n===114)return [179];
+ if(n===115)return [180]; // Combined 115-116.
+ if(n===116)return [];
+ if(n===117)return [181];
+ if(n===118)return [182]; // Combined 118-119.
+ if(n===119)return [];
+ if(n===120)return [183]; // Combined 120-121.
+ if(n===121)return [];
+ if(n===122)return [184]; // Combined 122-123.
+ if(n===123)return [];
+ if(n===124)return [185]; // Combined 124-125.
+ if(n===125)return [];
+ const clip=n<=11?n+32:n<=19?n+37:n<=21?n+39:n<=24?n+41:n<=32?n+44:n<=40?n+51:n<=71?n+54:n<=72?n+60:n<=76?n+63:n<=93?n+71:n<=109?n+67:n+60;
  return clip<=MSS_LAST_CLIP?[clip]:[];
 }
 function nameAudioPaths(nameNumber){
@@ -197,7 +213,7 @@ function verseMssAudioPaths(v){
  }
  return clips.map(mssClipPath);
 }
-const COMBINED_MSS_NAME_GROUPS={49:[50],53:[54],62:[63],92:[93],94:[95,96],97:[98],108:[109]};
+const COMBINED_MSS_NAME_GROUPS={49:[50],53:[54],62:[63],92:[93],94:[95,96],97:[98],108:[109],110:[111],112:[113],115:[116],118:[119],120:[121],122:[123],124:[125]};
 const COMBINED_MSS_NAME_CHILDREN=new Set(Object.values(COMBINED_MSS_NAME_GROUPS).flat());
 function nameSection(v){
  const names=v.names||[];
