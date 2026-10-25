@@ -195,7 +195,43 @@ function nameAudioClips(nameNumber){
  if(n===123)return [];
  if(n===124)return [185]; // Combined 124-125.
  if(n===125)return [];
- const clip=n<=11?n+32:n<=19?n+37:n<=21?n+39:n<=24?n+41:n<=32?n+44:n<=40?n+51:n<=71?n+54:n<=72?n+60:n<=76?n+63:n<=93?n+71:n<=109?n+67:n+60;
+ // Hand-checked MSS phrase mapping for divine names 126-159.
+ if(n===126)return [186];
+ if(n===127)return []; // No MSS clip in the handwritten mapping.
+ if(n===128)return []; // No MSS clip in the handwritten mapping.
+ if(n===129)return [187];
+ if(n===130)return [188];
+ if(n===131)return [189];
+ if(n===132)return []; // No MSS clip in the handwritten mapping.
+ if(n===133)return []; // No MSS clip in the handwritten mapping.
+ if(n===134)return [190];
+ if(n===135)return []; // Included in the preceding combined name card.
+ if(n===136)return []; // Included in the preceding combined name card.
+ if(n===137)return [191];
+ if(n===138)return []; // Included in the preceding combined name card.
+ if(n===139)return [192];
+ if(n===140)return []; // Included in the preceding combined name card.
+ if(n===141)return []; // Included in the preceding combined name card.
+ if(n===142)return [193];
+ if(n===143)return []; // Included in the preceding combined name card.
+ if(n===144)return [194];
+ if(n===145)return []; // Included in the preceding combined name card.
+ if(n===146)return [195];
+ if(n===147)return []; // Included in the preceding combined name card.
+ if(n===148)return [196];
+ if(n===149)return []; // Included in the preceding combined name card.
+ if(n===150)return [197];
+ if(n===151)return []; // Included in the preceding combined name card.
+ if(n===152)return [198];
+ if(n===153)return []; // Included in the preceding combined name card.
+ if(n===154)return [199];
+ if(n===155)return []; // Included in the preceding combined name card.
+ if(n===156)return [200];
+ if(n===157)return []; // Included in the preceding combined name card.
+ if(n===158)return [201];
+ if(n===159)return []; // Included in the preceding combined name card.
+ // Subsequent names continue from clip 202; review against the next MSS sheet.
+ const clip=n<=11?n+32:n<=19?n+37:n<=21?n+39:n<=24?n+41:n<=32?n+44:n<=40?n+51:n<=71?n+54:n<=72?n+60:n<=76?n+63:n<=93?n+71:n<=109?n+67:n<=125?n+60:n+42;
  return clip<=MSS_LAST_CLIP?[clip]:[];
 }
 function verseMssAudioPaths(v){
@@ -211,7 +247,7 @@ function verseMssAudioPaths(v){
  }
  return clips.map(mssClipPath);
 }
-const COMBINED_MSS_NAME_GROUPS={49:[50],53:[54],62:[63],92:[93],94:[95,96],97:[98],108:[109],110:[111],112:[113],115:[116],118:[119],120:[121],122:[123],124:[125]};
+const COMBINED_MSS_NAME_GROUPS={49:[50],53:[54],62:[63],92:[93],94:[95,96],97:[98],108:[109],110:[111],112:[113],115:[116],118:[119],120:[121],122:[123],124:[125],134:[135,136],137:[138],139:[140,141],142:[143],144:[145],146:[147],148:[149],150:[151],152:[153],154:[155],156:[157],158:[159]};
 const COMBINED_MSS_NAME_CHILDREN=new Set(Object.values(COMBINED_MSS_NAME_GROUPS).flat());
 function nameSection(v){
  const names=v.names||[];
@@ -238,7 +274,7 @@ function nameSection(v){
   const clips=nameAudioClips(n.studyNumber);
   const audio=clips.length
    ?"<button type='button' class='name-audio-button' data-name-clips='"+esc(clips.join(","))+"' aria-label='"+esc(langText("Play MSS for name "+label,"ನಾಮ "+label+" MSS ಧ್ವನಿಯನ್ನು ಪ್ಲೇ ಮಾಡಿ"))+"' title='"+esc(langText("Play name","ನಾಮವನ್ನು ಪ್ಲೇ ಮಾಡಿ"))+"'>♪</button>"
-   :"<span class='name-audio-button unavailable' aria-hidden='true'>♪</span>";
+   :""; // No ♪ control when this name has no assigned recording.
   html+="<div class='name-audio-card'>"+audio+"<details class='name-details compact-name-row' data-detail-id='name-"+n.studyNumber+"'><summary><span class='name-summary-grid'><span class='name-identity-inline'><span class='name-number'>"+esc(label)+".</span><span class='name-written'>"+highlighted(written)+"</span><span class='name-roman'>"+highlighted(roman)+"</span></span><span class='name-essence'>"+highlighted(essential)+"</span></span></summary>"+sections+"</details></div>";
  }
  return html+"</div></section>";
@@ -801,10 +837,9 @@ function loadAudio(){
    // Resolve the verse BEFORE replacing the placeholder (detached nodes have no .closest(".card")).
    const verse=verseNumber!==null?verses.find(v=>v.verse_number===verseNumber):null;
    const mssSources=verse?verseMssAudioPaths(verse):[];
-   const missingMss=verse&&(verse.names||[]).some(n=>
-    !COMBINED_MSS_NAME_CHILDREN.has(n.studyNumber)&&!nameAudioClips(n.studyNumber).length
-   );
-   const mssAvailable=mssSources.length>0&&!missingMss;
+   // Some original names have no standalone MSS clip. Skip them and
+   // still offer the available audio for the rest of the śloka.
+   const mssAvailable=mssSources.length>0;
 
    const holder=document.createElement("div");
    holder.className="audio-player";
