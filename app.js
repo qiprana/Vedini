@@ -96,6 +96,77 @@ const MSS_LAST_CLIP=739;
 function mssClipPath(clip){
  return "../audio/lalita/verses/MSS/phrase_"+String(clip).padStart(4,"0")+".mp3";
 }
+const MSS_REVIEWED_NAME_AUDIO_160_277={
+ 160:[202],
+ 162:[203],
+ 164:[204],
+ 166:[205],
+ 168:[206],
+ 170:[207],
+ 172:[208],
+ 174:[209],
+ 176:[210],
+ 178:[211],
+ 180:[212],
+ 182:[213],
+ 184:[214],
+ 186:[215],
+ 188:[216],
+ 191:[217],
+ 193:[218],
+ 196:[219],
+ 198:[220],
+ 199:[221],
+ 200:[222],
+ 203:[223],
+ 204:[224],
+ 205:[225],
+ 206:[226],
+ 208:[227],
+ 209:[228],
+ 212:[229],
+ 213:[230],
+ 214:[231],
+ 215:[232],
+ 217:[233],
+ 219:[234],
+ 221:[235],
+ 224:[236],
+ 226:[237],
+ 228:[238],
+ 230:[239],
+ 231:[240],
+ 232:[241,242],
+ 233:[243],
+ 234:[244],
+ 235:[245],
+ 236:[246],
+ 237:[247,248],
+ 238:[249],
+ 240:[250],
+ 241:[251],
+ 243:[252],
+ 244:[253],
+ 245:[254],
+ 246:[255],
+ 248:[256],
+ 249:[257],
+ 250:[258],
+ 252:[259],
+ 253:[260],
+ 254:[261],
+ 255:[262],
+ 256:[263],
+ 258:[264],
+ 260:[265],
+ 263:[266],
+ 264:[267],
+ 266:[268],
+ 268:[269],
+ 270:[270],
+ 272:[271],
+ 273:[272]
+};
 function nameAudioClips(nameNumber){
  const n=Number(nameNumber);
  if(n===12)return [44,45];
@@ -230,7 +301,10 @@ function nameAudioClips(nameNumber){
  if(n===157)return []; // Included in the preceding combined name card.
  if(n===158)return [201];
  if(n===159)return []; // Included in the preceding combined name card.
- // Subsequent names continue from clip 202; review against the next MSS sheet.
+ // Reviewed MSS assignments from the handwritten sheets: divine names 160-277.
+ // Each shared clip belongs to the first name. Following names have no individual audio.
+ // Names 275-277 and later names remain without clips until a new sheet confirms them.
+ if(n>=160)return MSS_REVIEWED_NAME_AUDIO_160_277[n]||[];
  const clip=n<=11?n+32:n<=19?n+37:n<=21?n+39:n<=24?n+41:n<=32?n+44:n<=40?n+51:n<=71?n+54:n<=72?n+60:n<=76?n+63:n<=93?n+71:n<=109?n+67:n<=125?n+60:n+42;
  return clip<=MSS_LAST_CLIP?[clip]:[];
 }
@@ -247,6 +321,38 @@ function verseMssAudioPaths(v){
  }
  return clips.map(mssClipPath);
 }
+// Use hyphenation already present in the authoritative śloka reading.
+// Never invent breaks or combine separate divine names.
+function nameWithOriginalVerseHyphens(v,n){
+ const reading=v.reading||{};
+ const originalDev=n.display_devanagari||n.sanskrit||"";
+ const originalRoman=n.display_iast||n.iast||"";
+ const clean=(value,roman)=>{
+  let s=String(value??"").replace(/[-\s]/g,"");
+  if(roman)s=s.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+  return s;
+ };
+ const words=(lines,roman)=>(lines||[]).map(line=>String(line).split(/\s+/)
+  .filter(token=>roman?/[\p{L}]/u.test(token)&&!/[०-९0-9]/u.test(token):/[\u0900-\u0963]/u.test(token)&&!/[०-९]/u.test(token)));
+ const devWords=words(reading.devanagari,false);
+ const romanWords=words(reading.iast,true);
+ function matchWord(lines,wanted,roman){
+  for(let i=0;i<lines.length;i++){
+   for(let j=0;j<lines[i].length;j++){
+    const word=lines[i][j];
+    if(word.includes("-")&&clean(word,roman)===clean(wanted,roman))
+     return {i,j,text:word};
+   }
+  }
+  return null;
+ }
+ const d=matchWord(devWords,originalDev,false);
+ const r=matchWord(romanWords,originalRoman,true);
+ // Only use the parallel token if the original Devanagari or IAST matched.
+ const dev=d?.text||(r&&devWords[r.i]?.[r.j]?.includes("-")?devWords[r.i][r.j]:originalDev);
+ const roman=r?.text||(d&&romanWords[d.i]?.[d.j]?.includes("-")?romanWords[d.i][d.j]:originalRoman);
+ return {dev,roman};
+}
 function nameSection(v){
  const names=v.names||[];
  let html="<section class='name-section' aria-label='"+esc(langText("Divine names","ದೇವಿಯ ನಾಮಗಳು"))+"'><div class='section-title'><h3>"+esc(langText("Divine names","ದೇವಿಯ ನಾಮಗಳು"))+"</h3><span>"+names.length+" "+esc(langText("names","ನಾಮಗಳು"))+"</span></div><div class='name-study-list'>";
@@ -254,9 +360,9 @@ function nameSection(v){
   // Always show every divine name in its own row, even if the MSS recording spans more than one name.
   const number=n.studyNumber;
   const info=nameData[number]||{},parts=findComponents(v,n,info);
-  const dev=n.display_devanagari||n.sanskrit||"";
-  const written=language==="kn"?kannadaFromDevanagari(dev):dev;
-  const roman=n.display_iast||n.iast||"";
+  const original=nameWithOriginalVerseHyphens(v,n);
+  const written=language==="kn"?kannadaFromDevanagari(original.dev):original.dev;
+  const roman=original.roman;
   const essential=anyMeaning(info,"essential_meaning")||(language==="kn"?n.kannada:n.english)||langText("Meaning under review","ಅರ್ಥ ಪರಿಶೀಲನೆಯಲ್ಲಿದೆ");
   const sections=studySections(info,parts,number);
   // A shared phrase's assigned name has a button; names with no clip have none.
