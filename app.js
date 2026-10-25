@@ -161,7 +161,8 @@ function initDhyanaPhraseAudio(){
 }
 function dhyanaWordsPanel(v){
  const info=dhyanaData[v.verse_number]||{};
- return "<section class='name-section dhyana-study' aria-label='"+esc(langText("Study the words","ಪದಗಳ ಅಧ್ಯಯನ"))+"'><div class='section-title'><h3>"+esc(langText("Word by word","ಪದ ಪದದ ಅರ್ಥ"))+"</h3></div><details class='dhyana-words' data-detail-id='dhyana-"+v.verse_number+"'><summary>"+esc(langText("Explore the Sanskrit words","ಸಂಸ್ಕೃತ ಪದಗಳನ್ನು ತಿಳಿಯಿರಿ"))+" <span class='count'>"+(info.components?.length||0)+" "+esc(langText("word parts","ಪದಭಾಗಗಳು"))+"</span></summary><div class='study-inner'>"+wordsGrid(info.components)+"</div></details></section>";
+ const count=info.components?.length||0;
+ return "<section class='name-section dhyana-study' aria-label='"+esc(langText("Study the words","ಪದಗಳ ಅಧ್ಯಯನ"))+"'><div class='name-study-list'><details class='name-details compact-name-row dhyana-word-card' data-detail-id='dhyana-"+v.verse_number+"'><summary><span class='name-summary-grid'><span class='name-identity-inline'><span class='name-written'>"+esc(langText("Word by word","ಪದ ಪದದ ಅರ್ಥ"))+"</span></span><span class='name-essence'>"+count+" "+esc(langText("word parts","ಪದಭಾಗಗಳು"))+"</span></span></summary><div class='study-inner'><h4>"+esc(langText("Word by word","ಪದ ಪದದ ಅರ್ಥ"))+"</h4>"+wordsGrid(info.components)+"</div></details></div></section>";
 }
 function moreSection(info){
  const deep=anyMeaning(info,"traditional_interpretation");
