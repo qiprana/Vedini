@@ -676,3 +676,30 @@ header p{color:#845c4b;font-size:18px}
  .reader-page .dhyana-phrase-text{grid-column:2}
  .reader-page .dhyana-phrase-meaning{grid-column:2}
 }
+
+
+/* Dhyana word-by-word uses the same card language as divine names */
+.reader-page .dhyana-study{
+ margin-top:14px;
+}
+.reader-page .dhyana-study .name-study-list{
+ margin:0;
+}
+.reader-page .dhyana-study .dhyana-word-card{
+ margin:0;
+}
+.reader-page .dhyana-study .dhyana-word-card>summary{
+ background:#e8f1e5;
+}
+.reader-page .dhyana-study .dhyana-word-card .name-summary-grid{
+ grid-template-columns:minmax(0,1fr) auto;
+ align-items:center;
+}
+.reader-page .dhyana-study .dhyana-word-card .name-written{
+ font-size:20px;
+}
+.reader-page .dhyana-study .dhyana-word-card .name-essence{
+ font-size:14px;
+ color:#52675a;
+ white-space:nowrap;
+}
