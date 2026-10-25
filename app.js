@@ -103,7 +103,9 @@ function nameAudioClips(nameNumber){
  if(n===15)return [50];
  if(n===16)return [51,52];
  if(n===17)return [53,54];
- const clip=n<=11?n+32:n+37;
+ if(n===20)return [57,58];
+ if(n===21)return [59,60];
+ const clip=n<=11?n+32:n<=19?n+37:n+39;
  return clip<=MSS_LAST_CLIP?[clip]:[];
 }
 function nameAudioPaths(nameNumber){
