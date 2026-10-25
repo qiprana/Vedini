@@ -103,19 +103,13 @@ function nameSection(v){
  }
  return html+"</div></section>";
 }
-function dhyanaStudyKey(value){
- return String(value||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]+/g,"");
-}
 function dhyanaPhraseComponents(v,row){
  const info=dhyanaData[v.verse_number]||{};
- const phraseKey=dhyanaStudyKey(row.iast);
- return (info.components||[]).filter(component=>{
-  const key=dhyanaStudyKey(component.iast);
-  if(!key)return false;
-  if(phraseKey.includes(key))return true;
-  const stem=key.replace(/(?:am|im|ih|ah|m|h|r)$/,"");
-  return stem.length>=3&&phraseKey.includes(stem);
- });
+ const components=info.components||[];
+ if(Array.isArray(row.component_indices)){
+  return row.component_indices.map(i=>components[i]).filter(Boolean);
+ }
+ return [];
 }
 function dhyanaPhrasePanel(v){
  const rows=dhyanaPhraseData[v.verse_number]||[];
@@ -686,7 +680,7 @@ function switchLanguage(kn){
 async function init(){
  const paths=["lalita/dhyana.json","lalita/names-interpretations-draft.json","lalita/study-names-011-018.json","lalita/study-names-019-026.json","lalita/study-dhyana-01-02.json","lalita/study-dhyana-03-04.json","lalita/study-verses-001-010.json",...Array.from({length:183},(_,i)=>"lalita/verses/verse-"+String(i+1).padStart(3,"0")+".json")];
  try{
- const [files,briefNames,dhyanaPhrases]=await Promise.all([Promise.all(paths.map(fetchJSON)),fetchJSON("lalita/brief-names-draft.json"),fetchJSON("lalita/dhyana-mss-phrases.json?v=20261024-v13")]);
+ const [files,briefNames,dhyanaPhrases]=await Promise.all([Promise.all(paths.map(fetchJSON)),fetchJSON("lalita/brief-names-draft.json"),fetchJSON("lalita/dhyana-mss-phrases.json?v=20261024-v14")]);
  dhyana=files[0];
  dhyanaPhraseData=Object.fromEntries([1,2,3,4].map(v=>[v,(dhyanaPhrases.phrases||[]).filter(p=>p.verse===v)]));
  const old=files[1],newNames=[...files[2],...files[3]];
