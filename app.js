@@ -172,7 +172,13 @@ function nameAudioClips(nameNumber){
  if(n===91)return [163];
  if(n===92)return [164]; // Shared clip for names 92-93.
  if(n===93)return []; // Included in combined 92-93 card.
- const clip=n<=11?n+32:n<=19?n+37:n<=21?n+39:n<=24?n+41:n<=32?n+44:n<=40?n+51:n<=71?n+54:n<=72?n+60:n<=76?n+63:n+71;
+ if(n===94)return [165]; // One clip for combined 94-96.
+ if(n===95||n===96)return []; // Included in combined 94-96 card.
+ if(n===97)return [166]; // One clip for combined 97-98.
+ if(n===98)return []; // Included in combined 97-98 card.
+ if(n>=99&&n<=108)return [n+68]; // Names 99-108 map to 167-176.
+ if(n===109)return []; // Included in combined 108-109 card.
+ const clip=n<=11?n+32:n<=19?n+37:n<=21?n+39:n<=24?n+41:n<=32?n+44:n<=40?n+51:n<=71?n+54:n<=72?n+60:n<=76?n+63:n<=93?n+71:n+67;
  return clip<=MSS_LAST_CLIP?[clip]:[];
 }
 function nameAudioPaths(nameNumber){
@@ -191,35 +197,34 @@ function verseMssAudioPaths(v){
  }
  return clips.map(mssClipPath);
 }
-const COMBINED_MSS_NAME_PAIRS={49:50,53:54,62:63,92:93};
+const COMBINED_MSS_NAME_GROUPS={49:[50],53:[54],62:[63],92:[93],94:[95,96],97:[98],108:[109]};
+const COMBINED_MSS_NAME_CHILDREN=new Set(Object.values(COMBINED_MSS_NAME_GROUPS).flat());
 function nameSection(v){
  const names=v.names||[];
  let html="<section class='name-section' aria-label='"+esc(langText("Divine names","ದೇವಿಯ ನಾಮಗಳು"))+"'><div class='section-title'><h3>"+esc(langText("Divine names","ದೇವಿಯ ನಾಮಗಳು"))+"</h3><span>"+names.length+" "+esc(langText("names","ನಾಮಗಳು"))+"</span></div><div class='name-study-list'>";
  for(const n of names){
-  // Display paired divine names as one chantable row, preserving each name's study details.
-  const joinedNumber=COMBINED_MSS_NAME_PAIRS[n.studyNumber];
-  const joined=joinedNumber?names.find(x=>x.studyNumber===joinedNumber):null;
-  if(Object.entries(COMBINED_MSS_NAME_PAIRS).some(([first,last])=>Number(last)===n.studyNumber&&names.some(x=>x.studyNumber===Number(first))))continue;
+  // Each group has one audio button, but retains every original name and interpretation.
+  if(COMBINED_MSS_NAME_CHILDREN.has(n.studyNumber))continue;
+  const joined=(COMBINED_MSS_NAME_GROUPS[n.studyNumber]||[]).map(number=>names.find(x=>x.studyNumber===number)).filter(Boolean);
+  const grouped=[n,...joined];
   const info=nameData[n.studyNumber]||{},parts=findComponents(v,n,info);
-  const joinedInfo=joined?(nameData[joined.studyNumber]||{}):null;
-  const joinedParts=joined?findComponents(v,joined,joinedInfo):[];
   const nameInScript=item=>{
    const dev=item.display_devanagari||item.sanskrit||"";
    return language==="kn"?kannadaFromDevanagari(dev):dev;
   };
   const romanFor=item=>item.display_iast||item.iast||"";
   const meaningFor=(item,data)=>anyMeaning(data,"essential_meaning")||(language==="kn"?item.kannada:item.english)||langText("Meaning under review","ಅರ್ಥ ಪರಿಶೀಲನೆಯಲ್ಲಿದೆ");
-  const written=nameInScript(n)+(joined?" "+nameInScript(joined):"");
-  const roman=romanFor(n)+(joined?" "+romanFor(joined):"");
-  const essential=meaningFor(n,info)+(joined?" · "+meaningFor(joined,joinedInfo):"");
-  const label=joined?n.studyNumber+"–"+joined.studyNumber:String(n.studyNumber);
+  const written=grouped.map(nameInScript).join(" ");
+  const roman=grouped.map(romanFor).join(" ");
+  const essential=grouped.map(item=>meaningFor(item,nameData[item.studyNumber]||{})).join(" · ");
+  const label=grouped.length>1?n.studyNumber+"–"+grouped[grouped.length-1].studyNumber:String(n.studyNumber);
   const audioPaths=nameAudioPaths(n.studyNumber);
   const hasAudio=audioPaths.length>0;
   const audio=hasAudio
    ?"<button type='button' class='name-audio-button' data-name-audio='"+esc(audioPaths[0])+"' data-name-audios='"+esc(audioPaths.join("|"))+"' aria-label='"+esc(langText("Play MSS audio for name "+label,"ನಾಮ "+label+" MSS ಧ್ವನಿ ಪ್ಲೇ ಮಾಡಿ"))+"' title='"+esc(langText("Play MSS","MSS ಪ್ಲೇ ಮಾಡಿ"))+"'>♪</button>"
    :"<span class='name-audio-button unavailable' aria-hidden='true' title='"+esc(langText("MSS audio not uploaded yet","MSS ಧ್ವನಿ ಇನ್ನೂ ಅಪ್ಲೋಡ್ ಆಗಿಲ್ಲ"))+"'>♪</span>";
-  const sections=joined
-   ?"<div class='combined-name-study'><div class='combined-name-part'><h4>"+esc(n.studyNumber+". "+nameInScript(n))+"</h4>"+studySections(info,parts)+"</div><div class='combined-name-part'><h4>"+esc(joined.studyNumber+". "+nameInScript(joined))+"</h4>"+studySections(joinedInfo,joinedParts)+"</div></div>"
+  const sections=grouped.length>1
+   ?"<div class='combined-name-study'>"+grouped.map(item=>"<div class='combined-name-part'><h4>"+esc(item.studyNumber+". "+nameInScript(item))+"</h4>"+studySections(nameData[item.studyNumber]||{},findComponents(v,item,nameData[item.studyNumber]||{}))+"</div>").join("")+"</div>"
    :studySections(info,parts);
   html+="<div class='name-audio-card'>"+audio+"<details class='name-details compact-name-row' data-detail-id='name-"+n.studyNumber+"'><summary><span class='name-summary-grid'><span class='name-identity-inline'><span class='name-number'>"+esc(label)+".</span><span class='name-written'>"+highlighted(written)+"</span><span class='name-roman'>"+highlighted(roman)+"</span></span><span class='name-essence'>"+highlighted(essential)+"</span></span></summary>"+sections+"</details></div>";
  }
@@ -711,13 +716,19 @@ function loadAudio(){
   const verseNumber=numberMatch?Number(numberMatch[1]):null;
   const vdConfirmed=verseNumber!==null&&verseNumber>=1&&verseNumber<=183;
   try{
-   // VD recordings for ślokas 1–183 are committed and verified in GitHub.
-   // Render these players directly even if a browser blocks or caches HEAD.
    if(!vdConfirmed){
     const response=await fetch(path,{method:"HEAD"});
     if(!response.ok)return;
    }
    if(!placeholder.isConnected)return;
+   // Resolve the verse BEFORE replacing the placeholder (detached nodes have no .closest(".card")).
+   const verse=verseNumber!==null?verses.find(v=>v.verse_number===verseNumber):null;
+   const mssSources=verse?verseMssAudioPaths(verse):[];
+   const missingMss=verse&&(verse.names||[]).some(n=>
+    !COMBINED_MSS_NAME_CHILDREN.has(n.studyNumber)&&!nameAudioClips(n.studyNumber).length
+   );
+   const mssAvailable=mssSources.length>0&&!missingMss;
+
    const holder=document.createElement("div");
    holder.className="audio-player";
    const player=document.createElement("audio");
@@ -728,6 +739,10 @@ function loadAudio(){
    installAudioFocus(player);
    const toolbar=document.createElement("div");
    toolbar.className="audio-toolbar";
+   const status=document.createElement("div");
+   status.className="audio-playback-status";
+   status.setAttribute("role","status");
+   status.setAttribute("aria-live","polite");
    function setting(labelText,ariaLabel,choices){
     const label=document.createElement("label");
     label.className="audio-setting";
@@ -738,6 +753,7 @@ function loadAudio(){
     for(const item of choices){
      const option=document.createElement("option");
      option.value=item[0];option.textContent=item[1];
+     if(item[0]==="MSS"&&!mssAvailable)option.disabled=true;
      select.appendChild(option);
     }
     label.append(caption,select);
@@ -747,7 +763,7 @@ function loadAudio(){
    let voice=null;
    if(!isDhyana){
     voice=setting(langText("Singer","ಗಾಯಕ"),langText("Choose singer","ಗಾಯಕನನ್ನು ಆರಿಸಿ"),[
-     ["VD","VD"],["KMP","KMP"],["MSS","MSS"]
+     ["VD","VD"],["KMP","KMP"],["MSS",mssAvailable?"MSS":"MSS · not yet available"]
     ]);
    }
    const speed=setting(langText("Speed","ವೇಗ"),langText("Playback speed","ಪ್ಲೇಬ್ಯಾಕ್ ವೇಗ"),[
@@ -760,53 +776,96 @@ function loadAudio(){
     ["3",langText("3 times","ಮೂರು ಬಾರಿ")],
     ["loop",langText("Continuous","ನಿರಂತರ")]
    ]);
-   let completed=0;
+   let completed=0,clipIndex=0;
+   let nextAudio=null;
+   function preloadNext(){
+    if(nextAudio){nextAudio.src="";nextAudio=null;}
+    if(!voice||voice.value!=="MSS"||clipIndex+1>=mssSources.length)return;
+    nextAudio=document.createElement("audio");
+    nextAudio.preload="auto";
+    nextAudio.src=mssSources[clipIndex+1];
+    nextAudio.load();
+   }
+   function setSource(src,autoplay){
+    player.src=src;
+    player.load();
+    player.playbackRate=Number(speed.value);
+    if(autoplay){
+     const p=player.play();
+     if(p&&typeof p.catch==="function")p.catch(()=>{
+      status.textContent=langText("Unable to start audio. Press Play to retry.","ಆಡಿಯೊ ಆರಂಭವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ಲೇ ಮಾಡಿ.");
+     });
+    }
+   }
+   function showClip(){
+    status.textContent=langText("MSS chanting · clip "+(clipIndex+1)+" of "+mssSources.length,"MSS ಪಠಣ · "+(clipIndex+1)+" / "+mssSources.length);
+   }
    if(voice){
-    voice.addEventListener("change",async()=>{
+    voice.addEventListener("change",()=>{
      const wasPlaying=!player.paused;
-     completed=0;
+     completed=0;clipIndex=0;
      player.pause();
-     const singer=voice.value;
-     try{
-      if(singer==="MSS"){
-       const verseCard=placeholder.closest(".card");
-       const verseNum=verseCard?Number((verseCard.id.match(/verse-(\d+)/)||[])[1]):null;
-       const verse=verses.find(v=>v.verse_number===verseNum);
-       const sources=verse?verseMssAudioPaths(verse):[];
-       if(!sources.length)throw new Error("MSS name audio unavailable");
-       player.src=await mergedAudioUrl(sources);
-      }else{
-       player.src=path.replace("/VD/","/"+singer+"/");
+     if(nextAudio){nextAudio.src="";nextAudio=null;}
+     if(voice.value==="MSS"){
+      if(!mssAvailable){
+       voice.value="VD";
+       status.textContent=langText("MSS is not yet available for this complete śloka.","ಈ ಸಂಪೂರ್ಣ ಶ್ಲೋಕಕ್ಕೆ MSS ಇನ್ನೂ ಲಭ್ಯವಿಲ್ಲ.");
+       setSource(path,false);
+       return;
       }
-      player.load();
-      player.playbackRate=Number(speed.value);
-      if(wasPlaying){
-       const playResult=player.play();
-       if(playResult&&typeof playResult.catch==="function")playResult.catch(()=>{});
-      }
-     }catch(_){
-      player.src=path;
-      player.load();
-      voice.value="VD";
+      player.loop=false;
+      showClip();
+      setSource(mssSources[0],true); // Runs synchronously in the singer selection gesture.
+      preloadNext();
+     }else{
+      status.textContent="";
+      player.loop=repeat.value==="loop";
+      setSource(path.replace("/VD/","/"+voice.value+"/"),wasPlaying);
      }
     });
    }
-   speed.addEventListener("change",()=>{player.playbackRate=Number(speed.value)});
-   repeat.addEventListener("change",()=>{completed=0;player.loop=repeat.value==="loop"});
+   speed.addEventListener("change",()=>{player.playbackRate=Number(speed.value);});
+   repeat.addEventListener("change",()=>{
+    completed=0;
+    player.loop=repeat.value==="loop"&&(!voice||voice.value!=="MSS");
+   });
    player.addEventListener("ended",()=>{
+    if(voice&&voice.value==="MSS"){
+     if(clipIndex+1<mssSources.length){
+      clipIndex++;
+      showClip();
+      setSource(mssSources[clipIndex],true);
+      preloadNext();
+      return;
+     }
+     completed++;
+     if(repeat.value==="loop"||completed<Number(repeat.value)){
+      clipIndex=0;
+      showClip();
+      setSource(mssSources[0],true);
+      preloadNext();
+     }else{
+      completed=0;clipIndex=0;
+      status.textContent=langText("MSS · full śloka complete","MSS · ಸಂಪೂರ್ಣ ಶ್ಲೋಕ ಪೂರ್ಣ");
+      setSource(mssSources[0],false);
+     }
+     return;
+    }
     if(repeat.value==="loop")return;
-    completed+=1;
+    completed++;
     if(completed<Number(repeat.value)){
      player.currentTime=0;
      const replay=player.play();
-     if(replay&&typeof replay.catch==="function")replay.catch(()=>{});
-    }else{
-     completed=0;
-    }
+     if(replay&&typeof replay.catch==="function")replay.catch(()=>{status.textContent=langText("Press Play to continue","ಮುಂದುವರಿಸಲು ಪ್ಲೇ ಮಾಡಿ");});
+    }else completed=0;
    });
-   holder.append(player,toolbar);
+   player.addEventListener("error",()=>{
+    if(voice&&voice.value==="MSS")
+     status.textContent=langText("MSS clip "+(clipIndex+1)+" could not load.","MSS ಕ್ಲಿಪ್ "+(clipIndex+1)+" ಲೋಡ್ ಆಗಲಿಲ್ಲ.");
+   });
+   holder.append(player,toolbar,status);
    placeholder.replaceWith(holder);
-  }catch(_){/* Keep placeholder if recording is not available. */}
+  }catch(_){/* Keep the placeholder if the verse recording itself is unavailable. */}
  });
 }
 const practice={active:false,paused:false,current:1,end:1,reps:1,played:0,token:0};
