@@ -112,36 +112,51 @@ function initDhyanaPhraseAudio(){
   button.addEventListener("click",()=>{
    const sources=(button.dataset.phraseAudios||button.dataset.phraseAudio||"").split("|").filter(Boolean);
    if(!sources.length)return;
-   if(button._audio&&!button._audio.paused){
-    button._stopRequested=true;
-    button._audio.pause();
-    button._audio.currentTime=0;
+
+   if(button._queue&&button._queue.some(a=>!a.paused)){
+    button._queue.forEach(a=>{a.pause();try{a.currentTime=0;}catch(_){ }});
     button.classList.remove("playing");
+    button._queue=null;
     return;
    }
-   let index=0;
-   const audio=button._audio||document.createElement("audio");
-   button._audio=audio;
-   installAudioFocus(audio);
-   button._stopRequested=false;
-   const playCurrent=()=>{
-    audio.src=sources[index];
-    audio.load();
-    claimAudioFocus(audio);
-    button.classList.add("playing");
-    const p=audio.play();
-    if(p&&typeof p.catch==="function")p.catch(()=>button.classList.remove("playing"));
+
+   const queue=sources.map(src=>{
+    const a=document.createElement("audio");
+    a.preload="auto";
+    a.src=src;
+    installAudioFocus(a);
+    return a;
+   });
+   button._queue=queue;
+   let current=0;
+
+   const stopQueue=()=>{
+    queue.forEach(a=>{a.pause();try{a.currentTime=0;}catch(_){ }});
+    button.classList.remove("playing");
+    if(button._queue===queue)button._queue=null;
    };
-   audio.onended=()=>{
-    if(button._stopRequested){button.classList.remove("playing");return;}
-    index+=1;
-    if(index<sources.length)playCurrent();
-    else button.classList.remove("playing");
-   };
-   audio.onpause=()=>{
-    if(button._stopRequested)button.classList.remove("playing");
-   };
-   playCurrent();
+
+   queue.forEach((audio,i)=>{
+    audio.addEventListener("ended",()=>{
+      if(button._queue!==queue)return;
+      if(i+1<queue.length){
+        current=i+1;
+        claimAudioFocus(queue[current]);
+        const nextPlay=queue[current].play();
+        if(nextPlay&&typeof nextPlay.catch==="function"){
+          nextPlay.catch(stopQueue);
+        }
+      }else{
+        button.classList.remove("playing");
+        button._queue=null;
+      }
+    });
+   });
+
+   claimAudioFocus(queue[0]);
+   button.classList.add("playing");
+   const firstPlay=queue[0].play();
+   if(firstPlay&&typeof firstPlay.catch==="function")firstPlay.catch(stopQueue);
   });
  });
 }
@@ -534,7 +549,7 @@ function switchLanguage(kn){
 async function init(){
  const paths=["lalita/dhyana.json","lalita/names-interpretations-draft.json","lalita/study-names-011-018.json","lalita/study-names-019-026.json","lalita/study-dhyana-01-02.json","lalita/study-dhyana-03-04.json","lalita/study-verses-001-010.json",...Array.from({length:183},(_,i)=>"lalita/verses/verse-"+String(i+1).padStart(3,"0")+".json")];
  try{
- const [files,briefNames,dhyanaPhrases]=await Promise.all([Promise.all(paths.map(fetchJSON)),fetchJSON("lalita/brief-names-draft.json"),fetchJSON("lalita/dhyana-mss-phrases.json?v=20261024-v7")]);
+ const [files,briefNames,dhyanaPhrases]=await Promise.all([Promise.all(paths.map(fetchJSON)),fetchJSON("lalita/brief-names-draft.json"),fetchJSON("lalita/dhyana-mss-phrases.json?v=20261024-v7b")]);
  dhyana=files[0];
  dhyanaPhraseData=Object.fromEntries([1,2,3,4].map(v=>[v,(dhyanaPhrases.phrases||[]).filter(p=>p.verse===v)]));
  const old=files[1],newNames=[...files[2],...files[3]];
