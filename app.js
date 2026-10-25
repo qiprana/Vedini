@@ -111,8 +111,23 @@ function dhyanaPhrasePanel(v){
   const paths=clipList.map(n=>"../audio/lalita/verses/MSS/phrase_"+String(n).padStart(4,"0")+".mp3");
   const parts=dhyanaPhraseComponents(v,row);
   const words=parts.length?"<details class='dhyana-inline-words'><summary>"+esc(langText("Word by word","ಪದ ಪದದ ಅರ್ಥ"))+"</summary><div class='dhyana-inline-wordbody'>"+wordsGrid(parts)+"</div></details>":"";
-  return "<div class='dhyana-phrase-row'><div class='dhyana-phrase-controls'><button type='button' class='dhyana-phrase-play' data-phrase-audio='"+esc(paths[0])+"' data-phrase-audios='"+esc(paths.join("|"))+"' aria-label='"+esc(langText("Play phrase","ಪದಗುಚ್ಛವನ್ನು ಪ್ಲೇ ಮಾಡಿ"))+"'>♪</button>"+words+"</div><div class='dhyana-phrase-text'><div class='dhyana-phrase-script'>"+highlighted(written)+"</div><div class='dhyana-phrase-iast'>"+highlighted(row.iast)+"</div></div><div class='dhyana-phrase-meaning'>"+esc(meaning)+"</div></div>";
+  return "<div class='dhyana-phrase-row'><div class='dhyana-phrase-controls'><button type='button' class='dhyana-phrase-play' data-phrase-audio='"+esc(paths[0])+"' data-phrase-audios='"+esc(paths.join("|"))+"' aria-label='"+esc(langText("Play phrase","ಪದಗುಚ್ಛವನ್ನು ಪ್ಲೇ ಮಾಡಿ"))+"'>♪</button>"+(parts.length?"<button type='button' class='dhyana-word-toggle' aria-expanded='false'>"+esc(langText("Word by word","ಪದ ಪದದ ಅರ್ಥ"))+" ▾</button>":"")+"</div><div class='dhyana-phrase-text'><div class='dhyana-phrase-script'>"+highlighted(written)+"</div><div class='dhyana-phrase-iast'>"+highlighted(row.iast)+"</div></div><div class='dhyana-phrase-meaning'>"+esc(meaning)+"</div>"+words+"</div>";
  }).join("")+"</div></section>";
+}
+function initDhyanaWordToggles(){
+ document.querySelectorAll(".dhyana-phrase-row").forEach(row=>{
+  const button=row.querySelector(".dhyana-word-toggle");
+  const details=row.querySelector(".dhyana-inline-words");
+  if(!button||!details||button.dataset.bound==="1")return;
+  button.dataset.bound="1";
+  details.hidden=true;
+  button.addEventListener("click",()=>{
+   const open=details.hidden;
+   details.hidden=!open;
+   button.setAttribute("aria-expanded",String(open));
+   button.textContent=langText("Word by word","ಪದ ಪದದ ಅರ್ಥ")+(open?" ▴":" ▾");
+  });
+ });
 }
 function initDhyanaPhraseAudio(){
  document.querySelectorAll("[data-phrase-audio]").forEach(button=>{
@@ -335,6 +350,7 @@ function render(){
  requestAnimationFrame(fitVerseLines);
  loadAudio();
  initDhyanaPhraseAudio();
+ initDhyanaWordToggles();
  initDhyanaQuickNav();
 }
 function saveLocation(kind,n){
