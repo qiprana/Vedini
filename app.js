@@ -99,7 +99,7 @@ function nameAudioClips(nameNumber){
  const n=Number(nameNumber);
  if(n===12)return [44,45];
  if(n===13)return [46,47];
- if(n===14)return [47,48];
+ if(n===14)return [48,49];
  const clip=n<=11?n+32:n+33;
  return clip<=MSS_LAST_CLIP?[clip]:[];
 }
