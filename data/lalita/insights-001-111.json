@@ -1,0 +1,895 @@
+{
+  "collection": "lalita",
+  "type": "name-insights",
+  "editorial_note": "Concise thematic insights, not scriptural promises of outcomes or instructions to readers.",
+  "names": [
+    {
+      "number": 1,
+      "verse_number": 1,
+      "insight": {
+        "en": "trust, surrender, and the feeling of being lovingly supported",
+        "kn": "ದಿವ್ಯ ತಾಯಿಯ ಮೇಲಿನ ನಂಬಿಕೆ, ಶರಣಾಗತಿ ಮತ್ತು ಪ್ರೀತಿಯ ಆಶ್ರಯದ ಭಾವವನ್ನು ಬೆಳೆಸುತ್ತದೆ."
+      }
+    },
+    {
+      "number": 2,
+      "verse_number": 1,
+      "insight": {
+        "en": "inner dignity, steadiness, and wise responsibility",
+        "kn": "ಆಂತರಿಕ ಘನತೆ, ಸ್ಥಿರತೆ ಮತ್ತು ವಿವೇಕಪೂರ್ಣ ಹೊಣೆಗಾರಿಕೆಯನ್ನು ಬೆಳೆಸುತ್ತದೆ."
+      }
+    },
+    {
+      "number": 3,
+      "verse_number": 1,
+      "insight": {
+        "en": "courage, humility, and confidence rooted in the Divine rather than status",
+        "kn": "ಧೈರ್ಯ, ವಿನಯ ಮತ್ತು ಬಾಹ್ಯ ಸ್ಥಾನಮಾನಕ್ಕಿಂತ ದೈವದಲ್ಲಿ ನೆಲೆಯೂರಿದ ಆತ್ಮವಿಶ್ವಾಸವನ್ನು ಬೆಳೆಸುತ್ತದೆ."
+      }
+    },
+    {
+      "number": 4,
+      "verse_number": 1,
+      "insight": {
+        "en": "Removal of ignorance and awakening of inner wisdom",
+        "kn": "ಅಜ್ಞಾನ ನಿವಾರಣೆ ಮತ್ತು ಆಂತರಿಕ ಜ್ಞಾನದ ಜಾಗೃತಿಗೆ ಪ್ರೇರಣೆ."
+      }
+    },
+    {
+      "number": 5,
+      "verse_number": 1,
+      "insight": {
+        "en": "Strengthens dedication to dharma and selfless action",
+        "kn": "ಧರ್ಮನಿಷ್ಠೆ ಮತ್ತು ನಿಸ್ವಾರ್ಥ ಕ್ರಿಯೆಯ ಮನೋಭಾವವನ್ನು ಬಲಪಡಿಸುತ್ತದೆ."
+      }
+    },
+    {
+      "number": 6,
+      "verse_number": 2,
+      "insight": {
+        "en": "Awakens hope, clarity, and awareness of the light of consciousness",
+        "kn": "ಭರವಸೆ, ಸ್ಪಷ್ಟತೆ ಮತ್ತು ಚೈತನ್ಯದ ಪ್ರಕಾಶದ ಅರಿವನ್ನು ಜಾಗೃತಗೊಳಿಸುತ್ತದೆ."
+      }
+    },
+    {
+      "number": 7,
+      "verse_number": 2,
+      "insight": {
+        "en": "integrated action, discernment, and responsible use of one's abilities",
+        "kn": "ಒಗ್ಗಟ್ಟಿನ ಕ್ರಿಯೆ, ವಿವೇಕ ಮತ್ತು ತಮ್ಮ ಸಾಮರ್ಥ್ಯಗಳ ಜವಾಬ್ದಾರಿಯುತ ಬಳಕೆಯನ್ನು ಬೆಳೆಸುತ್ತದೆ."
+      }
+    },
+    {
+      "number": 8,
+      "verse_number": 2,
+      "insight": {
+        "en": "Transforms possessive attachment into conscious love and devotion",
+        "kn": "ಸ್ವಾಧೀನಪಡಿಸಿಕೊಳ್ಳುವ ಆಸಕ್ತಿಯನ್ನು ಜಾಗೃತ ಪ್ರೀತಿ ಮತ್ತು ಭಕ್ತಿಯಾಗಿ ಪರಿವರ್ತಿಸಲು ಪ್ರೇರೇಪಿಸುತ್ತದೆ."
+      }
+    },
+    {
+      "number": 9,
+      "verse_number": 2,
+      "insight": {
+        "en": "mastery over anger and the ability to redirect reactive energy",
+        "kn": "ಕೋಪವನ್ನು ನಿಯಂತ್ರಿಸಿ ಪ್ರತಿಕ್ರಿಯಾತ್ಮಕ ಶಕ್ತಿಯನ್ನು ಸರಿದಾರಿಗೆ ತರುವ ಸಾಮರ್ಥ್ಯವನ್ನು ಬೆಳೆಸುತ್ತದೆ."
+      }
+    },
+    {
+      "number": 10,
+      "verse_number": 3,
+      "insight": {
+        "en": "Strengthens concentration and mindful direction of thoughts",
+        "kn": "ಏಕಾಗ್ರತೆ ಮತ್ತು ಚಿಂತನೆಗಳನ್ನು ಜಾಗೃತಿಯಿಂದ ನಡೆಸುವ ಶಕ್ತಿಯನ್ನು ಬೆಳೆಸುತ್ತದೆ."
+      }
+    },
+    {
+      "number": 11,
+      "verse_number": 3,
+      "insight": {
+        "en": "discernment and freedom from the pull of sensory impressions",
+        "kn": "ಇಂದ್ರಿಯಾನುಭವಗಳಲ್ಲಿ ವಿವೇಕ ಮತ್ತು ಅವುಗಳ ಆಕರ್ಷಣೆಯಿಂದ ಸ್ವಾತಂತ್ರ್ಯವನ್ನು ಬೆಳೆಸುತ್ತದೆ."
+      }
+    },
+    {
+      "number": 12,
+      "verse_number": 3,
+      "insight": {
+        "en": "an expansive vision of the sacred presence pervading all existence",
+        "kn": "ಸಮಸ್ತ ಅಸ್ತಿತ್ವವನ್ನೂ ಆವರಿಸಿರುವ ದೈವಿಕ ಉಪಸ್ಥಿತಿಯ ವಿಶಾಲ ದೃಷ್ಟಿಯನ್ನು ಬೆಳೆಸುತ್ತದೆ."
+      }
+    },
+    {
+      "number": 13,
+      "verse_number": 4,
+      "insight": {
+        "en": "appreciation of beauty as a form of sacred attention",
+        "kn": "ದೈವಿಕ ಗಮನದ ರೂಪವಾಗಿ ಸೌಂದರ್ಯದ ಮೆಚ್ಚುಗೆಯನ್ನು ಬೆಳೆಸುತ್ತದೆ."
+      }
+    },
+    {
+      "number": 14,
+      "verse_number": 4,
+      "insight": {
+        "en": "dignity guided by wisdom rather than pride",
+        "kn": "ಅಹಂಕಾರಕ್ಕಿಂತ ವಿವೇಕದಿಂದ ಕೂಡಿದ ಘನತೆಯನ್ನು ಬೆಳೆಸುತ್ತದೆ."
+      }
+    },
+    {
+      "number": 15,
+      "verse_number": 5,
+      "insight": {
+        "en": "calmness and reverence for subtle beauty",
+        "kn": "ಶಾಂತತೆ ಮತ್ತು ಸೂಕ್ಷ್ಮ ಸೌಂದರ್ಯದ ಗೌರವವನ್ನು ಬೆಳೆಸುತ್ತದೆ."
+      }
+    },
+    {
+      "number": 16,
+      "verse_number": 5,
+      "insight": {
+        "en": "awareness of the sacred in delicate details",
+        "kn": "ಸಣ್ಣ ವಿವರಗಳಲ್ಲಿಯೂ ಪವಿತ್ರತೆಯನ್ನು ಗುರುತಿಸಲು ಪ್ರೇರೇಪಿಸುತ್ತದೆ."
+      }
+    },
+    {
+      "number": 17,
+      "verse_number": 6,
+      "insight": {
+        "en": "welcoming thoughts and gentle expression",
+        "kn": "ಆತ್ಮೀಯ ಚಿಂತನೆ ಮತ್ತು ಮೃದುವಾದ ಅಭಿವ್ಯಕ್ತಿಯನ್ನು ಬೆಳೆಸುತ್ತದೆ."
+      }
+    },
+    {
+      "number": 18,
+      "verse_number": 6,
+      "insight": {
+        "en": "compassionate attention and responsiveness",
+        "kn": "ಕರುಣೆಯ ಗಮನ ಮತ್ತು ಸ್ಪಂದನಶೀಲತೆಯನ್ನು ಬೆಳೆಸುತ್ತದೆ."
+      }
+    },
+    {
+      "number": 19,
+      "verse_number": 7,
+      "insight": {
+        "en": "simplicity and respect for natural grace",
+        "kn": "ಸರಳತೆ ಮತ್ತು ಸಹಜ ಲಾವಣ್ಯದ ಗೌರವವನ್ನು ಬೆಳೆಸುತ್ತದೆ."
+      }
+    },
+    {
+      "number": 20,
+      "verse_number": 7,
+      "insight": {
+        "en": "remembrance of inner brilliance beyond decoration",
+        "kn": "ಅಲಂಕಾರಕ್ಕಿಂತಲೂ ಆಂತರಿಕ ಪ್ರಕಾಶವನ್ನು ಸ್ಮರಿಸಲು ಪ್ರೇರೇಪಿಸುತ್ತದೆ."
+      }
+    },
+    {
+      "number": 21,
+      "verse_number": 8,
+      "insight": {
+        "en": "receptive, gentle listening",
+        "kn": "ಮೃದುವಾದ ಮತ್ತು ಸ್ವೀಕಾರಶೀಲ ಶ್ರವಣವನ್ನು ಬೆಳೆಸುತ್ತದೆ."
+      }
+    },
+    {
+      "number": 22,
+      "verse_number": 8,
+      "insight": {
+        "en": "balance between energy and repose",
+        "kn": "ಕ್ರಿಯಾಶೀಲತೆ ಮತ್ತು ವಿಶ್ರಾಂತಿಯ ನಡುವಿನ ಸಮತೋಲನಕ್ಕೆ ಪ್ರೇರೇಪಿಸುತ್ತದೆ."
+      }
+    },
+    {
+      "number": 23,
+      "verse_number": 9,
+      "insight": {
+        "en": "an appreciation of the divine radiance reflected in the world",
+        "kn": "ಜಗತ್ತಿನಲ್ಲಿ ಪ್ರತಿಫಲಿಸುವ ದೈವಿಕ ಕಾಂತಿಯ ಮೆಚ್ಚುಗೆಯನ್ನು ಬೆಳೆಸುತ್ತದೆ."
+      }
+    },
+    {
+      "number": 24,
+      "verse_number": 9,
+      "insight": {
+        "en": "kind, truthful, and measured speech",
+        "kn": "ದಯಾಪೂರ್ಣ, ಸತ್ಯವಾದ ಮತ್ತು ಮಿತವಾದ ಮಾತನ್ನು ಬೆಳೆಸುತ್ತದೆ."
+      }
+    },
+    {
+      "number": 25,
+      "verse_number": 10,
+      "insight": {
+        "en": "purity of understanding and disciplined expression",
+        "kn": "ಶುದ್ಧ ತಿಳಿವಳಿಕೆ ಮತ್ತು ಶಿಸ್ತಿನ ಅಭಿವ್ಯಕ್ತಿಗೆ ಪ್ರೇರೇಪಿಸುತ್ತದೆ."
+      }
+    },
+    {
+      "number": 26,
+      "verse_number": 10,
+      "insight": {
+        "en": "mindful speech whose influence is uplifting",
+        "kn": "ಇತರರಿಗೆ ಹಿತಕಾರಿಯಾದ ಮಾತು ಮತ್ತು ನಡತೆಯನ್ನು ಬೆಳೆಸುತ್ತದೆ."
+      }
+    },
+    {
+      "number": 27,
+      "verse_number": 11,
+      "insight": {
+        "en": "loving communication and reverence for sacred sound",
+        "kn": "ಪ್ರೀತಿಯ ಸಂಭಾಷಣೆ ಮತ್ತು ಪವಿತ್ರ ನಾದದ ಗೌರವಕ್ಕೆ ಪ್ರೇರೇಪಿಸುತ್ತದೆ."
+      }
+    },
+    {
+      "number": 28,
+      "verse_number": 11,
+      "insight": {
+        "en": "tenderness and the quiet power of joy",
+        "kn": "ಮೃದುತೆ ಮತ್ತು ಆನಂದದ ನಿಶ್ಶಬ್ದ ಶಕ್ತಿಯನ್ನು ಬೆಳೆಸುತ್ತದೆ."
+      }
+    },
+    {
+      "number": 29,
+      "verse_number": 12,
+      "insight": {
+        "en": "freedom from constant comparison",
+        "kn": "ನಿರಂತರ ಹೋಲಿಕೆಯಿಂದ ಮುಕ್ತವಾಗಲು ಪ್ರೇರೇಪಿಸುತ್ತದೆ."
+      }
+    },
+    {
+      "number": 30,
+      "verse_number": 12,
+      "insight": {
+        "en": "contemplation of sacred commitment and loving union",
+        "kn": "ಪವಿತ್ರ ಬದ್ಧತೆ ಮತ್ತು ಪ್ರೀತಿಯ ಏಕತೆಯ ಚಿಂತನೆಗೆ ಪ್ರೇರೇಪಿಸುತ್ತದೆ."
+      }
+    },
+    {
+      "number": 31,
+      "verse_number": 13,
+      "insight": {
+        "en": "graceful action and the responsible use of strength",
+        "kn": "ಸೊಗಸಾದ ಕ್ರಿಯೆ ಮತ್ತು ಶಕ್ತಿಯ ಜವಾಬ್ದಾರಿಯುತ ಬಳಕೆಯನ್ನು ಬೆಳೆಸುತ್ತದೆ."
+      }
+    },
+    {
+      "number": 32,
+      "verse_number": 13,
+      "insight": {
+        "en": "appreciation of interconnectedness and inner values",
+        "kn": "ಪರಸ್ಪರ ಸಂಬಂಧ ಮತ್ತು ಆಂತರಿಕ ಮೌಲ್ಯಗಳ ಮೆಚ್ಚುಗೆಯನ್ನು ಬೆಳೆಸುತ್ತದೆ."
+      }
+    },
+    {
+      "number": 33,
+      "verse_number": 14,
+      "insight": {
+        "en": "recognition of love beyond possession or transaction",
+        "kn": "ಸ್ವಾಮಿತ್ವ ಅಥವಾ ಕೊಡುಗೆ-ಪಡೆಯುವಿಕೆಯ ಲೆಕ್ಕಾಚಾರವನ್ನು ಮೀರಿದ ಪ್ರೀತಿಯನ್ನು ಅರಿಯಲು ಪ್ರೇರೇಪಿಸುತ್ತದೆ."
+      }
+    },
+    {
+      "number": 34,
+      "verse_number": 14,
+      "insight": {
+        "en": "reverence for nourishment, growth, and life's continuity",
+        "kn": "ಪೋಷಣೆ, ಬೆಳವಣಿಗೆ ಮತ್ತು ಜೀವನದ ನಿರಂತರತೆಯ ಗೌರವವನ್ನು ಬೆಳೆಸುತ್ತದೆ."
+      }
+    },
+    {
+      "number": 35,
+      "verse_number": 15,
+      "insight": {
+        "en": "attentive observation without grasping",
+        "kn": "ಹಿಡಿತವಿಲ್ಲದ ಸೂಕ್ಷ್ಮ ಗಮನವನ್ನು ಬೆಳೆಸುತ್ತದೆ."
+      }
+    },
+    {
+      "number": 36,
+      "verse_number": 15,
+      "insight": {
+        "en": "acceptance of embodied beauty and life's natural form",
+        "kn": "ದೇಹಧಾರಣೆಯ ಸಹಜ ಸೌಂದರ್ಯವನ್ನು ಗೌರವಿಸಲು ಪ್ರೇರೇಪಿಸುತ್ತದೆ."
+      }
+    },
+    {
+      "number": 37,
+      "verse_number": 16,
+      "insight": {
+        "en": "vitality joined with purity of intention",
+        "kn": "ಸ್ಪಷ್ಟ ಉದ್ದೇಶದೊಂದಿಗೆ ಜೀವಶಕ್ತಿಯನ್ನು ಬೆಳೆಸುತ್ತದೆ."
+      }
+    },
+    {
+      "number": 38,
+      "verse_number": 16,
+      "insight": {
+        "en": "mindful awareness of movement and rhythm",
+        "kn": "ಚಲನೆ ಮತ್ತು ಲಯದ ಜಾಗೃತ ಅರಿವನ್ನು ಬೆಳೆಸುತ್ತದೆ."
+      }
+    },
+    {
+      "number": 39,
+      "verse_number": 17,
+      "insight": {
+        "en": "reverence for sacred intimacy and trust",
+        "kn": "ಪವಿತ್ರ ಆತ್ಮೀಯತೆ ಮತ್ತು ನಂಬಿಕೆಯ ಗೌರವವನ್ನು ಬೆಳೆಸುತ್ತದೆ."
+      }
+    },
+    {
+      "number": 40,
+      "verse_number": 17,
+      "insight": {
+        "en": "humility within splendor",
+        "kn": "ವೈಭವದ ನಡುವೆಯೂ ವಿನಯವನ್ನು ಬೆಳೆಸುತ್ತದೆ."
+      }
+    },
+    {
+      "number": 41,
+      "verse_number": 18,
+      "insight": {
+        "en": "contemplation of beauty as a force that draws the heart toward the sacred",
+        "kn": "ಸೌಂದರ್ಯದ ಆಕರ್ಷಣೆಯನ್ನು ದೈವಿಕ ಭಕ್ತಿಯತ್ತ ತಿರುಗಿಸಲು ಪ್ರೇರೇಪಿಸುತ್ತದೆ."
+      }
+    },
+    {
+      "number": 42,
+      "verse_number": 18,
+      "insight": {
+        "en": "humility before what remains mysterious",
+        "kn": "ಅರಿಯದ ರಹಸ್ಯದ ಮುಂದೆ ವಿನಯವನ್ನು ಬೆಳೆಸುತ್ತದೆ."
+      }
+    },
+    {
+      "number": 43,
+      "verse_number": 18,
+      "insight": {
+        "en": "steadiness and faithful progress",
+        "kn": "ಸ್ಥಿರತೆ ಮತ್ತು ನಿರಂತರ ಪ್ರಯತ್ನಕ್ಕೆ ಪ್ರೇರೇಪಿಸುತ್ತದೆ."
+      }
+    },
+    {
+      "number": 44,
+      "verse_number": 19,
+      "insight": {
+        "en": "the overcoming of inner darkness through devotion and insight",
+        "kn": "ಭಕ್ತಿ ಮತ್ತು ಜ್ಞಾನದಿಂದ ಆಂತರಿಕ ಅಂಧಕಾರವನ್ನು ಮೀರುವ ಪ್ರೇರಣೆ ನೀಡುತ್ತದೆ."
+      }
+    },
+    {
+      "number": 45,
+      "verse_number": 19,
+      "insight": {
+        "en": "surrender and reverence for the spiritual path",
+        "kn": "ಆಧ್ಯಾತ್ಮಿಕ ಮಾರ್ಗದ ಬಗ್ಗೆ ಶರಣಾಗತಿ ಮತ್ತು ಗೌರವವನ್ನು ಬೆಳೆಸುತ್ತದೆ."
+      }
+    },
+    {
+      "number": 46,
+      "verse_number": 20,
+      "insight": {
+        "en": "loving remembrance through sound and movement",
+        "kn": "ನಾದ ಮತ್ತು ಚಲನೆಯ ಮೂಲಕ ಪ್ರೀತಿಯ ಸ್ಮರಣೆಯನ್ನು ಬೆಳೆಸುತ್ತದೆ."
+      }
+    },
+    {
+      "number": 47,
+      "verse_number": 20,
+      "insight": {
+        "en": "patience, composure, and unhurried presence",
+        "kn": "ತಾಳ್ಮೆ, ಸಮಾಧಾನ ಮತ್ತು ಆತುರವಿಲ್ಲದ ಉಪಸ್ಥಿತಿಯನ್ನು ಬೆಳೆಸುತ್ತದೆ."
+      }
+    },
+    {
+      "number": 48,
+      "verse_number": 20,
+      "insight": {
+        "en": "recognition of the inexhaustible beauty of the sacred",
+        "kn": "ದೈವಿಕ ಸೌಂದರ್ಯದ ಅಕ್ಷಯ ಸ್ವರೂಪವನ್ನು ಗುರುತಿಸಲು ಪ್ರೇರೇಪಿಸುತ್ತದೆ."
+      }
+    },
+    {
+      "number": 49,
+      "verse_number": 21,
+      "insight": {
+        "en": "Vitality, divine radiance",
+        "kn": "ಚೈತನ್ಯ, ದಿವ್ಯ ಕಾಂತಿ"
+      }
+    },
+    {
+      "number": 50,
+      "verse_number": 21,
+      "insight": {
+        "en": "Sacred embodiment",
+        "kn": "ಪವಿತ್ರ ದಿವ್ಯರೂಪ"
+      }
+    },
+    {
+      "number": 51,
+      "verse_number": 21,
+      "insight": {
+        "en": "Adornment, divine beauty",
+        "kn": "ಅಲಂಕಾರ, ದಿವ್ಯ ಸೌಂದರ್ಯ"
+      }
+    },
+    {
+      "number": 52,
+      "verse_number": 21,
+      "insight": {
+        "en": "Union with Śiva",
+        "kn": "ಶಿವನೊಂದಿಗೆ ಐಕ್ಯ"
+      }
+    },
+    {
+      "number": 53,
+      "verse_number": 21,
+      "insight": {
+        "en": "Auspiciousness, grace",
+        "kn": "ಮಂಗಳ, ಕೃಪೆ"
+      }
+    },
+    {
+      "number": 54,
+      "verse_number": 21,
+      "insight": {
+        "en": "Loving sovereignty",
+        "kn": "ಪ್ರೀತಿಪೂರ್ಣ ಅಧಿಪತ್ಯ"
+      }
+    },
+    {
+      "number": 55,
+      "verse_number": 22,
+      "insight": {
+        "en": "Sacred center, steadiness",
+        "kn": "ಪವಿತ್ರ ಕೇಂದ್ರ, ಸ್ಥಿರತೆ"
+      }
+    },
+    {
+      "number": 56,
+      "verse_number": 22,
+      "insight": {
+        "en": "Prosperity, sacred order",
+        "kn": "ಸಮೃದ್ಧಿ, ಪವಿತ್ರ ವ್ಯವಸ್ಥೆ"
+      }
+    },
+    {
+      "number": 57,
+      "verse_number": 22,
+      "insight": {
+        "en": "Wish-fulfilling wisdom",
+        "kn": "ಇಷ್ಟಾರ್ಥಪೂರಕ ಜ್ಞಾನ"
+      }
+    },
+    {
+      "number": 58,
+      "verse_number": 22,
+      "insight": {
+        "en": "Fivefold divine foundation",
+        "kn": "ಪಂಚವಿಧ ದಿವ್ಯ ಆಧಾರ"
+      }
+    },
+    {
+      "number": 59,
+      "verse_number": 23,
+      "insight": {
+        "en": "Lotus, spiritual blossoming",
+        "kn": "ಕಮಲ, ಆಧ್ಯಾತ್ಮಿಕ ವಿಕಾಸ"
+      }
+    },
+    {
+      "number": 60,
+      "verse_number": 23,
+      "insight": {
+        "en": "Nature, sacred harmony",
+        "kn": "ಪ್ರಕೃತಿ, ಪವಿತ್ರ ಸಾಮರಸ್ಯ"
+      }
+    },
+    {
+      "number": 61,
+      "verse_number": 23,
+      "insight": {
+        "en": "Nectar, immortality",
+        "kn": "ಅಮೃತ, ಅಮರತ್ವ"
+      }
+    },
+    {
+      "number": 62,
+      "verse_number": 23,
+      "insight": {
+        "en": "Compassionate vision",
+        "kn": "ಕರುಣಾಮಯ ದೃಷ್ಟಿ"
+      }
+    },
+    {
+      "number": 63,
+      "verse_number": 23,
+      "insight": {
+        "en": "Fulfillment, generosity",
+        "kn": "ಸಾರ್ಥಕತೆ, ಉದಾರತೆ"
+      }
+    },
+    {
+      "number": 64,
+      "verse_number": 24,
+      "insight": {
+        "en": "Courage, divine strength",
+        "kn": "ಧೈರ್ಯ, ದಿವ್ಯ ಶಕ್ತಿ"
+      }
+    },
+    {
+      "number": 65,
+      "verse_number": 24,
+      "insight": {
+        "en": "United strength, righteous purpose",
+        "kn": "ಏಕೀಕೃತ ಶಕ್ತಿ, ಧರ್ಮಬದ್ಧ ಧ್ಯೇಯ"
+      }
+    },
+    {
+      "number": 66,
+      "verse_number": 25,
+      "insight": {
+        "en": "Guidance, discipline",
+        "kn": "ಮಾರ್ಗದರ್ಶನ, ಶಿಸ್ತು"
+      }
+    },
+    {
+      "number": 67,
+      "verse_number": 25,
+      "insight": {
+        "en": "Determination, momentum",
+        "kn": "ದೃಢಸಂಕಲ್ಪ, ಚಲನಶಕ್ತಿ"
+      }
+    },
+    {
+      "number": 68,
+      "verse_number": 26,
+      "insight": {
+        "en": "Purposeful action, protection",
+        "kn": "ಧ್ಯೇಯಪೂರ್ಣ ಕ್ರಿಯೆ, ರಕ್ಷಣೆ"
+      }
+    },
+    {
+      "number": 69,
+      "verse_number": 26,
+      "insight": {
+        "en": "Wise counsel, discernment",
+        "kn": "ವಿವೇಕಪೂರ್ಣ ಮಂತ್ರಣೆ, ವಿವೇಚನೆ"
+      }
+    },
+    {
+      "number": 70,
+      "verse_number": 27,
+      "insight": {
+        "en": "Leadership, guardianship",
+        "kn": "ನಾಯಕತ್ವ, ರಕ್ಷಣೆ"
+      }
+    },
+    {
+      "number": 71,
+      "verse_number": 27,
+      "insight": {
+        "en": "Protective fire, boundaries",
+        "kn": "ರಕ್ಷಣಾಗ್ನಿ, ಮಿತಿಗಳು"
+      }
+    },
+    {
+      "number": 72,
+      "verse_number": 28,
+      "insight": {
+        "en": "Valor, overcoming adversity",
+        "kn": "ಶೌರ್ಯ, ವಿಪತ್ತುಗಳ ನಿವಾರಣೆ"
+      }
+    },
+    {
+      "number": 73,
+      "verse_number": 28,
+      "insight": {
+        "en": "Divine strength, confidence",
+        "kn": "ದಿವ್ಯ ಶಕ್ತಿ, ಆತ್ಮವಿಶ್ವಾಸ"
+      }
+    },
+    {
+      "number": 74,
+      "verse_number": 28,
+      "insight": {
+        "en": "Youthful courage, innocence",
+        "kn": "ಯೌವನದ ಧೈರ್ಯ, ನಿರ್ಮಲತೆ"
+      }
+    },
+    {
+      "number": 75,
+      "verse_number": 29,
+      "insight": {
+        "en": "Victory over conflict",
+        "kn": "ಸಂಘರ್ಷದ ಮೇಲಿನ ವಿಜಯ"
+      }
+    },
+    {
+      "number": 76,
+      "verse_number": 30,
+      "insight": {
+        "en": "Courage, decisive action",
+        "kn": "ಧೈರ್ಯ, ನಿರ್ಣಾಯಕ ಕ್ರಿಯೆ"
+      }
+    },
+    {
+      "number": 77,
+      "verse_number": 30,
+      "insight": {
+        "en": "New beginnings, removal of obstacles",
+        "kn": "ಹೊಸ ಆರಂಭ, ವಿಘ್ನ ನಿವಾರಣೆ"
+      }
+    },
+    {
+      "number": 78,
+      "verse_number": 31,
+      "insight": {
+        "en": "Freedom from obstacles",
+        "kn": "ಅಡೆತಡೆಗಳಿಂದ ಮುಕ್ತಿ"
+      }
+    },
+    {
+      "number": 79,
+      "verse_number": 31,
+      "insight": {
+        "en": "Protective wisdom, resilience",
+        "kn": "ರಕ್ಷಣಾತ್ಮಕ ಜ್ಞಾನ, ಸ್ಥೈರ್ಯ"
+      }
+    },
+    {
+      "number": 80,
+      "verse_number": 32,
+      "insight": {
+        "en": "Divine adaptability, many forms",
+        "kn": "ದಿವ್ಯ ಹೊಂದಾಣಿಕೆ, ಅನೇಕ ರೂಪಗಳು"
+      }
+    },
+    {
+      "number": 81,
+      "verse_number": 32,
+      "insight": {
+        "en": "Purification, protective power",
+        "kn": "ಶುದ್ಧೀಕರಣ, ರಕ್ಷಣಾಶಕ್ತಿ"
+      }
+    },
+    {
+      "number": 82,
+      "verse_number": 33,
+      "insight": {
+        "en": "End of destructive forces",
+        "kn": "ವಿನಾಶಕಾರಿ ಶಕ್ತಿಗಳ ಅಂತ್ಯ"
+      }
+    },
+    {
+      "number": 83,
+      "verse_number": 33,
+      "insight": {
+        "en": "Divine glory, recognition",
+        "kn": "ದಿವ್ಯ ಮಹಿಮೆ, ಸ್ತುತಿ"
+      }
+    },
+    {
+      "number": 84,
+      "verse_number": 34,
+      "insight": {
+        "en": "Renewal, restored life",
+        "kn": "ಪುನರುಜ್ಜೀವನ, ನವಜೀವನ"
+      }
+    },
+    {
+      "number": 85,
+      "verse_number": 34,
+      "insight": {
+        "en": "Sacred speech, mantra",
+        "kn": "ಪವಿತ್ರ ವಾಣಿ, ಮಂತ್ರ"
+      }
+    },
+    {
+      "number": 86,
+      "verse_number": 35,
+      "insight": {
+        "en": "Subtle energy, inner strength",
+        "kn": "ಸೂಕ್ಷ್ಮ ಶಕ್ತಿ, ಆಂತರಿಕ ಬಲ"
+      }
+    },
+    {
+      "number": 87,
+      "verse_number": 35,
+      "insight": {
+        "en": "Embodied power, wholeness",
+        "kn": "ರೂಪುಗೊಂಡ ಶಕ್ತಿ, ಪೂರ್ಣತೆ"
+      }
+    },
+    {
+      "number": 88,
+      "verse_number": 36,
+      "insight": {
+        "en": "Mantra, sacred unity",
+        "kn": "ಮಂತ್ರ, ಪವಿತ್ರ ಏಕತೆ"
+      }
+    },
+    {
+      "number": 89,
+      "verse_number": 36,
+      "insight": {
+        "en": "Threefold unity, integration",
+        "kn": "ತ್ರಿವಿಧ ಐಕ್ಯ, ಸಮನ್ವಯ"
+      }
+    },
+    {
+      "number": 90,
+      "verse_number": 36,
+      "insight": {
+        "en": "Sacred nectar, delight",
+        "kn": "ಪವಿತ್ರ ಅಮೃತ, ಆನಂದ"
+      }
+    },
+    {
+      "number": 91,
+      "verse_number": 36,
+      "insight": {
+        "en": "Tradition, sacred discipline",
+        "kn": "ಪರಂಪರೆ, ಪವಿತ್ರ ಶಿಸ್ತು"
+      }
+    },
+    {
+      "number": 92,
+      "verse_number": 37,
+      "insight": {
+        "en": "Nobility, inner purity",
+        "kn": "ಉದಾತ್ತತೆ, ಆಂತರಿಕ ಪರಿಶುದ್ಧತೆ"
+      }
+    },
+    {
+      "number": 93,
+      "verse_number": 37,
+      "insight": {
+        "en": "Hidden wisdom, sacred knowledge",
+        "kn": "ಗುಪ್ತ ಜ್ಞಾನ, ಪವಿತ್ರ ವಿದ್ಯೆ"
+      }
+    },
+    {
+      "number": 94,
+      "verse_number": 37,
+      "insight": {
+        "en": "Belonging, sacred kinship",
+        "kn": "ಆತ್ಮೀಯತೆ, ಪವಿತ್ರ ಬಾಂಧವ್ಯ"
+      }
+    },
+    {
+      "number": 95,
+      "verse_number": 37,
+      "insight": {
+        "en": "Communion, sacred tradition",
+        "kn": "ಸಂಗಮ, ಪವಿತ್ರ ಪರಂಪರೆ"
+      }
+    },
+    {
+      "number": 96,
+      "verse_number": 37,
+      "insight": {
+        "en": "Freedom beyond identity",
+        "kn": "ಗುರುತಿನ ಮಿತಿಮೀರಿದ ಸ್ವಾತಂತ್ರ್ಯ"
+      }
+    },
+    {
+      "number": 97,
+      "verse_number": 37,
+      "insight": {
+        "en": "Inner harmony, sacred order",
+        "kn": "ಆಂತರಿಕ ಸಾಮರಸ್ಯ, ಪವಿತ್ರ ವ್ಯವಸ್ಥೆ"
+      }
+    },
+    {
+      "number": 98,
+      "verse_number": 37,
+      "insight": {
+        "en": "Devotion, contemplative stillness",
+        "kn": "ಭಕ್ತಿ, ಧ್ಯಾನನಿಶ್ಚಲತೆ"
+      }
+    },
+    {
+      "number": 99,
+      "verse_number": 38,
+      "insight": {
+        "en": "Grounding, inner foundation",
+        "kn": "ನೆಲೆಗೊಂಡ ಅರಿವು, ಆಂತರಿಕ ಆಧಾರ"
+      }
+    },
+    {
+      "number": 100,
+      "verse_number": 38,
+      "insight": {
+        "en": "Release from inner knots",
+        "kn": "ಆಂತರಿಕ ಗ್ರಂಥಿ ವಿಮೋಚನೆ"
+      }
+    },
+    {
+      "number": 101,
+      "verse_number": 38,
+      "insight": {
+        "en": "Awakening, transformative energy",
+        "kn": "ಜಾಗೃತಿ, ಪರಿವರ್ತಕ ಶಕ್ತಿ"
+      }
+    },
+    {
+      "number": 102,
+      "verse_number": 38,
+      "insight": {
+        "en": "Freedom from inner division",
+        "kn": "ಆಂತರಿಕ ವಿಭಜನೆಯಿಂದ ಮುಕ್ತಿ"
+      }
+    },
+    {
+      "number": 103,
+      "verse_number": 39,
+      "insight": {
+        "en": "Clarity, inner vision",
+        "kn": "ಸ್ಪಷ್ಟತೆ, ಆಂತರಿಕ ದೃಷ್ಟಿ"
+      }
+    },
+    {
+      "number": 104,
+      "verse_number": 39,
+      "insight": {
+        "en": "Release from constriction",
+        "kn": "ಸಂಕುಚಿತತೆಯಿಂದ ಮುಕ್ತಿ"
+      }
+    },
+    {
+      "number": 105,
+      "verse_number": 39,
+      "insight": {
+        "en": "Expanded consciousness",
+        "kn": "ವಿಸ್ತರಿಸಿದ ಚೈತನ್ಯ"
+      }
+    },
+    {
+      "number": 106,
+      "verse_number": 39,
+      "insight": {
+        "en": "Nectar of awareness, renewal",
+        "kn": "ಅರಿವಿನ ಅಮೃತ, ನವೀಕರಣ"
+      }
+    },
+    {
+      "number": 107,
+      "verse_number": 40,
+      "insight": {
+        "en": "Lightning-like illumination",
+        "kn": "ಮಿಂಚಿನಂತಹ ಜ್ಞಾನೋದಯ"
+      }
+    },
+    {
+      "number": 108,
+      "verse_number": 40,
+      "insight": {
+        "en": "Beyond the six centers",
+        "kn": "ಷಟ್ಚಕ್ರಗಳಾಚೆಯ ಅರಿವು"
+      }
+    },
+    {
+      "number": 109,
+      "verse_number": 40,
+      "insight": {
+        "en": "Primordial energy, inner power",
+        "kn": "ಆದಿಶಕ್ತಿ, ಆಂತರಿಕ ಬಲ"
+      }
+    },
+    {
+      "number": 110,
+      "verse_number": 40,
+      "insight": {
+        "en": "Kuṇḍalinī, awakening",
+        "kn": "ಕುಂಡಲಿನೀ, ಜಾಗೃತಿ"
+      }
+    },
+    {
+      "number": 111,
+      "verse_number": 40,
+      "insight": {
+        "en": "Subtlety, delicate presence",
+        "kn": "ಸೂಕ್ಷ್ಮತೆ, ನಾಜೂಕಾದ ಸಾನ್ನಿಧ್ಯ"
+      }
+    }
+  ]
+}
