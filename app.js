@@ -10,6 +10,7 @@ let view="verses",pageIndex=0,selectedVerse=1;
 let activeAudioElement=null;
 function claimAudioFocus(audio){
  if(!audio)return;
+ stopSlokaMss();
  document.querySelectorAll("audio").forEach(other=>{
   if(other!==audio&&!other.paused)other.pause();
  });
@@ -90,7 +91,14 @@ function makeAudio(v,isDhyana){
  }
  const num=String(v.verse_number).padStart(3,"0");
  const url="../audio/lalita/verses/VD/sloka-"+num+".mp3";
- return "<span class='audio' data-audio-path='"+esc(url)+"'>"+esc(langText("♪ Audio coming soon","♪ ಧ್ವನಿಮುದ್ರಣ ಶೀಘ್ರದಲ್ಲಿ"))+"</span>";
+ const sources=verseMssAudioPaths(v);
+ const button=sources.length
+  ?"<button type='button' class='dhyana-play-all sloka-mss-play-all' data-sloka-mss='"+esc(sources.join("|"))+"' aria-label='"+esc(langText("Play all MSS for śloka "+v.verse_number,"ಶ್ಲೋಕ "+v.verse_number+" MSS ಪಠಣ ಪ್ಲೇ ಮಾಡಿ"))+"'>▶ "+esc(langText("Play all MSS","ಎಲ್ಲಾ MSS ಪ್ಲೇ ಮಾಡಿ"))+"</button>"
+  :"";
+ const speed=sources.length?"<label class='sloka-mss-setting'>"+esc(langText("Speed","ವೇಗ"))+" <select class='sloka-mss-speed' aria-label='"+esc(langText("MSS playback speed","MSS ಪಠಣ ವೇಗ"))+"'><option value='0.75'>0.75×</option><option value='0.9' selected>0.9×</option><option value='1'>1×</option><option value='1.1'>1.1×</option><option value='1.25'>1.25×</option></select></label>":"";
+ const repeat=sources.length?"<label class='sloka-mss-setting'>"+esc(langText("Repeat","ಪುನರಾವರ್ತನೆ"))+" <select class='sloka-mss-repeat' aria-label='"+esc(langText("MSS repeat count","MSS ಪುನರಾವರ್ತನೆ"))+"'><option value='1'>"+esc(langText("Once","ಒಮ್ಮೆ"))+"</option><option value='2'>"+esc(langText("Twice","ಎರಡು ಬಾರಿ"))+"</option><option value='3'>"+esc(langText("3 times","ಮೂರು ಬಾರಿ"))+"</option><option value='loop'>"+esc(langText("Continuous","ನಿರಂತರ"))+"</option></select></label>":"";
+ const other="<details class='sloka-alternative-audio'><summary>"+esc(langText("VD / KMP audio","VD / KMP ಧ್ವನಿ"))+"</summary><span class='audio' data-audio-path='"+esc(url)+"'>"+esc(langText("♪ Audio coming soon","♪ ಧ್ವನಿಮುದ್ರಣ ಶೀಘ್ರದಲ್ಲಿ"))+"</span></details>";
+ return "<div class='sloka-mss-actions'>"+button+speed+repeat+other+"<span class='sloka-mss-status' role='status' aria-live='polite'></span></div>";
 }
 const MSS_LAST_CLIP=739;
 function mssClipPath(clip){
@@ -644,6 +652,7 @@ function stopDhyanaPhraseButton(button){
  button.classList.remove("playing");
 }
 function stopAllDhyanaAudio(exceptButton){
+ stopSlokaMss();
  document.querySelectorAll(".dhyana-phrase-play.playing").forEach(button=>{
   if(button!==exceptButton)stopDhyanaPhraseButton(button);
  });
@@ -655,6 +664,92 @@ function stopAllDhyanaAudio(exceptButton){
   }
  });
  document.querySelectorAll("audio").forEach(a=>{if(!a.paused)a.pause();});
+}
+// Gap-free, on-demand MSS śloka playback. Use one decoded audio buffer for each
+// śloka, like Dhyāna; never render or preload a media bar for each name.
+let activeSlokaMss=null,slokaMssRequest=0;
+function stopSlokaMss(){
+ slokaMssRequest++;
+ const current=activeSlokaMss;
+ activeSlokaMss=null;
+ if(!current)return;
+ if(current.source){
+  current.source.onended=null;
+  try{current.source.stop();}catch(_){}
+  try{current.source.disconnect();}catch(_){}
+ }
+ if(current.button?.isConnected){
+  current.button.classList.remove("playing");
+  current.button.textContent="▶ "+langText("Play all MSS","ಎಲ್ಲಾ MSS ಪ್ಲೇ ಮಾಡಿ");
+  current.button.setAttribute("aria-pressed","false");
+ }
+}
+function initSlokaMssPlayAll(){
+ document.querySelectorAll(".sloka-mss-play-all[data-sloka-mss]").forEach(button=>{
+  if(button.dataset.bound==="1")return;
+  button.dataset.bound="1";
+  button.setAttribute("aria-pressed","false");
+  button.addEventListener("click",async()=>{
+   if(activeSlokaMss?.button===button){stopSlokaMss();return;}
+   stopSlokaMss();
+   stopNameAudio();
+   stopAllDhyanaAudio(null);
+   const parent=button.closest(".sloka-mss-actions");
+   const status=parent?.querySelector(".sloka-mss-status");
+   const speed=parent?.querySelector(".sloka-mss-speed");
+   const repeat=parent?.querySelector(".sloka-mss-repeat");
+   const sources=(button.dataset.slokaMss||"").split("|").filter(Boolean);
+   if(!sources.length)return;
+   const state={button,source:null,completed:0,token:++slokaMssRequest};
+   activeSlokaMss=state;
+   button.classList.add("playing");
+   button.textContent="■ "+langText("Stop MSS","MSS ನಿಲ್ಲಿಸಿ");
+   button.setAttribute("aria-pressed","true");
+   if(status)status.textContent=langText("Preparing MSS…","MSS ಸಿದ್ಧವಾಗುತ್ತಿದೆ…");
+   try{
+    // AudioContext is resumed in the click gesture, and sources are fetched only now.
+    const {ctx,buffer}=button._mergedBuffer||(button._mergedBuffer=await buildMergedAudioBuffer(sources));
+    if(activeSlokaMss!==state||state.token!==slokaMssRequest)return;
+    const startSource=()=>{
+     if(activeSlokaMss!==state)return;
+     const node=ctx.createBufferSource();
+     node.buffer=buffer;
+     node.playbackRate.value=Number(speed?.value||0.9);
+     node.loop=repeat?.value==="loop";
+     node.connect(ctx.destination);
+     state.source=node;
+     node.onended=()=>{
+      if(activeSlokaMss!==state||state.source!==node)return;
+      state.source=null;
+      try{node.disconnect();}catch(_){}
+      state.completed++;
+      if(state.completed<Number(repeat?.value||1)){startSource();}
+      else{stopSlokaMss();if(status)status.textContent="";}
+     };
+     node.start(0);
+    };
+    startSource();
+    if(status)status.textContent="";
+   }catch(_){
+    if(activeSlokaMss===state){
+     stopSlokaMss();
+     if(status)status.textContent=langText("MSS audio could not load.","MSS ಧ್ವನಿ ಲೋಡ್ ಆಗಲಿಲ್ಲ.");
+    }
+    button._mergedBuffer=null;
+   }
+  });
+  const parent=button.closest(".sloka-mss-actions");
+  const speed=parent?.querySelector(".sloka-mss-speed");
+  speed?.addEventListener("change",()=>{
+   if(activeSlokaMss?.button===button&&activeSlokaMss.source)
+    activeSlokaMss.source.playbackRate.value=Number(speed.value);
+  });
+  const repeat=parent?.querySelector(".sloka-mss-repeat");
+  repeat?.addEventListener("change",()=>{
+   if(activeSlokaMss?.button===button&&activeSlokaMss.source)
+    activeSlokaMss.source.loop=repeat.value==="loop";
+  });
+ });
 }
 function initDhyanaPlayAll(){
  document.querySelectorAll("[data-dhyana-play-all]").forEach(button=>{
@@ -953,6 +1048,7 @@ function queueVerseScrollUpdate(){
  });
 }
 function render(){
+ stopSlokaMss();
  stopNameAudio();
  const opened=savedDetails();
  const q=norm(searchTerm.trim());
@@ -979,6 +1075,7 @@ function render(){
  requestAnimationFrame(queueVerseScrollUpdate);
  loadAudio();
  initNameAudio();
+ initSlokaMssPlayAll();
  initDhyanaPhraseAudio();
  initDhyanaPlayAll();
  initDhyanaQuickNav();
@@ -1083,7 +1180,7 @@ function loadAudio(){
    let voice=null;
    if(!isDhyana){
     voice=setting(langText("Singer","ಗಾಯಕ"),langText("Choose singer","ಗಾಯಕನನ್ನು ಆರಿಸಿ"),[
-     ["VD","VD"],["KMP","KMP"],["MSS",mssAvailable?"MSS":"MSS · not yet available"]
+     ["VD","VD"],["KMP","KMP"]
     ]);
    }
    const speed=setting(langText("Speed","ವೇಗ"),langText("Playback speed","ಪ್ಲೇಬ್ಯಾಕ್ ವೇಗ"),[
