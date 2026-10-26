@@ -558,16 +558,28 @@
       "number": 454,
       "components": [
         {
-          "dev": "",
+          "dev": "लोल",
           "iast": "lola",
-          "en": "Moving",
-          "kn": "ಚಂಚಲ"
+          "en": "Restless or moving",
+          "kn": "ಚಂಚಲವಾಗಿ ಚಲಿಸುವ"
         },
         {
-          "dev": "",
+          "dev": "अक्षी",
           "iast": "akṣī",
           "en": "Eyes",
-          "kn": "ಕಣ್ಣು"
+          "kn": "ಕಣ್ಣುಗಳು"
+        },
+        {
+          "dev": "काम",
+          "iast": "kāma",
+          "en": "Love or desire",
+          "kn": "ಪ್ರೀತಿ ಅಥವಾ ಬಯಕೆ"
+        },
+        {
+          "dev": "रूपिणी",
+          "iast": "rūpiṇī",
+          "en": "She who has or assumes a form",
+          "kn": "ರೂಪವನ್ನು ಹೊಂದಿರುವವಳು ಅಥವಾ ಧರಿಸುವವಳು"
         }
       ],
       "review_status": "compound_analysis_draft"
