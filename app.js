@@ -793,6 +793,45 @@ function stopSlokaMss(){
   if(status)status.textContent='';
  }
 }
+let activeDirectVerseAudio=null;
+function initDirectVerseAudio(){
+ document.querySelectorAll(".sloka-voice-play[data-voice-src]").forEach(button=>{
+  if(button.dataset.bound==="1")return;
+  button.dataset.bound="1";
+  button.addEventListener("click",async()=>{
+   if(activeDirectVerseAudio?.button===button){
+    activeDirectVerseAudio.audio.pause();
+    activeDirectVerseAudio.audio.currentTime=0;
+    activeDirectVerseAudio.button.textContent="▶ "+activeDirectVerseAudio.label;
+    activeDirectVerseAudio=null;
+    return;
+   }
+   if(activeDirectVerseAudio){
+    activeDirectVerseAudio.audio.pause();
+    activeDirectVerseAudio.button.textContent="▶ "+activeDirectVerseAudio.label;
+    activeDirectVerseAudio=null;
+   }
+   stopSlokaMss();
+   stopNameAudio();
+   stopAllDhyanaAudio(null);
+   const label=button.textContent.replace(/^[▶■]\\s*/,"");
+   const audio=new Audio(button.dataset.voiceSrc);
+   audio.preload="none";
+   const state={audio,button,label};
+   activeDirectVerseAudio=state;
+   installAudioFocus(audio);
+   const reset=()=>{
+    if(activeDirectVerseAudio!==state)return;
+    button.textContent="▶ "+label;
+    activeDirectVerseAudio=null;
+   };
+   audio.addEventListener("ended",reset);
+   audio.addEventListener("error",()=>{button.title="Recording unavailable";reset();});
+   button.textContent="■ "+label;
+   try{await audio.play();}catch(_){button.title="Recording unavailable";reset();}
+  });
+ });
+}
 function initSlokaMssPlayAll(){
  document.querySelectorAll('.sloka-mss-play-all[data-sloka-mss]').forEach(button=>{
   if(button.dataset.bound==='1')return;
