@@ -1541,7 +1541,7 @@ async function init(){
   const forms=[n.iast,n.iast.replace(/-/g,"")];
   return [...new Set(forms)].map(form=>({form,kannada:kannadaFromDevanagari(n.sanskrit)}));
  }).sort((a,b)=>b.form.length-a.form.length).map(item=>{
-  const quoted=item.form.replace(/[.*+?^${}()|[\]\\]/g,"\\verses=files.slice(7); const byVerse=new Map();");
+  const quoted=Array.from(item.form).map(char=>".*+?^${}()|[]\\\\ ".includes(char)?"\\\\"+char:char).join("");
   return {regex:new RegExp("(^|[^\\p{L}\\p{M}])"+quoted+"(?=$|[^\\p{L}\\p{M}])","giu"),kannada:item.kannada};
  });
  verses=files.slice(7); const byVerse=new Map(); briefNames.forEach(n=>{if(!byVerse.has(n.verse_number))byVerse.set(n.verse_number,[]);byVerse.get(n.verse_number).push(n);});verses.forEach(v=>{if(!(v.names||[]).length)v.names=(byVerse.get(v.verse_number)||[]).map(n=>({...n,display_devanagari:n.sanskrit,display_iast:n.iast}));});
