@@ -5,6 +5,7 @@ const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&
 const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
 const langText=(en,kn)=>language==="kn"?kn:en;
 let verses=[],dhyana=[],nameData={},dhyanaData={},verseData={},dhyanaPhraseData={},language="en",searchTerm="",highlightTerm="";
+let nemaBenefits={};
 const pageSize=10,plannedVerses=183;
 let view="verses",pageIndex=0,selectedVerse=1;
 let activeAudioElement=null;
@@ -87,10 +88,26 @@ function proseInKannadaScript(value){
 function richParagraphs(value){
  return proseInKannadaScript(value).split("\n\n").map(p=>p.trim()).filter(Boolean).map(p=>"<p>"+esc(p).replace(/\*([^*]+)\*/g,"<em>$1</em>").replace(/\n/g," ")+"</p>").join("");
 }
+function namaPracticePanel(number){
+ const entry=nemaBenefits[number];
+ if(!entry)return "";
+ const blessing=entry.benefit?.[language]||"";
+ const reflection=entry.reflection?.[language]||"";
+ const situation=entry.when?.[language]||"";
+ const mantra=language==="kn"?entry.namavali?.kn:entry.namavali?.dev;
+ const type=entry.type==="traditional"
+   ?langText("Traditional association","ಸಾಂಪ್ರದಾಯಿಕ ಸಂಬಂಧ")
+   :langText("Contemplative benefit","ಧ್ಯಾನದ ಪ್ರಯೋಜನ");
+ return "<section class='nama-practice' aria-label='"+esc(langText("Mantra and benefits","ಮಂತ್ರ ಮತ್ತು ಪ್ರಯೋಜನಗಳು"))+"'>"
+  +"<div class='nama-practice-line'><span class='nama-practice-caption'>"+esc(langText("Name mantra · Nāmāvalī","ನಾಮ ಮಂತ್ರ · ನಾಮಾವಳಿ"))+"</span><strong lang='"+(language==="kn"?"kn":"hi")+"' class='nama-mantra'>"+esc(mantra||"")+"</strong></div>"
+  +"<div class='nama-practice-line'><span class='nama-practice-caption'>"+esc(type)+"</span><p class='nama-benefit'>"+esc(blessing)+"</p>"+(reflection?"<p>"+esc(reflection)+"</p>":"")+"</div>"
+  +(situation?"<div class='nama-practice-when'><b>"+esc(langText("When to contemplate: ","ಯಾವಾಗ ಧ್ಯಾನಿಸಬೇಕು: "))+"</b>"+esc(situation)+"</div>":"")
+  +"</section>";
+}
 function studySections(info,parts,nameNumber){
  const deep=anyMeaning(info,"traditional_interpretation");
  const id=nameNumber?" data-detail-id='name-deep-"+nameNumber+"'":"";
- return "<div class='study-inner'><h4>"+esc(langText("Word by word","ಪದ ಪದದ ಅರ್ಥ"))+"</h4>"+wordsGrid(parts)+(deep?"<details class='meaning-toggle name-deeper-meaning'"+id+"><summary>"+esc(langText("Deeper meaning","ಆಳವಾದ ಅರ್ಥ"))+"</summary><div class='deeper-reading'>"+richParagraphs(deep)+"</div></details>":"")+"</div>";
+ return "<div class='study-inner'>"+namaPracticePanel(nameNumber)+"<h4>"+esc(langText("Word by word","ಪದ ಪದದ ಅರ್ಥ"))+"</h4>"+wordsGrid(parts)+(deep?"<details class='meaning-toggle name-deeper-meaning'"+id+"><summary>"+esc(langText("Deeper meaning","ಆಳವಾದ ಅರ್ಥ"))+"</summary><div class='deeper-reading'>"+richParagraphs(deep)+"</div></details>":"")+"</div>";
 }
 function makeAudio(v,isDhyana){
  if(isDhyana){
@@ -1530,6 +1547,8 @@ async function init(){
  const paths=["lalita/dhyana.json","lalita/names-interpretations-draft.json","lalita/study-names-011-018.json","lalita/study-names-019-026.json","lalita/study-dhyana-01-02.json","lalita/study-dhyana-03-04.json","lalita/study-verses-001-010.json",...Array.from({length:183},(_,i)=>"lalita/verses/verse-"+String(i+1).padStart(3,"0")+".json")];
  try{
  const [files,briefNames,dhyanaPhrases]=await Promise.all([Promise.all(paths.map(fetchJSON)),fetchJSON("lalita/brief-names-draft.json"),fetchJSON("lalita/dhyana-mss-phrases.json?v=20261024-v14")]);
+ const benefitsDraft=await fetchJSON("lalita/nama-benefits-draft.json");
+ nemaBenefits=Object.fromEntries((benefitsDraft.names||[]).map(entry=>[entry.number,entry]));
  dhyana=files[0];
  dhyanaPhraseData=Object.fromEntries([1,2,3,4].map(v=>[v,(dhyanaPhrases.phrases||[]).filter(p=>p.verse===v)]));
  const old=files[1],newNames=[...files[2],...files[3]];
