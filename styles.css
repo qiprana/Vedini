@@ -1171,3 +1171,22 @@ header p{color:#845c4b;font-size:18px}
  .reader-page .verse-meaning-panel {padding-top:9px;}
  .reader-page .verse-meaning-panel .meaning-toggle {margin:6px 0;}
 }
+
+
+/* A single MSS Play all control for each śloka, with no native media bar. */
+.reader-page .sloka-mss-actions{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:7px 10px;min-width:0;}
+.reader-page .sloka-mss-actions .sloka-mss-play-all{white-space:nowrap;min-height:40px;}
+.reader-page .sloka-mss-setting{font:600 12px/1.4 system-ui,sans-serif;color:#30483b;display:inline-flex;align-items:center;gap:5px;}
+.reader-page .sloka-mss-setting select{background:#fff;border:1px solid #718a79;color:#243b2c;border-radius:7px;padding:6px 7px;min-height:36px;font:13px system-ui,sans-serif;max-width:115px;}
+.reader-page .sloka-alternative-audio{padding:0;border:0;max-width:100%;}
+.reader-page .sloka-alternative-audio>summary{list-style:none;border:1px solid #c8d5c7;border-radius:8px;padding:7px 10px;font:600 12px/1.5 system-ui,sans-serif;color:#315744;background:#f5f8f3;min-height:36px;}
+.reader-page .sloka-alternative-audio>summary::-webkit-details-marker{display:none;}
+.reader-page .sloka-alternative-audio[open]{width:100%;padding:6px 0;}
+.reader-page .sloka-alternative-audio[open]>summary{margin-bottom:8px;}
+.reader-page .sloka-alternative-audio .audio-player{justify-content:flex-end;}
+.reader-page .sloka-mss-status:not(:empty){font:12px/1.5 system-ui,sans-serif;color:#4b6652;}
+@media(max-width:720px){
+ .reader-page .sloka-mss-actions{width:100%;justify-content:flex-start;}
+ .reader-page .sloka-mss-actions .sloka-mss-play-all{flex:0 0 auto;}
+ .reader-page .sloka-alternative-audio[open]{width:100%;}
+}
