@@ -93,14 +93,12 @@ function benefitToggle(number){
  if(!data)return "";
  const benefit=data.benefit?.[language]||"";
  const explanation=data.explanation?.[language]||"";
- const when=data.when?.[language]||"";
  if(!benefit)return "";
  return "<details class='meaning-toggle name-spiritual-benefit' data-detail-id='name-benefit-"+number+"'>"
-  +"<summary>"+esc(langText("Spiritual benefit","ಆಧ್ಯಾತ್ಮಿಕ ಪ್ರಯೋಜನ"))+"</summary>"
+  +"<summary>"+esc(langText("Wisdom Insights","ಜ್ಞಾನದ ಒಳನೋಟಗಳು"))+"</summary>"
   +"<div class='deeper-reading benefit-content'>"
-  +"<p class='benefit-headline'><strong>"+esc(langText("Spiritual benefit: ","ಆಧ್ಯಾತ್ಮಿಕ ಪ್ರಯೋಜನ: "))+"</strong>"+esc(benefit)+"</p>"
+  +"<p class='benefit-headline'>"+esc(benefit)+"</p>"
   +richParagraphs(explanation)
-  +(when?"<p class='benefit-when'><strong>"+esc(langText("When to contemplate: ","ಯಾವಾಗ ಧ್ಯಾನಿಸಬೇಕು: "))+"</strong>"+esc(when)+"</p>":"")
   +"</div></details>";
 }
 function nameMantraToggle(number){
@@ -1556,7 +1554,7 @@ async function init(){
  const paths=["lalita/dhyana.json","lalita/names-interpretations-draft.json","lalita/study-names-011-018.json","lalita/study-names-019-026.json","lalita/study-dhyana-01-02.json","lalita/study-dhyana-03-04.json","lalita/study-verses-001-010.json",...Array.from({length:183},(_,i)=>"lalita/verses/verse-"+String(i+1).padStart(3,"0")+".json")];
  try{
  const [files,briefNames,dhyanaPhrases]=await Promise.all([Promise.all(paths.map(fetchJSON)),fetchJSON("lalita/brief-names-draft.json"),fetchJSON("lalita/dhyana-mss-phrases.json?v=20261024-v14")]);
- const benefitFiles=await Promise.all([fetchJSON("lalita/spiritual-benefits-001-003.json"),fetchJSON("lalita/spiritual-benefits-004-020.json")]);
+ const benefitFiles=await Promise.all(["001-0200","201-0400","401-0600","601-0800","801-1000"].map(range=>fetchJSON("lalita/wisdom-insights-"+range+".json")));
  const namavaliFile=await fetchJSON("lalita/namavali-001-048.json");
  namaMantras=Object.fromEntries((namavaliFile.names||[]).map(n=>[n.number,n]));
  spiritualBenefits=Object.fromEntries(benefitFiles.flatMap(f=>f.names||[]).map(n=>[n.number,n]));
