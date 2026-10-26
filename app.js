@@ -104,10 +104,9 @@ function makeAudio(v,isDhyana){
  const button=sources.length
   ?"<button type='button' class='dhyana-play-all sloka-mss-play-all' data-sloka-mss='"+esc(sources.join("|"))+"' aria-label='"+esc(langText("Play all MSS for śloka "+v.verse_number,"ಶ್ಲೋಕ "+v.verse_number+" MSS ಪಠಣ ಪ್ಲೇ ಮಾಡಿ"))+"'>▶ "+esc(langText("Play all MSS","ಎಲ್ಲಾ MSS ಪ್ಲೇ ಮಾಡಿ"))+"</button>"
   :"";
- const speed=sources.length?"<label class='sloka-mss-setting'>"+esc(langText("Speed","ವೇಗ"))+" <select class='sloka-mss-speed' aria-label='"+esc(langText("MSS playback speed","MSS ಪಠಣ ವೇಗ"))+"'><option value='0.75'>0.75×</option><option value='0.9' selected>0.9×</option><option value='1'>1×</option><option value='1.1'>1.1×</option><option value='1.25'>1.25×</option></select></label>":"";
  const repeat=sources.length?"<label class='sloka-mss-setting'>"+esc(langText("Repeat","ಪುನರಾವರ್ತನೆ"))+" <select class='sloka-mss-repeat' aria-label='"+esc(langText("MSS repeat count","MSS ಪುನರಾವರ್ತನೆ"))+"'><option value='1'>"+esc(langText("Once","ಒಮ್ಮೆ"))+"</option><option value='2'>"+esc(langText("Twice","ಎರಡು ಬಾರಿ"))+"</option><option value='3'>"+esc(langText("3 times","ಮೂರು ಬಾರಿ"))+"</option><option value='loop'>"+esc(langText("Continuous","ನಿರಂತರ"))+"</option></select></label>":"";
  const other="<span class='sloka-voice-buttons'><button type='button' class='sloka-voice-play' data-voice-src='"+esc(url)+"' aria-label='Play VD recording'>▶ VD</button><button type='button' class='sloka-voice-play' data-voice-src='"+esc(url.replace("/VD/","/KMP/"))+"' aria-label='Play KMP recording'>▶ KMP</button></span>";
- return "<div class='sloka-mss-actions'>"+button+speed+repeat+other+"<span class='sloka-mss-status' role='status' aria-live='polite'></span></div>";
+ return "<div class='sloka-mss-actions'>"+button+repeat+other+"<span class='sloka-mss-status' role='status' aria-live='polite'></span></div>";
 }
 const MSS_LAST_CLIP=739;
 function mssClipPath(clip){
@@ -832,7 +831,6 @@ function initSlokaMssPlayAll(){
    stopAllDhyanaAudio(null);
    const parent=button.closest(".sloka-mss-actions");
    const status=parent?.querySelector(".sloka-mss-status");
-   const speed=parent?.querySelector(".sloka-mss-speed");
    const repeat=parent?.querySelector(".sloka-mss-repeat");
    const sources=(button.dataset.slokaMss||"").split("|").filter(Boolean);
    if(!sources.length)return;
@@ -850,7 +848,7 @@ function initSlokaMssPlayAll(){
      if(activeSlokaMss!==state)return;
      const node=ctx.createBufferSource();
      node.buffer=buffer;
-     node.playbackRate.value=Number(speed?.value||0.9);
+     node.playbackRate.value=1; // Play at original recording speed.
      node.loop=repeat?.value==="loop";
      node.connect(ctx.destination);
      state.source=node;
@@ -875,11 +873,6 @@ function initSlokaMssPlayAll(){
    }
   });
   const parent=button.closest(".sloka-mss-actions");
-  const speed=parent?.querySelector(".sloka-mss-speed");
-  speed?.addEventListener("change",()=>{
-   if(activeSlokaMss?.button===button&&activeSlokaMss.source)
-    activeSlokaMss.source.playbackRate.value=Number(speed.value);
-  });
   const repeat=parent?.querySelector(".sloka-mss-repeat");
   repeat?.addEventListener("change",()=>{
    if(activeSlokaMss?.button===button&&activeSlokaMss.source)
