@@ -5,7 +5,7 @@ const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&
 const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
 const langText=(en,kn)=>language==="kn"?kn:en;
 let verses=[],dhyana=[],nameData={},dhyanaData={},verseData={},dhyanaPhraseData={},language="en",searchTerm="",highlightTerm="";
-let spiritualBenefits={};
+let spiritualBenefits={},namaMantras={};
 const pageSize=10,plannedVerses=183;
 let view="verses",pageIndex=0,selectedVerse=1;
 let activeAudioElement=null;
@@ -103,10 +103,20 @@ function benefitToggle(number){
   +(when?"<p class='benefit-when'><strong>"+esc(langText("When to contemplate: ","ಯಾವಾಗ ಧ್ಯಾನಿಸಬೇಕು: "))+"</strong>"+esc(when)+"</p>":"")
   +"</div></details>";
 }
+function nameMantraToggle(number){
+ const item=namaMantras[number];
+ if(!item)return "";
+ const written=language==="kn"?kannadaFromDevanagari(item.dev):item.dev;
+ return "<details class='meaning-toggle name-mantra-toggle' data-detail-id='name-mantra-"+number+"'>"
+  +"<summary>"+esc(langText("Name mantra · Nāmāvalī","ನಾಮ ಮಂತ್ರ · ನಾಮಾವಳಿ"))+"</summary>"
+  +"<div class='mantra-reading'><strong lang='"+(language==="kn"?"kn":"sa")+"' class='mantra-script'>"+esc(written)+"</strong>"
+  +(language==="kn"?"":"<span class='mantra-iast'>"+esc(item.iast)+"</span>")
+  +"<span class='mantra-note'>"+esc(langText("Mantra audio planned · Separate from existing name recording","ಮಂತ್ರ ಧ್ವನಿಮುದ್ರಣವನ್ನು ಮುಂದೆ ಸೇರಿಸಲಾಗುವುದು · ಈಗಿರುವ ನಾಮದ ಧ್ವನಿಮುದ್ರಣದಿಂದ ಪ್ರತ್ಯೇಕ"))+"</span></div></details>";
+}
 function studySections(info,parts,nameNumber){
  const deep=anyMeaning(info,"traditional_interpretation");
  const id=nameNumber?" data-detail-id='name-deep-"+nameNumber+"'":"";
- return "<div class='study-inner'><h4>"+esc(langText("Word by word","ಪದ ಪದದ ಅರ್ಥ"))+"</h4>"+wordsGrid(parts)+benefitToggle(nameNumber)+(deep?"<details class='meaning-toggle name-deeper-meaning'"+id+"><summary>"+esc(langText("Deeper meaning","ಆಳವಾದ ಅರ್ಥ"))+"</summary><div class='deeper-reading'>"+richParagraphs(deep)+"</div></details>":"")+"</div>";
+ return "<div class='study-inner'><h4>"+esc(langText("Word by word","ಪದ ಪದದ ಅರ್ಥ"))+"</h4>"+wordsGrid(parts)+nameMantraToggle(nameNumber)+benefitToggle(nameNumber)+(deep?"<details class='meaning-toggle name-deeper-meaning'"+id+"><summary>"+esc(langText("Deeper meaning","ಆಳವಾದ ಅರ್ಥ"))+"</summary><div class='deeper-reading'>"+richParagraphs(deep)+"</div></details>":"")+"</div>";
 }
 function makeAudio(v,isDhyana){
  if(isDhyana){
@@ -1547,6 +1557,8 @@ async function init(){
  try{
  const [files,briefNames,dhyanaPhrases]=await Promise.all([Promise.all(paths.map(fetchJSON)),fetchJSON("lalita/brief-names-draft.json"),fetchJSON("lalita/dhyana-mss-phrases.json?v=20261024-v14")]);
  const benefitFiles=await Promise.all([fetchJSON("lalita/spiritual-benefits-001-003.json"),fetchJSON("lalita/spiritual-benefits-004-020.json")]);
+ const namavaliFile=await fetchJSON("lalita/namavali-001-048.json");
+ namaMantras=Object.fromEntries((namavaliFile.names||[]).map(n=>[n.number,n]));
  spiritualBenefits=Object.fromEntries(benefitFiles.flatMap(f=>f.names||[]).map(n=>[n.number,n]));
  dhyana=files[0];
  dhyanaPhraseData=Object.fromEntries([1,2,3,4].map(v=>[v,(dhyanaPhrases.phrases||[]).filter(p=>p.verse===v)]));
