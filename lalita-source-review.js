@@ -5,7 +5,7 @@
 "use strict";
 if(window.VediniSourceReview)return;
 const ROOT=new URL("./",document.currentScript.src),DATA=new URL("data/lalita/",ROOT);
-const VERSION="20261023-complete-183-v2",nativeFetch=window.fetch.bind(window);
+const VERSION="20261026-name-mantra-no-duplicate-v1",nativeFetch=window.fetch.bind(window);
 const BASE_FILES=["source-reviewed-meanings.json","source-reviewed-additions.json","source-reviewed-names-083-150.json","source-reviewed-names-151-200.json","source-reviewed-names-201-996.json"];
 const EXPANDED_FILES=["expanded-verses-001-010.json","expanded-verses-011-020.json","expanded-verses-021-030.json","expanded-verses-031-040.json","expanded-verses-041-050.json","expanded-verses-051-100.json","expanded-verses-101-150.json","expanded-verses-151-183.json"];
 const KN={overall:"\u0cb6\u0ccd\u0cb2\u0ccb\u0c95\u0ca6 \u0c92\u0c9f\u0ccd\u0c9f\u0cc1 \u0c85\u0cb0\u0ccd\u0ca5",deeper:"\u0c86\u0cb3\u0cb5\u0cbe\u0ca6 \u0c85\u0cb0\u0ccd\u0ca5",meditation:"\u0ca7\u0ccd\u0caf\u0cbe\u0ca8 \u0cb6\u0ccd\u0cb2\u0ccb\u0c95\u0ca6 \u0c92\u0c9f\u0ccd\u0c9f\u0cc1 \u0c85\u0cb0\u0ccd\u0ca5",pending_name:"\u0c88 \u0ca8\u0cbe\u0cae\u0ca6 \u0cb5\u0cbf\u0cb8\u0ccd\u0ca4\u0cc3\u0ca4 \u0cb5\u0cbf\u0cb5\u0cb0\u0ca3\u0cc6\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0caa\u0ccd\u0cb0\u0ca4\u0ccd\u0caf\u0cc7\u0c95\u0cb5\u0cbe\u0c97\u0cbf \u0caa\u0cb0\u0cbf\u0cb7\u0ccd\u0c95\u0cb0\u0cbf\u0cb8\u0cb2\u0cbe\u0c97\u0cc1\u0ca4\u0ccd\u0ca4\u0cbf\u0ca6\u0cc6.",pending_verse:"\u0c88 \u0cb6\u0ccd\u0cb2\u0ccb\u0c95\u0ca6 \u0cb5\u0cbf\u0cb8\u0ccd\u0ca4\u0cc3\u0ca4 \u0cb5\u0cbf\u0cb5\u0cb0\u0ca3\u0cc6\u0caf \u0caa\u0cb0\u0cbf\u0cb7\u0ccd\u0c95\u0cb0\u0ca3\u0cc6 \u0cac\u0cbe\u0c95\u0cbf\u0caf\u0cbf\u0ca6\u0cc6.",pending_meaning:"\u0c88 \u0cb6\u0ccd\u0cb2\u0ccb\u0c95\u0ca6 \u0c92\u0c9f\u0ccd\u0c9f\u0cc1 \u0c85\u0cb0\u0ccd\u0ca5\u0ca6 \u0caa\u0cb0\u0cbf\u0cb7\u0ccd\u0c95\u0cb0\u0ca3\u0cc6 \u0cac\u0cbe\u0c95\u0cbf\u0caf\u0cbf\u0ca6\u0cc6.",footer:"ಎಲ್ಲ 183 ಶ್ಲೋಕಗಳಿಗೆ ಒಟ್ಟು ಅರ್ಥ, ಸಂದರ್ಭಸಹಿತ ಆಳವಾದ ವಿವರಣೆ ಮತ್ತು ಎಲ್ಲಾ 1,000 ನಾಮಗಳಿಗೆ ಪ್ರತ್ಯೇಕ ಆಳವಾದ ಅರ್ಥಗಳು ಪೂರ್ಣಗೊಂಡಿವೆ. ಧ್ವನಿಮುದ್ರಣಗಳನ್ನು ಪ್ರತ್ಯೇಕವಾಗಿ ಸೇರಿಸಬಹುದು.",error:"\u0c95\u0cc6\u0cb2\u0cb5\u0cc1 \u0caa\u0cb0\u0cbf\u0cb7\u0ccd\u0c95\u0cc3\u0ca4 \u0cb5\u0cbf\u0cb5\u0cb0\u0ca3\u0cc6\u0c97\u0cb3\u0cc1 \u0cb2\u0ccb\u0ca1\u0ccd \u0c86\u0c97\u0cb2\u0cbf\u0cb2\u0ccd\u0cb2. \u0cb6\u0ccd\u0cb2\u0ccb\u0c95, \u0caa\u0ca6\u0cbe\u0cb0\u0ccd\u0ca5 \u0cae\u0ca4\u0ccd\u0ca4\u0cc1 \u0ca7\u0ccd\u0cb5\u0ca8\u0cbf \u0cb2\u0cad\u0ccd\u0caf\u0cb5\u0cbf\u0cb5\u0cc6; \u0cae\u0ca4\u0ccd\u0ca4\u0cc6 \u0caa\u0ccd\u0cb0\u0caf\u0ca4\u0ccd\u0ca8\u0cbf\u0cb8\u0cbf."};
@@ -65,19 +65,28 @@ function paragraphs(parent,value){for(const p of String(value||"").split(/\n\s*\
 function pending(level,forVerse=false){const b=el("div","deeper-reading source-reviewed-block");b.append(el(level,"",text("Deeper meaning",KN.deeper)),el("p","source-review-status",forVerse?text("A fuller explanation of this verse is awaiting revision.",KN.pending_verse):text("This name's fuller explanation is being revised separately.",KN.pending_name)));return b;}
 function applyName(detail){
  const n=Number(detail.dataset.detailId.slice(5)),inner=detail.querySelector(".study-inner");if(!inner)return;
- inner.querySelectorAll(":scope > .deeper-reading").forEach(e=>e.remove());const name=reviewed.names.find(x=>x.number===n);if(!name){inner.append(pending("h4"));return;}
- const b=el("div","deeper-reading source-reviewed-block");b.dataset.reviewed="true";b.append(el("h4","",text("Deeper meaning",KN.deeper)));paragraphs(b,isKannada()?name.kn:name.en);inner.append(b);
+ inner.querySelectorAll(":scope > .deeper-reading").forEach(e=>e.remove());const name=reviewed.names.find(x=>x.number===n);if(!name)return;
+ const toggle=inner.querySelector(":scope > .name-deeper-meaning");
+ if(toggle){
+  const target=toggle.querySelector(".deeper-reading");
+  if(target){target.replaceChildren();paragraphs(target,isKannada()?name.kn:name.en);}
+ }
 }
 function applyOverall(card,n){
  const lesson=card.querySelector(".verse-meaning-panel .verse-lesson");if(!lesson)return;
- if(card.id.startsWith("dhyana-")){const d=lesson.querySelector(".verse-overall-meaning");if(d){d.open=true;const label=d.querySelector("summary");if(label)label.textContent=text("Overall meditation meaning",KN.meditation);lesson.prepend(d);}return;}
+ if(card.id.startsWith("dhyana-"))return;
  const item=reviewed.verses.find(v=>v.verse_number===n),original=readings.get(n);
- const existing=lesson.querySelector(".verse-overall-meaning p")?.textContent||(isKannada()?original?.meaning?.kannada:original?.meaning?.english)||"";
- const meaning=item?(isKannada()?item.meaning.kn:item.meaning.en):existing;lesson.replaceChildren();
- const overall=el("section","source-overall-meaning");overall.append(el("h3","",text("Overall \u015bloka meaning",KN.overall)));
- if(meaning)paragraphs(overall,meaning);else overall.append(el("p","source-review-status",text("The overall meaning for this verse is awaiting revision.",KN.pending_meaning)));lesson.append(overall);
- if(item){const deep=el("section","deeper-reading source-reviewed-block");deep.dataset.reviewed="true";if(item.expanded)deep.dataset.expanded="true";deep.append(el("h3","",text("Deeper meaning",KN.deeper)));paragraphs(deep,isKannada()?item.deeper.kn:item.deeper.en);lesson.append(deep);}else lesson.append(pending("h3",true));
+ const overall=lesson.querySelector(".verse-overall-meaning");
+ const deep=lesson.querySelector(".verse-deeper-meaning");
+ if(overall&&item){
+  const p=overall.querySelector("p");if(p)p.textContent=isKannada()?item.meaning.kn:item.meaning.en;
+ }
+ if(deep&&item){
+  const target=deep.querySelector(".deeper-reading");
+  if(target){target.replaceChildren();paragraphs(target,isKannada()?item.deeper.kn:item.deeper.en);}
+ }
 }
+
 function apply(){
  scheduled=false;if(!reviewed)return;const key=VERSION+(isKannada()?"-kn":"-en");
  document.querySelectorAll(".vedini-study-card").forEach(card=>{if(card.dataset.sourceReview===key)return;card.dataset.sourceReview=key;card.querySelectorAll(".name-details[data-detail-id^='name-']").forEach(applyName);applyOverall(card,Number(card.id.split("-").pop()));const meta=card.querySelector(":scope > .meta");if(meta&&!card.id.startsWith("dhyana-"))meta.hidden=true;});
