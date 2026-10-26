@@ -97,7 +97,7 @@ function makeAudio(v,isDhyana){
   :"";
  const speed=sources.length?"<label class='sloka-mss-setting'>"+esc(langText("Speed","ವೇಗ"))+" <select class='sloka-mss-speed' aria-label='"+esc(langText("MSS playback speed","MSS ಪಠಣ ವೇಗ"))+"'><option value='0.75'>0.75×</option><option value='0.9' selected>0.9×</option><option value='1'>1×</option><option value='1.1'>1.1×</option><option value='1.25'>1.25×</option></select></label>":"";
  const repeat=sources.length?"<label class='sloka-mss-setting'>"+esc(langText("Repeat","ಪುನರಾವರ್ತನೆ"))+" <select class='sloka-mss-repeat' aria-label='"+esc(langText("MSS repeat count","MSS ಪುನರಾವರ್ತನೆ"))+"'><option value='1'>"+esc(langText("Once","ಒಮ್ಮೆ"))+"</option><option value='2'>"+esc(langText("Twice","ಎರಡು ಬಾರಿ"))+"</option><option value='3'>"+esc(langText("3 times","ಮೂರು ಬಾರಿ"))+"</option><option value='loop'>"+esc(langText("Continuous","ನಿರಂತರ"))+"</option></select></label>":"";
- const other="<details class='sloka-alternative-audio'><summary>"+esc(langText("VD / KMP audio","VD / KMP ಧ್ವನಿ"))+"</summary><span class='audio' data-audio-path='"+esc(url)+"'>"+esc(langText("♪ Audio coming soon","♪ ಧ್ವನಿಮುದ್ರಣ ಶೀಘ್ರದಲ್ಲಿ"))+"</span></details>";
+ const other="<span class='sloka-voice-buttons'><button type='button' class='sloka-voice-play' data-voice-src='"+esc(url)+"' aria-label='Play VD recording'>▶ VD</button><button type='button' class='sloka-voice-play' data-voice-src='"+esc(url.replace("/VD/","/KMP/"))+"' aria-label='Play KMP recording'>▶ KMP</button></span>";
  return "<div class='sloka-mss-actions'>"+button+speed+repeat+other+"<span class='sloka-mss-status' role='status' aria-live='polite'></span></div>";
 }
 const MSS_LAST_CLIP=739;
@@ -777,6 +777,40 @@ function stopSlokaMss(){
   current.button.setAttribute("aria-pressed","false");
  }
 }
+let activeDirectVerseAudio=null;
+function initDirectVerseAudio(){
+ document.querySelectorAll(".sloka-voice-play[data-voice-src]").forEach(button=>{
+  if(button.dataset.bound==="1")return;
+  button.dataset.bound="1";
+  button.addEventListener("click",async()=>{
+   if(activeDirectVerseAudio?.button===button){
+    activeDirectVerseAudio.audio.pause();
+    activeDirectVerseAudio.audio.currentTime=0;
+    activeDirectVerseAudio.button.textContent="▶ "+activeDirectVerseAudio.label;
+    activeDirectVerseAudio=null;
+    return;
+   }
+   if(activeDirectVerseAudio){
+    activeDirectVerseAudio.audio.pause();
+    activeDirectVerseAudio.button.textContent="▶ "+activeDirectVerseAudio.label;
+    activeDirectVerseAudio=null;
+   }
+   stopSlokaMss();
+   stopNameAudio();
+   stopAllDhyanaAudio(null);
+   const label=button.textContent.replace(/^[▶■]\s*/,"");
+   const audio=new Audio(button.dataset.voiceSrc);
+   audio.preload="none";
+   const state={audio,button,label};
+   activeDirectVerseAudio=state;
+   installAudioFocus(audio);
+   audio.addEventListener("ended",()=>{if(activeDirectVerseAudio===state){button.textContent="▶ "+label;activeDirectVerseAudio=null;}});
+   audio.addEventListener("error",()=>{if(activeDirectVerseAudio===state){button.textContent="▶ "+label;activeDirectVerseAudio=null;button.title="Recording unavailable";}});
+   button.textContent="■ "+label;
+   try{await audio.play();}catch(_){if(activeDirectVerseAudio===state){button.textContent="▶ "+label;button.title="Recording unavailable";activeDirectVerseAudio=null;}}
+  });
+ });
+}
 function initSlokaMssPlayAll(){
  document.querySelectorAll(".sloka-mss-play-all[data-sloka-mss]").forEach(button=>{
   if(button.dataset.bound==="1")return;
@@ -1169,6 +1203,7 @@ function render(){
  loadAudio();
  initNameAudio();
  initSlokaMssPlayAll();
+ initDirectVerseAudio();
  initDhyanaPhraseAudio();
  initDhyanaPlayAll();
  initDhyanaQuickNav();
