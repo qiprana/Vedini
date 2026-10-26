@@ -1190,3 +1190,11 @@ header p{color:#845c4b;font-size:18px}
  .reader-page .sloka-mss-actions .sloka-mss-play-all{flex:0 0 auto;}
  .reader-page .sloka-alternative-audio[open]{width:100%;}
 }
+
+/* Individual divine-name spiritual benefit; collapsed by default and visually consistent with deeper meaning. */
+.reader-page .name-spiritual-benefit{margin:11px 0 9px}
+.reader-page .name-spiritual-benefit .benefit-content{background:#fffdf8;line-height:1.75}
+.reader-page .name-spiritual-benefit .benefit-content p{margin:0 0 11px}
+.reader-page .name-spiritual-benefit .benefit-content p:last-child{margin-bottom:0}
+.reader-page .name-spiritual-benefit .benefit-headline{color:#315744}
+.reader-page .name-spiritual-benefit .benefit-when{background:#f0f5ec;padding:9px 11px;border-radius:8px}

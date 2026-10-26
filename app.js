@@ -5,6 +5,7 @@ const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&
 const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
 const langText=(en,kn)=>language==="kn"?kn:en;
 let verses=[],dhyana=[],nameData={},dhyanaData={},verseData={},dhyanaPhraseData={},language="en",searchTerm="",highlightTerm="";
+let spiritualBenefits={};
 const pageSize=10,plannedVerses=183;
 let view="verses",pageIndex=0,selectedVerse=1;
 let activeAudioElement=null;
@@ -87,10 +88,25 @@ function proseInKannadaScript(value){
 function richParagraphs(value){
  return proseInKannadaScript(value).split("\n\n").map(p=>p.trim()).filter(Boolean).map(p=>"<p>"+esc(p).replace(/\*([^*]+)\*/g,"<em>$1</em>").replace(/\n/g," ")+"</p>").join("");
 }
+function benefitToggle(number){
+ const data=spiritualBenefits[number];
+ if(!data)return "";
+ const benefit=data.benefit?.[language]||"";
+ const explanation=data.explanation?.[language]||"";
+ const when=data.when?.[language]||"";
+ if(!benefit)return "";
+ return "<details class='meaning-toggle name-spiritual-benefit' data-detail-id='name-benefit-"+number+"'>"
+  +"<summary>"+esc(langText("Spiritual benefit","ಆಧ್ಯಾತ್ಮಿಕ ಪ್ರಯೋಜನ"))+"</summary>"
+  +"<div class='deeper-reading benefit-content'>"
+  +"<p class='benefit-headline'><strong>"+esc(langText("Spiritual benefit: ","ಆಧ್ಯಾತ್ಮಿಕ ಪ್ರಯೋಜನ: "))+"</strong>"+esc(benefit)+"</p>"
+  +richParagraphs(explanation)
+  +(when?"<p class='benefit-when'><strong>"+esc(langText("When to contemplate: ","ಯಾವಾಗ ಧ್ಯಾನಿಸಬೇಕು: "))+"</strong>"+esc(when)+"</p>":"")
+  +"</div></details>";
+}
 function studySections(info,parts,nameNumber){
  const deep=anyMeaning(info,"traditional_interpretation");
  const id=nameNumber?" data-detail-id='name-deep-"+nameNumber+"'":"";
- return "<div class='study-inner'><h4>"+esc(langText("Word by word","ಪದ ಪದದ ಅರ್ಥ"))+"</h4>"+wordsGrid(parts)+(deep?"<details class='meaning-toggle name-deeper-meaning'"+id+"><summary>"+esc(langText("Deeper meaning","ಆಳವಾದ ಅರ್ಥ"))+"</summary><div class='deeper-reading'>"+richParagraphs(deep)+"</div></details>":"")+"</div>";
+ return "<div class='study-inner'><h4>"+esc(langText("Word by word","ಪದ ಪದದ ಅರ್ಥ"))+"</h4>"+wordsGrid(parts)+benefitToggle(nameNumber)+(deep?"<details class='meaning-toggle name-deeper-meaning'"+id+"><summary>"+esc(langText("Deeper meaning","ಆಳವಾದ ಅರ್ಥ"))+"</summary><div class='deeper-reading'>"+richParagraphs(deep)+"</div></details>":"")+"</div>";
 }
 function makeAudio(v,isDhyana){
  if(isDhyana){
@@ -1530,6 +1546,8 @@ async function init(){
  const paths=["lalita/dhyana.json","lalita/names-interpretations-draft.json","lalita/study-names-011-018.json","lalita/study-names-019-026.json","lalita/study-dhyana-01-02.json","lalita/study-dhyana-03-04.json","lalita/study-verses-001-010.json",...Array.from({length:183},(_,i)=>"lalita/verses/verse-"+String(i+1).padStart(3,"0")+".json")];
  try{
  const [files,briefNames,dhyanaPhrases]=await Promise.all([Promise.all(paths.map(fetchJSON)),fetchJSON("lalita/brief-names-draft.json"),fetchJSON("lalita/dhyana-mss-phrases.json?v=20261024-v14")]);
+ const benefitFiles=await Promise.all([fetchJSON("lalita/spiritual-benefits-001-003.json"),fetchJSON("lalita/spiritual-benefits-004-020.json")]);
+ spiritualBenefits=Object.fromEntries(benefitFiles.flatMap(f=>f.names||[]).map(n=>[n.number,n]));
  dhyana=files[0];
  dhyanaPhraseData=Object.fromEntries([1,2,3,4].map(v=>[v,(dhyanaPhrases.phrases||[]).filter(p=>p.verse===v)]));
  const old=files[1],newNames=[...files[2],...files[3]];
