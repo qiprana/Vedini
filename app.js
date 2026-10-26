@@ -93,9 +93,10 @@ function benefitToggle(number){
  if(!data)return "";
  const benefit=data.benefit?.[language]||"";
  const explanation=data.explanation?.[language]||"";
+ const heading=(data.title?.[language]||benefit).replace(/[.!]+$/,"").trim();
  if(!benefit)return "";
  return "<details class='meaning-toggle name-spiritual-benefit' data-detail-id='name-benefit-"+number+"'>"
-  +"<summary>"+esc(langText("Wisdom Insights","ಜ್ಞಾನದ ಒಳನೋಟಗಳು"))+"</summary>"
+  +"<summary>"+esc(langText("Wisdom Insights","ಜ್ಞಾನದ ಒಳನೋಟಗಳು"))+" · "+esc(heading)+"</summary>"
   +"<div class='deeper-reading benefit-content'>"
   +"<p class='benefit-headline'>"+esc(benefit)+"</p>"
   +richParagraphs(explanation)
