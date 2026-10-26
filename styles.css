@@ -1190,3 +1190,13 @@ header p{color:#845c4b;font-size:18px}
  .reader-page .sloka-mss-actions .sloka-mss-play-all{flex:0 0 auto;}
  .reader-page .sloka-alternative-audio[open]{width:100%;}
 }
+
+/* Lalitā nāma study: mantra and benefit directly inside the existing single name expansion. */
+.reader-page .nama-practice{background:#fffaf0;border:1px solid #dccdb2;border-radius:11px;padding:12px 14px;margin:2px 0 17px;color:#344336}
+.reader-page .nama-practice-line+.nama-practice-line{border-top:1px solid #e7dcc8;margin-top:12px;padding-top:12px}
+.reader-page .nama-practice-caption{display:block;text-transform:none;color:#76634e;font:700 12px/1.5 system-ui,sans-serif;margin-bottom:6px}
+.reader-page .nama-mantra{display:block;font-size:clamp(19px,2.1vw,25px);font-weight:550;line-height:1.7;color:#285343}
+.reader-page .nama-practice p{margin:5px 0 0;line-height:1.75}
+.reader-page .nama-practice .nama-benefit{font-weight:650;color:#315744}
+.reader-page .nama-practice-when{margin-top:12px;padding:9px 11px;background:#eef4e9;border-radius:8px;font-size:14px;line-height:1.65}
+.reader-page .kannada-mode .nama-mantra{font-family:serif}
