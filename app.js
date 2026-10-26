@@ -77,6 +77,11 @@ function proseInKannadaScript(value){
  for(const entry of kannadaNameForms){
   result=result.replace(entry.regex,(match,lead)=>lead+entry.kannada);
  }
+ // Transliterate IAST Sanskrit words in Kannada prose; ordinary English stays untouched.
+ result=result.replace(/[A-Za-zāīūṛṝḷṅñṭḍṇśṣṃṁḥ]+(?:-[A-Za-zāīūṛṝḷṅñṭḍṇśṣṃṁḥ]+)*/gu,token=>{
+  if(!/[āīūṛṝḷṅñṭḍṇśṣṃṁḥ]/u.test(token))return token;
+  return kannadaFromDevanagari(iastToDevanagari(token.toLowerCase()));
+ });
  return result;
 }
 function richParagraphs(value){
