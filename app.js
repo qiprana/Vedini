@@ -104,7 +104,7 @@ const MSS_LAST_CLIP=739;
 function mssClipPath(clip){
  return "../audio/lalita/verses/MSS/phrase_"+String(clip).padStart(4,"0")+".mp3";
 }
-const MSS_REVIEWED_NAME_AUDIO_160_451={
+const MSS_REVIEWED_NAME_AUDIO_160_589={
  160:[202],
  162:[203],
  164:[204],
@@ -284,7 +284,100 @@ const MSS_REVIEWED_NAME_AUDIO_160_451={
  443:[387],
  447:[388],
  449:[389],
- 451:[390]
+ 451:[390],
+ 452:[391],
+ 453:[392,393],
+ 455:[394],
+ 458:[395],
+ 459:[396],
+ 462:[397],
+ 465:[398],
+ 468:[399],
+ 470:[400],
+ 471:[401],
+ 472:[402],
+ 474:[403],
+ 475:[404],
+ 476:[405],
+ 478:[406],
+ 479:[407],
+ 480:[408],
+ 482:[409],
+ 483:[410],
+ 484:[411],
+ 485:[412],
+ 486:[413],
+ 488:[414],
+ 490:[415],
+ 491:[416],
+ 492:[417],
+ 493:[418],
+ 494:[419],
+ 495:[420],
+ 496:[421],
+ 497:[422],
+ 498:[423],
+ 499:[424],
+ 501:[425],
+ 502:[426],
+ 503:[427],
+ 504:[428],
+ 505:[429],
+ 506:[430],
+ 507:[431],
+ 509:[432],
+ 511:[433],
+ 512:[434],
+ 513:[435],
+ 514:[436],
+ 515:[437],
+ 517:[438],
+ 518:[439],
+ 519:[440],
+ 520:[441],
+ 521:[442],
+ 522:[443],
+ 524:[444],
+ 525:[445],
+ 527:[446],
+ 528:[447],
+ 529:[448],
+ 530:[449],
+ 532:[450],
+ 533:[451],
+ 534:[452],
+ 535:[453],
+ 539:[454],
+ 542:[455],
+ 545:[456],
+ 546:[457],
+ 548:[458],
+ 550:[459],
+ 551:[460],
+ 552:[461],
+ 553:[462],
+ 554:[463],
+ 556:[464],
+ 558:[465],
+ 559:[466],
+ 560:[467],
+ 561:[468],
+ 564:[469],
+ 566:[470],
+ 567:[471],
+ 569:[472],
+ 571:[473],
+ 572:[474],
+ 574:[475],
+ 575:[476],
+ 577:[477],
+ 578:[478],
+ 579:[479],
+ 580:[480],
+ 582:[481],
+ 583:[482],
+ 585:[483],
+ 587:[484]
 };
 function nameAudioClips(nameNumber){
  const n=Number(nameNumber);
@@ -420,12 +513,12 @@ function nameAudioClips(nameNumber){
  if(n===157)return []; // Included in the preceding combined name card.
  if(n===158)return [201];
  if(n===159)return []; // Included in the preceding combined name card.
- // Reviewed MSS assignments from handwritten sheets: divine names 160-451.
+ // Reviewed MSS assignments from handwritten sheets: divine names 160-589.
  // Every divine name remains an individual row. A shared phrase clip belongs
  // to the first name in its bracket, with no audio button on the following names.
  // Names without a specified clip (including 410 and 430) are left unassigned.
  // Names 452 onward remain unassigned pending review.
- if(n>=160)return MSS_REVIEWED_NAME_AUDIO_160_451[n]||[];
+ if(n>=160)return MSS_REVIEWED_NAME_AUDIO_160_589[n]||[];
  const clip=n<=11?n+32:n<=19?n+37:n<=21?n+39:n<=24?n+41:n<=32?n+44:n<=40?n+51:n<=71?n+54:n<=72?n+60:n<=76?n+63:n<=93?n+71:n<=109?n+67:n<=125?n+60:n+42;
  return clip<=MSS_LAST_CLIP?[clip]:[];
 }
