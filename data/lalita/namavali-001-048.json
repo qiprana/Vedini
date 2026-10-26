@@ -1,0 +1,257 @@
+{
+  "name_range": [
+    1,
+    48
+  ],
+  "sloka_range": [
+    1,
+    20
+  ],
+  "sources": [
+    "https://lalita.study/namas/recite",
+    "https://www.drikpanchang.com/deities-namavali/goddesses/lalita/1000-lalita-names.html?lang=hi"
+  ],
+  "note": "Nāmāvalī is a distinct dative invocation, not the nominative name as recited in the hymn. Editorial verification ongoing. Existing MSS name audio is not mantra audio.",
+  "names": [
+    {
+      "number": 1,
+      "dev": "ॐ श्रीमात्रे नमः",
+      "iast": "Oṃ Śrīmātre Namaḥ"
+    },
+    {
+      "number": 2,
+      "dev": "ॐ श्रीमहाराज्ञ्यै नमः",
+      "iast": "Oṃ Śrīmahārājñyai Namaḥ"
+    },
+    {
+      "number": 3,
+      "dev": "ॐ श्रीमत्सिंहासनेश्वर्यै नमः",
+      "iast": "Oṃ Śrīmatsiṃhāsaneśvaryai Namaḥ"
+    },
+    {
+      "number": 4,
+      "dev": "ॐ चिदग्निकुण्डसम्भूतायै नमः",
+      "iast": "Oṃ Cidagnikuṇḍasambhūtāyai Namaḥ"
+    },
+    {
+      "number": 5,
+      "dev": "ॐ देवकार्यसमुद्यतायै नमः",
+      "iast": "Oṃ Devakāryasamudyatāyai Namaḥ"
+    },
+    {
+      "number": 6,
+      "dev": "ॐ उद्यद्भानुसहस्राभायै नमः",
+      "iast": "Oṃ Udyadbhānusahasrābhāyai Namaḥ"
+    },
+    {
+      "number": 7,
+      "dev": "ॐ चतुर्बाहुसमन्वितायै नमः",
+      "iast": "Oṃ Caturbāhusamanvitāyai Namaḥ"
+    },
+    {
+      "number": 8,
+      "dev": "ॐ रागस्वरूपपाशाढ्यायै नमः",
+      "iast": "Oṃ Rāgasvarūpapāśāḍhyāyai Namaḥ"
+    },
+    {
+      "number": 9,
+      "dev": "ॐ क्रोधाकाराङ्कुशोज्ज्वलायै नमः",
+      "iast": "Oṃ Krodhākārāṅkuśojjvalāyai Namaḥ"
+    },
+    {
+      "number": 10,
+      "dev": "ॐ मनोरूपेक्षुकोदण्डायै नमः",
+      "iast": "Oṃ Manorūpekṣukodaṇḍāyai Namaḥ"
+    },
+    {
+      "number": 11,
+      "dev": "ॐ पञ्चतन्मात्रसायकायै नमः",
+      "iast": "Oṃ Pañcatanmātrasāyakāyai Namaḥ"
+    },
+    {
+      "number": 12,
+      "dev": "ॐ निजारुणप्रभापूरमज्जद्ब्रह्माण्डमण्डलायै नमः",
+      "iast": "Oṃ Nijāruṇaprabhāpūramajjadbrahmāṇḍamaṇḍalāyai Namaḥ"
+    },
+    {
+      "number": 13,
+      "dev": "ॐ चम्पकाशोकपुन्नागसौगन्धिकलसत्कचायै नमः",
+      "iast": "Oṃ Campakāśokapunnāgasaugandhikalasatkacāyai Namaḥ"
+    },
+    {
+      "number": 14,
+      "dev": "ॐ कुरुविन्दमणिश्रेणीकनत्कोटीरमण्डितायै नमः",
+      "iast": "Oṃ Kuruvindamaṇiśreṇīkanatkoṭīramaṇḍitāyai Namaḥ"
+    },
+    {
+      "number": 15,
+      "dev": "ॐ अष्टमीचन्द्रविभ्राजदलिकस्थलशोभितायै नमः",
+      "iast": "Oṃ Aṣṭamīcandravibhrājadalikasthalaśobhitāyai Namaḥ"
+    },
+    {
+      "number": 16,
+      "dev": "ॐ मुखचन्द्रकलङ्काभमृगनाभिविशेषकायै नमः",
+      "iast": "Oṃ Mukhacandrakalaṅkābhamṛganābhiviśeṣakāyai Namaḥ"
+    },
+    {
+      "number": 17,
+      "dev": "ॐ वदनस्मरमाङ्गल्यगृहतोरणचिल्लिकायै नमः",
+      "iast": "Oṃ Vadanasmaramāṅgalyagṛhatoraṇacillikāyai Namaḥ"
+    },
+    {
+      "number": 18,
+      "dev": "ॐ वक्त्रलक्ष्मीपरीवाहचलन्मीनाभलोचनायै नमः",
+      "iast": "Oṃ Vaktralakṣmīparīvāhacalanmīnābhalocanāyai Namaḥ"
+    },
+    {
+      "number": 19,
+      "dev": "ॐ नवचम्पकपुष्पाभनासादण्डविराजितायै नमः",
+      "iast": "Oṃ Navacampakapuṣpābhanāsādaṇḍavirājitāyai Namaḥ"
+    },
+    {
+      "number": 20,
+      "dev": "ॐ ताराकान्तितिरस्कारिनासाभरणभासुरायै नमः",
+      "iast": "Oṃ Tārākāntitiraskārināsābharaṇabhāsurāyai Namaḥ"
+    },
+    {
+      "number": 21,
+      "dev": "ॐ कदम्बमञ्जरीकॢप्तकर्णपूरमनोहरायै नमः",
+      "iast": "Oṃ Kadambamañjarīkḷptakarṇapūramanoharāyai Namaḥ"
+    },
+    {
+      "number": 22,
+      "dev": "ॐ ताटङ्कयुगलीभूततपनोडुपमण्डलायै नमः",
+      "iast": "Oṃ Tāṭaṅkayugalībhūtatapanoḍupamaṇḍalāyai Namaḥ"
+    },
+    {
+      "number": 23,
+      "dev": "ॐ पद्मरागशिलादर्शपरिभाविकपोलभुवे नमः",
+      "iast": "Oṃ Padmarāgaśilādarśaparibhāvikapolabhuve Namaḥ"
+    },
+    {
+      "number": 24,
+      "dev": "ॐ नवविद्रुमबिम्बश्रीन्यक्कारिरदनच्छदायै नमः",
+      "iast": "Oṃ Navavidrumabimbaśrīnyakkāriradanacchadāyai Namaḥ"
+    },
+    {
+      "number": 25,
+      "dev": "ॐ शुद्धविद्याङ्कुराकारद्विजपङ्क्तिद्वयोज्ज्वलायै नमः",
+      "iast": "Oṃ Śuddhavidyāṅkurākāradvijapaṅktidvayojjvalāyai Namaḥ"
+    },
+    {
+      "number": 26,
+      "dev": "ॐ कर्पूरवीटिकामोदसमाकर्षिदिगन्तरायै नमः",
+      "iast": "Oṃ Karpūravīṭikāmodasamākarṣidigantarāyai Namaḥ"
+    },
+    {
+      "number": 27,
+      "dev": "ॐ निजसल्लापमाधुर्यविनिर्भर्त्सितकच्छप्यै नमः",
+      "iast": "Oṃ Nijasallāpamādhuryavinirbhartsitakacchapyai Namaḥ"
+    },
+    {
+      "number": 28,
+      "dev": "ॐ मन्दस्मितप्रभापूरमज्जत्कामेशमानसायै नमः",
+      "iast": "Oṃ Mandasmitaprabhāpūramajjatkāmeśamānasāyai Namaḥ"
+    },
+    {
+      "number": 29,
+      "dev": "ॐ अनाकलितसादृश्यचिबुकश्रीविराजितायै नमः",
+      "iast": "Oṃ Anākalitasādṛśyacibukaśrīvirājitāyai Namaḥ"
+    },
+    {
+      "number": 30,
+      "dev": "ॐ कामेशबद्धमाङ्गल्यसूत्रशोभितकन्धरायै नमः",
+      "iast": "Oṃ Kāmeśabaddhamāṅgalyasūtraśobhitakandharāyai Namaḥ"
+    },
+    {
+      "number": 31,
+      "dev": "ॐ कनकाङ्गदकेयूरकमनीयभुजान्वितायै नमः",
+      "iast": "Oṃ Kanakāṅgadakeyūrakamanīyabhujānvitāyai Namaḥ"
+    },
+    {
+      "number": 32,
+      "dev": "ॐ रत्नग्रैवेयचिन्ताकलोलमुक्ताफलान्वितायै नमः",
+      "iast": "Oṃ Ratnagraiveyacintākalolamuktāphalānvitāyai Namaḥ"
+    },
+    {
+      "number": 33,
+      "dev": "ॐ कामेश्वरप्रेमरत्नमणिप्रतिपणस्तन्यै नमः",
+      "iast": "Oṃ Kāmeśvarapremaratnamaṇipratipaṇastanyai Namaḥ"
+    },
+    {
+      "number": 34,
+      "dev": "ॐ नाभ्यालवालरोमालिलताफलकुचद्वय्यै नमः",
+      "iast": "Oṃ Nābhyālavālaromālilatāphalakucadvayyai Namaḥ"
+    },
+    {
+      "number": 35,
+      "dev": "ॐ लक्ष्यरोमलताधारतासमुन्नेयमध्यमायै नमः",
+      "iast": "Oṃ Lakṣyaromalatādhāratāsamunneyamadhyamāyai Namaḥ"
+    },
+    {
+      "number": 36,
+      "dev": "ॐ स्तनभारदलन्मध्यपट्टबन्धवलित्रयायै नमः",
+      "iast": "Oṃ Stanabhāradalanmadhyapaṭṭabandhavalitrayāyai Namaḥ"
+    },
+    {
+      "number": 37,
+      "dev": "ॐ अरुणारुणकौसुम्भवस्त्रभास्वत्कटीतट्यै नमः",
+      "iast": "Oṃ Aruṇāruṇakausumbhavastrabhāsvatkaṭītaṭyai Namaḥ"
+    },
+    {
+      "number": 38,
+      "dev": "ॐ रत्नकिङ्किणिकारम्यरशनादामभूषितायै नमः",
+      "iast": "Oṃ Ratnakiṅkiṇikāramyaraśanādāmabhūṣitāyai Namaḥ"
+    },
+    {
+      "number": 39,
+      "dev": "ॐ कामेशज्ञातसौभाग्यमार्दवोरुद्वयान्वितायै नमः",
+      "iast": "Oṃ Kāmeśajñātasaubhāgyamārdavorudvayānvitāyai Namaḥ"
+    },
+    {
+      "number": 40,
+      "dev": "ॐ माणिक्यमुकुटाकारजानुद्वयविराजितायै नमः",
+      "iast": "Oṃ Māṇikyamukuṭākārajānudvayavirājitāyai Namaḥ"
+    },
+    {
+      "number": 41,
+      "dev": "ॐ इन्द्रगोपपरिक्षिप्तस्मरतूणाभजङ्घिकायै नमः",
+      "iast": "Oṃ Indragopaparikṣiptasmaratūṇābhajaṅghikāyai Namaḥ"
+    },
+    {
+      "number": 42,
+      "dev": "ॐ गूढगुल्फायै नमः",
+      "iast": "Oṃ Gūḍhagulphāyai Namaḥ"
+    },
+    {
+      "number": 43,
+      "dev": "ॐ कूर्मपृष्ठजयिष्णुप्रपदान्वितायै नमः",
+      "iast": "Oṃ Kūrmapṛṣṭhajayiṣṇuprapadānvitāyai Namaḥ"
+    },
+    {
+      "number": 44,
+      "dev": "ॐ नखदीधितिसञ्छन्ननमज्जनतमोगुणायै नमः",
+      "iast": "Oṃ Nakhadīdhitisañchannanamajjanatamoguṇāyai Namaḥ"
+    },
+    {
+      "number": 45,
+      "dev": "ॐ पदद्वयप्रभाजालपराकृतसरोरुहायै नमः",
+      "iast": "Oṃ Padadvayaprabhājālaparākṛtasaroruhāyai Namaḥ"
+    },
+    {
+      "number": 46,
+      "dev": "ॐ शिञ्जानमणिमञ्जीरमण्डितश्रीपदाम्बुजायै नमः",
+      "iast": "Oṃ Śiñjānamaṇimañjīramaṇḍitaśrīpadāmbujāyai Namaḥ"
+    },
+    {
+      "number": 47,
+      "dev": "ॐ मरालीमन्दगमनायै नमः",
+      "iast": "Oṃ Marālīmandagamanāyai Namaḥ"
+    },
+    {
+      "number": 48,
+      "dev": "ॐ महालावण्यशेवधये नमः",
+      "iast": "Oṃ Mahālāvaṇyaśevadhaye Namaḥ"
+    }
+  ]
+}

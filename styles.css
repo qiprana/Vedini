@@ -1198,3 +1198,10 @@ header p{color:#845c4b;font-size:18px}
 .reader-page .name-spiritual-benefit .benefit-content p:last-child{margin-bottom:0}
 .reader-page .name-spiritual-benefit .benefit-headline{color:#315744}
 .reader-page .name-spiritual-benefit .benefit-when{background:#f0f5ec;padding:9px 11px;border-radius:8px}
+
+/* Name mantra: simple disclosure matching the existing benefit and deeper-meaning panels. */
+.reader-page .name-mantra-toggle{margin:12px 0 8px}
+.reader-page .name-mantra-toggle .mantra-reading{display:flex;flex-direction:column;gap:5px;padding:14px 16px;background:#fffdf8}
+.reader-page .name-mantra-toggle .mantra-script{font-size:clamp(20px,2.2vw,27px);line-height:1.8;font-weight:550;color:#2c5440}
+.reader-page .name-mantra-toggle .mantra-iast{font:17px/1.6 Georgia,serif;color:#476452}
+.reader-page .name-mantra-toggle .mantra-note{font:13px/1.6 system-ui,sans-serif;color:#6d685e;margin-top:4px}
