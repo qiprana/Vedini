@@ -769,114 +769,78 @@ function stopAllDhyanaAudio(exceptButton){
 // Gap-free, on-demand MSS śloka playback. Use one decoded audio buffer for each
 // śloka, like Dhyāna; never render or preload a media bar for each name.
 let activeSlokaMss=null,slokaMssRequest=0;
+const originalMssBuffers=new Map();
+async function loadOriginalMss(paths,ctx){
+ return Promise.all(paths.map(path=>{
+  if(!originalMssBuffers.has(path)){
+   const job=fetch(path).then(r=>{if(!r.ok)throw Error('Cannot load '+path);return r.arrayBuffer();}).then(data=>ctx.decodeAudioData(data));
+   originalMssBuffers.set(path,job);
+   job.catch(()=>{if(originalMssBuffers.get(path)===job)originalMssBuffers.delete(path);});
+  }
+  return originalMssBuffers.get(path);
+ }));
+}
 function stopSlokaMss(){
  slokaMssRequest++;
- const current=activeSlokaMss;
- activeSlokaMss=null;
+ const current=activeSlokaMss;activeSlokaMss=null;
  if(!current)return;
- if(current.source){
-  current.source.onended=null;
-  try{current.source.stop();}catch(_){}
-  try{current.source.disconnect();}catch(_){}
- }
+ for(const node of current.nodes||[]){node.onended=null;try{node.stop();}catch(_){}try{node.disconnect();}catch(_){}}
  if(current.button?.isConnected){
-  current.button.classList.remove("playing");
-  current.button.textContent="▶ "+langText("Play all MSS","ಎಲ್ಲಾ MSS ಪ್ಲೇ ಮಾಡಿ");
-  current.button.setAttribute("aria-pressed","false");
+  current.button.classList.remove('playing');
+  current.button.textContent='▶ '+langText('Play all MSS','ಎಲ್ಲಾ MSS ಪ್ಲೇ ಮಾಡಿ');
+  current.button.setAttribute('aria-pressed','false');
+  const status=current.button.closest('.sloka-mss-actions')?.querySelector('.sloka-mss-status');
+  if(status)status.textContent='';
  }
-}
-let activeDirectVerseAudio=null;
-function initDirectVerseAudio(){
- document.querySelectorAll(".sloka-voice-play[data-voice-src]").forEach(button=>{
-  if(button.dataset.bound==="1")return;
-  button.dataset.bound="1";
-  button.addEventListener("click",async()=>{
-   if(activeDirectVerseAudio?.button===button){
-    activeDirectVerseAudio.audio.pause();
-    activeDirectVerseAudio.audio.currentTime=0;
-    activeDirectVerseAudio.button.textContent="▶ "+activeDirectVerseAudio.label;
-    activeDirectVerseAudio=null;
-    return;
-   }
-   if(activeDirectVerseAudio){
-    activeDirectVerseAudio.audio.pause();
-    activeDirectVerseAudio.button.textContent="▶ "+activeDirectVerseAudio.label;
-    activeDirectVerseAudio=null;
-   }
-   stopSlokaMss();
-   stopNameAudio();
-   stopAllDhyanaAudio(null);
-   const label=button.textContent.replace(/^[▶■]\s*/,"");
-   const audio=new Audio(button.dataset.voiceSrc);
-   audio.preload="none";
-   const state={audio,button,label};
-   activeDirectVerseAudio=state;
-   installAudioFocus(audio);
-   audio.addEventListener("ended",()=>{if(activeDirectVerseAudio===state){button.textContent="▶ "+label;activeDirectVerseAudio=null;}});
-   audio.addEventListener("error",()=>{if(activeDirectVerseAudio===state){button.textContent="▶ "+label;activeDirectVerseAudio=null;button.title="Recording unavailable";}});
-   button.textContent="■ "+label;
-   try{await audio.play();}catch(_){if(activeDirectVerseAudio===state){button.textContent="▶ "+label;button.title="Recording unavailable";activeDirectVerseAudio=null;}}
-  });
- });
 }
 function initSlokaMssPlayAll(){
- document.querySelectorAll(".sloka-mss-play-all[data-sloka-mss]").forEach(button=>{
-  if(button.dataset.bound==="1")return;
-  button.dataset.bound="1";
-  button.setAttribute("aria-pressed","false");
-  button.addEventListener("click",async()=>{
+ document.querySelectorAll('.sloka-mss-play-all[data-sloka-mss]').forEach(button=>{
+  if(button.dataset.bound==='1')return;
+  button.dataset.bound='1';button.setAttribute('aria-pressed','false');
+  button.addEventListener('click',async()=>{
    if(activeSlokaMss?.button===button){stopSlokaMss();return;}
-   stopSlokaMss();
-   stopNameAudio();
-   stopAllDhyanaAudio(null);
-   const parent=button.closest(".sloka-mss-actions");
-   const status=parent?.querySelector(".sloka-mss-status");
-   const repeat=parent?.querySelector(".sloka-mss-repeat");
-   const sources=(button.dataset.slokaMss||"").split("|").filter(Boolean);
-   if(!sources.length)return;
-   const state={button,source:null,completed:0,token:++slokaMssRequest};
-   activeSlokaMss=state;
-   button.classList.add("playing");
-   button.textContent="■ "+langText("Stop MSS","MSS ನಿಲ್ಲಿಸಿ");
-   button.setAttribute("aria-pressed","true");
-   if(status)status.textContent=langText("Preparing MSS…","MSS ಸಿದ್ಧವಾಗುತ್ತಿದೆ…");
+   stopSlokaMss();stopNameAudio();stopAllDhyanaAudio(null);
+   const paths=(button.dataset.slokaMss||'').split('|').filter(Boolean);
+   if(!paths.length)return;
+   const panel=button.closest('.sloka-mss-actions');
+   const repeat=panel?.querySelector('.sloka-mss-repeat');
+   const status=panel?.querySelector('.sloka-mss-status');
+   const state={button,nodes:[],token:++slokaMssRequest};activeSlokaMss=state;
+   button.classList.add('playing');button.textContent='■ '+langText('Stop MSS','MSS ನಿಲ್ಲಿಸಿ');
+   button.setAttribute('aria-pressed','true');
+   if(status)status.textContent=langText('Preparing MSS…','MSS ಸಿದ್ಧವಾಗುತ್ತಿದೆ…');
    try{
-    // AudioContext is resumed in the click gesture, and sources are fetched only now.
-    const {ctx,buffer}=button._mergedBuffer||(button._mergedBuffer=await buildMergedAudioBuffer(sources));
+    if(!vediniAudioContext)vediniAudioContext=new (window.AudioContext||window.webkitAudioContext)();
+    const ctx=vediniAudioContext;
+    if(ctx.state==='suspended')await ctx.resume();
+    const buffers=await loadOriginalMss(paths,ctx);
     if(activeSlokaMss!==state||state.token!==slokaMssRequest)return;
-    const startSource=()=>{
-     if(activeSlokaMss!==state)return;
-     const node=ctx.createBufferSource();
-     node.buffer=buffer;
-     node.playbackRate.value=1; // Play at original recording speed.
-     node.loop=repeat?.value==="loop";
-     node.connect(ctx.destination);
-     state.source=node;
-     node.onended=()=>{
-      if(activeSlokaMss!==state||state.source!==node)return;
-      state.source=null;
-      try{node.disconnect();}catch(_){}
-      state.completed++;
-      if(state.completed<Number(repeat?.value||1)){startSource();}
-      else{stopSlokaMss();if(status)status.textContent="";}
-     };
-     node.start(0);
-    };
-    startSource();
-    if(status)status.textContent="";
-   }catch(_){
-    if(activeSlokaMss===state){
-     stopSlokaMss();
-     if(status)status.textContent=langText("MSS audio could not load.","MSS ಧ್ವನಿ ಲೋಡ್ ಆಗಲಿಲ್ಲ.");
+    const mode=repeat?.value||'1';
+    const passes=mode==='loop'?1:Math.max(1,Number(mode)||1);
+    // Use each original decoded recording; the audio clock aligns adjacent clips exactly.
+    let time=ctx.currentTime+0.05;
+    function schedulePasses(count){
+     let last=null;
+     for(let p=0;p<count;p++)for(const buffer of buffers){
+      const node=ctx.createBufferSource();
+      node.buffer=buffer;node.connect(ctx.destination);node.start(time);
+      state.nodes.push(node);last=node;time+=buffer.duration;
+     }
+     return last;
     }
-    button._mergedBuffer=null;
+    function finishAfter(last){
+     if(!last)return;
+     last.onended=()=>{
+      if(activeSlokaMss!==state)return;
+      if(mode==='loop'){finishAfter(schedulePasses(1));}
+      else stopSlokaMss();
+     };
+    }
+    finishAfter(schedulePasses(passes));
+    if(status)status.textContent='';
+   }catch(err){
+    if(activeSlokaMss===state){stopSlokaMss();if(status)status.textContent=langText('MSS audio could not load.','MSS ಧ್ವನಿ ಲೋಡ್ ಆಗಲಿಲ್ಲ.');}
    }
-  });
-  const parent=button.closest(".sloka-mss-actions");
-  const repeat=parent?.querySelector(".sloka-mss-repeat");
-  repeat?.addEventListener("change",()=>{
-   if(activeSlokaMss?.button===button&&activeSlokaMss.source)
-    activeSlokaMss.source.loop=repeat.value==="loop";
   });
  });
 }
