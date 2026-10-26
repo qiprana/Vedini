@@ -994,7 +994,7 @@ function moreSection(info,isDhyana,number){
 function optionalVerseMeaning(meaning,isDhyana,number){
  if(!meaning)return "";
  const label=isDhyana?langText("Overall meaning","ಒಟ್ಟಾರೆ ಅರ್ಥ"):langText("Overall meaning","ಒಟ್ಟಾರೆ ಅರ್ಥ");
- return "<details class='verse-overall-meaning' data-detail-id='overall-"+(isDhyana?"d":"v")+number+"'><summary>"+esc(label)+"</summary><p>"+esc(meaning)+"</p></details>";
+ return "<details class='meaning-toggle verse-overall-meaning' data-detail-id='overall-"+(isDhyana?"d":"v")+number+"'><summary>"+esc(label)+"</summary><p>"+esc(meaning)+"</p></details>";
 }
 function dhyanaVerseMeaning(v){
  const info=dhyanaData[v.verse_number]||{};
