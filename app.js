@@ -34,7 +34,7 @@ function kannadaFromDevanagari(s){
  return c;
  }).join("");
 }
-async function fetchJSON(p){const r=await fetch("../data/"+p);if(!r.ok)throw new Error("Missing "+p);return r.json()}
+async function fetchJSON(p){const r=await fetch("../data/"+p,{cache:"no-store"});if(!r.ok)throw new Error("Missing "+p);return r.json()}
 function msg(id,en,kn){const e=$(id);if(e)e.textContent=langText(en,kn)}
 function anyMeaning(b,field){return b?.[field]?.[language]||""}
 function findComponents(v,n,info){
@@ -586,7 +586,7 @@ function nameSection(v){
   const original=nameWithOriginalVerseHyphens(v,n);
   const written=language==="kn"?kannadaFromDevanagari(original.dev):original.dev;
   const roman=original.roman;
-  const essential=anyMeaning(info,"essential_meaning")||(language==="kn"?(n.kannada||n.english):n.english)||langText("Meaning under review","ಅರ್ಥ ಪರಿಶೀಲನೆಯಲ್ಲಿದೆ");
+  const essential=language==="kn"?(n.kannada||anyMeaning(info,"essential_meaning")||n.english||""):(anyMeaning(info,"essential_meaning")||n.english||"");
   const sections=studySections(info,parts,number);
   // A shared phrase's assigned name has a button; names with no clip have none.
   const clips=nameAudioClips(number);
