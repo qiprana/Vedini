@@ -70,8 +70,17 @@ function wordsGrid(parts){
   return "<div class='word-row glossary-row' role='listitem'><div class='word-original'><strong class='word-dev'>"+esc(written)+"</strong><span class='word-iast'>"+esc(c.iast)+"</span></div><div class='word-translation'>"+esc(c[language]||"")+"</div></div>";
  }).join("")+"</div>";
 }
+let kannadaNameForms=[];
+function proseInKannadaScript(value){
+ let result=String(value??"");
+ if(language!=="kn")return result;
+ for(const entry of kannadaNameForms){
+  result=result.replace(entry.regex,(match,lead)=>lead+entry.kannada);
+ }
+ return result;
+}
 function richParagraphs(value){
- return String(value??"").split("\n\n").map(p=>p.trim()).filter(Boolean).map(p=>"<p>"+esc(p).replace(/\*([^*]+)\*/g,"<em>$1</em>").replace(/\n/g," ")+"</p>").join("");
+ return proseInKannadaScript(value).split("\n\n").map(p=>p.trim()).filter(Boolean).map(p=>"<p>"+esc(p).replace(/\*([^*]+)\*/g,"<em>$1</em>").replace(/\n/g," ")+"</p>").join("");
 }
 function studySections(info,parts,nameNumber){
  const deep=anyMeaning(info,"traditional_interpretation");
@@ -1527,6 +1536,14 @@ async function init(){
  newNames.forEach(x=>{nameData[x.number]={...(nameData[x.number]||{}),...x}});
  dhyanaData=Object.fromEntries([...files[4],...files[5]].map(x=>[x.verse_number,x]));
  verseData=Object.fromEntries(files[6].map(x=>[x.verse_number,x]));
+ // Convert divine-name IAST occurring in Kannada prose, but retain the IAST reading line.
+ kannadaNameForms=briefNames.filter(n=>n.iast&&n.sanskrit).flatMap(n=>{
+  const forms=[n.iast,n.iast.replace(/-/g,"")];
+  return [...new Set(forms)].map(form=>({form,kannada:kannadaFromDevanagari(n.sanskrit)}));
+ }).sort((a,b)=>b.form.length-a.form.length).map(item=>{
+  const quoted=item.form.replace(/[.*+?^${}()|[\]\\]/g,"\\verses=files.slice(7); const byVerse=new Map();");
+  return {regex:new RegExp("(^|[^\\p{L}\\p{M}])"+quoted+"(?=$|[^\\p{L}\\p{M}])","giu"),kannada:item.kannada};
+ });
  verses=files.slice(7); const byVerse=new Map(); briefNames.forEach(n=>{if(!byVerse.has(n.verse_number))byVerse.set(n.verse_number,[]);byVerse.get(n.verse_number).push(n);});verses.forEach(v=>{if(!(v.names||[]).length)v.names=(byVerse.get(v.verse_number)||[]).map(n=>({...n,display_devanagari:n.sanskrit,display_iast:n.iast}));});
  let index=0;
  verses.forEach(v=>{if(v.study?.traditional_interpretation)verseData[v.verse_number]=v.study;(v.names||[]).forEach(n=>{n.studyNumber=++index;if(n.essential_meaning&&n.traditional_interpretation)nameData[n.studyNumber]={...(nameData[n.studyNumber]||{}),...n};});});
