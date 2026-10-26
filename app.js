@@ -577,7 +577,7 @@ function nameSection(v){
   const original=nameWithOriginalVerseHyphens(v,n);
   const written=language==="kn"?kannadaFromDevanagari(original.dev):original.dev;
   const roman=original.roman;
-  const essential=anyMeaning(info,"essential_meaning")||(language==="kn"?n.kannada:n.english)||langText("Meaning under review","ಅರ್ಥ ಪರಿಶೀಲನೆಯಲ್ಲಿದೆ");
+  const essential=anyMeaning(info,"essential_meaning")||(language==="kn"?(n.kannada||n.english):n.english)||langText("Meaning under review","ಅರ್ಥ ಪರಿಶೀಲನೆಯಲ್ಲಿದೆ");
   const sections=studySections(info,parts,number);
   // A shared phrase's assigned name has a button; names with no clip have none.
   const clips=nameAudioClips(number);
