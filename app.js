@@ -1733,7 +1733,7 @@ async function practicePlayCurrent(token){
  try{
   const source=await practiceAudioPath(n);
   if(token!==practice.token||!practice.active)return;
-  audio.pause();audio.src=source;audio.playbackRate=Number($("#practice-speed").value);audio.load();
+  audio.pause();audio.src=source;audio.playbackRate=1;audio.load();
   const started=audio.play();
   if(started&&typeof started.catch==="function")started.catch(()=>{
    if(token!==practice.token||!practice.active||practice.paused)return;
@@ -1780,7 +1780,6 @@ function initPractice(){
   practiceSyncButtons();
  });
  $("#practice-stop").addEventListener("click",()=>practiceStop());
- $("#practice-speed").addEventListener("change",()=>audio.playbackRate=Number($("#practice-speed").value));
  audio.addEventListener("ended",()=>{if(practice.active&&!practice.paused){if(practice.played>=practice.reps){practice.current++;practice.played=0;if(practice.current>practice.end){practiceStop("Completed selected range");return;}}practicePlayCurrent(practice.token)}});
  audio.addEventListener("error",()=>{if(practice.active)practiceStop("Audio unavailable for śloka "+practice.current+".")});
  practiceSyncButtons();
