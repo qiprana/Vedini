@@ -97,9 +97,9 @@ function benefitToggle(number){
  const heading=(data.title?.[language]||benefit).replace(/[.!]+$/,"").trim();
  if(!benefit)return "";
  return "<details class='meaning-toggle name-spiritual-benefit' data-detail-id='name-benefit-"+number+"'>"
-  +"<summary>"+esc(langText("Wisdom Insights","ಜ್ಞಾನದ ಒಳನೋಟಗಳು"))+" · "+esc(heading)+"</summary>"
+  +"<summary>"+esc(langText("Spiritual Benefits & Significance","ಆಧ್ಯಾತ್ಮಿಕ ಪ್ರಯೋಜನಗಳು ಮತ್ತು ಮಹತ್ವ"))+"</summary>"
   +"<div class='deeper-reading benefit-content'>"
-  +"<p class='benefit-headline'>"+esc(benefit)+"</p>"
+  +(data.title?"<p class='benefit-headline'>"+esc(heading)+"</p>":"")
   +richParagraphs(explanation)
   +"</div></details>";
 }
@@ -858,7 +858,7 @@ function inlineWisdomInsight(number){
  const theme=data.title?.[language]||data.benefit?.[language]||"";
  const plain=language==="kn"?(name.kannada||""):(name.english||"");
  const meaningBased=plain.replace(/[.।]+$/,"").trim();
- const display=(data.title?.[language]||((data.kind==="meaning_based_editorial_draft"&&meaningBased)?meaningBased:theme)).trim();
+ const display=(data.title?.[language]||theme).trim();
  if(!display)return "";
  return "<span class='name-inline-wisdom' lang='"+(language==="kn"?"kn":"en")+"'><span class='name-inline-wisdom-theme'>"+esc(display)+"</span></span>";
 }
