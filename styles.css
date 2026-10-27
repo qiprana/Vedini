@@ -1342,3 +1342,89 @@ header p{color:#845c4b;font-size:18px}
 .reader-page.kannada-mode .name-section .name-mantra-inline{font-size:clamp(15px,1.25vw,18px);line-height:1.6}
 .reader-page .name-section .name-inline-wisdom{font-size:13px}
 .reader-page .name-section .name-insight-key{font-size:11px;color:#687d6d}
+
+
+/* Compact two-column divine-name rows: script/IAST | meaning, mantra, significance.
+   Applies only to Lalita's individual names; Dhyana word/phrase grids are preserved. */
+.reader-page .verse-names-panel .name-section{container-type:inline-size}
+.reader-page .name-section .name-audio-card{padding:3px 0 4px!important}
+.reader-page .name-section .name-audio-card>.compact-name-row>summary{
+  padding:5px 2px 5px 15px!important;
+}
+.reader-page .name-section .name-audio-card>.compact-name-row>summary::before{
+  left:1px!important;top:9px!important;font-size:12px!important
+}
+.reader-page .name-section .name-audio-card>.name-audio-button{
+  margin:5px 0 0!important;width:28px!important;height:28px!important;
+  min-width:28px!important;font-size:14px!important
+}
+.reader-page .name-section .name-summary-grid{
+  display:grid!important;
+  grid-template-columns:minmax(0,.96fr) minmax(0,1.16fr)!important;
+  grid-template-rows:auto auto auto!important;
+  column-gap:14px!important;row-gap:2px!important;align-items:start!important
+}
+.reader-page .name-section .name-identity-inline{
+  display:grid!important;grid-template-columns:auto minmax(0,1fr)!important;
+  grid-template-rows:auto auto!important;grid-column:1!important;
+  grid-row:1 / 4!important;column-gap:6px!important;row-gap:1px!important;
+  align-self:start!important;align-items:start!important;min-width:0
+}
+.reader-page .name-section .name-identity-inline .name-number{
+  grid-column:1!important;grid-row:1 / 3!important;
+  font-size:12px!important;padding-top:4px!important;margin:0!important;white-space:nowrap
+}
+.reader-page .name-section .name-identity-inline .name-written{
+  grid-column:2!important;grid-row:1!important;display:block!important;
+  margin:0!important;font-size:clamp(17px,1.5vw,21px)!important;
+  line-height:1.32!important;overflow-wrap:anywhere!important
+}
+.reader-page .name-section .name-identity-inline .name-roman{
+  grid-column:2!important;grid-row:2!important;display:block!important;
+  margin:0!important;font:400 13px/1.35 Georgia,serif!important;
+  color:#667d6b!important;overflow-wrap:anywhere!important
+}
+.reader-page .name-section .name-summary-grid>.name-essence{
+  grid-column:2!important;grid-row:1!important;align-self:start!important;
+  font-size:14px!important;line-height:1.36!important;min-width:0
+}
+.reader-page .name-section .name-summary-grid>.name-mantra-slot{
+  grid-column:2!important;grid-row:2!important;
+  margin:0!important;align-self:start!important;min-width:0
+}
+.reader-page .name-section .name-summary-grid>.name-mantra-slot .name-mantra-inline{
+  font-size:clamp(14px,1.2vw,16px)!important;line-height:1.33!important;
+  font-weight:550!important
+}
+.reader-page .name-section .name-summary-grid>.name-inline-wisdom-slot{
+  grid-column:2!important;grid-row:3!important;
+  margin:0!important;align-self:start!important;min-width:0
+}
+.reader-page .name-section .name-summary-grid .name-inline-wisdom{
+  font:500 12px/1.36 system-ui,sans-serif!important;color:#53735d!important
+}
+.reader-page.kannada-mode .name-section .name-summary-grid>.name-essence{
+  font-size:14px!important;line-height:1.45!important
+}
+.reader-page.kannada-mode .name-section .name-summary-grid .name-inline-wisdom{
+  font-size:13px!important;line-height:1.45!important
+}
+.reader-page.kannada-mode .name-section .name-summary-grid .name-mantra-inline{
+  font-size:15px!important;line-height:1.48!important
+}
+/* If the inner name panel itself is narrow, prioritize readable scripts over
+   squeezing two columns into an unreadable width. */
+@container (max-width:445px){
+  .reader-page .name-section .name-summary-grid{
+    grid-template-columns:minmax(0,1fr)!important;grid-template-rows:auto!important;
+    row-gap:2px!important
+  }
+  .reader-page .name-section .name-identity-inline{
+    grid-column:1!important;grid-row:auto!important
+  }
+  .reader-page .name-section .name-summary-grid>.name-essence,
+  .reader-page .name-section .name-summary-grid>.name-mantra-slot,
+  .reader-page .name-section .name-summary-grid>.name-inline-wisdom-slot{
+    grid-column:1!important;grid-row:auto!important;margin-left:19px!important
+  }
+}

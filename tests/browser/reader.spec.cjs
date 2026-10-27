@@ -76,3 +76,36 @@ test('individual name audio remains separate from Nāmāvalī toggle',async({pag
  await expect(page.locator('#verse-1 .name-audio-button').first()).toHaveAttribute('data-name-clips',/\d+/);
  await expect(page.locator('#verse-1 .name-mantra-toggle').first()).not.toContainText('▶ Play');
 });
+
+test('divine names use compact side-by-side reading and meaning on desktop',async({page})=>{
+ await page.setViewportSize({width:1440,height:900});
+ await page.goto('/lalita/?sloka=36');
+ const card=page.locator('#verse-36 .name-audio-card').first();
+ await expect(card).toBeVisible({timeout:20000});
+ const row=card.locator('.name-summary-grid');
+ const identity=row.locator('.name-identity-inline');
+ const meaning=row.locator('.name-essence');
+ const mantra=row.locator('.name-mantra-slot');
+ const insight=row.locator('.name-inline-wisdom-slot');
+ const ir=await identity.boundingBox(),mr=await meaning.boundingBox(),nr=await mantra.boundingBox(),sr=await insight.boundingBox();
+ expect(ir&&mr&&nr&&sr).toBeTruthy();
+ expect(mr.x).toBeGreaterThan(ir.x+ir.width-2);
+ expect(Math.abs(nr.x-mr.x)).toBeLessThan(4);
+ expect(Math.abs(sr.x-mr.x)).toBeLessThan(4);
+ expect(await card.locator('.name-mantra-inline').isVisible()).toBeTruthy();
+ await expect(card.locator('.name-details')).not.toHaveAttribute('open','');
+ await card.locator('.name-details>summary').click();
+ await expect(card.locator('.name-mantra-toggle')).toBeVisible();
+ await expect(card.locator('.name-spiritual-benefit')).toBeVisible();
+});
+test('compact divine-name columns preserve Kannada and mobile legibility',async({page})=>{
+ await page.setViewportSize({width:390,height:844});
+ await page.goto('/lalita/?sloka=36');
+ await expect(page.locator('#verse-36 .name-audio-card').first()).toBeVisible({timeout:20000});
+ await page.locator('#kn').click();
+ const card=page.locator('#verse-36 .name-audio-card').first();
+ await expect(card.locator('.name-mantra-inline')).toContainText('ಓಂ');
+ const width=await card.evaluate(el=>el.getBoundingClientRect().width);
+ expect(width).toBeGreaterThan(220);
+ expect(await card.locator('.name-summary-grid').evaluate(el=>el.scrollWidth<=el.clientWidth+3)).toBeTruthy();
+});
