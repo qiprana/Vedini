@@ -51,6 +51,28 @@
  <div class="practice-actions"><button id="practice-play" type="button">▶ Play range</button><button id="practice-pause" type="button" disabled>Pause</button><button id="practice-stop" type="button" disabled>Stop</button><span id="practice-status" role="status" aria-live="polite">Ready to practice</span></div>
  <audio id="practice-audio" preload="none"></audio>
  </section>
+    <details id="guided-panel" class="guided-panel">
+      <summary>🎧 Guided Chanting <span class="guided-subtitle">Learn one divine name at a time</span></summary>
+      <div class="guided-body">
+        <p class="guided-description">Hear the original MSS recording, repeat each name, then continue to the next. Shared recordings remain together as a phrase.</p>
+        <div class="guided-fields">
+          <label>From śloka<select id="guided-from"></select></label>
+          <label>To śloka<select id="guided-to"></select></label>
+          <label>Learning mode<select id="guided-mode"><option value="names">Names, one by one</option><option value="both" selected>Names, then complete śloka</option><option value="verse">Complete śloka only</option></select></label>
+          <label>Repeat each name<select id="guided-name-repeat"><option value="1">1×</option><option value="2" selected>2×</option><option value="3">3×</option><option value="5">5×</option></select></label>
+          <label>Repeat whole śloka<select id="guided-verse-repeat"><option value="1" selected>1×</option><option value="2">2×</option><option value="3">3×</option></select></label>
+          <label>Practice pause<select id="guided-gap"><option value="0">No pause</option><option value="500" selected>0.5 seconds</option><option value="1500">1.5 seconds</option><option value="3000">3 seconds</option></select></label>
+        </div>
+        <div class="guided-actions">
+          <button type="button" id="guided-play">▶ Begin learning</button>
+          <button type="button" id="guided-pause" disabled>Pause</button>
+          <button type="button" id="guided-next" disabled>Next name</button>
+          <button type="button" id="guided-stop" disabled>Stop</button>
+        </div>
+        <p id="guided-status" class="guided-status" role="status" aria-live="polite">Choose a śloka range to begin.</p>
+        <audio id="guided-audio" preload="none"></audio>
+      </div>
+    </details>
     <nav class="reader-nav reader-mode-nav" aria-label="Reader sections and direct navigation">
       <div class="reader-tabs" role="tablist" aria-label="Sections">
         <button type="button" id="tab-dhyana" role="tab" aria-selected="false">Dhyāna (4)</button>
