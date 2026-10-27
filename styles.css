@@ -1334,3 +1334,11 @@ header p{color:#845c4b;font-size:18px}
 .reader-page .name-section .name-audio-card>.compact-name-row>summary::before{left:3px!important;right:auto!important;top:12px!important}
 .reader-page .name-section .name-insight-key{font-size:12px}
 .reader-page .name-section .name-inline-wisdom::before{content:"✦ ";color:#819a81}
+
+
+/* Nāmāvalī is a required visible line; never hide it during layout cleanup. */
+.reader-page .name-section .name-mantra-slot{display:block;margin:3px 0 1px;min-width:0}
+.reader-page .name-section .name-mantra-inline{display:block;color:#385e48;font-size:clamp(14px,1.14vw,17px);line-height:1.5;font-weight:550;overflow-wrap:anywhere}
+.reader-page.kannada-mode .name-section .name-mantra-inline{font-size:clamp(15px,1.25vw,18px);line-height:1.6}
+.reader-page .name-section .name-inline-wisdom{font-size:13px}
+.reader-page .name-section .name-insight-key{font-size:11px;color:#687d6d}
