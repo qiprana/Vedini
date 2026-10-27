@@ -1539,6 +1539,110 @@ function initPractice(){
  audio.addEventListener("error",()=>{if(practice.active)practiceStop("Audio unavailable for śloka "+practice.current+".")});
  practiceSyncButtons();
 }
+
+const guided={active:false,paused:false,units:[],index:0,repeatDone:0,clipIndex:0,timeout:null,token:0,insideGap:false};
+function guidedStatus(t){const e=$("#guided-status");if(e)e.textContent=t;}
+function guidedHighlight(number){
+ document.querySelectorAll(".name-audio-card").forEach(el=>el.classList.remove("guided-current"));
+ if(number==null)return;
+ const d=document.querySelector('[data-detail-id="name-'+number+'"]');
+ if(d){const row=d.closest(".name-audio-card");if(row){row.classList.add("guided-current");row.scrollIntoView({block:"nearest",behavior:"smooth"});}}
+}
+function guidedControls(){
+ $("#guided-play").disabled=guided.active;
+ $("#guided-pause").disabled=!guided.active;
+ $("#guided-pause").textContent=guided.paused?"Resume":"Pause";
+ $("#guided-next").disabled=!guided.active;
+ $("#guided-stop").disabled=!guided.active;
+}
+function guidedStop(message="Stopped"){
+ guided.token++;guided.active=false;guided.paused=false;
+ if(guided.timeout!==null){clearTimeout(guided.timeout);guided.timeout=null;}
+ const a=$("#guided-audio");a.pause();a.removeAttribute("src");a.load();
+ guidedHighlight(null);guidedControls();guidedStatus(message);
+}
+function guidedBuildUnits(from,to,mode,nameRepeat,verseRepeat){
+ const units=[];
+ for(let i=from;i<=to;i++){
+  const verse=verses.find(v=>v.verse_number===i);if(!verse)continue;
+  if(mode!=="verse"){
+   // A shared MSS clip is one indivisible teaching phrase; never replay it as separate names.
+   const seen=new Set();
+   for(const n of verse.names||[]){
+    const clips=nameAudioClips(n.studyNumber).filter(c=>!seen.has(c));
+    clips.forEach(c=>seen.add(c));
+    if(clips.length)units.push({verse:i,name:n.studyNumber,text:n.iast||n.sanskrit||"",clips:clips.map(mssClipPath),repeats:nameRepeat});
+   }
+  }
+  if(mode!=="names"){
+   const paths=verseMssAudioPaths(verse);
+   if(paths.length)units.push({verse:i,name:null,text:"Complete śloka",clips:paths,repeats:verseRepeat});
+  }
+ }
+ return units;
+}
+function guidedPlayClip(){
+ if(!guided.active||guided.paused)return;
+ if(guided.index>=guided.units.length){guidedStop("Guided chanting complete");return;}
+ const unit=guided.units[guided.index],a=$("#guided-audio");
+ if(guided.clipIndex===0){
+  guidedStatus("Śloka "+unit.verse+" · "+(unit.name?"Name "+unit.name+" ("+unit.text+")":"Complete śloka")+" · "+(guided.repeatDone+1)+"/"+unit.repeats);
+  guidedHighlight(unit.name);
+ }
+ a.src=unit.clips[guided.clipIndex];a.load();a.playbackRate=1;
+ const started=a.play();
+ if(started&&started.catch)started.catch(()=>{if(guided.active)guidedStop("MSS audio unavailable for śloka "+unit.verse);});
+}
+function guidedAdvance(){
+ if(!guided.active||guided.paused)return;
+ const unit=guided.units[guided.index];
+ if(guided.clipIndex+1<unit.clips.length){guided.clipIndex++;guidedPlayClip();return;}
+ guided.clipIndex=0;guided.repeatDone++;
+ if(guided.repeatDone>=unit.repeats){guided.repeatDone=0;guided.index++;}
+ if(guided.index>=guided.units.length){guidedStop("Guided chanting complete");return;}
+ const delay=Number($("#guided-gap").value)||0;
+ if(delay){
+  guided.insideGap=true;
+  guided.timeout=setTimeout(()=>{guided.timeout=null;guided.insideGap=false;guidedPlayClip();},delay);
+ }else guidedPlayClip();
+}
+function guidedInit(){
+ const from=$("#guided-from"),to=$("#guided-to"),audio=$("#guided-audio");
+ const options=verses.map(v=>"<option value='"+v.verse_number+"'>"+v.verse_number+"</option>").join("");
+ from.innerHTML=options;to.innerHTML=options;from.value="1";to.value=String(Math.min(10,verses.length));
+ from.addEventListener("change",()=>{if(+from.value>+to.value)to.value=from.value;});
+ to.addEventListener("change",()=>{if(+to.value<+from.value)from.value=to.value;});
+ installAudioFocus(audio);
+ audio.addEventListener("ended",guidedAdvance);
+ audio.addEventListener("error",()=>{if(guided.active)guidedStop("Original MSS clip could not be loaded");});
+ $("#guided-play").addEventListener("click",()=>{
+  const f=+from.value,t=+to.value;
+  if(f<1||t>verses.length||f>t){guidedStatus("Select a valid range");return;}
+  guidedStop("");
+  const mode=$("#guided-mode").value;
+  guided.units=guidedBuildUnits(f,t,mode,+$("#guided-name-repeat").value,+$("#guided-verse-repeat").value);
+  if(!guided.units.length){guidedStatus("No individually mapped MSS recordings in this range");return;}
+  // Existing practice and individual players stop when the guided audio takes focus.
+  practiceStop("Stopped for guided chanting");stopNameAudio();stopSlokaMss();
+  guided.active=true;guided.paused=false;guided.index=0;guided.clipIndex=0;guided.repeatDone=0;
+  guidedControls();guidedPlayClip();
+ });
+ $("#guided-pause").addEventListener("click",()=>{
+  if(!guided.active)return;
+  if(guided.paused){guided.paused=false;if(guided.insideGap){if(guided.timeout!==null)clearTimeout(guided.timeout);guided.timeout=null;guided.insideGap=false;guidedPlayClip();}else{const p=audio.play();if(p&&p.catch)p.catch(()=>guidedStop("Could not resume"));}}
+  else{guided.paused=true;audio.pause();if(guided.timeout!==null){clearTimeout(guided.timeout);guided.timeout=null;guided.insideGap=true;}}
+  guidedControls();
+ });
+ $("#guided-next").addEventListener("click",()=>{
+  if(!guided.active)return;
+  audio.pause();if(guided.timeout!==null)clearTimeout(guided.timeout);
+  guided.timeout=null;guided.insideGap=false;guided.paused=false;guided.index++;guided.clipIndex=0;guided.repeatDone=0;
+  guidedControls();guidedPlayClip();
+ });
+ $("#guided-stop").addEventListener("click",()=>guidedStop());
+ guidedControls();
+}
+
 function switchLanguage(kn){
  language=kn?"kn":"en";
  const reader=$(".reader-page");
@@ -1589,7 +1693,7 @@ async function init(){
  const finalOverall=await fetchJSON("lalita/deeper-overall-104-183.json");
  finalOverall.verses.forEach(e=>{verseData[e.verse_number]={...(verseData[e.verse_number]||{}),traditional_interpretation:{en:e.en,kn:e.kn}};});
  if(index<111)throw new Error("At least the first 111 names are expected; found "+index);
- initPractice();const initial=loadInitialLocation();render();if(initial)scrollToElement(initial);
+ initPractice();guidedInit();const initial=loadInitialLocation();render();if(initial)scrollToElement(initial);
  }catch(err){
  const n=$("#result-note");if(n)n.textContent="Unable to load study content: "+err.message;
  }
