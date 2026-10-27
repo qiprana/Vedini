@@ -35,3 +35,23 @@ test('practice dock appears before language choices',async({page})=>{
  const before=await page.evaluate(()=>!!(document.querySelector('.practice-dock').compareDocumentPosition(document.querySelector('.reader-top-tools')) & Node.DOCUMENT_POSITION_FOLLOWING));
  expect(before).toBe(true);
 });
+
+
+test('Nāmāvalī stays visible and correct in both scripts',async({page})=>{
+ await page.goto('/lalita/?sloka=1');
+ await expect(page.locator('.name-audio-card').first()).toBeVisible({timeout:20000});
+ await expect(page.locator('.name-mantra-inline').first()).toContainText('ॐ श्रीमात्रे नमः');
+ await expect(page.locator('.name-mantra-inline').first()).toBeVisible();
+ await page.locator('#kn').click();
+ await expect(page.locator('.name-mantra-inline').first()).toContainText('ಓಂ');
+ await expect(page.locator('.name-mantra-inline').first()).toContainText('ನಮಃ');
+ await page.locator('#dev').click();
+ await expect(page.locator('.name-mantra-inline').first()).toContainText('ॐ');
+});
+test('all names keep individual mantra and benefit sections',async({page})=>{
+ await page.goto('/lalita/?sloka=91');
+ await expect(page.locator('#verse-91 .name-mantra-inline').first()).toBeVisible({timeout:20000});
+ await page.locator('#verse-91 .name-details').first().locator('summary').first().click();
+ await expect(page.locator('#verse-91 .name-mantra-toggle').first()).toBeVisible();
+ await expect(page.locator('#verse-91 .name-spiritual-benefit').first()).toBeVisible();
+});
