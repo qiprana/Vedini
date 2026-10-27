@@ -860,11 +860,11 @@ function inlineWisdomInsight(number){
  const meaningBased=plain.replace(/[.।]+$/,"").trim();
  const display=(data.title?.[language]||((data.kind==="meaning_based_editorial_draft"&&meaningBased)?meaningBased:theme)).trim();
  if(!display)return "";
- return "<span class='name-inline-wisdom' lang='"+(language==="kn"?"kn":"en")+"'><span class='name-inline-wisdom-label'>"+esc(langText("Wisdom Insights","ಜ್ಞಾನದ ಒಳನೋಟಗಳು"))+"</span><span class='name-inline-wisdom-theme'>"+esc(display)+"</span></span>";
+ return "<span class='name-inline-wisdom' lang='"+(language==="kn"?"kn":"en")+"'><span class='name-inline-wisdom-theme'>"+esc(display)+"</span></span>";
 }
 function nameSection(v){
  const names=v.names||[];
- let html="<section class='name-section' aria-label='"+esc(langText("Divine names","ದೇವಿಯ ನಾಮಗಳು"))+"'><div class='section-title'><h3>"+esc(langText("Divine names","ದೇವಿಯ ನಾಮಗಳು"))+"</h3><span>"+names.length+" "+esc(langText("names","ನಾಮಗಳು"))+"</span></div><div class='name-study-list'>";
+ let html="<section class='name-section' aria-label='"+esc(langText("Divine names","ದೇವಿಯ ನಾಮಗಳು"))+"'><div class='section-title'><h3>"+esc(langText("Divine names","ದೇವಿಯ ನಾಮಗಳು"))+"</h3><span>"+names.length+" "+esc(langText("names","ನಾಮಗಳು"))+"</span><small class='name-insight-key'>✧ "+esc(langText("Third line: Wisdom Insight","ಮೂರನೆಯ ಸಾಲು: ಜ್ಞಾನದ ಒಳನೋಟ"))+"</small></div><div class='name-study-list'>";
  for(const n of names){
   // Always show every divine name in its own row, even if the MSS recording spans more than one name.
   const number=n.studyNumber;
