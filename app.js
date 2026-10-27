@@ -1796,7 +1796,7 @@ function initPractice(){
  practiceSyncButtons();
 }
 
-const guided={active:false,paused:false,units:[],index:0,repeatDone:0,clipIndex:0,timeout:null,token:0,insideGap:false};
+const guided={active:false,paused:false,units:[],index:0,repeatDone:0,clipIndex:0,timeout:null,token:0,insideGap:false,nodes:[],ctx:null,startedAt:0};
 function guidedStatus(t){const e=$("#guided-status");if(e)e.textContent=t;}
 function guidedHighlight(number){
  document.querySelectorAll(".name-audio-card").forEach(el=>el.classList.remove("guided-current"));
@@ -1814,6 +1814,8 @@ function guidedControls(){
 function guidedStop(message="Stopped"){
  guided.token++;guided.active=false;guided.paused=false;
  if(guided.timeout!==null){clearTimeout(guided.timeout);guided.timeout=null;}
+ for(const node of guided.nodes){node.onended=null;try{node.stop();}catch(_){}try{node.disconnect();}catch(_){}} guided.nodes=[];
+ if(guided.ctx?.state==="suspended")guided.ctx.resume().catch(()=>{});
  const a=$("#guided-audio");a.pause();a.removeAttribute("src");a.load();
  guidedHighlight(null);guidedControls();guidedStatus(message);
 }
@@ -1837,33 +1839,55 @@ function guidedBuildUnits(from,to,mode,nameRepeat,verseRepeat){
  }
  return units;
 }
-function guidedPlayClip(){
+// Predecode and schedule original MSS clips on the audio clock; no MP3 reload between repeats.
+async function guidedPlayClip(){
  if(!guided.active||guided.paused)return;
  if(guided.index>=guided.units.length){guidedStop("Guided chanting complete");return;}
- const unit=guided.units[guided.index],a=$("#guided-audio");
- if(guided.clipIndex===0){
-  guidedStatus("Śloka "+unit.verse+" · "+(unit.name?"Name "+unit.name+" ("+unit.text+")":"Complete śloka")+" · "+(guided.repeatDone+1)+"/"+unit.repeats);
-  if(view!=="verses"||pageIndex!==Math.floor((unit.verse-1)/pageSize)){
-   view="verses";pageIndex=Math.floor((unit.verse-1)/pageSize);selectedVerse=unit.verse;render();
-  }
-  guidedHighlight(unit.name);
+ const unit=guided.units[guided.index],token=guided.token;
+ guidedStatus("Śloka "+unit.verse+" · "+(unit.name?"Name "+unit.name+" ("+unit.text+")":"Complete śloka")+" · "+unit.repeats+"×");
+ if(view!=="verses"||pageIndex!==Math.floor((unit.verse-1)/pageSize)){
+  view="verses";pageIndex=Math.floor((unit.verse-1)/pageSize);selectedVerse=unit.verse;render();
  }
- a.src=unit.clips[guided.clipIndex];a.load();a.playbackRate=1;
- const started=a.play();
- if(started&&started.catch)started.catch(()=>{if(guided.active)guidedStop("MSS audio unavailable for śloka "+unit.verse);});
-}
-function guidedAdvance(){
- if(!guided.active||guided.paused)return;
- const unit=guided.units[guided.index];
- if(guided.clipIndex+1<unit.clips.length){guided.clipIndex++;guidedPlayClip();return;}
- guided.clipIndex=0;guided.repeatDone++;
- if(guided.repeatDone>=unit.repeats){guided.repeatDone=0;guided.index++;}
- if(guided.index>=guided.units.length){guidedStop("Guided chanting complete");return;}
- const delay=Number($("#guided-gap").value)||0;
- if(delay){
-  guided.insideGap=true;
-  guided.timeout=setTimeout(()=>{guided.timeout=null;guided.insideGap=false;guidedPlayClip();},delay);
- }else guidedPlayClip();
+ guidedHighlight(unit.name);
+ try{
+  if(!vediniAudioContext)vediniAudioContext=new (window.AudioContext||window.webkitAudioContext)();
+  const ctx=vediniAudioContext;guided.ctx=ctx;
+  if(ctx.state==="suspended")await ctx.resume();
+  const buffers=await loadOriginalMss(unit.clips,ctx);
+  if(!guided.active||guided.token!==token||guided.paused)return;
+  // Each clip retains its original duration and pitch. A short equal-power
+  // overlap smooths discontinuities in the shruti at a recording boundary.
+  const fade=.055;
+  let time=ctx.currentTime+.06,last=null;
+  for(let pass=0;pass<unit.repeats;pass++){
+   for(let j=0;j<buffers.length;j++){
+    const buffer=buffers[j],duration=buffer.duration;
+    const isFirst=pass===0&&j===0;
+    const isLast=pass===unit.repeats-1&&j===buffers.length-1;
+    const overlap=isFirst?0:Math.min(fade,duration/4);
+    time-=overlap;
+    const node=ctx.createBufferSource(),gain=ctx.createGain();
+    node.buffer=buffer;node.connect(gain);gain.connect(ctx.destination);
+    gain.gain.setValueAtTime(overlap?0:1,time);
+    if(overlap)gain.gain.linearRampToValueAtTime(1,time+overlap);
+    if(!isLast)gain.gain.setValueAtTime(1,Math.max(time+overlap,time+duration-fade));
+    if(!isLast)gain.gain.linearRampToValueAtTime(0,time+duration);
+    node.start(time);guided.nodes.push(node);last=node;
+    time+=duration;
+   }
+  }
+  if(last)last.onended=()=>{
+   if(!guided.active||guided.token!==token)return;
+   guided.nodes.forEach(n=>{try{n.disconnect();}catch(_){}});
+   guided.nodes=[];guided.index++;
+   if(guided.index>=guided.units.length){guidedStop("Guided chanting complete");return;}
+   const gap=Number($("#guided-gap").value)||0;
+   if(gap){
+    guided.insideGap=true;
+    guided.timeout=setTimeout(()=>{guided.timeout=null;guided.insideGap=false;guidedPlayClip();},gap);
+   }else guidedPlayClip();
+  };
+ }catch(_){if(guided.active&&guided.token===token)guidedStop("MSS audio unavailable for śloka "+unit.verse);}
 }
 function guidedInit(){
  const from=$("#guided-from"),to=$("#guided-to"),audio=$("#guided-audio");
@@ -1883,19 +1907,30 @@ function guidedInit(){
   if(!guided.units.length){guidedStatus("No individually mapped MSS recordings in this range");return;}
   // Existing practice and individual players stop when the guided audio takes focus.
   practiceStop("Stopped for guided chanting");stopNameAudio();stopSlokaMss();
-  guided.active=true;guided.paused=false;guided.index=0;guided.clipIndex=0;guided.repeatDone=0;
+  guided.active=true;guided.paused=false;guided.index=0;guided.clipIndex=0;guided.repeatDone=0;guided.token++;
   guidedControls();guidedPlayClip();
  });
- $("#guided-pause").addEventListener("click",()=>{
+ $("#guided-pause").addEventListener("click",async()=>{
   if(!guided.active)return;
-  if(guided.paused){guided.paused=false;if(guided.insideGap){if(guided.timeout!==null)clearTimeout(guided.timeout);guided.timeout=null;guided.insideGap=false;guidedPlayClip();}else{const p=audio.play();if(p&&p.catch)p.catch(()=>guidedStop("Could not resume"));}}
-  else{guided.paused=true;audio.pause();if(guided.timeout!==null){clearTimeout(guided.timeout);guided.timeout=null;guided.insideGap=true;}}
+  if(guided.paused){
+   guided.paused=false;
+   if(guided.insideGap){guided.insideGap=false;guidedPlayClip();}
+   else if(guided.ctx?.state==="suspended")await guided.ctx.resume();
+  }else{
+   guided.paused=true;
+   if(guided.timeout!==null){clearTimeout(guided.timeout);guided.timeout=null;guided.insideGap=true;}
+   else if(guided.ctx?.state==="running")await guided.ctx.suspend();
+  }
   guidedControls();
  });
- $("#guided-next").addEventListener("click",()=>{
+ $("#guided-next").addEventListener("click",async()=>{
   if(!guided.active)return;
-  audio.pause();if(guided.timeout!==null)clearTimeout(guided.timeout);
-  guided.timeout=null;guided.insideGap=false;guided.paused=false;guided.index++;guided.clipIndex=0;guided.repeatDone=0;
+  guided.token++;
+  for(const node of guided.nodes){node.onended=null;try{node.stop();}catch(_){}try{node.disconnect();}catch(_){}}
+  guided.nodes=[];
+  if(guided.timeout!==null)clearTimeout(guided.timeout);
+  guided.timeout=null;guided.insideGap=false;guided.paused=false;guided.index++;
+  if(guided.ctx?.state==="suspended")await guided.ctx.resume();
   guidedControls();guidedPlayClip();
  });
  $("#guided-stop").addEventListener("click",()=>guidedStop());
