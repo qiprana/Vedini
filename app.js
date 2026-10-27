@@ -1896,8 +1896,8 @@ function guidedInit(){
  from.addEventListener("change",()=>{if(+from.value>+to.value)to.value=from.value;});
  to.addEventListener("change",()=>{if(+to.value<+from.value)from.value=to.value;});
  installAudioFocus(audio);
- audio.addEventListener("ended",guidedAdvance);
- audio.addEventListener("error",()=>{if(guided.active)guidedStop("Original MSS clip could not be loaded");});
+ // Guided playback is now scheduled via Web Audio, not the HTML audio ended event.
+
  $("#guided-play").addEventListener("click",()=>{
   const f=+from.value,t=+to.value;
   if(f<1||t>verses.length||f>t){guidedStatus("Select a valid range");return;}
