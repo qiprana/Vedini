@@ -39,13 +39,12 @@
       </div>
       <input id="search" type="search" placeholder="Search ślokas and names…" aria-label="Search ślokas and names">
     </div>
-    <section id="practice-player" class="practice-player" aria-label="Chant practice player">
+    <div class="chanting-panels"><section id="practice-player" class="practice-player" aria-label="Chant practice player">
  <div class="practice-intro"><strong>Chant practice</strong><span>Play a range, repeating each śloka before moving to the next.</span></div>
  <div class="practice-fields">
  <label>From <select id="practice-from" aria-label="Start śloka"></select></label>
  <label>To <select id="practice-to" aria-label="End śloka"></select></label>
- <label>Repeat each <select id="practice-repeat" aria-label="Repetitions for each śloka"><option value="1">1×</option><option value="2">2×</option><option value="3" selected>3×</option><option value="5">5×</option><option value="10">10×</option></select></label>
- <label>Speed <select id="practice-speed" aria-label="Practice speed"><option value="0.75">0.75×</option><option value="0.9" selected>0.9×</option><option value="1">1×</option><option value="1.1">1.1×</option><option value="1.25">1.25×</option></select></label>
+ <label>Repeat each <select id="practice-repeat" aria-label="Repetitions for each śloka"><option value="1">1×</option><option value="2" selected>2×</option><option value="3">3×</option><option value="5">5×</option><option value="10">10×</option></select></label>
  <label>Singer <select id="practice-voice" aria-label="Practice singer"><option value="VD" selected>VD</option><option value="MSS">MSS</option><option value="KMP">KMP</option></select></label>
  </div>
  <div class="practice-actions"><button id="practice-play" type="button">▶ Play range</button><button id="practice-pause" type="button" disabled>Pause</button><button id="practice-stop" type="button" disabled>Stop</button><span id="practice-status" role="status" aria-live="polite">Ready to practice</span></div>
@@ -73,6 +72,7 @@
         <audio id="guided-audio" preload="none"></audio>
       </div>
     </details>
+    </div>
     <nav class="reader-nav reader-mode-nav" aria-label="Reader sections and direct navigation">
       <div class="reader-tabs" role="tablist" aria-label="Sections">
         <button type="button" id="tab-dhyana" role="tab" aria-selected="false">Dhyāna (4)</button>
