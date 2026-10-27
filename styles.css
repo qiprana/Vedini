@@ -1207,76 +1207,32 @@ header p{color:#845c4b;font-size:18px}
 .reader-page .name-mantra-toggle .mantra-note{font:13px/1.6 system-ui,sans-serif;color:#6d685e;margin-top:4px}
 
 
-/* Guided chanting is an optional, separate learning experience. */
-.reader-page .guided-panel{margin:16px 0;border:1px solid #d2decf;border-radius:13px;background:#fbfdf9;overflow:hidden}
-.reader-page .guided-panel>summary{cursor:pointer;list-style:none;padding:15px 18px;font:650 17px/1.5 system-ui,sans-serif;color:#2c533c;background:#edf4eb}
-.reader-page .guided-panel>summary::-webkit-details-marker{display:none}
-.reader-page .guided-subtitle{font:400 13px/1.5 system-ui,sans-serif;color:#64746a;margin-left:14px}
-.reader-page .guided-body{padding:16px 18px}
-.reader-page .guided-description{font-size:14px;line-height:1.6;margin:0 0 14px}
-.reader-page .guided-fields{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
-.reader-page .guided-fields label{display:flex;flex-direction:column;gap:5px;font:600 13px/1.4 system-ui,sans-serif;color:#345443}
-.reader-page .guided-fields select{max-width:100%;min-height:37px;padding:6px 8px;border:1px solid #b9cdbb;border-radius:7px;background:white;color:#273b2d}
-.reader-page .guided-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
-.reader-page .guided-actions button{padding:9px 13px;min-height:38px;border:1px solid #b3c9b7;border-radius:8px}
-.reader-page .guided-status{margin:12px 0 0;font:500 13px/1.5 system-ui,sans-serif;color:#345443}
+/* One compact layout for both chanting cards. Older conflicting guided rules removed. */
+.reader-page .chanting-panels{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;align-items:stretch;margin:12px 0}
+.reader-page .chanting-panels > #practice-player,.reader-page .chanting-panels > #guided-panel{box-sizing:border-box;width:100%;max-width:none;min-width:0;height:100%;margin:0;border:1px solid #b9cfbc;border-radius:12px;background:#fbfcf8;overflow:hidden}
+.reader-page .chanting-panels #practice-player{padding:0 12px 12px}
+.reader-page .chanting-panels .practice-intro{margin:0 -12px 10px;padding:10px 12px;background:#eaf2e9}
+.reader-page .chanting-panels .practice-intro strong{display:block;font:700 18px/1.3 Georgia,serif;color:#2b523e}
+.reader-page .chanting-panels .practice-intro span{display:block;font:12px/1.4 system-ui,sans-serif;color:#566c5b;margin-top:3px}
+.reader-page .chanting-panels #guided-panel>summary{cursor:pointer;list-style:none;background:#eaf2e9;color:#2b523e;padding:10px 12px;font:700 18px/1.3 Georgia,serif}
+.reader-page .chanting-panels #guided-panel>summary::-webkit-details-marker{display:none}
+.reader-page .chanting-panels #guided-panel .guided-subtitle{font:12px/1.4 system-ui,sans-serif;color:#566c5b;margin-left:8px}
+.reader-page .chanting-panels #guided-panel .guided-body{padding:10px 12px 12px}
+.reader-page .chanting-panels .guided-description{font:12px/1.45 system-ui,sans-serif;color:#526659;margin:0 0 10px}
+.reader-page .chanting-panels .practice-fields,.reader-page .chanting-panels #guided-panel .guided-fields{display:flex;flex-wrap:wrap;align-items:flex-end;gap:9px 12px}
+.reader-page .chanting-panels .practice-fields label,.reader-page .chanting-panels #guided-panel .guided-fields label:nth-child(n){display:flex;flex:0 0 auto;flex-direction:column;align-items:stretch;min-width:0;max-width:none;width:auto;margin:0;gap:3px;color:#345443;font:600 12px/1.35 system-ui,sans-serif}
+.reader-page .chanting-panels .practice-fields select,.reader-page .chanting-panels #guided-panel .guided-fields select{box-sizing:border-box;display:block;max-width:none;min-width:0;width:86px;height:30px;min-height:30px;margin:0;padding:3px 23px 3px 7px;border:1px solid #aabdad;border-radius:7px;background:#fff;color:#263e30;font:500 13px/1.2 system-ui,sans-serif}
+.reader-page .chanting-panels #practice-voice{width:94px}
+.reader-page .chanting-panels #guided-mode{width:205px}
+.reader-page .chanting-panels #guided-gap{width:125px}
+.reader-page .chanting-panels .practice-actions,.reader-page .chanting-panels #guided-panel .guided-actions{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:12px}
+.reader-page .chanting-panels .practice-actions button,.reader-page .chanting-panels #guided-panel .guided-actions button{min-height:32px;padding:6px 10px;font:600 12px/1.3 system-ui,sans-serif}
+.reader-page .chanting-panels #guided-play{background:#315b44;color:#fff}
+.reader-page .chanting-panels #guided-panel .guided-status,.reader-page .chanting-panels #practice-status{font:12px/1.4 system-ui,sans-serif;color:#345443}
+.reader-page .chanting-panels #guided-panel .guided-status{margin:8px 0 0}
 .reader-page .name-audio-card.guided-current{outline:2px solid #638b70;outline-offset:2px;background:#eef7ed;border-radius:7px}
-@media(max-width:720px){.reader-page .guided-fields{grid-template-columns:repeat(2,minmax(0,1fr))}.reader-page .guided-subtitle{display:block;margin-left:0}}
-@media(max-width:410px){.reader-page .guided-fields{grid-template-columns:1fr}}
-
-
-/* Compact guided chanting controls, intentionally overriding the generic form grid. */
-.reader-page .guided-panel{max-width:900px;margin:18px auto;background:#fdfdf9}
-.reader-page .guided-panel>summary{padding:12px 16px;font-size:17px}
-.reader-page .guided-body{padding:15px 18px 17px}
-.reader-page .guided-description{font:400 14px/1.5 system-ui,sans-serif;max-width:660px;color:#526659;margin:0 0 15px}
-.reader-page .guided-fields{display:flex;flex-wrap:wrap;align-items:flex-end;gap:12px 16px}
-.reader-page .guided-fields label{flex:0 1 155px;min-width:120px;max-width:200px;font:600 13px/1.4 system-ui,sans-serif;gap:5px}
-.reader-page .guided-fields label:nth-child(3){flex-basis:220px;max-width:240px}
-.reader-page .guided-fields select{box-sizing:border-box;width:100%;max-width:100%;height:40px;min-height:40px;font:500 14px/1.2 system-ui,sans-serif;padding:6px 26px 6px 10px;border-radius:8px;background:#fff;color:#273d30}
-.reader-page .guided-actions{margin-top:17px;gap:9px}
-.reader-page .guided-actions button{font:600 14px/1.3 system-ui,sans-serif;min-height:40px;padding:9px 15px}
-.reader-page .guided-actions #guided-play{background:#315b44;color:white;border-color:#315b44}
-.reader-page .guided-actions button:disabled{opacity:.48}
-.reader-page .guided-status{font-size:13px}
-@media(max-width:650px){.reader-page .guided-panel{max-width:100%}.reader-page .guided-fields{gap:11px}.reader-page .guided-fields label,.reader-page .guided-fields label:nth-child(3){flex:1 1 calc(50% - 12px);min-width:135px;max-width:none}}
-@media(max-width:360px){.reader-page .guided-fields label,.reader-page .guided-fields label:nth-child(3){flex-basis:100%}}
-
-
-/* Guided Chanting: tidy, compact form controls instead of stretched dropdowns. */
-.reader-page #guided-panel{width:min(100%,760px);max-width:760px;margin:16px 0}
-.reader-page #guided-panel .guided-body{padding:16px 20px}
-.reader-page #guided-panel .guided-fields{display:grid;grid-template-columns:100px 100px minmax(180px,220px);column-gap:16px;row-gap:15px;align-items:end;justify-content:start}
-.reader-page #guided-panel .guided-fields label,
-.reader-page #guided-panel .guided-fields label:nth-child(3){box-sizing:border-box;display:flex;flex-direction:column;min-width:0;max-width:none;width:100%;margin:0;gap:6px;font:600 13px/1.35 system-ui,sans-serif;letter-spacing:0}
-.reader-page #guided-panel .guided-fields select{display:block;box-sizing:border-box;width:100%;min-width:0;max-width:none;height:40px;min-height:40px;margin:0;padding:6px 25px 6px 9px;border:1px solid #aabdad;border-radius:8px;background:#fff;color:#243b2e;font:500 14px/1.25 system-ui,sans-serif}
-.reader-page #guided-panel .guided-fields label:nth-child(4),
-.reader-page #guided-panel .guided-fields label:nth-child(5),
-.reader-page #guided-panel .guided-fields label:nth-child(6){width:145px}
-.reader-page #guided-panel .guided-fields label:nth-child(3){grid-column:3;grid-row:1}
-.reader-page #guided-panel .guided-actions{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-top:18px}
-.reader-page #guided-panel .guided-actions button{font:600 14px/1.3 system-ui,sans-serif;padding:9px 13px;min-height:40px}
-.reader-page #guided-panel .guided-subtitle{font-size:13px;font-weight:400}
-@media(max-width:580px){
- .reader-page #guided-panel{width:100%}
- .reader-page #guided-panel .guided-fields{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
- .reader-page #guided-panel .guided-fields label:nth-child(3){grid-column:1/-1;grid-row:auto}
- .reader-page #guided-panel .guided-fields label:nth-child(n){width:100%;min-width:0}
-}
-
-
-/* Side-by-side practice panels, stacked on narrow screens. */
-.reader-page .chanting-panels{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;align-items:start;margin:16px 0}
-.reader-page .chanting-panels #practice-player,.reader-page .chanting-panels #guided-panel{box-sizing:border-box;width:100%;max-width:none;margin:0;min-width:0}
-.reader-page .chanting-panels .practice-fields{display:flex;flex-wrap:wrap;gap:12px}
-.reader-page .chanting-panels .practice-fields label{flex:0 1 auto}
-.reader-page .chanting-panels .practice-fields select{max-width:125px;font-size:14px}
-.reader-page .chanting-panels .guided-fields{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
-.reader-page .chanting-panels .guided-fields label:nth-child(n){width:100%;max-width:none;min-width:0;grid-column:auto;grid-row:auto}
-.reader-page .chanting-panels .guided-fields label:nth-child(3){grid-column:1/-1}
-.reader-page .chanting-panels .guided-panel .guided-body{padding:14px}
-@media(max-width:900px){.reader-page .chanting-panels{grid-template-columns:1fr}}
-
+@media(max-width:850px){.reader-page .chanting-panels{grid-template-columns:1fr}.reader-page .chanting-panels > #practice-player,.reader-page .chanting-panels > #guided-panel{height:auto}}
+@media(max-width:480px){.reader-page .chanting-panels #guided-panel .guided-subtitle{display:block;margin:3px 0 0}.reader-page .chanting-panels #guided-mode{width:min(205px,78vw)}}
 
 /* Wisdom Insights is visible without opening the divine-name details. */
 .reader-page .name-summary-grid .name-inline-wisdom-slot{grid-column:1/-1;display:block;min-width:0;margin-top:2px;margin-left:1px}
@@ -1315,22 +1271,3 @@ header p{color:#845c4b;font-size:18px}
 @media(max-width:420px){.reader-page .chanting-panels .practice-fields,.reader-page .chanting-panels #guided-panel .guided-fields{gap:10px}.reader-page .chanting-panels .practice-fields label,.reader-page .chanting-panels #guided-panel .guided-fields label:nth-child(n){font-size:12px}}
 
 
-/* Compact paired practice panels; keep full functionality and equal widths. */
-.reader-page .chanting-panels{gap:12px;align-items:start;margin:12px 0}
-.reader-page .chanting-panels > #practice-player,.reader-page .chanting-panels > #guided-panel{height:auto;min-height:0;border-radius:12px}
-.reader-page .chanting-panels #practice-player{padding:0 14px 12px}
-.reader-page .chanting-panels .practice-intro{margin:0 -14px 10px;padding:9px 14px}
-.reader-page .chanting-panels .practice-intro strong{font-size:18px;margin:0 0 2px}
-.reader-page .chanting-panels .practice-intro span{font-size:12px;line-height:1.35}
-.reader-page .chanting-panels #guided-panel>summary{padding:10px 14px;font-size:18px}
-.reader-page .chanting-panels #guided-panel .guided-subtitle{display:inline;margin:0 0 0 10px;font-size:12px}
-.reader-page .chanting-panels #guided-panel .guided-body{padding:10px 14px 12px}
-.reader-page .chanting-panels .guided-description{font-size:12px;line-height:1.4;margin:0 0 10px}
-.reader-page .chanting-panels .practice-fields,.reader-page .chanting-panels #guided-panel .guided-fields{gap:8px 10px}
-.reader-page .chanting-panels .practice-fields label,.reader-page .chanting-panels #guided-panel .guided-fields label:nth-child(n){font-size:12px;gap:3px}
-.reader-page .chanting-panels .practice-fields select,.reader-page .chanting-panels #guided-panel .guided-fields select{height:34px;min-height:34px;padding:4px 25px 4px 8px;font-size:13px}
-.reader-page .chanting-panels .practice-actions,.reader-page .chanting-panels #guided-panel .guided-actions{gap:6px;margin-top:11px}
-.reader-page .chanting-panels .practice-actions button,.reader-page .chanting-panels #guided-panel .guided-actions button{min-height:34px;padding:6px 10px;font-size:13px}
-.reader-page .chanting-panels .guided-status,.reader-page .chanting-panels #practice-status{font-size:12px;line-height:1.4}
-.reader-page .chanting-panels .guided-status{margin-top:8px}
-@media(max-width:650px){.reader-page .chanting-panels #guided-panel .guided-subtitle{display:block;margin:3px 0 0}}
