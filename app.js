@@ -1973,5 +1973,25 @@ window.addEventListener("resize",()=>{
 });
 if(document.fonts?.ready)document.fonts.ready.then(()=>requestAnimationFrame(fitVerseLines));
 window.addEventListener("popstate",()=>{searchTerm="";$("#search").value="";const target=loadInitialLocation();render();if(target)scrollToElement(target);});
+function initPracticeModeTabs(){
+ const host=document.querySelector(".practice-dock .chanting-panels");
+ const chant=document.getElementById("practice-tab-chant");
+ const guidedTab=document.getElementById("practice-tab-guided");
+ if(!host||!chant||!guidedTab)return;
+ function choose(mode){
+  if(host.dataset.mode===mode)return;
+  // Switching activities releases the previous playback, avoiding hidden audio.
+  if(mode==="guided"&&practice.active)practiceStop("Stopped");
+  if(mode==="chant"&&guided.active)guidedStop("Stopped");
+  host.dataset.mode=mode;
+  chant.classList.toggle("active",mode==="chant");
+  guidedTab.classList.toggle("active",mode==="guided");
+  chant.setAttribute("aria-selected",String(mode==="chant"));
+  guidedTab.setAttribute("aria-selected",String(mode==="guided"));
+ }
+ chant.addEventListener("click",()=>choose("chant"));
+ guidedTab.addEventListener("click",()=>choose("guided"));
+}
+initPracticeModeTabs();
 init();
 })();
