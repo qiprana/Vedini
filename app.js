@@ -103,6 +103,12 @@ function benefitToggle(number){
   +richParagraphs(explanation)
   +"</div></details>";
 }
+function inlineNameMantra(number){
+ const item=namaMantras[number];
+ if(!item)return "";
+ const written=language==="kn"?kannadaFromDevanagari(item.dev):item.dev;
+ return "<span class='name-mantra-inline' lang='"+(language==="kn"?"kn":"sa")+"'>"+esc(written)+"</span>";
+}
 function nameMantraToggle(number){
  const item=namaMantras[number];
  if(!item)return "";
@@ -864,7 +870,7 @@ function inlineWisdomInsight(number){
 }
 function nameSection(v){
  const names=v.names||[];
- let html="<section class='name-section' aria-label='"+esc(langText("Divine names","ದೇವಿಯ ನಾಮಗಳು"))+"'><div class='section-title'><h3>"+esc(langText("Divine names","ದೇವಿಯ ನಾಮಗಳು"))+"</h3><span>"+names.length+" "+esc(langText("names","ನಾಮಗಳು"))+"</span><small class='name-insight-key'>✧ "+esc(langText("Third line: Wisdom Insight","ಮೂರನೆಯ ಸಾಲು: ಜ್ಞಾನದ ಒಳನೋಟ"))+"</small></div><div class='name-study-list'>";
+ let html="<section class='name-section' aria-label='"+esc(langText("Divine names","ದೇವಿಯ ನಾಮಗಳು"))+"'><div class='section-title'><h3>"+esc(langText("Divine names","ದೇವಿಯ ನಾಮಗಳು"))+"</h3><span>"+names.length+" "+esc(langText("names","ನಾಮಗಳು"))+"</span><small class='name-insight-key'>✧ "+esc(langText("Spiritual Benefits & Significance","ಆಧ್ಯಾತ್ಮಿಕ ಪ್ರಯೋಜನಗಳು ಮತ್ತು ಮಹತ್ವ"))+"</small></div><div class='name-study-list'>";
  for(const n of names){
   // Always show every divine name in its own row, even if the MSS recording spans more than one name.
   const number=n.studyNumber;
@@ -879,7 +885,7 @@ function nameSection(v){
   const audio=clips.length
    ?"<button type='button' class='name-audio-button' data-name-clips='"+esc(clips.join(","))+"' aria-label='"+esc(langText("Play MSS for name "+number,"ನಾಮ "+number+" MSS ಧ್ವನಿಯನ್ನು ಪ್ಲೇ ಮಾಡಿ"))+"' title='"+esc(langText("Play name","ನಾಮವನ್ನು ಪ್ಲೇ ಮಾಡಿ"))+"'>♪</button>"
    :"";
-  html+="<div class='name-audio-card'>"+audio+"<details class='name-details compact-name-row' data-detail-id='name-"+number+"'><summary><span class='name-summary-grid'><span class='name-identity-inline'><span class='name-number'>"+esc(number)+".</span><span class='name-written'>"+highlighted(written)+"</span><span class='name-roman'>"+highlighted(roman)+"</span></span><span class='name-essence'>"+highlighted(essential)+"</span><span class='name-inline-wisdom-slot'>"+inlineWisdomInsight(number)+"</span></span></summary>"+sections+"</details></div>";
+  html+="<div class='name-audio-card'>"+audio+"<details class='name-details compact-name-row' data-detail-id='name-"+number+"'><summary><span class='name-summary-grid'><span class='name-identity-inline'><span class='name-number'>"+esc(number)+".</span><span class='name-written'>"+highlighted(written)+"</span><span class='name-roman'>"+highlighted(roman)+"</span></span><span class='name-essence'>"+highlighted(essential)+"</span><span class='name-mantra-slot'>"+inlineNameMantra(number)+"</span><span class='name-inline-wisdom-slot'>"+inlineWisdomInsight(number)+"</span></span></summary>"+sections+"</details></div>";
  }
  return html+"</div></section>";
 }
@@ -1961,7 +1967,7 @@ async function init(){
  try{
  const [files,briefNames,dhyanaPhrases]=await Promise.all([Promise.all(paths.map(fetchJSON)),fetchJSON("lalita/brief-names-draft.json"),fetchJSON("lalita/dhyana-mss-phrases.json?v=20261024-v14")]);
  const benefitFiles=await Promise.all(["001-0200","201-0400","401-0600","601-0800","801-1000"].map(range=>fetchJSON("lalita/wisdom-insights-"+range+".json")));
- const namavaliFile=await fetchJSON("lalita/namavali-001-048.json");
+ const namavaliFile=await fetchJSON("lalita/namavali-001-1000.json");
  namaMantras=Object.fromEntries((namavaliFile.names||[]).map(n=>[n.number,n]));
  spiritualBenefits=Object.fromEntries(benefitFiles.flatMap(f=>f.names||[]).map(n=>[n.number,n]));
  dhyana=files[0];
