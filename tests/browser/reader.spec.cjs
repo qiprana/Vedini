@@ -37,16 +37,19 @@ test('practice dock appears before language choices',async({page})=>{
 });
 
 
-test('Nāmāvalī stays visible and correct in both scripts',async({page})=>{
+test('Nāmāvalī stays in the expandable details in both scripts',async({page})=>{
  await page.goto('/lalita/?sloka=1');
- await expect(page.locator('.name-audio-card').first()).toBeVisible({timeout:20000});
- await expect(page.locator('.name-mantra-inline').first()).toContainText('ॐ श्रीमात्रे नमः');
- await expect(page.locator('.name-mantra-inline').first()).toBeVisible();
+ const card=page.locator('#verse-1 .name-audio-card').first();
+ await expect(card).toBeVisible({timeout:20000});
+ await expect(card.locator('.name-mantra-inline')).toHaveCount(0);
+ await card.locator('.name-details>summary').click();
+ await card.locator('.name-mantra-toggle>summary').click();
+ await expect(card.locator('.mantra-script')).toContainText('ॐ श्रीमात्रे नमः');
  await page.locator('#kn').click();
- await expect(page.locator('.name-mantra-inline').first()).toContainText('ಓಂ');
- await expect(page.locator('.name-mantra-inline').first()).toContainText('ನಮಃ');
- await page.locator('#dev').click();
- await expect(page.locator('.name-mantra-inline').first()).toContainText('ॐ');
+ const kn=page.locator('#verse-1 .name-audio-card').first();
+ await kn.locator('.name-details>summary').click();
+ await kn.locator('.name-mantra-toggle>summary').click();
+ await expect(kn.locator('.mantra-script')).toContainText('ಓಂ');
 });
 test('all names keep individual mantra and benefit sections',async({page})=>{
  await page.goto('/lalita/?sloka=91');
@@ -108,4 +111,18 @@ test('compact divine-name columns preserve Kannada and mobile legibility',async(
  const width=await card.evaluate(el=>el.getBoundingClientRect().width);
  expect(width).toBeGreaterThan(220);
  expect(await card.locator('.name-summary-grid').evaluate(el=>el.scrollWidth<=el.clientWidth+3)).toBeTruthy();
+});
+
+test('benefit preview and expandable three-facet template for traditional entries',async({page})=>{
+ await page.goto('/lalita/?sloka=31');
+ const name=page.locator('[data-detail-id="name-78"]');
+ await expect(name).toBeVisible({timeout:20000});
+ await expect(name.locator('.name-inline-wisdom')).toContainText('Removal of Obstacles');
+ await expect(name.locator('.name-mantra-inline')).toHaveCount(0);
+ await name.locator('summary').first().click();
+ const details=name.locator('.name-spiritual-benefit');
+ await details.locator('summary').click();
+ await expect(details.locator('.benefit-traditional')).toContainText('Removal of Obstacles');
+ await expect(details.locator('.benefit-spiritual')).toBeVisible();
+ await expect(details.locator('.benefit-human')).toBeVisible();
 });
