@@ -11,6 +11,7 @@ let view="verses",pageIndex=0,selectedVerse=1;
 let activeAudioElement=null;
 function claimAudioFocus(audio){
  if(!audio)return;
+ if(guided.active&&audio!==$("#guided-audio"))guidedStop("Stopped for other audio");
  stopSlokaMss();
  document.querySelectorAll("audio").forEach(other=>{
   if(other!==audio&&!other.paused)other.pause();
@@ -1587,6 +1588,9 @@ function guidedPlayClip(){
  const unit=guided.units[guided.index],a=$("#guided-audio");
  if(guided.clipIndex===0){
   guidedStatus("Śloka "+unit.verse+" · "+(unit.name?"Name "+unit.name+" ("+unit.text+")":"Complete śloka")+" · "+(guided.repeatDone+1)+"/"+unit.repeats);
+  if(view!=="verses"||pageIndex!==Math.floor((unit.verse-1)/pageSize)){
+   view="verses";pageIndex=Math.floor((unit.verse-1)/pageSize);selectedVerse=unit.verse;render();
+  }
   guidedHighlight(unit.name);
  }
  a.src=unit.clips[guided.clipIndex];a.load();a.playbackRate=1;
