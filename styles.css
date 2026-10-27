@@ -1205,3 +1205,21 @@ header p{color:#845c4b;font-size:18px}
 .reader-page .name-mantra-toggle .mantra-script{font-size:clamp(20px,2.2vw,27px);line-height:1.8;font-weight:550;color:#2c5440}
 .reader-page .name-mantra-toggle .mantra-iast{font:17px/1.6 Georgia,serif;color:#476452}
 .reader-page .name-mantra-toggle .mantra-note{font:13px/1.6 system-ui,sans-serif;color:#6d685e;margin-top:4px}
+
+
+/* Guided chanting is an optional, separate learning experience. */
+.reader-page .guided-panel{margin:16px 0;border:1px solid #d2decf;border-radius:13px;background:#fbfdf9;overflow:hidden}
+.reader-page .guided-panel>summary{cursor:pointer;list-style:none;padding:15px 18px;font:650 17px/1.5 system-ui,sans-serif;color:#2c533c;background:#edf4eb}
+.reader-page .guided-panel>summary::-webkit-details-marker{display:none}
+.reader-page .guided-subtitle{font:400 13px/1.5 system-ui,sans-serif;color:#64746a;margin-left:14px}
+.reader-page .guided-body{padding:16px 18px}
+.reader-page .guided-description{font-size:14px;line-height:1.6;margin:0 0 14px}
+.reader-page .guided-fields{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.reader-page .guided-fields label{display:flex;flex-direction:column;gap:5px;font:600 13px/1.4 system-ui,sans-serif;color:#345443}
+.reader-page .guided-fields select{max-width:100%;min-height:37px;padding:6px 8px;border:1px solid #b9cdbb;border-radius:7px;background:white;color:#273b2d}
+.reader-page .guided-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+.reader-page .guided-actions button{padding:9px 13px;min-height:38px;border:1px solid #b3c9b7;border-radius:8px}
+.reader-page .guided-status{margin:12px 0 0;font:500 13px/1.5 system-ui,sans-serif;color:#345443}
+.reader-page .name-audio-card.guided-current{outline:2px solid #638b70;outline-offset:2px;background:#eef7ed;border-radius:7px}
+@media(max-width:720px){.reader-page .guided-fields{grid-template-columns:repeat(2,minmax(0,1fr))}.reader-page .guided-subtitle{display:block;margin-left:0}}
+@media(max-width:410px){.reader-page .guided-fields{grid-template-columns:1fr}}
