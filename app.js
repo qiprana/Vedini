@@ -851,6 +851,17 @@ function nameWithOriginalVerseHyphens(v,n){
  const roman=r?.text||(d&&romanWords[d.i]?.[d.j]?.includes("-")?romanWords[d.i][d.j]:originalRoman);
  return {dev,roman};
 }
+function inlineWisdomInsight(number){
+ const data=spiritualBenefits[number];
+ if(!data)return "";
+ const name=nameData[number]||{};
+ const theme=data.title?.[language]||data.benefit?.[language]||"";
+ const plain=language==="kn"?(name.kannada||""):(name.english||"");
+ const meaningBased=plain.replace(/[.।]+$/,"").trim();
+ const display=(data.title?.[language]||((data.kind==="meaning_based_editorial_draft"&&meaningBased)?meaningBased:theme)).trim();
+ if(!display)return "";
+ return "<span class='name-inline-wisdom' lang='"+(language==="kn"?"kn":"en")+"'><span class='name-inline-wisdom-label'>"+esc(langText("Wisdom Insights","ಜ್ಞಾನದ ಒಳನೋಟಗಳು"))+"</span><span class='name-inline-wisdom-theme'>"+esc(display)+"</span></span>";
+}
 function nameSection(v){
  const names=v.names||[];
  let html="<section class='name-section' aria-label='"+esc(langText("Divine names","ದೇವಿಯ ನಾಮಗಳು"))+"'><div class='section-title'><h3>"+esc(langText("Divine names","ದೇವಿಯ ನಾಮಗಳು"))+"</h3><span>"+names.length+" "+esc(langText("names","ನಾಮಗಳು"))+"</span></div><div class='name-study-list'>";
@@ -868,7 +879,7 @@ function nameSection(v){
   const audio=clips.length
    ?"<button type='button' class='name-audio-button' data-name-clips='"+esc(clips.join(","))+"' aria-label='"+esc(langText("Play MSS for name "+number,"ನಾಮ "+number+" MSS ಧ್ವನಿಯನ್ನು ಪ್ಲೇ ಮಾಡಿ"))+"' title='"+esc(langText("Play name","ನಾಮವನ್ನು ಪ್ಲೇ ಮಾಡಿ"))+"'>♪</button>"
    :"";
-  html+="<div class='name-audio-card'>"+audio+"<details class='name-details compact-name-row' data-detail-id='name-"+number+"'><summary><span class='name-summary-grid'><span class='name-identity-inline'><span class='name-number'>"+esc(number)+".</span><span class='name-written'>"+highlighted(written)+"</span><span class='name-roman'>"+highlighted(roman)+"</span></span><span class='name-essence'>"+highlighted(essential)+"</span></span></summary>"+sections+"</details></div>";
+  html+="<div class='name-audio-card'>"+audio+"<details class='name-details compact-name-row' data-detail-id='name-"+number+"'><summary><span class='name-summary-grid'><span class='name-identity-inline'><span class='name-number'>"+esc(number)+".</span><span class='name-written'>"+highlighted(written)+"</span><span class='name-roman'>"+highlighted(roman)+"</span></span><span class='name-essence'>"+highlighted(essential)+"</span><span class='name-inline-wisdom-slot'>"+inlineWisdomInsight(number)+"</span></span></summary>"+sections+"</details></div>";
  }
  return html+"</div></section>";
 }
