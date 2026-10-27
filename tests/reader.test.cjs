@@ -79,3 +79,24 @@ test('benefit template distinguishes traditional, spiritual and human meaning',(
  assert.equal(fileData.names[78].traditional_benefit.en,'Protection Against Adversity');
  assert.ok(fileData.names.slice(0,77).every(n=>!n.traditional_benefit.en));
 });
+
+test('batch 2 names 201–400 have unique individualized bilingual interpretations',()=>{
+ const rows=JSON.parse(file('data/lalita/wisdom-insights-201-0400.json')).names;
+ assert.equal(rows.length,200);
+ for(let i=0;i<200;i++){
+  const entry=rows[i];
+  assert.equal(entry.number,i+201);
+  assert.equal(entry.kind,'individual_name_contemplation','Still generic: '+entry.number);
+  for(const key of ['title','spiritual_significance','human_significance']){
+   for(const lang of ['en','kn'])assert.ok(entry[key]?.[lang]?.length>12,'Missing '+entry.number+' '+key+'.'+lang);
+  }
+  if(entry.traditional_benefit_status==='not_source_verified'){
+   assert.ok(!entry.traditional_benefit?.en,'Unverified traditional benefit '+entry.number);
+  }
+ }
+ for(const key of ['title','spiritual_significance','human_significance']){
+  for(const lang of ['en','kn']){
+   assert.equal(new Set(rows.map(n=>n[key][lang].trim())).size,200,'Duplicate '+key+'.'+lang);
+  }
+ }
+});
