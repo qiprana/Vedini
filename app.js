@@ -1467,6 +1467,13 @@ function queueVerseScrollUpdate(){
  });
 }
 function render(){
+ // Keep the visible script toggle and all rendered content in the same language.
+ const kn=language==="kn";
+ $(".reader-page")?.classList.toggle("kannada-mode",kn);
+ $("#dev")?.classList.toggle("chosen",!kn);
+ $("#kn")?.classList.toggle("chosen",kn);
+ $("#dev")?.setAttribute("aria-pressed",String(!kn));
+ $("#kn")?.setAttribute("aria-pressed",String(kn));
  stopSlokaMss();
  stopNameAudio();
  const opened=savedDetails();
