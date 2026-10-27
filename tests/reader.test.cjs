@@ -100,3 +100,18 @@ test('batch 2 names 201–400 have unique individualized bilingual interpretatio
   }
  }
 });
+
+
+test('batch 3 names 401–600 have distinct bilingual spiritual and human significance',()=>{
+ const rows=JSON.parse(file('data/lalita/wisdom-insights-401-0600.json')).names;
+ assert.equal(rows.length,200);
+ for(let i=0;i<200;i++){
+  const n=rows[i];assert.equal(n.number,i+401);
+  assert.equal(n.kind,'individual_name_contemplation');
+  for(const field of ['title','spiritual_significance','human_significance'])
+   for(const lang of ['en','kn'])assert.ok(n[field]?.[lang]?.length>12,'Missing '+n.number+' '+field+'.'+lang);
+  if(n.traditional_benefit_status==='not_source_verified')assert.ok(!n.traditional_benefit?.en,'Unsupported benefit '+n.number);
+ }
+ for(const field of ['title','spiritual_significance','human_significance'])
+  for(const lang of ['en','kn'])assert.equal(new Set(rows.map(n=>n[field][lang].trim())).size,200,'Duplicate '+field+'.'+lang);
+});
