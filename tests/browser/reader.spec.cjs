@@ -35,3 +35,44 @@ test('practice dock appears before language choices',async({page})=>{
  const before=await page.evaluate(()=>!!(document.querySelector('.practice-dock').compareDocumentPosition(document.querySelector('.reader-top-tools')) & Node.DOCUMENT_POSITION_FOLLOWING));
  expect(before).toBe(true);
 });
+
+
+test('Nāmāvalī stays visible and correct in both scripts',async({page})=>{
+ await page.goto('/lalita/?sloka=1');
+ await expect(page.locator('.name-audio-card').first()).toBeVisible({timeout:20000});
+ await expect(page.locator('.name-mantra-inline').first()).toContainText('ॐ श्रीमात्रे नमः');
+ await expect(page.locator('.name-mantra-inline').first()).toBeVisible();
+ await page.locator('#kn').click();
+ await expect(page.locator('.name-mantra-inline').first()).toContainText('ಓಂ');
+ await expect(page.locator('.name-mantra-inline').first()).toContainText('ನಮಃ');
+ await page.locator('#dev').click();
+ await expect(page.locator('.name-mantra-inline').first()).toContainText('ॐ');
+});
+test('all names keep individual mantra and benefit sections',async({page})=>{
+ await page.goto('/lalita/?sloka=91');
+ await expect(page.locator('#verse-91 .name-mantra-inline').first()).toBeVisible({timeout:20000});
+ await page.locator('#verse-91 .name-details').first().locator('summary').first().click();
+ await expect(page.locator('#verse-91 .name-mantra-toggle').first()).toBeVisible();
+ await expect(page.locator('#verse-91 .name-spiritual-benefit').first()).toBeVisible();
+});
+
+test('search includes word-by-word English and highlights corresponding Kannada',async({page})=>{
+ await page.goto('/lalita/?sloka=1');
+ await expect(page.locator('.name-audio-card').first()).toBeVisible({timeout:20000});
+ await page.locator('#kn').click();
+ await page.locator('#search').fill('Mother');
+ await expect(page.locator('.search-result').first()).toBeVisible();
+ await expect(page.locator('.search-result .result-glossary mark').first()).toBeVisible();
+ await page.locator('.search-result').first().click();
+ await expect(page.locator('#verse-1 .name-details').first()).toHaveAttribute('open','');
+ await expect(page.locator('#verse-1 .word-translation mark').first()).toBeVisible();
+});
+test('individual name audio remains separate from Nāmāvalī toggle',async({page})=>{
+ await page.goto('/lalita/?sloka=1');
+ await expect(page.locator('#verse-1 .name-audio-button').first()).toBeVisible({timeout:20000});
+ await expect(page.locator('#verse-1 .name-mantra-inline').first()).toBeVisible();
+ await page.locator('#verse-1 .name-details').first().locator('summary').first().click();
+ await expect(page.locator('#verse-1 .name-mantra-toggle').first()).toBeVisible();
+ await expect(page.locator('#verse-1 .name-audio-button').first()).toHaveAttribute('data-name-clips',/\d+/);
+ await expect(page.locator('#verse-1 .name-mantra-toggle').first()).not.toContainText('▶ Play');
+});

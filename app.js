@@ -65,11 +65,16 @@ function highlighted(value){
  if(at<0)return esc(source);
  return esc(source.slice(0,start[at]))+"<mark class='search-hit'>"+esc(source.slice(start[at],end[at+q.length-1]))+"</mark>"+esc(source.slice(end[at+q.length-1]));
 }
+function highlightedPair(value,counterpart){
+ const q=norm(highlightTerm.trim());
+ if(q&&!norm(value).includes(q)&&norm(counterpart).includes(q))return "<mark class='search-hit'>"+esc(value)+"</mark>";
+ return highlighted(value);
+}
 function wordsGrid(parts){
  if(!parts?.length)return "<p class='small-note'>"+esc(langText("This word is awaiting editorial analysis.","ಈ ಪದದ ಅರ್ಥಪರಿಶೀಲನೆ ಬಾಕಿಯಿದೆ."))+"</p>";
  return "<div class='word-grid glossary' role='list'>"+parts.map(c=>{
   const written=language==="kn"?kannadaFromDevanagari(c.dev):c.dev;
-  return "<div class='word-row glossary-row' role='listitem'><div class='word-original'><strong class='word-dev'>"+esc(written)+"</strong><span class='word-iast'>"+esc(c.iast)+"</span></div><div class='word-translation'>"+esc(c[language]||"")+"</div></div>";
+  return "<div class='word-row glossary-row' role='listitem'><div class='word-original'><strong class='word-dev'>"+highlighted(written)+"</strong><span class='word-iast'>"+highlighted(c.iast)+"</span></div><div class='word-translation'>"+highlightedPair(c[language]||"",c[language==="kn"?"en":"kn"]||"")+"</div></div>";
  }).join("")+"</div>";
 }
 let kannadaNameForms=[];
@@ -102,6 +107,12 @@ function benefitToggle(number){
   +(data.title?"<p class='benefit-headline'>"+esc(heading)+"</p>":"")
   +richParagraphs(explanation)
   +"</div></details>";
+}
+function inlineNameMantra(number){
+ const item=namaMantras[number];
+ if(!item)return "";
+ const written=language==="kn"?kannadaFromDevanagari(item.dev):item.dev;
+ return "<span class='name-mantra-inline' lang='"+(language==="kn"?"kn":"sa")+"'>"+highlightedPair(written,language==="kn"?item.iast:item.dev)+"</span>";
 }
 function nameMantraToggle(number){
  const item=namaMantras[number];
@@ -864,7 +875,7 @@ function inlineWisdomInsight(number){
 }
 function nameSection(v){
  const names=v.names||[];
- let html="<section class='name-section' aria-label='"+esc(langText("Divine names","ದೇವಿಯ ನಾಮಗಳು"))+"'><div class='section-title'><h3>"+esc(langText("Divine names","ದೇವಿಯ ನಾಮಗಳು"))+"</h3><span>"+names.length+" "+esc(langText("names","ನಾಮಗಳು"))+"</span><small class='name-insight-key'>✧ "+esc(langText("Third line: Wisdom Insight","ಮೂರನೆಯ ಸಾಲು: ಜ್ಞಾನದ ಒಳನೋಟ"))+"</small></div><div class='name-study-list'>";
+ let html="<section class='name-section' aria-label='"+esc(langText("Divine names","ದೇವಿಯ ನಾಮಗಳು"))+"'><div class='section-title'><h3>"+esc(langText("Divine names","ದೇವಿಯ ನಾಮಗಳು"))+"</h3><span>"+names.length+" "+esc(langText("names","ನಾಮಗಳು"))+"</span><small class='name-insight-key'>✧ "+esc(langText("Spiritual Benefits & Significance","ಆಧ್ಯಾತ್ಮಿಕ ಪ್ರಯೋಜನಗಳು ಮತ್ತು ಮಹತ್ವ"))+"</small></div><div class='name-study-list'>";
  for(const n of names){
   // Always show every divine name in its own row, even if the MSS recording spans more than one name.
   const number=n.studyNumber;
@@ -873,13 +884,14 @@ function nameSection(v){
   const written=language==="kn"?kannadaFromDevanagari(original.dev):original.dev;
   const roman=original.roman;
   const essential=language==="kn"?(n.kannada||anyMeaning(info,"essential_meaning")||n.english||""):(anyMeaning(info,"essential_meaning")||n.english||"");
+  const pairedEssential=language==="kn"?(info.essential_meaning?.en||n.english||""):(n.kannada||info.essential_meaning?.kn||"");
   const sections=studySections(info,parts,number);
   // A shared phrase's assigned name has a button; names with no clip have none.
   const clips=nameAudioClips(number);
   const audio=clips.length
    ?"<button type='button' class='name-audio-button' data-name-clips='"+esc(clips.join(","))+"' aria-label='"+esc(langText("Play MSS for name "+number,"ನಾಮ "+number+" MSS ಧ್ವನಿಯನ್ನು ಪ್ಲೇ ಮಾಡಿ"))+"' title='"+esc(langText("Play name","ನಾಮವನ್ನು ಪ್ಲೇ ಮಾಡಿ"))+"'>♪</button>"
    :"";
-  html+="<div class='name-audio-card'>"+audio+"<details class='name-details compact-name-row' data-detail-id='name-"+number+"'><summary><span class='name-summary-grid'><span class='name-identity-inline'><span class='name-number'>"+esc(number)+".</span><span class='name-written'>"+highlighted(written)+"</span><span class='name-roman'>"+highlighted(roman)+"</span></span><span class='name-essence'>"+highlighted(essential)+"</span><span class='name-inline-wisdom-slot'>"+inlineWisdomInsight(number)+"</span></span></summary>"+sections+"</details></div>";
+  html+="<div class='name-audio-card'>"+audio+"<details class='name-details compact-name-row' data-detail-id='name-"+number+"'><summary><span class='name-summary-grid'><span class='name-identity-inline'><span class='name-number'>"+esc(number)+".</span><span class='name-written'>"+highlighted(written)+"</span><span class='name-roman'>"+highlighted(roman)+"</span></span><span class='name-essence'>"+highlightedPair(essential,pairedEssential)+"</span><span class='name-mantra-slot'>"+inlineNameMantra(number)+"</span><span class='name-inline-wisdom-slot'>"+inlineWisdomInsight(number)+"</span></span></summary>"+sections+"</details></div>";
  }
  return html+"</div></section>";
 }
@@ -1329,7 +1341,7 @@ function card(v,isDhyana){
 }
 function searchText(v,dh){
  if(dh)return JSON.stringify(v)+" "+JSON.stringify(dhyanaData[v.verse_number]||{});
- return JSON.stringify(v)+" "+JSON.stringify(verseData[v.verse_number]||{})+" "+(v.names||[]).map(n=>JSON.stringify(nameData[n.studyNumber]||{})).join(" ");
+ return JSON.stringify(v)+" "+JSON.stringify(verseData[v.verse_number]||{})+" "+(v.names||[]).map(n=>[nameData[n.studyNumber]||{},spiritualBenefits[n.studyNumber]||{},namaMantras[n.studyNumber]||{}].map(JSON.stringify).join(" ")).join(" ");
 }
 function savedDetails(){
  // Meaning disclosures always start collapsed on a fresh render; preserve only
@@ -1359,13 +1371,28 @@ function showResultList(q){
    const v=x.v,dh=x.type==="dhyana",label=dh?langText("Dhyāna","ಧ್ಯಾನ"):langText("Śloka","ಶ್ಲೋಕ");
    const first=v.reading?.iast?.[0]||"";
    const meaning=language==="kn"?v.meaning?.kannada:v.meaning?.english;
-   return "<button class='search-result' type='button' data-kind='"+x.type+"' data-number='"+v.verse_number+"'><span class='result-heading'>"+esc(label+" "+v.verse_number)+" <span aria-hidden='true'>→</span></span><span class='result-reading'>"+highlighted(first)+"</span><span class='result-meaning'>"+highlighted(meaning||"")+"</span></button>";
+   const word=(v.names||[]).flatMap(n=>findComponents(v,n,nameData[n.studyNumber]||{})).find(c=>norm([c.dev,c.iast,c.en,c.kn].join(" ")).includes(q));
+   const wordSnippet=word?"<span class='result-glossary'>"+esc(langText("Word by word","ಪದದ ಅರ್ಥ"))+": "+highlighted(word.iast)+" · "+highlightedPair(word[language]||"",word[language==="kn"?"en":"kn"]||"")+"</span>":"";
+   return "<button class='search-result' type='button' data-kind='"+x.type+"' data-number='"+v.verse_number+"'><span class='result-heading'>"+esc(label+" "+v.verse_number)+" <span aria-hidden='true'>→</span></span><span class='result-reading'>"+highlighted(first)+"</span><span class='result-meaning'>"+highlighted(meaning||"")+"</span>"+wordSnippet+"</button>";
   }).join("");
   if(matches.length>40)list.innerHTML+="<p class='small-note'>"+esc(langText("Showing the first 40 matching sections. Refine the search for more precise results.","ಮೊದಲ ೪೦ ಫಲಿತಾಂಶಗಳು ಮಾತ್ರ ಕಾಣುತ್ತಿವೆ. ಹುಡುಕಾಟವನ್ನು ನಿರ್ದಿಷ್ಟಗೊಳಿಸಿ."))+"</p>";
  }
  list.querySelectorAll("button[data-number]").forEach(b=>b.addEventListener("click",()=>{
   const n=Number(b.dataset.number);
-  highlightTerm=searchTerm.trim();if(b.dataset.kind==="dhyana")showDhyana(n);else jump(n);
+  highlightTerm=searchTerm.trim();
+  if(b.dataset.kind==="dhyana")showDhyana(n);
+  else{
+   const verse=verses.find(v=>v.verse_number===n);
+   const name=(verse?.names||[]).find(name=>findComponents(verse,name,nameData[name.studyNumber]||{}).some(c=>norm([c.dev,c.iast,c.en,c.kn].join(" ")).includes(q)));
+   jump(n);
+   if(name)requestAnimationFrame(()=>{
+    const details=document.querySelector('[data-detail-id="name-'+name.studyNumber+'"]');
+    if(!details)return;
+    details.open=true;
+    const match=details.querySelector('mark.search-hit');
+    if(match)match.scrollIntoView({behavior:"smooth",block:"center"});
+   });
+  }
  }));
  msg("#search-results-heading",matches.length+" matching sections","ಹೊಂದಾಣಿಕೆಯ ವಿಭಾಗಗಳು: "+matches.length);
  msg("#result-note","Searching available ślokas and name explanations","ಲಭ್ಯವಿರುವ ಶ್ಲೋಕಗಳು ಮತ್ತು ನಾಮವಿವರಣೆಗಳಲ್ಲಿ ಹುಡುಕಾಟ");
@@ -1961,7 +1988,7 @@ async function init(){
  try{
  const [files,briefNames,dhyanaPhrases]=await Promise.all([Promise.all(paths.map(fetchJSON)),fetchJSON("lalita/brief-names-draft.json"),fetchJSON("lalita/dhyana-mss-phrases.json?v=20261024-v14")]);
  const benefitFiles=await Promise.all(["001-0200","201-0400","401-0600","601-0800","801-1000"].map(range=>fetchJSON("lalita/wisdom-insights-"+range+".json")));
- const namavaliFile=await fetchJSON("lalita/namavali-001-048.json");
+ const namavaliFile=await fetchJSON("lalita/namavali-001-1000.json");
  namaMantras=Object.fromEntries((namavaliFile.names||[]).map(n=>[n.number,n]));
  spiritualBenefits=Object.fromEntries(benefitFiles.flatMap(f=>f.names||[]).map(n=>[n.number,n]));
  dhyana=files[0];

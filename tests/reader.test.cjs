@@ -33,3 +33,32 @@ test('initialization handlers called by reader exist',()=>{
   if(new RegExp('\\b'+fn+'\\s*\\(').test(app))assert.match(app,new RegExp('function\\s+'+fn+'\\s*\\('),'Undefined '+fn);
  }
 });
+
+
+test('all 1000 Nāmāvalī mantras remain present with Om and Namaḥ',()=>{
+ const data=JSON.parse(file('data/lalita/namavali-001-1000.json'));
+ assert.equal(data.names.length,1000);
+ for(let i=0;i<1000;i++){
+  const n=data.names[i];assert.equal(n.number,i+1);
+  assert.match(n.dev,/^ॐ .+ नमः$/u,'Sanskrit Nāmāvalī missing '+(i+1));
+  assert.match(n.iast,/^Oṃ .+ Namaḥ$/u,'IAST Nāmāvalī missing '+(i+1));
+ }
+});
+test('Nāmāvalī is visible on every divine-name row and protected from removal',()=>{
+ assert.match(app,/function inlineNameMantra\(number\)/);
+ assert.match(app,/name-mantra-slot[^\n]*inlineNameMantra\(number\)/);
+ assert.match(app,/namavali-001-1000\.json/);
+ assert.match(app,/function nameMantraToggle\(number\)/);
+});
+test('all 1000 entries include English and Kannada benefits and explanations',()=>{
+ const files=['001-0200','201-0400','401-0600','601-0800','801-1000'];
+ const all=files.flatMap(n=>JSON.parse(file('data/lalita/wisdom-insights-'+n+'.json')).names);
+ assert.equal(all.length,1000);
+ all.forEach((n,i)=>{
+  assert.equal(n.number,i+1);
+  for(const lang of ['en','kn']){
+   assert.ok(n.title?.[lang]?.trim(),'Missing benefit title '+(i+1)+' '+lang);
+   assert.ok(n.explanation?.[lang]?.length>50,'Missing benefit explanation '+(i+1)+' '+lang);
+  }
+ });
+});
