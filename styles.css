@@ -1263,3 +1263,16 @@ header p{color:#845c4b;font-size:18px}
  .reader-page #guided-panel .guided-fields label:nth-child(3){grid-column:1/-1;grid-row:auto}
  .reader-page #guided-panel .guided-fields label:nth-child(n){width:100%;min-width:0}
 }
+
+
+/* Side-by-side practice panels, stacked on narrow screens. */
+.reader-page .chanting-panels{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;align-items:start;margin:16px 0}
+.reader-page .chanting-panels #practice-player,.reader-page .chanting-panels #guided-panel{box-sizing:border-box;width:100%;max-width:none;margin:0;min-width:0}
+.reader-page .chanting-panels .practice-fields{display:flex;flex-wrap:wrap;gap:12px}
+.reader-page .chanting-panels .practice-fields label{flex:0 1 auto}
+.reader-page .chanting-panels .practice-fields select{max-width:125px;font-size:14px}
+.reader-page .chanting-panels .guided-fields{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
+.reader-page .chanting-panels .guided-fields label:nth-child(n){width:100%;max-width:none;min-width:0;grid-column:auto;grid-row:auto}
+.reader-page .chanting-panels .guided-fields label:nth-child(3){grid-column:1/-1}
+.reader-page .chanting-panels .guided-panel .guided-body{padding:14px}
+@media(max-width:900px){.reader-page .chanting-panels{grid-template-columns:1fr}}
