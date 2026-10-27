@@ -44,12 +44,13 @@ test('all 1000 Nāmāvalī mantras remain present with Om and Namaḥ',()=>{
   assert.match(n.iast,/^Oṃ .+ Namaḥ$/u,'IAST Nāmāvalī missing '+(i+1));
  }
 });
-test('Nāmāvalī remains in expandable detail rather than inline row',()=>{
+test('Nāmāvalī sits under the śloka rather than in each name row',()=>{
  assert.match(app,/function inlineNameMantra\(number\)/);
  assert.doesNotMatch(app,/name-mantra-slot[^\n]*inlineNameMantra\(number\)/);
- assert.match(app,/nameMantraToggle\(nameNumber\)/);
+ assert.doesNotMatch(app,/nameMantraToggle/);
  assert.match(app,/namavali-001-1000\.json/);
- assert.match(app,/function nameMantraToggle\(number\)/);
+ assert.match(app,/function namavaliPanel\(v\)/);
+ assert.match(app,/isDhyana\?"":namavaliPanel\(v\)/);
 });
 test('all 1000 entries include English and Kannada benefits and explanations',()=>{
  const files=['001-0200','201-0400','401-0600','601-0800','801-1000'];

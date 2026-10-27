@@ -1447,3 +1447,29 @@ header p{color:#845c4b;font-size:18px}
  .reader-page .name-section .name-identity-inline{grid-row:auto!important}
  .reader-page .name-section .name-summary-grid>.name-inline-wisdom-slot{grid-row:auto!important}
 }
+
+/* Readability pass: legible IAST, symbol-led benefit preview, Nāmāvalī under the śloka. */
+.reader-page .name-section .name-identity-inline .name-roman{
+  font:400 clamp(15px,1.3vw,17px)/1.4 Georgia,serif!important;color:#2f4a3a!important;margin-top:2px!important
+}
+.reader-page .name-section .name-summary-grid .name-inline-wisdom{
+  display:flex!important;flex-wrap:nowrap!important;align-items:baseline;column-gap:7px!important;
+  margin-top:3px!important;font:500 14px/1.45 system-ui,sans-serif!important;color:#2d5240!important
+}
+.reader-page .name-section .name-inline-wisdom-label{
+  flex:0 0 auto;font:400 15px/1 system-ui,sans-serif!important;color:#a8742f!important;cursor:help
+}
+.reader-page .name-section .name-inline-wisdom-theme{font-size:inherit!important;font-weight:500!important;line-height:inherit!important;min-width:0}
+.reader-page.kannada-mode .name-section .name-summary-grid .name-inline-wisdom{font-size:15px!important;line-height:1.55!important}
+.reader-page .verse-reading-panel .namavali-heading{margin-top:22px;padding-top:14px;border-top:1px solid #dfdfd2}
+.reader-page .verse-namavali{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:10px}
+.reader-page .verse-namavali .namavali-item{display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:8px;align-items:baseline}
+.reader-page .verse-namavali .namavali-number{font:600 13px/1 system-ui,sans-serif;color:#6b7f70;min-width:2.2em;text-align:right}
+.reader-page .verse-namavali .mantra-reading{display:flex;flex-direction:column;min-width:0}
+.reader-page .verse-namavali .mantra-script{font-family:'Noto Serif Devanagari','Kohinoor Devanagari',serif;font-size:clamp(17px,1.6vw,20px);line-height:1.6;font-weight:600;color:#2c5440;overflow-wrap:anywhere}
+.reader-page.kannada-mode .verse-namavali .mantra-script{font-family:"Noto Sans Kannada","Kannada Sangam MN","Nirmala UI","Tunga",sans-serif}
+.reader-page .verse-namavali .mantra-iast{font:400 clamp(15px,1.3vw,16px)/1.45 Georgia,serif;color:#33503f;overflow-wrap:anywhere}
+@media(max-width:600px){
+  .reader-page .name-section .name-identity-inline .name-roman{font-size:15px!important}
+  .reader-page .name-section .name-summary-grid .name-inline-wisdom{font-size:14px!important}
+}

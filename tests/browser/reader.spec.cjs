@@ -37,25 +37,26 @@ test('practice dock appears before language choices',async({page})=>{
 });
 
 
-test('Nāmāvalī stays in the expandable details in both scripts',async({page})=>{
+test('Nāmāvalī sits under the śloka in both scripts, not inside each name',async({page})=>{
  await page.goto('/lalita/?sloka=1');
  const card=page.locator('#verse-1 .name-audio-card').first();
  await expect(card).toBeVisible({timeout:20000});
  await expect(card.locator('.name-mantra-inline')).toHaveCount(0);
  await card.locator('.name-details>summary').click();
- await card.locator('.name-mantra-toggle>summary').click();
- await expect(card.locator('.mantra-script')).toContainText('ॐ श्रीमात्रे नमः');
+ await expect(card.locator('.name-mantra-toggle')).toHaveCount(0);
+ const namavali=page.locator('#verse-1 .verse-reading-panel .verse-namavali');
+ await expect(namavali.locator('.mantra-script').first()).toContainText('ॐ श्रीमात्रे नमः');
+ await expect(namavali.locator('.mantra-iast').first()).toBeVisible();
  await page.locator('#kn').click();
- const kn=page.locator('#verse-1 .name-audio-card').first();
- await kn.locator('.name-details>summary').click();
- await kn.locator('.name-mantra-toggle>summary').click();
- await expect(kn.locator('.mantra-script')).toContainText('ಓಂ');
+ const kn=page.locator('#verse-1 .verse-reading-panel .verse-namavali');
+ await expect(kn.locator('.mantra-script').first()).toContainText('ಓಂ');
 });
 test('all names keep individual mantra and benefit sections',async({page})=>{
  await page.goto('/lalita/?sloka=91');
  await expect(page.locator('#verse-91 .name-audio-card').first()).toBeVisible({timeout:20000});
+ const names=await page.locator('#verse-91 .name-audio-card').count();
+ await expect(page.locator('#verse-91 .verse-namavali .namavali-item')).toHaveCount(names);
  await page.locator('#verse-91 .name-details').first().locator('summary').first().click();
- await expect(page.locator('#verse-91 .name-mantra-toggle').first()).toBeVisible();
  await expect(page.locator('#verse-91 .name-spiritual-benefit').first()).toBeVisible();
 });
 
@@ -70,14 +71,13 @@ test('search includes word-by-word English and highlights corresponding Kannada'
  await expect(page.locator('#verse-1 .name-details').first()).toHaveAttribute('open','');
  await expect(page.locator('#verse-1 .word-translation mark').first()).toBeVisible();
 });
-test('individual name audio remains separate from Nāmāvalī toggle',async({page})=>{
+test('individual name audio remains separate from the Nāmāvalī',async({page})=>{
  await page.goto('/lalita/?sloka=1');
  await expect(page.locator('#verse-1 .name-audio-button').first()).toBeVisible({timeout:20000});
  await expect(page.locator('#verse-1 .name-mantra-inline')).toHaveCount(0);
- await page.locator('#verse-1 .name-details').first().locator('summary').first().click();
- await expect(page.locator('#verse-1 .name-mantra-toggle').first()).toBeVisible();
+ await expect(page.locator('#verse-1 .verse-namavali').first()).toBeVisible();
  await expect(page.locator('#verse-1 .name-audio-button').first()).toHaveAttribute('data-name-clips',/\d+/);
- await expect(page.locator('#verse-1 .name-mantra-toggle').first()).not.toContainText('▶ Play');
+ await expect(page.locator('#verse-1 .verse-namavali').first()).not.toContainText('▶ Play');
 });
 
 test('divine names use compact side-by-side reading and meaning on desktop',async({page})=>{
@@ -98,7 +98,7 @@ test('divine names use compact side-by-side reading and meaning on desktop',asyn
  await expect(card.locator('.name-mantra-inline')).toHaveCount(0);
  await expect(card.locator('.name-details')).not.toHaveAttribute('open','');
  await card.locator('.name-details>summary').click();
- await expect(card.locator('.name-mantra-toggle')).toBeVisible();
+ await expect(card.locator('.name-mantra-toggle')).toHaveCount(0);
  await expect(card.locator('.name-spiritual-benefit')).toBeVisible();
 });
 test('compact divine-name columns preserve Kannada and mobile legibility',async({page})=>{
