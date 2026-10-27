@@ -1,0 +1,446 @@
+{
+  "purpose": "Editorial theme catalog for human-relevant Lalita name significance; interpretations are reflective associations, not promised chanting outcomes.",
+  "version": 1,
+  "themes": [
+    {
+      "key": "foundation",
+      "match": "tattva|principles of existence|fundamental principles|ground of existence|seat made of five",
+      "en": "Inner Stability · Understanding Life’s Foundations",
+      "kn": "ಆಂತರಿಕ ಸ್ಥಿರತೆ · ಜೀವನದ ಮೂಲಾಧಾರದ ಅರಿವು",
+      "reflection": "It represents the steadiness of seeing change against an underlying order, especially when circumstances feel uncertain.",
+      "kr": "ಪರಿಸ್ಥಿತಿಗಳು ಬದಲಾಗುವಾಗಲೂ ಅಸ್ತಿತ್ವದ ಆಳವಾದ ಆಧಾರವನ್ನು ನೆನಪಿಸುವ ಸ್ಥಿರತೆಯನ್ನು ಇದು ಸೂಚಿಸುತ್ತದೆ."
+    },
+    {
+      "key": "highest_reality",
+      "match": "supreme truth|brahman|absolute reality|ultimate reality|truth itself|turiya|highest truth|paramatman|paramārtha|meant by.*that",
+      "en": "Spiritual Clarity · Recognition of the Highest Truth",
+      "kn": "ಆಧ್ಯಾತ್ಮಿಕ ಸ್ಪಷ್ಟತೆ · ಪರಮಸತ್ಯದ ಅರಿವು",
+      "reflection": "The distinction between temporary appearances and enduring reality gives this name its contemplative importance.",
+      "kr": "ಕ್ಷಣಿಕವಾಗಿ ಬದಲಾಗುವ ರೂಪಗಳಿಗೂ ಶಾಶ್ವತ ಸತ್ಯಕ್ಕೂ ಇರುವ ವ್ಯತ್ಯಾಸದ ಅರಿವು ಇದರ ಮಹತ್ವವಾಗಿದೆ."
+    },
+    {
+      "key": "inner_self",
+      "match": "individual self|inner self|referred to.*thou|self-realization|knowledge of.*self|ātma|self as|atman",
+      "en": "Self-Knowledge · Awareness of the Inner Divine",
+      "kn": "ಆತ್ಮಜ್ಞಾನ · ಅಂತರಂಗದ ದಿವ್ಯ ಅರಿವು",
+      "reflection": "It draws attention from outward status toward the awareness through which life is experienced.",
+      "kr": "ಬಾಹ್ಯ ಸ್ಥಾನಮಾನಕ್ಕಿಂತ ಜೀವನವನ್ನು ಅನುಭವಿಸುವ ಆಂತರಿಕ ಅರಿವಿನತ್ತ ಇದು ದೃಷ್ಟಿ ಹರಿಸುತ್ತದೆ."
+    },
+    {
+      "key": "motherhood",
+      "match": "mother|maternal|parent|daughter|son|child|nourish|care for|protector of children",
+      "en": "Motherly Compassion · A Sense of Belonging",
+      "kn": "ಮಾತೃಕರುಣೆ · ಆತ್ಮೀಯ ಆಶ್ರಯ",
+      "reflection": "The image of Divine Motherhood speaks to love that can hold human vulnerability without judgment.",
+      "kr": "ದಿವ್ಯ ಮಾತೃತ್ವದ ರೂಪಕವು ತೀರ್ಪಿಲ್ಲದೆ ಮಾನವೀಯ ನೋವು ಮತ್ತು ದುರ್ಬಲತೆಯನ್ನು ಅಪ್ಪಿಕೊಳ್ಳುವ ಪ್ರೀತಿಯನ್ನು ಸೂಚಿಸುತ್ತದೆ."
+    },
+    {
+      "key": "compassion",
+      "match": "compassion|mercy|kindness|tender|karuṇa|grace to|gracious|forgiveness|generous",
+      "en": "Compassion · Kindness Without Conditions",
+      "kn": "ಕರುಣೆ · ಷರತ್ತಿಲ್ಲದ ಪ್ರೀತಿ",
+      "reflection": "It recalls the possibility of meeting one's own limitations and the struggles of others with gentleness.",
+      "kr": "ನಮ್ಮ ಮಿತಿಗಳನ್ನೂ ಇತರರ ಕಷ್ಟಗಳನ್ನೂ ಮೃದುತ್ವದಿಂದ ನೋಡುವ ಮನೋಭಾವವನ್ನು ಇದು ನೆನಪಿಸುತ್ತದೆ."
+    },
+    {
+      "key": "dangers",
+      "match": "remover of all dangers|protect|guard|refuge|shelter|save from|rescue|safety|defend|guardian",
+      "en": "Divine Protection · Courage in Uncertainty",
+      "kn": "ದಿವ್ಯ ರಕ್ಷಣೆ · ಅನಿಶ್ಚಿತತೆಯಲ್ಲಿ ಧೈರ್ಯ",
+      "reflection": "Her protective aspect has a human resonance in facing fear without surrendering the values one holds dear.",
+      "kr": "ಭಯದ ನಡುವೆಯೂ ಮೌಲ್ಯಗಳನ್ನು ಕಾಪಾಡಿಕೊಳ್ಳುವ ಧೈರ್ಯದಲ್ಲಿ ಈ ರಕ್ಷಣಾತ್ಮಕ ರೂಪದ ಮಾನವೀಯ ಅರ್ಥ ಕಾಣುತ್ತದೆ."
+    },
+    {
+      "key": "obstacles",
+      "match": "obstacle|hindrance|impediment|knot|barrier|blockage|breaks through|shatters",
+      "en": "Removing Obstacles · Renewed Determination",
+      "kn": "ವಿಘ್ನ ನಿವಾರಣೆ · ಹೊಸ ಸಂಕಲ್ಪ",
+      "reflection": "The image of overcoming barriers is connected with patience and renewed resolve when progress seems difficult.",
+      "kr": "ಮುಂದುವರಿಯುವುದು ಕಷ್ಟವೆನಿಸುವಾಗ ತಾಳ್ಮೆ ಮತ್ತು ಹೊಸ ದೃಢಸಂಕಲ್ಪಕ್ಕೆ ಈ ರೂಪಕ ಸಂಬಂಧಿಸುತ್ತದೆ."
+    },
+    {
+      "key": "disease",
+      "match": "disease|illness|affliction|sorrow|suffering|distress|troubles|sick|pain",
+      "en": "Comfort Amid Suffering · Inner Resilience",
+      "kn": "ದುಃಖದಲ್ಲಿ ಸಾಂತ್ವನ · ಆಂತರಿಕ ಸ್ಥೈರ್ಯ",
+      "reflection": "Its relevance lies in the dignity, hope, and compassionate presence people seek amid illness or loss, not in a promised cure.",
+      "kr": "ಅನಾರೋಗ್ಯ ಅಥವಾ ನಷ್ಟದ ಸಮಯದಲ್ಲಿ ಮಾನವರು ಹುಡುಕುವ ಗೌರವ, ಭರವಸೆ ಮತ್ತು ಕರುಣಾಮಯ ಸಾನ್ನಿಧ್ಯ ಇದರ ಆಶಯವಾಗಿದೆ; ಇದು ಖಚಿತ ಚಿಕಿತ್ಸೆಯ ಭರವಸೆಯಲ್ಲ."
+    },
+    {
+      "key": "death",
+      "match": "death|dying|mortality|old age|rebirth|birth and death|impermanent|perish|passing away|dissolution of life",
+      "en": "Acceptance of Impermanence · Freedom from Fear",
+      "kn": "ಅನಿತ್ಯತೆಯ ಅರಿವು · ಭಯದಿಂದ ಮುಕ್ತಿ",
+      "reflection": "The name acknowledges life's transience while placing it within a wider spiritual vision of continuity.",
+      "kr": "ಜೀವನದ ಅನಿತ್ಯತೆಯನ್ನು ಒಪ್ಪಿಕೊಂಡು ಅದನ್ನು ವಿಶಾಲವಾದ ಆಧ್ಯಾತ್ಮಿಕ ದೃಷ್ಟಿಯಲ್ಲಿ ಕಾಣುವುದನ್ನು ಇದು ಸೂಚಿಸುತ್ತದೆ."
+    },
+    {
+      "key": "liberation",
+      "match": "liberation|moksha|mukti|bondage|bond|release|emancipat|freedom|fetter|attachment|pāśa|saṃsāra",
+      "en": "Release from Bondage · Inner Freedom",
+      "kn": "ಬಂಧನ ವಿಮೋಚನೆ · ಆಂತರಿಕ ಸ್ವಾತಂತ್ರ್ಯ",
+      "reflection": "It speaks to loosening the habits, fears, and attachments that narrow one's sense of possibility.",
+      "kr": "ಸಾಧ್ಯತೆಗಳನ್ನು ಸೀಮಿತಗೊಳಿಸುವ ಭಯ, ಅಭ್ಯಾಸ ಮತ್ತು ಆಸಕ್ತಿಗಳ ಹಿಡಿತವನ್ನು ಸಡಿಲಿಸುವ ಅರ್ಥ ಇದಕ್ಕಿದೆ."
+    },
+    {
+      "key": "ignorance",
+      "match": "ignorance|darkness|illusion|delusion|confusion|false understanding|blindness|avidyā|dispel",
+      "en": "Dispelling Ignorance · Awakening Discernment",
+      "kn": "ಅಜ್ಞಾನ ನಿವಾರಣೆ · ವಿವೇಕದ ಜಾಗೃತಿ",
+      "reflection": "Light overcoming darkness serves as an image of learning to distinguish what is real from what is merely assumed.",
+      "kr": "ಕತ್ತಲೆಯನ್ನು ನೀಗಿಸುವ ಬೆಳಕು ಸತ್ಯವನ್ನೂ ಕೇವಲ ಕಲ್ಪನೆಯನ್ನೂ ಬೇರ್ಪಡಿಸಿ ಅರಿಯುವ ವಿವೇಕದ ಸಂಕೇತವಾಗಿದೆ."
+    },
+    {
+      "key": "warrior",
+      "match": "slay|kill|demon|battle|war|weapon|missile|army|military|battlefield|sword|thunderbolt|axe|chariot|valor|warrior|victor|conquer|triumph|ferocious",
+      "en": "Protective Strength · Resolute Courage",
+      "kn": "ರಕ್ಷಣಾಶಕ್ತಿ · ದೃಢ ಧೈರ್ಯ",
+      "reflection": "The martial symbolism can be understood as strength used to oppose what harms life while preserving a sense of responsibility.",
+      "kr": "ಜೀವನಕ್ಕೆ ಹಾನಿಕಾರಕವಾದುದನ್ನು ಎದುರಿಸುವ ಶಕ್ತಿಯನ್ನೂ ಹೊಣೆಗಾರಿಕೆಯನ್ನೂ ಈ ಯುದ್ಧರೂಪಕ ಒಟ್ಟಿಗೆ ಸೂಚಿಸುತ್ತದೆ."
+    },
+    {
+      "key": "anger",
+      "match": "wrath|anger|rage|fury|fierce|krodha|cruel|terror|fearsome",
+      "en": "Firmness Without Cruelty · Emotional Mastery",
+      "kn": "ಕ್ರೌರ್ಯವಿಲ್ಲದ ದೃಢತೆ · ಭಾವನಾತ್ಮಕ ಸಂಯಮ",
+      "reflection": "The fierce form symbolizes the difference between protective firmness and anger that overwhelms judgment.",
+      "kr": "ರಕ್ಷಣಾತ್ಮಕ ದೃಢತೆ ಮತ್ತು ವಿವೇಕವನ್ನು ಮುಚ್ಚುವ ಕೋಪದ ನಡುವಿನ ವ್ಯತ್ಯಾಸವನ್ನು ಉಗ್ರರೂಪವು ತೋರಿಸುತ್ತದೆ."
+    },
+    {
+      "key": "righteous",
+      "match": "righteous|virtue|ethical|right conduct|moral|dharma|merit|good action|good deed|pious|honest",
+      "en": "Integrity · Dharma in Everyday Life",
+      "kn": "ಸತ್ಯನಿಷ್ಠೆ · ದೈನಂದಿನ ಧರ್ಮಾಚರಣೆ",
+      "reflection": "Its human relevance lies in the quiet strength of choosing fairness and responsibility when easier paths appear.",
+      "kr": "ಸುಲಭವಾದ ದಾರಿಗಳಿದ್ದರೂ ನ್ಯಾಯ ಮತ್ತು ಹೊಣೆಗಾರಿಕೆಯನ್ನು ಆರಿಸುವ ಮೌನಶಕ್ತಿಯಲ್ಲಿ ಇದರ ಮಾನವೀಯ ಮಹತ್ವವಿದೆ."
+    },
+    {
+      "key": "devotion",
+      "match": "devotee|devotion|bhakti|prayer|worshipped|worship|ador|prais|chant|hymn|names repeated|archana|reverence|stotra",
+      "en": "Devotion · Sincerity of the Heart",
+      "kn": "ಭಕ್ತಿ · ಹೃದಯದ ನಿಷ್ಠೆ",
+      "reflection": "This name places emphasis on a heartfelt relationship rather than display, achievement, or outward recognition.",
+      "kr": "ಬಾಹ್ಯ ಪ್ರದರ್ಶನಕ್ಕಿಂತ ಹೃದಯಪೂರ್ಣ ಸಂಬಂಧ ಮತ್ತು ನಿಷ್ಠೆಗೆ ಈ ನಾಮವು ಮಹತ್ವ ನೀಡುತ್ತದೆ."
+    },
+    {
+      "key": "ritual",
+      "match": "ritual|ceremon|sacrific|offering|fire rite|oblation|tantra|sacred tradition|worship practice|mantra initiation|initiation|samaya|kaula|kula",
+      "en": "Sacred Discipline · Meaningful Practice",
+      "kn": "ಪವಿತ್ರ ಶಿಸ್ತು · ಅರ್ಥಪೂರ್ಣ ಆಚರಣೆ",
+      "reflection": "It associates repeated sacred acts with attention, continuity, and the care given to what one considers holy.",
+      "kr": "ಪವಿತ್ರ ಆಚರಣೆಗಳ ಪುನರಾವರ್ತನೆಯನ್ನು ಗಮನ, ನಿರಂತರತೆ ಮತ್ತು ಗೌರವಪೂರ್ಣ ಕಾಳಜಿಯೊಂದಿಗೆ ಇದು ಜೋಡಿಸುತ್ತದೆ."
+    },
+    {
+      "key": "wisdom",
+      "match": "wisdom|knowledge|knower|intelligence|understanding|consciousness|awareness|insight|learn|vidyā|pragn|wise|enlighten|jñāna",
+      "en": "Awakening Wisdom · Clear Understanding",
+      "kn": "ಜ್ಞಾನೋದಯ · ಸ್ಪಷ್ಟ ತಿಳುವಳಿಕೆ",
+      "reflection": "The benefit associated with this image is the capacity to see beyond confusion and respond with discernment.",
+      "kr": "ಗೊಂದಲದಾಚೆಗೆ ಸ್ಪಷ್ಟವಾಗಿ ನೋಡಿ ವಿವೇಕದಿಂದ ಸ್ಪಂದಿಸುವ ಸಾಮರ್ಥ್ಯವನ್ನು ಈ ರೂಪಕ ಸೂಚಿಸುತ್ತದೆ."
+    },
+    {
+      "key": "speech",
+      "match": "speech|word|utterance|language|poetry|eloquence|orator|talk|speak|tongue|vāg|vāk|vāc",
+      "en": "Truthful Speech · Kind Communication",
+      "kn": "ಸತ್ಯವಾಣಿ · ಹಿತಕರ ಸಂವಹನ",
+      "reflection": "It links the sacred power of words with the responsibility of speaking truthfully and without needless harm.",
+      "kr": "ಪದಗಳ ಪವಿತ್ರ ಶಕ್ತಿಯನ್ನು ಸತ್ಯವಾಗಿ ಹಾಗೂ ಅನಗತ್ಯ ನೋವು ಉಂಟುಮಾಡದೆ ಮಾತನಾಡುವ ಹೊಣೆಗಾರಿಕೆಗೆ ಇದು ಸಂಬಂಧಿಸುತ್ತದೆ."
+    },
+    {
+      "key": "mantra",
+      "match": "mantra|syllable|alphabet|letter|vibration|sound|nāda|sāma veda|vedas|śruti",
+      "en": "Sacred Sound · Focused Attention",
+      "kn": "ಪವಿತ್ರ ನಾದ · ಏಕಾಗ್ರ ಗಮನ",
+      "reflection": "The symbolism of sound points to how attentive listening and meaningful recitation can deepen inward presence.",
+      "kr": "ಗಮನಪೂರ್ವಕವಾಗಿ ಕೇಳುವುದು ಮತ್ತು ಅರ್ಥಪೂರ್ಣ ಪಠಣವು ಆಂತರಿಕ ಸಾನ್ನಿಧ್ಯವನ್ನು ಗಾಢಗೊಳಿಸುವುದನ್ನು ಈ ನಾದರೂಪಕ ಸೂಚಿಸುತ್ತದೆ."
+    },
+    {
+      "key": "music",
+      "match": "music|song|sing|melody|instrument|dance|dancing|rhythm|lāsy",
+      "en": "Harmony · Joyful Self-Expression",
+      "kn": "ಸಾಮರಸ್ಯ · ಆನಂದಮಯ ಅಭಿವ್ಯಕ್ತಿ",
+      "reflection": "The arts become a language for integrating feeling, beauty, and awareness into ordinary life.",
+      "kr": "ಕಲೆಗಳು ಭಾವನೆ, ಸೌಂದರ್ಯ ಮತ್ತು ಅರಿವನ್ನು ದೈನಂದಿನ ಜೀವನದಲ್ಲಿ ಒಂದಾಗಿಸುವ ಭಾಷೆಯಾಗುತ್ತವೆ."
+    },
+    {
+      "key": "yoga",
+      "match": "yog|meditat|contemplat|ascetic|sage|seeker|spiritual aspirant|tapas|auster|renunciat",
+      "en": "Inner Discipline · Contemplative Depth",
+      "kn": "ಆಂತರಿಕ ಶಿಸ್ತು · ಧ್ಯಾನದ ಆಳ",
+      "reflection": "It values patience and inward steadiness over hurried achievement or comparison with others.",
+      "kr": "ಅವಸರದ ಸಾಧನೆ ಅಥವಾ ಹೋಲಿಕೆಯಿಗಿಂತ ತಾಳ್ಮೆ ಮತ್ತು ಆಂತರಿಕ ಸ್ಥಿರತೆಗೆ ಇದು ಮಹತ್ವ ನೀಡುತ್ತದೆ."
+    },
+    {
+      "key": "chakras",
+      "match": "chakra|cakra|lotus center|mūlādhāra|manipūra|maṇipūra|anāhata|svādhiṣṭhāna|ājnā|ājñā|sahasrāra|center of the pericarp|subtle body|six centers|kuṇḍalinī|bindu",
+      "en": "Inner Awareness · Integration of Energy",
+      "kn": "ಅಂತರಂಗದ ಅರಿವು · ಶಕ್ತಿಯ ಸಮನ್ವಯ",
+      "reflection": "The subtle-body image symbolizes bringing attention, feeling, and intention into a more integrated inner life.",
+      "kr": "ಸೂಕ್ಷ್ಮದೇಹದ ರೂಪಕವು ಗಮನ, ಭಾವನೆ ಮತ್ತು ಸಂಕಲ್ಪವನ್ನು ಹೆಚ್ಚು ಸಮನ್ವಿತ ಜೀವನದಲ್ಲಿ ಒಂದಾಗಿಸುವುದನ್ನು ಸೂಚಿಸುತ್ತದೆ."
+    },
+    {
+      "key": "moon",
+      "match": "moon|lunar|crescent|night|moonlight|cool|cooling",
+      "en": "Serenity · A Soothing Presence",
+      "kn": "ಶಾಂತತೆ · ಸಾಂತ್ವನದ ಸಾನ್ನಿಧ್ಯ",
+      "reflection": "Like moonlight softening the night, the image is connected with composure when emotion is intense.",
+      "kr": "ಚಂದ್ರಬೆಳಕು ರಾತ್ರಿಯನ್ನು ಮೃದುಗೊಳಿಸುವಂತೆ ತೀವ್ರ ಭಾವನೆಗಳ ನಡುವೆ ಸಮಚಿತ್ತತೆಯನ್ನು ಇದು ಸೂಚಿಸುತ್ತದೆ."
+    },
+    {
+      "key": "sun",
+      "match": "sun|solar|sunlight|sunrise|dawn|sunbeam|radiance|blazing|light of the day",
+      "en": "Inner Illumination · Renewed Hope",
+      "kn": "ಆಂತರಿಕ ಪ್ರಕಾಶ · ಹೊಸ ಭರವಸೆ",
+      "reflection": "The rising light suggests the hope and clarity that may emerge after periods of uncertainty.",
+      "kr": "ಅನಿಶ್ಚಿತತೆಯ ಅವಧಿಯ ನಂತರ ಉದಯಿಸಬಹುದಾದ ಸ್ಪಷ್ಟತೆ ಮತ್ತು ಭರವಸೆಗೆ ಸೂರ್ಯಪ್ರಕಾಶವು ಸಂಕೇತವಾಗಿದೆ."
+    },
+    {
+      "key": "fire",
+      "match": "fire|flame|agni|burn|heat|jvāla|effulgence",
+      "en": "Purifying Awareness · Inner Transformation",
+      "kn": "ಶುದ್ಧ ಅರಿವು · ಆಂತರಿಕ ಪರಿವರ್ತನೆ",
+      "reflection": "Fire becomes an image of discernment that can transform confusion without denying life's difficulty.",
+      "kr": "ಜೀವನದ ಕಷ್ಟಗಳನ್ನು ನಿರಾಕರಿಸದೆ ಗೊಂದಲವನ್ನು ಪರಿವರ್ತಿಸುವ ವಿವೇಕಕ್ಕೆ ಅಗ್ನಿಯು ರೂಪಕವಾಗಿದೆ."
+    },
+    {
+      "key": "ocean",
+      "match": "ocean|sea|river|water|wave|flow|nectar|sudhā|amṛta",
+      "en": "Depth of Grace · Emotional Spaciousness",
+      "kn": "ಕೃಪೆಯ ಆಳ · ಭಾವನೆಗಳಿಗೆ ವಿಶಾಲ ಅವಕಾಶ",
+      "reflection": "The fluid imagery evokes a capacity to hold feeling without being confined by each passing wave.",
+      "kr": "ಪ್ರತಿ ಕ್ಷಣದ ಭಾವನೆಗೆ ಸೀಮಿತವಾಗದೆ ಅದನ್ನು ವಿಶಾಲವಾಗಿ ಧರಿಸುವ ಸಾಮರ್ಥ್ಯವನ್ನು ಜಲರೂಪಕ ಸೂಚಿಸುತ್ತದೆ."
+    },
+    {
+      "key": "nature",
+      "match": "mountain|forest|grove|garden|earth|sky|space|star|universe|world|element|nature|cosmic|land|planet|heaven",
+      "en": "Belonging Within Creation · Reverence for Life",
+      "kn": "ಸೃಷ್ಟಿಯಲ್ಲಿ ಆತ್ಮೀಯತೆ · ಜೀವಜಗತ್ತಿನ ಗೌರವ",
+      "reflection": "Seeing the sacred throughout creation encourages humility and care toward the world that sustains us.",
+      "kr": "ಸೃಷ್ಟಿಯೆಲ್ಲ ಪವಿತ್ರತೆಯನ್ನು ಕಾಣುವುದು ವಿನಯವನ್ನೂ ನಮ್ಮನ್ನು ಪೋಷಿಸುವ ಜಗತ್ತಿನ ಬಗ್ಗೆ ಕಾಳಜಿಯನ್ನೂ ಸೂಚಿಸುತ್ತದೆ."
+    },
+    {
+      "key": "unity",
+      "match": "union|united|oneness|unity|one with|shiva.*shakti|inseparable|non-dual|nondual|advaita|not separate|two as one|whole",
+      "en": "Inner Wholeness · Harmony of Opposites",
+      "kn": "ಆಂತರಿಕ ಪೂರ್ಣತೆ · ವಿರೋಧಗಳ ಸಾಮರಸ್ಯ",
+      "reflection": "The meeting of distinct principles suggests the possibility of integrating strength with tenderness and action with awareness.",
+      "kr": "ಬೇರೆಬೇರೆ ತತ್ತ್ವಗಳ ಸಂಗಮವು ಶಕ್ತಿಯೊಂದಿಗೆ ಮೃದುತ್ವವನ್ನೂ ಕ್ರಿಯೆಯೊಂದಿಗೆ ಅರಿವನ್ನೂ ಒಂದಾಗಿಸುವ ಸಾಧ್ಯತೆಯನ್ನು ಸೂಚಿಸುತ್ತದೆ."
+    },
+    {
+      "key": "creation",
+      "match": "creat|manifest|born|arise|origin|source|birth of|produce|generate|emerge|project|unfold",
+      "en": "Creative Purpose · Participation in Life",
+      "kn": "ಸೃಜನಶೀಲ ಧ್ಯೇಯ · ಜೀವನದಲ್ಲಿ ಪಾಲ್ಗೊಳ್ಳುವಿಕೆ",
+      "reflection": "Creation imagery connects divine power with the meaningful human capacity to begin, nurture, and bring something beneficial into being.",
+      "kr": "ಸೃಷ್ಟಿಯ ರೂಪಕವು ಆರಂಭಿಸುವುದು, ಪೋಷಿಸುವುದು ಮತ್ತು ಹಿತಕರವಾದುದನ್ನು ರೂಪಿಸುವ ಮಾನವೀಯ ಸಾಮರ್ಥ್ಯಕ್ಕೆ ಸಂಬಂಧಿಸುತ್ತದೆ."
+    },
+    {
+      "key": "change",
+      "match": "destroy|dissolve|dissolution|end of|devour|consume|transcend time|time and space|cycle|ending",
+      "en": "Transformation · Acceptance of Change",
+      "kn": "ಪರಿವರ್ತನೆ · ಬದಲಾವಣೆಯ ಸ್ವೀಕಾರ",
+      "reflection": "The cycles of ending and renewal may be understood as room for growth rather than only as loss.",
+      "kr": "ಅಂತ್ಯ ಮತ್ತು ನವೀಕರಣದ ಚಕ್ರಗಳನ್ನು ಕೇವಲ ನಷ್ಟವಲ್ಲದೆ ಬೆಳವಣಿಗೆಯ ಅವಕಾಶವಾಗಿಯೂ ಇದು ಕಾಣುತ್ತದೆ."
+    },
+    {
+      "key": "light",
+      "match": "shining|brilliant|glowing|luminous|lustrous|illumin|bright|light|radiant|gleam|gleaming|sparkle",
+      "en": "Radiant Presence · Confidence with Humility",
+      "kn": "ಪ್ರಕಾಶಮಾನ ಸಾನ್ನಿಧ್ಯ · ವಿನಯಪೂರ್ಣ ಆತ್ಮವಿಶ್ವಾಸ",
+      "reflection": "Radiance here reflects the quiet influence of sincerity and clarity rather than a demand for admiration.",
+      "kr": "ಇಲ್ಲಿ ಪ್ರಕಾಶವು ಮೆಚ್ಚುಗೆಯ ಬೇಡಿಕೆಯಲ್ಲ; ನಿಷ್ಠೆ ಮತ್ತು ಸ್ಪಷ್ಟತೆಯ ಮೌನ ಪ್ರಭಾವದ ಸಂಕೇತವಾಗಿದೆ."
+    },
+    {
+      "key": "beauty",
+      "match": "beautiful|lovely|graceful|beauty|handsome|charming|adorning|ornament|jewel|ruby|gold|necklace|bracelet|dress|garland|flower|fragrance|sandalwood|perfume|face|cheek|eye|brow|hair|limb|smile|lips|teeth|feet|body|skin|complexion",
+      "en": "Seeing Sacred Beauty · Respect for Embodied Life",
+      "kn": "ಪವಿತ್ರ ಸೌಂದರ್ಯದ ಅರಿವು · ದೇಹಜೀವನದ ಗೌರವ",
+      "reflection": "The visible image is less about worldly appearance than about recognizing dignity and grace in embodied life.",
+      "kr": "ಈ ದೃಶ್ಯರೂಪಕವು ಲೌಕಿಕ ರೂಪಕ್ಕಿಂತ ದೇಹಧಾರಿಯಾದ ಜೀವನದಲ್ಲಿನ ಘನತೆ ಮತ್ತು ಲಾವಣ್ಯವನ್ನು ಗುರುತಿಸುವ ಅರ್ಥ ಹೊಂದಿದೆ."
+    },
+    {
+      "key": "royalty",
+      "match": "queen|empress|king|ruler|sovereign|throne|lord|mistress|master|reign|command|rulership|power over|govern|authority",
+      "en": "Wise Leadership · Responsibility with Power",
+      "kn": "ವಿವೇಕಪೂರ್ಣ ನಾಯಕತ್ವ · ಅಧಿಕಾರದ ಹೊಣೆಗಾರಿಕೆ",
+      "reflection": "The sovereign image asks how influence can be exercised with justice, self-restraint, and care for others.",
+      "kr": "ಪ್ರಭಾವವನ್ನು ನ್ಯಾಯ, ಸಂಯಮ ಮತ್ತು ಇತರರ ಕಾಳಜಿಯೊಂದಿಗೆ ಬಳಸುವ ಅರ್ಥವನ್ನು ಅಧಿಪತ್ಯದ ರೂಪಕ ಸೂಚಿಸುತ್ತದೆ."
+    },
+    {
+      "key": "wealth",
+      "match": "wealth|prosper|fortune|abundan|riches|treasure|auspicious|bless|boon|wish|desire fulfilled|bestow|gift|gives|giver",
+      "en": "Generosity · Meaningful Abundance",
+      "kn": "ಉದಾರತೆ · ಅರ್ಥಪೂರ್ಣ ಸಮೃದ್ಧಿ",
+      "reflection": "Abundance is pictured not only as possession, but as the ability to share, sustain, and use resources well.",
+      "kr": "ಸಮೃದ್ಧಿಯು ಕೇವಲ ಸ್ವಾಮ್ಯವಲ್ಲ; ಹಂಚಿಕೊಳ್ಳುವುದು, ಪೋಷಿಸುವುದು ಮತ್ತು ಸಂಪನ್ಮೂಲಗಳನ್ನು ಸದುಪಯೋಗಪಡಿಸುವ ಸಾಮರ್ಥ್ಯವಾಗಿದೆ."
+    },
+    {
+      "key": "joy",
+      "match": "joy|bliss|delight|happy|happiness|pleas|content|satisf|sweetness|sweet|rapture|ecstasy",
+      "en": "Inner Joy · Freedom from Restless Wanting",
+      "kn": "ಆಂತರಿಕ ಆನಂದ · ಅಶಾಂತ ಬಯಕೆಗಳಿಂದ ಬಿಡುವು",
+      "reflection": "The imagery connects joy with a deep sense of sufficiency rather than dependence on every changing circumstance.",
+      "kr": "ಪ್ರತಿ ಬದಲಾಗುವ ಪರಿಸ್ಥಿತಿಯನ್ನೂ ಅವಲಂಬಿಸದ ಆಳವಾದ ತೃಪ್ತಿಯೊಂದಿಗೆ ಈ ಆನಂದವು ಸಂಬಂಧಿಸುತ್ತದೆ."
+    },
+    {
+      "key": "peace",
+      "match": "peace|serene|tranquil|calm|quiet|still|silent|equanimity|gentle|soft|mild",
+      "en": "Peace of Mind · Gentle Strength",
+      "kn": "ಮನಶ್ಶಾಂತಿ · ಮೃದುವಾದ ಶಕ್ತಿ",
+      "reflection": "Serenity is imagined as strength that allows a thoughtful response rather than an impulsive reaction.",
+      "kr": "ಆವೇಶದ ಪ್ರತಿಕ್ರಿಯೆಯ ಬದಲು ಚಿಂತಿತ ಸ್ಪಂದನೆಗೆ ಅವಕಾಶ ಕೊಡುವ ಶಕ್ತಿಯಾಗಿ ಶಾಂತಿಯನ್ನು ಇಲ್ಲಿ ಕಾಣಲಾಗಿದೆ."
+    },
+    {
+      "key": "pure",
+      "match": "pure|purity|stainless|spotless|untouch|clean|without defect|free from sin|faultless|untainted|immaculate",
+      "en": "Purity of Intention · Freedom from Pretence",
+      "kn": "ಸಂಕಲ್ಪದ ಪರಿಶುದ್ಧತೆ · ಕಪಟದಿಂದ ಮುಕ್ತಿ",
+      "reflection": "The emphasis is on sincerity, openness, and letting go of what clouds the conscience.",
+      "kr": "ನಿಷ್ಠೆ, ತೆರೆದ ಮನಸ್ಸು ಮತ್ತು ಮನಸ್ಸಾಕ್ಷಿಯನ್ನು ಮಸುಕಾಗಿಸುವುದನ್ನು ಬಿಡುವ ಅರ್ಥವು ಇಲ್ಲಿ ಮುಖ್ಯವಾಗಿದೆ."
+    },
+    {
+      "key": "beyond",
+      "match": "beyond|limitless|unlimited|boundless|without form|formless|no name|nameless|measureless|immeasur|uncondition|unmanifest|infinite|transcend|not limited|free from all limitation|invisible|unseen",
+      "en": "Freedom Beyond Labels · Expansive Awareness",
+      "kn": "ಹೆಸರಿನ ಮಿತಿಮೀರಿದ ಸ್ವಾತಂತ್ರ್ಯ · ವಿಶಾಲ ಅರಿವು",
+      "reflection": "It suggests that identity and understanding need not be confined to any single role, form, or description.",
+      "kr": "ಗುರುತು ಮತ್ತು ಅರಿವು ಒಂದೇ ಪಾತ್ರ, ರೂಪ ಅಥವಾ ವರ್ಣನೆಗೆ ಸೀಮಿತವಾಗಬೇಕಿಲ್ಲ ಎಂಬುದನ್ನು ಇದು ಸೂಚಿಸುತ್ತದೆ."
+    },
+    {
+      "key": "self_control",
+      "match": "self-control|control|restraint|discipline|fortitude|patience|steadfast|determined|resolute|equanimity|steadiness|firmness",
+      "en": "Self-Mastery · Steadiness Under Pressure",
+      "kn": "ಸ್ವಸಂಯಮ · ಒತ್ತಡದಲ್ಲಿ ಸ್ಥಿರತೆ",
+      "reflection": "It associates strength with restraint, especially in moments when reaction would be easier than discernment.",
+      "kr": "ವಿವೇಕಕ್ಕಿಂತ ಆವೇಶ ಸುಲಭವಾಗುವ ಸಂದರ್ಭಗಳಲ್ಲಿ ಸಂಯಮದೊಂದಿಗೆ ಶಕ್ತಿಯನ್ನು ಇದು ಜೋಡಿಸುತ್ತದೆ."
+    },
+    {
+      "key": "ethics",
+      "match": "right path|conduct|virtue|pious|upright|truthful|honest|justice|goodness",
+      "en": "Integrity · Goodness in Action",
+      "kn": "ಸತ್ಯನಿಷ್ಠೆ · ಕ್ರಿಯೆಯಲ್ಲಿ ಒಳ್ಳೆಯತನ",
+      "reflection": "This name connects spiritual ideals with ordinary choices made in relationships and community.",
+      "kr": "ಆಧ್ಯಾತ್ಮಿಕ ಮೌಲ್ಯಗಳನ್ನು ಸಂಬಂಧಗಳು ಮತ್ತು ಸಮಾಜದಲ್ಲಿನ ದೈನಂದಿನ ಆಯ್ಕೆಗಳಿಗೆ ಇದು ಜೋಡಿಸುತ್ತದೆ."
+    },
+    {
+      "key": "affection",
+      "match": "love|beloved|dear|fond of|attached to|desire|attraction|passion|kāma|rati|husband|wife|consort",
+      "en": "Devotional Love · Harmony in Relationship",
+      "kn": "ಭಕ್ತಿಪೂರ್ಣ ಪ್ರೀತಿ · ಸಂಬಂಧಗಳ ಸಾಮರಸ್ಯ",
+      "reflection": "It portrays affection as a sacred bond that can deepen respect without turning into possession.",
+      "kr": "ಪ್ರೀತಿಯನ್ನು ಸ್ವಾಮ್ಯಭಾವವಾಗಿಸದೆ ಗೌರವವನ್ನು ಗಾಢಗೊಳಿಸುವ ಪವಿತ್ರ ಬಂಧವಾಗಿ ಇದು ಚಿತ್ರಿಸುತ್ತದೆ."
+    },
+    {
+      "key": "recognition",
+      "match": "witness|observer|sees|seeing|look|vision|perceiv|discern|glance|recogniz|understand",
+      "en": "Attentive Seeing · Deeper Discernment",
+      "kn": "ಗಮನಪೂರ್ಣ ದೃಷ್ಟಿ · ಆಳವಾದ ವಿವೇಕ",
+      "reflection": "The power of witnessing has human meaning in noticing experience clearly before making judgments.",
+      "kr": "ತೀರ್ಪು ನೀಡುವ ಮೊದಲು ಅನುಭವವನ್ನು ಸ್ಪಷ್ಟವಾಗಿ ಗಮನಿಸುವ ಸಾಮರ್ಥ್ಯದಲ್ಲಿ ಸಾಕ್ಷಿಭಾವದ ಅರ್ಥವಿದೆ."
+    },
+    {
+      "key": "skill",
+      "match": "skill|expert|capable|clever|dexter|artful|accomplish|talent|fine arts",
+      "en": "Skill in Action · Thoughtful Excellence",
+      "kn": "ಕಾರ್ಯನೈಪುಣ್ಯ · ವಿವೇಕಪೂರ್ಣ ಶ್ರೇಷ್ಠತೆ",
+      "reflection": "Excellence is imagined as the union of care, practice, and purposeful effort rather than mere status.",
+      "kr": "ಕೇವಲ ಸ್ಥಾನಮಾನವಲ್ಲದೆ ಕಾಳಜಿ, ಅಭ್ಯಾಸ ಮತ್ತು ಧ್ಯೇಯಪೂರ್ಣ ಪ್ರಯತ್ನಗಳ ಸಮನ್ವಯವಾಗಿ ನೈಪುಣ್ಯವನ್ನು ಇಲ್ಲಿ ಕಾಣಲಾಗಿದೆ."
+    },
+    {
+      "key": "sacred_time",
+      "match": "time|eternal|always|ever|timeless|beginningless|perpetual|nitya",
+      "en": "Continuity · Awareness Beyond Passing Time",
+      "kn": "ನಿರಂತರತೆ · ಕಾಲಾತೀತ ಅರಿವು",
+      "reflection": "It contrasts the passing nature of events with the lasting commitments that give life meaning.",
+      "kr": "ಘಟನೆಗಳ ಕ್ಷಣಿಕತೆಯೊಂದಿಗೆ ಜೀವನಕ್ಕೆ ಅರ್ಥ ನೀಡುವ ಶಾಶ್ವತ ಮೌಲ್ಯಗಳನ್ನು ಇದು ಹೋಲಿಸುತ್ತದೆ."
+    },
+    {
+      "key": "mind",
+      "match": "mind|thought|heart|emotion|feeling|memory|intention|desire of the mind",
+      "en": "Inner Clarity · Caring for the Mind",
+      "kn": "ಆಂತರಿಕ ಸ್ಪಷ್ಟತೆ · ಮನಸ್ಸಿನ ಕಾಳಜಿ",
+      "reflection": "The name gives importance to the inner landscape where thoughts, feelings, and intentions meet.",
+      "kr": "ಆಲೋಚನೆ, ಭಾವನೆ ಮತ್ತು ಸಂಕಲ್ಪಗಳು ಸೇರುವ ಅಂತರಂಗದ ಜಗತ್ತಿಗೆ ಈ ನಾಮವು ಮಹತ್ವ ನೀಡುತ್ತದೆ."
+    },
+    {
+      "key": "food",
+      "match": "food|rice|honey|milk|curd|ghee|drink|eating|offering of|nourishment|feed",
+      "en": "Gratitude · Nourishing Everyday Life",
+      "kn": "ಕೃತಜ್ಞತೆ · ದೈನಂದಿನ ಜೀವನದ ಪೋಷಣೆ",
+      "reflection": "Ordinary nourishment becomes an image of gratitude, care, and the sacredness of shared sustenance.",
+      "kr": "ದೈನಂದಿನ ಆಹಾರವು ಕೃತಜ್ಞತೆ, ಕಾಳಜಿ ಮತ್ತು ಪರಸ್ಪರ ಪೋಷಣೆಯ ಪವಿತ್ರತೆಯ ರೂಪಕವಾಗುತ್ತದೆ."
+    },
+    {
+      "key": "colors",
+      "match": "red|blue|yellow|white|crimson|black|rosy|hue|colour|color|complexion",
+      "en": "Living Radiance · Acceptance of Many Expressions",
+      "kn": "ಜೀವಂತ ಕಾಂತಿ · ವಿಭಿನ್ನ ರೂಪಗಳ ಸ್ವೀಕಾರ",
+      "reflection": "Colors express different moods of divine energy and the richness of human experience.",
+      "kr": "ಬಣ್ಣಗಳು ದಿವ್ಯಶಕ್ತಿಯ ವಿಭಿನ್ನ ಭಾವಗಳನ್ನೂ ಮಾನವ ಅನುಭವದ ವೈವಿಧ್ಯವನ್ನೂ ವ್ಯಕ್ತಪಡಿಸುತ್ತವೆ."
+    },
+    {
+      "key": "foundation_of_all",
+      "match": "all living|every living|all beings|all things|everything|all worlds|entire universe|omnipresen|all-pervading|pervades",
+      "en": "Shared Existence · Reverence for Every Being",
+      "kn": "ಸಾಮೂಹಿಕ ಅಸ್ತಿತ್ವ · ಪ್ರತಿಯೊಂದು ಜೀವಿಯ ಗೌರವ",
+      "reflection": "It links the spiritual vision of unity with the everyday ethic of respecting lives beyond our own.",
+      "kr": "ಏಕತೆಯ ಆಧ್ಯಾತ್ಮಿಕ ದೃಷ್ಟಿಯನ್ನು ನಮ್ಮದಕ್ಕಿಂತ ಭಿನ್ನವಾದ ಜೀವಿಗಳನ್ನು ಗೌರವಿಸುವ ದೈನಂದಿನ ನೀತಿಗೆ ಇದು ಜೋಡಿಸುತ್ತದೆ."
+    },
+    {
+      "key": "guru",
+      "match": "guru|teacher|lineage|instruction|teach|disciple|tradition",
+      "en": "Reverence for Learning · Gratitude to Teachers",
+      "kn": "ಕಲಿಕೆಗೆ ಗೌರವ · ಗುರುಗಳಿಗೆ ಕೃತಜ್ಞತೆ",
+      "reflection": "The continuity of wisdom across generations becomes a reminder of humility and grateful learning.",
+      "kr": "ತಲೆಮಾರುಗಳಿಂದ ಹರಿಯುವ ಜ್ಞಾನದ ಪರಂಪರೆಯು ವಿನಯ ಮತ್ತು ಕೃತಜ್ಞತಾಪೂರ್ಣ ಕಲಿಕೆಯನ್ನು ನೆನಪಿಸುತ್ತದೆ."
+    },
+    {
+      "key": "patience",
+      "match": "endurance|toleran|patient|endure|bear|forbear|firm",
+      "en": "Patience · Strength That Endures",
+      "kn": "ತಾಳ್ಮೆ · ಸಹಿಸುವ ಶಕ್ತಿ",
+      "reflection": "It values the strength needed to remain gentle and steady through prolonged difficulty.",
+      "kr": "ದೀರ್ಘಕಾಲದ ಕಷ್ಟಗಳ ನಡುವೆಯೂ ಮೃದುತ್ವ ಮತ್ತು ಸ್ಥಿರತೆಯನ್ನು ಉಳಿಸಿಕೊಳ್ಳುವ ಶಕ್ತಿಗೆ ಇದು ಮಹತ್ವ ನೀಡುತ್ತದೆ."
+    },
+    {
+      "key": "humility",
+      "match": "modest|humble|shy|lajja|shame|without pride|egoless|pride|arrogance",
+      "en": "Humility · Freedom from Self-Importance",
+      "kn": "ವಿನಯ · ಅಹಂಕಾರದ ಹಿಡಿತದಿಂದ ಮುಕ್ತಿ",
+      "reflection": "Humility is the quiet freedom to learn and care without always needing to be the center.",
+      "kr": "ಎಲ್ಲದರ ಕೇಂದ್ರವಾಗಿರಬೇಕೆಂಬ ಹಟವಿಲ್ಲದೆ ಕಲಿಯಲು ಮತ್ತು ಕಾಳಜಿ ತೋರಲು ಇರುವ ಸ್ವಾತಂತ್ರ್ಯವೇ ವಿನಯವಾಗಿದೆ."
+    },
+    {
+      "key": "friendship",
+      "match": "friend|compan|attend|serv|association|belong|family|lineage|surround",
+      "en": "Sacred Companionship · Mutual Support",
+      "kn": "ಪವಿತ್ರ ಒಡನಾಟ · ಪರಸ್ಪರ ಬೆಂಬಲ",
+      "reflection": "The image of shared presence highlights companionship and the responsibility people have toward one another.",
+      "kr": "ಸಾಮೂಹಿಕ ಸಾನ್ನಿಧ್ಯದ ರೂಪಕವು ಒಡನಾಟ ಮತ್ತು ಪರಸ್ಪರ ಹೊಣೆಗಾರಿಕೆಯನ್ನು ಮುಖ್ಯಪಡಿಸುತ್ತದೆ."
+    },
+    {
+      "key": "aspiration",
+      "match": "great|highest|supreme|excellent|magnific|glorious|lofty|mighty|powerful|strength",
+      "en": "Noble Aspiration · Strength with Purpose",
+      "kn": "ಉದಾತ್ತ ಧ್ಯೇಯ · ಅರ್ಥಪೂರ್ಣ ಶಕ್ತಿ",
+      "reflection": "Greatness is presented as an aspiration toward depth and service rather than a comparison with others.",
+      "kr": "ಮಹತ್ವವು ಇತರರೊಂದಿಗೆ ಹೋಲಿಕೆಯಲ್ಲ; ಆಳ ಮತ್ತು ಸೇವೆಯತ್ತ ಸಾಗುವ ಉದಾತ್ತ ಧ್ಯೇಯವಾಗಿ ಇಲ್ಲಿ ಕಾಣುತ್ತದೆ."
+    },
+    {
+      "key": "perspective",
+      "match": "form|embodiment|nature|essence|being|dwells|resides|seated|abides|located|lives|state of",
+      "en": "Sacred Perspective · Inner Attentiveness",
+      "kn": "ಪವಿತ್ರ ದೃಷ್ಟಿಕೋನ · ಅಂತರಂಗದ ಗಮನ",
+      "reflection": "The image offers a distinct way to notice the sacred significance of ordinary experience.",
+      "kr": "ಸಾಮಾನ್ಯ ಅನುಭವದಲ್ಲೂ ಪವಿತ್ರತೆಯ ಅರ್ಥವನ್ನು ಕಾಣುವ ವಿಭಿನ್ನ ದೃಷ್ಟಿಕೋನವನ್ನು ಈ ರೂಪಕ ನೀಡುತ್ತದೆ."
+    },
+    {
+      "key": "other",
+      "match": "^$",
+      "en": "Living Reverence · Thoughtful Reflection",
+      "kn": "ಜೀವನದ ಗೌರವ · ವಿವೇಕಪೂರ್ಣ ಚಿಂತನೆ",
+      "reflection": "Its symbolic meaning becomes relevant through the human capacity for care, responsibility, and thoughtful awareness.",
+      "kr": "ಕಾಳಜಿ, ಹೊಣೆಗಾರಿಕೆ ಮತ್ತು ವಿವೇಕಪೂರ್ಣ ಅರಿವು ಎಂಬ ಮಾನವೀಯ ಗುಣಗಳ ಮೂಲಕ ಇದರ ರೂಪಕಕ್ಕೆ ಅರ್ಥ ಸಿಗುತ್ತದೆ."
+    }
+  ]
+}
