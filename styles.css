@@ -1324,3 +1324,13 @@ header p{color:#845c4b;font-size:18px}
 .reader-page.kannada-mode .name-section .name-summary-grid .name-essence{font-size:16px!important;line-height:1.55!important}
 .reader-page.kannada-mode .name-section .name-inline-wisdom{font-size:14px!important;line-height:1.65!important}
 @media(max-width:600px){.reader-page .name-section .name-insight-key{flex-basis:100%;margin-left:0}.reader-page .name-section .name-identity-inline .name-written{font-size:19px!important}}
+
+
+/* Restore the familiar left-hand audio controls and quieter study toggle. */
+.reader-page .name-section .name-audio-card{grid-template-columns:34px minmax(0,1fr)!important}
+.reader-page .name-section .name-audio-card>.name-audio-button{grid-column:1!important;grid-row:1!important}
+.reader-page .name-section .name-audio-card>.compact-name-row{grid-column:2!important;grid-row:1!important}
+.reader-page .name-section .name-audio-card>.compact-name-row>summary{padding-left:19px!important;padding-right:4px!important}
+.reader-page .name-section .name-audio-card>.compact-name-row>summary::before{left:3px!important;right:auto!important;top:12px!important}
+.reader-page .name-section .name-insight-key{font-size:12px}
+.reader-page .name-section .name-inline-wisdom::before{content:"✦ ";color:#819a81}
