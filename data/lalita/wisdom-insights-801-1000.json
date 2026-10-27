@@ -1287,761 +1287,1281 @@
       "number": 841,
       "verse_number": 157,
       "title": {
-        "en": "Awakening Wisdom · Clear Understanding",
-        "kn": "ಜ್ಞಾನೋದಯ · ಸ್ಪಷ್ಟ ತಿಳುವಳಿಕೆ"
+        "en": "Understanding feelings without judgment",
+        "kn": "ತೀರ್ಪಿಲ್ಲದೆ ಭಾವನೆಗಳನ್ನು ಅರಿಯುವುದು"
       },
       "benefit": {
-        "en": "Awakening Wisdom · Clear Understanding",
-        "kn": "ಜ್ಞಾನೋದಯ · ಸ್ಪಷ್ಟ ತಿಳುವಳಿಕೆ"
+        "en": "Understanding feelings without judgment",
+        "kn": "ತೀರ್ಪಿಲ್ಲದೆ ಭಾವನೆಗಳನ್ನು ಅರಿಯುವುದು"
       },
       "explanation": {
         "en": "The name bhāvajñā describes the Divine Mother as knower of all thoughts and sentiments. The benefit associated with this image is the capacity to see beyond confusion and respond with discernment.",
         "kn": "bhāvajñā ಎಂಬ ನಾಮದಲ್ಲಿ ದೇವಿಯನ್ನು ಎಲ್ಲರ ಮನೋಭಾವಗಳನ್ನು ಅರಿತಿರುವ ದೇವಿ ಎಂದು ವರ್ಣಿಸಲಾಗಿದೆ. ಗೊಂದಲದಾಚೆಗೆ ಸ್ಪಷ್ಟವಾಗಿ ನೋಡಿ ವಿವೇಕದಿಂದ ಸ್ಪಂದಿಸುವ ಸಾಮರ್ಥ್ಯವನ್ನು ಈ ರೂಪಕ ಸೂಚಿಸುತ್ತದೆ."
       },
       "editorial_theme": "wisdom",
-      "kind": "human_significance_editorial_draft",
-      "review_status": "requires_name_specific_traditional_commentary_review"
+      "kind": "individual_name_contemplation",
+      "review_status": "bilingual_editorial_draft",
+      "spiritual_significance": {
+        "en": "Bhāvajñā knows the thoughts and sentiments of beings. The name praises a divine understanding deeper than appearances.",
+        "kn": "ಭಾವಜ್ಞಾ ನಾಮವು ಜೀವಿಗಳ ಮನಸ್ಸಿನ ಭಾವನೆಗಳನ್ನು ಅರಿಯುವ ತಾಯಿಯನ್ನು ಸ್ತುತಿಸುತ್ತದೆ; ಹೊರಗಿನ ರೂಪಕ್ಕಿಂತ ಆಳವಾದ ಅರಿವು ಇದಾಗಿದೆ."
+      },
+      "human_significance": {
+        "en": "Listen before interpreting someone's motives; emotions are not always visible in behavior.",
+        "kn": "ಇತರರ ಉದ್ದೇಶವನ್ನು ಊಹಿಸುವ ಮೊದಲು ಆಲಿಸಿ; ನಡತೆಯಲ್ಲೇ ಎಲ್ಲಾ ಭಾವನೆಗಳು ಕಾಣುವುದಿಲ್ಲ."
+      },
+      "traditional_benefit": {
+        "en": "",
+        "kn": ""
+      },
+      "traditional_benefit_status": "not_source_verified"
     },
     {
       "number": 842,
       "verse_number": 157,
       "title": {
-        "en": "Comfort Amid Suffering · Inner Resilience",
-        "kn": "ದುಃಖದಲ್ಲಿ ಸಾಂತ್ವನ · ಆಂತರಿಕ ಸ್ಥೈರ್ಯ"
+        "en": "Liberation from the disease of saṃsāra",
+        "kn": "ಸಂಸಾರರೋಗದಿಂದ ಮುಕ್ತಿ"
       },
       "benefit": {
-        "en": "Comfort Amid Suffering · Inner Resilience",
-        "kn": "ದುಃಖದಲ್ಲಿ ಸಾಂತ್ವನ · ಆಂತರಿಕ ಸ್ಥೈರ್ಯ"
+        "en": "Liberation from the disease of saṃsāra",
+        "kn": "ಸಂಸಾರರೋಗದಿಂದ ಮುಕ್ತಿ"
       },
       "explanation": {
         "en": "The name bhavarogaghnī describes the Divine Mother as the one who eradicates the diseases of the cycle of birth and death. Its relevance lies in the dignity, hope, and compassionate presence people seek amid illness or loss, not in a promised cure.",
         "kn": "bhavarogaghnī ಎಂಬ ನಾಮದಲ್ಲಿ ದೇವಿಯನ್ನು ಜನನ ಮರಣಗಳ ಸಂಸಾರರೋಗವನ್ನು ನಿವಾರಿಸುವ ದೇವಿ ಎಂದು ವರ್ಣಿಸಲಾಗಿದೆ. ಅನಾರೋಗ್ಯ ಅಥವಾ ನಷ್ಟದ ಸಮಯದಲ್ಲಿ ಮಾನವರು ಹುಡುಕುವ ಗೌರವ, ಭರವಸೆ ಮತ್ತು ಕರುಣಾಮಯ ಸಾನ್ನಿಧ್ಯ ಇದರ ಆಶಯವಾಗಿದೆ; ಇದು ಖಚಿತ ಚಿಕಿತ್ಸೆಯ ಭರವಸೆಯಲ್ಲ."
       },
       "editorial_theme": "disease",
-      "kind": "human_significance_editorial_draft",
-      "review_status": "requires_name_specific_traditional_commentary_review"
+      "kind": "individual_name_contemplation",
+      "review_status": "bilingual_editorial_draft",
+      "spiritual_significance": {
+        "en": "Bhavarogaghnī destroys the spiritual disease of repeated birth and death, identified with binding ignorance rather than ordinary physical illness.",
+        "kn": "ಭವರೋಗಘ್ನೀ ನಾಮವು ಅಜ್ಞಾನಬಂಧನದಿಂದ ಉಂಟಾಗುವ ಸಂಸಾರರೋಗವನ್ನು ನಿವಾರಿಸುವ ತಾಯಿಯನ್ನು ಸ್ತುತಿಸುತ್ತದೆ; ಇದು ಸಾಮಾನ್ಯ ದೈಹಿಕ ರೋಗವಲ್ಲ."
+      },
+      "human_significance": {
+        "en": "Examine habits that repeatedly create suffering, and seek appropriate help for actual health problems.",
+        "kn": "ಪುನಃ ಪುನಃ ದುಃಖ ತರುವ ಅಭ್ಯಾಸಗಳನ್ನು ಪರಿಶೀಲಿಸಿ ನಿಜವಾದ ಆರೋಗ್ಯಸಮಸ್ಯೆಗೆ ಸೂಕ್ತ ಚಿಕಿತ್ಸೆ ಪಡೆಯಬಹುದು."
+      },
+      "traditional_benefit": {
+        "en": "",
+        "kn": ""
+      },
+      "traditional_benefit_status": "not_source_verified"
     },
     {
       "number": 843,
       "verse_number": 157,
       "title": {
-        "en": "Acceptance of Impermanence · Freedom from Fear",
-        "kn": "ಅನಿತ್ಯತೆಯ ಅರಿವು · ಭಯದಿಂದ ಮುಕ್ತಿ"
+        "en": "The turning wheel of existence",
+        "kn": "ಸಂಸಾರಚಕ್ರದ ಚಲನೆ"
       },
       "benefit": {
-        "en": "Acceptance of Impermanence · Freedom from Fear",
-        "kn": "ಅನಿತ್ಯತೆಯ ಅರಿವು · ಭಯದಿಂದ ಮುಕ್ತಿ"
+        "en": "The turning wheel of existence",
+        "kn": "ಸಂಸಾರಚಕ್ರದ ಚಲನೆ"
       },
       "explanation": {
         "en": "The name bhavacakrapravartinī describes the Divine Mother as the one who turns the wheel of the cycle of birth and death. The name acknowledges life's transience while placing it within a wider spiritual vision of continuity.",
         "kn": "bhavacakrapravartinī ಎಂಬ ನಾಮದಲ್ಲಿ ದೇವಿಯನ್ನು ಜನನ ಮರಣಗಳ ಚಕ್ರವನ್ನು ನಡೆಸುವ ದೇವಿ ಎಂದು ವರ್ಣಿಸಲಾಗಿದೆ. ಜೀವನದ ಅನಿತ್ಯತೆಯನ್ನು ಒಪ್ಪಿಕೊಂಡು ಅದನ್ನು ವಿಶಾಲವಾದ ಆಧ್ಯಾತ್ಮಿಕ ದೃಷ್ಟಿಯಲ್ಲಿ ಕಾಣುವುದನ್ನು ಇದು ಸೂಚಿಸುತ್ತದೆ."
       },
       "editorial_theme": "death",
-      "kind": "human_significance_editorial_draft",
-      "review_status": "requires_name_specific_traditional_commentary_review"
+      "kind": "individual_name_contemplation",
+      "review_status": "bilingual_editorial_draft",
+      "spiritual_significance": {
+        "en": "Bhavacakrapravartinī sets the wheel of birth, death and worldly experience in motion through divine power.",
+        "kn": "ಭವಚಕ್ರಪ್ರವರ್ತಿನೀ ನಾಮವು ಜನನಮರಣ ಮತ್ತು ಲೋಕಾನುಭವಗಳ ಚಕ್ರವನ್ನು ನಡೆಸುವ ಶಕ್ತಿಯಾಗಿ ತಾಯಿಯನ್ನು ಸ್ತುತಿಸುತ್ತದೆ."
+      },
+      "human_significance": {
+        "en": "Notice recurring patterns in life so you can respond consciously instead of repeating them blindly.",
+        "kn": "ಜೀವನದ ಪುನರಾವರ್ತಿತ ಮಾದರಿಗಳನ್ನು ಗುರುತಿಸಿ ಯಾಂತ್ರಿಕವಾಗಿ ಅಲ್ಲದೆ ಜಾಗೃತಿಯಿಂದ ಪ್ರತಿಕ್ರಿಯಿಸಬಹುದು."
+      },
+      "traditional_benefit": {
+        "en": "",
+        "kn": ""
+      },
+      "traditional_benefit_status": "not_source_verified"
     },
     {
       "number": 844,
       "verse_number": 158,
       "title": {
-        "en": "Sacred Sound · Focused Attention",
-        "kn": "ಪವಿತ್ರ ನಾದ · ಏಕಾಗ್ರ ಗಮನ"
+        "en": "Essence of Vedic meter and revelation",
+        "kn": "ವೇದಛಂದಸ್ಸಿನ ಪವಿತ್ರ ಸಾರ"
       },
       "benefit": {
-        "en": "Sacred Sound · Focused Attention",
-        "kn": "ಪವಿತ್ರ ನಾದ · ಏಕಾಗ್ರ ಗಮನ"
+        "en": "Essence of Vedic meter and revelation",
+        "kn": "ವೇದಛಂದಸ್ಸಿನ ಪವಿತ್ರ ಸಾರ"
       },
       "explanation": {
         "en": "The name chandaḥsārā describes the Divine Mother as essence of all the vedas. The symbolism of sound points to how attentive listening and meaningful recitation can deepen inward presence.",
         "kn": "chandaḥsārā ಎಂಬ ನಾಮದಲ್ಲಿ ದೇವಿಯನ್ನು ಎಲ್ಲ ವೇದಗಳ ಸಾರಸ್ವರೂಪಿಣಿ ಎಂದು ವರ್ಣಿಸಲಾಗಿದೆ. ಗಮನಪೂರ್ವಕವಾಗಿ ಕೇಳುವುದು ಮತ್ತು ಅರ್ಥಪೂರ್ಣ ಪಠಣವು ಆಂತರಿಕ ಸಾನ್ನಿಧ್ಯವನ್ನು ಗಾಢಗೊಳಿಸುವುದನ್ನು ಈ ನಾದರೂಪಕ ಸೂಚಿಸುತ್ತದೆ."
       },
       "editorial_theme": "mantra",
-      "kind": "human_significance_editorial_draft",
-      "review_status": "requires_name_specific_traditional_commentary_review"
+      "kind": "individual_name_contemplation",
+      "review_status": "bilingual_editorial_draft",
+      "spiritual_significance": {
+        "en": "Chandaḥsārā is the essence of Vedic meters and sacred recitation, where order gives sound its devotional shape.",
+        "kn": "ಛಂದಃಸಾರಾ ನಾಮವು ವೇದಛಂದಸ್ಸು ಮತ್ತು ಪವಿತ್ರ ಪಠಣದ ಸಾರವಾದ ತಾಯಿಯನ್ನು ಸ್ತುತಿಸುತ್ತದೆ."
+      },
+      "human_significance": {
+        "en": "Give attention to rhythm and correct recitation rather than valuing speed alone.",
+        "kn": "ವೇಗಕ್ಕಿಂತ ಲಯ ಮತ್ತು ಸರಿಯಾದ ಪಠಣಕ್ಕೆ ಗಮನ ನೀಡಬಹುದು."
+      },
+      "traditional_benefit": {
+        "en": "",
+        "kn": ""
+      },
+      "traditional_benefit_status": "not_source_verified"
     },
     {
       "number": 845,
       "verse_number": 158,
       "title": {
-        "en": "Sacred Perspective · Inner Attentiveness",
-        "kn": "ಪವಿತ್ರ ದೃಷ್ಟಿಕೋನ · ಅಂತರಂಗದ ಗಮನ"
+        "en": "Wisdom at the heart of scriptures",
+        "kn": "ಶಾಸ್ತ್ರಗಳ ಅಂತರಂಗಸಾರ"
       },
       "benefit": {
-        "en": "Sacred Perspective · Inner Attentiveness",
-        "kn": "ಪವಿತ್ರ ದೃಷ್ಟಿಕೋನ · ಅಂತರಂಗದ ಗಮನ"
+        "en": "Wisdom at the heart of scriptures",
+        "kn": "ಶಾಸ್ತ್ರಗಳ ಅಂತರಂಗಸಾರ"
       },
       "explanation": {
         "en": "The name śāstrasārā describes the Divine Mother as essence of all scriptures. The image offers a distinct way to notice the sacred significance of ordinary experience.",
         "kn": "śāstrasārā ಎಂಬ ನಾಮದಲ್ಲಿ ದೇವಿಯನ್ನು ಎಲ್ಲ ಶಾಸ್ತ್ರಗಳ ಸಾರಸ್ವರೂಪಿಣಿ ಎಂದು ವರ್ಣಿಸಲಾಗಿದೆ. ಸಾಮಾನ್ಯ ಅನುಭವದಲ್ಲೂ ಪವಿತ್ರತೆಯ ಅರ್ಥವನ್ನು ಕಾಣುವ ವಿಭಿನ್ನ ದೃಷ್ಟಿಕೋನವನ್ನು ಈ ರೂಪಕ ನೀಡುತ್ತದೆ."
       },
       "editorial_theme": "perspective",
-      "kind": "human_significance_editorial_draft",
-      "review_status": "requires_name_specific_traditional_commentary_review"
+      "kind": "individual_name_contemplation",
+      "review_status": "bilingual_editorial_draft",
+      "spiritual_significance": {
+        "en": "Śāstrasārā is the essence of the scriptures, the insight to which their many teachings point.",
+        "kn": "ಶಾಸ್ತ್ರಸಾರಾ ನಾಮವು ಅನೇಕ ಶಾಸ್ತ್ರಬೋಧನೆಗಳು ಸೂಚಿಸುವ ಒಳಗಿನ ಜ್ಞಾನಸಾರವೇ ತಾಯಿ ಎಂದು ತಿಳಿಸುತ್ತದೆ."
+      },
+      "human_significance": {
+        "en": "Ask how a teaching changes conduct instead of memorizing terms without understanding.",
+        "kn": "ಪದಗಳನ್ನು ಕಂಠಪಾಠ ಮಾಡುವುದಕ್ಕಿಂತ ಬೋಧನೆ ನಡತೆಯನ್ನು ಹೇಗೆ ಬದಲಿಸುತ್ತದೆ ಎಂದು ವಿಚಾರಿಸಬಹುದು."
+      },
+      "traditional_benefit": {
+        "en": "",
+        "kn": ""
+      },
+      "traditional_benefit_status": "not_source_verified"
     },
     {
       "number": 846,
       "verse_number": 158,
       "title": {
-        "en": "Sacred Sound · Focused Attention",
-        "kn": "ಪವಿತ್ರ ನಾದ · ಏಕಾಗ್ರ ಗಮನ"
+        "en": "The living essence of mantra",
+        "kn": "ಮಂತ್ರದ ಜೀವಂತ ತತ್ತ್ವ"
       },
       "benefit": {
-        "en": "Sacred Sound · Focused Attention",
-        "kn": "ಪವಿತ್ರ ನಾದ · ಏಕಾಗ್ರ ಗಮನ"
+        "en": "The living essence of mantra",
+        "kn": "ಮಂತ್ರದ ಜೀವಂತ ತತ್ತ್ವ"
       },
       "explanation": {
         "en": "The name mantrasārā describes the Divine Mother as essence of all mantras. The symbolism of sound points to how attentive listening and meaningful recitation can deepen inward presence.",
         "kn": "mantrasārā ಎಂಬ ನಾಮದಲ್ಲಿ ದೇವಿಯನ್ನು ಎಲ್ಲ ಮಂತ್ರಗಳ ಸಾರಸ್ವರೂಪಿಣಿ ಎಂದು ವರ್ಣಿಸಲಾಗಿದೆ. ಗಮನಪೂರ್ವಕವಾಗಿ ಕೇಳುವುದು ಮತ್ತು ಅರ್ಥಪೂರ್ಣ ಪಠಣವು ಆಂತರಿಕ ಸಾನ್ನಿಧ್ಯವನ್ನು ಗಾಢಗೊಳಿಸುವುದನ್ನು ಈ ನಾದರೂಪಕ ಸೂಚಿಸುತ್ತದೆ."
       },
       "editorial_theme": "mantra",
-      "kind": "human_significance_editorial_draft",
-      "review_status": "requires_name_specific_traditional_commentary_review"
+      "kind": "individual_name_contemplation",
+      "review_status": "bilingual_editorial_draft",
+      "spiritual_significance": {
+        "en": "Mantrasārā is the essence of all mantras, the divine reality contemplated through sacred sounds.",
+        "kn": "ಮಂತ್ರಸಾರಾ ನಾಮವು ಪವಿತ್ರ ಮಂತ್ರಶಬ್ದಗಳ ಮೂಲಕ ಧ್ಯಾನಿಸುವ ಮೂಲದೈವಿಕ ತತ್ತ್ವವೇ ತಾಯಿ ಎಂದು ಸ್ತುತಿಸುತ್ತದೆ."
+      },
+      "human_significance": {
+        "en": "Chant with attention to meaning and reverence rather than treating syllables as mechanical guarantees.",
+        "kn": "ಮಂತ್ರವನ್ನು ಯಾಂತ್ರಿಕ ಫಲಭರವಸೆಯಾಗಿ ನೋಡದೆ ಅರ್ಥ ಮತ್ತು ಗೌರವದಿಂದ ಜಪಿಸಬಹುದು."
+      },
+      "traditional_benefit": {
+        "en": "",
+        "kn": ""
+      },
+      "traditional_benefit_status": "not_source_verified"
     },
     {
       "number": 847,
       "verse_number": 158,
       "title": {
-        "en": "Living Reverence · Thoughtful Reflection",
-        "kn": "ಜೀವನದ ಗೌರವ · ವಿವೇಕಪೂರ್ಣ ಚಿಂತನೆ"
+        "en": "Delicate beauty without comparison",
+        "kn": "ಹೋಲಿಕೆಯಿಲ್ಲದ ಮೃದು ಸೌಂದರ್ಯ"
       },
       "benefit": {
-        "en": "Living Reverence · Thoughtful Reflection",
-        "kn": "ಜೀವನದ ಗೌರವ · ವಿವೇಕಪೂರ್ಣ ಚಿಂತನೆ"
+        "en": "Delicate beauty without comparison",
+        "kn": "ಹೋಲಿಕೆಯಿಲ್ಲದ ಮೃದು ಸೌಂದರ್ಯ"
       },
       "explanation": {
         "en": "The name talodarī describes the Divine Mother as slender-waisted. Its symbolic meaning becomes relevant through the human capacity for care, responsibility, and thoughtful awareness.",
         "kn": "talodarī ಎಂಬ ನಾಮದಲ್ಲಿ ದೇವಿಯನ್ನು ಸೂಕ್ಷ್ಮವಾದ ಸೊಂಟವನ್ನು ಹೊಂದಿರುವ ದೇವಿ ಎಂದು ವರ್ಣಿಸಲಾಗಿದೆ. ಕಾಳಜಿ, ಹೊಣೆಗಾರಿಕೆ ಮತ್ತು ವಿವೇಕಪೂರ್ಣ ಅರಿವು ಎಂಬ ಮಾನವೀಯ ಗುಣಗಳ ಮೂಲಕ ಇದರ ರೂಪಕಕ್ಕೆ ಅರ್ಥ ಸಿಗುತ್ತದೆ."
       },
       "editorial_theme": "other",
-      "kind": "human_significance_editorial_draft",
-      "review_status": "requires_name_specific_traditional_commentary_review"
+      "kind": "individual_name_contemplation",
+      "review_status": "bilingual_editorial_draft",
+      "spiritual_significance": {
+        "en": "Talodarī praises the Mother's slender waist in poetic iconography; it does not establish an ideal human body size.",
+        "kn": "ತಲೋದರೀ ನಾಮವು ತಾಯಿಯ ಸೂಕ್ಷ್ಮ ಸೊಂಟದ ಕಾವ್ಯಾತ್ಮಕ ಸೌಂದರ್ಯವನ್ನು ವರ್ಣಿಸುತ್ತದೆ; ಇದು ಮಾನವ ದೇಹದ ಅಳತೆಯ ಮಾನದಂಡವಲ್ಲ."
+      },
+      "human_significance": {
+        "en": "Appreciate beauty without shaming people whose bodies differ from an image.",
+        "kn": "ಚಿತ್ರಣದಿಂದ ಬೇರೆ ರೀತಿಯ ದೇಹ ಹೊಂದಿರುವವರನ್ನು ಅವಮಾನಿಸದೆ ಸೌಂದರ್ಯವನ್ನು ಗೌರವಿಸಬಹುದು."
+      },
+      "traditional_benefit": {
+        "en": "",
+        "kn": ""
+      },
+      "traditional_benefit_status": "not_source_verified"
     },
     {
       "number": 848,
       "verse_number": 158,
       "title": {
-        "en": "Living Reverence · Thoughtful Reflection",
-        "kn": "ಜೀವನದ ಗೌರವ · ವಿವೇಕಪೂರ್ಣ ಚಿಂತನೆ"
+        "en": "Renown earned through greatness",
+        "kn": "ಮಹಿಮೆಯಿಂದ ಬಂದ ಉನ್ನತ ಕೀರ್ತಿ"
       },
       "benefit": {
-        "en": "Living Reverence · Thoughtful Reflection",
-        "kn": "ಜೀವನದ ಗೌರವ · ವಿವೇಕಪೂರ್ಣ ಚಿಂತನೆ"
+        "en": "Renown earned through greatness",
+        "kn": "ಮಹಿಮೆಯಿಂದ ಬಂದ ಉನ್ನತ ಕೀರ್ತಿ"
       },
       "explanation": {
         "en": "The name udārakīrtiḥ describes the Divine Mother as the one who possesses exalted fame. Its symbolic meaning becomes relevant through the human capacity for care, responsibility, and thoughtful awareness.",
         "kn": "udārakīrtiḥ ಎಂಬ ನಾಮದಲ್ಲಿ ದೇವಿಯನ್ನು ಉನ್ನತವಾದ ಕೀರ್ತಿಯನ್ನು ಹೊಂದಿರುವ ದೇವಿ ಎಂದು ವರ್ಣಿಸಲಾಗಿದೆ. ಕಾಳಜಿ, ಹೊಣೆಗಾರಿಕೆ ಮತ್ತು ವಿವೇಕಪೂರ್ಣ ಅರಿವು ಎಂಬ ಮಾನವೀಯ ಗುಣಗಳ ಮೂಲಕ ಇದರ ರೂಪಕಕ್ಕೆ ಅರ್ಥ ಸಿಗುತ್ತದೆ."
       },
       "editorial_theme": "other",
-      "kind": "human_significance_editorial_draft",
-      "review_status": "requires_name_specific_traditional_commentary_review"
+      "kind": "individual_name_contemplation",
+      "review_status": "bilingual_editorial_draft",
+      "spiritual_significance": {
+        "en": "Udārakīrtiḥ has exalted fame rooted in divine generosity and greatness.",
+        "kn": "ಉದಾರಕೀರ್ತಿಃ ನಾಮವು ದಿವ್ಯ ಉದಾರತೆ ಮತ್ತು ಮಹಿಮೆಯಿಂದ ಕೀರ್ತಿಸಲ್ಪಡುವ ತಾಯಿಯನ್ನು ಸ್ತುತಿಸುತ್ತದೆ."
+      },
+      "human_significance": {
+        "en": "Seek a reputation built on dependable kindness rather than mere visibility.",
+        "kn": "ಪ್ರಚಾರಕ್ಕಿಂತ ವಿಶ್ವಾಸಾರ್ಹ ಸತ್ಕಾರ್ಯದಿಂದ ಗೌರವ ಗಳಿಸಬಹುದು."
+      },
+      "traditional_benefit": {
+        "en": "",
+        "kn": ""
+      },
+      "traditional_benefit_status": "not_source_verified"
     },
     {
       "number": 849,
       "verse_number": 158,
       "title": {
-        "en": "Freedom Beyond Labels · Expansive Awareness",
-        "kn": "ಹೆಸರಿನ ಮಿತಿಮೀರಿದ ಸ್ವಾತಂತ್ರ್ಯ · ವಿಶಾಲ ಅರಿವು"
+        "en": "Unbounded divine magnificence",
+        "kn": "ಅಪರಿಮಿತ ದಿವ್ಯವೈಭವ"
       },
       "benefit": {
-        "en": "Freedom Beyond Labels · Expansive Awareness",
-        "kn": "ಹೆಸರಿನ ಮಿತಿಮೀರಿದ ಸ್ವಾತಂತ್ರ್ಯ · ವಿಶಾಲ ಅರಿವು"
+        "en": "Unbounded divine magnificence",
+        "kn": "ಅಪರಿಮಿತ ದಿವ್ಯವೈಭವ"
       },
       "explanation": {
         "en": "The name uddāmavaibhavā describes the Divine Mother as she whose prowess is unlimited. It suggests that identity and understanding need not be confined to any single role, form, or description.",
         "kn": "uddāmavaibhavā ಎಂಬ ನಾಮದಲ್ಲಿ ದೇವಿಯನ್ನು ಮಿತಿಯಿಲ್ಲದ ಪರಾಕ್ರಮವುಳ್ಳ ದೇವಿ ಎಂದು ವರ್ಣಿಸಲಾಗಿದೆ. ಗುರುತು ಮತ್ತು ಅರಿವು ಒಂದೇ ಪಾತ್ರ, ರೂಪ ಅಥವಾ ವರ್ಣನೆಗೆ ಸೀಮಿತವಾಗಬೇಕಿಲ್ಲ ಎಂಬುದನ್ನು ಇದು ಸೂಚಿಸುತ್ತದೆ."
       },
       "editorial_theme": "beyond",
-      "kind": "human_significance_editorial_draft",
-      "review_status": "requires_name_specific_traditional_commentary_review"
+      "kind": "individual_name_contemplation",
+      "review_status": "bilingual_editorial_draft",
+      "spiritual_significance": {
+        "en": "Uddāmavaibhavā possesses unlimited glory and power, beyond the scale of earthly achievement.",
+        "kn": "ಉದ್ದಾಮವೈಭವಾ ನಾಮವು ಲೌಕಿಕ ಸಾಧನೆಯ ಅಳತೆಗೆ ನಿಲುಕದ ಅಪಾರ ದಿವ್ಯಮಹಿಮೆಯನ್ನು ಸ್ತುತಿಸುತ್ತದೆ."
+      },
+      "human_significance": {
+        "en": "Let awe soften arrogance when your own accomplishments seem large.",
+        "kn": "ಸ್ವಂತ ಸಾಧನೆ ದೊಡ್ಡದೆನಿಸಿದಾಗಲೂ ವಿಸ್ಮಯದೊಂದಿಗೆ ವಿನಯ ಉಳಿಸಬಹುದು."
+      },
+      "traditional_benefit": {
+        "en": "",
+        "kn": ""
+      },
+      "traditional_benefit_status": "not_source_verified"
     },
     {
       "number": 850,
       "verse_number": 158,
       "title": {
-        "en": "Sacred Sound · Focused Attention",
-        "kn": "ಪವಿತ್ರ ನಾದ · ಏಕಾಗ್ರ ಗಮನ"
+        "en": "The alphabet as a divine form",
+        "kn": "ವರ್ಣಮಾಲೆಯ ದೈವಿಕ ಸ್ವರೂಪ"
       },
       "benefit": {
-        "en": "Sacred Sound · Focused Attention",
-        "kn": "ಪವಿತ್ರ ನಾದ · ಏಕಾಗ್ರ ಗಮನ"
+        "en": "The alphabet as a divine form",
+        "kn": "ವರ್ಣಮಾಲೆಯ ದೈವಿಕ ಸ್ವರೂಪ"
       },
       "explanation": {
         "en": "The name varṇarūpiṇī describes the Divine Mother as in the form of the letters of the alphabets. The symbolism of sound points to how attentive listening and meaningful recitation can deepen inward presence.",
         "kn": "varṇarūpiṇī ಎಂಬ ನಾಮದಲ್ಲಿ ದೇವಿಯನ್ನು ವರ್ಣಮಾಲೆಯ ಅಕ್ಷರಗಳ ಸ್ವರೂಪಿಣಿ ಎಂದು ವರ್ಣಿಸಲಾಗಿದೆ. ಗಮನಪೂರ್ವಕವಾಗಿ ಕೇಳುವುದು ಮತ್ತು ಅರ್ಥಪೂರ್ಣ ಪಠಣವು ಆಂತರಿಕ ಸಾನ್ನಿಧ್ಯವನ್ನು ಗಾಢಗೊಳಿಸುವುದನ್ನು ಈ ನಾದರೂಪಕ ಸೂಚಿಸುತ್ತದೆ."
       },
       "editorial_theme": "mantra",
-      "kind": "human_significance_editorial_draft",
-      "review_status": "requires_name_specific_traditional_commentary_review"
+      "kind": "individual_name_contemplation",
+      "review_status": "bilingual_editorial_draft",
+      "spiritual_significance": {
+        "en": "Varṇarūpiṇī is the Mother as the letters through which sacred knowledge and language unfold.",
+        "kn": "ವರ್ಣರೂಪಿಣೀ ನಾಮವು ಜ್ಞಾನ ಮತ್ತು ಭಾಷೆ ವ್ಯಕ್ತವಾಗುವ ಅಕ್ಷರಗಳೇ ತಾಯಿ ಎಂದು ಸ್ತುತಿಸುತ್ತದೆ."
+      },
+      "human_significance": {
+        "en": "Use written words carefully because language can preserve truth or spread harm.",
+        "kn": "ಬರಹವು ಸತ್ಯವನ್ನು ಉಳಿಸಬಹುದು ಅಥವಾ ಹಾನಿ ಮಾಡಬಹುದು ಎಂಬ ಅರಿವಿನಿಂದ ಪದಗಳನ್ನು ಬಳಸಬಹುದು."
+      },
+      "traditional_benefit": {
+        "en": "",
+        "kn": ""
+      },
+      "traditional_benefit_status": "not_source_verified"
     },
     {
       "number": 851,
       "verse_number": 159,
       "title": {
-        "en": "Acceptance of Impermanence · Freedom from Fear",
-        "kn": "ಅನಿತ್ಯತೆಯ ಅರಿವು · ಭಯದಿಂದ ಮುಕ್ತಿ"
+        "en": "Rest for those afflicted by aging and death",
+        "kn": "ಜನನಜರಾಮರಣದ ದುಃಖಕ್ಕೆ ಶಾಂತಾಶ್ರಯ"
       },
       "benefit": {
-        "en": "Acceptance of Impermanence · Freedom from Fear",
-        "kn": "ಅನಿತ್ಯತೆಯ ಅರಿವು · ಭಯದಿಂದ ಮುಕ್ತಿ"
+        "en": "Rest for those afflicted by aging and death",
+        "kn": "ಜನನಜರಾಮರಣದ ದುಃಖಕ್ಕೆ ಶಾಂತಾಶ್ರಯ"
       },
       "explanation": {
         "en": "The name janmamṛtyujarātaptajanaviśrāntidāyinī describes the Divine Mother as giver of peace and repose to those who are afflicted by birth, death and decrepitude. The name acknowledges life's transience while placing it within a wider spiritual vision of continuity.",
         "kn": "janmamṛtyujarātaptajanaviśrāntidāyinī ಎಂಬ ನಾಮದಲ್ಲಿ ದೇವಿಯನ್ನು ಜನನ ಮರಣ ಮತ್ತು ಮುಪ್ಪಿನಿಂದ ಬಳಲುವವರಿಗೆ ಶಾಂತಿಯನ್ನು ನೀಡುವ ದೇವಿ ಎಂದು ವರ್ಣಿಸಲಾಗಿದೆ. ಜೀವನದ ಅನಿತ್ಯತೆಯನ್ನು ಒಪ್ಪಿಕೊಂಡು ಅದನ್ನು ವಿಶಾಲವಾದ ಆಧ್ಯಾತ್ಮಿಕ ದೃಷ್ಟಿಯಲ್ಲಿ ಕಾಣುವುದನ್ನು ಇದು ಸೂಚಿಸುತ್ತದೆ."
       },
       "editorial_theme": "death",
-      "kind": "human_significance_editorial_draft",
-      "review_status": "requires_name_specific_traditional_commentary_review"
+      "kind": "individual_name_contemplation",
+      "review_status": "bilingual_editorial_draft",
+      "spiritual_significance": {
+        "en": "Janmamṛtyujarātaptajanaviśrāntidāyinī grants repose to those distressed by birth, aging and death in the cycle of existence.",
+        "kn": "ಜನ್ಮಮೃತ್ಯುಜರಾತಪ್ತಜನವಿಶ್ರಾಂತಿದಾಯಿನೀ ನಾಮವು ಜನನ, ಮುಪ್ಪು ಮತ್ತು ಮರಣದ ದುಃಖದಿಂದ ಬಳಲುವವರಿಗೆ ಶಾಂತಾಶ್ರಯ ನೀಡುವ ತಾಯಿಯನ್ನು ಸ್ತುತಿಸುತ್ತದೆ."
+      },
+      "human_significance": {
+        "en": "Offer companionship and practical care to those facing frailty or grief, without promising to abolish mortality.",
+        "kn": "ಮುಪ್ಪು ಅಥವಾ ದುಃಖ ಎದುರಿಸುವವರಿಗೆ ಅಮರತ್ವದ ಭರವಸೆಯಿಲ್ಲದೆ ಆತ್ಮೀಯತೆ ಮತ್ತು ಪ್ರಾಯೋಗಿಕ ನೆರವು ನೀಡಬಹುದು."
+      },
+      "traditional_benefit": {
+        "en": "",
+        "kn": ""
+      },
+      "traditional_benefit_status": "not_source_verified"
     },
     {
       "number": 852,
       "verse_number": 159,
       "title": {
-        "en": "Living Reverence · Thoughtful Reflection",
-        "kn": "ಜೀವನದ ಗೌರವ · ವಿವೇಕಪೂರ್ಣ ಚಿಂತನೆ"
+        "en": "Praised throughout the Upaniṣads",
+        "kn": "ಉಪನಿಷತ್ತುಗಳ ಸ್ತುತಿಗೆ ಪಾತ್ರಳಾದ ತಾಯಿ"
       },
       "benefit": {
-        "en": "Living Reverence · Thoughtful Reflection",
-        "kn": "ಜೀವನದ ಗೌರವ · ವಿವೇಕಪೂರ್ಣ ಚಿಂತನೆ"
+        "en": "Praised throughout the Upaniṣads",
+        "kn": "ಉಪನಿಷತ್ತುಗಳ ಸ್ತುತಿಗೆ ಪಾತ್ರಳಾದ ತಾಯಿ"
       },
       "explanation": {
         "en": "The name sarvopaniṣadudghuṣṭā describes the Divine Mother as celebrated by all the upaniShads. Its symbolic meaning becomes relevant through the human capacity for care, responsibility, and thoughtful awareness.",
         "kn": "sarvopaniṣadudghuṣṭā ಎಂಬ ನಾಮದಲ್ಲಿ ದೇವಿಯನ್ನು ಎಲ್ಲ ಉಪನಿಷತ್ತುಗಳಿಂದ ಸ್ತುತಿಸಲ್ಪಡುವ ದೇವಿ ಎಂದು ವರ್ಣಿಸಲಾಗಿದೆ. ಕಾಳಜಿ, ಹೊಣೆಗಾರಿಕೆ ಮತ್ತು ವಿವೇಕಪೂರ್ಣ ಅರಿವು ಎಂಬ ಮಾನವೀಯ ಗುಣಗಳ ಮೂಲಕ ಇದರ ರೂಪಕಕ್ಕೆ ಅರ್ಥ ಸಿಗುತ್ತದೆ."
       },
       "editorial_theme": "other",
-      "kind": "human_significance_editorial_draft",
-      "review_status": "requires_name_specific_traditional_commentary_review"
+      "kind": "individual_name_contemplation",
+      "review_status": "bilingual_editorial_draft",
+      "spiritual_significance": {
+        "en": "Sarvopaniṣadudghuṣṭā is proclaimed by the Upaniṣads, the teachings that seek the innermost truth of Self and Brahman.",
+        "kn": "ಸರ್ವೋಪನಿಷದುದ್ಘುಷ್ಟಾ ನಾಮವು ಆತ್ಮ ಮತ್ತು ಬ್ರಹ್ಮತತ್ತ್ವವನ್ನು ವಿಚಾರಿಸುವ ಉಪನಿಷತ್ತುಗಳಿಂದ ಸ್ತುತಿಸಲ್ಪಡುವ ತಾಯಿಯನ್ನು ಸೂಚಿಸುತ್ತದೆ."
+      },
+      "human_significance": {
+        "en": "Study profound teaching patiently rather than collecting impressive quotations.",
+        "kn": "ಗಂಭೀರ ಬೋಧನೆಗಳನ್ನು ಪ್ರಭಾವಶಾಲಿ ಉಲ್ಲೇಖಗಳಾಗಿ ಸಂಗ್ರಹಿಸದೆ ತಾಳ್ಮೆಯಿಂದ ಅಧ್ಯಯನ ಮಾಡಬಹುದು."
+      },
+      "traditional_benefit": {
+        "en": "",
+        "kn": ""
+      },
+      "traditional_benefit_status": "not_source_verified"
     },
     {
       "number": 853,
       "verse_number": 159,
       "title": {
-        "en": "Peace of Mind · Gentle Strength",
-        "kn": "ಮನಶ್ಶಾಂತಿ · ಮೃದುವಾದ ಶಕ್ತಿ"
+        "en": "Beyond even the highest calm",
+        "kn": "ಪರಮಶಾಂತಿಯ ಸ್ಥಿತಿಗೂ ಅತೀತ"
       },
       "benefit": {
-        "en": "Peace of Mind · Gentle Strength",
-        "kn": "ಮನಶ್ಶಾಂತಿ · ಮೃದುವಾದ ಶಕ್ತಿ"
+        "en": "Beyond even the highest calm",
+        "kn": "ಪರಮಶಾಂತಿಯ ಸ್ಥಿತಿಗೂ ಅತೀತ"
       },
       "explanation": {
         "en": "The name śāntyatītakalātmikā describes the Divine Mother as the one who transcends the state of peace. Serenity is imagined as strength that allows a thoughtful response rather than an impulsive reaction.",
         "kn": "śāntyatītakalātmikā ಎಂಬ ನಾಮದಲ್ಲಿ ದೇವಿಯನ್ನು ಶಾಂತಿಯ ಸ್ಥಿತಿಗೂ ಅತೀತಳಾದ ದೇವಿ ಎಂದು ವರ್ಣಿಸಲಾಗಿದೆ. ಆವೇಶದ ಪ್ರತಿಕ್ರಿಯೆಯ ಬದಲು ಚಿಂತಿತ ಸ್ಪಂದನೆಗೆ ಅವಕಾಶ ಕೊಡುವ ಶಕ್ತಿಯಾಗಿ ಶಾಂತಿಯನ್ನು ಇಲ್ಲಿ ಕಾಣಲಾಗಿದೆ."
       },
       "editorial_theme": "peace",
-      "kind": "human_significance_editorial_draft",
-      "review_status": "requires_name_specific_traditional_commentary_review"
+      "kind": "individual_name_contemplation",
+      "review_status": "bilingual_editorial_draft",
+      "spiritual_significance": {
+        "en": "Śāntyatītakalātmikā transcends the stage called peace in subtle Śaiva and Śrīvidyā classifications.",
+        "kn": "ಶಾಂತ್ಯತೀತಕಲಾತ್ಮಿಕಾ ನಾಮವು ಸೂಕ್ಷ್ಮ ಶೈವ ಮತ್ತು ಶ್ರೀವಿದ್ಯಾ ತತ್ತ್ವಗಳಲ್ಲಿ ಹೇಳುವ ಶಾಂತಿಯ ಹಂತಕ್ಕೂ ಅತೀತಳಾದ ತಾಯಿಯನ್ನು ಸ್ತುತಿಸುತ್ತದೆ."
+      },
+      "human_significance": {
+        "en": "Avoid mistaking one pleasant meditative state for the entirety of realization.",
+        "kn": "ಒಂದು ಸುಖಕರ ಧ್ಯಾನಾವಸ್ಥೆಯನ್ನೇ ಸಂಪೂರ್ಣ ಸಾಕ್ಷಾತ್ಕಾರವೆಂದು ಭಾವಿಸಬಾರದು."
+      },
+      "traditional_benefit": {
+        "en": "",
+        "kn": ""
+      },
+      "traditional_benefit_status": "not_source_verified"
     },
     {
       "number": 854,
       "verse_number": 160,
       "title": {
-        "en": "Living Reverence · Thoughtful Reflection",
-        "kn": "ಜೀವನದ ಗೌರವ · ವಿವೇಕಪೂರ್ಣ ಚಿಂತನೆ"
+        "en": "The unfathomable depth of the Mother",
+        "kn": "ಅಳೆಯಲಾಗದ ತಾಯಿಯ ಆಳ"
       },
       "benefit": {
-        "en": "Living Reverence · Thoughtful Reflection",
-        "kn": "ಜೀವನದ ಗೌರವ · ವಿವೇಕಪೂರ್ಣ ಚಿಂತನೆ"
+        "en": "The unfathomable depth of the Mother",
+        "kn": "ಅಳೆಯಲಾಗದ ತಾಯಿಯ ಆಳ"
       },
       "explanation": {
         "en": "The name gambhīrā describes the Divine Mother as unfathomable. Its symbolic meaning becomes relevant through the human capacity for care, responsibility, and thoughtful awareness.",
         "kn": "gambhīrā ಎಂಬ ನಾಮದಲ್ಲಿ ದೇವಿಯನ್ನು ಅಳೆಯಲಾಗದ ಆಳವುಳ್ಳ ದೇವಿ ಎಂದು ವರ್ಣಿಸಲಾಗಿದೆ. ಕಾಳಜಿ, ಹೊಣೆಗಾರಿಕೆ ಮತ್ತು ವಿವೇಕಪೂರ್ಣ ಅರಿವು ಎಂಬ ಮಾನವೀಯ ಗುಣಗಳ ಮೂಲಕ ಇದರ ರೂಪಕಕ್ಕೆ ಅರ್ಥ ಸಿಗುತ್ತದೆ."
       },
       "editorial_theme": "other",
-      "kind": "human_significance_editorial_draft",
-      "review_status": "requires_name_specific_traditional_commentary_review"
+      "kind": "individual_name_contemplation",
+      "review_status": "bilingual_editorial_draft",
+      "spiritual_significance": {
+        "en": "Gambhīrā is profoundly deep, beyond shallow judgment or complete explanation by the mind.",
+        "kn": "ಗಂಭೀರಾ ನಾಮವು ಮೇಲ್ನೋಟದ ತೀರ್ಪಿಗೂ ಮನಸ್ಸಿನ ಸಂಪೂರ್ಣ ವಿವರಣೆಗೂ ನಿಲುಕದ ದಿವ್ಯಆಳವನ್ನು ಸ್ತುತಿಸುತ್ತದೆ."
+      },
+      "human_significance": {
+        "en": "Allow time to understand a person or teaching before settling on a superficial conclusion.",
+        "kn": "ವ್ಯಕ್ತಿ ಅಥವಾ ಬೋಧನೆಯನ್ನು ಮೇಲ್ನೋಟದಲ್ಲಿ ತೀರ್ಮಾನಿಸದೆ ಅರಿಯಲು ಸಮಯ ಕೊಡಬಹುದು."
+      },
+      "traditional_benefit": {
+        "en": "",
+        "kn": ""
+      },
+      "traditional_benefit_status": "not_source_verified"
     },
     {
       "number": 855,
       "verse_number": 160,
       "title": {
-        "en": "Belonging Within Creation · Reverence for Life",
-        "kn": "ಸೃಷ್ಟಿಯಲ್ಲಿ ಆತ್ಮೀಯತೆ · ಜೀವಜಗತ್ತಿನ ಗೌರವ"
+        "en": "Presence throughout the vast sky",
+        "kn": "ವಿಶಾಲ ಆಕಾಶದಲ್ಲಿನ ದಿವ್ಯಸಾನ್ನಿಧ್ಯ"
       },
       "benefit": {
-        "en": "Belonging Within Creation · Reverence for Life",
-        "kn": "ಸೃಷ್ಟಿಯಲ್ಲಿ ಆತ್ಮೀಯತೆ · ಜೀವಜಗತ್ತಿನ ಗೌರವ"
+        "en": "Presence throughout the vast sky",
+        "kn": "ವಿಶಾಲ ಆಕಾಶದಲ್ಲಿನ ದಿವ್ಯಸಾನ್ನಿಧ್ಯ"
       },
       "explanation": {
         "en": "The name gaganāntasthā describes the Divine Mother as the one who resides in the ether, space. Seeing the sacred throughout creation encourages humility and care toward the world that sustains us.",
         "kn": "gaganāntasthā ಎಂಬ ನಾಮದಲ್ಲಿ ದೇವಿಯನ್ನು ಆಕಾಶದಲ್ಲಿ ನೆಲೆಸಿರುವ ದೇವಿ ಎಂದು ವರ್ಣಿಸಲಾಗಿದೆ. ಸೃಷ್ಟಿಯೆಲ್ಲ ಪವಿತ್ರತೆಯನ್ನು ಕಾಣುವುದು ವಿನಯವನ್ನೂ ನಮ್ಮನ್ನು ಪೋಷಿಸುವ ಜಗತ್ತಿನ ಬಗ್ಗೆ ಕಾಳಜಿಯನ್ನೂ ಸೂಚಿಸುತ್ತದೆ."
       },
       "editorial_theme": "nature",
-      "kind": "human_significance_editorial_draft",
-      "review_status": "requires_name_specific_traditional_commentary_review"
+      "kind": "individual_name_contemplation",
+      "review_status": "bilingual_editorial_draft",
+      "spiritual_significance": {
+        "en": "Gaganāntasthā dwells in the vast expanse of space, an image of divine presence free of narrow boundaries.",
+        "kn": "ಗಗನಾಂತಸ್ಥಾ ನಾಮವು ವಿಶಾಲ ಆಕಾಶದಲ್ಲಿ ನೆಲೆಸಿರುವ ಸೀಮಾರಹಿತ ದೈವಸಾನ್ನಿಧ್ಯವನ್ನು ಸ್ತುತಿಸುತ್ತದೆ."
+      },
+      "human_significance": {
+        "en": "Take a wider view when small disagreements dominate your attention.",
+        "kn": "ಸಣ್ಣ ಭಿನ್ನಾಭಿಪ್ರಾಯವೇ ಗಮನವನ್ನು ಆಳುವಾಗ ವಿಶಾಲ ದೃಷ್ಟಿಯಿಂದ ನೋಡಬಹುದು."
+      },
+      "traditional_benefit": {
+        "en": "",
+        "kn": ""
+      },
+      "traditional_benefit_status": "not_source_verified"
     },
     {
       "number": 856,
       "verse_number": 160,
       "title": {
-        "en": "Living Reverence · Thoughtful Reflection",
-        "kn": "ಜೀವನದ ಗೌರವ · ವಿವೇಕಪೂರ್ಣ ಚಿಂತನೆ"
+        "en": "Majesty without human arrogance",
+        "kn": "ಮಾನವ ಅಹಂಕಾರವಲ್ಲದ ದೈವಗರ್ವ"
       },
       "benefit": {
-        "en": "Living Reverence · Thoughtful Reflection",
-        "kn": "ಜೀವನದ ಗೌರವ · ವಿವೇಕಪೂರ್ಣ ಚಿಂತನೆ"
+        "en": "Majesty without human arrogance",
+        "kn": "ಮಾನವ ಅಹಂಕಾರವಲ್ಲದ ದೈವಗರ್ವ"
       },
       "explanation": {
         "en": "The name garvitā describes the Divine Mother as proud. Its symbolic meaning becomes relevant through the human capacity for care, responsibility, and thoughtful awareness.",
         "kn": "garvitā ಎಂಬ ನಾಮದಲ್ಲಿ ದೇವಿಯನ್ನು ಗರ್ವವನ್ನು ಹೊಂದಿರುವ ದೇವಿ ಎಂದು ವರ್ಣಿಸಲಾಗಿದೆ. ಕಾಳಜಿ, ಹೊಣೆಗಾರಿಕೆ ಮತ್ತು ವಿವೇಕಪೂರ್ಣ ಅರಿವು ಎಂಬ ಮಾನವೀಯ ಗುಣಗಳ ಮೂಲಕ ಇದರ ರೂಪಕಕ್ಕೆ ಅರ್ಥ ಸಿಗುತ್ತದೆ."
       },
       "editorial_theme": "other",
-      "kind": "human_significance_editorial_draft",
-      "review_status": "requires_name_specific_traditional_commentary_review"
+      "kind": "individual_name_contemplation",
+      "review_status": "bilingual_editorial_draft",
+      "spiritual_significance": {
+        "en": "Garvitā conveys the proud, majestic bearing of the Goddess in sacred description, not an endorsement of belittling others.",
+        "kn": "ಗರ್ವಿತಾ ನಾಮವು ಪವಿತ್ರ ವರ್ಣನೆಯಲ್ಲಿ ತಾಯಿಯ ಭವ್ಯ ಗರ್ವಭಾವವನ್ನು ಸೂಚಿಸುತ್ತದೆ; ಇತರರನ್ನು ಕೀಳಾಗಿ ನೋಡುವ ಮಾನವ ಅಹಂಕಾರವಲ್ಲ."
+      },
+      "human_significance": {
+        "en": "Cultivate dignity and confidence without using superiority as a measure of worth.",
+        "kn": "ಇತರರಿಗಿಂತ ಮೇಲಾಗಿರಬೇಕೆಂಬ ಹಠವಿಲ್ಲದೆ ಆತ್ಮಗೌರವ ಮತ್ತು ವಿಶ್ವಾಸ ಬೆಳೆಸಬಹುದು."
+      },
+      "traditional_benefit": {
+        "en": "",
+        "kn": ""
+      },
+      "traditional_benefit_status": "not_source_verified"
     },
     {
       "number": 857,
       "verse_number": 160,
       "title": {
-        "en": "Harmony · Joyful Self-Expression",
-        "kn": "ಸಾಮರಸ್ಯ · ಆನಂದಮಯ ಅಭಿವ್ಯಕ್ತಿ"
+        "en": "Music offered in divine delight",
+        "kn": "ಸಂಗೀತಾರ್ಪಣೆಯ ದೈವಾನಂದ"
       },
       "benefit": {
-        "en": "Harmony · Joyful Self-Expression",
-        "kn": "ಸಾಮರಸ್ಯ · ಆನಂದಮಯ ಅಭಿವ್ಯಕ್ತಿ"
+        "en": "Music offered in divine delight",
+        "kn": "ಸಂಗೀತಾರ್ಪಣೆಯ ದೈವಾನಂದ"
       },
       "explanation": {
         "en": "The name gānalolupā describes the Divine Mother as the one who delights in music. The arts become a language for integrating feeling, beauty, and awareness into ordinary life.",
         "kn": "gānalolupā ಎಂಬ ನಾಮದಲ್ಲಿ ದೇವಿಯನ್ನು ಸಂಗೀತದಲ್ಲಿ ಆನಂದಿಸುವ ದೇವಿ ಎಂದು ವರ್ಣಿಸಲಾಗಿದೆ. ಕಲೆಗಳು ಭಾವನೆ, ಸೌಂದರ್ಯ ಮತ್ತು ಅರಿವನ್ನು ದೈನಂದಿನ ಜೀವನದಲ್ಲಿ ಒಂದಾಗಿಸುವ ಭಾಷೆಯಾಗುತ್ತವೆ."
       },
       "editorial_theme": "music",
-      "kind": "human_significance_editorial_draft",
-      "review_status": "requires_name_specific_traditional_commentary_review"
+      "kind": "individual_name_contemplation",
+      "review_status": "bilingual_editorial_draft",
+      "spiritual_significance": {
+        "en": "Gānalolupā delights in music, celebrating melody as a form of devotional expression.",
+        "kn": "ಗಾನಲೋಲುಪಾ ನಾಮವು ಸಂಗೀತವನ್ನು ಪ್ರೀತಿಸುವ ತಾಯಿಯನ್ನು ಸ್ತುತಿಸಿ ರಾಗವನ್ನು ಭಕ್ತಿಯ ಅಭಿವ್ಯಕ್ತಿಯಾಗಿ ಗೌರವಿಸುತ್ತದೆ."
+      },
+      "human_significance": {
+        "en": "Sing or listen attentively, allowing music to support gratitude and connection.",
+        "kn": "ಸಂಗೀತವನ್ನು ಗಮನದಿಂದ ಹಾಡಿ ಅಥವಾ ಆಲಿಸಿ ಕೃತಜ್ಞತೆ ಮತ್ತು ಆತ್ಮೀಯತೆ ಬೆಳೆಸಬಹುದು."
+      },
+      "traditional_benefit": {
+        "en": "",
+        "kn": ""
+      },
+      "traditional_benefit_status": "not_source_verified"
     },
     {
       "number": 858,
       "verse_number": 160,
       "title": {
-        "en": "Living Reverence · Thoughtful Reflection",
-        "kn": "ಜೀವನದ ಗೌರವ · ವಿವೇಕಪೂರ್ಣ ಚಿಂತನೆ"
+        "en": "Freedom from imagined limitations",
+        "kn": "ಕಲ್ಪಿತ ಮಿತಿಗಳಿಂದ ಮುಕ್ತಿ"
       },
       "benefit": {
-        "en": "Living Reverence · Thoughtful Reflection",
-        "kn": "ಜೀವನದ ಗೌರವ · ವಿವೇಕಪೂರ್ಣ ಚಿಂತನೆ"
+        "en": "Freedom from imagined limitations",
+        "kn": "ಕಲ್ಪಿತ ಮಿತಿಗಳಿಂದ ಮುಕ್ತಿ"
       },
       "explanation": {
         "en": "The name kalpanārahitā describes the Divine Mother as free from imaginary attributes. Its symbolic meaning becomes relevant through the human capacity for care, responsibility, and thoughtful awareness.",
         "kn": "kalpanārahitā ಎಂಬ ನಾಮದಲ್ಲಿ ದೇವಿಯನ್ನು ಕಲ್ಪಿತ ಗುಣಗಳಿಂದ ಮುಕ್ತಳಾದ ದೇವಿ ಎಂದು ವರ್ಣಿಸಲಾಗಿದೆ. ಕಾಳಜಿ, ಹೊಣೆಗಾರಿಕೆ ಮತ್ತು ವಿವೇಕಪೂರ್ಣ ಅರಿವು ಎಂಬ ಮಾನವೀಯ ಗುಣಗಳ ಮೂಲಕ ಇದರ ರೂಪಕಕ್ಕೆ ಅರ್ಥ ಸಿಗುತ್ತದೆ."
       },
       "editorial_theme": "other",
-      "kind": "human_significance_editorial_draft",
-      "review_status": "requires_name_specific_traditional_commentary_review"
+      "kind": "individual_name_contemplation",
+      "review_status": "bilingual_editorial_draft",
+      "spiritual_significance": {
+        "en": "Kalpanārahitā is free from conceptual constructions imposed by the mind; no imagined quality can define Her completely.",
+        "kn": "ಕಲ್ಪನಾರಹಿತಾ ನಾಮವು ಮನಸ್ಸು ಹೇರಿದ ಕಲ್ಪಿತ ಗುಣಗಳಿಗೆ ಅತೀತಳಾದ ತಾಯಿಯನ್ನು ಸ್ತುತಿಸುತ್ತದೆ."
+      },
+      "human_significance": {
+        "en": "Notice when an untested story in your mind is mistaken for a fact.",
+        "kn": "ಪರಿಶೀಲಿಸದ ಮನಸ್ಸಿನ ಕಲ್ಪನೆಯನ್ನು ಸತ್ಯವೆಂದು ಭಾವಿಸುವುದನ್ನು ಗುರುತಿಸಬಹುದು."
+      },
+      "traditional_benefit": {
+        "en": "",
+        "kn": ""
+      },
+      "traditional_benefit_status": "not_source_verified"
     },
     {
       "number": 859,
       "verse_number": 160,
       "title": {
-        "en": "Freedom Beyond Labels · Expansive Awareness",
-        "kn": "ಹೆಸರಿನ ಮಿತಿಮೀರಿದ ಸ್ವಾತಂತ್ರ್ಯ · ವಿಶಾಲ ಅರಿವು"
+        "en": "The utmost state beyond ascent",
+        "kn": "ಅತ್ಯುನ್ನತ ಅಂತಿಮ ಸ್ಥಿತಿ"
       },
       "benefit": {
-        "en": "Freedom Beyond Labels · Expansive Awareness",
-        "kn": "ಹೆಸರಿನ ಮಿತಿಮೀರಿದ ಸ್ವಾತಂತ್ರ್ಯ · ವಿಶಾಲ ಅರಿವು"
+        "en": "The utmost state beyond ascent",
+        "kn": "ಅತ್ಯುನ್ನತ ಅಂತಿಮ ಸ್ಥಿತಿ"
       },
       "explanation": {
         "en": "The name kāṣṭhā describes the Divine Mother as dweller in in the highest state (beyond which there is nothing). It suggests that identity and understanding need not be confined to any single role, form, or description.",
         "kn": "kāṣṭhā ಎಂಬ ನಾಮದಲ್ಲಿ ದೇವಿಯನ್ನು ಅತ್ಯುನ್ನತ ಸ್ಥಿತಿಯಲ್ಲಿ ನೆಲೆಸಿರುವ ದೇವಿ ಎಂದು ವರ್ಣಿಸಲಾಗಿದೆ. ಗುರುತು ಮತ್ತು ಅರಿವು ಒಂದೇ ಪಾತ್ರ, ರೂಪ ಅಥವಾ ವರ್ಣನೆಗೆ ಸೀಮಿತವಾಗಬೇಕಿಲ್ಲ ಎಂಬುದನ್ನು ಇದು ಸೂಚಿಸುತ್ತದೆ."
       },
       "editorial_theme": "beyond",
-      "kind": "human_significance_editorial_draft",
-      "review_status": "requires_name_specific_traditional_commentary_review"
+      "kind": "individual_name_contemplation",
+      "review_status": "bilingual_editorial_draft",
+      "spiritual_significance": {
+        "en": "Kāṣṭhā is the supreme limit or highest state, beyond which nothing further remains to be sought in the sacred account.",
+        "kn": "ಕಾಷ್ಠಾ ನಾಮವು ಪವಿತ್ರ ಬೋಧನೆಯಲ್ಲಿ ಇನ್ನೂ ಮೇಲಿನ ಗುರಿಯಿಲ್ಲದ ಪರಮಸ್ಥಿತಿಯನ್ನು ಸೂಚಿಸುತ್ತದೆ."
+      },
+      "human_significance": {
+        "en": "Keep spiritual goals oriented toward understanding rather than an endless hunt for novelty.",
+        "kn": "ಹೊಸತನದ ಅಂತ್ಯವಿಲ್ಲದ ಹುಡುಕಾಟಕ್ಕಿಂತ ಅರಿವಿನ ಆಳಕ್ಕೆ ಸಾಧನೆಯನ್ನು ನಡೆಸಬಹುದು."
+      },
+      "traditional_benefit": {
+        "en": "",
+        "kn": ""
+      },
+      "traditional_benefit_status": "not_source_verified"
     },
     {
       "number": 860,
       "verse_number": 160,
       "title": {
-        "en": "Comfort Amid Suffering · Inner Resilience",
-        "kn": "ದುಃಖದಲ್ಲಿ ಸಾಂತ್ವನ · ಆಂತರಿಕ ಸ್ಥೈರ್ಯ"
+        "en": "Prayer for an end to sorrow",
+        "kn": "ಪಾಪದುಃಖದ ನಿವಾರಣೆಯ ಪ್ರಾರ್ಥನೆ"
       },
       "benefit": {
-        "en": "Comfort Amid Suffering · Inner Resilience",
-        "kn": "ದುಃಖದಲ್ಲಿ ಸಾಂತ್ವನ · ಆಂತರಿಕ ಸ್ಥೈರ್ಯ"
+        "en": "Prayer for an end to sorrow",
+        "kn": "ಪಾಪದುಃಖದ ನಿವಾರಣೆಯ ಪ್ರಾರ್ಥನೆ"
       },
       "explanation": {
         "en": "The name akāntā describes the Divine Mother as the one who ends all sins and sorrows. Its relevance lies in the dignity, hope, and compassionate presence people seek amid illness or loss, not in a promised cure.",
         "kn": "akāntā ಎಂಬ ನಾಮದಲ್ಲಿ ದೇವಿಯನ್ನು ಎಲ್ಲ ಪಾಪಗಳನ್ನೂ ದುಃಖಗಳನ್ನೂ ಕೊನೆಗೊಳಿಸುವ ದೇವಿ ಎಂದು ವರ್ಣಿಸಲಾಗಿದೆ. ಅನಾರೋಗ್ಯ ಅಥವಾ ನಷ್ಟದ ಸಮಯದಲ್ಲಿ ಮಾನವರು ಹುಡುಕುವ ಗೌರವ, ಭರವಸೆ ಮತ್ತು ಕರುಣಾಮಯ ಸಾನ್ನಿಧ್ಯ ಇದರ ಆಶಯವಾಗಿದೆ; ಇದು ಖಚಿತ ಚಿಕಿತ್ಸೆಯ ಭರವಸೆಯಲ್ಲ."
       },
       "editorial_theme": "disease",
-      "kind": "human_significance_editorial_draft",
-      "review_status": "requires_name_specific_traditional_commentary_review"
+      "kind": "individual_name_contemplation",
+      "review_status": "textual_variant_requires_review",
+      "spiritual_significance": {
+        "en": "Akāntā is interpreted in the existing name tradition as the ender of sins and sorrows; its precise lexical reading merits traditional-source checking.",
+        "kn": "ಅಕಾಂತಾ ನಾಮವನ್ನು ಪ್ರಸ್ತುತ ಪಾಠದಲ್ಲಿ ಪಾಪ ಮತ್ತು ದುಃಖಗಳನ್ನು ನಿವಾರಿಸುವ ತಾಯಿಯಾಗಿ ವಿವರಿಸಲಾಗಿದೆ; ಇದರ ನಿಖರ ಶಬ್ದಾರ್ಥಕ್ಕೆ ಮೂಲಪರಿಶೀಲನೆ ಅಗತ್ಯ."
+      },
+      "human_significance": {
+        "en": "Seek moral repair and compassionate support rather than assuming hardship proves personal wrongdoing.",
+        "kn": "ಕಷ್ಟ ಬಂದರೆ ಅದು ನಮ್ಮ ತಪ್ಪಿನ ಶಿಕ್ಷೆ ಎಂದು ಭಾವಿಸದೆ ತಿದ್ದುಪಡಿ ಮತ್ತು ಕರುಣೆಯ ನೆರವು ಹುಡುಕಬಹುದು."
+      },
+      "traditional_benefit": {
+        "en": "",
+        "kn": ""
+      },
+      "traditional_benefit_status": "not_source_verified"
     },
     {
       "number": 861,
       "verse_number": 160,
       "title": {
-        "en": "Seeing Sacred Beauty · Respect for Embodied Life",
-        "kn": "ಪವಿತ್ರ ಸೌಂದರ್ಯದ ಅರಿವು · ದೇಹಜೀವನದ ಗೌರವ"
+        "en": "One half of Śiva's divine body",
+        "kn": "ಶಿವನ ಅರ್ಧದೇಹವಾದ ಶಕ್ತಿ"
       },
       "benefit": {
-        "en": "Seeing Sacred Beauty · Respect for Embodied Life",
-        "kn": "ಪವಿತ್ರ ಸೌಂದರ್ಯದ ಅರಿವು · ದೇಹಜೀವನದ ಗೌರವ"
+        "en": "One half of Śiva's divine body",
+        "kn": "ಶಿವನ ಅರ್ಧದೇಹವಾದ ಶಕ್ತಿ"
       },
       "explanation": {
         "en": "The name kāntārdhavigrahā describes the Divine Mother as half the body of Her husband. The visible image is less about worldly appearance than about recognizing dignity and grace in embodied life.",
         "kn": "kāntārdhavigrahā ಎಂಬ ನಾಮದಲ್ಲಿ ದೇವಿಯನ್ನು ತನ್ನ ಪತಿಯ ದೇಹದ ಅರ್ಧಭಾಗವಾಗಿರುವ ದೇವಿ ಎಂದು ವರ್ಣಿಸಲಾಗಿದೆ. ಈ ದೃಶ್ಯರೂಪಕವು ಲೌಕಿಕ ರೂಪಕ್ಕಿಂತ ದೇಹಧಾರಿಯಾದ ಜೀವನದಲ್ಲಿನ ಘನತೆ ಮತ್ತು ಲಾವಣ್ಯವನ್ನು ಗುರುತಿಸುವ ಅರ್ಥ ಹೊಂದಿದೆ."
       },
       "editorial_theme": "beauty",
-      "kind": "human_significance_editorial_draft",
-      "review_status": "requires_name_specific_traditional_commentary_review"
+      "kind": "individual_name_contemplation",
+      "review_status": "bilingual_editorial_draft",
+      "spiritual_significance": {
+        "en": "Kāntārdhavigrahā forms one half of Her beloved Śiva's body, portraying consciousness and Śakti as inseparable.",
+        "kn": "ಕಾಂತಾರ್ಧವಿಗ್ರಹಾ ನಾಮವು ಪ್ರಿಯ ಶಿವನ ಅರ್ಧದೇಹವಾಗಿರುವ ತಾಯಿಯನ್ನು ಸ್ತುತಿಸಿ ಚೈತನ್ಯ ಮತ್ತು ಶಕ್ತಿಯ ಅವಿಭಾಜ್ಯತೆಯನ್ನು ಸೂಚಿಸುತ್ತದೆ."
+      },
+      "human_significance": {
+        "en": "Honor different strengths in a partnership without turning closeness into possession.",
+        "kn": "ಸಂಬಂಧದಲ್ಲಿ ವಿಭಿನ್ನ ಸಾಮರ್ಥ್ಯಗಳನ್ನು ಗೌರವಿಸಿ ಆತ್ಮೀಯತೆಯನ್ನು ಸ್ವಾಮಿತ್ವವಾಗಿಸಬಾರದು."
+      },
+      "traditional_benefit": {
+        "en": "",
+        "kn": ""
+      },
+      "traditional_benefit_status": "not_source_verified"
     },
     {
       "number": 862,
       "verse_number": 161,
       "title": {
-        "en": "Release from Bondage · Inner Freedom",
-        "kn": "ಬಂಧನ ವಿಮೋಚನೆ · ಆಂತರಿಕ ಸ್ವಾತಂತ್ರ್ಯ"
+        "en": "Freedom from cause and effect",
+        "kn": "ಕಾರಣಕಾರ್ಯಬಂಧನದಾಚೆಯ ಸ್ವಾತಂತ್ರ್ಯ"
       },
       "benefit": {
-        "en": "Release from Bondage · Inner Freedom",
-        "kn": "ಬಂಧನ ವಿಮೋಚನೆ · ಆಂತರಿಕ ಸ್ವಾತಂತ್ರ್ಯ"
+        "en": "Freedom from cause and effect",
+        "kn": "ಕಾರಣಕಾರ್ಯಬಂಧನದಾಚೆಯ ಸ್ವಾತಂತ್ರ್ಯ"
       },
       "explanation": {
         "en": "The name kāryakāraṇanirmuktā describes the Divine Mother as free from the bond of cause and effect. It speaks to loosening the habits, fears, and attachments that narrow one's sense of possibility.",
         "kn": "kāryakāraṇanirmuktā ಎಂಬ ನಾಮದಲ್ಲಿ ದೇವಿಯನ್ನು ಕಾರಣಕಾರ್ಯಗಳ ಬಂಧನದಿಂದ ಮುಕ್ತಳಾದ ದೇವಿ ಎಂದು ವರ್ಣಿಸಲಾಗಿದೆ. ಸಾಧ್ಯತೆಗಳನ್ನು ಸೀಮಿತಗೊಳಿಸುವ ಭಯ, ಅಭ್ಯಾಸ ಮತ್ತು ಆಸಕ್ತಿಗಳ ಹಿಡಿತವನ್ನು ಸಡಿಲಿಸುವ ಅರ್ಥ ಇದಕ್ಕಿದೆ."
       },
       "editorial_theme": "liberation",
-      "kind": "human_significance_editorial_draft",
-      "review_status": "requires_name_specific_traditional_commentary_review"
+      "kind": "individual_name_contemplation",
+      "review_status": "bilingual_editorial_draft",
+      "spiritual_significance": {
+        "en": "Kāryakāraṇanirmuktā is beyond causation, the absolute reality not dependent on a preceding cause.",
+        "kn": "ಕಾರ್ಯಕಾರಣನಿರ್ಮುಕ್ತಾ ನಾಮವು ಯಾವುದೇ ಹಿಂದಿನ ಕಾರಣಕ್ಕೆ ಅವಲಂಬಿಸದ ಪರಮತತ್ತ್ವವನ್ನು ಸ್ತುತಿಸುತ್ತದೆ."
+      },
+      "human_significance": {
+        "en": "Accept the limits of explanation while still taking responsibility for the consequences of your own acts.",
+        "kn": "ಎಲ್ಲವನ್ನೂ ವಿವರಿಸುವ ಮಿತಿಯನ್ನು ಒಪ್ಪಿಕೊಂಡರೂ ಸ್ವಕ್ರಿಯೆಯ ಪರಿಣಾಮಕ್ಕೆ ಹೊಣೆ ಹೊತ್ತು ನಡೆದುಕೊಳ್ಳಬಹುದು."
+      },
+      "traditional_benefit": {
+        "en": "",
+        "kn": ""
+      },
+      "traditional_benefit_status": "not_source_verified"
     },
     {
       "number": 863,
       "verse_number": 161,
       "title": {
-        "en": "Depth of Grace · Emotional Spaciousness",
-        "kn": "ಕೃಪೆಯ ಆಳ · ಭಾವನೆಗಳಿಗೆ ವಿಶಾಲ ಅವಕಾಶ"
+        "en": "Joy in union with Kāmeśvara",
+        "kn": "ಕಾಮೇಶ್ವರನೊಂದಿಗಿನ ದಿವ್ಯ ಐಕ್ಯಾನಂದ"
       },
       "benefit": {
-        "en": "Depth of Grace · Emotional Spaciousness",
-        "kn": "ಕೃಪೆಯ ಆಳ · ಭಾವನೆಗಳಿಗೆ ವಿಶಾಲ ಅವಕಾಶ"
+        "en": "Joy in union with Kāmeśvara",
+        "kn": "ಕಾಮೇಶ್ವರನೊಂದಿಗಿನ ದಿವ್ಯ ಐಕ್ಯಾನಂದ"
       },
       "explanation": {
         "en": "The name kāmakelitaraṅgitā describes the Divine Mother as overflowing with pleasure in the union with kAmeshvara. The fluid imagery evokes a capacity to hold feeling without being confined by each passing wave.",
         "kn": "kāmakelitaraṅgitā ಎಂಬ ನಾಮದಲ್ಲಿ ದೇವಿಯನ್ನು ಕಾಮೇಶ್ವರನೊಂದಿಗಿನ ಐಕ್ಯಾನಂದದಿಂದ ತುಂಬಿರುವ ದೇವಿ ಎಂದು ವರ್ಣಿಸಲಾಗಿದೆ. ಪ್ರತಿ ಕ್ಷಣದ ಭಾವನೆಗೆ ಸೀಮಿತವಾಗದೆ ಅದನ್ನು ವಿಶಾಲವಾಗಿ ಧರಿಸುವ ಸಾಮರ್ಥ್ಯವನ್ನು ಜಲರೂಪಕ ಸೂಚಿಸುತ್ತದೆ."
       },
       "editorial_theme": "ocean",
-      "kind": "human_significance_editorial_draft",
-      "review_status": "requires_name_specific_traditional_commentary_review"
+      "kind": "individual_name_contemplation",
+      "review_status": "bilingual_editorial_draft",
+      "spiritual_significance": {
+        "en": "Kāmakelitaraṅgitā delights in the sacred union with Kāmeśvara, expressing the bliss of Śiva and Śakti rather than merely sensual excitement.",
+        "kn": "ಕಾಮಕೇಲಿತರಂಗಿತಾ ನಾಮವು ಕಾಮೇಶ್ವರನೊಂದಿಗಿನ ಶಿವಶಕ್ತಿಗಳ ಪವಿತ್ರ ಐಕ್ಯಾನಂದವನ್ನು ಸ್ತುತಿಸುತ್ತದೆ; ಇದು ಕೇವಲ ಇಂದ್ರಿಯೋದ್ರೇಕವಲ್ಲ."
+      },
+      "human_significance": {
+        "en": "Let affection deepen mutual respect and attentiveness instead of becoming possessive desire.",
+        "kn": "ಪ್ರೀತಿಯಲ್ಲಿ ಸ್ವಾಮಿತ್ವದ ಬಯಕೆಯ ಬದಲು ಪರಸ್ಪರ ಗೌರವ ಮತ್ತು ಗಮನ ಬೆಳೆಸಬಹುದು."
+      },
+      "traditional_benefit": {
+        "en": "",
+        "kn": ""
+      },
+      "traditional_benefit_status": "not_source_verified"
     },
     {
       "number": 864,
       "verse_number": 161,
       "title": {
-        "en": "Seeing Sacred Beauty · Respect for Embodied Life",
-        "kn": "ಪವಿತ್ರ ಸೌಂದರ್ಯದ ಅರಿವು · ದೇಹಜೀವನದ ಗೌರವ"
+        "en": "Golden earrings of divine radiance",
+        "kn": "ಚಿನ್ನದ ಕರ್ಣಾಭರಣಗಳ ದಿವ್ಯಕಾಂತಿ"
       },
       "benefit": {
-        "en": "Seeing Sacred Beauty · Respect for Embodied Life",
-        "kn": "ಪವಿತ್ರ ಸೌಂದರ್ಯದ ಅರಿವು · ದೇಹಜೀವನದ ಗೌರವ"
+        "en": "Golden earrings of divine radiance",
+        "kn": "ಚಿನ್ನದ ಕರ್ಣಾಭರಣಗಳ ದಿವ್ಯಕಾಂತಿ"
       },
       "explanation": {
         "en": "The name kanatkanakatāṭaṅkā describes the Divine Mother as wearing glittering gold ear ornaments. The visible image is less about worldly appearance than about recognizing dignity and grace in embodied life.",
         "kn": "kanatkanakatāṭaṅkā ಎಂಬ ನಾಮದಲ್ಲಿ ದೇವಿಯನ್ನು ಹೊಳೆಯುವ ಚಿನ್ನದ ಕರ್ಣಾಭರಣಗಳನ್ನು ಧರಿಸಿರುವ ದೇವಿ ಎಂದು ವರ್ಣಿಸಲಾಗಿದೆ. ಈ ದೃಶ್ಯರೂಪಕವು ಲೌಕಿಕ ರೂಪಕ್ಕಿಂತ ದೇಹಧಾರಿಯಾದ ಜೀವನದಲ್ಲಿನ ಘನತೆ ಮತ್ತು ಲಾವಣ್ಯವನ್ನು ಗುರುತಿಸುವ ಅರ್ಥ ಹೊಂದಿದೆ."
       },
       "editorial_theme": "beauty",
-      "kind": "human_significance_editorial_draft",
-      "review_status": "requires_name_specific_traditional_commentary_review"
+      "kind": "individual_name_contemplation",
+      "review_status": "bilingual_editorial_draft",
+      "spiritual_significance": {
+        "en": "Kanatkanakatāṭaṅkā shines with glittering gold ear ornaments, a precise element of Lalitā's devotional portrait.",
+        "kn": "ಕನತ್ಕನಕತಾಟಂಕಾ ನಾಮವು ಹೊಳೆಯುವ ಚಿನ್ನದ ಕರ್ಣಾಭರಣಗಳಿಂದ ಅಲಂಕರಿಸಿದ ತಾಯಿಯ ದಿವ್ಯರೂಪವನ್ನು ಸ್ತುತಿಸುತ್ತದೆ."
+      },
+      "human_significance": {
+        "en": "Let the beauty of ceremonial ornaments inspire gratitude rather than comparison or vanity.",
+        "kn": "ಪವಿತ್ರ ಅಲಂಕಾರದ ಸೌಂದರ್ಯವು ಹೋಲಿಕೆ ಅಥವಾ ಅಹಂಕಾರಕ್ಕಿಂತ ಕೃತಜ್ಞತೆ ಬೆಳೆಸಲಿ."
+      },
+      "traditional_benefit": {
+        "en": "",
+        "kn": ""
+      },
+      "traditional_benefit_status": "not_source_verified"
     },
     {
       "number": 865,
       "verse_number": 161,
       "title": {
-        "en": "Noble Aspiration · Strength with Purpose",
-        "kn": "ಉದಾತ್ತ ಧ್ಯೇಯ · ಅರ್ಥಪೂರ್ಣ ಶಕ್ತಿ"
+        "en": "Divine forms as creative play",
+        "kn": "ದಿವ್ಯಲೀಲೆಯಿಂದ ಹೊರಹೊಮ್ಮುವ ರೂಪಗಳು"
       },
       "benefit": {
-        "en": "Noble Aspiration · Strength with Purpose",
-        "kn": "ಉದಾತ್ತ ಧ್ಯೇಯ · ಅರ್ಥಪೂರ್ಣ ಶಕ್ತಿ"
+        "en": "Divine forms as creative play",
+        "kn": "ದಿವ್ಯಲೀಲೆಯಿಂದ ಹೊರಹೊಮ್ಮುವ ರೂಪಗಳು"
       },
       "explanation": {
         "en": "The name līlāvigrahadhāriṇī describes the Divine Mother as the one who assumes various glorious forms as a sport. Greatness is presented as an aspiration toward depth and service rather than a comparison with others.",
         "kn": "līlāvigrahadhāriṇī ಎಂಬ ನಾಮದಲ್ಲಿ ದೇವಿಯನ್ನು ಲೀಲೆಯಾಗಿ ಅನೇಕ ದಿವ್ಯ ರೂಪಗಳನ್ನು ಧರಿಸುವ ದೇವಿ ಎಂದು ವರ್ಣಿಸಲಾಗಿದೆ. ಮಹತ್ವವು ಇತರರೊಂದಿಗೆ ಹೋಲಿಕೆಯಲ್ಲ; ಆಳ ಮತ್ತು ಸೇವೆಯತ್ತ ಸಾಗುವ ಉದಾತ್ತ ಧ್ಯೇಯವಾಗಿ ಇಲ್ಲಿ ಕಾಣುತ್ತದೆ."
       },
       "editorial_theme": "aspiration",
-      "kind": "human_significance_editorial_draft",
-      "review_status": "requires_name_specific_traditional_commentary_review"
+      "kind": "individual_name_contemplation",
+      "review_status": "bilingual_editorial_draft",
+      "spiritual_significance": {
+        "en": "Līlāvigrahadhāriṇī assumes many forms through her free divine play. Manifestation is not forced by deficiency or necessity.",
+        "kn": "ಲೀಲಾವಿಗ್ರಹಧಾರಿಣೀ ನಾಮವು ಸ್ವತಂತ್ರ ದಿವ್ಯಲೀಲೆಯಿಂದ ಅನೇಕ ರೂಪಗಳನ್ನು ತಾಳುವ ತಾಯಿಯನ್ನು ಸ್ತುತಿಸುತ್ತದೆ; ಇದು ಕೊರತೆಯಿಂದ ಬಂದ ಒತ್ತಾಯವಲ್ಲ."
+      },
+      "human_significance": {
+        "en": "Make room for creative exploration while caring for the effects of what you create.",
+        "kn": "ಸೃಜನಾತ್ಮಕ ಅನ್ವೇಷಣೆಗೆ ಅವಕಾಶ ನೀಡುತ್ತಲೇ ಅದರ ಪರಿಣಾಮಗಳಿಗೆ ಕಾಳಜಿ ವಹಿಸಬಹುದು."
+      },
+      "traditional_benefit": {
+        "en": "",
+        "kn": ""
+      },
+      "traditional_benefit_status": "not_source_verified"
     },
     {
       "number": 866,
       "verse_number": 162,
       "title": {
-        "en": "Living Reverence · Thoughtful Reflection",
-        "kn": "ಜೀವನದ ಗೌರವ · ವಿವೇಕಪೂರ್ಣ ಚಿಂತನೆ"
+        "en": "The unborn eternal Mother",
+        "kn": "ಜನ್ಮರಹಿತ ನಿತ್ಯತಾಯಿ"
       },
       "benefit": {
-        "en": "Living Reverence · Thoughtful Reflection",
-        "kn": "ಜೀವನದ ಗೌರವ · ವಿವೇಕಪೂರ್ಣ ಚಿಂತನೆ"
+        "en": "The unborn eternal Mother",
+        "kn": "ಜನ್ಮರಹಿತ ನಿತ್ಯತಾಯಿ"
       },
       "explanation": {
         "en": "The name ajā describes the Divine Mother as possessor of no birth. Its symbolic meaning becomes relevant through the human capacity for care, responsibility, and thoughtful awareness.",
         "kn": "ajā ಎಂಬ ನಾಮದಲ್ಲಿ ದೇವಿಯನ್ನು ಜನ್ಮವಿಲ್ಲದ ದೇವಿ ಎಂದು ವರ್ಣಿಸಲಾಗಿದೆ. ಕಾಳಜಿ, ಹೊಣೆಗಾರಿಕೆ ಮತ್ತು ವಿವೇಕಪೂರ್ಣ ಅರಿವು ಎಂಬ ಮಾನವೀಯ ಗುಣಗಳ ಮೂಲಕ ಇದರ ರೂಪಕಕ್ಕೆ ಅರ್ಥ ಸಿಗುತ್ತದೆ."
       },
       "editorial_theme": "other",
-      "kind": "human_significance_editorial_draft",
-      "review_status": "requires_name_specific_traditional_commentary_review"
+      "kind": "individual_name_contemplation",
+      "review_status": "bilingual_editorial_draft",
+      "spiritual_significance": {
+        "en": "Ajā has no birth, the uncreated source from which the changing world arises.",
+        "kn": "ಅಜಾ ನಾಮವು ಜನ್ಮವಿಲ್ಲದ, ಬದಲಾಗುವ ಜಗತ್ತಿನ ಮೂಲವಾದ ನಿತ್ಯತಾಯಿಯನ್ನು ಸ್ತುತಿಸುತ್ತದೆ."
+      },
+      "human_significance": {
+        "en": "Let contemplation of what endures bring perspective to passing circumstances.",
+        "kn": "ಶಾಶ್ವತತೆಯ ಚಿಂತನೆಯಿಂದ ಕ್ಷಣಿಕ ಸಂದರ್ಭಗಳನ್ನು ವಿಶಾಲ ದೃಷ್ಟಿಯಲ್ಲಿ ನೋಡಬಹುದು."
+      },
+      "traditional_benefit": {
+        "en": "",
+        "kn": ""
+      },
+      "traditional_benefit_status": "not_source_verified"
     },
     {
       "number": 867,
       "verse_number": 162,
       "title": {
-        "en": "Living Reverence · Thoughtful Reflection",
-        "kn": "ಜೀವನದ ಗೌರವ · ವಿವೇಕಪೂರ್ಣ ಚಿಂತನೆ"
+        "en": "Free from all decay",
+        "kn": "ಕ್ಷಯರಹಿತ ದಿವ್ಯಸ್ವರೂಪ"
       },
       "benefit": {
-        "en": "Living Reverence · Thoughtful Reflection",
-        "kn": "ಜೀವನದ ಗೌರವ · ವಿವೇಕಪೂರ್ಣ ಚಿಂತನೆ"
+        "en": "Free from all decay",
+        "kn": "ಕ್ಷಯರಹಿತ ದಿವ್ಯಸ್ವರೂಪ"
       },
       "explanation": {
         "en": "The name kṣayavinirmuktā describes the Divine Mother as free from decay. Its symbolic meaning becomes relevant through the human capacity for care, responsibility, and thoughtful awareness.",
         "kn": "kṣayavinirmuktā ಎಂಬ ನಾಮದಲ್ಲಿ ದೇವಿಯನ್ನು ಕ್ಷಯವಿಲ್ಲದ ದೇವಿ ಎಂದು ವರ್ಣಿಸಲಾಗಿದೆ. ಕಾಳಜಿ, ಹೊಣೆಗಾರಿಕೆ ಮತ್ತು ವಿವೇಕಪೂರ್ಣ ಅರಿವು ಎಂಬ ಮಾನವೀಯ ಗುಣಗಳ ಮೂಲಕ ಇದರ ರೂಪಕಕ್ಕೆ ಅರ್ಥ ಸಿಗುತ್ತದೆ."
       },
       "editorial_theme": "other",
-      "kind": "human_significance_editorial_draft",
-      "review_status": "requires_name_specific_traditional_commentary_review"
+      "kind": "individual_name_contemplation",
+      "review_status": "bilingual_editorial_draft",
+      "spiritual_significance": {
+        "en": "Kṣayavinirmuktā is untouched by decay or depletion, in contrast with the perishable forms of the world.",
+        "kn": "ಕ್ಷಯವಿನಿರ್ಮುಕ್ತಾ ನಾಮವು ಜಗತ್ತಿನ ನಶ್ವರ ರೂಪಗಳಿಗೆ ವಿರುದ್ಧವಾಗಿ ಕ್ಷಯವಿಲ್ಲದ ತಾಯಿಯನ್ನು ಸ್ತುತಿಸುತ್ತದೆ."
+      },
+      "human_significance": {
+        "en": "Respect aging and change without measuring the worth of people by physical decline.",
+        "kn": "ದೈಹಿಕ ಕ್ಷಯದಿಂದ ಮಾನವರ ಮೌಲ್ಯ ಅಳೆಯದೆ ಮುಪ್ಪು ಮತ್ತು ಬದಲಾವಣೆಗೆ ಗೌರವ ನೀಡಬಹುದು."
+      },
+      "traditional_benefit": {
+        "en": "",
+        "kn": ""
+      },
+      "traditional_benefit_status": "not_source_verified"
     },
     {
       "number": 868,
       "verse_number": 162,
       "title": {
-        "en": "Seeing Sacred Beauty · Respect for Embodied Life",
-        "kn": "ಪವಿತ್ರ ಸೌಂದರ್ಯದ ಅರಿವು · ದೇಹಜೀವನದ ಗೌರವ"
+        "en": "The captivating charm of the Goddess",
+        "kn": "ಮನಸೆಳೆಯುವ ದಿವ್ಯಲಾವಣ್ಯ"
       },
       "benefit": {
-        "en": "Seeing Sacred Beauty · Respect for Embodied Life",
-        "kn": "ಪವಿತ್ರ ಸೌಂದರ್ಯದ ಅರಿವು · ದೇಹಜೀವನದ ಗೌರವ"
+        "en": "The captivating charm of the Goddess",
+        "kn": "ಮನಸೆಳೆಯುವ ದಿವ್ಯಲಾವಣ್ಯ"
       },
       "explanation": {
         "en": "The name mugdhā describes the Divine Mother as captivating in Her beauty. The visible image is less about worldly appearance than about recognizing dignity and grace in embodied life.",
         "kn": "mugdhā ಎಂಬ ನಾಮದಲ್ಲಿ ದೇವಿಯನ್ನು ಅಪಾರ ಸೌಂದರ್ಯದಿಂದ ಮನಸೆಳೆಯುವ ದೇವಿ ಎಂದು ವರ್ಣಿಸಲಾಗಿದೆ. ಈ ದೃಶ್ಯರೂಪಕವು ಲೌಕಿಕ ರೂಪಕ್ಕಿಂತ ದೇಹಧಾರಿಯಾದ ಜೀವನದಲ್ಲಿನ ಘನತೆ ಮತ್ತು ಲಾವಣ್ಯವನ್ನು ಗುರುತಿಸುವ ಅರ್ಥ ಹೊಂದಿದೆ."
       },
       "editorial_theme": "beauty",
-      "kind": "human_significance_editorial_draft",
-      "review_status": "requires_name_specific_traditional_commentary_review"
+      "kind": "individual_name_contemplation",
+      "review_status": "bilingual_editorial_draft",
+      "spiritual_significance": {
+        "en": "Mugdhā delights through her enchanting beauty, awakening affectionate devotion.",
+        "kn": "ಮುಗ್ಧಾ ನಾಮವು ಮನಸೆಳೆಯುವ ಲಾವಣ್ಯದ ಮೂಲಕ ಪ್ರೀತಿಭಕ್ತಿಯನ್ನು ಜಾಗೃತಗೊಳಿಸುವ ತಾಯಿಯನ್ನು ಸ್ತುತಿಸುತ್ತದೆ."
+      },
+      "human_significance": {
+        "en": "Let appreciation of beauty create tenderness rather than possessiveness.",
+        "kn": "ಸೌಂದರ್ಯದ ಮೆಚ್ಚುಗೆಯು ಸ್ವಾಮಿತ್ವವಲ್ಲದೆ ಮೃದುತ್ವ ಬೆಳೆಸಲಿ."
+      },
+      "traditional_benefit": {
+        "en": "",
+        "kn": ""
+      },
+      "traditional_benefit_status": "not_source_verified"
     },
     {
       "number": 869,
       "verse_number": 162,
       "title": {
-        "en": "Inner Joy · Freedom from Restless Wanting",
-        "kn": "ಆಂತರಿಕ ಆನಂದ · ಅಶಾಂತ ಬಯಕೆಗಳಿಂದ ಬಿಡುವು"
+        "en": "Grace readily bestowed",
+        "kn": "ಸುಲಭವಾಗಿ ದೊರೆಯುವ ತಾಯಿಯ ಪ್ರಸಾದ"
       },
       "benefit": {
-        "en": "Inner Joy · Freedom from Restless Wanting",
-        "kn": "ಆಂತರಿಕ ಆನಂದ · ಅಶಾಂತ ಬಯಕೆಗಳಿಂದ ಬಿಡುವು"
+        "en": "Grace readily bestowed",
+        "kn": "ಸುಲಭವಾಗಿ ದೊರೆಯುವ ತಾಯಿಯ ಪ್ರಸಾದ"
       },
       "explanation": {
         "en": "The name kṣipraprasādinī describes the Divine Mother as quickly pleased. The imagery connects joy with a deep sense of sufficiency rather than dependence on every changing circumstance.",
         "kn": "kṣipraprasādinī ಎಂಬ ನಾಮದಲ್ಲಿ ದೇವಿಯನ್ನು ಬೇಗನೆ ಪ್ರಸನ್ನಳಾಗುವ ದೇವಿ ಎಂದು ವರ್ಣಿಸಲಾಗಿದೆ. ಪ್ರತಿ ಬದಲಾಗುವ ಪರಿಸ್ಥಿತಿಯನ್ನೂ ಅವಲಂಬಿಸದ ಆಳವಾದ ತೃಪ್ತಿಯೊಂದಿಗೆ ಈ ಆನಂದವು ಸಂಬಂಧಿಸುತ್ತದೆ."
       },
       "editorial_theme": "joy",
-      "kind": "human_significance_editorial_draft",
-      "review_status": "requires_name_specific_traditional_commentary_review"
+      "kind": "individual_name_contemplation",
+      "review_status": "bilingual_editorial_draft",
+      "spiritual_significance": {
+        "en": "Kṣipraprasādinī is quickly pleased with sincere devotion, a traditional image of the Mother's accessible grace.",
+        "kn": "ಕ್ಷಿಪ್ರಪ್ರಸಾದಿನೀ ನಾಮವು ನಿಷ್ಠೆಯ ಭಕ್ತಿಯಿಂದ ಬೇಗನೆ ಪ್ರಸನ್ನಳಾಗುವ ತಾಯಿಯ ಸುಲಭ ಕೃಪೆಯನ್ನು ಸ್ತುತಿಸುತ್ತದೆ."
+      },
+      "human_significance": {
+        "en": "Turn toward prayer without assuming that a desired external result must appear immediately.",
+        "kn": "ಬಯಸಿದ ಹೊರಗಿನ ಫಲ ತಕ್ಷಣ ಬರಲೇಬೇಕೆಂದು ಭಾವಿಸದೆ ನಿಷ್ಠೆಯಿಂದ ಪ್ರಾರ್ಥಿಸಬಹುದು."
+      },
+      "traditional_benefit": {
+        "en": "",
+        "kn": ""
+      },
+      "traditional_benefit_status": "not_source_verified"
     },
     {
       "number": 870,
       "verse_number": 162,
       "title": {
-        "en": "Devotion · Sincerity of the Heart",
-        "kn": "ಭಕ್ತಿ · ಹೃದಯದ ನಿಷ್ಠೆ"
+        "en": "Worship in the inward heart",
+        "kn": "ಅಂತರಂಗದಲ್ಲಿ ನಡೆಯುವ ಆರಾಧನೆ"
       },
       "benefit": {
-        "en": "Devotion · Sincerity of the Heart",
-        "kn": "ಭಕ್ತಿ · ಹೃದಯದ ನಿಷ್ಠೆ"
+        "en": "Worship in the inward heart",
+        "kn": "ಅಂತರಂಗದಲ್ಲಿ ನಡೆಯುವ ಆರಾಧನೆ"
       },
       "explanation": {
         "en": "The name antarmukhasamārādhyā describes the Divine Mother as to be worshipped internally (mentally). This name places emphasis on a heartfelt relationship rather than display, achievement, or outward recognition.",
         "kn": "antarmukhasamārādhyā ಎಂಬ ನಾಮದಲ್ಲಿ ದೇವಿಯನ್ನು ಅಂತರಂಗದಲ್ಲಿ ಮನಸ್ಸಿನಿಂದ ಪೂಜಿಸಬೇಕಾದ ದೇವಿ ಎಂದು ವರ್ಣಿಸಲಾಗಿದೆ. ಬಾಹ್ಯ ಪ್ರದರ್ಶನಕ್ಕಿಂತ ಹೃದಯಪೂರ್ಣ ಸಂಬಂಧ ಮತ್ತು ನಿಷ್ಠೆಗೆ ಈ ನಾಮವು ಮಹತ್ವ ನೀಡುತ್ತದೆ."
       },
       "editorial_theme": "devotion",
-      "kind": "human_significance_editorial_draft",
-      "review_status": "requires_name_specific_traditional_commentary_review"
+      "kind": "individual_name_contemplation",
+      "review_status": "bilingual_editorial_draft",
+      "spiritual_significance": {
+        "en": "Antarmukhasamārādhyā is worshipped through inward attention and mental offering, placing inner sincerity above outward display.",
+        "kn": "ಅಂತರ್ಮುಖಸಮಾರಾಧ್ಯಾ ನಾಮವು ಅಂತರಂಗದ ಗಮನ ಮತ್ತು ಮಾನಸಪೂಜೆಯಿಂದ ಆರಾಧಿಸಲ್ಪಡುವ ತಾಯಿಯನ್ನು ಸ್ತುತಿಸುತ್ತದೆ."
+      },
+      "human_significance": {
+        "en": "Make a quiet moment of reflection part of daily life even without elaborate ritual.",
+        "kn": "ವಿಸ್ತಾರವಾದ ಆಚರಣೆಯಿಲ್ಲದಿದ್ದರೂ ದೈನಂದಿನ ಜೀವನದಲ್ಲಿ ಮೌನಚಿಂತನೆಯನ್ನು ಸೇರಿಸಬಹುದು."
+      },
+      "traditional_benefit": {
+        "en": "",
+        "kn": ""
+      },
+      "traditional_benefit_status": "not_source_verified"
     },
     {
       "number": 871,
       "verse_number": 162,
       "title": {
-        "en": "Protective Strength · Resolute Courage",
-        "kn": "ರಕ್ಷಣಾಶಕ್ತಿ · ದೃಢ ಧೈರ್ಯ"
+        "en": "Why outward distraction obscures Her",
+        "kn": "ಬಾಹ್ಯಚಂಚಲತೆಯಿಂದ ದೂರವಾಗುವ ದೈವಾನುಭವ"
       },
       "benefit": {
-        "en": "Protective Strength · Resolute Courage",
-        "kn": "ರಕ್ಷಣಾಶಕ್ತಿ · ದೃಢ ಧೈರ್ಯ"
+        "en": "Why outward distraction obscures Her",
+        "kn": "ಬಾಹ್ಯಚಂಚಲತೆಯಿಂದ ದೂರವಾಗುವ ದೈವಾನುಭವ"
       },
       "explanation": {
         "en": "The name bahirmukhasudurlabhā describes the Divine Mother as difficult to attain by those whose attention is directed outwards. The martial symbolism can be understood as strength used to oppose what harms life while preserving a sense of responsibility.",
         "kn": "bahirmukhasudurlabhā ಎಂಬ ನಾಮದಲ್ಲಿ ದೇವಿಯನ್ನು ಹೊರಗಿನ ವಿಷಯಗಳಲ್ಲಿ ತಲ್ಲೀನರಾದವರಿಗೆ ದೊರೆಯಲು ಕಷ್ಟವಾದ ದೇವಿ ಎಂದು ವರ್ಣಿಸಲಾಗಿದೆ. ಜೀವನಕ್ಕೆ ಹಾನಿಕಾರಕವಾದುದನ್ನು ಎದುರಿಸುವ ಶಕ್ತಿಯನ್ನೂ ಹೊಣೆಗಾರಿಕೆಯನ್ನೂ ಈ ಯುದ್ಧರೂಪಕ ಒಟ್ಟಿಗೆ ಸೂಚಿಸುತ್ತದೆ."
       },
       "editorial_theme": "warrior",
-      "kind": "human_significance_editorial_draft",
-      "review_status": "requires_name_specific_traditional_commentary_review"
+      "kind": "individual_name_contemplation",
+      "review_status": "bilingual_editorial_draft",
+      "spiritual_significance": {
+        "en": "Bahirmukhasudurlabhā is difficult to attain for those absorbed entirely in outer objects, contrasting directly with inward worship in the previous name.",
+        "kn": "ಬಹಿರ್ಮುಖಸುದುರ್ಲಭಾ ನಾಮವು ಬಾಹ್ಯವಸ್ತುಗಳಲ್ಲೇ ಮುಳುಗಿದವರಿಗೆ ಅರಿಯಲು ಕಷ್ಟವಾದ ತಾಯಿಯನ್ನು ಸೂಚಿಸುತ್ತದೆ; ಹಿಂದಿನ ಅಂತರ್ಮುಖ ಆರಾಧನೆಗೆ ಇದು ವಿರುದ್ಧವಾಗಿ ನಿಂತಿದೆ."
+      },
+      "human_significance": {
+        "en": "Reduce one persistent distraction and give attention to your inner motives.",
+        "kn": "ನಿರಂತರ ವ್ಯಾಕುಲತೆಯೊಂದನ್ನು ಕಡಿಮೆ ಮಾಡಿ ಅಂತರಂಗದ ಉದ್ದೇಶಗಳನ್ನು ಗಮನಿಸಬಹುದು."
+      },
+      "traditional_benefit": {
+        "en": "",
+        "kn": ""
+      },
+      "traditional_benefit_status": "not_source_verified"
     },
     {
       "number": 872,
       "verse_number": 163,
       "title": {
-        "en": "Sacred Sound · Focused Attention",
-        "kn": "ಪವಿತ್ರ ನಾದ · ಏಕಾಗ್ರ ಗಮನ"
+        "en": "The sacred teaching of the three Vedas",
+        "kn": "ತ್ರಿವೇದಗಳ ದಿವ್ಯ ಸಾರ"
       },
       "benefit": {
-        "en": "Sacred Sound · Focused Attention",
-        "kn": "ಪವಿತ್ರ ನಾದ · ಏಕಾಗ್ರ ಗಮನ"
+        "en": "The sacred teaching of the three Vedas",
+        "kn": "ತ್ರಿವೇದಗಳ ದಿವ್ಯ ಸಾರ"
       },
       "explanation": {
         "en": "The name trayī describes the Divine Mother as three vedas. The symbolism of sound points to how attentive listening and meaningful recitation can deepen inward presence.",
         "kn": "trayī ಎಂಬ ನಾಮದಲ್ಲಿ ದೇವಿಯನ್ನು ಮೂರು ವೇದಗಳ ಸ್ವರೂಪಿಣಿ ಎಂದು ವರ್ಣಿಸಲಾಗಿದೆ. ಗಮನಪೂರ್ವಕವಾಗಿ ಕೇಳುವುದು ಮತ್ತು ಅರ್ಥಪೂರ್ಣ ಪಠಣವು ಆಂತರಿಕ ಸಾನ್ನಿಧ್ಯವನ್ನು ಗಾಢಗೊಳಿಸುವುದನ್ನು ಈ ನಾದರೂಪಕ ಸೂಚಿಸುತ್ತದೆ."
       },
       "editorial_theme": "mantra",
-      "kind": "human_significance_editorial_draft",
-      "review_status": "requires_name_specific_traditional_commentary_review"
+      "kind": "individual_name_contemplation",
+      "review_status": "bilingual_editorial_draft",
+      "spiritual_significance": {
+        "en": "Trayī embodies the three Vedas, traditionally Ṛg, Yajur and Sāma, as sacred revelation.",
+        "kn": "ತ್ರಯೀ ನಾಮವು ಋಗ್, ಯಜುರ್ ಮತ್ತು ಸಾಮ ಎಂಬ ಮೂರು ವೇದಗಳ ಪವಿತ್ರ ಜ್ಞಾನಸ್ವರೂಪವಾಗಿ ತಾಯಿಯನ್ನು ಸ್ತುತಿಸುತ್ತದೆ."
+      },
+      "human_significance": {
+        "en": "Respect the preservation of oral learning and study texts with care for their transmission.",
+        "kn": "ಮೌಖಿಕ ಪಠಣಪರಂಪರೆಯನ್ನು ಗೌರವಿಸಿ ಗ್ರಂಥಗಳನ್ನು ಮೂಲಕ್ರಮದ ಕಾಳಜಿಯಿಂದ ಅಧ್ಯಯನ ಮಾಡಬಹುದು."
+      },
+      "traditional_benefit": {
+        "en": "",
+        "kn": ""
+      },
+      "traditional_benefit_status": "not_source_verified"
     },
     {
       "number": 873,
       "verse_number": 163,
       "title": {
-        "en": "Living Reverence · Thoughtful Reflection",
-        "kn": "ಜೀವನದ ಗೌರವ · ವಿವೇಕಪೂರ್ಣ ಚಿಂತನೆ"
+        "en": "The three aims of worldly life",
+        "kn": "ಮಾನವಜೀವನದ ತ್ರಿವರ್ಗಾಶ್ರಯ"
       },
       "benefit": {
-        "en": "Living Reverence · Thoughtful Reflection",
-        "kn": "ಜೀವನದ ಗೌರವ · ವಿವೇಕಪೂರ್ಣ ಚಿಂತನೆ"
+        "en": "The three aims of worldly life",
+        "kn": "ಮಾನವಜೀವನದ ತ್ರಿವರ್ಗಾಶ್ರಯ"
       },
       "explanation": {
         "en": "The name trivarganilayā describes the Divine Mother as abode of the threefold aims of human life. Its symbolic meaning becomes relevant through the human capacity for care, responsibility, and thoughtful awareness.",
         "kn": "trivarganilayā ಎಂಬ ನಾಮದಲ್ಲಿ ದೇವಿಯನ್ನು ಮಾನವಜೀವನದ ಮೂರು ಪುರುಷಾರ್ಥಗಳ ಆಶ್ರಯವಾದ ದೇವಿ ಎಂದು ವರ್ಣಿಸಲಾಗಿದೆ. ಕಾಳಜಿ, ಹೊಣೆಗಾರಿಕೆ ಮತ್ತು ವಿವೇಕಪೂರ್ಣ ಅರಿವು ಎಂಬ ಮಾನವೀಯ ಗುಣಗಳ ಮೂಲಕ ಇದರ ರೂಪಕಕ್ಕೆ ಅರ್ಥ ಸಿಗುತ್ತದೆ."
       },
       "editorial_theme": "other",
-      "kind": "human_significance_editorial_draft",
-      "review_status": "requires_name_specific_traditional_commentary_review"
+      "kind": "individual_name_contemplation",
+      "review_status": "bilingual_editorial_draft",
+      "spiritual_significance": {
+        "en": "Trivarganilayā is the abode of dharma, artha and kāma, the three human aims that support a responsible worldly life.",
+        "kn": "ತ್ರಿವರ್ಗನಿಲಯಾ ನಾಮವು ಧರ್ಮ, ಅರ್ಥ ಮತ್ತು ಕಾಮ ಎಂಬ ಮೂರು ಮಾನವಗುರಿಗಳ ಆಶ್ರಯವಾದ ತಾಯಿಯನ್ನು ಸ್ತುತಿಸುತ್ತದೆ."
+      },
+      "human_significance": {
+        "en": "Pursue livelihood and enjoyment without sacrificing fairness or care.",
+        "kn": "ಆದಾಯ ಮತ್ತು ಸುಖಕ್ಕಾಗಿ ನ್ಯಾಯ ಮತ್ತು ಕಾಳಜಿಯನ್ನು ಬಲಿಕೊಡಬಾರದು."
+      },
+      "traditional_benefit": {
+        "en": "",
+        "kn": ""
+      },
+      "traditional_benefit_status": "not_source_verified"
     },
     {
       "number": 874,
       "verse_number": 163,
       "title": {
-        "en": "Belonging Within Creation · Reverence for Life",
-        "kn": "ಸೃಷ್ಟಿಯಲ್ಲಿ ಆತ್ಮೀಯತೆ · ಜೀವಜಗತ್ತಿನ ಗೌರವ"
+        "en": "The Divine present in three realms",
+        "kn": "ಮೂರು ಲೋಕಗಳಲ್ಲಿರುವ ಸಾನ್ನಿಧ್ಯ"
       },
       "benefit": {
-        "en": "Belonging Within Creation · Reverence for Life",
-        "kn": "ಸೃಷ್ಟಿಯಲ್ಲಿ ಆತ್ಮೀಯತೆ · ಜೀವಜಗತ್ತಿನ ಗೌರವ"
+        "en": "The Divine present in three realms",
+        "kn": "ಮೂರು ಲೋಕಗಳಲ್ಲಿರುವ ಸಾನ್ನಿಧ್ಯ"
       },
       "explanation": {
         "en": "The name tristhā describes the Divine Mother as the one who resides in the three worlds. Seeing the sacred throughout creation encourages humility and care toward the world that sustains us.",
         "kn": "tristhā ಎಂಬ ನಾಮದಲ್ಲಿ ದೇವಿಯನ್ನು ಮೂರು ಲೋಕಗಳಲ್ಲಿ ನೆಲೆಸಿರುವ ದೇವಿ ಎಂದು ವರ್ಣಿಸಲಾಗಿದೆ. ಸೃಷ್ಟಿಯೆಲ್ಲ ಪವಿತ್ರತೆಯನ್ನು ಕಾಣುವುದು ವಿನಯವನ್ನೂ ನಮ್ಮನ್ನು ಪೋಷಿಸುವ ಜಗತ್ತಿನ ಬಗ್ಗೆ ಕಾಳಜಿಯನ್ನೂ ಸೂಚಿಸುತ್ತದೆ."
       },
       "editorial_theme": "nature",
-      "kind": "human_significance_editorial_draft",
-      "review_status": "requires_name_specific_traditional_commentary_review"
+      "kind": "individual_name_contemplation",
+      "review_status": "bilingual_editorial_draft",
+      "spiritual_significance": {
+        "en": "Tristhā is present in all three worlds, affirming that the Mother is not confined to one realm of existence.",
+        "kn": "ತ್ರಿಸ್ಥಾ ನಾಮವು ಮೂರು ಲೋಕಗಳಲ್ಲಿಯೂ ನೆಲೆಸಿರುವ ತಾಯಿಯನ್ನು ಸ್ತುತಿಸುತ್ತದೆ; ಅವಳು ಒಂದೇ ಕ್ಷೇತ್ರಕ್ಕೆ ಸೀಮಿತವಲ್ಲ."
+      },
+      "human_significance": {
+        "en": "Bring ethical care to every setting rather than acting responsibly only in sacred spaces.",
+        "kn": "ಪವಿತ್ರಸ್ಥಳದಲ್ಲಷ್ಟೇ ಅಲ್ಲದೆ ಎಲ್ಲ ಸಂದರ್ಭಗಳಲ್ಲಿಯೂ ನೈತಿಕ ಕಾಳಜಿ ತೋರಬಹುದು."
+      },
+      "traditional_benefit": {
+        "en": "",
+        "kn": ""
+      },
+      "traditional_benefit_status": "not_source_verified"
     },
     {
       "number": 875,
       "verse_number": 163,
       "title": {
-        "en": "Inner Awareness · Integration of Energy",
-        "kn": "ಅಂತರಂಗದ ಅರಿವು · ಶಕ್ತಿಯ ಸಮನ್ವಯ"
+        "en": "Tripuramālinī of the Śrīcakra",
+        "kn": "ಶ್ರೀಚಕ್ರದ ತ್ರಿಪುರಮಾಲಿನೀ"
       },
       "benefit": {
-        "en": "Inner Awareness · Integration of Energy",
-        "kn": "ಅಂತರಂಗದ ಅರಿವು · ಶಕ್ತಿಯ ಸಮನ್ವಯ"
+        "en": "Tripuramālinī of the Śrīcakra",
+        "kn": "ಶ್ರೀಚಕ್ರದ ತ್ರಿಪುರಮಾಲಿನೀ"
       },
       "explanation": {
         "en": "The name tripuramālinī describes the Divine Mother as goddess of the antardashAra chakra of the shrI chakra. The subtle-body image symbolizes bringing attention, feeling, and intention into a more integrated inner life.",
         "kn": "tripuramālinī ಎಂಬ ನಾಮದಲ್ಲಿ ದೇವಿಯನ್ನು ಶ್ರೀಚಕ್ರದ ಅಂತರ್ಧಶಾರ ಚಕ್ರದ ಅಧಿದೇವತೆ ಎಂದು ವರ್ಣಿಸಲಾಗಿದೆ. ಸೂಕ್ಷ್ಮದೇಹದ ರೂಪಕವು ಗಮನ, ಭಾವನೆ ಮತ್ತು ಸಂಕಲ್ಪವನ್ನು ಹೆಚ್ಚು ಸಮನ್ವಿತ ಜೀವನದಲ್ಲಿ ಒಂದಾಗಿಸುವುದನ್ನು ಸೂಚಿಸುತ್ತದೆ."
       },
       "editorial_theme": "chakras",
-      "kind": "human_significance_editorial_draft",
-      "review_status": "requires_name_specific_traditional_commentary_review"
+      "kind": "individual_name_contemplation",
+      "review_status": "bilingual_editorial_draft",
+      "spiritual_significance": {
+        "en": "Tripuramālinī is the presiding Śakti of the inner ten-triangle enclosure of Śrīcakra, a specific role in the sacred diagram.",
+        "kn": "ತ್ರಿಪುರಮಾಲಿನೀ ನಾಮವು ಶ್ರೀಚಕ್ರದ ಒಳಗಿನ ಹತ್ತು ತ್ರಿಕೋಣಗಳ ಆವರಣದ ಅಧಿದೇವತೆಯನ್ನು ಸ್ತುತಿಸುತ್ತದೆ."
+      },
+      "human_significance": {
+        "en": "Learn the distinct meaning of each Śrīcakra enclosure rather than making all its deities interchangeable.",
+        "kn": "ಶ್ರೀಚಕ್ರದ ಪ್ರತಿಯೊಂದು ಆವರಣದ ವಿಶೇಷತೆಯನ್ನು ತಿಳಿದು ಎಲ್ಲ ದೇವತೆಗಳನ್ನು ಒಂದೇ ಅರ್ಥಕ್ಕೆ ಇಳಿಸಬಾರದು."
+      },
+      "traditional_benefit": {
+        "en": "",
+        "kn": ""
+      },
+      "traditional_benefit_status": "not_source_verified"
     },
     {
       "number": 876,
       "verse_number": 163,
       "title": {
-        "en": "Comfort Amid Suffering · Inner Resilience",
-        "kn": "ದುಃಖದಲ್ಲಿ ಸಾಂತ್ವನ · ಆಂತರಿಕ ಸ್ಥೈರ್ಯ"
+        "en": "The Divine beyond affliction",
+        "kn": "ರೋಗಕ್ಲೇಶಗಳಾಚೆಯ ನಿರ್ಮಲತೆ"
       },
       "benefit": {
-        "en": "Comfort Amid Suffering · Inner Resilience",
-        "kn": "ದುಃಖದಲ್ಲಿ ಸಾಂತ್ವನ · ಆಂತರಿಕ ಸ್ಥೈರ್ಯ"
+        "en": "The Divine beyond affliction",
+        "kn": "ರೋಗಕ್ಲೇಶಗಳಾಚೆಯ ನಿರ್ಮಲತೆ"
       },
       "explanation": {
         "en": "The name nirāmayā describes the Divine Mother as free from diseases of all kinds. Its relevance lies in the dignity, hope, and compassionate presence people seek amid illness or loss, not in a promised cure.",
         "kn": "nirāmayā ಎಂಬ ನಾಮದಲ್ಲಿ ದೇವಿಯನ್ನು ಸಕಲ ರೋಗಗಳಿಂದ ಮುಕ್ತಳಾದ ದೇವಿ ಎಂದು ವರ್ಣಿಸಲಾಗಿದೆ. ಅನಾರೋಗ್ಯ ಅಥವಾ ನಷ್ಟದ ಸಮಯದಲ್ಲಿ ಮಾನವರು ಹುಡುಕುವ ಗೌರವ, ಭರವಸೆ ಮತ್ತು ಕರುಣಾಮಯ ಸಾನ್ನಿಧ್ಯ ಇದರ ಆಶಯವಾಗಿದೆ; ಇದು ಖಚಿತ ಚಿಕಿತ್ಸೆಯ ಭರವಸೆಯಲ್ಲ."
       },
       "editorial_theme": "disease",
-      "kind": "human_significance_editorial_draft",
-      "review_status": "requires_name_specific_traditional_commentary_review"
+      "kind": "individual_name_contemplation",
+      "review_status": "bilingual_editorial_draft",
+      "spiritual_significance": {
+        "en": "Nirāmayā is free from disease and affliction in her divine nature; this is not a guarantee that devotees will never become ill.",
+        "kn": "ನಿರಾಮಯಾ ನಾಮವು ರೋಗ ಮತ್ತು ಕ್ಲೇಶಗಳಿಂದ ಅತೀತಳಾದ ತಾಯಿಯನ್ನು ಸ್ತುತಿಸುತ್ತದೆ; ಭಕ್ತರಿಗೆ ಎಂದಿಗೂ ರೋಗ ಬರುವುದಿಲ್ಲವೆಂಬ ಭರವಸೆಯಲ್ಲ."
+      },
+      "human_significance": {
+        "en": "Seek care for illness while remembering that sickness does not diminish a person's dignity.",
+        "kn": "ಅನಾರೋಗ್ಯಕ್ಕೆ ಚಿಕಿತ್ಸೆ ಪಡೆಯುತ್ತಲೇ ರೋಗದಿಂದ ವ್ಯಕ್ತಿಯ ಘನತೆ ಕಡಿಮೆಯಾಗುವುದಿಲ್ಲವೆಂದು ಅರಿಯಬಹುದು."
+      },
+      "traditional_benefit": {
+        "en": "",
+        "kn": ""
+      },
+      "traditional_benefit_status": "not_source_verified"
     },
     {
       "number": 877,
       "verse_number": 163,
       "title": {
-        "en": "Living Reverence · Thoughtful Reflection",
-        "kn": "ಜೀವನದ ಗೌರವ · ವಿವೇಕಪೂರ್ಣ ಚಿಂತನೆ"
+        "en": "The self-sufficient supreme Mother",
+        "kn": "ಯಾರನ್ನೂ ಅವಲಂಬಿಸದ ಪರತಾಯಿ"
       },
       "benefit": {
-        "en": "Living Reverence · Thoughtful Reflection",
-        "kn": "ಜೀವನದ ಗೌರವ · ವಿವೇಕಪೂರ್ಣ ಚಿಂತನೆ"
+        "en": "The self-sufficient supreme Mother",
+        "kn": "ಯಾರನ್ನೂ ಅವಲಂಬಿಸದ ಪರತಾಯಿ"
       },
       "explanation": {
         "en": "The name nirālambā describes the Divine Mother as the one who depends on none. Its symbolic meaning becomes relevant through the human capacity for care, responsibility, and thoughtful awareness.",
         "kn": "nirālambā ಎಂಬ ನಾಮದಲ್ಲಿ ದೇವಿಯನ್ನು ಯಾರನ್ನೂ ಅವಲಂಬಿಸದ ದೇವಿ ಎಂದು ವರ್ಣಿಸಲಾಗಿದೆ. ಕಾಳಜಿ, ಹೊಣೆಗಾರಿಕೆ ಮತ್ತು ವಿವೇಕಪೂರ್ಣ ಅರಿವು ಎಂಬ ಮಾನವೀಯ ಗುಣಗಳ ಮೂಲಕ ಇದರ ರೂಪಕಕ್ಕೆ ಅರ್ಥ ಸಿಗುತ್ತದೆ."
       },
       "editorial_theme": "other",
-      "kind": "human_significance_editorial_draft",
-      "review_status": "requires_name_specific_traditional_commentary_review"
+      "kind": "individual_name_contemplation",
+      "review_status": "bilingual_editorial_draft",
+      "spiritual_significance": {
+        "en": "Nirālambā rests on no support outside herself, being the ground upon which all else depends.",
+        "kn": "ನಿರಾಲಂಬಾ ನಾಮವು ತನ್ನಾಚೆ ಯಾವ ಆಧಾರವನ್ನೂ ಬೇಡದ ಪರಮತಾಯಿಯನ್ನು ಸ್ತುತಿಸುತ್ತದೆ; ಉಳಿದ ಎಲ್ಲಕ್ಕೂ ಅವಳೇ ಆಧಾರ."
+      },
+      "human_significance": {
+        "en": "Develop self-reliance while acknowledging that human interdependence remains valuable.",
+        "kn": "ಮಾನವಸಂಬಂಧಗಳ ಪರಸ್ಪರ ಅವಲಂಬನೆಯನ್ನು ಗೌರವಿಸುತ್ತಲೇ ಸ್ವಾವಲಂಬನೆಯನ್ನು ಬೆಳೆಸಬಹುದು."
+      },
+      "traditional_benefit": {
+        "en": "",
+        "kn": ""
+      },
+      "traditional_benefit_status": "not_source_verified"
     },
     {
       "number": 878,
       "verse_number": 163,
       "title": {
-        "en": "Living Reverence · Thoughtful Reflection",
-        "kn": "ಜೀವನದ ಗೌರವ · ವಿವೇಕಪೂರ್ಣ ಚಿಂತನೆ"
+        "en": "Joy resting in the Self",
+        "kn": "ಸ್ವಾತ್ಮದಲ್ಲಿಯೇ ನೆಲೆಸುವ ಆನಂದ"
       },
       "benefit": {
-        "en": "Living Reverence · Thoughtful Reflection",
-        "kn": "ಜೀವನದ ಗೌರವ · ವಿವೇಕಪೂರ್ಣ ಚಿಂತನೆ"
+        "en": "Joy resting in the Self",
+        "kn": "ಸ್ವಾತ್ಮದಲ್ಲಿಯೇ ನೆಲೆಸುವ ಆನಂದ"
       },
       "explanation": {
         "en": "The name svātmārāmā describes the Divine Mother as the one who rejoices in Her own self. Its symbolic meaning becomes relevant through the human capacity for care, responsibility, and thoughtful awareness.",
         "kn": "svātmārāmā ಎಂಬ ನಾಮದಲ್ಲಿ ದೇವಿಯನ್ನು ತನ್ನಲ್ಲಿಯೇ ಆನಂದಿಸುವ ದೇವಿ ಎಂದು ವರ್ಣಿಸಲಾಗಿದೆ. ಕಾಳಜಿ, ಹೊಣೆಗಾರಿಕೆ ಮತ್ತು ವಿವೇಕಪೂರ್ಣ ಅರಿವು ಎಂಬ ಮಾನವೀಯ ಗುಣಗಳ ಮೂಲಕ ಇದರ ರೂಪಕಕ್ಕೆ ಅರ್ಥ ಸಿಗುತ್ತದೆ."
       },
       "editorial_theme": "other",
-      "kind": "human_significance_editorial_draft",
-      "review_status": "requires_name_specific_traditional_commentary_review"
+      "kind": "individual_name_contemplation",
+      "review_status": "bilingual_editorial_draft",
+      "spiritual_significance": {
+        "en": "Svātmārāmā rejoices in her own Self, an image of completeness independent of external entertainment.",
+        "kn": "ಸ್ವಾತ್ಮಾರಾಮಾ ನಾಮವು ತನ್ನ ಸ್ವಾತ್ಮದಲ್ಲಿಯೇ ಆನಂದಿಸುವ ಪೂರ್ಣತೆಯನ್ನು ಸ್ತುತಿಸುತ್ತದೆ; ಹೊರಗಿನ ಮನರಂಜನೆಗೆ ಅವಲಂಬಿಸದು."
+      },
+      "human_significance": {
+        "en": "Find moments of contentment without needing constant stimulation or approval.",
+        "kn": "ನಿರಂತರ ಮನರಂಜನೆ ಅಥವಾ ಮೆಚ್ಚುಗೆಯಿಲ್ಲದಿದ್ದರೂ ತೃಪ್ತಿಯ ಕ್ಷಣಗಳನ್ನು ಕಂಡುಕೊಳ್ಳಬಹುದು."
+      },
+      "traditional_benefit": {
+        "en": "",
+        "kn": ""
+      },
+      "traditional_benefit_status": "not_source_verified"
     },
     {
       "number": 879,
       "verse_number": 163,
       "title": {
-        "en": "Depth of Grace · Emotional Spaciousness",
-        "kn": "ಕೃಪೆಯ ಆಳ · ಭಾವನೆಗಳಿಗೆ ವಿಶಾಲ ಅವಕಾಶ"
+        "en": "The flowing source of nectar",
+        "kn": "ಹರಿಯುವ ಅಮೃತಧಾರೆಯ ಮೂಲ"
       },
       "benefit": {
-        "en": "Depth of Grace · Emotional Spaciousness",
-        "kn": "ಕೃಪೆಯ ಆಳ · ಭಾವನೆಗಳಿಗೆ ವಿಶಾಲ ಅವಕಾಶ"
+        "en": "The flowing source of nectar",
+        "kn": "ಹರಿಯುವ ಅಮೃತಧಾರೆಯ ಮೂಲ"
       },
       "explanation": {
         "en": "The name sudhāsrutiḥ / sṛtiḥ describes the Divine Mother as source of nectar. The fluid imagery evokes a capacity to hold feeling without being confined by each passing wave.",
         "kn": "sudhāsrutiḥ / sṛtiḥ ಎಂಬ ನಾಮದಲ್ಲಿ ದೇವಿಯನ್ನು ಅಮೃತದ ಮೂಲವಾದ ದೇವಿ ಎಂದು ವರ್ಣಿಸಲಾಗಿದೆ. ಪ್ರತಿ ಕ್ಷಣದ ಭಾವನೆಗೆ ಸೀಮಿತವಾಗದೆ ಅದನ್ನು ವಿಶಾಲವಾಗಿ ಧರಿಸುವ ಸಾಮರ್ಥ್ಯವನ್ನು ಜಲರೂಪಕ ಸೂಚಿಸುತ್ತದೆ."
       },
       "editorial_theme": "ocean",
-      "kind": "human_significance_editorial_draft",
-      "review_status": "requires_name_specific_traditional_commentary_review"
+      "kind": "individual_name_contemplation",
+      "review_status": "textual_variant_requires_review",
+      "spiritual_significance": {
+        "en": "Sudhāsrutiḥ, also transmitted with a variant reading, evokes the streaming of immortal nectar in sacred symbolism.",
+        "kn": "ಸುಧಾಸ್ರುತಿಃ ಎಂಬ ನಾಮವು ಪವಿತ್ರ ಸಂಕೇತದಲ್ಲಿ ಹರಿಯುವ ಅಮೃತಧಾರೆಯನ್ನು ಸೂಚಿಸುತ್ತದೆ; ಈ ಪಾಠಕ್ಕೆ ಭಿನ್ನ ರೂಪಗಳೂ ಕಂಡುಬರುತ್ತವೆ."
+      },
+      "human_significance": {
+        "en": "Let an image of nourishment encourage generosity, without treating sacred nectar as a literal substance to obtain.",
+        "kn": "ಅಮೃತದ ಸಂಕೇತವು ಉದಾರತೆಗೆ ಪ್ರೇರೇಪಿಸಲಿ; ಅದನ್ನು ಪಡೆಯಬೇಕಾದ ದೈಹಿಕ ಪದಾರ್ಥವೆಂದು ಭಾವಿಸಬಾರದು."
+      },
+      "traditional_benefit": {
+        "en": "",
+        "kn": ""
+      },
+      "traditional_benefit_status": "not_source_verified"
     },
     {
       "number": 880,
       "verse_number": 164,
       "title": {
-        "en": "Protective Strength · Resolute Courage",
-        "kn": "ರಕ್ಷಣಾಶಕ್ತಿ · ದೃಢ ಧೈರ್ಯ"
+        "en": "Lifting the seeker from saṃsāra's mire",
+        "kn": "ಸಂಸಾರದ ಕೆಸರಿನಿಂದ ಮೇಲಕ್ಕೆತ್ತುವ ಕೃಪೆ"
       },
       "benefit": {
-        "en": "Protective Strength · Resolute Courage",
-        "kn": "ರಕ್ಷಣಾಶಕ್ತಿ · ದೃಢ ಧೈರ್ಯ"
+        "en": "Lifting the seeker from saṃsāra's mire",
+        "kn": "ಸಂಸಾರದ ಕೆಸರಿನಿಂದ ಮೇಲಕ್ಕೆತ್ತುವ ಕೃಪೆ"
       },
       "explanation": {
         "en": "The name saṃsārapaṅkanirmagnasamuddharaṇapaṇḍitā describes the Divine Mother as skilled in raising those who are immersed in the mire of transmigratory life. The martial symbolism can be understood as strength used to oppose what harms life while preserving a sense of responsibility.",
         "kn": "saṃsārapaṅkanirmagnasamuddharaṇapaṇḍitā ಎಂಬ ನಾಮದಲ್ಲಿ ದೇವಿಯನ್ನು ಸಂಸಾರದ ಕೆಸರಿನಲ್ಲಿ ಮುಳುಗಿದವರನ್ನು ಮೇಲಕ್ಕೆತ್ತುವಲ್ಲಿ ನಿಪುಣಳಾದ ದೇವಿ ಎಂದು ವರ್ಣಿಸಲಾಗಿದೆ. ಜೀವನಕ್ಕೆ ಹಾನಿಕಾರಕವಾದುದನ್ನು ಎದುರಿಸುವ ಶಕ್ತಿಯನ್ನೂ ಹೊಣೆಗಾರಿಕೆಯನ್ನೂ ಈ ಯುದ್ಧರೂಪಕ ಒಟ್ಟಿಗೆ ಸೂಚಿಸುತ್ತದೆ."
       },
       "editorial_theme": "warrior",
-      "kind": "human_significance_editorial_draft",
-      "review_status": "requires_name_specific_traditional_commentary_review"
+      "kind": "individual_name_contemplation",
+      "review_status": "bilingual_editorial_draft",
+      "spiritual_significance": {
+        "en": "Saṃsārapaṅkanirmagnasamuddharaṇapaṇḍitā is expert in rescuing those sunk in the mud of worldly bondage, a vivid image of liberating grace.",
+        "kn": "ಸಂಸಾರಪಂಕನಿರ್ಮಗ್ನಸಮುದ್ಧರಣಪಂಡಿತಾ ನಾಮವು ಸಂಸಾರಬಂಧನದ ಕೆಸರಿನಲ್ಲಿ ಮುಳುಗಿದವರನ್ನು ಮೇಲಕ್ಕೆತ್ತುವ ನಿಪುಣ ತಾಯಿಯನ್ನು ಸ್ತುತಿಸುತ್ತದೆ."
+      },
+      "human_significance": {
+        "en": "When stuck in repeating harmful patterns, seek compassionate help and take a manageable next step.",
+        "kn": "ಪುನರಾವರ್ತಿತ ಹಾನಿಕರ ಅಭ್ಯಾಸದಲ್ಲಿ ಸಿಲುಕಿದಾಗ ಕರುಣೆಯ ನೆರವು ಪಡೆದು ಮುಂದಿನ ಸಾಧ್ಯವಾದ ಹೆಜ್ಜೆ ಇಡಬಹುದು."
+      },
+      "traditional_benefit": {
+        "en": "",
+        "kn": ""
+      },
+      "traditional_benefit_status": "not_source_verified"
     },
     {
       "number": 881,
