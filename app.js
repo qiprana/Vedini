@@ -97,15 +97,18 @@ function richParagraphs(value){
 function benefitToggle(number){
  const data=spiritualBenefits[number];
  if(!data)return "";
- const benefit=data.benefit?.[language]||"";
- const explanation=data.explanation?.[language]||"";
- const heading=(data.title?.[language]||benefit).replace(/[.!]+$/,"").trim();
- if(!benefit)return "";
+ const traditional=data.traditional_benefit?.[language]||"";
+ const benefit=data.benefit?.[language]||data.title?.[language]||"";
+ const legacy=(data.explanation?.[language]||"").split("\n\n").filter(Boolean);
+ const spiritual=data.spiritual_significance?.[language]||legacy[0]||"";
+ const human=data.human_significance?.[language]||legacy.slice(1).join("\n\n")||"";
+ const detail=(key,text)=>text?"<section class='benefit-facet benefit-"+key+"'><h5>"+esc(key==="traditional"?langText("Traditional benefit","ಪಾರಂಪರಿಕ ಫಲ"):key==="contemplative"?langText("Contemplative benefit","ಚಿಂತನೆಯ ಪ್ರಯೋಜನ"):key==="spiritual"?langText("Spiritual significance","ಆಧ್ಯಾತ್ಮಿಕ ಮಹತ್ವ"):langText("Human significance","ಮಾನವ ಜೀವನದಲ್ಲಿ ಮಹತ್ವ"))+"</h5>"+richParagraphs(text)+"</section>":"";
  return "<details class='meaning-toggle name-spiritual-benefit' data-detail-id='name-benefit-"+number+"'>"
-  +"<summary>"+esc(langText("Spiritual Benefits & Significance","ಆಧ್ಯಾತ್ಮಿಕ ಪ್ರಯೋಜನಗಳು ಮತ್ತು ಮಹತ್ವ"))+"</summary>"
+  +"<summary>"+esc(langText("Benefits & significance","ಪ್ರಯೋಜನಗಳು ಮತ್ತು ಮಹತ್ವ"))+"</summary>"
   +"<div class='deeper-reading benefit-content'>"
-  +(data.title?"<p class='benefit-headline'>"+esc(heading)+"</p>":"")
-  +richParagraphs(explanation)
+  +detail(traditional?"traditional":"contemplative",traditional||benefit)
+  +detail("spiritual",spiritual)+detail("human",human)
+  +(!traditional?"<p class='benefit-review-note'>"+esc(langText("Contemplative interpretation; traditional name-specific benefit not yet source-verified.","ಇದು ಚಿಂತನಾತ್ಮಕ ವ್ಯಾಖ್ಯಾನ; ಈ ನಾಮದ ಪಾರಂಪರಿಕ ಫಲವನ್ನು ಮೂಲದಿಂದ ಇನ್ನೂ ಪರಿಶೀಲಿಸಿಲ್ಲ."))+"</p>":"")
   +"</div></details>";
 }
 function inlineNameMantra(number){
@@ -865,17 +868,15 @@ function nameWithOriginalVerseHyphens(v,n){
 function inlineWisdomInsight(number){
  const data=spiritualBenefits[number];
  if(!data)return "";
- const name=nameData[number]||{};
- const theme=data.title?.[language]||data.benefit?.[language]||"";
- const plain=language==="kn"?(name.kannada||""):(name.english||"");
- const meaningBased=plain.replace(/[.।]+$/,"").trim();
- const display=(data.title?.[language]||theme).trim();
- if(!display)return "";
- return "<span class='name-inline-wisdom' lang='"+(language==="kn"?"kn":"en")+"'><span class='name-inline-wisdom-theme'>"+esc(display)+"</span></span>";
+ const traditional=data.traditional_benefit?.[language]||"";
+ const benefit=traditional||data.benefit?.[language]||data.title?.[language]||"";
+ if(!benefit)return "";
+ const label=traditional?langText("Traditional benefit","ಪಾರಂಪರಿಕ ಫಲ"):langText("Benefit","ಪ್ರಯೋಜನ");
+ return "<span class='name-inline-wisdom' lang='"+(language==="kn"?"kn":"en")+"'><span class='name-inline-wisdom-label'>"+esc(label)+":</span> <span class='name-inline-wisdom-theme'>"+highlighted(benefit)+"</span></span>";
 }
 function nameSection(v){
  const names=v.names||[];
- let html="<section class='name-section' aria-label='"+esc(langText("Divine names","ದೇವಿಯ ನಾಮಗಳು"))+"'><div class='section-title'><h3>"+esc(langText("Divine names","ದೇವಿಯ ನಾಮಗಳು"))+"</h3><span>"+names.length+" "+esc(langText("names","ನಾಮಗಳು"))+"</span><small class='name-insight-key'>✧ "+esc(langText("Spiritual Benefits & Significance","ಆಧ್ಯಾತ್ಮಿಕ ಪ್ರಯೋಜನಗಳು ಮತ್ತು ಮಹತ್ವ"))+"</small></div><div class='name-study-list'>";
+ let html="<section class='name-section' aria-label='"+esc(langText("Divine names","ದೇವಿಯ ನಾಮಗಳು"))+"'><div class='section-title'><h3>"+esc(langText("Divine names","ದೇವಿಯ ನಾಮಗಳು"))+"</h3><span>"+names.length+" "+esc(langText("names","ನಾಮಗಳು"))+"</span><small class='name-insight-key'>✧ "+esc(langText("Benefits & Significance","ಪ್ರಯೋಜನಗಳು ಮತ್ತು ಮಹತ್ವ"))+"</small></div><div class='name-study-list'>";
  for(const n of names){
   // Always show every divine name in its own row, even if the MSS recording spans more than one name.
   const number=n.studyNumber;
@@ -891,7 +892,7 @@ function nameSection(v){
   const audio=clips.length
    ?"<button type='button' class='name-audio-button' data-name-clips='"+esc(clips.join(","))+"' aria-label='"+esc(langText("Play MSS for name "+number,"ನಾಮ "+number+" MSS ಧ್ವನಿಯನ್ನು ಪ್ಲೇ ಮಾಡಿ"))+"' title='"+esc(langText("Play name","ನಾಮವನ್ನು ಪ್ಲೇ ಮಾಡಿ"))+"'>♪</button>"
    :"";
-  html+="<div class='name-audio-card'>"+audio+"<details class='name-details compact-name-row' data-detail-id='name-"+number+"'><summary><span class='name-summary-grid'><span class='name-identity-inline'><span class='name-number'>"+esc(number)+".</span><span class='name-written'>"+highlighted(written)+"</span><span class='name-roman'>"+highlighted(roman)+"</span></span><span class='name-essence'>"+highlightedPair(essential,pairedEssential)+"</span><span class='name-mantra-slot'>"+inlineNameMantra(number)+"</span><span class='name-inline-wisdom-slot'>"+inlineWisdomInsight(number)+"</span></span></summary>"+sections+"</details></div>";
+  html+="<div class='name-audio-card'>"+audio+"<details class='name-details compact-name-row' data-detail-id='name-"+number+"'><summary><span class='name-summary-grid'><span class='name-identity-inline'><span class='name-number'>"+esc(number)+".</span><span class='name-written'>"+highlighted(written)+"</span><span class='name-roman'>"+highlighted(roman)+"</span></span><span class='name-essence'>"+highlightedPair(essential,pairedEssential)+"</span><span class='name-inline-wisdom-slot'>"+inlineWisdomInsight(number)+"</span></span></summary>"+sections+"</details></div>";
  }
  return html+"</div></section>";
 }
