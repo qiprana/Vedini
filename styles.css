@@ -1276,3 +1276,13 @@ header p{color:#845c4b;font-size:18px}
 .reader-page .chanting-panels .guided-fields label:nth-child(3){grid-column:1/-1}
 .reader-page .chanting-panels .guided-panel .guided-body{padding:14px}
 @media(max-width:900px){.reader-page .chanting-panels{grid-template-columns:1fr}}
+
+
+/* Wisdom Insights is visible without opening the divine-name details. */
+.reader-page .name-summary-grid .name-inline-wisdom-slot{grid-column:1/-1;display:block;min-width:0;margin-top:2px;margin-left:1px}
+.reader-page .name-inline-wisdom{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 8px;line-height:1.5;font-family:system-ui,sans-serif;font-size:clamp(12px,1.1vw,14px);color:#425d4d}
+.reader-page .name-inline-wisdom-label{font-weight:700;white-space:nowrap;color:#42634d}
+.reader-page .name-inline-wisdom-label::after{content:" ·";font-weight:400}
+.reader-page .name-inline-wisdom-theme{font-weight:500;overflow-wrap:anywhere}
+.reader-page.kannada-mode .name-inline-wisdom{font-family:inherit;font-size:clamp(13px,1.2vw,15px);line-height:1.65}
+@media(max-width:600px){.reader-page .name-inline-wisdom{font-size:13px}.reader-page .name-summary-grid .name-inline-wisdom-slot{margin-top:4px}}
