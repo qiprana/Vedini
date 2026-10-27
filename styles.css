@@ -1428,3 +1428,22 @@ header p{color:#845c4b;font-size:18px}
     grid-column:1!important;grid-row:auto!important;margin-left:19px!important
   }
 }
+
+/* Benefit preview replaces the inline mantra: short meaning + precise benefit. */
+.reader-page .name-section .name-summary-grid{grid-template-rows:auto auto!important}
+.reader-page .name-section .name-identity-inline{grid-row:1 / 3!important}
+.reader-page .name-section .name-summary-grid>.name-inline-wisdom-slot{grid-row:2!important}
+.reader-page .name-section .name-inline-wisdom{display:flex!important;flex-wrap:wrap;align-items:baseline;column-gap:4px!important;row-gap:0!important}
+.reader-page .name-section .name-inline-wisdom::before{content:none!important}
+.reader-page .name-section .name-inline-wisdom-label{font:650 11px/1.4 system-ui,sans-serif!important;color:#5a7861!important}
+.reader-page .name-section .name-inline-wisdom-label::after{content:none!important}
+.reader-page .name-section .name-inline-wisdom-theme{font-size:12px!important;font-weight:600!important;line-height:1.4!important}
+.reader-page .name-spiritual-benefit .benefit-content{display:grid;gap:9px}
+.reader-page .name-spiritual-benefit .benefit-facet{margin:0;padding:0}
+.reader-page .name-spiritual-benefit .benefit-facet h5{font:700 12px/1.4 system-ui,sans-serif;color:#315b44;margin:0 0 3px}
+.reader-page .name-spiritual-benefit .benefit-facet p{font-size:14px;line-height:1.6;margin:0 0 6px}
+.reader-page .name-spiritual-benefit .benefit-review-note{font:italic 11px/1.4 system-ui,sans-serif;color:#748477;margin:2px 0 0}
+@container (max-width:445px){
+ .reader-page .name-section .name-identity-inline{grid-row:auto!important}
+ .reader-page .name-section .name-summary-grid>.name-inline-wisdom-slot{grid-row:auto!important}
+}
