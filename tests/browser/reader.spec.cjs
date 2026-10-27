@@ -19,3 +19,19 @@ test('practice modes switch and preserve controls',async({page})=>{
  await expect(page.locator('#practice-repeat')).toHaveValue('2');
  await expect(page.locator('#practice-play')).toBeVisible();
 });
+
+test('script toggle matches the rendered text and About starts closed',async({page})=>{
+ await page.goto('/lalita/');
+ await expect(page.locator('#dev')).toHaveAttribute('aria-pressed','true');
+ await expect(page.locator('.reader-page')).not.toHaveClass(/kannada-mode/);
+ await expect(page.locator('.about-lalita')).not.toHaveAttribute('open','');
+ await page.locator('#kn').click();
+ await expect(page.locator('.reader-page')).toHaveClass(/kannada-mode/);
+ await page.locator('#dev').click();
+ await expect(page.locator('.reader-page')).not.toHaveClass(/kannada-mode/);
+});
+test('practice dock appears before language choices',async({page})=>{
+ await page.goto('/lalita/');
+ const before=await page.evaluate(()=>!!(document.querySelector('.practice-dock').compareDocumentPosition(document.querySelector('.reader-top-tools')) & Node.DOCUMENT_POSITION_FOLLOWING));
+ expect(before).toBe(true);
+});
