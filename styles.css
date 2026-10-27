@@ -1298,3 +1298,29 @@ header p{color:#845c4b;font-size:18px}
 .reader-page .practice-dock #guided-panel .guided-status,.reader-page .practice-dock #practice-status{font:12px/1.4 system-ui,sans-serif!important;color:#607361!important}
 .reader-page .practice-dock #guided-panel .guided-status{margin:8px 0 0!important}
 @media(max-width:600px){.reader-page .practice-dock .chanting-panels{padding:10px!important}.reader-page .practice-mode-hint{display:none}.reader-page .practice-mode-tabs button{padding:7px 9px;font-size:12px}}
+
+
+/* Three-line divine-name reading: typography first, no nested-card clutter. */
+.reader-page .name-section .section-title{display:flex;align-items:baseline;flex-wrap:wrap;gap:8px 14px}
+.reader-page .name-section .name-insight-key{font:400 12px/1.4 system-ui,sans-serif;color:#718577;margin-left:auto}
+.reader-page .name-section .name-study-list{border:0!important;background:transparent!important;box-shadow:none!important;padding:0!important}
+.reader-page .name-section .name-audio-card{display:grid!important;grid-template-columns:minmax(0,1fr) 34px!important;gap:4px!important;align-items:start;position:relative;border:0!important;border-bottom:1px solid #dce5da!important;border-radius:0!important;background:transparent!important;padding:5px 0 7px!important;margin:0!important;box-shadow:none!important}
+.reader-page .name-section .name-audio-card:last-child{border-bottom:0!important}
+.reader-page .name-section .name-audio-card>.compact-name-row{grid-column:1;grid-row:1;min-width:0;background:transparent!important;border:0!important}
+.reader-page .name-section .name-audio-card>.compact-name-row>summary{padding:7px 18px 7px 2px!important;background:transparent!important;list-style:none;position:relative}
+.reader-page .name-section .name-audio-card>.compact-name-row>summary::before{left:auto!important;right:2px!important;top:12px!important;color:#78917e!important}
+.reader-page .name-section .name-audio-card>.name-audio-button{grid-column:2!important;grid-row:1!important;justify-self:center!important;margin:7px 0 0!important;width:30px!important;height:30px!important;min-width:30px!important;font-size:16px!important;border-radius:50%!important}
+.reader-page .name-section .name-summary-grid{display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:3px!important}
+.reader-page .name-section .name-identity-inline{display:flex!important;flex-wrap:wrap!important;gap:3px 8px!important;align-items:baseline!important;line-height:1.45!important}
+.reader-page .name-section .name-identity-inline .name-number{font:600 12px/1.3 system-ui,sans-serif!important;color:#6b806f!important}
+.reader-page .name-section .name-identity-inline .name-written{font-size:clamp(18px,1.5vw,23px)!important;line-height:1.35!important}
+.reader-page .name-section .name-identity-inline .name-roman{font:400 14px/1.35 Georgia,serif!important;color:#667b6a!important}
+.reader-page .name-section .name-summary-grid .name-essence{font-size:clamp(14px,1.15vw,16px)!important;line-height:1.45!important;color:#344238!important;margin:0!important;font-weight:400!important}
+.reader-page .name-section .name-summary-grid .name-inline-wisdom-slot{display:block!important;grid-column:auto!important;margin:1px 0 0!important}
+.reader-page .name-section .name-inline-wisdom{display:block!important;font:400 13px/1.5 system-ui,sans-serif!important;color:#54725b!important}
+.reader-page .name-section .name-inline-wisdom::before{content:"✧ ";color:#819a81}
+.reader-page .name-section .name-inline-wisdom-theme{font-weight:500!important}
+.reader-page .name-section .compact-name-row[open]>summary{background:transparent!important}
+.reader-page.kannada-mode .name-section .name-summary-grid .name-essence{font-size:16px!important;line-height:1.55!important}
+.reader-page.kannada-mode .name-section .name-inline-wisdom{font-size:14px!important;line-height:1.65!important}
+@media(max-width:600px){.reader-page .name-section .name-insight-key{flex-basis:100%;margin-left:0}.reader-page .name-section .name-identity-inline .name-written{font-size:19px!important}}
