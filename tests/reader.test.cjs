@@ -44,9 +44,10 @@ test('all 1000 Nāmāvalī mantras remain present with Om and Namaḥ',()=>{
   assert.match(n.iast,/^Oṃ .+ Namaḥ$/u,'IAST Nāmāvalī missing '+(i+1));
  }
 });
-test('Nāmāvalī is visible on every divine-name row and protected from removal',()=>{
+test('Nāmāvalī remains in expandable detail rather than inline row',()=>{
  assert.match(app,/function inlineNameMantra\(number\)/);
- assert.match(app,/name-mantra-slot[^\n]*inlineNameMantra\(number\)/);
+ assert.doesNotMatch(app,/name-mantra-slot[^\n]*inlineNameMantra\(number\)/);
+ assert.match(app,/nameMantraToggle\(nameNumber\)/);
  assert.match(app,/namavali-001-1000\.json/);
  assert.match(app,/function nameMantraToggle\(number\)/);
 });
@@ -61,4 +62,20 @@ test('all 1000 entries include English and Kannada benefits and explanations',()
    assert.ok(n.explanation?.[lang]?.length>50,'Missing benefit explanation '+(i+1)+' '+lang);
   }
  });
+});
+
+test('benefit template distinguishes traditional, spiritual and human meaning',()=>{
+ for(const key of ['Traditional benefit','Spiritual significance','Human significance','Contemplative benefit'])assert.ok(app.includes(key),key);
+ const fileData=JSON.parse(file('data/lalita/wisdom-insights-001-0200.json'));
+ assert.equal(fileData.names.length,200);
+ fileData.names.forEach((entry,i)=>{
+  assert.equal(entry.number,i+1);
+  for(const lang of ['en','kn']){
+   assert.ok(entry.spiritual_significance?.[lang]?.length>20,'Spiritual significance '+entry.number+' '+lang);
+   assert.ok(entry.human_significance?.[lang]?.length>20,'Human significance '+entry.number+' '+lang);
+  }
+ });
+ assert.equal(fileData.names[77].traditional_benefit.en,'Removal of Obstacles');
+ assert.equal(fileData.names[78].traditional_benefit.en,'Protection Against Adversity');
+ assert.ok(fileData.names.slice(0,77).every(n=>!n.traditional_benefit.en));
 });
