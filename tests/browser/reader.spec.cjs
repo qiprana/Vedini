@@ -182,3 +182,54 @@ test('overall and deeper śloka content appears in one meaning toggle in both la
  await expect(item.locator('.verse-combined-meaning summary')).toContainText('ಅರ್ಥ');
  await expect(item.locator('.verse-combined-meaning')).not.toHaveAttribute('open','');
 });
+
+test('Study reader keeps reading-mode tabs and verse index visible during desktop scrolling',async({page})=>{
+ await page.setViewportSize({width:1280,height:800});
+ await page.goto('/lalita/?sloka=36');
+ await expect(page.locator('#verse-36 .name-audio-card').first()).toBeVisible({timeout:20000});
+ const tabs=page.locator('.study-main-content>.lalita-reader-toolbar');
+ const index=page.locator('#sticky-verse-navigation');
+ await page.evaluate(()=>window.scrollTo(0,document.body.scrollHeight/2));
+ await expect.poll(()=>tabs.evaluate(el=>Math.round(el.getBoundingClientRect().top))).toBe(0);
+ const bottom=await tabs.evaluate(el=>el.getBoundingClientRect().bottom);
+ const indexTop=await index.evaluate(el=>el.getBoundingClientRect().top);
+ expect(indexTop).toBeGreaterThanOrEqual(bottom-2);
+});
+test('Mobile Study reader has accessible bottom player and expandable settings without covering tabs',async({page})=>{
+ await page.setViewportSize({width:390,height:844});
+ await page.goto('/lalita/?sloka=1');
+ await expect(page.locator('.name-audio-card').first()).toBeVisible({timeout:20000});
+ const dock=page.locator('#practice-dock');
+ const settings=page.locator('#practice-dock-toggle');
+ await expect(dock).not.toHaveClass(/mobile-settings-open/);
+ await expect(page.locator('#practice-dock-body')).toBeHidden();
+ await expect(page.locator('#dock-play')).toBeVisible();
+ const geometry=await dock.evaluate(el=>({r:el.getBoundingClientRect().toJSON(),height:innerHeight}));
+ expect(geometry.r.bottom).toBeLessThanOrEqual(geometry.height+2);
+ expect(geometry.r.height).toBeLessThan(180);
+ await settings.click();
+ await expect(dock).toHaveClass(/mobile-settings-open/);
+ await expect(page.locator('#practice-from')).toBeVisible();
+ await settings.click();
+ await expect(page.locator('#practice-dock-body')).toBeHidden();
+ await page.evaluate(()=>window.scrollTo(0,document.body.scrollHeight/2));
+ await expect.poll(()=>page.locator('.study-main-content>.lalita-reader-toolbar').evaluate(el=>Math.round(el.getBoundingClientRect().top))).toBe(0);
+ await expect(page.locator('.lalita-view-switcher a')).toHaveCount(3);
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+3)).toBe(true);
+});
+test('Full Chanting bottom player keeps playback transport visible on mobile',async({page})=>{
+ await page.setViewportSize({width:390,height:844});
+ await page.goto('/lalita/chant.html');
+ await expect(page.locator('#fc-range-tabs button').first()).toBeVisible({timeout:30000});
+ const dock=page.locator('#practice-dock');
+ await expect(page.locator('#dock-play')).toBeEnabled();
+ await expect(page.locator('#practice-dock-body')).toBeHidden();
+ await expect.poll(()=>dock.evaluate(el=>Math.round(el.getBoundingClientRect().bottom))).toBe(844);
+ await page.locator('#practice-dock-toggle').click();
+ await expect(page.locator('#fc-voice')).toBeVisible();
+ await expect(page.locator('#fc-jump')).toBeVisible();
+ await page.locator('#practice-dock-toggle').click();
+ await expect(page.locator('#practice-dock-body')).toBeHidden();
+ await page.evaluate(()=>window.scrollTo(0,document.body.scrollHeight/2));
+ await expect.poll(()=>page.locator('.fc-main-content>.lalita-reader-toolbar').evaluate(el=>Math.round(el.getBoundingClientRect().top))).toBe(0);
+});
