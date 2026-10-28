@@ -36,6 +36,13 @@ body{background:#e6eae1}
 .fc-workspace #fc-print{margin:3px 12px 8px;border:1px solid #aac2ad;border-radius:8px;background:#fff;padding:8px 12px;color:#345b43}
 .fc-workspace .fc-dock-hint{margin:5px 12px 14px;font:12px/1.5 system-ui,sans-serif;color:#58705c}
 .fc-workspace .fc-verse{scroll-margin-top:18px}
+.fc-workspace #sticky-verse-navigation{position:sticky;top:0;z-index:19;margin:8px 0 15px}
+.fc-workspace #fc-range-tabs{display:flex;flex-wrap:nowrap;overflow-x:auto;gap:7px;padding:5px}
+.fc-workspace #fc-range-tabs button{min-width:91px;white-space:nowrap;padding:9px 12px;border-radius:8px;border:1px solid #b4cab8;background:#fffdf8;color:#315a45;font:650 14px system-ui;cursor:pointer}
+.fc-workspace #fc-range-tabs button.current{background:#315d46;color:white}
+.fc-workspace #fc-verse-quick-index{display:flex;flex-wrap:wrap;gap:6px}
+.fc-workspace #fc-verse-quick-index button{min-width:35px;min-height:34px;border:1px solid #b6cdbb;background:white;color:#315a45;border-radius:6px;cursor:pointer}
+.fc-workspace #fc-verse-quick-index button.current{background:#315d46;color:white}
 .fc-intro{display:flex;justify-content:space-between;flex-wrap:wrap;gap:9px;color:#6b766c;font:13px/1.5 system-ui,sans-serif;margin:0 2px 12px}
 .fc-list{display:grid;gap:12px}
 .fc-section-heading{margin:20px 0 3px;padding:11px 13px;border-bottom:2px solid #c5d8c5;font:600 23px/1.4 Georgia,serif;color:#315642;scroll-margin-top:170px}
@@ -119,10 +126,11 @@ body{background:#fff}.fc-page{width:100%;max-width:none;padding:0;background:#ff
 <p class="fc-dock-hint">Play begins at the selected verse. Use Next to skip forward; select any verse to jump while chanting.</p></div>
 <p class="dock-status" id="dock-status" role="status" aria-live="polite">Loading chanting data…</p>
 </aside><div class="study-main-content fc-main-content">
+<div id="sticky-verse-navigation" class="sticky-verse-navigation" aria-label="Dhyāna and śloka navigation"><nav id="fc-range-tabs" class="verse-group-tabs" aria-label="Select Dhyāna or ten-śloka group"></nav><nav id="fc-verse-quick-index" class="verse-quick-index" aria-label="Jump to a śloka"></nav></div>
 <div class="fc-intro"><span>Four Dhyāna ślokas precede the main hymn. Play all, or select a starting verse.</span><span id="fc-count">Preparing 4 Dhyāna + 183 ślokas…</span></div>
 <section id="fc-list" class="fc-list" aria-label="Four Dhyāna ślokas followed by 183 Lalitā Sahasranāma ślokas"></section>
 <p class="fc-bottom">The Dhyāna introduction uses MSS recordings for every voice selection. The main hymn supports MSS, VD and KMP; uncertain MSS phrase mappings fall back to a complete VD śloka so the recitation is not shortened. All recordings play at their original speed. <a href="../guide.html">Learn how to use Vedini</a> · <a href="./names.html">View all 1,000 divine names</a></p>
 </div></div></main>
 <script src="./practice-dock-controls.js?v=20261028-shared-v1"></script>
-<script src="./chant.js?v=20261028-seamless-mss-v3" defer></script>
+<script src="./chant.js?v=20261028-range-nav-v1" defer></script>
 </body></html>
