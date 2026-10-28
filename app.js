@@ -1767,6 +1767,7 @@ function practiceSyncButtons(){
  $("#practice-pause").disabled=!practice.active;
  $("#practice-pause").textContent=practice.paused?"Resume":"Pause";
  $("#practice-stop").disabled=!practice.active;
+ syncDock();
 }
 function practiceStop(message="Stopped"){
  const audio=$("#practice-audio");practice.token++;practice.active=false;practice.paused=false;audio.pause();audio.removeAttribute("src");audio.load();practiceSyncButtons();practiceStatus(message);syncDock();
@@ -1867,6 +1868,7 @@ function guidedControls(){
  $("#guided-pause").textContent=guided.paused?"Resume":"Pause";
  $("#guided-next").disabled=!guided.active;
  $("#guided-stop").disabled=!guided.active;
+ syncDock();
 }
 function guidedStop(message="Stopped"){
  guided.token++;guided.active=false;guided.paused=false;
@@ -1901,11 +1903,12 @@ async function guidedPlayClip(){
  if(!guided.active||guided.paused)return;
  if(guided.index>=guided.units.length){guidedStop("Guided chanting complete");return;}
  const unit=guided.units[guided.index],token=guided.token;
- guidedStatus("Śloka "+unit.verse+" · "+(unit.name?"Name "+unit.name+" ("+unit.text+")":"Complete śloka")+" · "+unit.repeats+"×");
+ guidedStatus("Śloka "+unit.verse+" · "+(unit.name?"Name "+unit.name+" ("+unit.text+")":"Complete śloka")+" · "+unit.repeats+"×");syncDock();
  if(view!=="verses"||pageIndex!==Math.floor((unit.verse-1)/pageSize)){
   view="verses";pageIndex=Math.floor((unit.verse-1)/pageSize);selectedVerse=unit.verse;render();
  }
  guidedHighlight(unit.name);
+ requestAnimationFrame(()=>document.getElementById("verse-"+unit.verse)?.scrollIntoView({block:"start",behavior:"smooth"}));
  try{
   if(!vediniAudioContext)vediniAudioContext=new (window.AudioContext||window.webkitAudioContext)();
   const ctx=vediniAudioContext;guided.ctx=ctx;
@@ -1964,7 +1967,7 @@ function guidedInit(){
   // Existing practice and individual players stop when the guided audio takes focus.
   practiceStop("Stopped for guided chanting");stopNameAudio();stopSlokaMss();
   guided.active=true;guided.paused=false;guided.index=0;guided.clipIndex=0;guided.repeatDone=0;guided.token++;
-  guidedControls();guidedPlayClip();
+  guidedControls();syncDock();guidedPlayClip();
  });
  $("#guided-pause").addEventListener("click",async()=>{
   if(!guided.active)return;
@@ -1977,7 +1980,7 @@ function guidedInit(){
    if(guided.timeout!==null){clearTimeout(guided.timeout);guided.timeout=null;guided.insideGap=true;}
    else if(guided.ctx?.state==="running")await guided.ctx.suspend();
   }
-  guidedControls();
+  guidedControls();syncDock();
  });
  $("#guided-next").addEventListener("click",async()=>{
   if(!guided.active)return;
@@ -1987,7 +1990,7 @@ function guidedInit(){
   if(guided.timeout!==null)clearTimeout(guided.timeout);
   guided.timeout=null;guided.insideGap=false;guided.paused=false;guided.index++;
   if(guided.ctx?.state==="suspended")await guided.ctx.resume();
-  guidedControls();guidedPlayClip();
+  guidedControls();syncDock();guidedPlayClip();
  });
  $("#guided-stop").addEventListener("click",()=>guidedStop());
  guidedControls();
@@ -2094,6 +2097,13 @@ function initDock(){
   if(practice.current>practice.end)practiceStop("Completed selected range");else practicePlayCurrent(practice.token);
  };
  document.getElementById("reader").addEventListener("click",event=>{
+  const name=event.target.closest(".name-audio-button");
+  if(name){event.preventDefault();event.stopImmediatePropagation();expand(true);
+   document.getElementById("practice-tab-guided").click();
+   const verse=Number(name.closest(".card")?.id?.replace("verse-",""));
+   if(verse){document.getElementById("guided-from").value=String(verse);document.getElementById("guided-to").value=String(verse)}
+   return;
+  }
   const shortcut=event.target.closest(".dock-verse-shortcut");if(!shortcut)return;
   event.preventDefault();event.stopImmediatePropagation();expand(true);
   if(shortcut.dataset.dockDhyana==="1"){showDhyana(Number(shortcut.dataset.dockVerse));return}
