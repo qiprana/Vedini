@@ -1710,3 +1710,25 @@ header p{color:#845c4b;font-size:18px}
 .names-reference .lalita-language-bar .toggle.chosen{background:#315647;color:#fff;border-color:#315647}
 .names-reference .namavali-dev[lang="kn"]{font-family:"Noto Sans Kannada","Kannada Sangam MN","Nirmala UI","Tunga",sans-serif}
 @media(max-width:700px){.names-reference .lalita-language-bar .language-toggle{width:100%;display:grid;grid-template-columns:1fr 1fr}.names-reference .lalita-language-bar .toggle{min-width:0;width:100%}}
+
+/* Keep the Dhyāna range readable instead of inheriting ten-verse tab widths. */
+.reader-page .verse-group-tabs .group-tab[data-dhyana-group],
+.reader-page .verse-group-tabs .group-tab[data-dhyana-group="1"]{min-width:164px;flex:0 0 164px;white-space:nowrap;padding-inline:13px;line-height:1.45}
+.reader-page .verse-group-tabs .group-tab{white-space:nowrap;flex-shrink:0}
+.names-reference .namavali-workspace{display:grid;grid-template-columns:minmax(235px,275px) minmax(0,1fr);align-items:start;gap:16px}
+.names-reference .namavali-workspace.dock-collapsed{grid-template-columns:74px minmax(0,1fr)}
+.names-reference .practice-dock{position:sticky;top:12px;z-index:20;margin:0;max-height:calc(100vh - 24px);overflow:auto;border:1px solid #c1d1c1;border-radius:13px;background:#f6f9f3}
+.names-reference .practice-dock .practice-dock-head{display:flex;gap:8px;align-items:center;padding:10px 11px;border-bottom:1px solid #d6e2d5}
+.names-reference .practice-dock .dock-heading{display:grid;gap:2px}
+.names-reference .practice-dock .dock-heading strong{font:700 14px system-ui,sans-serif;color:#315744}
+.names-reference .practice-dock .dock-heading span{font:11px system-ui,sans-serif;color:#738778}
+.names-reference #practice-dock-toggle{display:grid;justify-items:center;gap:3px;min-width:52px;padding:6px;border:1px solid #bfd1be;border-radius:8px;background:#fffdf8;color:#355e45;cursor:pointer}
+.names-reference .practice-dock-transport{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;padding:9px 8px;background:#e9f1e8}
+.names-reference .practice-dock-transport button{min-width:0;min-height:45px;display:grid;justify-items:center;gap:2px;padding:5px 1px;border:1px solid #b9cbb7;border-radius:7px;background:#fff;color:#355b45;opacity:.45;cursor:not-allowed}
+.names-reference .practice-dock-transport .dock-button-label{font:600 10px system-ui,sans-serif}
+.names-reference .practice-dock .dock-status{margin:0;padding:10px;border-top:1px solid #d5dfd4;background:#eff5ed;color:#466450;font:600 11px system-ui,sans-serif}
+.names-reference .practice-dock.is-collapsed .practice-dock-body,
+.names-reference .practice-dock.is-collapsed .dock-heading{display:none}
+.names-reference .practice-dock.is-collapsed .practice-dock-transport{grid-template-columns:1fr}
+@media(max-width:860px){.names-reference .namavali-workspace{grid-template-columns:minmax(185px,230px) minmax(0,1fr);gap:9px}}
+@media(max-width:620px){.names-reference .namavali-workspace,.names-reference .namavali-workspace.dock-collapsed{grid-template-columns:1fr}.names-reference .practice-dock{position:sticky;top:0;max-height:65vh}.names-reference .practice-dock.is-collapsed .practice-dock-transport{grid-template-columns:repeat(4,1fr)}}
