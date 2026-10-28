@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Read and chant all 183 Lalitā Sahasranāma ślokas in order, with simple meanings alongside.">
 <title>Full Lalitā Sahasranāma Chanting | Vedini</title>
-<link rel="stylesheet" href="../styles.css?v=20261028-namavali-dock-v1">
+<link rel="stylesheet" href="../styles.css?v=20261028-search-unified-v1">
 <style>
 body{background:#e6eae1}
 .fc-page{max-width:1320px;min-height:100vh;background:#fffaf2;padding:clamp(14px,2.7vw,32px)}
@@ -141,7 +141,11 @@ body{background:#fff}.fc-page{width:100%;max-width:none;padding:0;background:#ff
 <p class="fc-dock-hint">Play begins at the selected verse. Use Next to skip forward; select any verse to jump while chanting.</p></div>
 <p class="dock-status" id="dock-status" role="status" aria-live="polite">Loading chanting data…</p>
 </aside><div class="study-main-content fc-main-content">
+<div class="lalita-reader-toolbar">
 <nav class="lalita-view-switcher" aria-label="Lalitā reading modes"><a href="./index.html">Study ślokas</a><a href="./chant.html" aria-current="page">Full Chanting</a><a href="./names.html">Divine Names</a></nav>
+<label class="lalita-search-field"><span class="visually-hidden">Search</span><input id="fc-search" type="search" placeholder="Search ślokas, names, or meanings…" aria-label="Search Lalitā text and meanings" autocomplete="off"></label>
+</div>
+<section id="fc-search-results" class="lalita-search-results" aria-label="Matching ślokas" hidden><h2>Search results</h2><p id="fc-search-count" role="status"></p><div id="fc-search-list"></div></section>
 <div id="sticky-verse-navigation" class="sticky-verse-navigation" aria-label="Dhyāna and śloka navigation"><nav id="fc-range-tabs" class="verse-group-tabs" aria-label="Select Dhyāna or ten-śloka group"></nav><nav id="fc-verse-quick-index" class="verse-quick-index" aria-label="Jump to a śloka"></nav></div>
 <div class="fc-intro"><span>Four Dhyāna ślokas precede the main hymn. Play all, or select a starting verse.</span><span id="fc-count">Preparing 4 Dhyāna + 183 ślokas…</span></div>
 <section id="fc-list" class="fc-list" aria-label="Four Dhyāna ślokas followed by 183 Lalitā Sahasranāma ślokas"></section>

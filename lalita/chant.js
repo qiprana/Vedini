@@ -176,12 +176,42 @@ function next(){
  if(state.index+1>=state.entries.length){stop("Completed chanting");return}
  begin(key(state.entries[state.index+1]));
 }
+
+function initFullSearch(){
+ const input=$("#fc-search"),panel=$("#fc-search-results"),list=$("#fc-search-list"),count=$("#fc-search-count");
+ const normalize=t=>String(t||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase();
+ function results(){
+  const query=normalize(input.value.trim());
+  panel.hidden=!query;
+  list.replaceChildren();
+  if(!query)return;
+  let found=0;
+  for(const entry of state.entries){
+   const keyText=[entry.verse_number,entry.kind,entry.reading?.devanagari?.join(" "),entry.reading?.kannada?.join(" "),entry.reading?.iast?.join(" "),
+    ...(entry.names||[]).flatMap(n=>[n.sanskrit,n.iast,n.english,n.kannada]),...Object.values(state.meanings.get(key(entry))||{})].join(" ");
+   if(!normalize(keyText).includes(query))continue;
+   found++;
+   const b=document.createElement("button");b.type="button";b.className="lalita-search-result";
+   b.textContent=(entry.kind==="dhyana"?"Dhyāna ":"Śloka ")+entry.verse_number+" · "+(state.meanings.get(key(entry))?.[window.VediniLanguage.get()==="kn"?"kn":"en"]||"");
+   b.onclick=()=>{
+    input.value="";results();
+    const id=key(entry),index=state.entries.findIndex(v=>key(v)===id);
+    if(state.playing)begin(id);else{state.index=index;$("#fc-jump").value=id;renderRangeTabs()}
+    document.getElementById("fc-sloka-"+id)?.scrollIntoView({block:"start",behavior:"smooth"});
+   };
+   list.append(b);
+  }
+  count.textContent=found+" matching ślokas";
+ }
+ input.addEventListener("input",results);
+}
 function initDock(){
  state.dock=window.VediniPracticeDock.bind({root:"practice-dock",workspace:"study-workspace",initialStatus:"Loading chanting data…",
   onPlay:()=>begin($("#fc-jump").value),
   onPause:pause,onNext:next,onStop:()=>stop()});
 }
 initDock();
+initFullSearch();
 $("#fc-voice").onchange=()=>{if(state.playing)begin(key(state.entries[state.index]))};
 $("#fc-jump").onchange=()=>{const value=$("#fc-jump").value;if(state.playing)begin(value);else document.getElementById("fc-sloka-"+value)?.scrollIntoView({behavior:"smooth",block:"start"})};
 window.VediniLanguage.bind(()=>render());
