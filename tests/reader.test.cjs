@@ -165,8 +165,9 @@ test('significance rewrites are bilingual, unique and keep traditional phrases',
   assert.ok(!seen.has(row.number),'Duplicate rewrite '+row.number);seen.add(row.number);
   for(const lang of ['en','kn']){
    assert.ok(row.significance?.[lang]?.length>80,'Missing significance '+row.number+' '+lang);
-   if(insights[row.number].traditional_benefit?.en)assert.ok(!row.short,'Traditional phrase must stay for '+row.number);
-   else assert.ok(row.short?.[lang]?.trim(),'Missing short phrase '+row.number+' '+lang);
+   // Traditional sourced wording is stored in the separate benefit catalog.
+   // A unique short significance phrase can coexist with that traditional benefit.
+   assert.ok(row.short?.[lang]?.trim(),'Missing short significance '+row.number+' '+lang);
   }
   assert.doesNotMatch(row.significance.en,/\bbenefit/i,'Uses "benefit" '+row.number);
  }
