@@ -1747,3 +1747,32 @@ header p{color:#845c4b;font-size:18px}
 .lalita-search-result:hover{background:#eff7ed}
 .visually-hidden{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 @media(max-width:720px){.lalita-reader-toolbar{align-items:stretch!important}.lalita-reader-toolbar .lalita-view-switcher{width:100%;flex:1 1 100%}.lalita-reader-toolbar .lalita-search-field{max-width:none;flex:1 1 100%}}
+
+/* 2026-10-28: reading tabs remain available while scrolling. */
+.reader-page .study-main-content{min-width:0;--lalita-toolbar-height:60px;--lalita-reading-offset:155px}
+.reader-page .study-main-content>.lalita-reader-toolbar{position:sticky!important;top:0;z-index:35;background:#fffaf2f5;backdrop-filter:blur(8px);border:1px solid #d9e4d8;border-radius:10px;padding:8px 10px;box-shadow:0 3px 12px #31533f16}
+.reader-page .study-main-content>.sticky-verse-navigation{position:sticky!important;top:var(--lalita-toolbar-height)!important;z-index:34}
+.reader-page .study-main-content .card,.reader-page .study-main-content .fc-verse,.reader-page .study-main-content [id^="verse-"],.reader-page .study-main-content [id^="dhyana-"]{scroll-margin-top:var(--lalita-reading-offset)!important}
+@media(max-width:620px){
+  /* Mobile: slim persistent transport, with settings in a bottom sheet. */
+  .reader-page .study-workspace,.names-reference .namavali-workspace{display:block!important}
+  .reader-page .practice-dock:not(.namavali-workspace .practice-dock){position:fixed!important;top:auto!important;left:0!important;right:0!important;bottom:0!important;z-index:85!important;width:100%!important;max-height:calc(90dvh - env(safe-area-inset-top,0px))!important;margin:0!important;padding-bottom:env(safe-area-inset-bottom,0px);border-radius:15px 15px 0 0!important;overflow:auto!important;box-shadow:0 -6px 25px #28493630!important}
+  .reader-page .study-workspace:has(.practice-dock:not(.namavali-workspace .practice-dock)){padding-bottom:110px}
+  .reader-page .practice-dock:not(.namavali-workspace .practice-dock) .practice-dock-head{padding:5px 11px;border-bottom:0}
+  .reader-page .practice-dock:not(.namavali-workspace .practice-dock) .dock-heading{display:flex;align-items:baseline;gap:8px}
+  .reader-page .practice-dock:not(.namavali-workspace .practice-dock) .dock-heading span{display:none}
+  .reader-page .practice-dock:not(.namavali-workspace .practice-dock) .practice-dock-transport{grid-template-columns:repeat(4,minmax(0,1fr))!important;padding:3px 10px 7px}
+  .reader-page .practice-dock:not(.namavali-workspace .practice-dock) .practice-dock-transport button{min-height:44px;touch-action:manipulation}
+  .reader-page .practice-dock:not(.namavali-workspace .practice-dock) .dock-status{font-size:11px;padding:5px 11px;max-height:36px;overflow:hidden}
+  .reader-page .practice-dock:not(.namavali-workspace .practice-dock) .practice-dock-body{display:none!important}
+  .reader-page .practice-dock:not(.namavali-workspace .practice-dock).mobile-settings-open .practice-dock-body{display:block!important;max-height:55dvh;overflow-y:auto;overscroll-behavior:contain;border-top:1px solid #d6e2d5}
+  .reader-page .practice-dock:not(.namavali-workspace .practice-dock).is-collapsed .dock-heading{display:flex}
+  .reader-page .practice-dock:not(.namavali-workspace .practice-dock).is-collapsed .practice-dock-transport{grid-template-columns:repeat(4,minmax(0,1fr))!important}
+  .reader-page .practice-dock:not(.namavali-workspace .practice-dock) #practice-dock-toggle{flex-direction:row;gap:5px;min-width:96px;min-height:35px}
+  .reader-page .practice-dock:not(.namavali-workspace .practice-dock) #practice-dock-toggle .dock-toggle-label{font-size:11px}
+  .reader-page .study-main-content>.lalita-reader-toolbar{padding:6px!important;gap:5px!important}
+  .reader-page .lalita-reader-toolbar .lalita-view-switcher{flex-wrap:nowrap!important;overflow-x:auto;gap:4px;padding:1px 0;scrollbar-width:thin}
+  .reader-page .lalita-reader-toolbar .lalita-view-switcher a{flex:0 0 auto;min-height:38px;padding:6px 9px;font-size:12px;white-space:nowrap}
+  .reader-page .lalita-reader-toolbar .lalita-search-field input[type="search"]{min-height:38px;padding:7px 11px;font-size:13px}
+  .reader-page .sticky-verse-navigation .quick-buttons button{min-height:36px}
+}
