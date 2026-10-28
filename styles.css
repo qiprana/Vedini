@@ -1553,3 +1553,13 @@ header p{color:#845c4b;font-size:18px}
 .reader-page .practice-dock .practice-fields,.reader-page .practice-dock .guided-fields{grid-template-columns:repeat(2,minmax(0,1fr))}
 .reader-page .practice-dock.is-collapsed .practice-dock-head{justify-content:flex-start}
 }
+
+/* Consistent Lalitā hierarchy: script above the player, reading modes alongside content. */
+.reader-page .lalita-language-bar{display:flex;align-items:center;justify-content:flex-start;gap:10px;padding:8px 0 12px;margin:10px 0 6px;border-bottom:1px solid #dce4d7}
+.reader-page .lalita-language-bar .language-toggle{display:flex;gap:9px;flex-wrap:wrap}
+.reader-page .lalita-language-bar .toggle{display:inline-flex;align-items:center;justify-content:center;min-height:48px;min-width:138px;padding:8px 18px;border:2px solid #a8bfa9;border-radius:11px;background:#fffcf6;color:#29463a;font:700 20px/1.4 system-ui,sans-serif;cursor:pointer}
+.reader-page .lalita-language-bar .toggle.chosen{background:#315647;color:#fff;border-color:#315647}
+.reader-page .reader-top-tools .lalita-view-switcher{margin:0;padding:0;border:0;flex:0 1 auto}
+.reader-page .reader-top-tools{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.reader-page .fc-main-content>.lalita-view-switcher{margin:8px 0 14px;padding:0 0 12px}
+@media(max-width:700px){.reader-page .lalita-language-bar .language-toggle{width:100%;display:grid;grid-template-columns:1fr 1fr}.reader-page .lalita-language-bar .toggle{min-width:0;width:100%}.reader-page .reader-top-tools .lalita-view-switcher{width:100%}.reader-page .reader-top-tools{align-items:stretch}}
