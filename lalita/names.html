@@ -11,9 +11,9 @@
 .name-ref-tools input,.name-ref-tools select{min-height:40px;padding:8px 11px;border:1px solid #bdcdbf;border-radius:8px;background:white;color:#2c4538;font:14px system-ui,sans-serif}
 .name-ref-tools .searchbox{flex:1 1 280px}.name-ref-tools input{width:100%}
 .name-ref-meta{display:flex;justify-content:space-between;gap:12px;color:#6b786e;font:13px system-ui,sans-serif;margin:10px 0}
-.name-ref-scroll{overflow-x:auto;border:1px solid #d9e4d9;border-radius:13px;background:#fff;max-height:66vh}
-.name-ref-table{border-collapse:collapse;width:100%;min-width:730px;table-layout:fixed}
-.name-ref-table thead{position:sticky;top:0;background:#eaf2e9;z-index:2}
+.name-ref-scroll{overflow:visible;border:1px solid #d9e4d9;border-radius:13px;background:#fff}
+.name-ref-table{border-collapse:collapse;width:100%;min-width:0;table-layout:fixed}
+.name-ref-table thead th{position:sticky;top:0;background:#eaf2e9;z-index:2}
 .name-ref-table th{text-align:left;padding:12px;color:#305743;font:700 13px system-ui,sans-serif;border-bottom:1px solid #d5e0d2}
 .name-ref-table th:first-child{width:60px}.name-ref-table th:nth-child(2){width:31%}.name-ref-table th:nth-child(3){width:32%}
 .name-ref-table td{vertical-align:top;padding:12px;border-bottom:1px solid #edf0ea;overflow-wrap:anywhere;line-height:1.5;font-size:15px}
@@ -23,51 +23,59 @@
 .name-ref-table .num{font:650 13px system-ui;color:#728275}
 .name-ref-table .benefit{font-weight:600;color:#37654c}
 .name-ref-table small{display:block;font:11px/1.5 system-ui,sans-serif;color:#7b837a;margin-top:3px}
-.name-ref-pages{display:flex;gap:12px;justify-content:flex-end;align-items:center;margin:16px 0;color:#607367;font:13px system-ui}
-.name-ref-pages button{padding:8px 14px;border:1px solid #b8cab9;border-radius:7px;background:#fff;color:#345b44;cursor:pointer}
-.name-ref-pages button:disabled{opacity:.4;cursor:default}
 .name-ref-note{font:12px/1.7 system-ui,sans-serif;color:#707a70;margin:18px 0}
-@media(max-width:650px){.name-ref-table{min-width:620px}.name-ref-table td{padding:10px}.names-reference h1{font-size:25px}}
+.name-ref-back{display:inline-flex;margin:1px 0 10px;color:#315e49;font:650 13px/1.5 system-ui,sans-serif;text-underline-offset:3px}
+.name-ref-empty{padding:20px;color:#607267;font:15px/1.5 system-ui,sans-serif}
+@media(max-width:700px){
+  .names-reference h1{font-size:25px}
+  .name-ref-scroll{border:0;background:transparent}
+  .name-ref-table{min-width:0;width:100%;table-layout:auto}
+  .name-ref-table thead{display:none}
+  .name-ref-table tbody,.name-ref-table tr,.name-ref-table td{display:block;width:100%}
+  .name-ref-table tbody tr{border:1px solid #d9e4d9;border-radius:12px;background:#fff!important;padding:10px 14px;margin-bottom:11px}
+  .name-ref-table td{border:0;padding:5px 0;font-size:15px}
+  .name-ref-table td.num{padding:1px 0 7px}
+  .name-ref-table td:nth-child(3)::before,.name-ref-table td:nth-child(4)::before{display:block;margin-bottom:3px;font:750 11px/1.4 system-ui,sans-serif;text-transform:uppercase;letter-spacing:.04em;color:#728275}
+  .name-ref-table td:nth-child(3)::before{content:"Simple meaning"}
+  .name-ref-table td:nth-child(4)::before{content:"Benefit"}
+}
 </style></head>
 <body><main class="names-reference">
 <header class="reader-header"><nav class="site-tabs" aria-label="Vedini navigation">
   <a href="../index.html" class="site-tab">Home</a>
-  <a href="../lalita/index.html" class="site-tab active" aria-current="page">Lalitā Sahasranāma</a>
   <a href="../guide.html" class="site-tab">How to Use</a>
   <a href="../purpose.html" class="site-tab">Why Vedini</a>
   <a href="../acknowledgements.html" class="site-tab">Acknowledgements</a>
   <a href="../contact.html" class="site-tab">Contact</a>
 </nav></header>
 <h1>Lalitā Sahasranāma · 1,000 Divine Names</h1>
-<p class="lead">A compact reference to each divine name, its simple meaning, and its benefit. Benefit phrases marked “The Sanskrit Channel” are reproduced from the screenshots shared for this project. Other benefit phrases are editorial interpretations, not traditionally verified promises.</p>
+<p class="lead">A continuous reference to each divine name, its simple meaning, and its benefit. Scroll through all 1,000 names in order, or use the search and range filters. Benefit phrases marked “The Sanskrit Channel” are reproduced from the screenshots shared for this project. Other benefit phrases are editorial interpretations, not traditionally verified promises.</p>
+<a class="name-ref-back" href="./index.html">← Back to Lalitā study</a>
 <div class="name-ref-tools"><label class="searchbox">Search names, meanings, or benefits<input id="name-q" type="search" placeholder="Try compassion, Śrīmātā, or 78"></label>
 <label>Names<select id="name-range"><option value="0">All 1–1,000</option><option value="1">1–200</option><option value="2">201–400</option><option value="3">401–600</option><option value="4">601–800</option><option value="5">801–1,000</option></select></label>
-<label>Rows<select id="name-size"><option>25</option><option selected>50</option><option>100</option><option>200</option></select></label></div>
+</div>
 <div class="name-ref-meta"><span id="name-state">Loading names…</span><span id="name-count"></span></div>
 <div class="name-ref-scroll"><table class="name-ref-table"><thead><tr><th>No.</th><th>Divine name</th><th>Simple meaning</th><th>Benefit</th></tr></thead><tbody id="name-rows"></tbody></table></div>
-<div class="name-ref-pages"><button id="name-prev" type="button">Previous</button><span id="name-page"></span><button id="name-next" type="button">Next</button></div>
+
 <p class="name-ref-note">These spiritual associations are presented for study and contemplation. They do not guarantee worldly outcomes. For detailed explanations, Sanskrit verses, and chanting, visit the <a href="./index.html">main Lalitā reader</a>.</p>
 </main>
 <script>
 (async function(){
 const $=s=>document.querySelector(s),esc=s=>String(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
-let names=[],page=0;
+let names=[];
 const render=()=>{
- const q=esc($("#name-q").value.trim()),range=+$("#name-range").value,size=+$("#name-size").value;
+ const q=esc($("#name-q").value.trim()),range=+$("#name-range").value;
  const results=names.filter(n=>(!range||Math.ceil(n.number/200)===range)&&(!q||esc([n.number,n.sanskrit,n.iast,n.meaning,n.benefit].join(" ")).includes(q)));
- const total=Math.max(1,Math.ceil(results.length/size));page=Math.max(0,Math.min(page,total-1));
  const body=$("#name-rows");body.replaceChildren();
  const td=(tr,text,cl)=>{const e=document.createElement("td");if(cl)e.className=cl;e.textContent=text;tr.append(e);return e;};
- for(const n of results.slice(page*size,(page+1)*size)){
+ for(const n of results){
    const tr=document.createElement("tr");td(tr,n.number,"num");const cell=td(tr,"");const d=document.createElement("span");d.className="dev";d.textContent=n.sanskrit;const a=document.createElement("span");a.className="iast";a.textContent=n.iast;cell.append(d,a);
    td(tr,n.meaning);const benefit=td(tr,n.benefit,"benefit");const source=document.createElement("small");source.textContent=n.source==="sanskrit_channel_screenshot"?"✦ The Sanskrit Channel · screenshot":"Editorial interpretation";benefit.append(source);body.append(tr);
  }
- $("#name-count").textContent=results.length+" names · showing "+(results.length?page*size+1:0)+"–"+Math.min(results.length,(page+1)*size);
- $("#name-page").textContent="Page "+(page+1)+" of "+total;
- $("#name-prev").disabled=page===0;$("#name-next").disabled=page===total-1;
+ $("#name-count").textContent=results.length+" of 1,000 names";
+ if(!results.length){const empty=document.createElement("tr");const cell=document.createElement("td");cell.colSpan=4;cell.className="name-ref-empty";cell.textContent="No matching names. Try a different search or range.";empty.append(cell);body.append(empty)}
 };
-for(const sel of ["#name-q","#name-range","#name-size"])$(sel).addEventListener(sel==="#name-q"?"input":"change",()=>{page=0;render()});
-$("#name-prev").onclick=()=>{page--;render()};$("#name-next").onclick=()=>{page++;render()};
+for(const sel of ["#name-q","#name-range"])$(sel).addEventListener(sel==="#name-q"?"input":"change",render);
 try{
  const [b,m,benefits]=await Promise.all(["brief-names-draft.json","names-interpretations-draft.json","name-benefits.json"].map(async file=>{
  const r=await fetch("../data/lalita/"+file,{cache:"no-store"});if(!r.ok)throw Error(file+" HTTP "+r.status);return r.json();
