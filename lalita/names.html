@@ -24,6 +24,13 @@
 .name-ref-table .benefit{font-weight:600;color:#37654c}
 .namavali-dev{display:block;font:550 17px/1.7 "Noto Serif Devanagari","Kohinoor Devanagari",serif;color:#2a5340}
 .namavali-iast{display:block;font:400 13px/1.6 Georgia,serif;color:#566f60;margin-top:3px}
+.name-ref-audio{position:sticky;top:0;z-index:4;display:flex;gap:10px;align-items:center;flex-wrap:wrap;background:#edf5eb;border:1px solid #cadcca;border-radius:9px;padding:10px 12px;margin:8px 0;font:12px/1.5 system-ui;color:#3b5c46}
+.name-ref-audio button,.name-play{border:1px solid #b8cdbb;border-radius:7px;background:#fffdf8;padding:6px 9px;color:#315a45;font:650 12px system-ui;cursor:pointer}
+.name-ref-audio button:disabled{opacity:.5}
+.name-ref-audio audio{display:none}
+.name-play{margin-top:7px}
+.name-play[aria-pressed="true"]{background:#315a45;color:white}
+.namavali-cell{min-width:0}
 .name-ref-table small{display:block;font:11px/1.5 system-ui,sans-serif;color:#7b837a;margin-top:3px}
 .name-ref-note{font:12px/1.7 system-ui,sans-serif;color:#707a70;margin:18px 0}
 .name-ref-back{display:inline-flex;margin:1px 0 10px;color:#315e49;font:650 13px/1.5 system-ui,sans-serif;text-underline-offset:3px}
@@ -53,11 +60,12 @@
 </nav></header>
 <h1>Lalitā Sahasranāma · 1,000 Divine Names</h1>
 <nav class="lalita-view-switcher" aria-label="Lalitā reading modes"><a href="./index.html">Study ślokas</a><a href="./chant.html">Full Chanting</a><a href="./names.html" aria-current="page">Divine Names</a></nav>
-<p class="lead">A continuous reference to each divine name, its simple meaning, benefit, and the Nāmāvalī form for chanting. Scroll through all 1,000 names in order, or use the search and range filters. Benefit phrases marked “The Sanskrit Channel” are reproduced from the screenshots shared for this project. Other benefit phrases are editorial interpretations, not traditionally verified promises.</p>
+<p class="lead">A continuous reference to each divine name, its simple meaning, benefit, and the Nāmāvalī form for chanting. Scroll through all 1,000 names in order, or use the search and range filters. Benefit phrases marked “The Sanskrit Channel” are reproduced from the screenshots shared for this project. Other benefit phrases are editorial interpretations, not traditionally verified promises. Where available, the MSS recording plays the divine name; the written Nāmāvalī mantra may have a different wording.</p>
 <a class="name-ref-back" href="./index.html">← Back to Lalitā study</a>
 <div class="name-ref-tools"><label class="searchbox">Search names, meanings, benefits, or mantras<input id="name-q" type="search" placeholder="Try compassion, Śrīmātā, or 78"></label>
 <label>Names<select id="name-range"><option value="0">All 1–1,000</option><option value="1">1–200</option><option value="2">201–400</option><option value="3">401–600</option><option value="4">601–800</option><option value="5">801–1,000</option></select></label>
 </div>
+<div class="name-ref-audio" aria-label="Divine-name recording player"><button id="name-stop" type="button" disabled>■ Stop</button><span id="name-audio-status" role="status" aria-live="polite">Use the Nāmāvalī text to chant. ▶ buttons play available MSS divine-name recordings.</span><audio id="name-player" preload="none"></audio></div>
 <div class="name-ref-meta"><span id="name-state">Loading names…</span><span id="name-count"></span></div>
 <div class="name-ref-scroll"><table class="name-ref-table"><thead><tr><th>No.</th><th>Divine name</th><th>Simple meaning</th><th>Benefit</th><th>Nāmāvalī (chant aloud)</th></tr></thead><tbody id="name-rows"></tbody></table></div>
 
@@ -66,7 +74,13 @@
 <script>
 (async function(){
 const $=s=>document.querySelector(s),esc=s=>String(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
-let names=[];
+let names=[],recordings=new Map(),playingNumber=null,playlist=[],playIndex=0;
+const player=$("#name-player");
+const status=msg=>{$("#name-audio-status").textContent=msg};
+function stopAudio(message="Playback stopped"){player.pause();player.removeAttribute("src");player.load();playlist=[];playIndex=0;playingNumber=null;$("#name-stop").disabled=true;document.querySelectorAll(".name-play").forEach(b=>b.setAttribute("aria-pressed","false"));status(message)}
+function nextClip(){if(playIndex>=playlist.length){stopAudio("Finished name recording");return}player.src="../audio/lalita/verses/MSS/phrase_"+String(playlist[playIndex++]).padStart(4,"0")+".mp3";player.load();const p=player.play();if(p&&p.catch)p.catch(()=>stopAudio("Recording unavailable; chant using the Nāmāvalī text."))}
+player.onended=nextClip;player.onerror=()=>{if(playingNumber!==null)stopAudio("Recording unavailable; chant using the Nāmāvalī text.")};
+$("#name-stop").onclick=()=>stopAudio();
 const render=()=>{
  const q=esc($("#name-q").value.trim()),range=+$("#name-range").value;
  const results=names.filter(n=>(!range||Math.ceil(n.number/200)===range)&&(!q||esc([n.number,n.sanskrit,n.iast,n.meaning,n.benefit,n.mantra?.dev,n.mantra?.iast].join(" ")).includes(q)));
@@ -75,20 +89,22 @@ const render=()=>{
  for(const n of results){
    const tr=document.createElement("tr");td(tr,n.number,"num");const cell=td(tr,"");const d=document.createElement("span");d.className="dev";d.textContent=n.sanskrit;const a=document.createElement("span");a.className="iast";a.textContent=n.iast;cell.append(d,a);
    td(tr,n.meaning);const benefit=td(tr,n.benefit,"benefit");const source=document.createElement("small");source.textContent=n.source==="sanskrit_channel_screenshot"?"✦ The Sanskrit Channel · screenshot":"Editorial interpretation";benefit.append(source);
-   const mantra=td(tr,"","namavali-cell");const dev=document.createElement("strong");dev.className="namavali-dev";dev.lang="sa";dev.textContent=n.mantra?.dev||"";const roman=document.createElement("span");roman.className="namavali-iast";roman.textContent=n.mantra?.iast||"";mantra.append(dev,roman);body.append(tr);
+   const mantra=td(tr,"","namavali-cell");const dev=document.createElement("strong");dev.className="namavali-dev";dev.lang="sa";dev.textContent=n.mantra?.dev||"";const roman=document.createElement("span");roman.className="namavali-iast";roman.textContent=n.mantra?.iast||"";mantra.append(dev,roman);const clips=recordings.get(n.number)||[];if(clips.length){const play=document.createElement("button");play.type="button";play.className="name-play";play.dataset.name=String(n.number);play.setAttribute("aria-pressed",String(playingNumber===n.number));play.textContent="▶ Name audio";play.title="MSS name recording; may differ from the written Nāmāvalī mantra";mantra.append(play)}body.append(tr);
  }
  $("#name-count").textContent=results.length+" of 1,000 names";
  if(!results.length){const empty=document.createElement("tr");const cell=document.createElement("td");cell.colSpan=5;cell.className="name-ref-empty";cell.textContent="No matching names. Try a different search or range.";empty.append(cell);body.append(empty)}
 };
 for(const sel of ["#name-q","#name-range"])$(sel).addEventListener(sel==="#name-q"?"input":"change",render);
+$("#name-rows").addEventListener("click",event=>{const b=event.target.closest("button.name-play");if(!b)return;const number=Number(b.dataset.name);if(playingNumber===number){stopAudio();return}stopAudio("");const clips=recordings.get(number)||[];if(!clips.length)return;playingNumber=number;playlist=clips;playIndex=0;$("#name-stop").disabled=false;document.querySelectorAll(".name-play").forEach(btn=>btn.setAttribute("aria-pressed",String(+btn.dataset.name===number)));status("Playing MSS divine-name recording for name "+number+" ("+clips.length+" clip"+(clips.length>1?"s":"")+")");nextClip()});
 try{
- const [b,m,benefits,namavali]=await Promise.all(["brief-names-draft.json","names-interpretations-draft.json","name-benefits.json","namavali-001-1000.json"].map(async file=>{
+ const [b,m,benefits,namavali,audioMap]=await Promise.all(["brief-names-draft.json","names-interpretations-draft.json","name-benefits.json","namavali-001-1000.json","name-audio-map.json"].map(async file=>{
  const r=await fetch("../data/lalita/"+file,{cache:"no-store"});if(!r.ok)throw Error(file+" HTTP "+r.status);return r.json();
  }));
  const meanings=new Map(m.map(n=>[n.number,n.essential_meaning?.en]));
  const ben=new Map(benefits.names.map(n=>[n.number,n]));
  const mantras=new Map(namavali.names.map(n=>[n.number,n]));
- if(b.length!==1000||ben.size!==1000||mantras.size!==1000)throw Error("Incomplete data");
+ recordings=new Map(audioMap.names.map(n=>[n.number,n.clips]));
+ if(b.length!==1000||ben.size!==1000||mantras.size!==1000||recordings.size!==1000)throw Error("Incomplete data");
  names=b.map((n,i)=>({number:i+1,sanskrit:n.sanskrit,iast:n.iast,meaning:meanings.get(i+1)||n.english||"",benefit:ben.get(i+1)?.en||"",source:ben.get(i+1)?.source||"",mantra:mantras.get(i+1)}));
  if(names.some(n=>!n.meaning||!n.benefit))throw Error("Missing name meaning or benefit");
  $("#name-state").textContent="All 1,000 names loaded";render();
