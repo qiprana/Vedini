@@ -5,7 +5,7 @@ const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&
 const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
 const langText=(en,kn)=>language==="kn"?kn:en;
 let verses=[],dhyana=[],nameData={},dhyanaData={},verseData={},dhyanaPhraseData={},language="en",searchTerm="",highlightTerm="";
-let spiritualBenefits={},namaMantras={};
+let spiritualBenefits={},namaMantras={},significanceRewrites={};
 const pageSize=10,plannedVerses=183;
 let view="verses",pageIndex=0,selectedVerse=1;
 let activeAudioElement=null;
@@ -94,22 +94,22 @@ function proseInKannadaScript(value){
 function richParagraphs(value){
  return proseInKannadaScript(value).split("\n\n").map(p=>p.trim()).filter(Boolean).map(p=>"<p>"+esc(p).replace(/\*([^*]+)\*/g,"<em>$1</em>").replace(/\n/g," ")+"</p>").join("");
 }
-function benefitToggle(number){
- const data=spiritualBenefits[number];
- if(!data)return "";
- const traditional=data.traditional_benefit?.[language]||"";
- const benefit=data.benefit?.[language]||data.title?.[language]||"";
- const legacy=(data.explanation?.[language]||"").split("\n\n").filter(Boolean);
- const spiritual=data.spiritual_significance?.[language]||legacy[0]||"";
- const human=data.human_significance?.[language]||legacy.slice(1).join("\n\n")||"";
- const detail=(key,text)=>text?"<section class='benefit-facet benefit-"+key+"'><h5>"+esc(key==="traditional"?langText("Traditional benefit","ಪಾರಂಪರಿಕ ಫಲ"):key==="contemplative"?langText("Contemplative benefit","ಚಿಂತನೆಯ ಪ್ರಯೋಜನ"):key==="spiritual"?langText("Spiritual significance","ಆಧ್ಯಾತ್ಮಿಕ ಮಹತ್ವ"):langText("Human significance","ಮಾನವ ಜೀವನದಲ್ಲಿ ಮಹತ್ವ"))+"</h5>"+richParagraphs(text)+"</section>":"";
- return "<details class='meaning-toggle name-spiritual-benefit' data-detail-id='name-benefit-"+number+"'>"
-  +"<summary>"+esc(langText("Benefits & significance","ಪ್ರಯೋಜನಗಳು ಮತ್ತು ಮಹತ್ವ"))+"</summary>"
-  +"<div class='deeper-reading benefit-content'>"
-  +detail(traditional?"traditional":"contemplative",traditional||benefit)
-  +detail("spiritual",spiritual)+detail("human",human)
-  +(!traditional?"<p class='benefit-review-note'>"+esc(langText("Contemplative interpretation; traditional name-specific benefit not yet source-verified.","ಇದು ಚಿಂತನಾತ್ಮಕ ವ್ಯಾಖ್ಯಾನ; ಈ ನಾಮದ ಪಾರಂಪರಿಕ ಫಲವನ್ನು ಮೂಲದಿಂದ ಇನ್ನೂ ಪರಿಶೀಲಿಸಿಲ್ಲ."))+"</p>":"")
-  +"</div></details>";
+// One flowing "Significance" reading per name: the rewritten text when
+// available, otherwise the earlier spiritual and human notes without repeats.
+function significanceText(number){
+ const rewrite=significanceRewrites[number]?.significance?.[language];
+ if(rewrite)return rewrite;
+ const data=spiritualBenefits[number]||{};
+ const parts=[data.spiritual_significance?.[language],data.human_significance?.[language]].map(t=>(t||"").trim()).filter(Boolean);
+ const unique=parts.filter((t,i)=>parts.indexOf(t)===i);
+ return unique.length?unique.join("\n\n"):(data.explanation?.[language]||"");
+}
+function significanceToggle(number){
+ const text=significanceText(number);
+ if(!text)return "";
+ return "<details class='meaning-toggle name-significance' data-detail-id='name-significance-"+number+"'>"
+  +"<summary>"+esc(langText("Significance","ಮಹತ್ವ"))+"</summary>"
+  +"<div class='deeper-reading'>"+richParagraphs(text)+"</div></details>";
 }
 function inlineNameMantra(number){
  const item=namaMantras[number];
@@ -117,21 +117,44 @@ function inlineNameMantra(number){
  const written=language==="kn"?kannadaFromDevanagari(item.dev):item.dev;
  return "<span class='name-mantra-inline' lang='"+(language==="kn"?"kn":"sa")+"'>"+highlightedPair(written,language==="kn"?item.iast:item.dev)+"</span>";
 }
+// Carry the name's chanting hyphens into its Nāmāvalī mantra. Spellings are
+// compared letter by letter (an anusvāra matches a nasal + virāma); if they
+// part ways before the last hyphen, the mantra is left unhyphenated.
+function withNameHyphens(mantra,hyphenated){
+ const text=String(mantra||""),name=String(hyphenated||"");
+ if(!name.includes("-"))return text;
+ const nasal=/^([ङञणनम]्|[ṅñṇnm])/,anusvara=/[ंṃ]/,same=(x,y)=>x.toLowerCase()===y.toLowerCase();
+ const start=text.indexOf(" ")+1;
+ let out=text.slice(0,start),i=start,j=0;
+ while(j<name.length){
+  const ch=name[j];
+  if(ch==="-"){out+="-";j++;continue;}
+  if(i<text.length&&same(text[i],ch)){out+=text[i++];j++;continue;}
+  const textNasal=text.slice(i).match(nasal),nameNasal=name.slice(j).match(nasal);
+  if(anusvara.test(ch)&&textNasal){out+=textNasal[0];i+=textNasal[0].length;j++;continue;}
+  if(anusvara.test(text[i]||"")&&nameNasal){out+=text[i++];j+=nameNasal[0].length;continue;}
+  break;
+ }
+ if(name.slice(j).includes("-"))return text;
+ return out.replace(/-+$/,"")+text.slice(i);
+}
 // Nāmāvalī for every name in a śloka, shown under the śloka reading.
 function namavaliPanel(v){
- const items=(v.names||[]).map(n=>[n.studyNumber,namaMantras[n.studyNumber]]).filter(([,item])=>item);
+ const items=(v.names||[]).map(n=>[n,namaMantras[n.studyNumber]]).filter(([,item])=>item);
  if(!items.length)return "";
  const lang=language==="kn"?"kn":"sa";
- return "<div class='reading-label namavali-heading'>"+esc(langText("Nāmāvalī","ನಾಮಾವಳಿ"))+"</div><ol class='verse-namavali'>"+items.map(([number,item])=>{
-  const written=language==="kn"?kannadaFromDevanagari(item.dev):item.dev;
-  return "<li class='namavali-item' data-name='"+esc(number)+"'><span class='namavali-number'>"+esc(number)+".</span><span class='mantra-reading'><strong lang='"+lang+"' class='mantra-script'>"+highlightedPair(written,language==="kn"?item.iast:item.dev)+"</strong>"
-   +(language==="kn"?"":"<span class='mantra-iast'>"+highlighted(item.iast)+"</span>")+"</span></li>";
- }).join("")+"</ol>";
+ return "<div class='reading-label namavali-heading'>"+esc(langText("Nāmāvalī","ನಾಮಾವಳಿ"))+"</div><ul class='verse-namavali'>"+items.map(([n,item])=>{
+  const original=nameWithOriginalVerseHyphens(v,n);
+  const dev=withNameHyphens(item.dev,original.dev);
+  const written=language==="kn"?kannadaFromDevanagari(dev):dev;
+  return "<li class='namavali-item' data-name='"+esc(n.studyNumber)+"'><strong lang='"+lang+"' class='mantra-script'>"+highlightedPair(written,language==="kn"?item.iast:item.dev)+"</strong>"
+   +(language==="kn"?"":"<span class='mantra-iast'>"+highlighted(withNameHyphens(item.iast,original.roman))+"</span>")+"</li>";
+ }).join("")+"</ul>";
 }
 function studySections(info,parts,nameNumber){
  const deep=anyMeaning(info,"traditional_interpretation");
  const id=nameNumber?" data-detail-id='name-deep-"+nameNumber+"'":"";
- return "<div class='study-inner'><h4>"+esc(langText("Word by word","ಪದ ಪದದ ಅರ್ಥ"))+"</h4>"+wordsGrid(parts)+benefitToggle(nameNumber)+(deep?"<details class='meaning-toggle name-deeper-meaning'"+id+"><summary>"+esc(langText("Deeper meaning","ಆಳವಾದ ಅರ್ಥ"))+"</summary><div class='deeper-reading'>"+richParagraphs(deep)+"</div></details>":"")+"</div>";
+ return "<div class='study-inner'><h4>"+esc(langText("Word by word","ಪದ ಪದದ ಅರ್ಥ"))+"</h4>"+wordsGrid(parts)+significanceToggle(nameNumber)+(deep?"<details class='meaning-toggle name-deeper-meaning'"+id+"><summary>"+esc(langText("Deeper meaning","ಆಳವಾದ ಅರ್ಥ"))+"</summary><div class='deeper-reading'>"+richParagraphs(deep)+"</div></details>":"")+"</div>";
 }
 function makeAudio(v,isDhyana){
  if(isDhyana){
@@ -867,17 +890,16 @@ function nameWithOriginalVerseHyphens(v,n){
  return {dev,roman};
 }
 function inlineWisdomInsight(number){
- const data=spiritualBenefits[number];
- if(!data)return "";
+ const data=spiritualBenefits[number]||{};
  const traditional=data.traditional_benefit?.[language]||"";
- const benefit=traditional||data.benefit?.[language]||data.title?.[language]||"";
- if(!benefit)return "";
- const label=traditional?langText("Traditional benefit","ಪಾರಂಪರಿಕ ಫಲ"):langText("Benefit","ಪ್ರಯೋಜನ");
- return "<span class='name-inline-wisdom' lang='"+(language==="kn"?"kn":"en")+"'><span class='name-inline-wisdom-label' role='img' aria-label='"+esc(label)+"' title='"+esc(label)+"'>"+(traditional?"✦":"✧")+"</span><span class='name-inline-wisdom-theme'>"+highlighted(benefit)+"</span></span>";
+ const phrase=significanceRewrites[number]?.short?.[language]||traditional||data.title?.[language]||"";
+ if(!phrase)return "";
+ const label=traditional?langText("Traditional significance","ಪಾರಂಪರಿಕ ಮಹತ್ವ"):langText("Significance","ಮಹತ್ವ");
+ return "<span class='name-inline-wisdom' lang='"+(language==="kn"?"kn":"en")+"'><span class='name-inline-wisdom-label' role='img' aria-label='"+esc(label)+"' title='"+esc(label)+"'>"+(traditional?"✦":"✧")+"</span><span class='name-inline-wisdom-theme'>"+highlighted(phrase)+"</span></span>";
 }
 function nameSection(v){
  const names=v.names||[];
- let html="<section class='name-section' aria-label='"+esc(langText("Divine names","ದೇವಿಯ ನಾಮಗಳು"))+"'><div class='section-title'><h3>"+esc(langText("Divine names","ದೇವಿಯ ನಾಮಗಳು"))+"</h3><span>"+names.length+" "+esc(langText("names","ನಾಮಗಳು"))+"</span><small class='name-insight-key'>✧ "+esc(langText("Benefits & Significance","ಪ್ರಯೋಜನಗಳು ಮತ್ತು ಮಹತ್ವ"))+"</small></div><div class='name-study-list'>";
+ let html="<section class='name-section' aria-label='"+esc(langText("Divine names","ದೇವಿಯ ನಾಮಗಳು"))+"'><div class='section-title'><h3>"+esc(langText("Divine names","ದೇವಿಯ ನಾಮಗಳು"))+"</h3><span>"+names.length+" "+esc(langText("names","ನಾಮಗಳು"))+"</span><small class='name-insight-key'>✧ "+esc(langText("Significance","ಮಹತ್ವ"))+"</small></div><div class='name-study-list'>";
  for(const n of names){
   // Always show every divine name in its own row, even if the MSS recording spans more than one name.
   const number=n.studyNumber;
@@ -1343,7 +1365,7 @@ function card(v,isDhyana){
 }
 function searchText(v,dh){
  if(dh)return JSON.stringify(v)+" "+JSON.stringify(dhyanaData[v.verse_number]||{});
- return JSON.stringify(v)+" "+JSON.stringify(verseData[v.verse_number]||{})+" "+(v.names||[]).map(n=>[nameData[n.studyNumber]||{},spiritualBenefits[n.studyNumber]||{},namaMantras[n.studyNumber]||{}].map(JSON.stringify).join(" ")).join(" ");
+ return JSON.stringify(v)+" "+JSON.stringify(verseData[v.verse_number]||{})+" "+(v.names||[]).map(n=>[nameData[n.studyNumber]||{},spiritualBenefits[n.studyNumber]||{},significanceRewrites[n.studyNumber]||{},namaMantras[n.studyNumber]||{}].map(JSON.stringify).join(" ")).join(" ");
 }
 function savedDetails(){
  // Meaning disclosures always start collapsed on a fresh render; preserve only
@@ -1991,6 +2013,8 @@ async function init(){
  const [files,briefNames,dhyanaPhrases]=await Promise.all([Promise.all(paths.map(fetchJSON)),fetchJSON("lalita/brief-names-draft.json"),fetchJSON("lalita/dhyana-mss-phrases.json?v=20261024-v14")]);
  const benefitFiles=await Promise.all(["001-0200","201-0400","401-0600","601-0800","801-1000"].map(range=>fetchJSON("lalita/wisdom-insights-"+range+".json")));
  const namavaliFile=await fetchJSON("lalita/namavali-001-1000.json");
+ const rewriteFile=await fetchJSON("lalita/significance-rewrites.json");
+ significanceRewrites=Object.fromEntries((rewriteFile.names||[]).map(n=>[n.number,n]));
  namaMantras=Object.fromEntries((namavaliFile.names||[]).map(n=>[n.number,n]));
  spiritualBenefits=Object.fromEntries(benefitFiles.flatMap(f=>f.names||[]).map(n=>[n.number,n]));
  dhyana=files[0];

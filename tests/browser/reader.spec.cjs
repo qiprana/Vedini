@@ -51,13 +51,13 @@ test('Nāmāvalī sits under the śloka in both scripts, not inside each name',a
  const kn=page.locator('#verse-1 .verse-reading-panel .verse-namavali');
  await expect(kn.locator('.mantra-script').first()).toContainText('ಓಂ');
 });
-test('all names keep individual mantra and benefit sections',async({page})=>{
+test('all names keep a Nāmāvalī mantra and a Significance section',async({page})=>{
  await page.goto('/lalita/?sloka=91');
  await expect(page.locator('#verse-91 .name-audio-card').first()).toBeVisible({timeout:20000});
  const names=await page.locator('#verse-91 .name-audio-card').count();
  await expect(page.locator('#verse-91 .verse-namavali .namavali-item')).toHaveCount(names);
  await page.locator('#verse-91 .name-details').first().locator('summary').first().click();
- await expect(page.locator('#verse-91 .name-spiritual-benefit').first()).toBeVisible();
+ await expect(page.locator('#verse-91 .name-significance').first()).toBeVisible();
 });
 
 test('search includes word-by-word English and highlights corresponding Kannada',async({page})=>{
@@ -99,7 +99,7 @@ test('divine names use compact side-by-side reading and meaning on desktop',asyn
  await expect(card.locator('.name-details')).not.toHaveAttribute('open','');
  await card.locator('.name-details>summary').click();
  await expect(card.locator('.name-mantra-toggle')).toHaveCount(0);
- await expect(card.locator('.name-spiritual-benefit')).toBeVisible();
+ await expect(card.locator('.name-significance')).toBeVisible();
 });
 test('compact divine-name columns preserve Kannada and mobile legibility',async({page})=>{
  await page.setViewportSize({width:390,height:844});
@@ -114,16 +114,27 @@ test('compact divine-name columns preserve Kannada and mobile legibility',async(
  expect(await card.locator('.name-summary-grid').evaluate(el=>el.scrollWidth<=el.clientWidth+3)).toBeTruthy();
 });
 
-test('benefit preview and expandable three-facet template for traditional entries',async({page})=>{
+test('traditional phrase in the row and one Significance reading when expanded',async({page})=>{
  await page.goto('/lalita/?sloka=31');
  const name=page.locator('[data-detail-id="name-78"]');
  await expect(name).toBeVisible({timeout:20000});
  await expect(name.locator('.name-inline-wisdom')).toContainText('Removal of Obstacles');
  await expect(name.locator('.name-mantra-inline')).toHaveCount(0);
  await name.locator('summary').first().click();
- const details=name.locator('.name-spiritual-benefit');
+ const details=name.locator('.name-significance');
+ await expect(details.locator('summary')).toHaveText('Significance');
  await details.locator('summary').click();
- await expect(details.locator('.benefit-traditional')).toContainText('Removal of Obstacles');
- await expect(details.locator('.benefit-spiritual')).toBeVisible();
- await expect(details.locator('.benefit-human')).toBeVisible();
+ await expect(details.locator('.deeper-reading')).toContainText(/removal of obstacles/i);
+ await expect(details.locator('h5')).toHaveCount(0);
+});
+test('Nāmāvalī keeps the name hyphens, has no numbers, and script matches IAST size',async({page})=>{
+ await page.goto('/lalita/?sloka=30');
+ const list=page.locator('#verse-30 .verse-namavali');
+ await expect(list.locator('.mantra-script').first()).toContainText('ॐ विशुक्र-प्राणहरण-वाराही-वीर्य-नन्दितायै नमः',{timeout:20000});
+ await expect(list.locator('.mantra-iast').first()).toContainText('Oṃ Viśukra-prāṇaharaṇa-vārāhī-vīrya-nanditāyai Namaḥ');
+ await expect(list.locator('.namavali-number')).toHaveCount(0);
+ const size=sel=>page.locator(sel).first().evaluate(el=>getComputedStyle(el).fontSize);
+ expect(await size('#verse-30 .verse-script .line-content')).toBe(await size('#verse-30 .verse-iast .line-content'));
+ expect(await size('#verse-30 .name-written')).toBe(await size('#verse-30 .name-roman'));
+ await expect(page.locator('[data-detail-id="name-76"] .name-inline-wisdom')).not.toContainText('Corruption');
 });

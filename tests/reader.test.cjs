@@ -65,8 +65,9 @@ test('all 1000 entries include English and Kannada benefits and explanations',()
  });
 });
 
-test('benefit template distinguishes traditional, spiritual and human meaning',()=>{
- for(const key of ['Traditional benefit','Spiritual significance','Human significance','Contemplative benefit'])assert.ok(app.includes(key),key);
+test('names show one Significance reading and keep traditional source data',()=>{
+ assert.match(app,/function significanceToggle\(number\)/);
+ assert.doesNotMatch(app,/Benefits & significance|Contemplative benefit|"Benefit"/);
  const fileData=JSON.parse(file('data/lalita/wisdom-insights-001-0200.json'));
  assert.equal(fileData.names.length,200);
  fileData.names.forEach((entry,i)=>{
@@ -143,4 +144,20 @@ test('Batch 5 names 801–1000 have distinct bilingual significance and no unsou
  }
  for(const key of ['title','spiritual_significance','human_significance'])
   for(const lang of ['en','kn'])assert.equal(new Set(rows.map(n=>n[key][lang].trim())).size,200,'Duplicate '+key+'.'+lang);
+});
+
+test('significance rewrites are bilingual, unique and keep traditional phrases',()=>{
+ const rows=JSON.parse(file('data/lalita/significance-rewrites.json')).names;
+ const insights=Object.fromEntries(['001-0200','201-0400','401-0600','601-0800','801-1000'].flatMap(n=>JSON.parse(file('data/lalita/wisdom-insights-'+n+'.json')).names).map(n=>[n.number,n]));
+ const seen=new Set();
+ for(const row of rows){
+  assert.ok(insights[row.number],'Unknown name '+row.number);
+  assert.ok(!seen.has(row.number),'Duplicate rewrite '+row.number);seen.add(row.number);
+  for(const lang of ['en','kn']){
+   assert.ok(row.significance?.[lang]?.length>80,'Missing significance '+row.number+' '+lang);
+   if(insights[row.number].traditional_benefit?.en)assert.ok(!row.short,'Traditional phrase must stay for '+row.number);
+   else assert.ok(row.short?.[lang]?.trim(),'Missing short phrase '+row.number+' '+lang);
+  }
+  assert.doesNotMatch(row.significance.en,/\bbenefit/i,'Uses "benefit" '+row.number);
+ }
 });
