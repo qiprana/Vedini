@@ -1563,3 +1563,142 @@ header p{color:#845c4b;font-size:18px}
 .reader-page .reader-top-tools{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
 .reader-page .fc-main-content>.lalita-view-switcher{margin:8px 0 14px;padding:0 0 12px}
 @media(max-width:700px){.reader-page .lalita-language-bar .language-toggle{width:100%;display:grid;grid-template-columns:1fr 1fr}.reader-page .lalita-language-bar .toggle{min-width:0;width:100%}.reader-page .reader-top-tools .lalita-view-switcher{width:100%}.reader-page .reader-top-tools{align-items:stretch}}
+
+/* Vedini global header: one brand-left / navigation-right layout on every page. */
+.vedini-site-header,
+.reader-page .vedini-site-header{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:nowrap;
+  gap:clamp(14px,2.3vw,30px);
+  width:100%;
+  min-height:86px;
+  box-sizing:border-box;
+  padding:15px clamp(15px,2.3vw,28px);
+  margin:0 0 clamp(18px,2.6vw,26px);
+  background:linear-gradient(105deg,#eaf3ea 0%,#f6f5ea 49%,#fff2e0 100%);
+  border:1px solid #cbdacb;
+  border-radius:17px;
+  box-shadow:0 4px 18px rgba(48,83,57,.065);
+  text-align:left;
+}
+.vedini-site-header .vedini-brand{
+  display:inline-flex;
+  align-items:center;
+  flex:0 0 auto;
+  gap:11px;
+  min-width:0;
+  color:#284d3e;
+  text-decoration:none;
+}
+.vedini-site-header .vedini-brand:focus-visible{
+  outline:3px solid #699577;
+  outline-offset:5px;
+  border-radius:8px;
+}
+.vedini-site-header .vedini-mark{
+  display:grid;
+  place-items:center;
+  flex:none;
+  width:48px;
+  height:48px;
+  background:linear-gradient(155deg,#ffffff,#e5efdf);
+  border:1px solid #b1c9b6;
+  border-radius:14px;
+  box-shadow:0 2px 8px rgba(45,92,62,.09);
+}
+.vedini-site-header .vedini-mark svg{display:block;width:36px;height:36px}
+.vedini-site-header .vedini-brand-copy{display:flex;flex-direction:column;justify-content:center;gap:2px}
+.vedini-site-header .vedini-wordmark{
+  font:500 clamp(26px,2.7vw,33px)/1.07 Georgia,"Times New Roman",serif;
+  color:#2c5542;
+  letter-spacing:-.035em;
+}
+.vedini-site-header .vedini-brand-tagline{
+  color:#a36e55;
+  font:550 11px/1.25 system-ui,sans-serif;
+  letter-spacing:.02em;
+  white-space:nowrap;
+}
+.vedini-site-header .site-tabs,
+.reader-page .vedini-site-header .site-tabs{
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  flex:0 1 auto;
+  flex-wrap:nowrap;
+  width:auto;
+  min-width:0;
+  gap:3px;
+  margin:0;
+  padding:0;
+  background:none;
+  border:0;
+}
+.vedini-site-header .site-tab{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:39px;
+  width:auto;
+  padding:9px 12px;
+  margin:0;
+  border:1px solid transparent;
+  border-radius:10px;
+  background:transparent;
+  box-shadow:none;
+  color:#355c48;
+  font:650 13px/1.25 system-ui,sans-serif;
+  text-decoration:none;
+  white-space:nowrap;
+  transition:background-color .16s ease,border-color .16s ease;
+}
+.vedini-site-header .site-tab:hover{
+  background:#f9fdf7;
+  border-color:#c5d7c6;
+}
+.vedini-site-header .site-tab:focus-visible{
+  background:#f9fdf7;
+  border-color:#779b7f;
+  outline:2px solid #779b7f;
+  outline-offset:2px;
+}
+.vedini-site-header .site-tab.active,
+.vedini-site-header .site-tab[aria-current="page"]{
+  background:#315744;
+  border-color:#315744;
+  color:#fff;
+}
+@media(max-width:940px){
+  .vedini-site-header,
+  .reader-page .vedini-site-header{flex-wrap:wrap;gap:10px 14px}
+  .vedini-site-header .site-tabs,
+  .reader-page .vedini-site-header .site-tabs{width:100%;justify-content:flex-end}
+}
+@media(max-width:620px){
+  .vedini-site-header,
+  .reader-page .vedini-site-header{align-items:flex-start;padding:13px 12px;gap:9px}
+  .vedini-site-header .vedini-mark{width:42px;height:42px;border-radius:12px}
+  .vedini-site-header .vedini-mark svg{width:32px;height:32px}
+  .vedini-site-header .vedini-wordmark{font-size:27px}
+  .vedini-site-header .vedini-brand-tagline{font-size:10px}
+  .vedini-site-header .site-tabs,
+  .reader-page .vedini-site-header .site-tabs{
+    display:flex;
+    justify-content:flex-start;
+    flex-wrap:nowrap;
+    gap:3px;
+    width:100%;
+    overflow-x:auto;
+    overflow-y:hidden;
+    padding:0 0 3px;
+    scrollbar-width:thin;
+    -webkit-overflow-scrolling:touch;
+  }
+  .vedini-site-header .site-tab{flex:none;width:auto;padding:9px 10px;min-height:36px;font-size:12px}
+}
+@media(prefers-reduced-motion:reduce){
+  .vedini-site-header .site-tab{transition:none}
+}
