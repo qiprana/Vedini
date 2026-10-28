@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Read and chant all 183 Lalitā Sahasranāma ślokas in order, with simple meanings alongside.">
 <title>Full Lalitā Sahasranāma Chanting | Vedini</title>
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../styles.css?v=20261028-shared-dock-v1">
 <style>
 body{background:#e6eae1}
 .fc-page{max-width:1320px;min-height:100vh;background:#fffaf2;padding:clamp(14px,2.7vw,32px)}
@@ -26,6 +26,16 @@ body{background:#e6eae1}
 .fc-toolbar .fc-check{display:inline-flex;gap:6px;align-items:center;cursor:pointer;font:600 12px system-ui,sans-serif}
 .fc-toolbar .fc-check input{width:16px;height:16px;accent-color:#315e49}
 .fc-status{margin:9px 0 0;color:#526b5b;font:13px/1.5 system-ui,sans-serif}
+.fc-workspace{margin-top:12px}
+.fc-workspace .fc-main-content{min-width:0}
+.fc-workspace .fc-dock-fields{display:grid;gap:10px;padding:12px}
+.fc-workspace .fc-dock-fields label{display:grid;gap:4px;color:#365d48;font:650 12px/1.4 system-ui,sans-serif}
+.fc-workspace .fc-dock-fields select{width:100%;min-height:38px;padding:7px;border:1px solid #b9cdbb;border-radius:8px;background:white;color:#2c543c;font:13px system-ui,sans-serif}
+.fc-workspace .fc-options{padding:0 12px 10px;display:grid;gap:9px}
+.fc-workspace .fc-check{font:12px/1.3 system-ui,sans-serif;color:#466b50;display:flex;gap:6px;align-items:center}
+.fc-workspace #fc-print{margin:3px 12px 8px;border:1px solid #aac2ad;border-radius:8px;background:#fff;padding:8px 12px;color:#345b43}
+.fc-workspace .fc-dock-hint{margin:5px 12px 14px;font:12px/1.5 system-ui,sans-serif;color:#58705c}
+.fc-workspace .fc-verse{scroll-margin-top:18px}
 .fc-intro{display:flex;justify-content:space-between;flex-wrap:wrap;gap:9px;color:#6b766c;font:13px/1.5 system-ui,sans-serif;margin:0 2px 12px}
 .fc-list{display:grid;gap:12px}
 .fc-section-heading{margin:20px 0 3px;padding:11px 13px;border-bottom:2px solid #c5d8c5;font:600 23px/1.4 Georgia,serif;color:#315642;scroll-margin-top:170px}
@@ -63,6 +73,7 @@ body{background:#e6eae1}
 .fc-verse{scroll-margin-top:190px}
 }
 @media print{
+.fc-workspace,.fc-workspace.dock-collapsed{display:block!important}.fc-workspace .practice-dock{display:none!important}
 body{background:#fff}.fc-page{width:100%;max-width:none;padding:0;background:#fff}
 .reader-header,.fc-toolbar,.fc-intro,.fc-bottom,.fc-from-here,.fc-hero a{display:none!important}
 .fc-hero{padding:0 0 12px}.fc-hero p{display:none}
@@ -75,7 +86,7 @@ body{background:#fff}.fc-page{width:100%;max-width:none;padding:0;background:#ff
 </style>
 </head>
 <body>
-<main class="page fc-page" id="fc-page">
+<main class="page fc-page reader-page" id="fc-page">
 <header class="reader-header">
 <nav class="site-tabs" aria-label="Vedini navigation">
   <a href="../index.html" class="site-tab">Home</a>
@@ -91,27 +102,27 @@ body{background:#fff}.fc-page{width:100%;max-width:none;padding:0;background:#ff
 <nav class="lalita-view-switcher" aria-label="Lalitā reading modes"><a href="./index.html">Study ślokas</a><a href="./chant.html" aria-current="page">Full Chanting</a><a href="./names.html">Divine Names</a></nav>
 <p>Chant the four Dhyāna ślokas followed by all 183 ślokas of Lalitā Sahasranāma, with simple meanings alongside. Play continuously from the beginning or start anywhere. MSS uses the existing phrase recordings; where a main-śloka recording has an uncertain mapping, the complete VD recording is used instead.</p>
 </section>
-<section class="fc-toolbar" aria-label="Chanting and reading controls">
-<div class="fc-tools">
-<label>Script<select id="fc-script"><option value="dev">Devanagari</option><option value="kn">Kannada</option></select></label>
+<div class="study-workspace fc-workspace" id="study-workspace">
+<aside class="practice-dock" id="practice-dock" aria-label="Full chanting player">
+<div class="practice-dock-head"><button type="button" id="practice-dock-toggle" aria-controls="practice-dock-body" aria-expanded="true" title="Collapse or expand player"><span aria-hidden="true" class="dock-arrow">◂</span><span class="dock-toggle-label">Collapse</span></button><div class="dock-heading"><strong>Chanting Player</strong><span>Dhyāna · Sahasranāma</span></div></div>
+<div class="practice-dock-transport" role="group" aria-label="Chanting playback controls">
+<button id="dock-play" type="button" disabled><span class="dock-button-icon" aria-hidden="true">▶</span><span class="dock-button-label">Play</span></button>
+<button id="dock-pause" type="button" disabled><span class="dock-button-icon" aria-hidden="true">⏸</span><span class="dock-button-label">Pause</span></button>
+<button id="dock-next" type="button" disabled><span class="dock-button-icon" aria-hidden="true">↦</span><span class="dock-button-label">Next</span></button>
+<button id="dock-stop" type="button" disabled><span class="dock-button-icon" aria-hidden="true">■</span><span class="dock-button-label">Stop</span></button></div>
+<div class="practice-dock-body" id="practice-dock-body"><div class="fc-dock-fields">
 <label>Voice<select id="fc-voice"><option value="MSS" selected>MSS</option><option value="VD">VD</option><option value="KMP">KMP</option></select></label>
-<label>Jump to<select id="fc-jump" aria-label="Choose Dhyāna or main śloka"><option value="d-1">Dhyāna 1</option></select></label>
-<button type="button" id="fc-play-all" class="fc-primary" disabled>▶ Play all</button>
-<button type="button" id="fc-play-from" disabled>▶ From selected</button>
-<button type="button" id="fc-pause" disabled>Pause</button>
-<button type="button" id="fc-stop" disabled>Stop</button>
-<button type="button" id="fc-print">Print</button>
-</div>
-<div class="fc-options">
-<label class="fc-check"><input type="checkbox" id="fc-show-iast" checked> Show IAST</label>
-<label class="fc-check"><input type="checkbox" id="fc-show-meaning" checked> Show meanings</label>
-</div>
-<p class="fc-status" id="fc-status" role="status" aria-live="polite">Loading the ślokas and meanings…</p>
-<audio id="fc-audio" preload="none" aria-label="Continuous śloka chanting"></audio>
-</section>
+<label>Start from<select id="fc-jump" aria-label="Choose Dhyāna or main śloka"><option value="d-1">Dhyāna 1</option></select></label>
+<label>Script<select id="fc-script"><option value="dev">Devanagari</option><option value="kn">Kannada</option></select></label></div>
+<div class="fc-options"><label class="fc-check"><input type="checkbox" id="fc-show-iast" checked> Show IAST</label><label class="fc-check"><input type="checkbox" id="fc-show-meaning" checked> Show meanings</label></div>
+<button type="button" id="fc-print">Print reading</button>
+<p class="fc-dock-hint">Play begins at the selected verse. Use Next to skip forward; select any verse to jump while chanting.</p></div>
+<p class="dock-status" id="dock-status" role="status" aria-live="polite">Loading chanting data…</p>
+</aside><div class="study-main-content fc-main-content">
 <div class="fc-intro"><span>Four Dhyāna ślokas precede the main hymn. Play all, or select a starting verse.</span><span id="fc-count">Preparing 4 Dhyāna + 183 ślokas…</span></div>
 <section id="fc-list" class="fc-list" aria-label="Four Dhyāna ślokas followed by 183 Lalitā Sahasranāma ślokas"></section>
 <p class="fc-bottom">The Dhyāna introduction uses MSS recordings for every voice selection. The main hymn supports MSS, VD and KMP; uncertain MSS phrase mappings fall back to a complete VD śloka so the recitation is not shortened. All recordings play at their original speed. <a href="../guide.html">Learn how to use Vedini</a> · <a href="./names.html">View all 1,000 divine names</a></p>
-</main>
-<script src="./chant.js?v=20261028-dhyana-mss-normal-v2" defer></script>
+</div></div></main>
+<script src="./practice-dock-controls.js?v=20261028-shared-v1"></script>
+<script src="./chant.js?v=20261028-seamless-mss-v3" defer></script>
 </body></html>
