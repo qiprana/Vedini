@@ -2098,7 +2098,7 @@ function initDock(){
   const shortcut=event.target.closest(".dock-verse-shortcut");if(!shortcut)return;
   event.preventDefault();event.stopImmediatePropagation();expand(true);
   if(shortcut.dataset.dockDhyana==="1"){const n=Number(shortcut.dataset.dockVerse);document.getElementById("learning-mode").value="chant";document.getElementById("learning-mode").dispatchEvent(new Event("change"));practiceStop("");practice.dhyana=true;practice.active=true;practice.current=n;practice.end=n;practice.reps=1;practice.played=0;practice.token++;practiceSyncButtons();practicePlayCurrent(practice.token);return}
-  const n=Number(shortcut.dataset.dockVerse);document.getElementById("practice-tab-chant").click();
+  const n=Number(shortcut.dataset.dockVerse);document.getElementById("learning-mode").value="chant";document.getElementById("learning-mode").dispatchEvent(new Event("change"));
   document.getElementById("practice-from").value=String(n);document.getElementById("practice-to").value=String(n);
   if(practice.active)practiceStop("Starting selected śloka");
   document.getElementById("dock-play").click();
