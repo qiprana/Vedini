@@ -1493,3 +1493,10 @@ header p{color:#845c4b;font-size:18px}
 .reader-page .name-section .name-summary-grid>.name-inline-wisdom-slot{min-width:0!important}
 .reader-page .name-section .meaning-toggle.name-significance>.deeper-reading{font-size:1rem;line-height:1.7}
 @media(max-width:640px){.reader-page .name-section .name-benefit-line{padding-top:3px}}
+
+/* Collection-level reading modes live inside Lalitā, not the global navigation. */
+.lalita-view-switcher{display:flex;gap:9px;flex-wrap:wrap;margin:9px 0 17px;padding:9px 0;border-bottom:1px solid #dce4d7}
+.lalita-view-switcher a{display:inline-flex;align-items:center;justify-content:center;min-height:38px;padding:7px 15px;border:1px solid #aec4b0;border-radius:9px;background:#fffdf8;color:#315c47;text-decoration:none;font:650 13px/1.35 system-ui,sans-serif}
+.lalita-view-switcher a[aria-current="page"]{background:#315c47;border-color:#315c47;color:#fff}
+.lalita-view-switcher a:hover:not([aria-current="page"]){background:#e8f0e5}
+@media(max-width:580px){.lalita-view-switcher a{flex:1}}
