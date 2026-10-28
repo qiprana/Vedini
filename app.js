@@ -894,7 +894,7 @@ function inlineWisdomInsight(number){
  const sourced=benefit?.source==="sanskrit_channel_screenshot";
  const benefitLabel=sourced?langText("Benefit from The Sanskrit Channel","ಸಂಸ್ಕೃತ ಚಾನೆಲ್‌ನ ಪ್ರಯೋಜನ"):langText("Suggested benefit","ಸೂಚಿಸಲಾದ ಪ್ರಯೋಜನ");
  const significance=phrase?"<span class='name-inline-wisdom' lang='"+(language==="kn"?"kn":"en")+"'><span class='name-inline-wisdom-label' aria-hidden='true'>✧</span><span class='name-inline-wisdom-theme'>"+highlighted(phrase)+"</span></span>":"";
- const benefitLine=benefit?"<span class='name-benefit-line' data-benefit-source='"+esc(benefit.source)+"'><span class='name-benefit-label' title='"+esc(benefitLabel)+"'>"+(sourced?"✦ ":"")+esc(langText("Benefit","ಪ್ರಯೋಜನ"))+"</span><span class='name-benefit-text' lang='en'>"+highlighted(benefit.en)+"</span></span>":"";
+ const benefitLine=benefit?"<span class='name-benefit-line' data-benefit-source='"+esc(benefit.source)+"' title='"+esc(benefitLabel)+"'><span class='name-benefit-text' lang='en'>"+highlighted(benefit.en)+"</span></span>":"";
  return "<span class='name-compact-meta'>"+significance+benefitLine+"</span>";
 }
 function nameSection(v){
