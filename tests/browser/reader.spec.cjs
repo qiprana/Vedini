@@ -80,6 +80,35 @@ test('individual name audio remains separate from the Nāmāvalī',async({page})
  await expect(page.locator('#verse-1 .verse-namavali').first()).not.toContainText('▶ Play');
 });
 
+
+test('Divine Name audio buttons play the assigned MSS clips without opening guided practice',async({page})=>{
+ await page.addInitScript(()=>{
+  window.__nameClipPlayRequests=[];
+  HTMLMediaElement.prototype.play=function(){
+   window.__nameClipPlayRequests.push(this.getAttribute('src'));
+   return Promise.resolve();
+  };
+ });
+ await page.goto('/lalita/?sloka=1');
+ const first=page.locator('#verse-1 .name-audio-button').first();
+ await expect(first).toBeVisible({timeout:20000});
+ const assigned=(await first.getAttribute('data-name-clips')).split(',');
+ await first.click();
+ await expect.poll(()=>page.evaluate(()=>window.__nameClipPlayRequests.length)).toBe(1);
+ const played=await page.evaluate(()=>window.__nameClipPlayRequests[0]);
+ expect(played).toContain('/audio/lalita/verses/MSS/phrase_'+assigned[0].padStart(4,'0')+'.mp3');
+ await expect(first).toHaveAttribute('aria-pressed','true');
+ await expect(page.locator('.chanting-panels')).toHaveAttribute('data-mode','chant');
+ await expect(page.locator('#verse-1 .name-details').first()).not.toHaveAttribute('open','');
+ // Switching Sanskrit scripts re-renders each name, which must remain playable.
+ await page.locator('#kn').click();
+ const firstKannada=page.locator('#verse-1 .name-audio-button').first();
+ await firstKannada.click();
+ await expect.poll(()=>page.evaluate(()=>window.__nameClipPlayRequests.length)).toBe(2);
+ await expect(firstKannada).toHaveAttribute('aria-pressed','true');
+ await expect(page.locator('.chanting-panels')).toHaveAttribute('data-mode','chant');
+});
+
 test('divine names use compact side-by-side reading and meaning on desktop',async({page})=>{
  await page.setViewportSize({width:1440,height:900});
  await page.goto('/lalita/?sloka=36');
