@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Listen, chant and explore the meanings of Lalitā Sahasranāma on Vedini.">
   <title>Lalitā Sahasranāma | Vedini</title>
-  <link rel="stylesheet" href="../styles.css?v=20261027-benefit-typography-v2">
+  <link rel="stylesheet" href="../styles.css?v=20261028-sticky-practice-v1">
 </head>
 <body>
 <main class="page reader-page">
@@ -33,40 +33,60 @@
       </div>
     </details>
     <nav class="lalita-view-switcher" aria-label="Lalitā reading modes"><a href="./index.html" aria-current="page">Study ślokas</a><a href="./chant.html">Full Chanting</a><a href="./names.html">Divine Names</a></nav>
-    <div class="practice-dock"><div class="practice-mode-tabs" role="tablist" aria-label="Choose practice mode"><button type="button" id="practice-tab-chant" class="active" role="tab" aria-selected="true" aria-controls="practice-player">Chant Practice</button><button type="button" id="practice-tab-guided" role="tab" aria-selected="false" aria-controls="guided-panel">Guided Chanting</button><span class="practice-mode-hint">Listen · Repeat · Learn</span></div><div class="chanting-panels" data-mode="chant"><section id="practice-player" class="practice-player" aria-label="Chant practice player">
- <div class="practice-intro"><strong>Chant practice</strong><span>Play a range, repeating each śloka before moving to the next.</span></div>
- <div class="practice-fields">
- <label>From <select id="practice-from" aria-label="Start śloka"></select></label>
- <label>To <select id="practice-to" aria-label="End śloka"></select></label>
- <label>Repeat each <select id="practice-repeat" aria-label="Repetitions for each śloka"><option value="1">1×</option><option value="2" selected>2×</option><option value="3">3×</option><option value="5">5×</option><option value="10">10×</option></select></label>
- <label>Singer <select id="practice-voice" aria-label="Practice singer"><option value="VD" selected>VD</option><option value="MSS">MSS</option><option value="KMP">KMP</option></select></label>
- </div>
- <div class="practice-actions"><button id="practice-play" type="button">▶ Play range</button><button id="practice-pause" type="button" disabled>Pause</button><button id="practice-stop" type="button" disabled>Stop</button><span id="practice-status" role="status" aria-live="polite">Ready to practice</span></div>
- <audio id="practice-audio" preload="none"></audio>
- </section>
-    <details id="guided-panel" class="guided-panel" open>
-      <summary>🎧 Guided Chanting <span class="guided-subtitle">Learn one divine name at a time</span></summary>
-      <div class="guided-body">
-        <p class="guided-description">Hear the original MSS recording, repeat each name, then continue to the next. Shared recordings remain together as a phrase.</p>
-        <div class="guided-fields">
-          <label>From śloka<select id="guided-from"></select></label>
-          <label>To śloka<select id="guided-to"></select></label>
-          <label>Learning mode<select id="guided-mode"><option value="names">Names, one by one</option><option value="both" selected>Names, then complete śloka</option><option value="verse">Complete śloka only</option></select></label>
-          <label>Repeat each name<select id="guided-name-repeat"><option value="1">1×</option><option value="2" selected>2×</option><option value="3">3×</option><option value="5">5×</option></select></label>
-          <label>Repeat whole śloka<select id="guided-verse-repeat"><option value="1" selected>1×</option><option value="2">2×</option><option value="3">3×</option></select></label>
-          <label>Practice pause<select id="guided-gap"><option value="0">No pause</option><option value="500" selected>0.5 seconds</option><option value="1500">1.5 seconds</option><option value="3000">3 seconds</option></select></label>
+    <div class="study-workspace" id="study-workspace">
+      <aside class="practice-dock" id="practice-dock" aria-label="Chanting practice controls">
+        <div class="practice-dock-head">
+          <button type="button" id="practice-dock-toggle" aria-controls="practice-dock-body" aria-expanded="true" title="Collapse or expand the practice sidebar">
+            <span aria-hidden="true" class="dock-arrow">◂</span><span class="dock-toggle-label">Collapse</span>
+          </button>
+          <div class="dock-heading"><strong>Chanting Practice</strong><span>Listen · Repeat · Learn</span></div>
         </div>
-        <div class="guided-actions">
-          <button type="button" id="guided-play">▶ Begin learning</button>
-          <button type="button" id="guided-pause" disabled>Pause</button>
-          <button type="button" id="guided-next" disabled>Next name</button>
-          <button type="button" id="guided-stop" disabled>Stop</button>
+        <div class="practice-dock-transport" role="group" aria-label="Shared chanting playback controls">
+          <button id="dock-play" type="button" disabled title="Play selected chanting practice"><span class="dock-button-icon" aria-hidden="true">▶</span><span class="dock-button-label">Play</span></button>
+          <button id="dock-pause" type="button" disabled title="Pause or resume chanting"><span class="dock-button-icon" aria-hidden="true">⏸</span><span class="dock-button-label">Pause</span></button>
+          <button id="dock-next" type="button" disabled title="Move to next śloka or name"><span class="dock-button-icon" aria-hidden="true">↦</span><span class="dock-button-label">Next</span></button>
+          <button id="dock-stop" type="button" disabled title="Stop chanting"><span class="dock-button-icon" aria-hidden="true">■</span><span class="dock-button-label">Stop</span></button>
         </div>
-        <p id="guided-status" class="guided-status" role="status" aria-live="polite">Choose a śloka range to begin.</p>
-        <audio id="guided-audio" preload="none"></audio>
-      </div>
-    </details>
-    </div></div>
+        <div id="practice-dock-body" class="practice-dock-body">
+          <div class="practice-mode-tabs" role="tablist" aria-label="Choose chanting practice">
+            <button type="button" id="practice-tab-chant" class="active" role="tab" aria-selected="true" aria-controls="practice-player">Śloka Chanting Practice</button>
+            <button type="button" id="practice-tab-guided" role="tab" aria-selected="false" aria-controls="guided-panel">Name Chanting Practice</button>
+          </div>
+          <div class="chanting-panels" data-mode="chant">
+            <section id="practice-player" class="practice-player" role="tabpanel" aria-labelledby="practice-tab-chant">
+              <p class="dock-help">Choose a range and repeat each śloka. The reader follows the chant.</p>
+              <div class="practice-fields">
+                <label>From śloka<select id="practice-from" aria-label="Start śloka"></select></label>
+                <label>To śloka<select id="practice-to" aria-label="End śloka"></select></label>
+                <label>Repeat each<select id="practice-repeat" aria-label="Repetitions for each śloka"><option value="1">1×</option><option value="2" selected>2×</option><option value="3">3×</option><option value="5">5×</option><option value="10">10×</option></select></label>
+                <label>Singer<select id="practice-voice" aria-label="Practice singer"><option value="VD" selected>VD</option><option value="MSS">MSS</option><option value="KMP">KMP</option></select></label>
+              </div>
+              <div class="practice-actions" hidden aria-hidden="true">
+                <button id="practice-play" type="button">Play</button><button id="practice-pause" type="button" disabled>Pause</button><button id="practice-stop" type="button" disabled>Stop</button>
+              </div>
+              <p id="practice-status" class="dock-mode-status" role="status" aria-live="polite">Choose a śloka range to begin.</p>
+            </section>
+            <section id="guided-panel" class="guided-panel" role="tabpanel" aria-labelledby="practice-tab-guided">
+              <p class="dock-help">Listen to MSS name recordings, one phrase at a time, with optional repetition and pauses.</p>
+              <div class="guided-fields">
+                <label>From śloka<select id="guided-from"></select></label>
+                <label>To śloka<select id="guided-to"></select></label>
+                <label>Learning mode<select id="guided-mode"><option value="names">Names, one by one</option><option value="both" selected>Names, then complete śloka</option><option value="verse">Complete śloka only</option></select></label>
+                <label>Repeat each name<select id="guided-name-repeat"><option value="1">1×</option><option value="2" selected>2×</option><option value="3">3×</option><option value="5">5×</option></select></label>
+                <label>Repeat whole śloka<select id="guided-verse-repeat"><option value="1" selected>1×</option><option value="2">2×</option><option value="3">3×</option></select></label>
+                <label>Practice pause<select id="guided-gap"><option value="0">No pause</option><option value="500" selected>0.5 seconds</option><option value="1500">1.5 seconds</option><option value="3000">3 seconds</option></select></label>
+              </div>
+              <div class="guided-actions" hidden aria-hidden="true">
+                <button id="guided-play" type="button">Begin learning</button><button id="guided-pause" type="button" disabled>Pause</button><button id="guided-next" type="button" disabled>Next name</button><button id="guided-stop" type="button" disabled>Stop</button>
+              </div>
+              <p id="guided-status" class="dock-mode-status" role="status" aria-live="polite">Choose a śloka range to begin.</p>
+            </section>
+          </div>
+        </div>
+        <p id="dock-status" class="dock-status" role="status" aria-live="polite">Ready</p>
+        <audio id="practice-audio" preload="none" aria-label="Shared chanting practice audio"></audio>
+      </aside>
+      <div class="study-main-content">
     <div class="toolbar reader-top-tools">
       <div class="language-controls">
         <div class="language-toggle" role="group" aria-label="Choose Sanskrit script and translation language">
@@ -118,8 +138,10 @@
       </div>
     </nav>
     <p class="foot">All 183 ślokas include word-by-word study, one concise meaning-and-significance reading per divine name, and overall śloka meanings. VD and KMP audio are available across the full collection; MSS can be added as recordings become available.</p>
+      </div>
+    </div>
   </section>
 </main>
 <script src="../lalita-source-review.js?v=20261026-name-mantra-no-duplicate-v1"></script>
-<script src="../app.js?v=20261027-benefit-typography-v2"></script>
+<script src="../app.js?v=20261028-sticky-practice-v1"></script>
 </body></html>
