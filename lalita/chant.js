@@ -1,6 +1,6 @@
 (function(){"use strict";
 const $=s=>document.querySelector(s),root=$("#fc-page"),list=$("#fc-list");
-const state={entries:[],meanings:new Map(),playing:false,paused:false,index:0,token:0,audioMap:new Map(),dhyanaClips:new Map(),fallback:new Set(),context:null,dock:null,ticker:null,loader:null,scheduleIndex:0,nextTime:0,segments:[],buffers:new Map()};
+const state={entries:[],meanings:new Map(),playing:false,paused:false,index:0,token:0,audioMap:new Map(),dhyanaClips:new Map(),fallback:new Set(),context:null,dock:null,ticker:null,loader:null,scheduleIndex:0,nextTime:0,segments:[],buffers:new Map(),pumping:false};
 const setStatus=s=>{state.dock?.sync({playing:state.playing,paused:state.paused,status:s})},pad=n=>String(n).padStart(3,"0");
 const fetchJSON=async p=>{const r=await fetch("../data/lalita/"+p,{cache:"no-store"});if(!r.ok)throw Error("Could not load "+p);return r.json()};
 const el=(tag,cls,value)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(value!==undefined)e.textContent=value;return e};
@@ -68,7 +68,9 @@ function updatePlayhead(){
  if(state.scheduleIndex>=state.loader.length&&state.nextTime<=t+.02)stop("Completed all four Dhyāna and 183 main ślokas");
 }
 async function pump(token){
- if(!state.playing||token!==state.token||state.paused||!state.context)return;
+ if(state.pumping||!state.playing||token!==state.token||state.paused||!state.context)return;
+ state.pumping=true;
+ try{
  const ctx=state.context;
  while(state.scheduleIndex<state.loader.length&&state.nextTime<ctx.currentTime+18){
   const index=state.scheduleIndex,group=state.loader[index];
@@ -98,6 +100,7 @@ async function pump(token){
   state.nextTime=time;state.scheduleIndex++;
   if(state.segments.length>350)state.segments=state.segments.filter(s=>s.end>ctx.currentTime-1);
  }
+ }finally{state.pumping=false}
 }
 function stop(message="Stopped"){
  state.token++;state.playing=false;state.paused=false;
