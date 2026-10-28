@@ -14,12 +14,21 @@
   if(!toggle||!play||!pause||!next||!stop||!status)throw new Error("Vedini practice dock: incomplete controls");
   function expand(open){
    root.classList.toggle("is-collapsed",!open);
+   root.classList.toggle("mobile-settings-open",open);
    workspace.classList.toggle("dock-collapsed",!open);
    toggle.setAttribute("aria-expanded",String(open));
    toggle.querySelector(".dock-toggle-label").textContent=open?"Collapse":"Expand";
    toggle.querySelector(".dock-arrow").textContent=open?"◂":"▸";
   }
-  toggle.addEventListener("click",()=>expand(root.classList.contains("is-collapsed")));
+  if(window.matchMedia("(max-width: 620px)").matches && root.closest(".namavali-workspace")==null){
+   expand(false);
+   toggle.querySelector(".dock-toggle-label").textContent="Settings";
+  }
+  toggle.addEventListener("click",()=>{
+   const mobile=window.matchMedia("(max-width: 620px)").matches;
+   expand(mobile?!root.classList.contains("mobile-settings-open"):root.classList.contains("is-collapsed"));
+   if(mobile)toggle.querySelector(".dock-toggle-label").textContent=root.classList.contains("mobile-settings-open")?"Close settings":"Settings";
+  });
   play.addEventListener("click",()=>options.onPlay?.());
   pause.addEventListener("click",()=>options.onPause?.());
   next.addEventListener("click",()=>options.onNext?.());
