@@ -1573,7 +1573,7 @@ function jump(n,writeURL=true){
   msg("#result-note","Śloka "+n+" has not been published yet. Ślokas 1–"+verses.length+" are available.","ಶ್ಲೋಕ "+n+" ಇನ್ನೂ ಪ್ರಕಟವಾಗಿಲ್ಲ. 1–"+verses.length+" ಲಭ್ಯವಿದೆ.");return;
  }
  view="verses";pageIndex=Math.floor((n-1)/pageSize);selectedVerse=n;
- searchTerm="";$("#search").value="";$("#goto").value=String(n);
+ searchTerm="";$("#search").value="";
  if(writeURL)saveLocation("sloka",n);
  render();scrollToElement("verse-"+n);
 }
