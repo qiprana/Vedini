@@ -28,6 +28,11 @@ body{background:#e6eae1}
 .fc-status{margin:9px 0 0;color:#526b5b;font:13px/1.5 system-ui,sans-serif}
 .fc-intro{display:flex;justify-content:space-between;flex-wrap:wrap;gap:9px;color:#6b766c;font:13px/1.5 system-ui,sans-serif;margin:0 2px 12px}
 .fc-list{display:grid;gap:12px}
+.fc-section-heading{margin:20px 0 3px;padding:11px 13px;border-bottom:2px solid #c5d8c5;font:600 23px/1.4 Georgia,serif;color:#315642;scroll-margin-top:170px}
+.fc-section-heading small{display:block;margin-top:4px;color:#748578;font:12px/1.5 system-ui,sans-serif}
+.fc-verse.fc-dhyana{border-color:#d4dacf}
+.fc-verse.fc-dhyana .fc-number{color:#55775b}
+.fc-verse.fc-dhyana .fc-meaning{background:#f3f7f0}
 .fc-verse{display:grid;grid-template-columns:minmax(0,1.03fr) minmax(0,.97fr);border:1px solid #dce4d8;border-radius:12px;background:white;overflow:hidden;scroll-margin-top:165px}
 .fc-verse.fc-playing{border-color:#759e7a;box-shadow:0 0 0 2px #aecbb43d,0 8px 20px #5372551e;background:#f6faf4}
 .fc-reading{padding:16px 20px;min-width:0}
@@ -82,16 +87,15 @@ body{background:#fff}.fc-page{width:100%;max-width:none;padding:0;background:#ff
 </header>
 <section class="fc-hero">
 <div class="fc-eyebrow">Vedini · Lalitā Sahasranāma</div>
-<h1>Full Chanting · 183 Ślokas</h1>
+<h1>Full Chanting · Dhyāna & Sahasranāma</h1>
 <nav class="lalita-view-switcher" aria-label="Lalitā reading modes"><a href="./index.html">Study ślokas</a><a href="./chant.html" aria-current="page">Full Chanting</a><a href="./names.html">Divine Names</a></nav>
-<p>Follow the complete main hymn in order. Each śloka is paired with its simple meaning; audio can move automatically from one śloka to the next. For the introductory Dhyāna ślokas, individual names and detailed word meanings, use the <a href="./index.html">study reader</a>.</p>
+<p>Chant the four Dhyāna ślokas followed by all 183 ślokas of Lalitā Sahasranāma, with simple meanings alongside. Play continuously from the beginning or start anywhere. MSS uses the existing phrase recordings; where a main-śloka recording has an uncertain mapping, the complete VD recording is used instead.</p>
 </section>
 <section class="fc-toolbar" aria-label="Chanting and reading controls">
 <div class="fc-tools">
 <label>Script<select id="fc-script"><option value="dev">Devanagari</option><option value="kn">Kannada</option></select></label>
-<label>Voice<select id="fc-voice"><option value="VD" selected>VD</option><option value="KMP">KMP</option></select></label>
-<label>Speed<select id="fc-speed"><option value="0.75">0.75×</option><option value="0.9" selected>0.9×</option><option value="1">1×</option><option value="1.1">1.1×</option><option value="1.25">1.25×</option></select></label>
-<label>Jump to<select id="fc-jump" aria-label="Select śloka number"><option value="1">1</option></select></label>
+<label>Voice<select id="fc-voice"><option value="MSS" selected>MSS</option><option value="VD">VD</option><option value="KMP">KMP</option></select></label>
+<label>Jump to<select id="fc-jump" aria-label="Choose Dhyāna or main śloka"><option value="d-1">Dhyāna 1</option></select></label>
 <button type="button" id="fc-play-all" class="fc-primary" disabled>▶ Play all</button>
 <button type="button" id="fc-play-from" disabled>▶ From selected</button>
 <button type="button" id="fc-pause" disabled>Pause</button>
@@ -105,9 +109,9 @@ body{background:#fff}.fc-page{width:100%;max-width:none;padding:0;background:#ff
 <p class="fc-status" id="fc-status" role="status" aria-live="polite">Loading the ślokas and meanings…</p>
 <audio id="fc-audio" preload="none" aria-label="Continuous śloka chanting"></audio>
 </section>
-<div class="fc-intro"><span>Scroll and chant at your own pace, or play continuously.</span><span id="fc-count">Preparing 183 ślokas…</span></div>
-<section id="fc-list" class="fc-list" aria-label="All 183 Lalitā Sahasranāma ślokas"></section>
-<p class="fc-bottom">Simple meanings follow the current Vedini śloka text. Audio playback relies on the existing VD and KMP śloka recordings. <a href="../guide.html">Learn how to use Vedini</a> · <a href="./names.html">View all 1,000 divine names</a></p>
+<div class="fc-intro"><span>Four Dhyāna ślokas precede the main hymn. Play all, or select a starting verse.</span><span id="fc-count">Preparing 4 Dhyāna + 183 ślokas…</span></div>
+<section id="fc-list" class="fc-list" aria-label="Four Dhyāna ślokas followed by 183 Lalitā Sahasranāma ślokas"></section>
+<p class="fc-bottom">The Dhyāna introduction uses MSS recordings for every voice selection. The main hymn supports MSS, VD and KMP; uncertain MSS phrase mappings fall back to a complete VD śloka so the recitation is not shortened. All recordings play at their original speed. <a href="../guide.html">Learn how to use Vedini</a> · <a href="./names.html">View all 1,000 divine names</a></p>
 </main>
-<script src="./chant.js?v=20261028-v1" defer></script>
+<script src="./chant.js?v=20261028-dhyana-mss-normal-v2" defer></script>
 </body></html>
