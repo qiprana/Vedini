@@ -2086,18 +2086,23 @@ function syncDock(){
  root.classList.toggle("dock-active",active);
 }
 function initDock(){
- const dock=document.getElementById("practice-dock"),toggle=document.getElementById("practice-dock-toggle");if(!dock||!toggle)return;
- function expand(open){dock.classList.toggle("is-collapsed",!open);document.getElementById("study-workspace").classList.toggle("dock-collapsed",!open);toggle.setAttribute("aria-expanded",String(open));toggle.querySelector(".dock-toggle-label").textContent=open?"Collapse":"Expand";toggle.querySelector(".dock-arrow").textContent=open?"◂":"▸"}
- toggle.onclick=()=>expand(dock.classList.contains("is-collapsed"));
+ const dock=document.getElementById("practice-dock"),toggle=document.getElementById("practice-dock-toggle");
+ if(!dock||!toggle)return;
  const mode=()=>document.querySelector(".chanting-panels").dataset.mode;
- document.getElementById("dock-play").onclick=()=>document.getElementById(mode()==="guided"?"guided-play":"practice-play").click();
- document.getElementById("dock-pause").onclick=()=>document.getElementById(mode()==="guided"?"guided-pause":"practice-pause").click();
- document.getElementById("dock-stop").onclick=()=>document.getElementById(mode()==="guided"?"guided-stop":"practice-stop").click();
- document.getElementById("dock-next").onclick=()=>{
-  if(mode()==="guided"){document.getElementById("guided-next").click();return}
-  if(!practice.active)return;if(practice.dhyana){practiceStop("Dhyāna chanting complete");return;}practice.current++;practice.played=0;practice.paused=false;practice.token++;
-  if(practice.current>practice.end)practiceStop("Completed selected range");else practicePlayCurrent(practice.token);
- };
+ const controller=window.VediniPracticeDock.bind({
+  root:dock,workspace:"study-workspace",initialStatus:"Ready",
+  onPlay:()=>document.getElementById(mode()==="guided"?"guided-play":"practice-play").click(),
+  onPause:()=>document.getElementById(mode()==="guided"?"guided-pause":"practice-pause").click(),
+  onStop:()=>document.getElementById(mode()==="guided"?"guided-stop":"practice-stop").click(),
+  onNext:()=>{
+   if(mode()==="guided"){document.getElementById("guided-next").click();return}
+   if(!practice.active)return;
+   if(practice.dhyana){practiceStop("Dhyāna chanting complete");return}
+   practice.current++;practice.played=0;practice.paused=false;practice.token++;
+   if(practice.current>practice.end)practiceStop("Completed selected range");else practicePlayCurrent(practice.token);
+  }
+ });
+ const expand=controller.expand;
  document.getElementById("reader").addEventListener("click",event=>{
   const name=event.target.closest(".name-audio-button");
   if(name){event.preventDefault();event.stopImmediatePropagation();expand(true);
