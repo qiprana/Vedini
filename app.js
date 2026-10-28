@@ -2097,7 +2097,7 @@ function initDock(){
  document.getElementById("reader").addEventListener("click",event=>{
   const shortcut=event.target.closest(".dock-verse-shortcut");if(!shortcut)return;
   event.preventDefault();event.stopImmediatePropagation();expand(true);
-  if(shortcut.dataset.dockDhyana==="1"){const n=Number(shortcut.dataset.dockVerse);document.getElementById("practice-tab-chant").click();practiceStop("");practice.dhyana=true;practice.active=true;practice.current=n;practice.end=n;practice.reps=1;practice.played=0;practice.token++;practiceSyncButtons();practicePlayCurrent(practice.token);return}
+  if(shortcut.dataset.dockDhyana==="1"){const n=Number(shortcut.dataset.dockVerse);document.getElementById("learning-mode").value="chant";document.getElementById("learning-mode").dispatchEvent(new Event("change"));practiceStop("");practice.dhyana=true;practice.active=true;practice.current=n;practice.end=n;practice.reps=1;practice.played=0;practice.token++;practiceSyncButtons();practicePlayCurrent(practice.token);return}
   const n=Number(shortcut.dataset.dockVerse);document.getElementById("practice-tab-chant").click();
   document.getElementById("practice-from").value=String(n);document.getElementById("practice-to").value=String(n);
   if(practice.active)practiceStop("Starting selected śloka");
@@ -2105,27 +2105,26 @@ function initDock(){
  },true);
  syncDock();
 }
-function initPracticeModeTabs(){
- const host=document.querySelector(".practice-dock .chanting-panels");
- const chant=document.getElementById("practice-tab-chant");
- const guidedTab=document.getElementById("practice-tab-guided");
- if(!host||!chant||!guidedTab)return;
- function choose(mode){
-  if(host.dataset.mode===mode)return;
-  // Switching activities releases the previous playback, avoiding hidden audio.
-  if(mode==="guided"&&practice.active)practiceStop("Stopped");
-  if(mode==="chant"&&guided.active)guidedStop("Stopped");
-  host.dataset.mode=mode;
-  chant.classList.toggle("active",mode==="chant");
-  guidedTab.classList.toggle("active",mode==="guided");
-  chant.setAttribute("aria-selected",String(mode==="chant"));
-  guidedTab.setAttribute("aria-selected",String(mode==="guided"));
+function initLearningMode(){
+ const selector=$("#learning-mode"),host=document.querySelector(".practice-dock .chanting-panels");
+ if(!selector||!host)return;
+ function choose(){
+  const mode=selector.value,isChant=mode==="chant";
+  const old=host.dataset.mode;
+  if(old!==(isChant?"chant":"guided")){
+   if(practice.active)practiceStop("Stopped");
+   if(guided.active)guidedStop("Stopped");
+  }else if(!isChant&&guided.active){guidedStop("Stopped");}
+  host.dataset.mode=isChant?"chant":"guided";
+  if(!isChant)$("#guided-mode").value=mode;
+  document.querySelectorAll(".guided-name-setting").forEach(el=>el.hidden=mode==="verse");
+  document.querySelectorAll(".guided-verse-setting").forEach(el=>el.hidden=mode==="names");
   syncDock();
  }
- chant.addEventListener("click",()=>choose("chant"));
- guidedTab.addEventListener("click",()=>choose("guided"));
+ selector.addEventListener("change",choose);
+ choose();
 }
-initPracticeModeTabs();
+initLearningMode();
 initDock();
 init();
 })();
