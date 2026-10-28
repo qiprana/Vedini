@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Read and chant all 183 Lalitā Sahasranāma ślokas in order, with simple meanings alongside.">
 <title>Full Lalitā Sahasranāma Chanting | Vedini</title>
-<link rel="stylesheet" href="../styles.css?v=20261028-shared-dock-v1">
+<link rel="stylesheet" href="../styles.css?v=20261028-language-swap-v1">
 <style>
 body{background:#e6eae1}
 .fc-page{max-width:1320px;min-height:100vh;background:#fffaf2;padding:clamp(14px,2.7vw,32px)}
@@ -106,7 +106,7 @@ body{background:#fff}.fc-page{width:100%;max-width:none;padding:0;background:#ff
 <section class="fc-hero">
 <div class="fc-eyebrow">Vedini · Lalitā Sahasranāma</div>
 <h1>Full Chanting · Dhyāna & Sahasranāma</h1>
-<nav class="lalita-view-switcher" aria-label="Lalitā reading modes"><a href="./index.html">Study ślokas</a><a href="./chant.html" aria-current="page">Full Chanting</a><a href="./names.html">Divine Names</a></nav>
+<div class="lalita-language-bar"><div class="language-toggle" role="group" aria-label="Choose Sanskrit script"><button type="button" class="toggle chosen" id="fc-dev" aria-pressed="true" lang="hi">देवनागरी</button><button type="button" class="toggle" id="fc-kn" aria-pressed="false" lang="kn">ಕನ್ನಡ</button></div></div>
 <p>Chant the four Dhyāna ślokas followed by all 183 ślokas of Lalitā Sahasranāma, with simple meanings alongside. Play continuously from the beginning or start anywhere. MSS uses the existing phrase recordings; where a main-śloka recording has an uncertain mapping, the complete VD recording is used instead.</p>
 </section>
 <div class="study-workspace fc-workspace" id="study-workspace">
@@ -120,17 +120,18 @@ body{background:#fff}.fc-page{width:100%;max-width:none;padding:0;background:#ff
 <div class="practice-dock-body" id="practice-dock-body"><div class="fc-dock-fields">
 <label>Voice<select id="fc-voice"><option value="MSS" selected>MSS</option><option value="VD">VD</option><option value="KMP">KMP</option></select></label>
 <label>Start from<select id="fc-jump" aria-label="Choose Dhyāna or main śloka"><option value="d-1">Dhyāna 1</option></select></label>
-<label>Script<select id="fc-script"><option value="dev">Devanagari</option><option value="kn">Kannada</option></select></label></div>
+</div>
 <div class="fc-options"><label class="fc-check"><input type="checkbox" id="fc-show-iast" checked> Show IAST</label><label class="fc-check"><input type="checkbox" id="fc-show-meaning" checked> Show meanings</label></div>
 <button type="button" id="fc-print">Print reading</button>
 <p class="fc-dock-hint">Play begins at the selected verse. Use Next to skip forward; select any verse to jump while chanting.</p></div>
 <p class="dock-status" id="dock-status" role="status" aria-live="polite">Loading chanting data…</p>
 </aside><div class="study-main-content fc-main-content">
+<nav class="lalita-view-switcher" aria-label="Lalitā reading modes"><a href="./index.html">Study ślokas</a><a href="./chant.html" aria-current="page">Full Chanting</a><a href="./names.html">Divine Names</a></nav>
 <div id="sticky-verse-navigation" class="sticky-verse-navigation" aria-label="Dhyāna and śloka navigation"><nav id="fc-range-tabs" class="verse-group-tabs" aria-label="Select Dhyāna or ten-śloka group"></nav><nav id="fc-verse-quick-index" class="verse-quick-index" aria-label="Jump to a śloka"></nav></div>
 <div class="fc-intro"><span>Four Dhyāna ślokas precede the main hymn. Play all, or select a starting verse.</span><span id="fc-count">Preparing 4 Dhyāna + 183 ślokas…</span></div>
 <section id="fc-list" class="fc-list" aria-label="Four Dhyāna ślokas followed by 183 Lalitā Sahasranāma ślokas"></section>
 <p class="fc-bottom">The Dhyāna introduction uses MSS recordings for every voice selection. The main hymn supports MSS, VD and KMP; uncertain MSS phrase mappings fall back to a complete VD śloka so the recitation is not shortened. All recordings play at their original speed. <a href="../guide.html">Learn how to use Vedini</a> · <a href="./names.html">View all 1,000 divine names</a></p>
 </div></div></main>
 <script src="./practice-dock-controls.js?v=20261028-shared-v1"></script>
-<script src="./chant.js?v=20261028-range-nav-v1" defer></script>
+<script src="./chant.js?v=20261028-language-swap-v1" defer></script>
 </body></html>
