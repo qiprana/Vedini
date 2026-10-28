@@ -1760,7 +1760,7 @@ function loadAudio(){
   }catch(_){/* Keep the placeholder if the verse recording itself is unavailable. */}
  });
 }
-const practice={active:false,paused:false,current:1,end:1,reps:1,played:0,token:0};
+const practice={active:false,paused:false,current:1,end:1,reps:1,played:0,token:0,dhyana:false};
 function practiceStatus(message){const e=$("#practice-status");if(e)e.textContent=message;}
 function practiceSyncButtons(){
  $("#practice-play").disabled=practice.active;
@@ -1770,10 +1770,11 @@ function practiceSyncButtons(){
  syncDock();
 }
 function practiceStop(message="Stopped"){
- const audio=$("#practice-audio");practice.token++;practice.active=false;practice.paused=false;audio.pause();audio.removeAttribute("src");audio.load();practiceSyncButtons();practiceStatus(message);syncDock();
+ const audio=$("#practice-audio");practice.token++;practice.active=false;practice.paused=false;practice.dhyana=false;audio.pause();audio.removeAttribute("src");audio.load();practiceSyncButtons();practiceStatus(message);syncDock();
 }
 async function practiceAudioPath(n){
  const singer=$("#practice-voice").value;
+ if(practice.dhyana){const rows=dhyanaPhraseData[n]||[];const clips=rows.flatMap(row=>Array.isArray(row.clips)?row.clips:[row.clip]).filter(Boolean);if(!clips.length)throw Error("No Dhyāna MSS clips");return mergedAudioUrl(clips.map(mssClipPath));}
  if(singer==="MSS"){
   const verse=verses.find(v=>v.verse_number===n);
   const sources=verse?verseMssAudioPaths(verse):[];
@@ -1796,7 +1797,7 @@ async function practicePlayCurrent(token){
  const audio=$("#practice-audio");
  practice.played++;
  const n=practice.current;
- practiceStatus("Playing śloka "+n+" · repetition "+practice.played+" of "+practice.reps);
+ practiceStatus(practice.dhyana?"Playing Dhyāna "+n:("Playing śloka "+n+" · repetition "+practice.played+" of "+practice.reps));
  try{
   const source=await practiceAudioPath(n);
   if(token!==practice.token||!practice.active)return;
@@ -1812,6 +1813,7 @@ async function practicePlayCurrent(token){
   return;
  }
  // Follow the active verse across reader groups without interrupting this player.
+ if(practice.dhyana){if(view!=="dhyana"||searchTerm.trim()){view="dhyana";searchTerm="";$("#search").value="";render()}requestAnimationFrame(()=>document.getElementById("dhyana-"+n)?.scrollIntoView({block:"start",behavior:"smooth"}));syncDock();return;}
  if(pageIndex!==Math.floor((n-1)/pageSize)||view!=="verses"||searchTerm.trim()){
   view="verses";pageIndex=Math.floor((n-1)/pageSize);selectedVerse=n;
   searchTerm="";$("#search").value="";render();
@@ -1839,7 +1841,7 @@ function initPractice(){
   if(!Number.isInteger(from)||!Number.isInteger(to)||from<1||to>verses.length||from>to){practiceStatus("Select a valid range.");return;}
   // Pause any individual verse player before beginning the uninterrupted range.
   claimAudioFocus(audio);
-  practice.token++;practice.active=true;practice.paused=false;practice.current=from;practice.end=to;practice.reps=Number($("#practice-repeat").value);practice.played=0;
+  practice.token++;practice.active=true;practice.paused=false;practice.dhyana=false;practice.current=from;practice.end=to;practice.reps=Number($("#practice-repeat").value);practice.played=0;
   practiceSyncButtons();syncDock();practicePlayCurrent(practice.token);
  });
  $("#practice-pause").addEventListener("click",()=>{
@@ -1849,7 +1851,7 @@ function initPractice(){
   practiceSyncButtons();syncDock();
  });
  $("#practice-stop").addEventListener("click",()=>practiceStop());
- audio.addEventListener("ended",()=>{if(practice.active&&!practice.paused){if(practice.played>=practice.reps){practice.current++;practice.played=0;if(practice.current>practice.end){practiceStop("Completed selected range");return;}}practicePlayCurrent(practice.token)}});
+ audio.addEventListener("ended",()=>{if(practice.active&&!practice.paused){if(practice.dhyana){practiceStop("Dhyāna chanting complete");return;}if(practice.played>=practice.reps){practice.current++;practice.played=0;if(practice.current>practice.end){practiceStop("Completed selected range");return;}}practicePlayCurrent(practice.token)}});
  audio.addEventListener("error",()=>{if(practice.active)practiceStop("Audio unavailable for śloka "+practice.current+".")});
  practiceSyncButtons();
 }
@@ -2093,7 +2095,7 @@ function initDock(){
  document.getElementById("dock-stop").onclick=()=>document.getElementById(mode()==="guided"?"guided-stop":"practice-stop").click();
  document.getElementById("dock-next").onclick=()=>{
   if(mode()==="guided"){document.getElementById("guided-next").click();return}
-  if(!practice.active)return;practice.current++;practice.played=0;practice.token++;
+  if(!practice.active)return;if(practice.dhyana){practiceStop("Dhyāna chanting complete");return;}practice.current++;practice.played=0;practice.paused=false;practice.token++;
   if(practice.current>practice.end)practiceStop("Completed selected range");else practicePlayCurrent(practice.token);
  };
  document.getElementById("reader").addEventListener("click",event=>{
@@ -2106,7 +2108,7 @@ function initDock(){
   }
   const shortcut=event.target.closest(".dock-verse-shortcut");if(!shortcut)return;
   event.preventDefault();event.stopImmediatePropagation();expand(true);
-  if(shortcut.dataset.dockDhyana==="1"){showDhyana(Number(shortcut.dataset.dockVerse));return}
+  if(shortcut.dataset.dockDhyana==="1"){const n=Number(shortcut.dataset.dockVerse);document.getElementById("practice-tab-chant").click();practiceStop("");practice.dhyana=true;practice.active=true;practice.current=n;practice.end=n;practice.reps=1;practice.played=0;practice.token++;practiceSyncButtons();practicePlayCurrent(practice.token);return}
   const n=Number(shortcut.dataset.dockVerse);document.getElementById("practice-tab-chant").click();
   document.getElementById("practice-from").value=String(n);document.getElementById("practice-to").value=String(n);
   if(practice.active)practiceStop("Starting selected śloka");
