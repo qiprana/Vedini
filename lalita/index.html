@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Listen, chant and explore the meanings of Lalitā Sahasranāma on Vedini.">
   <title>Lalitā Sahasranāma | Vedini</title>
-  <link rel="stylesheet" href="../styles.css?v=20261028-sticky-practice-v1">
+  <link rel="stylesheet" href="../styles.css?v=20261028-range-nav-v1">
 </head>
 <body>
 <main class="page reader-page">
@@ -96,19 +96,8 @@
       </div>
       <input id="search" type="search" placeholder="Search ślokas and names…" aria-label="Search ślokas and names">
     </div>
-    <nav class="reader-nav reader-mode-nav" aria-label="Reader sections and direct navigation">
-      <div class="reader-tabs" role="tablist" aria-label="Sections">
-        <button type="button" id="tab-dhyana" role="tab" aria-selected="false">Dhyāna (4)</button>
-        <button type="button" id="tab-verses" class="chosen" role="tab" aria-selected="true">Main Ślokas</button>
-      </div>
-      <div class="jump-controls">
-        <label for="goto">Go to śloka</label>
-        <input id="goto" type="number" min="1" max="183" placeholder="1–183" aria-label="Śloka number">
-        <button type="button" id="go">Go</button>
-      </div>
-    </nav>
- <div id="sticky-verse-navigation" class="sticky-verse-navigation" aria-label="Quick śloka navigation">
-      <nav class="verse-group-tabs" id="verse-group-tabs" aria-label="Choose ten-śloka group"></nav>
+    <div id="sticky-verse-navigation" class="sticky-verse-navigation" aria-label="Dhyāna and śloka navigation">
+      <nav class="verse-group-tabs" id="verse-group-tabs" aria-label="Choose Dhyāna or ten-śloka group"></nav>
       <nav id="verse-quick-index" class="verse-quick-index" aria-label="Jump to a śloka in this group"></nav>
     </div>
     <div class="notice" id="result-note" role="status" aria-live="polite"></div>
@@ -118,12 +107,6 @@
     </section>
     <section id="dhyana">
       <h2 id="dhyana-heading">Dhyāna Ślokas</h2>
-      <nav id="dhyana-quick-nav" class="dhyana-quick-nav" aria-label="Jump to Dhyāna śloka">
-        <button type="button" data-dhyana-jump="1">Dhyāna 1</button>
-        <button type="button" data-dhyana-jump="2">Dhyāna 2</button>
-        <button type="button" data-dhyana-jump="3">Dhyāna 3</button>
-        <button type="button" data-dhyana-jump="4">Dhyāna 4</button>
-      </nav>
       <div id="dhyana-cards"></div>
     </section>
     <section id="main-stotra">
@@ -144,5 +127,5 @@
 </main>
 <script src="../lalita-source-review.js?v=20261026-name-mantra-no-duplicate-v1"></script>
 <script src="./practice-dock-controls.js?v=20261028-shared-v1"></script>
-<script src="../app.js?v=20261028-shared-v1"></script>
+<script src="../app.js?v=20261028-range-nav-v1"></script>
 </body></html>
