@@ -12,10 +12,10 @@ test('Lalita page loads content without runtime errors',async({page})=>{
 test('practice modes switch and preserve controls',async({page})=>{
  await page.goto('/lalita/');
  await expect(page.locator('#practice-play')).toBeVisible();
- await page.locator('#practice-tab-guided').click();
+ await page.locator('#learning-mode').selectOption('both');
  await expect(page.locator('#guided-play')).toBeVisible();
  await expect(page.locator('#guided-name-repeat')).toHaveValue('2');
- await page.locator('#practice-tab-chant').click();
+ await page.locator('#learning-mode').selectOption('chant');
  await expect(page.locator('#practice-repeat')).toHaveValue('2');
  await expect(page.locator('#practice-play')).toBeVisible();
 });
@@ -235,4 +235,23 @@ test('Full Chanting bottom player keeps playback transport visible on mobile',as
  await expect(page.locator('#practice-dock-body')).toBeHidden();
  await page.evaluate(()=>window.scrollTo(0,document.body.scrollHeight/2));
  await expect.poll(()=>page.locator('.fc-main-content>.lalita-reader-toolbar').evaluate(el=>Math.round(el.getBoundingClientRect().top))).toBe(0);
+});
+
+test('single learning selector switches conditional fields and uses same transport',async({page})=>{
+ await page.goto('/lalita/?sloka=1');
+ await expect(page.locator('#learning-mode')).toBeVisible();
+ await expect(page.locator('#practice-from')).toBeVisible();
+ await page.locator('#learning-mode').selectOption('names');
+ await expect(page.locator('#guided-from')).toBeVisible();
+ await expect(page.locator('#guided-name-repeat')).toBeVisible();
+ await expect(page.locator('.guided-verse-setting')).toBeHidden();
+ await page.locator('#learning-mode').selectOption('verse');
+ await expect(page.locator('.guided-name-setting')).toBeHidden();
+ await expect(page.locator('#guided-verse-repeat')).toBeVisible();
+ await page.locator('#learning-mode').selectOption('both');
+ await expect(page.locator('.guided-name-setting')).toBeVisible();
+ await expect(page.locator('.guided-verse-setting')).toBeVisible();
+ await page.locator('#learning-mode').selectOption('chant');
+ await expect(page.locator('#practice-voice')).toBeVisible();
+ await expect(page.locator('#guided-panel')).toBeHidden();
 });
