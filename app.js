@@ -1426,7 +1426,9 @@ function showResultList(q){
 function renderGroupTabs(){
  const root=$("#verse-group-tabs");if(!root)return;
  const count=Math.ceil(verses.length/pageSize);
- root.innerHTML=Array.from({length:count},(_,i)=>{const start=i*pageSize+1,end=Math.min(verses.length,start+pageSize-1);return "<button type='button' class='group-tab "+(i===pageIndex?"current":"")+"' aria-current='"+(i===pageIndex?"page":"false")+"' data-group='"+i+"'>"+start+"–"+end+"</button>"}).join("");
+ root.innerHTML="<button type='button' class='group-tab "+(view==="dhyana"?"current":"")+"' data-dhyana-group='1' "+(view==="dhyana"?"aria-current='page'":"")+">Dhyāna 1–4</button>"+
+ Array.from({length:count},(_,i)=>{const start=i*pageSize+1,end=Math.min(verses.length,start+pageSize-1);return "<button type='button' class='group-tab "+(view==="verses"&&i===pageIndex?"current":"")+"' aria-current='"+(view==="verses"&&i===pageIndex?"page":"false")+"' data-group='"+i+"'>"+start+"–"+end+"</button>"}).join("");
+ root.querySelector("[data-dhyana-group]").onclick=()=>showDhyana(1);
  root.querySelectorAll("button[data-group]").forEach(btn=>btn.onclick=()=>openGroup(Number(btn.dataset.group)));
 }
 function updateNavigation(){
@@ -1434,34 +1436,16 @@ function updateNavigation(){
  $("#dhyana").hidden=searching||view!=="dhyana";
  $("#main-stotra").hidden=searching||view!=="verses";
  $("#search-results").hidden=!searching;
- $("#verse-group-tabs").hidden=searching||view!=="verses";
+ $("#sticky-verse-navigation").hidden=searching;
  $("#bottom-navigation").hidden=searching||view!=="verses";
- $("#sticky-verse-navigation").hidden=searching||view!=="verses";
- const dv=view==="dhyana";
- $("#tab-dhyana").classList.toggle("chosen",dv);
- $("#tab-verses").classList.toggle("chosen",!dv);
- $("#tab-dhyana").setAttribute("aria-selected",String(dv));
- $("#tab-verses").setAttribute("aria-selected",String(!dv));
- const totalPages=Math.ceil(verses.length/pageSize);
  renderGroupTabs();
+ const totalPages=Math.ceil(verses.length/pageSize);
  $("#bottom-previous").disabled=pageIndex<=0;
  $("#bottom-next").disabled=pageIndex>=totalPages-1;
  const start=pageIndex*pageSize+1,end=Math.min(verses.length,start+pageSize-1);
- const rangeText=langText("Ślokas "+start+"–"+end+" of "+verses.length,"ಶ್ಲೋಕಗಳು "+start+"–"+end+" / "+verses.length);
- $("#bottom-position").textContent=rangeText;
+ $("#bottom-position").textContent=langText("Ślokas "+start+"–"+end+" of "+verses.length,"ಶ್ಲೋಕಗಳು "+start+"–"+end+" / "+verses.length);
  msg("#dhyana-heading","Dhyāna Ślokas","ಧ್ಯಾನ ಶ್ಲೋಕಗಳು");
  msg("#main-heading","Ślokas "+start+"–"+end,"ಶ್ಲೋಕಗಳು "+start+"–"+end);
- msg("#study-languages-label","Script & meaning","ಲಿಪಿ ಮತ್ತು ಅರ್ಥ:");
-}
-function initDhyanaQuickNav(){
- const root=$("#dhyana-quick-nav");if(!root)return;
- root.querySelectorAll("[data-dhyana-jump]").forEach(btn=>{
-  btn.onclick=()=>{
-   const n=Number(btn.dataset.dhyanaJump);
-   showDhyana(n);
-   requestAnimationFrame(()=>document.querySelector("#dhyana-"+n)?.scrollIntoView({behavior:"smooth",block:"start"}));
-  };
- });
 }
 function selectVisibleVerse(number){
  if(!Number.isInteger(number)||number<1||number>verses.length)return;
@@ -1482,16 +1466,18 @@ function selectVisibleVerse(number){
 }
 function updateQuickIndex(){
  const root=$("#verse-quick-index");if(!root)return;
- if(view!=="verses"||searchTerm.trim()){root.hidden=true;return;}
+ if(searchTerm.trim()){root.hidden=true;return}
  root.hidden=false;
+ if(view==="dhyana"){
+  root.innerHTML="<span class='quick-label'>Dhyāna</span><div class='quick-buttons'>"+
+  Array.from({length:dhyana.length},(_,i)=>"<button type='button' data-dhyana-quick='"+(i+1)+"' aria-label='Dhyāna "+(i+1)+"'>"+(i+1)+"</button>").join("")+"</div>";
+  root.querySelectorAll("[data-dhyana-quick]").forEach(btn=>btn.onclick=()=>showDhyana(Number(btn.dataset.dhyanaQuick)));
+  return;
+ }
  const start=pageIndex*pageSize+1,end=Math.min(verses.length,start+pageSize-1);
- root.innerHTML="<span class='quick-label'>"+esc(langText("In this group","ಈ ವಿಭಾಗದಲ್ಲಿ"))+"</span><div class='quick-buttons'>"+Array.from({length:end-start+1},(_,i)=>{const n=start+i;return "<button type='button' aria-label='Śloka "+n+"' data-quick='"+n+"' class='"+(n===selectedVerse?"quick-current":"")+"'"+(n===selectedVerse?" aria-current='location'":"")+">"+n+"</button>"}).join("")+"</div>";
- root.querySelectorAll("button[data-quick]").forEach(b=>b.onclick=()=>{
-  const number=Number(b.dataset.quick);
-  selectVisibleVerse(number);
-  saveLocation("sloka",number);
-  scrollToElement("verse-"+number);
- });
+ root.innerHTML="<span class='quick-label'>In this group</span><div class='quick-buttons'>"+
+ Array.from({length:end-start+1},(_,i)=>{const n=start+i;return "<button type='button' aria-label='Śloka "+n+"' data-quick='"+n+"' class='"+(n===selectedVerse?"quick-current":"")+"'>"+n+"</button>"}).join("")+"</div>";
+ root.querySelectorAll("[data-quick]").forEach(btn=>btn.onclick=()=>{const n=Number(btn.dataset.quick);selectVisibleVerse(n);saveLocation("sloka",n);scrollToElement("verse-"+n)});
 }
 // Passive, animation-frame-throttled scroll tracking: update the highlighted number
 // without re-rendering ślokas or interrupting a playing recording.
@@ -1553,7 +1539,7 @@ function render(){
  // After layout settles, sync the index to the śloka actually in view.
  requestAnimationFrame(queueVerseScrollUpdate);
  // Inline players replaced with the shared practice dock.
- initDhyanaQuickNav();
+
 }
 function saveLocation(kind,n){
  const url=new URL(window.location.href);
@@ -2061,10 +2047,10 @@ async function init(){
 $("#dev").onclick=()=>switchLanguage(false);
 $("#kn").onclick=()=>switchLanguage(true);
 $("#search").oninput=e=>{searchTerm=e.target.value;render()};
-$("#go").onclick=()=>jump(Number($("#goto").value));
-$("#goto").onkeydown=e=>{if(e.key==="Enter")jump(Number(e.target.value))};
-$("#tab-dhyana").onclick=()=>showDhyana(1);
-$("#tab-verses").onclick=()=>openGroup(pageIndex);
+
+
+
+
 $("#bottom-previous").onclick=()=>openGroup(pageIndex-1);
 $("#bottom-next").onclick=()=>openGroup(pageIndex+1);
 window.addEventListener("scroll",queueVerseScrollUpdate,{passive:true});
