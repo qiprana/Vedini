@@ -149,6 +149,9 @@ test('Batch 5 names 801–1000 have distinct bilingual significance and no unsou
 test('significance rewrites are bilingual, unique and keep traditional phrases',()=>{
  const rows=JSON.parse(file('data/lalita/significance-rewrites.json')).names;
  const insights=Object.fromEntries(['001-0200','201-0400','401-0600','601-0800','801-1000'].flatMap(n=>JSON.parse(file('data/lalita/wisdom-insights-'+n+'.json')).names).map(n=>[n.number,n]));
+ assert.equal(rows.length,1000,'Every name needs a significance rewrite');
+ const shorts=rows.filter(r=>r.short).map(r=>r.short.en.trim().toLowerCase());
+ assert.equal(new Set(shorts).size,shorts.length,'Short phrases must be unique');
  const seen=new Set();
  for(const row of rows){
   assert.ok(insights[row.number],'Unknown name '+row.number);
