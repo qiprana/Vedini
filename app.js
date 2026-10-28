@@ -914,7 +914,7 @@ function nameSection(v){
   // A shared phrase's assigned name has a button; names with no clip have none.
   const clips=nameAudioClips(number);
   const audio=clips.length
-   ?"<button type='button' class='name-audio-button' data-name-clips='"+esc(clips.join(","))+"' aria-label='"+esc(langText("Play MSS for name "+number,"ನಾಮ "+number+" MSS ಧ್ವನಿಯನ್ನು ಪ್ಲೇ ಮಾಡಿ"))+"' title='"+esc(langText("Play name","ನಾಮವನ್ನು ಪ್ಲೇ ಮಾಡಿ"))+"'>♪</button>"
+   ?"<button type='button' class='name-audio-button' data-name-clips='"+esc(clips.join(","))+"' aria-pressed='false' aria-label='"+esc(langText("Play MSS for name "+number,"ನಾಮ "+number+" MSS ಧ್ವನಿಯನ್ನು ಪ್ಲೇ ಮಾಡಿ"))+"' title='"+esc(langText("Play name","ನಾಮವನ್ನು ಪ್ಲೇ ಮಾಡಿ"))+"'>♪</button>"
    :"";
   html+="<div class='name-audio-card'>"+audio+"<details class='name-details compact-name-row' data-detail-id='name-"+number+"'><summary><span class='name-summary-grid'><span class='name-identity-inline'><span class='name-number'>"+esc(number)+".</span><span class='name-written'>"+highlighted(written)+"</span><span class='name-roman'>"+highlighted(roman)+"</span></span><span class='name-essence'>"+highlightedPair(essential,pairedEssential)+"</span><span class='name-inline-wisdom-slot'>"+inlineWisdomInsight(number)+"</span></span></summary>"+sections+"</details></div>";
  }
@@ -963,7 +963,7 @@ function stopNameAudio(){
   nameAudioPlayer.removeAttribute("src");
   nameAudioPlayer.load();
  }
- if(nameAudioActiveButton)nameAudioActiveButton.classList.remove("playing");
+ if(nameAudioActiveButton){nameAudioActiveButton.classList.remove("playing");nameAudioActiveButton.setAttribute("aria-pressed","false");}
  nameAudioActiveButton=null;nameAudioQueue=[];nameAudioIndex=0;
 }
 function initNameAudio(){
@@ -978,6 +978,8 @@ function initNameAudio(){
     return;
    }
    stopNameAudio();
+   // Playing a name takes over from any active full-range chanting session.
+   if(practice.active)practiceStop("Stopped for name recording");
    nameAudioQueue=button.dataset.nameClips.split(",").map(Number).filter(n=>Number.isInteger(n)&&n>0&&n<=MSS_LAST_CLIP).map(mssClipPath);
    if(!nameAudioQueue.length)return;
    if(!nameAudioPlayer){
@@ -1009,6 +1011,7 @@ function initNameAudio(){
    const started=nameAudioPlayer.play();
    if(started&&started.catch)started.catch(stopNameAudio);
    button.classList.add("playing");
+   button.setAttribute("aria-pressed","true");
   });
  });
 }
@@ -1535,6 +1538,8 @@ function render(){
   document.querySelectorAll(".card").forEach(e=>e.classList.toggle("selected-verse",e.id==="verse-"+selectedVerse));
  }
  restoreDetails(opened);
+ // Every reader render replaces the names; reconnect their inline MSS playback.
+ initNameAudio();
  requestAnimationFrame(fitVerseLines);
  // After layout settles, sync the index to the śloka actually in view.
  requestAnimationFrame(queueVerseScrollUpdate);
@@ -2090,13 +2095,6 @@ function initDock(){
  });
  const expand=controller.expand;
  document.getElementById("reader").addEventListener("click",event=>{
-  const name=event.target.closest(".name-audio-button");
-  if(name){event.preventDefault();event.stopImmediatePropagation();expand(true);
-   document.getElementById("practice-tab-guided").click();
-   const verse=Number(name.closest(".card")?.id?.replace("verse-",""));
-   if(verse){document.getElementById("guided-from").value=String(verse);document.getElementById("guided-to").value=String(verse)}
-   return;
-  }
   const shortcut=event.target.closest(".dock-verse-shortcut");if(!shortcut)return;
   event.preventDefault();event.stopImmediatePropagation();expand(true);
   if(shortcut.dataset.dockDhyana==="1"){const n=Number(shortcut.dataset.dockVerse);document.getElementById("practice-tab-chant").click();practiceStop("");practice.dhyana=true;practice.active=true;practice.current=n;practice.end=n;practice.reps=1;practice.played=0;practice.token++;practiceSyncButtons();practicePlayCurrent(practice.token);return}
