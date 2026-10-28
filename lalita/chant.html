@@ -121,7 +121,7 @@ body{background:#fff}.fc-page{width:100%;max-width:none;padding:0;background:#ff
 <section class="fc-hero">
 <div class="fc-eyebrow">Vedini · Lalitā Sahasranāma</div>
 <h1>Full Chanting · Dhyāna & Sahasranāma</h1>
-<div class="lalita-language-bar"><div class="language-toggle" role="group" aria-label="Choose Sanskrit script"><button type="button" class="toggle chosen" id="fc-dev" aria-pressed="true" lang="hi">देवनागरी</button><button type="button" class="toggle" id="fc-kn" aria-pressed="false" lang="kn">ಕನ್ನಡ</button></div></div>
+<div class="lalita-language-bar"><div class="language-toggle" role="group" aria-label="Choose Sanskrit script"><button type="button" class="toggle chosen" id="fc-dev" data-lalita-language="dev" aria-pressed="true" lang="hi">देवनागरी</button><button type="button" class="toggle" id="fc-kn" data-lalita-language="kn" aria-pressed="false" lang="kn">ಕನ್ನಡ</button></div></div>
 </section>
 <div class="study-workspace fc-workspace" id="study-workspace">
 <aside class="practice-dock" id="practice-dock" aria-label="Full chanting player">
@@ -147,5 +147,6 @@ body{background:#fff}.fc-page{width:100%;max-width:none;padding:0;background:#ff
 <p class="fc-bottom">The Dhyāna introduction uses MSS recordings for every voice selection. The main hymn supports MSS, VD and KMP; uncertain MSS phrase mappings fall back to a complete VD śloka so the recitation is not shortened. All recordings play at their original speed. <a href="../guide.html">Learn how to use Vedini</a> · <a href="./names.html">View all 1,000 divine names</a></p>
 </div></div></main>
 <script src="./practice-dock-controls.js?v=20261028-shared-v1"></script>
-<script src="./chant.js?v=20261028-language-swap-v1" defer></script>
+<script src="./language-preference.js?v=1"></script>
+<script src="./chant.js?v=20261028-language-unified-v1" defer></script>
 </body></html>
