@@ -15,13 +15,15 @@
 .name-ref-table{border-collapse:collapse;width:100%;min-width:0;table-layout:fixed}
 .name-ref-table thead th{position:sticky;top:0;background:#eaf2e9;z-index:2}
 .name-ref-table th{text-align:left;padding:12px;color:#305743;font:700 13px system-ui,sans-serif;border-bottom:1px solid #d5e0d2}
-.name-ref-table th:first-child{width:60px}.name-ref-table th:nth-child(2){width:31%}.name-ref-table th:nth-child(3){width:32%}
+.name-ref-table th:first-child{width:60px}.name-ref-table th:nth-child(2){width:25%}.name-ref-table th:nth-child(3){width:24%}
 .name-ref-table td{vertical-align:top;padding:12px;border-bottom:1px solid #edf0ea;overflow-wrap:anywhere;line-height:1.5;font-size:15px}
 .name-ref-table tbody tr:nth-child(even){background:#fcfdfb}
 .name-ref-table .dev{font:500 18px/1.55 Georgia,serif;display:block;color:#283c30}
 .name-ref-table .iast{display:block;font:600 13px/1.65 system-ui,sans-serif;color:#486956}
 .name-ref-table .num{font:650 13px system-ui;color:#728275}
 .name-ref-table .benefit{font-weight:600;color:#37654c}
+.namavali-dev{display:block;font:550 17px/1.7 "Noto Serif Devanagari","Kohinoor Devanagari",serif;color:#2a5340}
+.namavali-iast{display:block;font:400 13px/1.6 Georgia,serif;color:#566f60;margin-top:3px}
 .name-ref-table small{display:block;font:11px/1.5 system-ui,sans-serif;color:#7b837a;margin-top:3px}
 .name-ref-note{font:12px/1.7 system-ui,sans-serif;color:#707a70;margin:18px 0}
 .name-ref-back{display:inline-flex;margin:1px 0 10px;color:#315e49;font:650 13px/1.5 system-ui,sans-serif;text-underline-offset:3px}
@@ -38,6 +40,7 @@
   .name-ref-table td:nth-child(3)::before,.name-ref-table td:nth-child(4)::before{display:block;margin-bottom:3px;font:750 11px/1.4 system-ui,sans-serif;text-transform:uppercase;letter-spacing:.04em;color:#728275}
   .name-ref-table td:nth-child(3)::before{content:"Simple meaning"}
   .name-ref-table td:nth-child(4)::before{content:"Benefit"}
+  .name-ref-table td:nth-child(5)::before{content:"Nāmāvalī"}
 }
 </style></head>
 <body><main class="names-reference">
@@ -49,13 +52,14 @@
   <a href="../contact.html" class="site-tab">Contact</a>
 </nav></header>
 <h1>Lalitā Sahasranāma · 1,000 Divine Names</h1>
-<p class="lead">A continuous reference to each divine name, its simple meaning, and its benefit. Scroll through all 1,000 names in order, or use the search and range filters. Benefit phrases marked “The Sanskrit Channel” are reproduced from the screenshots shared for this project. Other benefit phrases are editorial interpretations, not traditionally verified promises.</p>
+<nav class="lalita-view-switcher" aria-label="Lalitā reading modes"><a href="./index.html">Study ślokas</a><a href="./chant.html">Full Chanting</a><a href="./names.html" aria-current="page">Divine Names</a></nav>
+<p class="lead">A continuous reference to each divine name, its simple meaning, benefit, and the Nāmāvalī form for chanting. Scroll through all 1,000 names in order, or use the search and range filters. Benefit phrases marked “The Sanskrit Channel” are reproduced from the screenshots shared for this project. Other benefit phrases are editorial interpretations, not traditionally verified promises.</p>
 <a class="name-ref-back" href="./index.html">← Back to Lalitā study</a>
-<div class="name-ref-tools"><label class="searchbox">Search names, meanings, or benefits<input id="name-q" type="search" placeholder="Try compassion, Śrīmātā, or 78"></label>
+<div class="name-ref-tools"><label class="searchbox">Search names, meanings, benefits, or mantras<input id="name-q" type="search" placeholder="Try compassion, Śrīmātā, or 78"></label>
 <label>Names<select id="name-range"><option value="0">All 1–1,000</option><option value="1">1–200</option><option value="2">201–400</option><option value="3">401–600</option><option value="4">601–800</option><option value="5">801–1,000</option></select></label>
 </div>
 <div class="name-ref-meta"><span id="name-state">Loading names…</span><span id="name-count"></span></div>
-<div class="name-ref-scroll"><table class="name-ref-table"><thead><tr><th>No.</th><th>Divine name</th><th>Simple meaning</th><th>Benefit</th></tr></thead><tbody id="name-rows"></tbody></table></div>
+<div class="name-ref-scroll"><table class="name-ref-table"><thead><tr><th>No.</th><th>Divine name</th><th>Simple meaning</th><th>Benefit</th><th>Nāmāvalī (chant aloud)</th></tr></thead><tbody id="name-rows"></tbody></table></div>
 
 <p class="name-ref-note">These spiritual associations are presented for study and contemplation. They do not guarantee worldly outcomes. For detailed explanations, Sanskrit verses, and chanting, visit the <a href="./index.html">main Lalitā reader</a>.</p>
 </main>
@@ -65,25 +69,27 @@ const $=s=>document.querySelector(s),esc=s=>String(s||"").normalize("NFD").repla
 let names=[];
 const render=()=>{
  const q=esc($("#name-q").value.trim()),range=+$("#name-range").value;
- const results=names.filter(n=>(!range||Math.ceil(n.number/200)===range)&&(!q||esc([n.number,n.sanskrit,n.iast,n.meaning,n.benefit].join(" ")).includes(q)));
+ const results=names.filter(n=>(!range||Math.ceil(n.number/200)===range)&&(!q||esc([n.number,n.sanskrit,n.iast,n.meaning,n.benefit,n.mantra?.dev,n.mantra?.iast].join(" ")).includes(q)));
  const body=$("#name-rows");body.replaceChildren();
  const td=(tr,text,cl)=>{const e=document.createElement("td");if(cl)e.className=cl;e.textContent=text;tr.append(e);return e;};
  for(const n of results){
    const tr=document.createElement("tr");td(tr,n.number,"num");const cell=td(tr,"");const d=document.createElement("span");d.className="dev";d.textContent=n.sanskrit;const a=document.createElement("span");a.className="iast";a.textContent=n.iast;cell.append(d,a);
-   td(tr,n.meaning);const benefit=td(tr,n.benefit,"benefit");const source=document.createElement("small");source.textContent=n.source==="sanskrit_channel_screenshot"?"✦ The Sanskrit Channel · screenshot":"Editorial interpretation";benefit.append(source);body.append(tr);
+   td(tr,n.meaning);const benefit=td(tr,n.benefit,"benefit");const source=document.createElement("small");source.textContent=n.source==="sanskrit_channel_screenshot"?"✦ The Sanskrit Channel · screenshot":"Editorial interpretation";benefit.append(source);
+   const mantra=td(tr,"","namavali-cell");const dev=document.createElement("strong");dev.className="namavali-dev";dev.lang="sa";dev.textContent=n.mantra?.dev||"";const roman=document.createElement("span");roman.className="namavali-iast";roman.textContent=n.mantra?.iast||"";mantra.append(dev,roman);body.append(tr);
  }
  $("#name-count").textContent=results.length+" of 1,000 names";
- if(!results.length){const empty=document.createElement("tr");const cell=document.createElement("td");cell.colSpan=4;cell.className="name-ref-empty";cell.textContent="No matching names. Try a different search or range.";empty.append(cell);body.append(empty)}
+ if(!results.length){const empty=document.createElement("tr");const cell=document.createElement("td");cell.colSpan=5;cell.className="name-ref-empty";cell.textContent="No matching names. Try a different search or range.";empty.append(cell);body.append(empty)}
 };
 for(const sel of ["#name-q","#name-range"])$(sel).addEventListener(sel==="#name-q"?"input":"change",render);
 try{
- const [b,m,benefits]=await Promise.all(["brief-names-draft.json","names-interpretations-draft.json","name-benefits.json"].map(async file=>{
+ const [b,m,benefits,namavali]=await Promise.all(["brief-names-draft.json","names-interpretations-draft.json","name-benefits.json","namavali-001-1000.json"].map(async file=>{
  const r=await fetch("../data/lalita/"+file,{cache:"no-store"});if(!r.ok)throw Error(file+" HTTP "+r.status);return r.json();
  }));
  const meanings=new Map(m.map(n=>[n.number,n.essential_meaning?.en]));
  const ben=new Map(benefits.names.map(n=>[n.number,n]));
- if(b.length!==1000||ben.size!==1000)throw Error("Incomplete data");
- names=b.map((n,i)=>({number:i+1,sanskrit:n.sanskrit,iast:n.iast,meaning:meanings.get(i+1)||n.english||"",benefit:ben.get(i+1)?.en||"",source:ben.get(i+1)?.source||""}));
+ const mantras=new Map(namavali.names.map(n=>[n.number,n]));
+ if(b.length!==1000||ben.size!==1000||mantras.size!==1000)throw Error("Incomplete data");
+ names=b.map((n,i)=>({number:i+1,sanskrit:n.sanskrit,iast:n.iast,meaning:meanings.get(i+1)||n.english||"",benefit:ben.get(i+1)?.en||"",source:ben.get(i+1)?.source||"",mantra:mantras.get(i+1)}));
  if(names.some(n=>!n.meaning||!n.benefit))throw Error("Missing name meaning or benefit");
  $("#name-state").textContent="All 1,000 names loaded";render();
 }catch(e){$("#name-state").textContent="Unable to load names: "+e.message}
