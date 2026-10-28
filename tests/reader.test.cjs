@@ -164,3 +164,33 @@ test('significance rewrites are bilingual, unique and keep traditional phrases',
   assert.doesNotMatch(row.significance.en,/\bbenefit/i,'Uses "benefit" '+row.number);
  }
 });
+
+test('verse and Dhyāna meanings share exactly one combined, collapsed disclosure',()=>{
+ assert.match(app,/function combinedVerseMeaning\(/);
+ assert.match(app,/verse-combined-meaning/);
+ assert.doesNotMatch(app,/function optionalVerseMeaning\(|function moreSection\(/);
+ assert.match(app,/return combinedVerseMeaning\(summary,info,false,v.verse_number\)/);
+ assert.match(app,/return combinedVerseMeaning\(meaning,info,true,v.verse_number\)/);
+});
+test('Nāmāvalī Sanskrit spellings retain corrected name inflections',()=>{
+ const names=JSON.parse(file('data/lalita/namavali-001-1000.json')).names;
+ const fixed={64:['ॐ देवर्षिगणसङ्घातस्तूयमानात्मवैभवायै नमः','Oṃ Devarṣigaṇasaṅghātastūyamānātmavaibhavāyai Namaḥ'],
+ 82:['ॐ कामेश्वरास्त्रनिर्दग्धसभण्डासुरशून्यकायै नमः','Oṃ Kāmeśvarāstranirdagdhasabhaṇḍāsuraśūnyakāyai Namaḥ'],
+ 107:['ॐ तडिल्लतासमरुच्यै नमः','Oṃ Taḍillatāsamarucyai Namaḥ'],
+ 376:['ॐ शृङ्गाररससम्पूर्णायै नमः','Oṃ Śṛṅgārarasasampūrṇāyai Namaḥ']};
+ for(const [num,[dev,iast]] of Object.entries(fixed)){
+  assert.equal(names[+num-1].dev,dev);
+  assert.equal(names[+num-1].iast,iast);
+ }
+});
+test('Kannada name 390 has corrected title and all rewritten deeper meanings remain name-indexed',()=>{
+ const wis=JSON.parse(file('data/lalita/wisdom-insights-201-0400.json')).names;
+ assert.equal(wis[390-201].title.kn,'ನಿರ್ವಾಣದ ಆನಂದ');
+ const ranges=['001-005','006-010','011-025','026-050','051-100','101-150','151-200','201-250','251-300','301-350','351-400','401-450','451-500','501-550','551-600','601-650','651-700','701-750','751-800','801-850','851-900','901-950','951-1000'];
+ const all=ranges.flatMap(range=>JSON.parse(file('data/lalita/deeper-meanings-'+range+'.json')).names);
+ assert.equal(all.length,1000);
+ all.forEach((row,i)=>{assert.equal(row.number,i+1);assert.ok(row.en?.length>25);assert.ok(row.kn?.length>15)});
+ for(const num of [48,49,61,109])assert.equal(all[num-1].review_status,'name_specific_revision_20261027');
+ const forbidden=/^(?:This image invites us to recognize sacred significance within ordinary experience|Contemplation asks how this image might change the quality of our attention and conduct|The poetic image is an invitation to bring more presence into ordinary experience|Reverence is meaningful when it encourages a more thoughtful relationship with life)\.$/;
+ all.forEach(row=>assert.doesNotMatch(row.en,forbidden,'Generic meaning for name '+row.number));
+});

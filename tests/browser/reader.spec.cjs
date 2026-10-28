@@ -138,3 +138,18 @@ test('Nāmāvalī keeps the name hyphens, has no numbers, and script matches IAS
  expect(await size('#verse-30 .name-written')).toBe(await size('#verse-30 .name-roman'));
  await expect(page.locator('[data-detail-id="name-76"] .name-inline-wisdom')).not.toContainText('Corruption');
 });
+
+test('overall and deeper śloka content appears in one meaning toggle in both languages',async({page})=>{
+ await page.goto('/lalita/?sloka=13');
+ const item=page.locator('#verse-13');
+ await expect(item.locator('.verse-combined-meaning')).toHaveCount(1,{timeout:20000});
+ await expect(item.locator('.verse-overall-meaning,.verse-deeper-meaning')).toHaveCount(0);
+ const merged=item.locator('.verse-combined-meaning');
+ await expect(merged).not.toHaveAttribute('open','');
+ await merged.locator('summary').click();
+ await expect(merged.locator('.overall-reading')).toBeVisible();
+ await expect(merged.locator('.deeper-reading')).toBeVisible();
+ await page.locator('#kn').click();
+ await expect(item.locator('.verse-combined-meaning summary')).toContainText('ಅರ್ಥ');
+ await expect(item.locator('.verse-combined-meaning')).not.toHaveAttribute('open','');
+});
