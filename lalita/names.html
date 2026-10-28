@@ -87,7 +87,7 @@ const norm=value=>String(value??"").normalize("NFD").replace(/[\u0300-\u036f]/g,
 let names=[];
 const language=()=>window.VediniLanguage.get();
 window.VediniLanguage.bind(()=>render());
-function toKannada(value){return Array.from(String(value)).map(c=>{if(c==="ॐ")return "ಓಂ";const n=c.codePointAt(0);return (n>=0x0900&&n<=0x096f)?String.fromCodePoint(n+0x380):c}).join("")}
+function toKannada(value){return Array.from(String(value)).map(c=>{if(c==="ॐ")return "ಓಂ";const n=c.codePointAt(0);if(n===0x0964||n===0x0965)return c;return (n>=0x0900&&n<=0x096f)?String.fromCodePoint(n+0x380):c}).join("")}
 function render(){
  const query=norm($("#name-q").value.trim()),range=Number($("#name-range").value);
  const rows=names.filter(n=>(!range||Math.ceil(n.number/200)===range)&&(!query||norm([n.number,n.iast,n.sanskrit,n.mantra.dev,n.mantra.iast,n.meaning,n.meaningKn,n.benefit].join(" ")).includes(query)));
