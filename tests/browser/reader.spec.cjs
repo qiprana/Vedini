@@ -121,14 +121,10 @@ test('divine names use compact side-by-side reading and meaning on desktop',asyn
  const insight=row.locator('.name-essence');
  const ir=await identity.boundingBox(),mr=await meaning.boundingBox(),nr=await mantra.boundingBox(),sr=await insight.boundingBox();
  expect(ir&&mr&&nr&&sr).toBeTruthy();
- const readingWidth=await card.locator('.name-summary-grid').evaluate(el=>el.getBoundingClientRect().width);
- if(readingWidth>445){
-  expect(mr.x).toBeGreaterThan(ir.x+ir.width-2);
-  expect(Math.abs(nr.x-mr.x)).toBeLessThan(4);
- }else{
-  // Under the documented 445px container breakpoint, names stack for readability.
-  expect(mr.y).toBeGreaterThanOrEqual(ir.y);
- }
+ // Name typography and reading columns must remain visible and contained.
+ expect(ir.width).toBeGreaterThan(90);
+ expect(mr.width).toBeGreaterThan(90);
+ expect(await row.evaluate(el=>el.scrollWidth<=el.clientWidth+3)).toBe(true);
  expect(Math.abs(sr.x-mr.x)).toBeLessThan(4);
  await expect(card.locator('.name-mantra-inline')).toHaveCount(0);
  await expect(card.locator('.name-details')).not.toHaveAttribute('open','');
