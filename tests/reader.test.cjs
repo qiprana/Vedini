@@ -9,6 +9,13 @@ const app=file('app.js');
 const page=file('lalita/index.html');
 const names=JSON.parse(file('data/lalita/brief-names-draft.json'));
 test('reader script parses without syntax errors',()=>assert.doesNotThrow(()=>new vm.Script(app,{filename:'app.js'})));
+
+test('name-audio handlers attach on every render and are not intercepted by the dock',()=>{
+ assert.match(app,/restoreDetails\(opened\);\s*\/\/[^\n]*\n\s*initNameAudio\(\);/);
+ assert.doesNotMatch(app,/event\.target\.closest\(["']\.name-audio-button["']\)/);
+ assert.match(app,/nameAudioPlayer\.play\(\)/);
+});
+
 test('all 1000 divine names are unique and have a verse and Kannada meaning',()=>{
  assert.equal(names.length,1000);
  for(let i=0;i<1000;i++){assert.equal(names[i].number,i+1);assert.ok(names[i].verse_number>=1&&names[i].verse_number<=183);assert.ok(names[i].kannada?.trim(), 'Kannada missing for '+(i+1));}
