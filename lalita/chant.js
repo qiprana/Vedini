@@ -7,7 +7,7 @@ const el=(tag,cls,value)=>{const e=document.createElement(tag);if(cls)e.classNam
 const key=e=>e.kind==="dhyana"?"d-"+e.verse_number:"s-"+e.verse_number;
 function render(){
  list.replaceChildren();root.classList.toggle("fc-hide-iast",!$("#fc-show-iast").checked);root.classList.toggle("fc-hide-meaning",!$("#fc-show-meaning").checked);
- const script=$("#fc-kn").getAttribute("aria-pressed")==="true"?"kn":"dev",fragment=document.createDocumentFragment();
+ const script=window.VediniLanguage.get(),fragment=document.createDocumentFragment();
  for(const e of state.entries){
   if(e.verse_number===1){const h=el("h2","fc-section-heading",e.kind==="dhyana"?"Dhyāna Ślokas":"Lalitā Sahasranāma");h.append(el("small","",e.kind==="dhyana"?"Meditation verses · recited before the main hymn":"183 ślokas · main hymn"));fragment.append(h)}
   const card=el("article","fc-verse"+(e.kind==="dhyana"?" fc-dhyana":""));card.id="fc-sloka-"+key(e);
@@ -184,9 +184,7 @@ function initDock(){
 initDock();
 $("#fc-voice").onchange=()=>{if(state.playing)begin(key(state.entries[state.index]))};
 $("#fc-jump").onchange=()=>{const value=$("#fc-jump").value;if(state.playing)begin(value);else document.getElementById("fc-sloka-"+value)?.scrollIntoView({behavior:"smooth",block:"start"})};
-function setScript(script){for(const [id,active] of [["fc-dev",script==="dev"],["fc-kn",script==="kn"]]){const button=document.getElementById(id);button.classList.toggle("chosen",active);button.setAttribute("aria-pressed",String(active));}render()}
-$("#fc-dev").onclick=()=>setScript("dev");
-$("#fc-kn").onclick=()=>setScript("kn");
+window.VediniLanguage.bind(()=>render());
 $("#fc-show-iast").onchange=render;
 $("#fc-show-meaning").onchange=render;
 $("#fc-print").onclick=()=>window.print();
