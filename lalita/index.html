@@ -45,8 +45,8 @@
     <div class="lalita-language-bar">
       <div class="language-controls">
         <div class="language-toggle" role="group" aria-label="Choose Sanskrit script and translation language">
-          <button type="button" class="toggle chosen" id="dev" aria-pressed="true" lang="hi">देवनागरी</button>
-          <button type="button" class="toggle" id="kn" aria-pressed="false" lang="kn">ಕನ್ನಡ</button>
+          <button type="button" class="toggle chosen" id="dev" data-lalita-language="dev" aria-pressed="true" lang="hi">देवनागरी</button>
+          <button type="button" class="toggle" id="kn" data-lalita-language="kn" aria-pressed="false" lang="kn">ಕನ್ನಡ</button>
         </div>
       </div>
     </div>
@@ -139,5 +139,6 @@
 </main>
 <script src="../lalita-source-review.js?v=20261026-name-mantra-no-duplicate-v1"></script>
 <script src="./practice-dock-controls.js?v=20261028-shared-v1"></script>
-<script src="../app.js?v=20261028-range-nav-v1"></script>
+<script src="./language-preference.js?v=1"></script>
+<script src="../app.js?v=20261028-language-unified-v1"></script>
 </body></html>

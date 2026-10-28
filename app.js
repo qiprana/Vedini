@@ -2044,8 +2044,8 @@ async function init(){
  const n=$("#result-note");if(n)n.textContent="Unable to load study content: "+err.message;
  }
 }
-$("#dev").onclick=()=>switchLanguage(false);
-$("#kn").onclick=()=>switchLanguage(true);
+window.VediniLanguage.bind(lang=>switchLanguage(lang==="kn"));
+language=window.VediniLanguage.get()==="kn"?"kn":"en";
 $("#search").oninput=e=>{searchTerm=e.target.value;render()};
 
 

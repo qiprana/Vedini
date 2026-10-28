@@ -1702,3 +1702,11 @@ header p{color:#845c4b;font-size:18px}
 @media(prefers-reduced-motion:reduce){
   .vedini-site-header .site-tab{transition:none}
 }
+
+/* Shared script selector and reading tab appearance across Lalitā pages */
+.names-reference .lalita-language-bar{display:flex;align-items:center;padding:8px 0 12px;margin:10px 0 6px;border-bottom:1px solid #dce4d7}
+.names-reference .lalita-language-bar .language-toggle{display:flex;flex-wrap:wrap;gap:9px}
+.names-reference .lalita-language-bar .toggle{display:inline-flex;align-items:center;justify-content:center;min-height:48px;min-width:138px;padding:8px 18px;border:2px solid #a8bfa9;border-radius:11px;background:#fffcf6;color:#29463a;font:700 20px/1.4 system-ui,sans-serif;cursor:pointer}
+.names-reference .lalita-language-bar .toggle.chosen{background:#315647;color:#fff;border-color:#315647}
+.names-reference .namavali-dev[lang="kn"]{font-family:"Noto Sans Kannada","Kannada Sangam MN","Nirmala UI","Tunga",sans-serif}
+@media(max-width:700px){.names-reference .lalita-language-bar .language-toggle{width:100%;display:grid;grid-template-columns:1fr 1fr}.names-reference .lalita-language-bar .toggle{min-width:0;width:100%}}
