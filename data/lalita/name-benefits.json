@@ -1,0 +1,5058 @@
+{
+  "collection": "lalita-sahasranama",
+  "schema": "name-benefits-v1",
+  "editorial_note": "43 English benefit phrases transcribed verbatim from user-provided screenshots of The Sanskrit Channel. Remaining 957 are interpretive proposals and not verified traditional phala or guaranteed results. No invented translations.",
+  "names": [
+    {
+      "number": 1,
+      "en": "Invoke Motherly Compassion",
+      "source": "sanskrit_channel_screenshot",
+      "verse": 1
+    },
+    {
+      "number": 2,
+      "en": "Command, Authority, Rulership",
+      "source": "sanskrit_channel_screenshot",
+      "verse": 1
+    },
+    {
+      "number": 3,
+      "en": "Power, Influence, High Status",
+      "source": "sanskrit_channel_screenshot",
+      "verse": 1
+    },
+    {
+      "number": 4,
+      "en": "Focus, Willpower, Inner Transformation",
+      "source": "sanskrit_channel_screenshot",
+      "verse": 1
+    },
+    {
+      "number": 5,
+      "en": "Purpose, Divine Service, Timely Action",
+      "source": "sanskrit_channel_screenshot",
+      "verse": 1
+    },
+    {
+      "number": 6,
+      "en": "Radiance, Vitality, and Inner Confidence",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 7,
+      "en": "Balanced Strength and Effective Action",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 8,
+      "en": "Loving Relationships and Freedom from Clinging",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 9,
+      "en": "Self-Control and Decisive Action",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 10,
+      "en": "Mental Focus, and Goal-Directed Action",
+      "source": "sanskrit_channel_screenshot",
+      "verse": 3
+    },
+    {
+      "number": 11,
+      "en": "Mastery over the Senses",
+      "source": "sanskrit_channel_screenshot",
+      "verse": 3
+    },
+    {
+      "number": 12,
+      "en": "Charisma, Influence, and Powerful Presence",
+      "source": "sanskrit_channel_screenshot",
+      "verse": 3
+    },
+    {
+      "number": 13,
+      "en": "Personal Charm, and Pleasantness",
+      "source": "sanskrit_channel_screenshot",
+      "verse": 4
+    },
+    {
+      "number": 14,
+      "en": "Recognition, Honour, and Personal Authority",
+      "source": "editorial_suggestion",
+      "source_review": "Screenshot partly obscured; editorial suggestion pending exact transcription."
+    },
+    {
+      "number": 15,
+      "en": "Mental Calmness, and Emotional Balance",
+      "source": "sanskrit_channel_screenshot",
+      "verse": 5
+    },
+    {
+      "number": 16,
+      "en": "Distinctiveness, Refinement, and Personal Grace",
+      "source": "sanskrit_channel_screenshot",
+      "verse": 5
+    },
+    {
+      "number": 17,
+      "en": "Romantic Allure and Magnetic Attraction",
+      "source": "sanskrit_channel_screenshot",
+      "verse": 6
+    },
+    {
+      "number": 18,
+      "en": "Compassionate Vision, and Emotional Connection",
+      "source": "sanskrit_channel_screenshot",
+      "verse": 6
+    },
+    {
+      "number": 19,
+      "en": "Refinement, Elegance, and Social Grace",
+      "source": "sanskrit_channel_screenshot",
+      "verse": 7
+    },
+    {
+      "number": 20,
+      "en": "Beauty, Charm, and Auspicious Appeal",
+      "source": "sanskrit_channel_screenshot",
+      "verse": 7
+    },
+    {
+      "number": 21,
+      "en": "Captivating Personal Charm",
+      "source": "sanskrit_channel_screenshot",
+      "verse": 8
+    },
+    {
+      "number": 22,
+      "en": "Balance of Solar and Lunar Energies",
+      "source": "sanskrit_channel_screenshot",
+      "verse": 8
+    },
+    {
+      "number": 23,
+      "en": "Radiant Facial Beauty",
+      "source": "sanskrit_channel_screenshot",
+      "verse": 9
+    },
+    {
+      "number": 24,
+      "en": "Attractive Speech and Smile",
+      "source": "sanskrit_channel_screenshot",
+      "verse": 9
+    },
+    {
+      "number": 25,
+      "en": "Wisdom, Learning, and Clear Expression",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 26,
+      "en": "Pleasant Speech and Positive Influence",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 27,
+      "en": "Sweet and Persuasive Speech",
+      "source": "sanskrit_channel_screenshot",
+      "verse": 11
+    },
+    {
+      "number": 28,
+      "en": "Winning Charm and Affection",
+      "source": "sanskrit_channel_screenshot",
+      "verse": 11
+    },
+    {
+      "number": 29,
+      "en": "Unparalleled Personal Grace",
+      "source": "sanskrit_channel_screenshot",
+      "verse": 12
+    },
+    {
+      "number": 30,
+      "en": "Marital Harmony and Devotion",
+      "source": "sanskrit_channel_screenshot",
+      "verse": 12
+    },
+    {
+      "number": 31,
+      "en": "Grace, Dignity, and Confident Action",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 32,
+      "en": "Emotional Calmness and Steadiness",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 33,
+      "en": "Mutual Love, Emotional Fulfilment",
+      "source": "sanskrit_channel_screenshot",
+      "verse": 14
+    },
+    {
+      "number": 34,
+      "en": "Nurturing Abundance and Vitality",
+      "source": "sanskrit_channel_screenshot",
+      "verse": 14
+    },
+    {
+      "number": 35,
+      "en": "Graceful Poise and Self-Confidence",
+      "source": "editorial_suggestion",
+      "source_review": "Screenshot partly obscured; editorial suggestion pending exact transcription."
+    },
+    {
+      "number": 36,
+      "en": "Physical Grace and Inner Stability",
+      "source": "editorial_suggestion",
+      "source_review": "Screenshot partly obscured; editorial suggestion pending exact transcription."
+    },
+    {
+      "number": 37,
+      "en": "Vitality and Warmth",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 38,
+      "en": "Alertness in Daily Tasks",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 39,
+      "en": "Loving Intimacy and Marital Happiness",
+      "source": "editorial_suggestion",
+      "source_review": "Screenshot partly obscured; editorial suggestion pending exact transcription."
+    },
+    {
+      "number": 40,
+      "en": "Graceful Movement, and Stability",
+      "source": "sanskrit_channel_screenshot",
+      "verse": 17
+    },
+    {
+      "number": 41,
+      "en": "Purity of Affection and Selfless Love",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 42,
+      "en": "Modesty, Grace, and Discretion",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 43,
+      "en": "Steadiness and a Strong Foundation",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 44,
+      "en": "Spiritual Clarity and Removal of Inner Darkness",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 45,
+      "en": "Divine Protection and Surrender",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 46,
+      "en": "Auspiciousness in Daily Actions",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 47,
+      "en": "Patience and Gentle Perseverance",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 48,
+      "en": "Beauty, Grace, and Inner Radiance",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 49,
+      "en": "Vitality, Enthusiasm, and Positive Energy",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 50,
+      "en": "Self-Acceptance and Emotional Freedom",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 51,
+      "en": "Peace of Mind and Contentment",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 52,
+      "en": "Harmony and Affection in Marriage",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 53,
+      "en": "Success in Auspicious Beginnings",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 54,
+      "en": "Mutual Respect and Devotion",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 55,
+      "en": "Stability, Clarity, and Higher Perspective",
+      "source": "editorial_suggestion",
+      "source_review": "Screenshot partly obscured; editorial suggestion pending exact transcription."
+    },
+    {
+      "number": 56,
+      "en": "Responsible Leadership and Wise Administration",
+      "source": "editorial_suggestion",
+      "source_review": "Screenshot partly obscured; editorial suggestion pending exact transcription."
+    },
+    {
+      "number": 57,
+      "en": "Fulfilment of Cherished Aspirations",
+      "source": "sanskrit_channel_screenshot",
+      "verse": 22
+    },
+    {
+      "number": 58,
+      "en": "Leadership and Balanced Responsibilities",
+      "source": "editorial_suggestion",
+      "source_review": "Screenshot partly obscured; editorial suggestion pending exact transcription."
+    },
+    {
+      "number": 59,
+      "en": "Abundance and Fertility",
+      "source": "sanskrit_channel_screenshot",
+      "verse": 23
+    },
+    {
+      "number": 60,
+      "en": "Connection with Nature and Beauty",
+      "source": "sanskrit_channel_screenshot",
+      "verse": 23
+    },
+    {
+      "number": 61,
+      "en": "Emotional Nourishment, and Rejuvenation",
+      "source": "sanskrit_channel_screenshot",
+      "verse": 23
+    },
+    {
+      "number": 62,
+      "en": "Attraction, and Beautiful Relationships",
+      "source": "sanskrit_channel_screenshot",
+      "verse": 23
+    },
+    {
+      "number": 63,
+      "en": "Wish Fulfilment",
+      "source": "sanskrit_channel_screenshot",
+      "verse": 23
+    },
+    {
+      "number": 64,
+      "en": "Recognition for Excellence",
+      "source": "sanskrit_channel_screenshot",
+      "verse": 24
+    },
+    {
+      "number": 65,
+      "en": "Strength to Overcome Powerful Opposition",
+      "source": "sanskrit_channel_screenshot",
+      "verse": 24
+    },
+    {
+      "number": 66,
+      "en": "Prosperity, and Resourcefulness",
+      "source": "sanskrit_channel_screenshot",
+      "verse": 25
+    },
+    {
+      "number": 67,
+      "en": "Speed, Drive, and Achievement",
+      "source": "sanskrit_channel_screenshot",
+      "verse": 25
+    },
+    {
+      "number": 68,
+      "en": "Protection and Strategic Power",
+      "source": "sanskrit_channel_screenshot",
+      "verse": 26
+    },
+    {
+      "number": 69,
+      "en": "Wise Counsel and Intelligent Action",
+      "source": "sanskrit_channel_screenshot",
+      "verse": 26
+    },
+    {
+      "number": 70,
+      "en": "Discipline, Effective Enforcement",
+      "source": "sanskrit_channel_screenshot",
+      "verse": 27
+    },
+    {
+      "number": 71,
+      "en": "Strong Protection from Negativity",
+      "source": "sanskrit_channel_screenshot",
+      "verse": 27
+    },
+    {
+      "number": 72,
+      "en": "Courage and Success in Difficult Tasks",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 73,
+      "en": "Enthusiasm and Consistent Practice",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 74,
+      "en": "Courage, Confidence, and Protection",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 75,
+      "en": "Freedom from Distraction and Sense Restraint",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 76,
+      "en": "Courage in Overcoming Deep Obstacles",
+      "source": "editorial_suggestion",
+      "source_review": "Screenshot partly obscured; editorial suggestion pending exact transcription."
+    },
+    {
+      "number": 77,
+      "en": "Creative Solutions through Intuition",
+      "source": "sanskrit_channel_screenshot",
+      "verse": 30
+    },
+    {
+      "number": 78,
+      "en": "Removal of Obstacles",
+      "source": "sanskrit_channel_screenshot",
+      "verse": 31
+    },
+    {
+      "number": 79,
+      "en": "Protection Against Adversity",
+      "source": "sanskrit_channel_screenshot",
+      "verse": 31
+    },
+    {
+      "number": 80,
+      "en": "Protection and Strength During Adversity",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 81,
+      "en": "Purification, Courage, and Inner Renewal",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 82,
+      "en": "Victory Over Ego and Destructive Tendencies",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 83,
+      "en": "Recognition of Sincere Effort",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 84,
+      "en": "Renewal, Recovery, and New Beginnings",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 85,
+      "en": "Eloquence, Confidence, and Clear Speech",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 86,
+      "en": "Strength and Energy for Right Action",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 87,
+      "en": "Creativity, Initiative, and Fulfilment",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 88,
+      "en": "Concentration and Depth in Mantra Practice",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 89,
+      "en": "Harmony of Thought, Speech, and Action",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 90,
+      "en": "Devotional Joy and Inner Absorption",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 91,
+      "en": "Integrity, Trust, and Sound Judgement",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 92,
+      "en": "Harmony and Respect in Family Life",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 93,
+      "en": "Insight, Concentration, and Reflection",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 94,
+      "en": "Discipline and Consistency in Worship",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 95,
+      "en": "Focus, Union, and Spiritual Discipline",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 96,
+      "en": "Compassion, Openness, and Generosity",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 97,
+      "en": "Purity of Mind and Devotion",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 98,
+      "en": "Self-Discipline and Spiritual Progress",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 99,
+      "en": "Stability, Security, and Peace of Mind",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 100,
+      "en": "Freedom from Fear and Insecurity",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 101,
+      "en": "Willpower and Vitality",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 102,
+      "en": "Release From Possessive Attachment",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 103,
+      "en": "Intuition and Clear Insight",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 104,
+      "en": "Merging of Ego in the Divine",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 105,
+      "en": "Highest Spiritual Fulfilment",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 106,
+      "en": "Nourishment of Body and Spirit",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 107,
+      "en": "Sudden Flashes of Insight",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 108,
+      "en": "Going Beyond Inner Limits",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 109,
+      "en": "Strength for Every Undertaking",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 110,
+      "en": "Awakening of Spiritual Energy",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 111,
+      "en": "Refinement of Perception",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 112,
+      "en": "Blessings on Children and Family",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 113,
+      "en": "Depth in Contemplation",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 114,
+      "en": "Clearing Worldly Entanglements",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 115,
+      "en": "Love of Goodness",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 116,
+      "en": "A Gentle and Pleasant Nature",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 117,
+      "en": "Good Fortune With Gratitude",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 118,
+      "en": "Growth in Devotion",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 119,
+      "en": "Path of Devotion Opened",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 120,
+      "en": "Closeness in Prayer",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 121,
+      "en": "Freedom From Fear",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 122,
+      "en": "Grace of Śiva and Śakti",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 123,
+      "en": "Success in Studies",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 124,
+      "en": "Acceptance in Times of Loss",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 125,
+      "en": "Happiness and Peace of Mind",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 126,
+      "en": "Welfare of the Whole Family",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 127,
+      "en": "Abundance in the Home",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 128,
+      "en": "Integrity and Virtue",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 129,
+      "en": "Coolness of Temper",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 130,
+      "en": "Grace and Poise",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 131,
+      "en": "Peace in the Family",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 132,
+      "en": "Self-Reliance Rooted in Her",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 133,
+      "en": "Unclouded Mind",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 134,
+      "en": "Lightening of Karmic Burden",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 135,
+      "en": "Purity of Heart",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 136,
+      "en": "Faith in What Endures",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 137,
+      "en": "Worship Beyond Form",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 138,
+      "en": "Calm Under Pressure",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 139,
+      "en": "Rising Above Changing Moods",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 140,
+      "en": "Feeling Whole and Complete",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 141,
+      "en": "Tranquillity of Mind",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 142,
+      "en": "Freedom From Craving",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 143,
+      "en": "Steadiness in Crisis",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 144,
+      "en": "Liberation From Bondage",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 145,
+      "en": "Constancy of Character",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 146,
+      "en": "Detachment From Worldly Show",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 147,
+      "en": "Independence of Spirit",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 148,
+      "en": "Purity in Thought and Deed",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 149,
+      "en": "Growth in Understanding",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 150,
+      "en": "Blameless Conduct",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 151,
+      "en": "Constant Sense of Her Presence",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 152,
+      "en": "Grace Without Conditions",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 153,
+      "en": "Lightness of Conscience",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 154,
+      "en": "Seeing Beyond Labels",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 155,
+      "en": "Surrender to the Highest",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 156,
+      "en": "Peaceful Non-Attachment",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 157,
+      "en": "Mastery Over Passion",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 158,
+      "en": "Humility and Simplicity",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 159,
+      "en": "Pride Gently Dissolved",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 160,
+      "en": "Calm Free of Anxiety",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 161,
+      "en": "Letting Go of Ego",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 162,
+      "en": "Clear Judgement",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 163,
+      "en": "Clarity After Confusion",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 164,
+      "en": "Selfless Living",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 165,
+      "en": "Generous Stewardship",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 166,
+      "en": "Innocence of Heart",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 167,
+      "en": "Cleansing of Past Wrongs",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 168,
+      "en": "Even Temper",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 169,
+      "en": "Release From Anger",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 170,
+      "en": "Contentment With Enough",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 171,
+      "en": "A Generous Heart",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 172,
+      "en": "Confidence and Certainty",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 173,
+      "en": "Doubts Resolved",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 174,
+      "en": "Peace About Life and Death",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 175,
+      "en": "Release From the Cycle of Birth",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 176,
+      "en": "Thought-Free Stillness",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 177,
+      "en": "Undisturbed Peace",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 178,
+      "en": "Seeing Oneness in All",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 179,
+      "en": "Harmony Among People",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 180,
+      "en": "Steadfast Spiritual Foundation",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 181,
+      "en": "Freedom From Fear of Death",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 182,
+      "en": "Rest Amid Busy Days",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 183,
+      "en": "Simple Living",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 184,
+      "en": "Confidence in One's Own Path",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 185,
+      "en": "Youthful Radiance",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 186,
+      "en": "Security Amid Loss",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 187,
+      "en": "Respect for Dharma",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 188,
+      "en": "Gratitude for Grace",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 189,
+      "en": "Perseverance on the Path",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 190,
+      "en": "Shelter in Difficulty",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 191,
+      "en": "Solace in Sorrow",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 192,
+      "en": "Happiness in Daily Life",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 193,
+      "en": "Turning Away From Wrongdoing",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 194,
+      "en": "Breaking Harmful Habits",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 195,
+      "en": "Overcoming Personal Faults",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 196,
+      "en": "Insight Into Every Situation",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 197,
+      "en": "Compassion Received and Shared",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 198,
+      "en": "Humility Before the Supreme",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 199,
+      "en": "Inner Strength in Weakness",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 200,
+      "en": "Blessings in Every Sphere",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 201,
+      "en": "Guidance on the right path toward liberation",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 202,
+      "en": "Trust in a Higher Order",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 203,
+      "en": "Feeling the Sacred Everywhere",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 204,
+      "en": "Potency in Chanting",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 205,
+      "en": "Focus Through Sacred Form",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 206,
+      "en": "Fruit of Every Practice",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 207,
+      "en": "Quieting of Restless Thoughts",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 208,
+      "en": "Harmony in Marriage",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 209,
+      "en": "Expansion of the Heart",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 210,
+      "en": "Abundance in the Home",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 211,
+      "en": "Being Dearly Loved",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 212,
+      "en": "Broadening of Vision",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 213,
+      "en": "Reverence and Humility",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 214,
+      "en": "Release from even grave sins",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 215,
+      "en": "Seeing Through Illusion",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 216,
+      "en": "Purity of Character",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 217,
+      "en": "Vitality and Inner Strength",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 218,
+      "en": "Joy and delight through contemplation",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 219,
+      "en": "Prosperity With Contentment",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 220,
+      "en": "Self-Respect and Dignity",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 221,
+      "en": "Courage in Hard Times",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 222,
+      "en": "Strength in Illness",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 223,
+      "en": "Sharpness of Intellect",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 224,
+      "en": "Success in Spiritual Practice",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 225,
+      "en": "Mastery in Yoga",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 226,
+      "en": "Depth in Scriptural Study",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 227,
+      "en": "Protection Through Sacred Sound",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 228,
+      "en": "Order and Balance in Life",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 229,
+      "en": "Honourable Standing in Society",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 230,
+      "en": "Discipline in Ritual Practice",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 231,
+      "en": "Fearlessness Before the Unknown",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 232,
+      "en": "Equanimity Amid Great Change",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 233,
+      "en": "Devotion Between Spouses",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 234,
+      "en": "Radiance and Charm",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 235,
+      "en": "Wholeheartedness in Worship",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 236,
+      "en": "Skill in the Arts",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 237,
+      "en": "Help From Unseen Allies",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 238,
+      "en": "Initiation Into Higher Wisdom",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 239,
+      "en": "Coolness and Calm of Mind",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 240,
+      "en": "Gentle Emotional Balance",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 241,
+      "en": "Graceful Ageing",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 242,
+      "en": "Cheerfulness and Good Humour",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 243,
+      "en": "Constancy Through Life's Phases",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 244,
+      "en": "Sense of Safety in the World",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 245,
+      "en": "Peace in One's Dwelling",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 246,
+      "en": "Steadfastness and Resolve",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 247,
+      "en": "Seeing Beauty in Others",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 248,
+      "en": "Glow of Vitality",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 249,
+      "en": "Awakening of Dormant Energy",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 250,
+      "en": "Wholeness of Being",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 251,
+      "en": "Awakening of Awareness",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 252,
+      "en": "Lasting Contentment",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 253,
+      "en": "Firm Understanding",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 254,
+      "en": "Absorption in Meditation",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 255,
+      "en": "Release From Guilt and Pride",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 256,
+      "en": "Seeing the World as Sacred",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 257,
+      "en": "Alertness in Daily Duties",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 258,
+      "en": "Peaceful Dreams",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 259,
+      "en": "Insight From Dreams",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 260,
+      "en": "Restful Sleep",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 261,
+      "en": "Deep Inner Rest",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 262,
+      "en": "Glimpses of the Self",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 263,
+      "en": "Witnessing Without Attachment",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 264,
+      "en": "Creativity in Work",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 265,
+      "en": "Fresh Beginnings",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 266,
+      "en": "Safety for Loved Ones",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 267,
+      "en": "Sustenance for the Family",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 268,
+      "en": "Peace at Life's Endings",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 269,
+      "en": "Ease in Letting Go",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 270,
+      "en": "Patience With the Unknown",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 271,
+      "en": "Wise Self-Governance",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 272,
+      "en": "Auspiciousness in All Undertakings",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 273,
+      "en": "Unexpected Grace",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 274,
+      "en": "Rhythm and Balance in Daily Life",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 275,
+      "en": "Hope and Renewed Energy",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 276,
+      "en": "Courage With Compassion",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 277,
+      "en": "Good Name and Noble Virtue",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 278,
+      "en": "Purity Amid the World",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 279,
+      "en": "Assurance of Her Protection",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 280,
+      "en": "Harmony Among Siblings",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 281,
+      "en": "Acceptance of Impermanence",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 282,
+      "en": "Respect for Every Person",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 283,
+      "en": "Feeling Watched Over",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 284,
+      "en": "Safe Travels",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 285,
+      "en": "Kindness to All Creatures",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 286,
+      "en": "Clarity About One's Duties",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 287,
+      "en": "Faith in Sacred Teaching",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 288,
+      "en": "Encouragement Toward Good Deeds",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 289,
+      "en": "Humble Refuge at Her Feet",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 290,
+      "en": "Insight Into Scripture",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 291,
+      "en": "Balance of Life's Four Aims",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 292,
+      "en": "Sense of Completeness",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 293,
+      "en": "Wholesome Enjoyment of Life",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 294,
+      "en": "Confidence in Life's Order",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 295,
+      "en": "Motherly Comfort",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 296,
+      "en": "Freedom From Fear of Death",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 297,
+      "en": "Support of Benevolent Forces",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 298,
+      "en": "Rest for the Soul",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 299,
+      "en": "Attunement to Inner Sound",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 300,
+      "en": "Letting Go of Labels",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 301,
+      "en": "Awakening of Heart Energy",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 302,
+      "en": "Gracious Humility",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 303,
+      "en": "Love Dwelling in the Heart",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 304,
+      "en": "Freedom From Craving and Aversion",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 305,
+      "en": "Respect From Those in Authority",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 306,
+      "en": "Dignity and Poise",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 307,
+      "en": "Pleasant Disposition",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 308,
+      "en": "Gentle Eyes Toward Others",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 309,
+      "en": "Uplifted Mood",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 310,
+      "en": "Joyful Companionship",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 311,
+      "en": "Savouring Life's Sweetness",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 312,
+      "en": "Joy in Music and Movement",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 313,
+      "en": "Learning and Plenty Together",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 314,
+      "en": "Serene Expression",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 315,
+      "en": "Tenderness in Love",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 316,
+      "en": "Affection in Relationships",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 317,
+      "en": "Safety From Harm",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 318,
+      "en": "Overcoming Inner Negativity",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 319,
+      "en": "Contentment With Simple Joys",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 320,
+      "en": "Single-Minded Devotion",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 321,
+      "en": "Fulfilment of Pure Wishes",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 322,
+      "en": "Love Bearing Good Fruit",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 323,
+      "en": "Acceptance of Humble Offerings",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 324,
+      "en": "Goodness in All Affairs",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 325,
+      "en": "Rootedness and Stability",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 326,
+      "en": "Compassion in the Heart",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 327,
+      "en": "Flowering of Artistic Talent",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 328,
+      "en": "Sweetness in Speech",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 329,
+      "en": "Endearing Presence",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 330,
+      "en": "Overflowing Inner Joy",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 331,
+      "en": "Answers to Heartfelt Prayers",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 332,
+      "en": "Compassionate Outlook",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 333,
+      "en": "Ecstasy in Devotion",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 334,
+      "en": "Perspective Beyond Worldly Worries",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 335,
+      "en": "Progress in Learning",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 336,
+      "en": "Calm Amid Nature",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 337,
+      "en": "Steady Support Through Life",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 338,
+      "en": "Reverence for Knowledge",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 339,
+      "en": "Release From Worldly Confusion",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 340,
+      "en": "Playful Ease in Living",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 341,
+      "en": "Respect for the Body",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 342,
+      "en": "Harmony in One's Surroundings",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 343,
+      "en": "Wellbeing of Body and Soul",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 344,
+      "en": "Freedom From Fear of Ageing",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 345,
+      "en": "Protection of Home and Land",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 346,
+      "en": "Success in Righteous Efforts",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 347,
+      "en": "Purity of Mind",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 348,
+      "en": "Habit of Gratitude",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 349,
+      "en": "Feeling Deeply Cherished",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 350,
+      "en": "Gift of Eloquence",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 351,
+      "en": "Care of Natural Beauty",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 352,
+      "en": "Warmth and Strong Digestion",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 353,
+      "en": "Devotion That Bears Fruit",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 354,
+      "en": "Freedom From Clinging",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 355,
+      "en": "Discernment Against Falsehood",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 356,
+      "en": "Good Habits and Conduct",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 357,
+      "en": "Solace in Suffering",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 358,
+      "en": "Youthful Energy",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 359,
+      "en": "Perseverance in Discipline",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 360,
+      "en": "Support for Healthy Living",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 361,
+      "en": "Lifting of Lethargy",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 362,
+      "en": "Clarity of Mind",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 363,
+      "en": "Realisation of Truth",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 364,
+      "en": "Inner Stillness",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 365,
+      "en": "Taste of Supreme Bliss",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 366,
+      "en": "Aspiration Toward the Highest",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 367,
+      "en": "Deepening of Introspection",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 368,
+      "en": "Inspiration Before Words",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 369,
+      "en": "Undivided Faith",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 370,
+      "en": "Balance and Moderation",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 371,
+      "en": "Truthful and Kind Words",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 372,
+      "en": "Discrimination Between Real and Unreal",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 373,
+      "en": "Deep Bond With One's Beloved",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 374,
+      "en": "Assurance That Efforts Count",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 375,
+      "en": "Purified Desires",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 376,
+      "en": "Fullness of Love",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 377,
+      "en": "Overcoming Setbacks",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 378,
+      "en": "Clear and Confident Voice",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 379,
+      "en": "Sharpened Intuition",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 380,
+      "en": "Single-Pointed Focus",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 381,
+      "en": "Fruitful Private Worship",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 382,
+      "en": "Sincerity Without Show",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 383,
+      "en": "Swift Grace in Need",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 384,
+      "en": "Living Truthfully",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 385,
+      "en": "Security Without Needing Approval",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 386,
+      "en": "Protection of Body and Mind",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 387,
+      "en": "Well-Rounded Life",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 388,
+      "en": "Softening of a Hard Heart",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 389,
+      "en": "Contentment Without Comparison",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 390,
+      "en": "Bliss of Liberation",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 391,
+      "en": "Blessings on Each Lunar Day",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 392,
+      "en": "Balance of Strength and Gentleness",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 393,
+      "en": "Brightness of Spirit",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 394,
+      "en": "Hope in Dark Times",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 395,
+      "en": "Good Reputation",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 396,
+      "en": "Surrender to the Highest",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 397,
+      "en": "Grounding in Nature",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 398,
+      "en": "Faith in the Unseen",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 399,
+      "en": "Devotion to Form and Formless",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 400,
+      "en": "Never Feeling Alone",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 401,
+      "en": "Seeing the Sacred Everywhere",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 402,
+      "en": "Light in Times of Confusion",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 403,
+      "en": "Joy in Loving Relationships",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 404,
+      "en": "Hope Dawning in Dark Times",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 405,
+      "en": "Peaceful Resolution of Conflicts",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 406,
+      "en": "Being Valued and Honoured",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 407,
+      "en": "Inner Wholeness",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 408,
+      "en": "Auspicious Beginnings",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 409,
+      "en": "Lasting Marital Affection",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 410,
+      "en": "Single-Minded Devotion",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 411,
+      "en": "Company of Good People",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 412,
+      "en": "Sincerity in Worship",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 413,
+      "en": "Release From Narrow Views",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 414,
+      "en": "Self-Reliant Inner Light",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 415,
+      "en": "Deep Silence in Meditation",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 416,
+      "en": "Alert, Awakened Attention",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 417,
+      "en": "Abiding in Pure Awareness",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 418,
+      "en": "Success in Practical Work",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 419,
+      "en": "Reverence for Nature",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 420,
+      "en": "Illumined Intellect",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 421,
+      "en": "Eloquence and Fluent Speech",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 422,
+      "en": "Peaceful Mornings and Evenings",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 423,
+      "en": "Fresh Start on the Path",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 424,
+      "en": "Insight Into Life's Principles",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 425,
+      "en": "Glimpse of the Absolute",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 426,
+      "en": "Recognition of One's True Self",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 427,
+      "en": "Feeling Heard by the Mother",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 428,
+      "en": "Harmony of Body and Mind",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 429,
+      "en": "Sense of Wonder Renewed",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 430,
+      "en": "Lasting Vitality and Freshness",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 431,
+      "en": "Joyful Spiritual Absorption",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 432,
+      "en": "Ease in Turning Inward",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 433,
+      "en": "Cheerful Countenance",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 434,
+      "en": "Cooling of Agitation",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 435,
+      "en": "Joy in Simple Worship",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 436,
+      "en": "Skill and Competence at Work",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 437,
+      "en": "Gentleness in Manner",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 438,
+      "en": "Goodwill of Others",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 439,
+      "en": "Unified Understanding",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 440,
+      "en": "Awakening of Latent Potential",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 441,
+      "en": "Faithfulness to One's Path",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 442,
+      "en": "Blessings for Children",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 443,
+      "en": "Contentment With What Is",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 444,
+      "en": "Healthy Growth and Nourishment",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 445,
+      "en": "Sound Judgement",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 446,
+      "en": "Fortitude in Hardship",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 447,
+      "en": "Deep Peace of Mind",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 448,
+      "en": "Safety and Good Fortune",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 449,
+      "en": "Radiant Personality",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 450,
+      "en": "Daily Gladness",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 451,
+      "en": "Removal of Obstacles",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 452,
+      "en": "Vigour and Enthusiasm",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 453,
+      "en": "Balanced Perception",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 454,
+      "en": "Flexibility in Love",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 455,
+      "en": "Celebration and Festivity",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 456,
+      "en": "Discernment Between Real and Unreal",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 457,
+      "en": "Motherly Care and Shelter",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 458,
+      "en": "Restful Retreat From Stress",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 459,
+      "en": "Warm and Welcoming Nature",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 460,
+      "en": "Softness of Heart",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 461,
+      "en": "Grace in Appearance",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 462,
+      "en": "Auspicious Brightness in Life",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 463,
+      "en": "Ability to Inspire Others",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 464,
+      "en": "Grace in Absorbing Hurt",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 465,
+      "en": "Bright, Uplifted Mood",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 466,
+      "en": "Shaking Off Complacency",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 467,
+      "en": "Refined, Subtle Understanding",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 468,
+      "en": "Unbreakable Determination",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 469,
+      "en": "Harmony in Partnership",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 470,
+      "en": "Graceful Ageing",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 471,
+      "en": "Success in Spiritual Practice",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 472,
+      "en": "Fruitful Mantra Practice",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 473,
+      "en": "Motherly Support on the Path",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 474,
+      "en": "Good Name and Reputation",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 475,
+      "en": "Purity of Voice and Word",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 476,
+      "en": "Warmth and Affection",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 477,
+      "en": "Seeing Beyond Appearances",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 478,
+      "en": "Courage to Let Go",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 479,
+      "en": "Undistracted Concentration",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 480,
+      "en": "Sweetness in Family Life",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 481,
+      "en": "Tender Awareness of Touch",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 482,
+      "en": "Urgency for Spiritual Growth",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 483,
+      "en": "Renewal and Refreshment",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 484,
+      "en": "Confident Self-Expression",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 485,
+      "en": "Open and Loving Heart",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 486,
+      "en": "Refreshing Grace Like Rain",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 487,
+      "en": "Balance of Inner and Outer",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 488,
+      "en": "Protection Against Adversity",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 489,
+      "en": "Regularity in Japa",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 490,
+      "en": "Support for Vital Energy",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 491,
+      "en": "Shelter From Hidden Dangers",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 492,
+      "en": "Ample Nourishment in the Home",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 493,
+      "en": "Courage in Hard Times",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 494,
+      "en": "Emotional Balance",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 495,
+      "en": "Confidence and Willpower",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 496,
+      "en": "Broad Perspective",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 497,
+      "en": "Decisive Clarity",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 498,
+      "en": "Supportive Companions",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 499,
+      "en": "Warm Zest for Life",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 500,
+      "en": "Physical Strength and Stamina",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 501,
+      "en": "Delight in Simple Things",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 502,
+      "en": "Happiness for the Whole Family",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 503,
+      "en": "Support for Healthy Digestion",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 504,
+      "en": "Healthy Creative Energy",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 505,
+      "en": "Harmony With Everyone Around",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 506,
+      "en": "Freedom From Fear",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 507,
+      "en": "Cheer and Optimism",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 508,
+      "en": "Healthy Self-Respect",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 509,
+      "en": "Reserves of Endurance",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 510,
+      "en": "Sweetness in Relationships",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 511,
+      "en": "Strong Family Bonds",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 512,
+      "en": "Cool and Calm Temperament",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 513,
+      "en": "Emotional Fluidity and Ease",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 514,
+      "en": "Stability and Groundedness",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 515,
+      "en": "Mastery Over the Senses",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 516,
+      "en": "Sturdy Health and Posture",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 517,
+      "en": "Gentle Self-Discipline",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 518,
+      "en": "Fulfilment of Pure Wishes",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 519,
+      "en": "Wholesome Eating Habits",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 520,
+      "en": "Security and Steadiness at Home",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 521,
+      "en": "Clear Inner Guidance",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 522,
+      "en": "Purity of Intention",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 523,
+      "en": "All-Round Understanding",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 524,
+      "en": "Deep Inner Resilience",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 525,
+      "en": "Gift of Forbearance",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 526,
+      "en": "Blessings for Weddings and Rites",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 527,
+      "en": "Sharpened Concentration",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 528,
+      "en": "Spiritual Illumination",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 529,
+      "en": "Appreciation of Diversity",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 530,
+      "en": "Readiness for Any Challenge",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 531,
+      "en": "Hope for Healthy Offspring",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 532,
+      "en": "Awareness in All Situations",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 533,
+      "en": "Gratitude for Every Meal",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 534,
+      "en": "Peace in Higher Meditation",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 535,
+      "en": "Completion of Sacred Duties",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 536,
+      "en": "Blessings of the Ancestors",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 537,
+      "en": "Humility in Learning",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 538,
+      "en": "Sharp Memory and Intellect",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 539,
+      "en": "Receptiveness to Scripture",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 540,
+      "en": "Guidance in Right Conduct",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 541,
+      "en": "Striving for Excellence",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 542,
+      "en": "Purity Through Her Praise",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 543,
+      "en": "Rewards of Virtuous Living",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 544,
+      "en": "Grace in Hearing Holy Names",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 545,
+      "en": "Restoration of Family Harmony",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 546,
+      "en": "Freedom From Binding Habits",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 547,
+      "en": "Simple Delight in Beauty",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 548,
+      "en": "Self-Reflective Wisdom",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 549,
+      "en": "Progress in Learning",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 550,
+      "en": "Balance of the Elements Within",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 551,
+      "en": "Comfort in Sickness",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 552,
+      "en": "Protection in Danger",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 553,
+      "en": "Recognition for Good Work",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 554,
+      "en": "Release From Overthinking",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 555,
+      "en": "Clean Conscience in Trying Times",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 556,
+      "en": "Finding a Worthy Life Partner",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 557,
+      "en": "Victory Over Fear of Death",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 558,
+      "en": "Refuge in Times of Need",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 559,
+      "en": "Graciousness in Hospitality",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 560,
+      "en": "Vibrant Blossoming of Life",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 561,
+      "en": "Kindness in How We See",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 562,
+      "en": "Natural Charm and Grace",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 563,
+      "en": "Clarity of Life's Priorities",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 564,
+      "en": "Grace and Mercy in Life",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 565,
+      "en": "True and Lasting Friendships",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 566,
+      "en": "Freedom From Craving",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 567,
+      "en": "Prosperity With Contentment",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 568,
+      "en": "Sound Moral Direction",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 569,
+      "en": "Trust in Divine Order",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 570,
+      "en": "Growth in Loving-Kindness",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 571,
+      "en": "Equanimity Amid Change",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 572,
+      "en": "Empowerment From Within",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 573,
+      "en": "Firm Spiritual Purpose",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 574,
+      "en": "Fullness of Understanding",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 575,
+      "en": "Ease Free From Restlessness",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 576,
+      "en": "Ecstatic Devotion",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 577,
+      "en": "Success in Studies and Writing",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 578,
+      "en": "Sense of Sacred Belonging",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 579,
+      "en": "Feeling Embraced and Comforted",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 580,
+      "en": "Deepening Reverence",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 581,
+      "en": "Mercy in Difficult Moments",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 582,
+      "en": "Order and Stability in Affairs",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 583,
+      "en": "Direct Self-Knowledge",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 584,
+      "en": "Highest Spiritual Wisdom",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 585,
+      "en": "Auspicious Spiritual Progress",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 586,
+      "en": "Pure and Uplifted Desires",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 587,
+      "en": "Fullness in Mantra Japa",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 588,
+      "en": "Integration of Body, Speech, Mind",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 589,
+      "en": "Love Rooted in the Divine",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 590,
+      "en": "Abundance in the Home",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 591,
+      "en": "Clear and Calm Thinking",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 592,
+      "en": "Restful Sleep",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 593,
+      "en": "Focused Mind in Prayer",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 594,
+      "en": "Hope After Hardship",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 595,
+      "en": "Feeling Her Presence Within",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 596,
+      "en": "Energy to Begin Each Day",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 597,
+      "en": "Light on the Inner Path",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 598,
+      "en": "Loyalty and Faithfulness",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 599,
+      "en": "Overcoming Inner Negativity",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 600,
+      "en": "Release From Ego and Pride",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 601,
+      "en": "Relief from fear through the Mother's compassionate glance",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 602,
+      "en": "Cheerfulness in Daily Life",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 603,
+      "en": "Finding the Right Teacher",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 604,
+      "en": "Growth in Good Character",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 605,
+      "en": "Nourishment for the Family",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 606,
+      "en": "Courage in the Young",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 607,
+      "en": "Help From Higher Powers",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 608,
+      "en": "Fairness in Decisions",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 609,
+      "en": "Peace in the Heart",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 610,
+      "en": "Auspicious Days Throughout the Year",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 611,
+      "en": "Skill in the Arts",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 612,
+      "en": "Coolness of a Calm Mind",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 613,
+      "en": "Gift for Poetic Expression",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 614,
+      "en": "Learning and Prosperity Together",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 615,
+      "en": "Fresh Energy for New Beginnings",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 616,
+      "en": "Humility Before the Vast",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 617,
+      "en": "Seeing the Self in Others",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 618,
+      "en": "Aspiration for the Highest",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 619,
+      "en": "Purification through contemplation of the Divine Mother",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 620,
+      "en": "Wonder at Creation's Vastness",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 621,
+      "en": "Radiance of Body and Spirit",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 622,
+      "en": "Loving Bonds in Relationships",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 623,
+      "en": "Contentment Without Dependence",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 624,
+      "en": "Insight Into Hidden Truths",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 625,
+      "en": "Liberation From Rebirth",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 626,
+      "en": "Integration of the Whole Person",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 627,
+      "en": "Goodwill From Everyone",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 628,
+      "en": "Balance in Beginnings and Endings",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 629,
+      "en": "Leadership With Grace",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 630,
+      "en": "Steadiness in Chanting Om",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 631,
+      "en": "Uplifted Mood and Freshness",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 632,
+      "en": "Auspiciousness in Married Life",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 633,
+      "en": "Steadfastness in Devotion",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 634,
+      "en": "Firm Resolve in Trials",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 635,
+      "en": "Purity of Heart",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 636,
+      "en": "Gift for Music and Song",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 637,
+      "en": "Sense of Belonging Everywhere",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 638,
+      "en": "Creativity From the Source",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 639,
+      "en": "Rising Above Low Impulses",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 640,
+      "en": "Eloquence in Speech",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 641,
+      "en": "Depth in Meditation",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 642,
+      "en": "Opening Beyond Narrow Limits",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 643,
+      "en": "Dawning of Self-Knowledge",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 644,
+      "en": "Love of Learning",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 645,
+      "en": "Understanding the Upaniṣads",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 646,
+      "en": "Joy Rooted in Truth",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 647,
+      "en": "Faithful Family Worship",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 648,
+      "en": "Lightheartedness Amid Change",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 649,
+      "en": "Faith in the Unseen",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 650,
+      "en": "Freedom From Distraction",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 651,
+      "en": "Discernment of Reality",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 652,
+      "en": "Contentment That Seeks Nothing",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 653,
+      "en": "Union With the Divine",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 654,
+      "en": "Strength in Spiritual Practice",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 655,
+      "en": "Fitness for the Inner Path",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 656,
+      "en": "Bliss in Practice",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 657,
+      "en": "Patience Through Long Seasons",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 658,
+      "en": "Harmony of Will, Thought, Action",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 659,
+      "en": "Support in Every Burden",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 660,
+      "en": "Stability in Life",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 661,
+      "en": "Acceptance of Life's Mysteries",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 662,
+      "en": "Reverence for Nature",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 663,
+      "en": "Dispelling of Ignorance",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 664,
+      "en": "Smooth Course of Life's Journey",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 665,
+      "en": "Comfort in Solitude",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 666,
+      "en": "Largeness of Heart",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 667,
+      "en": "Unity With All Beings",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 668,
+      "en": "Equanimity in Pleasure and Pain",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 669,
+      "en": "Never Lacking Daily Food",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 670,
+      "en": "Prosperity With Contentment",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 671,
+      "en": "Wisdom That Grows With Age",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 672,
+      "en": "Realisation of Oneness",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 673,
+      "en": "Breadth of Vision",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 674,
+      "en": "Sattvic Calm and Purity",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 675,
+      "en": "Clarity in Expression",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 676,
+      "en": "Absorption in Bliss",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 677,
+      "en": "Joy in Offering",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 678,
+      "en": "Facility With Languages",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 679,
+      "en": "Support of Many Friends",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 680,
+      "en": "Rest Beyond All Concepts",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 681,
+      "en": "Ease in Daily Worship",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 682,
+      "en": "Good Fortune in Undertakings",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 683,
+      "en": "An Easy Spiritual Path",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 684,
+      "en": "Dignity in Leadership",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 685,
+      "en": "Success in Rightful Ambitions",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 686,
+      "en": "Safety of Home and Land",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 687,
+      "en": "Being Touched by Grace",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 688,
+      "en": "Recognition for Sincere Effort",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 689,
+      "en": "Prosperity for the Community",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 690,
+      "en": "Abundance in the Home",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 691,
+      "en": "Teamwork and Coordination",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 692,
+      "en": "Mastery Over Oneself",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 693,
+      "en": "Truthfulness in Word",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 694,
+      "en": "Gratitude for the Earth",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 695,
+      "en": "Readiness for Initiation",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 696,
+      "en": "Calming of Agitation",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 697,
+      "en": "Winning Hearts Gently",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 698,
+      "en": "Fulfilment of Pure Wishes",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 699,
+      "en": "Creative Vigour",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 700,
+      "en": "Realisation of True Nature",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 701,
+      "en": "Release From Time's Anxiety",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 702,
+      "en": "Sense of Constant Presence",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 703,
+      "en": "Awakening From Delusion",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 704,
+      "en": "Progress in Learning",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 705,
+      "en": "Insight Into Scriptures",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 706,
+      "en": "Refuge in the Heart",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 707,
+      "en": "Grace to the Humble",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 708,
+      "en": "Freedom From Labels",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 709,
+      "en": "Fidelity in Marriage",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 710,
+      "en": "Continuity of Family Traditions",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 711,
+      "en": "Equanimity in Hardship",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 712,
+      "en": "Potency in Mantra Practice",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 713,
+      "en": "Blessings of the Guru Lineage",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 714,
+      "en": "Mastery of the Senses",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 715,
+      "en": "Vigour Like the Sun",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 716,
+      "en": "Detachment From Appearances",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 717,
+      "en": "Sweetness in Speech",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 718,
+      "en": "Patience Like the Earth",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 719,
+      "en": "Kinship Among Devotees",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 720,
+      "en": "Protection by Unseen Helpers",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 721,
+      "en": "Gentleness of Manner",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 722,
+      "en": "Grace of the Guru",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 723,
+      "en": "Inner Independence",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 724,
+      "en": "Success in Spiritual Disciplines",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 725,
+      "en": "Wisdom in Silence",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 726,
+      "en": "Ageless Spirit of Inquiry",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 727,
+      "en": "Knowledge of Śiva",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 728,
+      "en": "Flashes of Insight",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 729,
+      "en": "Blossoming Happiness",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 730,
+      "en": "Growth in Pure Love",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 731,
+      "en": "Answers to Heartfelt Prayers",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 732,
+      "en": "Joy in Name Recitation",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 733,
+      "en": "Blessing of Mantra Knowledge",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 734,
+      "en": "Rhythm and Grace in Life",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 735,
+      "en": "Stable Ground Amid Change",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 736,
+      "en": "Release From Bondage",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 737,
+      "en": "Living Freedom Here and Now",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 738,
+      "en": "Grace in Movement",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 739,
+      "en": "Restful Sleep",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 740,
+      "en": "Modesty and Good Conduct",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 741,
+      "en": "Graceful Charm",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 742,
+      "en": "Cooling Relief From Life's Heat",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 743,
+      "en": "Release From Past Wrongs",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 744,
+      "en": "Dispersal of Misfortune",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 745,
+      "en": "Graceful Ageing",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 746,
+      "en": "Increase of Good Fortune",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 747,
+      "en": "Joyful Devotion",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 748,
+      "en": "Strength in Illness",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 749,
+      "en": "Freedom From Fear of Death",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 750,
+      "en": "Supreme Shelter in Life",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 751,
+      "en": "Courage in Hard Times",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 752,
+      "en": "Letting Go Gracefully",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 753,
+      "en": "Good Appetite and Digestion",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 754,
+      "en": "Freedom From Debts",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 755,
+      "en": "Fierce Protection From Harm",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 756,
+      "en": "Mastery Over Anger and Pride",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 757,
+      "en": "Peace With Impermanence",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 758,
+      "en": "Order in Worldly Affairs",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 759,
+      "en": "Bearing Burdens With Strength",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 760,
+      "en": "Dharma, Prosperity and Fulfilment",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 761,
+      "en": "Charm and Good Fortune",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 762,
+      "en": "Clear Sight and Insight",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 763,
+      "en": "Balance of Temperament",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 764,
+      "en": "Happiness Here and Hereafter",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 765,
+      "en": "Purity of Thought",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 766,
+      "en": "Bloom of Good Health",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 767,
+      "en": "Vitality and Stamina",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 768,
+      "en": "Lustre of Personality",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 769,
+      "en": "Spirit of Selfless Service",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 770,
+      "en": "Strength to Keep Promises",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 771,
+      "en": "Perseverance in Worship",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 772,
+      "en": "Inner Strength Under Pressure",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 773,
+      "en": "Joy in Flower Offerings",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 774,
+      "en": "Greatness of Spirit",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 775,
+      "en": "Lofty Aspirations",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 776,
+      "en": "Beauty and Bloom at Home",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 777,
+      "en": "Courage and Valour",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 778,
+      "en": "Cosmic Vision",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 779,
+      "en": "Release From Anger and Craving",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 780,
+      "en": "Watchful Care From All Sides",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 781,
+      "en": "Turning Inward",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 782,
+      "en": "Spaciousness of Mind",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 783,
+      "en": "Renewed Life Force",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 784,
+      "en": "Healthy Breath and Energy",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 785,
+      "en": "Radiant Spiritual Strength",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 786,
+      "en": "Wise Delegation",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 787,
+      "en": "Harmony of Waking, Dream, Sleep",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 788,
+      "en": "Success in Righteous Efforts",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 789,
+      "en": "Steadiness Beyond Moods",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 790,
+      "en": "Balance of Worldly and Spiritual",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 791,
+      "en": "Fullness of Being",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 792,
+      "en": "A Settled, Even Mind",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 793,
+      "en": "Harmony Between Spouses",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 794,
+      "en": "Talent in Many Arts",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 795,
+      "en": "Fulfilment of Needs",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 796,
+      "en": "Pleasing Presence",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 797,
+      "en": "Creative Inspiration",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 798,
+      "en": "Flair for Writing",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 799,
+      "en": "Appreciation of Life's Flavours",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 800,
+      "en": "Deep Delight in Life",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 801,
+      "en": "Vitality and Steady Strength",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 802,
+      "en": "Rootedness in Tradition",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 803,
+      "en": "Growth in Reverence",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 804,
+      "en": "Nourishment for Body and Spirit",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 805,
+      "en": "Kindness in One's Gaze",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 806,
+      "en": "Clarity of Inner Vision",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 807,
+      "en": "Peace of Belonging",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 808,
+      "en": "Attention to Small Things",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 809,
+      "en": "Humility Before the Highest",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 810,
+      "en": "Gentle Pull Toward the Divine",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 811,
+      "en": "Release From Clinging",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 812,
+      "en": "Protection From Ill Will",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 813,
+      "en": "Seeing God in Form",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 814,
+      "en": "Openness to the Formless",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 815,
+      "en": "Joy in Simple Worship",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 816,
+      "en": "Stillness of a Pure Mind",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 817,
+      "en": "Firmness in Keeping Vows",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 818,
+      "en": "Honesty in Word and Deed",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 819,
+      "en": "Trust in Inner Guidance",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 820,
+      "en": "Awareness of the Real",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 821,
+      "en": "A Sense of Being Supported",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 822,
+      "en": "Glimpse of the Infinite",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 823,
+      "en": "Feeling Mothered and Cared For",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 824,
+      "en": "Acceptance of Diversity",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 825,
+      "en": "Wisdom Through Good Company",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 826,
+      "en": "Blessings in Motherhood",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 827,
+      "en": "Courage in Hard Times",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 828,
+      "en": "Willing Alignment With Dharma",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 829,
+      "en": "Stability in Life",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 830,
+      "en": "Wonder at Creation",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 831,
+      "en": "Steady, Even Breathing",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 832,
+      "en": "Support for Healthy Living",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 833,
+      "en": "Blessings of Pilgrimage",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 834,
+      "en": "Release From Limiting Habits",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 835,
+      "en": "Love of Quiet Solitude",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 836,
+      "en": "Courage for Right Action",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 837,
+      "en": "Spaciousness of Heart",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 838,
+      "en": "Progress Toward Liberation",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 839,
+      "en": "Abiding in Inner Freedom",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 840,
+      "en": "Connection to One's Source",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 841,
+      "en": "Feeling Truly Understood",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 842,
+      "en": "Relief From Worldly Suffering",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 843,
+      "en": "Acceptance of Life's Cycles",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 844,
+      "en": "Love for Sacred Chant",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 845,
+      "en": "Understanding of Scripture",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 846,
+      "en": "Fruitful Mantra Practice",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 847,
+      "en": "Grace and Poise",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 848,
+      "en": "A Good Name in the World",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 849,
+      "en": "Expansive Confidence",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 850,
+      "en": "Progress in Learning",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 851,
+      "en": "Rest for the Weary",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 852,
+      "en": "Insight Into the Upaniṣads",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 853,
+      "en": "Peace Beyond Understanding",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 854,
+      "en": "Depth of Character",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 855,
+      "en": "Breadth of Vision",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 856,
+      "en": "Healthy Self-Respect",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 857,
+      "en": "Joy in Music",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 858,
+      "en": "Seeing Things as They Are",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 859,
+      "en": "Reaching Life's Highest Goal",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 860,
+      "en": "Release From Sorrow",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 861,
+      "en": "Harmony in Marriage",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 862,
+      "en": "Lightness Beyond Karma",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 863,
+      "en": "Joy in Loving Union",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 864,
+      "en": "Beauty and Radiance",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 865,
+      "en": "A Playful, Light Heart",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 866,
+      "en": "Freedom From Fear of Death",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 867,
+      "en": "Graceful Ageing",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 868,
+      "en": "Innocent Charm",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 869,
+      "en": "Swift Answer to Prayer",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 870,
+      "en": "Depth in Inner Worship",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 871,
+      "en": "Turning the Mind Inward",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 872,
+      "en": "Reverence for the Vedas",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 873,
+      "en": "Balance of Duty and Desire",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 874,
+      "en": "Protection Wherever One Goes",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 875,
+      "en": "Guidance in Meditation",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 876,
+      "en": "Strength in Illness",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 877,
+      "en": "Self-Reliance and Inner Support",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 878,
+      "en": "Contentment Within",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 879,
+      "en": "Sweetness in Speech",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 880,
+      "en": "Rescue From Despair",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 881,
+      "en": "Joy in Dedicated Work",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 882,
+      "en": "Success in Sacred Undertakings",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 883,
+      "en": "Sincerity in Giving",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 884,
+      "en": "Living by Dharma",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 885,
+      "en": "Wise Use of Resources",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 886,
+      "en": "Abundance in the Home",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 887,
+      "en": "Love of Learning",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 888,
+      "en": "Meeting Wise Teachers",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 889,
+      "en": "Calm in a Turning World",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 890,
+      "en": "Peaceful Letting Go",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 891,
+      "en": "A Warm, Glowing Presence",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 892,
+      "en": "Preservation of What Is Good",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 893,
+      "en": "Sense of God Everywhere",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 894,
+      "en": "Peace With Life's Mysteries",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 895,
+      "en": "Blessings for New Beginnings",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 896,
+      "en": "Unshaken Equanimity",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 897,
+      "en": "Strength of Family Lineage",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 898,
+      "en": "Good and Noble Friends",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 899,
+      "en": "Courage of Conviction",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 900,
+      "en": "Action Without Attachment",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 901,
+      "en": "Attunement to Sacred Sound",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 902,
+      "en": "Direct Spiritual Insight",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 903,
+      "en": "Creative Inspiration",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 904,
+      "en": "Skill in One's Work",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 905,
+      "en": "Concentration in Meditation",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 906,
+      "en": "Rising Above Labels",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 907,
+      "en": "Sense of the Sacred in All",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 908,
+      "en": "Knowledge of the True Self",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 909,
+      "en": "Love of Devotional Singing",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 910,
+      "en": "Calm Temperament",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 911,
+      "en": "Blessings on Family Life",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 912,
+      "en": "Respect for All Paths",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 913,
+      "en": "Protection Against Adversity",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 914,
+      "en": "Health and Inner Balance",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 915,
+      "en": "Gentleness of Nature",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 916,
+      "en": "Steady Judgement",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 917,
+      "en": "Perseverance in Practice",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 918,
+      "en": "Mindful Living",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 919,
+      "en": "Wakeful Awareness",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 920,
+      "en": "Lasting Hope",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 921,
+      "en": "Gratitude in All Things",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 922,
+      "en": "Fresh Start Each Day",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 923,
+      "en": "Harmony Among Worshippers",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 924,
+      "en": "A Cheerful Disposition",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 925,
+      "en": "Purity of Awareness",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 926,
+      "en": "Final Liberation",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 927,
+      "en": "Devotion Through Praise",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 928,
+      "en": "Sincerity in Prayer",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 929,
+      "en": "Faith in Sacred Teachings",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 930,
+      "en": "Strength of Mind",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 931,
+      "en": "Quiet Dignity",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 932,
+      "en": "Blessed Companionship",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 933,
+      "en": "Auspiciousness in Daily Life",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 934,
+      "en": "Kinship With All Beings",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 935,
+      "en": "Being Sustained in Need",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 936,
+      "en": "Compassionate Understanding",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 937,
+      "en": "Detachment Without Coldness",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 938,
+      "en": "Confidence in Speaking",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 939,
+      "en": "Generosity of Heart",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 940,
+      "en": "Overflowing Joy",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 941,
+      "en": "Mastery of the Mind",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 942,
+      "en": "Expansive Imagination",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 943,
+      "en": "Safe Journeys",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 944,
+      "en": "Decisive Clarity",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 945,
+      "en": "Depth in Sādhana",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 946,
+      "en": "Fulfilment of Daily Duties",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 947,
+      "en": "Trust in the Supreme Power",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 948,
+      "en": "Grace That Uplifts",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 949,
+      "en": "Harmony With Nature",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 950,
+      "en": "Steady Daily Worship",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 951,
+      "en": "Faith in the Eternal",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 952,
+      "en": "Prosperity With Contentment",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 953,
+      "en": "Happiness and Wellbeing",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 954,
+      "en": "Magnetism of Love",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 955,
+      "en": "Patience and Endurance",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 956,
+      "en": "Strength Like the Mountains",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 957,
+      "en": "Feeling Truly Blessed",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 958,
+      "en": "Integrity of Character",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 959,
+      "en": "Growth in Virtue",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 960,
+      "en": "Perspective Beyond Worldly Cares",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 961,
+      "en": "Freedom From Changing Moods",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 962,
+      "en": "Transcendence of Ego",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 963,
+      "en": "Inner Stillness",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 964,
+      "en": "Youthful Radiance",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 965,
+      "en": "Innocence of Heart",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 966,
+      "en": "Delight in Everyday Life",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 967,
+      "en": "Lifelong Auspiciousness",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 968,
+      "en": "Simple Joys",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 969,
+      "en": "Elegance and Good Presence",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 970,
+      "en": "Happiness in Married Life",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 971,
+      "en": "Honour for Women in the Home",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 972,
+      "en": "A Radiant Spirit",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 973,
+      "en": "Purity of Mind",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 974,
+      "en": "Centredness in Worship",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 975,
+      "en": "Respect for Elders",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 976,
+      "en": "A Mother's Protection",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 977,
+      "en": "Grace in Ritual Gestures",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 978,
+      "en": "Splendour and Good Fortune",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 979,
+      "en": "Wisdom in Daily Choices",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 980,
+      "en": "Progress in Self-Inquiry",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 981,
+      "en": "Insight Into Oneness",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 982,
+      "en": "Fruitfulness in Life",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 983,
+      "en": "Integration of Body and Spirit",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 984,
+      "en": "Balance in Daily Life",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 985,
+      "en": "A Mother's Unfailing Love",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 986,
+      "en": "Focus in Yantra Worship",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 987,
+      "en": "Freedom From Guilt",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 988,
+      "en": "Wonder and Delight",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 989,
+      "en": "Fulfilment of Pure Wishes",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 990,
+      "en": "Steadiness in Practice",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 991,
+      "en": "Going Beyond Methods",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 992,
+      "en": "Receiving Unearned Grace",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 993,
+      "en": "Light of Understanding",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 994,
+      "en": "Simple, Childlike Faith",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 995,
+      "en": "Order and Discipline in Life",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 996,
+      "en": "Fruit of Śrī Cakra Worship",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 997,
+      "en": "Beauty of Heart and Life",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 998,
+      "en": "Auspicious Peace",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 999,
+      "en": "Harmony of Opposites",
+      "source": "editorial_suggestion"
+    },
+    {
+      "number": 1000,
+      "en": "Complete Refuge in the Mother",
+      "source": "editorial_suggestion"
+    }
+  ]
+}
