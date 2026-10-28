@@ -1486,12 +1486,10 @@ header p{color:#845c4b;font-size:18px}
 
 /* Name reading: concise significance + sourced/proposed benefit, compactly stacked. */
 .reader-page .name-section .name-compact-meta{display:flex;flex-direction:column;align-items:flex-start;gap:4px;width:100%;min-width:0}
-.reader-page .name-section .name-compact-meta .name-inline-wisdom{margin:0!important;font:500 14px/1.5 Georgia,serif!important;color:#45644e!important;white-space:normal!important}
-.reader-page .name-section .name-benefit-line{display:flex;flex-wrap:wrap;align-items:baseline;gap:7px;padding-top:4px;border-top:1px solid #e7ebe3;max-width:100%;font:500 13px/1.5 system-ui,sans-serif;color:#345943}
-.reader-page .name-section .name-benefit-label{font:750 11px/1.5 system-ui,sans-serif;color:#71877a}
-.reader-page .name-section .name-benefit-text{font:600 13px/1.5 system-ui,sans-serif;color:#345943;overflow-wrap:anywhere}
+.reader-page .name-section .name-compact-meta .name-inline-wisdom{margin:0!important;font:500 16px/1.55 Georgia,serif!important;color:#45644e!important;white-space:normal!important}
+.reader-page .name-section .name-benefit-line{display:block;padding-top:4px;border-top:1px solid #e7ebe3;max-width:100%;font:500 16px/1.55 Georgia,serif!important;color:#345943}
+.reader-page .name-section .name-benefit-text{font:500 16px/1.55 Georgia,serif!important;color:#345943;overflow-wrap:anywhere}
 .reader-page .name-section .name-benefit-line[data-benefit-source="editorial_suggestion"] .name-benefit-text{color:#567260;font-weight:500}
-.reader-page .name-section .name-benefit-line[data-benefit-source="sanskrit_channel_screenshot"] .name-benefit-label{color:#8a5b41}
 .reader-page .name-section .name-summary-grid>.name-inline-wisdom-slot{min-width:0!important}
 .reader-page .name-section .meaning-toggle.name-significance>.deeper-reading{font-size:1rem;line-height:1.7}
-@media(max-width:640px){.reader-page .name-section .name-benefit-line{gap:4px}.reader-page .name-section .name-benefit-label{font-size:10px}}
+@media(max-width:640px){.reader-page .name-section .name-benefit-line{padding-top:3px}}
