@@ -1500,3 +1500,56 @@ header p{color:#845c4b;font-size:18px}
 .lalita-view-switcher a[aria-current="page"]{background:#315c47;border-color:#315c47;color:#fff}
 .lalita-view-switcher a:hover:not([aria-current="page"]){background:#e8f0e5}
 @media(max-width:580px){.lalita-view-switcher a{flex:1}}
+
+
+/* Study workspace: one left-side collapsible chanting practice dock. */
+.reader-page .study-workspace{display:grid;grid-template-columns:minmax(235px,275px) minmax(0,1fr);align-items:start;gap:16px}
+.reader-page .study-main-content{min-width:0}
+.reader-page .practice-dock{position:sticky;top:12px;z-index:20;margin:0;max-height:calc(100vh - 24px);overflow:auto;border:1px solid #c1d1c1;border-radius:13px;background:#f6f9f3;box-shadow:0 5px 17px #34543f18}
+.reader-page .practice-dock-head{display:flex;gap:8px;align-items:center;padding:10px 11px;border-bottom:1px solid #d6e2d5}
+.reader-page .practice-dock-head .dock-heading{display:grid;min-width:0;gap:1px}
+.reader-page .practice-dock-head strong{font:700 14px/1.35 system-ui,sans-serif;color:#2f5942}
+.reader-page .practice-dock-head .dock-heading span{font:11px/1.35 system-ui,sans-serif;color:#718878}
+.reader-page #practice-dock-toggle{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;min-width:44px;gap:2px;padding:5px 6px;border:1px solid #bfd1be;border-radius:8px;background:#fffdf8;color:#355e45;cursor:pointer}
+.reader-page #practice-dock-toggle .dock-arrow{font:700 20px/1 system-ui,sans-serif}
+.reader-page #practice-dock-toggle .dock-toggle-label{font:600 9px/1.2 system-ui,sans-serif}
+.reader-page .practice-dock-transport{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;padding:9px 8px;background:#e9f1e8}
+.reader-page .practice-dock-transport button{min-width:0;min-height:45px;display:grid;justify-items:center;gap:2px;padding:5px 1px;border:1px solid #b9cbb7;border-radius:7px;background:#fff;color:#355b45;cursor:pointer}
+.reader-page .practice-dock-transport button:first-child:not(:disabled){background:#315c47;color:white}
+.reader-page .practice-dock-transport button:disabled{opacity:.43;cursor:not-allowed}
+.reader-page .practice-dock-transport .dock-button-icon{font:700 16px/1 system-ui,sans-serif}
+.reader-page .practice-dock-transport .dock-button-label{font:600 10px/1.3 system-ui,sans-serif}
+.reader-page .practice-dock-body{display:block}
+.reader-page .practice-mode-tabs{display:grid;grid-template-columns:1fr;gap:4px;padding:10px;background:transparent}
+.reader-page .practice-mode-tabs button{width:100%;text-align:left;white-space:normal;border:1px solid #d0dfcf;background:#fffdf9;border-radius:8px;padding:10px;font:650 12px/1.4 system-ui,sans-serif;color:#42644e}
+.reader-page .practice-mode-tabs button.active{background:#315d46;color:white;border-color:#315d46}
+.reader-page .practice-dock .chanting-panels{padding:0 12px 10px!important;margin:0!important}
+.reader-page .practice-dock .practice-intro{display:none}
+.reader-page .practice-dock .dock-help{margin:0 0 10px;font:12px/1.55 system-ui,sans-serif;color:#64786a}
+.reader-page .practice-dock .practice-fields,.reader-page .practice-dock .guided-fields{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px!important}
+.reader-page .practice-dock .practice-fields label,.reader-page .practice-dock .guided-fields label{display:grid!important;width:100%!important;max-width:none!important;min-width:0!important;gap:3px;color:#3b5b45;font:650 11px/1.4 system-ui,sans-serif}
+.reader-page .practice-dock .practice-fields select,.reader-page .practice-dock .guided-fields select{width:100%!important;min-width:0!important;max-width:100%!important;min-height:37px;padding:6px 7px;font:12px system-ui,sans-serif}
+.reader-page .practice-dock .guided-panel{border:0!important;background:transparent!important;padding:0!important;margin:0!important}
+.reader-page .practice-dock .guided-panel .guided-body{display:contents}
+.reader-page .practice-dock .dock-mode-status{font:11px/1.5 system-ui,sans-serif;color:#536d5d;margin:11px 0 0}
+.reader-page .practice-dock .dock-status{margin:0;padding:10px 11px;border-top:1px solid #d5dfd4;background:#eff5ed;color:#466450;font:600 11px/1.5 system-ui,sans-serif}
+.reader-page .practice-dock.is-collapsed{overflow:hidden}
+.reader-page .practice-dock.is-collapsed .practice-dock-body,.reader-page .practice-dock.is-collapsed .dock-heading{display:none}
+.reader-page .study-workspace.dock-collapsed{grid-template-columns:74px minmax(0,1fr)}
+.reader-page .practice-dock.is-collapsed .practice-dock-head{justify-content:center;padding:9px 4px}
+.reader-page .practice-dock.is-collapsed .practice-dock-transport{grid-template-columns:1fr}
+.reader-page .dock-verse-shortcut{border:1px solid #b8cbb9;border-radius:8px;background:#f3f8f1;color:#345b43;min-height:34px;padding:5px 10px;font:650 12px system-ui,sans-serif;cursor:pointer}
+.reader-page .card.selected-verse{border-color:#73a17e!important;box-shadow:0 0 0 2px #accdb53d}
+.reader-page .card,.reader-page .name-audio-card{scroll-margin-top:110px}
+.reader-page #practice-audio{display:none}
+@media(max-width:860px){
+.reader-page .study-workspace{grid-template-columns:minmax(185px,230px) minmax(0,1fr);gap:9px}
+.reader-page .practice-dock .practice-fields,.reader-page .practice-dock .guided-fields{grid-template-columns:1fr}
+}
+@media(max-width:620px){
+.reader-page .study-workspace,.reader-page .study-workspace.dock-collapsed{grid-template-columns:1fr;gap:10px}
+.reader-page .practice-dock{position:sticky;top:0;max-height:66vh}
+.reader-page .practice-dock.is-collapsed .practice-dock-transport{grid-template-columns:repeat(4,1fr)}
+.reader-page .practice-dock .practice-fields,.reader-page .practice-dock .guided-fields{grid-template-columns:repeat(2,minmax(0,1fr))}
+.reader-page .practice-dock.is-collapsed .practice-dock-head{justify-content:flex-start}
+}
