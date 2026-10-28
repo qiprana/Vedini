@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Lalitā Sahasranāma · Nāmāvalī | Vedini</title>
-<link rel="stylesheet" href="../styles.css?v=20261028-namavali-dock-v1">
+<link rel="stylesheet" href="../styles.css?v=20261028-search-unified-v1">
 <style>
 .names-reference{max-width:1260px;margin:auto;padding:18px clamp(12px,2.7vw,32px) 70px;background:#fffaf2;min-height:100vh}
 .names-reference h1{font-size:clamp(25px,3.8vw,38px);color:#2e5543;margin:14px 0 8px}
@@ -89,9 +89,11 @@
 <div class="practice-dock-body" id="practice-dock-body"><div class="namavali-player-placeholder"><strong>Nāmāvalī Chanting</strong><p>Audio coming soon</p></div></div>
 <p class="dock-status" id="dock-status" role="status">Audio coming soon</p>
 </aside>
-<div class="study-main-content namavali-main-content"><nav class="lalita-view-switcher" aria-label="Lalitā reading modes"><a href="./index.html">Study ślokas</a><a href="./chant.html">Full Chanting</a><a href="./names.html" aria-current="page">Divine Names</a></nav>
-<div class="name-ref-tools"><label class="searchbox">Search mantras, meanings or benefits<input id="name-q" type="search" placeholder="Try compassion, Śrīmātā, or 78"></label>
-<label>Names<select id="name-range"><option value="0">All 1–1,000</option><option value="1">1–200</option><option value="2">201–400</option><option value="3">401–600</option><option value="4">601–800</option><option value="5">801–1,000</option></select></label>
+<div class="study-main-content namavali-main-content"><div class="lalita-reader-toolbar">
+<nav class="lalita-view-switcher" aria-label="Lalitā reading modes"><a href="./index.html">Study ślokas</a><a href="./chant.html">Full Chanting</a><a href="./names.html" aria-current="page">Divine Names</a></nav>
+<label class="lalita-search-field"><span class="visually-hidden">Search</span><input id="name-q" type="search" placeholder="Search ślokas, names, or meanings…" aria-label="Search Lalitā text and meanings" autocomplete="off"></label>
+</div>
+<div class="name-ref-tools"><label>Names<select id="name-range"><option value="0">All 1–1,000</option><option value="1">1–200</option><option value="2">201–400</option><option value="3">401–600</option><option value="4">601–800</option><option value="5">801–1,000</option></select></label>
 </div>
 <div class="name-ref-meta"><span id="name-state">Loading names…</span><span id="name-count"></span></div>
 <div class="name-ref-scroll"><table class="name-ref-table"><thead><tr><th>No.</th><th>Nāmāvalī (chant aloud)</th><th>Simple meaning</th><th>Benefit</th></tr></thead><tbody id="name-rows"></tbody></table></div>
