@@ -32,7 +32,14 @@
         <p><a href="./names.html">Explore the divine-name meanings and benefits reference</a></p>
       </div>
     </details>
-    <nav class="lalita-view-switcher" aria-label="Lalitā reading modes"><a href="./index.html" aria-current="page">Study ślokas</a><a href="./chant.html">Full Chanting</a><a href="./names.html">Divine Names</a></nav>
+    <div class="lalita-language-bar">
+      <div class="language-controls">
+        <div class="language-toggle" role="group" aria-label="Choose Sanskrit script and translation language">
+          <button type="button" class="toggle chosen" id="dev" aria-pressed="true" lang="hi">देवनागरी</button>
+          <button type="button" class="toggle" id="kn" aria-pressed="false" lang="kn">ಕನ್ನಡ</button>
+        </div>
+      </div>
+    </div>
     <div class="study-workspace" id="study-workspace">
       <aside class="practice-dock" id="practice-dock" aria-label="Chanting practice controls">
         <div class="practice-dock-head">
@@ -88,12 +95,7 @@
       </aside>
       <div class="study-main-content">
     <div class="toolbar reader-top-tools">
-      <div class="language-controls">
-        <div class="language-toggle" role="group" aria-label="Choose Sanskrit script and translation language">
-          <button type="button" class="toggle chosen" id="dev" aria-pressed="true" lang="hi">देवनागरी</button>
-          <button type="button" class="toggle" id="kn" aria-pressed="false" lang="kn">ಕನ್ನಡ</button>
-        </div>
-      </div>
+    <nav class="lalita-view-switcher" aria-label="Lalitā reading modes"><a href="./index.html" aria-current="page">Study ślokas</a><a href="./chant.html">Full Chanting</a><a href="./names.html">Divine Names</a></nav>
       <input id="search" type="search" placeholder="Search ślokas and names…" aria-label="Search ślokas and names">
     </div>
     <div id="sticky-verse-navigation" class="sticky-verse-navigation" aria-label="Dhyāna and śloka navigation">
