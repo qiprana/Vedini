@@ -1159,11 +1159,11 @@ header p{color:#845c4b;font-size:18px}
  background:#fff;
  padding:14px;
 }
-.reader-page .verse-meaning-panel .meaning-toggle.verse-overall-meaning {margin:8px 0;}
-.reader-page .verse-meaning-panel .meaning-toggle.verse-overall-meaning > p {
- padding:12px 14px;
- margin:0;
-}
+.reader-page .verse-meaning-panel .meaning-toggle.verse-combined-meaning {margin:8px 0;}
+.reader-page .verse-combined-meaning .verse-meaning-copy {background:#fff;padding:14px 16px;}
+.reader-page .verse-combined-meaning .overall-reading {margin:0;line-height:1.65;}
+.reader-page .verse-combined-meaning .deeper-reading {background:transparent;padding:0;margin-top:11px;line-height:1.7;}
+.reader-page .verse-combined-meaning .overall-reading + .deeper-reading {border-top:1px solid #e5eae2;padding-top:11px;}
 @media(max-width:720px) {
  .reader-page .name-audio-card {grid-template-columns:39px minmax(0,1fr);gap:4px;}
  .reader-page .name-audio-card > .name-audio-button {width:34px;height:34px;margin:8px 0 0 1px;}

@@ -1309,25 +1309,26 @@ function dhyanaWordsPanel(v){
  const count=info.components?.length||0;
  return "<section class='name-section dhyana-study' aria-label='"+esc(langText("Study the words","ಪದಗಳ ಅಧ್ಯಯನ"))+"'><div class='name-study-list'><details class='name-details compact-name-row dhyana-word-card' data-detail-id='dhyana-"+v.verse_number+"'><summary><span class='name-summary-grid'><span class='name-identity-inline'><span class='name-written'>"+esc(langText("Word by word","ಪದ ಪದದ ಅರ್ಥ"))+"</span></span><span class='name-essence'>"+count+" "+esc(langText("word parts","ಪದಭಾಗಗಳು"))+"</span></span></summary><div class='study-inner'><h4>"+esc(langText("Word by word","ಪದ ಪದದ ಅರ್ಥ"))+"</h4>"+wordsGrid(info.components)+"</div></details></div></section>";
 }
-function moreSection(info,isDhyana,number){
- const deep=anyMeaning(info,"traditional_interpretation");
- if(!deep)return "";
- return "<details class='meaning-toggle verse-deeper-meaning' data-detail-id='deep-"+(isDhyana?"d":"v")+number+"'><summary>"+esc(langText("Deeper meaning","ಆಳವಾದ ಅರ್ಥ"))+"</summary><div class='deeper-reading'>"+richParagraphs(deep)+"</div></details>";
-}
-function optionalVerseMeaning(meaning,isDhyana,number){
- if(!meaning)return "";
- const label=isDhyana?langText("Overall meaning","ಒಟ್ಟಾರೆ ಅರ್ಥ"):langText("Overall meaning","ಒಟ್ಟಾರೆ ಅರ್ಥ");
- return "<details class='meaning-toggle verse-overall-meaning' data-detail-id='overall-"+(isDhyana?"d":"v")+number+"'><summary>"+esc(label)+"</summary><p>"+esc(meaning)+"</p></details>";
+// A single, closed-by-default disclosure retains both the accessible summary
+// and the interpretive depth, without duplicating adjacent toggles.
+function combinedVerseMeaning(meaning,info,isDhyana,number){
+ const overall=String(meaning||"").trim();
+ const deeper=String(anyMeaning(info,"traditional_interpretation")||"").trim();
+ if(!overall&&!deeper)return "";
+ const uniqueDeep=deeper&&(overall!==deeper);
+ const text=(overall?"<p class='overall-reading'>"+esc(overall)+"</p>":"")
+   +(uniqueDeep?"<div class='deeper-reading'>"+richParagraphs(deeper)+"</div>":"");
+ return "<section class='meaning-section verse-lesson'><details class='meaning-toggle verse-combined-meaning' data-detail-id='meaning-"+(isDhyana?"d":"v")+number+"'><summary>"+esc(langText("Meaning & reflection","ಅರ್ಥ ಮತ್ತು ಆಳವಾದ ವಿವರಣೆ"))+"</summary><div class='verse-meaning-copy'>"+text+"</div></details></section>";
 }
 function dhyanaVerseMeaning(v){
  const info=dhyanaData[v.verse_number]||{};
  const meaning=anyMeaning(info,"essential_meaning")||(language==="kn"?v.meaning?.kannada:v.meaning?.english)||"";
- return "<section class='meaning-section verse-lesson'>"+optionalVerseMeaning(meaning,true,v.verse_number)+moreSection(info,true,v.verse_number)+"</section>";
+ return combinedVerseMeaning(meaning,info,true,v.verse_number);
 }
 function mainVerseMeaning(v){
- const summary=language==="kn"?v.meaning?.kannada:v.meaning?.english;
  const info=verseData[v.verse_number]||{};
- return "<section class='meaning-section verse-lesson'>"+optionalVerseMeaning(summary,false,v.verse_number)+moreSection(info,false,v.verse_number)+"</section>";
+ const summary=language==="kn"?v.meaning?.kannada:v.meaning?.english;
+ return combinedVerseMeaning(summary,info,false,v.verse_number);
 }
 function verseLine(s){
  const value=String(s??"").trim();
