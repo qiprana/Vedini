@@ -22,6 +22,37 @@ function render(){
   card.append(left,right);fragment.append(card);
  }
  list.append(fragment);
+ renderRangeTabs();
+}
+function renderRangeTabs(){
+ const groups=$("#fc-range-tabs"),quick=$("#fc-verse-quick-index");
+ if(!groups||!quick||!state.entries.length)return;
+ const current=state.entries[state.index]||state.entries[0];
+ const group=current.kind==="dhyana"?"d":String(Math.floor((current.verse_number-1)/10));
+ const total=Math.ceil(183/10);
+ groups.replaceChildren();
+ function button(parent,text,id,cls,handler){
+  const b=document.createElement("button");b.type="button";b.textContent=text;b.dataset.group=id;
+  if(cls)b.classList.add("current");b.onclick=handler;parent.append(b);
+ }
+ function choose(which){
+  const index=state.entries.findIndex(e=>key(e)===which);
+  if(index<0)return;
+  if(state.playing)begin(which);
+  else{state.index=index;document.getElementById("fc-sloka-"+which)?.scrollIntoView({behavior:"smooth",block:"start"});$("#fc-jump").value=which;renderRangeTabs()}
+ }
+ button(groups,"Dhyāna 1–4","d",group==="d",()=>choose("d-1"));
+ for(let i=0;i<total;i++){
+  const first=i*10+1,last=Math.min(183,first+9);
+  button(groups,first+"–"+last,String(i),group===String(i),()=>choose("s-"+first));
+ }
+ quick.replaceChildren();
+ const first=group==="d"?1:Number(group)*10+1;
+ const last=group==="d"?4:Math.min(183,first+9);
+ for(let i=first;i<=last;i++){
+  const which=(group==="d"?"d-":"s-")+i;
+  button(quick,String(i),which,key(current)===which,()=>choose(which));
+ }
 }
 
 const song=e=>e.kind==="dhyana"?"Dhyāna "+e.verse_number:"Śloka "+e.verse_number;
@@ -58,6 +89,7 @@ function active(index,scroll=true){
  const card=document.getElementById("fc-sloka-"+key(e));
  if(card){card.classList.add("fc-playing");if(scroll)card.scrollIntoView({block:"start",behavior:"smooth"})}
  $("#fc-jump").value=key(e);
+ renderRangeTabs();
 }
 function updatePlayhead(){
  if(!state.playing||state.paused||!state.context)return;
