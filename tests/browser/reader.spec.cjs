@@ -121,7 +121,7 @@ test('divine names use compact side-by-side reading and meaning on desktop',asyn
  const insight=row.locator('.name-essence');
  const ir=await identity.boundingBox(),mr=await meaning.boundingBox(),nr=await mantra.boundingBox(),sr=await insight.boundingBox();
  expect(ir&&mr&&nr&&sr).toBeTruthy();
- const readingWidth=await card.locator('.name-section').evaluate(el=>el.getBoundingClientRect().width);
+ const readingWidth=await card.locator('.name-summary-grid').evaluate(el=>el.getBoundingClientRect().width);
  if(readingWidth>445){
   expect(mr.x).toBeGreaterThan(ir.x+ir.width-2);
   expect(Math.abs(nr.x-mr.x)).toBeLessThan(4);
@@ -158,7 +158,7 @@ test('traditional phrase in the row and one Significance reading when expanded',
  await expect(name.locator('.name-mantra-inline')).toHaveCount(0);
  await name.locator('summary').first().click();
  const details=name.locator('.name-significance');
- await expect(details.locator('summary')).toHaveText('Significance');
+ await expect(details.locator('summary')).toHaveText('Meaning & significance');
  await details.locator('summary').click();
  await expect(details.locator('.deeper-reading')).toContainText(/removal of obstacles/i);
  await expect(details.locator('h5')).toHaveCount(0);
