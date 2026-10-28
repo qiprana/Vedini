@@ -1,7 +1,7 @@
 (function(){"use strict";
-const $=s=>document.querySelector(s),root=$("#fc-page"),list=$("#fc-list"),audio=$("#fc-audio");
-const state={entries:[],meanings:new Map(),playing:false,paused:false,index:0,token:0,clips:[],clipIndex:0,audioMap:new Map(),dhyanaClips:new Map(),fallback:new Set()};
-const setStatus=s=>{$("#fc-status").textContent=s},pad=n=>String(n).padStart(3,"0");
+const $=s=>document.querySelector(s),root=$("#fc-page"),list=$("#fc-list");
+const state={entries:[],meanings:new Map(),playing:false,paused:false,index:0,token:0,audioMap:new Map(),dhyanaClips:new Map(),fallback:new Set(),context:null,dock:null,ticker:null,loader:null,scheduleIndex:0,nextTime:0,segments:[],buffers:new Map()};
+const setStatus=s=>{state.dock?.sync({playing:state.playing,paused:state.paused,status:s})},pad=n=>String(n).padStart(3,"0");
 const fetchJSON=async p=>{const r=await fetch("../data/lalita/"+p,{cache:"no-store"});if(!r.ok)throw Error("Could not load "+p);return r.json()};
 const el=(tag,cls,value)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(value!==undefined)e.textContent=value;return e};
 const key=e=>e.kind==="dhyana"?"d-"+e.verse_number:"s-"+e.verse_number;
@@ -23,66 +23,135 @@ function render(){
  }
  list.append(fragment);
 }
-function controls(){
- $("#fc-pause").disabled=!state.playing;$("#fc-stop").disabled=!state.playing;$("#fc-pause").textContent=state.paused?"Resume":"Pause";
-}
-function stop(message="Stopped"){
- state.token++;state.playing=false;state.paused=false;state.clips=[];state.clipIndex=0;
- audio.pause();audio.removeAttribute("src");audio.load();controls();
- document.querySelectorAll(".fc-playing").forEach(e=>e.classList.remove("fc-playing"));setStatus(message);
-}
-function active(){
- const e=state.entries[state.index];if(!e)return;
- document.querySelectorAll(".fc-playing").forEach(x=>x.classList.remove("fc-playing"));
- const card=document.getElementById("fc-sloka-"+key(e));if(card){card.classList.add("fc-playing");card.scrollIntoView({block:"start",behavior:"smooth"})}
- $("#fc-jump").value=key(e);
-}
+
+const song=e=>e.kind==="dhyana"?"Dhyāna "+e.verse_number:"Śloka "+e.verse_number;
 function sourceFor(e){
  const voice=$("#fc-voice").value;
- if(e.kind==="dhyana"){
-  const clips=state.dhyanaClips.get(e.verse_number)||[];
-  return {urls:clips.map(n=>"../audio/lalita/verses/MSS/phrase_"+String(n).padStart(4,"0")+".mp3"),label:"MSS · Dhyāna"};
- }
+ const prefix="../audio/lalita/verses/";
+ if(e.kind==="dhyana")return {urls:(state.dhyanaClips.get(e.verse_number)||[]).map(n=>prefix+"MSS/phrase_"+String(n).padStart(4,"0")+".mp3"),label:"MSS · Dhyāna"};
  if(voice==="MSS"&&!state.fallback.has(e.verse_number)){
   const clips=(e.names||[]).flatMap(n=>state.audioMap.get(n.studyNumber)||[]);
-  if(clips.length)return {urls:clips.map(n=>"../audio/lalita/verses/MSS/phrase_"+String(n).padStart(4,"0")+".mp3"),label:"MSS"};
+  if(clips.length)return {urls:clips.map(n=>prefix+"MSS/phrase_"+String(n).padStart(4,"0")+".mp3"),label:"MSS"};
  }
- const used=voice==="MSS"?"VD":voice;
- return {urls:["../audio/lalita/verses/"+used+"/sloka-"+pad(e.verse_number)+".mp3"],label:voice==="MSS"?"VD · complete-verse fallback":used};
+ const selected=voice==="MSS"?"VD":voice;
+ return {urls:[prefix+selected+"/sloka-"+pad(e.verse_number)+".mp3"],label:voice==="MSS"?"VD · complete-verse fallback":selected};
 }
-function nextClip(token){
- if(!state.playing||state.paused||token!==state.token)return;
- if(state.clipIndex>=state.clips.length){nextEntry(token);return}
- audio.pause();audio.src=state.clips[state.clipIndex++];audio.playbackRate=1;audio.load();
- const p=audio.play();if(p&&p.catch)p.catch(()=>{if(state.playing&&token===state.token&&!state.paused)stop("Audio unavailable. Reading remains available.")});
+function sourceList(){
+ return state.entries.map(e=>{const src=sourceFor(e);return {entry:e,urls:src.urls,label:src.label}});
 }
-function playEntry(token){
- if(!state.playing||token!==state.token)return;
- const e=state.entries[state.index],src=sourceFor(e);
- if(!src.urls.length){stop("Recording unavailable for "+(e.kind==="dhyana"?"Dhyāna ":"śloka ")+e.verse_number);return}
- state.clips=src.urls;state.clipIndex=0;active();
- setStatus("Playing "+(e.kind==="dhyana"?"Dhyāna ":"śloka ")+e.verse_number+" · "+src.label);
- nextClip(token);
+async function getBuffer(url,ctx){
+ if(!state.buffers.has(url)){
+  const job=fetch(url).then(r=>{if(!r.ok)throw Error("Cannot load "+url);return r.arrayBuffer()}).then(data=>ctx.decodeAudioData(data));
+  state.buffers.set(url,job);job.catch(()=>{if(state.buffers.get(url)===job)state.buffers.delete(url)});
+ }
+ return state.buffers.get(url);
 }
-function nextEntry(token){
- if(token!==state.token||!state.playing)return;
- if(state.index+1>=state.entries.length){stop("Completed all four Dhyāna and 183 main ślokas");return}
- state.index++;playEntry(token);
+async function prefetch(start,count=3){
+ const token=state.token,ctx=state.context;
+ if(!ctx||!state.playing||token!==state.token)return;
+ const urls=state.loader.slice(start,Math.min(start+count,state.loader.length)).flatMap(x=>x.urls);
+ try{await Promise.all(urls.map(url=>getBuffer(url,ctx)))}catch(e){if(token===state.token)stop("Recording unavailable. Please check the audio files.")}
 }
-function begin(which){const index=state.entries.findIndex(e=>key(e)===which);if(index<0)return;stop("");state.playing=true;state.index=index;state.paused=false;controls();playEntry(state.token)}
-audio.addEventListener("ended",()=>{if(state.playing&&!state.paused)nextClip(state.token)});
-audio.addEventListener("error",()=>{if(state.playing&&!state.paused)stop("Audio failed to load. You can continue chanting from the text.")});
-$("#fc-play-all").onclick=()=>begin("d-1");
-$("#fc-play-from").onclick=()=>begin($("#fc-jump").value);
-$("#fc-pause").onclick=async()=>{
+function active(index,scroll=true){
+ const e=state.entries[index];if(!e)return;
+ document.querySelectorAll(".fc-playing").forEach(x=>x.classList.remove("fc-playing"));
+ const card=document.getElementById("fc-sloka-"+key(e));
+ if(card){card.classList.add("fc-playing");if(scroll)card.scrollIntoView({block:"start",behavior:"smooth"})}
+ $("#fc-jump").value=key(e);
+}
+function updatePlayhead(){
+ if(!state.playing||state.paused||!state.context)return;
+ const t=state.context.currentTime;
+ let index=state.index;
+ for(const segment of state.segments){if(segment.start<=t+.03&&segment.end>t-.03)index=segment.index}
+ if(index!==state.index){state.index=index;active(index);setStatus("Playing "+song(state.entries[index])+" · "+state.loader[index].label)}
+ if(state.scheduleIndex>=state.loader.length&&state.nextTime<=t+.02)stop("Completed all four Dhyāna and 183 main ślokas");
+}
+async function pump(token){
+ if(!state.playing||token!==state.token||state.paused||!state.context)return;
+ const ctx=state.context;
+ while(state.scheduleIndex<state.loader.length&&state.nextTime<ctx.currentTime+18){
+  const index=state.scheduleIndex,group=state.loader[index];
+  if(!group.urls.length){stop("Missing recording for "+song(group.entry));return}
+  // The next three entries are fetched before playback reaches their boundaries.
+  await prefetch(index,3);
+  if(token!==state.token||!state.playing||state.paused)return;
+  let buffers;
+  try{buffers=await Promise.all(group.urls.map(url=>getBuffer(url,ctx)))}catch(e){if(token===state.token)stop("Audio unavailable for "+song(group.entry));return}
+  if(token!==state.token||!state.playing||state.paused)return;
+  let time=Math.max(state.nextTime,ctx.currentTime+.06);
+  const first=time;
+  for(let j=0;j<buffers.length;j++){
+   const buffer=buffers[j],overlap=state.segments.length?Math.min(.055,buffer.duration/6):0;
+   time-=overlap;
+   const node=ctx.createBufferSource(),gain=ctx.createGain();
+   node.buffer=buffer;node.connect(gain);gain.connect(ctx.destination);
+   gain.gain.setValueAtTime(overlap?0:1,time);
+   if(overlap)gain.gain.linearRampToValueAtTime(1,time+overlap);
+   const fade=Math.min(.055,buffer.duration/6);
+   gain.gain.setValueAtTime(1,Math.max(time+overlap,time+buffer.duration-fade));
+   gain.gain.linearRampToValueAtTime(0,time+buffer.duration);
+   node.start(time);
+   state.segments.push({node,gain,start:time,end:time+buffer.duration,index});
+   time+=buffer.duration;
+  }
+  state.nextTime=time;state.scheduleIndex++;
+  if(state.segments.length>350)state.segments=state.segments.filter(s=>s.end>ctx.currentTime-1);
+ }
+}
+function stop(message="Stopped"){
+ state.token++;state.playing=false;state.paused=false;
+ if(state.ticker){clearInterval(state.ticker);state.ticker=null}
+ for(const s of state.segments){try{s.node.onended=null;s.node.stop()}catch(e){}try{s.node.disconnect();s.gain.disconnect()}catch(e){}}
+ state.segments=[];state.loader=null;state.scheduleIndex=0;
+ if(state.context){state.context.close().catch(()=>{});state.context=null}
+ document.querySelectorAll(".fc-playing").forEach(el=>el.classList.remove("fc-playing"));
+ setStatus(message);
+}
+async function begin(which){
+ const index=state.entries.findIndex(e=>key(e)===which);if(index<0)return;
+ stop("");
+ state.token++;const token=state.token;
+ state.playing=true;state.paused=false;state.index=index;state.scheduleIndex=index;state.loader=sourceList();
+ state.buffers.clear();
+ try{
+  const ctx=new (window.AudioContext||window.webkitAudioContext)();state.context=ctx;
+  await ctx.resume();state.nextTime=ctx.currentTime+.15;
+  // Decoding the first two verses before scheduling avoids startup gaps.
+  await prefetch(index,2);
+  if(token!==state.token||!state.playing)return;
+  active(index);setStatus("Playing "+song(state.entries[index])+" · "+state.loader[index].label);
+  await pump(token);
+  if(token!==state.token||!state.playing)return;
+  state.ticker=setInterval(()=>{if(token!==state.token)return;updatePlayhead();if(!state.paused)pump(token).catch(()=>stop("Unable to continue audio"))},150);
+ }catch(e){if(token===state.token)stop("Unable to begin audio: "+e.message)}
+}
+async function pause(){
+ if(!state.playing||!state.context)return;
+ if(state.paused){
+  try{await state.context.resume();state.paused=false;setStatus("Resumed "+song(state.entries[state.index]));pump(state.token)}
+  catch(e){stop("Unable to resume chanting")}
+ }else{
+  await state.context.suspend();state.paused=true;
+  setStatus("Paused at "+song(state.entries[state.index]));
+ }
+}
+function next(){
  if(!state.playing)return;
- if(state.paused){state.paused=false;controls();if(audio.src){try{await audio.play();setStatus("Resumed chanting")}catch{stop("Unable to resume")}}else nextClip(state.token)}
- else {state.paused=true;audio.pause();controls();setStatus("Paused")}
-};
-$("#fc-stop").onclick=()=>stop();
-$("#fc-voice").onchange=()=>{if(state.playing){state.token++;state.paused=false;controls();playEntry(state.token)}};
-$("#fc-jump").onchange=()=>{const value=$("#fc-jump").value;const i=state.entries.findIndex(e=>key(e)===value);if(i<0)return;if(state.playing)begin(value);else document.getElementById("fc-sloka-"+value)?.scrollIntoView({behavior:"smooth",block:"start"})};
-$("#fc-script").onchange=render;$("#fc-show-iast").onchange=render;$("#fc-show-meaning").onchange=render;
+ if(state.index+1>=state.entries.length){stop("Completed chanting");return}
+ begin(key(state.entries[state.index+1]));
+}
+function initDock(){
+ state.dock=window.VediniPracticeDock.bind({root:"practice-dock",workspace:"study-workspace",initialStatus:"Loading chanting data…",
+  onPlay:()=>begin($("#fc-jump").value),
+  onPause:pause,onNext:next,onStop:()=>stop()});
+}
+initDock();
+$("#fc-voice").onchange=()=>{if(state.playing)begin(key(state.entries[state.index]))};
+$("#fc-jump").onchange=()=>{const value=$("#fc-jump").value;if(state.playing)begin(value);else document.getElementById("fc-sloka-"+value)?.scrollIntoView({behavior:"smooth",block:"start"})};
+$("#fc-script").onchange=render;
+$("#fc-show-iast").onchange=render;
+$("#fc-show-meaning").onchange=render;
 $("#fc-print").onclick=()=>window.print();
 list.addEventListener("click",e=>{const b=e.target.closest("[data-start]");if(b)begin(b.dataset.start)});
 (async()=>{
@@ -113,9 +182,9 @@ list.addEventListener("click",e=>{const b=e.target.closest("[data-start]");if(b)
  for(const e of state.entries){const option=el("option","",(e.kind==="dhyana"?"Dhyāna ":"Śloka ")+e.verse_number);option.value=key(e);select.append(option)}
  const params=new URL(location.href).searchParams;
  const n=Number(params.get("sloka"));if(params.has("sloka")&&Number.isInteger(n)&&n>=1&&n<=183)select.value="s-"+n;
- $("#fc-play-all").disabled=false;$("#fc-play-from").disabled=false;
+ state.dock.sync({playing:false,paused:false,status:"Ready · press Play to chant continuously"});
  $("#fc-count").textContent="4 Dhyāna + 183 main ślokas";
- setStatus("Ready · original recording speed · play all or start anywhere.");
+ setStatus("Ready · MSS clips are preloaded and crossfaded");
  render();
  if(params.has("sloka")&&n>=1&&n<=183)requestAnimationFrame(()=>document.getElementById("fc-sloka-s-"+n)?.scrollIntoView({block:"start"}));
  }catch(e){setStatus("Unable to load complete chanting data: "+e.message);$("#fc-count").textContent="Content could not be loaded"}
