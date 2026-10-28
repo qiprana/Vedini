@@ -85,9 +85,12 @@
 const $=selector=>document.querySelector(selector);
 const norm=value=>String(value??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
 let names=[];
+const language=()=>window.VediniLanguage.get();
+window.VediniLanguage.bind(()=>render());
+function toKannada(value){return Array.from(String(value)).map(c=>{if(c==="ॐ")return "ಓಂ";const n=c.codePointAt(0);return (n>=0x0900&&n<=0x096f)?String.fromCodePoint(n+0x380):c}).join("")}
 function render(){
  const query=norm($("#name-q").value.trim()),range=Number($("#name-range").value);
- const rows=names.filter(n=>(!range||Math.ceil(n.number/200)===range)&&(!query||norm([n.number,n.iast,n.sanskrit,n.mantra.dev,n.mantra.iast,n.meaning,n.benefit].join(" ")).includes(query)));
+ const rows=names.filter(n=>(!range||Math.ceil(n.number/200)===range)&&(!query||norm([n.number,n.iast,n.sanskrit,n.mantra.dev,n.mantra.iast,n.meaning,n.meaningKn,n.benefit].join(" ")).includes(query)));
  const body=$("#name-rows");body.replaceChildren();
  function cell(tr,text,className){
   const td=document.createElement("td");if(className)td.className=className;td.textContent=text??"";tr.append(td);return td;
@@ -96,10 +99,10 @@ function render(){
   const row=document.createElement("tr");
   cell(row,n.number,"num");
   const mantra=cell(row,"","namavali-cell");
-  const devanagari=document.createElement("strong");devanagari.className="namavali-dev";devanagari.lang="sa";devanagari.textContent=n.mantra.dev;
+  const devanagari=document.createElement("strong");devanagari.className="namavali-dev";devanagari.lang="sa";devanagari.textContent=language()==="kn"?toKannada(n.mantra.dev):n.mantra.dev;devanagari.lang=language()==="kn"?"kn":"sa";
   const roman=document.createElement("span");roman.className="namavali-iast";roman.textContent=n.mantra.iast;
   mantra.append(devanagari,roman);
-  cell(row,n.meaning);
+  cell(row,language()==="kn"?n.meaningKn:n.meaning);
   const benefit=cell(row,n.benefit,"benefit");
   const source=document.createElement("small");
   source.textContent=n.source==="sanskrit_channel_screenshot"?"✦ The Sanskrit Channel · screenshot":"Editorial interpretation";
@@ -121,17 +124,17 @@ try{
   if(!response.ok)throw Error(name+" HTTP "+response.status);
   return response.json();
  }));
- const meanings=new Map(interpretations.map(n=>[n.number,n.essential_meaning?.en]));
+ const meanings=new Map(interpretations.map(n=>[n.number,n.essential_meaning]));
  const benefitByNumber=new Map(benefits.names.map(n=>[n.number,n]));
  const mantras=new Map(namavali.names.map(n=>[n.number,n]));
  if(basic.length!==1000||benefitByNumber.size!==1000||mantras.size!==1000)throw Error("Incomplete name collection");
  names=basic.map((n,i)=>{
   const number=i+1;
-  return {number,iast:n.iast,sanskrit:n.sanskrit,meaning:meanings.get(number)||n.english||"",
+  return {number,iast:n.iast,sanskrit:n.sanskrit,meaning:meanings.get(number)?.en||n.english||"",meaningKn:meanings.get(number)?.kn||n.kannada||"",
    benefit:benefitByNumber.get(number)?.en||"",source:benefitByNumber.get(number)?.source||"",
    mantra:mantras.get(number)};
  });
- if(names.some(n=>!n.mantra?.dev||!n.mantra?.iast||!n.meaning||!n.benefit))throw Error("Missing Nāmāvalī, meaning or benefit");
+ if(names.some(n=>!n.mantra?.dev||!n.mantra?.iast||!n.meaning||!n.meaningKn||!n.benefit))throw Error("Missing Nāmāvalī, meaning or benefit");
  $("#name-state").textContent="All 1,000 Nāmāvalī mantras loaded";
  render();
 }catch(error){
