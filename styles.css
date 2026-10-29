@@ -1784,3 +1784,74 @@ header p{color:#845c4b;font-size:18px}
 
 .reader-page .practice-dock #guided-panel .guided-fields label.guided-name-setting[hidden],
 .reader-page .practice-dock #guided-panel .guided-fields label.guided-verse-setting[hidden]{display:none!important}
+
+
+/* 2026-10-28: compact, aligned, touch-friendly chanting selectors. */
+.reader-page .practice-dock .practice-fields,
+.reader-page .practice-dock .guided-fields{
+  display:grid!important;
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:13px 10px!important;
+  align-items:start;
+}
+.reader-page .practice-dock .practice-fields label,
+.reader-page .practice-dock .guided-fields label,
+.reader-page .practice-dock .fc-dock-fields label{
+  display:grid!important;
+  align-content:start;
+  width:100%!important;
+  min-width:0!important;
+  max-width:none!important;
+  gap:6px!important;
+  margin:0;
+  color:#365c47!important;
+  font:650 12px/1.3 system-ui,sans-serif!important;
+}
+.reader-page .practice-dock .practice-fields select,
+.reader-page .practice-dock .guided-fields select,
+.reader-page .practice-dock .fc-dock-fields select,
+.reader-page .practice-dock .unified-learning-mode select{
+  box-sizing:border-box!important;
+  display:block;
+  width:100%!important;
+  min-width:0!important;
+  max-width:100%!important;
+  height:45px!important;
+  min-height:45px!important;
+  margin:0!important;
+  padding:9px 32px 9px 11px!important;
+  border:1px solid #afc4b0!important;
+  border-radius:10px!important;
+  background-color:#fffefa!important;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Cpath d='m2 2 6 6 6-6' fill='none' stroke='%23365b48' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")!important;
+  background-repeat:no-repeat!important;
+  background-size:13px 9px!important;
+  background-position:right 11px center!important;
+  box-shadow:0 1px 2px rgba(45,77,56,.06)!important;
+  color:#294b39!important;
+  font:600 14px/1.3 system-ui,sans-serif!important;
+  -webkit-appearance:none!important;
+  appearance:none!important;
+  cursor:pointer;
+}
+.reader-page .practice-dock .practice-fields select:hover,
+.reader-page .practice-dock .guided-fields select:hover,
+.reader-page .practice-dock .fc-dock-fields select:hover,
+.reader-page .practice-dock .unified-learning-mode select:hover{
+  border-color:#6c9d78!important;
+}
+.reader-page .practice-dock .practice-fields select:focus-visible,
+.reader-page .practice-dock .guided-fields select:focus-visible,
+.reader-page .practice-dock .fc-dock-fields select:focus-visible,
+.reader-page .practice-dock .unified-learning-mode select:focus-visible{
+  outline:2px solid #4e8964!important;
+  outline-offset:2px;
+}
+@media(min-width:621px) and (max-width:860px){
+  .reader-page .practice-dock .practice-fields,
+  .reader-page .practice-dock .guided-fields{grid-template-columns:1fr!important;}
+}
+@media(max-width:350px){
+  .reader-page .practice-dock .practice-fields,
+  .reader-page .practice-dock .guided-fields{grid-template-columns:1fr!important;}
+}
