@@ -2018,3 +2018,63 @@ header p{color:#845c4b;font-size:18px}
 /* The dock's status is the only visible/announced playback status.
    Engine status nodes remain in the DOM for the common transport. */
 .reader-page .practice-dock .dock-mode-status{display:none!important}
+
+
+/* Dhyāna phrase study uses the same compact rows and left audio controls
+   as Divine names. Keep the existing Sanskrit/Kannada content and MSS clips. */
+.reader-page .dhyana-phrase-section.name-section{
+  container-type:inline-size;
+  margin:0 0 12px!important;
+  padding:0!important;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+}
+.reader-page .dhyana-phrase-section.name-section .section-title{
+  display:flex;
+  align-items:baseline;
+  flex-wrap:wrap;
+  gap:8px 14px;
+  margin-bottom:7px;
+}
+.reader-page .dhyana-phrase-section.name-section .section-title h3::after{content:none!important}
+.reader-page .dhyana-phrase-section.name-section .dhyana-phrase-list.name-study-list{
+  display:block;
+  gap:0;
+  margin:0;
+  padding:0!important;
+  border:0!important;
+  border-radius:0;
+  overflow:visible;
+  background:transparent!important;
+}
+.reader-page .dhyana-phrase-section.name-section .dhyana-phrase-card.name-audio-card{
+  border-bottom:1px solid #dce5da!important;
+}
+.reader-page .dhyana-phrase-section.name-section .dhyana-phrase-card.name-audio-card:last-child{
+  border-bottom:0!important;
+}
+.reader-page .dhyana-phrase-section.name-section .dhyana-phrase-details{
+  width:100%;
+  margin:0!important;
+  border:0!important;
+  border-radius:0!important;
+  overflow:visible;
+  background:transparent!important;
+}
+.reader-page .dhyana-phrase-section.name-section .dhyana-phrase-details>summary{
+  background:transparent!important;
+}
+.reader-page .dhyana-phrase-section.name-section .dhyana-phrase-details[open]>.study-inner{
+  margin:4px 0 8px;
+  padding:11px 13px 13px;
+  border:1px solid #e0e9de;
+  border-radius:8px;
+  background:#f8fbf7;
+}
+.reader-page .dhyana-phrase-section.name-section .dhyana-phrase-details>summary:focus-visible,
+.reader-page .dhyana-phrase-section.name-section .dhyana-phrase-play:focus-visible{
+  outline:2px solid #5b8668!important;
+  outline-offset:2px;
+}
