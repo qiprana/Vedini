@@ -202,3 +202,23 @@ test('Kannada name 390 has corrected title and all rewritten deeper meanings rem
  const forbidden=/^(?:This image invites us to recognize sacred significance within ordinary experience|Contemplation asks how this image might change the quality of our attention and conduct|The poetic image is an invitation to bring more presence into ordinary experience|Reverence is meaningful when it encourages a more thoughtful relationship with life)\.$/;
  all.forEach(row=>assert.doesNotMatch(row.en,forbidden,'Generic meaning for name '+row.number));
 });
+
+
+test('Dhyāna phrase rows share divine-name layout, MSS playback and word study',()=>{
+ const rows=JSON.parse(file('data/lalita/dhyana-mss-phrases.json')).phrases;
+ assert.equal(rows.filter(row=>row.verse===1).length,8,'Dhyāna 1 retains eight phrases');
+ for(const verse of [1,2,3,4])assert.ok(rows.some(row=>row.verse===verse),'Missing Dhyāna '+verse);
+ for(const row of rows){
+  assert.ok(row.dev&&row.iast&&row.en&&row.kn,'Missing bilingual phrase');
+  assert.ok((Array.isArray(row.clips)?row.clips:[row.clip]).some(n=>Number.isInteger(n)&&n>0),'Missing MSS clip');
+  assert.ok(Array.isArray(row.component_indices)&&row.component_indices.length>0,'Missing word mapping');
+ }
+ assert.match(app,/name-section dhyana-phrase-section/);
+ assert.match(app,/name-study-list dhyana-phrase-list/);
+ assert.match(app,/name-audio-card dhyana-phrase-card/);
+ assert.match(app,/name-audio-button dhyana-phrase-play/);
+ assert.match(app,/name-details compact-name-row dhyana-phrase-details/);
+ assert.match(app,/const parts=dhyanaPhraseComponents\(v,row\)/);
+ assert.match(app,/initDhyanaPhraseAudio\(\);\s*initDhyanaPlayAll\(\);/);
+ assert.match(app,/button.setAttribute\("aria-pressed","false"\)/);
+});

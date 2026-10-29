@@ -1029,14 +1029,20 @@ function dhyanaPhraseComponents(v,row){
 function dhyanaPhrasePanel(v){
  const rows=dhyanaPhraseData[v.verse_number]||[];
  if(!rows.length)return "";
- return "<section class='dhyana-phrase-section'><div class='section-title'><h3>"+esc(langText("Phrase-by-phrase","ಪದಗುಚ್ಛದ ಅರ್ಥ"))+"</h3><span>"+rows.length+" "+esc(langText("phrases","ಪದಗುಚ್ಛಗಳು"))+"</span></div><div class='dhyana-phrase-list'>"+rows.map((row,index)=>{
+ // Dhyāna shares the Divine names layout: audio left, compact bilingual text,
+ // meaning to the right, and a closed word-by-word disclosure per phrase.
+ return "<section class='name-section dhyana-phrase-section' aria-label='"+esc(langText("Dhyāna phrases","ಧ್ಯಾನ ಪದಗುಚ್ಛಗಳು"))+"'><div class='section-title'><h3>"+esc(langText("Phrase-by-phrase","ಪದಗುಚ್ಛದ ಅರ್ಥ"))+"</h3><span>"+rows.length+" "+esc(langText("phrases","ಪದಗುಚ್ಛಗಳು"))+"</span></div><div class='name-study-list dhyana-phrase-list'>"+rows.map((row,index)=>{
   const written=language==="kn"?kannadaFromDevanagari(row.dev):row.dev;
   const meaning=language==="kn"?row.kn:row.en;
-  const clipList=Array.isArray(row.clips)?row.clips:[row.clip];
-  const paths=clipList.map(n=>"../audio/lalita/verses/MSS/phrase_"+String(n).padStart(4,"0")+".mp3");
+  const pairedMeaning=language==="kn"?row.en:row.kn;
+  const clips=(Array.isArray(row.clips)?row.clips:[row.clip]).filter(n=>Number.isInteger(n)&&n>0);
+  const paths=clips.map(mssClipPath);
   const parts=dhyanaPhraseComponents(v,row);
   const detailId="dhyana-phrase-"+v.verse_number+"-"+(index+1);
-  return "<div class='dhyana-phrase-card'><button type='button' class='dhyana-phrase-play' data-phrase-audio='"+esc(paths[0])+"' data-phrase-audios='"+esc(paths.join("|"))+"' aria-label='"+esc(langText("Play phrase","ಪದಗುಚ್ಛವನ್ನು ಪ್ಲೇ ಮಾಡಿ"))+"'>♪</button><details class='name-details compact-name-row dhyana-phrase-details' data-detail-id='"+detailId+"'><summary><span class='name-summary-grid'><span class='name-identity-inline'><span class='name-written'>"+highlighted(written)+"</span><span class='name-roman'>"+highlighted(row.iast)+"</span></span><span class='name-essence'>"+esc(meaning)+"</span></span></summary><div class='study-inner'><h4>"+esc(langText("Word by word","ಪದ ಪದದ ಅರ್ಥ"))+"</h4>"+wordsGrid(parts)+"</div></details></div>";
+  const audio=paths.length
+   ?"<button type='button' class='name-audio-button dhyana-phrase-play' data-phrase-audio='"+esc(paths[0])+"' data-phrase-audios='"+esc(paths.join("|"))+"' aria-pressed='false' aria-label='"+esc(langText("Play MSS for Dhyāna "+v.verse_number+", phrase "+(index+1),"ಧ್ಯಾನ "+v.verse_number+", ಪದಗುಚ್ಛ "+(index+1)+" MSS ಧ್ವನಿ"))+"' title='"+esc(langText("Play phrase","ಪದಗುಚ್ಛ ಪ್ಲೇ ಮಾಡಿ"))+"'>♪</button>"
+   :"";
+  return "<div class='name-audio-card dhyana-phrase-card'>"+audio+"<details class='name-details compact-name-row dhyana-phrase-details' data-detail-id='"+detailId+"'><summary><span class='name-summary-grid'><span class='name-identity-inline'><span class='name-number'>"+(index+1)+".</span><span class='name-written'>"+highlighted(written)+"</span><span class='name-roman'>"+highlighted(row.iast)+"</span></span><span class='name-essence'>"+highlightedPair(meaning,pairedMeaning)+"</span></span></summary><div class='study-inner'><h4>"+esc(langText("Word by word","ಪದ ಪದದ ಅರ್ಥ"))+"</h4>"+wordsGrid(parts)+"</div></details></div>";
  }).join("")+"</div></section>";
 }
 let vediniAudioContext=null;
@@ -1081,6 +1087,7 @@ function stopDhyanaPhraseButton(button){
   try{button._audio.currentTime=0;}catch(_){}
  }
  button.classList.remove("playing");
+ button.setAttribute("aria-pressed","false");
 }
 function stopAllDhyanaAudio(exceptButton){
  stopSlokaMss();
@@ -1268,14 +1275,15 @@ function initDhyanaPhraseAudio(){
     return;
    }
 
-   document.querySelectorAll(".dhyana-phrase-play.playing").forEach(other=>{
-    if(other!==button)stopDhyanaPhraseButton(other);
-   });
-   document.querySelectorAll("audio").forEach(a=>{if(!a.paused)a.pause();});
+   stopAllDhyanaAudio(button);
+   stopNameAudio();
+   if(practice.active)practiceStop("Stopped for Dhyāna phrase");
+   if(guided.active)guidedStop("Stopped for Dhyāna phrase");
 
    button.disabled=true;
    try{
     button.classList.add("playing");
+    button.setAttribute("aria-pressed","true");
     if(sources.length===1){
      let audio=button._audio;
      if(!audio){
@@ -1283,7 +1291,7 @@ function initDhyanaPhraseAudio(){
       audio.preload="auto";
       button._audio=audio;
       installAudioFocus(audio);
-      audio.addEventListener("ended",()=>button.classList.remove("playing"));
+      audio.addEventListener("ended",()=>stopDhyanaPhraseButton(button));
      }
      audio.src=sources[0];
      audio.load();
@@ -1299,6 +1307,7 @@ function initDhyanaPhraseAudio(){
       if(button._bufferSource===source){
        button._bufferSource=null;
        button.classList.remove("playing");
+       button.setAttribute("aria-pressed","false");
       }
      };
      source.start(0);
@@ -1525,6 +1534,7 @@ function render(){
  $("#kn")?.setAttribute("aria-pressed",String(kn));
  stopSlokaMss();
  stopNameAudio();
+ stopAllDhyanaAudio(null);
  const opened=savedDetails();
  const q=norm(searchTerm.trim());
  updateNavigation();
@@ -1547,6 +1557,8 @@ function render(){
  restoreDetails(opened);
  // Every reader render replaces the names; reconnect their inline MSS playback.
  initNameAudio();
+ initDhyanaPhraseAudio();
+ initDhyanaPlayAll();
  syncChantHereButtons();
  requestAnimationFrame(fitVerseLines);
  // After layout settles, sync the index to the śloka actually in view.

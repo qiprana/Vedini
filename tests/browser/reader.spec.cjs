@@ -384,3 +384,45 @@ test('Study player has only one visible playback status on desktop and mobile',a
   await expect(page.locator('#practice-status')).toBeHidden();
  }
 });
+
+
+test('Dhyāna phrases match compact Divine names rows, retain dropdowns, and play MSS',async({page})=>{
+ await page.setViewportSize({width:1440,height:900});
+ await page.addInitScript(()=>{
+  window.__dhyanaAudioPlayCalls=[];
+  HTMLMediaElement.prototype.play=function(){
+   window.__dhyanaAudioPlayCalls.push(this.src);
+   return Promise.resolve();
+  };
+ });
+ await page.goto('/lalita/?dhyana=1');
+ const dhyana=page.locator('#dhyana-1');
+ await expect(dhyana.locator('.dhyana-phrase-card')).toHaveCount(8,{timeout:20000});
+ const first=dhyana.locator('.dhyana-phrase-card').first();
+ await expect(first.locator('.dhyana-phrase-play')).toBeVisible();
+ await expect(first.locator('.dhyana-phrase-details')).not.toHaveAttribute('open','');
+ const rects=await first.evaluate(el=>{
+  const a=el.querySelector('.name-identity-inline').getBoundingClientRect();
+  const b=el.querySelector('.name-essence').getBoundingClientRect();
+  return {left:a.x,width:a.width,right:b.x};
+ });
+ expect(rects.right).toBeGreaterThan(rects.left+rects.width-3);
+ const audio=first.locator('.dhyana-phrase-play');
+ await audio.click();
+ await expect.poll(()=>page.evaluate(()=>window.__dhyanaAudioPlayCalls.length)).toBe(1);
+ expect(await page.evaluate(()=>window.__dhyanaAudioPlayCalls[0])).toContain('/audio/lalita/verses/MSS/phrase_0001.mp3');
+ await expect(first.locator('.dhyana-phrase-details')).not.toHaveAttribute('open','');
+ await first.locator('.dhyana-phrase-details>summary').click();
+ await expect(first.locator('.study-inner')).toBeVisible();
+ await expect(first.locator('.word-translation').first()).toBeVisible();
+ await page.locator('#kn').click();
+ const kn=page.locator('#dhyana-1 .dhyana-phrase-card').first();
+ await expect(kn.locator('.name-written')).toContainText('ಸಿಂದೂರ');
+ await expect(kn.locator('.dhyana-phrase-details')).toHaveAttribute('open','');
+ await kn.locator('.dhyana-phrase-play').click();
+ await expect.poll(()=>page.evaluate(()=>window.__dhyanaAudioPlayCalls.length)).toBe(2);
+ await page.setViewportSize({width:390,height:844});
+ const mobile=page.locator('#dhyana-1 .dhyana-phrase-card').first();
+ expect(await mobile.evaluate(el=>el.scrollWidth<=el.clientWidth+3)).toBeTruthy();
+ await expect(mobile.locator('.dhyana-phrase-play')).toBeVisible();
+});
