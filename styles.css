@@ -1830,3 +1830,66 @@ header p{color:#845c4b;font-size:18px}
  .reader-page .practice-dock #guided-panel .guided-fields{gap:10px!important}
  .reader-page .verse-chant-actions button{min-height:40px;touch-action:manipulation}
 }
+
+/* Compact, equal-height chanting selectors; native choices stay accessible. */
+.reader-page .practice-dock{--vedini-practice-control-height:34px}
+.reader-page .practice-dock .unified-learning-mode{
+ gap:4px!important;padding:8px 12px 6px!important;
+ font:650 12px/1.3 system-ui,sans-serif!important;
+}
+.reader-page .practice-dock #practice-player .dock-help,
+.reader-page .practice-dock #guided-panel .dock-help{margin:0 0 8px!important;font-size:12px!important;line-height:1.45!important}
+.reader-page .practice-dock #practice-player .practice-fields,
+.reader-page .practice-dock #guided-panel .guided-fields{
+ display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;
+ align-items:start!important;gap:9px 10px!important;
+}
+.reader-page .practice-dock #practice-player .practice-fields>label,
+.reader-page .practice-dock #guided-panel .guided-fields>label:nth-child(n){
+ display:flex!important;flex-direction:column!important;justify-content:flex-start!important;
+ align-items:stretch!important;min-width:0!important;width:100%!important;
+ max-width:none!important;gap:4px!important;margin:0!important;
+ font:650 12px/1.3 system-ui,sans-serif!important;text-align:left!important;
+}
+.reader-page .practice-dock .unified-learning-mode select,
+.reader-page .practice-dock #practice-player .practice-fields select,
+.reader-page .practice-dock #guided-panel .guided-fields select,
+.reader-page .practice-dock #practice-voice,
+.reader-page .practice-dock #guided-gap{
+ box-sizing:border-box!important;display:block!important;width:100%!important;
+ min-width:0!important;max-width:100%!important;
+ height:var(--vedini-practice-control-height)!important;
+ min-height:var(--vedini-practice-control-height)!important;
+ max-height:var(--vedini-practice-control-height)!important;
+ margin:0!important;padding:4px 28px 4px 9px!important;
+ font:500 13px/1.2 system-ui,sans-serif!important;color:#2d4e3d!important;
+ border:1px solid #b7c9b8!important;border-radius:7px!important;
+ appearance:none!important;-webkit-appearance:none!important;
+ background-color:#fffefa!important;
+ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23345140' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")!important;
+ background-repeat:no-repeat!important;background-position:right 10px center!important;
+ background-size:12px 8px!important;
+}
+.reader-page .practice-dock select:focus-visible{outline:2px solid #6f9b79;outline-offset:2px}
+/* IAST is a supporting transliteration: readable, but not oversized. */
+.reader-page .verse-reading-panel .verse-script.devanagari,
+.reader-page .verse-reading-panel .verse-script.kannada{
+ font-size:clamp(18px,1.45vw,19px)!important;
+ line-height:1.65!important;
+}
+.reader-page .verse-reading-panel .verse-iast{
+ font-size:clamp(17px,1.4vw,18px)!important;
+ line-height:1.55!important;
+}
+.reader-page .verse-reading-panel .verse-line{
+ margin:4px 0 9px!important;line-height:1.55!important;
+}
+.reader-page .verse-reading-panel .verse-line .line-content{line-height:1.55!important}
+@media(max-width:620px){
+ .reader-page .practice-dock{--vedini-practice-control-height:40px}
+ .reader-page .practice-dock .unified-learning-mode select,
+ .reader-page .practice-dock #practice-player .practice-fields select,
+ .reader-page .practice-dock #guided-panel .guided-fields select,
+ .reader-page .practice-dock #practice-voice,
+ .reader-page .practice-dock #guided-gap{font-size:16px!important}
+}
