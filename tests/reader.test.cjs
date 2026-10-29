@@ -10,6 +10,21 @@ const page=file('lalita/index.html');
 const names=JSON.parse(file('data/lalita/brief-names-draft.json'));
 test('reader script parses without syntax errors',()=>assert.doesNotThrow(()=>new vm.Script(app,{filename:'app.js'})));
 
+test('KMP dhyana uses whole-verse recordings and MSS phrases stay',()=>{
+ const chant=file('lalita/chant.js');
+ assert.match(chant,/audio\/lalita\/dhyana\/dhyana-/);
+ assert.match(chant,/MSS\/phrase_/);
+ assert.match(app,/if\(singer==="KMP"\)return "\.\.\/audio\/lalita\/dhyana\/dhyana-"/);
+ const dhyana=JSON.parse(file('data/lalita/dhyana.json'));
+ assert.equal(dhyana.length,4);
+ dhyana.forEach((verse,i)=>{
+  const name='dhyana-'+String(i+1).padStart(2,'0')+'.mp3';
+  assert.equal(verse.audio.normal,'audio/lalita/dhyana/'+name);
+  assert.equal(verse.audio.slow,null);
+  assert.ok(fs.existsSync(path.join(root,'audio/lalita/dhyana',name)));
+ });
+});
+
 test('name-audio handlers attach on every render and are not intercepted by the dock',()=>{
  assert.match(app,/restoreDetails\(opened\);\s*\/\/[^\n]*\n\s*initNameAudio\(\);/);
  assert.doesNotMatch(app,/event\.target\.closest\(["']\.name-audio-button["']\)/);

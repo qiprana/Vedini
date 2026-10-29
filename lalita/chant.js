@@ -59,7 +59,10 @@ const song=e=>e.kind==="dhyana"?"Dhyāna "+e.verse_number:"Śloka "+e.verse_numb
 function sourceFor(e){
  const voice=$("#fc-voice").value;
  const prefix="../audio/lalita/verses/";
- if(e.kind==="dhyana")return {urls:(state.dhyanaClips.get(e.verse_number)||[]).map(n=>prefix+"MSS/phrase_"+String(n).padStart(4,"0")+".mp3"),label:"MSS · Dhyāna"};
+ if(e.kind==="dhyana"){
+  if(voice==="KMP")return {urls:["../audio/lalita/dhyana/dhyana-"+String(e.verse_number).padStart(2,"0")+".mp3"],label:"KMP"};
+  return {urls:(state.dhyanaClips.get(e.verse_number)||[]).map(n=>prefix+"MSS/phrase_"+String(n).padStart(4,"0")+".mp3"),label:"MSS · Dhyāna"};
+ }
  if(voice==="MSS"&&!state.fallback.has(e.verse_number)){
   const clips=(e.names||[]).flatMap(n=>state.audioMap.get(n.studyNumber)||[]);
   if(clips.length)return {urls:clips.map(n=>prefix+"MSS/phrase_"+String(n).padStart(4,"0")+".mp3"),label:"MSS"};

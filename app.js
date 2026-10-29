@@ -1798,7 +1798,7 @@ function practiceStop(message="Stopped"){
 }
 async function practiceAudioPath(n){
  const singer=$("#practice-voice").value;
- if(practice.dhyana){const rows=dhyanaPhraseData[n]||[];const clips=rows.flatMap(row=>Array.isArray(row.clips)?row.clips:[row.clip]).filter(Boolean);if(!clips.length)throw Error("No Dhyāna MSS clips");return mergedAudioUrl(clips.map(mssClipPath));}
+ if(practice.dhyana){if(singer==="KMP")return "../audio/lalita/dhyana/dhyana-"+String(n).padStart(2,"0")+".mp3";const rows=dhyanaPhraseData[n]||[];const clips=rows.flatMap(row=>Array.isArray(row.clips)?row.clips:[row.clip]).filter(Boolean);if(!clips.length)throw Error("No Dhyāna MSS clips");return mergedAudioUrl(clips.map(mssClipPath));}
  if(singer==="MSS"){
   const verse=verses.find(v=>v.verse_number===n);
   const sources=verse?verseMssAudioPaths(verse):[];

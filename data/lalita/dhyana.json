@@ -28,7 +28,7 @@
       "kannada": null
     },
     "audio": {
-      "normal": null,
+      "normal": "audio/lalita/dhyana/dhyana-01.mp3",
       "slow": null
     },
     "review_status": "draft",
@@ -64,7 +64,7 @@
       "kannada": null
     },
     "audio": {
-      "normal": null,
+      "normal": "audio/lalita/dhyana/dhyana-02.mp3",
       "slow": null
     },
     "review_status": "draft",
@@ -100,7 +100,7 @@
       "kannada": null
     },
     "audio": {
-      "normal": null,
+      "normal": "audio/lalita/dhyana/dhyana-03.mp3",
       "slow": null
     },
     "review_status": "draft",
@@ -136,7 +136,7 @@
       "kannada": null
     },
     "audio": {
-      "normal": null,
+      "normal": "audio/lalita/dhyana/dhyana-04.mp3",
       "slow": null
     },
     "review_status": "draft",
