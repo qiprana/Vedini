@@ -420,7 +420,7 @@ test('Dhyāna phrases match compact Divine names rows, retain dropdowns, and pla
  await expect(first.locator('.word-translation').first()).toBeVisible();
  await page.locator('#kn').click();
  const kn=page.locator('#dhyana-1 .dhyana-phrase-card').first();
- await expect(kn.locator('.name-written')).toContainText('ಸಿಂದೂರ');
+ await expect(kn.locator('.name-written')).toContainText('ಸಿನ್ದೂರ');
  await expect(kn.locator('.dhyana-phrase-details')).toHaveAttribute('open','');
  await kn.locator('.dhyana-phrase-play').click();
  await expect.poll(()=>page.evaluate(()=>window.__dhyanaAudioPlayCalls.length)).toBe(2);
