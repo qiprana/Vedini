@@ -1893,3 +1893,19 @@ header p{color:#845c4b;font-size:18px}
  .reader-page .practice-dock #practice-voice,
  .reader-page .practice-dock #guided-gap{font-size:16px!important}
 }
+
+/* ID-targeted normalization beats older per-field minimum heights. */
+#practice-dock #learning-mode,
+#practice-dock #practice-from,
+#practice-dock #practice-to,
+#practice-dock #practice-repeat,
+#practice-dock #practice-voice,
+#practice-dock #guided-from,
+#practice-dock #guided-to,
+#practice-dock #guided-name-repeat,
+#practice-dock #guided-verse-repeat,
+#practice-dock #guided-gap{
+ box-sizing:border-box!important;height:var(--vedini-practice-control-height)!important;
+ min-height:var(--vedini-practice-control-height)!important;
+ max-height:var(--vedini-practice-control-height)!important;
+}
