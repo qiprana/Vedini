@@ -362,3 +362,25 @@ test('IAST reading text is contained and sized consistently',async({page})=>{
  expect(styles.size).toBeLessThanOrEqual(19);
  expect(styles.scrollWidth).toBeLessThanOrEqual(styles.width+3);
 });
+
+test('Global site navigation is compact and highlights the current page',async({page})=>{
+ for(const url of ['/','/guide.html','/purpose.html','/acknowledgements.html','/contact.html','/lalita/','/lalita/chant.html','/lalita/names.html']){
+  await page.goto(url);
+  const nav=page.locator('.vedini-site-header .site-tabs');
+  await expect(nav.locator('a')).toHaveCount(5);
+  const style=await nav.locator('a').first().evaluate(el=>({font:parseFloat(getComputedStyle(el).fontSize),radius:getComputedStyle(el).borderRadius}));
+  expect(style.font).toBeLessThanOrEqual(13);
+  if(url==='/')await expect(nav.locator('[aria-current="page"]')).toHaveText('Home');
+  if(url==='/guide.html')await expect(nav.locator('[aria-current="page"]')).toHaveText('How to Use');
+ }
+});
+test('Study player has only one visible playback status on desktop and mobile',async({page})=>{
+ for(const width of [1280,390]){
+  await page.setViewportSize({width,height:844});
+  await page.goto('/lalita/?sloka=1');
+  await expect(page.locator('#dock-status')).toBeVisible();
+  await expect(page.locator('#practice-status')).toBeHidden();
+  await page.locator('#practice-dock-toggle').click();
+  await expect(page.locator('#practice-status')).toBeHidden();
+ }
+});
