@@ -202,3 +202,24 @@ test('Kannada name 390 has corrected title and all rewritten deeper meanings rem
  const forbidden=/^(?:This image invites us to recognize sacred significance within ordinary experience|Contemplation asks how this image might change the quality of our attention and conduct|The poetic image is an invitation to bring more presence into ordinary experience|Reverence is meaningful when it encourages a more thoughtful relationship with life)\.$/;
  all.forEach(row=>assert.doesNotMatch(row.en,forbidden,'Generic meaning for name '+row.number));
 });
+
+
+test('full chanting maps MSS clips using canonical name numbers and never blocks on future preloads',()=>{
+ const chant=file('lalita/chant.js');
+ assert.match(chant,/state\.audioMap\.get\(n\.number\?\?n\.studyNumber\)/);
+ assert.doesNotMatch(chant,/state\.audioMap\.get\(n\.studyNumber\)\|\|\[\]/);
+ assert.match(chant,/Promise\.allSettled\(urls\.map\(url=>getBuffer\(url,ctx\)\)\)/);
+ assert.doesNotMatch(chant,/await prefetch\(index,[23]\)/);
+ assert.match(chant,/void prefetch\(state\.scheduleIndex,2\)/);
+ assert.doesNotThrow(()=>new vm.Script(chant,{filename:'lalita/chant.js'}));
+});
+test('chanting settings retain every learning mode and consistent responsive select styling',()=>{
+ const css=file('styles.css');
+ for(const id of ['practice-from','practice-to','practice-repeat','practice-voice','guided-from','guided-to','guided-name-repeat','guided-verse-repeat','guided-gap','learning-mode']){
+  assert.match(page,new RegExp('id="'+id+'"'));
+ }
+ assert.match(css,/compact, aligned, touch-friendly chanting selectors/);
+ assert.match(css,/grid-template-columns:repeat\(2,minmax\(0,1fr\)\)!important/);
+ assert.match(css,/appearance:none!important/);
+ assert.match(css,/min-height:45px!important/);
+});
