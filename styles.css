@@ -2078,3 +2078,90 @@ header p{color:#845c4b;font-size:18px}
   outline:2px solid #5b8668!important;
   outline-offset:2px;
 }
+
+
+/* Option 3: soft, individually rounded navigation tabs across Vedini. */
+.vedini-site-header .site-tabs,
+.reader-page .vedini-site-header .site-tabs{
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  flex-wrap:wrap;
+  gap:clamp(6px,.7vw,11px);
+  border:0;
+  border-bottom:0;
+  padding:0;
+  overflow:visible;
+}
+.vedini-site-header .site-tab,
+.reader-page .vedini-site-header .site-tab{
+  display:inline-flex;
+  flex:0 0 auto;
+  justify-content:center;
+  align-items:center;
+  min-height:46px;
+  padding:11px clamp(12px,1.1vw,17px);
+  border:1px solid #bed1bf;
+  border-radius:12px;
+  background:rgba(255,253,248,.88);
+  color:#345b46;
+  box-shadow:0 2px 7px rgba(49,87,68,.06);
+  font:650 17px/1.25 system-ui,sans-serif;
+  letter-spacing:0;
+  white-space:nowrap;
+  text-decoration:none;
+}
+.vedini-site-header .site-tab:hover,
+.reader-page .vedini-site-header .site-tab:hover{
+  background:#e6efe4;
+  border-color:#94b49d;
+  color:#284d3a;
+  box-shadow:0 3px 10px rgba(49,87,68,.08);
+}
+.vedini-site-header .site-tab:focus-visible,
+.reader-page .vedini-site-header .site-tab:focus-visible{
+  outline:3px solid #648d6f;
+  outline-offset:2px;
+  background:#eef5eb;
+}
+.vedini-site-header .site-tab.active,
+.vedini-site-header .site-tab[aria-current="page"],
+.reader-page .vedini-site-header .site-tab.active,
+.reader-page .vedini-site-header .site-tab[aria-current="page"]{
+  background:#e1ecde;
+  border-color:#93b29a;
+  color:#234b38;
+  font-weight:750;
+  box-shadow:inset 0 0 0 1px rgba(111,157,121,.13);
+}
+@media(max-width:1120px){
+ .vedini-site-header,
+ .reader-page .vedini-site-header{flex-wrap:wrap}
+ .vedini-site-header .site-tabs,
+ .reader-page .vedini-site-header .site-tabs{
+   flex:1 1 100%;
+   width:100%;
+   justify-content:flex-start;
+ }
+}
+@media(max-width:620px){
+ .vedini-site-header .site-tabs,
+ .reader-page .vedini-site-header .site-tabs{
+   flex-wrap:nowrap;
+   overflow-x:auto;
+   overflow-y:hidden;
+   gap:8px;
+   padding:3px 1px 8px;
+   scroll-snap-type:x proximity;
+   scrollbar-width:thin;
+   -webkit-overflow-scrolling:touch;
+ }
+ .vedini-site-header .site-tab,
+ .reader-page .vedini-site-header .site-tab{
+   min-height:44px;
+   padding:10px 13px;
+   font-size:15px;
+   border-radius:11px;
+   scroll-snap-align:start;
+ }
+}

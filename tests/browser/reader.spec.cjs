@@ -369,7 +369,8 @@ test('Global site navigation is compact and highlights the current page',async({
   const nav=page.locator('.vedini-site-header .site-tabs');
   await expect(nav.locator('a')).toHaveCount(5);
   const style=await nav.locator('a').first().evaluate(el=>({font:parseFloat(getComputedStyle(el).fontSize),radius:getComputedStyle(el).borderRadius}));
-  expect(style.font).toBeLessThanOrEqual(13);
+  expect(style.font).toBeGreaterThanOrEqual(16);
+  expect(parseFloat(style.radius)).toBeGreaterThanOrEqual(10);
   if(url==='/')await expect(nav.locator('[aria-current="page"]')).toHaveText('Home');
   if(url==='/guide.html')await expect(nav.locator('[aria-current="page"]')).toHaveText('How to Use');
  }
@@ -428,4 +429,18 @@ test('Dhyāna phrases match compact Divine names rows, retain dropdowns, and pla
  const mobile=page.locator('#dhyana-1 .dhyana-phrase-card').first();
  expect(await mobile.evaluate(el=>el.scrollWidth<=el.clientWidth+3)).toBeTruthy();
  await expect(mobile.locator('.dhyana-phrase-play')).toBeVisible();
+});
+
+test('Soft navigation tabs remain legible and within the viewport on mobile',async({page})=>{
+ await page.setViewportSize({width:390,height:844});
+ for(const url of ['/','/guide.html','/lalita/','/lalita/chant.html','/lalita/names.html']){
+  await page.goto(url);
+  const nav=page.locator('.vedini-site-header .site-tabs');
+  await expect(nav.locator('a')).toHaveCount(5);
+  const styles=await nav.locator('a').first().evaluate(el=>({font:parseFloat(getComputedStyle(el).fontSize),height:el.getBoundingClientRect().height,border:getComputedStyle(el).borderStyle}));
+  expect(styles.font).toBeGreaterThanOrEqual(15);
+  expect(styles.height).toBeGreaterThanOrEqual(44);
+  expect(styles.border).toBe('solid');
+  expect(await nav.evaluate(el=>el.getBoundingClientRect().right<=innerWidth+2)).toBeTruthy();
+ }
 });
