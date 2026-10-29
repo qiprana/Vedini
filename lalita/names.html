@@ -128,9 +128,13 @@ function render(){
   mantra.append(devanagari,roman);
   cell(row,language()==="kn"?n.meaningKn:n.meaning);
   const benefit=cell(row,n.benefit,"benefit");
-  const source=document.createElement("small");
-  source.textContent=n.source==="sanskrit_channel_screenshot"?"✦ The Sanskrit Channel · screenshot":"Editorial interpretation";
-  benefit.append(source);body.append(row);
+  // Source classification remains in data, but omit screenshot labels from rows.
+  if(n.source!=="sanskrit_channel_screenshot"){
+   const source=document.createElement("small");
+   source.textContent="Editorial interpretation";
+   benefit.append(source);
+  }
+  body.append(row);
  }
  $("#name-count").textContent=rows.length+" of 1,000 mantras";
  if(!rows.length){
