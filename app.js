@@ -1851,9 +1851,25 @@ const guided={active:false,paused:false,units:[],index:0,repeatDone:0,clipIndex:
 function guidedStatus(t){const e=$("#guided-status");if(e)e.textContent=t;}
 function guidedHighlight(number){
  document.querySelectorAll(".name-audio-card").forEach(el=>el.classList.remove("guided-current"));
- if(number==null)return;
- const d=document.querySelector('[data-detail-id="name-'+number+'"]');
- if(d){const row=d.closest(".name-audio-card");if(row){row.classList.add("guided-current");row.scrollIntoView({block:"nearest",behavior:"smooth"});}}
+ if(number==null)return null;
+ const details=document.querySelector('[data-detail-id="name-'+number+'"]');
+ const row=details?.closest(".name-audio-card");
+ if(row)row.classList.add("guided-current");
+ return row||null;
+}
+function guidedFollow(target){
+ if(!target||!guided.active)return;
+ const toolbar=document.querySelector(".study-main-content>.lalita-reader-toolbar");
+ const index=document.getElementById("sticky-verse-navigation");
+ const dock=document.getElementById("practice-dock");
+ const mobile=window.matchMedia("(max-width: 620px)").matches;
+ const top=Math.max(0,toolbar?.getBoundingClientRect().bottom||0,index&&!index.hidden?index.getBoundingClientRect().bottom:0)+14;
+ const bottom=mobile?Math.min(innerHeight,dock?.getBoundingClientRect().top??innerHeight)-14:innerHeight-24;
+ const rect=target.getBoundingClientRect();
+ const visibleBottom=Math.max(top+90,bottom);
+ if(rect.top>=top+8&&rect.bottom<=visibleBottom-8)return;
+ const targetY=top+Math.min(Math.max(100,visibleBottom-top)*.30,110);
+ window.scrollTo({top:Math.max(0,window.scrollY+rect.top-targetY),behavior:"instant"});
 }
 function guidedControls(){
  $("#guided-play").disabled=guided.active;
@@ -1900,8 +1916,8 @@ async function guidedPlayClip(){
  if(view!=="verses"||pageIndex!==Math.floor((unit.verse-1)/pageSize)){
   view="verses";pageIndex=Math.floor((unit.verse-1)/pageSize);selectedVerse=unit.verse;render();
  }
- guidedHighlight(unit.name);
- requestAnimationFrame(()=>document.getElementById("verse-"+unit.verse)?.scrollIntoView({block:"start",behavior:"smooth"}));
+ const target=guidedHighlight(unit.name)||document.getElementById("verse-"+unit.verse);
+ requestAnimationFrame(()=>guidedFollow(target));
  try{
   if(!vediniAudioContext)vediniAudioContext=new (window.AudioContext||window.webkitAudioContext)();
   const ctx=vediniAudioContext;guided.ctx=ctx;
@@ -1954,7 +1970,7 @@ function guidedInit(){
   const f=+from.value,t=+to.value;
   if(f<1||t>verses.length||f>t){guidedStatus("Select a valid range");return;}
   guidedStop("");
-  const mode=$("#guided-mode").value;
+  const mode=$("#learning-mode").value;
   guided.units=guidedBuildUnits(f,t,mode,+$("#guided-name-repeat").value,+$("#guided-verse-repeat").value);
   if(!guided.units.length){guidedStatus("No individually mapped MSS recordings in this range");return;}
   // Existing practice and individual players stop when the guided audio takes focus.
@@ -2116,8 +2132,6 @@ function initLearningMode(){
    if(guided.active)guidedStop("Stopped");
   }else if(!isChant&&guided.active){guidedStop("Stopped");}
   host.dataset.mode=isChant?"chant":"guided";
-  if(!isChant)$("#guided-mode").value=mode;
-  document.querySelectorAll(".guided-name-setting").forEach(el=>el.hidden=mode==="verse");
   document.querySelectorAll(".guided-verse-setting").forEach(el=>el.hidden=mode==="names");
   syncDock();
  }
