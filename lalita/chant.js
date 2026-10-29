@@ -61,7 +61,7 @@ function sourceFor(e){
  const prefix="../audio/lalita/verses/";
  if(e.kind==="dhyana")return {urls:(state.dhyanaClips.get(e.verse_number)||[]).map(n=>prefix+"MSS/phrase_"+String(n).padStart(4,"0")+".mp3"),label:"MSS · Dhyāna"};
  if(voice==="MSS"&&!state.fallback.has(e.verse_number)){
-  const clips=(e.names||[]).flatMap(n=>state.audioMap.get(n.studyNumber)||[]);
+  const clips=(e.names||[]).flatMap(n=>state.audioMap.get(n.number??n.studyNumber)||[]);
   if(clips.length)return {urls:clips.map(n=>prefix+"MSS/phrase_"+String(n).padStart(4,"0")+".mp3"),label:"MSS"};
  }
  const selected=voice==="MSS"?"VD":voice;
@@ -81,7 +81,7 @@ async function prefetch(start,count=3){
  const token=state.token,ctx=state.context;
  if(!ctx||!state.playing||token!==state.token)return;
  const urls=state.loader.slice(start,Math.min(start+count,state.loader.length)).flatMap(x=>x.urls);
- try{await Promise.all(urls.map(url=>getBuffer(url,ctx)))}catch(e){if(token===state.token)stop("Recording unavailable. Please check the audio files.")}
+ await Promise.allSettled(urls.map(url=>getBuffer(url,ctx)))
 }
 function active(index,scroll=true){
  const e=state.entries[index];if(!e)return;
@@ -108,7 +108,7 @@ async function pump(token){
   const index=state.scheduleIndex,group=state.loader[index];
   if(!group.urls.length){stop("Missing recording for "+song(group.entry));return}
   // The next three entries are fetched before playback reaches their boundaries.
-  await prefetch(index,3);
+  // Fetch the current verse first; future verses must not delay startup.
   if(token!==state.token||!state.playing||state.paused)return;
   let buffers;
   try{buffers=await Promise.all(group.urls.map(url=>getBuffer(url,ctx)))}catch(e){if(token===state.token)stop("Audio unavailable for "+song(group.entry));return}
@@ -130,6 +130,7 @@ async function pump(token){
    time+=buffer.duration;
   }
   state.nextTime=time;state.scheduleIndex++;
+   void prefetch(state.scheduleIndex,2);
   if(state.segments.length>350)state.segments=state.segments.filter(s=>s.end>ctx.currentTime-1);
  }
  }finally{state.pumping=false}
@@ -138,7 +139,7 @@ function stop(message="Stopped"){
  state.token++;state.playing=false;state.paused=false;
  if(state.ticker){clearInterval(state.ticker);state.ticker=null}
  for(const s of state.segments){try{s.node.onended=null;s.node.stop()}catch(e){}try{s.node.disconnect();s.gain.disconnect()}catch(e){}}
- state.segments=[];state.loader=null;state.scheduleIndex=0;
+ state.segments=[];state.loader=null;state.scheduleIndex=0;state.pumping=false;
  if(state.context){state.context.close().catch(()=>{});state.context=null}
  document.querySelectorAll(".fc-playing").forEach(el=>el.classList.remove("fc-playing"));
  setStatus(message);
@@ -153,7 +154,7 @@ async function begin(which){
   const ctx=new (window.AudioContext||window.webkitAudioContext)();state.context=ctx;
   await ctx.resume();state.nextTime=ctx.currentTime+.15;
   // Decoding the first two verses before scheduling avoids startup gaps.
-  await prefetch(index,2);
+  // The first selected verse is fetched and scheduled immediately by pump().
   if(token!==state.token||!state.playing)return;
   active(index);setStatus("Playing "+song(state.entries[index])+" · "+state.loader[index].label);
   await pump(token);
