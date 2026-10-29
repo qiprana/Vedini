@@ -1784,3 +1784,16 @@ header p{color:#845c4b;font-size:18px}
 
 .reader-page .practice-dock #guided-panel .guided-fields label.guided-name-setting[hidden],
 .reader-page .practice-dock #guided-panel .guided-fields label.guided-verse-setting[hidden]{display:none!important}
+
+/* Mobile learning panel: readable, touch-friendly, and clear of the transport. */
+@media(max-width:620px){
+ .reader-page .practice-dock:not(.namavali-workspace .practice-dock).mobile-settings-open .practice-dock-body{max-height:min(54dvh,420px)}
+ .reader-page .practice-dock .unified-learning-mode{padding:11px 12px 8px;font-size:13px}
+ .reader-page .practice-dock .unified-learning-mode select{min-height:44px;font-size:16px}
+ .reader-page .practice-dock .practice-fields,.reader-page .practice-dock .guided-fields{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}
+ .reader-page .practice-dock #practice-player .practice-fields label,
+ .reader-page .practice-dock #guided-panel .guided-fields label:nth-child(n){width:100%!important;max-width:100%!important;min-width:0!important;font-size:12px!important}
+ .reader-page .practice-dock #practice-player .practice-fields select,
+ .reader-page .practice-dock #guided-panel .guided-fields select{width:100%!important;min-width:0!important;max-width:100%!important;min-height:44px!important;height:auto!important;font-size:16px!important}
+ .reader-page .name-audio-card.guided-current{outline:2px solid #4b8a63;outline-offset:1px;background:#eaf6ec!important}
+}
