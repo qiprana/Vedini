@@ -401,12 +401,15 @@ test('Dhyāna phrases match compact Divine names rows, retain dropdowns, and pla
  const first=dhyana.locator('.dhyana-phrase-card').first();
  await expect(first.locator('.dhyana-phrase-play')).toBeVisible();
  await expect(first.locator('.dhyana-phrase-details')).not.toHaveAttribute('open','');
- const rects=await first.evaluate(el=>{
+ const layout=await first.evaluate(el=>{
+  const grid=el.querySelector('.name-summary-grid');
   const a=el.querySelector('.name-identity-inline').getBoundingClientRect();
   const b=el.querySelector('.name-essence').getBoundingClientRect();
-  return {left:a.x,width:a.width,right:b.x};
+  return {columnCount:getComputedStyle(grid).gridTemplateColumns.split(' ').length,identity:a,meaning:b};
  });
- expect(rects.right).toBeGreaterThan(rects.left+rects.width-3);
+ // The shared divine-name component stacks on narrow *inner panels*, not just on mobile viewports.
+ if(layout.columnCount===1)expect(layout.meaning.y).toBeGreaterThanOrEqual(layout.identity.y);
+ else expect(layout.meaning.x).toBeGreaterThan(layout.identity.x+layout.identity.width-3);
  const audio=first.locator('.dhyana-phrase-play');
  await audio.click();
  await expect.poll(()=>page.evaluate(()=>window.__dhyanaAudioPlayCalls.length)).toBe(1);
