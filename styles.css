@@ -2018,3 +2018,30 @@ header p{color:#845c4b;font-size:18px}
 /* The dock's status is the only visible/announced playback status.
    Engine status nodes remain in the DOM for the common transport. */
 .reader-page .practice-dock .dock-mode-status{display:none!important}
+
+/* Readable, balanced global navigation without reverting to bulky pills. */
+.vedini-site-header,
+.reader-page .vedini-site-header{min-height:84px;padding:14px clamp(15px,2.2vw,25px)}
+.vedini-site-header .site-tabs,
+.reader-page .vedini-site-header .site-tabs{gap:clamp(5px,.8vw,13px)}
+.vedini-site-header .site-tab,
+.reader-page .vedini-site-header .site-tab{
+ min-height:48px;
+ padding:12px clamp(9px,1vw,16px) 11px;
+ font-size:17px;
+ font-weight:600;
+ line-height:1.35;
+ letter-spacing:0;
+}
+@media(max-width:1080px){
+ .vedini-site-header .site-tab,
+ .reader-page .vedini-site-header .site-tab{font-size:16px}
+}
+@media(max-width:620px){
+ .vedini-site-header .site-tab,
+ .reader-page .vedini-site-header .site-tab{
+  min-height:44px;
+  padding:10px 12px;
+  font-size:15px;
+ }
+}
