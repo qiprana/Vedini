@@ -1909,3 +1909,112 @@ header p{color:#845c4b;font-size:18px}
  min-height:var(--vedini-practice-control-height)!important;
  max-height:var(--vedini-practice-control-height)!important;
 }
+
+/* 2026-10-28 · Refined global navigation: quiet editorial links, not large buttons.
+   This is shared by Home, information pages, and the Lalitā reading modes. */
+.vedini-site-header,
+.reader-page .vedini-site-header{
+ min-height:74px;
+ padding:11px clamp(14px,2vw,22px);
+ gap:clamp(12px,2vw,24px);
+ background:linear-gradient(105deg,#edf4ec 0%,#faf9f1 52%,#fbf0e2 100%);
+ border:1px solid #d3e0d2;
+ border-radius:15px;
+ box-shadow:0 2px 12px rgba(46,76,55,.045);
+}
+.vedini-site-header .vedini-mark{width:43px;height:43px;border-radius:12px;box-shadow:0 1px 5px rgba(45,92,62,.06)}
+.vedini-site-header .vedini-mark svg{width:33px;height:33px}
+.vedini-site-header .vedini-wordmark{font-size:clamp(25px,2.4vw,31px)}
+.vedini-site-header .site-tabs,
+.reader-page .vedini-site-header .site-tabs{
+ display:flex;
+ flex:0 1 auto;
+ flex-wrap:nowrap;
+ align-items:stretch;
+ justify-content:flex-end;
+ gap:clamp(2px,.7vw,12px);
+ width:auto;
+ min-width:0;
+ margin:0;
+ padding:0 2px;
+ border:0;
+ border-bottom:1px solid #d9e4d9;
+ background:transparent;
+}
+.vedini-site-header .site-tab,
+.reader-page .vedini-site-header .site-tab{
+ display:inline-flex;
+ align-items:center;
+ justify-content:center;
+ flex:0 0 auto;
+ min-height:37px;
+ width:auto;
+ margin:0;
+ padding:9px clamp(5px,.95vw,12px) 8px;
+ border:0;
+ border-bottom:2px solid transparent;
+ border-radius:5px 5px 0 0;
+ background:transparent;
+ box-shadow:none;
+ color:#496854;
+ font:550 12px/1.25 system-ui,sans-serif;
+ letter-spacing:.005em;
+ white-space:nowrap;
+ text-decoration:none;
+ transition:background-color .16s ease,color .16s ease,border-color .16s ease;
+}
+.vedini-site-header .site-tab:hover,
+.reader-page .vedini-site-header .site-tab:hover{
+ background:rgba(223,236,222,.7);
+ border-color:#b4cbb6;
+ color:#254d3a;
+}
+.vedini-site-header .site-tab:focus-visible,
+.reader-page .vedini-site-header .site-tab:focus-visible{
+ outline:2px solid #648d6f;
+ outline-offset:2px;
+ background:#e9f1e7;
+}
+.vedini-site-header .site-tab.active,
+.vedini-site-header .site-tab[aria-current="page"],
+.reader-page .vedini-site-header .site-tab.active,
+.reader-page .vedini-site-header .site-tab[aria-current="page"]{
+ background:linear-gradient(180deg,transparent,#e3eee2a8);
+ border-color:#b27051;
+ color:#2a503d;
+ font-weight:700;
+ box-shadow:none;
+}
+@media(max-width:940px){
+ .vedini-site-header,
+ .reader-page .vedini-site-header{flex-wrap:wrap;gap:9px 16px}
+ .vedini-site-header .site-tabs,
+ .reader-page .vedini-site-header .site-tabs{
+  width:100%;flex:1 1 100%;justify-content:flex-start;
+ }
+}
+@media(max-width:620px){
+ .vedini-site-header,
+ .reader-page .vedini-site-header{padding:11px 12px}
+ .vedini-site-header .site-tabs,
+ .reader-page .vedini-site-header .site-tabs{
+  flex-wrap:nowrap;
+  overflow-x:auto;
+  overflow-y:hidden;
+  padding:0;
+  gap:5px;
+  -webkit-overflow-scrolling:touch;
+  scrollbar-width:thin;
+  scroll-snap-type:x proximity;
+ }
+ .vedini-site-header .site-tab,
+ .reader-page .vedini-site-header .site-tab{
+  min-height:40px;
+  padding:10px 9px;
+  font-size:12px;
+  scroll-snap-align:start;
+ }
+}
+/* The dock's status is the only visible/announced playback status.
+   Engine status nodes remain in the DOM for the common transport. */
+.reader-page .practice-dock .dock-mode-status{display:none!important}
