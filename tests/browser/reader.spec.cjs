@@ -338,3 +338,27 @@ test('Divine Names omit screenshot source labels but retain benefit text',async(
  await page.locator('#name-range').selectOption('4');
  await expect(page.locator('#name-rows')).not.toContainText('The Sanskrit Channel · screenshot');
 });
+
+test('All learning-mode selects are equal height and compact on desktop and phone',async({page})=>{
+ for(const width of [1280,390]){
+  await page.setViewportSize({width,height:844});
+  await page.goto('/lalita/?sloka=1');
+  if(width<620)await page.locator('#practice-dock-toggle').click();
+  await page.locator('#learning-mode').selectOption('both');
+  const selectIds=['learning-mode','guided-from','guided-to','guided-name-repeat','guided-verse-repeat','guided-gap'];
+  const heights=await page.evaluate(ids=>ids.map(id=>document.getElementById(id).getBoundingClientRect().height),selectIds);
+  expect(Math.max(...heights)-Math.min(...heights)).toBeLessThanOrEqual(1);
+  expect(heights[0]).toBeLessThanOrEqual(width<620?41:35);
+  const gap=page.locator('#guided-gap');
+  expect(await gap.evaluate(el=>el.scrollWidth<=el.clientWidth+2)).toBe(true);
+ }
+});
+test('IAST reading text is contained and sized consistently',async({page})=>{
+ await page.goto('/lalita/?sloka=60');
+ const verse=page.locator('#verse-60 .verse-iast');
+ await expect(verse).toBeVisible({timeout:20000});
+ const styles=await verse.evaluate(el=>({size:parseFloat(getComputedStyle(el).fontSize),height:parseFloat(getComputedStyle(el).lineHeight),width:el.clientWidth,scrollWidth:el.scrollWidth}));
+ expect(styles.size).toBeGreaterThanOrEqual(17);
+ expect(styles.size).toBeLessThanOrEqual(19);
+ expect(styles.scrollWidth).toBeLessThanOrEqual(styles.width+3);
+});
