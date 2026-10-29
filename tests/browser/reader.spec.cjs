@@ -369,7 +369,7 @@ test('Global site navigation is compact and highlights the current page',async({
   const nav=page.locator('.vedini-site-header .site-tabs');
   await expect(nav.locator('a')).toHaveCount(5);
   const style=await nav.locator('a').first().evaluate(el=>({font:parseFloat(getComputedStyle(el).fontSize),radius:getComputedStyle(el).borderRadius}));
-  expect(style.font).toBeLessThanOrEqual(13);
+  expect(style.font).toBeGreaterThanOrEqual(16);
   if(url==='/')await expect(nav.locator('[aria-current="page"]')).toHaveText('Home');
   if(url==='/guide.html')await expect(nav.locator('[aria-current="page"]')).toHaveText('How to Use');
  }
