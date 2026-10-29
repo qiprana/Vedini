@@ -329,3 +329,12 @@ test('Practice dropdowns align as two equal columns on desktop and phone',async(
   expect(dimensions.every(d=>Math.abs(d.w-d.selectW)<3)).toBe(true);
  }
 });
+
+test('Divine Names omit screenshot source labels but retain benefit text',async({page})=>{
+ await page.goto('/lalita/names.html');
+ await expect(page.locator('#name-rows tr').first()).toBeVisible({timeout:20000});
+ await expect(page.locator('#name-rows')).not.toContainText('The Sanskrit Channel · screenshot');
+ await expect(page.locator('#name-rows .benefit').first()).not.toBeEmpty();
+ await page.locator('#name-range').selectOption('4');
+ await expect(page.locator('#name-rows')).not.toContainText('The Sanskrit Channel · screenshot');
+});
