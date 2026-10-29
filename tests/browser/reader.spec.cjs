@@ -245,13 +245,57 @@ test('single learning selector switches conditional fields and uses same transpo
  await expect(page.locator('#guided-from')).toBeVisible();
  await expect(page.locator('#guided-name-repeat')).toBeVisible();
  await expect(page.locator('.guided-verse-setting')).toBeHidden();
- await page.locator('#learning-mode').selectOption('verse');
- await expect(page.locator('.guided-name-setting')).toBeHidden();
- await expect(page.locator('#guided-verse-repeat')).toBeVisible();
+ await expect(page.locator('#learning-mode option')).toHaveCount(3);
+ await expect(page.locator('#learning-mode option[value="verse"]')).toHaveCount(0);
  await page.locator('#learning-mode').selectOption('both');
  await expect(page.locator('.guided-name-setting')).toBeVisible();
  await expect(page.locator('.guided-verse-setting')).toBeVisible();
  await page.locator('#learning-mode').selectOption('chant');
  await expect(page.locator('#practice-voice')).toBeVisible();
  await expect(page.locator('#guided-panel')).toBeHidden();
+});
+
+test('guided name playback follows highlighted name below sticky tabs and above mobile player',async({page})=>{
+ await page.setViewportSize({width:390,height:844});
+ await page.addInitScript(()=>{
+  class FakeSource{
+   constructor(){this.buffer=null;this.onended=null;}
+   connect(){return this;}disconnect(){}start(){}stop(){}
+  }
+  class FakeContext{
+   constructor(){this.state='running';this.currentTime=0;this.destination={};}
+   resume(){return Promise.resolve();}
+   decodeAudioData(){return Promise.resolve({duration:1});}
+   createBufferSource(){return new FakeSource();}
+   createGain(){return {gain:{setValueAtTime(){},linearRampToValueAtTime(){}},connect(){return this;},disconnect(){}};}
+  }
+  window.AudioContext=FakeContext;window.webkitAudioContext=FakeContext;
+  window.__guidedTestFetch=window.fetch.bind(window);
+  window.fetch=(url,options)=>String(url).endsWith('.mp3')?
+   Promise.resolve({ok:true,arrayBuffer:()=>Promise.resolve(new ArrayBuffer(8))}):
+   window.__guidedTestFetch(url,options);
+ });
+ await page.goto('/lalita/?sloka=1');
+ await expect(page.locator('#verse-1 .name-audio-card').first()).toBeVisible({timeout:20000});
+ await page.locator('#practice-dock-toggle').click();
+ await page.locator('#learning-mode').selectOption('names');
+ await page.locator('#guided-from').selectOption('1');
+ await page.locator('#guided-to').selectOption('1');
+ await page.locator('#practice-dock-toggle').click();
+ await page.locator('#dock-play').click();
+ const active=page.locator('.name-audio-card.guided-current').first();
+ await expect(active).toBeVisible({timeout:10000});
+ await expect.poll(()=>active.evaluate(el=>{
+  const r=el.getBoundingClientRect();
+  const nav=document.querySelector('#sticky-verse-navigation');
+  const dock=document.querySelector('#practice-dock');
+  return r.top>=nav.getBoundingClientRect().bottom-2&&r.top<dock.getBoundingClientRect().top-8;
+ })).toBe(true);
+ const firstNumber=await active.locator('.name-number').textContent();
+ await page.locator('#dock-next').click();
+ await expect.poll(()=>page.locator('.name-audio-card.guided-current .name-number').first().textContent()).not.toBe(firstNumber);
+ await expect.poll(()=>page.locator('.name-audio-card.guided-current').first().evaluate(el=>{
+  const r=el.getBoundingClientRect();
+  return r.top>=document.querySelector('#sticky-verse-navigation').getBoundingClientRect().bottom-2&&r.top<document.querySelector('#practice-dock').getBoundingClientRect().top-8;
+ })).toBe(true);
 });
