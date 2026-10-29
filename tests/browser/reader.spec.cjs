@@ -299,3 +299,33 @@ test('guided name playback follows highlighted name below sticky tabs and above 
   return r.top>=document.querySelector('#sticky-verse-navigation').getBoundingClientRect().bottom-2&&r.top<document.querySelector('#practice-dock').getBoundingClientRect().top-8;
  })).toBe(true);
 });
+
+test('Chant here exposes a Stop button and highlights the actual playing śloka',async({page})=>{
+ await page.addInitScript(()=>{
+  HTMLMediaElement.prototype.play=function(){this.dispatchEvent(new Event('play'));return Promise.resolve();};
+ });
+ await page.goto('/lalita/?sloka=1');
+ await expect(page.locator('#verse-1 .dock-verse-shortcut')).toBeVisible({timeout:20000});
+ await page.locator('#verse-1 .dock-verse-shortcut').click();
+ await expect(page.locator('#verse-1 .dock-verse-stop')).toBeVisible();
+ await expect(page.locator('#verse-1')).toHaveClass(/selected-verse/);
+ await expect(page.locator('#verse-quick-index [data-quick="1"]')).toHaveClass(/quick-current/);
+ await page.evaluate(()=>window.scrollTo(0,document.body.scrollHeight));
+ await expect(page.locator('#verse-quick-index [data-quick="1"]')).toHaveClass(/quick-current/);
+ await page.locator('#verse-1 .dock-verse-stop').click();
+ await expect(page.locator('#verse-1 .dock-verse-stop')).toBeHidden();
+ await expect(page.locator('#verse-1 .dock-verse-shortcut')).toHaveText('▶ Chant here');
+});
+test('Practice dropdowns align as two equal columns on desktop and phone',async({page})=>{
+ for(const width of [1280,390]){
+  await page.setViewportSize({width,height:844});
+  await page.goto('/lalita/?sloka=1');
+  if(width<620)await page.locator('#practice-dock-toggle').click();
+  await expect(page.locator('#practice-from')).toBeVisible({timeout:20000});
+  const dimensions=await page.locator('#practice-player .practice-fields label').evaluateAll(labels=>labels.map(el=>({x:el.getBoundingClientRect().x,y:el.getBoundingClientRect().y,w:el.getBoundingClientRect().width,selectW:el.querySelector('select').getBoundingClientRect().width})));
+  expect(Math.abs(dimensions[0].y-dimensions[1].y)).toBeLessThan(3);
+  expect(Math.abs(dimensions[0].w-dimensions[1].w)).toBeLessThan(3);
+  expect(Math.abs(dimensions[0].x-dimensions[2].x)).toBeLessThan(3);
+  expect(dimensions.every(d=>Math.abs(d.w-d.selectW)<3)).toBe(true);
+ }
+});

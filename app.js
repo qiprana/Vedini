@@ -155,7 +155,10 @@ function namavaliPanel(v){
 function studySections(info,parts,nameNumber){
  return "<div class='study-inner'><h4>"+esc(langText("Word by word","ಪದ ಪದದ ಅರ್ಥ"))+"</h4>"+wordsGrid(parts)+significanceToggle(nameNumber)+"</div>";
 }
-function makeAudio(v,isDhyana){return "<button type='button' class='dock-verse-shortcut' data-dock-verse='"+v.verse_number+"' data-dock-dhyana='"+(isDhyana?"1":"0")+"'>▶ Chant here</button>";}
+function makeAudio(v,isDhyana){
+ const attrs="data-dock-verse='"+v.verse_number+"' data-dock-dhyana='"+(isDhyana?"1":"0")+"'";
+ return "<span class='verse-chant-actions'><button type='button' class='dock-verse-shortcut' "+attrs+" aria-pressed='false'>▶ Chant here</button><button type='button' class='dock-verse-stop' "+attrs+" aria-label='"+esc(langText("Stop chanting this śloka","ಈ ಶ್ಲೋಕದ ಪಠಣವನ್ನು ನಿಲ್ಲಿಸಿ"))+"' disabled hidden>■ Stop</button></span>";
+}
 function legacyMakeAudio(v,isDhyana){
  if(isDhyana){
   const rows=dhyanaPhraseData[v.verse_number]||[];
@@ -1487,6 +1490,10 @@ function updateQuickIndex(){
 let verseScrollQueued=false;
 function updateVerseIndexFromScroll(){
  if(view!=="verses"||searchTerm.trim())return;
+ // Playback is the source of truth for the highlighted śloka. Otherwise a
+ // scroll event during animated auto-follow can reselect the preceding card.
+ const playingVerse=practice.active&&!practice.dhyana?practice.current:(guided.active?guided.units[guided.index]?.verse:null);
+ if(playingVerse){selectVisibleVerse(playingVerse);return;}
  const cards=Array.from(document.querySelectorAll("#verse-cards .card"));
  if(!cards.length)return;
  const sticky=$("#sticky-verse-navigation");
@@ -1540,6 +1547,7 @@ function render(){
  restoreDetails(opened);
  // Every reader render replaces the names; reconnect their inline MSS playback.
  initNameAudio();
+ syncChantHereButtons();
  requestAnimationFrame(fitVerseLines);
  // After layout settles, sync the index to the śloka actually in view.
  requestAnimationFrame(queueVerseScrollUpdate);
@@ -1752,12 +1760,25 @@ function loadAudio(){
  });
 }
 const practice={active:false,paused:false,current:1,end:1,reps:1,played:0,token:0,dhyana:false};
+function syncChantHereButtons(){
+ document.querySelectorAll(".dock-verse-shortcut").forEach(button=>{
+  const active=practice.active&&practice.current===Number(button.dataset.dockVerse)
+   &&practice.dhyana===(button.dataset.dockDhyana==="1");
+  button.classList.toggle("chanting",active);
+  button.setAttribute("aria-pressed",String(active));
+  button.textContent=active?"♫ Chanting":"▶ Chant here";
+  const stop=button.closest(".verse-chant-actions")?.querySelector(".dock-verse-stop");
+  if(stop){stop.hidden=!active;stop.disabled=!active;}
+  button.closest(".card")?.classList.toggle("is-chanting",active);
+ });
+}
 function practiceStatus(message){const e=$("#practice-status");if(e)e.textContent=message;}
 function practiceSyncButtons(){
  $("#practice-play").disabled=practice.active;
  $("#practice-pause").disabled=!practice.active;
  $("#practice-pause").textContent=practice.paused?"Resume":"Pause";
  $("#practice-stop").disabled=!practice.active;
+ syncChantHereButtons();
  syncDock();
 }
 function practiceStop(message="Stopped"){
@@ -1804,7 +1825,7 @@ async function practicePlayCurrent(token){
   return;
  }
  // Follow the active verse across reader groups without interrupting this player.
- if(practice.dhyana){if(view!=="dhyana"||searchTerm.trim()){view="dhyana";searchTerm="";$("#search").value="";render()}requestAnimationFrame(()=>document.getElementById("dhyana-"+n)?.scrollIntoView({block:"start",behavior:"smooth"}));syncDock();return;}
+ if(practice.dhyana){if(view!=="dhyana"||searchTerm.trim()){view="dhyana";searchTerm="";$("#search").value="";render()}requestAnimationFrame(()=>document.getElementById("dhyana-"+n)?.scrollIntoView({block:"start",behavior:"smooth"}));syncChantHereButtons();syncDock();return;}
  if(pageIndex!==Math.floor((n-1)/pageSize)||view!=="verses"||searchTerm.trim()){
   view="verses";pageIndex=Math.floor((n-1)/pageSize);selectedVerse=n;
   searchTerm="";$("#search").value="";render();
@@ -1813,6 +1834,8 @@ async function practicePlayCurrent(token){
   document.querySelectorAll("#verse-cards .card").forEach(e=>e.classList.toggle("selected-verse",e.id==="verse-"+n));
   updateQuickIndex();
  }
+ selectVisibleVerse(n);
+ syncChantHereButtons();
  requestAnimationFrame(()=>document.getElementById("verse-"+n)?.scrollIntoView({block:"start",behavior:"smooth"}));
  syncDock();
 }
@@ -2111,8 +2134,17 @@ function initDock(){
  });
  const expand=controller.expand;
  document.getElementById("reader").addEventListener("click",event=>{
+  const stop=event.target.closest(".dock-verse-stop");
+  if(stop){
+   event.preventDefault();event.stopImmediatePropagation();
+   if(practice.active&&practice.current===Number(stop.dataset.dockVerse)
+      &&practice.dhyana===(stop.dataset.dockDhyana==="1"))practiceStop("Stopped");
+   return;
+  }
   const shortcut=event.target.closest(".dock-verse-shortcut");if(!shortcut)return;
-  event.preventDefault();event.stopImmediatePropagation();expand(true);
+  event.preventDefault();event.stopImmediatePropagation();
+  // Keep the mobile mini-player compact while chanting text is being followed.
+  if(!window.matchMedia("(max-width: 620px)").matches)expand(true);
   if(shortcut.dataset.dockDhyana==="1"){const n=Number(shortcut.dataset.dockVerse);document.getElementById("learning-mode").value="chant";document.getElementById("learning-mode").dispatchEvent(new Event("change"));practiceStop("");practice.dhyana=true;practice.active=true;practice.current=n;practice.end=n;practice.reps=1;practice.played=0;practice.token++;practiceSyncButtons();practicePlayCurrent(practice.token);return}
   const n=Number(shortcut.dataset.dockVerse);document.getElementById("learning-mode").value="chant";document.getElementById("learning-mode").dispatchEvent(new Event("change"));
   document.getElementById("practice-from").value=String(n);document.getElementById("practice-to").value=String(n);
