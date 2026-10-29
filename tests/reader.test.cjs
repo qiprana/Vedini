@@ -30,7 +30,7 @@ test('every canonical verse is valid JSON with matching index',()=>{
  }
 });
 test('reader contains required controls and no removed guidedAdvance handler',()=>{
- for(const id of ['practice-play','practice-pause','practice-stop','guided-play','guided-pause','guided-next','guided-stop','guided-from','guided-to','guided-mode','guided-gap'])
+ for(const id of ['practice-play','practice-pause','practice-stop','guided-play','guided-pause','guided-next','guided-stop','guided-from','guided-to','learning-mode','guided-gap'])
   assert.match(page,new RegExp('id="'+id+'"'),'Missing '+id);
  assert.doesNotMatch(app,/addEventListener\(["']ended["'],\s*guidedAdvance\b/);
  assert.doesNotMatch(page,/id="practice-speed"/);
