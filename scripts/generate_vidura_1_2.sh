@@ -13,7 +13,9 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 # Generate only a single part, e.g. verse 1, part 3:
 #   bash scripts/generate_vidura_1_2.sh --start 1 --end 1 --part 3
 #
-# To make existing recordings slower, regenerate them with the new 0.95 speed:\n#   bash scripts/generate_vidura_1_2.sh --replace\n#\n# Re-record an existing part after review:
+# The MP3 generation rate remains 1.05 for reliable CowChant recordings.
+# Change listening speed from 0.70× to 1.20× in the Vedini player; no re-recording required.
+#
 #   bash scripts/generate_vidura_1_2.sh --start 1 --end 1 --part 3 --replace
 #
 # The web player controls repetition; audio files are NEVER duplicated to encode repeats.
