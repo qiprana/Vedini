@@ -27,28 +27,106 @@
   },
   "word_by_word": [
     {
-      "dev": "न स्वे सुखे वै कुरुते प्रहर्षं",
-      "iast": "na sve sukhe vai kurute praharṣaṃ",
-      "en": "Does not over-rejoice in his own pleasure",
-      "kn": "ತನ್ನ ಸುಖದಲ್ಲಿ ಅತಿಹರ್ಷ ಪಡುವುದಿಲ್ಲ"
+      "dev": "न",
+      "iast": "na",
+      "en": "Not",
+      "kn": "ಇಲ್ಲ"
     },
     {
-      "dev": "नान्यस्य दुःखे भवति प्रहृष्टः",
-      "iast": "nānyasya duḥkhe bhavati prahṛṣṭaḥ",
-      "en": "Does not rejoice at another's suffering",
-      "kn": "ಇತರರ ದುಃಖದಲ್ಲಿ ಸಂತೋಷಪಡುವುದಿಲ್ಲ"
+      "dev": "स्वे",
+      "iast": "sve",
+      "en": "In one's own",
+      "kn": "ತನ್ನದೇ"
     },
     {
-      "dev": "दत्त्वा न पश्चात् कुरुतेऽनुतापं",
-      "iast": "dattvā na paścāt kurute'nutāpaṃ",
-      "en": "Does not regret giving afterward",
-      "kn": "ದಾನ ಮಾಡಿದ ಬಳಿಕ ಪಶ್ಚಾತ್ತಾಪಪಡುವುದಿಲ್ಲ"
+      "dev": "सुखे",
+      "iast": "sukhe",
+      "en": "Happiness",
+      "kn": "ಸುಖದಲ್ಲಿ"
     },
     {
-      "dev": "स कथ्यते सत्पुरुषार्थशीलः",
-      "iast": "sa kathyate satpuruṣārthaśīlaḥ",
-      "en": "Such a person is called noble",
-      "kn": "ಅವನು ಸಜ್ಜನಿಕೆಯುಳ್ಳವನು ಎಂದು ಕರೆಯಲ್ಪಡುತ್ತಾನೆ"
+      "dev": "वै",
+      "iast": "vai",
+      "en": "Indeed",
+      "kn": "ನಿಜವಾಗಿ"
+    },
+    {
+      "dev": "कुरुते",
+      "iast": "kurute",
+      "en": "Does",
+      "kn": "ಮಾಡುತ್ತಾನೆ"
+    },
+    {
+      "dev": "प्रहर्षं",
+      "iast": "praharṣaṃ",
+      "en": "Excessive rejoicing",
+      "kn": "ಅತಿಹರ್ಷ"
+    },
+    {
+      "dev": "नान्यस्य",
+      "iast": "nānyasya",
+      "en": "Not at another's",
+      "kn": "ಇತರರ ವಿಷಯದಲ್ಲಿ ಅಲ್ಲ"
+    },
+    {
+      "dev": "दुःखे",
+      "iast": "duḥkhe",
+      "en": "Suffering",
+      "kn": "ದುಃಖದಲ್ಲಿ"
+    },
+    {
+      "dev": "भवति",
+      "iast": "bhavati",
+      "en": "Becomes",
+      "kn": "ಆಗುತ್ತಾನೆ"
+    },
+    {
+      "dev": "प्रहृष्टः",
+      "iast": "prahṛṣṭaḥ",
+      "en": "Delighted",
+      "kn": "ಹರ್ಷಿತ"
+    },
+    {
+      "dev": "दत्त्वा",
+      "iast": "dattvā",
+      "en": "Having given",
+      "kn": "ದಾನ ಮಾಡಿದ ಬಳಿಕ"
+    },
+    {
+      "dev": "न",
+      "iast": "na",
+      "en": "Not",
+      "kn": "ಇಲ್ಲ"
+    },
+    {
+      "dev": "पश्चात्",
+      "iast": "paścāt",
+      "en": "Afterwards",
+      "kn": "ನಂತರ"
+    },
+    {
+      "dev": "कुरुतेऽनुतापं",
+      "iast": "kurute'nutāpaṃ",
+      "en": "Feels regret",
+      "kn": "ಪಶ್ಚಾತ್ತಾಪಪಡುತ್ತಾನೆ"
+    },
+    {
+      "dev": "स",
+      "iast": "sa",
+      "en": "That one",
+      "kn": "ಅವನು"
+    },
+    {
+      "dev": "कथ्यते",
+      "iast": "kathyate",
+      "en": "Is called",
+      "kn": "ಎಂದು ಕರೆಯಲ್ಪಡುತ್ತಾನೆ"
+    },
+    {
+      "dev": "सत्पुरुषार्थशीलः",
+      "iast": "satpuruṣārthaśīlaḥ",
+      "en": "One whose conduct is noble",
+      "kn": "ಉತ್ತಮ ನಡತೆಯ ಸಜ್ಜನನು"
     }
   ],
   "practice": [
@@ -110,6 +188,6 @@
     "translation": "verbatim from supplied PDF",
     "study_meanings": "editorial",
     "notes": "Longer metre; do not force anuṣṭubh.",
-    "word_gloss_level": "bilingual phrase-aligned glosses; individual-token glosses pending philological review"
+    "word_gloss_level": "editorial individual source-token meanings"
   }
 }
