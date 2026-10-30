@@ -1798,7 +1798,7 @@ function practiceStop(message="Stopped"){
  practice.token++;practice.active=false;practice.paused=false;practice.dhyana=false;
  clearRangeAudio();
  const audio=$("#practice-audio");audio.pause();audio.removeAttribute("src");audio.load();
- practiceSyncButtons();practiceStatus(message);syncDock();
+ practiceSyncButtons();practiceStatus(message);syncChantHereButtons();syncDock();
 }
 async function loadRangeBuffer(url,ctx){
  let job=rangeAudio.cache.get(url);
