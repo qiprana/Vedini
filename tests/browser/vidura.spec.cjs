@@ -61,6 +61,8 @@ test('Viduranīti mobile practice controls remain usable',async({page})=>{
  await page.setViewportSize({width:390,height:844});
  await stableAudioAvailability(page);
  await page.goto('/vidura/');
+ await expect(page.locator('#vidura-dock-toggle')).toHaveAttribute('aria-expanded','false');
+ await page.locator('#vidura-dock-toggle').click();
  await expect(page.locator('#vidura-speed')).toBeVisible();
  await expect(page.locator('#vidura-shruti-volume')).toBeVisible();
  await expect(page.locator('#vidura-mode')).toBeVisible();
