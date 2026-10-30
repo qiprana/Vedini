@@ -11,6 +11,7 @@ let view="verses",pageIndex=0,selectedVerse=1;
 let activeAudioElement=null;
 function claimAudioFocus(audio){
  if(!audio)return;
+ if(practice.active&&audio!==$("#practice-audio"))practiceStop("Stopped for other audio");
  if(guided.active&&audio!==$("#guided-audio"))guidedStop("Stopped for other audio");
  stopSlokaMss();
  document.querySelectorAll("audio").forEach(other=>{
