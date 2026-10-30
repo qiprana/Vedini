@@ -159,7 +159,8 @@ def main():
                 print(f"SKIP existing: {dest.name}")
                 continue
             if meter=="unknown-long-metre":
-                raise ValueError(f"Verse {n} requires metre review; no audio generated for it")
+                print(f"SKIP metre not reviewed for verse {n}; rerun that verse with --meter after checking Sanskrit")
+                continue
             print(f"CHANGING no source Sanskrit | {n}: {label}",flush=True)
             with preserve_original_onsets(engine):
                 if index is None:
