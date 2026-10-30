@@ -27,28 +27,64 @@
   },
   "word_by_word": [
     {
-      "dev": "न तथेच्छन्ति कल्याणान्",
-      "iast": "na tathecchanti kalyāṇān",
-      "en": "The good do not seek in that way",
-      "kn": "ಒಳ್ಳೆಯವರ ಗುಣಗಳನ್ನು ಅಷ್ಟು ಬಯಸುವುದಿಲ್ಲ"
+      "dev": "न",
+      "iast": "na",
+      "en": "Not",
+      "kn": "ಅಲ್ಲ"
     },
     {
-      "dev": "परेषां वेदितुं गुणान्",
-      "iast": "pareṣāṃ vedituṃ guṇān",
-      "en": "To know the virtues of others",
-      "kn": "ಇತರರ ಗುಣಗಳನ್ನು ತಿಳಿಯಲು"
+      "dev": "तथेच्छन्ति",
+      "iast": "tathecchanti",
+      "en": "Desire in that way",
+      "kn": "ಹಾಗೆ ಬಯಸುತ್ತಾರೆ"
     },
     {
-      "dev": "यथैषां ज्ञातुमिच्छन्ति",
-      "iast": "yathaiṣāṃ jñātumicchanti",
-      "en": "As they wish to learn",
-      "kn": "ಅವರು ತಿಳಿಯಲು ಬಯಸುವಷ್ಟು"
+      "dev": "कल्याणान्",
+      "iast": "kalyāṇān",
+      "en": "Good or noble persons",
+      "kn": "ಒಳ್ಳೆಯವರನ್ನು"
     },
     {
-      "dev": "नैर्गुण्यं पापचेतसः",
-      "iast": "nairguṇyaṃ pāpacetasaḥ",
-      "en": "The defects of others; the wicked-minded",
-      "kn": "ಇತರರ ದೋಷಗಳನ್ನು; ದುಷ್ಟಮನಸ್ಸಿನವರು"
+      "dev": "परेषां",
+      "iast": "pareṣāṃ",
+      "en": "Of others",
+      "kn": "ಇತರರ"
+    },
+    {
+      "dev": "वेदितुं",
+      "iast": "vedituṃ",
+      "en": "To know",
+      "kn": "ತಿಳಿಯಲು"
+    },
+    {
+      "dev": "गुणान्",
+      "iast": "guṇān",
+      "en": "Virtues",
+      "kn": "ಗುಣಗಳನ್ನು"
+    },
+    {
+      "dev": "यथैषां",
+      "iast": "yathaiṣāṃ",
+      "en": "Just as of these people",
+      "kn": "ಇವರ ವಿಷಯದಲ್ಲಿ ಹೇಗೋ ಹಾಗೆ"
+    },
+    {
+      "dev": "ज्ञातुमिच्छन्ति",
+      "iast": "jñātumicchanti",
+      "en": "They desire to find out",
+      "kn": "ತಿಳಿಯಲು ಬಯಸುತ್ತಾರೆ"
+    },
+    {
+      "dev": "नैर्गुण्यं",
+      "iast": "nairguṇyaṃ",
+      "en": "Lack of qualities, faults",
+      "kn": "ಗುಣಗಳ ಕೊರತೆ, ದೋಷಗಳು"
+    },
+    {
+      "dev": "पापचेतसः",
+      "iast": "pāpacetasaḥ",
+      "en": "People of wicked mind",
+      "kn": "ದುಷ್ಟ ಮನಸ್ಸಿನವರು"
     }
   ],
   "practice": [
@@ -110,6 +146,6 @@
     "translation": "verbatim from supplied PDF",
     "study_meanings": "editorial",
     "notes": "Devanagari IAST readings follow the handout; practice partitions editorial.",
-    "word_gloss_level": "bilingual phrase-aligned glosses; individual-token glosses pending philological review"
+    "word_gloss_level": "editorial individual source-token meanings"
   }
 }
