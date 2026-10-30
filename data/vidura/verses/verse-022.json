@@ -27,28 +27,58 @@
   },
   "word_by_word": [
     {
-      "dev": "परिच्छदेन क्षेत्रेण",
-      "iast": "paricchadena kṣetreṇa",
-      "en": "By household possessions and land",
-      "kn": "ಪರಿಕರಗಳಿಂದ ಮತ್ತು ಭೂಮಿಯಿಂದ"
+      "dev": "परिच्छदेन",
+      "iast": "paricchadena",
+      "en": "By equipment or possessions",
+      "kn": "ಪರಿಕರಗಳಿಂದ"
     },
     {
-      "dev": "वेश्मना परिचर्यया",
-      "iast": "veśmanā paricaryayā",
-      "en": "By homes and service",
-      "kn": "ಮನೆಯಿಂದ ಮತ್ತು ಸೇವೆಯಿಂದ"
+      "dev": "क्षेत्रेण",
+      "iast": "kṣetreṇa",
+      "en": "By the field or land",
+      "kn": "ಭೂಮಿಯಿಂದ"
     },
     {
-      "dev": "परीक्षेत कुलं राजन्",
-      "iast": "parīkṣeta kulaṃ rājan",
-      "en": "Examine a household, O king",
-      "kn": "ರಾಜನೇ, ಕುಟುಂಬವನ್ನು ಪರಿಶೀಲಿಸಬೇಕು"
+      "dev": "वेश्मना",
+      "iast": "veśmanā",
+      "en": "By a dwelling",
+      "kn": "ಮನೆಯಿಂದ"
     },
     {
-      "dev": "भोजनाच्छादनेन च",
-      "iast": "bhojanācchādanena ca",
+      "dev": "परिचर्यया",
+      "iast": "paricaryayā",
+      "en": "By service",
+      "kn": "ಸೇವೆಯಿಂದ"
+    },
+    {
+      "dev": "परीक्षेत",
+      "iast": "parīkṣeta",
+      "en": "One should examine",
+      "kn": "ಪರಿಶೀಲಿಸಬೇಕು"
+    },
+    {
+      "dev": "कुलं",
+      "iast": "kulaṃ",
+      "en": "Family",
+      "kn": "ಕುಟುಂಬ"
+    },
+    {
+      "dev": "राजन्",
+      "iast": "rājan",
+      "en": "O king",
+      "kn": "ರಾಜನೇ"
+    },
+    {
+      "dev": "भोजनाच्छादनेन",
+      "iast": "bhojanācchādanena",
       "en": "By food and clothing",
-      "kn": "ಆಹಾರ ಮತ್ತು ಉಡುಪಿನಿಂದಲೂ"
+      "kn": "ಆಹಾರ ಮತ್ತು ಉಡುಪಿನಿಂದ"
+    },
+    {
+      "dev": "च",
+      "iast": "ca",
+      "en": "And",
+      "kn": "ಮತ್ತು"
     }
   ],
   "practice": [
@@ -110,6 +140,6 @@
     "translation": "verbatim from supplied PDF",
     "study_meanings": "editorial",
     "notes": null,
-    "word_gloss_level": "bilingual phrase-aligned glosses; individual-token glosses pending philological review"
+    "word_gloss_level": "editorial individual source-token meanings"
   }
 }
