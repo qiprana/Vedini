@@ -1,0 +1,138 @@
+{
+  "id": "vidura-013",
+  "collection": "vidura-niti",
+  "verse_number": 13,
+  "theme": "The power of speech",
+  "reading": {
+    "dev": [
+      "अभ्यावहति कल्याणं विविधं वाक्सुभाषिता ।",
+      "सैव दुर्भाषिता राजन्ननर्थायोपपद्यते ॥ १३ ॥"
+    ],
+    "iast": [
+      "abhyāvahati kalyāṇaṃ vividhaṃ vāksubhāṣitā |",
+      "saiva durbhāṣitā rājannanarthāyopapadyate || 13 ||"
+    ],
+    "kn": [
+      "ಅಭ್ಯಾವಹತಿ ಕಲ್ಯಾಣಂ ವಿವಿಧಂ ವಾಕ್ಸುಭಾಷಿತಾ ೤",
+      "ಸೈವ ದುರ್ಭಾಷಿತಾ ರಾಜನ್ನನರ್ಥಾಯೋಪಪದ್ಯತೇ ೥ ೧೩ ೥"
+    ]
+  },
+  "meaning": {
+    "en": "O King ! Well spoken words bring forth manifold blessings whereas same speech, if badly spoken, can prove disastrous.",
+    "kn": "ರಾಜನೇ, ಒಳ್ಳೆಯ ರೀತಿಯಲ್ಲಿ ಮಾತನಾಡಿದ ಮಾತು ಅನೇಕ ಶುಭಫಲಗಳನ್ನು ತರುತ್ತದೆ; ಅದೇ ಮಾತು ಕೆಟ್ಟ ರೀತಿಯಲ್ಲಿ ಹೇಳಿದರೆ ಅನರ್ಥಕ್ಕೆ ಕಾರಣವಾಗಬಹುದು."
+  },
+  "deeper_meaning": {
+    "en": "The effect of speech depends not just on words but also on how and why they are spoken. Thoughtful language can sustain relationships; harsh expression can undo their good.",
+    "kn": "ಮಾತಿನ ವಿಷಯದ ಜೊತೆಗೆ ಅದನ್ನು ಹೇಳುವ ರೀತಿ ಮತ್ತು ಉದ್ದೇಶವೂ ಮುಖ್ಯ. ವಿವೇಕದ ಮಾತು ಸಂಬಂಧಗಳನ್ನು ಬೆಳೆಸುತ್ತದೆ."
+  },
+  "word_by_word": [
+    {
+      "dev": "अभ्यावहति",
+      "iast": "abhyāvahati",
+      "en": "Brings",
+      "kn": "ಪದಾರ್ಥ: अभ्यावहति"
+    },
+    {
+      "dev": "कल्याणं",
+      "iast": "kalyāṇaṃ",
+      "en": " well-being",
+      "kn": "ಪದಾರ್ಥ: कल्याणं"
+    },
+    {
+      "dev": "विविधं",
+      "iast": "vividhaṃ",
+      "en": "Many kinds",
+      "kn": "ಪದಾರ್ಥ: विविधं"
+    },
+    {
+      "dev": "वाक्सुभाषिता",
+      "iast": "vāksubhāṣitā",
+      "en": " speech well spoken",
+      "kn": "ಪದಾರ್ಥ: वाक्सुभाषिता"
+    },
+    {
+      "dev": "सैव",
+      "iast": "saiva",
+      "en": "That very speech",
+      "kn": "ಪದಾರ್ಥ: सैव"
+    },
+    {
+      "dev": "दुर्भाषिता",
+      "iast": "durbhāṣitā",
+      "en": " badly spoken",
+      "kn": "ಪದಾರ್ಥ: दुर्भाषिता"
+    },
+    {
+      "dev": "राजन्",
+      "iast": "rājan",
+      "en": " O king",
+      "kn": "ಪದಾರ್ಥ: राजन्"
+    },
+    {
+      "dev": "अनर्थायोपपद्यते",
+      "iast": "anarthāyopapadyate",
+      "en": "May lead to harm",
+      "kn": "ಪದಾರ್ಥ: अनर्थायोपपद्यते"
+    }
+  ],
+  "practice": [
+    {
+      "id": "a",
+      "order": 1,
+      "dev": "अभ्यावहति कल्याणं",
+      "iast": "abhyāvahati kalyāṇaṃ",
+      "kn": "ಅಭ್ಯಾವಹತಿ ಕಲ್ಯಾಣಂ",
+      "audio": "audio/vidura/sloka-013-part-01.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "b",
+      "order": 2,
+      "dev": "विविधं वाक्सुभाषिता",
+      "iast": "vividhaṃ vāksubhāṣitā",
+      "kn": "ವಿವಿಧಂ ವಾಕ್ಸುಭಾಷಿತಾ",
+      "audio": "audio/vidura/sloka-013-part-02.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "c",
+      "order": 3,
+      "dev": "सैव दुर्भाषिता राजन्",
+      "iast": "saiva durbhāṣitā rājan",
+      "kn": "ಸೈವ ದುರ್ಭಾಷಿತಾ ರಾಜನ್",
+      "audio": "audio/vidura/sloka-013-part-03.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "d",
+      "order": 4,
+      "dev": "अनर्थायोपपद्यते",
+      "iast": "anarthāyopapadyate",
+      "kn": "ಅನರ್ಥಾಯೋಪಪದ್ಯತೇ",
+      "audio": "audio/vidura/sloka-013-part-04.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    }
+  ],
+  "practice_source": "editorial-pada-boundaries",
+  "practice_note": "Practice segments follow printed lines and editorial word boundaries; confirm chanting pauses before audio publishing.",
+  "audio": {
+    "full": "audio/vidura/sloka-013-full.mp3",
+    "clips": [
+      "audio/vidura/sloka-013-part-01.mp3",
+      "audio/vidura/sloka-013-part-02.mp3",
+      "audio/vidura/sloka-013-part-03.mp3",
+      "audio/vidura/sloka-013-part-04.mp3"
+    ],
+    "recording_status": "awaiting-vagdhenu-generation",
+    "meter": "anushtubh",
+    "full_playback": "single_continuous_recording",
+    "repeat_control": "browser-per-part"
+  },
+  "source": {
+    "page": 6,
+    "section": "Atha Viduranītiḥ",
+    "translation": "verbatim from supplied PDF",
+    "study_meanings": "editorial",
+    "notes": "Devanagari IAST readings follow the handout; practice partitions editorial."
+  }
+}
