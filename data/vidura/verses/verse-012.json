@@ -27,28 +27,76 @@
   },
   "word_by_word": [
     {
-      "dev": "परं क्षिपति दोषेण",
-      "iast": "paraṃ kṣipati doṣeṇa",
-      "en": "Blames another for a fault",
-      "kn": "ಇತರರನ್ನು ದೋಷದಿಂದ ದೂಷಿಸುತ್ತಾನೆ"
+      "dev": "परं",
+      "iast": "paraṃ",
+      "en": "Another person",
+      "kn": "ಇನ್ನೊಬ್ಬನನ್ನು"
     },
     {
-      "dev": "वर्तमानः स्वयं तथा",
-      "iast": "vartamānaḥ svayaṃ tathā",
-      "en": "While doing the same oneself",
-      "kn": "ತಾನೂ ಹಾಗೆಯೇ ಇರುವವನು"
+      "dev": "क्षिपति",
+      "iast": "kṣipati",
+      "en": "Blames or disparages",
+      "kn": "ದೂಷಿಸುತ್ತಾನೆ"
     },
     {
-      "dev": "यश्च क्रुध्यत्यनीशानः",
-      "iast": "yaśca krudhyatyanīśānaḥ",
-      "en": "Who grows angry without authority",
-      "kn": "ಅಧಿಕಾರವಿಲ್ಲದೆ ಕೋಪಗೊಳ್ಳುವವನು"
+      "dev": "दोषेण",
+      "iast": "doṣeṇa",
+      "en": "For a fault",
+      "kn": "ದೋಷದಿಂದ"
     },
     {
-      "dev": "स च मूढतमो नरः",
-      "iast": "sa ca mūḍhatamo naraḥ",
-      "en": "He is the greatest fool",
-      "kn": "ಅವನೇ ಅತ್ಯಂತ ಮೂಢ ವ್ಯಕ್ತಿ"
+      "dev": "वर्तमानः",
+      "iast": "vartamānaḥ",
+      "en": "Being or acting",
+      "kn": "ಇರುವವನು"
+    },
+    {
+      "dev": "स्वयं",
+      "iast": "svayaṃ",
+      "en": "Oneself",
+      "kn": "ತಾನೇ"
+    },
+    {
+      "dev": "तथा",
+      "iast": "tathā",
+      "en": "In the same way",
+      "kn": "ಅದೇ ರೀತಿಯಲ್ಲಿ"
+    },
+    {
+      "dev": "यश्च",
+      "iast": "yaśca",
+      "en": "And whoever",
+      "kn": "ಮತ್ತು ಯಾರು"
+    },
+    {
+      "dev": "क्रुध्यत्यनीशानः",
+      "iast": "krudhyatyanīśānaḥ",
+      "en": "Grows angry without authority",
+      "kn": "ಅಧಿಕಾರವಿಲ್ಲದೆ ಕೋಪಗೊಳ್ಳುತ್ತಾನೋ"
+    },
+    {
+      "dev": "स",
+      "iast": "sa",
+      "en": "He",
+      "kn": "ಅವನು"
+    },
+    {
+      "dev": "च",
+      "iast": "ca",
+      "en": "And",
+      "kn": "ಮತ್ತು"
+    },
+    {
+      "dev": "मूढतमो",
+      "iast": "mūḍhatamo",
+      "en": "Most foolish",
+      "kn": "ಅತ್ಯಂತ ಮೂಢ"
+    },
+    {
+      "dev": "नरः",
+      "iast": "naraḥ",
+      "en": "Man",
+      "kn": "ಮನುಷ್ಯ"
     }
   ],
   "practice": [
@@ -110,6 +158,6 @@
     "translation": "verbatim from supplied PDF",
     "study_meanings": "editorial",
     "notes": "Devanagari IAST readings follow the handout; practice partitions editorial.",
-    "word_gloss_level": "bilingual phrase-aligned glosses; individual-token glosses pending philological review"
+    "word_gloss_level": "editorial individual source-token meanings"
   }
 }
