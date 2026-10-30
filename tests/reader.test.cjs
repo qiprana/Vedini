@@ -66,13 +66,13 @@ test('all 1000 Nāmāvalī mantras remain present with Om and Namaḥ',()=>{
   assert.match(n.iast,/^Oṃ .+ Namaḥ$/u,'IAST Nāmāvalī missing '+(i+1));
  }
 });
-test('Nāmāvalī sits under the śloka rather than in each name row',()=>{
+test('Nāmāvalī data is preserved but not displayed inside the study reader',()=>{
  assert.match(app,/function inlineNameMantra\(number\)/);
  assert.doesNotMatch(app,/name-mantra-slot[^\n]*inlineNameMantra\(number\)/);
  assert.doesNotMatch(app,/nameMantraToggle/);
  assert.match(app,/namavali-001-1000\.json/);
  assert.match(app,/function namavaliPanel\(v\)/);
- assert.match(app,/isDhyana\?"":namavaliPanel\(v\)/);
+ assert.doesNotMatch(app,/isDhyana\?"":namavaliPanel\(v\)/);
 });
 test('all 1000 entries include English and Kannada benefits and explanations',()=>{
  const files=['001-0200','201-0400','401-0600','601-0800','801-1000'];
@@ -236,4 +236,15 @@ test('Dhyāna phrase rows share divine-name layout, MSS playback and word study'
  assert.match(app,/const parts=dhyanaPhraseComponents\(v,row\)/);
  assert.match(app,/initDhyanaPhraseAudio\(\);\s*initDhyanaPlayAll\(\);/);
  assert.match(app,/button.setAttribute\("aria-pressed","false"\)/);
+});
+
+ test('one responsive verse selector replaces ten-verse study grids',()=>{
+ assert.match(page,/id="verse-selector"/);
+ assert.match(page,/id="verse-previous"/);
+ assert.match(page,/id="verse-next"/);
+ assert.match(app,/const pageSize=1,plannedVerses=183/);
+ assert.match(app,/verses\.slice\(selectedVerse-1,selectedVerse\)/);
+ assert.match(app,/practice\.played===1/);
+ assert.match(page,/M\. S\. Subbulakshmi/);
+ assert.match(page,/Vāgdhenu · Practice voice/);
 });
