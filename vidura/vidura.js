@@ -2,6 +2,7 @@
 const root=document.getElementById('vidura-verses'),audio=document.getElementById('vidura-audio');
 const verseSelect=document.getElementById('vidura-verse'),modeSelect=document.getElementById('vidura-mode');
 const repeats=document.getElementById('vidura-repeats'),partPicker=document.getElementById('vidura-part-picker');
+const speed=document.getElementById('vidura-speed'),speedLabel=document.getElementById('vidura-speed-value');
 const play=document.getElementById('vidura-play'),pause=document.getElementById('vidura-pause'),stop=document.getElementById('vidura-stop');
 const stateLabel=document.getElementById('vidura-audio-state'),search=document.getElementById('vidura-search');
 const state={verses:[],script:'dev',audioReady:false,fullReady:false,raf:0,objectId:0,token:0,part:0,playParts:[],repeatMap:{},sequence:[],queueIndex:0};
@@ -26,6 +27,16 @@ function verse(){return state.verses.find(v=>String(v.verse_number)===verseSelec
 function fullPath(){return '../audio/vidura/sloka-'+String(verseSelect.value).padStart(3,'0')+'-full.mp3';}
 function clipPath(i){return '../audio/vidura/sloka-'+String(verseSelect.value).padStart(3,'0')+'-part-'+String(i+1).padStart(2,'0')+'.mp3';}
 function partCount(i){return state.repeatMap[verseSelect.value+':'+i]??Number(repeats.value);}
+function applyChantSpeed(){
+ const value=Number(speed.value);
+ const rate=Number.isFinite(value)?Math.max(.70,Math.min(1.20,value)):1;
+ audio.defaultPlaybackRate=rate;
+ audio.playbackRate=rate;
+ if('preservesPitch' in audio)audio.preservesPitch=true;
+ if('webkitPreservesPitch' in audio)audio.webkitPreservesPitch=true;
+ speedLabel.textContent=rate.toFixed(2)+'×';
+ return rate;
+}
 function clearFocus(){document.querySelectorAll('.vidura-phrase.active,.vidura-part.active').forEach(el=>el.classList.remove('active'));}
 function focusPart(i){clearFocus();document.querySelectorAll('[data-phrase="'+i+'"][data-verse="'+verseSelect.value+'"]').forEach(el=>el.classList.add('active'));const btn=partPicker.querySelector('[data-part="'+i+'"]');if(btn)btn.closest('.vidura-part').classList.add('active');}
 function renderParts(){const v=verse();if(!v)return;partPicker.innerHTML=v.practice.map((p,i)=>'<div class="vidura-part" data-verse="'+v.verse_number+'"><div class="vidura-part-title">Part '+(i+1)+'</div><div class="vidura-part-script">'+escapeHtml(p[state.script])+'</div><div class="vidura-part-iast">'+escapeHtml(p.iast)+'</div><div class="vidura-part-controls"><button type="button" data-part="'+i+'" '+(state.playParts[i]?'':'disabled')+'>▶ Play this part</button><label>Repeat <input type="number" min="1" max="100" step="1" data-repeat="'+i+'" value="'+partCount(i)+'"></label></div></div>').join('');
@@ -36,8 +47,8 @@ await Promise.all([fetch(fullPath(),{method:'HEAD',cache:'no-store'}).then(respo
 if(id!==state.objectId)return;state.audioReady=state.playParts.every(Boolean);play.disabled=modeSelect.value==='full'?!state.fullReady:!state.audioReady;stateLabel.textContent='Full śloka '+(state.fullReady?'ready':'pending')+' · Practice '+state.playParts.filter(Boolean).length+'/4 clips ready';renderParts();}
 function playbackQueue(single){const indices=single===undefined?[0,1,2,3]:[single];return indices.flatMap(i=>Array.from({length:modeSelect.value==='full'&&single===undefined?1:partCount(i)},()=>i));}
 function stopAudio(){window.ViduraShruti?.stop();state.token++;audio.pause();audio.removeAttribute('src');audio.load();state.sequence=[];state.queueIndex=0;clearFocus();pause.disabled=true;stop.disabled=true;pause.textContent='⏸ Pause';stateLabel.textContent=(state.fullReady||state.audioReady)?'Stopped · Ready to chant':'Recording pending · Generate with Vāgdhenu';}
-async function nextClip(token){if(token!==state.token)return;if(state.queueIndex>=state.sequence.length){window.ViduraShruti?.stop();pause.disabled=true;stop.disabled=true;clearFocus();stateLabel.textContent='Chanting complete';return;}const i=state.sequence[state.queueIndex++];state.part=i;audio.src=clipPath(i);focusPart(i);stateLabel.textContent='Playing part '+(i+1)+' · '+state.queueIndex+'/'+state.sequence.length;try{await audio.play();window.ViduraShruti?.start();}catch(_){if(token===state.token){stopAudio();stateLabel.textContent='Audio unavailable or playback blocked';}}}
-async function startAudio(single){if(single!==undefined&&!state.playParts[single])return;if(single===undefined&&modeSelect.value==='full'&&!state.fullReady)return;if(single===undefined&&modeSelect.value==='practice'&&!state.audioReady)return;stopAudio();if(single===undefined&&modeSelect.value==='full'){audio.src=fullPath();pause.disabled=false;stop.disabled=false;stateLabel.textContent='Playing full śloka';try{await audio.play();window.ViduraShruti?.start();}catch(_){stopAudio();stateLabel.textContent='Full śloka recording unavailable';}return;}state.sequence=playbackQueue(single);state.queueIndex=0;const token=state.token;pause.disabled=false;stop.disabled=false;await nextClip(token);}
+async function nextClip(token){if(token!==state.token)return;if(state.queueIndex>=state.sequence.length){window.ViduraShruti?.stop();pause.disabled=true;stop.disabled=true;clearFocus();stateLabel.textContent='Chanting complete';return;}const i=state.sequence[state.queueIndex++];state.part=i;audio.src=clipPath(i);focusPart(i);stateLabel.textContent='Playing part '+(i+1)+' · '+state.queueIndex+'/'+state.sequence.length;applyChantSpeed();try{await audio.play();window.ViduraShruti?.start();}catch(_){if(token===state.token){stopAudio();stateLabel.textContent='Audio unavailable or playback blocked';}}}
+async function startAudio(single){if(single!==undefined&&!state.playParts[single])return;if(single===undefined&&modeSelect.value==='full'&&!state.fullReady)return;if(single===undefined&&modeSelect.value==='practice'&&!state.audioReady)return;stopAudio();if(single===undefined&&modeSelect.value==='full'){audio.src=fullPath();applyChantSpeed();pause.disabled=false;stop.disabled=false;stateLabel.textContent='Playing full śloka';try{await audio.play();window.ViduraShruti?.start();}catch(_){stopAudio();stateLabel.textContent='Full śloka recording unavailable';}return;}state.sequence=playbackQueue(single);state.queueIndex=0;const token=state.token;pause.disabled=false;stop.disabled=false;await nextClip(token);}
 document.querySelectorAll('[data-script]').forEach(b=>b.addEventListener('click',()=>{state.script=b.dataset.script;document.querySelectorAll('[data-script]').forEach(x=>{x.classList.toggle('chosen',x===b);x.setAttribute('aria-pressed',String(x===b));});render();renderParts();}));
 play.addEventListener('click',()=>startAudio());
 pause.addEventListener('click',()=>{if(audio.paused){audio.play().then(()=>{window.ViduraShruti?.start();pause.textContent='⏸ Pause';}).catch(()=>{stateLabel.textContent='Playback unavailable';});}else{audio.pause();window.ViduraShruti?.stop();pause.textContent='▶ Resume';}});
@@ -47,6 +58,8 @@ verseSelect.addEventListener('change',selectRecording);
 modeSelect.addEventListener('change',()=>{stopAudio();repeats.disabled=modeSelect.value==='full';play.disabled=modeSelect.value==='full'?!state.fullReady:!state.audioReady;});
 repeats.addEventListener('change',()=>{if(Number(repeats.value)>0){state.repeatMap={};renderParts();}});
 window.ViduraChantActive=()=>!audio.paused&&!audio.ended;
+speed.addEventListener('input',applyChantSpeed);
+applyChantSpeed();
 search.addEventListener('input',render);
 repeats.disabled=true;
 Promise.all([1,2].map(n=>fetch('../data/vidura/verses/verse-'+String(n).padStart(3,'0')+'.json').then(r=>{if(!r.ok)throw Error('Verse '+n);return r.json();}))).then(verses=>{state.verses=verses;render();selectRecording();}).catch(e=>{root.textContent='Unable to load Viduranīti content: '+e.message;stateLabel.textContent='Content unavailable';});
