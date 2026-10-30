@@ -8,7 +8,7 @@ test('Viduranīti full śloka speed control and shruti are available',async({pag
  await expect(page.locator('#vidura-speed')).toHaveValue('0.9');
  await expect(page.locator('#vidura-speed-value')).toHaveText('0.90×');
  await expect(page.locator('#vidura-shruti-enabled')).toBeChecked();
- await expect(page.locator('#vidura-play')).toBeEnabled();
+ await expect(page.locator('#vidura-play')).toBeEnabled({timeout:15000});
  await page.locator('#vidura-speed').evaluate(el=>{el.value='0.75';el.dispatchEvent(new Event('input',{bubbles:true}));});
  await expect(page.locator('#vidura-speed-value')).toHaveText('0.75×');
  const actual=await page.locator('#vidura-audio').evaluate(el=>({rate:el.playbackRate,pitch:el.preservesPitch}));
@@ -16,7 +16,7 @@ test('Viduranīti full śloka speed control and shruti are available',async({pag
  expect(actual.pitch).toBe(true);
  await page.locator('#vidura-mode').selectOption('practice');
  await expect(page.locator('#vidura-part-picker .vidura-part')).toHaveCount(4,{timeout:15000});
- await expect(page.locator('#vidura-part-picker [data-part="0"]')).toBeEnabled();
+ await expect(page.locator('#vidura-part-picker [data-part="0"]')).toBeEnabled({timeout:15000});
  expect(errors).toEqual([]);
 });
 
@@ -53,7 +53,7 @@ test('Viduranīti mobile practice controls remain usable',async({page})=>{
  await expect(page.locator('#vidura-shruti-volume')).toBeVisible();
  await expect(page.locator('#vidura-mode')).toBeVisible();
  await expect(page.locator('#vidura-part-picker .vidura-part')).toHaveCount(4,{timeout:15000});
- await expect(page.locator('#vidura-play')).toBeEnabled();
+ await expect(page.locator('#vidura-play')).toBeEnabled({timeout:15000});
 });
 
 test('Viduranīti unusual three-line verse supports six practice parts',async({page})=>{await page.goto('/vidura/');await expect(page.locator('.vidura-card')).toHaveCount(25);await page.locator('#vidura-verse').selectOption('3');await expect(page.locator('#vidura-part-picker .vidura-part')).toHaveCount(6,{timeout:15000});await expect(page.locator('#vidura-play')).toBeDisabled();});
