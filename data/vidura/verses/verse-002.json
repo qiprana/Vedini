@@ -105,40 +105,50 @@
       "dev": "असूयैकपदं मृत्युः",
       "iast": "asūyaikapadaṃ mṛtyuḥ",
       "kn": "ಅಸೂಯೈಕಪದಂ ಮೃತ್ಯುಃ",
-      "highlighted": true,
-      "repeat": 2
+      "order": 1,
+      "audio": "audio/vidura/sloka-002-part-01.mp3",
+      "boundary_source": "editorial-half-pada"
     },
     {
       "id": "b",
       "dev": "अतिवादः श्रियो वधः",
       "iast": "ativādaḥ śriyo vadhaḥ",
       "kn": "ಅತಿವಾದಃ ಶ್ರಿಯೋ ವಧಃ",
-      "highlighted": false,
-      "repeat": 1
+      "order": 2,
+      "audio": "audio/vidura/sloka-002-part-02.mp3",
+      "boundary_source": "pada-end"
     },
     {
       "id": "c",
       "dev": "अशुश्रूषा त्वरा श्लाघा",
       "iast": "aśuśrūṣā tvarā ślāghā",
       "kn": "ಅಶುಶ್ರೂಷಾ ತ್ವರಾ ಶ್ಲಾಘಾ",
-      "highlighted": true,
-      "repeat": 2
+      "order": 3,
+      "audio": "audio/vidura/sloka-002-part-03.mp3",
+      "boundary_source": "editorial-half-pada"
     },
     {
       "id": "d",
       "dev": "विद्यायाः शत्रवः त्रयः",
       "iast": "vidyāyāḥ śatravaḥ trayaḥ",
       "kn": "ವಿದ್ಯಾಯಾಃ ಶತ್ರವಃ ತ್ರಯಃ",
-      "highlighted": false,
-      "repeat": 1
+      "order": 4,
+      "audio": "audio/vidura/sloka-002-part-04.mp3",
+      "boundary_source": "pada-end"
     }
   ],
-  "practice_source": "editorial-practice-splits",
-  "practice_note": "The supplied PDF does not highlight verse 2. These phrases are proposed for consistent call-and-repeat practice. The first line restores the sandhi boundary mṛtyuḥ | ativādaḥ in the practice reading.",
+  "practice_source": "editorial-four-part-split",
+  "practice_note": "Śloka 2 has no pink highlights in the supplied PDF. Four recitation cuts are editorial; the first break resolves printed sandhi mṛtyurativādaḥ into mṛtyuḥ | ativādaḥ. Review cadence before final audio.",
   "audio": {
-    "full": "audio/vidura/sloka-002-full.mp3",
-    "call_repeat": "audio/vidura/sloka-002-call-repeat.mp3",
-    "timings": "data/vidura/timings/verse-002.json"
+    "clips": [
+      "audio/vidura/sloka-002-part-01.mp3",
+      "audio/vidura/sloka-002-part-02.mp3",
+      "audio/vidura/sloka-002-part-03.mp3",
+      "audio/vidura/sloka-002-part-04.mp3"
+    ],
+    "full_playback": "assemble-four-clips-in-order",
+    "repeat_control": "browser-per-part",
+    "recording_status": "awaiting-vagdhenu-generation"
   },
   "source": {
     "page": 3,
