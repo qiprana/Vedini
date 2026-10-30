@@ -59,3 +59,10 @@
 @media(max-width:700px){#vidura-part-picker{grid-template-columns:1fr}}
 
 .vidura-shruti-controls{display:flex;flex-wrap:wrap;align-items:center;gap:9px 18px;margin:14px 0 3px;padding:11px 12px;border:1px solid #c4d5c6;border-radius:10px;background:#f9fcf7}.vidura-shruti-controls label{display:flex;align-items:center;gap:7px;font:600 13px system-ui;color:#365b47}.vidura-shruti-controls input[type=range]{width:100px;accent-color:#46785c}.vidura-shruti-controls input[type=checkbox]{accent-color:#46785c}.vidura-shruti-controls select{background:#fff;border:1px solid #b5c9b8;border-radius:7px;min-height:32px;padding:3px 7px}
+
+/* Viduranīti audio playback speed: browser-side slowdown with independent shruti pitch. */
+.vidura-speed-control{min-width:155px}
+.vidura-speed-controls{display:flex;align-items:center;gap:9px;min-height:39px}
+.vidura-speed-controls input[type=range]{width:118px;accent-color:#37664f;cursor:pointer}
+.vidura-speed-controls output{display:inline-block;min-width:44px;text-align:right;font:700 13px system-ui;color:#2e5946;font-variant-numeric:tabular-nums}
+@media(max-width:700px){.vidura-speed-control{flex:1 1 150px}}
