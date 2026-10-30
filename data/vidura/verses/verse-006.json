@@ -1,0 +1,156 @@
+{
+  "id": "vidura-006",
+  "collection": "vidura-niti",
+  "verse_number": 6,
+  "theme": "Intellect, practice and peace",
+  "reading": {
+    "dev": [
+      "बुद्ध्या भयं प्रणुदति तपसा विन्दते महत् ।",
+      "गुरुशुश्रूषया ज्ञानं शान्तिं योगेन विन्दति ॥ ६ ॥"
+    ],
+    "iast": [
+      "buddhyā bhayaṃ praṇudati tapasā vindate mahat |",
+      "guruśuśrūṣayā jñānaṃ śāntiṃ yogena vindati || 6 ||"
+    ],
+    "kn": [
+      "ಬುದ್ಧ್ಯಾ ಭಯಂ ಪ್ರಣುದತಿ ತಪಸಾ ವಿನ್ದತೇ ಮಹತ್ ೤",
+      "ಗುರುಶುಶ್ರೂಷಯಾ ಜ್ಞಾನಂ ಶಾನ್ತಿಂ ಯೋಗೇನ ವಿನ್ದತಿ ೥ ೬ ೥"
+    ]
+  },
+  "meaning": {
+    "en": "One can win over fear by his intellect, can perceive the Supreme Lord through penance, can obtain knowledge by serving the preceptors and can attain peace through yoga.",
+    "kn": "ಬುದ್ಧಿಯಿಂದ ಭಯವನ್ನು ದೂರಮಾಡಬಹುದು; ತಪಸ್ಸಿನಿಂದ ಮಹತ್ತರವಾದುದನ್ನು ಪಡೆಯಬಹುದು; ಗುರುಸೇವೆಯಿಂದ ಜ್ಞಾನವನ್ನೂ ಯೋಗದಿಂದ ಶಾಂತಿಯನ್ನೂ ಹೊಂದಬಹುದು."
+  },
+  "deeper_meaning": {
+    "en": "Four means are placed beside four ends: clear thinking opposes fear, disciplined effort opens greater understanding, respectful service makes learning possible, and yoga steadies the mind. The verse emphasizes cultivating the right means rather than wishing only for the result.",
+    "kn": "ಭಯಕ್ಕೆ ವಿವೇಕ, ಉನ್ನತ ಸಾಧನೆಗೆ ತಪಸ್ಸು, ಜ್ಞಾನಕ್ಕೆ ಗುರುಸೇವೆ ಮತ್ತು ಮನಶ್ಶಾಂತಿಗೆ ಯೋಗ — ಸೂಕ್ತ ಸಾಧನೆಯನ್ನು ಅನುಸರಿಸುವುದೇ ಇದರ ಸಂದೇಶ."
+  },
+  "word_by_word": [
+    {
+      "dev": "बुद्ध्या",
+      "iast": "buddhyā",
+      "en": "Through intellect",
+      "kn": "ಬುದ್ಧಿಯಿಂದ"
+    },
+    {
+      "dev": "भयं",
+      "iast": "bhayaṃ",
+      "en": "Fear",
+      "kn": "ಭಯವನ್ನು"
+    },
+    {
+      "dev": "प्रणुदति",
+      "iast": "praṇudati",
+      "en": "Dispels",
+      "kn": "ದೂರಮಾಡುತ್ತಾನೆ"
+    },
+    {
+      "dev": "तपसा",
+      "iast": "tapasā",
+      "en": "Through austerity",
+      "kn": "ತಪಸ್ಸಿನಿಂದ"
+    },
+    {
+      "dev": "विन्दते",
+      "iast": "vindate",
+      "en": "Attains",
+      "kn": "ಪಡೆಯುತ್ತಾನೆ"
+    },
+    {
+      "dev": "महत्",
+      "iast": "mahat",
+      "en": "Greatness",
+      "kn": "ಮಹತ್ತರವಾದುದನ್ನು"
+    },
+    {
+      "dev": "गुरुशुश्रूषया",
+      "iast": "guruśuśrūṣayā",
+      "en": "Through service to the teacher",
+      "kn": "ಗುರುಸೇವೆಯಿಂದ"
+    },
+    {
+      "dev": "ज्ञानं",
+      "iast": "jñānaṃ",
+      "en": "Knowledge",
+      "kn": "ಜ್ಞಾನವನ್ನು"
+    },
+    {
+      "dev": "शान्तिं",
+      "iast": "śāntiṃ",
+      "en": "Peace",
+      "kn": "ಶಾಂತಿಯನ್ನು"
+    },
+    {
+      "dev": "योगेन",
+      "iast": "yogena",
+      "en": "Through yoga",
+      "kn": "ಯೋಗದಿಂದ"
+    },
+    {
+      "dev": "विन्दति",
+      "iast": "vindati",
+      "en": "Attains",
+      "kn": "ಪಡೆಯುತ್ತಾನೆ"
+    }
+  ],
+  "practice": [
+    {
+      "id": "a",
+      "order": 1,
+      "dev": "बुद्ध्या भयं प्रणुदति",
+      "iast": "buddhyā bhayaṃ praṇudati",
+      "kn": "ಬುದ್ಧ್ಯಾ ಭಯಂ ಪ್ರಣುದತಿ",
+      "audio": "audio/vidura/sloka-006-part-01.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "b",
+      "order": 2,
+      "dev": "तपसा विन्दते महत्",
+      "iast": "tapasā vindate mahat",
+      "kn": "ತಪಸಾ ವಿನ್ದತೇ ಮಹತ್",
+      "audio": "audio/vidura/sloka-006-part-02.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "c",
+      "order": 3,
+      "dev": "गुरुशुश्रूषया ज्ञानं",
+      "iast": "guruśuśrūṣayā jñānaṃ",
+      "kn": "ಗುರುಶುಶ್ರೂಷಯಾ ಜ್ಞಾನಂ",
+      "audio": "audio/vidura/sloka-006-part-03.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "d",
+      "order": 4,
+      "dev": "शान्तिं योगेन विन्दति",
+      "iast": "śāntiṃ yogena vindati",
+      "kn": "ಶಾನ್ತಿಂ ಯೋಗೇನ ವಿನ್ದತಿ",
+      "audio": "audio/vidura/sloka-006-part-04.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    }
+  ],
+  "practice_source": "editorial-pada-boundaries",
+  "practice_note": "Four independent chant portions, divided at word boundaries for study practice. These cuts require pronunciation review.",
+  "audio": {
+    "full": "audio/vidura/sloka-006-full.mp3",
+    "clips": [
+      "audio/vidura/sloka-006-part-01.mp3",
+      "audio/vidura/sloka-006-part-02.mp3",
+      "audio/vidura/sloka-006-part-03.mp3",
+      "audio/vidura/sloka-006-part-04.mp3"
+    ],
+    "recording_status": "awaiting-vagdhenu-generation",
+    "meter": "anushtubh",
+    "full_playback": "single_continuous_recording",
+    "repeat_control": "browser-per-part"
+  },
+  "source": {
+    "page": 4,
+    "section": "Atha Viduranītiḥ",
+    "translation": "verbatim from supplied PDF",
+    "study_meanings": "editorial",
+    "notes": null
+  }
+}
