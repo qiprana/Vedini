@@ -27,28 +27,64 @@
   },
   "word_by_word": [
     {
-      "dev": "द्वाविमौ पुरुषौ राजन्",
-      "iast": "dvāvimau puruṣau rājan",
-      "en": "These two persons, O king",
-      "kn": "ಈ ಇಬ್ಬರು ಮನುಷ್ಯರು, ರಾಜನೇ"
+      "dev": "द्वाविमौ",
+      "iast": "dvāvimau",
+      "en": "These two",
+      "kn": "ಈ ಇಬ್ಬರು"
     },
     {
-      "dev": "स्वर्गस्योपरि तिष्ठतः",
-      "iast": "svargasyopari tiṣṭhataḥ",
-      "en": "Stand above heaven",
-      "kn": "ಸ್ವರ್ಗಕ್ಕಿಂತಲೂ ಮೇಲಿರುವವರು"
+      "dev": "पुरुषौ",
+      "iast": "puruṣau",
+      "en": "Persons",
+      "kn": "ವ್ಯಕ್ತಿಗಳು"
     },
     {
-      "dev": "प्रभुश्च क्षमया युक्तो",
-      "iast": "prabhuśca kṣamayā yukto",
-      "en": "The powerful endowed with forgiveness",
-      "kn": "ಕ್ಷಮೆಯನ್ನು ಹೊಂದಿದ ಶಕ್ತಿಶಾಲಿ"
+      "dev": "राजन्",
+      "iast": "rājan",
+      "en": "O king",
+      "kn": "ರಾಜನೇ"
     },
     {
-      "dev": "दरिद्रश्च प्रदानवान्",
-      "iast": "daridraśca pradānavān",
-      "en": "The poor endowed with generosity",
-      "kn": "ದಾನಶೀಲ ಬಡವನು"
+      "dev": "स्वर्गस्योपरि",
+      "iast": "svargasyopari",
+      "en": "Above heaven",
+      "kn": "ಸ್ವರ್ಗಕ್ಕಿಂತ ಮೇಲೆ"
+    },
+    {
+      "dev": "तिष्ठतः",
+      "iast": "tiṣṭhataḥ",
+      "en": "Stand",
+      "kn": "ನಿಲ್ಲುತ್ತಾರೆ"
+    },
+    {
+      "dev": "प्रभुश्च",
+      "iast": "prabhuśca",
+      "en": "And a powerful person",
+      "kn": "ಮತ್ತು ಶಕ್ತಿವಂತನು"
+    },
+    {
+      "dev": "क्षमया",
+      "iast": "kṣamayā",
+      "en": "With forgiveness",
+      "kn": "ಕ್ಷಮೆಯಿಂದ"
+    },
+    {
+      "dev": "युक्तो",
+      "iast": "yukto",
+      "en": "Endowed",
+      "kn": "ಕೂಡಿದ"
+    },
+    {
+      "dev": "दरिद्रश्च",
+      "iast": "daridraśca",
+      "en": "And a poor person",
+      "kn": "ಮತ್ತು ಬಡವನು"
+    },
+    {
+      "dev": "प्रदानवान्",
+      "iast": "pradānavān",
+      "en": "Given to generosity",
+      "kn": "ದಾನಶೀಲನು"
     }
   ],
   "practice": [
@@ -110,6 +146,6 @@
     "translation": "verbatim from supplied PDF",
     "study_meanings": "editorial",
     "notes": "Devanagari IAST readings follow the handout; practice partitions editorial.",
-    "word_gloss_level": "bilingual phrase-aligned glosses; individual-token glosses pending philological review"
+    "word_gloss_level": "editorial individual source-token meanings"
   }
 }
