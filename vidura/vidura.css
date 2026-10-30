@@ -66,3 +66,85 @@
 .vidura-speed-controls input[type=range]{width:118px;accent-color:#37664f;cursor:pointer}
 .vidura-speed-controls output{display:inline-block;min-width:44px;text-align:right;font:700 13px system-ui;color:#2e5946;font-variant-numeric:tabular-nums}
 @media(max-width:700px){.vidura-speed-control{flex:1 1 150px}}
+
+
+/* Lalita-equivalent side chanting dock with compact chanting rows. */
+.vidura-workspace{display:grid;grid-template-columns:minmax(235px,275px) minmax(0,1fr);gap:17px;align-items:start;margin-top:10px}
+.vidura-study-main{min-width:0}
+.vidura-page .vidura-player{position:sticky;top:12px;z-index:20;max-height:calc(100vh - 24px);overflow:auto;margin:0;padding:0;background:#f6f9f3;border:1px solid #c1d1c1;border-radius:13px;box-shadow:0 5px 17px #34543f18}
+.vidura-page .vidura-player-head{display:flex;justify-content:flex-start;gap:9px;align-items:center;padding:11px;border-bottom:1px solid #d6e2d5}
+.vidura-page .dock-heading{display:grid;gap:1px;min-width:0}
+.vidura-page .dock-heading strong{font:700 14px/1.35 system-ui,sans-serif;color:#2f5942}
+.vidura-page .dock-heading span{font:11px/1.35 system-ui,sans-serif;color:#718878}
+.vidura-page #vidura-dock-toggle{display:grid;justify-items:center;min-width:45px;gap:2px;padding:6px;border:1px solid #bfd1be;border-radius:8px;background:#fffdf8;color:#355e45;cursor:pointer}
+.vidura-page #vidura-dock-toggle .dock-arrow{font:700 20px/1 system-ui}
+.vidura-page #vidura-dock-toggle .dock-toggle-label{font:600 9px/1.2 system-ui}
+.vidura-page .vidura-transport{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;padding:9px 8px;background:#e9f1e8}
+.vidura-page .vidura-transport button{min-width:0;min-height:47px;display:grid;justify-items:center;align-content:center;gap:3px;padding:5px 1px;border:1px solid #b9cbb7;border-radius:7px;background:#fff;color:#355b45;cursor:pointer}
+.vidura-page .vidura-transport button:first-child:not(:disabled){background:#315c47;color:white}
+.vidura-page .vidura-transport button:disabled{opacity:.44;cursor:not-allowed}
+.vidura-page .vidura-transport .dock-button-icon{font:700 17px/1 system-ui}
+.vidura-page .vidura-transport .dock-button-label{font:600 10px/1.3 system-ui}
+.vidura-page .vidura-dock-body{padding:13px 12px 10px}
+.vidura-page .vidura-player-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
+.vidura-page .vidura-player-grid label{min-width:0;flex:none}
+.vidura-page .vidura-player-grid select{width:100%;min-width:0;max-width:100%;min-height:39px;padding:7px 23px 7px 8px;font:12px system-ui}
+.vidura-page .vidura-speed-control{grid-column:1/-1;min-width:0}
+.vidura-page .vidura-speed-controls{min-width:0;justify-content:space-between}
+.vidura-page .vidura-speed-controls input[type=range]{width:calc(100% - 58px)}
+.vidura-page .vidura-shruti-controls{margin:13px 0 0;padding:9px;border:1px solid #c8d9c8;background:#fbfcfa;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.vidura-page .vidura-shruti-controls legend{font:700 12px system-ui;color:#37614a;padding:0 4px}
+.vidura-page .vidura-shruti-controls label{min-width:0;font-size:11px}
+.vidura-page .vidura-shruti-controls select{max-width:100%}
+.vidura-page .vidura-shruti-controls label:last-child{grid-column:1/-1;justify-content:space-between}
+.vidura-page .vidura-shruti-controls input[type=range]{width:min(100%,125px)}
+.vidura-page .vidura-player-help{font:12px/1.55 system-ui;margin-top:11px}
+.vidura-page .vidura-audio-state{display:block;border-top:1px solid #d6e2d5;padding:10px 12px;margin:0;font:12px/1.45 system-ui;color:#54705a}
+.vidura-page #vidura-audio{display:none}
+.vidura-page .vidura-practice-list{border:1px solid #cbdacc;border-radius:13px;background:#fcfdf9;padding:15px;margin:0 0 15px}
+.vidura-page .vidura-practice-list-head{display:flex;justify-content:space-between;align-items:start;gap:12px;margin:0 0 10px}
+.vidura-page .vidura-practice-list-head h2{font:700 18px/1.35 system-ui;color:#2e5943;margin:0 0 3px}
+.vidura-page .vidura-practice-list-head h2 span{font-weight:500;font-size:13px;color:#748576}
+.vidura-page .vidura-practice-list-head p{font:12px/1.5 system-ui;color:#64786a;margin:0}
+.vidura-page .vidura-practice-count{background:#ebf4e8;color:#3b624a;border-radius:999px;padding:5px 9px;white-space:nowrap;font:700 11px system-ui}
+.vidura-page #vidura-part-picker{display:grid;grid-template-columns:1fr;gap:0;margin:0}
+.vidura-page .vidura-part{display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"title controls" "dev controls" "iast controls";gap:3px 14px;align-items:center;padding:12px 8px;background:transparent;border:0;border-top:1px solid #e0e9df;border-radius:0;min-width:0}
+.vidura-page .vidura-part.active{outline:0;background:#e8f4e9;border-radius:8px;box-shadow:inset 3px 0 #3a7553}
+.vidura-page .vidura-part-title{grid-area:title;font:700 11px system-ui;text-transform:uppercase;letter-spacing:.03em}
+.vidura-page .vidura-part-script{grid-area:dev;font-size:clamp(17px,1.65vw,21px);line-height:1.65;overflow-wrap:anywhere}
+.vidura-page .vidura-part-script[lang=kn]{font-family:'Noto Sans Kannada','Kannada Sangam MN',sans-serif}
+.vidura-page .vidura-part-iast{grid-area:iast;font-size:13px;line-height:1.5}
+.vidura-page .vidura-part-controls{grid-area:controls;display:flex;flex-direction:column;align-items:end;justify-content:center;gap:7px;margin:0}
+.vidura-page .vidura-part-controls button{min-width:78px;min-height:34px;padding:6px 11px}
+.vidura-page .vidura-part-controls label{gap:5px;font:600 11px system-ui}
+.vidura-page .vidura-part-controls input{width:51px;min-height:31px;border:1px solid #b7cdbd;border-radius:7px}
+.vidura-page .vidura-verse-index{margin-top:14px}
+.vidura-page .vidura-verse-index a{font-size:12px;padding:7px 10px}
+.vidura-page .vidura-card{padding:16px;margin:13px 0}
+.vidura-workspace.dock-collapsed{grid-template-columns:76px minmax(0,1fr)}
+.vidura-page .vidura-player.is-collapsed .dock-heading,.vidura-page .vidura-player.is-collapsed .vidura-dock-body{display:none}
+.vidura-page .vidura-player.is-collapsed .vidura-player-head{justify-content:center;padding:9px 4px}
+.vidura-page .vidura-player.is-collapsed .vidura-transport{grid-template-columns:1fr}
+.vidura-page .vidura-player.is-collapsed .vidura-audio-state{font-size:10px;overflow-wrap:anywhere;padding:8px 5px}
+@media(max-width:900px){
+ .vidura-workspace{grid-template-columns:minmax(200px,225px) minmax(0,1fr);gap:10px}
+ .vidura-page .vidura-player-grid{grid-template-columns:1fr}
+ .vidura-page .vidura-speed-control{grid-column:auto}
+}
+@media(max-width:620px){
+ .vidura-workspace,.vidura-workspace.dock-collapsed{grid-template-columns:minmax(0,1fr)}
+ .vidura-page .vidura-player{top:0;max-height:68dvh}
+ .vidura-page .vidura-player-head{padding:6px 9px}
+ .vidura-page .vidura-transport{padding:4px 9px 7px}
+ .vidura-page .vidura-dock-body{max-height:48dvh;overflow:auto}
+ .vidura-page .vidura-player-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .vidura-page .vidura-speed-control{grid-column:1/-1}
+ .vidura-page .vidura-player.is-collapsed .dock-heading{display:grid}
+ .vidura-page .vidura-player.is-collapsed .vidura-player-head{justify-content:flex-start;padding:7px 9px}
+ .vidura-page .vidura-player.is-collapsed .vidura-transport{grid-template-columns:repeat(4,minmax(0,1fr))}
+ .vidura-page .vidura-player.is-collapsed .vidura-audio-state{font-size:11px;padding:6px 10px}
+ .vidura-page .vidura-part{grid-template-columns:minmax(0,1fr);grid-template-areas:"title" "dev" "iast" "controls";gap:3px}
+ .vidura-page .vidura-part-controls{margin-top:5px;flex-direction:row;justify-content:space-between;align-items:center}
+ .vidura-page .vidura-practice-list{padding:10px 12px}
+ .vidura-page .vidura-card{padding:12px}
+}
