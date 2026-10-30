@@ -27,28 +27,64 @@
   },
   "word_by_word": [
     {
-      "dev": "सम्भोजनं संकथनं",
-      "iast": "sambhojanaṃ saṃkathanaṃ",
-      "en": "Eating together and speaking together",
-      "kn": "ಒಟ್ಟಿಗೆ ಊಟ ಮತ್ತು ಸಂಭಾಷಣೆ"
+      "dev": "सम्भोजनं",
+      "iast": "sambhojanaṃ",
+      "en": "Eating together",
+      "kn": "ಒಟ್ಟಿಗೆ ಊಟ"
     },
     {
-      "dev": "सम्प्रीतिश्च परस्परम्",
-      "iast": "samprītiśca parasparam",
-      "en": "Mutual affection",
-      "kn": "ಪರಸ್ಪರ ಪ್ರೀತಿ"
+      "dev": "संकथनं",
+      "iast": "saṃkathanaṃ",
+      "en": "Talking together",
+      "kn": "ಒಟ್ಟಿಗೆ ಮಾತುಕತೆ"
     },
     {
-      "dev": "जातिभिः सह कार्याणि",
-      "iast": "jātibhiḥ saha kāryāṇi",
-      "en": "Duties with relatives",
-      "kn": "ಬಂಧುಗಳೊಂದಿಗೆ ಮಾಡಬೇಕಾದ ಕಾರ್ಯಗಳು"
+      "dev": "सम्प्रीतिश्च",
+      "iast": "samprītiśca",
+      "en": "And mutual affection",
+      "kn": "ಮತ್ತು ಪರಸ್ಪರ ಪ್ರೀತಿ"
     },
     {
-      "dev": "न विरोधः कदाचन",
-      "iast": "na virodhaḥ kadācana",
-      "en": "Never hostility",
-      "kn": "ಎಂದಿಗೂ ವಿರೋಧ ಬೇಡ"
+      "dev": "परस्परम्",
+      "iast": "parasparam",
+      "en": "With one another",
+      "kn": "ಒಬ್ಬರೊಂದಿಗೆ ಒಬ್ಬರು"
+    },
+    {
+      "dev": "जातिभिः",
+      "iast": "jātibhiḥ",
+      "en": "With one's relations",
+      "kn": "ಬಂಧುಗಳೊಂದಿಗೆ"
+    },
+    {
+      "dev": "सह",
+      "iast": "saha",
+      "en": "Together with",
+      "kn": "ಜೊತೆಗೆ"
+    },
+    {
+      "dev": "कार्याणि",
+      "iast": "kāryāṇi",
+      "en": "Things to be done",
+      "kn": "ಮಾಡಬೇಕಾದ ಕಾರ್ಯಗಳು"
+    },
+    {
+      "dev": "न",
+      "iast": "na",
+      "en": "Not",
+      "kn": "ಬೇಡ"
+    },
+    {
+      "dev": "विरोधः",
+      "iast": "virodhaḥ",
+      "en": "Conflict",
+      "kn": "ವಿರೋಧ"
+    },
+    {
+      "dev": "कदाचन",
+      "iast": "kadācana",
+      "en": "At any time",
+      "kn": "ಎಂದಿಗೂ"
     }
   ],
   "practice": [
@@ -110,6 +146,6 @@
     "translation": "verbatim from supplied PDF",
     "study_meanings": "editorial",
     "notes": null,
-    "word_gloss_level": "bilingual phrase-aligned glosses; individual-token glosses pending philological review"
+    "word_gloss_level": "editorial individual source-token meanings"
   }
 }
