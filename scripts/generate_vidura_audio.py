@@ -40,7 +40,7 @@ def continuous_chant(verse):
     lines = verse["reading"]["dev"]
     if len(lines) != 2 or not all(isinstance(line, str) and line.strip() for line in lines):
         raise ValueError(f"Invalid complete śloka for verse {verse.get('verse_number')}")
-    return re.sub(r"॥\\s*[०-९0-9]+\\s*॥", "॥", "\\n".join(lines)).strip()
+    return re.sub(r"॥\s*[०-९0-9]+\s*॥", "॥", "\n".join(lines)).strip()
 
 
 def chant_once(engine, text, destination, tempdir, seed):
@@ -81,9 +81,9 @@ def main():
                              output / f"sloka-{number:03d}-part-{i:02d}.mp3"))
     print("Viduranītiḥ — Vāgdhenu recordings (no repetitions baked into files):")
     for number, label, text, target in jobs:
-        print(f"\\nŚloka {number} · {label} -> {target.relative_to(ROOT)}\\n{text}")
+        print(f"\nŚloka {number} · {label} -> {target.relative_to(ROOT)}\n{text}")
     if a.dry_run:
-        print("\\nDRY RUN: no recordings made.")
+        print("\nDRY RUN: no recordings made.")
         return
     if not shutil.which("ffmpeg"):
         raise SystemExit("ffmpeg not found. On Mac, install with: brew install ffmpeg")
@@ -101,7 +101,7 @@ def main():
                 continue
             chant_once(engine, text, target, tempdir, a.seed)
             print(f"CREATED: {target.relative_to(ROOT)}")
-    print("\\nReview pronunciation and full-verse cadence before committing the recordings.")
+    print("\nReview pronunciation and full-verse cadence before committing the recordings.")
     print("  git add audio/vidura/*.mp3")
     print('  git commit -m "Add Viduranīti Vāgdhenu full and practice recordings"')
     print("  git push origin feature/vidura-niti-first-two")
