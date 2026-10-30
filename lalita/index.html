@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Listen, chant and explore the meanings of Lalitā Sahasranāma on Vedini.">
   <title>Lalitā Sahasranāma | Vedini</title>
-  <link rel="stylesheet" href="../styles.css?v=20261028-soft-tabs-option3-v1">
+  <link rel="stylesheet" href="../styles.css?v=20261030-single-verse-v1">
 </head>
 <body>
 <main class="page reader-page">
@@ -74,12 +74,12 @@
           </label>
           <div class="chanting-panels" data-mode="chant">
             <section id="practice-player" class="practice-player" aria-label="Śloka chanting options">
-              <p class="dock-help">Choose a range and repeat each śloka. The reader follows the chant.</p>
+              <p class="dock-help">Choose a range. Each new śloka is followed once; repeats never move your reading position.</p>
               <div class="practice-fields">
                 <label>From śloka<select id="practice-from" aria-label="Start śloka"></select></label>
                 <label>To śloka<select id="practice-to" aria-label="End śloka"></select></label>
                 <label>Repeat each<select id="practice-repeat" aria-label="Repetitions for each śloka"><option value="1">1×</option><option value="2" selected>2×</option><option value="3">3×</option><option value="5">5×</option><option value="10">10×</option></select></label>
-                <label>Singer<select id="practice-voice" aria-label="Practice singer"><option value="VD" selected>VD</option><option value="MSS">MSS</option><option value="KMP">KMP</option></select></label>
+                <label>Recording<select id="practice-voice" aria-label="Chanting voice"><option value="VD" selected>Vāgdhenu · Practice voice</option><option value="MSS">M. S. Subbulakshmi</option><option value="KMP">Kuldeep M. Pai</option></select></label>
               </div>
               <div class="practice-actions" hidden aria-hidden="true">
                 <button id="practice-play" type="button">Play</button><button id="practice-pause" type="button" disabled>Pause</button><button id="practice-stop" type="button" disabled>Stop</button>
@@ -110,10 +110,12 @@
     <nav class="lalita-view-switcher" aria-label="Lalitā reading modes"><a href="./index.html" aria-current="page">Study ślokas</a><a href="./chant.html">Full Chanting</a><a href="./names.html">Divine Names</a></nav>
       <label class="lalita-search-field"><span class="visually-hidden">Search</span><input id="search" type="search" placeholder="Search ślokas, names, or meanings…" aria-label="Search Lalitā text and meanings" autocomplete="off"></label>
     </div>
-    <div id="sticky-verse-navigation" class="sticky-verse-navigation" aria-label="Dhyāna and śloka navigation">
-      <nav class="verse-group-tabs" id="verse-group-tabs" aria-label="Choose Dhyāna or ten-śloka group"></nav>
-      <nav id="verse-quick-index" class="verse-quick-index" aria-label="Jump to a śloka in this group"></nav>
-    </div>
+    <nav id="sticky-verse-navigation" class="sticky-verse-navigation compact-verse-navigation" aria-label="Choose a single Dhyāna or śloka">
+      <button type="button" id="verse-previous" class="verse-step" aria-label="Previous śloka">‹</button>
+      <label class="verse-picker"><span class="visually-hidden">Choose Dhyāna or śloka</span><select id="verse-selector" aria-label="Choose a Dhyāna or śloka"></select></label>
+      <button type="button" id="verse-next" class="verse-step" aria-label="Next śloka">›</button>
+      <span id="verse-position" class="verse-position" aria-live="polite">Śloka 1 of 183</span>
+    </nav>
     <div class="notice" id="result-note" role="status" aria-live="polite"></div>
     <section id="search-results" hidden>
       <h2 id="search-results-heading">Search results</h2>
@@ -129,9 +131,9 @@
     </section>
     <nav class="bottom-navigation" id="bottom-navigation" aria-label="Next and previous ten-śloka groups">
       <div class="pager">
-        <button type="button" id="bottom-previous">← Previous ten</button>
+        <button type="button" id="bottom-previous">← Previous śloka</button>
         <span id="bottom-position" aria-live="polite"></span>
-        <button type="button" id="bottom-next">Next ten →</button>
+        <button type="button" id="bottom-next">Next śloka →</button>
       </div>
     </nav>
     <p class="foot">All 183 ślokas include word-by-word study, one concise meaning-and-significance reading per divine name, and overall śloka meanings. VD and KMP audio are available across the full collection; MSS can be added as recordings become available.</p>
@@ -143,5 +145,5 @@
 <script src="./sticky-reader-nav.js?v=20261028-sticky-player-v2"></script>
 <script src="./practice-dock-controls.js?v=20261028-sticky-player-v2"></script>
 <script src="./language-preference.js?v=1"></script>
-<script src="../app.js?v=20261028-compact-dhyana-v1"></script>
+<script src="../app.js?v=20261030-single-verse-v1"></script>
 </body></html>
