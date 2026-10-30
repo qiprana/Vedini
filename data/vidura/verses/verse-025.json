@@ -30,25 +30,25 @@
       "dev": "दुष्कुलीनः कुलीनो वा",
       "iast": "duṣkulīnaḥ kulīno vā",
       "en": "Of low lineage or high lineage",
-      "kn": "ಜನ್ಮದ ಸ್ಥಾನಕ್ಕಿಂತ ವ್ಯಕ್ತಿಯ ನಡತೆ ಮುಖ್ಯ. ಮಿತಿ, ಧರ್ಮಬುದ್ಧಿ, ಮೃದುಸ್ವಭಾವ ಮತ್ತು ವಿನಯವೇ ಮೌಲ್ಯದ ಅಳತೆ."
+      "kn": "ಕೆಳ ಅಥವಾ ಮೇಲಿನ ಕುಲದಲ್ಲಿ ಹುಟ್ಟಿದವನು"
     },
     {
       "dev": "मर्यादां यो न लङ्घयेत्",
       "iast": "maryādāṃ yo na laṅghayet",
-      "en": "One who does not cross proper bounds",
-      "kn": "ಜನ್ಮದ ಸ್ಥಾನಕ್ಕಿಂತ ವ್ಯಕ್ತಿಯ ನಡತೆ ಮುಖ್ಯ. ಮಿತಿ, ಧರ್ಮಬುದ್ಧಿ, ಮೃದುಸ್ವಭಾವ ಮತ್ತು ವಿನಯವೇ ಮೌಲ್ಯದ ಅಳತೆ."
+      "en": "One who does not cross limits",
+      "kn": "ಮರ್ಯಾದೆಯನ್ನು ಮೀರದವನು"
     },
     {
       "dev": "धर्मापेक्षी मृदुर्ह्रीमान्",
       "iast": "dharmāpekṣī mṛdurhrīmān",
       "en": "Mindful of dharma, gentle and modest",
-      "kn": "ಜನ್ಮದ ಸ್ಥಾನಕ್ಕಿಂತ ವ್ಯಕ್ತಿಯ ನಡತೆ ಮುಖ್ಯ. ಮಿತಿ, ಧರ್ಮಬುದ್ಧಿ, ಮೃದುಸ್ವಭಾವ ಮತ್ತು ವಿನಯವೇ ಮೌಲ್ಯದ ಅಳತೆ."
+      "kn": "ಧರ್ಮಬುದ್ಧಿ, ಮೃದುತನ ಮತ್ತು ವಿನಯವುಳ್ಳವನು"
     },
     {
       "dev": "स कुलीनशतात् वरः",
       "iast": "sa kulīnaśatāt varaḥ",
-      "en": "Such a person excels even a hundred of noble birth",
-      "kn": "ಜನ್ಮದ ಸ್ಥಾನಕ್ಕಿಂತ ವ್ಯಕ್ತಿಯ ನಡತೆ ಮುಖ್ಯ. ಮಿತಿ, ಧರ್ಮಬುದ್ಧಿ, ಮೃದುಸ್ವಭಾವ ಮತ್ತು ವಿನಯವೇ ಮೌಲ್ಯದ ಅಳತೆ."
+      "en": "Such a person excels even a hundred high-born",
+      "kn": "ಉತ್ತಮ ಕುಲದ ನೂರಾರು ಮಂದಿಗಿಂತ ಶ್ರೇಷ್ಠ"
     }
   ],
   "practice": [
@@ -109,6 +109,7 @@
     "section": "Atha Viduranītiḥ",
     "translation": "verbatim from supplied PDF",
     "study_meanings": "editorial",
-    "notes": null
+    "notes": null,
+    "word_gloss_level": "bilingual phrase-aligned glosses; individual-token glosses pending philological review"
   }
 }
