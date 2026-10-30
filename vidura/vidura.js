@@ -25,7 +25,7 @@ if(!root.children.length)root.innerHTML='<p class="vidura-foot">No matching ślo
 }
 function verse(){return state.verses.find(v=>String(v.verse_number)===verseSelect.value);}
 function fullPath(){return '../audio/vidura/sloka-'+String(verseSelect.value).padStart(3,'0')+'-full.mp3';}
-function clipPath(i){return '../audio/vidura/sloka-'+String(verseSelect.value).padStart(3,'0')+'-part-'+String(i+1).padStart(2,'0')+'.mp3';}
+function clipPath(i){const path='../audio/vidura/sloka-'+String(verseSelect.value).padStart(3,'0')+'-part-'+String(i+1).padStart(2,'0')+'.mp3';return i===2?path+'?revision=part3-onset-repair-20261030':path;}
 function partCount(i){return state.repeatMap[verseSelect.value+':'+i]??Number(repeats.value);}
 function applyChantSpeed(){
  const value=Number(speed.value);
