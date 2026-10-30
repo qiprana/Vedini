@@ -1555,6 +1555,7 @@ function render(){
  initDhyanaPhraseAudio();
  initDhyanaPlayAll();
  syncChantHereButtons();
+ syncDock();
  requestAnimationFrame(fitVerseLines);
  // After layout settles, sync the index to the śloka actually in view.
  requestAnimationFrame(queueVerseScrollUpdate);
