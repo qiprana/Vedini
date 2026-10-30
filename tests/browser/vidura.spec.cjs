@@ -1,8 +1,18 @@
 const {test,expect}=require('@playwright/test');
+async function stableAudioAvailability(page){
+ await page.route('**/audio/vidura/*',route=>{
+  if(route.request().method()==='HEAD'){
+   const name=decodeURIComponent(new URL(route.request().url()).pathname);
+   return route.fulfill({status:/sloka-00[12]-/.test(name)?200:404,body:''});
+  }
+  return route.continue();
+ });
+}
 
 test('Viduranīti full śloka speed control and shruti are available',async({page})=>{
  const errors=[];
  page.on('pageerror',err=>errors.push(err.message));
+ await stableAudioAvailability(page);
  await page.goto('/vidura/');
  await expect(page.locator('.vidura-card')).toHaveCount(25);
  await expect(page.locator('#vidura-speed')).toHaveValue('0.9');
@@ -30,6 +40,7 @@ test('Viduranīti clip transitions preserve playback speed and user repeat count
   };
   HTMLMediaElement.prototype.pause=function(){Object.defineProperty(this,'paused',{configurable:true,get:()=>true});};
  });
+ await stableAudioAvailability(page);
  await page.goto('/vidura/');
  await expect(page.locator('#vidura-part-picker .vidura-part')).toHaveCount(4,{timeout:15000});
  await page.locator('#vidura-shruti-enabled').uncheck();
@@ -48,6 +59,7 @@ test('Viduranīti clip transitions preserve playback speed and user repeat count
 
 test('Viduranīti mobile practice controls remain usable',async({page})=>{
  await page.setViewportSize({width:390,height:844});
+ await stableAudioAvailability(page);
  await page.goto('/vidura/');
  await expect(page.locator('#vidura-speed')).toBeVisible();
  await expect(page.locator('#vidura-shruti-volume')).toBeVisible();
