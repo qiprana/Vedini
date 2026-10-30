@@ -2,7 +2,7 @@
 """Generate Viduranīti Vāgdhenu/CowChant audio: one full śloka + four individual parts.
 
 Every audio file is chanted exactly once. The Vedini browser player controls
-how often each part is repeated. The full version is chanted in ONE continuous
+how often each part is repeated. Default Vāgdhenu speed is a gentler 0.95 (previously 1.05).\nThe full version is chanted in ONE continuous
 CowChant pass, not stitched together from the shorter practice recordings.
 """
 from __future__ import annotations
@@ -26,7 +26,7 @@ def arguments():
                    help="Generate all five tracks, only a full śloka, or only its four parts.")
     p.add_argument("--part", type=int, choices=[1, 2, 3, 4], default=None,
                    help="Generate just this practice part (implies parts mode).")
-    p.add_argument("--speed", type=float, default=1.05)
+    p.add_argument("--speed", type=float, default=0.95)
     p.add_argument("--device", choices=["auto", "mps", "cuda", "cpu"], default="auto")
     p.add_argument("--seed", type=int, default=60)
     p.add_argument("--dry-run", action="store_true")
