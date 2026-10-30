@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-# Viduranīti: produce four independent Vāgdhenu clips PER śloka.
+# Viduranīti: produce one uninterrupted full śloka AND four independent clips per śloka.
 #
 # Preview the exact Sanskrit that will be recorded:
 #   bash scripts/generate_vidura_1_2.sh --dry-run
 #
-# Generate all eight MP3s (4 parts x 2 ślokas):
+# Generate all ten MP3s (1 full + 4 parts, for each of 2 ślokas):
 #   conda activate vagdhenu
 #   bash scripts/generate_vidura_1_2.sh
 #
