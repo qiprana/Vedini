@@ -26,3 +26,5 @@ test('Vidura browser speed control is independent of Vāgdhenu recording speed',
  assert.equal(manifest.audio.browser_playback_speed.default,0.90);
  assert.ok(py.includes('default=1.05'));
 });
+
+test('Part 3 retry uses precise Sanskrit and never overwrites published recordings',()=>{const py=read('scripts/retry_vidura_part3.py');assert.match(py,/सुखार्थी वा त्यजेद् विद्यां/);assert.match(py,/अशुश्रूषा त्वरा श्लाघा/);assert.match(py,/candidates/);assert.match(py,/--dry-run/);assert.match(py,/\["practice"\]\[2\]/);});
