@@ -105,44 +105,55 @@
       "dev": "सुखार्थिनः कुतो विद्या",
       "iast": "sukhārthinaḥ kuto vidyā",
       "kn": "ಸುಖಾರ್ಥಿನಃ ಕುತೋ ವಿದ್ಯಾ",
-      "highlighted": true,
-      "repeat": 2
+      "order": 1,
+      "audio": "audio/vidura/sloka-001-part-01.mp3",
+      "boundary_source": "pdf-highlight-end"
     },
     {
       "id": "b",
       "dev": "नास्ति विद्यार्थिनः सुखम्",
       "iast": "nāsti vidyārthinaḥ sukham",
       "kn": "ನಾಸ್ತಿ ವಿದ್ಯಾರ್ಥಿನಃ ಸುಖಮ್",
-      "highlighted": false,
-      "repeat": 1
+      "order": 2,
+      "audio": "audio/vidura/sloka-001-part-02.mp3",
+      "boundary_source": "pada-end"
     },
     {
       "id": "c",
       "dev": "सुखार्थी वा त्यजेद् विद्यां",
       "iast": "sukhārthī vā tyajed vidyāṃ",
       "kn": "ಸುಖಾರ್ಥೀ ವಾ ತ್ಯಜೇದ್ ವಿದ್ಯಾಂ",
-      "highlighted": true,
-      "repeat": 2
+      "order": 3,
+      "audio": "audio/vidura/sloka-001-part-03.mp3",
+      "boundary_source": "pdf-highlight-end"
     },
     {
       "id": "d",
       "dev": "विद्यार्थी वा त्यजेत् सुखम्",
       "iast": "vidyārthī vā tyajet sukham",
       "kn": "ವಿದ್ಯಾರ್ಥೀ ವಾ ತ್ಯಜೇತ್ ಸುಖಮ್",
-      "highlighted": false,
-      "repeat": 1
+      "order": 4,
+      "audio": "audio/vidura/sloka-001-part-04.mp3",
+      "boundary_source": "pada-end"
     }
   ],
-  "practice_source": "pdf-highlight",
+  "practice_source": "pdf-highlight-cut-points",
   "audio": {
-    "full": "audio/vidura/sloka-001-full.mp3",
-    "call_repeat": "audio/vidura/sloka-001-call-repeat.mp3",
-    "timings": "data/vidura/timings/verse-001.json"
+    "clips": [
+      "audio/vidura/sloka-001-part-01.mp3",
+      "audio/vidura/sloka-001-part-02.mp3",
+      "audio/vidura/sloka-001-part-03.mp3",
+      "audio/vidura/sloka-001-part-04.mp3"
+    ],
+    "full_playback": "assemble-four-clips-in-order",
+    "repeat_control": "browser-per-part",
+    "recording_status": "awaiting-vagdhenu-generation"
   },
   "source": {
     "page": 2,
     "section": "Atha Viduranītiḥ",
     "translation": "verbatim from supplied PDF",
     "study_meanings": "editorial"
-  }
+  },
+  "practice_note": "Pink highlights in the supplied PDF indicate where to divide each printed line. All four portions are independent clips, with no fixed repetition count."
 }
