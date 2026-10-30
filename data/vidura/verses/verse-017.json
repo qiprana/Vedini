@@ -27,28 +27,64 @@
   },
   "word_by_word": [
     {
-      "dev": "ईर्ष्यी घृणी न सन्तुष्टः",
-      "iast": "īrṣyī ghṛṇī na santuṣṭaḥ",
-      "en": "The jealous, hateful, discontented",
-      "kn": "ಅಸೂಯೆ, ದ್ವೇಷ ಮತ್ತು ಅತೃಪ್ತಿ"
+      "dev": "ईर्ष्यी",
+      "iast": "īrṣyī",
+      "en": "Envious",
+      "kn": "ಅಸೂಯೆಪಡುವವನು"
     },
     {
-      "dev": "क्रोधनो नित्यशङ्कितः",
-      "iast": "krodhano nityaśaṅkitaḥ",
-      "en": "The angry and habitually suspicious",
-      "kn": "ಕೋಪ ಮತ್ತು ಸದಾ ಅನುಮಾನ"
+      "dev": "घृणी",
+      "iast": "ghṛṇī",
+      "en": "Hateful",
+      "kn": "ದ್ವೇಷಿಸುವವನು"
     },
     {
-      "dev": "परभाग्योपजीवी च",
-      "iast": "parabhāgyopajīvī ca",
-      "en": "One dependent on another's luck",
-      "kn": "ಇತರರ ಭಾಗ್ಯವನ್ನು ಅವಲಂಬಿಸಿ ಬದುಕುವವನು"
+      "dev": "न",
+      "iast": "na",
+      "en": "Not",
+      "kn": "ಇಲ್ಲ"
     },
     {
-      "dev": "षडेते नित्यदुःखिताः",
-      "iast": "ṣaḍete nityaduḥkhitāḥ",
-      "en": "These six remain unhappy",
-      "kn": "ಈ ಆರು ಜನರು ಸದಾ ದುಃಖಿತರು"
+      "dev": "सन्तुष्टः",
+      "iast": "santuṣṭaḥ",
+      "en": "Satisfied",
+      "kn": "ತೃಪ್ತನಾದವನು"
+    },
+    {
+      "dev": "क्रोधनो",
+      "iast": "krodhano",
+      "en": "Angry",
+      "kn": "ಕೋಪಿಷ್ಠ"
+    },
+    {
+      "dev": "नित्यशङ्कितः",
+      "iast": "nityaśaṅkitaḥ",
+      "en": "Always suspicious",
+      "kn": "ಸದಾ ಸಂದೇಹಪಡುವವನು"
+    },
+    {
+      "dev": "परभाग्योपजीवी",
+      "iast": "parabhāgyopajīvī",
+      "en": "Living on another's fortune",
+      "kn": "ಇತರರ ಭಾಗ್ಯವನ್ನು ಅವಲಂಬಿಸುವವನು"
+    },
+    {
+      "dev": "च",
+      "iast": "ca",
+      "en": "And",
+      "kn": "ಮತ್ತು"
+    },
+    {
+      "dev": "षडेते",
+      "iast": "ṣaḍete",
+      "en": "These six",
+      "kn": "ಈ ಆರು"
+    },
+    {
+      "dev": "नित्यदुःखिताः",
+      "iast": "nityaduḥkhitāḥ",
+      "en": "Constantly unhappy",
+      "kn": "ಸದಾ ದುಃಖಿತರಾದವರು"
     }
   ],
   "practice": [
@@ -110,6 +146,6 @@
     "translation": "verbatim from supplied PDF",
     "study_meanings": "editorial",
     "notes": "Devanagari IAST readings follow the handout; practice partitions editorial.",
-    "word_gloss_level": "bilingual phrase-aligned glosses; individual-token glosses pending philological review"
+    "word_gloss_level": "editorial individual source-token meanings"
   }
 }
