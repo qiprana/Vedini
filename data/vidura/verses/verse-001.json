@@ -1,0 +1,148 @@
+{
+  "id": "vidura-001",
+  "collection": "vidura-niti",
+  "verse_number": 1,
+  "theme": "Learning and discipline",
+  "reading": {
+    "dev": [
+      "सुखार्थिनः कुतो विद्या नास्ति विद्यार्थिनः सुखम् ।",
+      "सुखार्थी वा त्यजेद् विद्यां विद्यार्थी वा त्यजेत् सुखम् ॥ १ ॥"
+    ],
+    "iast": [
+      "sukhārthinaḥ kuto vidyā nāsti vidyārthinaḥ sukham |",
+      "sukhārthī vā tyajed vidyāṃ vidyārthī vā tyajet sukham || 1 ||"
+    ],
+    "kn": [
+      "ಸುಖಾರ್ಥಿನಃ ಕುತೋ ವಿದ್ಯಾ ನಾಸ್ತಿ ವಿದ್ಯಾರ್ಥಿನಃ ಸುಖಮ್ ।",
+      "ಸುಖಾರ್ಥೀ ವಾ ತ್ಯಜೇದ್ ವಿದ್ಯಾಂ ವಿದ್ಯಾರ್ಥೀ ವಾ ತ್ಯಜೇತ್ ಸುಖಮ್ ॥ ೧ ॥"
+    ]
+  },
+  "meaning": {
+    "en": "A pleasure-seeker cannot be a knowledge-seeker and a knowledge-seeker cannot be a pleasure-seeker. Hence a pleasure-seeker should abstain from seeking knowledge and a knowledge-seeker should abstain from seeking pleasure.",
+    "kn": "ಸುಖವನ್ನೇ ಹುಡುಕುವವನಿಗೆ ವಿದ್ಯಾಸಾಧನೆ ಕಷ್ಟ; ವಿದ್ಯೆಯನ್ನು ಅರಸುವವನಿಗೆ ನಿರಂತರ ಆರಾಮಾಸಕ್ತಿ ಹೊಂದಲು ಸಾಧ್ಯವಿಲ್ಲ. ಸುಖಕ್ಕೆ ಆದ್ಯತೆ ಕೊಡುವವನು ವಿದ್ಯೆಯನ್ನು ಕೈಬಿಡುತ್ತಾನೆ; ವಿದ್ಯೆಗೆ ಆದ್ಯತೆ ಕೊಡುವವನು ಸುಖಾಸಕ್ತಿಯನ್ನು ತ್ಯಜಿಸುತ್ತಾನೆ."
+  },
+  "deeper_meaning": {
+    "en": "The verse sets the demands of sustained learning against the desire for uninterrupted comfort. Vidura is not condemning happiness itself. Rather, he asks the student to recognize that knowledge grows through attention, patience, effort and sometimes the willingness to set aside immediate pleasures. The choice is about what takes priority when comfort and the discipline of study pull in different directions.",
+    "kn": "ಈ ಶ್ಲೋಕವು ವಿದ್ಯೆಯನ್ನು ಸಾಧಿಸುವ ಶಿಸ್ತು ಮತ್ತು ತಕ್ಷಣದ ಸುಖವನ್ನು ಬಯಸುವ ಮನಸ್ಸಿನ ನಡುವಿನ ಸಂಘರ್ಷವನ್ನು ತೋರಿಸುತ್ತದೆ. ಸುಖವೇ ತಪ್ಪು ಎಂದು ಹೇಳುವುದಿಲ್ಲ; ಆದರೆ ಕಲಿಕೆಗೆ ಏಕಾಗ್ರತೆ, ತಾಳ್ಮೆ, ಪರಿಶ್ರಮ ಮತ್ತು ಕೆಲವೊಮ್ಮೆ ಆರಾಮವನ್ನು ಬದಿಗಿಡುವ ಮನೋಭಾವ ಬೇಕು. ಸುಖ ಮತ್ತು ಅಧ್ಯಯನ ಪರಸ್ಪರ ವಿರೋಧಿಯಾದಾಗ ಯಾವುದಕ್ಕೆ ಆದ್ಯತೆ ಕೊಡಬೇಕು ಎಂಬುದೇ ಇದರ ಆಶಯ."
+  },
+  "word_by_word": [
+    {
+      "dev": "सुखार्थिनः",
+      "iast": "sukhārthinaḥ",
+      "en": "Of the one seeking pleasure or comfort",
+      "kn": "ಸುಖ ಅಥವಾ ಆರಾಮವನ್ನು ಬಯಸುವವನ"
+    },
+    {
+      "dev": "कुतः (कुतो)",
+      "iast": "kutaḥ (kuto)",
+      "en": "How could there be? From where?",
+      "kn": "ಹೇಗೆ ಸಾಧ್ಯ? ಎಲ್ಲಿಂದ?"
+    },
+    {
+      "dev": "विद्या",
+      "iast": "vidyā",
+      "en": "Knowledge; learning",
+      "kn": "ವಿದ್ಯೆ; ಜ್ಞಾನ"
+    },
+    {
+      "dev": "नास्ति",
+      "iast": "nāsti",
+      "en": "Is not; does not exist (na + asti)",
+      "kn": "ಇಲ್ಲ; ಇರುವುದಿಲ್ಲ"
+    },
+    {
+      "dev": "विद्यार्थिनः",
+      "iast": "vidyārthinaḥ",
+      "en": "Of the one seeking knowledge",
+      "kn": "ವಿದ್ಯೆಯನ್ನು ಅರಸುವವನ"
+    },
+    {
+      "dev": "सुखम्",
+      "iast": "sukham",
+      "en": "Pleasure; ease; comfort",
+      "kn": "ಸುಖ; ಆರಾಮ"
+    },
+    {
+      "dev": "सुखार्थी",
+      "iast": "sukhārthī",
+      "en": "A person who desires comfort",
+      "kn": "ಸುಖವನ್ನು ಬಯಸುವವನು"
+    },
+    {
+      "dev": "वा",
+      "iast": "vā",
+      "en": "Or",
+      "kn": "ಅಥವಾ"
+    },
+    {
+      "dev": "त्यजेत् (त्यजेद्)",
+      "iast": "tyajet (tyajed)",
+      "en": "Should give up or renounce",
+      "kn": "ತ್ಯಜಿಸಬೇಕು"
+    },
+    {
+      "dev": "विद्याम्",
+      "iast": "vidyām",
+      "en": "Knowledge; the pursuit of learning",
+      "kn": "ವಿದ್ಯೆಯನ್ನು; ಅಧ್ಯಯನವನ್ನು"
+    },
+    {
+      "dev": "विद्यार्थी",
+      "iast": "vidyārthī",
+      "en": "A seeker of knowledge",
+      "kn": "ವಿದ್ಯಾರ್ಥಿ; ಜ್ಞಾನಸಾಧಕ"
+    },
+    {
+      "dev": "सुखम्",
+      "iast": "sukham",
+      "en": "Comfort or pleasure (here, to be relinquished)",
+      "kn": "ಸುಖ ಅಥವಾ ಆರಾಮ"
+    }
+  ],
+  "practice": [
+    {
+      "id": "a",
+      "dev": "सुखार्थिनः कुतो विद्या",
+      "iast": "sukhārthinaḥ kuto vidyā",
+      "kn": "ಸುಖಾರ್ಥಿನಃ ಕುತೋ ವಿದ್ಯಾ",
+      "highlighted": true,
+      "repeat": 2
+    },
+    {
+      "id": "b",
+      "dev": "नास्ति विद्यार्थिनः सुखम्",
+      "iast": "nāsti vidyārthinaḥ sukham",
+      "kn": "ನಾಸ್ತಿ ವಿದ್ಯಾರ್ಥಿನಃ ಸುಖಮ್",
+      "highlighted": false,
+      "repeat": 1
+    },
+    {
+      "id": "c",
+      "dev": "सुखार्थी वा त्यजेद् विद्यां",
+      "iast": "sukhārthī vā tyajed vidyāṃ",
+      "kn": "ಸುಖಾರ್ಥೀ ವಾ ತ್ಯಜೇದ್ ವಿದ್ಯಾಂ",
+      "highlighted": true,
+      "repeat": 2
+    },
+    {
+      "id": "d",
+      "dev": "विद्यार्थी वा त्यजेत् सुखम्",
+      "iast": "vidyārthī vā tyajet sukham",
+      "kn": "ವಿದ್ಯಾರ್ಥೀ ವಾ ತ್ಯಜೇತ್ ಸುಖಮ್",
+      "highlighted": false,
+      "repeat": 1
+    }
+  ],
+  "practice_source": "pdf-highlight",
+  "audio": {
+    "full": "audio/vidura/sloka-001-full.mp3",
+    "call_repeat": "audio/vidura/sloka-001-call-repeat.mp3",
+    "timings": "data/vidura/timings/verse-001.json"
+  },
+  "source": {
+    "page": 2,
+    "section": "Atha Viduranītiḥ",
+    "translation": "verbatim from supplied PDF",
+    "study_meanings": "editorial"
+  }
+}
