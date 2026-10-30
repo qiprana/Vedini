@@ -1,0 +1,43 @@
+name: Try splitting Viduranīti full recording
+on:
+  push:
+    branches:
+      - fix/vidura-sloka1-split-full
+    paths:
+      - scripts/split_vidura_full_audio.py
+      - .github/workflows/vidura-split-trial.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  split-verse-1:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check FFmpeg
+        run: ffmpeg -version | head -n 1
+      - name: Extract 4 candidate clips from full śloka 1
+        run: python3 scripts/split_vidura_full_audio.py > /tmp/vidura-boundaries.log
+      - name: Display audio cut analysis
+        if: always()
+        run: cat /tmp/vidura-boundaries.log
+      - name: Verify files exist and contain audio
+        run: |
+          test "$(find audio/vidura/from-full -name 'sloka-001-part-*.mp3' | wc -l)" -eq 4
+          for audio in audio/vidura/from-full/sloka-001-part-*.mp3; do
+            ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1 "$audio"
+          done
+      - name: Commit trial audio for review
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add audio/vidura/from-full
+          if ! git diff --cached --quiet; then
+            git commit -m "Generate candidate Viduranīti śloka 1 clips from full recording"
+            git push origin HEAD:fix/vidura-sloka1-split-full
+          fi
