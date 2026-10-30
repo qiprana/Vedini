@@ -1,0 +1,150 @@
+{
+  "id": "vidura-018",
+  "collection": "vidura-niti",
+  "verse_number": 18,
+  "theme": "Forgiveness and generosity",
+  "reading": {
+    "dev": [
+      "द्वाविमौ पुरुषौ राजन् स्वर्गस्योपरि तिष्ठतः ।",
+      "प्रभुश्च क्षमया युक्तो दरिद्रश्च प्रदानवान् ॥ १८ ॥"
+    ],
+    "iast": [
+      "dvāvimau puruṣau rājan svargasyopari tiṣṭhataḥ |",
+      "prabhuśca kṣamayā yukto daridraśca pradānavān || 18 ||"
+    ],
+    "kn": [
+      "ದ್ವಾವಿಮೌ ಪುರುಷೌ ರಾಜನ್ ಸ್ವರ್ಗಸ್ಯೋಪರಿ ತಿಷ್ಠತಃ ೤",
+      "ಪ್ರಭುಶ್ಚ ಕ್ಷಮಯಾ ಯುಕ್ತೋ ದರಿದ್ರಶ್ಚ ಪ್ರದಾನವಾನ್ ೥ ೧೮ ೥"
+    ]
+  },
+  "meaning": {
+    "en": "O King ! These two types of persons stand atop the heaven - A capable person who is endowed with the virtue of forgiveness and a poor person who practises generosity.",
+    "kn": "ರಾಜನೇ, ಕ್ಷಮೆಯನ್ನು ತೋರಿಸುವ ಶಕ್ತಿಶಾಲಿ ವ್ಯಕ್ತಿ ಮತ್ತು ಬಡತನದಲ್ಲಿಯೂ ದಾನ ಮಾಡುವ ವ್ಯಕ್ತಿ — ಈ ಇಬ್ಬರು ಅತ್ಯುನ್ನತ ಗೌರವಕ್ಕೆ ಪಾತ್ರರಾಗುತ್ತಾರೆ."
+  },
+  "deeper_meaning": {
+    "en": "Strength shows its nobility through forgiveness, and generosity has special value when offered despite limited means. Vidura values how people use what they have, not merely what they possess.",
+    "kn": "ಶಕ್ತಿಯೊಂದಿಗೆ ಕ್ಷಮೆ, ಕೊರತೆಯ ನಡುವೆಯೂ ದಾನ — ಇವು ಸಂಪತ್ತು ಅಥವಾ ಸ್ಥಾನಕ್ಕಿಂತ ಶ್ರೇಷ್ಠ ಗುಣಗಳು."
+  },
+  "word_by_word": [
+    {
+      "dev": "द्वाविमौ",
+      "iast": "dvāvimau",
+      "en": "These two",
+      "kn": "ಪದಾರ್ಥ: द्वाविमौ"
+    },
+    {
+      "dev": "पुरुषौ",
+      "iast": "puruṣau",
+      "en": " people",
+      "kn": "ಪದಾರ್ಥ: पुरुषौ"
+    },
+    {
+      "dev": "राजन्",
+      "iast": "rājan",
+      "en": " O king",
+      "kn": "ಪದಾರ್ಥ: राजन्"
+    },
+    {
+      "dev": "स्वर्गस्योपरि",
+      "iast": "svargasyopari",
+      "en": "Above heaven",
+      "kn": "ಪದಾರ್ಥ: स्वर्गस्योपरि"
+    },
+    {
+      "dev": "तिष्ठतः",
+      "iast": "tiṣṭhataḥ",
+      "en": " stand",
+      "kn": "ಪದಾರ್ಥ: तिष्ठतः"
+    },
+    {
+      "dev": "प्रभुश्च",
+      "iast": "prabhuśca",
+      "en": "The powerful",
+      "kn": "ಪದಾರ್ಥ: प्रभुश्च"
+    },
+    {
+      "dev": "क्षमया",
+      "iast": "kṣamayā",
+      "en": " endowed with forgiveness",
+      "kn": "ಪದಾರ್ಥ: क्षमया"
+    },
+    {
+      "dev": "युक्तो",
+      "iast": "yukto",
+      "en": "The powerful; endowed with forgiveness",
+      "kn": "ಪದಾರ್ಥ: युक्तो"
+    },
+    {
+      "dev": "दरिद्रश्च",
+      "iast": "daridraśca",
+      "en": "And the poor",
+      "kn": "ಪದಾರ್ಥ: दरिद्रश्च"
+    },
+    {
+      "dev": "प्रदानवान्",
+      "iast": "pradānavān",
+      "en": " generous",
+      "kn": "ಪದಾರ್ಥ: प्रदानवान्"
+    }
+  ],
+  "practice": [
+    {
+      "id": "a",
+      "order": 1,
+      "dev": "द्वाविमौ पुरुषौ राजन्",
+      "iast": "dvāvimau puruṣau rājan",
+      "kn": "ದ್ವಾವಿಮೌ ಪುರುಷೌ ರಾಜನ್",
+      "audio": "audio/vidura/sloka-018-part-01.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "b",
+      "order": 2,
+      "dev": "स्वर्गस्योपरि तिष्ठतः",
+      "iast": "svargasyopari tiṣṭhataḥ",
+      "kn": "ಸ್ವರ್ಗಸ್ಯೋಪರಿ ತಿಷ್ಠತಃ",
+      "audio": "audio/vidura/sloka-018-part-02.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "c",
+      "order": 3,
+      "dev": "प्रभुश्च क्षमया युक्तो",
+      "iast": "prabhuśca kṣamayā yukto",
+      "kn": "ಪ್ರಭುಶ್ಚ ಕ್ಷಮಯಾ ಯುಕ್ತೋ",
+      "audio": "audio/vidura/sloka-018-part-03.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "d",
+      "order": 4,
+      "dev": "दरिद्रश्च प्रदानवान्",
+      "iast": "daridraśca pradānavān",
+      "kn": "ದರಿದ್ರಶ್ಚ ಪ್ರದಾನವಾನ್",
+      "audio": "audio/vidura/sloka-018-part-04.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    }
+  ],
+  "practice_source": "editorial-pada-boundaries",
+  "practice_note": "Practice segments follow printed lines and editorial word boundaries; confirm chanting pauses before audio publishing.",
+  "audio": {
+    "full": "audio/vidura/sloka-018-full.mp3",
+    "clips": [
+      "audio/vidura/sloka-018-part-01.mp3",
+      "audio/vidura/sloka-018-part-02.mp3",
+      "audio/vidura/sloka-018-part-03.mp3",
+      "audio/vidura/sloka-018-part-04.mp3"
+    ],
+    "recording_status": "awaiting-vagdhenu-generation",
+    "meter": "anushtubh",
+    "full_playback": "single_continuous_recording",
+    "repeat_control": "browser-per-part"
+  },
+  "source": {
+    "page": 7,
+    "section": "Atha Viduranītiḥ",
+    "translation": "verbatim from supplied PDF",
+    "study_meanings": "editorial",
+    "notes": "Devanagari IAST readings follow the handout; practice partitions editorial."
+  }
+}
