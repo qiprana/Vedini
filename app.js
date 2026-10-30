@@ -1829,8 +1829,8 @@ async function practicePlayCurrent(token){
   return;
  }
  // Follow the active verse across reader groups without interrupting this player.
- if(practice.dhyana){if(view!=="dhyana"||searchTerm.trim()){view="dhyana";searchTerm="";$("#search").value="";render()}requestAnimationFrame(()=>document.getElementById("dhyana-"+n)?.scrollIntoView({block:"start",behavior:"smooth"}));syncChantHereButtons();syncDock();return;}
- if(pageIndex!==Math.floor((n-1)/pageSize)||view!=="verses"||searchTerm.trim()){
+ if(practice.dhyana){if(view!=="dhyana"||selectedVerse!==n||searchTerm.trim()){view="dhyana";selectedVerse=n;searchTerm="";$("#search").value="";render()}if(practice.played===1)requestAnimationFrame(()=>document.getElementById("dhyana-"+n)?.scrollIntoView({block:"start",behavior:"smooth"}));syncChantHereButtons();syncDock();return;}
+ if(selectedVerse!==n||view!=="verses"||searchTerm.trim()){
   view="verses";pageIndex=Math.floor((n-1)/pageSize);selectedVerse=n;
   searchTerm="";$("#search").value="";render();
  }else{
@@ -1840,7 +1840,7 @@ async function practicePlayCurrent(token){
  }
  selectVisibleVerse(n);
  syncChantHereButtons();
- requestAnimationFrame(()=>document.getElementById("verse-"+n)?.scrollIntoView({block:"start",behavior:"smooth"}));
+ if(practice.played===1)requestAnimationFrame(()=>document.getElementById("verse-"+n)?.scrollIntoView({block:"start",behavior:"smooth"}));
  syncDock();
 }
 function initPractice(){
@@ -1940,11 +1940,11 @@ async function guidedPlayClip(){
  if(guided.index>=guided.units.length){guidedStop("Guided chanting complete");return;}
  const unit=guided.units[guided.index],token=guided.token;
  guidedStatus("Śloka "+unit.verse+" · "+(unit.name?"Name "+unit.name+" ("+unit.text+")":"Complete śloka")+" · "+unit.repeats+"×");syncDock();
- if(view!=="verses"||pageIndex!==Math.floor((unit.verse-1)/pageSize)){
-  view="verses";pageIndex=Math.floor((unit.verse-1)/pageSize);selectedVerse=unit.verse;render();
+ if(view!=="verses"||selectedVerse!==unit.verse){
+  view="verses";pageIndex=unit.verse-1;selectedVerse=unit.verse;render();
  }
  const target=guidedHighlight(unit.name)||document.getElementById("verse-"+unit.verse);
- requestAnimationFrame(()=>guidedFollow(target));
+ if(guided.index===0||guided.units[guided.index-1]?.verse!==unit.verse)requestAnimationFrame(()=>guidedFollow(target));
  try{
   if(!vediniAudioContext)vediniAudioContext=new (window.AudioContext||window.webkitAudioContext)();
   const ctx=vediniAudioContext;guided.ctx=ctx;
