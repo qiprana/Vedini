@@ -27,52 +27,28 @@
   },
   "word_by_word": [
     {
-      "dev": "अभ्यावहति",
-      "iast": "abhyāvahati",
-      "en": "Brings",
-      "kn": "ಪದಾರ್ಥ: अभ्यावहति"
+      "dev": "अभ्यावहति कल्याणं",
+      "iast": "abhyāvahati kalyāṇaṃ",
+      "en": "Brings forth good fortune",
+      "kn": "ಶುಭವನ್ನು ಉಂಟುಮಾಡುತ್ತದೆ"
     },
     {
-      "dev": "कल्याणं",
-      "iast": "kalyāṇaṃ",
-      "en": " well-being",
-      "kn": "ಪದಾರ್ಥ: कल्याणं"
+      "dev": "विविधं वाक्सुभाषिता",
+      "iast": "vividhaṃ vāksubhāṣitā",
+      "en": "Many kinds; well-spoken speech",
+      "kn": "ವಿವಿಧ ರೀತಿಯ ಒಳ್ಳೆಯ ಮಾತು"
     },
     {
-      "dev": "विविधं",
-      "iast": "vividhaṃ",
-      "en": "Many kinds",
-      "kn": "ಪದಾರ್ಥ: विविधं"
-    },
-    {
-      "dev": "वाक्सुभाषिता",
-      "iast": "vāksubhāṣitā",
-      "en": " speech well spoken",
-      "kn": "ಪದಾರ್ಥ: वाक्सुभाषिता"
-    },
-    {
-      "dev": "सैव",
-      "iast": "saiva",
-      "en": "That very speech",
-      "kn": "ಪದಾರ್ಥ: सैव"
-    },
-    {
-      "dev": "दुर्भाषिता",
-      "iast": "durbhāṣitā",
-      "en": " badly spoken",
-      "kn": "ಪದಾರ್ಥ: दुर्भाषिता"
-    },
-    {
-      "dev": "राजन्",
-      "iast": "rājan",
-      "en": " O king",
-      "kn": "ಪದಾರ್ಥ: राजन्"
+      "dev": "सैव दुर्भाषिता राजन्",
+      "iast": "saiva durbhāṣitā rājan",
+      "en": "The same badly spoken, O king",
+      "kn": "ಅದೇ ಕೆಟ್ಟ ಮಾತಾದರೆ, ರಾಜನೇ"
     },
     {
       "dev": "अनर्थायोपपद्यते",
       "iast": "anarthāyopapadyate",
-      "en": "May lead to harm",
-      "kn": "ಪದಾರ್ಥ: अनर्थायोपपद्यते"
+      "en": "Leads to misfortune",
+      "kn": "ಅನರ್ಥಕ್ಕೆ ಕಾರಣವಾಗುತ್ತದೆ"
     }
   ],
   "practice": [
@@ -133,6 +109,7 @@
     "section": "Atha Viduranītiḥ",
     "translation": "verbatim from supplied PDF",
     "study_meanings": "editorial",
-    "notes": "Devanagari IAST readings follow the handout; practice partitions editorial."
+    "notes": "Devanagari IAST readings follow the handout; practice partitions editorial.",
+    "word_gloss_level": "bilingual phrase-aligned glosses; individual-token glosses pending philological review"
   }
 }
