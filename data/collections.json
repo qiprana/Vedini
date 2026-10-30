@@ -26,5 +26,14 @@
     "sanskrit": "पुरुषसूक्तम्",
     "status": "planned",
     "available_verses": 0
+  },
+  {
+    "id": "vidura-niti",
+    "title": "Viduranītiḥ",
+    "sanskrit": "विदुरनीतिः",
+    "status": "in-progress",
+    "available_verses": 2,
+    "planned_verses": 25,
+    "entry": "vidura/index.html"
   }
 ]

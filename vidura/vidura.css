@@ -1,0 +1,68 @@
+.vidura-page{--v-green:#2d5748;--v-sage:#eaf2eb;--v-line:#c9d7c9;--v-rust:#a55f46;--v-ink:#293a2f}
+.vidura-page .reader-header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:14px;padding:12px 0 18px;text-align:left}
+.vidura-page .vidura-intro{padding:22px 0 12px;text-align:center}.vidura-eyebrow{font:700 12px system-ui;color:var(--v-rust);letter-spacing:.09em;text-transform:uppercase}
+.vidura-intro h1{font-size:clamp(27px,4vw,39px);color:var(--v-green);margin:9px 0}.vidura-intro h1 span{font-size:.7em;display:block;margin-top:5px}
+.vidura-intro>p{max-width:720px;margin:5px auto 16px}.vidura-intro details{max-width:760px;margin:auto;text-align:left;border:1px solid var(--v-line);padding:8px 14px;border-radius:9px}
+.vidura-intro summary{font-weight:600;color:var(--v-green)}
+.vidura-toolbar{display:flex;gap:13px;justify-content:space-between;align-items:center;flex-wrap:wrap;padding:12px 0}
+.vidura-toggle{display:flex;gap:5px;background:#ecf3eb;padding:5px;border-radius:12px}
+.vidura-toggle button,.vidura-transport button{border:1px solid #9db4a6;border-radius:9px;padding:9px 13px;background:#fffefa;color:var(--v-green);cursor:pointer;font-weight:600}
+.vidura-toggle .chosen,.vidura-transport button:not(:disabled):hover{background:var(--v-green);color:white}
+.vidura-search{display:flex;gap:8px;align-items:center;font:600 13px system-ui;color:var(--v-green)}.vidura-search input{width:min(260px,55vw)}
+.vidura-player{background:#f0f6ee;border:1.5px solid #afc4b2;padding:16px 18px;border-radius:14px;margin:10px 0 16px}
+.vidura-player-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.vidura-player h2{margin:0 0 9px;font:700 18px system-ui;color:var(--v-green)}
+.vidura-audio-state{font:12px/1.4 system-ui;color:#755138}
+.vidura-player-grid{display:flex;gap:12px;align-items:end;flex-wrap:wrap}.vidura-player-grid label{font:600 12px system-ui;color:#43564b;display:flex;flex-direction:column;gap:5px}
+.vidura-player-grid select{font:14px system-ui;background:white;color:#293a2f;min-height:39px;padding:7px 32px 7px 11px;border:1px solid #a9bcae;border-radius:9px}
+.vidura-transport{display:flex;gap:6px;flex-wrap:wrap}.vidura-transport button:disabled{opacity:.45;cursor:not-allowed}
+.vidura-player-help{font:13px/1.6 system-ui;color:#4b5a51;margin:12px 0 0}
+.vidura-verse-index{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}.vidura-verse-index a{padding:8px 13px;border:1px solid var(--v-line);border-radius:999px;background:#fffefa;text-decoration:none;color:var(--v-green);font:600 13px system-ui}
+.vidura-card{background:#fffefa;border:1.5px solid var(--v-line);border-radius:13px;padding:20px;margin:17px 0;scroll-margin-top:24px}
+.vidura-card-head{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap;border-bottom:1px solid #dce6da;padding-bottom:11px}
+.vidura-card-head h2{margin:0;font:700 19px system-ui;color:var(--v-green)}.vidura-card-head button{border:1px solid #b5c9b8;background:#f4f9f1;border-radius:8px;padding:7px 12px;color:#2c5545;cursor:pointer}
+.vidura-reading{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:25px;padding-top:17px}
+.vidura-reading h3,.vidura-section-title{margin:0 0 9px;font:700 13px system-ui;color:var(--v-green)}
+.vidura-script{font:500 clamp(20px,2.3vw,25px)/2 'Noto Serif Devanagari','Kohinoor Devanagari',serif;white-space:pre-line;color:#26352c;margin:0}
+.vidura-script[lang=kn]{font-family:'Noto Sans Kannada','Kannada Sangam MN',sans-serif}
+.vidura-iast{font-size:15px;line-height:1.8;color:#5e675b;white-space:pre-line;margin:7px 0}
+.vidura-meaning{font-size:16px;line-height:1.75;margin:0;color:#2e3b32}
+.vidura-words{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:7px 16px}
+.vidura-word{border-bottom:1px solid #e3eae0;padding:7px 0;display:grid;grid-template-columns:43% 57%;gap:6px;align-items:start}
+.vidura-word b{display:block;font-size:17px;color:#344e3e}.vidura-word small{font:13px Georgia;color:#6c6354}.vidura-word span{font-size:14px}
+.vidura-card details.vidura-details{border:1px solid #cbdac9;border-radius:9px;margin-top:15px;padding:0;overflow:hidden}
+.vidura-card .vidura-details>summary{font:700 14px system-ui;color:var(--v-green);background:#edf5ea;padding:12px;cursor:pointer}
+.vidura-details-body{padding:13px 15px}.vidura-details-body p{margin:0;line-height:1.8}
+.vidura-phrases{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
+.vidura-phrase{background:#f7f9f5;border:1px solid #d8e4d6;border-radius:9px;padding:10px 12px;min-width:0;transition:background .2s}
+.vidura-phrase.marked{border-left:4px solid #c87576;background:#fff5f0}
+.vidura-phrase.active{outline:2px solid #517d60;background:#e6f5e8}
+.vidura-phrase span{font:11px system-ui;color:#6c5a50;display:block;margin-bottom:3px}
+.vidura-phrase b{font-size:17px;line-height:1.65}.vidura-phrase small{display:block;color:#60705f;font-size:12px}
+.vidura-foot{font:13px/1.6 system-ui;color:#6a655e;margin:24px 0}
+.vidura-page mark{background:#ffe6a4;color:#253529;border-radius:2px}
+.vidura-page button:focus-visible,.vidura-page a:focus-visible,.vidura-page select:focus-visible{outline:3px solid #246fa6;outline-offset:2px}
+@media(max-width:780px){.vidura-reading,.vidura-words,.vidura-phrases{grid-template-columns:1fr}.vidura-card{padding:14px}.vidura-script{font-size:20px}.vidura-player-grid label{flex:1 1 160px}.vidura-toolbar{align-items:stretch}.vidura-card-head h2{font-size:17px}}
+
+.vidura-part-picker{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+#vidura-part-picker{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:13px}
+.vidura-part{background:#fffefa;border:1px solid #c9d9cb;border-radius:10px;padding:12px;min-width:0}
+.vidura-part.active{outline:2px solid #517d60;background:#e7f3e7}
+.vidura-part-title{font:700 12px system-ui;color:#37614a}
+.vidura-part-script{font-size:19px;line-height:1.85;color:#283c30}
+.vidura-part-iast{font:13px/1.6 Georgia,serif;color:#526453}
+.vidura-part-controls{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px;margin-top:8px}
+.vidura-part-controls button{border:1px solid #9db4a6;border-radius:8px;background:#edf5eb;padding:7px 10px;color:#285541;cursor:pointer}
+.vidura-part-controls button:disabled{opacity:.5;cursor:not-allowed}
+.vidura-part-controls label{display:flex;align-items:center;gap:7px;font:600 12px system-ui}
+.vidura-part-controls input{width:62px;min-height:35px;text-align:center}
+@media(max-width:700px){#vidura-part-picker{grid-template-columns:1fr}}
+
+.vidura-shruti-controls{display:flex;flex-wrap:wrap;align-items:center;gap:9px 18px;margin:14px 0 3px;padding:11px 12px;border:1px solid #c4d5c6;border-radius:10px;background:#f9fcf7}.vidura-shruti-controls label{display:flex;align-items:center;gap:7px;font:600 13px system-ui;color:#365b47}.vidura-shruti-controls input[type=range]{width:100px;accent-color:#46785c}.vidura-shruti-controls input[type=checkbox]{accent-color:#46785c}.vidura-shruti-controls select{background:#fff;border:1px solid #b5c9b8;border-radius:7px;min-height:32px;padding:3px 7px}
+
+/* Viduranīti audio playback speed: browser-side slowdown with independent shruti pitch. */
+.vidura-speed-control{min-width:155px}
+.vidura-speed-controls{display:flex;align-items:center;gap:9px;min-height:39px}
+.vidura-speed-controls input[type=range]{width:118px;accent-color:#37664f;cursor:pointer}
+.vidura-speed-controls output{display:inline-block;min-width:44px;text-align:right;font:700 13px system-ui;color:#2e5946;font-variant-numeric:tabular-nums}
+@media(max-width:700px){.vidura-speed-control{flex:1 1 150px}}
