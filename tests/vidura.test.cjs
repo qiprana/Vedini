@@ -28,3 +28,7 @@ test('Vidura browser speed control is independent of Vāgdhenu recording speed',
 });
 
 test('Part 3 retry uses precise Sanskrit and never overwrites published recordings',()=>{const py=read('scripts/retry_vidura_part3.py');assert.match(py,/सुखार्थी वा त्यजेद् विद्यां/);assert.match(py,/अशुश्रूषा त्वरा श्लाघा/);assert.match(py,/candidates/);assert.match(py,/--dry-run/);assert.match(py,/\["practice"\]\[2\]/);});
+
+test('Vidura Part 3 repair uses proper metre, context, and exact gap not guessed cuts',()=>{const py=read('scripts/retry_vidura_part3.py');for(const token of ['METER = "anushtubh"','preserve_original_onsets','second_segment_after_engine_gap','_stitch','0.55','candidates','--dry-run','--keep-context-wav'])assert.ok(py.includes(token));assert.match(py,/नास्ति विद्यार्थिनः सुखम्/);assert.match(py,/सुखार्थी वा त्यजेद् विद्यां/);assert.match(py,/अतिवादः श्रियो वधः/);assert.match(py,/अशुश्रूषा त्वरा श्लाघा/);});
+
+test('Vidura Part 3 loads a fresh audio URL after regeneration',()=>{const js=read('vidura/vidura.js');assert.match(js,/i===2\?path\+'\?revision=part3-onset-repair-20261030'/);});
