@@ -27,58 +27,28 @@
   },
   "word_by_word": [
     {
-      "dev": "द्वे",
-      "iast": "dve",
-      "en": "Two",
-      "kn": "ಪದಾರ್ಥ: द्वे"
+      "dev": "द्वे कर्मणी नरः",
+      "iast": "dve karmaṇī naraḥ",
+      "en": "Two actions by a person",
+      "kn": "ಎರಡು ಕೆಲಸಗಳು, ಮನುಷ್ಯನು"
     },
     {
-      "dev": "कर्मणी",
-      "iast": "karmaṇī",
-      "en": " actions",
-      "kn": "ಪದಾರ್ಥ: कर्मणी"
+      "dev": "कुर्वन्नस्मिंल्लोके विरोचते",
+      "iast": "kurvannasmiṃlloke virocate",
+      "en": "Doing them makes one shine in the world",
+      "kn": "ಮಾಡುವುದರಿಂದ ಲೋಕದಲ್ಲಿ ಮೆರೆಯುತ್ತಾನೆ"
     },
     {
-      "dev": "नरः",
-      "iast": "naraḥ",
-      "en": " a person",
-      "kn": "ಪದಾರ್ಥ: नरः"
-    },
-    {
-      "dev": "कुर्वन्नस्मिंल्लोके",
-      "iast": "kurvannasmiṃlloke",
-      "en": "Doing",
-      "kn": "ಪದಾರ್ಥ: कुर्वन्नस्मिंल्लोके"
-    },
-    {
-      "dev": "विरोचते",
-      "iast": "virocate",
-      "en": " in this world",
-      "kn": "ಪದಾರ್ಥ: विरोचते"
-    },
-    {
-      "dev": "अब्रुवन्",
-      "iast": "abruvan",
-      "en": "Not speaking",
-      "kn": "ಪದಾರ್ಥ: अब्रुवन्"
-    },
-    {
-      "dev": "परुषं",
-      "iast": "paruṣaṃ",
-      "en": " harshly",
-      "kn": "ಪದಾರ್ಥ: परुषं"
-    },
-    {
-      "dev": "किञ्चित्",
-      "iast": "kiñcit",
-      "en": " anything",
-      "kn": "ಪದಾರ್ಥ: किञ्चित्"
+      "dev": "अब्रुवन् परुषं किञ्चित्",
+      "iast": "abruvan paruṣaṃ kiñcit",
+      "en": "Not speaking anything harsh",
+      "kn": "ಕಠೋರವಾದ ಯಾವುದನ್ನೂ ಮಾತನಾಡದೆ"
     },
     {
       "dev": "असतोऽनर्चयंस्तथा",
       "iast": "asato'narcayaṃstathā",
-      "en": "The unworthy",
-      "kn": "ಪದಾರ್ಥ: असतोऽनर्चयंस्तथा"
+      "en": "Not honouring the wicked",
+      "kn": "ದುರ್ಜನರನ್ನು ಗೌರವಿಸದೆ"
     }
   ],
   "practice": [
@@ -139,6 +109,7 @@
     "section": "Atha Viduranītiḥ",
     "translation": "verbatim from supplied PDF",
     "study_meanings": "editorial",
-    "notes": "Devanagari IAST readings follow the handout; practice partitions editorial."
+    "notes": "Devanagari IAST readings follow the handout; practice partitions editorial.",
+    "word_gloss_level": "bilingual phrase-aligned glosses; individual-token glosses pending philological review"
   }
 }
