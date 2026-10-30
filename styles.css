@@ -2165,3 +2165,25 @@ header p{color:#845c4b;font-size:18px}
    scroll-snap-align:start;
  }
 }
+
+/* One responsive Lalitā reader: same verse picker and reading content on every screen. */
+.reader-page .compact-verse-navigation{
+ display:flex!important;align-items:center;gap:9px;padding:8px 10px!important;
+ min-height:54px;box-sizing:border-box;
+}
+.reader-page .compact-verse-navigation .verse-picker{flex:1 1 180px;min-width:0}
+.reader-page .compact-verse-navigation select{display:block;width:100%;height:42px;min-width:0;
+ border:1px solid #aabfaa;border-radius:9px;background:#fffdf8;color:#2b543d;
+ font:650 16px/1.3 system-ui,sans-serif;padding:7px 12px}
+.reader-page .compact-verse-navigation .verse-step{flex:0 0 44px;height:44px;
+ border:1px solid #afc6af;border-radius:9px;background:#f3f8f2;color:#2e5b42;
+ font:600 30px/1 system-ui,sans-serif;cursor:pointer}
+.reader-page .compact-verse-navigation .verse-step:disabled{opacity:.35}
+.reader-page .compact-verse-navigation .verse-position{font:600 12px/1.3 system-ui,sans-serif;
+ color:#617769;white-space:nowrap;margin-left:4px}
+@media(max-width:620px){
+ .reader-page .compact-verse-navigation{gap:6px;padding:6px!important;min-height:52px}
+ .reader-page .compact-verse-navigation .verse-position{display:none}
+ .reader-page .compact-verse-navigation .verse-step{flex-basis:42px;height:42px}
+ .reader-page .compact-verse-navigation select{height:42px;font-size:16px}
+}
