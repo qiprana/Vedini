@@ -2,7 +2,8 @@
 """Generate Viduranīti Vāgdhenu/CowChant audio: one full śloka + four individual parts.
 
 Every audio file is chanted exactly once. The Vedini browser player controls
-how often each part is repeated. Use the previously reliable 1.05 recording speed. Fine slowdown is done in the browser without regenerating audio.\nThe full version is chanted in ONE continuous
+how often each part is repeated. Use the previously reliable 1.05 recording speed. Fine slowdown is done in the browser without regenerating audio.
+The full version is chanted in ONE continuous
 CowChant pass, not stitched together from the shorter practice recordings.
 """
 from __future__ import annotations
@@ -104,7 +105,7 @@ def main():
     print("\nReview pronunciation and full-verse cadence before committing the recordings.")
     print("  git add audio/vidura/*.mp3")
     print('  git commit -m "Add Viduranīti Vāgdhenu full and practice recordings"')
-    print("  git push origin feature/vidura-niti-first-two")
+    print("  git push origin $(git branch --show-current)")
 
 
 if __name__ == "__main__":
