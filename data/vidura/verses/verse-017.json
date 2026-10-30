@@ -1,0 +1,150 @@
+{
+  "id": "vidura-017",
+  "collection": "vidura-niti",
+  "verse_number": 17,
+  "theme": "Six causes of unhappiness",
+  "reading": {
+    "dev": [
+      "ईर्ष्यी घृणी न सन्तुष्टः क्रोधनो नित्यशङ्कितः ।",
+      "परभाग्योपजीवी च षडेते नित्यदुःखिताः ॥ १७ ॥"
+    ],
+    "iast": [
+      "īrṣyī ghṛṇī na santuṣṭaḥ krodhano nityaśaṅkitaḥ |",
+      "parabhāgyopajīvī ca ṣaḍete nityaduḥkhitāḥ || 17 ||"
+    ],
+    "kn": [
+      "ಈರ್ಷ್ಯೀ ಘೃಣೀ ನ ಸನ್ತುಷ್ಟಃ ಕ್ರೋಧನೋ ನಿತ್ಯಶಙ್ಕಿತಃ ೤",
+      "ಪರಭಾಗ್ಯೋಪಜೀವೀ ಚ ಷಡೇತೇ ನಿತ್ಯದುಃಖಿತಾಃ ೥ ೧೭ ೥"
+    ]
+  },
+  "meaning": {
+    "en": "These six types of people are always unhappy- one who is jealous, one who hates others, one who is never satisfied, one who is short-tempered, one who is always suspicious and one who depends upon other's fortunes.",
+    "kn": "ಅಸೂಯೆಪಡುವ, ಇತರರನ್ನು ದ್ವೇಷಿಸುವ, ತೃಪ್ತಿಯಿಲ್ಲದ, ಬೇಗ ಕೋಪಗೊಳ್ಳುವ, ಸದಾ ಅನುಮಾನಿಸುವ ಮತ್ತು ಇತರರ ಭಾಗ್ಯವನ್ನೇ ಅವಲಂಬಿಸುವ ವ್ಯಕ್ತಿಗಳು ನಿರಂತರ ದುಃಖಿತರಾಗಿರುತ್ತಾರೆ."
+  },
+  "deeper_meaning": {
+    "en": "Vidura identifies mental habits that repeatedly create dissatisfaction. Envy, anger and suspicion steal contentment, while dependence on others' fortunes leaves one's peace unstable.",
+    "kn": "ಅಸೂಯೆ, ದ್ವೇಷ, ಕೋಪ ಮತ್ತು ಅನುಮಾನ ಮನಶ್ಶಾಂತಿಯನ್ನು ಕಸಿದುಕೊಳ್ಳುತ್ತವೆ. ತೃಪ್ತಿ ಮತ್ತು ಸ್ವಾವಲಂಬನೆ ನೆಮ್ಮದಿಗೆ ನೆರವಾಗುತ್ತವೆ."
+  },
+  "word_by_word": [
+    {
+      "dev": "ईर्ष्यी",
+      "iast": "īrṣyī",
+      "en": "Jealous",
+      "kn": "ಪದಾರ್ಥ: ईर्ष्यी"
+    },
+    {
+      "dev": "घृणी",
+      "iast": "ghṛṇī",
+      "en": " hostile",
+      "kn": "ಪದಾರ್ಥ: घृणी"
+    },
+    {
+      "dev": "न",
+      "iast": "na",
+      "en": " not content",
+      "kn": "ಪದಾರ್ಥ: न"
+    },
+    {
+      "dev": "सन्तुष्टः",
+      "iast": "santuṣṭaḥ",
+      "en": "Jealous; hostile; not content",
+      "kn": "ಪದಾರ್ಥ: सन्तुष्टः"
+    },
+    {
+      "dev": "क्रोधनो",
+      "iast": "krodhano",
+      "en": "Angry",
+      "kn": "ಪದಾರ್ಥ: क्रोधनो"
+    },
+    {
+      "dev": "नित्यशङ्कितः",
+      "iast": "nityaśaṅkitaḥ",
+      "en": " habitually suspicious",
+      "kn": "ಪದಾರ್ಥ: नित्यशङ्कितः"
+    },
+    {
+      "dev": "परभाग्योपजीवी",
+      "iast": "parabhāgyopajīvī",
+      "en": "Living on another's fortune",
+      "kn": "ಪದಾರ್ಥ: परभाग्योपजीवी"
+    },
+    {
+      "dev": "च",
+      "iast": "ca",
+      "en": " and",
+      "kn": "ಪದಾರ್ಥ: च"
+    },
+    {
+      "dev": "षडेते",
+      "iast": "ṣaḍete",
+      "en": "These six",
+      "kn": "ಪದಾರ್ಥ: षडेते"
+    },
+    {
+      "dev": "नित्यदुःखिताः",
+      "iast": "nityaduḥkhitāḥ",
+      "en": " continually unhappy",
+      "kn": "ಪದಾರ್ಥ: नित्यदुःखिताः"
+    }
+  ],
+  "practice": [
+    {
+      "id": "a",
+      "order": 1,
+      "dev": "ईर्ष्यी घृणी न सन्तुष्टः",
+      "iast": "īrṣyī ghṛṇī na santuṣṭaḥ",
+      "kn": "ಈರ್ಷ್ಯೀ ಘೃಣೀ ನ ಸನ್ತುಷ್ಟಃ",
+      "audio": "audio/vidura/sloka-017-part-01.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "b",
+      "order": 2,
+      "dev": "क्रोधनो नित्यशङ्कितः",
+      "iast": "krodhano nityaśaṅkitaḥ",
+      "kn": "ಕ್ರೋಧನೋ ನಿತ್ಯಶಙ್ಕಿತಃ",
+      "audio": "audio/vidura/sloka-017-part-02.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "c",
+      "order": 3,
+      "dev": "परभाग्योपजीवी च",
+      "iast": "parabhāgyopajīvī ca",
+      "kn": "ಪರಭಾಗ್ಯೋಪಜೀವೀ ಚ",
+      "audio": "audio/vidura/sloka-017-part-03.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "d",
+      "order": 4,
+      "dev": "षडेते नित्यदुःखिताः",
+      "iast": "ṣaḍete nityaduḥkhitāḥ",
+      "kn": "ಷಡೇತೇ ನಿತ್ಯದುಃಖಿತಾಃ",
+      "audio": "audio/vidura/sloka-017-part-04.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    }
+  ],
+  "practice_source": "editorial-pada-boundaries",
+  "practice_note": "Practice segments follow printed lines and editorial word boundaries; confirm chanting pauses before audio publishing.",
+  "audio": {
+    "full": "audio/vidura/sloka-017-full.mp3",
+    "clips": [
+      "audio/vidura/sloka-017-part-01.mp3",
+      "audio/vidura/sloka-017-part-02.mp3",
+      "audio/vidura/sloka-017-part-03.mp3",
+      "audio/vidura/sloka-017-part-04.mp3"
+    ],
+    "recording_status": "awaiting-vagdhenu-generation",
+    "meter": "anushtubh",
+    "full_playback": "single_continuous_recording",
+    "repeat_control": "browser-per-part"
+  },
+  "source": {
+    "page": 7,
+    "section": "Atha Viduranītiḥ",
+    "translation": "verbatim from supplied PDF",
+    "study_meanings": "editorial",
+    "notes": "Devanagari IAST readings follow the handout; practice partitions editorial."
+  }
+}
