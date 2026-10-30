@@ -27,28 +27,76 @@
   },
   "word_by_word": [
     {
-      "dev": "सत्येन रक्ष्यते धर्मो",
-      "iast": "satyena rakṣyate dharmo",
-      "en": "Dharma is protected by truth",
-      "kn": "ಧರ್ಮವು ಸತ್ಯದಿಂದ ರಕ್ಷಿತವಾಗುತ್ತದೆ"
+      "dev": "सत्येन",
+      "iast": "satyena",
+      "en": "By truth",
+      "kn": "ಸತ್ಯದಿಂದ"
     },
     {
-      "dev": "विद्या योगेन रक्ष्यते",
-      "iast": "vidyā yogena rakṣyate",
-      "en": "Knowledge is protected by practice",
-      "kn": "ವಿದ್ಯೆಯು ಅಭ್ಯಾಸದಿಂದ ರಕ್ಷಿತವಾಗುತ್ತದೆ"
+      "dev": "रक्ष्यते",
+      "iast": "rakṣyate",
+      "en": "Is protected",
+      "kn": "ರಕ್ಷಿತವಾಗುತ್ತದೆ"
     },
     {
-      "dev": "मृजया रक्ष्यते रूपं",
-      "iast": "mṛjayā rakṣyate rūpaṃ",
-      "en": "Appearance is preserved through cleanliness",
-      "kn": "ರೂಪವು ಸ್ವಚ್ಛತೆಯಿಂದ ರಕ್ಷಿತವಾಗುತ್ತದೆ"
+      "dev": "धर्मो",
+      "iast": "dharmo",
+      "en": "Dharma",
+      "kn": "ಧರ್ಮ"
     },
     {
-      "dev": "कुलं वृत्तेन रक्ष्यते",
-      "iast": "kulaṃ vṛttena rakṣyate",
-      "en": "Family standing is protected by conduct",
-      "kn": "ಕುಲವು ಸದಾಚಾರದಿಂದ ರಕ್ಷಿತವಾಗುತ್ತದೆ"
+      "dev": "विद्या",
+      "iast": "vidyā",
+      "en": "Learning",
+      "kn": "ವಿದ್ಯೆ"
+    },
+    {
+      "dev": "योगेन",
+      "iast": "yogena",
+      "en": "By application and practice",
+      "kn": "ಅಭ್ಯಾಸದಿಂದ"
+    },
+    {
+      "dev": "रक्ष्यते",
+      "iast": "rakṣyate",
+      "en": "Is protected",
+      "kn": "ರಕ್ಷಿತವಾಗುತ್ತದೆ"
+    },
+    {
+      "dev": "मृजया",
+      "iast": "mṛjayā",
+      "en": "By cleanliness",
+      "kn": "ಶುಚಿತ್ವದಿಂದ"
+    },
+    {
+      "dev": "रक्ष्यते",
+      "iast": "rakṣyate",
+      "en": "Is protected",
+      "kn": "ರಕ್ಷಿತವಾಗುತ್ತದೆ"
+    },
+    {
+      "dev": "रूपं",
+      "iast": "rūpaṃ",
+      "en": "Appearance",
+      "kn": "ರೂಪ"
+    },
+    {
+      "dev": "कुलं",
+      "iast": "kulaṃ",
+      "en": "Family lineage",
+      "kn": "ಕುಲ"
+    },
+    {
+      "dev": "वृत्तेन",
+      "iast": "vṛttena",
+      "en": "By conduct",
+      "kn": "ನಡತೆಯಿಂದ"
+    },
+    {
+      "dev": "रक्ष्यते",
+      "iast": "rakṣyate",
+      "en": "Is protected",
+      "kn": "ರಕ್ಷಿತವಾಗುತ್ತದೆ"
     }
   ],
   "practice": [
@@ -110,6 +158,6 @@
     "translation": "verbatim from supplied PDF",
     "study_meanings": "editorial",
     "notes": null,
-    "word_gloss_level": "bilingual phrase-aligned glosses; individual-token glosses pending philological review"
+    "word_gloss_level": "editorial individual source-token meanings"
   }
 }
