@@ -27,76 +27,28 @@
   },
   "word_by_word": [
     {
-      "dev": "परं",
-      "iast": "paraṃ",
-      "en": "Another person",
-      "kn": "ಪದಾರ್ಥ: परं"
+      "dev": "परं क्षिपति दोषेण",
+      "iast": "paraṃ kṣipati doṣeṇa",
+      "en": "Blames another for a fault",
+      "kn": "ಇತರರನ್ನು ದೋಷದಿಂದ ದೂಷಿಸುತ್ತಾನೆ"
     },
     {
-      "dev": "क्षिपति",
-      "iast": "kṣipati",
-      "en": " accuses",
-      "kn": "ಪದಾರ್ಥ: क्षिपति"
+      "dev": "वर्तमानः स्वयं तथा",
+      "iast": "vartamānaḥ svayaṃ tathā",
+      "en": "While doing the same oneself",
+      "kn": "ತಾನೂ ಹಾಗೆಯೇ ಇರುವವನು"
     },
     {
-      "dev": "दोषेण",
-      "iast": "doṣeṇa",
-      "en": " with a fault",
-      "kn": "ಪದಾರ್ಥ: दोषेण"
+      "dev": "यश्च क्रुध्यत्यनीशानः",
+      "iast": "yaśca krudhyatyanīśānaḥ",
+      "en": "Who grows angry without authority",
+      "kn": "ಅಧಿಕಾರವಿಲ್ಲದೆ ಕೋಪಗೊಳ್ಳುವವನು"
     },
     {
-      "dev": "वर्तमानः",
-      "iast": "vartamānaḥ",
-      "en": "Being in the same condition",
-      "kn": "ಪದಾರ್ಥ: वर्तमानः"
-    },
-    {
-      "dev": "स्वयं",
-      "iast": "svayaṃ",
-      "en": " himself",
-      "kn": "ಪದಾರ್ಥ: स्वयं"
-    },
-    {
-      "dev": "तथा",
-      "iast": "tathā",
-      "en": " likewise",
-      "kn": "ಪದಾರ್ಥ: तथा"
-    },
-    {
-      "dev": "यश्च",
-      "iast": "yaśca",
-      "en": "And one who",
-      "kn": "ಪದಾರ್ಥ: यश्च"
-    },
-    {
-      "dev": "क्रुध्यत्यनीशानः",
-      "iast": "krudhyatyanīśānaḥ",
-      "en": " becomes angry without authority",
-      "kn": "ಪದಾರ್ಥ: क्रुध्यत्यनीशानः"
-    },
-    {
-      "dev": "स",
-      "iast": "sa",
-      "en": "He indeed",
-      "kn": "ಪದಾರ್ಥ: स"
-    },
-    {
-      "dev": "च",
-      "iast": "ca",
-      "en": " the most foolish",
-      "kn": "ಪದಾರ್ಥ: च"
-    },
-    {
-      "dev": "मूढतमो",
-      "iast": "mūḍhatamo",
-      "en": " person",
-      "kn": "ಪದಾರ್ಥ: मूढतमो"
-    },
-    {
-      "dev": "नरः",
-      "iast": "naraḥ",
-      "en": "He indeed; the most foolish; person",
-      "kn": "ಪದಾರ್ಥ: नरः"
+      "dev": "स च मूढतमो नरः",
+      "iast": "sa ca mūḍhatamo naraḥ",
+      "en": "He is the greatest fool",
+      "kn": "ಅವನೇ ಅತ್ಯಂತ ಮೂಢ ವ್ಯಕ್ತಿ"
     }
   ],
   "practice": [
@@ -157,6 +109,7 @@
     "section": "Atha Viduranītiḥ",
     "translation": "verbatim from supplied PDF",
     "study_meanings": "editorial",
-    "notes": "Devanagari IAST readings follow the handout; practice partitions editorial."
+    "notes": "Devanagari IAST readings follow the handout; practice partitions editorial.",
+    "word_gloss_level": "bilingual phrase-aligned glosses; individual-token glosses pending philological review"
   }
 }
