@@ -29,26 +29,26 @@
     {
       "dev": "सत्येन रक्ष्यते धर्मो",
       "iast": "satyena rakṣyate dharmo",
-      "en": "Dharma is guarded by truth",
-      "kn": "ಗುಣಗಳು ತಾನಾಗಿಯೇ ಉಳಿಯುವುದಿಲ್ಲ. ಸತ್ಯ, ಅಭ್ಯಾಸ, ಶುಚಿತ್ವ ಮತ್ತು ಸದಾಚಾರ ಅವುಗಳನ್ನು ಕಾಪಾಡುತ್ತವೆ."
+      "en": "Dharma is protected by truth",
+      "kn": "ಧರ್ಮವು ಸತ್ಯದಿಂದ ರಕ್ಷಿತವಾಗುತ್ತದೆ"
     },
     {
       "dev": "विद्या योगेन रक्ष्यते",
       "iast": "vidyā yogena rakṣyate",
-      "en": "Knowledge is guarded by practice",
-      "kn": "ಗುಣಗಳು ತಾನಾಗಿಯೇ ಉಳಿಯುವುದಿಲ್ಲ. ಸತ್ಯ, ಅಭ್ಯಾಸ, ಶುಚಿತ್ವ ಮತ್ತು ಸದಾಚಾರ ಅವುಗಳನ್ನು ಕಾಪಾಡುತ್ತವೆ."
+      "en": "Knowledge is protected by practice",
+      "kn": "ವಿದ್ಯೆಯು ಅಭ್ಯಾಸದಿಂದ ರಕ್ಷಿತವಾಗುತ್ತದೆ"
     },
     {
       "dev": "मृजया रक्ष्यते रूपं",
       "iast": "mṛjayā rakṣyate rūpaṃ",
-      "en": "Appearance is maintained by cleanliness",
-      "kn": "ಗುಣಗಳು ತಾನಾಗಿಯೇ ಉಳಿಯುವುದಿಲ್ಲ. ಸತ್ಯ, ಅಭ್ಯಾಸ, ಶುಚಿತ್ವ ಮತ್ತು ಸದಾಚಾರ ಅವುಗಳನ್ನು ಕಾಪಾಡುತ್ತವೆ."
+      "en": "Appearance is preserved through cleanliness",
+      "kn": "ರೂಪವು ಸ್ವಚ್ಛತೆಯಿಂದ ರಕ್ಷಿತವಾಗುತ್ತದೆ"
     },
     {
       "dev": "कुलं वृत्तेन रक्ष्यते",
       "iast": "kulaṃ vṛttena rakṣyate",
-      "en": "A lineage is protected through conduct",
-      "kn": "ಗುಣಗಳು ತಾನಾಗಿಯೇ ಉಳಿಯುವುದಿಲ್ಲ. ಸತ್ಯ, ಅಭ್ಯಾಸ, ಶುಚಿತ್ವ ಮತ್ತು ಸದಾಚಾರ ಅವುಗಳನ್ನು ಕಾಪಾಡುತ್ತವೆ."
+      "en": "Family standing is protected by conduct",
+      "kn": "ಕುಲವು ಸದಾಚಾರದಿಂದ ರಕ್ಷಿತವಾಗುತ್ತದೆ"
     }
   ],
   "practice": [
@@ -109,6 +109,7 @@
     "section": "Atha Viduranītiḥ",
     "translation": "verbatim from supplied PDF",
     "study_meanings": "editorial",
-    "notes": null
+    "notes": null,
+    "word_gloss_level": "bilingual phrase-aligned glosses; individual-token glosses pending philological review"
   }
 }
