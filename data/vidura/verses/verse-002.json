@@ -146,9 +146,10 @@
       "audio/vidura/sloka-002-part-03.mp3",
       "audio/vidura/sloka-002-part-04.mp3"
     ],
-    "full_playback": "assemble-four-clips-in-order",
+    "full_playback": "single_continuous_recording",
     "repeat_control": "browser-per-part",
-    "recording_status": "awaiting-vagdhenu-generation"
+    "recording_status": "awaiting-vagdhenu-generation",
+    "full": "audio/vidura/sloka-002-full.mp3"
   },
   "source": {
     "page": 3,
