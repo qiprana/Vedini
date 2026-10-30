@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "1.2.0",
   "id": "vidura-niti",
   "slug": "vidura",
   "title": "Viduranītiḥ",
@@ -42,10 +42,10 @@
     "full_playback": "one uninterrupted full-verse recording",
     "practice_playback": "repeat each clip using user-selected positive integer count",
     "generator": "scripts/generate_vidura_audio.py",
-    "generated_assets_status": "not yet generated",
+    "generated_assets_status": "ten source recordings present on feature branch; listening review pending",
     "full_template": "audio/vidura/sloka-{nnn}-full.mp3",
     "files_per_verse": 5,
-    "generation_speed": 0.95,
+    "generation_speed": 1.05,
     "shruti": {
       "implementation": "continuous-browser-Web-Audio-Sa-Pa-drone",
       "baked_into_mp3": false,
@@ -53,6 +53,18 @@
       "independent_of_voice": true,
       "adjustable_tonic": true,
       "adjustable_volume": true
+    },
+    "browser_playback_speed": {
+      "default": 0.9,
+      "min": 0.7,
+      "max": 1.2,
+      "step": 0.05,
+      "preserve_pitch": true,
+      "applies_to": [
+        "full",
+        "practice_clips"
+      ],
+      "independent_shruti": true
     }
   },
   "content_notes": "Printed Devanagari, IAST and English overall meanings are sourced from the supplied handout. Kannada text and word meanings are editorial. Pink highlights in verse 1 indicate division points only, not a prescribed repetition count. Verse 2 has no highlights; four practice cuts there are editorial. Vāgdhenu files must be generated and pronunciation checked separately."
