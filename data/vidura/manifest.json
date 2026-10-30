@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "id": "vidura-niti",
+  "slug": "vidura",
+  "title": "Viduranītiḥ",
+  "sanskrit": "विदुरनीतिः",
+  "description": "Practical wisdom on learning, conduct, character and wise living from the Mahābhārata.",
+  "source": {
+    "title": "Samskrita Bharati · Shlōka-spardhā 2027 · Viduranītiḥ",
+    "document": "S2027_viduranItiH_PG.pdf",
+    "section": "Atha Viduranītiḥ",
+    "source_total_verses": 25,
+    "verses_1_2_pages": [
+      2,
+      3
+    ],
+    "translation_credit": "Samskrita Bharati"
+  },
+  "available_verses": 2,
+  "planned_verses": 25,
+  "reading_languages": [
+    "dev",
+    "kn"
+  ],
+  "transliteration": "iast",
+  "meaning_languages": [
+    "en",
+    "kn"
+  ],
+  "features": {
+    "word_by_word": true,
+    "combined_deeper_meaning": true,
+    "search": true,
+    "full_chant": true,
+    "call_and_repeat": true
+  },
+  "audio": {
+    "full": "audio/vidura/sloka-{nnn}-full.mp3",
+    "call_repeat": "audio/vidura/sloka-{nnn}-call-repeat.mp3",
+    "timing": "data/vidura/timings/verse-{nnn}.json",
+    "generator": "scripts/generate_vidura_audio.py"
+  },
+  "content_notes": "Devanagari, IAST and English overall translations derive from the supplied handout. Kannada renderings, individual word explanations, practice splits and deeper interpretations are newly prepared editorial study aids. Only verse 1 has highlighted phrases in the PDF. Audio is generated separately using Vāgdhenu/CowChant and must be reviewed before publishing."
+}
