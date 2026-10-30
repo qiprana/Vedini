@@ -44,7 +44,16 @@
     "generator": "scripts/generate_vidura_audio.py",
     "generated_assets_status": "not yet generated",
     "full_template": "audio/vidura/sloka-{nnn}-full.mp3",
-    "files_per_verse": 5
+    "files_per_verse": 5,
+    "generation_speed": 0.95,
+    "shruti": {
+      "implementation": "continuous-browser-Web-Audio-Sa-Pa-drone",
+      "baked_into_mp3": false,
+      "enabled_by_default": true,
+      "independent_of_voice": true,
+      "adjustable_tonic": true,
+      "adjustable_volume": true
+    }
   },
   "content_notes": "Printed Devanagari, IAST and English overall meanings are sourced from the supplied handout. Kannada text and word meanings are editorial. Pink highlights in verse 1 indicate division points only, not a prescribed repetition count. Verse 2 has no highlights; four practice cuts there are editorial. Vāgdhenu files must be generated and pronunciation checked separately."
 }
