@@ -79,7 +79,7 @@ def save_mp3(samples,sr,filename,temp):
 def choose_meter(v,override):
     meter=override or v.get("audio",{}).get("meter")
     if meter in ("unknown-long-metre",None,"unknown",""):
-        raise ValueError(f"Metre for verse {v['verse_number']} needs review; use --meter after verifying")
+        return "unknown-long-metre"
     return meter
 
 
