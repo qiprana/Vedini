@@ -1789,7 +1789,7 @@ function practiceSyncButtons(){
 }
 function clearRangeAudio(){
  if(rangeAudio.ticker){clearInterval(rangeAudio.ticker);rangeAudio.ticker=null;}
- rangeAudio.nodes.forEach(node=>{try{node.stop();node.disconnect();}catch(_){}});
+ rangeAudio.nodes.forEach(node=>{try{node.source.stop();node.source.disconnect();}catch(_){}});
  rangeAudio.nodes=[];rangeAudio.queue=[];rangeAudio.cursor=0;rangeAudio.scheduledUntil=0;rangeAudio.busy=false;
  if(rangeAudio.ctx){rangeAudio.ctx.close().catch(()=>{});rangeAudio.ctx=null;}
 }
@@ -1905,7 +1905,7 @@ async function practiceBegin(from,to,reps,dhyanaMode=false){
   await Promise.all([...new Set(queue.slice(0,4).map(i=>i.url))].map(url=>loadRangeBuffer(url,ctx)));
   if(token!==practice.token)return;
   rangeAudio.scheduledUntil=ctx.currentTime+.1;
-  rangeAudio.lastVerse=0;rangeAudio.lastPass=0;
+  rangeAudio.lastVerse=from;rangeAudio.lastPass=0;
   practiceShowVerse(from,true);
   practiceSyncButtons();
   await scheduleRange(token);
