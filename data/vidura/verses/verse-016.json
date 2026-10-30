@@ -1,0 +1,157 @@
+{
+  "id": "vidura-016",
+  "collection": "vidura-niti",
+  "verse_number": 16,
+  "theme": "Six virtues to preserve",
+  "reading": {
+    "dev": [
+      "षडेते तु गुणाः पुंसा न हातव्याः कदाचन ।",
+      "सत्यं दानमनालस्यमनसूया क्षमा धृतिः ॥ १६ ॥"
+    ],
+    "iast": [
+      "ṣaḍete tu guṇāḥ puṃsā na hātavyāḥ kadācana |",
+      "satyaṃ dānamanālasyamanasūyā kṣamā dhṛtiḥ || 16 ||"
+    ],
+    "kn": [
+      "ಷಡೇತೇ ತು ಗುಣಾಃ ಪುಂಸಾ ನ ಹಾತವ್ಯಾಃ ಕದಾಚನ ೤",
+      "ಸತ್ಯಂ ದಾನಮನಾಲಸ್ಯಮನಸೂಯಾ ಕ್ಷಮಾ ಧೃತಿಃ ೥ ೧೬ ೥"
+    ]
+  },
+  "meaning": {
+    "en": "One should never abandon these six virtues- truth, generosity, hard work, non-jealousy, forgiveness and patience.",
+    "kn": "ಸತ್ಯ, ದಾನ, ಸೋಮಾರಿತನವಿಲ್ಲದ ಪರಿಶ್ರಮ, ಅಸೂಯೆ ಇಲ್ಲದ ಮನಸ್ಸು, ಕ್ಷಮೆ ಮತ್ತು ಧೈರ್ಯ — ಈ ಆರು ಗುಣಗಳನ್ನು ಎಂದಿಗೂ ಬಿಡಬಾರದು."
+  },
+  "deeper_meaning": {
+    "en": "These virtues turn ideals into daily habits: honesty, generosity, diligence, freedom from envy, forgiveness and steadiness. Vidura treats character as something to maintain continuously, not display occasionally.",
+    "kn": "ಸತ್ಯನಿಷ್ಠೆ, ಔದಾರ್ಯ, ಪರಿಶ್ರಮ, ಅಸೂಯೆ ರಹಿತ ಮನಸ್ಸು, ಕ್ಷಮೆ ಮತ್ತು ಸ್ಥಿರತೆ ದೈನಂದಿನ ಜೀವನದಲ್ಲಿ ಅಭ್ಯಾಸವಾಗಬೇಕಾದ ಗುಣಗಳು."
+  },
+  "word_by_word": [
+    {
+      "dev": "षडेते",
+      "iast": "ṣaḍete",
+      "en": "These six",
+      "kn": "ಈ ಆರು"
+    },
+    {
+      "dev": "तु",
+      "iast": "tu",
+      "en": "Indeed",
+      "kn": "ನಿಜವಾಗಿ"
+    },
+    {
+      "dev": "गुणाः",
+      "iast": "guṇāḥ",
+      "en": "Virtues",
+      "kn": "ಗುಣಗಳು"
+    },
+    {
+      "dev": "पुंसा",
+      "iast": "puṃsā",
+      "en": "Of a person",
+      "kn": "ಮನುಷ್ಯನ"
+    },
+    {
+      "dev": "न",
+      "iast": "na",
+      "en": "Not",
+      "kn": "ಬೇಡ"
+    },
+    {
+      "dev": "हातव्याः",
+      "iast": "hātavyāḥ",
+      "en": "To be abandoned",
+      "kn": "ತ್ಯಜಿಸಬೇಕಾದ"
+    },
+    {
+      "dev": "कदाचन",
+      "iast": "kadācana",
+      "en": "At any time",
+      "kn": "ಎಂದಿಗೂ"
+    },
+    {
+      "dev": "सत्यं",
+      "iast": "satyaṃ",
+      "en": "Truth",
+      "kn": "ಸತ್ಯ"
+    },
+    {
+      "dev": "दानमनालस्यमनसूया",
+      "iast": "dānamanālasyamanasūyā",
+      "en": "Charity, diligence, absence of envy",
+      "kn": "ದಾನ, ಪರಿಶ್ರಮ, ಅಸೂಯೆಯಿಲ್ಲದಿರುವುದು"
+    },
+    {
+      "dev": "क्षमा",
+      "iast": "kṣamā",
+      "en": "Forgiveness",
+      "kn": "ಕ್ಷಮೆ"
+    },
+    {
+      "dev": "धृतिः",
+      "iast": "dhṛtiḥ",
+      "en": "Fortitude",
+      "kn": "ಸ್ಥೈರ್ಯ"
+    }
+  ],
+  "practice": [
+    {
+      "id": "a",
+      "order": 1,
+      "dev": "षडेते तु गुणाः पुंसा",
+      "iast": "ṣaḍete tu guṇāḥ puṃsā",
+      "kn": "ಷಡೇತೇ ತು ಗುಣಾಃ ಪುಂಸಾ",
+      "audio": "audio/vidura/sloka-016-part-01.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "b",
+      "order": 2,
+      "dev": "न हातव्याः कदाचन",
+      "iast": "na hātavyāḥ kadācana",
+      "kn": "ನ ಹಾತವ್ಯಾಃ ಕದಾಚನ",
+      "audio": "audio/vidura/sloka-016-part-02.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "c",
+      "order": 3,
+      "dev": "सत्यं दानमनालस्यमनसूया",
+      "iast": "satyaṃ dānamanālasyamanasūyā",
+      "kn": "ಸತ್ಯಂ ದಾನಮನಾಲಸ್ಯಮನಸೂಯಾ",
+      "audio": "audio/vidura/sloka-016-part-03.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "d",
+      "order": 4,
+      "dev": "क्षमा धृतिः",
+      "iast": "kṣamā dhṛtiḥ",
+      "kn": "ಕ್ಷಮಾ ಧೃತಿಃ",
+      "audio": "audio/vidura/sloka-016-part-04.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    }
+  ],
+  "practice_source": "editorial-pada-boundaries",
+  "practice_note": "Practice segments follow printed lines and editorial word boundaries; confirm chanting pauses before audio publishing.",
+  "audio": {
+    "full": "audio/vidura/sloka-016-full.mp3",
+    "clips": [
+      "audio/vidura/sloka-016-part-01.mp3",
+      "audio/vidura/sloka-016-part-02.mp3",
+      "audio/vidura/sloka-016-part-03.mp3",
+      "audio/vidura/sloka-016-part-04.mp3"
+    ],
+    "recording_status": "awaiting-vagdhenu-generation",
+    "meter": "anushtubh",
+    "full_playback": "single_continuous_recording",
+    "repeat_control": "browser-per-part"
+  },
+  "source": {
+    "page": 7,
+    "section": "Atha Viduranītiḥ",
+    "translation": "verbatim from supplied PDF",
+    "study_meanings": "editorial",
+    "notes": "Devanagari IAST readings follow the handout; practice partitions editorial.",
+    "word_gloss_level": "editorial individual source-token meanings"
+  }
+}

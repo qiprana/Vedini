@@ -1,0 +1,151 @@
+{
+  "id": "vidura-020",
+  "collection": "vidura-niti",
+  "verse_number": 20,
+  "theme": "Harmony among relatives",
+  "reading": {
+    "dev": [
+      "सम्भोजनं संकथनं सम्प्रीतिश्च परस्परम् ।",
+      "जातिभिः सह कार्याणि न विरोधः कदाचन ॥ २० ॥"
+    ],
+    "iast": [
+      "sambhojanaṃ saṃkathanaṃ samprītiśca parasparam |",
+      "jātibhiḥ saha kāryāṇi na virodhaḥ kadācana || 20 ||"
+    ],
+    "kn": [
+      "ಸಮ್ಭೋಜನಂ ಸಂಕಥನಂ ಸಮ್ಪ್ರೀತಿಶ್ಚ ಪರಸ್ಪರಮ್ ೤",
+      "ಜಾತಿಭಿಃ ಸಹ ಕಾರ್ಯಾಣಿ ನ ವಿರೋಧಃ ಕದಾಚನ ೥ ೨೦ ೥"
+    ]
+  },
+  "meaning": {
+    "en": "One should eat jointly, talk smoothly and be with affection with the relations. One should never oppose them.",
+    "kn": "ಬಂಧುಗಳೊಂದಿಗೆ ಒಟ್ಟಿಗೆ ಊಟ ಮಾಡುವುದು, ಸೌಹಾರ್ದದಿಂದ ಮಾತನಾಡುವುದು ಮತ್ತು ಪರಸ್ಪರ ಪ್ರೀತಿ ಬೆಳೆಸುವುದು ಒಳ್ಳೆಯದು; ಅನವಶ್ಯಕ ವಿರೋಧ ತಪ್ಪಿಸಬೇಕು."
+  },
+  "deeper_meaning": {
+    "en": "Sharing food and conversation can keep relationships alive. The verse advocates goodwill and affection among relatives rather than nursing avoidable conflicts.",
+    "kn": "ಒಟ್ಟಿನ ಊಟ, ಮಾತುಕತೆ ಮತ್ತು ಪ್ರೀತಿ ಕುಟುಂಬದ ಬಾಂಧವ್ಯವನ್ನು ಗಟ್ಟಿಗೊಳಿಸುತ್ತವೆ; ಅನವಶ್ಯಕ ಕಲಹ ಸಂಬಂಧವನ್ನು ದುರ್ಬಲಗೊಳಿಸುತ್ತದೆ."
+  },
+  "word_by_word": [
+    {
+      "dev": "सम्भोजनं",
+      "iast": "sambhojanaṃ",
+      "en": "Eating together",
+      "kn": "ಒಟ್ಟಿಗೆ ಊಟ"
+    },
+    {
+      "dev": "संकथनं",
+      "iast": "saṃkathanaṃ",
+      "en": "Talking together",
+      "kn": "ಒಟ್ಟಿಗೆ ಮಾತುಕತೆ"
+    },
+    {
+      "dev": "सम्प्रीतिश्च",
+      "iast": "samprītiśca",
+      "en": "And mutual affection",
+      "kn": "ಮತ್ತು ಪರಸ್ಪರ ಪ್ರೀತಿ"
+    },
+    {
+      "dev": "परस्परम्",
+      "iast": "parasparam",
+      "en": "With one another",
+      "kn": "ಒಬ್ಬರೊಂದಿಗೆ ಒಬ್ಬರು"
+    },
+    {
+      "dev": "जातिभिः",
+      "iast": "jātibhiḥ",
+      "en": "With one's relations",
+      "kn": "ಬಂಧುಗಳೊಂದಿಗೆ"
+    },
+    {
+      "dev": "सह",
+      "iast": "saha",
+      "en": "Together with",
+      "kn": "ಜೊತೆಗೆ"
+    },
+    {
+      "dev": "कार्याणि",
+      "iast": "kāryāṇi",
+      "en": "Things to be done",
+      "kn": "ಮಾಡಬೇಕಾದ ಕಾರ್ಯಗಳು"
+    },
+    {
+      "dev": "न",
+      "iast": "na",
+      "en": "Not",
+      "kn": "ಬೇಡ"
+    },
+    {
+      "dev": "विरोधः",
+      "iast": "virodhaḥ",
+      "en": "Conflict",
+      "kn": "ವಿರೋಧ"
+    },
+    {
+      "dev": "कदाचन",
+      "iast": "kadācana",
+      "en": "At any time",
+      "kn": "ಎಂದಿಗೂ"
+    }
+  ],
+  "practice": [
+    {
+      "id": "a",
+      "order": 1,
+      "dev": "सम्भोजनं संकथनं",
+      "iast": "sambhojanaṃ saṃkathanaṃ",
+      "kn": "ಸಮ್ಭೋಜನಂ ಸಂಕಥನಂ",
+      "audio": "audio/vidura/sloka-020-part-01.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "b",
+      "order": 2,
+      "dev": "सम्प्रीतिश्च परस्परम्",
+      "iast": "samprītiśca parasparam",
+      "kn": "ಸಮ್ಪ್ರೀತಿಶ್ಚ ಪರಸ್ಪರಮ್",
+      "audio": "audio/vidura/sloka-020-part-02.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "c",
+      "order": 3,
+      "dev": "जातिभिः सह कार्याणि",
+      "iast": "jātibhiḥ saha kāryāṇi",
+      "kn": "ಜಾತಿಭಿಃ ಸಹ ಕಾರ್ಯಾಣಿ",
+      "audio": "audio/vidura/sloka-020-part-03.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "d",
+      "order": 4,
+      "dev": "न विरोधः कदाचन",
+      "iast": "na virodhaḥ kadācana",
+      "kn": "ನ ವಿರೋಧಃ ಕದಾಚನ",
+      "audio": "audio/vidura/sloka-020-part-04.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    }
+  ],
+  "practice_source": "editorial-pada-boundaries",
+  "practice_note": "Four chantable phrase units by editorial reading boundaries. Audition audio before publishing.",
+  "audio": {
+    "full": "audio/vidura/sloka-020-full.mp3",
+    "clips": [
+      "audio/vidura/sloka-020-part-01.mp3",
+      "audio/vidura/sloka-020-part-02.mp3",
+      "audio/vidura/sloka-020-part-03.mp3",
+      "audio/vidura/sloka-020-part-04.mp3"
+    ],
+    "recording_status": "awaiting-vagdhenu-generation",
+    "meter": "anushtubh",
+    "full_playback": "single_continuous_recording",
+    "repeat_control": "browser-per-part"
+  },
+  "source": {
+    "page": 8,
+    "section": "Atha Viduranītiḥ",
+    "translation": "verbatim from supplied PDF",
+    "study_meanings": "editorial",
+    "notes": null,
+    "word_gloss_level": "editorial individual source-token meanings"
+  }
+}

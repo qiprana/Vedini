@@ -1,0 +1,163 @@
+{
+  "id": "vidura-021",
+  "collection": "vidura-niti",
+  "verse_number": 21,
+  "theme": "How virtues are preserved",
+  "reading": {
+    "dev": [
+      "सत्येन रक्ष्यते धर्मो विद्या योगेन रक्ष्यते ।",
+      "मृजया रक्ष्यते रूपं कुलं वृत्तेन रक्ष्यते ॥ २१ ॥"
+    ],
+    "iast": [
+      "satyena rakṣyate dharmo vidyā yogena rakṣyate |",
+      "mṛjayā rakṣyate rūpaṃ kulaṃ vṛttena rakṣyate || 21 ||"
+    ],
+    "kn": [
+      "ಸತ್ಯೇನ ರಕ್ಷ್ಯತೇ ಧರ್ಮೋ ವಿದ್ಯಾ ಯೋಗೇನ ರಕ್ಷ್ಯತೇ ೤",
+      "ಮೃಜಯಾ ರಕ್ಷ್ಯತೇ ರೂಪಂ ಕುಲಂ ವೃತ್ತೇನ ರಕ್ಷ್ಯತೇ ೥ ೨೧ ೥"
+    ]
+  },
+  "meaning": {
+    "en": "Dharma is protected by truth, knowledge is protected by practice, beauty is protected by cleanliness and a dynasty is protected by good character.",
+    "kn": "ಸತ್ಯದಿಂದ ಧರ್ಮ ರಕ್ಷಿತವಾಗುತ್ತದೆ; ಅಭ್ಯಾಸದಿಂದ ವಿದ್ಯೆ ಉಳಿಯುತ್ತದೆ; ಶುಚಿತ್ವದಿಂದ ರೂಪ ಸಂರಕ್ಷಿತವಾಗುತ್ತದೆ; ಉತ್ತಮ ನಡತೆಯಿಂದ ಕುಲದ ಗೌರವ ಉಳಿಯುತ್ತದೆ."
+  },
+  "deeper_meaning": {
+    "en": "Good qualities need sustaining practices. Truth supports dharma, learning requires use, cleanliness maintains appearance, and conduct—not birth alone—protects a family's standing.",
+    "kn": "ಗುಣಗಳು ತಾನಾಗಿಯೇ ಉಳಿಯುವುದಿಲ್ಲ. ಸತ್ಯ, ಅಭ್ಯಾಸ, ಶುಚಿತ್ವ ಮತ್ತು ಸದಾಚಾರ ಅವುಗಳನ್ನು ಕಾಪಾಡುತ್ತವೆ."
+  },
+  "word_by_word": [
+    {
+      "dev": "सत्येन",
+      "iast": "satyena",
+      "en": "By truth",
+      "kn": "ಸತ್ಯದಿಂದ"
+    },
+    {
+      "dev": "रक्ष्यते",
+      "iast": "rakṣyate",
+      "en": "Is protected",
+      "kn": "ರಕ್ಷಿತವಾಗುತ್ತದೆ"
+    },
+    {
+      "dev": "धर्मो",
+      "iast": "dharmo",
+      "en": "Dharma",
+      "kn": "ಧರ್ಮ"
+    },
+    {
+      "dev": "विद्या",
+      "iast": "vidyā",
+      "en": "Learning",
+      "kn": "ವಿದ್ಯೆ"
+    },
+    {
+      "dev": "योगेन",
+      "iast": "yogena",
+      "en": "By application and practice",
+      "kn": "ಅಭ್ಯಾಸದಿಂದ"
+    },
+    {
+      "dev": "रक्ष्यते",
+      "iast": "rakṣyate",
+      "en": "Is protected",
+      "kn": "ರಕ್ಷಿತವಾಗುತ್ತದೆ"
+    },
+    {
+      "dev": "मृजया",
+      "iast": "mṛjayā",
+      "en": "By cleanliness",
+      "kn": "ಶುಚಿತ್ವದಿಂದ"
+    },
+    {
+      "dev": "रक्ष्यते",
+      "iast": "rakṣyate",
+      "en": "Is protected",
+      "kn": "ರಕ್ಷಿತವಾಗುತ್ತದೆ"
+    },
+    {
+      "dev": "रूपं",
+      "iast": "rūpaṃ",
+      "en": "Appearance",
+      "kn": "ರೂಪ"
+    },
+    {
+      "dev": "कुलं",
+      "iast": "kulaṃ",
+      "en": "Family lineage",
+      "kn": "ಕುಲ"
+    },
+    {
+      "dev": "वृत्तेन",
+      "iast": "vṛttena",
+      "en": "By conduct",
+      "kn": "ನಡತೆಯಿಂದ"
+    },
+    {
+      "dev": "रक्ष्यते",
+      "iast": "rakṣyate",
+      "en": "Is protected",
+      "kn": "ರಕ್ಷಿತವಾಗುತ್ತದೆ"
+    }
+  ],
+  "practice": [
+    {
+      "id": "a",
+      "order": 1,
+      "dev": "सत्येन रक्ष्यते धर्मो",
+      "iast": "satyena rakṣyate dharmo",
+      "kn": "ಸತ್ಯೇನ ರಕ್ಷ್ಯತೇ ಧರ್ಮೋ",
+      "audio": "audio/vidura/sloka-021-part-01.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "b",
+      "order": 2,
+      "dev": "विद्या योगेन रक्ष्यते",
+      "iast": "vidyā yogena rakṣyate",
+      "kn": "ವಿದ್ಯಾ ಯೋಗೇನ ರಕ್ಷ್ಯತೇ",
+      "audio": "audio/vidura/sloka-021-part-02.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "c",
+      "order": 3,
+      "dev": "मृजया रक्ष्यते रूपं",
+      "iast": "mṛjayā rakṣyate rūpaṃ",
+      "kn": "ಮೃಜಯಾ ರಕ್ಷ್ಯತೇ ರೂಪಂ",
+      "audio": "audio/vidura/sloka-021-part-03.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "d",
+      "order": 4,
+      "dev": "कुलं वृत्तेन रक्ष्यते",
+      "iast": "kulaṃ vṛttena rakṣyate",
+      "kn": "ಕುಲಂ ವೃತ್ತೇನ ರಕ್ಷ್ಯತೇ",
+      "audio": "audio/vidura/sloka-021-part-04.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    }
+  ],
+  "practice_source": "editorial-pada-boundaries",
+  "practice_note": "Four chantable phrase units by editorial reading boundaries. Audition audio before publishing.",
+  "audio": {
+    "full": "audio/vidura/sloka-021-full.mp3",
+    "clips": [
+      "audio/vidura/sloka-021-part-01.mp3",
+      "audio/vidura/sloka-021-part-02.mp3",
+      "audio/vidura/sloka-021-part-03.mp3",
+      "audio/vidura/sloka-021-part-04.mp3"
+    ],
+    "recording_status": "awaiting-vagdhenu-generation",
+    "meter": "anushtubh",
+    "full_playback": "single_continuous_recording",
+    "repeat_control": "browser-per-part"
+  },
+  "source": {
+    "page": 8,
+    "section": "Atha Viduranītiḥ",
+    "translation": "verbatim from supplied PDF",
+    "study_meanings": "editorial",
+    "notes": null,
+    "word_gloss_level": "editorial individual source-token meanings"
+  }
+}

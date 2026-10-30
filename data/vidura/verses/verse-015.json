@@ -1,0 +1,145 @@
+{
+  "id": "vidura-015",
+  "collection": "vidura-niti",
+  "verse_number": 15,
+  "theme": "Two ways to earn respect",
+  "reading": {
+    "dev": [
+      "द्वे कर्मणी नरः कुर्वन्नस्मिंल्लोके विरोचते ।",
+      "अब्रुवन् परुषं किञ्चिदसतोऽनर्चयं स्तथा ॥ १५ ॥"
+    ],
+    "iast": [
+      "dve karmaṇī naraḥ kurvannasmiṃlloke virocate |",
+      "abruvan paruṣaṃ kiñcidasato'narcayaṃstathā || 15 ||"
+    ],
+    "kn": [
+      "ದ್ವೇ ಕರ್ಮಣೀ ನರಃ ಕುರ್ವನ್ನಸ್ಮಿಂಲ್ಲೋಕೇ ವಿರೋಚತೇ ೤",
+      "ಅಬ್ರುವನ್ ಪರುಷಂ ಕಿಞ್ಚಿದಸತೋಽನರ್ಚಯಂ ಸ್ತಥಾ ೥ ೧೫ ೥"
+    ]
+  },
+  "meaning": {
+    "en": "A man earns fame by doing these two things; firstly by not speaking harsh words and secondly by not worshipping the wicked.",
+    "kn": "ಕಠೋರ ಮಾತುಗಳನ್ನು ಆಡದಿರುವುದು ಮತ್ತು ದುರ್ಜನರನ್ನು ಗೌರವದಿಂದ ಪೂಜಿಸದಿರುವುದು — ಈ ಎರಡು ನಡೆಗಳಿಂದ ವ್ಯಕ್ತಿ ಸಮಾಜದಲ್ಲಿ ಗೌರವ ಪಡೆಯುತ್ತಾನೆ."
+  },
+  "deeper_meaning": {
+    "en": "Respect is earned through restraint in speech and discernment in whom we honor. Refusing to speak harshly need not mean approving harmful conduct.",
+    "kn": "ಮಾತಿನಲ್ಲಿ ಸಂಯಮ ಮತ್ತು ಯಾರನ್ನು ಗೌರವಿಸಬೇಕು ಎಂಬ ವಿವೇಕದಿಂದ ನಿಜವಾದ ಗೌರವ ದೊರೆಯುತ್ತದೆ."
+  },
+  "word_by_word": [
+    {
+      "dev": "द्वे",
+      "iast": "dve",
+      "en": "Two",
+      "kn": "ಎರಡು"
+    },
+    {
+      "dev": "कर्मणी",
+      "iast": "karmaṇī",
+      "en": "Actions",
+      "kn": "ಕಾರ್ಯಗಳು"
+    },
+    {
+      "dev": "नरः",
+      "iast": "naraḥ",
+      "en": "A person",
+      "kn": "ಮನುಷ್ಯ"
+    },
+    {
+      "dev": "कुर्वन्नस्मिंल्लोके",
+      "iast": "kurvannasmiṃlloke",
+      "en": "Performing in this world",
+      "kn": "ಈ ಲೋಕದಲ್ಲಿ ಮಾಡುವವನು"
+    },
+    {
+      "dev": "विरोचते",
+      "iast": "virocate",
+      "en": "Shines, becomes esteemed",
+      "kn": "ಗೌರವ ಪಡೆಯುತ್ತಾನೆ"
+    },
+    {
+      "dev": "अब्रुवन्",
+      "iast": "abruvan",
+      "en": "Not speaking",
+      "kn": "ಮಾತನಾಡದೆ"
+    },
+    {
+      "dev": "परुषं",
+      "iast": "paruṣaṃ",
+      "en": "Harsh words",
+      "kn": "ಕಠೋರ ಮಾತು"
+    },
+    {
+      "dev": "किञ्चिदसतोऽनर्चयं",
+      "iast": "kiñcidasato'narcayaṃ",
+      "en": "Anything, not honoring the unworthy",
+      "kn": "ಏನನ್ನೂ, ದುರ್ಜನರನ್ನು ಗೌರವಿಸದೆ"
+    },
+    {
+      "dev": "स्तथा",
+      "iast": "stathā",
+      "en": "And likewise (as printed)",
+      "kn": "ಹಾಗೆಯೇ (ಮೂಲ ಪಠ್ಯದಂತೆ)"
+    }
+  ],
+  "practice": [
+    {
+      "id": "a",
+      "order": 1,
+      "dev": "द्वे कर्मणी नरः",
+      "iast": "dve karmaṇī naraḥ",
+      "kn": "ದ್ವೇ ಕರ್ಮಣೀ ನರಃ",
+      "audio": "audio/vidura/sloka-015-part-01.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "b",
+      "order": 2,
+      "dev": "कुर्वन्नस्मिंल्लोके विरोचते",
+      "iast": "kurvannasmiṃlloke virocate",
+      "kn": "ಕುರ್ವನ್ನಸ್ಮಿಂಲ್ಲೋಕೇ ವಿರೋಚತೇ",
+      "audio": "audio/vidura/sloka-015-part-02.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "c",
+      "order": 3,
+      "dev": "अब्रुवन् परुषं किञ्चित्",
+      "iast": "abruvan paruṣaṃ kiñcit",
+      "kn": "ಅಬ್ರುವನ್ ಪರುಷಂ ಕಿಞ್ಚಿತ್",
+      "audio": "audio/vidura/sloka-015-part-03.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "d",
+      "order": 4,
+      "dev": "असतोऽनर्चयंस्तथा",
+      "iast": "asato'narcayaṃstathā",
+      "kn": "ಅಸತೋಽನರ್ಚಯಂಸ್ತಥಾ",
+      "audio": "audio/vidura/sloka-015-part-04.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    }
+  ],
+  "practice_source": "editorial-pada-boundaries",
+  "practice_note": "Practice segments follow printed lines and editorial word boundaries; confirm chanting pauses before audio publishing.",
+  "audio": {
+    "full": "audio/vidura/sloka-015-full.mp3",
+    "clips": [
+      "audio/vidura/sloka-015-part-01.mp3",
+      "audio/vidura/sloka-015-part-02.mp3",
+      "audio/vidura/sloka-015-part-03.mp3",
+      "audio/vidura/sloka-015-part-04.mp3"
+    ],
+    "recording_status": "awaiting-vagdhenu-generation",
+    "meter": "anushtubh",
+    "full_playback": "single_continuous_recording",
+    "repeat_control": "browser-per-part"
+  },
+  "source": {
+    "page": 6,
+    "section": "Atha Viduranītiḥ",
+    "translation": "verbatim from supplied PDF",
+    "study_meanings": "editorial",
+    "notes": "Devanagari IAST readings follow the handout; practice partitions editorial.",
+    "word_gloss_level": "editorial individual source-token meanings"
+  }
+}

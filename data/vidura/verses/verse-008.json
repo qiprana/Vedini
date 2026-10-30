@@ -1,0 +1,156 @@
+{
+  "id": "vidura-008",
+  "collection": "vidura-niti",
+  "verse_number": 8,
+  "theme": "Choosing wise friendships",
+  "reading": {
+    "dev": [
+      "मत्या परीक्ष्य मेधावी बुद्ध्या सम्पाद्य चासकृत् ।",
+      "श्रुत्वा दृष्ट्वाथ विज्ञाय प्राज्ञैर्मैत्रीं समाचरेत् ॥ ८ ॥"
+    ],
+    "iast": [
+      "matyā parīkṣya medhāvī buddhyā sampādya cāsakṛt |",
+      "śrutvā dṛṣṭvātha vijñāya prājñairmaitrīṃ samācaret || 8 ||"
+    ],
+    "kn": [
+      "ಮತ್ಯಾ ಪರೀಕ್ಷ್ಯ ಮೇಧಾವೀ ಬುದ್ಧ್ಯಾ ಸಮ್ಪಾದ್ಯ ಚಾಸಕೃತ್ ೤",
+      "ಶ್ರುತ್ವಾ ದೃಷ್ಟ್ವಾಥ ವಿಜ್ಞಾಯ ಪ್ರಾಜ್ಞೈರ್ಮೈತ್ರೀಂ ಸಮಾಚರೇತ್ ೥ ೮ ೥"
+    ]
+  },
+  "meaning": {
+    "en": "An intelligent person should enter into friendship with other intellectuals only after carefully testing them, thoughtfully investigating their behaviour (several times), having listened to them, having seen them (in action) and after obtaining full knowledge about them.",
+    "kn": "ಮೇಧಾವಿ ವ್ಯಕ್ತಿಯು ವಿವೇಕದಿಂದ ಮರುಮರು ಪರಿಶೀಲಿಸಿ, ಕೇಳಿ, ಕಂಡು, ಚೆನ್ನಾಗಿ ಅರಿತ ನಂತರವೇ ಜ್ಞಾನಿಗಳೊಂದಿಗೆ ಸ್ನೇಹ ಬೆಳೆಸಬೇಕು."
+  },
+  "deeper_meaning": {
+    "en": "Friendship is worthy of thoughtful attention. Vidura recommends listening, observation, repeated examination and understanding before forming close ties. Neither reputation nor a single impression is enough to judge someone's character.",
+    "kn": "ಸ್ನೇಹ ಬೆಳೆಸುವ ಮೊದಲು ಕೇಳುವುದು, ಗಮನಿಸುವುದು, ಮರುಪರಿಶೀಲಿಸುವುದು ಮತ್ತು ವ್ಯಕ್ತಿಯ ಗುಣವನ್ನು ತಿಳಿಯುವುದು ಮುಖ್ಯ. ಮೊದಲ ಅಭಿಪ್ರಾಯವೇ ಪೂರ್ಣ ಸತ್ಯವಲ್ಲ."
+  },
+  "word_by_word": [
+    {
+      "dev": "मत्या",
+      "iast": "matyā",
+      "en": "With understanding",
+      "kn": "ವಿವೇಕದಿಂದ"
+    },
+    {
+      "dev": "परीक्ष्य",
+      "iast": "parīkṣya",
+      "en": "Having examined",
+      "kn": "ಪರಿಶೀಲಿಸಿ"
+    },
+    {
+      "dev": "मेधावी",
+      "iast": "medhāvī",
+      "en": "The intelligent person",
+      "kn": "ಮೇಧಾವಿ"
+    },
+    {
+      "dev": "बुद्ध्या",
+      "iast": "buddhyā",
+      "en": "With discernment",
+      "kn": "ಬುದ್ಧಿಯಿಂದ"
+    },
+    {
+      "dev": "सम्पाद्य",
+      "iast": "sampādya",
+      "en": "Having investigated",
+      "kn": "ಪರೀಕ್ಷಿಸಿ"
+    },
+    {
+      "dev": "चासकृत्",
+      "iast": "cāsakṛt",
+      "en": "And repeatedly",
+      "kn": "ಮತ್ತು ಮರುಮರು"
+    },
+    {
+      "dev": "श्रुत्वा",
+      "iast": "śrutvā",
+      "en": "Having heard",
+      "kn": "ಕೇಳಿ"
+    },
+    {
+      "dev": "दृष्ट्वाथ",
+      "iast": "dṛṣṭvātha",
+      "en": "Having seen then",
+      "kn": "ನೋಡಿ ನಂತರ"
+    },
+    {
+      "dev": "विज्ञाय",
+      "iast": "vijñāya",
+      "en": "Having understood",
+      "kn": "ಅರಿತು"
+    },
+    {
+      "dev": "प्राज्ञैर्मैत्रीं",
+      "iast": "prājñairmaitrīṃ",
+      "en": "With the wise, friendship",
+      "kn": "ಜ್ಞಾನಿಗಳೊಂದಿಗೆ ಸ್ನೇಹ"
+    },
+    {
+      "dev": "समाचरेत्",
+      "iast": "samācaret",
+      "en": "Should cultivate",
+      "kn": "ಬೆಳೆಸಬೇಕು"
+    }
+  ],
+  "practice": [
+    {
+      "id": "a",
+      "order": 1,
+      "dev": "मत्या परीक्ष्य मेधावी",
+      "iast": "matyā parīkṣya medhāvī",
+      "kn": "ಮತ್ಯಾ ಪರೀಕ್ಷ್ಯ ಮೇಧಾವೀ",
+      "audio": "audio/vidura/sloka-008-part-01.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "b",
+      "order": 2,
+      "dev": "बुद्ध्या सम्पाद्य चासकृत्",
+      "iast": "buddhyā sampādya cāsakṛt",
+      "kn": "ಬುದ್ಧ್ಯಾ ಸಮ್ಪಾದ್ಯ ಚಾಸಕೃತ್",
+      "audio": "audio/vidura/sloka-008-part-02.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "c",
+      "order": 3,
+      "dev": "श्रुत्वा दृष्ट्वाथ विज्ञाय",
+      "iast": "śrutvā dṛṣṭvātha vijñāya",
+      "kn": "ಶ್ರುತ್ವಾ ದೃಷ್ಟ್ವಾಥ ವಿಜ್ಞಾಯ",
+      "audio": "audio/vidura/sloka-008-part-03.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "d",
+      "order": 4,
+      "dev": "प्राज्ञैर्मैत्रीं समाचरेत्",
+      "iast": "prājñairmaitrīṃ samācaret",
+      "kn": "ಪ್ರಾಜ್ಞೈರ್ಮೈತ್ರೀಂ ಸಮಾಚರೇತ್",
+      "audio": "audio/vidura/sloka-008-part-04.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    }
+  ],
+  "practice_source": "editorial-pada-boundaries",
+  "practice_note": "Four independent chant portions, divided at word boundaries for study practice. These cuts require pronunciation review.",
+  "audio": {
+    "full": "audio/vidura/sloka-008-full.mp3",
+    "clips": [
+      "audio/vidura/sloka-008-part-01.mp3",
+      "audio/vidura/sloka-008-part-02.mp3",
+      "audio/vidura/sloka-008-part-03.mp3",
+      "audio/vidura/sloka-008-part-04.mp3"
+    ],
+    "recording_status": "awaiting-vagdhenu-generation",
+    "meter": "anushtubh",
+    "full_playback": "single_continuous_recording",
+    "repeat_control": "browser-per-part"
+  },
+  "source": {
+    "page": 4,
+    "section": "Atha Viduranītiḥ",
+    "translation": "verbatim from supplied PDF",
+    "study_meanings": "editorial",
+    "notes": null
+  }
+}

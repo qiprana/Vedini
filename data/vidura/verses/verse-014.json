@@ -1,0 +1,163 @@
+{
+  "id": "vidura-014",
+  "collection": "vidura-niti",
+  "verse_number": 14,
+  "theme": "Wounds caused by words",
+  "reading": {
+    "dev": [
+      "रोहते सायकैर्विद्धं वनं परशुना हतम् ।",
+      "वाचा दुरुक्तं बीभत्सं न सं रोहति वाक्क्षतम् ॥ १४ ॥"
+    ],
+    "iast": [
+      "rohate sāyakairviddhaṃ vanaṃ paraśunā hatam |",
+      "vācā duruktaṃ bībhatsaṃ na saṃrohati vākkṣatam || 14 ||"
+    ],
+    "kn": [
+      "ರೋಹತೇ ಸಾಯಕೈರ್ವಿದ್ಧಂ ವನಂ ಪರಶುನಾ ಹತಮ್ ೤",
+      "ವಾಚಾ ದುರುಕ್ತಂ ಬೀಭತ್ಸಂ ನ ಸಂ ರೋಹತಿ ವಾಕ್ಕ್ಷತಮ್ ೥ ೧೪ ೥"
+    ]
+  },
+  "meaning": {
+    "en": "A wound caused by the piercing arrows can get cured. A forest cut down by an axe can grow up again but a wound caused by despicable speech is incurable.",
+    "kn": "ಬಾಣದಿಂದ ಉಂಟಾದ ಗಾಯ ಗುಣವಾಗಬಹುದು; ಕೊಡಲಿಯಿಂದ ಕಡಿದ ಕಾಡು ಮತ್ತೆ ಬೆಳೆಯಬಹುದು. ಆದರೆ ಕೆಟ್ಟ ಮಾತಿನಿಂದ ಆದ ಮನದ ಗಾಯ ಸುಲಭವಾಗಿ ಮಾಯವಾಗುವುದಿಲ್ಲ."
+  },
+  "deeper_meaning": {
+    "en": "Physical damage may heal, but humiliation can remain in memory. Vidura urges care with speech because the wound of insult is not as easily repaired as a visible injury.",
+    "kn": "ದೇಹದ ಗಾಯ ಗುಣವಾದರೂ ಅವಮಾನದಿಂದ ಬಂದ ಮನದ ನೋವು ದೀರ್ಘಕಾಲ ಉಳಿಯಬಹುದು. ಆದ್ದರಿಂದ ಮಾತಿನ ಬಗ್ಗೆ ಎಚ್ಚರ ಅಗತ್ಯ."
+  },
+  "word_by_word": [
+    {
+      "dev": "रोहते",
+      "iast": "rohate",
+      "en": "Heals or grows again",
+      "kn": "ಗುಣವಾಗುತ್ತದೆ"
+    },
+    {
+      "dev": "सायकैर्विद्धं",
+      "iast": "sāyakairviddhaṃ",
+      "en": "Pierced by arrows",
+      "kn": "ಬಾಣಗಳಿಂದ ಚುಚ್ಚಲ್ಪಟ್ಟ"
+    },
+    {
+      "dev": "वनं",
+      "iast": "vanaṃ",
+      "en": "Forest",
+      "kn": "ಕಾಡು"
+    },
+    {
+      "dev": "परशुना",
+      "iast": "paraśunā",
+      "en": "By an axe",
+      "kn": "ಕೊಡಲಿಯಿಂದ"
+    },
+    {
+      "dev": "हतम्",
+      "iast": "hatam",
+      "en": "Cut down",
+      "kn": "ಕಡಿಯಲ್ಪಟ್ಟ"
+    },
+    {
+      "dev": "वाचा",
+      "iast": "vācā",
+      "en": "By speech",
+      "kn": "ಮಾತಿನಿಂದ"
+    },
+    {
+      "dev": "दुरुक्तं",
+      "iast": "duruktaṃ",
+      "en": "Badly uttered",
+      "kn": "ಕೆಟ್ಟದಾಗಿ ಹೇಳಿದ"
+    },
+    {
+      "dev": "बीभत्सं",
+      "iast": "bībhatsaṃ",
+      "en": "Ugly, repulsive",
+      "kn": "ಅಸಹ್ಯವಾದ"
+    },
+    {
+      "dev": "न",
+      "iast": "na",
+      "en": "Not",
+      "kn": "ಇಲ್ಲ"
+    },
+    {
+      "dev": "सं",
+      "iast": "saṃ",
+      "en": "Completely",
+      "kn": "ಸಂಪೂರ್ಣವಾಗಿ"
+    },
+    {
+      "dev": "रोहति",
+      "iast": "rohati",
+      "en": "Heals",
+      "kn": "ಗುಣವಾಗುತ್ತದೆ"
+    },
+    {
+      "dev": "वाक्क्षतम्",
+      "iast": "vākkṣatam",
+      "en": "Wound caused by speech",
+      "kn": "ಮಾತಿನಿಂದ ಆದ ಗಾಯ"
+    }
+  ],
+  "practice": [
+    {
+      "id": "a",
+      "order": 1,
+      "dev": "रोहते सायकैर्विद्धं",
+      "iast": "rohate sāyakairviddhaṃ",
+      "kn": "ರೋಹತೇ ಸಾಯಕೈರ್ವಿದ್ಧಂ",
+      "audio": "audio/vidura/sloka-014-part-01.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "b",
+      "order": 2,
+      "dev": "वनं परशुना हतम्",
+      "iast": "vanaṃ paraśunā hatam",
+      "kn": "ವನಂ ಪರಶುನಾ ಹತಮ್",
+      "audio": "audio/vidura/sloka-014-part-02.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "c",
+      "order": 3,
+      "dev": "वाचा दुरुक्तं बीभत्सं",
+      "iast": "vācā duruktaṃ bībhatsaṃ",
+      "kn": "ವಾಚಾ ದುರುಕ್ತಂ ಬೀಭತ್ಸಂ",
+      "audio": "audio/vidura/sloka-014-part-03.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "d",
+      "order": 4,
+      "dev": "न सं रोहति वाक्क्षतम्",
+      "iast": "na saṃ rohati vākkṣatam",
+      "kn": "ನ ಸಂ ರೋಹತಿ ವಾಕ್ಕ್ಷತಮ್",
+      "audio": "audio/vidura/sloka-014-part-04.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    }
+  ],
+  "practice_source": "editorial-pada-boundaries",
+  "practice_note": "Practice segments follow printed lines and editorial word boundaries; confirm chanting pauses before audio publishing.",
+  "audio": {
+    "full": "audio/vidura/sloka-014-full.mp3",
+    "clips": [
+      "audio/vidura/sloka-014-part-01.mp3",
+      "audio/vidura/sloka-014-part-02.mp3",
+      "audio/vidura/sloka-014-part-03.mp3",
+      "audio/vidura/sloka-014-part-04.mp3"
+    ],
+    "recording_status": "awaiting-vagdhenu-generation",
+    "meter": "anushtubh",
+    "full_playback": "single_continuous_recording",
+    "repeat_control": "browser-per-part"
+  },
+  "source": {
+    "page": 6,
+    "section": "Atha Viduranītiḥ",
+    "translation": "verbatim from supplied PDF",
+    "study_meanings": "editorial",
+    "notes": "Devanagari IAST readings follow the handout; practice partitions editorial.",
+    "word_gloss_level": "editorial individual source-token meanings"
+  }
+}

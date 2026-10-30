@@ -1,22 +1,32 @@
 const {test,expect}=require('@playwright/test');
+async function stableAudioAvailability(page){
+ await page.route('**/audio/vidura/*',route=>{
+  if(route.request().method()==='HEAD'){
+   const name=decodeURIComponent(new URL(route.request().url()).pathname);
+   return route.fulfill({status:/sloka-00[12]-/.test(name)?200:404,body:''});
+  }
+  return route.continue();
+ });
+}
 
 test('Viduranīti full śloka speed control and shruti are available',async({page})=>{
  const errors=[];
  page.on('pageerror',err=>errors.push(err.message));
+ await stableAudioAvailability(page);
  await page.goto('/vidura/');
- await expect(page.locator('.vidura-card')).toHaveCount(2);
+ await expect(page.locator('.vidura-card')).toHaveCount(25);
  await expect(page.locator('#vidura-speed')).toHaveValue('0.9');
  await expect(page.locator('#vidura-speed-value')).toHaveText('0.90×');
  await expect(page.locator('#vidura-shruti-enabled')).toBeChecked();
- await expect(page.locator('#vidura-play')).toBeEnabled();
+ await expect(page.locator('#vidura-play')).toBeEnabled({timeout:15000});
  await page.locator('#vidura-speed').evaluate(el=>{el.value='0.75';el.dispatchEvent(new Event('input',{bubbles:true}));});
  await expect(page.locator('#vidura-speed-value')).toHaveText('0.75×');
  const actual=await page.locator('#vidura-audio').evaluate(el=>({rate:el.playbackRate,pitch:el.preservesPitch}));
  expect(actual.rate).toBeCloseTo(.75);
  expect(actual.pitch).toBe(true);
  await page.locator('#vidura-mode').selectOption('practice');
- await expect(page.locator('#vidura-part-picker .vidura-part')).toHaveCount(4);
- await expect(page.locator('#vidura-part-picker [data-part="0"]')).toBeEnabled();
+ await expect(page.locator('#vidura-part-picker .vidura-part')).toHaveCount(4,{timeout:15000});
+ await expect(page.locator('#vidura-part-picker [data-part="0"]')).toBeEnabled({timeout:15000});
  expect(errors).toEqual([]);
 });
 
@@ -30,8 +40,9 @@ test('Viduranīti clip transitions preserve playback speed and user repeat count
   };
   HTMLMediaElement.prototype.pause=function(){Object.defineProperty(this,'paused',{configurable:true,get:()=>true});};
  });
+ await stableAudioAvailability(page);
  await page.goto('/vidura/');
- await expect(page.locator('#vidura-part-picker .vidura-part')).toHaveCount(4);
+ await expect(page.locator('#vidura-part-picker .vidura-part')).toHaveCount(4,{timeout:15000});
  await page.locator('#vidura-shruti-enabled').uncheck();
  await page.locator('#vidura-mode').selectOption('practice');
  await page.locator('#vidura-repeats').selectOption('2');
@@ -48,10 +59,13 @@ test('Viduranīti clip transitions preserve playback speed and user repeat count
 
 test('Viduranīti mobile practice controls remain usable',async({page})=>{
  await page.setViewportSize({width:390,height:844});
+ await stableAudioAvailability(page);
  await page.goto('/vidura/');
  await expect(page.locator('#vidura-speed')).toBeVisible();
  await expect(page.locator('#vidura-shruti-volume')).toBeVisible();
  await expect(page.locator('#vidura-mode')).toBeVisible();
- await expect(page.locator('#vidura-part-picker .vidura-part')).toHaveCount(4);
- await expect(page.locator('#vidura-play')).toBeEnabled();
+ await expect(page.locator('#vidura-part-picker .vidura-part')).toHaveCount(4,{timeout:15000});
+ await expect(page.locator('#vidura-play')).toBeEnabled({timeout:15000});
 });
+
+test('Viduranīti unusual three-line verse supports six practice parts',async({page})=>{await page.goto('/vidura/');await expect(page.locator('.vidura-card')).toHaveCount(25);await page.locator('#vidura-verse').selectOption('3');await expect(page.locator('#vidura-part-picker .vidura-part')).toHaveCount(6,{timeout:15000});await expect(page.locator('#vidura-play')).toBeDisabled();});

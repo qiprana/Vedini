@@ -1,0 +1,132 @@
+{
+  "id": "vidura-004",
+  "collection": "vidura-niti",
+  "verse_number": 4,
+  "theme": "Respect for elders",
+  "reading": {
+    "dev": [
+      "अभिवादनशीलस्य नित्यं वृद्धोपसेविनः ।",
+      "चत्वारि सम्प्रवर्धन्ते कीर्तिरायुर्यशो बलम् ॥ ४ ॥"
+    ],
+    "iast": [
+      "abhivādanaśīlasya nityaṃ vṛddhopasevinaḥ |",
+      "catvāri sampravardhante kīrtirāyuryaśo balam || 4 ||"
+    ],
+    "kn": [
+      "ಅಭಿವಾದನಶೀಲಸ್ಯ ನಿತ್ಯಂ ವೃದ್ಧೋಪಸೇವಿನಃ ೤",
+      "ಚತ್ವಾರಿ ಸಮ್ಪ್ರವರ್ಧನ್ತೇ ಕೀರ್ತಿರಾಯುರ್ಯಶೋ ಬಲಮ್ ೥ ೪ ೥"
+    ]
+  },
+  "meaning": {
+    "en": "Fame, age, reputation and strength - these four things keep on increasing for one who bows and serves the elders.",
+    "kn": "ಹಿರಿಯರಿಗೆ ಗೌರವದಿಂದ ವಂದಿಸಿ ಸದಾ ಸೇವೆ ಮಾಡುವವನ ಕೀರ್ತಿ, ಆಯುಷ್ಯ, ಯಶಸ್ಸು ಮತ್ತು ಬಲ — ಈ ನಾಲ್ಕೂ ಹೆಚ್ಚುತ್ತವೆ."
+  },
+  "deeper_meaning": {
+    "en": "Honoring the elderly is presented as more than a courtesy. Receiving guidance, recognizing experience, and serving without arrogance can strengthen character and support a long and respected life. The four fruits describe the value of humility practiced consistently.",
+    "kn": "ಹಿರಿಯರ ಅನುಭವವನ್ನು ಗೌರವಿಸಿ ಸೇವೆ ಮಾಡುವುದರಿಂದ ವಿನಯ ಮತ್ತು ಉತ್ತಮ ಗುಣಗಳು ಬೆಳೆಯುತ್ತವೆ. ಕೀರ್ತಿ, ಆಯುಷ್ಯ, ಯಶಸ್ಸು ಮತ್ತು ಬಲವನ್ನು ಈ ಶ್ಲೋಕವು ಅದರ ಫಲವಾಗಿ ಹೇಳುತ್ತದೆ."
+  },
+  "word_by_word": [
+    {
+      "dev": "अभिवादनशीलस्य",
+      "iast": "abhivādanaśīlasya",
+      "en": "Of one disposed to respectful greeting",
+      "kn": "ಗೌರವದಿಂದ ವಂದಿಸುವವನ"
+    },
+    {
+      "dev": "नित्यं",
+      "iast": "nityaṃ",
+      "en": "Always",
+      "kn": "ನಿತ್ಯವೂ"
+    },
+    {
+      "dev": "वृद्धोपसेविनः",
+      "iast": "vṛddhopasevinaḥ",
+      "en": "Of one serving elders",
+      "kn": "ಹಿರಿಯರನ್ನು ಸೇವಿಸುವವನ"
+    },
+    {
+      "dev": "चत्वारि",
+      "iast": "catvāri",
+      "en": "Four",
+      "kn": "ನಾಲ್ಕು"
+    },
+    {
+      "dev": "सम्प्रवर्धन्ते",
+      "iast": "sampravardhante",
+      "en": "Increase greatly",
+      "kn": "ಹೆಚ್ಚಾಗುತ್ತವೆ"
+    },
+    {
+      "dev": "कीर्तिरायुर्यशो",
+      "iast": "kīrtirāyuryaśo",
+      "en": "Fame honor and long life",
+      "kn": "ಕೀರ್ತಿ ಯಶಸ್ಸು ಆಯುಷ್ಯ"
+    },
+    {
+      "dev": "बलम्",
+      "iast": "balam",
+      "en": "Strength",
+      "kn": "ಬಲ"
+    }
+  ],
+  "practice": [
+    {
+      "id": "a",
+      "order": 1,
+      "dev": "अभिवादनशीलस्य",
+      "iast": "abhivādanaśīlasya",
+      "kn": "ಅಭಿವಾದನಶೀಲಸ್ಯ",
+      "audio": "audio/vidura/sloka-004-part-01.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "b",
+      "order": 2,
+      "dev": "नित्यं वृद्धोपसेविनः",
+      "iast": "nityaṃ vṛddhopasevinaḥ",
+      "kn": "ನಿತ್ಯಂ ವೃದ್ಧೋಪಸೇವಿನಃ",
+      "audio": "audio/vidura/sloka-004-part-02.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "c",
+      "order": 3,
+      "dev": "चत्वारि सम्प्रवर्धन्ते",
+      "iast": "catvāri sampravardhante",
+      "kn": "ಚತ್ವಾರಿ ಸಮ್ಪ್ರವರ್ಧನ್ತೇ",
+      "audio": "audio/vidura/sloka-004-part-03.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "d",
+      "order": 4,
+      "dev": "कीर्तिरायुर्यशो बलम्",
+      "iast": "kīrtirāyuryaśo balam",
+      "kn": "ಕೀರ್ತಿರಾಯುರ್ಯಶೋ ಬಲಮ್",
+      "audio": "audio/vidura/sloka-004-part-04.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    }
+  ],
+  "practice_source": "editorial-pada-boundaries",
+  "practice_note": "Four independent chant portions, divided at word boundaries for study practice. These cuts require pronunciation review.",
+  "audio": {
+    "full": "audio/vidura/sloka-004-full.mp3",
+    "clips": [
+      "audio/vidura/sloka-004-part-01.mp3",
+      "audio/vidura/sloka-004-part-02.mp3",
+      "audio/vidura/sloka-004-part-03.mp3",
+      "audio/vidura/sloka-004-part-04.mp3"
+    ],
+    "recording_status": "awaiting-vagdhenu-generation",
+    "meter": "anushtubh",
+    "full_playback": "single_continuous_recording",
+    "repeat_control": "browser-per-part"
+  },
+  "source": {
+    "page": 3,
+    "section": "Atha Viduranītiḥ",
+    "translation": "verbatim from supplied PDF",
+    "study_meanings": "editorial",
+    "notes": null
+  }
+}

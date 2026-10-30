@@ -1,0 +1,144 @@
+{
+  "id": "vidura-005",
+  "collection": "vidura-niti",
+  "verse_number": 5,
+  "theme": "Signs of a learned person",
+  "reading": {
+    "dev": [
+      "निषेवते प्रशस्तानि निन्दितानि न सेवते ।",
+      "अनास्तिकः श्रद्दधान एतत् पण्डितलक्षणम् ॥ ५ ॥"
+    ],
+    "iast": [
+      "niṣevate praśastāni ninditāni na sevate |",
+      "anāstikaḥ śraddadhāna etat paṇḍitalakṣaṇam || 5 ||"
+    ],
+    "kn": [
+      "ನಿಷೇವತೇ ಪ್ರಶಸ್ತಾನಿ ನಿನ್ದಿತಾನಿ ನ ಸೇವತೇ ೤",
+      "ಅನಾಸ್ತಿಕಃ ಶ್ರದ್ದಧಾನ ಏತತ್ ಪಣ್ಡಿತಲಕ್ಷಣಮ್ ೥ ೫ ೥"
+    ]
+  },
+  "meaning": {
+    "en": "A learned person is one who indulges in good deeds, abstains from despicable deeds, is not atheist, and has faith in God.",
+    "kn": "ಒಳ್ಳೆಯ ಕಾರ್ಯಗಳನ್ನು ಅನುಸರಿಸಿ, ನಿಂದನೀಯ ಕಾರ್ಯಗಳಿಂದ ದೂರವಿದ್ದು, ಶ್ರದ್ಧೆಯುಳ್ಳವನಾಗಿರುವುದು ಪಂಡಿತನ ಲಕ್ಷಣವೆಂದು ಮೂಲದ ಅನುವಾದ ವಿವರಿಸುತ್ತದೆ."
+  },
+  "deeper_meaning": {
+    "en": "Vidura measures wisdom by choices, not by the quantity of information one can recite. The central practical contrast is between actions worthy of respect and actions to avoid. Note that the printed Sanskrit uses 'anāstikaḥ' while the handout's English translation says 'is not atheist'; this discrepancy requires source review.",
+    "kn": "ವಿದ್ಯೆಯ ಗುರುತು ಕೇವಲ ಮಾಹಿತಿ ಅಲ್ಲ; ಒಳ್ಳೆಯ ಕಾರ್ಯಗಳನ್ನು ಮಾಡುವುದೂ ಕೆಟ್ಟ ಕಾರ್ಯಗಳನ್ನು ಬಿಡುವುದೂ ಮುಖ್ಯ. ಮುದ್ರಿತ ‘ಅನಾಸ್ತಿಕಃ’ ಮತ್ತು ಇಂಗ್ಲಿಷ್ ಅರ್ಥದ ನಡುವಿನ ವ್ಯತ್ಯಾಸವನ್ನು ಪರಿಶೀಲಿಸಬೇಕು."
+  },
+  "word_by_word": [
+    {
+      "dev": "निषेवते",
+      "iast": "niṣevate",
+      "en": "Practises",
+      "kn": "ಅನುಸರಿಸುತ್ತಾನೆ"
+    },
+    {
+      "dev": "प्रशस्तानि",
+      "iast": "praśastāni",
+      "en": "Praiseworthy acts",
+      "kn": "ಶ್ರೇಷ್ಠ ಕಾರ್ಯಗಳು"
+    },
+    {
+      "dev": "निन्दितानि",
+      "iast": "ninditāni",
+      "en": "Blameworthy acts",
+      "kn": "ನಿಂದನೀಯ ಕಾರ್ಯಗಳು"
+    },
+    {
+      "dev": "न",
+      "iast": "na",
+      "en": "Not",
+      "kn": "ಮಾಡುವುದಿಲ್ಲ"
+    },
+    {
+      "dev": "सेवते",
+      "iast": "sevate",
+      "en": "Practises",
+      "kn": "ಅನುಸರಿಸುತ್ತಾನೆ"
+    },
+    {
+      "dev": "अनास्तिकः",
+      "iast": "anāstikaḥ",
+      "en": "Printed 'anāstikaḥ' (text/translation discrepancy)",
+      "kn": "ಮುದ್ರಿತ ಪದದಲ್ಲಿ ಅರ್ಥವ್ಯತ್ಯಾಸ ಇದೆ"
+    },
+    {
+      "dev": "श्रद्दधान",
+      "iast": "śraddadhāna",
+      "en": "Having faith",
+      "kn": "ಶ್ರದ್ಧೆಯುಳ್ಳ"
+    },
+    {
+      "dev": "एतत्",
+      "iast": "etat",
+      "en": "This",
+      "kn": "ಇದು"
+    },
+    {
+      "dev": "पण्डितलक्षणम्",
+      "iast": "paṇḍitalakṣaṇam",
+      "en": "Mark of a learned person",
+      "kn": "ಪಂಡಿತನ ಲಕ್ಷಣ"
+    }
+  ],
+  "practice": [
+    {
+      "id": "a",
+      "order": 1,
+      "dev": "निषेवते प्रशस्तानि",
+      "iast": "niṣevate praśastāni",
+      "kn": "ನಿಷೇವತೇ ಪ್ರಶಸ್ತಾನಿ",
+      "audio": "audio/vidura/sloka-005-part-01.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "b",
+      "order": 2,
+      "dev": "निन्दितानि न सेवते",
+      "iast": "ninditāni na sevate",
+      "kn": "ನಿನ್ದಿತಾನಿ ನ ಸೇವತೇ",
+      "audio": "audio/vidura/sloka-005-part-02.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "c",
+      "order": 3,
+      "dev": "अनास्तिकः श्रद्दधान",
+      "iast": "anāstikaḥ śraddadhāna",
+      "kn": "ಅನಾಸ್ತಿಕಃ ಶ್ರದ್ದಧಾನ",
+      "audio": "audio/vidura/sloka-005-part-03.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "d",
+      "order": 4,
+      "dev": "एतत् पण्डितलक्षणम्",
+      "iast": "etat paṇḍitalakṣaṇam",
+      "kn": "ಏತತ್ ಪಣ್ಡಿತಲಕ್ಷಣಮ್",
+      "audio": "audio/vidura/sloka-005-part-04.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    }
+  ],
+  "practice_source": "editorial-pada-boundaries",
+  "practice_note": "Four independent chant portions, divided at word boundaries for study practice. These cuts require pronunciation review.",
+  "audio": {
+    "full": "audio/vidura/sloka-005-full.mp3",
+    "clips": [
+      "audio/vidura/sloka-005-part-01.mp3",
+      "audio/vidura/sloka-005-part-02.mp3",
+      "audio/vidura/sloka-005-part-03.mp3",
+      "audio/vidura/sloka-005-part-04.mp3"
+    ],
+    "recording_status": "awaiting-vagdhenu-generation",
+    "meter": "anushtubh",
+    "full_playback": "single_continuous_recording",
+    "repeat_control": "browser-per-part"
+  },
+  "source": {
+    "page": 3,
+    "section": "Atha Viduranītiḥ",
+    "translation": "verbatim from supplied PDF",
+    "study_meanings": "editorial",
+    "notes": "The handout prints अनास्तिकः / anāstikaḥ, but its English explanation says 'is not atheist'. Keep source wording; flag for review."
+  }
+}

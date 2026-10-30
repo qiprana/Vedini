@@ -1,0 +1,156 @@
+{
+  "id": "vidura-010",
+  "collection": "vidura-niti",
+  "verse_number": 10,
+  "theme": "Mistaking friends for enemies",
+  "reading": {
+    "dev": [
+      "अमित्रं कुरुते मित्रं मित्रं द्वेष्टि हिनस्ति च ।",
+      "कर्म चारभते दुष्टं तमाहुर्मूढचेतसम् ॥ १० ॥"
+    ],
+    "iast": [
+      "amitraṃ kurute mitraṃ mitraṃ dveṣṭi hinasti ca |",
+      "karma cārabhate duṣṭaṃ tamāhurmūḍhacetasam || 10 ||"
+    ],
+    "kn": [
+      "ಅಮಿತ್ರಂ ಕುರುತೇ ಮಿತ್ರಂ ಮಿತ್ರಂ ದ್ವೇಷ್ಟಿ ಹಿನಸ್ತಿ ಚ ೤",
+      "ಕರ್ಮ ಚಾರಭತೇ ದುಷ್ಟಂ ತಮಾಹುರ್ಮೂಢಚೇತಸಮ್ ೥ ೧೦ ೥"
+    ]
+  },
+  "meaning": {
+    "en": "A foolish person is one who considers his enemy as friend, behaves like an enemy towards his friend, wishes to destroy him and indulges in wicked deeds.",
+    "kn": "ಶತ್ರುವನ್ನು ಮಿತ್ರನೆಂದು ಭಾವಿಸಿ, ಮಿತ್ರನನ್ನು ದ್ವೇಷಿಸಿ ಹಾನಿ ಮಾಡುವವನು ಹಾಗೂ ಕೆಟ್ಟ ಕೆಲಸಗಳಲ್ಲಿ ತೊಡಗುವವನು ಮೂಢಬುದ್ಧಿಯವನು."
+  },
+  "deeper_meaning": {
+    "en": "Lack of discernment can reverse loyalty: a harmful influence is trusted and a true friend is treated as a threat. Vidura links these errors of judgment with destructive action. Wisdom demands recognizing character before choosing alliances or acting in anger.",
+    "kn": "ಯಾರು ನಿಜವಾದ ಹಿತೈಷಿ ಮತ್ತು ಯಾರು ಹಾನಿಕರರು ಎಂಬುದನ್ನು ಗುರುತಿಸದಿದ್ದರೆ ತಪ್ಪಾದ ಸಂಬಂಧಗಳು ಮತ್ತು ಕೆಟ್ಟ ಕಾರ್ಯಗಳು ಉಂಟಾಗುತ್ತವೆ. ವಿವೇಕ ಅಗತ್ಯ."
+  },
+  "word_by_word": [
+    {
+      "dev": "अमित्रं",
+      "iast": "amitraṃ",
+      "en": "Enemy",
+      "kn": "ಶತ್ರುವನ್ನು"
+    },
+    {
+      "dev": "कुरुते",
+      "iast": "kurute",
+      "en": "Makes",
+      "kn": "ಮಾಡಿಕೊಳ್ಳುತ್ತಾನೆ"
+    },
+    {
+      "dev": "मित्रं",
+      "iast": "mitraṃ",
+      "en": "Friend",
+      "kn": "ಮಿತ್ರನಾಗಿ"
+    },
+    {
+      "dev": "मित्रं",
+      "iast": "mitraṃ",
+      "en": "Friend",
+      "kn": "ಮಿತ್ರನನ್ನು"
+    },
+    {
+      "dev": "द्वेष्टि",
+      "iast": "dveṣṭi",
+      "en": "Hates",
+      "kn": "ದ್ವೇಷಿಸುತ್ತಾನೆ"
+    },
+    {
+      "dev": "हिनस्ति",
+      "iast": "hinasti",
+      "en": "Harms",
+      "kn": "ಹಾನಿಮಾಡುತ್ತಾನೆ"
+    },
+    {
+      "dev": "च",
+      "iast": "ca",
+      "en": "And",
+      "kn": "ಮತ್ತು"
+    },
+    {
+      "dev": "कर्म",
+      "iast": "karma",
+      "en": "Action",
+      "kn": "ಕಾರ್ಯ"
+    },
+    {
+      "dev": "चारभते",
+      "iast": "cārabhate",
+      "en": "And undertakes",
+      "kn": "ಆರಂಭಿಸುತ್ತಾನೆ"
+    },
+    {
+      "dev": "दुष्टं",
+      "iast": "duṣṭaṃ",
+      "en": "Wicked",
+      "kn": "ಕೆಟ್ಟ"
+    },
+    {
+      "dev": "तमाहुर्मूढचेतसम्",
+      "iast": "tamāhurmūḍhacetasam",
+      "en": "Him they call foolish-minded",
+      "kn": "ಅವನನ್ನು ಮೂಢಬುದ್ಧಿ ಎನ್ನುತ್ತಾರೆ"
+    }
+  ],
+  "practice": [
+    {
+      "id": "a",
+      "order": 1,
+      "dev": "अमित्रं कुरुते मित्रं",
+      "iast": "amitraṃ kurute mitraṃ",
+      "kn": "ಅಮಿತ್ರಂ ಕುರುತೇ ಮಿತ್ರಂ",
+      "audio": "audio/vidura/sloka-010-part-01.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "b",
+      "order": 2,
+      "dev": "मित्रं द्वेष्टि हिनस्ति च",
+      "iast": "mitraṃ dveṣṭi hinasti ca",
+      "kn": "ಮಿತ್ರಂ ದ್ವೇಷ್ಟಿ ಹಿನಸ್ತಿ ಚ",
+      "audio": "audio/vidura/sloka-010-part-02.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "c",
+      "order": 3,
+      "dev": "कर्म चारभते दुष्टं",
+      "iast": "karma cārabhate duṣṭaṃ",
+      "kn": "ಕರ್ಮ ಚಾರಭತೇ ದುಷ್ಟಂ",
+      "audio": "audio/vidura/sloka-010-part-03.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "d",
+      "order": 4,
+      "dev": "तमाहुर्मूढचेतसम्",
+      "iast": "tamāhurmūḍhacetasam",
+      "kn": "ತಮಾಹುರ್ಮೂಢಚೇತಸಮ್",
+      "audio": "audio/vidura/sloka-010-part-04.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    }
+  ],
+  "practice_source": "editorial-pada-boundaries",
+  "practice_note": "Four independent chant portions, divided at word boundaries for study practice. These cuts require pronunciation review.",
+  "audio": {
+    "full": "audio/vidura/sloka-010-full.mp3",
+    "clips": [
+      "audio/vidura/sloka-010-part-01.mp3",
+      "audio/vidura/sloka-010-part-02.mp3",
+      "audio/vidura/sloka-010-part-03.mp3",
+      "audio/vidura/sloka-010-part-04.mp3"
+    ],
+    "recording_status": "awaiting-vagdhenu-generation",
+    "meter": "anushtubh",
+    "full_playback": "single_continuous_recording",
+    "repeat_control": "browser-per-part"
+  },
+  "source": {
+    "page": 5,
+    "section": "Atha Viduranītiḥ",
+    "translation": "verbatim from supplied PDF",
+    "study_meanings": "editorial",
+    "notes": null
+  }
+}

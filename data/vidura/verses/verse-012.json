@@ -1,0 +1,163 @@
+{
+  "id": "vidura-012",
+  "collection": "vidura-niti",
+  "verse_number": 12,
+  "theme": "The folly of blaming others",
+  "reading": {
+    "dev": [
+      "परं क्षिपति दोषेण वर्तमानः स्वयं तथा ।",
+      "यश्च क्रुध्यत्यनीशानः स च मूढतमो नरः ॥ १२ ॥"
+    ],
+    "iast": [
+      "paraṃ kṣipati doṣeṇa vartamānaḥ svayaṃ tathā |",
+      "yaśca krudhyatyanīśānaḥ sa ca mūḍhatamo naraḥ || 12 ||"
+    ],
+    "kn": [
+      "ಪರಂ ಕ್ಷಿಪತಿ ದೋಷೇಣ ವರ್ತಮಾನಃ ಸ್ವಯಂ ತಥಾ ೤",
+      "ಯಶ್ಚ ಕ್ರುಧ್ಯತ್ಯನೀಶಾನಃ ಸ ಚ ಮೂಢತಮೋ ನರಃ ೥ ೧೨ ೥"
+    ]
+  },
+  "meaning": {
+    "en": "That man is the biggest fool who accuses others with the same blemishes which he has and expresses his anger without having any authority to do the same.",
+    "kn": "ತನ್ನಲ್ಲಿಯೂ ಇರುವ ದೋಷವನ್ನೇ ಇತರರಿಗೆ ಆರೋಪಿಸಿ, ಅಧಿಕಾರವಿಲ್ಲದೆ ಕೋಪಗೊಳ್ಳುವ ವ್ಯಕ್ತಿ ಅತ್ಯಂತ ಮೂಢನೆಂದು ಹೇಳಲಾಗಿದೆ."
+  },
+  "deeper_meaning": {
+    "en": "The verse asks us to examine our own conduct before condemning someone else. Anger without self-awareness or responsibility adds folly to hypocrisy.",
+    "kn": "ಇತರರನ್ನು ದೂಷಿಸುವ ಮೊದಲು ನಮ್ಮ ನಡವಳಿಕೆಯನ್ನು ಪರಿಶೀಲಿಸಬೇಕು. ಸ್ವದೋಷವನ್ನು ಕಾಣದೆ ಕೋಪಗೊಳ್ಳುವುದು ಅವಿವೇಕ."
+  },
+  "word_by_word": [
+    {
+      "dev": "परं",
+      "iast": "paraṃ",
+      "en": "Another person",
+      "kn": "ಇನ್ನೊಬ್ಬನನ್ನು"
+    },
+    {
+      "dev": "क्षिपति",
+      "iast": "kṣipati",
+      "en": "Blames or disparages",
+      "kn": "ದೂಷಿಸುತ್ತಾನೆ"
+    },
+    {
+      "dev": "दोषेण",
+      "iast": "doṣeṇa",
+      "en": "For a fault",
+      "kn": "ದೋಷದಿಂದ"
+    },
+    {
+      "dev": "वर्तमानः",
+      "iast": "vartamānaḥ",
+      "en": "Being or acting",
+      "kn": "ಇರುವವನು"
+    },
+    {
+      "dev": "स्वयं",
+      "iast": "svayaṃ",
+      "en": "Oneself",
+      "kn": "ತಾನೇ"
+    },
+    {
+      "dev": "तथा",
+      "iast": "tathā",
+      "en": "In the same way",
+      "kn": "ಅದೇ ರೀತಿಯಲ್ಲಿ"
+    },
+    {
+      "dev": "यश्च",
+      "iast": "yaśca",
+      "en": "And whoever",
+      "kn": "ಮತ್ತು ಯಾರು"
+    },
+    {
+      "dev": "क्रुध्यत्यनीशानः",
+      "iast": "krudhyatyanīśānaḥ",
+      "en": "Grows angry without authority",
+      "kn": "ಅಧಿಕಾರವಿಲ್ಲದೆ ಕೋಪಗೊಳ್ಳುತ್ತಾನೋ"
+    },
+    {
+      "dev": "स",
+      "iast": "sa",
+      "en": "He",
+      "kn": "ಅವನು"
+    },
+    {
+      "dev": "च",
+      "iast": "ca",
+      "en": "And",
+      "kn": "ಮತ್ತು"
+    },
+    {
+      "dev": "मूढतमो",
+      "iast": "mūḍhatamo",
+      "en": "Most foolish",
+      "kn": "ಅತ್ಯಂತ ಮೂಢ"
+    },
+    {
+      "dev": "नरः",
+      "iast": "naraḥ",
+      "en": "Man",
+      "kn": "ಮನುಷ್ಯ"
+    }
+  ],
+  "practice": [
+    {
+      "id": "a",
+      "order": 1,
+      "dev": "परं क्षिपति दोषेण",
+      "iast": "paraṃ kṣipati doṣeṇa",
+      "kn": "ಪರಂ ಕ್ಷಿಪತಿ ದೋಷೇಣ",
+      "audio": "audio/vidura/sloka-012-part-01.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "b",
+      "order": 2,
+      "dev": "वर्तमानः स्वयं तथा",
+      "iast": "vartamānaḥ svayaṃ tathā",
+      "kn": "ವರ್ತಮಾನಃ ಸ್ವಯಂ ತಥಾ",
+      "audio": "audio/vidura/sloka-012-part-02.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "c",
+      "order": 3,
+      "dev": "यश्च क्रुध्यत्यनीशानः",
+      "iast": "yaśca krudhyatyanīśānaḥ",
+      "kn": "ಯಶ್ಚ ಕ್ರುಧ್ಯತ್ಯನೀಶಾನಃ",
+      "audio": "audio/vidura/sloka-012-part-03.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "d",
+      "order": 4,
+      "dev": "स च मूढतमो नरः",
+      "iast": "sa ca mūḍhatamo naraḥ",
+      "kn": "ಸ ಚ ಮೂಢತಮೋ ನರಃ",
+      "audio": "audio/vidura/sloka-012-part-04.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    }
+  ],
+  "practice_source": "editorial-pada-boundaries",
+  "practice_note": "Practice segments follow printed lines and editorial word boundaries; confirm chanting pauses before audio publishing.",
+  "audio": {
+    "full": "audio/vidura/sloka-012-full.mp3",
+    "clips": [
+      "audio/vidura/sloka-012-part-01.mp3",
+      "audio/vidura/sloka-012-part-02.mp3",
+      "audio/vidura/sloka-012-part-03.mp3",
+      "audio/vidura/sloka-012-part-04.mp3"
+    ],
+    "recording_status": "awaiting-vagdhenu-generation",
+    "meter": "anushtubh",
+    "full_playback": "single_continuous_recording",
+    "repeat_control": "browser-per-part"
+  },
+  "source": {
+    "page": 5,
+    "section": "Atha Viduranītiḥ",
+    "translation": "verbatim from supplied PDF",
+    "study_meanings": "editorial",
+    "notes": "Devanagari IAST readings follow the handout; practice partitions editorial.",
+    "word_gloss_level": "editorial individual source-token meanings"
+  }
+}

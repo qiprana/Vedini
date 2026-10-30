@@ -1,0 +1,156 @@
+{
+  "id": "vidura-007",
+  "collection": "vidura-niti",
+  "verse_number": 7,
+  "theme": "Strength of discernment",
+  "reading": {
+    "dev": [
+      "येन त्वेतानि सर्वाणि सङ्गृहीतानि भारत ।",
+      "यद् बलानां बलं श्रेष्ठं तत् प्रज्ञाबलमुच्यते ॥ ७ ॥"
+    ],
+    "iast": [
+      "yena tvetāni sarvāṇi saṅgṛhītāni bhārata |",
+      "yad balānāṃ balaṃ śreṣṭhaṃ tat prajñābalamucyate || 7 ||"
+    ],
+    "kn": [
+      "ಯೇನ ತ್ವೇತಾನಿ ಸರ್ವಾಣಿ ಸಙ್ಗೃಹೀತಾನಿ ಭಾರತ ೤",
+      "ಯದ್ ಬಲಾನಾಂ ಬಲಂ ಶ್ರೇಷ್ಠಂ ತತ್ ಪ್ರಜ್ಞಾಬಲಮುಚ್ಯತೇ ೥ ೭ ೥"
+    ]
+  },
+  "meaning": {
+    "en": "O Bhārata ! Intellectual strength is the best kind of strength amongst all kinds of strengths, since it includes all of them in itself.",
+    "kn": "ಓ ಭಾರತ! ಎಲ್ಲ ಬಲಗಳಿಗಿಂತ ಪ್ರಜ್ಞೆಯ ಬಲವೇ ಶ್ರೇಷ್ಠ, ಏಕೆಂದರೆ ಉಳಿದ ಬಲಗಳನ್ನು ಅದು ಒಳಗೊಂಡಿರುತ್ತದೆ."
+  },
+  "deeper_meaning": {
+    "en": "Power is not only physical, material or social. Discernment helps one decide when and how to use other strengths. Vidura calls intelligence the highest strength because judgment can guide every other resource toward a worthy end.",
+    "kn": "ದೇಹಬಲ ಅಥವಾ ಸಂಪತ್ತಿಗಿಂತ ವಿವೇಕದ ಶಕ್ತಿ ಮುಖ್ಯ. ಇತರ ಬಲಗಳನ್ನು ಹೇಗೆ ಬಳಸಬೇಕು ಎಂಬ ದಿಕ್ಕನ್ನು ಪ್ರಜ್ಞೆ ನೀಡುತ್ತದೆ."
+  },
+  "word_by_word": [
+    {
+      "dev": "येन",
+      "iast": "yena",
+      "en": "By which",
+      "kn": "ಯಾವುದರಿಂದ"
+    },
+    {
+      "dev": "त्वेतानि",
+      "iast": "tvetāni",
+      "en": "Indeed these",
+      "kn": "ಈ ಎಲ್ಲವೂ"
+    },
+    {
+      "dev": "सर्वाणि",
+      "iast": "sarvāṇi",
+      "en": "All",
+      "kn": "ಎಲ್ಲವು"
+    },
+    {
+      "dev": "सङ्गृहीतानि",
+      "iast": "saṅgṛhītāni",
+      "en": "Included",
+      "kn": "ಒಳಗೊಂಡಿವೆ"
+    },
+    {
+      "dev": "भारत",
+      "iast": "bhārata",
+      "en": "O Bhārata",
+      "kn": "ಓ ಭಾರತ"
+    },
+    {
+      "dev": "यद्",
+      "iast": "yad",
+      "en": "Which",
+      "kn": "ಯಾವುದು"
+    },
+    {
+      "dev": "बलानां",
+      "iast": "balānāṃ",
+      "en": "Of strengths",
+      "kn": "ಬಲಗಳಲ್ಲೆಲ್ಲ"
+    },
+    {
+      "dev": "बलं",
+      "iast": "balaṃ",
+      "en": "Strength",
+      "kn": "ಬಲ"
+    },
+    {
+      "dev": "श्रेष्ठं",
+      "iast": "śreṣṭhaṃ",
+      "en": "Best",
+      "kn": "ಶ್ರೇಷ್ಠ"
+    },
+    {
+      "dev": "तत्",
+      "iast": "tat",
+      "en": "That",
+      "kn": "ಅದು"
+    },
+    {
+      "dev": "प्रज्ञाबलमुच्यते",
+      "iast": "prajñābalamucyate",
+      "en": "Is called the strength of wisdom",
+      "kn": "ಪ್ರಜ್ಞಾಬಲವೆಂದು ಕರೆಯುತ್ತಾರೆ"
+    }
+  ],
+  "practice": [
+    {
+      "id": "a",
+      "order": 1,
+      "dev": "येन त्वेतानि सर्वाणि",
+      "iast": "yena tvetāni sarvāṇi",
+      "kn": "ಯೇನ ತ್ವೇತಾನಿ ಸರ್ವಾಣಿ",
+      "audio": "audio/vidura/sloka-007-part-01.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "b",
+      "order": 2,
+      "dev": "सङ्गृहीतानि भारत",
+      "iast": "saṅgṛhītāni bhārata",
+      "kn": "ಸಙ್ಗೃಹೀತಾನಿ ಭಾರತ",
+      "audio": "audio/vidura/sloka-007-part-02.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "c",
+      "order": 3,
+      "dev": "यद् बलानां बलं श्रेष्ठं",
+      "iast": "yad balānāṃ balaṃ śreṣṭhaṃ",
+      "kn": "ಯದ್ ಬಲಾನಾಂ ಬಲಂ ಶ್ರೇಷ್ಠಂ",
+      "audio": "audio/vidura/sloka-007-part-03.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "d",
+      "order": 4,
+      "dev": "तत् प्रज्ञाबलमुच्यते",
+      "iast": "tat prajñābalamucyate",
+      "kn": "ತತ್ ಪ್ರಜ್ಞಾಬಲಮುಚ್ಯತೇ",
+      "audio": "audio/vidura/sloka-007-part-04.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    }
+  ],
+  "practice_source": "editorial-pada-boundaries",
+  "practice_note": "Four independent chant portions, divided at word boundaries for study practice. These cuts require pronunciation review.",
+  "audio": {
+    "full": "audio/vidura/sloka-007-full.mp3",
+    "clips": [
+      "audio/vidura/sloka-007-part-01.mp3",
+      "audio/vidura/sloka-007-part-02.mp3",
+      "audio/vidura/sloka-007-part-03.mp3",
+      "audio/vidura/sloka-007-part-04.mp3"
+    ],
+    "recording_status": "awaiting-vagdhenu-generation",
+    "meter": "anushtubh",
+    "full_playback": "single_continuous_recording",
+    "repeat_control": "browser-per-part"
+  },
+  "source": {
+    "page": 4,
+    "section": "Atha Viduranītiḥ",
+    "translation": "verbatim from supplied PDF",
+    "study_meanings": "editorial",
+    "notes": null
+  }
+}

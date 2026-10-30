@@ -1,0 +1,162 @@
+{
+  "id": "vidura-009",
+  "collection": "vidura-niti",
+  "verse_number": 9,
+  "theme": "Steadiness through circumstances",
+  "reading": {
+    "dev": [
+      "यस्य कृत्यं न विघ्नन्ति शीतमुष्णं भयं रतिः ।",
+      "समृद्धिरसमृद्धिर्वा स वै पण्डित उच्यते ॥ ९ ॥"
+    ],
+    "iast": [
+      "yasya kṛtyaṃ na vighnanti śītamuṣṇaṃ bhayaṃ ratiḥ |",
+      "samṛddhirasamṛddhirvā sa vai paṇḍita ucyate || 9 ||"
+    ],
+    "kn": [
+      "ಯಸ್ಯ ಕೃತ್ಯಂ ನ ವಿಘ್ನನ್ತಿ ಶೀತಮುಷ್ಣಂ ಭಯಂ ರತಿಃ ೤",
+      "ಸಮೃದ್ಧಿರಸಮೃದ್ಧಿರ್ವಾ ಸ ವೈ ಪಣ್ಡಿತ ಉಚ್ಯತೇ ೥ ೯ ೥"
+    ]
+  },
+  "meaning": {
+    "en": "A learned person is indeed one whose actions are not deterred by winter, summer, fear, attachment to objects of senses, prosperity or adversity.",
+    "kn": "ಶೀತ, ಉಷ್ಣ, ಭಯ, ಆಸಕ್ತಿ, ಸಮೃದ್ಧಿ ಅಥವಾ ಕಷ್ಟಗಳಿಂದ ಕರ್ತವ್ಯಕ್ಕೆ ಅಡ್ಡಿಯಾಗದವನೇ ನಿಜವಾದ ಪಂಡಿತನು."
+  },
+  "deeper_meaning": {
+    "en": "The wise person does not let outer conditions decide every action. Heat, cold, fear, pleasure and changing fortunes may be real, but they need not govern one's commitment to appropriate work. The verse values steadiness rather than indifference.",
+    "kn": "ಸುಖ–ದುಃಖ, ಭಯ–ಆಸಕ್ತಿ ಮತ್ತು ಬಾಹ್ಯ ಪರಿಸ್ಥಿತಿಗಳ ಮಧ್ಯೆಯೂ ಸಮಂಜಸವಾದ ಕಾರ್ಯವನ್ನು ಮುಂದುವರಿಸುವ ಸ್ಥೈರ್ಯವೇ ಪಾಂಡಿತ್ಯದ ಲಕ್ಷಣ."
+  },
+  "word_by_word": [
+    {
+      "dev": "यस्य",
+      "iast": "yasya",
+      "en": "Whose",
+      "kn": "ಯಾರ"
+    },
+    {
+      "dev": "कृत्यं",
+      "iast": "kṛtyaṃ",
+      "en": "Work",
+      "kn": "ಕಾರ್ಯವನ್ನು"
+    },
+    {
+      "dev": "न",
+      "iast": "na",
+      "en": "Not",
+      "kn": "ಇಲ್ಲ"
+    },
+    {
+      "dev": "विघ्नन्ति",
+      "iast": "vighnanti",
+      "en": "Obstruct",
+      "kn": "ಅಡ್ಡಿಪಡಿಸುತ್ತವೆ"
+    },
+    {
+      "dev": "शीतमुष्णं",
+      "iast": "śītamuṣṇaṃ",
+      "en": "Cold and heat",
+      "kn": "ಶೀತ ಮತ್ತು ಉಷ್ಣ"
+    },
+    {
+      "dev": "भयं",
+      "iast": "bhayaṃ",
+      "en": "Fear",
+      "kn": "ಭಯ"
+    },
+    {
+      "dev": "रतिः",
+      "iast": "ratiḥ",
+      "en": "Pleasure or attachment",
+      "kn": "ಆಸಕ್ತಿ"
+    },
+    {
+      "dev": "समृद्धिरसमृद्धिर्वा",
+      "iast": "samṛddhirasamṛddhirvā",
+      "en": "Prosperity or adversity",
+      "kn": "ಸಮೃದ್ಧಿ ಅಥವಾ ದಾರಿದ್ರ್ಯ"
+    },
+    {
+      "dev": "स",
+      "iast": "sa",
+      "en": "He",
+      "kn": "ಅವನು"
+    },
+    {
+      "dev": "वै",
+      "iast": "vai",
+      "en": "Indeed",
+      "kn": "ನಿಜವಾಗಿಯೂ"
+    },
+    {
+      "dev": "पण्डित",
+      "iast": "paṇḍita",
+      "en": "Wise person",
+      "kn": "ಪಂಡಿತನು"
+    },
+    {
+      "dev": "उच्यते",
+      "iast": "ucyate",
+      "en": "Is called",
+      "kn": "ಎಂದು ಕರೆಯುತ್ತಾರೆ"
+    }
+  ],
+  "practice": [
+    {
+      "id": "a",
+      "order": 1,
+      "dev": "यस्य कृत्यं न विघ्नन्ति",
+      "iast": "yasya kṛtyaṃ na vighnanti",
+      "kn": "ಯಸ್ಯ ಕೃತ್ಯಂ ನ ವಿಘ್ನನ್ತಿ",
+      "audio": "audio/vidura/sloka-009-part-01.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "b",
+      "order": 2,
+      "dev": "शीतमुष्णं भयं रतिः",
+      "iast": "śītamuṣṇaṃ bhayaṃ ratiḥ",
+      "kn": "ಶೀತಮುಷ್ಣಂ ಭಯಂ ರತಿಃ",
+      "audio": "audio/vidura/sloka-009-part-02.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "c",
+      "order": 3,
+      "dev": "समृद्धिरसमृद्धिर्वा स",
+      "iast": "samṛddhirasamṛddhirvā sa",
+      "kn": "ಸಮೃದ್ಧಿರಸಮೃದ್ಧಿರ್ವಾ ಸ",
+      "audio": "audio/vidura/sloka-009-part-03.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "d",
+      "order": 4,
+      "dev": "वै पण्डित उच्यते",
+      "iast": "vai paṇḍita ucyate",
+      "kn": "ವೈ ಪಣ್ಡಿತ ಉಚ್ಯತೇ",
+      "audio": "audio/vidura/sloka-009-part-04.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    }
+  ],
+  "practice_source": "editorial-pada-boundaries",
+  "practice_note": "Four independent chant portions, divided at word boundaries for study practice. These cuts require pronunciation review.",
+  "audio": {
+    "full": "audio/vidura/sloka-009-full.mp3",
+    "clips": [
+      "audio/vidura/sloka-009-part-01.mp3",
+      "audio/vidura/sloka-009-part-02.mp3",
+      "audio/vidura/sloka-009-part-03.mp3",
+      "audio/vidura/sloka-009-part-04.mp3"
+    ],
+    "recording_status": "awaiting-vagdhenu-generation",
+    "meter": "anushtubh",
+    "full_playback": "single_continuous_recording",
+    "repeat_control": "browser-per-part"
+  },
+  "source": {
+    "page": 5,
+    "section": "Atha Viduranītiḥ",
+    "translation": "verbatim from supplied PDF",
+    "study_meanings": "editorial",
+    "notes": null
+  }
+}

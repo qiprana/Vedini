@@ -1,0 +1,221 @@
+{
+  "id": "vidura-003",
+  "collection": "vidura-niti",
+  "verse_number": 3,
+  "theme": "Seven obstacles to learning",
+  "reading": {
+    "dev": [
+      "आलस्यं मदमोहौ च चापलं गोष्ठिरेव च ।",
+      "स्तब्धता चाभिमानित्वं तथाऽत्यागित्वमेव च ।",
+      "एते वै सप्त दोषाः स्युः सदा विद्यार्थिनां मताः ॥ ३ ॥"
+    ],
+    "iast": [
+      "ālasyaṃ madamohau ca cāpalaṃ goṣṭhireva ca |",
+      "stabdhatā cābhimānitvaṃ tathā'tyāgitvameva ca |",
+      "ete vai sapta doṣāḥ syuḥ sadā vidyārthināṃ matāḥ || 3 ||"
+    ],
+    "kn": [
+      "ಆಲಸ್ಯಂ ಮದಮೋಹೌ ಚ ಚಾಪಲಂ ಗೋಷ್ಠಿರೇವ ಚ ೤",
+      "ಸ್ತಬ್ಧತಾ ಚಾಭಿಮಾನಿತ್ವಂ ತಥಾಽತ್ಯಾಗಿತ್ವಮೇವ ಚ ೤",
+      "ಏತೇ ವೈ ಸಪ್ತ ದೋಷಾಃ ಸ್ಯುಃ ಸದಾ ವಿದ್ಯಾರ್ಥಿನಾಂ ಮತಾಃ ೥ ೩ ೥"
+    ]
+  },
+  "meaning": {
+    "en": "Laziness, pride and passion, ficklemindedness, futile loose talks, haughtiness, self-conceit and greediness - these are the seven ills definitely counted (which are to be avoided) by the seekers of knowledge.",
+    "kn": "ಆಲಸ್ಯ, ಅಹಂಕಾರ ಮತ್ತು ಮೋಹ, ಚಂಚಲತೆ, ವ್ಯರ್ಥ ಮಾತುಕತೆ, ಗರ್ವ, ಸ್ವಾಭಿಮಾನ ಮತ್ತು ತ್ಯಾಗದ ಕೊರತೆ — ಇವು ವಿದ್ಯೆಯನ್ನು ಅರಸುವವರು ದೂರವಿಡಬೇಕಾದ ಏಳು ದೋಷಗಳು."
+  },
+  "deeper_meaning": {
+    "en": "This list looks beyond intellectual ability to the habits that determine whether study can mature. A student may have talent yet lose attention through laziness, distraction, vain conversation or an unwillingness to give up comforts. Vidura places the responsibility for learning on the learner's conduct.",
+    "kn": "ಪ್ರತಿಭೆ ಮಾತ್ರ ಸಾಕಾಗುವುದಿಲ್ಲ. ಆಲಸ್ಯ, ಚಂಚಲತೆ, ವ್ಯರ್ಥ ಮಾತು ಮತ್ತು ತ್ಯಾಗದ ಕೊರತೆ ಕಲಿಕೆಯನ್ನು ದುರ್ಬಲಗೊಳಿಸುತ್ತವೆ. ವಿದ್ಯೆಗೆ ಸರಿಯಾದ ನಡತೆ ಮತ್ತು ನಿರಂತರ ಅಭ್ಯಾಸವೂ ಅಗತ್ಯ."
+  },
+  "word_by_word": [
+    {
+      "dev": "आलस्यं",
+      "iast": "ālasyaṃ",
+      "en": "Laziness",
+      "kn": "ಆಲಸ್ಯ"
+    },
+    {
+      "dev": "मदमोहौ",
+      "iast": "madamohau",
+      "en": "Pride and delusion",
+      "kn": "ಗರ್ವ ಮತ್ತು ಮೋಹ"
+    },
+    {
+      "dev": "च",
+      "iast": "ca",
+      "en": "And",
+      "kn": "ಮತ್ತು"
+    },
+    {
+      "dev": "चापलं",
+      "iast": "cāpalaṃ",
+      "en": "Fickleness",
+      "kn": "ಚಂಚಲತೆ"
+    },
+    {
+      "dev": "गोष्ठिरेव",
+      "iast": "goṣṭhireva",
+      "en": "Idle conversation itself",
+      "kn": "ವ್ಯರ್ಥ ಮಾತುಕತೆ"
+    },
+    {
+      "dev": "च",
+      "iast": "ca",
+      "en": "And",
+      "kn": "ಮತ್ತು"
+    },
+    {
+      "dev": "स्तब्धता",
+      "iast": "stabdhatā",
+      "en": "Stubbornness",
+      "kn": "ಹಠ"
+    },
+    {
+      "dev": "चाभिमानित्वं",
+      "iast": "cābhimānitvaṃ",
+      "en": "And self-conceit",
+      "kn": "ಮತ್ತು ಅಹಂಕಾರ"
+    },
+    {
+      "dev": "तथाऽत्यागित्वमेव",
+      "iast": "tathā'tyāgitvameva",
+      "en": "Likewise unwillingness to give up",
+      "kn": "ಹಾಗೆಯೇ ತ್ಯಾಗದ ಕೊರತೆ"
+    },
+    {
+      "dev": "च",
+      "iast": "ca",
+      "en": "And",
+      "kn": "ಮತ್ತು"
+    },
+    {
+      "dev": "एते",
+      "iast": "ete",
+      "en": "These",
+      "kn": "ಇವು"
+    },
+    {
+      "dev": "वै",
+      "iast": "vai",
+      "en": "Indeed",
+      "kn": "ನಿಜವಾಗಿಯೂ"
+    },
+    {
+      "dev": "सप्त",
+      "iast": "sapta",
+      "en": "Seven",
+      "kn": "ಏಳು"
+    },
+    {
+      "dev": "दोषाः",
+      "iast": "doṣāḥ",
+      "en": "Faults",
+      "kn": "ದೋಷಗಳು"
+    },
+    {
+      "dev": "स्युः",
+      "iast": "syuḥ",
+      "en": "Are said to be",
+      "kn": "ಎಂದು ಹೇಳಲ್ಪಡುತ್ತವೆ"
+    },
+    {
+      "dev": "सदा",
+      "iast": "sadā",
+      "en": "Always",
+      "kn": "ಯಾವಾಗಲೂ"
+    },
+    {
+      "dev": "विद्यार्थिनां",
+      "iast": "vidyārthināṃ",
+      "en": "Of students",
+      "kn": "ವಿದ್ಯಾರ್ಥಿಗಳ"
+    },
+    {
+      "dev": "मताः",
+      "iast": "matāḥ",
+      "en": "Regarded as",
+      "kn": "ಎಂದು ಪರಿಗಣಿತ"
+    }
+  ],
+  "practice": [
+    {
+      "id": "a",
+      "order": 1,
+      "dev": "आलस्यं मदमोहौ च",
+      "iast": "ālasyaṃ madamohau ca",
+      "kn": "ಆಲಸ್ಯಂ ಮದಮೋಹೌ ಚ",
+      "audio": "audio/vidura/sloka-003-part-01.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "b",
+      "order": 2,
+      "dev": "चापलं गोष्ठिरेव च",
+      "iast": "cāpalaṃ goṣṭhireva ca",
+      "kn": "ಚಾಪಲಂ ಗೋಷ್ಠಿರೇವ ಚ",
+      "audio": "audio/vidura/sloka-003-part-02.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "c",
+      "order": 3,
+      "dev": "स्तब्धता चाभिमानित्वं",
+      "iast": "stabdhatā cābhimānitvaṃ",
+      "kn": "ಸ್ತಬ್ಧತಾ ಚಾಭಿಮಾನಿತ್ವಂ",
+      "audio": "audio/vidura/sloka-003-part-03.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "d",
+      "order": 4,
+      "dev": "तथाऽत्यागित्वमेव च",
+      "iast": "tathā'tyāgitvameva ca",
+      "kn": "ತಥಾಽತ್ಯಾಗಿತ್ವಮೇವ ಚ",
+      "audio": "audio/vidura/sloka-003-part-04.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "e",
+      "order": 5,
+      "dev": "एते वै सप्त दोषाः",
+      "iast": "ete vai sapta doṣāḥ",
+      "kn": "ಏತೇ ವೈ ಸಪ್ತ ದೋಷಾಃ",
+      "audio": "audio/vidura/sloka-003-part-05.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "f",
+      "order": 6,
+      "dev": "स्युः सदा विद्यार्थिनां मताः",
+      "iast": "syuḥ sadā vidyārthināṃ matāḥ",
+      "kn": "ಸ್ಯುಃ ಸದಾ ವಿದ್ಯಾರ್ಥಿನಾಂ ಮತಾಃ",
+      "audio": "audio/vidura/sloka-003-part-06.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    }
+  ],
+  "practice_source": "editorial-pada-boundaries",
+  "practice_note": "Six independent chant portions because this selection has three printed lines.",
+  "audio": {
+    "full": "audio/vidura/sloka-003-full.mp3",
+    "clips": [
+      "audio/vidura/sloka-003-part-01.mp3",
+      "audio/vidura/sloka-003-part-02.mp3",
+      "audio/vidura/sloka-003-part-03.mp3",
+      "audio/vidura/sloka-003-part-04.mp3",
+      "audio/vidura/sloka-003-part-05.mp3",
+      "audio/vidura/sloka-003-part-06.mp3"
+    ],
+    "recording_status": "awaiting-vagdhenu-generation",
+    "meter": "anushtubh",
+    "full_playback": "single_continuous_recording",
+    "repeat_control": "browser-per-part"
+  },
+  "source": {
+    "page": 3,
+    "section": "Atha Viduranītiḥ",
+    "translation": "verbatim from supplied PDF",
+    "study_meanings": "editorial",
+    "notes": null
+  }
+}
