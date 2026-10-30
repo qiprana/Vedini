@@ -27,28 +27,70 @@
   },
   "word_by_word": [
     {
-      "dev": "षडेते तु गुणाः पुंसा",
-      "iast": "ṣaḍete tu guṇāḥ puṃsā",
-      "en": "These six human virtues",
-      "kn": "ಮನುಷ್ಯನ ಈ ಆರು ಗುಣಗಳು"
+      "dev": "षडेते",
+      "iast": "ṣaḍete",
+      "en": "These six",
+      "kn": "ಈ ಆರು"
     },
     {
-      "dev": "न हातव्याः कदाचन",
-      "iast": "na hātavyāḥ kadācana",
-      "en": "Must never be abandoned",
-      "kn": "ಎಂದಿಗೂ ತ್ಯಜಿಸಬಾರದವು"
+      "dev": "तु",
+      "iast": "tu",
+      "en": "Indeed",
+      "kn": "ನಿಜವಾಗಿ"
     },
     {
-      "dev": "सत्यं दानमनालस्यमनसूया",
-      "iast": "satyaṃ dānamanālasyamanasūyā",
-      "en": "Truth, generosity, diligence, lack of jealousy",
-      "kn": "ಸತ್ಯ, ದಾನ, ಪರಿಶ್ರಮ, ಅಸೂಯೆಯಿಲ್ಲದಿರುವುದು"
+      "dev": "गुणाः",
+      "iast": "guṇāḥ",
+      "en": "Virtues",
+      "kn": "ಗುಣಗಳು"
     },
     {
-      "dev": "क्षमा धृतिः",
-      "iast": "kṣamā dhṛtiḥ",
-      "en": "Forgiveness and steadiness",
-      "kn": "ಕ್ಷಮೆ ಮತ್ತು ಧೃತಿ"
+      "dev": "पुंसा",
+      "iast": "puṃsā",
+      "en": "Of a person",
+      "kn": "ಮನುಷ್ಯನ"
+    },
+    {
+      "dev": "न",
+      "iast": "na",
+      "en": "Not",
+      "kn": "ಬೇಡ"
+    },
+    {
+      "dev": "हातव्याः",
+      "iast": "hātavyāḥ",
+      "en": "To be abandoned",
+      "kn": "ತ್ಯಜಿಸಬೇಕಾದ"
+    },
+    {
+      "dev": "कदाचन",
+      "iast": "kadācana",
+      "en": "At any time",
+      "kn": "ಎಂದಿಗೂ"
+    },
+    {
+      "dev": "सत्यं",
+      "iast": "satyaṃ",
+      "en": "Truth",
+      "kn": "ಸತ್ಯ"
+    },
+    {
+      "dev": "दानमनालस्यमनसूया",
+      "iast": "dānamanālasyamanasūyā",
+      "en": "Charity, diligence, absence of envy",
+      "kn": "ದಾನ, ಪರಿಶ್ರಮ, ಅಸೂಯೆಯಿಲ್ಲದಿರುವುದು"
+    },
+    {
+      "dev": "क्षमा",
+      "iast": "kṣamā",
+      "en": "Forgiveness",
+      "kn": "ಕ್ಷಮೆ"
+    },
+    {
+      "dev": "धृतिः",
+      "iast": "dhṛtiḥ",
+      "en": "Fortitude",
+      "kn": "ಸ್ಥೈರ್ಯ"
     }
   ],
   "practice": [
@@ -110,6 +152,6 @@
     "translation": "verbatim from supplied PDF",
     "study_meanings": "editorial",
     "notes": "Devanagari IAST readings follow the handout; practice partitions editorial.",
-    "word_gloss_level": "bilingual phrase-aligned glosses; individual-token glosses pending philological review"
+    "word_gloss_level": "editorial individual source-token meanings"
   }
 }
