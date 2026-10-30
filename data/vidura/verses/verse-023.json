@@ -29,26 +29,26 @@
     {
       "dev": "अकस्मादेव कुप्यन्ति",
       "iast": "akasmādeva kupyanti",
-      "en": "They become angry suddenly",
-      "kn": "ಕಾರಣವಿಲ್ಲದೆ ಬದಲಾಗುವ ಕೋಪ ಮತ್ತು ಸಂತೋಷ ಇತರರಿಗೆ ನಂಬಿಕೆ ಮೂಡಿಸುವುದಿಲ್ಲ; ಅಸ್ಥಿರ ಸ್ವಭಾವವನ್ನು ಅಲೆದಾಡುವ ಮೋಡಕ್ಕೆ ಹೋಲಿಸಲಾಗಿದೆ."
+      "en": "They become angry without cause",
+      "kn": "ಇದ್ದಕ್ಕಿದ್ದಂತೆ ಕೋಪಗೊಳ್ಳುತ್ತಾರೆ"
     },
     {
       "dev": "प्रसीदन्त्यनिमित्ततः",
       "iast": "prasīdantyanimittataḥ",
-      "en": "They become pleased without reason",
-      "kn": "ಕಾರಣವಿಲ್ಲದೆ ಬದಲಾಗುವ ಕೋಪ ಮತ್ತು ಸಂತೋಷ ಇತರರಿಗೆ ನಂಬಿಕೆ ಮೂಡಿಸುವುದಿಲ್ಲ; ಅಸ್ಥಿರ ಸ್ವಭಾವವನ್ನು ಅಲೆದಾಡುವ ಮೋಡಕ್ಕೆ ಹೋಲಿಸಲಾಗಿದೆ."
+      "en": "And pleased without reason",
+      "kn": "ಕಾರಣವಿಲ್ಲದೆ ಸಂತೋಷಪಡುತ್ತಾರೆ"
     },
     {
       "dev": "शीलमेतदसाधूनाम्",
       "iast": "śīlametadasādhūnām",
-      "en": "This is the habit of the unworthy",
-      "kn": "ಕಾರಣವಿಲ್ಲದೆ ಬದಲಾಗುವ ಕೋಪ ಮತ್ತು ಸಂತೋಷ ಇತರರಿಗೆ ನಂಬಿಕೆ ಮೂಡಿಸುವುದಿಲ್ಲ; ಅಸ್ಥಿರ ಸ್ವಭಾವವನ್ನು ಅಲೆದಾಡುವ ಮೋಡಕ್ಕೆ ಹೋಲಿಸಲಾಗಿದೆ."
+      "en": "Such is the nature of the unworthy",
+      "kn": "ಇದು ದುರ್ಜನರ ಸ್ವಭಾವ"
     },
     {
       "dev": "अभ्रं पारिप्लवं यथा",
       "iast": "abhraṃ pāriplavaṃ yathā",
-      "en": "Like a shifting cloud",
-      "kn": "ಕಾರಣವಿಲ್ಲದೆ ಬದಲಾಗುವ ಕೋಪ ಮತ್ತು ಸಂತೋಷ ಇತರರಿಗೆ ನಂಬಿಕೆ ಮೂಡಿಸುವುದಿಲ್ಲ; ಅಸ್ಥಿರ ಸ್ವಭಾವವನ್ನು ಅಲೆದಾಡುವ ಮೋಡಕ್ಕೆ ಹೋಲಿಸಲಾಗಿದೆ."
+      "en": "Like a wandering cloud",
+      "kn": "ಚಲಿಸುವ ಮೋಡದಂತೆ"
     }
   ],
   "practice": [
@@ -109,6 +109,7 @@
     "section": "Atha Viduranītiḥ",
     "translation": "verbatim from supplied PDF",
     "study_meanings": "editorial",
-    "notes": null
+    "notes": null,
+    "word_gloss_level": "bilingual phrase-aligned glosses; individual-token glosses pending philological review"
   }
 }
