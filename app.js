@@ -6,7 +6,7 @@ const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLo
 const langText=(en,kn)=>language==="kn"?kn:en;
 let verses=[],dhyana=[],nameData={},dhyanaData={},verseData={},dhyanaPhraseData={},language="en",searchTerm="",highlightTerm="";
 let spiritualBenefits={},namaMantras={},significanceRewrites={},nameBenefits={};
-const pageSize=10,plannedVerses=183;
+const pageSize=1,plannedVerses=183;
 let view="verses",pageIndex=0,selectedVerse=1;
 let activeAudioElement=null;
 function claimAudioFocus(audio){
@@ -1376,7 +1376,7 @@ function card(v,isDhyana){
  const iast=reading.iast||[];
  const id=(isDhyana?"dhyana-":"verse-")+number;
  const label=langText(isDhyana?"Dhyāna "+number:"Śloka "+number,isDhyana?"ಧ್ಯಾನ "+number:"ಶ್ಲೋಕ "+number);
- const left="<section class='verse-reading-panel' aria-label='"+esc(langText("Śloka and transliteration","ಶ್ಲೋಕ ಮತ್ತು ಲಿಪ್ಯಂತರ"))+"'><h3 class='panel-heading'>"+esc(langText("Śloka","ಶ್ಲೋಕ"))+"</h3><div class='reading-label'>"+esc(language==="kn"?"ಕನ್ನಡ":"देवनागरी")+"</div><div class='verse-script "+(language==="kn"?"kannada":"devanagari")+"'>"+selected.map(verseLine).join("")+"</div><div class='reading-label iast-heading'>IAST</div><div class='verse-iast'>"+iast.map(verseLine).join("")+"</div>"+(isDhyana?"":namavaliPanel(v))+"</section>";
+ const left="<section class='verse-reading-panel' aria-label='"+esc(langText("Śloka and transliteration","ಶ್ಲೋಕ ಮತ್ತು ಲಿಪ್ಯಂತರ"))+"'><h3 class='panel-heading'>"+esc(langText("Śloka","ಶ್ಲೋಕ"))+"</h3><div class='reading-label'>"+esc(language==="kn"?"ಕನ್ನಡ":"देवनागरी")+"</div><div class='verse-script "+(language==="kn"?"kannada":"devanagari")+"'>"+selected.map(verseLine).join("")+"</div><div class='reading-label iast-heading'>IAST</div><div class='verse-iast'>"+iast.map(verseLine).join("")+"</div>"+"</section>";
  const right="<div class='verse-names-panel'>"+(isDhyana?dhyanaPhrasePanel(v):nameSection(v))+"</div>";
  return "<article class='card vedini-study-card' id='"+id+"'><div class='card-head'><b>"+esc(label)+"</b>"+makeAudio(v,isDhyana)+"</div><div class='verse-content-grid'>"+left+right+"</div><div class='verse-meaning-panel'>"+(isDhyana?dhyanaVerseMeaning(v):mainVerseMeaning(v))+"</div><p class='meta'>"+esc(langText("Interpretation draft · Sanskrit and Kannada editorial review recommended","ವ್ಯಾಖ್ಯಾನ ಕರಡು · ಸಂಸ್ಕೃತ ಮತ್ತು ಕನ್ನಡ ಪರಿಶೀಲನೆ ಅಗತ್ಯ"))+"</p></article>";
 }
@@ -1439,12 +1439,19 @@ function showResultList(q){
  msg("#result-note","Searching available ślokas and name explanations","ಲಭ್ಯವಿರುವ ಶ್ಲೋಕಗಳು ಮತ್ತು ನಾಮವಿವರಣೆಗಳಲ್ಲಿ ಹುಡುಕಾಟ");
 }
 function renderGroupTabs(){
- const root=$("#verse-group-tabs");if(!root)return;
- const count=Math.ceil(verses.length/pageSize);
- root.innerHTML="<button type='button' class='group-tab "+(view==="dhyana"?"current":"")+"' data-dhyana-group='1' "+(view==="dhyana"?"aria-current='page'":"")+">Dhyāna 1–4</button>"+
- Array.from({length:count},(_,i)=>{const start=i*pageSize+1,end=Math.min(verses.length,start+pageSize-1);return "<button type='button' class='group-tab "+(view==="verses"&&i===pageIndex?"current":"")+"' aria-current='"+(view==="verses"&&i===pageIndex?"page":"false")+"' data-group='"+i+"'>"+start+"–"+end+"</button>"}).join("");
- root.querySelector("[data-dhyana-group]").onclick=()=>showDhyana(1);
- root.querySelectorAll("button[data-group]").forEach(btn=>btn.onclick=()=>openGroup(Number(btn.dataset.group)));
+ const picker=$("#verse-selector");if(!picker)return;
+ if(!picker.options.length){
+  const dh=document.createElement("optgroup");dh.label="Dhyāna";
+  for(let n=1;n<=dhyana.length;n++)dh.append(new Option("Dhyāna "+n,"d-"+n));
+  const main=document.createElement("optgroup");main.label="Lalitā Sahasranāma";
+  for(let n=1;n<=verses.length;n++)main.append(new Option("Śloka "+n,"s-"+n));
+  picker.append(dh,main);
+ }
+ picker.value=(view==="dhyana"?"d-":"s-")+selectedVerse;
+ const at=view==="dhyana"?selectedVerse-1:dhyana.length+selectedVerse-1;
+ $("#verse-previous").disabled=at===0;
+ $("#verse-next").disabled=at===dhyana.length+verses.length-1;
+ $("#verse-position").textContent=view==="dhyana"?"Dhyāna "+selectedVerse+" of "+dhyana.length:"Śloka "+selectedVerse+" of "+verses.length;
 }
 function updateNavigation(){
  const searching=!!searchTerm.trim();
@@ -1454,13 +1461,11 @@ function updateNavigation(){
  $("#sticky-verse-navigation").hidden=searching;
  $("#bottom-navigation").hidden=searching||view!=="verses";
  renderGroupTabs();
- const totalPages=Math.ceil(verses.length/pageSize);
- $("#bottom-previous").disabled=pageIndex<=0;
- $("#bottom-next").disabled=pageIndex>=totalPages-1;
- const start=pageIndex*pageSize+1,end=Math.min(verses.length,start+pageSize-1);
- $("#bottom-position").textContent=langText("Ślokas "+start+"–"+end+" of "+verses.length,"ಶ್ಲೋಕಗಳು "+start+"–"+end+" / "+verses.length);
+ $("#bottom-previous").disabled=selectedVerse<=1;
+ $("#bottom-next").disabled=selectedVerse>=verses.length;
+ $("#bottom-position").textContent=langText("Śloka "+selectedVerse+" of "+verses.length,"ಶ್ಲೋಕ "+selectedVerse+" / "+verses.length);
  msg("#dhyana-heading","Dhyāna Ślokas","ಧ್ಯಾನ ಶ್ಲೋಕಗಳು");
- msg("#main-heading","Ślokas "+start+"–"+end,"ಶ್ಲೋಕಗಳು "+start+"–"+end);
+ msg("#main-heading","Śloka "+selectedVerse,"ಶ್ಲೋಕ "+selectedVerse);
 }
 function selectVisibleVerse(number){
  if(!Number.isInteger(number)||number<1||number>verses.length)return;
@@ -1479,21 +1484,7 @@ function selectVisibleVerse(number){
   card.classList.toggle("selected-verse",card.id==="verse-"+number)
  );
 }
-function updateQuickIndex(){
- const root=$("#verse-quick-index");if(!root)return;
- if(searchTerm.trim()){root.hidden=true;return}
- root.hidden=false;
- if(view==="dhyana"){
-  root.innerHTML="<span class='quick-label'>Dhyāna</span><div class='quick-buttons'>"+
-  Array.from({length:dhyana.length},(_,i)=>"<button type='button' data-dhyana-quick='"+(i+1)+"' aria-label='Dhyāna "+(i+1)+"'>"+(i+1)+"</button>").join("")+"</div>";
-  root.querySelectorAll("[data-dhyana-quick]").forEach(btn=>btn.onclick=()=>showDhyana(Number(btn.dataset.dhyanaQuick)));
-  return;
- }
- const start=pageIndex*pageSize+1,end=Math.min(verses.length,start+pageSize-1);
- root.innerHTML="<span class='quick-label'>In this group</span><div class='quick-buttons'>"+
- Array.from({length:end-start+1},(_,i)=>{const n=start+i;return "<button type='button' aria-label='Śloka "+n+"' data-quick='"+n+"' class='"+(n===selectedVerse?"quick-current":"")+"'>"+n+"</button>"}).join("")+"</div>";
- root.querySelectorAll("[data-quick]").forEach(btn=>btn.onclick=()=>{const n=Number(btn.dataset.quick);selectVisibleVerse(n);saveLocation("sloka",n);scrollToElement("verse-"+n)});
-}
+function updateQuickIndex(){renderGroupTabs();}
 // Passive, animation-frame-throttled scroll tracking: update the highlighted number
 // without re-rendering ślokas or interrupting a playing recording.
 let verseScrollQueued=false;
@@ -1546,10 +1537,10 @@ function render(){
   return;
  }
  if(view==="dhyana"){
-  $("#dhyana-cards").innerHTML=dhyana.map(v=>card(v,true)).join("");
+  $("#dhyana-cards").innerHTML=dhyana.filter(v=>v.verse_number===selectedVerse).map(v=>card(v,true)).join("");
   $("#verse-cards").innerHTML="";
  }else{
-  const range=verses.slice(pageIndex*pageSize,pageIndex*pageSize+pageSize);
+  const range=verses.slice(selectedVerse-1,selectedVerse);
   $("#verse-cards").innerHTML=range.map(v=>card(v,false)).join("");
   $("#dhyana-cards").innerHTML="";
   document.querySelectorAll(".card").forEach(e=>e.classList.toggle("selected-verse",e.id==="verse-"+selectedVerse));
@@ -1577,18 +1568,19 @@ function scrollToElement(id){
 }
 function showDhyana(n=1,writeURL=true){
  if(!Number.isInteger(n)||n<1||n>dhyana.length)n=1;
- view="dhyana";searchTerm="";$("#search").value="";
+ view="dhyana";selectedVerse=n;searchTerm="";$("#search").value="";
  if(writeURL)saveLocation("dhyana",n);
  render();scrollToElement("dhyana-"+n);
 }
-function openGroup(index,writeURL=true){
- const availablePages=Math.ceil(verses.length/pageSize);
- if(!availablePages)return;
- pageIndex=Math.max(0,Math.min(availablePages-1,index));
- selectedVerse=pageIndex*pageSize+1;
- view="verses";searchTerm="";$("#search").value="";
- if(writeURL)saveLocation("sloka",selectedVerse);
- render();scrollToElement("main-stotra");
+function openGroup(index,writeURL=true){jump(Math.max(1,Math.min(verses.length,index+1)),writeURL);}
+function chooseVerse(value){
+ if(value.startsWith("d-"))showDhyana(Number(value.slice(2)));
+ else if(value.startsWith("s-"))jump(Number(value.slice(2)));
+}
+function moveVerse(delta){
+ const pos=view==="dhyana"?selectedVerse-1:dhyana.length+selectedVerse-1;
+ const next=Math.max(0,Math.min(dhyana.length+verses.length-1,pos+delta));
+ chooseVerse(next<dhyana.length?"d-"+(next+1):"s-"+(next-dhyana.length+1));
 }
 function jump(n,writeURL=true){
  if(!Number.isInteger(n)||n<1||n>plannedVerses){
@@ -1605,7 +1597,7 @@ function jump(n,writeURL=true){
 function loadInitialLocation(){
  const params=new URLSearchParams(window.location.search);
  const d=Number(params.get("dhyana")),n=Number(params.get("sloka"));
- if(params.has("dhyana")&&Number.isInteger(d)&&d>=1&&d<=dhyana.length){view="dhyana";selectedVerse=1;return "dhyana-"+d;}
+ if(params.has("dhyana")&&Number.isInteger(d)&&d>=1&&d<=dhyana.length){view="dhyana";selectedVerse=d;return "dhyana-"+d;}
  if(params.has("sloka")&&Number.isInteger(n)&&n>=1&&n<=verses.length){
   view="verses";pageIndex=Math.floor((n-1)/pageSize);selectedVerse=n;return "verse-"+n;
  }
@@ -1666,7 +1658,7 @@ function loadAudio(){
    let voice=null;
    if(!isDhyana){
     voice=setting(langText("Singer","ಗಾಯಕ"),langText("Choose singer","ಗಾಯಕನನ್ನು ಆರಿಸಿ"),[
-     ["VD","VD"],["KMP","KMP"]
+     ["VD","Vāgdhenu · Practice voice"],["KMP","Kuldeep M. Pai"]
     ]);
    }
    const speed=setting(langText("Speed","ವೇಗ"),langText("Playback speed","ಪ್ಲೇಬ್ಯಾಕ್ ವೇಗ"),[
@@ -2107,8 +2099,11 @@ $("#search").oninput=e=>{searchTerm=e.target.value;render()};
 
 
 
-$("#bottom-previous").onclick=()=>openGroup(pageIndex-1);
-$("#bottom-next").onclick=()=>openGroup(pageIndex+1);
+$("#bottom-previous").onclick=()=>moveVerse(-1);
+$("#bottom-next").onclick=()=>moveVerse(1);
+$("#verse-selector").onchange=e=>chooseVerse(e.target.value);
+$("#verse-previous").onclick=()=>moveVerse(-1);
+$("#verse-next").onclick=()=>moveVerse(1);
 window.addEventListener("scroll",queueVerseScrollUpdate,{passive:true});
 window.addEventListener("resize",()=>{
  requestAnimationFrame(fitVerseLines);
