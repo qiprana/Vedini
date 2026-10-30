@@ -27,28 +27,76 @@
   },
   "word_by_word": [
     {
-      "dev": "दुष्कुलीनः कुलीनो वा",
-      "iast": "duṣkulīnaḥ kulīno vā",
-      "en": "Of low lineage or high lineage",
-      "kn": "ಕೆಳ ಅಥವಾ ಮೇಲಿನ ಕುಲದಲ್ಲಿ ಹುಟ್ಟಿದವನು"
+      "dev": "दुष्कुलीनः",
+      "iast": "duṣkulīnaḥ",
+      "en": "Born in a lower-status family",
+      "kn": "ಕೆಳಸ್ಥಾನದ ಕುಟುಂಬದಲ್ಲಿ ಹುಟ್ಟಿದವನು"
     },
     {
-      "dev": "मर्यादां यो न लङ्घयेत्",
-      "iast": "maryādāṃ yo na laṅghayet",
-      "en": "One who does not cross limits",
-      "kn": "ಮರ್ಯಾದೆಯನ್ನು ಮೀರದವನು"
+      "dev": "कुलीनो",
+      "iast": "kulīno",
+      "en": "Of distinguished family",
+      "kn": "ಉನ್ನತ ಕುಲದವನು"
     },
     {
-      "dev": "धर्मापेक्षी मृदुर्ह्रीमान्",
-      "iast": "dharmāpekṣī mṛdurhrīmān",
-      "en": "Mindful of dharma, gentle and modest",
-      "kn": "ಧರ್ಮಬುದ್ಧಿ, ಮೃದುತನ ಮತ್ತು ವಿನಯವುಳ್ಳವನು"
+      "dev": "वा",
+      "iast": "vā",
+      "en": "Or",
+      "kn": "ಅಥವಾ"
     },
     {
-      "dev": "स कुलीनशतात् वरः",
-      "iast": "sa kulīnaśatāt varaḥ",
-      "en": "Such a person excels even a hundred high-born",
-      "kn": "ಉತ್ತಮ ಕುಲದ ನೂರಾರು ಮಂದಿಗಿಂತ ಶ್ರೇಷ್ಠ"
+      "dev": "मर्यादां",
+      "iast": "maryādāṃ",
+      "en": "Proper bounds",
+      "kn": "ಮರ್ಯಾದೆಯನ್ನು"
+    },
+    {
+      "dev": "यो",
+      "iast": "yo",
+      "en": "One who",
+      "kn": "ಯಾರು"
+    },
+    {
+      "dev": "न",
+      "iast": "na",
+      "en": "Not",
+      "kn": "ಬೇಡ"
+    },
+    {
+      "dev": "लङ्घयेत्",
+      "iast": "laṅghayet",
+      "en": "Would cross or transgress",
+      "kn": "ಮೀರಬೇಕು"
+    },
+    {
+      "dev": "धर्मापेक्षी",
+      "iast": "dharmāpekṣī",
+      "en": "One mindful of dharma",
+      "kn": "ಧರ್ಮವನ್ನು ಗೌರವಿಸುವವನು"
+    },
+    {
+      "dev": "मृदुर्ह्रीमान्",
+      "iast": "mṛdurhrīmān",
+      "en": "Gentle and modest",
+      "kn": "ಮೃದು ಮತ್ತು ವಿನಯಶೀಲ"
+    },
+    {
+      "dev": "स",
+      "iast": "sa",
+      "en": "That person",
+      "kn": "ಆ ವ್ಯಕ್ತಿ"
+    },
+    {
+      "dev": "कुलीनशतात्",
+      "iast": "kulīnaśatāt",
+      "en": "Than a hundred well-born people",
+      "kn": "ಉತ್ತಮ ಕುಲದ ನೂರಾರು ಮಂದಿಗಿಂತ"
+    },
+    {
+      "dev": "वरः",
+      "iast": "varaḥ",
+      "en": "Superior",
+      "kn": "ಶ್ರೇಷ್ಠ"
     }
   ],
   "practice": [
@@ -110,6 +158,6 @@
     "translation": "verbatim from supplied PDF",
     "study_meanings": "editorial",
     "notes": null,
-    "word_gloss_level": "bilingual phrase-aligned glosses; individual-token glosses pending philological review"
+    "word_gloss_level": "editorial individual source-token meanings"
   }
 }
