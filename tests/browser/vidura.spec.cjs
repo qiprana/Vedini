@@ -42,7 +42,7 @@ test('Viduranīti clip transitions preserve playback speed and user repeat count
  for(let i=0;i<7;i++)await player.dispatchEvent('ended');
  await expect.poll(()=>page.evaluate(()=>window.__viduraPlayed.length)).toBe(8);
  const played=await page.evaluate(()=>window.__viduraPlayed);
- expect(played.map(x=>x.src.match(/part-(\\d\\d)\\.mp3/)[1])).toEqual(['01','01','02','02','03','03','04','04']);
+ expect(played.map(x=>x.src.match(/part-(\d\d)\.mp3/)[1])).toEqual(['01','01','02','02','03','03','04','04']);
  expect(played.every(x=>Math.abs(x.speed-.8)<.001)).toBe(true);
 });
 
