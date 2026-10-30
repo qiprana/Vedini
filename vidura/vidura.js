@@ -63,5 +63,5 @@ speed.addEventListener('input',applyChantSpeed);
 applyChantSpeed();
 search.addEventListener('input',render);
 repeats.disabled=true;
-Promise.all(Array.from({length:25},(_,i)=>i+1).map(n=>fetch('../data/vidura/verses/verse-'+String(n).padStart(3,'0')+'.json').then(r=>{if(!r.ok)throw Error('Verse '+n);return r.json();}))).then(verses=>{state.verses=verses;verseIndex.innerHTML=verses.map(v=>'<a href="#vidura-verse-'+v.verse_number+'">'+String(v.verse_number).padStart(2,'0')+' · '+escapeHtml(v.theme)+'</a>').join('');render();selectRecording();}).catch(e=>{root.textContent='Unable to load Viduranīti content: '+e.message;stateLabel.textContent='Content unavailable';});
+Promise.all(Array.from({length:25},(_,i)=>i+1).map(n=>fetch('../data/vidura/verses/verse-'+String(n).padStart(3,'0')+'.json').then(r=>{if(!r.ok)throw Error('Verse '+n);return r.json();}))).then(verses=>{state.verses=verses;verseIndex.innerHTML=verses.map(v=>'<a href="#vidura-verse-'+v.verse_number+'">'+String(v.verse_number).padStart(2,'0')+' · '+escapeHtml(v.theme)+'</a>').join('');render();renderParts();selectRecording();}).catch(e=>{root.textContent='Unable to load Viduranīti content: '+e.message;stateLabel.textContent='Content unavailable';});
 })();
