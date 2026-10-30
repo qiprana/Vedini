@@ -27,28 +27,64 @@
   },
   "word_by_word": [
     {
-      "dev": "अकीर्तिं विनयो हन्ति",
-      "iast": "akīrtiṃ vinayo hanti",
-      "en": "Humility overcomes disrepute",
-      "kn": "ವಿನಯವು ಅಪಕೀರ್ತಿಯನ್ನು ನಾಶಮಾಡುತ್ತದೆ"
+      "dev": "अकीर्तिं",
+      "iast": "akīrtiṃ",
+      "en": "Disrepute",
+      "kn": "ಅಪಕೀರ್ತಿಯನ್ನು"
     },
     {
-      "dev": "हन्त्यनर्थं पराक्रमः",
-      "iast": "hantyanarthaṃ parākramaḥ",
-      "en": "Courage overcomes adversity",
-      "kn": "ಪರಾಕ್ರಮವು ಅನರ್ಥವನ್ನು ದೂರಮಾಡುತ್ತದೆ"
+      "dev": "विनयो",
+      "iast": "vinayo",
+      "en": "Humility",
+      "kn": "ವಿನಯ"
     },
     {
-      "dev": "हन्ति नित्यं क्षमा क्रोधम्",
-      "iast": "hanti nityaṃ kṣamā krodham",
-      "en": "Forgiveness continually overcomes anger",
-      "kn": "ಕ್ಷಮೆಯು ಸದಾ ಕೋಪವನ್ನು ದೂರಮಾಡುತ್ತದೆ"
+      "dev": "हन्ति",
+      "iast": "hanti",
+      "en": "Destroys",
+      "kn": "ನಾಶಮಾಡುತ್ತದೆ"
     },
     {
-      "dev": "आचारो हन्त्यलक्षणम्",
-      "iast": "ācāro hantyalakṣaṇam",
-      "en": "Conduct overcomes bad qualities",
-      "kn": "ಸದಾಚಾರವು ಕೆಟ್ಟ ಲಕ್ಷಣಗಳನ್ನು ದೂರಮಾಡುತ್ತದೆ"
+      "dev": "हन्त्यनर्थं",
+      "iast": "hantyanarthaṃ",
+      "en": "Overcomes misfortune",
+      "kn": "ಅನರ್ಥವನ್ನು ದೂರಮಾಡುತ್ತದೆ"
+    },
+    {
+      "dev": "पराक्रमः",
+      "iast": "parākramaḥ",
+      "en": "Courage",
+      "kn": "ಪರಾಕ್ರಮ"
+    },
+    {
+      "dev": "हन्ति",
+      "iast": "hanti",
+      "en": "Destroys",
+      "kn": "ನಾಶಮಾಡುತ್ತದೆ"
+    },
+    {
+      "dev": "नित्यं",
+      "iast": "nityaṃ",
+      "en": "Always",
+      "kn": "ಯಾವಾಗಲೂ"
+    },
+    {
+      "dev": "क्षमा",
+      "iast": "kṣamā",
+      "en": "Forgiveness",
+      "kn": "ಕ್ಷಮೆ"
+    },
+    {
+      "dev": "क्रोधमाचारो",
+      "iast": "krodhamācāro",
+      "en": "Anger; good conduct (sandhi)",
+      "kn": "ಕೋಪವನ್ನು; ಸದಾಚಾರ"
+    },
+    {
+      "dev": "हन्त्यलक्षणम्",
+      "iast": "hantyalakṣaṇam",
+      "en": "Removes bad qualities",
+      "kn": "ಕೆಟ್ಟ ಲಕ್ಷಣಗಳನ್ನು ದೂರಮಾಡುತ್ತದೆ"
     }
   ],
   "practice": [
@@ -110,6 +146,6 @@
     "translation": "verbatim from supplied PDF",
     "study_meanings": "editorial",
     "notes": null,
-    "word_gloss_level": "bilingual phrase-aligned glosses; individual-token glosses pending philological review"
+    "word_gloss_level": "editorial individual source-token meanings"
   }
 }
