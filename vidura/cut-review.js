@@ -53,7 +53,6 @@ document.getElementById('review-reset').addEventListener('click',()=>{cuts=[2.41
 document.getElementById('review-copy').addEventListener('click',()=>{const text=output.value;if(navigator.clipboard?.writeText){navigator.clipboard.writeText(text).then(()=>{status.textContent='Cut times copied.';}).catch(()=>{output.select();status.textContent='Select and copy the timings above.';});}else{output.select();status.textContent='Select and copy the timings above.';}});
 audio.addEventListener('loadedmetadata',()=>{if(Number.isFinite(audio.duration)&&audio.duration>3){duration=audio.duration;render();}});
 async function getSamples(){try{const response=await fetch(audio.currentSrc||audio.src);if(!response.ok)throw Error('Audio not available');const bytes=await response.arrayBuffer();const context=new (window.AudioContext||window.webkitAudioContext)();const buffer=await context.decodeAudioData(bytes);const channel=buffer.getChannelData(0),num=1000,step=Math.max(1,Math.floor(channel.length/num));samples=[];for(let i=0;i<num;i++){let peak=0;for(let j=i*step;j<Math.min(channel.length,(i+1)*step);j+=5)peak=Math.max(peak,Math.abs(channel[j]));samples.push(peak);}await context.close();draw();}catch(e){status.textContent='Waveform preview unavailable; audio timing controls remain usable.';}}
-}
 function resize(){const r=wave.getBoundingClientRect();wave.width=Math.max(330,Math.round(r.width));wave.height=Math.round(r.height);draw();}
 window.addEventListener('resize',resize);
 render();resize();getSamples();
