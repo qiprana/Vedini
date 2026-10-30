@@ -27,64 +27,28 @@
   },
   "word_by_word": [
     {
-      "dev": "ईर्ष्यी",
-      "iast": "īrṣyī",
-      "en": "Jealous",
-      "kn": "ಪದಾರ್ಥ: ईर्ष्यी"
+      "dev": "ईर्ष्यी घृणी न सन्तुष्टः",
+      "iast": "īrṣyī ghṛṇī na santuṣṭaḥ",
+      "en": "The jealous, hateful, discontented",
+      "kn": "ಅಸೂಯೆ, ದ್ವೇಷ ಮತ್ತು ಅತೃಪ್ತಿ"
     },
     {
-      "dev": "घृणी",
-      "iast": "ghṛṇī",
-      "en": " hostile",
-      "kn": "ಪದಾರ್ಥ: घृणी"
+      "dev": "क्रोधनो नित्यशङ्कितः",
+      "iast": "krodhano nityaśaṅkitaḥ",
+      "en": "The angry and habitually suspicious",
+      "kn": "ಕೋಪ ಮತ್ತು ಸದಾ ಅನುಮಾನ"
     },
     {
-      "dev": "न",
-      "iast": "na",
-      "en": " not content",
-      "kn": "ಪದಾರ್ಥ: न"
+      "dev": "परभाग्योपजीवी च",
+      "iast": "parabhāgyopajīvī ca",
+      "en": "One dependent on another's luck",
+      "kn": "ಇತರರ ಭಾಗ್ಯವನ್ನು ಅವಲಂಬಿಸಿ ಬದುಕುವವನು"
     },
     {
-      "dev": "सन्तुष्टः",
-      "iast": "santuṣṭaḥ",
-      "en": "Jealous; hostile; not content",
-      "kn": "ಪದಾರ್ಥ: सन्तुष्टः"
-    },
-    {
-      "dev": "क्रोधनो",
-      "iast": "krodhano",
-      "en": "Angry",
-      "kn": "ಪದಾರ್ಥ: क्रोधनो"
-    },
-    {
-      "dev": "नित्यशङ्कितः",
-      "iast": "nityaśaṅkitaḥ",
-      "en": " habitually suspicious",
-      "kn": "ಪದಾರ್ಥ: नित्यशङ्कितः"
-    },
-    {
-      "dev": "परभाग्योपजीवी",
-      "iast": "parabhāgyopajīvī",
-      "en": "Living on another's fortune",
-      "kn": "ಪದಾರ್ಥ: परभाग्योपजीवी"
-    },
-    {
-      "dev": "च",
-      "iast": "ca",
-      "en": " and",
-      "kn": "ಪದಾರ್ಥ: च"
-    },
-    {
-      "dev": "षडेते",
-      "iast": "ṣaḍete",
-      "en": "These six",
-      "kn": "ಪದಾರ್ಥ: षडेते"
-    },
-    {
-      "dev": "नित्यदुःखिताः",
-      "iast": "nityaduḥkhitāḥ",
-      "en": " continually unhappy",
-      "kn": "ಪದಾರ್ಥ: नित्यदुःखिताः"
+      "dev": "षडेते नित्यदुःखिताः",
+      "iast": "ṣaḍete nityaduḥkhitāḥ",
+      "en": "These six remain unhappy",
+      "kn": "ಈ ಆರು ಜನರು ಸದಾ ದುಃಖಿತರು"
     }
   ],
   "practice": [
@@ -145,6 +109,7 @@
     "section": "Atha Viduranītiḥ",
     "translation": "verbatim from supplied PDF",
     "study_meanings": "editorial",
-    "notes": "Devanagari IAST readings follow the handout; practice partitions editorial."
+    "notes": "Devanagari IAST readings follow the handout; practice partitions editorial.",
+    "word_gloss_level": "bilingual phrase-aligned glosses; individual-token glosses pending philological review"
   }
 }
