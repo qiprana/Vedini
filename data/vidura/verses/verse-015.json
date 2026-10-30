@@ -27,28 +27,58 @@
   },
   "word_by_word": [
     {
-      "dev": "द्वे कर्मणी नरः",
-      "iast": "dve karmaṇī naraḥ",
-      "en": "Two actions by a person",
-      "kn": "ಎರಡು ಕೆಲಸಗಳು, ಮನುಷ್ಯನು"
+      "dev": "द्वे",
+      "iast": "dve",
+      "en": "Two",
+      "kn": "ಎರಡು"
     },
     {
-      "dev": "कुर्वन्नस्मिंल्लोके विरोचते",
-      "iast": "kurvannasmiṃlloke virocate",
-      "en": "Doing them makes one shine in the world",
-      "kn": "ಮಾಡುವುದರಿಂದ ಲೋಕದಲ್ಲಿ ಮೆರೆಯುತ್ತಾನೆ"
+      "dev": "कर्मणी",
+      "iast": "karmaṇī",
+      "en": "Actions",
+      "kn": "ಕಾರ್ಯಗಳು"
     },
     {
-      "dev": "अब्रुवन् परुषं किञ्चित्",
-      "iast": "abruvan paruṣaṃ kiñcit",
-      "en": "Not speaking anything harsh",
-      "kn": "ಕಠೋರವಾದ ಯಾವುದನ್ನೂ ಮಾತನಾಡದೆ"
+      "dev": "नरः",
+      "iast": "naraḥ",
+      "en": "A person",
+      "kn": "ಮನುಷ್ಯ"
     },
     {
-      "dev": "असतोऽनर्चयंस्तथा",
-      "iast": "asato'narcayaṃstathā",
-      "en": "Not honouring the wicked",
-      "kn": "ದುರ್ಜನರನ್ನು ಗೌರವಿಸದೆ"
+      "dev": "कुर्वन्नस्मिंल्लोके",
+      "iast": "kurvannasmiṃlloke",
+      "en": "Performing in this world",
+      "kn": "ಈ ಲೋಕದಲ್ಲಿ ಮಾಡುವವನು"
+    },
+    {
+      "dev": "विरोचते",
+      "iast": "virocate",
+      "en": "Shines, becomes esteemed",
+      "kn": "ಗೌರವ ಪಡೆಯುತ್ತಾನೆ"
+    },
+    {
+      "dev": "अब्रुवन्",
+      "iast": "abruvan",
+      "en": "Not speaking",
+      "kn": "ಮಾತನಾಡದೆ"
+    },
+    {
+      "dev": "परुषं",
+      "iast": "paruṣaṃ",
+      "en": "Harsh words",
+      "kn": "ಕಠೋರ ಮಾತು"
+    },
+    {
+      "dev": "किञ्चिदसतोऽनर्चयं",
+      "iast": "kiñcidasato'narcayaṃ",
+      "en": "Anything, not honoring the unworthy",
+      "kn": "ಏನನ್ನೂ, ದುರ್ಜನರನ್ನು ಗೌರವಿಸದೆ"
+    },
+    {
+      "dev": "स्तथा",
+      "iast": "stathā",
+      "en": "And likewise (as printed)",
+      "kn": "ಹಾಗೆಯೇ (ಮೂಲ ಪಠ್ಯದಂತೆ)"
     }
   ],
   "practice": [
@@ -110,6 +140,6 @@
     "translation": "verbatim from supplied PDF",
     "study_meanings": "editorial",
     "notes": "Devanagari IAST readings follow the handout; practice partitions editorial.",
-    "word_gloss_level": "bilingual phrase-aligned glosses; individual-token glosses pending philological review"
+    "word_gloss_level": "editorial individual source-token meanings"
   }
 }
