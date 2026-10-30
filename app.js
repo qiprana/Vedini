@@ -8,6 +8,7 @@ let verses=[],dhyana=[],nameData={},dhyanaData={},verseData={},dhyanaPhraseData=
 let spiritualBenefits={},namaMantras={},significanceRewrites={},nameBenefits={};
 const pageSize=1,plannedVerses=183;
 let view="verses",pageIndex=0,selectedVerse=1;
+let lastSearch=null;
 let activeAudioElement=null;
 function claimAudioFocus(audio){
  if(!audio)return;
@@ -1422,6 +1423,7 @@ function showResultList(q){
  list.querySelectorAll("button[data-number]").forEach(b=>b.addEventListener("click",()=>{
   const n=Number(b.dataset.number);
   highlightTerm=searchTerm.trim();
+  lastSearch={query:searchTerm,scrollY:window.scrollY};
   if(b.dataset.kind==="dhyana")showDhyana(n);
   else{
    const verse=verses.find(v=>v.verse_number===n);
@@ -1456,6 +1458,7 @@ function renderGroupTabs(){
 }
 function updateNavigation(){
  const searching=!!searchTerm.trim();
+ $("#return-to-results").hidden=searching||!lastSearch;
  $("#dhyana").hidden=searching||view!=="dhyana";
  $("#main-stotra").hidden=searching||view!=="verses";
  $("#search-results").hidden=!searching;
@@ -1575,6 +1578,7 @@ function showDhyana(n=1,writeURL=true){
 }
 function openGroup(index,writeURL=true){jump(Math.max(1,Math.min(verses.length,index+1)),writeURL);}
 function chooseVerse(value){
+ lastSearch=null;
  if(value.startsWith("d-"))showDhyana(Number(value.slice(2)));
  else if(value.startsWith("s-"))jump(Number(value.slice(2)));
 }
@@ -2161,7 +2165,8 @@ async function init(){
 }
 window.VediniLanguage.bind(lang=>switchLanguage(lang==="kn"));
 language=window.VediniLanguage.get()==="kn"?"kn":"en";
-$("#search").oninput=e=>{searchTerm=e.target.value;render()};
+$("#search").oninput=e=>{lastSearch=null;searchTerm=e.target.value;render()};
+$("#return-to-results").onclick=()=>{if(!lastSearch)return;const saved=lastSearch;searchTerm=saved.query;$("#search").value=saved.query;render();requestAnimationFrame(()=>window.scrollTo({top:saved.scrollY,behavior:"instant"}));};
 
 
 
@@ -2183,7 +2188,13 @@ function syncDock(){
  const root=document.getElementById("practice-dock");if(!root)return;
  const mode=document.querySelector(".chanting-panels")?.dataset.mode||"chant",isGuided=mode==="guided";
  const current=isGuided?guided:practice,active=current.active,paused=current.paused;
- for(const id of ["dock-pause","dock-next","dock-stop"])document.getElementById(id).disabled=!active;
+ for(const id of ["dock-pause","dock-stop"])document.getElementById(id).disabled=!active;
+ const next=document.getElementById("dock-next");
+ const nextAvailable=isGuided?active&&guided.index<guided.units.length-1:active?(!practice.dhyana&&practice.current<practice.end):(view==="dhyana"?selectedVerse<dhyana.length||verses.length>0:selectedVerse<verses.length);
+ next.disabled=!nextAvailable;
+ next.title=isGuided?"Skip to next name or śloka":active?"Skip to next śloka in range":"Go to next śloka";
+ next.setAttribute("aria-label",next.title);
+ next.querySelector(".dock-button-label").textContent=active?"Skip":"Next";
  document.getElementById("dock-play").disabled=active;
  const p=document.getElementById("dock-pause");p.querySelector(".dock-button-label").textContent=paused?"Resume":"Pause";p.querySelector(".dock-button-icon").textContent=paused?"▶":"⏸";
  const src=document.getElementById(isGuided?"guided-status":"practice-status");document.getElementById("dock-status").textContent=src?.textContent||"Ready";
@@ -2200,7 +2211,7 @@ function initDock(){
   onStop:()=>document.getElementById(mode()==="guided"?"guided-stop":"practice-stop").click(),
   onNext:()=>{
    if(mode()==="guided"){document.getElementById("guided-next").click();return}
-   if(!practice.active)return;
+   if(!practice.active){moveVerse(1);return;}
    if(practice.dhyana){practiceStop("Dhyāna chanting complete");return}
    if(practice.current>=practice.end)practiceStop("Completed selected range");else practiceBegin(practice.current+1,practice.end,practice.reps);
   }
