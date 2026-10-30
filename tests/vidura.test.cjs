@@ -9,3 +9,20 @@ test('player supports per-part arbitrary repeat and full playback from four clip
 test('full chanting is a standalone continuous recording, not stitched clips',()=>{const py=read('scripts/generate_vidura_audio.py'),js=read('vidura/vidura.js'),html=read('vidura/index.html');assert.match(py,/continuous_chant\(verse\)/);assert.match(py,/sloka-\{number:03d\}-full\.mp3/);assert.match(py,/--mode/);assert.match(js,/function fullPath\(\)/);assert.match(js,/state\.fullReady/);assert.match(js,/audio\.src=fullPath\(\)/);assert.match(html,/Full śloka · continuous recording/);});
 
 test('continuous Sa-Pa-Sa shruti has controls and stops with playback',()=>{const page=read('vidura/index.html'),drone=read('vidura/shruti.js'),player=read('vidura/vidura.js');assert.doesNotThrow(()=>new vm.Script(drone));for(const id of ['vidura-shruti-enabled','vidura-shruti-tonic','vidura-shruti-volume'])assert.ok(page.includes('id="'+id+'"'));assert.match(drone,/createOscillator/);assert.match(drone,/\[1\.5,/);assert.match(player,/ViduraShruti\?\.start/);assert.match(player,/ViduraShruti\?\.stop/);});
+
+test('Vidura browser speed control is independent of Vāgdhenu recording speed',()=>{
+ const html=read('vidura/index.html'), js=read('vidura/vidura.js');
+ const py=read('scripts/generate_vidura_audio.py');
+ const manifest=JSON.parse(read('data/vidura/manifest.json'));
+ for(const id of ['vidura-speed','vidura-speed-value'])assert.match(html,new RegExp('id="'+id+'"'));
+ assert.match(js,/function applyChantSpeed\(\)/);
+ assert.match(js,/audio\.playbackRate=rate/);
+ assert.match(js,/audio\.defaultPlaybackRate=rate/);
+ assert.match(js,/audio\.preservesPitch=true/);
+ assert.match(js,/speed\.addEventListener\('input',applyChantSpeed\)/);
+ assert.match(js,/audio\.src=fullPath\(\);applyChantSpeed\(\)/);
+ assert.match(js,/state\.queueIndex\+\+.*applyChantSpeed\(\)/s);
+ assert.equal(manifest.audio.generation_speed,1.05);
+ assert.equal(manifest.audio.browser_playback_speed.default,0.90);
+ assert.ok(py.includes('default=1.05'));
+});
