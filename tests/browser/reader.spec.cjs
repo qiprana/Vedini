@@ -451,6 +451,6 @@ test('Soft navigation tabs remain legible and within the viewport on mobile',asy
   .filter(({rect})=>rect.width>0&&rect.right>innerWidth+3)
   .slice(0,15).map(({el,rect})=>({tag:el.tagName,classes:String(el.className).slice(0,90),id:el.id,right:Math.round(rect.right),width:Math.round(rect.width),text:(el.innerText||'').slice(0,50)}))
  }));
- expect(overflow.document,{width,overflow}).toBeLessThanOrEqual(overflow.viewport+3);
+ if(overflow.document>overflow.viewport+3)throw new Error('Mobile overflow: '+JSON.stringify({width,...overflow}));
  }
 });
