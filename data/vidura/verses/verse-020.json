@@ -29,26 +29,26 @@
     {
       "dev": "सम्भोजनं संकथनं",
       "iast": "sambhojanaṃ saṃkathanaṃ",
-      "en": "Shared meals and conversation",
-      "kn": "ಒಟ್ಟಿನ ಊಟ, ಮಾತುಕತೆ ಮತ್ತು ಪ್ರೀತಿ ಕುಟುಂಬದ ಬಾಂಧವ್ಯವನ್ನು ಗಟ್ಟಿಗೊಳಿಸುತ್ತವೆ; ಅನವಶ್ಯಕ ಕಲಹ ಸಂಬಂಧವನ್ನು ದುರ್ಬಲಗೊಳಿಸುತ್ತದೆ."
+      "en": "Eating together and speaking together",
+      "kn": "ಒಟ್ಟಿಗೆ ಊಟ ಮತ್ತು ಸಂಭಾಷಣೆ"
     },
     {
       "dev": "सम्प्रीतिश्च परस्परम्",
       "iast": "samprītiśca parasparam",
-      "en": "And mutual affection",
-      "kn": "ಒಟ್ಟಿನ ಊಟ, ಮಾತುಕತೆ ಮತ್ತು ಪ್ರೀತಿ ಕುಟುಂಬದ ಬಾಂಧವ್ಯವನ್ನು ಗಟ್ಟಿಗೊಳಿಸುತ್ತವೆ; ಅನವಶ್ಯಕ ಕಲಹ ಸಂಬಂಧವನ್ನು ದುರ್ಬಲಗೊಳಿಸುತ್ತದೆ."
+      "en": "Mutual affection",
+      "kn": "ಪರಸ್ಪರ ಪ್ರೀತಿ"
     },
     {
       "dev": "जातिभिः सह कार्याणि",
       "iast": "jātibhiḥ saha kāryāṇi",
-      "en": "Duties with one's relations",
-      "kn": "ಒಟ್ಟಿನ ಊಟ, ಮಾತುಕತೆ ಮತ್ತು ಪ್ರೀತಿ ಕುಟುಂಬದ ಬಾಂಧವ್ಯವನ್ನು ಗಟ್ಟಿಗೊಳಿಸುತ್ತವೆ; ಅನವಶ್ಯಕ ಕಲಹ ಸಂಬಂಧವನ್ನು ದುರ್ಬಲಗೊಳಿಸುತ್ತದೆ."
+      "en": "Duties with relatives",
+      "kn": "ಬಂಧುಗಳೊಂದಿಗೆ ಮಾಡಬೇಕಾದ ಕಾರ್ಯಗಳು"
     },
     {
       "dev": "न विरोधः कदाचन",
       "iast": "na virodhaḥ kadācana",
-      "en": "Not hostility, at any time",
-      "kn": "ಒಟ್ಟಿನ ಊಟ, ಮಾತುಕತೆ ಮತ್ತು ಪ್ರೀತಿ ಕುಟುಂಬದ ಬಾಂಧವ್ಯವನ್ನು ಗಟ್ಟಿಗೊಳಿಸುತ್ತವೆ; ಅನವಶ್ಯಕ ಕಲಹ ಸಂಬಂಧವನ್ನು ದುರ್ಬಲಗೊಳಿಸುತ್ತದೆ."
+      "en": "Never hostility",
+      "kn": "ಎಂದಿಗೂ ವಿರೋಧ ಬೇಡ"
     }
   ],
   "practice": [
@@ -109,6 +109,7 @@
     "section": "Atha Viduranītiḥ",
     "translation": "verbatim from supplied PDF",
     "study_meanings": "editorial",
-    "notes": null
+    "notes": null,
+    "word_gloss_level": "bilingual phrase-aligned glosses; individual-token glosses pending philological review"
   }
 }
