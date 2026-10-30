@@ -29,26 +29,26 @@
     {
       "dev": "न स्वे सुखे वै कुरुते प्रहर्षं",
       "iast": "na sve sukhe vai kurute praharṣaṃ",
-      "en": "One does not excessively rejoice in one's own good fortune",
-      "kn": "ತನ್ನ ಸುಖದಲ್ಲಿ ಮಿತಭಾವ, ಇತರರ ನೋವಿಗೆ ಸಹಾನುಭೂತಿ ಮತ್ತು ಪಶ್ಚಾತ್ತಾಪವಿಲ್ಲದ ದಾನ ಸಜ್ಜನಿಕೆಯ ಲಕ್ಷಣಗಳು."
+      "en": "Does not over-rejoice in his own pleasure",
+      "kn": "ತನ್ನ ಸುಖದಲ್ಲಿ ಅತಿಹರ್ಷ ಪಡುವುದಿಲ್ಲ"
     },
     {
       "dev": "नान्यस्य दुःखे भवति प्रहृष्टः",
       "iast": "nānyasya duḥkhe bhavati prahṛṣṭaḥ",
-      "en": "Nor is one delighted by another's suffering",
-      "kn": "ತನ್ನ ಸುಖದಲ್ಲಿ ಮಿತಭಾವ, ಇತರರ ನೋವಿಗೆ ಸಹಾನುಭೂತಿ ಮತ್ತು ಪಶ್ಚಾತ್ತಾಪವಿಲ್ಲದ ದಾನ ಸಜ್ಜನಿಕೆಯ ಲಕ್ಷಣಗಳು."
+      "en": "Does not rejoice at another's suffering",
+      "kn": "ಇತರರ ದುಃಖದಲ್ಲಿ ಸಂತೋಷಪಡುವುದಿಲ್ಲ"
     },
     {
       "dev": "दत्त्वा न पश्चात् कुरुतेऽनुतापं",
       "iast": "dattvā na paścāt kurute'nutāpaṃ",
-      "en": "Having given, one feels no later regret",
-      "kn": "ತನ್ನ ಸುಖದಲ್ಲಿ ಮಿತಭಾವ, ಇತರರ ನೋವಿಗೆ ಸಹಾನುಭೂತಿ ಮತ್ತು ಪಶ್ಚಾತ್ತಾಪವಿಲ್ಲದ ದಾನ ಸಜ್ಜನಿಕೆಯ ಲಕ್ಷಣಗಳು."
+      "en": "Does not regret giving afterward",
+      "kn": "ದಾನ ಮಾಡಿದ ಬಳಿಕ ಪಶ್ಚಾತ್ತಾಪಪಡುವುದಿಲ್ಲ"
     },
     {
       "dev": "स कथ्यते सत्पुरुषार्थशीलः",
       "iast": "sa kathyate satpuruṣārthaśīlaḥ",
-      "en": "Such a person is described as noble in conduct",
-      "kn": "ತನ್ನ ಸುಖದಲ್ಲಿ ಮಿತಭಾವ, ಇತರರ ನೋವಿಗೆ ಸಹಾನುಭೂತಿ ಮತ್ತು ಪಶ್ಚಾತ್ತಾಪವಿಲ್ಲದ ದಾನ ಸಜ್ಜನಿಕೆಯ ಲಕ್ಷಣಗಳು."
+      "en": "Such a person is called noble",
+      "kn": "ಅವನು ಸಜ್ಜನಿಕೆಯುಳ್ಳವನು ಎಂದು ಕರೆಯಲ್ಪಡುತ್ತಾನೆ"
     }
   ],
   "practice": [
@@ -109,6 +109,7 @@
     "section": "Atha Viduranītiḥ",
     "translation": "verbatim from supplied PDF",
     "study_meanings": "editorial",
-    "notes": "Longer metre; do not force anuṣṭubh."
+    "notes": "Longer metre; do not force anuṣṭubh.",
+    "word_gloss_level": "bilingual phrase-aligned glosses; individual-token glosses pending philological review"
   }
 }
