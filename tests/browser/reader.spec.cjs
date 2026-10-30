@@ -454,3 +454,35 @@ test('Soft navigation tabs remain legible and within the viewport on mobile',asy
  if(overflow.document>overflow.viewport+3)throw new Error('Mobile overflow: '+JSON.stringify({width,...overflow}));
  }
 });
+
+test('compact selector stays centered, no duplicate visible heading, and Next navigates when idle',async({page})=>{
+ for(const width of [390,1280]){
+  await page.setViewportSize({width,height:844});
+  await page.goto('/lalita/?sloka=10');
+  await expect(page.locator('#verse-10')).toBeVisible({timeout:20000});
+  await expect(page.locator('#main-heading')).toHaveClass(/visually-hidden/);
+  await expect(page.locator('#dock-next')).toBeEnabled();
+  const center=await page.evaluate(()=>{
+   const nav=document.querySelector('#sticky-verse-navigation').getBoundingClientRect();
+   const pick=document.querySelector('#verse-selector').getBoundingClientRect();
+   return Math.abs((pick.left+pick.right)/2-(nav.left+nav.right)/2);
+  });
+  expect(center).toBeLessThan(8);
+  await page.locator('#dock-next').click();
+  await expect(page.locator('#verse-11')).toBeVisible();
+  await expect(page.locator('#verse-selector')).toHaveValue('s-11');
+ }
+});
+test('search result opens verse and Back to results restores query and listing',async({page})=>{
+ await page.goto('/lalita/?sloka=1');
+ await expect(page.locator('#verse-1')).toBeVisible({timeout:20000});
+ await page.locator('#search').fill('Mother');
+ await expect(page.locator('.search-result').first()).toBeVisible();
+ const count=await page.locator('.search-result').count();
+ await page.locator('.search-result[data-kind="verses"]').first().click();
+ await expect(page.locator('#return-to-results')).toBeVisible();
+ await page.locator('#return-to-results').click();
+ await expect(page.locator('#search')).toHaveValue('Mother');
+ await expect(page.locator('#search-result-list .search-result')).toHaveCount(count);
+ await expect(page.locator('#return-to-results')).toBeHidden();
+});
