@@ -64,11 +64,11 @@ def main():
         sources.append(verse)
     print('Viduranītiḥ chanting source preview:')
     for v in sources:
-        print('\\nŚloka',v['verse_number'],'\\n'+'\\n'.join(v['reading']['dev']))
+        print('\nŚloka',v['verse_number'],'\n'+'\n'.join(v['reading']['dev']))
         for i,p in enumerate(v['practice']):
             print('  ',i+1,'repeat',p['repeat'],':',p['dev'])
     if a.dry_run:
-        print('\\nDRY RUN: no audio generated.');return
+        print('\nDRY RUN: no audio generated.');return
     try:from cowchant.engine import CowChant
     except ImportError:raise SystemExit('Activate the vagdhenu conda environment containing cowchant.')
     engine=CowChant(device=None if a.device=='auto' else a.device,speed=a.speed)
@@ -84,7 +84,7 @@ def main():
                 # Preserve original continuous Sanskrit, stripping only the printed number.
                 lines=v['reading']['dev'].copy()
                 import re
-                text=re.sub(r'॥\\s*[०-९0-9]+\\s*॥','॥','\\n'.join(lines))
+                text=re.sub(r'॥\s*[०-९0-9]+\s*॥','॥','\n'.join(lines))
                 engine.chant(text,output=str(src),meter=None,seed=a.seed)
                 encode(src,full)
                 print('Generated',full)
@@ -107,7 +107,7 @@ def main():
                         gap=work/f'{stem}-between-{i}.wav';silence(gap,clip,a.between);order.append(gap);elapsed+=seconds(gap)
                 combined=work/(stem+'-call-repeat.wav');concat_wavs(order,combined);encode(combined,repeat)
                 timing={'verse_number':number,'mode':'call_repeat','segments':timings,'duration':round(elapsed,3)}
-                (timing_dir/f'verse-{number:03d}.json').write_text(json.dumps(timing,ensure_ascii=False,indent=2)+'\\n',encoding='utf-8')
+                (timing_dir/f'verse-{number:03d}.json').write_text(json.dumps(timing,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
                 print('Generated',repeat)
     print('Review pronunciation and clip transitions, then commit audio/vidura/*.mp3 and data/vidura/timings/*.json.')
 if __name__=='__main__':main()
