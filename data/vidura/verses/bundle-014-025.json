@@ -1,0 +1,1868 @@
+[
+  {
+    "id": "vidura-014",
+    "collection": "vidura-niti",
+    "verse_number": 14,
+    "theme": "Wounds caused by words",
+    "reading": {
+      "dev": [
+        "रोहते सायकैर्विद्धं वनं परशुना हतम् ।",
+        "वाचा दुरुक्तं बीभत्सं न सं रोहति वाक्क्षतम् ॥ १४ ॥"
+      ],
+      "iast": [
+        "rohate sāyakairviddhaṃ vanaṃ paraśunā hatam |",
+        "vācā duruktaṃ bībhatsaṃ na saṃrohati vākkṣatam || 14 ||"
+      ],
+      "kn": [
+        "ರೋಹತೇ ಸಾಯಕೈರ್ವಿದ್ಧಂ ವನಂ ಪರಶುನಾ ಹತಮ್ ೤",
+        "ವಾಚಾ ದುರುಕ್ತಂ ಬೀಭತ್ಸಂ ನ ಸಂ ರೋಹತಿ ವಾಕ್ಕ್ಷತಮ್ ೥ ೧೪ ೥"
+      ]
+    },
+    "meaning": {
+      "en": "A wound caused by the piercing arrows can get cured. A forest cut down by an axe can grow up again but a wound caused by despicable speech is incurable.",
+      "kn": "ಬಾಣದಿಂದ ಉಂಟಾದ ಗಾಯ ಗುಣವಾಗಬಹುದು; ಕೊಡಲಿಯಿಂದ ಕಡಿದ ಕಾಡು ಮತ್ತೆ ಬೆಳೆಯಬಹುದು. ಆದರೆ ಕೆಟ್ಟ ಮಾತಿನಿಂದ ಆದ ಮನದ ಗಾಯ ಸುಲಭವಾಗಿ ಮಾಯವಾಗುವುದಿಲ್ಲ."
+    },
+    "deeper_meaning": {
+      "en": "Physical damage may heal, but humiliation can remain in memory. Vidura urges care with speech because the wound of insult is not as easily repaired as a visible injury.",
+      "kn": "ದೇಹದ ಗಾಯ ಗುಣವಾದರೂ ಅವಮಾನದಿಂದ ಬಂದ ಮನದ ನೋವು ದೀರ್ಘಕಾಲ ಉಳಿಯಬಹುದು. ಆದ್ದರಿಂದ ಮಾತಿನ ಬಗ್ಗೆ ಎಚ್ಚರ ಅಗತ್ಯ."
+    },
+    "word_by_word": [
+      {
+        "dev": "रोहते",
+        "iast": "rohate",
+        "en": "Heals or grows again",
+        "kn": "ಗುಣವಾಗುತ್ತದೆ"
+      },
+      {
+        "dev": "सायकैर्विद्धं",
+        "iast": "sāyakairviddhaṃ",
+        "en": "Pierced by arrows",
+        "kn": "ಬಾಣಗಳಿಂದ ಚುಚ್ಚಲ್ಪಟ್ಟ"
+      },
+      {
+        "dev": "वनं",
+        "iast": "vanaṃ",
+        "en": "Forest",
+        "kn": "ಕಾಡು"
+      },
+      {
+        "dev": "परशुना",
+        "iast": "paraśunā",
+        "en": "By an axe",
+        "kn": "ಕೊಡಲಿಯಿಂದ"
+      },
+      {
+        "dev": "हतम्",
+        "iast": "hatam",
+        "en": "Cut down",
+        "kn": "ಕಡಿಯಲ್ಪಟ್ಟ"
+      },
+      {
+        "dev": "वाचा",
+        "iast": "vācā",
+        "en": "By speech",
+        "kn": "ಮಾತಿನಿಂದ"
+      },
+      {
+        "dev": "दुरुक्तं",
+        "iast": "duruktaṃ",
+        "en": "Badly uttered",
+        "kn": "ಕೆಟ್ಟದಾಗಿ ಹೇಳಿದ"
+      },
+      {
+        "dev": "बीभत्सं",
+        "iast": "bībhatsaṃ",
+        "en": "Ugly, repulsive",
+        "kn": "ಅಸಹ್ಯವಾದ"
+      },
+      {
+        "dev": "न",
+        "iast": "na",
+        "en": "Not",
+        "kn": "ಇಲ್ಲ"
+      },
+      {
+        "dev": "सं",
+        "iast": "saṃ",
+        "en": "Completely",
+        "kn": "ಸಂಪೂರ್ಣವಾಗಿ"
+      },
+      {
+        "dev": "रोहति",
+        "iast": "rohati",
+        "en": "Heals",
+        "kn": "ಗುಣವಾಗುತ್ತದೆ"
+      },
+      {
+        "dev": "वाक्क्षतम्",
+        "iast": "vākkṣatam",
+        "en": "Wound caused by speech",
+        "kn": "ಮಾತಿನಿಂದ ಆದ ಗಾಯ"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a",
+        "order": 1,
+        "dev": "रोहते सायकैर्विद्धं",
+        "iast": "rohate sāyakairviddhaṃ",
+        "kn": "ರೋಹತೇ ಸಾಯಕೈರ್ವಿದ್ಧಂ",
+        "audio": "audio/vidura/sloka-014-part-01.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      },
+      {
+        "id": "b",
+        "order": 2,
+        "dev": "वनं परशुना हतम्",
+        "iast": "vanaṃ paraśunā hatam",
+        "kn": "ವನಂ ಪರಶುನಾ ಹತಮ್",
+        "audio": "audio/vidura/sloka-014-part-02.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      },
+      {
+        "id": "c",
+        "order": 3,
+        "dev": "वाचा दुरुक्तं बीभत्सं",
+        "iast": "vācā duruktaṃ bībhatsaṃ",
+        "kn": "ವಾಚಾ ದುರುಕ್ತಂ ಬೀಭತ್ಸಂ",
+        "audio": "audio/vidura/sloka-014-part-03.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      },
+      {
+        "id": "d",
+        "order": 4,
+        "dev": "न सं रोहति वाक्क्षतम्",
+        "iast": "na saṃ rohati vākkṣatam",
+        "kn": "ನ ಸಂ ರೋಹತಿ ವಾಕ್ಕ್ಷತಮ್",
+        "audio": "audio/vidura/sloka-014-part-04.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      }
+    ],
+    "practice_source": "editorial-pada-boundaries",
+    "practice_note": "Practice segments follow printed lines and editorial word boundaries; confirm chanting pauses before audio publishing.",
+    "audio": {
+      "full": "audio/vidura/sloka-014-full.mp3",
+      "clips": [
+        "audio/vidura/sloka-014-part-01.mp3",
+        "audio/vidura/sloka-014-part-02.mp3",
+        "audio/vidura/sloka-014-part-03.mp3",
+        "audio/vidura/sloka-014-part-04.mp3"
+      ],
+      "recording_status": "awaiting-vagdhenu-generation",
+      "meter": "anushtubh",
+      "full_playback": "single_continuous_recording",
+      "repeat_control": "browser-per-part"
+    },
+    "source": {
+      "page": 6,
+      "section": "Atha Viduranītiḥ",
+      "translation": "verbatim from supplied PDF",
+      "study_meanings": "editorial",
+      "notes": "Devanagari IAST readings follow the handout; practice partitions editorial.",
+      "word_gloss_level": "editorial individual source-token meanings"
+    }
+  },
+  {
+    "id": "vidura-015",
+    "collection": "vidura-niti",
+    "verse_number": 15,
+    "theme": "Two ways to earn respect",
+    "reading": {
+      "dev": [
+        "द्वे कर्मणी नरः कुर्वन्नस्मिंल्लोके विरोचते ।",
+        "अब्रुवन् परुषं किञ्चिदसतोऽनर्चयं स्तथा ॥ १५ ॥"
+      ],
+      "iast": [
+        "dve karmaṇī naraḥ kurvannasmiṃlloke virocate |",
+        "abruvan paruṣaṃ kiñcidasato'narcayaṃstathā || 15 ||"
+      ],
+      "kn": [
+        "ದ್ವೇ ಕರ್ಮಣೀ ನರಃ ಕುರ್ವನ್ನಸ್ಮಿಂಲ್ಲೋಕೇ ವಿರೋಚತೇ ೤",
+        "ಅಬ್ರುವನ್ ಪರುಷಂ ಕಿಞ್ಚಿದಸತೋಽನರ್ಚಯಂ ಸ್ತಥಾ ೥ ೧೫ ೥"
+      ]
+    },
+    "meaning": {
+      "en": "A man earns fame by doing these two things; firstly by not speaking harsh words and secondly by not worshipping the wicked.",
+      "kn": "ಕಠೋರ ಮಾತುಗಳನ್ನು ಆಡದಿರುವುದು ಮತ್ತು ದುರ್ಜನರನ್ನು ಗೌರವದಿಂದ ಪೂಜಿಸದಿರುವುದು — ಈ ಎರಡು ನಡೆಗಳಿಂದ ವ್ಯಕ್ತಿ ಸಮಾಜದಲ್ಲಿ ಗೌರವ ಪಡೆಯುತ್ತಾನೆ."
+    },
+    "deeper_meaning": {
+      "en": "Respect is earned through restraint in speech and discernment in whom we honor. Refusing to speak harshly need not mean approving harmful conduct.",
+      "kn": "ಮಾತಿನಲ್ಲಿ ಸಂಯಮ ಮತ್ತು ಯಾರನ್ನು ಗೌರವಿಸಬೇಕು ಎಂಬ ವಿವೇಕದಿಂದ ನಿಜವಾದ ಗೌರವ ದೊರೆಯುತ್ತದೆ."
+    },
+    "word_by_word": [
+      {
+        "dev": "द्वे",
+        "iast": "dve",
+        "en": "Two",
+        "kn": "ಎರಡು"
+      },
+      {
+        "dev": "कर्मणी",
+        "iast": "karmaṇī",
+        "en": "Actions",
+        "kn": "ಕಾರ್ಯಗಳು"
+      },
+      {
+        "dev": "नरः",
+        "iast": "naraḥ",
+        "en": "A person",
+        "kn": "ಮನುಷ್ಯ"
+      },
+      {
+        "dev": "कुर्वन्नस्मिंल्लोके",
+        "iast": "kurvannasmiṃlloke",
+        "en": "Performing in this world",
+        "kn": "ಈ ಲೋಕದಲ್ಲಿ ಮಾಡುವವನು"
+      },
+      {
+        "dev": "विरोचते",
+        "iast": "virocate",
+        "en": "Shines, becomes esteemed",
+        "kn": "ಗೌರವ ಪಡೆಯುತ್ತಾನೆ"
+      },
+      {
+        "dev": "अब्रुवन्",
+        "iast": "abruvan",
+        "en": "Not speaking",
+        "kn": "ಮಾತನಾಡದೆ"
+      },
+      {
+        "dev": "परुषं",
+        "iast": "paruṣaṃ",
+        "en": "Harsh words",
+        "kn": "ಕಠೋರ ಮಾತು"
+      },
+      {
+        "dev": "किञ्चिदसतोऽनर्चयं",
+        "iast": "kiñcidasato'narcayaṃ",
+        "en": "Anything, not honoring the unworthy",
+        "kn": "ಏನನ್ನೂ, ದುರ್ಜನರನ್ನು ಗೌರವಿಸದೆ"
+      },
+      {
+        "dev": "स्तथा",
+        "iast": "stathā",
+        "en": "And likewise (as printed)",
+        "kn": "ಹಾಗೆಯೇ (ಮೂಲ ಪಠ್ಯದಂತೆ)"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a",
+        "order": 1,
+        "dev": "द्वे कर्मणी नरः",
+        "iast": "dve karmaṇī naraḥ",
+        "kn": "ದ್ವೇ ಕರ್ಮಣೀ ನರಃ",
+        "audio": "audio/vidura/sloka-015-part-01.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      },
+      {
+        "id": "b",
+        "order": 2,
+        "dev": "कुर्वन्नस्मिंल्लोके विरोचते",
+        "iast": "kurvannasmiṃlloke virocate",
+        "kn": "ಕುರ್ವನ್ನಸ್ಮಿಂಲ್ಲೋಕೇ ವಿರೋಚತೇ",
+        "audio": "audio/vidura/sloka-015-part-02.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      },
+      {
+        "id": "c",
+        "order": 3,
+        "dev": "अब्रुवन् परुषं किञ्चित्",
+        "iast": "abruvan paruṣaṃ kiñcit",
+        "kn": "ಅಬ್ರುವನ್ ಪರುಷಂ ಕಿಞ್ಚಿತ್",
+        "audio": "audio/vidura/sloka-015-part-03.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      },
+      {
+        "id": "d",
+        "order": 4,
+        "dev": "असतोऽनर्चयंस्तथा",
+        "iast": "asato'narcayaṃstathā",
+        "kn": "ಅಸತೋಽನರ್ಚಯಂಸ್ತಥಾ",
+        "audio": "audio/vidura/sloka-015-part-04.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      }
+    ],
+    "practice_source": "editorial-pada-boundaries",
+    "practice_note": "Practice segments follow printed lines and editorial word boundaries; confirm chanting pauses before audio publishing.",
+    "audio": {
+      "full": "audio/vidura/sloka-015-full.mp3",
+      "clips": [
+        "audio/vidura/sloka-015-part-01.mp3",
+        "audio/vidura/sloka-015-part-02.mp3",
+        "audio/vidura/sloka-015-part-03.mp3",
+        "audio/vidura/sloka-015-part-04.mp3"
+      ],
+      "recording_status": "awaiting-vagdhenu-generation",
+      "meter": "anushtubh",
+      "full_playback": "single_continuous_recording",
+      "repeat_control": "browser-per-part"
+    },
+    "source": {
+      "page": 6,
+      "section": "Atha Viduranītiḥ",
+      "translation": "verbatim from supplied PDF",
+      "study_meanings": "editorial",
+      "notes": "Devanagari IAST readings follow the handout; practice partitions editorial.",
+      "word_gloss_level": "editorial individual source-token meanings"
+    }
+  },
+  {
+    "id": "vidura-016",
+    "collection": "vidura-niti",
+    "verse_number": 16,
+    "theme": "Six virtues to preserve",
+    "reading": {
+      "dev": [
+        "षडेते तु गुणाः पुंसा न हातव्याः कदाचन ।",
+        "सत्यं दानमनालस्यमनसूया क्षमा धृतिः ॥ १६ ॥"
+      ],
+      "iast": [
+        "ṣaḍete tu guṇāḥ puṃsā na hātavyāḥ kadācana |",
+        "satyaṃ dānamanālasyamanasūyā kṣamā dhṛtiḥ || 16 ||"
+      ],
+      "kn": [
+        "ಷಡೇತೇ ತು ಗುಣಾಃ ಪುಂಸಾ ನ ಹಾತವ್ಯಾಃ ಕದಾಚನ ೤",
+        "ಸತ್ಯಂ ದಾನಮನಾಲಸ್ಯಮನಸೂಯಾ ಕ್ಷಮಾ ಧೃತಿಃ ೥ ೧೬ ೥"
+      ]
+    },
+    "meaning": {
+      "en": "One should never abandon these six virtues- truth, generosity, hard work, non-jealousy, forgiveness and patience.",
+      "kn": "ಸತ್ಯ, ದಾನ, ಸೋಮಾರಿತನವಿಲ್ಲದ ಪರಿಶ್ರಮ, ಅಸೂಯೆ ಇಲ್ಲದ ಮನಸ್ಸು, ಕ್ಷಮೆ ಮತ್ತು ಧೈರ್ಯ — ಈ ಆರು ಗುಣಗಳನ್ನು ಎಂದಿಗೂ ಬಿಡಬಾರದು."
+    },
+    "deeper_meaning": {
+      "en": "These virtues turn ideals into daily habits: honesty, generosity, diligence, freedom from envy, forgiveness and steadiness. Vidura treats character as something to maintain continuously, not display occasionally.",
+      "kn": "ಸತ್ಯನಿಷ್ಠೆ, ಔದಾರ್ಯ, ಪರಿಶ್ರಮ, ಅಸೂಯೆ ರಹಿತ ಮನಸ್ಸು, ಕ್ಷಮೆ ಮತ್ತು ಸ್ಥಿರತೆ ದೈನಂದಿನ ಜೀವನದಲ್ಲಿ ಅಭ್ಯಾಸವಾಗಬೇಕಾದ ಗುಣಗಳು."
+    },
+    "word_by_word": [
+      {
+        "dev": "षडेते",
+        "iast": "ṣaḍete",
+        "en": "These six",
+        "kn": "ಈ ಆರು"
+      },
+      {
+        "dev": "तु",
+        "iast": "tu",
+        "en": "Indeed",
+        "kn": "ನಿಜವಾಗಿ"
+      },
+      {
+        "dev": "गुणाः",
+        "iast": "guṇāḥ",
+        "en": "Virtues",
+        "kn": "ಗುಣಗಳು"
+      },
+      {
+        "dev": "पुंसा",
+        "iast": "puṃsā",
+        "en": "Of a person",
+        "kn": "ಮನುಷ್ಯನ"
+      },
+      {
+        "dev": "न",
+        "iast": "na",
+        "en": "Not",
+        "kn": "ಬೇಡ"
+      },
+      {
+        "dev": "हातव्याः",
+        "iast": "hātavyāḥ",
+        "en": "To be abandoned",
+        "kn": "ತ್ಯಜಿಸಬೇಕಾದ"
+      },
+      {
+        "dev": "कदाचन",
+        "iast": "kadācana",
+        "en": "At any time",
+        "kn": "ಎಂದಿಗೂ"
+      },
+      {
+        "dev": "सत्यं",
+        "iast": "satyaṃ",
+        "en": "Truth",
+        "kn": "ಸತ್ಯ"
+      },
+      {
+        "dev": "दानमनालस्यमनसूया",
+        "iast": "dānamanālasyamanasūyā",
+        "en": "Charity, diligence, absence of envy",
+        "kn": "ದಾನ, ಪರಿಶ್ರಮ, ಅಸೂಯೆಯಿಲ್ಲದಿರುವುದು"
+      },
+      {
+        "dev": "क्षमा",
+        "iast": "kṣamā",
+        "en": "Forgiveness",
+        "kn": "ಕ್ಷಮೆ"
+      },
+      {
+        "dev": "धृतिः",
+        "iast": "dhṛtiḥ",
+        "en": "Fortitude",
+        "kn": "ಸ್ಥೈರ್ಯ"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a",
+        "order": 1,
+        "dev": "षडेते तु गुणाः पुंसा",
+        "iast": "ṣaḍete tu guṇāḥ puṃsā",
+        "kn": "ಷಡೇತೇ ತು ಗುಣಾಃ ಪುಂಸಾ",
+        "audio": "audio/vidura/sloka-016-part-01.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      },
+      {
+        "id": "b",
+        "order": 2,
+        "dev": "न हातव्याः कदाचन",
+        "iast": "na hātavyāḥ kadācana",
+        "kn": "ನ ಹಾತವ್ಯಾಃ ಕದಾಚನ",
+        "audio": "audio/vidura/sloka-016-part-02.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      },
+      {
+        "id": "c",
+        "order": 3,
+        "dev": "सत्यं दानमनालस्यमनसूया",
+        "iast": "satyaṃ dānamanālasyamanasūyā",
+        "kn": "ಸತ್ಯಂ ದಾನಮನಾಲಸ್ಯಮನಸೂಯಾ",
+        "audio": "audio/vidura/sloka-016-part-03.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      },
+      {
+        "id": "d",
+        "order": 4,
+        "dev": "क्षमा धृतिः",
+        "iast": "kṣamā dhṛtiḥ",
+        "kn": "ಕ್ಷಮಾ ಧೃತಿಃ",
+        "audio": "audio/vidura/sloka-016-part-04.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      }
+    ],
+    "practice_source": "editorial-pada-boundaries",
+    "practice_note": "Practice segments follow printed lines and editorial word boundaries; confirm chanting pauses before audio publishing.",
+    "audio": {
+      "full": "audio/vidura/sloka-016-full.mp3",
+      "clips": [
+        "audio/vidura/sloka-016-part-01.mp3",
+        "audio/vidura/sloka-016-part-02.mp3",
+        "audio/vidura/sloka-016-part-03.mp3",
+        "audio/vidura/sloka-016-part-04.mp3"
+      ],
+      "recording_status": "awaiting-vagdhenu-generation",
+      "meter": "anushtubh",
+      "full_playback": "single_continuous_recording",
+      "repeat_control": "browser-per-part"
+    },
+    "source": {
+      "page": 7,
+      "section": "Atha Viduranītiḥ",
+      "translation": "verbatim from supplied PDF",
+      "study_meanings": "editorial",
+      "notes": "Devanagari IAST readings follow the handout; practice partitions editorial.",
+      "word_gloss_level": "editorial individual source-token meanings"
+    }
+  },
+  {
+    "id": "vidura-017",
+    "collection": "vidura-niti",
+    "verse_number": 17,
+    "theme": "Six causes of unhappiness",
+    "reading": {
+      "dev": [
+        "ईर्ष्यी घृणी न सन्तुष्टः क्रोधनो नित्यशङ्कितः ।",
+        "परभाग्योपजीवी च षडेते नित्यदुःखिताः ॥ १७ ॥"
+      ],
+      "iast": [
+        "īrṣyī ghṛṇī na santuṣṭaḥ krodhano nityaśaṅkitaḥ |",
+        "parabhāgyopajīvī ca ṣaḍete nityaduḥkhitāḥ || 17 ||"
+      ],
+      "kn": [
+        "ಈರ್ಷ್ಯೀ ಘೃಣೀ ನ ಸನ್ತುಷ್ಟಃ ಕ್ರೋಧನೋ ನಿತ್ಯಶಙ್ಕಿತಃ ೤",
+        "ಪರಭಾಗ್ಯೋಪಜೀವೀ ಚ ಷಡೇತೇ ನಿತ್ಯದುಃಖಿತಾಃ ೥ ೧೭ ೥"
+      ]
+    },
+    "meaning": {
+      "en": "These six types of people are always unhappy- one who is jealous, one who hates others, one who is never satisfied, one who is short-tempered, one who is always suspicious and one who depends upon other's fortunes.",
+      "kn": "ಅಸೂಯೆಪಡುವ, ಇತರರನ್ನು ದ್ವೇಷಿಸುವ, ತೃಪ್ತಿಯಿಲ್ಲದ, ಬೇಗ ಕೋಪಗೊಳ್ಳುವ, ಸದಾ ಅನುಮಾನಿಸುವ ಮತ್ತು ಇತರರ ಭಾಗ್ಯವನ್ನೇ ಅವಲಂಬಿಸುವ ವ್ಯಕ್ತಿಗಳು ನಿರಂತರ ದುಃಖಿತರಾಗಿರುತ್ತಾರೆ."
+    },
+    "deeper_meaning": {
+      "en": "Vidura identifies mental habits that repeatedly create dissatisfaction. Envy, anger and suspicion steal contentment, while dependence on others' fortunes leaves one's peace unstable.",
+      "kn": "ಅಸೂಯೆ, ದ್ವೇಷ, ಕೋಪ ಮತ್ತು ಅನುಮಾನ ಮನಶ್ಶಾಂತಿಯನ್ನು ಕಸಿದುಕೊಳ್ಳುತ್ತವೆ. ತೃಪ್ತಿ ಮತ್ತು ಸ್ವಾವಲಂಬನೆ ನೆಮ್ಮದಿಗೆ ನೆರವಾಗುತ್ತವೆ."
+    },
+    "word_by_word": [
+      {
+        "dev": "ईर्ष्यी",
+        "iast": "īrṣyī",
+        "en": "Envious",
+        "kn": "ಅಸೂಯೆಪಡುವವನು"
+      },
+      {
+        "dev": "घृणी",
+        "iast": "ghṛṇī",
+        "en": "Hateful",
+        "kn": "ದ್ವೇಷಿಸುವವನು"
+      },
+      {
+        "dev": "न",
+        "iast": "na",
+        "en": "Not",
+        "kn": "ಇಲ್ಲ"
+      },
+      {
+        "dev": "सन्तुष्टः",
+        "iast": "santuṣṭaḥ",
+        "en": "Satisfied",
+        "kn": "ತೃಪ್ತನಾದವನು"
+      },
+      {
+        "dev": "क्रोधनो",
+        "iast": "krodhano",
+        "en": "Angry",
+        "kn": "ಕೋಪಿಷ್ಠ"
+      },
+      {
+        "dev": "नित्यशङ्कितः",
+        "iast": "nityaśaṅkitaḥ",
+        "en": "Always suspicious",
+        "kn": "ಸದಾ ಸಂದೇಹಪಡುವವನು"
+      },
+      {
+        "dev": "परभाग्योपजीवी",
+        "iast": "parabhāgyopajīvī",
+        "en": "Living on another's fortune",
+        "kn": "ಇತರರ ಭಾಗ್ಯವನ್ನು ಅವಲಂಬಿಸುವವನು"
+      },
+      {
+        "dev": "च",
+        "iast": "ca",
+        "en": "And",
+        "kn": "ಮತ್ತು"
+      },
+      {
+        "dev": "षडेते",
+        "iast": "ṣaḍete",
+        "en": "These six",
+        "kn": "ಈ ಆರು"
+      },
+      {
+        "dev": "नित्यदुःखिताः",
+        "iast": "nityaduḥkhitāḥ",
+        "en": "Constantly unhappy",
+        "kn": "ಸದಾ ದುಃಖಿತರಾದವರು"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a",
+        "order": 1,
+        "dev": "ईर्ष्यी घृणी न सन्तुष्टः",
+        "iast": "īrṣyī ghṛṇī na santuṣṭaḥ",
+        "kn": "ಈರ್ಷ್ಯೀ ಘೃಣೀ ನ ಸನ್ತುಷ್ಟಃ",
+        "audio": "audio/vidura/sloka-017-part-01.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      },
+      {
+        "id": "b",
+        "order": 2,
+        "dev": "क्रोधनो नित्यशङ्कितः",
+        "iast": "krodhano nityaśaṅkitaḥ",
+        "kn": "ಕ್ರೋಧನೋ ನಿತ್ಯಶಙ್ಕಿತಃ",
+        "audio": "audio/vidura/sloka-017-part-02.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      },
+      {
+        "id": "c",
+        "order": 3,
+        "dev": "परभाग्योपजीवी च",
+        "iast": "parabhāgyopajīvī ca",
+        "kn": "ಪರಭಾಗ್ಯೋಪಜೀವೀ ಚ",
+        "audio": "audio/vidura/sloka-017-part-03.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      },
+      {
+        "id": "d",
+        "order": 4,
+        "dev": "षडेते नित्यदुःखिताः",
+        "iast": "ṣaḍete nityaduḥkhitāḥ",
+        "kn": "ಷಡೇತೇ ನಿತ್ಯದುಃಖಿತಾಃ",
+        "audio": "audio/vidura/sloka-017-part-04.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      }
+    ],
+    "practice_source": "editorial-pada-boundaries",
+    "practice_note": "Practice segments follow printed lines and editorial word boundaries; confirm chanting pauses before audio publishing.",
+    "audio": {
+      "full": "audio/vidura/sloka-017-full.mp3",
+      "clips": [
+        "audio/vidura/sloka-017-part-01.mp3",
+        "audio/vidura/sloka-017-part-02.mp3",
+        "audio/vidura/sloka-017-part-03.mp3",
+        "audio/vidura/sloka-017-part-04.mp3"
+      ],
+      "recording_status": "awaiting-vagdhenu-generation",
+      "meter": "anushtubh",
+      "full_playback": "single_continuous_recording",
+      "repeat_control": "browser-per-part"
+    },
+    "source": {
+      "page": 7,
+      "section": "Atha Viduranītiḥ",
+      "translation": "verbatim from supplied PDF",
+      "study_meanings": "editorial",
+      "notes": "Devanagari IAST readings follow the handout; practice partitions editorial.",
+      "word_gloss_level": "editorial individual source-token meanings"
+    }
+  },
+  {
+    "id": "vidura-018",
+    "collection": "vidura-niti",
+    "verse_number": 18,
+    "theme": "Forgiveness and generosity",
+    "reading": {
+      "dev": [
+        "द्वाविमौ पुरुषौ राजन् स्वर्गस्योपरि तिष्ठतः ।",
+        "प्रभुश्च क्षमया युक्तो दरिद्रश्च प्रदानवान् ॥ १८ ॥"
+      ],
+      "iast": [
+        "dvāvimau puruṣau rājan svargasyopari tiṣṭhataḥ |",
+        "prabhuśca kṣamayā yukto daridraśca pradānavān || 18 ||"
+      ],
+      "kn": [
+        "ದ್ವಾವಿಮೌ ಪುರುಷೌ ರಾಜನ್ ಸ್ವರ್ಗಸ್ಯೋಪರಿ ತಿಷ್ಠತಃ ೤",
+        "ಪ್ರಭುಶ್ಚ ಕ್ಷಮಯಾ ಯುಕ್ತೋ ದರಿದ್ರಶ್ಚ ಪ್ರದಾನವಾನ್ ೥ ೧೮ ೥"
+      ]
+    },
+    "meaning": {
+      "en": "O King ! These two types of persons stand atop the heaven - A capable person who is endowed with the virtue of forgiveness and a poor person who practises generosity.",
+      "kn": "ರಾಜನೇ, ಕ್ಷಮೆಯನ್ನು ತೋರಿಸುವ ಶಕ್ತಿಶಾಲಿ ವ್ಯಕ್ತಿ ಮತ್ತು ಬಡತನದಲ್ಲಿಯೂ ದಾನ ಮಾಡುವ ವ್ಯಕ್ತಿ — ಈ ಇಬ್ಬರು ಅತ್ಯುನ್ನತ ಗೌರವಕ್ಕೆ ಪಾತ್ರರಾಗುತ್ತಾರೆ."
+    },
+    "deeper_meaning": {
+      "en": "Strength shows its nobility through forgiveness, and generosity has special value when offered despite limited means. Vidura values how people use what they have, not merely what they possess.",
+      "kn": "ಶಕ್ತಿಯೊಂದಿಗೆ ಕ್ಷಮೆ, ಕೊರತೆಯ ನಡುವೆಯೂ ದಾನ — ಇವು ಸಂಪತ್ತು ಅಥವಾ ಸ್ಥಾನಕ್ಕಿಂತ ಶ್ರೇಷ್ಠ ಗುಣಗಳು."
+    },
+    "word_by_word": [
+      {
+        "dev": "द्वाविमौ",
+        "iast": "dvāvimau",
+        "en": "These two",
+        "kn": "ಈ ಇಬ್ಬರು"
+      },
+      {
+        "dev": "पुरुषौ",
+        "iast": "puruṣau",
+        "en": "Persons",
+        "kn": "ವ್ಯಕ್ತಿಗಳು"
+      },
+      {
+        "dev": "राजन्",
+        "iast": "rājan",
+        "en": "O king",
+        "kn": "ರಾಜನೇ"
+      },
+      {
+        "dev": "स्वर्गस्योपरि",
+        "iast": "svargasyopari",
+        "en": "Above heaven",
+        "kn": "ಸ್ವರ್ಗಕ್ಕಿಂತ ಮೇಲೆ"
+      },
+      {
+        "dev": "तिष्ठतः",
+        "iast": "tiṣṭhataḥ",
+        "en": "Stand",
+        "kn": "ನಿಲ್ಲುತ್ತಾರೆ"
+      },
+      {
+        "dev": "प्रभुश्च",
+        "iast": "prabhuśca",
+        "en": "And a powerful person",
+        "kn": "ಮತ್ತು ಶಕ್ತಿವಂತನು"
+      },
+      {
+        "dev": "क्षमया",
+        "iast": "kṣamayā",
+        "en": "With forgiveness",
+        "kn": "ಕ್ಷಮೆಯಿಂದ"
+      },
+      {
+        "dev": "युक्तो",
+        "iast": "yukto",
+        "en": "Endowed",
+        "kn": "ಕೂಡಿದ"
+      },
+      {
+        "dev": "दरिद्रश्च",
+        "iast": "daridraśca",
+        "en": "And a poor person",
+        "kn": "ಮತ್ತು ಬಡವನು"
+      },
+      {
+        "dev": "प्रदानवान्",
+        "iast": "pradānavān",
+        "en": "Given to generosity",
+        "kn": "ದಾನಶೀಲನು"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a",
+        "order": 1,
+        "dev": "द्वाविमौ पुरुषौ राजन्",
+        "iast": "dvāvimau puruṣau rājan",
+        "kn": "ದ್ವಾವಿಮೌ ಪುರುಷೌ ರಾಜನ್",
+        "audio": "audio/vidura/sloka-018-part-01.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      },
+      {
+        "id": "b",
+        "order": 2,
+        "dev": "स्वर्गस्योपरि तिष्ठतः",
+        "iast": "svargasyopari tiṣṭhataḥ",
+        "kn": "ಸ್ವರ್ಗಸ್ಯೋಪರಿ ತಿಷ್ಠತಃ",
+        "audio": "audio/vidura/sloka-018-part-02.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      },
+      {
+        "id": "c",
+        "order": 3,
+        "dev": "प्रभुश्च क्षमया युक्तो",
+        "iast": "prabhuśca kṣamayā yukto",
+        "kn": "ಪ್ರಭುಶ್ಚ ಕ್ಷಮಯಾ ಯುಕ್ತೋ",
+        "audio": "audio/vidura/sloka-018-part-03.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      },
+      {
+        "id": "d",
+        "order": 4,
+        "dev": "दरिद्रश्च प्रदानवान्",
+        "iast": "daridraśca pradānavān",
+        "kn": "ದರಿದ್ರಶ್ಚ ಪ್ರದಾನವಾನ್",
+        "audio": "audio/vidura/sloka-018-part-04.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      }
+    ],
+    "practice_source": "editorial-pada-boundaries",
+    "practice_note": "Practice segments follow printed lines and editorial word boundaries; confirm chanting pauses before audio publishing.",
+    "audio": {
+      "full": "audio/vidura/sloka-018-full.mp3",
+      "clips": [
+        "audio/vidura/sloka-018-part-01.mp3",
+        "audio/vidura/sloka-018-part-02.mp3",
+        "audio/vidura/sloka-018-part-03.mp3",
+        "audio/vidura/sloka-018-part-04.mp3"
+      ],
+      "recording_status": "awaiting-vagdhenu-generation",
+      "meter": "anushtubh",
+      "full_playback": "single_continuous_recording",
+      "repeat_control": "browser-per-part"
+    },
+    "source": {
+      "page": 7,
+      "section": "Atha Viduranītiḥ",
+      "translation": "verbatim from supplied PDF",
+      "study_meanings": "editorial",
+      "notes": "Devanagari IAST readings follow the handout; practice partitions editorial.",
+      "word_gloss_level": "editorial individual source-token meanings"
+    }
+  },
+  {
+    "id": "vidura-019",
+    "collection": "vidura-niti",
+    "verse_number": 19,
+    "theme": "The nature of a noble person",
+    "reading": {
+      "dev": [
+        "न स्वे सुखे वै कुरुते प्रहर्षं नान्यस्य दुःखे भवति प्रहृष्टः ।",
+        "दत्त्वा न पश्चात् कुरुतेऽनुतापं स कथ्यते सत्पुरुषार्थशीलः ॥ १९ ॥"
+      ],
+      "iast": [
+        "na sve sukhe vai kurute praharṣaṃ nānyasya duḥkhe bhavati prahṛṣṭaḥ |",
+        "dattvā na paścāt kurute'nutāpaṃ sa kathyate satpuruṣārthaśīlaḥ || 19 ||"
+      ],
+      "kn": [
+        "ನ ಸ್ವೇ ಸುಖೇ ವೈ ಕುರುತೇ ಪ್ರಹರ್ಷಂ ನಾನ್ಯಸ್ಯ ದುಃಖೇ ಭವತಿ ಪ್ರಹೃಷ್ಟಃ ೤",
+        "ದತ್ತ್ವಾ ನ ಪಶ್ಚಾತ್ ಕುರುತೇಽನುತಾಪಂ ಸ ಕಥ್ಯತೇ ಸತ್ಪುರುಷಾರ್ಥಶೀಲಃ ೥ ೧೯ ೥"
+      ]
+    },
+    "meaning": {
+      "en": "He alone is called a noble person with an excellent conduct who does not over-rejoice at his own fortunes, does not feel happy when others are in distress and does not repent after having given something in charity.",
+      "kn": "ತನ್ನ ಸುಖಕ್ಕೆ ಅತಿಯಾಗಿ ಹರ್ಷಿಸದೆ, ಇತರರ ದುಃಖದಲ್ಲಿ ಸಂತೋಷಪಡದೆ, ದಾನ ಮಾಡಿದ ಮೇಲೆ ಪಶ್ಚಾತ್ತಾಪಪಡದವನೇ ಸದಾಚಾರದ ಸಜ್ಜನನು."
+    },
+    "deeper_meaning": {
+      "en": "A noble life combines composure in personal happiness, empathy for others' pain and generosity without regret. Vidura calls attention to the inward intention behind outward virtue.",
+      "kn": "ತನ್ನ ಸುಖದಲ್ಲಿ ಮಿತಭಾವ, ಇತರರ ನೋವಿಗೆ ಸಹಾನುಭೂತಿ ಮತ್ತು ಪಶ್ಚಾತ್ತಾಪವಿಲ್ಲದ ದಾನ ಸಜ್ಜನಿಕೆಯ ಲಕ್ಷಣಗಳು."
+    },
+    "word_by_word": [
+      {
+        "dev": "न",
+        "iast": "na",
+        "en": "Not",
+        "kn": "ಇಲ್ಲ"
+      },
+      {
+        "dev": "स्वे",
+        "iast": "sve",
+        "en": "In one's own",
+        "kn": "ತನ್ನದೇ"
+      },
+      {
+        "dev": "सुखे",
+        "iast": "sukhe",
+        "en": "Happiness",
+        "kn": "ಸುಖದಲ್ಲಿ"
+      },
+      {
+        "dev": "वै",
+        "iast": "vai",
+        "en": "Indeed",
+        "kn": "ನಿಜವಾಗಿ"
+      },
+      {
+        "dev": "कुरुते",
+        "iast": "kurute",
+        "en": "Does",
+        "kn": "ಮಾಡುತ್ತಾನೆ"
+      },
+      {
+        "dev": "प्रहर्षं",
+        "iast": "praharṣaṃ",
+        "en": "Excessive rejoicing",
+        "kn": "ಅತಿಹರ್ಷ"
+      },
+      {
+        "dev": "नान्यस्य",
+        "iast": "nānyasya",
+        "en": "Not at another's",
+        "kn": "ಇತರರ ವಿಷಯದಲ್ಲಿ ಅಲ್ಲ"
+      },
+      {
+        "dev": "दुःखे",
+        "iast": "duḥkhe",
+        "en": "Suffering",
+        "kn": "ದುಃಖದಲ್ಲಿ"
+      },
+      {
+        "dev": "भवति",
+        "iast": "bhavati",
+        "en": "Becomes",
+        "kn": "ಆಗುತ್ತಾನೆ"
+      },
+      {
+        "dev": "प्रहृष्टः",
+        "iast": "prahṛṣṭaḥ",
+        "en": "Delighted",
+        "kn": "ಹರ್ಷಿತ"
+      },
+      {
+        "dev": "दत्त्वा",
+        "iast": "dattvā",
+        "en": "Having given",
+        "kn": "ದಾನ ಮಾಡಿದ ಬಳಿಕ"
+      },
+      {
+        "dev": "न",
+        "iast": "na",
+        "en": "Not",
+        "kn": "ಇಲ್ಲ"
+      },
+      {
+        "dev": "पश्चात्",
+        "iast": "paścāt",
+        "en": "Afterwards",
+        "kn": "ನಂತರ"
+      },
+      {
+        "dev": "कुरुतेऽनुतापं",
+        "iast": "kurute'nutāpaṃ",
+        "en": "Feels regret",
+        "kn": "ಪಶ್ಚಾತ್ತಾಪಪಡುತ್ತಾನೆ"
+      },
+      {
+        "dev": "स",
+        "iast": "sa",
+        "en": "That one",
+        "kn": "ಅವನು"
+      },
+      {
+        "dev": "कथ्यते",
+        "iast": "kathyate",
+        "en": "Is called",
+        "kn": "ಎಂದು ಕರೆಯಲ್ಪಡುತ್ತಾನೆ"
+      },
+      {
+        "dev": "सत्पुरुषार्थशीलः",
+        "iast": "satpuruṣārthaśīlaḥ",
+        "en": "One whose conduct is noble",
+        "kn": "ಉತ್ತಮ ನಡತೆಯ ಸಜ್ಜನನು"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a",
+        "order": 1,
+        "dev": "न स्वे सुखे वै कुरुते प्रहर्षं",
+        "iast": "na sve sukhe vai kurute praharṣaṃ",
+        "kn": "ನ ಸ್ವೇ ಸುಖೇ ವೈ ಕುರುತೇ ಪ್ರಹರ್ಷಂ",
+        "audio": "audio/vidura/sloka-019-part-01.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      },
+      {
+        "id": "b",
+        "order": 2,
+        "dev": "नान्यस्य दुःखे भवति प्रहृष्टः",
+        "iast": "nānyasya duḥkhe bhavati prahṛṣṭaḥ",
+        "kn": "ನಾನ್ಯಸ್ಯ ದುಃಖೇ ಭವತಿ ಪ್ರಹೃಷ್ಟಃ",
+        "audio": "audio/vidura/sloka-019-part-02.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      },
+      {
+        "id": "c",
+        "order": 3,
+        "dev": "दत्त्वा न पश्चात् कुरुतेऽनुतापं",
+        "iast": "dattvā na paścāt kurute'nutāpaṃ",
+        "kn": "ದತ್ತ್ವಾ ನ ಪಶ್ಚಾತ್ ಕುರುತೇಽನುತಾಪಂ",
+        "audio": "audio/vidura/sloka-019-part-03.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      },
+      {
+        "id": "d",
+        "order": 4,
+        "dev": "स कथ्यते सत्पुरुषार्थशीलः",
+        "iast": "sa kathyate satpuruṣārthaśīlaḥ",
+        "kn": "ಸ ಕಥ್ಯತೇ ಸತ್ಪುರುಷಾರ್ಥಶೀಲಃ",
+        "audio": "audio/vidura/sloka-019-part-04.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      }
+    ],
+    "practice_source": "editorial-pada-boundaries",
+    "practice_note": "Four chantable phrase units by editorial reading boundaries. Audition audio before publishing.",
+    "audio": {
+      "full": "audio/vidura/sloka-019-full.mp3",
+      "clips": [
+        "audio/vidura/sloka-019-part-01.mp3",
+        "audio/vidura/sloka-019-part-02.mp3",
+        "audio/vidura/sloka-019-part-03.mp3",
+        "audio/vidura/sloka-019-part-04.mp3"
+      ],
+      "recording_status": "awaiting-vagdhenu-generation",
+      "meter": "unknown-long-metre",
+      "full_playback": "single_continuous_recording",
+      "repeat_control": "browser-per-part"
+    },
+    "source": {
+      "page": 7,
+      "section": "Atha Viduranītiḥ",
+      "translation": "verbatim from supplied PDF",
+      "study_meanings": "editorial",
+      "notes": "Longer metre; do not force anuṣṭubh.",
+      "word_gloss_level": "editorial individual source-token meanings"
+    }
+  },
+  {
+    "id": "vidura-020",
+    "collection": "vidura-niti",
+    "verse_number": 20,
+    "theme": "Harmony among relatives",
+    "reading": {
+      "dev": [
+        "सम्भोजनं संकथनं सम्प्रीतिश्च परस्परम् ।",
+        "जातिभिः सह कार्याणि न विरोधः कदाचन ॥ २० ॥"
+      ],
+      "iast": [
+        "sambhojanaṃ saṃkathanaṃ samprītiśca parasparam |",
+        "jātibhiḥ saha kāryāṇi na virodhaḥ kadācana || 20 ||"
+      ],
+      "kn": [
+        "ಸಮ್ಭೋಜನಂ ಸಂಕಥನಂ ಸಮ್ಪ್ರೀತಿಶ್ಚ ಪರಸ್ಪರಮ್ ೤",
+        "ಜಾತಿಭಿಃ ಸಹ ಕಾರ್ಯಾಣಿ ನ ವಿರೋಧಃ ಕದಾಚನ ೥ ೨೦ ೥"
+      ]
+    },
+    "meaning": {
+      "en": "One should eat jointly, talk smoothly and be with affection with the relations. One should never oppose them.",
+      "kn": "ಬಂಧುಗಳೊಂದಿಗೆ ಒಟ್ಟಿಗೆ ಊಟ ಮಾಡುವುದು, ಸೌಹಾರ್ದದಿಂದ ಮಾತನಾಡುವುದು ಮತ್ತು ಪರಸ್ಪರ ಪ್ರೀತಿ ಬೆಳೆಸುವುದು ಒಳ್ಳೆಯದು; ಅನವಶ್ಯಕ ವಿರೋಧ ತಪ್ಪಿಸಬೇಕು."
+    },
+    "deeper_meaning": {
+      "en": "Sharing food and conversation can keep relationships alive. The verse advocates goodwill and affection among relatives rather than nursing avoidable conflicts.",
+      "kn": "ಒಟ್ಟಿನ ಊಟ, ಮಾತುಕತೆ ಮತ್ತು ಪ್ರೀತಿ ಕುಟುಂಬದ ಬಾಂಧವ್ಯವನ್ನು ಗಟ್ಟಿಗೊಳಿಸುತ್ತವೆ; ಅನವಶ್ಯಕ ಕಲಹ ಸಂಬಂಧವನ್ನು ದುರ್ಬಲಗೊಳಿಸುತ್ತದೆ."
+    },
+    "word_by_word": [
+      {
+        "dev": "सम्भोजनं",
+        "iast": "sambhojanaṃ",
+        "en": "Eating together",
+        "kn": "ಒಟ್ಟಿಗೆ ಊಟ"
+      },
+      {
+        "dev": "संकथनं",
+        "iast": "saṃkathanaṃ",
+        "en": "Talking together",
+        "kn": "ಒಟ್ಟಿಗೆ ಮಾತುಕತೆ"
+      },
+      {
+        "dev": "सम्प्रीतिश्च",
+        "iast": "samprītiśca",
+        "en": "And mutual affection",
+        "kn": "ಮತ್ತು ಪರಸ್ಪರ ಪ್ರೀತಿ"
+      },
+      {
+        "dev": "परस्परम्",
+        "iast": "parasparam",
+        "en": "With one another",
+        "kn": "ಒಬ್ಬರೊಂದಿಗೆ ಒಬ್ಬರು"
+      },
+      {
+        "dev": "जातिभिः",
+        "iast": "jātibhiḥ",
+        "en": "With one's relations",
+        "kn": "ಬಂಧುಗಳೊಂದಿಗೆ"
+      },
+      {
+        "dev": "सह",
+        "iast": "saha",
+        "en": "Together with",
+        "kn": "ಜೊತೆಗೆ"
+      },
+      {
+        "dev": "कार्याणि",
+        "iast": "kāryāṇi",
+        "en": "Things to be done",
+        "kn": "ಮಾಡಬೇಕಾದ ಕಾರ್ಯಗಳು"
+      },
+      {
+        "dev": "न",
+        "iast": "na",
+        "en": "Not",
+        "kn": "ಬೇಡ"
+      },
+      {
+        "dev": "विरोधः",
+        "iast": "virodhaḥ",
+        "en": "Conflict",
+        "kn": "ವಿರೋಧ"
+      },
+      {
+        "dev": "कदाचन",
+        "iast": "kadācana",
+        "en": "At any time",
+        "kn": "ಎಂದಿಗೂ"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a",
+        "order": 1,
+        "dev": "सम्भोजनं संकथनं",
+        "iast": "sambhojanaṃ saṃkathanaṃ",
+        "kn": "ಸಮ್ಭೋಜನಂ ಸಂಕಥನಂ",
+        "audio": "audio/vidura/sloka-020-part-01.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      },
+      {
+        "id": "b",
+        "order": 2,
+        "dev": "सम्प्रीतिश्च परस्परम्",
+        "iast": "samprītiśca parasparam",
+        "kn": "ಸಮ್ಪ್ರೀತಿಶ್ಚ ಪರಸ್ಪರಮ್",
+        "audio": "audio/vidura/sloka-020-part-02.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      },
+      {
+        "id": "c",
+        "order": 3,
+        "dev": "जातिभिः सह कार्याणि",
+        "iast": "jātibhiḥ saha kāryāṇi",
+        "kn": "ಜಾತಿಭಿಃ ಸಹ ಕಾರ್ಯಾಣಿ",
+        "audio": "audio/vidura/sloka-020-part-03.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      },
+      {
+        "id": "d",
+        "order": 4,
+        "dev": "न विरोधः कदाचन",
+        "iast": "na virodhaḥ kadācana",
+        "kn": "ನ ವಿರೋಧಃ ಕದಾಚನ",
+        "audio": "audio/vidura/sloka-020-part-04.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      }
+    ],
+    "practice_source": "editorial-pada-boundaries",
+    "practice_note": "Four chantable phrase units by editorial reading boundaries. Audition audio before publishing.",
+    "audio": {
+      "full": "audio/vidura/sloka-020-full.mp3",
+      "clips": [
+        "audio/vidura/sloka-020-part-01.mp3",
+        "audio/vidura/sloka-020-part-02.mp3",
+        "audio/vidura/sloka-020-part-03.mp3",
+        "audio/vidura/sloka-020-part-04.mp3"
+      ],
+      "recording_status": "awaiting-vagdhenu-generation",
+      "meter": "anushtubh",
+      "full_playback": "single_continuous_recording",
+      "repeat_control": "browser-per-part"
+    },
+    "source": {
+      "page": 8,
+      "section": "Atha Viduranītiḥ",
+      "translation": "verbatim from supplied PDF",
+      "study_meanings": "editorial",
+      "notes": null,
+      "word_gloss_level": "editorial individual source-token meanings"
+    }
+  },
+  {
+    "id": "vidura-021",
+    "collection": "vidura-niti",
+    "verse_number": 21,
+    "theme": "How virtues are preserved",
+    "reading": {
+      "dev": [
+        "सत्येन रक्ष्यते धर्मो विद्या योगेन रक्ष्यते ।",
+        "मृजया रक्ष्यते रूपं कुलं वृत्तेन रक्ष्यते ॥ २१ ॥"
+      ],
+      "iast": [
+        "satyena rakṣyate dharmo vidyā yogena rakṣyate |",
+        "mṛjayā rakṣyate rūpaṃ kulaṃ vṛttena rakṣyate || 21 ||"
+      ],
+      "kn": [
+        "ಸತ್ಯೇನ ರಕ್ಷ್ಯತೇ ಧರ್ಮೋ ವಿದ್ಯಾ ಯೋಗೇನ ರಕ್ಷ್ಯತೇ ೤",
+        "ಮೃಜಯಾ ರಕ್ಷ್ಯತೇ ರೂಪಂ ಕುಲಂ ವೃತ್ತೇನ ರಕ್ಷ್ಯತೇ ೥ ೨೧ ೥"
+      ]
+    },
+    "meaning": {
+      "en": "Dharma is protected by truth, knowledge is protected by practice, beauty is protected by cleanliness and a dynasty is protected by good character.",
+      "kn": "ಸತ್ಯದಿಂದ ಧರ್ಮ ರಕ್ಷಿತವಾಗುತ್ತದೆ; ಅಭ್ಯಾಸದಿಂದ ವಿದ್ಯೆ ಉಳಿಯುತ್ತದೆ; ಶುಚಿತ್ವದಿಂದ ರೂಪ ಸಂರಕ್ಷಿತವಾಗುತ್ತದೆ; ಉತ್ತಮ ನಡತೆಯಿಂದ ಕುಲದ ಗೌರವ ಉಳಿಯುತ್ತದೆ."
+    },
+    "deeper_meaning": {
+      "en": "Good qualities need sustaining practices. Truth supports dharma, learning requires use, cleanliness maintains appearance, and conduct—not birth alone—protects a family's standing.",
+      "kn": "ಗುಣಗಳು ತಾನಾಗಿಯೇ ಉಳಿಯುವುದಿಲ್ಲ. ಸತ್ಯ, ಅಭ್ಯಾಸ, ಶುಚಿತ್ವ ಮತ್ತು ಸದಾಚಾರ ಅವುಗಳನ್ನು ಕಾಪಾಡುತ್ತವೆ."
+    },
+    "word_by_word": [
+      {
+        "dev": "सत्येन",
+        "iast": "satyena",
+        "en": "By truth",
+        "kn": "ಸತ್ಯದಿಂದ"
+      },
+      {
+        "dev": "रक्ष्यते",
+        "iast": "rakṣyate",
+        "en": "Is protected",
+        "kn": "ರಕ್ಷಿತವಾಗುತ್ತದೆ"
+      },
+      {
+        "dev": "धर्मो",
+        "iast": "dharmo",
+        "en": "Dharma",
+        "kn": "ಧರ್ಮ"
+      },
+      {
+        "dev": "विद्या",
+        "iast": "vidyā",
+        "en": "Learning",
+        "kn": "ವಿದ್ಯೆ"
+      },
+      {
+        "dev": "योगेन",
+        "iast": "yogena",
+        "en": "By application and practice",
+        "kn": "ಅಭ್ಯಾಸದಿಂದ"
+      },
+      {
+        "dev": "रक्ष्यते",
+        "iast": "rakṣyate",
+        "en": "Is protected",
+        "kn": "ರಕ್ಷಿತವಾಗುತ್ತದೆ"
+      },
+      {
+        "dev": "मृजया",
+        "iast": "mṛjayā",
+        "en": "By cleanliness",
+        "kn": "ಶುಚಿತ್ವದಿಂದ"
+      },
+      {
+        "dev": "रक्ष्यते",
+        "iast": "rakṣyate",
+        "en": "Is protected",
+        "kn": "ರಕ್ಷಿತವಾಗುತ್ತದೆ"
+      },
+      {
+        "dev": "रूपं",
+        "iast": "rūpaṃ",
+        "en": "Appearance",
+        "kn": "ರೂಪ"
+      },
+      {
+        "dev": "कुलं",
+        "iast": "kulaṃ",
+        "en": "Family lineage",
+        "kn": "ಕುಲ"
+      },
+      {
+        "dev": "वृत्तेन",
+        "iast": "vṛttena",
+        "en": "By conduct",
+        "kn": "ನಡತೆಯಿಂದ"
+      },
+      {
+        "dev": "रक्ष्यते",
+        "iast": "rakṣyate",
+        "en": "Is protected",
+        "kn": "ರಕ್ಷಿತವಾಗುತ್ತದೆ"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a",
+        "order": 1,
+        "dev": "सत्येन रक्ष्यते धर्मो",
+        "iast": "satyena rakṣyate dharmo",
+        "kn": "ಸತ್ಯೇನ ರಕ್ಷ್ಯತೇ ಧರ್ಮೋ",
+        "audio": "audio/vidura/sloka-021-part-01.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      },
+      {
+        "id": "b",
+        "order": 2,
+        "dev": "विद्या योगेन रक्ष्यते",
+        "iast": "vidyā yogena rakṣyate",
+        "kn": "ವಿದ್ಯಾ ಯೋಗೇನ ರಕ್ಷ್ಯತೇ",
+        "audio": "audio/vidura/sloka-021-part-02.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      },
+      {
+        "id": "c",
+        "order": 3,
+        "dev": "मृजया रक्ष्यते रूपं",
+        "iast": "mṛjayā rakṣyate rūpaṃ",
+        "kn": "ಮೃಜಯಾ ರಕ್ಷ್ಯತೇ ರೂಪಂ",
+        "audio": "audio/vidura/sloka-021-part-03.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      },
+      {
+        "id": "d",
+        "order": 4,
+        "dev": "कुलं वृत्तेन रक्ष्यते",
+        "iast": "kulaṃ vṛttena rakṣyate",
+        "kn": "ಕುಲಂ ವೃತ್ತೇನ ರಕ್ಷ್ಯತೇ",
+        "audio": "audio/vidura/sloka-021-part-04.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      }
+    ],
+    "practice_source": "editorial-pada-boundaries",
+    "practice_note": "Four chantable phrase units by editorial reading boundaries. Audition audio before publishing.",
+    "audio": {
+      "full": "audio/vidura/sloka-021-full.mp3",
+      "clips": [
+        "audio/vidura/sloka-021-part-01.mp3",
+        "audio/vidura/sloka-021-part-02.mp3",
+        "audio/vidura/sloka-021-part-03.mp3",
+        "audio/vidura/sloka-021-part-04.mp3"
+      ],
+      "recording_status": "awaiting-vagdhenu-generation",
+      "meter": "anushtubh",
+      "full_playback": "single_continuous_recording",
+      "repeat_control": "browser-per-part"
+    },
+    "source": {
+      "page": 8,
+      "section": "Atha Viduranītiḥ",
+      "translation": "verbatim from supplied PDF",
+      "study_meanings": "editorial",
+      "notes": null,
+      "word_gloss_level": "editorial individual source-token meanings"
+    }
+  },
+  {
+    "id": "vidura-022",
+    "collection": "vidura-niti",
+    "verse_number": 22,
+    "theme": "Judging family character",
+    "reading": {
+      "dev": [
+        "परिच्छदेन क्षेत्रेण वेश्मना परिचर्यया ।",
+        "परीक्षेत कुलं राजन् भोजनाच्छादनेन च ॥ २२ ॥"
+      ],
+      "iast": [
+        "paricchadena kṣetreṇa veśmanā paricaryayā |",
+        "parīkṣeta kulaṃ rājan bhojanācchādanena ca || 22 ||"
+      ],
+      "kn": [
+        "ಪರಿಚ್ಛದೇನ ಕ್ಷೇತ್ರೇಣ ವೇಶ್ಮನಾ ಪರಿಚರ್ಯಯಾ ೤",
+        "ಪರೀಕ್ಷೇತ ಕುಲಂ ರಾಜನ್ ಭೋಜನಾಚ್ಛಾದನೇನ ಚ ೥ ೨೨ ೥"
+      ]
+    },
+    "meaning": {
+      "en": "O king ! a dynasty is tested by its external appendages, attendants, birth-places, habitations, services, food habits and clothing.",
+      "kn": "ರಾಜನೇ, ಕುಟುಂಬದ ಸ್ಥಿತಿಯನ್ನು ಅದರ ಸುತ್ತಮುತ್ತಲಿನ ವ್ಯವಸ್ಥೆ, ನೆಲ, ಮನೆ, ಸೇವೆ, ಆಹಾರ ಮತ್ತು ಉಡುಪು ಮುಂತಾದ ಜೀವನದ ಅಂಶಗಳಿಂದ ಪರಿಶೀಲಿಸಬಹುದು."
+    },
+    "deeper_meaning": {
+      "en": "Vidura points to everyday living conditions and conduct as signs by which a household can be understood. The verse reflects its historical social context and should not be turned into a blanket judgment of anyone's worth.",
+      "kn": "ಕುಟುಂಬದ ಬದುಕನ್ನು ಅರ್ಥಮಾಡಿಕೊಳ್ಳಲು ಅದರ ದೈನಂದಿನ ಪರಿಸ್ಥಿತಿ ಮತ್ತು ನಡವಳಿಕೆಯನ್ನು ಗಮನಿಸಬೇಕು; ಈ ಮಾತು ಅದರ ಕಾಲದ ಸಾಮಾಜಿಕ ಹಿನ್ನೆಲೆಯಲ್ಲಿದೆ."
+    },
+    "word_by_word": [
+      {
+        "dev": "परिच्छदेन",
+        "iast": "paricchadena",
+        "en": "By equipment or possessions",
+        "kn": "ಪರಿಕರಗಳಿಂದ"
+      },
+      {
+        "dev": "क्षेत्रेण",
+        "iast": "kṣetreṇa",
+        "en": "By the field or land",
+        "kn": "ಭೂಮಿಯಿಂದ"
+      },
+      {
+        "dev": "वेश्मना",
+        "iast": "veśmanā",
+        "en": "By a dwelling",
+        "kn": "ಮನೆಯಿಂದ"
+      },
+      {
+        "dev": "परिचर्यया",
+        "iast": "paricaryayā",
+        "en": "By service",
+        "kn": "ಸೇವೆಯಿಂದ"
+      },
+      {
+        "dev": "परीक्षेत",
+        "iast": "parīkṣeta",
+        "en": "One should examine",
+        "kn": "ಪರಿಶೀಲಿಸಬೇಕು"
+      },
+      {
+        "dev": "कुलं",
+        "iast": "kulaṃ",
+        "en": "Family",
+        "kn": "ಕುಟುಂಬ"
+      },
+      {
+        "dev": "राजन्",
+        "iast": "rājan",
+        "en": "O king",
+        "kn": "ರಾಜನೇ"
+      },
+      {
+        "dev": "भोजनाच्छादनेन",
+        "iast": "bhojanācchādanena",
+        "en": "By food and clothing",
+        "kn": "ಆಹಾರ ಮತ್ತು ಉಡುಪಿನಿಂದ"
+      },
+      {
+        "dev": "च",
+        "iast": "ca",
+        "en": "And",
+        "kn": "ಮತ್ತು"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a",
+        "order": 1,
+        "dev": "परिच्छदेन क्षेत्रेण",
+        "iast": "paricchadena kṣetreṇa",
+        "kn": "ಪರಿಚ್ಛದೇನ ಕ್ಷೇತ್ರೇಣ",
+        "audio": "audio/vidura/sloka-022-part-01.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      },
+      {
+        "id": "b",
+        "order": 2,
+        "dev": "वेश्मना परिचर्यया",
+        "iast": "veśmanā paricaryayā",
+        "kn": "ವೇಶ್ಮನಾ ಪರಿಚರ್ಯಯಾ",
+        "audio": "audio/vidura/sloka-022-part-02.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      },
+      {
+        "id": "c",
+        "order": 3,
+        "dev": "परीक्षेत कुलं राजन्",
+        "iast": "parīkṣeta kulaṃ rājan",
+        "kn": "ಪರೀಕ್ಷೇತ ಕುಲಂ ರಾಜನ್",
+        "audio": "audio/vidura/sloka-022-part-03.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      },
+      {
+        "id": "d",
+        "order": 4,
+        "dev": "भोजनाच्छादनेन च",
+        "iast": "bhojanācchādanena ca",
+        "kn": "ಭೋಜನಾಚ್ಛಾದನೇನ ಚ",
+        "audio": "audio/vidura/sloka-022-part-04.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      }
+    ],
+    "practice_source": "editorial-pada-boundaries",
+    "practice_note": "Four chantable phrase units by editorial reading boundaries. Audition audio before publishing.",
+    "audio": {
+      "full": "audio/vidura/sloka-022-full.mp3",
+      "clips": [
+        "audio/vidura/sloka-022-part-01.mp3",
+        "audio/vidura/sloka-022-part-02.mp3",
+        "audio/vidura/sloka-022-part-03.mp3",
+        "audio/vidura/sloka-022-part-04.mp3"
+      ],
+      "recording_status": "awaiting-vagdhenu-generation",
+      "meter": "anushtubh",
+      "full_playback": "single_continuous_recording",
+      "repeat_control": "browser-per-part"
+    },
+    "source": {
+      "page": 8,
+      "section": "Atha Viduranītiḥ",
+      "translation": "verbatim from supplied PDF",
+      "study_meanings": "editorial",
+      "notes": null,
+      "word_gloss_level": "editorial individual source-token meanings"
+    }
+  },
+  {
+    "id": "vidura-023",
+    "collection": "vidura-niti",
+    "verse_number": 23,
+    "theme": "Unstable behavior",
+    "reading": {
+      "dev": [
+        "अकस्मादेव कुप्यन्ति प्रसीदन्त्यनिमित्ततः ।",
+        "शीलमेतदसाधूनामभ्रं पारिप्लवं यथा ॥ २३ ॥"
+      ],
+      "iast": [
+        "akasmādeva kupyanti prasīdantyanimittataḥ |",
+        "śīlametadasādhūnāmabhraṃ pāriplavaṃ yathā || 23 ||"
+      ],
+      "kn": [
+        "ಅಕಸ್ಮಾದೇವ ಕುಪ್ಯನ್ತಿ ಪ್ರಸೀದನ್ತ್ಯನಿಮಿತ್ತತಃ ೤",
+        "ಶೀಲಮೇತದಸಾಧೂನಾಮಭ್ರಂ ಪಾರಿಪ್ಲವಂ ಯಥಾ ೥ ೨೩ ೥"
+      ]
+    },
+    "meaning": {
+      "en": "The nature of wicked people is always whimsical like that of a parasite cloud. They become angry or pleased without any rhyme or reason.",
+      "kn": "ದುರ್ಜನರು ಕಾರಣವಿಲ್ಲದೆ ಕೋಪಗೊಳ್ಳುತ್ತಾರೆ ಅಥವಾ ಸಂತೋಷಗೊಳ್ಳುತ್ತಾರೆ; ಅವರ ಸ್ವಭಾವವು ಅಲೆದಾಡುವ ಮೋಡದಂತೆ ಅಸ್ಥಿರವಾಗಿರುತ್ತದೆ."
+    },
+    "deeper_meaning": {
+      "en": "When moods change without discernible cause, others cannot easily rely on a person's responses. Vidura compares such volatility to a wandering cloud.",
+      "kn": "ಕಾರಣವಿಲ್ಲದೆ ಬದಲಾಗುವ ಕೋಪ ಮತ್ತು ಸಂತೋಷ ಇತರರಿಗೆ ನಂಬಿಕೆ ಮೂಡಿಸುವುದಿಲ್ಲ; ಅಸ್ಥಿರ ಸ್ವಭಾವವನ್ನು ಅಲೆದಾಡುವ ಮೋಡಕ್ಕೆ ಹೋಲಿಸಲಾಗಿದೆ."
+    },
+    "word_by_word": [
+      {
+        "dev": "अकस्मादेव",
+        "iast": "akasmādeva",
+        "en": "All of a sudden",
+        "kn": "ಇದ್ದಕ್ಕಿದ್ದಂತೆ"
+      },
+      {
+        "dev": "कुप्यन्ति",
+        "iast": "kupyanti",
+        "en": "They become angry",
+        "kn": "ಕೋಪಗೊಳ್ಳುತ್ತಾರೆ"
+      },
+      {
+        "dev": "प्रसीदन्त्यनिमित्ततः",
+        "iast": "prasīdantyanimittataḥ",
+        "en": "They become pleased without reason",
+        "kn": "ಕಾರಣವಿಲ್ಲದೆ ಸಂತೋಷಗೊಳ್ಳುತ್ತಾರೆ"
+      },
+      {
+        "dev": "शीलमेतदसाधूनाम्",
+        "iast": "śīlametadasādhūnām",
+        "en": "This is the nature of the unworthy",
+        "kn": "ಇದು ದುರ್ಜನರ ಸ್ವಭಾವ"
+      },
+      {
+        "dev": "अभ्रं",
+        "iast": "abhraṃ",
+        "en": "Cloud",
+        "kn": "ಮೋಡ"
+      },
+      {
+        "dev": "पारिप्लवं",
+        "iast": "pāriplavaṃ",
+        "en": "Drifting or wandering",
+        "kn": "ಅಲೆದಾಡುವ"
+      },
+      {
+        "dev": "यथा",
+        "iast": "yathā",
+        "en": "Just as",
+        "kn": "ಹಾಗೆ"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a",
+        "order": 1,
+        "dev": "अकस्मादेव कुप्यन्ति",
+        "iast": "akasmādeva kupyanti",
+        "kn": "ಅಕಸ್ಮಾದೇವ ಕುಪ್ಯನ್ತಿ",
+        "audio": "audio/vidura/sloka-023-part-01.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      },
+      {
+        "id": "b",
+        "order": 2,
+        "dev": "प्रसीदन्त्यनिमित्ततः",
+        "iast": "prasīdantyanimittataḥ",
+        "kn": "ಪ್ರಸೀದನ್ತ್ಯನಿಮಿತ್ತತಃ",
+        "audio": "audio/vidura/sloka-023-part-02.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      },
+      {
+        "id": "c",
+        "order": 3,
+        "dev": "शीलमेतदसाधूनाम्",
+        "iast": "śīlametadasādhūnām",
+        "kn": "ಶೀಲಮೇತದಸಾಧೂನಾಮ್",
+        "audio": "audio/vidura/sloka-023-part-03.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      },
+      {
+        "id": "d",
+        "order": 4,
+        "dev": "अभ्रं पारिप्लवं यथा",
+        "iast": "abhraṃ pāriplavaṃ yathā",
+        "kn": "ಅಭ್ರಂ ಪಾರಿಪ್ಲವಂ ಯಥಾ",
+        "audio": "audio/vidura/sloka-023-part-04.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      }
+    ],
+    "practice_source": "editorial-pada-boundaries",
+    "practice_note": "Four chantable phrase units by editorial reading boundaries. Audition audio before publishing.",
+    "audio": {
+      "full": "audio/vidura/sloka-023-full.mp3",
+      "clips": [
+        "audio/vidura/sloka-023-part-01.mp3",
+        "audio/vidura/sloka-023-part-02.mp3",
+        "audio/vidura/sloka-023-part-03.mp3",
+        "audio/vidura/sloka-023-part-04.mp3"
+      ],
+      "recording_status": "awaiting-vagdhenu-generation",
+      "meter": "anushtubh",
+      "full_playback": "single_continuous_recording",
+      "repeat_control": "browser-per-part"
+    },
+    "source": {
+      "page": 8,
+      "section": "Atha Viduranītiḥ",
+      "translation": "verbatim from supplied PDF",
+      "study_meanings": "editorial",
+      "notes": null,
+      "word_gloss_level": "editorial individual source-token meanings"
+    }
+  },
+  {
+    "id": "vidura-024",
+    "collection": "vidura-niti",
+    "verse_number": 24,
+    "theme": "Virtues that overcome faults",
+    "reading": {
+      "dev": [
+        "अकीर्तिं विनयो हन्ति हन्त्यनर्थं पराक्रमः ।",
+        "हन्ति नित्यं क्षमा क्रोधमाचारो हन्त्यलक्षणम् ॥ २४ ॥"
+      ],
+      "iast": [
+        "akīrtiṃ vinayo hanti hantyanarthaṃ parākramaḥ |",
+        "hanti nityaṃ kṣamā krodhamācāro hantyalakṣaṇam || 24 ||"
+      ],
+      "kn": [
+        "ಅಕೀರ್ತಿಂ ವಿನಯೋ ಹನ್ತಿ ಹನ್ತ್ಯನರ್ಥಂ ಪರಾಕ್ರಮಃ ೤",
+        "ಹನ್ತಿ ನಿತ್ಯಂ ಕ್ಷಮಾ ಕ್ರೋಧಮಾಚಾರೋ ಹನ್ತ್ಯಲಕ್ಷಣಮ್ ೥ ೨೪ ೥"
+      ]
+    },
+    "meaning": {
+      "en": "Modesty destroys defamation. Valour destroys misfortunes, Forgiveness removes anger. Good conduct is a destroyer of all bad habits.",
+      "kn": "ವಿನಯವು ಅಪಕೀರ್ತಿಯನ್ನು ನಿವಾರಿಸುತ್ತದೆ; ಪರಾಕ್ರಮವು ಅನರ್ಥವನ್ನು ಎದುರಿಸುತ್ತದೆ; ಕ್ಷಮೆ ಕೋಪವನ್ನು ಶಮನಿಸುತ್ತದೆ; ಸದಾಚಾರ ಕೆಟ್ಟ ಗುಣಗಳನ್ನು ದೂರಮಾಡುತ್ತದೆ."
+    },
+    "deeper_meaning": {
+      "en": "Vidura pairs a harmful tendency with a virtue that can counter it. Humility, courage, forgiveness and sound conduct are presented as practical remedies in human life.",
+      "kn": "ವಿನಯ, ಧೈರ್ಯ, ಕ್ಷಮೆ ಮತ್ತು ಸದಾಚಾರವು ಅಪಕೀರ್ತಿ, ಅನರ್ಥ, ಕೋಪ ಮತ್ತು ದುರ್ಗುಣಗಳಿಗೆ ಪ್ರತಿರೋಧವಾಗುತ್ತವೆ."
+    },
+    "word_by_word": [
+      {
+        "dev": "अकीर्तिं",
+        "iast": "akīrtiṃ",
+        "en": "Disrepute",
+        "kn": "ಅಪಕೀರ್ತಿಯನ್ನು"
+      },
+      {
+        "dev": "विनयो",
+        "iast": "vinayo",
+        "en": "Humility",
+        "kn": "ವಿನಯ"
+      },
+      {
+        "dev": "हन्ति",
+        "iast": "hanti",
+        "en": "Destroys",
+        "kn": "ನಾಶಮಾಡುತ್ತದೆ"
+      },
+      {
+        "dev": "हन्त्यनर्थं",
+        "iast": "hantyanarthaṃ",
+        "en": "Overcomes misfortune",
+        "kn": "ಅನರ್ಥವನ್ನು ದೂರಮಾಡುತ್ತದೆ"
+      },
+      {
+        "dev": "पराक्रमः",
+        "iast": "parākramaḥ",
+        "en": "Courage",
+        "kn": "ಪರಾಕ್ರಮ"
+      },
+      {
+        "dev": "हन्ति",
+        "iast": "hanti",
+        "en": "Destroys",
+        "kn": "ನಾಶಮಾಡುತ್ತದೆ"
+      },
+      {
+        "dev": "नित्यं",
+        "iast": "nityaṃ",
+        "en": "Always",
+        "kn": "ಯಾವಾಗಲೂ"
+      },
+      {
+        "dev": "क्षमा",
+        "iast": "kṣamā",
+        "en": "Forgiveness",
+        "kn": "ಕ್ಷಮೆ"
+      },
+      {
+        "dev": "क्रोधमाचारो",
+        "iast": "krodhamācāro",
+        "en": "Anger; good conduct (sandhi)",
+        "kn": "ಕೋಪವನ್ನು; ಸದಾಚಾರ"
+      },
+      {
+        "dev": "हन्त्यलक्षणम्",
+        "iast": "hantyalakṣaṇam",
+        "en": "Removes bad qualities",
+        "kn": "ಕೆಟ್ಟ ಲಕ್ಷಣಗಳನ್ನು ದೂರಮಾಡುತ್ತದೆ"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a",
+        "order": 1,
+        "dev": "अकीर्तिं विनयो हन्ति",
+        "iast": "akīrtiṃ vinayo hanti",
+        "kn": "ಅಕೀರ್ತಿಂ ವಿನಯೋ ಹನ್ತಿ",
+        "audio": "audio/vidura/sloka-024-part-01.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      },
+      {
+        "id": "b",
+        "order": 2,
+        "dev": "हन्त्यनर्थं पराक्रमः",
+        "iast": "hantyanarthaṃ parākramaḥ",
+        "kn": "ಹನ್ತ್ಯನರ್ಥಂ ಪರಾಕ್ರಮಃ",
+        "audio": "audio/vidura/sloka-024-part-02.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      },
+      {
+        "id": "c",
+        "order": 3,
+        "dev": "हन्ति नित्यं क्षमा क्रोधम्",
+        "iast": "hanti nityaṃ kṣamā krodham",
+        "kn": "ಹನ್ತಿ ನಿತ್ಯಂ ಕ್ಷಮಾ ಕ್ರೋಧಮ್",
+        "audio": "audio/vidura/sloka-024-part-03.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      },
+      {
+        "id": "d",
+        "order": 4,
+        "dev": "आचारो हन्त्यलक्षणम्",
+        "iast": "ācāro hantyalakṣaṇam",
+        "kn": "ಆಚಾರೋ ಹನ್ತ್ಯಲಕ್ಷಣಮ್",
+        "audio": "audio/vidura/sloka-024-part-04.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      }
+    ],
+    "practice_source": "editorial-pada-boundaries",
+    "practice_note": "Four chantable phrase units by editorial reading boundaries. Audition audio before publishing.",
+    "audio": {
+      "full": "audio/vidura/sloka-024-full.mp3",
+      "clips": [
+        "audio/vidura/sloka-024-part-01.mp3",
+        "audio/vidura/sloka-024-part-02.mp3",
+        "audio/vidura/sloka-024-part-03.mp3",
+        "audio/vidura/sloka-024-part-04.mp3"
+      ],
+      "recording_status": "awaiting-vagdhenu-generation",
+      "meter": "anushtubh",
+      "full_playback": "single_continuous_recording",
+      "repeat_control": "browser-per-part"
+    },
+    "source": {
+      "page": 9,
+      "section": "Atha Viduranītiḥ",
+      "translation": "verbatim from supplied PDF",
+      "study_meanings": "editorial",
+      "notes": null,
+      "word_gloss_level": "editorial individual source-token meanings"
+    }
+  },
+  {
+    "id": "vidura-025",
+    "collection": "vidura-niti",
+    "verse_number": 25,
+    "theme": "Character above social standing",
+    "reading": {
+      "dev": [
+        "दुष्कुलीनः कुलीनो वा मर्यादां यो न लङ्घयेत् ।",
+        "धर्मापेक्षी मृदुर्ह्रीमान् स कुलीनशतात् वरः ॥ २५ ॥"
+      ],
+      "iast": [
+        "duṣkulīnaḥ kulīno vā maryādāṃ yo na laṅghayet |",
+        "dharmāpekṣī mṛdurhrīmān sa kulīnaśatāt varaḥ || 25 ||"
+      ],
+      "kn": [
+        "ದುಷ್ಕುಲೀನಃ ಕುಲೀನೋ ವಾ ಮರ್ಯಾದಾಂ ಯೋ ನ ಲಙ್ಘಯೇತ್ ೤",
+        "ಧರ್ಮಾಪೇಕ್ಷೀ ಮೃದುರ್ಹ್ರೀಮಾನ್ ಸ ಕುಲೀನಶತಾತ್ ವರಃ ೥ ೨೫ ೥"
+      ]
+    },
+    "meaning": {
+      "en": "Irrespective of his family background whether high or low, a person who does not cross the limits, is religious-minded, soft-tempered and shy, is better than hundreds of men belonging to very high class families.",
+      "kn": "ಉನ್ನತ ಅಥವಾ ಸಾಮಾನ್ಯ ಕುಟುಂಬದಲ್ಲಿ ಜನಿಸಿದವನಾಗಿರಲಿ, ಮಿತಿಯನ್ನು ಮೀರುವುದಿಲ್ಲದ, ಧರ್ಮವನ್ನು ಗೌರವಿಸುವ, ಮೃದುಸ್ವಭಾವ ಮತ್ತು ವಿನಯವುಳ್ಳ ವ್ಯಕ್ತಿ ಉನ್ನತ ಕುಲದ ನೂರಾರು ಜನರಿಗಿಂತ ಶ್ರೇಷ್ಠ."
+    },
+    "deeper_meaning": {
+      "en": "The verse places personal ethics above inherited status. Restraint, regard for dharma, gentleness and modesty matter more than prestigious ancestry.",
+      "kn": "ಜನ್ಮದ ಸ್ಥಾನಕ್ಕಿಂತ ವ್ಯಕ್ತಿಯ ನಡತೆ ಮುಖ್ಯ. ಮಿತಿ, ಧರ್ಮಬುದ್ಧಿ, ಮೃದುಸ್ವಭಾವ ಮತ್ತು ವಿನಯವೇ ಮೌಲ್ಯದ ಅಳತೆ."
+    },
+    "word_by_word": [
+      {
+        "dev": "दुष्कुलीनः",
+        "iast": "duṣkulīnaḥ",
+        "en": "Born in a lower-status family",
+        "kn": "ಕೆಳಸ್ಥಾನದ ಕುಟುಂಬದಲ್ಲಿ ಹುಟ್ಟಿದವನು"
+      },
+      {
+        "dev": "कुलीनो",
+        "iast": "kulīno",
+        "en": "Of distinguished family",
+        "kn": "ಉನ್ನತ ಕುಲದವನು"
+      },
+      {
+        "dev": "वा",
+        "iast": "vā",
+        "en": "Or",
+        "kn": "ಅಥವಾ"
+      },
+      {
+        "dev": "मर्यादां",
+        "iast": "maryādāṃ",
+        "en": "Proper bounds",
+        "kn": "ಮರ್ಯಾದೆಯನ್ನು"
+      },
+      {
+        "dev": "यो",
+        "iast": "yo",
+        "en": "One who",
+        "kn": "ಯಾರು"
+      },
+      {
+        "dev": "न",
+        "iast": "na",
+        "en": "Not",
+        "kn": "ಬೇಡ"
+      },
+      {
+        "dev": "लङ्घयेत्",
+        "iast": "laṅghayet",
+        "en": "Would cross or transgress",
+        "kn": "ಮೀರಬೇಕು"
+      },
+      {
+        "dev": "धर्मापेक्षी",
+        "iast": "dharmāpekṣī",
+        "en": "One mindful of dharma",
+        "kn": "ಧರ್ಮವನ್ನು ಗೌರವಿಸುವವನು"
+      },
+      {
+        "dev": "मृदुर्ह्रीमान्",
+        "iast": "mṛdurhrīmān",
+        "en": "Gentle and modest",
+        "kn": "ಮೃದು ಮತ್ತು ವಿನಯಶೀಲ"
+      },
+      {
+        "dev": "स",
+        "iast": "sa",
+        "en": "That person",
+        "kn": "ಆ ವ್ಯಕ್ತಿ"
+      },
+      {
+        "dev": "कुलीनशतात्",
+        "iast": "kulīnaśatāt",
+        "en": "Than a hundred well-born people",
+        "kn": "ಉತ್ತಮ ಕುಲದ ನೂರಾರು ಮಂದಿಗಿಂತ"
+      },
+      {
+        "dev": "वरः",
+        "iast": "varaḥ",
+        "en": "Superior",
+        "kn": "ಶ್ರೇಷ್ಠ"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a",
+        "order": 1,
+        "dev": "दुष्कुलीनः कुलीनो वा",
+        "iast": "duṣkulīnaḥ kulīno vā",
+        "kn": "ದುಷ್ಕುಲೀನಃ ಕುಲೀನೋ ವಾ",
+        "audio": "audio/vidura/sloka-025-part-01.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      },
+      {
+        "id": "b",
+        "order": 2,
+        "dev": "मर्यादां यो न लङ्घयेत्",
+        "iast": "maryādāṃ yo na laṅghayet",
+        "kn": "ಮರ್ಯಾದಾಂ ಯೋ ನ ಲಙ್ಘಯೇತ್",
+        "audio": "audio/vidura/sloka-025-part-02.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      },
+      {
+        "id": "c",
+        "order": 3,
+        "dev": "धर्मापेक्षी मृदुर्ह्रीमान्",
+        "iast": "dharmāpekṣī mṛdurhrīmān",
+        "kn": "ಧರ್ಮಾಪೇಕ್ಷೀ ಮೃದುರ್ಹ್ರೀಮಾನ್",
+        "audio": "audio/vidura/sloka-025-part-03.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      },
+      {
+        "id": "d",
+        "order": 4,
+        "dev": "स कुलीनशतात् वरः",
+        "iast": "sa kulīnaśatāt varaḥ",
+        "kn": "ಸ ಕುಲೀನಶತಾತ್ ವರಃ",
+        "audio": "audio/vidura/sloka-025-part-04.mp3",
+        "boundary_source": "editorial-pada-boundary"
+      }
+    ],
+    "practice_source": "editorial-pada-boundaries",
+    "practice_note": "Four chantable phrase units by editorial reading boundaries. Audition audio before publishing.",
+    "audio": {
+      "full": "audio/vidura/sloka-025-full.mp3",
+      "clips": [
+        "audio/vidura/sloka-025-part-01.mp3",
+        "audio/vidura/sloka-025-part-02.mp3",
+        "audio/vidura/sloka-025-part-03.mp3",
+        "audio/vidura/sloka-025-part-04.mp3"
+      ],
+      "recording_status": "awaiting-vagdhenu-generation",
+      "meter": "anushtubh",
+      "full_playback": "single_continuous_recording",
+      "repeat_control": "browser-per-part"
+    },
+    "source": {
+      "page": 9,
+      "section": "Atha Viduranītiḥ",
+      "translation": "verbatim from supplied PDF",
+      "study_meanings": "editorial",
+      "notes": null,
+      "word_gloss_level": "editorial individual source-token meanings"
+    }
+  }
+]
