@@ -29,26 +29,26 @@
     {
       "dev": "अकीर्तिं विनयो हन्ति",
       "iast": "akīrtiṃ vinayo hanti",
-      "en": "Humility destroys ill repute",
-      "kn": "ವಿನಯ, ಧೈರ್ಯ, ಕ್ಷಮೆ ಮತ್ತು ಸದಾಚಾರವು ಅಪಕೀರ್ತಿ, ಅನರ್ಥ, ಕೋಪ ಮತ್ತು ದುರ್ಗುಣಗಳಿಗೆ ಪ್ರತಿರೋಧವಾಗುತ್ತವೆ."
+      "en": "Humility overcomes disrepute",
+      "kn": "ವಿನಯವು ಅಪಕೀರ್ತಿಯನ್ನು ನಾಶಮಾಡುತ್ತದೆ"
     },
     {
       "dev": "हन्त्यनर्थं पराक्रमः",
       "iast": "hantyanarthaṃ parākramaḥ",
-      "en": "Courage removes adversity",
-      "kn": "ವಿನಯ, ಧೈರ್ಯ, ಕ್ಷಮೆ ಮತ್ತು ಸದಾಚಾರವು ಅಪಕೀರ್ತಿ, ಅನರ್ಥ, ಕೋಪ ಮತ್ತು ದುರ್ಗುಣಗಳಿಗೆ ಪ್ರತಿರೋಧವಾಗುತ್ತವೆ."
+      "en": "Courage overcomes adversity",
+      "kn": "ಪರಾಕ್ರಮವು ಅನರ್ಥವನ್ನು ದೂರಮಾಡುತ್ತದೆ"
     },
     {
       "dev": "हन्ति नित्यं क्षमा क्रोधम्",
       "iast": "hanti nityaṃ kṣamā krodham",
       "en": "Forgiveness continually overcomes anger",
-      "kn": "ವಿನಯ, ಧೈರ್ಯ, ಕ್ಷಮೆ ಮತ್ತು ಸದಾಚಾರವು ಅಪಕೀರ್ತಿ, ಅನರ್ಥ, ಕೋಪ ಮತ್ತು ದುರ್ಗುಣಗಳಿಗೆ ಪ್ರತಿರೋಧವಾಗುತ್ತವೆ."
+      "kn": "ಕ್ಷಮೆಯು ಸದಾ ಕೋಪವನ್ನು ದೂರಮಾಡುತ್ತದೆ"
     },
     {
       "dev": "आचारो हन्त्यलक्षणम्",
       "iast": "ācāro hantyalakṣaṇam",
-      "en": "Good conduct dispels bad signs",
-      "kn": "ವಿನಯ, ಧೈರ್ಯ, ಕ್ಷಮೆ ಮತ್ತು ಸದಾಚಾರವು ಅಪಕೀರ್ತಿ, ಅನರ್ಥ, ಕೋಪ ಮತ್ತು ದುರ್ಗುಣಗಳಿಗೆ ಪ್ರತಿರೋಧವಾಗುತ್ತವೆ."
+      "en": "Conduct overcomes bad qualities",
+      "kn": "ಸದಾಚಾರವು ಕೆಟ್ಟ ಲಕ್ಷಣಗಳನ್ನು ದೂರಮಾಡುತ್ತದೆ"
     }
   ],
   "practice": [
@@ -109,6 +109,7 @@
     "section": "Atha Viduranītiḥ",
     "translation": "verbatim from supplied PDF",
     "study_meanings": "editorial",
-    "notes": null
+    "notes": null,
+    "word_gloss_level": "bilingual phrase-aligned glosses; individual-token glosses pending philological review"
   }
 }
