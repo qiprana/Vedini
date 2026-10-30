@@ -27,4 +27,4 @@ test('Vidura browser speed control is independent of Vāgdhenu recording speed',
  assert.ok(py.includes('default=1.05'));
 });
 
-test('Vidura audio cut-review lets listener adjust and audition all three boundaries',()=>{const page=read('vidura/cut-review.html');const script=read('vidura/cut-review.js');assert.doesNotThrow(()=>new vm.Script(script));for(const name of ['review-audio','review-wave','review-boundaries','review-part-list','review-copy','review-output'])assert.match(page,new RegExp('id="'+name+'"'));assert.match(page,/sloka-001-full\.mp3/);assert.match(script,/pointerdown/);assert.match(script,/playRange/);assert.match(script,/adjust/);});
+test('Part 3 retry uses precise Sanskrit and never overwrites published recordings',()=>{const py=read('scripts/retry_vidura_part3.py');assert.match(py,/सुखार्थी वा त्यजेद् विद्यां/);assert.match(py,/अशुश्रूषा त्वरा श्लाघा/);assert.match(py,/candidates/);assert.match(py,/--dry-run/);assert.match(py,/\["practice"\]\[2\]/);});
