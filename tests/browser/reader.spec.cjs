@@ -37,25 +37,20 @@ test('practice dock appears before language choices',async({page})=>{
 });
 
 
-test('Nāmāvalī sits under the śloka in both scripts, not inside each name',async({page})=>{
+test('Nāmāvalī is removed from Study śloka without disturbing Divine Names',async({page})=>{
  await page.goto('/lalita/?sloka=1');
- const card=page.locator('#verse-1 .name-audio-card').first();
- await expect(card).toBeVisible({timeout:20000});
- await expect(card.locator('.name-mantra-inline')).toHaveCount(0);
- await card.locator('.name-details>summary').click();
- await expect(card.locator('.name-mantra-toggle')).toHaveCount(0);
- const namavali=page.locator('#verse-1 .verse-reading-panel .verse-namavali');
- await expect(namavali.locator('.mantra-script').first()).toContainText('ॐ श्रीमात्रे नमः');
- await expect(namavali.locator('.mantra-iast').first()).toBeVisible();
+ await expect(page.locator('#verse-1 .name-audio-card').first()).toBeVisible({timeout:20000});
+ await expect(page.locator('#verse-1 .verse-namavali')).toHaveCount(0);
  await page.locator('#kn').click();
- const kn=page.locator('#verse-1 .verse-reading-panel .verse-namavali');
- await expect(kn.locator('.mantra-script').first()).toContainText('ಓಂ');
+ await expect(page.locator('#verse-1 .verse-namavali')).toHaveCount(0);
+ await page.goto('/lalita/names.html');
+ await expect(page.locator('body')).toContainText('Divine Names');
 });
-test('all names keep a Nāmāvalī mantra and a Significance section',async({page})=>{
+
+test('Name meaning and Significance remain present without Nāmāvalī panel',async({page})=>{
  await page.goto('/lalita/?sloka=91');
  await expect(page.locator('#verse-91 .name-audio-card').first()).toBeVisible({timeout:20000});
- const names=await page.locator('#verse-91 .name-audio-card').count();
- await expect(page.locator('#verse-91 .verse-namavali .namavali-item')).toHaveCount(names);
+ await expect(page.locator('#verse-91 .verse-namavali')).toHaveCount(0);
  await page.locator('#verse-91 .name-details').first().locator('summary').first().click();
  await expect(page.locator('#verse-91 .name-significance').first()).toBeVisible();
 });
@@ -71,15 +66,12 @@ test('search includes word-by-word English and highlights corresponding Kannada'
  await expect(page.locator('#verse-1 .name-details').first()).toHaveAttribute('open','');
  await expect(page.locator('#verse-1 .word-translation mark').first()).toBeVisible();
 });
-test('individual name audio remains separate from the Nāmāvalī',async({page})=>{
+test('Individual name audio remains playable without the Nāmāvalī panel',async({page})=>{
  await page.goto('/lalita/?sloka=1');
  await expect(page.locator('#verse-1 .name-audio-button').first()).toBeVisible({timeout:20000});
- await expect(page.locator('#verse-1 .name-mantra-inline')).toHaveCount(0);
- await expect(page.locator('#verse-1 .verse-namavali').first()).toBeVisible();
+ await expect(page.locator('#verse-1 .verse-namavali')).toHaveCount(0);
  await expect(page.locator('#verse-1 .name-audio-button').first()).toHaveAttribute('data-name-clips',/\d+/);
- await expect(page.locator('#verse-1 .verse-namavali').first()).not.toContainText('▶ Play');
 });
-
 
 test('Divine Name audio buttons play the assigned MSS clips without opening guided practice',async({page})=>{
  await page.addInitScript(()=>{
@@ -159,16 +151,14 @@ test('traditional phrase in the row and one Significance reading when expanded',
  await expect(details.locator('.deeper-reading')).toContainText(/removal of obstacles/i);
  await expect(details.locator('h5')).toHaveCount(0);
 });
-test('Nāmāvalī keeps the name hyphens, has no numbers, and script matches IAST size',async({page})=>{
+test('Single-verse layout retains Sanskrit/IAST legibility and names',async({page})=>{
  await page.goto('/lalita/?sloka=30');
- const list=page.locator('#verse-30 .verse-namavali');
- await expect(list.locator('.mantra-script').first()).toContainText('ॐ विशुक्र-प्राणहरण-वाराही-वीर्य-नन्दितायै नमः',{timeout:20000});
- await expect(list.locator('.mantra-iast').first()).toContainText('Oṃ Viśukra-prāṇaharaṇa-vārāhī-vīrya-nanditāyai Namaḥ');
- await expect(list.locator('.namavali-number')).toHaveCount(0);
+ await expect(page.locator('#verse-30')).toBeVisible({timeout:20000});
+ await expect(page.locator('#verse-29')).toHaveCount(0);
+ await expect(page.locator('#verse-31')).toHaveCount(0);
+ await expect(page.locator('#verse-30 .verse-namavali')).toHaveCount(0);
  const size=sel=>page.locator(sel).first().evaluate(el=>getComputedStyle(el).fontSize);
  expect(Math.abs(parseFloat(await size('#verse-30 .verse-script .line-content'))-parseFloat(await size('#verse-30 .verse-iast .line-content')))).toBeLessThanOrEqual(1);
- expect(await size('#verse-30 .name-written')).toBe(await size('#verse-30 .name-roman'));
- await expect(page.locator('[data-detail-id="name-76"] .name-inline-wisdom')).not.toContainText('Corruption');
 });
 
 test('overall and deeper śloka content appears in one meaning toggle in both languages',async({page})=>{
@@ -309,9 +299,9 @@ test('Chant here exposes a Stop button and highlights the actual playing śloka'
  await page.locator('#verse-1 .dock-verse-shortcut').click();
  await expect(page.locator('#verse-1 .dock-verse-stop')).toBeVisible();
  await expect(page.locator('#verse-1')).toHaveClass(/selected-verse/);
- await expect(page.locator('#verse-quick-index [data-quick="1"]')).toHaveClass(/quick-current/);
+ await expect(page.locator('#verse-selector')).toHaveValue('s-1');
  await page.evaluate(()=>window.scrollTo(0,document.body.scrollHeight));
- await expect(page.locator('#verse-quick-index [data-quick="1"]')).toHaveClass(/quick-current/);
+ await expect(page.locator('#verse-selector')).toHaveValue('s-1');
  await page.locator('#verse-1 .dock-verse-stop').click();
  await expect(page.locator('#verse-1 .dock-verse-stop')).toBeHidden();
  await expect(page.locator('#verse-1 .dock-verse-shortcut')).toHaveText('▶ Chant here');
@@ -442,5 +432,19 @@ test('Soft navigation tabs remain legible and within the viewport on mobile',asy
   expect(styles.height).toBeGreaterThanOrEqual(44);
   expect(styles.border).toBe('solid');
   expect(await nav.evaluate(el=>el.getBoundingClientRect().right<=innerWidth+2)).toBeTruthy();
+ }
+});
+
+ test('one verse selector traverses 10 to 11 on desktop and mobile',async({page})=>{
+ for(const width of [390,1280]){
+  await page.setViewportSize({width,height:844});
+  await page.goto('/lalita/?sloka=10');
+  await expect(page.locator('#verse-10')).toBeVisible({timeout:20000});
+  await expect(page.locator('#verse-11')).toHaveCount(0);
+  await page.locator('#verse-next').click();
+  await expect(page.locator('#verse-11')).toBeVisible();
+  await expect(page.locator('#verse-10')).toHaveCount(0);
+  await expect(page.locator('#verse-selector')).toHaveValue('s-11');
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+3)).toBe(true);
  }
 });
