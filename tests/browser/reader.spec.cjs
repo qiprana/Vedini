@@ -445,6 +445,12 @@ test('Soft navigation tabs remain legible and within the viewport on mobile',asy
   await expect(page.locator('#verse-11')).toBeVisible();
   await expect(page.locator('#verse-10')).toHaveCount(0);
   await expect(page.locator('#verse-selector')).toHaveValue('s-11');
-  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+3)).toBe(true);
+  const overflow=await page.evaluate(()=>({
+  viewport:innerWidth, document:document.documentElement.scrollWidth,
+  elements:[...document.querySelectorAll('body *')].map(el=>({el,rect:el.getBoundingClientRect()}))
+  .filter(({rect})=>rect.width>0&&rect.right>innerWidth+3)
+  .slice(0,15).map(({el,rect})=>({tag:el.tagName,classes:String(el.className).slice(0,90),id:el.id,right:Math.round(rect.right),width:Math.round(rect.width),text:(el.innerText||'').slice(0,50)}))
+ }));
+ expect(overflow.document,{width,overflow}).toBeLessThanOrEqual(overflow.viewport+3);
  }
 });
