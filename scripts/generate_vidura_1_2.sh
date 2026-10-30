@@ -13,7 +13,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 # Generate only a single part, e.g. verse 1, part 3:
 #   bash scripts/generate_vidura_1_2.sh --start 1 --end 1 --part 3
 #
-# Re-record an existing part after review:
+# To make existing recordings slower, regenerate them with the new 0.95 speed:\n#   bash scripts/generate_vidura_1_2.sh --replace\n#\n# Re-record an existing part after review:
 #   bash scripts/generate_vidura_1_2.sh --start 1 --end 1 --part 3 --replace
 #
 # The web player controls repetition; audio files are NEVER duplicated to encode repeats.
