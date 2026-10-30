@@ -27,76 +27,28 @@
   },
   "word_by_word": [
     {
-      "dev": "रोहते",
-      "iast": "rohate",
-      "en": "Heals",
-      "kn": "ಪದಾರ್ಥ: रोहते"
+      "dev": "रोहते सायकैर्विद्धं",
+      "iast": "rohate sāyakairviddhaṃ",
+      "en": "A wound pierced by arrows heals",
+      "kn": "ಬಾಣದಿಂದ ಆದ ಗಾಯ ಗುಣವಾಗುತ್ತದೆ"
     },
     {
-      "dev": "सायकैर्विद्धं",
-      "iast": "sāyakairviddhaṃ",
-      "en": " pierced by arrows",
-      "kn": "ಪದಾರ್ಥ: सायकैर्विद्धं"
+      "dev": "वनं परशुना हतम्",
+      "iast": "vanaṃ paraśunā hatam",
+      "en": "A forest felled by an axe",
+      "kn": "ಕೊಡಲಿಯಿಂದ ಕಡಿದ ಕಾಡು"
     },
     {
-      "dev": "वनं",
-      "iast": "vanaṃ",
-      "en": "A forest",
-      "kn": "ಪದಾರ್ಥ: वनं"
+      "dev": "वाचा दुरुक्तं बीभत्सं",
+      "iast": "vācā duruktaṃ bībhatsaṃ",
+      "en": "Harmful and ugly words",
+      "kn": "ಕೆಟ್ಟದಾಗಿ ಹೇಳಿದ ಅಸಹ್ಯ ಮಾತಿನಿಂದ"
     },
     {
-      "dev": "परशुना",
-      "iast": "paraśunā",
-      "en": " felled by an axe",
-      "kn": "ಪದಾರ್ಥ: परशुना"
-    },
-    {
-      "dev": "हतम्",
-      "iast": "hatam",
-      "en": "A forest; felled by an axe",
-      "kn": "ಪದಾರ್ಥ: हतम्"
-    },
-    {
-      "dev": "वाचा",
-      "iast": "vācā",
-      "en": "By speech",
-      "kn": "ಪದಾರ್ಥ: वाचा"
-    },
-    {
-      "dev": "दुरुक्तं",
-      "iast": "duruktaṃ",
-      "en": " uttered badly",
-      "kn": "ಪದಾರ್ಥ: दुरुक्तं"
-    },
-    {
-      "dev": "बीभत्सं",
-      "iast": "bībhatsaṃ",
-      "en": " repulsive",
-      "kn": "ಪದಾರ್ಥ: बीभत्सं"
-    },
-    {
-      "dev": "न",
-      "iast": "na",
-      "en": "Does not heal",
-      "kn": "ಪದಾರ್ಥ: न"
-    },
-    {
-      "dev": "सं",
-      "iast": "saṃ",
-      "en": " wound made by words",
-      "kn": "ಪದಾರ್ಥ: सं"
-    },
-    {
-      "dev": "रोहति",
-      "iast": "rohati",
-      "en": "Does not heal; wound made by words",
-      "kn": "ಪದಾರ್ಥ: रोहति"
-    },
-    {
-      "dev": "वाक्क्षतम्",
-      "iast": "vākkṣatam",
-      "en": "Does not heal; wound made by words",
-      "kn": "ಪದಾರ್ಥ: वाक्क्षतम्"
+      "dev": "न सं रोहति वाक्क्षतम्",
+      "iast": "na saṃ rohati vākkṣatam",
+      "en": "A wound of speech does not heal",
+      "kn": "ಮಾತಿನ ಗಾಯ ಗುಣವಾಗುವುದಿಲ್ಲ"
     }
   ],
   "practice": [
@@ -157,6 +109,7 @@
     "section": "Atha Viduranītiḥ",
     "translation": "verbatim from supplied PDF",
     "study_meanings": "editorial",
-    "notes": "Devanagari IAST readings follow the handout; practice partitions editorial."
+    "notes": "Devanagari IAST readings follow the handout; practice partitions editorial.",
+    "word_gloss_level": "bilingual phrase-aligned glosses; individual-token glosses pending philological review"
   }
 }
