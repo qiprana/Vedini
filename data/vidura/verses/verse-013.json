@@ -27,28 +27,46 @@
   },
   "word_by_word": [
     {
-      "dev": "अभ्यावहति कल्याणं",
-      "iast": "abhyāvahati kalyāṇaṃ",
-      "en": "Brings forth good fortune",
-      "kn": "ಶುಭವನ್ನು ಉಂಟುಮಾಡುತ್ತದೆ"
+      "dev": "अभ्यावहति",
+      "iast": "abhyāvahati",
+      "en": "Brings forth",
+      "kn": "ತರುತ್ತದೆ"
     },
     {
-      "dev": "विविधं वाक्सुभाषिता",
-      "iast": "vividhaṃ vāksubhāṣitā",
-      "en": "Many kinds; well-spoken speech",
-      "kn": "ವಿವಿಧ ರೀತಿಯ ಒಳ್ಳೆಯ ಮಾತು"
+      "dev": "कल्याणं",
+      "iast": "kalyāṇaṃ",
+      "en": "Good fortune",
+      "kn": "ಶುಭವನ್ನು"
     },
     {
-      "dev": "सैव दुर्भाषिता राजन्",
-      "iast": "saiva durbhāṣitā rājan",
-      "en": "The same badly spoken, O king",
-      "kn": "ಅದೇ ಕೆಟ್ಟ ಮಾತಾದರೆ, ರಾಜನೇ"
+      "dev": "विविधं",
+      "iast": "vividhaṃ",
+      "en": "Of many kinds",
+      "kn": "ವಿವಿಧ ರೀತಿಯ"
     },
     {
-      "dev": "अनर्थायोपपद्यते",
-      "iast": "anarthāyopapadyate",
-      "en": "Leads to misfortune",
-      "kn": "ಅನರ್ಥಕ್ಕೆ ಕಾರಣವಾಗುತ್ತದೆ"
+      "dev": "वाक्सुभाषिता",
+      "iast": "vāksubhāṣitā",
+      "en": "Speech spoken well",
+      "kn": "ಚೆನ್ನಾಗಿ ಆಡಿದ ಮಾತು"
+    },
+    {
+      "dev": "सैव",
+      "iast": "saiva",
+      "en": "That very speech",
+      "kn": "ಅದೇ ಮಾತು"
+    },
+    {
+      "dev": "दुर्भाषिता",
+      "iast": "durbhāṣitā",
+      "en": "Spoken badly",
+      "kn": "ಕೆಟ್ಟದಾಗಿ ಆಡಿದ"
+    },
+    {
+      "dev": "राजन्ननर्थायोपपद्यते",
+      "iast": "rājannanarthāyopapadyate",
+      "en": "O king, results in misfortune",
+      "kn": "ರಾಜನೇ, ಅನರ್ಥಕ್ಕೆ ಕಾರಣವಾಗುತ್ತದೆ"
     }
   ],
   "practice": [
@@ -110,6 +128,6 @@
     "translation": "verbatim from supplied PDF",
     "study_meanings": "editorial",
     "notes": "Devanagari IAST readings follow the handout; practice partitions editorial.",
-    "word_gloss_level": "bilingual phrase-aligned glosses; individual-token glosses pending philological review"
+    "word_gloss_level": "editorial individual source-token meanings"
   }
 }
