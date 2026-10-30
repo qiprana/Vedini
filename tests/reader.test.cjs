@@ -14,7 +14,7 @@ test('KMP dhyana uses whole-verse recordings and MSS phrases stay',()=>{
  const chant=file('lalita/chant.js');
  assert.match(chant,/audio\/lalita\/dhyana\/dhyana-/);
  assert.match(chant,/MSS\/phrase_/);
- assert.match(app,/if\(singer==="KMP"\)return "\.\.\/audio\/lalita\/dhyana\/dhyana-"/);
+ assert.match(app,/if\(singer==="KMP"\)url="\.\.\/audio\/lalita\/dhyana\/dhyana-"/);
  const dhyana=JSON.parse(file('data/lalita/dhyana.json'));
  assert.equal(dhyana.length,4);
  dhyana.forEach((verse,i)=>{
@@ -244,7 +244,7 @@ test('Dhyāna phrase rows share divine-name layout, MSS playback and word study'
  assert.match(page,/id="verse-next"/);
  assert.match(app,/const pageSize=1,plannedVerses=183/);
  assert.match(app,/verses\.slice\(selectedVerse-1,selectedVerse\)/);
- assert.match(app,/practice\.played===1/);
+ assert.match(app,/if\(verseChanged\)practiceShowVerse\(current\.n,true\)/);
  assert.match(page,/M\. S\. Subbulakshmi/);
  assert.match(page,/Vāgdhenu · Practice voice/);
 });
