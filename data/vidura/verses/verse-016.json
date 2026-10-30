@@ -27,70 +27,28 @@
   },
   "word_by_word": [
     {
-      "dev": "षडेते",
-      "iast": "ṣaḍete",
-      "en": "These six",
-      "kn": "ಪದಾರ್ಥ: षडेते"
+      "dev": "षडेते तु गुणाः पुंसा",
+      "iast": "ṣaḍete tu guṇāḥ puṃsā",
+      "en": "These six human virtues",
+      "kn": "ಮನುಷ್ಯನ ಈ ಆರು ಗುಣಗಳು"
     },
     {
-      "dev": "तु",
-      "iast": "tu",
-      "en": " indeed",
-      "kn": "ಪದಾರ್ಥ: तु"
+      "dev": "न हातव्याः कदाचन",
+      "iast": "na hātavyāḥ kadācana",
+      "en": "Must never be abandoned",
+      "kn": "ಎಂದಿಗೂ ತ್ಯಜಿಸಬಾರದವು"
     },
     {
-      "dev": "गुणाः",
-      "iast": "guṇāḥ",
-      "en": " virtues",
-      "kn": "ಪದಾರ್ಥ: गुणाः"
+      "dev": "सत्यं दानमनालस्यमनसूया",
+      "iast": "satyaṃ dānamanālasyamanasūyā",
+      "en": "Truth, generosity, diligence, lack of jealousy",
+      "kn": "ಸತ್ಯ, ದಾನ, ಪರಿಶ್ರಮ, ಅಸೂಯೆಯಿಲ್ಲದಿರುವುದು"
     },
     {
-      "dev": "पुंसा",
-      "iast": "puṃsā",
-      "en": " of a person",
-      "kn": "ಪದಾರ್ಥ: पुंसा"
-    },
-    {
-      "dev": "न",
-      "iast": "na",
-      "en": "Must not be abandoned",
-      "kn": "ಪದಾರ್ಥ: न"
-    },
-    {
-      "dev": "हातव्याः",
-      "iast": "hātavyāḥ",
-      "en": " ever",
-      "kn": "ಪದಾರ್ಥ: हातव्याः"
-    },
-    {
-      "dev": "कदाचन",
-      "iast": "kadācana",
-      "en": "Must not be abandoned; ever",
-      "kn": "ಪದಾರ್ಥ: कदाचन"
-    },
-    {
-      "dev": "सत्यं",
-      "iast": "satyaṃ",
-      "en": "Truth",
-      "kn": "ಪದಾರ್ಥ: सत्यं"
-    },
-    {
-      "dev": "दानमनालस्यमनसूया",
-      "iast": "dānamanālasyamanasūyā",
-      "en": " giving",
-      "kn": "ಪದಾರ್ಥ: दानमनालस्यमनसूया"
-    },
-    {
-      "dev": "क्षमा",
-      "iast": "kṣamā",
-      "en": "Forgiveness",
-      "kn": "ಪದಾರ್ಥ: क्षमा"
-    },
-    {
-      "dev": "धृतिः",
-      "iast": "dhṛtiḥ",
-      "en": " fortitude",
-      "kn": "ಪದಾರ್ಥ: धृतिः"
+      "dev": "क्षमा धृतिः",
+      "iast": "kṣamā dhṛtiḥ",
+      "en": "Forgiveness and steadiness",
+      "kn": "ಕ್ಷಮೆ ಮತ್ತು ಧೃತಿ"
     }
   ],
   "practice": [
@@ -151,6 +109,7 @@
     "section": "Atha Viduranītiḥ",
     "translation": "verbatim from supplied PDF",
     "study_meanings": "editorial",
-    "notes": "Devanagari IAST readings follow the handout; practice partitions editorial."
+    "notes": "Devanagari IAST readings follow the handout; practice partitions editorial.",
+    "word_gloss_level": "bilingual phrase-aligned glosses; individual-token glosses pending philological review"
   }
 }
