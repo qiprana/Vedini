@@ -27,28 +27,46 @@
   },
   "word_by_word": [
     {
-      "dev": "अकस्मादेव कुप्यन्ति",
-      "iast": "akasmādeva kupyanti",
-      "en": "They become angry without cause",
-      "kn": "ಇದ್ದಕ್ಕಿದ್ದಂತೆ ಕೋಪಗೊಳ್ಳುತ್ತಾರೆ"
+      "dev": "अकस्मादेव",
+      "iast": "akasmādeva",
+      "en": "All of a sudden",
+      "kn": "ಇದ್ದಕ್ಕಿದ್ದಂತೆ"
+    },
+    {
+      "dev": "कुप्यन्ति",
+      "iast": "kupyanti",
+      "en": "They become angry",
+      "kn": "ಕೋಪಗೊಳ್ಳುತ್ತಾರೆ"
     },
     {
       "dev": "प्रसीदन्त्यनिमित्ततः",
       "iast": "prasīdantyanimittataḥ",
-      "en": "And pleased without reason",
-      "kn": "ಕಾರಣವಿಲ್ಲದೆ ಸಂತೋಷಪಡುತ್ತಾರೆ"
+      "en": "They become pleased without reason",
+      "kn": "ಕಾರಣವಿಲ್ಲದೆ ಸಂತೋಷಗೊಳ್ಳುತ್ತಾರೆ"
     },
     {
       "dev": "शीलमेतदसाधूनाम्",
       "iast": "śīlametadasādhūnām",
-      "en": "Such is the nature of the unworthy",
+      "en": "This is the nature of the unworthy",
       "kn": "ಇದು ದುರ್ಜನರ ಸ್ವಭಾವ"
     },
     {
-      "dev": "अभ्रं पारिप्लवं यथा",
-      "iast": "abhraṃ pāriplavaṃ yathā",
-      "en": "Like a wandering cloud",
-      "kn": "ಚಲಿಸುವ ಮೋಡದಂತೆ"
+      "dev": "अभ्रं",
+      "iast": "abhraṃ",
+      "en": "Cloud",
+      "kn": "ಮೋಡ"
+    },
+    {
+      "dev": "पारिप्लवं",
+      "iast": "pāriplavaṃ",
+      "en": "Drifting or wandering",
+      "kn": "ಅಲೆದಾಡುವ"
+    },
+    {
+      "dev": "यथा",
+      "iast": "yathā",
+      "en": "Just as",
+      "kn": "ಹಾಗೆ"
     }
   ],
   "practice": [
@@ -110,6 +128,6 @@
     "translation": "verbatim from supplied PDF",
     "study_meanings": "editorial",
     "notes": null,
-    "word_gloss_level": "bilingual phrase-aligned glosses; individual-token glosses pending philological review"
+    "word_gloss_level": "editorial individual source-token meanings"
   }
 }
