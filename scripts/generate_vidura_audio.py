@@ -1,10 +1,18 @@
 #!/usr/bin/env python3
-"""Generate Viduranīti Vāgdhenu/CowChant audio: one full śloka + four individual parts.
+"""Batch-generate full and practice chanting for the 25 selected Viduranīti verses.
 
-Every audio file is chanted exactly once. The Vedini browser player controls
-how often each part is repeated. Use the previously reliable 1.05 recording speed. Fine slowdown is done in the browser without regenerating audio.
-The full version is chanted in ONE continuous
-CowChant pass, not stitched together from the shorter practice recordings.
+One reviewed full śloka MP3 plus independently repeatable part MP3s (normally
+4; verse 3 contains 6). Sanskrit is always read from committed JSON.
+
+Practice files are synthesized WITH a neighbouring Sanskrit portion as context,
+with "anushtubh" metre set explicitly. Aggressive upstream onset trimming is
+disabled, and the target is extracted at CowChant's explicit zero-valued
+inter-segment gap (not by estimated timestamps).
+
+New files go into audio/vidura/candidates/ by default. Use --publish-ready to
+write the main audio/vidura location only after the material is verified.
+Original published recordings are never overwritten unless --replace is given.
+Atypical metre verses (e.g. 19) need explicit --meter after Sanskrit review.
 """
 from __future__ import annotations
 
@@ -19,94 +27,149 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def arguments():
-    p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument("--start", type=int, default=1)
-    p.add_argument("--end", type=int, default=2)
-    p.add_argument("--mode", choices=["all", "full", "parts"], default="all",
-                   help="Generate all five tracks, only a full śloka, or only its four parts.")
-    p.add_argument("--part", type=int, choices=[1, 2, 3, 4], default=None,
-                   help="Generate just this practice part (implies parts mode).")
-    p.add_argument("--speed", type=float, default=1.05)
-    p.add_argument("--device", choices=["auto", "mps", "cuda", "cpu"], default="auto")
-    p.add_argument("--seed", type=int, default=60)
-    p.add_argument("--dry-run", action="store_true")
-    p.add_argument("--replace", action="store_true",
-                   help="Re-record existing MP3 files; otherwise skip previously generated recordings.")
+def get_args():
+    p=argparse.ArgumentParser(description=__doc__)
+    p.add_argument("--start",type=int,default=3)
+    p.add_argument("--end",type=int,default=25)
+    p.add_argument("--mode",choices=("all","full","parts"),default="all")
+    p.add_argument("--part",type=int,default=None,help="One practice portion only (1-based)")
+    p.add_argument("--seed",type=int,default=60)
+    p.add_argument("--speed",type=float,default=1.05)
+    p.add_argument("--device",choices=("auto","mps","cuda","cpu"),default="auto")
+    p.add_argument("--meter",default=None,help="Override metre for an atypical verse")
+    p.add_argument("--dry-run",action="store_true")
+    p.add_argument("--replace",action="store_true",help="Regenerate existing output files")
+    p.add_argument("--publish-ready",action="store_true",help="Write directly into main audio directory: only after listening")
     return p.parse_args()
 
 
-def continuous_chant(verse):
-    """Preserve the original śloka text; omit only the printed verse counter."""
-    lines = verse["reading"]["dev"]
-    if len(lines) != 2 or not all(isinstance(line, str) and line.strip() for line in lines):
-        raise ValueError(f"Invalid complete śloka for verse {verse.get('verse_number')}")
-    return re.sub(r"॥\s*[०-९0-9]+\s*॥", "॥", "\n".join(lines)).strip()
+def cleaned_full(verse):
+    """Use the source's full recitation (not practice segments stitched as text)."""
+    lines=verse["reading"]["dev"]
+    if not 2<=len(lines)<=3 or not all(isinstance(x,str) and x.strip() for x in lines):
+        raise ValueError("Full Sanskrit is absent or has unexpected line count")
+    combined="\n".join(lines)
+    return re.sub(r"॥\s*[०-९0-9]+\s*॥","॥",combined).strip()
 
 
-def chant_once(engine, text, destination, tempdir, seed):
-    wav = Path(tempdir) / destination.with_suffix(".wav").name
-    spoken_text = re.sub(r"[-‐–—]", " ", text)
-    engine.chant(spoken_text, output=str(wav), meter=None, seed=seed)
-    subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", str(wav),
-                    "-codec:a", "libmp3lame", "-b:a", "128k", str(destination)], check=True)
+def source(n):
+    path=ROOT/"data"/"vidura"/"verses"/f"verse-{n:03d}.json"
+    verse=json.loads(path.read_text(encoding="utf-8"))
+    if verse["verse_number"] != n:
+        raise ValueError(f"Verse number mismatch: {path}")
+    parts=verse["practice"]
+    if len(parts) not in (4,6):
+        raise ValueError(f"Expected 4 or 6 study parts, got {len(parts)} in verse {n}")
+    for j,p in enumerate(parts,1):
+        if not p["dev"].strip() or p["order"]!=j:
+            raise ValueError(f"Invalid practice part {j} in {path}")
+    return verse
+
+
+def save_mp3(samples,sr,filename,temp):
+    import soundfile as sf
+    import numpy as np
+    filename.parent.mkdir(parents=True,exist_ok=True)
+    pcm=Path(temp)/filename.with_suffix(".wav").name
+    sf.write(str(pcm),np.asarray(samples,dtype=np.float32),sr)
+    subprocess.run(["ffmpeg","-hide_banner","-loglevel","error","-y","-i",str(pcm),
+                    "-codec:a","libmp3lame","-b:a","128k",str(filename)],check=True)
+
+
+def choose_meter(v,override):
+    meter=override or v.get("audio",{}).get("meter")
+    if meter in ("unknown-long-metre",None,"unknown",""):
+        raise ValueError(f"Metre for verse {v['verse_number']} needs review; use --meter after verifying")
+    return meter
+
+
+def select_gap(samples,sr):
+    """Find ONLY explicit engine zero padding between its two Sanskrit pieces."""
+    import numpy as np
+    pcm=np.asarray(samples,dtype=np.float32).reshape(-1)
+    is_zero=(pcm==0)
+    flags=np.diff(np.concatenate(([0],is_zero.astype(np.int8),[0])))
+    starts=np.flatnonzero(flags==1)
+    ends=np.flatnonzero(flags==-1)
+    gaps=[(int(a),int(b)) for a,b in zip(starts,ends)
+          if 0.46 <= (b-a)/sr <= 1.00 and a>sr*0.45 and b<len(pcm)-sr*0.45]
+    if len(gaps)!=1:
+        raise ValueError(f"Expected one inserted CowChant gap, found {len(gaps)}; no auto-cut")
+    return pcm,gaps[0]
+
+
+def extract_context_part(engine,parts,index,meter,seed):
+    """Context preceding or following a target, never guessed mid-word cuts."""
+    import numpy as np
+    if len(parts)<2: raise ValueError("Need 2 pieces to provide context")
+    if index==0:
+        pair=[parts[0]["dev"],parts[1]["dev"]]
+        take_second=False
+    else:
+        pair=[parts[index-1]["dev"],parts[index]["dev"]]
+        take_second=True
+    two_padas=" ।\n".join(pair)+" ।"
+    sr,joined=engine.chant(two_padas,meter=meter,seed=seed)
+    pcm,(a,b)=select_gap(joined,sr)
+    selected=pcm[b:] if take_second else pcm[:a]
+    if len(selected)<sr*0.45 or np.max(np.abs(selected))<0.005:
+        raise ValueError(f"Part {index+1} empty after context split")
+    pad=np.zeros(round(sr*0.12),dtype=np.float32)
+    return sr,np.concatenate((pad,selected,pad))
 
 
 def main():
-    a = arguments()
-    if a.start < 1 or a.end < a.start or a.end > 2:
-        raise SystemExit("Only Viduranīti verses 1–2 are currently prepared.")
-    if a.part is not None and a.mode == "full":
-        raise SystemExit("--part cannot be combined with --mode full.")
-    if a.speed <= 0:
-        raise SystemExit("--speed must be positive.")
-    jobs = []
-    output = ROOT / "audio" / "vidura"
-    for number in range(a.start, a.end + 1):
-        src = ROOT / "data" / "vidura" / "verses" / f"verse-{number:03d}.json"
-        verse = json.loads(src.read_text(encoding="utf-8"))
-        if verse["verse_number"] != number or len(verse["practice"]) != 4:
-            raise SystemExit(f"Invalid four-part Sanskrit source in {src}")
-        # Selecting a specific part should not unexpectedly regenerate the full verse.
-        if a.part is None and a.mode in ("all", "full"):
-            jobs.append((number, "FULL", continuous_chant(verse),
-                         output / f"sloka-{number:03d}-full.mp3"))
-        if a.mode in ("all", "parts"):
-            for i, part in enumerate(verse["practice"], start=1):
-                if a.part is not None and a.part != i:
-                    continue
-                text = part["dev"].strip()
-                if not text:
-                    raise SystemExit(f"Empty practice part {i} of śloka {number}")
-                jobs.append((number, f"PART {i}", text,
-                             output / f"sloka-{number:03d}-part-{i:02d}.mp3"))
-    print("Viduranītiḥ — Vāgdhenu recordings (no repetitions baked into files):")
-    for number, label, text, target in jobs:
-        print(f"\nŚloka {number} · {label} -> {target.relative_to(ROOT)}\n{text}")
-    if a.dry_run:
-        print("\nDRY RUN: no recordings made.")
+    args=get_args()
+    if args.start<1 or args.end>25 or args.end<args.start or args.speed<=0:
+        raise SystemExit("Invalid range/speed; only 1–25 are available")
+    if args.part is not None and args.part<1: raise SystemExit("--part starts at 1")
+    if args.part is not None and args.mode=="full": raise SystemExit("--part cannot be used with --mode full")
+    directory=ROOT/"audio"/"vidura"
+    if not args.publish_ready:directory=directory/"candidates"
+    jobs=[]
+    for n in range(args.start,args.end+1):
+        v=source(n)
+        meter=choose_meter(v,args.meter) if not args.dry_run else args.meter or v["audio"]["meter"]
+        if meter=="unknown-long-metre":
+            print(f"WARNING verse {n}: longer metre requires review; see --meter")
+        if args.part is not None and args.part>len(v["practice"]):
+            raise SystemExit(f"Verse {n} contains only {len(v['practice'])} parts")
+        if args.part is None and args.mode in ("all","full"):
+            jobs.append((n,"full",cleaned_full(v),directory/f"sloka-{n:03d}-full.mp3",v,meter,None))
+        if args.mode in ("all","parts"):
+            for i,part in enumerate(v["practice"]):
+                if args.part is not None and i+1 != args.part:continue
+                jobs.append((n,f"part {i+1}",part["dev"],directory/f"sloka-{n:03d}-part-{i+1:02d}.mp3",v,meter,i))
+    print(f"Viduranīti generation: {len(jobs)} items, verses {args.start}–{args.end}")
+    for n,label,text,dest,v,meter,i in jobs:
+        print(f"[{n:03d}] {label} | metre={meter} | {text} | {dest.relative_to(ROOT)}")
+    if args.dry_run:
+        print("Dry run: no model loaded; all existing audio preserved")
         return
-    if not shutil.which("ffmpeg"):
-        raise SystemExit("ffmpeg not found. On Mac, install with: brew install ffmpeg")
+    if shutil.which("ffmpeg") is None:raise SystemExit("ffmpeg required")
     try:
         from cowchant.engine import CowChant
-    except ImportError as error:
-        raise SystemExit("Activate the 'vagdhenu' environment containing cowchant.") from error
-    output.mkdir(parents=True, exist_ok=True)
-    engine = CowChant(device=None if a.device == "auto" else a.device,
-                      speed=a.speed)
-    with tempfile.TemporaryDirectory() as tempdir:
-        for number, label, text, target in jobs:
-            if target.exists() and not a.replace:
-                print(f"SKIP existing: {target.name} (use --replace to regenerate)")
+        from retry_vidura_part3 import preserve_original_onsets
+    except ImportError as err:
+        raise SystemExit("Activate the vagdhenu conda environment") from err
+    engine=CowChant(device=None if args.device=="auto" else args.device,speed=args.speed)
+    with tempfile.TemporaryDirectory() as temp:
+        for n,label,text,dest,v,meter,index in jobs:
+            if dest.exists() and not args.replace:
+                print(f"SKIP existing: {dest.name}")
                 continue
-            chant_once(engine, text, target, tempdir, a.seed)
-            print(f"CREATED: {target.relative_to(ROOT)}")
-    print("\nReview pronunciation and full-verse cadence before committing the recordings.")
-    print("  git add audio/vidura/*.mp3")
-    print('  git commit -m "Add Viduranīti Vāgdhenu full and practice recordings"')
-    print("  git push origin $(git branch --show-current)")
+            if meter=="unknown-long-metre":
+                raise ValueError(f"Verse {n} requires metre review; no audio generated for it")
+            print(f"CHANGING no source Sanskrit | {n}: {label}",flush=True)
+            with preserve_original_onsets(engine):
+                if index is None:
+                    sr,audio=engine.chant(text,meter=meter,seed=args.seed)
+                else:
+                    sr,audio=extract_context_part(engine,v["practice"],index,meter,args.seed)
+            save_mp3(audio,sr,dest,Path(temp))
+            print(f"GENERATED candidate: {dest.relative_to(ROOT)}",flush=True)
+    print("Listen to all candidates; promote only after checking whole Sanskrit, endings, and onsets.")
 
 
-if __name__ == "__main__":
+if __name__=="__main__":
     main()
