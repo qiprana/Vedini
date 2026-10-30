@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Listen, chant and explore the meanings of Lalitā Sahasranāma on Vedini.">
   <title>Lalitā Sahasranāma | Vedini</title>
-  <link rel="stylesheet" href="../styles.css?v=20261030-single-verse-v1">
+  <link rel="stylesheet" href="../styles.css?v=20261030-compact-selector-return-v2">
 </head>
 <body>
 <main class="page reader-page">
@@ -61,7 +61,7 @@
         <div class="practice-dock-transport" role="group" aria-label="Shared chanting playback controls">
           <button id="dock-play" type="button" disabled title="Play selected chanting practice"><span class="dock-button-icon" aria-hidden="true">▶</span><span class="dock-button-label">Play</span></button>
           <button id="dock-pause" type="button" disabled title="Pause or resume chanting"><span class="dock-button-icon" aria-hidden="true">⏸</span><span class="dock-button-label">Pause</span></button>
-          <button id="dock-next" type="button" disabled title="Move to next śloka or name"><span class="dock-button-icon" aria-hidden="true">↦</span><span class="dock-button-label">Next</span></button>
+          <button id="dock-next" type="button" disabled title="Next śloka when idle; skip ahead when chanting" aria-label="Next śloka"><span class="dock-button-icon" aria-hidden="true">↦</span><span class="dock-button-label">Next</span></button>
           <button id="dock-stop" type="button" disabled title="Stop chanting"><span class="dock-button-icon" aria-hidden="true">■</span><span class="dock-button-label">Stop</span></button>
         </div>
         <div id="practice-dock-body" class="practice-dock-body">
@@ -108,13 +108,13 @@
       <div class="study-main-content">
     <div class="toolbar reader-top-tools lalita-reader-toolbar">
     <nav class="lalita-view-switcher" aria-label="Lalitā reading modes"><a href="./index.html" aria-current="page">Study ślokas</a><a href="./chant.html">Full Chanting</a><a href="./names.html">Divine Names</a></nav>
-      <label class="lalita-search-field"><span class="visually-hidden">Search</span><input id="search" type="search" placeholder="Search ślokas, names, or meanings…" aria-label="Search Lalitā text and meanings" autocomplete="off"></label>
+      <div class="lalita-search-actions"><button id="return-to-results" type="button" class="return-to-results" aria-label="Back to search results" hidden>← Results</button><label class="lalita-search-field"><span class="visually-hidden">Search</span><input id="search" type="search" placeholder="Search ślokas, names, or meanings…" aria-label="Search Lalitā text and meanings" autocomplete="off"></label></div>
     </div>
     <nav id="sticky-verse-navigation" class="sticky-verse-navigation compact-verse-navigation" aria-label="Choose a single Dhyāna or śloka">
       <button type="button" id="verse-previous" class="verse-step" aria-label="Previous śloka">‹</button>
       <label class="verse-picker"><span class="visually-hidden">Choose Dhyāna or śloka</span><select id="verse-selector" aria-label="Choose a Dhyāna or śloka"></select></label>
       <button type="button" id="verse-next" class="verse-step" aria-label="Next śloka">›</button>
-      <span id="verse-position" class="verse-position" aria-live="polite">Śloka 1 of 183</span>
+      <span id="verse-position" class="verse-position visually-hidden" aria-live="polite">Śloka 1 of 183</span>
     </nav>
     <div class="notice" id="result-note" role="status" aria-live="polite"></div>
     <section id="search-results" hidden>
@@ -122,11 +122,11 @@
       <div id="search-result-list"></div>
     </section>
     <section id="dhyana">
-      <h2 id="dhyana-heading">Dhyāna Ślokas</h2>
+      <h2 id="dhyana-heading" class="visually-hidden">Dhyāna Ślokas</h2>
       <div id="dhyana-cards"></div>
     </section>
     <section id="main-stotra">
-      <h2 id="main-heading">Ślokas 1–10</h2>
+      <h2 id="main-heading" class="visually-hidden">Śloka 1</h2>
       <div id="verse-cards"></div>
     </section>
     <nav class="bottom-navigation" id="bottom-navigation" aria-label="Next and previous ten-śloka groups">
@@ -145,5 +145,5 @@
 <script src="./sticky-reader-nav.js?v=20261028-sticky-player-v2"></script>
 <script src="./practice-dock-controls.js?v=20261028-sticky-player-v2"></script>
 <script src="./language-preference.js?v=1"></script>
-<script src="../app.js?v=20261030-single-verse-v1"></script>
+<script src="../app.js?v=20261030-compact-selector-return-v2"></script>
 </body></html>
