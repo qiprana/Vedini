@@ -5,7 +5,7 @@ test('Viduranīti full śloka speed control and shruti are available',async({pag
  page.on('pageerror',err=>errors.push(err.message));
  await page.goto('/vidura/');
  await expect(page.locator('.vidura-card')).toHaveCount(2);
- await expect(page.locator('#vidura-speed')).toHaveValue('0.90');
+ await expect(page.locator('#vidura-speed')).toHaveValue('0.9');
  await expect(page.locator('#vidura-speed-value')).toHaveText('0.90×');
  await expect(page.locator('#vidura-shruti-enabled')).toBeChecked();
  await expect(page.locator('#vidura-play')).toBeEnabled();
