@@ -1,0 +1,150 @@
+{
+  "id": "vidura-011",
+  "collection": "vidura-niti",
+  "verse_number": 11,
+  "theme": "Seeing faults before virtues",
+  "reading": {
+    "dev": [
+      "न तथेच्छन्ति कल्याणान् परेषां वेदितुं गुणान् ।",
+      "यथैषां ज्ञातुमिच्छन्ति नैर्गुण्यं पापचेतसः ॥ ११ ॥"
+    ],
+    "iast": [
+      "na tathecchanti kalyāṇān pareṣāṃ vedituṃ guṇān |",
+      "yathaiṣāṃ jñātumicchanti nairguṇyaṃ pāpacetasaḥ || 11 ||"
+    ],
+    "kn": [
+      "ನ ತಥೇಚ್ಛನ್ತಿ ಕಲ್ಯಾಣಾನ್ ಪರೇಷಾಂ ವೇದಿತುಂ ಗುಣಾನ್ ೤",
+      "ಯಥೈಷಾಂ ಜ್ಞಾತುಮಿಚ್ಛನ್ತಿ ನೈರ್ಗುಣ್ಯಂ ಪಾಪಚೇತಸಃ ೥ ೧೧ ೥"
+    ]
+  },
+  "meaning": {
+    "en": "Wicked persons are not that much anxious to know about the merits of others as they are to know about their demerits.",
+    "kn": "ದುಷ್ಟಮನಸ್ಸಿನವರು ಇತರರ ಗುಣಗಳನ್ನು ತಿಳಿಯಲು ತೋರಿಸುವ ಆಸಕ್ತಿಗಿಂತ ಅವರ ದೋಷಗಳನ್ನು ಹುಡುಕಲು ಹೆಚ್ಚಿನ ಆಸಕ್ತಿ ತೋರಿಸುತ್ತಾರೆ."
+  },
+  "deeper_meaning": {
+    "en": "Vidura contrasts curiosity about others' shortcomings with the generosity needed to recognize their virtues. When the mind repeatedly seeks defects, it can lose the capacity for fair judgment.",
+    "kn": "ಇತರರ ದೋಷಗಳನ್ನೇ ಹುಡುಕುವ ಮನಸ್ಸು ಅವರ ಒಳ್ಳೆಯತನವನ್ನು ಗುರುತಿಸುವ ಅವಕಾಶವನ್ನು ಕಳೆದುಕೊಳ್ಳುತ್ತದೆ. ನ್ಯಾಯವಾದ ದೃಷ್ಟಿ ಗುಣಗಳನ್ನೂ ಗಮನಿಸುತ್ತದೆ."
+  },
+  "word_by_word": [
+    {
+      "dev": "न",
+      "iast": "na",
+      "en": "Not in that way",
+      "kn": "ಪದಾರ್ಥ: न"
+    },
+    {
+      "dev": "तथेच्छन्ति",
+      "iast": "tathecchanti",
+      "en": " do they desire",
+      "kn": "ಪದಾರ್ಥ: तथेच्छन्ति"
+    },
+    {
+      "dev": "कल्याणान्",
+      "iast": "kalyāṇān",
+      "en": " worthy people",
+      "kn": "ಪದಾರ್ಥ: कल्याणान्"
+    },
+    {
+      "dev": "परेषां",
+      "iast": "pareṣāṃ",
+      "en": "Of others",
+      "kn": "ಪದಾರ್ಥ: परेषां"
+    },
+    {
+      "dev": "वेदितुं",
+      "iast": "vedituṃ",
+      "en": " to know",
+      "kn": "ಪದಾರ್ಥ: वेदितुं"
+    },
+    {
+      "dev": "गुणान्",
+      "iast": "guṇān",
+      "en": " merits",
+      "kn": "ಪದಾರ್ಥ: गुणान्"
+    },
+    {
+      "dev": "यथैषां",
+      "iast": "yathaiṣāṃ",
+      "en": "As",
+      "kn": "ಪದಾರ್ಥ: यथैषां"
+    },
+    {
+      "dev": "ज्ञातुमिच्छन्ति",
+      "iast": "jñātumicchanti",
+      "en": " of these",
+      "kn": "ಪದಾರ್ಥ: ज्ञातुमिच्छन्ति"
+    },
+    {
+      "dev": "नैर्गुण्यं",
+      "iast": "nairguṇyaṃ",
+      "en": "Faultlessness? Here lack of qualities",
+      "kn": "ಪದಾರ್ಥ: नैर्गुण्यं"
+    },
+    {
+      "dev": "पापचेतसः",
+      "iast": "pāpacetasaḥ",
+      "en": " people with sinful minds",
+      "kn": "ಪದಾರ್ಥ: पापचेतसः"
+    }
+  ],
+  "practice": [
+    {
+      "id": "a",
+      "order": 1,
+      "dev": "न तथेच्छन्ति कल्याणान्",
+      "iast": "na tathecchanti kalyāṇān",
+      "kn": "ನ ತಥೇಚ್ಛನ್ತಿ ಕಲ್ಯಾಣಾನ್",
+      "audio": "audio/vidura/sloka-011-part-01.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "b",
+      "order": 2,
+      "dev": "परेषां वेदितुं गुणान्",
+      "iast": "pareṣāṃ vedituṃ guṇān",
+      "kn": "ಪರೇಷಾಂ ವೇದಿತುಂ ಗುಣಾನ್",
+      "audio": "audio/vidura/sloka-011-part-02.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "c",
+      "order": 3,
+      "dev": "यथैषां ज्ञातुमिच्छन्ति",
+      "iast": "yathaiṣāṃ jñātumicchanti",
+      "kn": "ಯಥೈಷಾಂ ಜ್ಞಾತುಮಿಚ್ಛನ್ತಿ",
+      "audio": "audio/vidura/sloka-011-part-03.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    },
+    {
+      "id": "d",
+      "order": 4,
+      "dev": "नैर्गुण्यं पापचेतसः",
+      "iast": "nairguṇyaṃ pāpacetasaḥ",
+      "kn": "ನೈರ್ಗುಣ್ಯಂ ಪಾಪಚೇತಸಃ",
+      "audio": "audio/vidura/sloka-011-part-04.mp3",
+      "boundary_source": "editorial-pada-boundary"
+    }
+  ],
+  "practice_source": "editorial-pada-boundaries",
+  "practice_note": "Practice segments follow printed lines and editorial word boundaries; confirm chanting pauses before audio publishing.",
+  "audio": {
+    "full": "audio/vidura/sloka-011-full.mp3",
+    "clips": [
+      "audio/vidura/sloka-011-part-01.mp3",
+      "audio/vidura/sloka-011-part-02.mp3",
+      "audio/vidura/sloka-011-part-03.mp3",
+      "audio/vidura/sloka-011-part-04.mp3"
+    ],
+    "recording_status": "awaiting-vagdhenu-generation",
+    "meter": "anushtubh",
+    "full_playback": "single_continuous_recording",
+    "repeat_control": "browser-per-part"
+  },
+  "source": {
+    "page": 5,
+    "section": "Atha Viduranītiḥ",
+    "translation": "verbatim from supplied PDF",
+    "study_meanings": "editorial",
+    "notes": "Devanagari IAST readings follow the handout; practice partitions editorial."
+  }
+}
