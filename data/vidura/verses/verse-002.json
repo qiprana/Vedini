@@ -1,0 +1,149 @@
+{
+  "id": "vidura-002",
+  "collection": "vidura-niti",
+  "verse_number": 2,
+  "theme": "Three enemies of learning",
+  "reading": {
+    "dev": [
+      "असूयैकपदं मृत्युरतिवादः श्रियो वधः ।",
+      "अशुश्रूषा त्वरा श्लाघा विद्यायाः शत्रवः त्रयः ॥ २ ॥"
+    ],
+    "iast": [
+      "asūyaikapadaṃ mṛtyurativādaḥ śriyo vadhaḥ |",
+      "aśuśrūṣā tvarā ślāghā vidyāyāḥ śatravaḥ trayaḥ || 2 ||"
+    ],
+    "kn": [
+      "ಅಸೂಯೈಕಪದಂ ಮೃತ್ಯುರತಿವಾದಃ ಶ್ರಿಯೋ ವಧಃ ।",
+      "ಅಶುಶ್ರೂಷಾ ತ್ವರಾ ಶ್ಲಾಘಾ ವಿದ್ಯಾಯಾಃ ಶತ್ರವಃ ತ್ರಯಃ ॥ ೨ ॥"
+    ]
+  },
+  "meaning": {
+    "en": "Jealousy is like sudden death. Boasting is murder of fortunes. Non-service attitude, haste and self-praise are the three enemies of knowledge.",
+    "kn": "ಅಸೂಯೆ ತಕ್ಷಣದ ಮರಣದಂತಿದೆ. ಬಡಾಯಿಯ ಮಾತು ಸಮೃದ್ಧಿಯನ್ನು ಹಾಳುಮಾಡುತ್ತದೆ. ಸೇವೆ ಮಾಡಿ ಕಲಿಯಲು ಮನಸ್ಸಿಲ್ಲದಿರುವುದು, ಅವಸರ ಮತ್ತು ಸ್ವಪ್ರಶಂಸೆ — ಇವು ವಿದ್ಯೆಯ ಮೂರು ಶತ್ರುಗಳು."
+  },
+  "deeper_meaning": {
+    "en": "Vidura warns that envy consumes the clarity needed for discernment, while boastful speech can damage the trust and good fortune built by conduct. He then names three habits especially harmful to learning: refusing to listen and serve with humility, rushing before understanding, and praising oneself instead of remaining open to correction. The verse encourages receptivity, patience and modesty as companions to genuine knowledge.",
+    "kn": "ಅಸೂಯೆ ವಿವೇಕವನ್ನು ಮಸುಕಾಗಿಸುತ್ತದೆ; ಬಡಾಯಿಯ ಮಾತು ನಡತೆಯಿಂದ ಗಳಿಸಿದ ಗೌರವವನ್ನೂ ಸಮೃದ್ಧಿಯನ್ನೂ ಹಾಳುಮಾಡಬಹುದು ಎಂದು ವಿದುರನು ಎಚ್ಚರಿಸುತ್ತಾನೆ. ಕಲಿಕೆಗೆ ಅಡ್ಡಿಯಾಗುವ ಮೂರು ಸ್ವಭಾವಗಳನ್ನು ಹೇಳುತ್ತಾನೆ: ವಿನಯದಿಂದ ಕೇಳಿ ಕಲಿಯಲು ಇಷ್ಟವಿಲ್ಲದಿರುವುದು, ಅರ್ಥಮಾಡಿಕೊಳ್ಳುವ ಮುನ್ನವೇ ಅವಸರಿಸುವುದು ಮತ್ತು ತಾನೇ ತನ್ನನ್ನು ಹೊಗಳಿಕೊಳ್ಳುವುದು. ವಿದ್ಯೆಗೆ ವಿನಯ, ತಾಳ್ಮೆ ಮತ್ತು ಸ್ವೀಕಾರ ಮನೋಭಾವ ಅಗತ್ಯವೆಂಬುದು ಇದರ ಸಂದೇಶ."
+  },
+  "word_by_word": [
+    {
+      "dev": "असूया",
+      "iast": "asūyā",
+      "en": "Envy; jealousy",
+      "kn": "ಅಸೂಯೆ; ಈರ್ಷೆ"
+    },
+    {
+      "dev": "एकपदम्",
+      "iast": "ekapadam",
+      "en": "At a single step; immediately",
+      "kn": "ಒಂದೇ ಹೆಜ್ಜೆಯಲ್ಲಿ; ತಕ್ಷಣ"
+    },
+    {
+      "dev": "मृत्युः",
+      "iast": "mṛtyuḥ",
+      "en": "Death",
+      "kn": "ಮರಣ"
+    },
+    {
+      "dev": "अतिवादः",
+      "iast": "ativādaḥ",
+      "en": "Excessive, boastful speech",
+      "kn": "ಅತಿಯಾದ ಬಡಾಯಿ ಮಾತು"
+    },
+    {
+      "dev": "श्रियः (श्रियो)",
+      "iast": "śriyaḥ (śriyo)",
+      "en": "Of prosperity or good fortune",
+      "kn": "ಸಮೃದ್ಧಿಯ; ಸೌಭಾಗ್ಯದ"
+    },
+    {
+      "dev": "वधः",
+      "iast": "vadhaḥ",
+      "en": "Destruction; killing",
+      "kn": "ನಾಶ; ಹತ್ಯೆ"
+    },
+    {
+      "dev": "अशुश्रूषा",
+      "iast": "aśuśrūṣā",
+      "en": "Unwillingness to listen, learn, or serve",
+      "kn": "ಕೇಳಿ ಕಲಿಯಲು ಅಥವಾ ಸೇವೆ ಮಾಡಲು ಇಷ್ಟವಿಲ್ಲದಿರುವುದು"
+    },
+    {
+      "dev": "त्वरा",
+      "iast": "tvarā",
+      "en": "Haste; impatience",
+      "kn": "ಅವಸರ"
+    },
+    {
+      "dev": "श्लाघा",
+      "iast": "ślāghā",
+      "en": "Self-praise; boasting",
+      "kn": "ಸ್ವಪ್ರಶಂಸೆ"
+    },
+    {
+      "dev": "विद्यायाः",
+      "iast": "vidyāyāḥ",
+      "en": "Of knowledge or learning",
+      "kn": "ವಿದ್ಯೆಯ; ಜ್ಞಾನದ"
+    },
+    {
+      "dev": "शत्रवः",
+      "iast": "śatravaḥ",
+      "en": "Enemies",
+      "kn": "ಶತ್ರುಗಳು"
+    },
+    {
+      "dev": "त्रयः",
+      "iast": "trayaḥ",
+      "en": "Three",
+      "kn": "ಮೂರು"
+    }
+  ],
+  "practice": [
+    {
+      "id": "a",
+      "dev": "असूयैकपदं मृत्युः",
+      "iast": "asūyaikapadaṃ mṛtyuḥ",
+      "kn": "ಅಸೂಯೈಕಪದಂ ಮೃತ್ಯುಃ",
+      "highlighted": true,
+      "repeat": 2
+    },
+    {
+      "id": "b",
+      "dev": "अतिवादः श्रियो वधः",
+      "iast": "ativādaḥ śriyo vadhaḥ",
+      "kn": "ಅತಿವಾದಃ ಶ್ರಿಯೋ ವಧಃ",
+      "highlighted": false,
+      "repeat": 1
+    },
+    {
+      "id": "c",
+      "dev": "अशुश्रूषा त्वरा श्लाघा",
+      "iast": "aśuśrūṣā tvarā ślāghā",
+      "kn": "ಅಶುಶ್ರೂಷಾ ತ್ವರಾ ಶ್ಲಾಘಾ",
+      "highlighted": true,
+      "repeat": 2
+    },
+    {
+      "id": "d",
+      "dev": "विद्यायाः शत्रवः त्रयः",
+      "iast": "vidyāyāḥ śatravaḥ trayaḥ",
+      "kn": "ವಿದ್ಯಾಯಾಃ ಶತ್ರವಃ ತ್ರಯಃ",
+      "highlighted": false,
+      "repeat": 1
+    }
+  ],
+  "practice_source": "editorial-practice-splits",
+  "practice_note": "The supplied PDF does not highlight verse 2. These phrases are proposed for consistent call-and-repeat practice. The first line restores the sandhi boundary mṛtyuḥ | ativādaḥ in the practice reading.",
+  "audio": {
+    "full": "audio/vidura/sloka-002-full.mp3",
+    "call_repeat": "audio/vidura/sloka-002-call-repeat.mp3",
+    "timings": "data/vidura/timings/verse-002.json"
+  },
+  "source": {
+    "page": 3,
+    "section": "Atha Viduranītiḥ",
+    "translation": "verbatim from supplied PDF",
+    "study_meanings": "editorial"
+  }
+}
