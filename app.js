@@ -10,6 +10,7 @@ const pageSize=1,plannedVerses=183;
 let view="verses",pageIndex=0,selectedVerse=1;
 let lastSearch=null;
 let readerMode="study";
+const fullMeanings=new Map();
 let activeAudioElement=null;
 function claimAudioFocus(audio){
  if(!audio)return;
@@ -1377,7 +1378,7 @@ function fullCard(v,isDhyana){
  const n=v.verse_number,kn=language==="kn",reading=v.reading||{};
  const lines=kn?(reading.kannada?.length?reading.kannada:(reading.devanagari||[]).map(kannadaFromDevanagari)):(reading.devanagari||[]);
  const info=(isDhyana?dhyanaData:verseData)[n]||{};
- const mean=kn?v.meaning?.kannada:v.meaning?.english;
+ const mean=kn?(v.meaning?.kannada||fullMeanings.get((isDhyana?"d-":"s-")+n)?.kn):(v.meaning?.english||fullMeanings.get((isDhyana?"d-":"s-")+n)?.en);
  const deep=anyMeaning(info,"traditional_interpretation");
  return "<article class='full-verse-card' id='"+(isDhyana?"dhyana-":"verse-")+n+"'><div class='full-verse-head'><strong>"+esc(langText(isDhyana?"Dhyāna "+n:"Śloka "+n,isDhyana?"ಧ್ಯಾನ "+n:"ಶ್ಲೋಕ "+n))+"</strong><button type='button' data-full-start='"+(isDhyana?"d":"s")+"-"+n+"'>▶ Start here</button></div><div class='full-script' lang='"+(kn?"kn":"sa")+"'>"+lines.map(verseLine).join("")+"</div><div class='full-iast'>"+(reading.iast||[]).map(verseLine).join("")+"</div><section class='full-simple'><strong>"+esc(langText("Simple meaning","ಸರಳ ಅರ್ಥ"))+"</strong><p>"+esc(mean||"")+"</p></section>"+(deep?"<details class='full-deep'><summary>"+esc(langText("Deeper meaning","ಆಳವಾದ ಅರ್ಥ"))+"</summary>"+richParagraphs(deep)+"</details>":"")+"</article>";
 }
@@ -2169,6 +2170,8 @@ async function init(){
  const paths=["lalita/dhyana.json","lalita/names-interpretations-draft.json","lalita/study-names-011-018.json","lalita/study-names-019-026.json","lalita/study-dhyana-01-02.json","lalita/study-dhyana-03-04.json","lalita/study-verses-001-010.json",...Array.from({length:183},(_,i)=>"lalita/verses/verse-"+String(i+1).padStart(3,"0")+".json")];
  try{
  const [files,briefNames,dhyanaPhrases]=await Promise.all([Promise.all(paths.map(fetchJSON)),fetchJSON("lalita/brief-names-draft.json"),fetchJSON("lalita/dhyana-mss-phrases.json?v=20261024-v14")]);
+ const meaningFiles=await Promise.all(["001-010","011-020","021-030","031-040","041-050","051-100","101-150","151-183"].map(k=>fetchJSON("lalita/expanded-verses-"+k+".json")));
+ meaningFiles.flatMap(f=>f.verses||[]).forEach(v=>fullMeanings.set("s-"+v.verse_number,v.meaning||{}));
  const benefitFiles=await Promise.all(["001-0200","201-0400","401-0600","601-0800","801-1000"].map(range=>fetchJSON("lalita/wisdom-insights-"+range+".json")));
  const namavaliFile=await fetchJSON("lalita/namavali-001-1000.json");
  const benefitCatalog=await fetchJSON("lalita/name-benefits.json");
