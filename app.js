@@ -9,6 +9,7 @@ let spiritualBenefits={},namaMantras={},significanceRewrites={},nameBenefits={};
 const pageSize=1,plannedVerses=183;
 let view="verses",pageIndex=0,selectedVerse=1;
 let lastSearch=null;
+let readerMode="study";
 let activeAudioElement=null;
 function claimAudioFocus(audio){
  if(!audio)return;
@@ -1372,6 +1373,27 @@ function fitVerseLines(){
   }
  });
 }
+function fullCard(v,isDhyana){
+ const n=v.verse_number,kn=language==="kn",reading=v.reading||{};
+ const lines=kn?(reading.kannada?.length?reading.kannada:(reading.devanagari||[]).map(kannadaFromDevanagari)):(reading.devanagari||[]);
+ const info=(isDhyana?dhyanaData:verseData)[n]||{};
+ const mean=kn?v.meaning?.kannada:v.meaning?.english;
+ const deep=anyMeaning(info,"traditional_interpretation");
+ return "<article class='full-verse-card' id='"+(isDhyana?"dhyana-":"verse-")+n+"'><div class='full-verse-head'><strong>"+esc(langText(isDhyana?"Dhyāna "+n:"Śloka "+n,isDhyana?"ಧ್ಯಾನ "+n:"ಶ್ಲೋಕ "+n))+"</strong><button type='button' data-full-start='"+(isDhyana?"d":"s")+"-"+n+"'>▶ Start here</button></div><div class='full-script' lang='"+(kn?"kn":"sa")+"'>"+lines.map(verseLine).join("")+"</div><div class='full-iast'>"+(reading.iast||[]).map(verseLine).join("")+"</div><section class='full-simple'><strong>"+esc(langText("Simple meaning","ಸರಳ ಅರ್ಥ"))+"</strong><p>"+esc(mean||"")+"</p></section>"+(deep?"<details class='full-deep'><summary>"+esc(langText("Deeper meaning","ಆಳವಾದ ಅರ್ಥ"))+"</summary>"+richParagraphs(deep)+"</details>":"")+"</article>";
+}
+function applyReaderOptions(){
+ const root=$(".reader-page");
+ root.classList.toggle("full-view",readerMode==="full");
+ root.classList.toggle("full-hide-iast",!$("#reader-show-iast").checked);
+ root.classList.toggle("full-hide-meaning",!$("#reader-show-meaning").checked);
+ root.classList.toggle("full-hide-deeper",!$("#reader-show-deeper").checked);
+ document.querySelectorAll("[data-reader-mode]").forEach(a=>{if(a.dataset.readerMode===readerMode)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current")});
+}
+function setReaderMode(mode){
+ readerMode=mode==="full"?"full":"study";$("#reader-mode").value=readerMode;
+ const url=new URL(location.href);url.searchParams.set("mode",readerMode);history.replaceState({},"",url.pathname+url.search+url.hash);
+ render();
+}
 function card(v,isDhyana){
  const number=v.verse_number,reading=v.reading||{};
  const selected=language==="kn"?(reading.devanagari||[]).map(kannadaFromDevanagari):(reading.devanagari||[]);
@@ -1455,15 +1477,16 @@ function renderGroupTabs(){
  $("#verse-previous").disabled=at===0;
  $("#verse-next").disabled=at===dhyana.length+verses.length-1;
  $("#verse-position").textContent=view==="dhyana"?"Dhyāna "+selectedVerse+" of "+dhyana.length:"Śloka "+selectedVerse+" of "+verses.length;
+ const rail=$("#verse-rail");if(rail){const values=view==="dhyana"?dhyana:verses;rail.innerHTML=values.map(v=>"<button type=\"button\" data-rail=\""+(view==="dhyana"?"d-":"s-")+v.verse_number+"\" class=\""+(v.verse_number===selectedVerse?"current":"")+"\">"+v.verse_number+"</button>").join("");requestAnimationFrame(()=>rail.querySelector(".current")?.scrollIntoView({inline:"center",block:"nearest"}));}$("#verse-rail-heading").textContent=readerMode==="full"?"Full Chanting":"Śloka Study";
 }
 function updateNavigation(){
  const searching=!!searchTerm.trim();
  $("#return-to-results").hidden=searching||!lastSearch;
- $("#dhyana").hidden=searching||view!=="dhyana";
- $("#main-stotra").hidden=searching||view!=="verses";
+ $("#dhyana").hidden=searching||(readerMode!=="full"&&view!=="dhyana");
+ $("#main-stotra").hidden=searching||(readerMode!=="full"&&view!=="verses");
  $("#search-results").hidden=!searching;
  $("#sticky-verse-navigation").hidden=searching;
- $("#bottom-navigation").hidden=searching||view!=="verses";
+ $("#bottom-navigation").hidden=searching||readerMode==="full"||view!=="verses";
  renderGroupTabs();
  $("#bottom-previous").disabled=selectedVerse<=1;
  $("#bottom-next").disabled=selectedVerse>=verses.length;
@@ -1532,6 +1555,7 @@ function render(){
  stopAllDhyanaAudio(null);
  const opened=savedDetails();
  const q=norm(searchTerm.trim());
+ applyReaderOptions();
  updateNavigation();
  updateQuickIndex();
  if(q){
@@ -1540,7 +1564,10 @@ function render(){
   showResultList(q);
   return;
  }
- if(view==="dhyana"){
+ if(readerMode==="full"){
+  $("#dhyana-cards").innerHTML=dhyana.map(v=>fullCard(v,true)).join("");
+  $("#verse-cards").innerHTML=verses.map(v=>fullCard(v,false)).join("");
+ }else if(view==="dhyana"){
   $("#dhyana-cards").innerHTML=dhyana.filter(v=>v.verse_number===selectedVerse).map(v=>card(v,true)).join("");
   $("#verse-cards").innerHTML="";
  }else{
@@ -1816,12 +1843,13 @@ async function loadRangeBuffer(url,ctx){
 }
 function practiceShowVerse(n,follow){
  if(practice.dhyana){
-  if(view!=="dhyana"||selectedVerse!==n||searchTerm.trim()){
+  if(readerMode!=="full"&&(view!=="dhyana"||selectedVerse!==n||searchTerm.trim())){
    view="dhyana";selectedVerse=n;searchTerm="";$("#search").value="";render();
   }
- }else if(view!=="verses"||selectedVerse!==n||searchTerm.trim()){
+ }else if(readerMode!=="full"&&(view!=="verses"||selectedVerse!==n||searchTerm.trim())){
   view="verses";pageIndex=n-1;selectedVerse=n;searchTerm="";$("#search").value="";render();
  }else selectVisibleVerse(n);
+ if(readerMode==="full"){selectedVerse=n;view=practice.dhyana?"dhyana":"verses";renderGroupTabs();}
  if(follow){
   const id=(practice.dhyana?"dhyana-":"verse-")+n;
   requestAnimationFrame(()=>document.getElementById(id)?.scrollIntoView({block:"start",behavior:"smooth"}));
@@ -2159,7 +2187,7 @@ async function init(){
  const finalOverall=await fetchJSON("lalita/deeper-overall-104-183.json");
  finalOverall.verses.forEach(e=>{verseData[e.verse_number]={...(verseData[e.verse_number]||{}),traditional_interpretation:{en:e.en,kn:e.kn}};});
  if(index<111)throw new Error("At least the first 111 names are expected; found "+index);
- initPractice();guidedInit();syncDock();const initial=loadInitialLocation();render();if(initial)scrollToElement(initial);
+ initPractice();guidedInit();syncDock();readerMode=new URLSearchParams(location.search).get("mode")==="full"?"full":"study";$("#reader-mode").value=readerMode;const initial=loadInitialLocation();render();if(initial)scrollToElement(initial);
  }catch(err){
  const n=$("#result-note");if(n)n.textContent="Unable to load study content: "+err.message;
  }
@@ -2177,6 +2205,12 @@ $("#bottom-next").onclick=()=>moveVerse(1);
 $("#verse-selector").onchange=e=>chooseVerse(e.target.value);
 $("#verse-previous").onclick=()=>moveVerse(-1);
 $("#verse-next").onclick=()=>moveVerse(1);
+$("#verse-rail").onclick=e=>{const b=e.target.closest("[data-rail]");if(b)chooseVerse(b.dataset.rail);};
+$("#reader-mode").onchange=e=>setReaderMode(e.target.value);
+for(const id of ["reader-show-iast","reader-show-meaning","reader-show-deeper"])$("#"+id).onchange=applyReaderOptions;
+$("#reader-print").onclick=()=>window.print();
+$(".lalita-view-switcher").addEventListener("click",e=>{const a=e.target.closest("[data-reader-mode]");if(a){e.preventDefault();setReaderMode(a.dataset.readerMode);}});
+for(const id of ["verse-cards","dhyana-cards"])$("#"+id).addEventListener("click",e=>{const b=e.target.closest("[data-full-start]");if(!b)return;const n=Number(b.dataset.fullStart.slice(2));$("#learning-mode").value="chant";$("#learning-mode").dispatchEvent(new Event("change"));if(b.dataset.fullStart[0]==="d")practiceBegin(n,n,1,true);else practiceBegin(n,verses.length,1);});
 window.addEventListener("scroll",queueVerseScrollUpdate,{passive:true});
 window.addEventListener("resize",()=>{
  requestAnimationFrame(fitVerseLines);
