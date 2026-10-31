@@ -172,3 +172,12 @@
 .vidura-page .vidura-card:has(#vidura-part-picker){border-color:#9dbba3}
 @media(max-width:900px){.vidura-page .vidura-verse-top{grid-template-columns:1fr;gap:10px}.vidura-page .vidura-inline-chant .vidura-part{grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"title controls" "dev controls" "iast controls"}}
 @media(max-width:620px){.vidura-page .vidura-inline-chant{padding:9px}.vidura-page .vidura-inline-chant .vidura-part{grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"title controls" "dev controls" "iast controls"}}
+
+.vidura-page .vidura-inline-preview-row{display:grid;grid-template-columns:18px minmax(0,1fr) 31px;gap:7px;align-items:center;border-top:1px solid #dce7db;padding:8px 0}
+.vidura-page .vidura-inline-preview-row:first-child{border-top:0}
+.vidura-page .vidura-inline-preview-copy{min-width:0;display:grid;gap:2px}
+.vidura-page .vidura-inline-preview-copy b{font:500 15px/1.6 'Noto Serif Devanagari','Kohinoor Devanagari',serif;color:#304738}
+.vidura-page .vidura-inline-preview-copy small{font:12px/1.3 Georgia,serif;color:#667565}
+.vidura-page .vidura-inline-number{font:700 11px system-ui;color:#55735b}
+.vidura-page .vidura-inline-preview-row button{min-width:30px;min-height:31px;padding:3px;border:1px solid #abc7b2;border-radius:8px;background:#eef5ed;color:#346347;cursor:pointer}
+.vidura-page .vidura-inline-preview-row button:disabled{opacity:.45;cursor:not-allowed}
