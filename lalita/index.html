@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Listen, chant and explore the meanings of Lalitā Sahasranāma on Vedini.">
   <title>Lalitā Sahasranāma | Vedini</title>
-  <link rel="stylesheet" href="../styles.css?v=20261030-unified-v1">
+  <link rel="stylesheet" href="../styles.css?v=20261031-unified-player-v2">
 </head>
 <body>
 <main class="page reader-page">
@@ -56,11 +56,15 @@
           <button type="button" id="practice-dock-toggle" aria-controls="practice-dock-body" aria-expanded="true" title="Collapse or expand the practice sidebar">
             <span aria-hidden="true" class="dock-arrow">◂</span><span class="dock-toggle-label">Collapse</span>
           </button>
-          <div class="dock-heading"><strong>Chanting Practice</strong><span>Listen · Repeat · Learn</span></div>
+          <div class="dock-heading"><strong>Chanting Player</strong><span>Listen · Chant · Understand</span></div>
         </div>
-        <div class="practice-dock-transport" role="group" aria-label="Shared chanting playback controls">
-          <button id="dock-play" type="button" disabled title="Play selected chanting practice"><span class="dock-button-icon" aria-hidden="true">▶</span><span class="dock-button-label">Play</span></button>
-          <button id="dock-pause" type="button" disabled title="Pause or resume chanting"><span class="dock-button-icon" aria-hidden="true">⏸</span><span class="dock-button-label">Pause</span></button>
+        <div class="dock-live" aria-label="Current chant and repeat progress">
+          <div class="dock-live-row"><strong id="dock-track-title">Śloka 1 of 183</strong><span id="dock-track-detail">Ready · Vāgdhenu</span></div>
+          <div id="dock-progressbar" class="dock-progressbar" role="progressbar" aria-label="Chanting range progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="dock-progress-fill"></span></div>
+        </div>
+        <div class="practice-dock-transport" role="group" aria-label="Chanting playback controls">
+          <button id="dock-play" type="button" disabled title="Play or pause chanting" aria-label="Play chanting"><span class="dock-button-icon" aria-hidden="true">▶</span><span class="dock-button-label">Play</span></button>
+          <button id="dock-pause" type="button" disabled title="Pause or resume chanting" class="dock-legacy-pause"><span class="dock-button-icon" aria-hidden="true">⏸</span><span class="dock-button-label">Pause</span></button>
           <button id="dock-next" type="button" disabled title="Next śloka when idle; skip ahead when chanting" aria-label="Next śloka"><span class="dock-button-icon" aria-hidden="true">↦</span><span class="dock-button-label">Next</span></button>
           <button id="dock-stop" type="button" disabled title="Stop chanting"><span class="dock-button-icon" aria-hidden="true">■</span><span class="dock-button-label">Stop</span></button>
         </div>
@@ -85,7 +89,8 @@
             <section id="practice-player" class="practice-player" aria-label="Śloka chanting options">
               <p class="dock-help">Choose a range. Each new śloka is followed once; repeats never move your reading position.</p>
               <div class="practice-fields">
-                <label>From śloka<select id="practice-from" aria-label="Start śloka"></select></label>
+                <label class="practice-from-field">From śloka<select id="practice-from" aria-label="Start śloka"></select></label>
+                <label class="full-start-field" hidden>Start from<select id="full-start" aria-label="Start full chanting from Dhyāna or śloka"></select></label>
                 <label>To śloka<select id="practice-to" aria-label="End śloka"></select></label>
                 <label>Repeat each<select id="practice-repeat" aria-label="Repetitions for each śloka"><option value="1">1×</option><option value="2" selected>2×</option><option value="3">3×</option><option value="5">5×</option><option value="10">10×</option></select></label>
                 <label>Recording<select id="practice-voice" aria-label="Chanting voice"><option value="VD" selected>Vāgdhenu · Practice voice</option><option value="MSS">M. S. Subbulakshmi</option><option value="KMP">Kuldeep M. Pai</option></select></label>
@@ -116,11 +121,15 @@
       </aside>
       <div class="study-main-content">
     <div class="toolbar reader-top-tools lalita-reader-toolbar">
-    <nav class="lalita-view-switcher" aria-label="Lalitā reading modes"><a href="./index.html?mode=study" data-reader-mode="study" aria-current="page">Study ślokas</a><a href="./index.html?mode=full" data-reader-mode="full">Full Chanting</a><a href="./names.html">Divine Names</a></nav>
+    <nav class="lalita-view-switcher" aria-label="Lalitā reading modes"><a href="./index.html" aria-current="page">Study &amp; Chant</a><a href="./names.html">Divine Names</a></nav>
       <div class="lalita-search-actions"><button id="return-to-results" type="button" class="return-to-results" aria-label="Back to search results" hidden>← Results</button><label class="lalita-search-field"><span class="visually-hidden">Search</span><input id="search" type="search" placeholder="Search ślokas, names, or meanings…" aria-label="Search Lalitā text and meanings" autocomplete="off"></label></div>
     </div>
     <nav id="sticky-verse-navigation" class="sticky-verse-navigation verse-swipe-navigation" aria-label="Swipeable Dhyāna and śloka index">
-      <div class="verse-swipe-title"><strong id="verse-rail-heading">Śloka Study</strong><span>Swipe to browse ślokas</span></div>
+      <div class="verse-swipe-title"><strong id="verse-rail-heading">Śloka Study</strong><span>Swipe or tap a number</span></div>
+      <div class="verse-type-tabs" role="group" aria-label="Select Dhyāna or Sahasranāma">
+        <button type="button" id="rail-dhyana" aria-pressed="false">Dhyāna 1–4</button>
+        <button type="button" id="rail-slokas" aria-pressed="true">Ślokas 1–183</button>
+      </div>
       <div class="verse-swipe-strip">
         <button type="button" id="verse-previous" class="verse-step" aria-label="Previous śloka">‹</button>
         <div id="verse-rail" class="verse-rail" role="group" aria-label="Select a śloka to read"></div>
@@ -142,7 +151,7 @@
       <h2 id="main-heading" class="visually-hidden">Śloka 1</h2>
       <div id="verse-cards"></div>
     </section>
-    <nav class="bottom-navigation" id="bottom-navigation" aria-label="Next and previous ten-śloka groups">
+    <nav class="bottom-navigation" id="bottom-navigation" aria-label="Next and previous ślokas">
       <div class="pager">
         <button type="button" id="bottom-previous">← Previous śloka</button>
         <span id="bottom-position" aria-live="polite"></span>
@@ -158,5 +167,5 @@
 <script src="./sticky-reader-nav.js?v=20261028-sticky-player-v2"></script>
 <script src="./practice-dock-controls.js?v=20261028-sticky-player-v2"></script>
 <script src="./language-preference.js?v=1"></script>
-<script src="../app.js?v=20261030-unified-v1"></script>
+<script src="../app.js?v=20261031-unified-player-v2"></script>
 </body></html>
