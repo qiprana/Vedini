@@ -2334,7 +2334,6 @@ function initLearningMode(){
   }else if(!isChant&&guided.active){guidedStop("Stopped");}
   host.dataset.mode=isChant?"chant":"guided";
   document.querySelectorAll(".guided-verse-setting").forEach(el=>el.hidden=$("#guided-style").value==="names");
-  $(".chant-style-field").hidden=true;
   $(".practice-repeat-field").hidden=mode!=="repeat";
   $(".guided-style-field").hidden=mode!=="names";
   $(".practice-fields").hidden=mode==="study";
