@@ -2364,3 +2364,35 @@ header p{color:#845c4b;font-size:18px}
 .reader-page .verse-rail{overflow-x:auto;max-width:100%;box-sizing:border-box;contain:inline-size}
 .reader-page .site-tabs{max-width:100%;min-width:0;overflow-x:auto}
 @media(max-width:620px){.reader-page{max-width:100%;overflow-x:clip}}
+
+/* One-line Dhyāna/śloka navigation for both phone and desktop. */
+.reader-page .verse-swipe-navigation{display:flex!important;align-items:center!important;flex-wrap:nowrap!important;gap:8px!important;min-height:53px!important;padding:7px 9px!important;overflow:hidden!important}
+.reader-page .verse-swipe-navigation .verse-swipe-title{display:none!important}
+.reader-page .verse-swipe-navigation .verse-type-tabs{display:flex!important;flex:0 0 auto!important;gap:5px!important;margin:0!important}
+.reader-page .verse-swipe-navigation .verse-type-tabs button{min-height:37px!important;padding:6px 10px!important;white-space:nowrap;font-size:12px!important;border-radius:9px!important}
+.reader-page .verse-swipe-navigation .verse-swipe-strip{display:flex!important;flex:1 1 0!important;min-width:0!important;max-width:100%!important;gap:4px!important}
+.reader-page .verse-swipe-navigation .verse-rail{flex:1 1 0!important;min-width:0!important;max-width:100%!important}
+.reader-page .verse-swipe-navigation .verse-step{flex:0 0 32px!important;width:32px!important;height:38px!important}
+.reader-page .verse-reading-panel .panel-heading{display:none!important}
+.reader-page:not(.full-view).study-hide-iast .verse-reading-panel .verse-iast,
+.reader-page:not(.full-view).study-hide-iast .verse-reading-panel .iast-heading{display:none!important}
+.reader-page:not(.full-view) .verse-combined-meaning .overall-reading,
+.reader-page:not(.full-view) .verse-combined-meaning .deeper-reading{display:none!important}
+.reader-page:not(.full-view).study-show-meaning .verse-combined-meaning .overall-reading{display:block!important}
+.reader-page:not(.full-view).study-show-deeper .verse-combined-meaning .deeper-reading{display:block!important}
+.reader-page .practice-dock .reader-display-controls{opacity:1!important}
+.reader-page .reader-display-controls{grid-template-columns:1fr!important;gap:5px!important;padding:8px 12px!important}
+.reader-page .reader-display-controls label{cursor:pointer;opacity:1!important;color:#355840!important}
+.reader-page .practice-dock .reader-display-controls input{width:17px!important;height:17px!important;opacity:1!important}
+.reader-page .practice-dock #reader-mode{display:none!important}
+@media(max-width:620px){
+ .reader-page .verse-swipe-navigation{gap:5px!important;padding:6px!important}
+ .reader-page .verse-swipe-navigation .verse-type-tabs{gap:3px!important}
+ .reader-page .verse-swipe-navigation .verse-type-tabs button{font-size:10px!important;padding:5px 7px!important;min-height:35px!important}
+ .reader-page .verse-swipe-navigation .verse-step{flex-basis:27px!important;width:27px!important;height:35px!important}
+ .reader-page .verse-swipe-navigation .verse-rail button{flex-basis:37px!important;font-size:13px!important;min-height:35px!important}
+}
+
+/* Readers may manually open the original combined meaning disclosure even when quick visibility filters are off. */
+.reader-page:not(.full-view) .verse-combined-meaning[open]:not(.quick-open) .overall-reading,
+.reader-page:not(.full-view) .verse-combined-meaning[open]:not(.quick-open) .deeper-reading{display:block!important}
