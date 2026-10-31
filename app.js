@@ -1351,7 +1351,7 @@ function mainVerseMeaning(v){
  return combinedVerseMeaning(summary,info,false,v.verse_number);
 }
 function verseLine(s){
- const value=String(s??"").trim();
+ const value=String(s??"").trim().replace(/॥\s*([0-9]+)\.\.\s*$/u,"॥ $1 ॥");
  // Keep the last word and its danda/verse number in the same typographic unit.
  const m=value.match(/^(.*?)(\S+)\s+(॥(?:\s*[0-9०-९೦-೯]+\s*॥)?|।)$/u);
  const display=m?highlighted(m[1])+"<span class='verse-ending'>"+highlighted(m[2])+"&nbsp;"+esc(m[3].replace(/\s+/g,"\u00a0"))+"</span>":highlighted(value);
@@ -2316,6 +2316,7 @@ function initLearningMode(){
  if(!selector||!host)return;
  function choose(){
   const mode=selector.value,isChant=mode==="chant";
+  if(!isChant&&readerMode==="full")setReaderMode("study");
   const old=host.dataset.mode;
   if(old!==(isChant?"chant":"guided")){
    if(practice.active)practiceStop("Stopped");
