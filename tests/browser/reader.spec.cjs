@@ -528,3 +528,32 @@ test('unified player has progress and one Play/Pause control in both modes',asyn
  await expect(page.locator('#verse-183')).toHaveCount(0);
  await expect(page.locator('#dock-play')).toBeEnabled();
 });
+
+test('shared chanting audio crosses verse 10 to 11 and completes the selected range',async({page})=>{
+ await page.addInitScript(()=>{
+  const realFetch=window.fetch.bind(window);
+  window.fetch=(url,opts)=>String(url).includes('/audio/lalita/')&&String(url).endsWith('.mp3')
+    ?Promise.resolve({ok:true,arrayBuffer:()=>Promise.resolve(new ArrayBuffer(16))}):realFetch(url,opts);
+  class Source{connect(){return this}disconnect(){}start(){}stop(){}}
+  class Context{
+   constructor(){this.started=performance.now();this.state='running';this.destination={};}
+   get currentTime(){return (performance.now()-this.started)/1000;}
+   decodeAudioData(){return Promise.resolve({duration:.24})}
+   createBufferSource(){return new Source()}
+   createGain(){return {gain:{setValueAtTime(){},linearRampToValueAtTime(){}},connect(){return this},disconnect(){}}}
+   resume(){this.state='running';return Promise.resolve()}
+   suspend(){this.state='suspended';return Promise.resolve()}
+   close(){this.state='closed';return Promise.resolve()}
+  }
+  window.AudioContext=Context;window.webkitAudioContext=Context;
+ });
+ await page.goto('/lalita/?sloka=10');
+ await expect(page.locator('#verse-10')).toBeVisible({timeout:20000});
+ await page.locator('#practice-from').selectOption('10');
+ await page.locator('#practice-to').selectOption('11');
+ await page.locator('#practice-repeat').selectOption('1');
+ await page.locator('#dock-play').click();
+ await expect(page.locator('#verse-11')).toBeVisible({timeout:6000});
+ await expect(page.locator('#practice-status')).toContainText('Completed selected range',{timeout:6000});
+ await expect(page.locator('#dock-play')).toBeEnabled();
+});
