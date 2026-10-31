@@ -524,7 +524,7 @@ test('unified player has progress and one Play/Pause control in both modes',asyn
  await expect(page.locator('#dock-progressbar')).toHaveAttribute('role','progressbar');
  await expect(page.locator('#dock-play')).toBeEnabled();
  await expect(page.locator('#dock-pause')).toBeHidden();
- await page.locator('#reader-mode').selectOption('study');
+ await page.locator('#learning-mode').selectOption('study');
  await expect(page.locator('#verse-183')).toHaveCount(0);
  await expect(page.locator('#dock-play')).toBeEnabled();
 });
