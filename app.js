@@ -1391,7 +1391,7 @@ function applyReaderOptions(){
  root.classList.toggle("study-hide-iast",!$("#reader-show-iast").checked);
  root.classList.toggle("study-show-meaning",$("#reader-show-meaning").checked);
  root.classList.toggle("study-show-deeper",$("#reader-show-deeper").checked);
- if(readerMode==="study")document.querySelectorAll(".verse-combined-meaning").forEach(el=>{el.open=$("#reader-show-meaning").checked||$("#reader-show-deeper").checked;});
+ if(readerMode==="study")document.querySelectorAll(".verse-combined-meaning").forEach(el=>{const quick=$("#reader-show-meaning").checked||$("#reader-show-deeper").checked;el.classList.toggle("quick-open",quick);if(quick)el.open=true;});
  document.querySelectorAll("[data-reader-mode]").forEach(a=>{if(a.dataset.readerMode===readerMode)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current")});
 }
 function setReaderMode(mode){
