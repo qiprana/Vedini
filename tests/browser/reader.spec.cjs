@@ -4,7 +4,7 @@ test('Lalita page loads content without runtime errors',async({page})=>{
  page.on('pageerror',e=>errors.push(e.message));
  await page.goto('/lalita/');
  await expect(page.locator('#guided-from option')).toHaveCount(183,{timeout:20000});
- await expect(page.locator('#practice-from option')).toHaveCount(183);
+ await expect(page.locator('#practice-from option')).toHaveCount(187);
  await expect(page.locator('.name-audio-card').first()).toBeVisible();
  await expect(page.getByText('Unable to load study content')).toHaveCount(0);
  expect(errors).toEqual([]);
@@ -12,7 +12,8 @@ test('Lalita page loads content without runtime errors',async({page})=>{
 test('practice modes switch and preserve controls',async({page})=>{
  await page.goto('/lalita/');
  await expect(page.locator('#practice-play')).toBeVisible();
- await page.locator('#learning-mode').selectOption('both');
+ await page.locator('#learning-mode').selectOption('names');
+ await page.locator('#guided-style').selectOption('both');
  await expect(page.locator('#guided-play')).toBeVisible();
  await expect(page.locator('#guided-name-repeat')).toHaveValue('2');
  await page.locator('#learning-mode').selectOption('chant');
@@ -202,6 +203,7 @@ test('Mobile Study reader has accessible bottom player and expandable settings w
  expect(geometry.r.height).toBeLessThan(180);
  await settings.click();
  await expect(dock).toHaveClass(/mobile-settings-open/);
+ await page.locator('#learning-mode').selectOption('chant');
  await expect(page.locator('#practice-from')).toBeVisible();
  await settings.click();
  await expect(page.locator('#practice-dock-body')).toBeHidden();
@@ -222,7 +224,8 @@ test('legacy Full Chanting URL redirects to unified player on mobile',async({pag
  await expect.poll(()=>dock.evaluate(el=>Math.round(el.getBoundingClientRect().bottom))).toBe(844);
  await page.locator('#practice-dock-toggle').click();
  await expect(page.locator('#reader-mode')).toHaveValue('full');
- await expect(page.locator('#full-start')).toBeVisible();
+ await page.locator('#learning-mode').selectOption('chant');
+ await expect(page.locator('#practice-from')).toBeVisible();
  await expect(page.locator('#reader-show-iast')).toBeVisible();
  await page.locator('#practice-dock-toggle').click();
  await expect(page.locator('#practice-dock-body')).toBeHidden();
@@ -231,14 +234,16 @@ test('legacy Full Chanting URL redirects to unified player on mobile',async({pag
 test('single learning selector switches conditional fields and uses same transport',async({page})=>{
  await page.goto('/lalita/?sloka=1');
  await expect(page.locator('#learning-mode')).toBeVisible();
+ await page.locator('#learning-mode').selectOption('chant');
  await expect(page.locator('#practice-from')).toBeVisible();
  await page.locator('#learning-mode').selectOption('names');
  await expect(page.locator('#guided-from')).toBeVisible();
  await expect(page.locator('#guided-name-repeat')).toBeVisible();
  await expect(page.locator('.guided-verse-setting')).toBeHidden();
- await expect(page.locator('#learning-mode option')).toHaveCount(5);
- await expect(page.locator('#learning-mode option[value="verse"]')).toHaveCount(0);
- await page.locator('#learning-mode').selectOption('both');
+ await expect(page.locator('#learning-mode option')).toHaveCount(3);
+ await expect(page.locator('#learning-mode option[value="full"]')).toHaveCount(0);
+ await page.locator('#learning-mode').selectOption('names');
+ await page.locator('#guided-style').selectOption('both');
  await expect(page.locator('.guided-name-setting')).toBeVisible();
  await expect(page.locator('.guided-verse-setting')).toBeVisible();
  await page.locator('#learning-mode').selectOption('chant');
@@ -312,7 +317,8 @@ test('Practice dropdowns align as two equal columns on desktop and phone',async(
   await page.setViewportSize({width,height:844});
   await page.goto('/lalita/?sloka=1');
   if(width<620)await page.locator('#practice-dock-toggle').click();
-  await expect(page.locator('#practice-from')).toBeVisible({timeout:20000});
+  await page.locator('#learning-mode').selectOption('chant');
+ await expect(page.locator('#practice-from')).toBeVisible({timeout:20000});
   const dimensions=await page.locator('#practice-player .practice-fields label').evaluateAll(labels=>labels.map(el=>({x:el.getBoundingClientRect().x,y:el.getBoundingClientRect().y,w:el.getBoundingClientRect().width,selectW:el.querySelector('select').getBoundingClientRect().width})));
   expect(Math.abs(dimensions[0].y-dimensions[1].y)).toBeLessThan(3);
   expect(Math.abs(dimensions[0].w-dimensions[1].w)).toBeLessThan(3);
@@ -335,7 +341,8 @@ test('All learning-mode selects are equal height and compact on desktop and phon
   await page.setViewportSize({width,height:844});
   await page.goto('/lalita/?sloka=1');
   if(width<620)await page.locator('#practice-dock-toggle').click();
-  await page.locator('#learning-mode').selectOption('both');
+  await page.locator('#learning-mode').selectOption('names');
+ await page.locator('#guided-style').selectOption('both');
   const selectIds=['learning-mode','guided-from','guided-to','guided-name-repeat','guided-verse-repeat','guided-gap'];
   const heights=await page.evaluate(ids=>ids.map(id=>document.getElementById(id).getBoundingClientRect().height),selectIds);
   expect(Math.max(...heights)-Math.min(...heights)).toBeLessThanOrEqual(1);
@@ -549,8 +556,8 @@ test('shared chanting audio crosses verse 10 to 11 and completes the selected ra
  });
  await page.goto('/lalita/?sloka=10');
  await expect(page.locator('#verse-10')).toBeVisible({timeout:20000});
- await page.locator('#practice-from').selectOption('10');
- await page.locator('#practice-to').selectOption('11');
+ await page.locator('#practice-from').selectOption('s-10');
+ await page.locator('#practice-to').selectOption('s-11');
  await page.locator('#practice-repeat').selectOption('1');
  await page.locator('#dock-play').click();
  await expect(page.locator('#verse-11')).toBeVisible({timeout:6000});
@@ -571,7 +578,8 @@ test('single practice selector controls study and full chanting and shared displ
  await expect(page.locator('#verse-1 .verse-combined-meaning .overall-reading')).toBeVisible();
  await page.locator('#reader-show-deeper').check();
  await expect(page.locator('#verse-1 .verse-combined-meaning .deeper-reading')).toBeVisible();
- await page.locator('#learning-mode').selectOption('full');
+ await page.locator('#learning-mode').selectOption('chant');
+ await page.locator('#chant-style').selectOption('continuous');
  await expect(page.locator('#verse-183.full-verse-card')).toHaveCount(1);
  await expect(page.locator('#reader-show-iast')).toBeChecked();
  await page.locator('#reader-show-iast').uncheck();
