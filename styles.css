@@ -2392,3 +2392,7 @@ header p{color:#845c4b;font-size:18px}
  .reader-page .verse-swipe-navigation .verse-step{flex-basis:27px!important;width:27px!important;height:35px!important}
  .reader-page .verse-swipe-navigation .verse-rail button{flex-basis:37px!important;font-size:13px!important;min-height:35px!important}
 }
+
+/* Readers may manually open the original combined meaning disclosure even when quick visibility filters are off. */
+.reader-page:not(.full-view) .verse-combined-meaning[open] .overall-reading,
+.reader-page:not(.full-view) .verse-combined-meaning[open] .deeper-reading{display:block!important}
