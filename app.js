@@ -1014,7 +1014,7 @@ function initNameAudio(){
    nameAudioIndex=0;
    nameAudioPlayer.src=nameAudioQueue[0];
    nameAudioPlayer.load();
-   nameAudioPlayer.playbackRate=0.9;
+   nameAudioPlayer.playbackRate=selectedChantSpeed();
    const started=nameAudioPlayer.play();
    if(started&&started.catch)started.catch(stopNameAudio);
    button.classList.add("playing");
@@ -1816,6 +1816,9 @@ function loadAudio(){
   }catch(_){/* Keep the placeholder if the verse recording itself is unavailable. */}
  });
 }
+let chantSpeed=0.9;
+function selectedChantSpeed(){return chantSpeed;}
+function setupChantSpeed(){const slider=$("#chant-speed"),output=$("#chant-speed-value");if(!slider||!output)return;const update=()=>{chantSpeed=Number(slider.value);output.textContent=chantSpeed.toFixed(2)+"×";output.value=output.textContent;if(nameAudioPlayer)nameAudioPlayer.playbackRate=chantSpeed;};slider.addEventListener("input",update);update();}
 const practice={active:false,paused:false,current:1,end:1,reps:1,played:0,token:0,dhyana:false,fullSequence:false};
 function syncChantHereButtons(){
  document.querySelectorAll(".dock-verse-shortcut").forEach(button=>{
@@ -1906,19 +1909,21 @@ async function scheduleRange(token){
    try{buffer=await loadRangeBuffer(item.url,ctx)}catch(e){if(token===practice.token)practiceStop("Audio unavailable for śloka "+item.n);return;}
    if(token!==practice.token||!practice.active||practice.paused)return;
    // Crossfade only a short tail to avoid a perceptible media-element reload.
-   const fade=Math.min(.045,buffer.duration/8);
+   const rate=selectedChantSpeed();
+   const duration=buffer.duration/rate;
+   const fade=Math.min(.045,duration/8);
    const previous=rangeAudio.nodes[rangeAudio.nodes.length-1];
    const overlap=previous?fade:0;
    const start=Math.max(rangeAudio.scheduledUntil,ctx.currentTime+.06)-overlap;
    const source=ctx.createBufferSource(),gain=ctx.createGain();
-   source.buffer=buffer;source.connect(gain);gain.connect(ctx.destination);
+   source.buffer=buffer;source.playbackRate.value=selectedChantSpeed();source.connect(gain);gain.connect(ctx.destination);
    gain.gain.setValueAtTime(overlap?0:1,start);
    if(overlap)gain.gain.linearRampToValueAtTime(1,start+overlap);
-   gain.gain.setValueAtTime(1,Math.max(start+overlap,start+buffer.duration-fade));
-   gain.gain.linearRampToValueAtTime(0,start+buffer.duration);
+   gain.gain.setValueAtTime(1,Math.max(start+overlap,start+duration-fade));
+   gain.gain.linearRampToValueAtTime(0,start+duration);
    source.start(start);
-   rangeAudio.nodes.push({source,start,end:start+buffer.duration,n:item.n,pass:item.pass,dh:item.dh});
-   rangeAudio.scheduledUntil=start+buffer.duration;
+   rangeAudio.nodes.push({source,start,end:start+duration,n:item.n,pass:item.pass,dh:item.dh});
+   rangeAudio.scheduledUntil=start+duration;
    rangeAudio.cursor++;
    // Predecode the next two recordings before a boundary is reached.
    rangeAudio.queue.slice(rangeAudio.cursor,rangeAudio.cursor+2).forEach(next=>loadRangeBuffer(next.url,ctx).catch(()=>{}));
@@ -1987,7 +1992,7 @@ function initPractice(){
   const fromValue=a.value,toValue=b.value,from=Number(fromValue.slice(2)),to=Number(toValue.slice(2));
   const isDhyana=fromValue.startsWith("d-"),toDhyana=toValue.startsWith("d-");
   if(!from||!to||rank(fromValue)>rank(toValue)){practiceStatus("Select a valid range.");return;}
-  const continuous=$("#chant-style").value==="continuous";
+  const continuous=$("#learning-mode").value==="continuous";
   if($("#learning-mode").value==="study"){practiceBegin(selectedVerse,selectedVerse,1,view==="dhyana");return;}
   practiceBegin(from,to,continuous?1:Number($("#practice-repeat").value),isDhyana,isDhyana&&!toDhyana);
  });
@@ -2085,13 +2090,13 @@ async function guidedPlayClip(){
   let time=ctx.currentTime+.06,last=null;
   for(let pass=0;pass<unit.repeats;pass++){
    for(let j=0;j<buffers.length;j++){
-    const buffer=buffers[j],duration=buffer.duration;
+    const buffer=buffers[j],duration=buffer.duration/selectedChantSpeed();
     const isFirst=pass===0&&j===0;
     const isLast=pass===unit.repeats-1&&j===buffers.length-1;
     const overlap=isFirst?0:Math.min(fade,duration/4);
     time-=overlap;
     const node=ctx.createBufferSource(),gain=ctx.createGain();
-    node.buffer=buffer;node.connect(gain);gain.connect(ctx.destination);
+    node.buffer=buffer;node.playbackRate.value=selectedChantSpeed();node.connect(gain);gain.connect(ctx.destination);
     gain.gain.setValueAtTime(overlap?0:1,time);
     if(overlap)gain.gain.linearRampToValueAtTime(1,time+overlap);
     if(!isLast)gain.gain.setValueAtTime(1,Math.max(time+overlap,time+duration-fade));
@@ -2217,7 +2222,7 @@ async function init(){
  const finalOverall=await fetchJSON("lalita/deeper-overall-104-183.json");
  finalOverall.verses.forEach(e=>{verseData[e.verse_number]={...(verseData[e.verse_number]||{}),traditional_interpretation:{en:e.en,kn:e.kn}};});
  if(index<111)throw new Error("At least the first 111 names are expected; found "+index);
- initPractice();guidedInit();syncDock();readerMode=new URLSearchParams(location.search).get("mode")==="full"?"full":"study";$("#reader-mode").value=readerMode;$("#learning-mode").value=readerMode==="full"?"chant":"study";$("#chant-style").value=readerMode==="full"?"continuous":"repeat";
+ initPractice();guidedInit();syncDock();readerMode=new URLSearchParams(location.search).get("mode")==="full"?"full":"study";$("#reader-mode").value=readerMode;$("#learning-mode").value=readerMode==="full"?"continuous":"study";
 const initial=loadInitialLocation();if(readerMode==="full"&&initial)$("#practice-from").value=(view==="dhyana"?"d-":"s-")+selectedVerse;render();if(initial)scrollToElement(initial);
  }catch(err){
  const n=$("#result-note");if(n)n.textContent="Unable to load study content: "+err.message;
@@ -2238,11 +2243,11 @@ $("#verse-previous").onclick=()=>moveVerse(-1);
 $("#verse-next").onclick=()=>moveVerse(1);
 $("#rail-dhyana").onclick=()=>chooseVerse("d-1");$("#rail-slokas").onclick=()=>chooseVerse("s-1");
 $("#verse-rail").onclick=e=>{const b=e.target.closest("[data-rail]");if(b)chooseVerse(b.dataset.rail);};
-$("#reader-mode").onchange=e=>{$("#learning-mode").value=e.target.value==="full"?"chant":"study";$("#chant-style").value=e.target.value==="full"?"continuous":"repeat";$("#learning-mode").dispatchEvent(new Event("change"));};
+$("#reader-mode").onchange=e=>{$("#learning-mode").value=e.target.value==="full"?"continuous":"study";$("#learning-mode").dispatchEvent(new Event("change"));};
 for(const id of ["reader-show-iast","reader-show-meaning","reader-show-deeper"])$("#"+id).onchange=applyReaderOptions;
 $("#reader-print").onclick=()=>window.print();
 $(".lalita-view-switcher").addEventListener("click",e=>{const a=e.target.closest("[data-reader-mode]");if(a){e.preventDefault();setReaderMode(a.dataset.readerMode);}});
-for(const id of ["verse-cards","dhyana-cards"])$("#"+id).addEventListener("click",e=>{const b=e.target.closest("[data-full-start]");if(!b)return;const n=Number(b.dataset.fullStart.slice(2));$("#learning-mode").value="chant";$("#chant-style").value="continuous";$("#learning-mode").dispatchEvent(new Event("change"));$("#practice-from").value=(b.dataset.fullStart[0]==="d"?"d-":"s-")+n;$("#practice-to").value="s-"+verses.length;$("#chant-style").value="continuous";if(b.dataset.fullStart[0]==="d")practiceBegin(n,verses.length,1,true,true);else practiceBegin(n,verses.length,1,false,true);});
+for(const id of ["verse-cards","dhyana-cards"])$("#"+id).addEventListener("click",e=>{const b=e.target.closest("[data-full-start]");if(!b)return;const n=Number(b.dataset.fullStart.slice(2));$("#learning-mode").value="continuous";$("#learning-mode").dispatchEvent(new Event("change"));$("#practice-from").value=(b.dataset.fullStart[0]==="d"?"d-":"s-")+n;$("#practice-to").value="s-"+verses.length;if(b.dataset.fullStart[0]==="d")practiceBegin(n,verses.length,1,true,true);else practiceBegin(n,verses.length,1,false,true);});
 window.addEventListener("scroll",queueVerseScrollUpdate,{passive:true});
 window.addEventListener("resize",()=>{
  requestAnimationFrame(fitVerseLines);
@@ -2307,7 +2312,7 @@ function initDock(){
   event.preventDefault();event.stopImmediatePropagation();
   // Keep the mobile mini-player compact while chanting text is being followed.
   if(!window.matchMedia("(max-width: 620px)").matches)expand(true);
-  if(shortcut.dataset.dockDhyana==="1"){const n=Number(shortcut.dataset.dockVerse);document.getElementById("learning-mode").value="chant";document.getElementById("learning-mode").dispatchEvent(new Event("change"));practiceBegin(n,n,1,true);return}
+  if(shortcut.dataset.dockDhyana==="1"){const n=Number(shortcut.dataset.dockVerse);document.getElementById("learning-mode").value="repeat";document.getElementById("learning-mode").dispatchEvent(new Event("change"));practiceBegin(n,n,1,true);return}
   const n=Number(shortcut.dataset.dockVerse);document.getElementById("learning-mode").value="chant";document.getElementById("learning-mode").dispatchEvent(new Event("change"));
   document.getElementById("practice-from").value="s-"+n;document.getElementById("practice-to").value="s-"+n;
   if(practice.active)practiceStop("Starting selected śloka");
@@ -2319,8 +2324,8 @@ function initLearningMode(){
  const selector=$("#learning-mode"),host=document.querySelector(".practice-dock .chanting-panels");
  if(!selector||!host)return;
  function choose(){
-  const mode=selector.value,isChant=mode==="chant"||mode==="study";
-  const targetMode=mode==="chant"&&$("#chant-style").value==="continuous"?"full":"study";
+  const mode=selector.value,isChant=mode!=="names";
+  const targetMode=mode==="continuous"?"full":"study";
   if(targetMode!==readerMode)setReaderMode(targetMode);
   const old=host.dataset.mode;
   if(old!==(isChant?"chant":"guided")){
@@ -2329,20 +2334,21 @@ function initLearningMode(){
   }else if(!isChant&&guided.active){guidedStop("Stopped");}
   host.dataset.mode=isChant?"chant":"guided";
   document.querySelectorAll(".guided-verse-setting").forEach(el=>el.hidden=$("#guided-style").value==="names");
-  $(".chant-style-field").hidden=mode!=="chant";
+  $(".chant-style-field").hidden=true;
+  $(".practice-repeat-field").hidden=mode!=="repeat";
   $(".guided-style-field").hidden=mode!=="names";
   $(".practice-fields").hidden=mode==="study";
   $(".guided-style-field").hidden=mode!=="names";
-  $("#practice-mode-help").textContent=mode==="study"?"Read the selected verse, explore divine names and meanings; Play chants just that verse.":mode==="chant"?"Choose a Dhyāna or śloka range. Repeat for practice, or chant continuously.":"Listen to divine names individually, with optional repetitions and pauses.";
+  $("#practice-mode-help").textContent=mode==="study"?"Read the selected verse and its meanings. Play chants the selected verse.":mode==="repeat"?"Choose a range and how many times to repeat each śloka.":mode==="continuous"?"Chant a selected range continuously, without repeats.":"Listen to divine names individually, with optional repetitions and pauses.";
   $("#practice-play").disabled=false;
   syncDock();
  }
  selector.addEventListener("change",choose);
- $("#chant-style").addEventListener("change",choose);
- $("#guided-style").addEventListener("change",choose);
+  $("#guided-style").addEventListener("change",choose);
  choose();
 }
 initLearningMode();
+setupChantSpeed();
 initDock();
 init();
 })();
