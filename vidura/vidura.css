@@ -192,3 +192,17 @@
 .vidura-page .vidura-inline-chant .vidura-part-controls{justify-content:center}
 .vidura-page .vidura-inline-chant .vidura-part-controls button{min-width:66px}
 @media(max-width:620px){.vidura-page .vidura-verse-index{gap:5px}.vidura-page .vidura-verse-index a{min-width:35px;height:34px;padding:5px}}
+
+
+/* Compact title selector and in-place active chanting highlight. */
+.vidura-page .vidura-index-heading{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:14px 0 16px}
+.vidura-page .vidura-index-heading label{font:700 13px system-ui;color:#315944}
+.vidura-page .vidura-index-heading select{flex:1 1 230px;min-width:0;max-width:480px;min-height:40px;background:#fffefa;color:#315944;border:1px solid #b8cfbd;border-radius:9px;padding:8px 12px;font:600 13px system-ui}
+.vidura-page .vidura-player-verse{display:grid;grid-column:1/-1;gap:3px;padding:7px 9px;background:#edf4eb;border:1px solid #d5e4d5;border-radius:8px}
+.vidura-page .vidura-player-verse span{font:600 11px system-ui;color:#6d806e}
+.vidura-page .vidura-player-verse strong{font:700 12px/1.4 system-ui;color:#315944}
+.vidura-page .vidura-card.chanting-active{border-color:#4b8360;box-shadow:inset 4px 0 #4b8360,0 0 0 2px #d9ebda;background:#fcfffb}
+.vidura-page .vidura-card.chanting-active .vidura-card-head h2{color:#22643d}
+.vidura-page .vidura-card.chanting-active .vidura-script-panel{background:#f1f9ee;border-radius:8px;padding:8px}
+.vidura-page .vidura-card.chanting-active .vidura-inline-chant{border-color:#8db89b}
+@media(max-width:620px){.vidura-page .vidura-index-heading{align-items:stretch;flex-direction:column;gap:5px}.vidura-page .vidura-index-heading select{width:100%;max-width:none;flex:0 0 auto}}
