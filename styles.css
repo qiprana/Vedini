@@ -2355,3 +2355,12 @@ header p{color:#845c4b;font-size:18px}
  .reader-page .full-verse-card .full-script{font-size:clamp(22px,6.1vw,25px)!important}
  .reader-page .full-verse-card .full-iast{font-size:clamp(18px,4.7vw,20px)!important}
 }
+
+/* Constrain horizontal swipe rails without adding horizontal page scrolling. */
+.reader-page .study-main-content{overflow-x:clip;min-width:0}
+.reader-page .study-workspace{min-width:0;max-width:100%}
+.reader-page .verse-swipe-navigation{overflow:hidden;max-width:100%;isolation:isolate}
+.reader-page .verse-swipe-strip{overflow:hidden;max-width:100%}
+.reader-page .verse-rail{overflow-x:auto;max-width:100%;box-sizing:border-box;contain:inline-size}
+.reader-page .site-tabs{max-width:100%;min-width:0;overflow-x:auto}
+@media(max-width:620px){.reader-page{max-width:100%;overflow-x:clip}}
