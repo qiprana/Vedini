@@ -158,7 +158,7 @@ test('Single-verse layout retains Sanskrit/IAST legibility and names',async({pag
  await expect(page.locator('#verse-31')).toHaveCount(0);
  await expect(page.locator('#verse-30 .verse-namavali')).toHaveCount(0);
  const size=sel=>page.locator(sel).first().evaluate(el=>getComputedStyle(el).fontSize);
- expect(Math.abs(parseFloat(await size('#verse-30 .verse-script .line-content'))-parseFloat(await size('#verse-30 .verse-iast .line-content')))).toBeLessThanOrEqual(1);
+ expect(parseFloat(await size('#verse-30 .verse-script .line-content'))).toBeGreaterThan(parseFloat(await size('#verse-30 .verse-iast .line-content')));
 });
 
 test('overall and deeper śloka content appears in one meaning toggle in both languages',async({page})=>{
@@ -207,24 +207,25 @@ test('Mobile Study reader has accessible bottom player and expandable settings w
  await expect(page.locator('#practice-dock-body')).toBeHidden();
  await page.evaluate(()=>window.scrollTo(0,document.body.scrollHeight/2));
  await expect.poll(()=>page.locator('.study-main-content>.lalita-reader-toolbar').evaluate(el=>Math.round(el.getBoundingClientRect().top))).toBe(0);
- await expect(page.locator('.lalita-view-switcher a')).toHaveCount(3);
+ await expect(page.locator('.lalita-view-switcher a')).toHaveCount(2);
+ await expect(page.locator('#reader-mode')).toHaveCount(1);
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+3)).toBe(true);
 });
-test('Full Chanting bottom player keeps playback transport visible on mobile',async({page})=>{
+test('legacy Full Chanting URL redirects to unified player on mobile',async({page})=>{
  await page.setViewportSize({width:390,height:844});
- await page.goto('/lalita/chant.html');
- await expect(page.locator('#fc-range-tabs button').first()).toBeVisible({timeout:30000});
- const dock=page.locator('#practice-dock');
- await expect(page.locator('#dock-play')).toBeEnabled();
+ await page.goto('/lalita/chant.html?sloka=11');
+ await expect(page).toHaveURL(/lalita\/index\.html\?sloka=11&mode=full/);
+ await expect(page.locator('#verse-183.full-verse-card')).toHaveCount(1,{timeout:30000});
+ await expect(page.locator('#dock-play')).toBeVisible();
  await expect(page.locator('#practice-dock-body')).toBeHidden();
+ const dock=page.locator('#practice-dock');
  await expect.poll(()=>dock.evaluate(el=>Math.round(el.getBoundingClientRect().bottom))).toBe(844);
  await page.locator('#practice-dock-toggle').click();
- await expect(page.locator('#fc-voice')).toBeVisible();
- await expect(page.locator('#fc-jump')).toBeVisible();
+ await expect(page.locator('#reader-mode')).toHaveValue('full');
+ await expect(page.locator('#full-start')).toBeVisible();
+ await expect(page.locator('#reader-show-iast')).toBeVisible();
  await page.locator('#practice-dock-toggle').click();
  await expect(page.locator('#practice-dock-body')).toBeHidden();
- await page.evaluate(()=>window.scrollTo(0,document.body.scrollHeight/2));
- await expect.poll(()=>page.locator('.fc-main-content>.lalita-reader-toolbar').evaluate(el=>Math.round(el.getBoundingClientRect().top))).toBe(0);
 });
 
 test('single learning selector switches conditional fields and uses same transport',async({page})=>{
@@ -349,7 +350,7 @@ test('IAST reading text is contained and sized consistently',async({page})=>{
  await expect(verse).toBeVisible({timeout:20000});
  const styles=await verse.evaluate(el=>({size:parseFloat(getComputedStyle(el).fontSize),height:parseFloat(getComputedStyle(el).lineHeight),width:el.clientWidth,scrollWidth:el.scrollWidth}));
  expect(styles.size).toBeGreaterThanOrEqual(17);
- expect(styles.size).toBeLessThanOrEqual(19);
+ expect(styles.size).toBeLessThanOrEqual(23);
  expect(styles.scrollWidth).toBeLessThanOrEqual(styles.width+3);
 });
 
@@ -455,22 +456,18 @@ test('Soft navigation tabs remain legible and within the viewport on mobile',asy
  }
 });
 
-test('compact selector stays centered, no duplicate visible heading, and Next navigates when idle',async({page})=>{
+test('swipeable rail is visible and Next navigates when idle',async({page})=>{
  for(const width of [390,1280]){
   await page.setViewportSize({width,height:844});
   await page.goto('/lalita/?sloka=10');
   await expect(page.locator('#verse-10')).toBeVisible({timeout:20000});
   await expect(page.locator('#main-heading')).toHaveClass(/visually-hidden/);
   await expect(page.locator('#dock-next')).toBeEnabled();
-  const center=await page.evaluate(()=>{
-   const nav=document.querySelector('#sticky-verse-navigation').getBoundingClientRect();
-   const pick=document.querySelector('#verse-selector').getBoundingClientRect();
-   return Math.abs((pick.left+pick.right)/2-(nav.left+nav.right)/2);
-  });
-  expect(center).toBeLessThan(8);
+  await expect(page.locator('#verse-rail [data-rail="s-10"]')).toHaveClass(/current/);
   await page.locator('#dock-next').click();
   await expect(page.locator('#verse-11')).toBeVisible();
   await expect(page.locator('#verse-selector')).toHaveValue('s-11');
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+3)).toBe(true);
  }
 });
 test('search result opens verse and Back to results restores query and listing',async({page})=>{
@@ -485,4 +482,78 @@ test('search result opens verse and Back to results restores query and listing',
  await expect(page.locator('#search')).toHaveValue('Mother');
  await expect(page.locator('#search-result-list .search-result')).toHaveCount(count);
  await expect(page.locator('#return-to-results')).toBeHidden();
+});
+
+test('unified full mode shows all verses and Kannada śloka 11 plus late ślokas',async({page})=>{
+ await page.goto('/lalita/index.html?mode=full&sloka=11');
+ await expect(page.locator('#verse-183.full-verse-card')).toHaveCount(1,{timeout:30000});
+ await expect(page.locator('#verse-11.full-verse-card')).toHaveCount(1);
+ await page.locator('#kn').click();
+ const v11=page.locator('#verse-11 .full-script');
+ await expect(v11).toHaveAttribute('lang','kn');
+ await expect(v11).toContainText('ನಿಜ-ಸಲ್ಲಾಪ');
+ const v178=page.locator('#verse-178 .full-script');
+ await expect(v178).toHaveAttribute('lang','kn');
+ await expect(v178).toContainText('ಸುವಾಸಿನ್ಯರ್ಚನ');
+ await expect(page.locator('#verse-11 .full-iast')).toBeVisible();
+ await page.locator('#reader-show-iast').uncheck();
+ await expect(page.locator('#verse-11 .full-iast')).toBeHidden();
+ await page.locator('#reader-show-meaning').check();
+ await expect(page.locator('#verse-11 .full-simple')).toBeVisible();
+ await page.locator('#reader-show-meaning').uncheck();
+ await expect(page.locator('#verse-11 .full-simple')).toBeHidden();
+ await page.locator('#reader-mode').selectOption('study');
+ await expect(page.locator('#verse-11 .name-audio-card').first()).toBeVisible();
+ await expect(page.locator('#verse-183')).toHaveCount(0);
+});
+test('full chant rail scrolls without switching pages and has start here buttons',async({page})=>{
+ await page.goto('/lalita/index.html?mode=full');
+ await expect(page.locator('#verse-183.full-verse-card')).toHaveCount(1,{timeout:30000});
+ await page.locator('#verse-11 [data-full-start="s-11"]').click();
+ await expect(page.locator('#practice-stop')).toBeEnabled();
+ await page.locator('#dock-stop').click();
+ await page.locator('#verse-rail [data-rail="s-14"]').click();
+ await expect(page.locator('#verse-14.full-verse-card')).toHaveCount(1);
+ await expect(page.locator('#verse-183.full-verse-card')).toHaveCount(1);
+});
+
+test('unified player has progress and one Play/Pause control in both modes',async({page})=>{
+ await page.goto('/lalita/?mode=full');
+ await expect(page.locator('#verse-183.full-verse-card')).toHaveCount(1,{timeout:30000});
+ await expect(page.locator('#dock-track-title')).toBeVisible();
+ await expect(page.locator('#dock-progressbar')).toHaveAttribute('role','progressbar');
+ await expect(page.locator('#dock-play')).toBeEnabled();
+ await expect(page.locator('#dock-pause')).toBeHidden();
+ await page.locator('#reader-mode').selectOption('study');
+ await expect(page.locator('#verse-183')).toHaveCount(0);
+ await expect(page.locator('#dock-play')).toBeEnabled();
+});
+
+test('shared chanting audio crosses verse 10 to 11 and completes the selected range',async({page})=>{
+ await page.addInitScript(()=>{
+  const realFetch=window.fetch.bind(window);
+  window.fetch=(url,opts)=>String(url).includes('/audio/lalita/')&&String(url).endsWith('.mp3')
+    ?Promise.resolve({ok:true,arrayBuffer:()=>Promise.resolve(new ArrayBuffer(16))}):realFetch(url,opts);
+  class Source{connect(){return this}disconnect(){}start(){}stop(){}}
+  class Context{
+   constructor(){this.started=performance.now();this.state='running';this.destination={};}
+   get currentTime(){return (performance.now()-this.started)/1000;}
+   decodeAudioData(){return Promise.resolve({duration:.24})}
+   createBufferSource(){return new Source()}
+   createGain(){return {gain:{setValueAtTime(){},linearRampToValueAtTime(){}},connect(){return this},disconnect(){}}}
+   resume(){this.state='running';return Promise.resolve()}
+   suspend(){this.state='suspended';return Promise.resolve()}
+   close(){this.state='closed';return Promise.resolve()}
+  }
+  window.AudioContext=Context;window.webkitAudioContext=Context;
+ });
+ await page.goto('/lalita/?sloka=10');
+ await expect(page.locator('#verse-10')).toBeVisible({timeout:20000});
+ await page.locator('#practice-from').selectOption('10');
+ await page.locator('#practice-to').selectOption('11');
+ await page.locator('#practice-repeat').selectOption('1');
+ await page.locator('#dock-play').click();
+ await expect(page.locator('#verse-11')).toBeVisible({timeout:6000});
+ await expect(page.locator('#practice-status')).toContainText('Completed selected range',{timeout:6000});
+ await expect(page.locator('#dock-play')).toBeEnabled();
 });

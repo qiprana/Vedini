@@ -2221,3 +2221,146 @@ header p{color:#845c4b;font-size:18px}
  .reader-page .lalita-search-actions{flex:1 1 100%;width:100%}
  .reader-page .lalita-search-actions .return-to-results{padding:7px 9px;font-size:12px}
 }
+
+/* Unified Lalitā reading: one source, swipeable verse index, two detail levels. */
+.reader-page .verse-swipe-navigation{display:block!important;padding:9px 12px!important}
+.reader-page .verse-swipe-title{display:flex;align-items:center;justify-content:space-between;gap:12px;font:600 13px system-ui,sans-serif;color:#4d6655;margin-bottom:5px}
+.reader-page .verse-swipe-title strong{font-size:16px;color:#2f503d}
+.reader-page .verse-swipe-title span{font-size:11px;font-weight:400}
+.reader-page .verse-swipe-strip{display:flex;align-items:center;gap:6px}
+.reader-page .verse-rail{display:flex;align-items:center;gap:7px;overflow-x:auto;scroll-snap-type:x proximity;scrollbar-width:thin;flex:1;min-width:0;padding:5px 2px}
+.reader-page .verse-rail button{flex:0 0 48px;min-height:38px;background:transparent;color:#375745;border:1px solid transparent;border-radius:8px;font:600 15px system-ui,sans-serif;cursor:pointer;scroll-snap-align:center}
+.reader-page .verse-rail button.current{background:#edf5ec;border-color:#a6c3a9;box-shadow:0 0 0 1px #b6ceba;color:#234b35;font-weight:750}
+.reader-page .verse-swipe-navigation .verse-step{flex:0 0 34px!important;width:34px!important;height:38px!important}
+.reader-page .reader-display-controls{display:grid;gap:8px;padding:8px 12px;font:600 13px/1.5 system-ui,sans-serif;color:#355840}
+.reader-page .reader-display-controls label{display:flex;align-items:center;gap:7px}
+.reader-page .reader-display-controls input{accent-color:#426b52}
+.reader-page .reader-print{margin:6px 12px;padding:8px 12px;border:1px solid #b8cdbb;border-radius:8px;color:#355b45;background:#fff;cursor:pointer}
+.reader-page .full-verse-card{background:#fff;border:1px solid #d3dfd2;border-radius:13px;padding:16px clamp(12px,2vw,24px);margin:12px 0;scroll-margin-top:var(--lalita-reading-offset,155px)}
+.reader-page .full-verse-card.selected-verse{border-color:#709a7a;background:#f8fbf7}
+.reader-page .full-verse-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px;color:#845e49;font:750 14px system-ui,sans-serif}
+.reader-page .full-verse-head button{border:1px solid #aecbb3;border-radius:8px;background:#f8fbf6;color:#315e44;padding:7px 11px;white-space:nowrap;font:650 13px system-ui,sans-serif;cursor:pointer}
+.reader-page .full-script{font:500 clamp(19px,2.2vw,25px)/1.9 "Noto Serif Devanagari","Kohinoor Devanagari",serif;color:#294434;overflow-wrap:anywhere}
+.reader-page .full-script[lang=kn]{font-family:"Noto Sans Kannada","Noto Serif Kannada","Kannada MN",sans-serif;font-weight:650}
+.reader-page .full-iast{font:400 clamp(15px,1.5vw,18px)/1.7 Georgia,serif;color:#4e7158;margin-top:8px;overflow-wrap:anywhere}
+.reader-page .full-simple{background:#f5f8f3;border-radius:8px;padding:11px 14px;margin-top:12px;color:#385344}
+.reader-page .full-simple strong{font:650 12px system-ui,sans-serif}
+.reader-page .full-simple p,.reader-page .full-deep{font:16px/1.7 Georgia,serif}
+.reader-page .full-deep{margin-top:10px}
+.reader-page .full-deep summary{color:#365a45;font:600 14px system-ui,sans-serif}
+.reader-page.full-view.full-hide-iast .full-iast,.reader-page.full-view.full-hide-meaning .full-simple,.reader-page.full-view.full-hide-deeper .full-deep{display:none!important}
+.reader-page:not(.full-view) .reader-display-controls{opacity:.7}
+@media(max-width:620px){.reader-page .verse-swipe-navigation{margin-inline:0!important}.reader-page .verse-rail button{flex-basis:44px}.reader-page .verse-swipe-title span{font-size:10px}.reader-page .full-script{font-size:20px}.reader-page .full-verse-card{padding:13px}}
+@media print{.reader-page .verse-swipe-navigation,.reader-page .practice-dock,.reader-page .lalita-reader-toolbar{display:none!important}.reader-page .study-workspace{display:block!important}.reader-page .full-verse-card{break-inside:avoid}}
+
+/* Readable Sanskrit and natural-height śloka cards: no forced blank study column. */
+.reader-page:not(.full-view) .verse-content-grid{
+  align-items:start!important;
+}
+.reader-page:not(.full-view) .verse-reading-panel,
+.reader-page:not(.full-view) .verse-names-panel{
+  height:auto!important;min-height:0!important;align-self:start!important;
+}
+.reader-page .verse-reading-panel .verse-script.devanagari,
+.reader-page .verse-reading-panel .verse-script.kannada{
+  font-size:clamp(24px,2.35vw,29px)!important;
+  line-height:1.85!important;
+}
+.reader-page .verse-reading-panel .verse-iast{
+  font-size:clamp(18px,1.75vw,21px)!important;
+  line-height:1.73!important;
+}
+.reader-page .verse-reading-panel .verse-line .line-content,
+.reader-page .full-verse-card .verse-line .line-content{
+  display:inline!important;white-space:normal!important;
+  overflow-wrap:break-word!important;
+}
+.reader-page .verse-reading-panel .verse-line,
+.reader-page .full-verse-card .verse-line{
+  overflow-wrap:break-word;word-break:normal;
+}
+.reader-page .full-verse-card .full-script{
+  font-size:clamp(24px,2.35vw,29px)!important;
+  line-height:1.85!important;
+}
+.reader-page .full-verse-card .full-iast{
+  font-size:clamp(18px,1.8vw,21px)!important;
+  line-height:1.72!important;
+}
+.reader-page .full-verse-card .full-script .verse-line{margin:1px 0 10px}
+.reader-page .full-verse-card .full-iast .verse-line{margin:1px 0 5px}
+@media(max-width:720px){
+ .reader-page .verse-reading-panel .verse-script.devanagari,
+ .reader-page .verse-reading-panel .verse-script.kannada{font-size:24px!important;line-height:1.8!important}
+ .reader-page .verse-reading-panel .verse-iast{font-size:18px!important;line-height:1.7!important}
+ .reader-page .full-verse-card .full-script{font-size:24px!important;line-height:1.8!important}
+ .reader-page .full-verse-card .full-iast{font-size:18px!important;line-height:1.7!important}
+ .reader-page:not(.full-view) .verse-content-grid{grid-template-columns:minmax(0,1fr)!important}
+}
+
+/* Unified player Option B: a compact live transport with advanced Option C in Settings. */
+.reader-page .practice-dock .dock-live{padding:8px 11px 6px;background:#eef4ec;color:#315a45;min-width:0}
+.reader-page .practice-dock .dock-live-row{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:2px 8px;font:600 11px/1.35 system-ui,sans-serif}
+.reader-page .practice-dock .dock-live-row strong{font-size:14px;color:#264f38}
+.reader-page .practice-dock #dock-track-detail{font-size:11px;font-weight:500;color:#496650}
+.reader-page .practice-dock .dock-progressbar{height:5px;margin-top:7px;border-radius:999px;background:#d6e4d4;overflow:hidden}
+.reader-page .practice-dock #dock-progress-fill{display:block;width:0;height:100%;background:#4c7f5a;border-radius:inherit;transition:width .15s linear}
+.reader-page .practice-dock .practice-dock-transport{display:flex!important;justify-content:space-between;gap:7px!important;background:#eef4ec!important;padding:6px 10px 9px!important}
+.reader-page .practice-dock .practice-dock-transport button{flex:1 1 0!important;min-height:43px;max-width:none}
+.reader-page .practice-dock .practice-dock-transport #dock-play{flex:1.35 1 0!important;border-color:#315c47!important;background:#315c47!important;color:#fff!important}
+.reader-page .practice-dock .practice-dock-transport #dock-pause{display:none!important}
+.reader-page .practice-dock:not(.mobile-settings-open) .dock-status{padding:5px 10px}
+.reader-page .practice-dock.is-collapsed:not(.mobile-settings-open) .dock-live{padding:8px 4px 5px}
+.reader-page .practice-dock.is-collapsed:not(.mobile-settings-open) .dock-live-row{justify-content:center}
+.reader-page .practice-dock.is-collapsed:not(.mobile-settings-open) #dock-track-title{font-size:11px}
+.reader-page .practice-dock.is-collapsed:not(.mobile-settings-open) #dock-track-detail{display:none}
+.reader-page .practice-dock .full-start-field[hidden],
+.reader-page .practice-dock .practice-from-field[hidden]{display:none!important}
+.reader-page .verse-swipe-navigation .verse-type-tabs{display:flex;align-items:center;gap:7px;margin:2px 0 4px}
+.reader-page .verse-swipe-navigation .verse-type-tabs button{
+ border:1px solid #c5d6c6;border-radius:999px;background:#f9fbf6;color:#41654f;
+ padding:3px 12px;font:600 12px/1.5 system-ui,sans-serif;min-height:28px;cursor:pointer}
+.reader-page .verse-swipe-navigation .verse-type-tabs button[aria-pressed=true]{background:#dcead9;border-color:#9ab69e;color:#2f5b41}
+.reader-page .verse-swipe-navigation{max-width:100%;min-width:0;overflow:hidden}
+.reader-page .verse-swipe-strip{min-width:0;width:100%;max-width:100%;overflow:hidden}
+.reader-page .verse-rail{min-width:0!important;max-width:100%;overflow-x:auto!important;overflow-y:hidden;overscroll-behavior-x:contain}
+.reader-page .study-main-content{min-width:0!important;max-width:100%}
+.reader-page .verse-swipe-navigation .verse-rail button{touch-action:pan-x}
+.reader-page .full-verse-card{max-width:100%}
+.reader-page .full-verse-card .full-script .verse-line .line-content,
+.reader-page .full-verse-card .full-iast .verse-line .line-content{display:inline!important;white-space:normal!important;overflow-wrap:anywhere}
+.reader-page .full-verse-card .full-script .verse-line,
+.reader-page .full-verse-card .full-iast .verse-line{line-height:1.7!important}
+.reader-page .full-verse-card .full-script{max-width:100%;word-break:normal}
+.reader-page .full-verse-card .full-iast{max-width:100%;word-break:normal}
+@media(min-width:621px){
+ .reader-page .study-workspace.dock-collapsed .practice-dock .practice-dock-transport{flex-direction:column!important}
+ .reader-page .study-workspace.dock-collapsed .practice-dock .practice-dock-transport button{width:100%;min-height:39px}
+ .reader-page .study-workspace.dock-collapsed .practice-dock .dock-live-row strong{font-size:11px;text-align:center}
+ .reader-page .study-workspace.dock-collapsed .practice-dock .dock-progressbar{height:4px}
+}
+@media(max-width:620px){
+ .reader-page .practice-dock:not(.namavali-workspace .practice-dock) .practice-dock-transport{grid-template-columns:none!important;display:flex!important;padding:4px 9px!important;gap:6px!important}
+ .reader-page .practice-dock:not(.namavali-workspace .practice-dock) .practice-dock-transport button{height:42px!important;min-height:42px!important}
+ .reader-page .practice-dock.is-collapsed .dock-live{padding:4px 11px 3px}
+ .reader-page .practice-dock.is-collapsed #dock-track-title{font-size:13px!important}
+ .reader-page .practice-dock.is-collapsed #dock-track-detail{display:inline!important}
+ .reader-page .practice-dock .dock-live-row{flex-wrap:nowrap;overflow:hidden;white-space:nowrap}
+ .reader-page .practice-dock .dock-live-row strong{overflow:hidden;text-overflow:ellipsis}
+ .reader-page .practice-dock #dock-track-detail{overflow:hidden;text-overflow:ellipsis}
+ .reader-page .practice-dock .dock-progressbar{margin-top:3px;height:4px}
+ .reader-page .verse-swipe-navigation .verse-swipe-title{margin-bottom:1px}
+ .reader-page .verse-swipe-navigation .verse-type-tabs{margin-bottom:1px}
+ .reader-page .verse-swipe-navigation .verse-type-tabs button{font-size:11px;min-height:26px}
+ .reader-page .full-verse-card .full-script{font-size:clamp(22px,6.1vw,25px)!important}
+ .reader-page .full-verse-card .full-iast{font-size:clamp(18px,4.7vw,20px)!important}
+}
+
+/* Constrain horizontal swipe rails without adding horizontal page scrolling. */
+.reader-page .study-main-content{overflow-x:clip;min-width:0}
+.reader-page .study-workspace{min-width:0;max-width:100%}
+.reader-page .verse-swipe-navigation{overflow:hidden;max-width:100%;isolation:isolate}
+.reader-page .verse-swipe-strip{overflow:hidden;max-width:100%}
+.reader-page .verse-rail{overflow-x:auto;max-width:100%;box-sizing:border-box;contain:inline-size}
+.reader-page .site-tabs{max-width:100%;min-width:0;overflow-x:auto}
+@media(max-width:620px){.reader-page{max-width:100%;overflow-x:clip}}
