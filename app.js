@@ -1988,7 +1988,7 @@ function initPractice(){
   const isDhyana=fromValue.startsWith("d-"),toDhyana=toValue.startsWith("d-");
   if(!from||!to||rank(fromValue)>rank(toValue)){practiceStatus("Select a valid range.");return;}
   const continuous=$("#chant-style").value==="continuous";
-  if(readerMode==="study"){practiceBegin(selectedVerse,selectedVerse,1,view==="dhyana");return;}
+  if($("#learning-mode").value==="study"){practiceBegin(selectedVerse,selectedVerse,1,view==="dhyana");return;}
   practiceBegin(from,to,continuous?1:Number($("#practice-repeat").value),isDhyana,isDhyana&&!toDhyana);
  });
  $("#practice-pause").addEventListener("click",async()=>{
