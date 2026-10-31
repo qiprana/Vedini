@@ -2221,3 +2221,34 @@ header p{color:#845c4b;font-size:18px}
  .reader-page .lalita-search-actions{flex:1 1 100%;width:100%}
  .reader-page .lalita-search-actions .return-to-results{padding:7px 9px;font-size:12px}
 }
+
+/* Unified Lalitā reading: one source, swipeable verse index, two detail levels. */
+.reader-page .verse-swipe-navigation{display:block!important;padding:9px 12px!important}
+.reader-page .verse-swipe-title{display:flex;align-items:center;justify-content:space-between;gap:12px;font:600 13px system-ui,sans-serif;color:#4d6655;margin-bottom:5px}
+.reader-page .verse-swipe-title strong{font-size:16px;color:#2f503d}
+.reader-page .verse-swipe-title span{font-size:11px;font-weight:400}
+.reader-page .verse-swipe-strip{display:flex;align-items:center;gap:6px}
+.reader-page .verse-rail{display:flex;align-items:center;gap:7px;overflow-x:auto;scroll-snap-type:x proximity;scrollbar-width:thin;flex:1;min-width:0;padding:5px 2px}
+.reader-page .verse-rail button{flex:0 0 48px;min-height:38px;background:transparent;color:#375745;border:1px solid transparent;border-radius:8px;font:600 15px system-ui,sans-serif;cursor:pointer;scroll-snap-align:center}
+.reader-page .verse-rail button.current{background:#edf5ec;border-color:#a6c3a9;box-shadow:0 0 0 1px #b6ceba;color:#234b35;font-weight:750}
+.reader-page .verse-swipe-navigation .verse-step{flex:0 0 34px!important;width:34px!important;height:38px!important}
+.reader-page .reader-display-controls{display:grid;gap:8px;padding:8px 12px;font:600 13px/1.5 system-ui,sans-serif;color:#355840}
+.reader-page .reader-display-controls label{display:flex;align-items:center;gap:7px}
+.reader-page .reader-display-controls input{accent-color:#426b52}
+.reader-page .reader-print{margin:6px 12px;padding:8px 12px;border:1px solid #b8cdbb;border-radius:8px;color:#355b45;background:#fff;cursor:pointer}
+.reader-page .full-verse-card{background:#fff;border:1px solid #d3dfd2;border-radius:13px;padding:16px clamp(12px,2vw,24px);margin:12px 0;scroll-margin-top:var(--lalita-reading-offset,155px)}
+.reader-page .full-verse-card.selected-verse{border-color:#709a7a;background:#f8fbf7}
+.reader-page .full-verse-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px;color:#845e49;font:750 14px system-ui,sans-serif}
+.reader-page .full-verse-head button{border:1px solid #aecbb3;border-radius:8px;background:#f8fbf6;color:#315e44;padding:7px 11px;white-space:nowrap;font:650 13px system-ui,sans-serif;cursor:pointer}
+.reader-page .full-script{font:500 clamp(19px,2.2vw,25px)/1.9 "Noto Serif Devanagari","Kohinoor Devanagari",serif;color:#294434;overflow-wrap:anywhere}
+.reader-page .full-script[lang=kn]{font-family:"Noto Sans Kannada","Noto Serif Kannada","Kannada MN",sans-serif;font-weight:650}
+.reader-page .full-iast{font:400 clamp(15px,1.5vw,18px)/1.7 Georgia,serif;color:#4e7158;margin-top:8px;overflow-wrap:anywhere}
+.reader-page .full-simple{background:#f5f8f3;border-radius:8px;padding:11px 14px;margin-top:12px;color:#385344}
+.reader-page .full-simple strong{font:650 12px system-ui,sans-serif}
+.reader-page .full-simple p,.reader-page .full-deep{font:16px/1.7 Georgia,serif}
+.reader-page .full-deep{margin-top:10px}
+.reader-page .full-deep summary{color:#365a45;font:600 14px system-ui,sans-serif}
+.reader-page.full-view.full-hide-iast .full-iast,.reader-page.full-view.full-hide-meaning .full-simple,.reader-page.full-view.full-hide-deeper .full-deep{display:none!important}
+.reader-page:not(.full-view) .reader-display-controls{opacity:.7}
+@media(max-width:620px){.reader-page .verse-swipe-navigation{margin-inline:0!important}.reader-page .verse-rail button{flex-basis:44px}.reader-page .verse-swipe-title span{font-size:10px}.reader-page .full-script{font-size:20px}.reader-page .full-verse-card{padding:13px}}
+@media print{.reader-page .verse-swipe-navigation,.reader-page .practice-dock,.reader-page .lalita-reader-toolbar{display:none!important}.reader-page .study-workspace{display:block!important}.reader-page .full-verse-card{break-inside:avoid}}
