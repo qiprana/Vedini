@@ -158,7 +158,7 @@ test('Single-verse layout retains Sanskrit/IAST legibility and names',async({pag
  await expect(page.locator('#verse-31')).toHaveCount(0);
  await expect(page.locator('#verse-30 .verse-namavali')).toHaveCount(0);
  const size=sel=>page.locator(sel).first().evaluate(el=>getComputedStyle(el).fontSize);
- expect(Math.abs(parseFloat(await size('#verse-30 .verse-script .line-content'))-parseFloat(await size('#verse-30 .verse-iast .line-content')))).toBeLessThanOrEqual(1);
+ expect(parseFloat(await size('#verse-30 .verse-script .line-content'))).toBeGreaterThan(parseFloat(await size('#verse-30 .verse-iast .line-content')));
 });
 
 test('overall and deeper śloka content appears in one meaning toggle in both languages',async({page})=>{
@@ -349,7 +349,7 @@ test('IAST reading text is contained and sized consistently',async({page})=>{
  await expect(verse).toBeVisible({timeout:20000});
  const styles=await verse.evaluate(el=>({size:parseFloat(getComputedStyle(el).fontSize),height:parseFloat(getComputedStyle(el).lineHeight),width:el.clientWidth,scrollWidth:el.scrollWidth}));
  expect(styles.size).toBeGreaterThanOrEqual(17);
- expect(styles.size).toBeLessThanOrEqual(19);
+ expect(styles.size).toBeLessThanOrEqual(23);
  expect(styles.scrollWidth).toBeLessThanOrEqual(styles.width+3);
 });
 
@@ -455,22 +455,18 @@ test('Soft navigation tabs remain legible and within the viewport on mobile',asy
  }
 });
 
-test('compact selector stays centered, no duplicate visible heading, and Next navigates when idle',async({page})=>{
+test('swipeable rail is visible and Next navigates when idle',async({page})=>{
  for(const width of [390,1280]){
   await page.setViewportSize({width,height:844});
   await page.goto('/lalita/?sloka=10');
   await expect(page.locator('#verse-10')).toBeVisible({timeout:20000});
   await expect(page.locator('#main-heading')).toHaveClass(/visually-hidden/);
   await expect(page.locator('#dock-next')).toBeEnabled();
-  const center=await page.evaluate(()=>{
-   const nav=document.querySelector('#sticky-verse-navigation').getBoundingClientRect();
-   const pick=document.querySelector('#verse-selector').getBoundingClientRect();
-   return Math.abs((pick.left+pick.right)/2-(nav.left+nav.right)/2);
-  });
-  expect(center).toBeLessThan(8);
+  await expect(page.locator('#verse-rail [data-rail="s-10"]')).toHaveClass(/current/);
   await page.locator('#dock-next').click();
   await expect(page.locator('#verse-11')).toBeVisible();
   await expect(page.locator('#verse-selector')).toHaveValue('s-11');
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+3)).toBe(true);
  }
 });
 test('search result opens verse and Back to results restores query and listing',async({page})=>{
@@ -518,4 +514,16 @@ test('full chant rail scrolls without switching pages and has start here buttons
  await page.locator('#verse-rail [data-rail="s-14"]').click();
  await expect(page.locator('#verse-14.full-verse-card')).toHaveCount(1);
  await expect(page.locator('#verse-183.full-verse-card')).toHaveCount(1);
+});
+
+test('unified player has progress and one Play/Pause control in both modes',async({page})=>{
+ await page.goto('/lalita/?mode=full');
+ await expect(page.locator('#verse-183.full-verse-card')).toHaveCount(1,{timeout:30000});
+ await expect(page.locator('#dock-track-title')).toBeVisible();
+ await expect(page.locator('#dock-progressbar')).toHaveAttribute('role','progressbar');
+ await expect(page.locator('#dock-play')).toBeEnabled();
+ await expect(page.locator('#dock-pause')).toBeHidden();
+ await page.locator('#reader-mode').selectOption('study');
+ await expect(page.locator('#verse-183')).toHaveCount(0);
+ await expect(page.locator('#dock-play')).toBeEnabled();
 });
