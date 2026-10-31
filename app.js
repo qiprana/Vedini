@@ -1396,10 +1396,8 @@ function applyReaderOptions(){
 }
 function setReaderMode(mode){
  readerMode=mode==="full"?"full":"study";$("#reader-mode").value=readerMode;
- $("#full-start").closest("label").hidden=readerMode!=="full";$("#practice-from").closest("label").hidden=readerMode==="full";
- if(readerMode==="full"&&!practice.active){
-  $("#practice-to").value=String(verses.length||183);$("#practice-repeat").value="1";
- }
+
+
  const url=new URL(location.href);url.searchParams.set("mode",readerMode);history.replaceState({},"",url.pathname+url.search+url.hash);
  render();
 }
@@ -1625,7 +1623,7 @@ function chooseVerse(value){
   renderGroupTabs();
   const target=document.getElementById((dh?"dhyana-":"verse-")+n);
   if(target)target.scrollIntoView({behavior:"smooth",block:"start"});
-  $("#full-start").value=value;
+  $("#practice-from").value=value;
   return;
  }
  lastSearch=null;
@@ -1934,7 +1932,7 @@ async function practiceBegin(from,to,reps,dhyanaMode=false,fullSequence=false){
  practice.token++;const token=practice.token;
  practice.active=true;practice.paused=false;practice.dhyana=dhyanaMode;
  practice.current=from;practice.end=to;practice.reps=reps;practice.played=0;practice.fullSequence=fullSequence;
- if(fullSequence)$("#full-start").value=(dhyanaMode?"d-":"s-")+from;
+
  const singer=$("#practice-voice").value;
  const queue=[];
  try{
@@ -1979,17 +1977,19 @@ function initPractice(){
  const a=$("#practice-from"),b=$("#practice-to"),audio=$("#practice-audio");
  if(!a||!b||!audio)return;
  installAudioFocus(audio);
- const options=verses.map(v=>"<option value='"+v.verse_number+"'>"+v.verse_number+"</option>").join("");
- a.innerHTML=options;b.innerHTML=options;a.value="1";b.value=String(Math.min(10,verses.length));
- $("#full-start").innerHTML=dhyana.map(v=>"<option value='d-"+v.verse_number+"'>Dhyāna "+v.verse_number+"</option>").join("")+verses.map(v=>"<option value='s-"+v.verse_number+"'>Śloka "+v.verse_number+"</option>").join("");
- function clampRange(changed){if(Number(a.value)>Number(b.value)){if(changed==="from")b.value=a.value;else a.value=b.value;}}
+ const options=dhyana.map(v=>"<option value='d-"+v.verse_number+"'>Dhyāna "+v.verse_number+"</option>").join("")+verses.map(v=>"<option value='s-"+v.verse_number+"'>Śloka "+v.verse_number+"</option>").join("");
+ a.innerHTML=options;b.innerHTML=options;a.value="s-1";b.value="s-"+Math.min(10,verses.length);
+ const rank=value=>value.startsWith("d-")?Number(value.slice(2)):4+Number(value.slice(2));
+ function clampRange(changed){if(rank(a.value)>rank(b.value)){if(changed==="from")b.value=a.value;else a.value=b.value;}}
  a.addEventListener("change",()=>clampRange("from"));
  b.addEventListener("change",()=>clampRange("to"));
  $("#practice-play").addEventListener("click",()=>{
-  const from=Number(a.value),to=Number(b.value);
-  if(!Number.isInteger(from)||!Number.isInteger(to)||from<1||to>verses.length||from>to){practiceStatus("Select a valid range.");return;}
-  if(readerMode==="full"){const start=$("#full-start").value;practiceBegin(Number(start.slice(2)),to,Number($("#practice-repeat").value),start.startsWith("d-"),true);}
-  else practiceBegin(from,to,Number($("#practice-repeat").value));
+  const fromValue=a.value,toValue=b.value,from=Number(fromValue.slice(2)),to=Number(toValue.slice(2));
+  const isDhyana=fromValue.startsWith("d-"),toDhyana=toValue.startsWith("d-");
+  if(!from||!to||rank(fromValue)>rank(toValue)){practiceStatus("Select a valid range.");return;}
+  const continuous=$("#chant-style").value==="continuous";
+  if($("#learning-mode").value==="study"){practiceBegin(selectedVerse,selectedVerse,1,view==="dhyana");return;}
+  practiceBegin(from,to,continuous?1:Number($("#practice-repeat").value),isDhyana,isDhyana&&!toDhyana);
  });
  $("#practice-pause").addEventListener("click",async()=>{
   if(!practice.active||!rangeAudio.ctx)return;
@@ -2125,7 +2125,7 @@ function guidedInit(){
   const f=+from.value,t=+to.value;
   if(f<1||t>verses.length||f>t){guidedStatus("Select a valid range");return;}
   guidedStop("");
-  const mode=$("#learning-mode").value;
+  const mode=$("#guided-style").value;
   guided.units=guidedBuildUnits(f,t,mode,+$("#guided-name-repeat").value,+$("#guided-verse-repeat").value);
   if(!guided.units.length){guidedStatus("No individually mapped MSS recordings in this range");return;}
   // Existing practice and individual players stop when the guided audio takes focus.
@@ -2217,8 +2217,8 @@ async function init(){
  const finalOverall=await fetchJSON("lalita/deeper-overall-104-183.json");
  finalOverall.verses.forEach(e=>{verseData[e.verse_number]={...(verseData[e.verse_number]||{}),traditional_interpretation:{en:e.en,kn:e.kn}};});
  if(index<111)throw new Error("At least the first 111 names are expected; found "+index);
- initPractice();guidedInit();syncDock();readerMode=new URLSearchParams(location.search).get("mode")==="full"?"full":"study";$("#reader-mode").value=readerMode;$("#learning-mode").value=readerMode==="full"?"full":"study";
- $("#full-start").closest("label").hidden=readerMode!=="full";$("#practice-from").closest("label").hidden=readerMode==="full";if(readerMode==="full"){$("#practice-to").value="183";$("#practice-repeat").value="1";}const initial=loadInitialLocation();if(readerMode==="full"&&initial)$("#full-start").value=(view==="dhyana"?"d-":"s-")+selectedVerse;render();if(initial)scrollToElement(initial);
+ initPractice();guidedInit();syncDock();readerMode=new URLSearchParams(location.search).get("mode")==="full"?"full":"study";$("#reader-mode").value=readerMode;$("#learning-mode").value=readerMode==="full"?"chant":"study";$("#chant-style").value=readerMode==="full"?"continuous":"repeat";
+const initial=loadInitialLocation();if(readerMode==="full"&&initial)$("#practice-from").value=(view==="dhyana"?"d-":"s-")+selectedVerse;render();if(initial)scrollToElement(initial);
  }catch(err){
  const n=$("#result-note");if(n)n.textContent="Unable to load study content: "+err.message;
  }
@@ -2238,11 +2238,11 @@ $("#verse-previous").onclick=()=>moveVerse(-1);
 $("#verse-next").onclick=()=>moveVerse(1);
 $("#rail-dhyana").onclick=()=>chooseVerse("d-1");$("#rail-slokas").onclick=()=>chooseVerse("s-1");
 $("#verse-rail").onclick=e=>{const b=e.target.closest("[data-rail]");if(b)chooseVerse(b.dataset.rail);};
-$("#reader-mode").onchange=e=>{setReaderMode(e.target.value);$("#learning-mode").value=e.target.value==="full"?"full":"study";$("#learning-mode").dispatchEvent(new Event("change"));};
+$("#reader-mode").onchange=e=>{$("#learning-mode").value=e.target.value==="full"?"chant":"study";$("#chant-style").value=e.target.value==="full"?"continuous":"repeat";$("#learning-mode").dispatchEvent(new Event("change"));};
 for(const id of ["reader-show-iast","reader-show-meaning","reader-show-deeper"])$("#"+id).onchange=applyReaderOptions;
 $("#reader-print").onclick=()=>window.print();
 $(".lalita-view-switcher").addEventListener("click",e=>{const a=e.target.closest("[data-reader-mode]");if(a){e.preventDefault();setReaderMode(a.dataset.readerMode);}});
-for(const id of ["verse-cards","dhyana-cards"])$("#"+id).addEventListener("click",e=>{const b=e.target.closest("[data-full-start]");if(!b)return;const n=Number(b.dataset.fullStart.slice(2));$("#learning-mode").value=readerMode==="full"?"full":"chant";$("#learning-mode").dispatchEvent(new Event("change"));if(b.dataset.fullStart[0]==="d")practiceBegin(n,verses.length,1,true,true);else practiceBegin(n,verses.length,1,false,true);});
+for(const id of ["verse-cards","dhyana-cards"])$("#"+id).addEventListener("click",e=>{const b=e.target.closest("[data-full-start]");if(!b)return;const n=Number(b.dataset.fullStart.slice(2));$("#learning-mode").value="chant";$("#chant-style").value="continuous";$("#learning-mode").dispatchEvent(new Event("change"));$("#practice-from").value=(b.dataset.fullStart[0]==="d"?"d-":"s-")+n;$("#practice-to").value="s-"+verses.length;$("#chant-style").value="continuous";if(b.dataset.fullStart[0]==="d")practiceBegin(n,verses.length,1,true,true);else practiceBegin(n,verses.length,1,false,true);});
 window.addEventListener("scroll",queueVerseScrollUpdate,{passive:true});
 window.addEventListener("resize",()=>{
  requestAnimationFrame(fitVerseLines);
@@ -2309,7 +2309,7 @@ function initDock(){
   if(!window.matchMedia("(max-width: 620px)").matches)expand(true);
   if(shortcut.dataset.dockDhyana==="1"){const n=Number(shortcut.dataset.dockVerse);document.getElementById("learning-mode").value="chant";document.getElementById("learning-mode").dispatchEvent(new Event("change"));practiceBegin(n,n,1,true);return}
   const n=Number(shortcut.dataset.dockVerse);document.getElementById("learning-mode").value="chant";document.getElementById("learning-mode").dispatchEvent(new Event("change"));
-  document.getElementById("practice-from").value=String(n);document.getElementById("practice-to").value=String(n);
+  document.getElementById("practice-from").value="s-"+n;document.getElementById("practice-to").value="s-"+n;
   if(practice.active)practiceStop("Starting selected śloka");
   document.getElementById("dock-play").click();
  },true);
@@ -2319,20 +2319,27 @@ function initLearningMode(){
  const selector=$("#learning-mode"),host=document.querySelector(".practice-dock .chanting-panels");
  if(!selector||!host)return;
  function choose(){
-  const mode=selector.value,isChant=mode==="chant"||mode==="full";
-  const targetMode=mode==="full"?"full":"study";
+  const mode=selector.value,isChant=mode==="chant"||mode==="study";
+  const targetMode=mode==="chant"&&$("#chant-style").value==="continuous"?"full":"study";
   if(targetMode!==readerMode)setReaderMode(targetMode);
   const old=host.dataset.mode;
   if(old!==(isChant?"chant":"guided")){
    if(practice.active)practiceStop("Stopped");
    if(guided.active)guidedStop("Stopped");
   }else if(!isChant&&guided.active){guidedStop("Stopped");}
-  host.dataset.mode=(mode==="study"||isChant)?"chant":"guided";
-  document.querySelectorAll(".guided-verse-setting").forEach(el=>el.hidden=mode==="names");
+  host.dataset.mode=isChant?"chant":"guided";
+  document.querySelectorAll(".guided-verse-setting").forEach(el=>el.hidden=$("#guided-style").value==="names");
+  $(".chant-style-field").hidden=mode!=="chant";
+  $(".guided-style-field").hidden=mode!=="names";
+  $(".practice-fields").hidden=mode==="study";
+  $(".guided-style-field").hidden=mode!=="names";
+  $("#practice-mode-help").textContent=mode==="study"?"Read the selected verse, explore divine names and meanings; Play chants just that verse.":mode==="chant"?"Choose a Dhyāna or śloka range. Repeat for practice, or chant continuously.":"Listen to divine names individually, with optional repetitions and pauses.";
   $("#practice-play").disabled=false;
   syncDock();
  }
  selector.addEventListener("change",choose);
+ $("#chant-style").addEventListener("change",choose);
+ $("#guided-style").addEventListener("change",choose);
  choose();
 }
 initLearningMode();
