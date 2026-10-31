@@ -82,6 +82,13 @@
             <label><input type="checkbox" id="reader-show-meaning"> Simple meaning</label>
             <label><input type="checkbox" id="reader-show-deeper"> Deeper meaning</label>
           </div>
+          <div class="chant-speed-control" aria-label="Chanting playback speed">
+            <label for="chant-speed">Chanting speed</label>
+            <div class="chant-speed-row">
+              <input id="chant-speed" type="range" min="0.70" max="1.30" step="0.05" value="0.90" aria-label="Chanting speed">
+              <output id="chant-speed-value" for="chant-speed">0.90×</output>
+            </div>
+          </div>
           <button type="button" id="reader-print" class="reader-print">Print reading</button>
           <div class="chanting-panels" data-mode="chant">
             <section id="practice-player" class="practice-player" aria-label="Śloka chanting options">
