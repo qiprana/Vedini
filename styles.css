@@ -2252,3 +2252,48 @@ header p{color:#845c4b;font-size:18px}
 .reader-page:not(.full-view) .reader-display-controls{opacity:.7}
 @media(max-width:620px){.reader-page .verse-swipe-navigation{margin-inline:0!important}.reader-page .verse-rail button{flex-basis:44px}.reader-page .verse-swipe-title span{font-size:10px}.reader-page .full-script{font-size:20px}.reader-page .full-verse-card{padding:13px}}
 @media print{.reader-page .verse-swipe-navigation,.reader-page .practice-dock,.reader-page .lalita-reader-toolbar{display:none!important}.reader-page .study-workspace{display:block!important}.reader-page .full-verse-card{break-inside:avoid}}
+
+/* Readable Sanskrit and natural-height śloka cards: no forced blank study column. */
+.reader-page:not(.full-view) .verse-content-grid{
+  align-items:start!important;
+}
+.reader-page:not(.full-view) .verse-reading-panel,
+.reader-page:not(.full-view) .verse-names-panel{
+  height:auto!important;min-height:0!important;align-self:start!important;
+}
+.reader-page .verse-reading-panel .verse-script.devanagari,
+.reader-page .verse-reading-panel .verse-script.kannada{
+  font-size:clamp(24px,2.35vw,29px)!important;
+  line-height:1.85!important;
+}
+.reader-page .verse-reading-panel .verse-iast{
+  font-size:clamp(18px,1.75vw,21px)!important;
+  line-height:1.73!important;
+}
+.reader-page .verse-reading-panel .verse-line .line-content,
+.reader-page .full-verse-card .verse-line .line-content{
+  display:inline!important;white-space:normal!important;
+  overflow-wrap:break-word!important;
+}
+.reader-page .verse-reading-panel .verse-line,
+.reader-page .full-verse-card .verse-line{
+  overflow-wrap:break-word;word-break:normal;
+}
+.reader-page .full-verse-card .full-script{
+  font-size:clamp(24px,2.35vw,29px)!important;
+  line-height:1.85!important;
+}
+.reader-page .full-verse-card .full-iast{
+  font-size:clamp(18px,1.8vw,21px)!important;
+  line-height:1.72!important;
+}
+.reader-page .full-verse-card .full-script .verse-line{margin:1px 0 10px}
+.reader-page .full-verse-card .full-iast .verse-line{margin:1px 0 5px}
+@media(max-width:720px){
+ .reader-page .verse-reading-panel .verse-script.devanagari,
+ .reader-page .verse-reading-panel .verse-script.kannada{font-size:24px!important;line-height:1.8!important}
+ .reader-page .verse-reading-panel .verse-iast{font-size:18px!important;line-height:1.7!important}
+ .reader-page .full-verse-card .full-script{font-size:24px!important;line-height:1.8!important}
+ .reader-page .full-verse-card .full-iast{font-size:18px!important;line-height:1.7!important}
+ .reader-page:not(.full-view) .verse-content-grid{grid-template-columns:minmax(0,1fr)!important}
+}
