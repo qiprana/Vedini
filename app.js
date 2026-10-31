@@ -1388,6 +1388,10 @@ function applyReaderOptions(){
  root.classList.toggle("full-hide-iast",!$("#reader-show-iast").checked);
  root.classList.toggle("full-hide-meaning",!$("#reader-show-meaning").checked);
  root.classList.toggle("full-hide-deeper",!$("#reader-show-deeper").checked);
+ root.classList.toggle("study-hide-iast",!$("#reader-show-iast").checked);
+ root.classList.toggle("study-show-meaning",$("#reader-show-meaning").checked);
+ root.classList.toggle("study-show-deeper",$("#reader-show-deeper").checked);
+ if(readerMode==="study")document.querySelectorAll(".verse-combined-meaning").forEach(el=>{el.open=$("#reader-show-meaning").checked||$("#reader-show-deeper").checked;});
  document.querySelectorAll("[data-reader-mode]").forEach(a=>{if(a.dataset.readerMode===readerMode)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current")});
 }
 function setReaderMode(mode){
@@ -1406,7 +1410,7 @@ function card(v,isDhyana){
  const iast=reading.iast||[];
  const id=(isDhyana?"dhyana-":"verse-")+number;
  const label=langText(isDhyana?"Dhyāna "+number:"Śloka "+number,isDhyana?"ಧ್ಯಾನ "+number:"ಶ್ಲೋಕ "+number);
- const left="<section class='verse-reading-panel' aria-label='"+esc(langText("Śloka and transliteration","ಶ್ಲೋಕ ಮತ್ತು ಲಿಪ್ಯಂತರ"))+"'><h3 class='panel-heading'>"+esc(langText("Śloka","ಶ್ಲೋಕ"))+"</h3><div class='reading-label'>"+esc(language==="kn"?"ಕನ್ನಡ":"देवनागरी")+"</div><div class='verse-script "+(language==="kn"?"kannada":"devanagari")+"'>"+selected.map(verseLine).join("")+"</div><div class='reading-label iast-heading'>IAST</div><div class='verse-iast'>"+iast.map(verseLine).join("")+"</div>"+"</section>";
+ const left="<section class='verse-reading-panel' aria-label='"+esc(langText("Śloka and transliteration","ಶ್ಲೋಕ ಮತ್ತು ಲಿಪ್ಯಂತರ"))+"'><div class='reading-label'>"+esc(language==="kn"?"ಕನ್ನಡ":"देवनागरी")+"</div><div class='verse-script "+(language==="kn"?"kannada":"devanagari")+"'>"+selected.map(verseLine).join("")+"</div><div class='reading-label iast-heading'>IAST</div><div class='verse-iast'>"+iast.map(verseLine).join("")+"</div>"+"</section>";
  const right="<div class='verse-names-panel'>"+(isDhyana?dhyanaPhrasePanel(v):nameSection(v))+"</div>";
  return "<article class='card vedini-study-card' id='"+id+"'><div class='card-head'><b>"+esc(label)+"</b>"+makeAudio(v,isDhyana)+"</div><div class='verse-content-grid'>"+left+right+"</div><div class='verse-meaning-panel'>"+(isDhyana?dhyanaVerseMeaning(v):mainVerseMeaning(v))+"</div><p class='meta'>"+esc(langText("Interpretation draft · Sanskrit and Kannada editorial review recommended","ವ್ಯಾಖ್ಯಾನ ಕರಡು · ಸಂಸ್ಕೃತ ಮತ್ತು ಕನ್ನಡ ಪರಿಶೀಲನೆ ಅಗತ್ಯ"))+"</p></article>";
 }
@@ -1584,6 +1588,7 @@ function render(){
   document.querySelectorAll(".card").forEach(e=>e.classList.toggle("selected-verse",e.id==="verse-"+selectedVerse));
  }
  restoreDetails(opened);
+ applyReaderOptions();
  // Every reader render replaces the names; reconnect their inline MSS playback.
  initNameAudio();
  initDhyanaPhraseAudio();
@@ -2213,7 +2218,7 @@ async function init(){
  const finalOverall=await fetchJSON("lalita/deeper-overall-104-183.json");
  finalOverall.verses.forEach(e=>{verseData[e.verse_number]={...(verseData[e.verse_number]||{}),traditional_interpretation:{en:e.en,kn:e.kn}};});
  if(index<111)throw new Error("At least the first 111 names are expected; found "+index);
- initPractice();guidedInit();syncDock();readerMode=new URLSearchParams(location.search).get("mode")==="full"?"full":"study";$("#reader-mode").value=readerMode;
+ initPractice();guidedInit();syncDock();readerMode=new URLSearchParams(location.search).get("mode")==="full"?"full":"study";$("#reader-mode").value=readerMode;$("#learning-mode").value=readerMode==="full"?"full":"study";
  $("#full-start").closest("label").hidden=readerMode!=="full";$("#practice-from").closest("label").hidden=readerMode==="full";if(readerMode==="full"){$("#practice-to").value="183";$("#practice-repeat").value="1";}const initial=loadInitialLocation();if(readerMode==="full"&&initial)$("#full-start").value=(view==="dhyana"?"d-":"s-")+selectedVerse;render();if(initial)scrollToElement(initial);
  }catch(err){
  const n=$("#result-note");if(n)n.textContent="Unable to load study content: "+err.message;
@@ -2234,7 +2239,7 @@ $("#verse-previous").onclick=()=>moveVerse(-1);
 $("#verse-next").onclick=()=>moveVerse(1);
 $("#rail-dhyana").onclick=()=>chooseVerse("d-1");$("#rail-slokas").onclick=()=>chooseVerse("s-1");
 $("#verse-rail").onclick=e=>{const b=e.target.closest("[data-rail]");if(b)chooseVerse(b.dataset.rail);};
-$("#reader-mode").onchange=e=>setReaderMode(e.target.value);
+$("#reader-mode").onchange=e=>{setReaderMode(e.target.value);$("#learning-mode").value=e.target.value==="full"?"full":"study";$("#learning-mode").dispatchEvent(new Event("change"));};
 for(const id of ["reader-show-iast","reader-show-meaning","reader-show-deeper"])$("#"+id).onchange=applyReaderOptions;
 $("#reader-print").onclick=()=>window.print();
 $(".lalita-view-switcher").addEventListener("click",e=>{const a=e.target.closest("[data-reader-mode]");if(a){e.preventDefault();setReaderMode(a.dataset.readerMode);}});
@@ -2315,15 +2320,17 @@ function initLearningMode(){
  const selector=$("#learning-mode"),host=document.querySelector(".practice-dock .chanting-panels");
  if(!selector||!host)return;
  function choose(){
-  const mode=selector.value,isChant=mode==="chant";
-  if(!isChant&&readerMode==="full")setReaderMode("study");
+  const mode=selector.value,isChant=mode==="chant"||mode==="full";
+  const targetMode=mode==="full"?"full":"study";
+  if(targetMode!==readerMode)setReaderMode(targetMode);
   const old=host.dataset.mode;
   if(old!==(isChant?"chant":"guided")){
    if(practice.active)practiceStop("Stopped");
    if(guided.active)guidedStop("Stopped");
   }else if(!isChant&&guided.active){guidedStop("Stopped");}
-  host.dataset.mode=isChant?"chant":"guided";
+  host.dataset.mode=(mode==="study"||isChant)?"chant":"guided";
   document.querySelectorAll(".guided-verse-setting").forEach(el=>el.hidden=mode==="names");
+  $("#practice-play").disabled=false;
   syncDock();
  }
  selector.addEventListener("change",choose);
