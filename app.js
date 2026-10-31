@@ -1621,6 +1621,7 @@ function chooseVerse(value){
   renderGroupTabs();
   const target=document.getElementById((dh?"dhyana-":"verse-")+n);
   if(target)target.scrollIntoView({behavior:"smooth",block:"start"});
+  $("#full-start").value=value;
   return;
  }
  lastSearch=null;
@@ -1929,6 +1930,7 @@ async function practiceBegin(from,to,reps,dhyanaMode=false,fullSequence=false){
  practice.token++;const token=practice.token;
  practice.active=true;practice.paused=false;practice.dhyana=dhyanaMode;
  practice.current=from;practice.end=to;practice.reps=reps;practice.played=0;practice.fullSequence=fullSequence;
+ if(fullSequence)$("#full-start").value=(dhyanaMode?"d-":"s-")+from;
  const singer=$("#practice-voice").value;
  const queue=[];
  try{
