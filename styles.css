@@ -2297,3 +2297,61 @@ header p{color:#845c4b;font-size:18px}
  .reader-page .full-verse-card .full-iast{font-size:18px!important;line-height:1.7!important}
  .reader-page:not(.full-view) .verse-content-grid{grid-template-columns:minmax(0,1fr)!important}
 }
+
+/* Unified player Option B: a compact live transport with advanced Option C in Settings. */
+.reader-page .practice-dock .dock-live{padding:8px 11px 6px;background:#eef4ec;color:#315a45;min-width:0}
+.reader-page .practice-dock .dock-live-row{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:2px 8px;font:600 11px/1.35 system-ui,sans-serif}
+.reader-page .practice-dock .dock-live-row strong{font-size:14px;color:#264f38}
+.reader-page .practice-dock #dock-track-detail{font-size:11px;font-weight:500;color:#496650}
+.reader-page .practice-dock .dock-progressbar{height:5px;margin-top:7px;border-radius:999px;background:#d6e4d4;overflow:hidden}
+.reader-page .practice-dock #dock-progress-fill{display:block;width:0;height:100%;background:#4c7f5a;border-radius:inherit;transition:width .15s linear}
+.reader-page .practice-dock .practice-dock-transport{display:flex!important;justify-content:space-between;gap:7px!important;background:#eef4ec!important;padding:6px 10px 9px!important}
+.reader-page .practice-dock .practice-dock-transport button{flex:1 1 0!important;min-height:43px;max-width:none}
+.reader-page .practice-dock .practice-dock-transport #dock-play{flex:1.35 1 0!important;border-color:#315c47!important;background:#315c47!important;color:#fff!important}
+.reader-page .practice-dock .practice-dock-transport #dock-pause{display:none!important}
+.reader-page .practice-dock:not(.mobile-settings-open) .dock-status{padding:5px 10px}
+.reader-page .practice-dock.is-collapsed:not(.mobile-settings-open) .dock-live{padding:8px 4px 5px}
+.reader-page .practice-dock.is-collapsed:not(.mobile-settings-open) .dock-live-row{justify-content:center}
+.reader-page .practice-dock.is-collapsed:not(.mobile-settings-open) #dock-track-title{font-size:11px}
+.reader-page .practice-dock.is-collapsed:not(.mobile-settings-open) #dock-track-detail{display:none}
+.reader-page .practice-dock .full-start-field[hidden],
+.reader-page .practice-dock .practice-from-field[hidden]{display:none!important}
+.reader-page .verse-swipe-navigation .verse-type-tabs{display:flex;align-items:center;gap:7px;margin:2px 0 4px}
+.reader-page .verse-swipe-navigation .verse-type-tabs button{
+ border:1px solid #c5d6c6;border-radius:999px;background:#f9fbf6;color:#41654f;
+ padding:3px 12px;font:600 12px/1.5 system-ui,sans-serif;min-height:28px;cursor:pointer}
+.reader-page .verse-swipe-navigation .verse-type-tabs button[aria-pressed=true]{background:#dcead9;border-color:#9ab69e;color:#2f5b41}
+.reader-page .verse-swipe-navigation{max-width:100%;min-width:0;overflow:hidden}
+.reader-page .verse-swipe-strip{min-width:0;width:100%;max-width:100%;overflow:hidden}
+.reader-page .verse-rail{min-width:0!important;max-width:100%;overflow-x:auto!important;overflow-y:hidden;overscroll-behavior-x:contain}
+.reader-page .study-main-content{min-width:0!important;max-width:100%}
+.reader-page .verse-swipe-navigation .verse-rail button{touch-action:pan-x}
+.reader-page .full-verse-card{max-width:100%}
+.reader-page .full-verse-card .full-script .verse-line .line-content,
+.reader-page .full-verse-card .full-iast .verse-line .line-content{display:inline!important;white-space:normal!important;overflow-wrap:anywhere}
+.reader-page .full-verse-card .full-script .verse-line,
+.reader-page .full-verse-card .full-iast .verse-line{line-height:1.7!important}
+.reader-page .full-verse-card .full-script{max-width:100%;word-break:normal}
+.reader-page .full-verse-card .full-iast{max-width:100%;word-break:normal}
+@media(min-width:621px){
+ .reader-page .study-workspace.dock-collapsed .practice-dock .practice-dock-transport{flex-direction:column!important}
+ .reader-page .study-workspace.dock-collapsed .practice-dock .practice-dock-transport button{width:100%;min-height:39px}
+ .reader-page .study-workspace.dock-collapsed .practice-dock .dock-live-row strong{font-size:11px;text-align:center}
+ .reader-page .study-workspace.dock-collapsed .practice-dock .dock-progressbar{height:4px}
+}
+@media(max-width:620px){
+ .reader-page .practice-dock:not(.namavali-workspace .practice-dock) .practice-dock-transport{grid-template-columns:none!important;display:flex!important;padding:4px 9px!important;gap:6px!important}
+ .reader-page .practice-dock:not(.namavali-workspace .practice-dock) .practice-dock-transport button{height:42px!important;min-height:42px!important}
+ .reader-page .practice-dock.is-collapsed .dock-live{padding:4px 11px 3px}
+ .reader-page .practice-dock.is-collapsed #dock-track-title{font-size:13px!important}
+ .reader-page .practice-dock.is-collapsed #dock-track-detail{display:inline!important}
+ .reader-page .practice-dock .dock-live-row{flex-wrap:nowrap;overflow:hidden;white-space:nowrap}
+ .reader-page .practice-dock .dock-live-row strong{overflow:hidden;text-overflow:ellipsis}
+ .reader-page .practice-dock #dock-track-detail{overflow:hidden;text-overflow:ellipsis}
+ .reader-page .practice-dock .dock-progressbar{margin-top:3px;height:4px}
+ .reader-page .verse-swipe-navigation .verse-swipe-title{margin-bottom:1px}
+ .reader-page .verse-swipe-navigation .verse-type-tabs{margin-bottom:1px}
+ .reader-page .verse-swipe-navigation .verse-type-tabs button{font-size:11px;min-height:26px}
+ .reader-page .full-verse-card .full-script{font-size:clamp(22px,6.1vw,25px)!important}
+ .reader-page .full-verse-card .full-iast{font-size:clamp(18px,4.7vw,20px)!important}
+}
