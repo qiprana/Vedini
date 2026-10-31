@@ -557,3 +557,38 @@ test('shared chanting audio crosses verse 10 to 11 and completes the selected ra
  await expect(page.locator('#practice-status')).toContainText('Completed selected range',{timeout:6000});
  await expect(page.locator('#dock-play')).toBeEnabled();
 });
+
+test('single practice selector controls study and full chanting and shared display options',async({page})=>{
+ await page.goto('/lalita/?sloka=1');
+ await expect(page.locator('#learning-mode')).toHaveValue('study',{timeout:20000});
+ await expect(page.locator('#reader-mode')).toBeHidden();
+ await expect(page.locator('#verse-1 .panel-heading')).toBeHidden();
+ await page.locator('#reader-show-iast').uncheck();
+ await expect(page.locator('#verse-1 .verse-iast')).toBeHidden();
+ await page.locator('#reader-show-iast').check();
+ await expect(page.locator('#verse-1 .verse-iast')).toBeVisible();
+ await page.locator('#reader-show-meaning').check();
+ await expect(page.locator('#verse-1 .verse-combined-meaning .overall-reading')).toBeVisible();
+ await page.locator('#reader-show-deeper').check();
+ await expect(page.locator('#verse-1 .verse-combined-meaning .deeper-reading')).toBeVisible();
+ await page.locator('#learning-mode').selectOption('full');
+ await expect(page.locator('#verse-183.full-verse-card')).toHaveCount(1);
+ await expect(page.locator('#reader-show-iast')).toBeChecked();
+ await page.locator('#reader-show-iast').uncheck();
+ await expect(page.locator('#verse-1 .full-iast')).toBeHidden();
+ await page.locator('#learning-mode').selectOption('study');
+ await expect(page.locator('#verse-1 .verse-iast')).toBeHidden();
+ await expect(page.locator('#verse-183')).toHaveCount(0);
+});
+test('Dhyana and sloka rail share a single responsive navigation row',async({page})=>{
+ for(const width of [390,1280]){
+  await page.setViewportSize({width,height:844});
+  await page.goto('/lalita/?sloka=1');
+  await expect(page.locator('#verse-1')).toBeVisible({timeout:20000});
+  const bounds=await page.evaluate(()=>['#rail-dhyana','#rail-slokas','#verse-rail','#verse-previous'].map(sel=>{
+   const r=document.querySelector(sel).getBoundingClientRect();return {top:r.top,bottom:r.bottom};
+  }));
+  expect(Math.max(...bounds.map(b=>b.top))-Math.min(...bounds.map(b=>b.top))).toBeLessThan(12);
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+3)).toBe(true);
+ }
+});
