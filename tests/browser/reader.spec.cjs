@@ -556,6 +556,7 @@ test('shared chanting audio crosses verse 10 to 11 and completes the selected ra
  });
  await page.goto('/lalita/?sloka=10');
  await expect(page.locator('#verse-10')).toBeVisible({timeout:20000});
+ await page.locator('#learning-mode').selectOption('chant');
  await page.locator('#practice-from').selectOption('s-10');
  await page.locator('#practice-to').selectOption('s-11');
  await page.locator('#practice-repeat').selectOption('1');
@@ -599,4 +600,23 @@ test('Dhyana and sloka rail share a single responsive navigation row',async({pag
   expect(Math.max(...bounds.map(b=>b.top))-Math.min(...bounds.map(b=>b.top))).toBeLessThan(12);
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+3)).toBe(true);
  }
+});
+
+test('Dhyāna and ślokas share a single From-To chanting range',async({page})=>{
+ await page.goto('/lalita/?sloka=1');
+ await expect(page.locator('#verse-1')).toBeVisible({timeout:20000});
+ await expect(page.locator('#rail-dhyana')).toHaveText('Dhyāna');
+ await expect(page.locator('#rail-slokas')).toHaveText('Ślokas');
+ await expect(page.locator('#learning-mode option')).toHaveCount(3);
+ await expect(page.locator('#full-start')).toHaveCount(0);
+ await page.locator('#learning-mode').selectOption('chant');
+ await expect(page.locator('#practice-from option')).toHaveCount(187);
+ await page.locator('#practice-from').selectOption('d-2');
+ await page.locator('#practice-to').selectOption('s-3');
+ await page.locator('#chant-style').selectOption('continuous');
+ await expect(page.locator('#reader-mode')).toHaveValue('full');
+ await page.locator('#learning-mode').selectOption('names');
+ await expect(page.locator('#guided-style')).toBeVisible();
+ await page.locator('#guided-style').selectOption('both');
+ await expect(page.locator('.guided-verse-setting')).toBeVisible();
 });
