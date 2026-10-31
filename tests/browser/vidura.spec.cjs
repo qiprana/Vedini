@@ -70,4 +70,6 @@ test('Viduranīti mobile practice controls remain usable',async({page})=>{
  await expect(page.locator('#vidura-play')).toBeEnabled({timeout:15000});
 });
 
-test('Viduranīti unusual three-line verse supports six practice parts',async({page})=>{await page.goto('/vidura/');await expect(page.locator('.vidura-card')).toHaveCount(25);await page.locator('#vidura-verse').selectOption('3');await expect(page.locator('#vidura-part-picker .vidura-part')).toHaveCount(6,{timeout:15000});await expect(page.locator('#vidura-play')).toBeDisabled();});
+test('Viduranīti unusual three-line verse supports six practice parts',async({page})=>{await page.goto('/vidura/');await expect(page.locator('.vidura-card')).toHaveCount(25);await page.locator('#vidura-verse').selectOption('3');await expect(page.locator('#vidura-part-picker .vidura-part')).toHaveCount(6,{timeout:15000});await expect(page.locator('#vidura-play')).toBeEnabled();});
+
+test('Vidura uploaded recordings enable verse 25 and mark verse 19 pending',async({page})=>{await page.goto('/vidura/');await page.locator('#vidura-verse').selectOption('25');await expect(page.locator('#vidura-play')).toBeEnabled();await expect(page.locator('#vidura-part-picker [data-part="3"]')).toBeEnabled();await page.locator('#vidura-verse').selectOption('19');await expect(page.locator('#vidura-play')).toBeDisabled();await expect(page.locator('#vidura-audio-state')).toContainText('pending');});
