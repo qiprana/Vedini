@@ -1587,11 +1587,11 @@ function render(){
   document.querySelectorAll(".card").forEach(e=>e.classList.toggle("selected-verse",e.id==="verse-"+selectedVerse));
  }
  restoreDetails(opened);
- applyReaderOptions();
  // Every reader render replaces the names; reconnect their inline MSS playback.
  initNameAudio();
  initDhyanaPhraseAudio();
  initDhyanaPlayAll();
+ applyReaderOptions();
  syncChantHereButtons();
  syncDock();
  requestAnimationFrame(fitVerseLines);
