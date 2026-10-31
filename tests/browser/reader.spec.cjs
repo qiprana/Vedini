@@ -486,3 +486,36 @@ test('search result opens verse and Back to results restores query and listing',
  await expect(page.locator('#search-result-list .search-result')).toHaveCount(count);
  await expect(page.locator('#return-to-results')).toBeHidden();
 });
+
+test('unified full mode shows all verses and Kannada śloka 11 plus late ślokas',async({page})=>{
+ await page.goto('/lalita/index.html?mode=full&sloka=11');
+ await expect(page.locator('#verse-183.full-verse-card')).toHaveCount(1,{timeout:30000});
+ await expect(page.locator('#verse-11.full-verse-card')).toHaveCount(1);
+ await page.locator('#kn').click();
+ const v11=page.locator('#verse-11 .full-script');
+ await expect(v11).toHaveAttribute('lang','kn');
+ await expect(v11).toContainText('ನಿಜ-ಸಲ್ಲಾಪ');
+ const v178=page.locator('#verse-178 .full-script');
+ await expect(v178).toHaveAttribute('lang','kn');
+ await expect(v178).toContainText('ಸುವಾಸಿನ್ಯರ್ಚನ');
+ await expect(page.locator('#verse-11 .full-iast')).toBeVisible();
+ await page.locator('#reader-show-iast').uncheck();
+ await expect(page.locator('#verse-11 .full-iast')).toBeHidden();
+ await page.locator('#reader-show-meaning').check();
+ await expect(page.locator('#verse-11 .full-simple')).toBeVisible();
+ await page.locator('#reader-show-meaning').uncheck();
+ await expect(page.locator('#verse-11 .full-simple')).toBeHidden();
+ await page.locator('#reader-mode').selectOption('study');
+ await expect(page.locator('#verse-11 .name-audio-card').first()).toBeVisible();
+ await expect(page.locator('#verse-183')).toHaveCount(0);
+});
+test('full chant rail scrolls without switching pages and has start here buttons',async({page})=>{
+ await page.goto('/lalita/index.html?mode=full');
+ await expect(page.locator('#verse-183.full-verse-card')).toHaveCount(1,{timeout:30000});
+ await page.locator('#verse-11 [data-full-start="s-11"]').click();
+ await expect(page.locator('#practice-stop')).toBeEnabled();
+ await page.locator('#dock-stop').click();
+ await page.locator('#verse-rail [data-rail="s-14"]').click();
+ await expect(page.locator('#verse-14.full-verse-card')).toHaveCount(1);
+ await expect(page.locator('#verse-183.full-verse-card')).toHaveCount(1);
+});
