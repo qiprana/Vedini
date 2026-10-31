@@ -624,7 +624,7 @@ test('Dhyāna and ślokas share a single From-To chanting range',async({page})=>
 test('shared speed selector controls chanting and persists when switching modes',async({page})=>{
  await page.goto('/lalita/?sloka=10');
  await expect(page.locator('#verse-10')).toBeVisible({timeout:20000});
- await expect(page.locator('#chant-speed')).toHaveValue('0.90');
+ await expect(page.locator('#chant-speed')).toHaveValue('0.9');
  await expect(page.locator('#chant-speed-value')).toHaveText('0.90×');
  await page.locator('#chant-speed').fill('1.15');
  await expect(page.locator('#chant-speed-value')).toHaveText('1.15×');
