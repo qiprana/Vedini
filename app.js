@@ -1398,8 +1398,7 @@ function setReaderMode(mode){
  readerMode=mode==="full"?"full":"study";$("#reader-mode").value=readerMode;
  $("#full-start").closest("label").hidden=readerMode!=="full";$("#practice-from").closest("label").hidden=readerMode==="full";
  if(readerMode==="full"&&!practice.active){
-  $("#learning-mode").value="chant";$("#learning-mode").dispatchEvent(new Event("change"));
-  $("#practice-from").value="1";$("#practice-to").value=String(verses.length||183);$("#practice-repeat").value="1";
+  $("#practice-to").value=String(verses.length||183);$("#practice-repeat").value="1";
  }
  const url=new URL(location.href);url.searchParams.set("mode",readerMode);history.replaceState({},"",url.pathname+url.search+url.hash);
  render();
