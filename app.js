@@ -1988,7 +1988,7 @@ function initPractice(){
   const isDhyana=fromValue.startsWith("d-"),toDhyana=toValue.startsWith("d-");
   if(!from||!to||rank(fromValue)>rank(toValue)){practiceStatus("Select a valid range.");return;}
   const continuous=$("#chant-style").value==="continuous";
-  if(readerMode==="study"){practiceBegin(from,from,1,isDhyana);return;}
+  if(readerMode==="study"){practiceBegin(selectedVerse,selectedVerse,1,view==="dhyana");return;}
   practiceBegin(from,to,continuous?1:Number($("#practice-repeat").value),isDhyana,isDhyana&&!toDhyana);
  });
  $("#practice-pause").addEventListener("click",async()=>{
@@ -2242,7 +2242,7 @@ $("#reader-mode").onchange=e=>{$("#learning-mode").value=e.target.value==="full"
 for(const id of ["reader-show-iast","reader-show-meaning","reader-show-deeper"])$("#"+id).onchange=applyReaderOptions;
 $("#reader-print").onclick=()=>window.print();
 $(".lalita-view-switcher").addEventListener("click",e=>{const a=e.target.closest("[data-reader-mode]");if(a){e.preventDefault();setReaderMode(a.dataset.readerMode);}});
-for(const id of ["verse-cards","dhyana-cards"])$("#"+id).addEventListener("click",e=>{const b=e.target.closest("[data-full-start]");if(!b)return;const n=Number(b.dataset.fullStart.slice(2));$("#learning-mode").value="chant";$("#learning-mode").dispatchEvent(new Event("change"));$("#practice-from").value=(b.dataset.fullStart[0]==="d"?"d-":"s-")+n;$("#practice-to").value="s-"+verses.length;$("#chant-style").value="continuous";if(b.dataset.fullStart[0]==="d")practiceBegin(n,verses.length,1,true,true);else practiceBegin(n,verses.length,1,false,true);});
+for(const id of ["verse-cards","dhyana-cards"])$("#"+id).addEventListener("click",e=>{const b=e.target.closest("[data-full-start]");if(!b)return;const n=Number(b.dataset.fullStart.slice(2));$("#learning-mode").value="chant";$("#chant-style").value="continuous";$("#learning-mode").dispatchEvent(new Event("change"));$("#practice-from").value=(b.dataset.fullStart[0]==="d"?"d-":"s-")+n;$("#practice-to").value="s-"+verses.length;$("#chant-style").value="continuous";if(b.dataset.fullStart[0]==="d")practiceBegin(n,verses.length,1,true,true);else practiceBegin(n,verses.length,1,false,true);});
 window.addEventListener("scroll",queueVerseScrollUpdate,{passive:true});
 window.addEventListener("resize",()=>{
  requestAnimationFrame(fitVerseLines);
@@ -2332,6 +2332,7 @@ function initLearningMode(){
   $(".chant-style-field").hidden=mode!=="chant";
   $(".guided-style-field").hidden=mode!=="names";
   $(".practice-fields").hidden=mode==="study";
+  $(".guided-style-field").hidden=mode!=="names";
   $("#practice-mode-help").textContent=mode==="study"?"Read the selected verse, explore divine names and meanings; Play chants just that verse.":mode==="chant"?"Choose a Dhyāna or śloka range. Repeat for practice, or chant continuously.":"Listen to divine names individually, with optional repetitions and pauses.";
   $("#practice-play").disabled=false;
   syncDock();
