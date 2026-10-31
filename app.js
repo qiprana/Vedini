@@ -1916,7 +1916,7 @@ async function scheduleRange(token){
    const overlap=previous?fade:0;
    const start=Math.max(rangeAudio.scheduledUntil,ctx.currentTime+.06)-overlap;
    const source=ctx.createBufferSource(),gain=ctx.createGain();
-   source.buffer=buffer;source.playbackRate.value=selectedChantSpeed();source.connect(gain);gain.connect(ctx.destination);
+   source.buffer=buffer;if(source.playbackRate)source.playbackRate.value=selectedChantSpeed();source.connect(gain);gain.connect(ctx.destination);
    gain.gain.setValueAtTime(overlap?0:1,start);
    if(overlap)gain.gain.linearRampToValueAtTime(1,start+overlap);
    gain.gain.setValueAtTime(1,Math.max(start+overlap,start+duration-fade));
@@ -2096,7 +2096,7 @@ async function guidedPlayClip(){
     const overlap=isFirst?0:Math.min(fade,duration/4);
     time-=overlap;
     const node=ctx.createBufferSource(),gain=ctx.createGain();
-    node.buffer=buffer;node.playbackRate.value=selectedChantSpeed();node.connect(gain);gain.connect(ctx.destination);
+    node.buffer=buffer;if(node.playbackRate)node.playbackRate.value=selectedChantSpeed();node.connect(gain);gain.connect(ctx.destination);
     gain.gain.setValueAtTime(overlap?0:1,time);
     if(overlap)gain.gain.linearRampToValueAtTime(1,time+overlap);
     if(!isLast)gain.gain.setValueAtTime(1,Math.max(time+overlap,time+duration-fade));
