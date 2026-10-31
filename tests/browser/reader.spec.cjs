@@ -210,21 +210,21 @@ test('Mobile Study reader has accessible bottom player and expandable settings w
  await expect(page.locator('.lalita-view-switcher a')).toHaveCount(3);
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+3)).toBe(true);
 });
-test('Full Chanting bottom player keeps playback transport visible on mobile',async({page})=>{
+test('legacy Full Chanting URL redirects to unified player on mobile',async({page})=>{
  await page.setViewportSize({width:390,height:844});
- await page.goto('/lalita/chant.html');
- await expect(page.locator('#fc-range-tabs button').first()).toBeVisible({timeout:30000});
- const dock=page.locator('#practice-dock');
- await expect(page.locator('#dock-play')).toBeEnabled();
+ await page.goto('/lalita/chant.html?sloka=11');
+ await expect(page).toHaveURL(/lalita\/index\.html\?sloka=11&mode=full/);
+ await expect(page.locator('#verse-183.full-verse-card')).toHaveCount(1,{timeout:30000});
+ await expect(page.locator('#dock-play')).toBeVisible();
  await expect(page.locator('#practice-dock-body')).toBeHidden();
+ const dock=page.locator('#practice-dock');
  await expect.poll(()=>dock.evaluate(el=>Math.round(el.getBoundingClientRect().bottom))).toBe(844);
  await page.locator('#practice-dock-toggle').click();
- await expect(page.locator('#fc-voice')).toBeVisible();
- await expect(page.locator('#fc-jump')).toBeVisible();
+ await expect(page.locator('#reader-mode')).toHaveValue('full');
+ await expect(page.locator('#full-start')).toBeVisible();
+ await expect(page.locator('#reader-show-iast')).toBeVisible();
  await page.locator('#practice-dock-toggle').click();
  await expect(page.locator('#practice-dock-body')).toBeHidden();
- await page.evaluate(()=>window.scrollTo(0,document.body.scrollHeight/2));
- await expect.poll(()=>page.locator('.fc-main-content>.lalita-reader-toolbar').evaluate(el=>Math.round(el.getBoundingClientRect().top))).toBe(0);
 });
 
 test('single learning selector switches conditional fields and uses same transport',async({page})=>{
