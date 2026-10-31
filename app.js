@@ -2214,7 +2214,7 @@ async function init(){
  finalOverall.verses.forEach(e=>{verseData[e.verse_number]={...(verseData[e.verse_number]||{}),traditional_interpretation:{en:e.en,kn:e.kn}};});
  if(index<111)throw new Error("At least the first 111 names are expected; found "+index);
  initPractice();guidedInit();syncDock();readerMode=new URLSearchParams(location.search).get("mode")==="full"?"full":"study";$("#reader-mode").value=readerMode;
- $("#full-start").closest("label").hidden=readerMode!=="full";$("#practice-from").closest("label").hidden=readerMode==="full";if(readerMode==="full"){$("#practice-to").value="183";$("#practice-repeat").value="1";}const initial=loadInitialLocation();render();if(initial)scrollToElement(initial);
+ $("#full-start").closest("label").hidden=readerMode!=="full";$("#practice-from").closest("label").hidden=readerMode==="full";if(readerMode==="full"){$("#practice-to").value="183";$("#practice-repeat").value="1";}const initial=loadInitialLocation();if(readerMode==="full"&&initial)$("#full-start").value=(view==="dhyana"?"d-":"s-")+selectedVerse;render();if(initial)scrollToElement(initial);
  }catch(err){
  const n=$("#result-note");if(n)n.textContent="Unable to load study content: "+err.message;
  }
