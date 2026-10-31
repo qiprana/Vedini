@@ -1477,7 +1477,7 @@ function renderGroupTabs(){
  $("#verse-previous").disabled=at===0;
  $("#verse-next").disabled=at===dhyana.length+verses.length-1;
  $("#verse-position").textContent=view==="dhyana"?"Dhyāna "+selectedVerse+" of "+dhyana.length:"Śloka "+selectedVerse+" of "+verses.length;
- const rail=$("#verse-rail");if(rail){const values=view==="dhyana"?dhyana:verses;rail.innerHTML=values.map(v=>"<button type=\"button\" data-rail=\""+(view==="dhyana"?"d-":"s-")+v.verse_number+"\" class=\""+(v.verse_number===selectedVerse?"current":"")+"\">"+v.verse_number+"</button>").join("");requestAnimationFrame(()=>rail.querySelector(".current")?.scrollIntoView({inline:"center",block:"nearest"}));}$("#verse-rail-heading").textContent=readerMode==="full"?"Full Chanting":"Śloka Study";
+ const rail=$("#verse-rail");if(rail){const values=view==="dhyana"?dhyana:verses;rail.innerHTML=values.map(v=>"<button type=\"button\" data-rail=\""+(view==="dhyana"?"d-":"s-")+v.verse_number+"\" class=\""+(v.verse_number===selectedVerse?"current":"")+"\">"+v.verse_number+"</button>").join("");requestAnimationFrame(()=>{const selected=rail.querySelector(".current");if(selected)rail.scrollLeft=selected.offsetLeft-rail.offsetLeft-(rail.clientWidth-selected.clientWidth)/2;});}$("#verse-rail-heading").textContent=readerMode==="full"?"Full Chanting":"Śloka Study";
 }
 function updateNavigation(){
  const searching=!!searchTerm.trim();
@@ -1606,6 +1606,16 @@ function showDhyana(n=1,writeURL=true){
 }
 function openGroup(index,writeURL=true){jump(Math.max(1,Math.min(verses.length,index+1)),writeURL);}
 function chooseVerse(value){
+ if(readerMode==="full"){
+  lastSearch=null;
+  const dh=value.startsWith("d-"),n=Number(value.slice(2));
+  if(!Number.isInteger(n))return;
+  view=dh?"dhyana":"verses";selectedVerse=n;
+  renderGroupTabs();
+  const target=document.getElementById((dh?"dhyana-":"verse-")+n);
+  if(target)target.scrollIntoView({behavior:"smooth",block:"start"});
+  return;
+ }
  lastSearch=null;
  if(value.startsWith("d-"))showDhyana(Number(value.slice(2)));
  else if(value.startsWith("s-"))jump(Number(value.slice(2)));
