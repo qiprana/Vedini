@@ -1401,7 +1401,7 @@ function setReaderMode(mode){
 }
 function card(v,isDhyana){
  const number=v.verse_number,reading=v.reading||{};
- const selected=language==="kn"?(reading.devanagari||[]).map(kannadaFromDevanagari):(reading.devanagari||[]);
+ const selected=language==="kn"?(reading.kannada?.length?reading.kannada:(reading.devanagari||[]).map(kannadaFromDevanagari)):(reading.devanagari||[]);
  const iast=reading.iast||[];
  const id=(isDhyana?"dhyana-":"verse-")+number;
  const label=langText(isDhyana?"Dhyāna "+number:"Śloka "+number,isDhyana?"ಧ್ಯಾನ "+number:"ಶ್ಲೋಕ "+number);
@@ -1876,7 +1876,7 @@ function rangeTick(token){
  const ctx=rangeAudio.ctx;
  if(!ctx||token!==practice.token||!practice.active||practice.paused)return;
  const t=ctx.currentTime;
- const current=rangeAudio.nodes.find(node=>node.start<=t+.05&&node.end>t-.03);
+ const current=rangeAudio.nodes.findLast(node=>node.start<=t+.02&&node.end>t-.03);
  if(current&&(rangeAudio.lastVerse!==current.n||rangeAudio.lastPass!==current.pass)){
   const verseChanged=rangeAudio.lastVerse!==current.n||rangeAudio.lastDhyana!==current.dh;
   rangeAudio.lastVerse=current.n;rangeAudio.lastPass=current.pass;rangeAudio.lastDhyana=current.dh;practice.dhyana=current.dh;
@@ -2248,14 +2248,25 @@ function syncDock(){
  const current=isGuided?guided:practice,active=current.active,paused=current.paused;
  for(const id of ["dock-pause","dock-stop"])document.getElementById(id).disabled=!active;
  const next=document.getElementById("dock-next");
- const nextAvailable=isGuided?active&&guided.index<guided.units.length-1:active?(!practice.dhyana&&practice.current<practice.end):(view==="dhyana"?selectedVerse<dhyana.length||verses.length>0:selectedVerse<verses.length);
+ const nextAvailable=isGuided?active&&guided.index<guided.units.length-1:active?(practice.fullSequence||!practice.dhyana&&practice.current<practice.end):(view==="dhyana"?selectedVerse<dhyana.length||verses.length>0:selectedVerse<verses.length);
  next.disabled=!nextAvailable;
  next.title=isGuided?"Skip to next name or śloka":active?"Skip to next śloka in range":"Go to next śloka";
  next.setAttribute("aria-label",next.title);
  next.querySelector(".dock-button-label").textContent=active?"Skip":"Next";
- document.getElementById("dock-play").disabled=active;
+ const play=document.getElementById("dock-play");play.disabled=false;
+ play.title=active?(paused?"Resume chanting":"Pause chanting"):"Play chanting";
+ play.querySelector(".dock-button-label").textContent=active?(paused?"Resume":"Pause"):"Play";
+ play.querySelector(".dock-button-icon").textContent=active?(paused?"▶":"⏸"):"▶";
  const p=document.getElementById("dock-pause");p.querySelector(".dock-button-label").textContent=paused?"Resume":"Pause";p.querySelector(".dock-button-icon").textContent=paused?"▶":"⏸";
  const src=document.getElementById(isGuided?"guided-status":"practice-status");document.getElementById("dock-status").textContent=src?.textContent||"Ready";
+ const title=document.getElementById("dock-track-title"),detail=document.getElementById("dock-track-detail");
+ title.textContent=isGuided&&active?"Name practice · Śloka "+(guided.units[guided.index]?.verse||1):(practice.dhyana&&active?"Dhyāna "+practice.current+" of 4":"Śloka "+(active?practice.current:selectedVerse)+" of "+verses.length);
+ detail.textContent=active?(isGuided?"Name practice":$("#practice-voice").selectedOptions[0]?.textContent+" · Repeat "+Math.max(1,practice.played)+" of "+practice.reps):"Ready · "+($("#practice-voice").selectedOptions[0]?.textContent||"Vāgdhenu");
+ const steps=practice.active?(rangeAudio.queue.length||1):1;
+ const done=practice.active?Math.max(0,rangeAudio.queue.findIndex(x=>x.n===practice.current&&x.pass===Math.max(1,practice.played))):0;
+ const percent=practice.active?Math.max(0,Math.min(100,Math.round(100*done/steps))):0;
+ document.getElementById("dock-progress-fill").style.width=percent+"%";
+ document.getElementById("dock-progressbar").setAttribute("aria-valuenow",String(percent));
  root.classList.toggle("dock-active",active);
 }
 function initDock(){
@@ -2264,7 +2275,7 @@ function initDock(){
  const mode=()=>document.querySelector(".chanting-panels").dataset.mode;
  const controller=window.VediniPracticeDock.bind({
   root:dock,workspace:"study-workspace",initialStatus:"Ready",
-  onPlay:()=>document.getElementById(mode()==="guided"?"guided-play":"practice-play").click(),
+  onPlay:()=>{if(mode()==="guided"){if(guided.active)document.getElementById("guided-pause").click();else document.getElementById("guided-play").click();return;}if(practice.active)document.getElementById("practice-pause").click();else document.getElementById("practice-play").click();},
   onPause:()=>document.getElementById(mode()==="guided"?"guided-pause":"practice-pause").click(),
   onStop:()=>document.getElementById(mode()==="guided"?"guided-stop":"practice-stop").click(),
   onNext:()=>{
