@@ -2394,5 +2394,5 @@ header p{color:#845c4b;font-size:18px}
 }
 
 /* Readers may manually open the original combined meaning disclosure even when quick visibility filters are off. */
-.reader-page:not(.full-view) .verse-combined-meaning[open] .overall-reading,
-.reader-page:not(.full-view) .verse-combined-meaning[open] .deeper-reading{display:block!important}
+.reader-page:not(.full-view) .verse-combined-meaning[open]:not(.quick-open) .overall-reading,
+.reader-page:not(.full-view) .verse-combined-meaning[open]:not(.quick-open) .deeper-reading{display:block!important}
