@@ -14,15 +14,17 @@ function render(){const term=search.value.trim();root.innerHTML='';
 for(const v of state.verses){const searchable=[v.theme,...Object.values(v.reading).flat(),...Object.values(v.meaning),...Object.values(v.deeper_meaning),...v.word_by_word.flatMap(w=>Object.values(w)),...v.practice.flatMap(p=>Object.values(p))].join(' ').toLocaleLowerCase();if(term&&!searchable.includes(term.toLocaleLowerCase()))continue;
 const script=v.reading[state.script].map(line=>highlight(line,term)).join('\n');const iast=v.reading.iast.map(line=>highlight(line,term)).join('\n');
 const language=state.script==='kn'?'kn':'en';const words=v.word_by_word.map(w=>'<div class="vidura-word"><div><b>'+highlight(w[state.script],term)+'</b><small>'+highlight(w.iast,term)+'</small></div><span>'+highlight(w[language],term)+'</span></div>').join('');
-const phrases=v.practice.map((p,i)=>'<div class="vidura-phrase" data-verse="'+v.verse_number+'" data-phrase="'+i+'"><span>Part '+(i+1)+' · independent clip</span><b>'+highlight(p[state.script],term)+'</b><small>'+highlight(p.iast,term)+'</small></div>').join('');
+const selected=Number(verseSelect.value)===v.verse_number;
 const card=document.createElement('article');card.className='vidura-card';card.id='vidura-verse-'+v.verse_number;card.innerHTML='<div class="vidura-card-head"><h2>Śloka '+v.verse_number+' · '+escapeHtml(v.theme)+'</h2><button type="button" data-play-verse="'+v.verse_number+'">▶ Chant this śloka</button></div>'+
-'<div class="vidura-reading"><div><h3>Śloka · '+(state.script==='kn'?'ಕನ್ನಡ':'देवनागरी')+' + IAST</h3><p class="vidura-script" lang="'+(state.script==='kn'?'kn':'sa')+'">'+script+'</p><p class="vidura-iast">'+iast+'</p></div>'+
-'<div><h3>'+(state.script==='kn'?'ಸರಳ ಅರ್ಥ':'Overall meaning')+'</h3><p class="vidura-meaning">'+highlight(v.meaning[language],term)+'</p>'+
-'<details class="vidura-details"><summary>'+(state.script==='kn'?'ವಿಸ್ತೃತ ಅರ್ಥ ಮತ್ತು ಸಂದೇಶ':'Meaning & deeper significance')+'</summary><div class="vidura-details-body"><p>'+highlight(v.deeper_meaning[language],term)+'</p></div></details></div></div>'+
+'<div class="vidura-verse-top"><div class="vidura-script-panel"><h3>Śloka · '+(state.script==='kn'?'ಕನ್ನಡ':'देवनागरी')+' + IAST</h3><p class="vidura-script" lang="'+(state.script==='kn'?'kn':'sa')+'">'+script+'</p><p class="vidura-iast">'+iast+'</p></div>'+
+'<div class="vidura-inline-chant" data-chant-slot="'+v.verse_number+'"><div class="vidura-inline-chant-head"><strong>Chanting portions</strong><span>'+v.practice.length+' parts</span></div><p class="vidura-inline-chant-help">Play each phrase or set its repeats.</p><div class="vidura-inline-chant-placeholder">'+(v.verse_number===19?'Audio pending for this śloka':'Select this śloka to practice')+'</div></div></div><div class="vidura-inline-meaning"><h3>'+(state.script==='kn'?'ಸರಳ ಅರ್ಥ':'Overall meaning')+'</h3><p class="vidura-meaning">'+highlight(v.meaning[language],term)+'</p>'+
+'<details class="vidura-details"><summary>'+(state.script==='kn'?'ವಿಸ್ತೃತ ಅರ್ಥ ಮತ್ತು ಸಂದೇಶ':'Meaning & deeper significance')+'</summary><div class="vidura-details-body"><p>'+highlight(v.deeper_meaning[language],term)+'</p></div></details></div>'+
 '<details class="vidura-details"><summary>'+(state.script==='kn'?'ಪದಪದಾರ್ಥ':'Word-by-word meanings')+' · '+v.word_by_word.length+' words</summary><div class="vidura-details-body"><div class="vidura-words">'+words+'</div></div></details>'+
-'<details class="vidura-details"><summary>'+v.practice.length+' chant portions · audio cut points</summary><div class="vidura-details-body"><div class="vidura-phrases">'+phrases+'</div><p class="vidura-player-help">'+(v.practice_source==='pdf-highlight-cut-points'?'The PDF highlights indicate where to cut the śloka into four audio parts.':'These chant boundaries are editorial study divisions and require pronunciation review.')+'</p></div></details>';
-card.querySelector('[data-play-verse]').addEventListener('click',async()=>{verseSelect.value=String(v.verse_number);await selectRecording();await startAudio();});
+'';
+card.querySelector('[data-play-verse]').addEventListener('click',async()=>{verseSelect.value=String(v.verse_number);render();await selectRecording();await startAudio();});
+card.querySelector('[data-chant-slot]').addEventListener('click',()=>{if(Number(verseSelect.value)===v.verse_number)return;verseSelect.value=String(v.verse_number);selectRecording();});
 root.appendChild(card);}
+mountPartPicker();
 if(!root.children.length)root.innerHTML='<p class="vidura-foot">No matching ślokas.</p>';
 }
 function verse(){return state.verses.find(v=>String(v.verse_number)===verseSelect.value);}
@@ -42,9 +44,11 @@ function applyChantSpeed(){
 }
 function clearFocus(){document.querySelectorAll('.vidura-phrase.active,.vidura-part.active').forEach(el=>el.classList.remove('active'));}
 function focusPart(i){clearFocus();document.querySelectorAll('[data-phrase="'+i+'"][data-verse="'+verseSelect.value+'"]').forEach(el=>el.classList.add('active'));const btn=partPicker.querySelector('[data-part="'+i+'"]');if(btn){const card=btn.closest('.vidura-part');card.classList.add('active');if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches)card.scrollIntoView({block:'nearest',behavior:'smooth'});}}
+function mountPartPicker(){const slot=root.querySelector('[data-chant-slot="'+verseSelect.value+'"]');if(slot){slot.querySelector('.vidura-inline-chant-placeholder')?.remove();slot.appendChild(partPicker);}}
 function renderParts(){
  const v=verse();if(!v)return;
- const current=document.getElementById('vidura-current-verse'),count=document.getElementById('vidura-part-count');
+ mountPartPicker();
+ const current=null,count=null;
  if(current)current.textContent='· Śloka '+v.verse_number;
  if(count)count.textContent=v.practice.length+' parts';
  partPicker.innerHTML=v.practice.map((p,i)=>'<div class="vidura-part" data-verse="'+v.verse_number+'"><div class="vidura-part-title">Part '+(i+1)+'</div><div class="vidura-part-script" lang="'+(state.script==='kn'?'kn':'sa')+'">'+escapeHtml(p[state.script])+'</div><div class="vidura-part-iast">'+escapeHtml(p.iast)+'</div><div class="vidura-part-controls"><button type="button" data-part="'+i+'" '+(state.playParts[i]?'':'disabled')+' aria-label="Play part '+(i+1)+' of śloka '+v.verse_number+'">▶ Play</button><label>Repeat <input type="number" min="1" max="100" step="1" data-repeat="'+i+'" aria-label="Repeat part '+(i+1)+'" value="'+partCount(i)+'"></label></div></div>').join('');
@@ -63,12 +67,12 @@ document.querySelectorAll('[data-script]').forEach(b=>b.addEventListener('click'
 play.addEventListener('click',()=>startAudio());
 pause.addEventListener('click',()=>{if(audio.paused){audio.play().then(()=>{window.ViduraShruti?.start();pause.querySelector('.dock-button-label').textContent='Pause';}).catch(()=>{stateLabel.textContent='Playback unavailable';});}else{audio.pause();window.ViduraShruti?.stop();pause.querySelector('.dock-button-label').textContent='Resume';}});
 stop.addEventListener('click',stopAudio);
-next.addEventListener('click',async()=>{if(modeSelect.value==='full'){const n=Number(verseSelect.value);if(n>=state.verses.length)return;verseSelect.value=String(n+1);await selectRecording();if(state.fullReady)await startAudio();}else if(state.sequence.length){state.token++;audio.pause();const token=state.token;await nextClip(token);}else{const n=Number(verseSelect.value);if(n<state.verses.length){verseSelect.value=String(n+1);await selectRecording();}}});
+next.addEventListener('click',async()=>{if(modeSelect.value==='full'){const n=Number(verseSelect.value);if(n>=state.verses.length)return;verseSelect.value=String(n+1);render();await selectRecording();if(state.fullReady)await startAudio();}else if(state.sequence.length){state.token++;audio.pause();const token=state.token;await nextClip(token);}else{const n=Number(verseSelect.value);if(n<state.verses.length){verseSelect.value=String(n+1);await selectRecording();}}});
 function setDockCollapsed(collapsed){dock.classList.toggle('is-collapsed',collapsed);workspace.classList.toggle('dock-collapsed',collapsed);dockToggle.setAttribute('aria-expanded',String(!collapsed));dockToggle.querySelector('.dock-arrow').textContent=collapsed?'▸':'◂';dockToggle.querySelector('.dock-toggle-label').textContent=collapsed?'Settings':window.matchMedia('(max-width:620px)').matches?'Close settings':'Collapse';}
 dockToggle.addEventListener('click',()=>setDockCollapsed(!dock.classList.contains('is-collapsed')));
 if(window.matchMedia('(max-width:620px)').matches)setDockCollapsed(true);
 audio.addEventListener('ended',()=>{if(modeSelect.value==='full'&&state.sequence.length===0){window.ViduraShruti?.stop();pause.disabled=true;stop.disabled=true;stateLabel.textContent='Full śloka complete';}else nextClip(state.token);});
-verseSelect.addEventListener('change',()=>{window.ViduraShruti?.stop();state.playParts=Array(verse()?.practice.length||0).fill(false);renderParts();selectRecording();});
+verseSelect.addEventListener('change',()=>{window.ViduraShruti?.stop();state.playParts=Array(verse()?.practice.length||0).fill(false);render();renderParts();selectRecording();});
 modeSelect.addEventListener('change',()=>{stopAudio();repeats.disabled=modeSelect.value==='full';play.disabled=modeSelect.value==='full'?!state.fullReady:!state.audioReady;});
 repeats.addEventListener('change',()=>{if(Number(repeats.value)>0){state.repeatMap={};renderParts();}});
 window.ViduraChantActive=()=>!audio.paused&&!audio.ended;
