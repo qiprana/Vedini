@@ -2313,7 +2313,7 @@ function initDock(){
   // Keep the mobile mini-player compact while chanting text is being followed.
   if(!window.matchMedia("(max-width: 620px)").matches)expand(true);
   if(shortcut.dataset.dockDhyana==="1"){const n=Number(shortcut.dataset.dockVerse);document.getElementById("learning-mode").value="repeat";document.getElementById("learning-mode").dispatchEvent(new Event("change"));practiceBegin(n,n,1,true);return}
-  const n=Number(shortcut.dataset.dockVerse);document.getElementById("learning-mode").value="chant";document.getElementById("learning-mode").dispatchEvent(new Event("change"));
+  const n=Number(shortcut.dataset.dockVerse);document.getElementById("learning-mode").value="repeat";document.getElementById("learning-mode").dispatchEvent(new Event("change"));
   document.getElementById("practice-from").value="s-"+n;document.getElementById("practice-to").value="s-"+n;
   if(practice.active)practiceStop("Starting selected śloka");
   document.getElementById("dock-play").click();
