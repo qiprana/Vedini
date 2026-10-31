@@ -148,3 +148,27 @@
  .vidura-page .vidura-practice-list{padding:10px 12px}
  .vidura-page .vidura-card{padding:12px}
 }
+
+
+/* Embed chanting with each śloka, as in the Lalitā Sahasranāma study cards. */
+.vidura-page .vidura-practice-parking{display:none}
+.vidura-page .vidura-verse-top{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:15px;padding-top:13px;align-items:start}
+.vidura-page .vidura-script-panel{min-width:0}
+.vidura-page .vidura-inline-chant{min-width:0;border:1px solid #d2dfd1;background:#f8fbf6;border-radius:10px;padding:11px 12px}
+.vidura-page .vidura-inline-chant-head{display:flex;align-items:center;justify-content:space-between;gap:10px;color:#315944;font:700 13px system-ui}
+.vidura-page .vidura-inline-chant-head span{font-size:11px;font-weight:600;background:#ebf3e9;border-radius:999px;padding:4px 9px;white-space:nowrap}
+.vidura-page .vidura-inline-chant-help,.vidura-page .vidura-inline-chant-placeholder{font:12px/1.5 system-ui;color:#697c6e;margin:5px 0}
+.vidura-page .vidura-inline-meaning{margin-top:14px;padding-top:12px;border-top:1px solid #dde7db}
+.vidura-page .vidura-inline-meaning h3,.vidura-page .vidura-script-panel h3{font:700 12px system-ui;color:#315944;margin:0 0 8px}
+.vidura-page .vidura-inline-chant #vidura-part-picker{display:grid;grid-template-columns:1fr;gap:0;margin:7px 0 0}
+.vidura-page .vidura-inline-chant .vidura-part{padding:9px 2px;grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"title controls" "dev controls" "iast controls";gap:2px 8px}
+.vidura-page .vidura-inline-chant .vidura-part-title{font-size:10px}
+.vidura-page .vidura-inline-chant .vidura-part-script{font-size:clamp(15px,1.55vw,19px);line-height:1.55}
+.vidura-page .vidura-inline-chant .vidura-part-iast{font-size:12px;line-height:1.45}
+.vidura-page .vidura-inline-chant .vidura-part-controls{gap:5px}
+.vidura-page .vidura-inline-chant .vidura-part-controls button{min-width:63px;padding:5px 7px;font-size:11px;min-height:31px}
+.vidura-page .vidura-inline-chant .vidura-part-controls label{font-size:10px;gap:3px}
+.vidura-page .vidura-inline-chant .vidura-part-controls input{width:44px;min-height:29px;padding:3px 1px}
+.vidura-page .vidura-card:has(#vidura-part-picker){border-color:#9dbba3}
+@media(max-width:900px){.vidura-page .vidura-verse-top{grid-template-columns:1fr;gap:10px}.vidura-page .vidura-inline-chant .vidura-part{grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"title controls" "dev controls" "iast controls"}}
+@media(max-width:620px){.vidura-page .vidura-inline-chant{padding:9px}.vidura-page .vidura-inline-chant .vidura-part{grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"title controls" "dev controls" "iast controls"}}
