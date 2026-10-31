@@ -1391,6 +1391,10 @@ function applyReaderOptions(){
 }
 function setReaderMode(mode){
  readerMode=mode==="full"?"full":"study";$("#reader-mode").value=readerMode;
+ if(readerMode==="full"&&!practice.active){
+  $("#learning-mode").value="chant";$("#learning-mode").dispatchEvent(new Event("change"));
+  $("#practice-from").value="1";$("#practice-to").value=String(verses.length||183);$("#practice-repeat").value="1";
+ }
  const url=new URL(location.href);url.searchParams.set("mode",readerMode);history.replaceState({},"",url.pathname+url.search+url.hash);
  render();
 }
@@ -1937,9 +1941,10 @@ async function practiceBegin(from,to,reps,dhyanaMode=false){
      url=await mergedAudioUrl(clips.map(mssClipPath));
     }
    }else if(singer==="MSS"){
+    // Stream MSS phrases progressively instead of building all 183 WAV files before playback.
     const verse=verses[n-1],paths=verse?verseMssAudioPaths(verse):[];
-    if(!paths.length)throw Error("M. S. Subbulakshmi audio unavailable for śloka "+n);
-    url=await mergedAudioUrl(paths);
+    if(paths.length){for(let pass=1;pass<=reps;pass++)for(const path of paths)queue.push({n,pass,url:path});continue;}
+    url="../audio/lalita/verses/VD/sloka-"+String(n).padStart(3,"0")+".mp3";
    }else url="../audio/lalita/verses/"+singer+"/sloka-"+String(n).padStart(3,"0")+".mp3";
    for(let pass=1;pass<=reps;pass++)queue.push({n,pass,url});
   }
