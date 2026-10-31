@@ -236,7 +236,7 @@ test('single learning selector switches conditional fields and uses same transpo
  await expect(page.locator('#guided-from')).toBeVisible();
  await expect(page.locator('#guided-name-repeat')).toBeVisible();
  await expect(page.locator('.guided-verse-setting')).toBeHidden();
- await expect(page.locator('#learning-mode option')).toHaveCount(3);
+ await expect(page.locator('#learning-mode option')).toHaveCount(5);
  await expect(page.locator('#learning-mode option[value="verse"]')).toHaveCount(0);
  await page.locator('#learning-mode').selectOption('both');
  await expect(page.locator('.guided-name-setting')).toBeVisible();
@@ -502,7 +502,7 @@ test('unified full mode shows all verses and Kannada śloka 11 plus late ślokas
  await expect(page.locator('#verse-11 .full-simple')).toBeVisible();
  await page.locator('#reader-show-meaning').uncheck();
  await expect(page.locator('#verse-11 .full-simple')).toBeHidden();
- await page.locator('#reader-mode').selectOption('study');
+ await page.locator('#learning-mode').selectOption('study');
  await expect(page.locator('#verse-11 .name-audio-card').first()).toBeVisible();
  await expect(page.locator('#verse-183')).toHaveCount(0);
 });
