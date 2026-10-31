@@ -207,7 +207,8 @@ test('Mobile Study reader has accessible bottom player and expandable settings w
  await expect(page.locator('#practice-dock-body')).toBeHidden();
  await page.evaluate(()=>window.scrollTo(0,document.body.scrollHeight/2));
  await expect.poll(()=>page.locator('.study-main-content>.lalita-reader-toolbar').evaluate(el=>Math.round(el.getBoundingClientRect().top))).toBe(0);
- await expect(page.locator('.lalita-view-switcher a')).toHaveCount(3);
+ await expect(page.locator('.lalita-view-switcher a')).toHaveCount(2);
+ await expect(page.locator('#reader-mode')).toHaveCount(1);
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+3)).toBe(true);
 });
 test('legacy Full Chanting URL redirects to unified player on mobile',async({page})=>{
