@@ -42,7 +42,7 @@
     "full_playback": "one uninterrupted full-verse recording",
     "practice_playback": "repeat each clip using user-selected positive integer count",
     "generator": "scripts/generate_vidura_audio.py",
-    "generated_assets_status": "Verses 1–2 recorded; 3–25 source prepared, audio not generated or reviewed",
+    "generated_assets_status": "MP3s uploaded for verses 1–18 and 20–25; verse 19 is pending",
     "full_template": "audio/vidura/sloka-{nnn}-full.mp3",
     "files_per_verse": "1 full MP3 plus a variable number of practice MP3s",
     "generation_speed": 1.05,
@@ -65,7 +65,38 @@
         "practice_clips"
       ],
       "independent_shruti": true
-    }
+    },
+    "published_verse_numbers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "pending_verse_numbers": [
+      19
+    ],
+    "uploaded_candidate_path": "audio/vidura/candidates/ for verses 3–18 and 20–25",
+    "audio_review_status": "Uploaded by the user; independent Sanskrit listening review not yet performed in ChatGPT"
   },
-  "content_notes": "All 25 printed verses and English meanings derive from Samskrita Bharati's 2027 handout. Devanagari spelling/line-break ambiguities and editorial study, Kannada and practice divisions require review. All new audio awaits generation/listening QA; the previously corrected verse 1–2 audio is retained."
+  "content_notes": "All 25 printed verses and English meanings derive from Samskrita Bharati's 2027 handout. Devanagari spelling/line-break ambiguities and editorial study, Kannada and practice divisions require review. New recordings uploaded for verses 3–18 and 20–25; verse 19 is pending and audio still needs listening QA; the previously corrected verse 1–2 audio is retained."
 }

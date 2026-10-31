@@ -26,8 +26,9 @@ root.appendChild(card);}
 if(!root.children.length)root.innerHTML='<p class="vidura-foot">No matching ślokas.</p>';
 }
 function verse(){return state.verses.find(v=>String(v.verse_number)===verseSelect.value);}
-function fullPath(){return '../audio/vidura/sloka-'+String(verseSelect.value).padStart(3,'0')+'-full.mp3';}
-function clipPath(i){const path='../audio/vidura/sloka-'+String(verseSelect.value).padStart(3,'0')+'-part-'+String(i+1).padStart(2,'0')+'.mp3';return i===2&&Number(verseSelect.value)<=2?path+'?revision=part3-onset-repair-20261030':path;}
+function publishedAudioRoot(){return Number(verseSelect.value)<=2?'../audio/vidura/':'../audio/vidura/candidates/';}
+function fullPath(){return publishedAudioRoot()+'sloka-'+String(verseSelect.value).padStart(3,'0')+'-full.mp3';}
+function clipPath(i){const path=publishedAudioRoot()+'sloka-'+String(verseSelect.value).padStart(3,'0')+'-part-'+String(i+1).padStart(2,'0')+'.mp3';return i===2&&Number(verseSelect.value)<=2?path+'?revision=part3-onset-repair-20261030':path;}
 function partCount(i){return state.repeatMap[verseSelect.value+':'+i]??Number(repeats.value);}
 function applyChantSpeed(){
  const value=Number(speed.value);
@@ -51,7 +52,7 @@ function renderParts(){
  partPicker.querySelectorAll('[data-repeat]').forEach(input=>input.addEventListener('change',()=>{const n=Number(input.value);if(!Number.isInteger(n)||n<1||n>100){input.value=String(partCount(Number(input.dataset.repeat)));return;}state.repeatMap[verseSelect.value+':'+input.dataset.repeat]=n;}));
 }
 async function selectRecording(){const id=++state.objectId;state.token++;audio.pause();audio.removeAttribute('src');audio.load();clearFocus();state.audioReady=false;state.fullReady=false;state.playParts=[];state.sequence=[];state.queueIndex=0;play.disabled=true;pause.disabled=true;stop.disabled=true;next.disabled=true;stateLabel.textContent='Checking recordings…';const v=verse();if(!v)return;
-if(v.verse_number<=2){state.fullReady=true;state.playParts=Array(v.practice.length).fill(true);state.audioReady=true;play.disabled=false;next.disabled=false;stateLabel.textContent='Full śloka ready · Practice '+v.practice.length+'/'+v.practice.length+' clips ready';renderParts();return;}
+if(v.verse_number!==19){state.fullReady=true;state.playParts=Array(v.practice.length).fill(true);state.audioReady=true;play.disabled=false;next.disabled=false;stateLabel.textContent='Full śloka ready · Practice '+v.practice.length+'/'+v.practice.length+' clips ready';renderParts();return;}
 await Promise.all([fetch(fullPath(),{method:'HEAD',cache:'no-store'}).then(response=>{if(id===state.objectId)state.fullReady=response.ok;}).catch(()=>{}),...v.practice.map(async(p,i)=>{try{const response=await fetch(clipPath(i),{method:'HEAD',cache:'no-store'});if(response.ok&&id===state.objectId)state.playParts[i]=true;}catch(_){}})]);
 if(id!==state.objectId)return;state.audioReady=state.playParts.length>0&&state.playParts.every(Boolean);play.disabled=modeSelect.value==='full'?!state.fullReady:!state.audioReady;stateLabel.textContent='Full śloka '+(state.fullReady?'ready':'pending')+' · Practice '+state.playParts.filter(Boolean).length+'/'+state.playParts.length+' clips ready';renderParts();}
 function playbackQueue(single){const indices=single===undefined?Array.from({length:verse()?.practice.length||0},(_,i)=>i):[single];return indices.flatMap(i=>Array.from({length:modeSelect.value==='full'&&single===undefined?1:partCount(i)},()=>i));}
