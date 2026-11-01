@@ -1816,7 +1816,7 @@ function loadAudio(){
   }catch(_){/* Keep the placeholder if the verse recording itself is unavailable. */}
  });
 }
-let chantSpeed=0.9;
+let chantSpeed=1.0;
 function selectedChantSpeed(){return chantSpeed;}
 function setupChantSpeed(){const slider=$("#chant-speed"),output=$("#chant-speed-value");if(!slider||!output)return;const update=()=>{chantSpeed=Number(slider.value);output.textContent=chantSpeed.toFixed(2)+"×";output.value=output.textContent;if(nameAudioPlayer)nameAudioPlayer.playbackRate=chantSpeed;};slider.addEventListener("input",update);update();}
 const practice={active:false,paused:false,current:1,end:1,reps:1,played:0,token:0,dhyana:false,fullSequence:false};
@@ -2108,11 +2108,7 @@ async function guidedPlayClip(){
    guided.nodes.forEach(n=>{try{n.disconnect();}catch(_){}});
    guided.nodes=[];guided.index++;
    if(guided.index>=guided.units.length){guidedStop("Guided chanting complete");return;}
-   const gap=Number($("#guided-gap").value)||0;
-   if(gap){
-    guided.insideGap=true;
-    guided.timeout=setTimeout(()=>{guided.timeout=null;guided.insideGap=false;guidedPlayClip();},gap);
-   }else guidedPlayClip();
+   guidedPlayClip();
   };
  }catch(_){if(guided.active&&guided.token===token)guidedStop("MSS audio unavailable for śloka "+unit.verse);}
 }
