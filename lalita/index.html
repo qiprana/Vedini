@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Listen, chant and explore the meanings of Lalitā Sahasranāma on Vedini.">
   <title>Lalitā Sahasranāma | Vedini</title>
-  <link rel="stylesheet" href="../styles.css?v=20261031-clear-modes-v4">
+  <link rel="stylesheet" href="../styles.css?v=20261031-three-chant-modes-v1">
 </head>
 <body>
 <main class="page reader-page">
@@ -71,10 +71,9 @@
         <div id="practice-dock-body" class="practice-dock-body">
           <label class="unified-learning-mode">Mode
             <select id="learning-mode" aria-label="Reading and chanting mode">
-              <option value="study">Study ślokas</option>
-              <option value="repeat">Repeat ślokas</option>
-              <option value="continuous">Continuous chanting</option>
-              <option value="names">Chant divine names</option>
+              <option value="repeat">Full śloka chanting</option>
+              <option value="names">Name-by-name chanting</option>
+              <option value="continuous">Continuous śloka chanting</option>
             </select>
           </label>
           <select id="reader-mode" hidden aria-label="Internal reading mode"><option value="study">Śloka Study</option><option value="full">Full Chanting</option></select>
@@ -94,11 +93,11 @@
           <div class="chanting-panels" data-mode="chant">
             <section id="practice-player" class="practice-player" aria-label="Śloka chanting options">
               <p class="dock-help" id="practice-mode-help">Read and understand the selected śloka. Play chants just this śloka.</p>
-              <div class="practice-fields" hidden>
+              <div class="practice-fields">
                 <label class="practice-from-field">From<select id="practice-from" aria-label="Start from Dhyāna or śloka"></select></label>
                 <label>To<select id="practice-to" aria-label="End at Dhyāna or śloka"></select></label>
                 <label class="practice-repeat-field">Repeat each<select id="practice-repeat" aria-label="Repetitions for each śloka"><option value="1">1×</option><option value="2" selected>2×</option><option value="3">3×</option><option value="5">5×</option><option value="10">10×</option></select></label>
-                <label>Recording<select id="practice-voice" aria-label="Chanting voice"><option value="VD" selected>Vāgdhenu · Practice voice</option><option value="MSS">M. S. Subbulakshmi</option><option value="KMP">Kuldeep M. Pai</option></select></label>
+                <label>Recording<select id="practice-voice" aria-label="Chanting voice"><option value="KMP" selected>Kuldeep M. Pai</option><option value="MSS">M. S. Subbulakshmi</option><option value="VD">Vāgdhenu · Practice voice</option></select></label>
               </div>
               <div class="practice-actions" hidden aria-hidden="true">
                 <button id="practice-play" type="button">Play</button><button id="practice-pause" type="button" disabled>Pause</button><button id="practice-stop" type="button" disabled>Stop</button>
@@ -107,13 +106,14 @@
             </section>
             <section id="guided-panel" class="guided-panel" aria-label="MSS learning options">
               <p class="dock-help">Guided M. S. Subbulakshmi name recordings. Choose names only or names followed by the full śloka.</p>
-              <label class="guided-style-field">Guided sequence<select id="guided-style" aria-label="Guided sequence"><option value="names">Divine names only</option><option value="both">Names, then complete śloka</option></select></label>
+              <select id="guided-style" hidden aria-label="Internal guided style"><option value="names" selected>Names</option></select>
               <div class="guided-fields">
                 <label>From śloka<select id="guided-from"></select></label>
                 <label>To śloka<select id="guided-to"></select></label>
+                <label class="guided-singer-setting">Singer<select id="guided-voice"><option value="MSS" selected>M. S. Subbulakshmi</option></select></label>
                 <label class="guided-name-setting">Repeat each name<select id="guided-name-repeat"><option value="1">1×</option><option value="2" selected>2×</option><option value="3">3×</option><option value="5">5×</option></select></label>
                 <label class="guided-verse-setting">Repeat whole śloka<select id="guided-verse-repeat"><option value="1" selected>1×</option><option value="2">2×</option><option value="3">3×</option></select></label>
-                <label>Practice pause<select id="guided-gap"><option value="0">No pause</option><option value="500" selected>0.5 seconds</option><option value="1500">1.5 seconds</option><option value="3000">3 seconds</option></select></label>
+                <select id="guided-gap" hidden aria-label="Internal gap"><option value="0" selected>No pause</option></select>
               </div>
               <div class="guided-actions" hidden aria-hidden="true">
                 <button id="guided-play" type="button">Begin learning</button><button id="guided-pause" type="button" disabled>Pause</button><button id="guided-next" type="button" disabled>Next name</button><button id="guided-stop" type="button" disabled>Stop</button>
@@ -173,5 +173,5 @@
 <script src="./sticky-reader-nav.js?v=20261028-sticky-player-v2"></script>
 <script src="./practice-dock-controls.js?v=20261028-sticky-player-v2"></script>
 <script src="./language-preference.js?v=1"></script>
-<script src="../app.js?v=20261031-clear-modes-v4"></script>
+<script src="../app.js?v=20261031-three-chant-modes-v1"></script>
 </body></html>
