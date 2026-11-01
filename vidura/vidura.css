@@ -206,3 +206,9 @@
 .vidura-page .vidura-card.chanting-active .vidura-script-panel{background:#f1f9ee;border-radius:8px;padding:8px}
 .vidura-page .vidura-card.chanting-active .vidura-inline-chant{border-color:#8db89b}
 @media(max-width:620px){.vidura-page .vidura-index-heading{align-items:stretch;flex-direction:column;gap:5px}.vidura-page .vidura-index-heading select{width:100%;max-width:none;flex:0 0 auto}}
+
+/* One śloka per screen: selection and clear navigation. */
+.vidura-page .vidura-verse-navigation{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:6px 0 14px}
+.vidura-page .vidura-verse-navigation button{padding:9px 16px;background:#f3f8f1;color:#315944;border:1px solid #b8cfbd;border-radius:9px;font:700 13px system-ui;cursor:pointer}
+.vidura-page .vidura-verse-navigation button:disabled{opacity:.4;cursor:not-allowed}
+.vidura-page .vidura-verse-navigation span{color:#526d5c;font:600 13px system-ui}
