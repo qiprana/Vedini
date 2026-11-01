@@ -2223,7 +2223,18 @@ async function init(){
  initPractice();guidedInit();syncDock();readerMode=new URLSearchParams(location.search).get("mode")==="full"?"full":"study";$("#reader-mode").value=readerMode;$("#learning-mode").value="repeat";
 const initial=loadInitialLocation();if(readerMode==="full"&&initial)$("#practice-from").value=(view==="dhyana"?"d-":"s-")+selectedVerse;render();if(initial)scrollToElement(initial);
  }catch(err){
- const n=$("#result-note");if(n)n.textContent="Unable to load study content: "+err.message;
+  console.error("Lalitā study content initialization failed",err);
+  const n=$("#result-note");if(n){n.hidden=false;n.textContent="Some study resources could not load: "+err.message+". Showing available core śloka content.";}
+  try{
+   const [first,dhyanaFile]=await Promise.all([fetchJSON("lalita/verses/verse-001.json"),fetchJSON("lalita/dhyana.json")]);
+   if(!verses.length)verses=[first];
+   if(!dhyana.length)dhyana=Array.isArray(dhyanaFile)?dhyanaFile:(dhyanaFile.verses||[]);
+   selectedVerse=1;view="verses";readerMode="study";
+   render();
+  }catch(fallbackError){
+   console.error("Lalitā core fallback failed",fallbackError);
+   const host=$("#verse-cards");if(host)host.innerHTML="<p role='alert'>Unable to load the śloka content. Please reload the page. "+esc(fallbackError.message)+"</p>";
+  }
  }
 }
 window.VediniLanguage.bind(lang=>switchLanguage(lang==="kn"));
@@ -2349,8 +2360,6 @@ function initLearningMode(){
   $("#guided-style").addEventListener("change",choose);
  choose();
 }
-initLearningMode();
-setupChantSpeed();
-initDock();
+try{initLearningMode();setupChantSpeed();initDock();}catch(error){console.error("Lalitā player initialization failed",error);const notice=$("#result-note");if(notice){notice.hidden=false;notice.textContent="Player controls could not initialize: "+error.message;}}
 init();
 })();
