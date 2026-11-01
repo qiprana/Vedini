@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Listen, chant and explore the meanings of Lalitā Sahasranāma on Vedini.">
   <title>Lalitā Sahasranāma | Vedini</title>
-  <link rel="stylesheet" href="../styles.css?v=20261031-content-recovery-v3">
+  <link rel="stylesheet" href="../styles.css?v=20261031-original-speed-no-pause-v4">
 </head>
 <body>
 <main class="page reader-page">
@@ -85,8 +85,8 @@
           <div class="chant-speed-control" aria-label="Chanting playback speed">
             <label for="chant-speed">Chanting speed</label>
             <div class="chant-speed-row">
-              <input id="chant-speed" type="range" min="0.70" max="1.30" step="0.05" value="0.90" aria-label="Chanting speed">
-              <output id="chant-speed-value" for="chant-speed">0.90×</output>
+              <input id="chant-speed" type="range" min="0.70" max="1.30" step="0.05" value="1.00" aria-label="Chanting speed">
+              <output id="chant-speed-value" for="chant-speed">1.00×</output>
             </div>
           </div>
           <button type="button" id="reader-print" class="reader-print">Print reading</button>
@@ -113,7 +113,7 @@
                 <label class="guided-singer-setting">Singer<select id="guided-voice"><option value="MSS" selected>M. S. Subbulakshmi</option></select></label>
                 <label class="guided-name-setting">Repeat each name<select id="guided-name-repeat"><option value="1">1×</option><option value="2" selected>2×</option><option value="3">3×</option><option value="5">5×</option></select></label>
                 <label class="guided-verse-setting">Repeat whole śloka<select id="guided-verse-repeat"><option value="1" selected>1×</option><option value="2">2×</option><option value="3">3×</option></select></label>
-                <select id="guided-gap" hidden aria-label="Internal gap"><option value="0" selected>No pause</option></select>
+                
               </div>
               <div class="guided-actions" hidden aria-hidden="true">
                 <button id="guided-play" type="button">Begin learning</button><button id="guided-pause" type="button" disabled>Pause</button><button id="guided-next" type="button" disabled>Next name</button><button id="guided-stop" type="button" disabled>Stop</button>
