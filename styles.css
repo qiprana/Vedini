@@ -2396,3 +2396,16 @@ header p{color:#845c4b;font-size:18px}
 /* Readers may manually open the original combined meaning disclosure even when quick visibility filters are off. */
 .reader-page:not(.full-view) .verse-combined-meaning[open]:not(.quick-open) .overall-reading,
 .reader-page:not(.full-view) .verse-combined-meaning[open]:not(.quick-open) .deeper-reading{display:block!important}
+
+/* Lalita repair: fluid columns, Sanskrit wrapping, and compact settings. */
+.reader-page .verse-content-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;align-items:start!important}
+.reader-page .verse-reading-panel,.reader-page .verse-names-panel{min-width:0!important;max-width:100%!important;overflow-wrap:anywhere!important}
+.reader-page .verse-reading-panel .verse-script,.reader-page .verse-reading-panel .verse-iast{min-width:0!important;max-width:100%!important}
+.reader-page .verse-reading-panel .verse-line,.reader-page .verse-reading-panel .verse-line .line-content{display:block!important;white-space:normal!important;max-width:100%!important;min-width:0!important;overflow-wrap:anywhere!important;word-break:normal!important}
+.reader-page .verse-reading-panel .verse-ending{white-space:normal!important;overflow-wrap:anywhere!important}
+.reader-page .practice-dock #practice-player .practice-fields[hidden],.reader-page .practice-dock .practice-repeat-field[hidden],.reader-page .practice-dock .chant-style-field[hidden],.reader-page .practice-dock .guided-style-field[hidden]{display:none!important}
+.reader-page .chant-speed-control{padding:8px 12px 4px;font:650 13px/1.45 system-ui,sans-serif;color:#365645}
+.reader-page .chant-speed-row{display:flex;align-items:center;gap:12px;margin-top:7px;min-width:0}
+.reader-page #chant-speed{min-width:0;flex:1 1 0;width:100%;padding:0;accent-color:#35664b;cursor:pointer}
+.reader-page #chant-speed-value{font:700 16px system-ui,sans-serif;color:#315f49;white-space:nowrap;min-width:54px;text-align:right}
+@media(max-width:720px){.reader-page .verse-content-grid{grid-template-columns:minmax(0,1fr)!important}.reader-page .verse-reading-panel .verse-script.devanagari,.reader-page .verse-reading-panel .verse-script.kannada{font-size:clamp(22px,5.6vw,26px)!important}}

@@ -16,7 +16,7 @@ test('practice modes switch and preserve controls',async({page})=>{
  await page.locator('#guided-style').selectOption('both');
  await expect(page.locator('#guided-play')).toBeVisible();
  await expect(page.locator('#guided-name-repeat')).toHaveValue('2');
- await page.locator('#learning-mode').selectOption('chant');
+ await page.locator('#learning-mode').selectOption('repeat');
  await expect(page.locator('#practice-repeat')).toHaveValue('2');
  await expect(page.locator('#practice-play')).toBeVisible();
 });
@@ -203,7 +203,7 @@ test('Mobile Study reader has accessible bottom player and expandable settings w
  expect(geometry.r.height).toBeLessThan(180);
  await settings.click();
  await expect(dock).toHaveClass(/mobile-settings-open/);
- await page.locator('#learning-mode').selectOption('chant');
+ await page.locator('#learning-mode').selectOption('repeat');
  await expect(page.locator('#practice-from')).toBeVisible();
  await settings.click();
  await expect(page.locator('#practice-dock-body')).toBeHidden();
@@ -224,7 +224,7 @@ test('legacy Full Chanting URL redirects to unified player on mobile',async({pag
  await expect.poll(()=>dock.evaluate(el=>Math.round(el.getBoundingClientRect().bottom))).toBe(844);
  await page.locator('#practice-dock-toggle').click();
  await expect(page.locator('#reader-mode')).toHaveValue('full');
- await page.locator('#learning-mode').selectOption('chant');
+ await page.locator('#learning-mode').selectOption('repeat');
  await expect(page.locator('#practice-from')).toBeVisible();
  await expect(page.locator('#reader-show-iast')).toBeVisible();
  await page.locator('#practice-dock-toggle').click();
@@ -234,19 +234,19 @@ test('legacy Full Chanting URL redirects to unified player on mobile',async({pag
 test('single learning selector switches conditional fields and uses same transport',async({page})=>{
  await page.goto('/lalita/?sloka=1');
  await expect(page.locator('#learning-mode')).toBeVisible();
- await page.locator('#learning-mode').selectOption('chant');
+ await page.locator('#learning-mode').selectOption('repeat');
  await expect(page.locator('#practice-from')).toBeVisible();
  await page.locator('#learning-mode').selectOption('names');
  await expect(page.locator('#guided-from')).toBeVisible();
  await expect(page.locator('#guided-name-repeat')).toBeVisible();
  await expect(page.locator('.guided-verse-setting')).toBeHidden();
- await expect(page.locator('#learning-mode option')).toHaveCount(3);
+ await expect(page.locator('#learning-mode option')).toHaveCount(4);
  await expect(page.locator('#learning-mode option[value="full"]')).toHaveCount(0);
  await page.locator('#learning-mode').selectOption('names');
  await page.locator('#guided-style').selectOption('both');
  await expect(page.locator('.guided-name-setting')).toBeVisible();
  await expect(page.locator('.guided-verse-setting')).toBeVisible();
- await page.locator('#learning-mode').selectOption('chant');
+ await page.locator('#learning-mode').selectOption('repeat');
  await expect(page.locator('#practice-voice')).toBeVisible();
  await expect(page.locator('#guided-panel')).toBeHidden();
 });
@@ -317,7 +317,7 @@ test('Practice dropdowns align as two equal columns on desktop and phone',async(
   await page.setViewportSize({width,height:844});
   await page.goto('/lalita/?sloka=1');
   if(width<620)await page.locator('#practice-dock-toggle').click();
-  await page.locator('#learning-mode').selectOption('chant');
+  await page.locator('#learning-mode').selectOption('repeat');
  await expect(page.locator('#practice-from')).toBeVisible({timeout:20000});
   const dimensions=await page.locator('#practice-player .practice-fields label').evaluateAll(labels=>labels.map(el=>({x:el.getBoundingClientRect().x,y:el.getBoundingClientRect().y,w:el.getBoundingClientRect().width,selectW:el.querySelector('select').getBoundingClientRect().width})));
   expect(Math.abs(dimensions[0].y-dimensions[1].y)).toBeLessThan(3);
@@ -556,7 +556,7 @@ test('shared chanting audio crosses verse 10 to 11 and completes the selected ra
  });
  await page.goto('/lalita/?sloka=10');
  await expect(page.locator('#verse-10')).toBeVisible({timeout:20000});
- await page.locator('#learning-mode').selectOption('chant');
+ await page.locator('#learning-mode').selectOption('repeat');
  await page.locator('#practice-from').selectOption('s-10');
  await page.locator('#practice-to').selectOption('s-11');
  await page.locator('#practice-repeat').selectOption('1');
@@ -579,8 +579,8 @@ test('single practice selector controls study and full chanting and shared displ
  await expect(page.locator('#verse-1 .verse-combined-meaning .overall-reading')).toBeVisible();
  await page.locator('#reader-show-deeper').check();
  await expect(page.locator('#verse-1 .verse-combined-meaning .deeper-reading')).toBeVisible();
- await page.locator('#learning-mode').selectOption('chant');
- await page.locator('#chant-style').selectOption('continuous');
+ await page.locator('#learning-mode').selectOption('repeat');
+ await page.locator('#learning-mode').selectOption('continuous');
  await expect(page.locator('#verse-183.full-verse-card')).toHaveCount(1);
  await expect(page.locator('#reader-show-iast')).toBeChecked();
  await page.locator('#reader-show-iast').uncheck();
@@ -607,16 +607,44 @@ test('Dhyāna and ślokas share a single From-To chanting range',async({page})=>
  await expect(page.locator('#verse-1')).toBeVisible({timeout:20000});
  await expect(page.locator('#rail-dhyana')).toHaveText('Dhyāna');
  await expect(page.locator('#rail-slokas')).toHaveText('Ślokas');
- await expect(page.locator('#learning-mode option')).toHaveCount(3);
+ await expect(page.locator('#learning-mode option')).toHaveCount(4);
  await expect(page.locator('#full-start')).toHaveCount(0);
- await page.locator('#learning-mode').selectOption('chant');
+ await page.locator('#learning-mode').selectOption('repeat');
  await expect(page.locator('#practice-from option')).toHaveCount(187);
  await page.locator('#practice-from').selectOption('d-2');
  await page.locator('#practice-to').selectOption('s-3');
- await page.locator('#chant-style').selectOption('continuous');
+ await page.locator('#learning-mode').selectOption('continuous');
  await expect(page.locator('#reader-mode')).toHaveValue('full');
  await page.locator('#learning-mode').selectOption('names');
  await expect(page.locator('#guided-style')).toBeVisible();
  await page.locator('#guided-style').selectOption('both');
  await expect(page.locator('.guided-verse-setting')).toBeVisible();
+});
+
+test('shared speed selector controls chanting and persists when switching modes',async({page})=>{
+ await page.goto('/lalita/?sloka=10');
+ await expect(page.locator('#verse-10')).toBeVisible({timeout:20000});
+ await expect(page.locator('#chant-speed')).toHaveValue('0.9');
+ await expect(page.locator('#chant-speed-value')).toHaveText('0.90×');
+ await page.locator('#chant-speed').fill('1.15');
+ await expect(page.locator('#chant-speed-value')).toHaveText('1.15×');
+ await page.locator('#learning-mode').selectOption('names');
+ await expect(page.locator('#chant-speed')).toHaveValue('1.15');
+ await page.locator('#learning-mode').selectOption('continuous');
+ await expect(page.locator('#verse-183.full-verse-card')).toHaveCount(1);
+ await expect(page.locator('#chant-speed')).toHaveValue('1.15');
+});
+test('Sanskrit and IAST stay inside reading panel without overlapping divine names',async({page})=>{
+ for(const width of [390,1280]){
+  await page.setViewportSize({width,height:844});
+  await page.goto('/lalita/?sloka=10');
+  await expect(page.locator('#verse-10 .verse-reading-panel')).toBeVisible({timeout:20000});
+  const overflow=await page.evaluate(()=>{
+   const panel=document.querySelector('#verse-10 .verse-reading-panel'),r=panel.getBoundingClientRect();
+   const lineEls=[...panel.querySelectorAll('.verse-line .line-content')];
+   return {panelRight:r.right,outer:Math.max(...lineEls.map(x=>x.getBoundingClientRect().right)),doc:document.documentElement.scrollWidth,window:innerWidth};
+  });
+  expect(overflow.outer,JSON.stringify(overflow)).toBeLessThanOrEqual(overflow.panelRight+2);
+  expect(overflow.doc,JSON.stringify(overflow)).toBeLessThanOrEqual(overflow.window+3);
+ }
 });

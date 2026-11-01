@@ -69,11 +69,12 @@
           <button id="dock-stop" type="button" disabled title="Stop chanting"><span class="dock-button-icon" aria-hidden="true">■</span><span class="dock-button-label">Stop</span></button>
         </div>
         <div id="practice-dock-body" class="practice-dock-body">
-          <label class="unified-learning-mode">Chanting practice
-            <select id="learning-mode" aria-label="Chanting practice">
-              <option value="study">Study ślokas · read and understand</option>
-              <option value="chant">Chant ślokas · repeat or continuous</option>
-              <option value="names">Chant divine names · guided</option>
+          <label class="unified-learning-mode">Mode
+            <select id="learning-mode" aria-label="Reading and chanting mode">
+              <option value="study">Study ślokas</option>
+              <option value="repeat">Repeat ślokas</option>
+              <option value="continuous">Continuous chanting</option>
+              <option value="names">Chant divine names</option>
             </select>
           </label>
           <select id="reader-mode" hidden aria-label="Internal reading mode"><option value="study">Śloka Study</option><option value="full">Full Chanting</option></select>
@@ -82,15 +83,21 @@
             <label><input type="checkbox" id="reader-show-meaning"> Simple meaning</label>
             <label><input type="checkbox" id="reader-show-deeper"> Deeper meaning</label>
           </div>
+          <div class="chant-speed-control" aria-label="Chanting playback speed">
+            <label for="chant-speed">Chanting speed</label>
+            <div class="chant-speed-row">
+              <input id="chant-speed" type="range" min="0.70" max="1.30" step="0.05" value="0.90" aria-label="Chanting speed">
+              <output id="chant-speed-value" for="chant-speed">0.90×</output>
+            </div>
+          </div>
           <button type="button" id="reader-print" class="reader-print">Print reading</button>
           <div class="chanting-panels" data-mode="chant">
             <section id="practice-player" class="practice-player" aria-label="Śloka chanting options">
-              <p class="dock-help" id="practice-mode-help">Read a selected śloka and explore its names, words, and meanings.</p>
-              <div class="practice-fields">
-                <label class="chant-style-field">Chanting style<select id="chant-style" aria-label="Chanting style"><option value="repeat">Repeat each śloka</option><option value="continuous">Continuous chanting</option></select></label>
+              <p class="dock-help" id="practice-mode-help">Read and understand the selected śloka. Play chants just this śloka.</p>
+              <div class="practice-fields" hidden>
                 <label class="practice-from-field">From<select id="practice-from" aria-label="Start from Dhyāna or śloka"></select></label>
                 <label>To<select id="practice-to" aria-label="End at Dhyāna or śloka"></select></label>
-                <label>Repeat each<select id="practice-repeat" aria-label="Repetitions for each śloka"><option value="1">1×</option><option value="2" selected>2×</option><option value="3">3×</option><option value="5">5×</option><option value="10">10×</option></select></label>
+                <label class="practice-repeat-field">Repeat each<select id="practice-repeat" aria-label="Repetitions for each śloka"><option value="1">1×</option><option value="2" selected>2×</option><option value="3">3×</option><option value="5">5×</option><option value="10">10×</option></select></label>
                 <label>Recording<select id="practice-voice" aria-label="Chanting voice"><option value="VD" selected>Vāgdhenu · Practice voice</option><option value="MSS">M. S. Subbulakshmi</option><option value="KMP">Kuldeep M. Pai</option></select></label>
               </div>
               <div class="practice-actions" hidden aria-hidden="true">
