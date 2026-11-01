@@ -1,0 +1,30 @@
+{
+  "id": "vidura-prarthana",
+  "source": "Samskrita Bharati Viduraniti 2027 handout, Prarthana section",
+  "verses": [
+    {
+      "id": "prarthana-1",
+      "title": "Salutation to Vyasa",
+      "dev": [
+        "व्यासाय विष्णुरूपाय व्यासरूपाय विष्णवे ।",
+        "नमो वै ब्रह्मनिधये वासिष्ठाय नमो नमः ॥"
+      ],
+      "iast": [
+        "vyāsāya viṣṇurūpāya vyāsarūpāya viṣṇave |",
+        "namo vai brahmanidhaye vāsiṣṭhāya namo namaḥ ||"
+      ]
+    },
+    {
+      "id": "prarthana-2",
+      "title": "Invocation before recitation",
+      "dev": [
+        "नारायणं नमस्कृत्य नरं चैव नरोत्तमम् ।",
+        "देवीं सरस्वतीं व्यासं ततो जयमुदीरयेत् ॥"
+      ],
+      "iast": [
+        "nārāyaṇaṃ namaskṛtya naraṃ caiva narottamam |",
+        "devīṃ sarasvatīṃ vyāsaṃ tato jayamudīrayet ||"
+      ]
+    }
+  ]
+}
