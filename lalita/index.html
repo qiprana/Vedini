@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Listen, chant and explore the meanings of Lalitā Sahasranāma on Vedini.">
   <title>Lalitā Sahasranāma | Vedini</title>
-  <link rel="stylesheet" href="../styles.css?v=20261031-three-chant-modes-v1">
+  <link rel="stylesheet" href="../styles.css?v=20261031-player-load-fix-v2">
 </head>
 <body>
 <main class="page reader-page">
@@ -77,7 +77,7 @@
             </select>
           </label>
           <select id="reader-mode" hidden aria-label="Internal reading mode"><option value="study">Śloka Study</option><option value="full">Full Chanting</option></select>
-          <div class="reader-display-controls" aria-label="Display options for Study and Full Chanting">
+          <div class="reader-display-controls" aria-label="Internal display preferences" hidden style="display:none">
             <label><input type="checkbox" id="reader-show-iast" checked> Show IAST</label>
             <label><input type="checkbox" id="reader-show-meaning"> Simple meaning</label>
             <label><input type="checkbox" id="reader-show-deeper"> Deeper meaning</label>
