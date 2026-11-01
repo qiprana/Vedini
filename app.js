@@ -2328,6 +2328,7 @@ function initLearningMode(){
   else{display.hidden=false;if(mode==="repeat")$("#practice-voice").value="KMP";}
   const targetMode=mode==="continuous"?"full":"study";
   if(targetMode!==readerMode)setReaderMode(targetMode);
+   if(mode==="continuous")applyReaderOptions();
   const old=host.dataset.mode;
   if(old!==(isChant?"chant":"guided")){
    if(practice.active)practiceStop("Stopped");
