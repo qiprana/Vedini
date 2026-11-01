@@ -11,7 +11,7 @@ const state={scrollTarget:null,lastHighlightedPart:-1,verses:[],script:'dev',aud
 function escapeHtml(t){return String(t??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 function highlight(text,term){const s=String(text??'');if(!term)return escapeHtml(s);const i=s.toLocaleLowerCase().indexOf(term.toLocaleLowerCase());if(i<0)return escapeHtml(s);return escapeHtml(s.slice(0,i))+'<mark>'+escapeHtml(s.slice(i,i+term.length))+'</mark>'+escapeHtml(s.slice(i+term.length));}
 function render(){const term=search.value.trim();root.innerHTML='';updateIndexSelection();
-for(const v of state.verses){const searchable=[v.theme,...Object.values(v.reading).flat(),...Object.values(v.meaning),...Object.values(v.deeper_meaning),...v.word_by_word.flatMap(w=>Object.values(w)),...v.practice.flatMap(p=>Object.values(p))].join(' ').toLocaleLowerCase();if(term&&!searchable.includes(term.toLocaleLowerCase()))continue;
+for(const v of state.verses){if(String(v.verse_number)!==verseSelect.value)continue;const searchable=[v.theme,...Object.values(v.reading).flat(),...Object.values(v.meaning),...Object.values(v.deeper_meaning),...v.word_by_word.flatMap(w=>Object.values(w)),...v.practice.flatMap(p=>Object.values(p))].join(' ').toLocaleLowerCase();/* Search selects its matching verse; the view always shows one śloka. */
 const script=v.reading[state.script].map(line=>highlight(line,term)).join('\n');const iast=v.reading.iast.map(line=>highlight(line,term)).join('\n');
 const language=state.script==='kn'?'kn':'en';const words=v.word_by_word.map(w=>'<div class="vidura-word"><div><b>'+highlight(w[state.script],term)+'</b><small>'+highlight(w.iast,term)+'</small></div><span>'+highlight(w[language],term)+'</span></div>').join('');
 const selected=Number(verseSelect.value)===v.verse_number;
@@ -29,9 +29,9 @@ root.appendChild(card);}
 mountPartPicker();
 if(!root.children.length)root.innerHTML='<p class="vidura-foot">No matching ślokas.</p>';
 }
-function updateIndexSelection(){const v=verse();const title=document.getElementById('vidura-player-selection');if(title&&v)title.textContent=String(v.verse_number).padStart(2,'0')+' · '+v.theme;}
+function updateIndexSelection(){const n=Number(verseSelect.value);const prev=document.getElementById('vidura-prev-verse'),forward=document.getElementById('vidura-next-verse'),count=document.getElementById('vidura-verse-position');if(prev)prev.disabled=n<=1;if(forward)forward.disabled=n>=state.verses.length;if(count)count.textContent=String(n)+' of '+state.verses.length;const v=verse();const title=document.getElementById('vidura-player-selection');if(title&&v)title.textContent=String(v.verse_number).padStart(2,'0')+' · '+v.theme;}
 function highlightCurrentVerse(active){document.querySelectorAll('.vidura-card.chanting-active').forEach(el=>{el.classList.remove('chanting-active');el.removeAttribute('data-chanting');});if(!active)return;const card=document.getElementById('vidura-verse-'+verseSelect.value);if(card){card.classList.add('chanting-active');card.setAttribute('data-chanting','true');}}
-function scrollToNewVerse(){const card=document.getElementById('vidura-verse-'+verseSelect.value);if(card)card.scrollIntoView({block:'start',behavior:'auto'});}
+function scrollToNewVerse(){const el=document.getElementById('vidura-verse-index');if(el)el.scrollIntoView({block:'start',behavior:'auto'});}
 function verse(){return state.verses.find(v=>String(v.verse_number)===verseSelect.value);}
 function publishedAudioRoot(){return Number(verseSelect.value)<=2?'../audio/vidura/':'../audio/vidura/candidates/';}
 function fullPath(){return publishedAudioRoot()+'sloka-'+String(verseSelect.value).padStart(3,'0')+'-full.mp3';}
@@ -72,18 +72,21 @@ document.querySelectorAll('[data-script]').forEach(b=>b.addEventListener('click'
 play.addEventListener('click',()=>startAudio());
 pause.addEventListener('click',()=>{if(audio.paused){audio.play().then(()=>{window.ViduraShruti?.start();pause.querySelector('.dock-button-label').textContent='Pause';}).catch(()=>{stateLabel.textContent='Playback unavailable';});}else{audio.pause();window.ViduraShruti?.stop();pause.querySelector('.dock-button-label').textContent='Resume';}});
 stop.addEventListener('click',stopAudio);
-next.addEventListener('click',async()=>{if(modeSelect.value==='full'){const n=Number(verseSelect.value);if(n>=state.verses.length)return;verseSelect.value=String(n+1);render();await selectRecording();if(state.fullReady)await startAudio();}else if(state.sequence.length){state.token++;audio.pause();const token=state.token;await nextClip(token);}else{const n=Number(verseSelect.value);if(n<state.verses.length){verseSelect.value=String(n+1);await selectRecording();}}});
+async function navigateVerse(delta,autoplay=false){const index=state.verses.findIndex(v=>String(v.verse_number)===verseSelect.value);const target=state.verses[index+delta];if(!target)return;stopAudio();verseSelect.value=String(target.verse_number);render();await selectRecording();updateIndexSelection();scrollToNewVerse();if(autoplay&&(modeSelect.value==='full'?state.fullReady:state.audioReady))await startAudio();}
+next.addEventListener('click',()=>navigateVerse(1,false));
+document.getElementById('vidura-prev-verse').addEventListener('click',()=>navigateVerse(-1,false));
+document.getElementById('vidura-next-verse').addEventListener('click',()=>navigateVerse(1,false));
 function setDockCollapsed(collapsed){dock.classList.toggle('is-collapsed',collapsed);workspace.classList.toggle('dock-collapsed',collapsed);dockToggle.setAttribute('aria-expanded',String(!collapsed));dockToggle.querySelector('.dock-arrow').textContent=collapsed?'▸':'◂';dockToggle.querySelector('.dock-toggle-label').textContent=collapsed?'Settings':window.matchMedia('(max-width:620px)').matches?'Close settings':'Collapse';}
 dockToggle.addEventListener('click',()=>setDockCollapsed(!dock.classList.contains('is-collapsed')));
 if(window.matchMedia('(max-width:620px)').matches)setDockCollapsed(true);
 audio.addEventListener('ended',()=>{if(modeSelect.value==='full'&&state.sequence.length===0){if(state.fullRepeatsLeft>1){state.fullRepeatsLeft--;audio.currentTime=0;applyChantSpeed();stateLabel.textContent='Repeating full śloka · '+(repeatCount()-state.fullRepeatsLeft+1)+'/'+repeatCount();audio.play().catch(()=>{stopAudio();stateLabel.textContent='Full śloka recording unavailable';});}else{state.fullRepeatsLeft=0;window.ViduraShruti?.stop();pause.disabled=true;stop.disabled=true;stateLabel.textContent='Full śloka complete';highlightCurrentVerse(false);}}else nextClip(state.token);});
-verseSelect.addEventListener('change',()=>{window.ViduraShruti?.stop();state.playParts=Array(verse()?.practice.length||0).fill(false);render();renderParts();selectRecording();scrollToNewVerse();});
+verseSelect.addEventListener('change',()=>{stopAudio();render();selectRecording();scrollToNewVerse();});
 modeSelect.addEventListener('change',()=>{stopAudio();repeats.disabled=false;play.disabled=modeSelect.value==='full'?!state.fullReady:!state.audioReady;});
 repeats.addEventListener('change',()=>{stateLabel.textContent='Repeat '+repeatCount()+'× · '+(modeSelect.value==='full'?'whole śloka':'each part');});
 window.ViduraChantActive=()=>!audio.paused&&!audio.ended;
 speed.addEventListener('input',applyChantSpeed);
 applyChantSpeed();
-search.addEventListener('input',render);
+search.addEventListener('input',()=>{const q=search.value.trim().toLocaleLowerCase();if(q){const hit=state.verses.find(v=>[v.theme,...Object.values(v.reading).flat(),...Object.values(v.meaning),...Object.values(v.deeper_meaning),...v.word_by_word.flatMap(w=>Object.values(w)),...v.practice.flatMap(p=>Object.values(p))].join(' ').toLocaleLowerCase().includes(q));if(hit&&String(hit.verse_number)!==verseSelect.value){stopAudio();verseSelect.value=String(hit.verse_number);render();selectRecording();return;}}render();});
 repeats.disabled=false;
 Promise.all(['bundle-001-013.json','bundle-014-025.json'].map(file=>fetch('../data/vidura/verses/'+file).then(r=>{if(!r.ok)throw Error('Verse bundle '+file);return r.json();}))).then(bundles=>bundles.flat()).then(verses=>{state.verses=verses;verseSelect.innerHTML=verses.map(v=>'<option value="'+v.verse_number+'">'+String(v.verse_number).padStart(2,'0')+' · '+escapeHtml(v.theme)+'</option>').join('');render();renderParts();selectRecording();}).catch(e=>{root.textContent='Unable to load Viduranīti content: '+e.message;stateLabel.textContent='Content unavailable';});
 })();
