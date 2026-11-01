@@ -2325,7 +2325,7 @@ function initLearningMode(){
   const mode=selector.value,isChant=mode!=="names";
   const display=document.querySelector(".reader-display-controls");
   if(mode==="continuous"){ $("#reader-show-iast").checked=false;$("#reader-show-meaning").checked=true;$("#reader-show-deeper").checked=false;display.hidden=true;$("#practice-voice").value="KMP"; }
-  else{display.hidden=false;if(mode==="repeat")$("#practice-voice").value="KMP";}
+  else{display.hidden=true;if(mode==="repeat")$("#practice-voice").value="KMP";}
   const targetMode=mode==="continuous"?"full":"study";
   if(targetMode!==readerMode)setReaderMode(targetMode);
    if(mode==="continuous")applyReaderOptions();
@@ -2337,9 +2337,9 @@ function initLearningMode(){
   host.dataset.mode=isChant?"chant":"guided";
   document.querySelectorAll(".guided-verse-setting").forEach(el=>el.hidden=true);
   $(".practice-repeat-field").hidden=false;
-  $(".guided-style-field").hidden=true;
+  document.querySelectorAll(".guided-style-field").forEach(el=>el.hidden=true);
   $(".practice-fields").hidden=false;
-  $(".guided-style-field").hidden=true;
+  document.querySelectorAll(".guided-style-field").forEach(el=>el.hidden=true);
   $("#practice-mode-help").textContent=mode==="continuous"?"Continuous chanting displays only the śloka and simple meaning.":mode==="repeat"?"Choose a range, singer and repeat count. The active śloka is highlighted.":"Chant divine names with MSS, repeating each name as selected.";
   $("#practice-play").disabled=false;
   document.querySelectorAll(".guided-name-setting").forEach(el=>el.hidden=false);
