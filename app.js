@@ -1992,9 +1992,7 @@ function initPractice(){
   const fromValue=a.value,toValue=b.value,from=Number(fromValue.slice(2)),to=Number(toValue.slice(2));
   const isDhyana=fromValue.startsWith("d-"),toDhyana=toValue.startsWith("d-");
   if(!from||!to||rank(fromValue)>rank(toValue)){practiceStatus("Select a valid range.");return;}
-  const continuous=$("#learning-mode").value==="continuous";
-  if($("#learning-mode").value==="study"){practiceBegin(selectedVerse,selectedVerse,1,view==="dhyana");return;}
-  practiceBegin(from,to,continuous?1:Number($("#practice-repeat").value),isDhyana,isDhyana&&!toDhyana);
+  practiceBegin(from,to,Number($("#practice-repeat").value),isDhyana,isDhyana&&!toDhyana);
  });
  $("#practice-pause").addEventListener("click",async()=>{
   if(!practice.active||!rangeAudio.ctx)return;
@@ -2130,7 +2128,7 @@ function guidedInit(){
   const f=+from.value,t=+to.value;
   if(f<1||t>verses.length||f>t){guidedStatus("Select a valid range");return;}
   guidedStop("");
-  const mode=$("#guided-style").value;
+  const mode="names";
   guided.units=guidedBuildUnits(f,t,mode,+$("#guided-name-repeat").value,+$("#guided-verse-repeat").value);
   if(!guided.units.length){guidedStatus("No individually mapped MSS recordings in this range");return;}
   // Existing practice and individual players stop when the guided audio takes focus.
@@ -2222,7 +2220,7 @@ async function init(){
  const finalOverall=await fetchJSON("lalita/deeper-overall-104-183.json");
  finalOverall.verses.forEach(e=>{verseData[e.verse_number]={...(verseData[e.verse_number]||{}),traditional_interpretation:{en:e.en,kn:e.kn}};});
  if(index<111)throw new Error("At least the first 111 names are expected; found "+index);
- initPractice();guidedInit();syncDock();readerMode=new URLSearchParams(location.search).get("mode")==="full"?"full":"study";$("#reader-mode").value=readerMode;$("#learning-mode").value=readerMode==="full"?"continuous":"study";
+ initPractice();guidedInit();syncDock();readerMode=new URLSearchParams(location.search).get("mode")==="full"?"full":"study";$("#reader-mode").value=readerMode;$("#learning-mode").value="repeat";
 const initial=loadInitialLocation();if(readerMode==="full"&&initial)$("#practice-from").value=(view==="dhyana"?"d-":"s-")+selectedVerse;render();if(initial)scrollToElement(initial);
  }catch(err){
  const n=$("#result-note");if(n)n.textContent="Unable to load study content: "+err.message;
@@ -2243,7 +2241,7 @@ $("#verse-previous").onclick=()=>moveVerse(-1);
 $("#verse-next").onclick=()=>moveVerse(1);
 $("#rail-dhyana").onclick=()=>chooseVerse("d-1");$("#rail-slokas").onclick=()=>chooseVerse("s-1");
 $("#verse-rail").onclick=e=>{const b=e.target.closest("[data-rail]");if(b)chooseVerse(b.dataset.rail);};
-$("#reader-mode").onchange=e=>{$("#learning-mode").value=e.target.value==="full"?"continuous":"study";$("#learning-mode").dispatchEvent(new Event("change"));};
+$("#reader-mode").onchange=e=>{$("#learning-mode").value="repeat";$("#learning-mode").dispatchEvent(new Event("change"));};
 for(const id of ["reader-show-iast","reader-show-meaning","reader-show-deeper"])$("#"+id).onchange=applyReaderOptions;
 $("#reader-print").onclick=()=>window.print();
 $(".lalita-view-switcher").addEventListener("click",e=>{const a=e.target.closest("[data-reader-mode]");if(a){e.preventDefault();setReaderMode(a.dataset.readerMode);}});
@@ -2325,6 +2323,9 @@ function initLearningMode(){
  if(!selector||!host)return;
  function choose(){
   const mode=selector.value,isChant=mode!=="names";
+  const display=document.querySelector(".reader-display-controls");
+  if(mode==="continuous"){ $("#reader-show-iast").checked=false;$("#reader-show-meaning").checked=true;$("#reader-show-deeper").checked=false;display.hidden=true;$("#practice-voice").value="KMP"; }
+  else{display.hidden=false;if(mode==="repeat")$("#practice-voice").value="KMP";}
   const targetMode=mode==="continuous"?"full":"study";
   if(targetMode!==readerMode)setReaderMode(targetMode);
   const old=host.dataset.mode;
@@ -2333,13 +2334,14 @@ function initLearningMode(){
    if(guided.active)guidedStop("Stopped");
   }else if(!isChant&&guided.active){guidedStop("Stopped");}
   host.dataset.mode=isChant?"chant":"guided";
-  document.querySelectorAll(".guided-verse-setting").forEach(el=>el.hidden=$("#guided-style").value==="names");
-  $(".practice-repeat-field").hidden=mode!=="repeat";
-  $(".guided-style-field").hidden=mode!=="names";
-  $(".practice-fields").hidden=mode==="study";
-  $(".guided-style-field").hidden=mode!=="names";
-  $("#practice-mode-help").textContent=mode==="study"?"Read the selected verse and its meanings. Play chants the selected verse.":mode==="repeat"?"Choose a range and how many times to repeat each śloka.":mode==="continuous"?"Chant a selected range continuously, without repeats.":"Listen to divine names individually, with optional repetitions and pauses.";
+  document.querySelectorAll(".guided-verse-setting").forEach(el=>el.hidden=true);
+  $(".practice-repeat-field").hidden=false;
+  $(".guided-style-field").hidden=true;
+  $(".practice-fields").hidden=false;
+  $(".guided-style-field").hidden=true;
+  $("#practice-mode-help").textContent=mode==="continuous"?"Continuous chanting displays only the śloka and simple meaning.":mode==="repeat"?"Choose a range, singer and repeat count. The active śloka is highlighted.":"Chant divine names with MSS, repeating each name as selected.";
   $("#practice-play").disabled=false;
+  document.querySelectorAll(".guided-name-setting").forEach(el=>el.hidden=false);
   syncDock();
  }
  selector.addEventListener("change",choose);
