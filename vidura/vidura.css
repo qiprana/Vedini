@@ -212,3 +212,7 @@
 .vidura-page .vidura-verse-navigation button{padding:9px 16px;background:#f3f8f1;color:#315944;border:1px solid #b8cfbd;border-radius:9px;font:700 13px system-ui;cursor:pointer}
 .vidura-page .vidura-verse-navigation button:disabled{opacity:.4;cursor:not-allowed}
 .vidura-page .vidura-verse-navigation span{color:#526d5c;font:600 13px system-ui}
+
+/* Opening prayers are separate from numbered Viduranīti ślokas. */
+.vidura-page .vidura-card:has([data-chant-slot="-1"]),.vidura-page .vidura-card:has([data-chant-slot="0"]){border-left:4px solid #b78563}
+.vidura-page .vidura-script{white-space:pre-line}
