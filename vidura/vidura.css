@@ -220,3 +220,11 @@
 /* PDF section invocations preceding opening prayers and the main Viduraniti verses. */
 .vidura-page .vidura-section-invocation{text-align:center;margin:0 0 17px;padding:8px 10px 14px;border-bottom:1px solid var(--v-line);color:var(--v-green);font:700 clamp(20px,2.6vw,27px)/1.5 'Noto Serif Devanagari','Kohinoor Devanagari',serif}
 .vidura-page .vidura-invocation-iast{font:italic 600 17px/1.5 Georgia,serif;letter-spacing:.015em;margin-top:3px}
+
+/* Per-śloka play-all and stop controls. */
+.vidura-page .vidura-card-actions{display:flex;align-items:center;flex-wrap:wrap;gap:7px}
+.vidura-page .vidura-card-actions button{min-height:36px;white-space:nowrap}
+.vidura-page .vidura-card-actions [data-play-all-parts]{background:#305e47;color:white;border-color:#305e47}
+.vidura-page .vidura-card-actions [data-stop-verse]{background:#fffaf6;color:#875140;border-color:#cdb2a7}
+.vidura-page .vidura-card-actions button:disabled{opacity:.45;cursor:not-allowed}
+@media(max-width:620px){.vidura-page .vidura-card-actions{width:100%}.vidura-page .vidura-card-actions button{flex:1 1 auto}}
