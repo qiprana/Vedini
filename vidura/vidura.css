@@ -216,3 +216,7 @@
 /* Opening prayers are separate from numbered Viduranīti ślokas. */
 .vidura-page .vidura-card:has([data-chant-slot="-1"]),.vidura-page .vidura-card:has([data-chant-slot="0"]){border-left:4px solid #b78563}
 .vidura-page .vidura-script{white-space:pre-line}
+
+/* PDF section invocations preceding opening prayers and the main Viduraniti verses. */
+.vidura-page .vidura-section-invocation{text-align:center;margin:0 0 17px;padding:8px 10px 14px;border-bottom:1px solid var(--v-line);color:var(--v-green);font:700 clamp(20px,2.6vw,27px)/1.5 'Noto Serif Devanagari','Kohinoor Devanagari',serif}
+.vidura-page .vidura-invocation-iast{font:italic 600 17px/1.5 Georgia,serif;letter-spacing:.015em;margin-top:3px}
