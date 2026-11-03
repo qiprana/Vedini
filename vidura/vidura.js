@@ -100,13 +100,17 @@ const parts=[
 [['व्यासाय विष्णुरूपाय','vyāsāya viṣṇurūpāya'],['व्यासरूपाय विष्णवे','vyāsarūpāya viṣṇave'],['नमो वै ब्रह्मनिधये','namo vai brahmanidhaye'],['वासिष्ठाय नमो नमः','vāsiṣṭhāya namo namaḥ']],
 [['नारायणं नमस्कृत्य','nārāyaṇaṃ namaskṛtya'],['नरं चैव नरोत्तमम्','naraṃ caiva narottamam'],['देवीं सरस्वतीं व्यासं','devīṃ sarasvatīṃ vyāsaṃ'],['ततो जयमुदीरयेत्','tato jayamudīrayet']]
 ];
+const prayerKannada=[
+{lines:['ವ್ಯಾಸಾಯ ವಿಷ್ಣುರೂಪಾಯ ವ್ಯಾಸರೂಪಾಯ ವಿಷ್ಣವೇ ।','ನಮೋ ವೈ ಬ್ರಹ್ಮನಿಧಯೇ ವಾಸಿಷ್ಠಾಯ ನಮೋ ನಮಃ ॥'],parts:['ವ್ಯಾಸಾಯ ವಿಷ್ಣುರೂಪಾಯ','ವ್ಯಾಸರೂಪಾಯ ವಿಷ್ಣವೇ','ನಮೋ ವೈ ಬ್ರಹ್ಮನಿಧಯೇ','ವಾಸಿಷ್ಠಾಯ ನಮೋ ನಮಃ']},
+{lines:['ನಾರಾಯಣಂ ನಮಸ್ಕೃತ್ಯ ನರಂ ಚೈವ ನರೋತ್ತಮಮ್ ।','ದೇವೀಂ ಸರಸ್ವತೀಂ ವ್ಯಾಸಂ ತತೋ ಜಯಮುದೀರಯೇತ್ ॥'],parts:['ನಾರಾಯಣಂ ನಮಸ್ಕೃತ್ಯ','ನರಂ ಚೈವ ನರೋತ್ತಮಮ್','ದೇವೀಂ ಸರಸ್ವತೀಂ ವ್ಯಾಸಂ','ತತೋ ಜಯಮುದೀರಯೇತ್']}
+];
 const prayers=prarthana.verses.map((p,i)=>({
 id:p.id,verse_number:i-1,prayerNumber:i+1,isPrayer:true,theme:p.title,
-reading:{dev:p.dev,iast:p.iast,kn:p.dev},
+reading:{dev:p.dev,iast:p.iast,kn:prayerKannada[i].lines},
 meaning:{en:i===0?'An invocation offering reverence to Vyāsa, honored in the prayer as an embodiment of Viṣṇu and a treasury of sacred knowledge.':'An invocation honoring Nārāyaṇa, Nara, Sarasvatī, and Vyāsa before beginning the sacred recitation.',kn:i===0?'ವ್ಯಾಸರಿಗೆ ನಮಸ್ಕಾರ; ಅವರನ್ನು ವಿಷ್ಣುಸ್ವರೂಪ ಮತ್ತು ಜ್ಞಾನದ ನಿಧಿ ಎಂದು ಸ್ತುತಿಸಲಾಗಿದೆ.':'ನಾರಾಯಣ, ನರ, ಸರಸ್ವತಿ ಮತ್ತು ವ್ಯಾಸರನ್ನು ನಮಸ್ಕರಿಸಿ ಪಠಣವನ್ನು ಆರಂಭಿಸುವ ಪ್ರಾರ್ಥನೆ.'},
 deeper_meaning:{en:'Opening invocation from the supplied Samskrita Bharati Viduranīti handout (page 2).',kn:'ಸಂಸ್ಕೃತಭಾರತಿ ವಿದುರನೀತಿ ಪುಸ್ತಕದ ಪ್ರಾರಂಭಿಕ ಪ್ರಾರ್ಥನೆ (ಪುಟ ೨).'},
 word_by_word:[],
-practice:parts[i].map(([dev,iast],j)=>({id:String(j+1),order:j+1,dev,iast,kn:dev}))
+practice:parts[i].map(([dev,iast],j)=>({id:String(j+1),order:j+1,dev,iast,kn:prayerKannada[i].parts[j]}))
 }));
 state.verses=[...prayers,...bundles.flat()];verseSelect.innerHTML=state.verses.map(v=>'<option value="'+v.verse_number+'">'+escapeHtml(verseLabel(v))+' · '+escapeHtml(v.theme)+'</option>').join('');
 rangeFrom.innerHTML=verseSelect.innerHTML;rangeTo.innerHTML=verseSelect.innerHTML;verseSelect.value='-1';rangeFrom.value='-1';rangeTo.value='25';render();renderParts();selectRecording();}).catch(e=>{root.textContent='Unable to load Viduranīti content: '+e.message;stateLabel.textContent='Content unavailable';});
