@@ -22,26 +22,22 @@ def main():
     for verse in verses:
         stem=verse["id"]
         jobs.append((out/f"{stem}-full.mp3","\n".join(verse["dev"])))
-        # Split the two printed lines into their four chanting padas.
-        padas=[]
-        for line in verse["dev"]:
-            words=line.replace(" ।","").replace(" ॥","").split()
-            # PDF Prarthana verses are anushtubh: 4 metrical padas per verse.
-            # Use explicit Sanskrit word boundaries so no word is truncated.
-            if stem=="prarthana-1":
-                padas=[
-                    "व्यासाय विष्णुरूपाय",
-                    "व्यासरूपाय विष्णवे",
-                    "नमो वै ब्रह्मनिधये",
-                    "वासिष्ठाय नमो नमः",
-                ]
-            else:
-                padas=[
-                    "नारायणं नमस्कृत्य",
-                    "नरं चैव नरोत्तमम्",
-                    "देवीं सरस्वतीं व्यासं",
-                    "ततो जयमुदीरयेत्",
-                ]
+        # Four explicitly reviewed chantable padas from the source PDF.
+        padas_by_verse = {
+            "prarthana-1": [
+                "व्यासाय विष्णुरूपाय",
+                "व्यासरूपाय विष्णवे",
+                "नमो वै ब्रह्मनिधये",
+                "वासिष्ठाय नमो नमः",
+            ],
+            "prarthana-2": [
+                "नारायणं नमस्कृत्य",
+                "नरं चैव नरोत्तमम्",
+                "देवीं सरस्वतीं व्यासं",
+                "ततो जयमुदीरयेत्",
+            ],
+        }
+        padas=padas_by_verse[stem]
         for i,pada in enumerate(padas,1):
             jobs.append((out/f"{stem}-part-{i:02d}.mp3",pada))
     for path,text in jobs:
