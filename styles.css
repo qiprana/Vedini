@@ -2409,3 +2409,11 @@ header p{color:#845c4b;font-size:18px}
 .reader-page #chant-speed{min-width:0;flex:1 1 0;width:100%;padding:0;accent-color:#35664b;cursor:pointer}
 .reader-page #chant-speed-value{font:700 16px system-ui,sans-serif;color:#315f49;white-space:nowrap;min-width:54px;text-align:right}
 @media(max-width:720px){.reader-page .verse-content-grid{grid-template-columns:minmax(0,1fr)!important}.reader-page .verse-reading-panel .verse-script.devanagari,.reader-page .verse-reading-panel .verse-script.kannada{font-size:clamp(22px,5.6vw,26px)!important}}
+
+/* Keep per-śloka chant, part-by-part play-all, and Stop controls together. */
+.reader-page .verse-chant-actions{display:inline-flex;align-items:center;justify-content:flex-end;gap:6px;flex-wrap:wrap}
+.reader-page .verse-chant-actions .dock-verse-play-parts{border:1px solid #a9c3ad;background:#eaf3e9;color:#315c45;border-radius:9px;padding:8px 11px;font:600 12px system-ui;cursor:pointer;min-height:36px}
+.reader-page .verse-chant-actions .dock-verse-play-parts.chanting{background:#315c45;color:white}
+.reader-page .verse-chant-actions .dock-verse-stop{border:1px solid #c7ad9f;background:#fffaf6;color:#8b4c3d;border-radius:9px;padding:8px 11px;font:600 12px system-ui;min-height:36px}
+.reader-page .verse-chant-actions .dock-verse-stop:disabled{opacity:.45;cursor:not-allowed}
+@media(max-width:620px){.reader-page .verse-chant-actions{justify-content:flex-start;width:100%}}
