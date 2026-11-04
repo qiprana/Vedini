@@ -55,13 +55,39 @@ function applyChantSpeed(){
 function clearFocus(){document.querySelectorAll('.vidura-phrase.active,.vidura-part.active').forEach(el=>el.classList.remove('active'));}
 function focusPart(i){const moved=i!==state.lastHighlightedPart;clearFocus();state.lastHighlightedPart=i;highlightCurrentVerse(true);document.querySelectorAll('[data-phrase="'+i+'"][data-verse="'+verseSelect.value+'"]').forEach(el=>el.classList.add('active'));const btn=partPicker.querySelector('[data-part="'+i+'"]');if(btn){const card=btn.closest('.vidura-part');card.classList.add('active');if(moved&&state.queueIndex===1&&state.sequence.length>0)card.scrollIntoView({block:'nearest',behavior:'auto'});}}
 function mountPartPicker(){const slot=root.querySelector('[data-chant-slot="'+verseSelect.value+'"]');if(slot){slot.querySelector('.vidura-inline-chant-placeholder')?.remove();slot.appendChild(partPicker);}}
+// Allocate existing source-word glosses to chanting portions in text order.
+// Use relative character position so sandhi and spellings in parentheses do
+// not silently discard words. Editorial phrase boundaries merit later review.
+function wordGroupsForParts(v){
+ const portions=v.practice||[],words=v.word_by_word||[];
+ const length=s=>String(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/\([^)]*\)/g,"").replace(/[^a-zA-Zāīūṛṝḷṅñṭḍṇśṣṃḥ]/g,"").length||1;
+ const lengths=portions.map(p=>length(p.iast)),total=lengths.reduce((a,b)=>a+b,0);
+ const boundaries=[];let sum=0;
+ for(const n of lengths){sum+=n;boundaries.push(sum/total);}
+ const sizes=words.map(w=>length(w.iast)),wordTotal=sizes.reduce((a,b)=>a+b,0)||1;
+ const result=portions.map(()=>[]);let offset=0,last=0;
+ words.forEach((w,i)=>{
+  const midpoint=(offset+sizes[i]/2)/wordTotal;offset+=sizes[i];
+  while(last<boundaries.length-1&&midpoint>boundaries[last])last++;
+  result[last].push(w);
+ });
+ return result;
+}
+function partGloss(words,language){
+ return words.map(w=>String(w[language]||"").replace(/\s*\([^)]*\)/g,"").trim()).filter(Boolean).join(" · ");
+}
+function partWordGrid(words,language){
+ if(!words.length)return '<p class="vidura-part-gloss">Word analysis is being reviewed.</p>';
+ return '<div class="vidura-part-word-grid">'+words.map(w=>'<div class="vidura-part-word"><span><b>'+escapeHtml(language==='kn'?w.dev:w.dev)+'</b><small>'+escapeHtml(w.iast)+'</small></span><span>'+escapeHtml(w[language])+'</span></div>').join('')+'</div>';
+}
 function renderParts(){
  const v=verse();if(!v)return;
  mountPartPicker();
  const current=null,count=null;
  if(current)current.textContent='· Śloka '+v.verse_number;
  if(count)count.textContent=v.practice.length+' parts';
- partPicker.innerHTML=v.practice.map((p,i)=>'<div class="vidura-part" data-verse="'+v.verse_number+'"><div class="vidura-part-title">Part '+(i+1)+'</div><div class="vidura-part-script" lang="'+(state.script==='kn'?'kn':'sa')+'">'+escapeHtml(p[state.script])+'</div><div class="vidura-part-iast">'+escapeHtml(p.iast)+'</div><div class="vidura-part-controls"><button type="button" data-part="'+i+'" '+(state.playParts[i]?'':'disabled')+' aria-label="Play part '+(i+1)+' of śloka '+v.verse_number+'">▶ Play</button></div></div>').join('');
+ const language=state.script==='kn'?'kn':'en',groups=wordGroupsForParts(v);
+ partPicker.innerHTML=v.practice.map((p,i)=>'<div class="vidura-part" data-verse="'+v.verse_number+'"><div class="vidura-part-title">Part '+(i+1)+'</div><div class="vidura-part-script" lang="'+(state.script==='kn'?'kn':'sa')+'">'+escapeHtml(p[state.script])+'</div><div class="vidura-part-iast">'+escapeHtml(p.iast)+'</div><div class="vidura-part-controls"><button type="button" data-part="'+i+'" '+(state.playParts[i]?'':'disabled')+' aria-label="Play part '+(i+1)+' of śloka '+v.verse_number+'">▶ Play</button></div><details class="vidura-part-meaning"><summary>'+(language==='kn'?'ಸರಳ ಅರ್ಥ · ಪದ ಪದದ ಅರ್ಥ':'Simple meaning · Word by word')+'</summary><div class="vidura-part-meaning-body"><h4>'+(language==='kn'?'ಸರಳ ಪದಾರ್ಥ':'Simple phrase gloss')+'</h4><p class="vidura-part-gloss">'+escapeHtml(partGloss(groups[i],language))+'</p><h4>'+(language==='kn'?'ಪದ ಪದದ ಅರ್ಥ':'Word by word')+'</h4>'+partWordGrid(groups[i],language)+'</div></details></div>').join('');
  partPicker.querySelectorAll('[data-part]').forEach(b=>b.addEventListener('click',()=>startAudio(Number(b.dataset.part))));
 
 }
