@@ -78,7 +78,7 @@ function partGloss(words,language){
 }
 function partWordGrid(words,language){
  if(!words.length)return '<p class="vidura-part-gloss">Word analysis is being reviewed.</p>';
- return '<div class="vidura-part-word-grid">'+words.map(w=>'<div class="vidura-part-word"><span><b>'+escapeHtml(language==='kn'?w.dev:w.dev)+'</b><small>'+escapeHtml(w.iast)+'</small></span><span>'+escapeHtml(w[language])+'</span></div>').join('')+'</div>';
+ return '<div class="vidura-part-word-grid">'+words.map(w=>'<div class="vidura-part-word"><span><b>'+escapeHtml(w.dev)+'</b><small>'+escapeHtml(w.iast)+'</small></span><span>'+escapeHtml(w[language])+'</span></div>').join('')+'</div>';
 }
 function renderParts(){
  const v=verse();if(!v)return;
