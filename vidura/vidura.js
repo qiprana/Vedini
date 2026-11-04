@@ -58,27 +58,34 @@ function mountPartPicker(){const slot=root.querySelector('[data-chant-slot="'+ve
 // Allocate existing source-word glosses to chanting portions in text order.
 // Use relative character position so sandhi and spellings in parentheses do
 // not silently discard words. Editorial phrase boundaries merit later review.
+// Each component is mapped to an explicit chanting phrase in the verse data.
+// Never estimate boundaries from text lengths: sandhi and repeated words make
+// that guess drop or misplace words (e.g. vidyā in śloka 1).
 function wordGroupsForParts(v){
- const portions=v.practice||[],words=v.word_by_word||[];
- const length=s=>String(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/\([^)]*\)/g,"").replace(/[^a-zA-Zāīūṛṝḷṅñṭḍṇśṣṃḥ]/g,"").length||1;
- const lengths=portions.map(p=>length(p.iast)),total=lengths.reduce((a,b)=>a+b,0);
- const boundaries=[];let sum=0;
- for(const n of lengths){sum+=n;boundaries.push(sum/total);}
- const sizes=words.map(w=>length(w.iast)),wordTotal=sizes.reduce((a,b)=>a+b,0)||1;
- const result=portions.map(()=>[]);let offset=0,last=0;
- words.forEach((w,i)=>{
-  const midpoint=(offset+sizes[i]/2)/wordTotal;offset+=sizes[i];
-  while(last<boundaries.length-1&&midpoint>boundaries[last])last++;
-  result[last].push(w);
+ const words=v.word_by_word||[];
+ const used=new Set();
+ return (v.practice||[]).map((part,index)=>{
+  const indices=part.component_indices;
+  if(!Array.isArray(indices)){
+   console.error('Missing word mapping',v.verse_number,index);
+   return [];
+  }
+  return indices.map(i=>{
+   if(!Number.isInteger(i)||i<0||i>=words.length||used.has(i)){
+    console.error('Invalid or repeated word mapping',v.verse_number,index,i);
+    return null;
+   }
+   used.add(i);
+   return words[i];
+  }).filter(Boolean);
  });
- return result;
 }
 function partGloss(words,language){
  return words.map(w=>String(w[language]||"").replace(/\s*\([^)]*\)/g,"").trim()).filter(Boolean).join(" · ");
 }
 function partWordGrid(words,language){
  if(!words.length)return '<p class="vidura-part-gloss">Word analysis is being reviewed.</p>';
- return '<div class="vidura-part-word-grid">'+words.map(w=>'<div class="vidura-part-word"><span><b>'+escapeHtml(w.dev)+'</b><small>'+escapeHtml(w.iast)+'</small></span><span>'+escapeHtml(w[language])+'</span></div>').join('')+'</div>';
+ return '<div class="vidura-part-word-grid" role="list">'+words.map(w=>'<div class="vidura-part-word" role="listitem"><span><b>'+escapeHtml(w[state.script]||w.dev)+'</b><small>'+escapeHtml(w.iast)+'</small></span><span>'+escapeHtml(w[language])+'</span></div>').join('')+'</div>';
 }
 function renderParts(){
  const v=verse();if(!v)return;
@@ -87,7 +94,10 @@ function renderParts(){
  if(current)current.textContent='· Śloka '+v.verse_number;
  if(count)count.textContent=v.practice.length+' parts';
  const language=state.script==='kn'?'kn':'en',groups=wordGroupsForParts(v);
- partPicker.innerHTML=v.practice.map((p,i)=>'<div class="vidura-part" data-verse="'+v.verse_number+'"><div class="vidura-part-title">Part '+(i+1)+'</div><div class="vidura-part-script" lang="'+(state.script==='kn'?'kn':'sa')+'">'+escapeHtml(p[state.script])+'</div><div class="vidura-part-iast">'+escapeHtml(p.iast)+'</div><div class="vidura-part-controls"><button type="button" data-part="'+i+'" '+(state.playParts[i]?'':'disabled')+' aria-label="Play part '+(i+1)+' of śloka '+v.verse_number+'">▶ Play</button></div><details class="vidura-part-meaning"><summary>'+(language==='kn'?'ಸರಳ ಅರ್ಥ · ಪದ ಪದದ ಅರ್ಥ':'Simple meaning · Word by word')+'</summary><div class="vidura-part-meaning-body"><h4>'+(language==='kn'?'ಸರಳ ಪದಾರ್ಥ':'Simple phrase gloss')+'</h4><p class="vidura-part-gloss">'+escapeHtml(partGloss(groups[i],language))+'</p><h4>'+(language==='kn'?'ಪದ ಪದದ ಅರ್ಥ':'Word by word')+'</h4>'+partWordGrid(groups[i],language)+'</div></details></div>').join('');
+ partPicker.innerHTML=v.practice.map((p,i)=>{
+  const meaning=p.meaning?.[language]||partGloss(groups[i],language);
+  return '<div class="vidura-part" data-verse="'+v.verse_number+'"><div class="vidura-part-title">Part '+(i+1)+'</div><div class="vidura-part-script" lang="'+(state.script==='kn'?'kn':'sa')+'">'+escapeHtml(p[state.script])+'</div><div class="vidura-part-iast">'+escapeHtml(p.iast)+'</div><div class="vidura-part-controls"><button type="button" data-part="'+i+'" '+(state.playParts[i]?'':'disabled')+' aria-label="Play part '+(i+1)+' of '+verseLabel(v)+'">▶ Play</button></div><details class="vidura-part-meaning"><summary><span>'+(language==='kn'?'ಅರ್ಥ · ಪದಪದಾರ್ಥ':'Meaning · Word by word')+'</span><span class="vidura-part-summary-chevron" aria-hidden="true">⌄</span></summary><div class="vidura-part-meaning-body"><p class="vidura-part-gloss">'+escapeHtml(meaning)+'</p>'+partWordGrid(groups[i],language)+'</div></details></div>';
+ }).join('');
  partPicker.querySelectorAll('[data-part]').forEach(b=>b.addEventListener('click',()=>startAudio(Number(b.dataset.part))));
 
 }
@@ -133,13 +143,51 @@ const prayerKannada=[
 {lines:['ವ್ಯಾಸಾಯ ವಿಷ್ಣುರೂಪಾಯ ವ್ಯಾಸರೂಪಾಯ ವಿಷ್ಣವೇ ।','ನಮೋ ವೈ ಬ್ರಹ್ಮನಿಧಯೇ ವಾಸಿಷ್ಠಾಯ ನಮೋ ನಮಃ ॥'],parts:['ವ್ಯಾಸಾಯ ವಿಷ್ಣುರೂಪಾಯ','ವ್ಯಾಸರೂಪಾಯ ವಿಷ್ಣವೇ','ನಮೋ ವೈ ಬ್ರಹ್ಮನಿಧಯೇ','ವಾಸಿಷ್ಠಾಯ ನಮೋ ನಮಃ']},
 {lines:['ನಾರಾಯಣಂ ನಮಸ್ಕೃತ್ಯ ನರಂ ಚೈವ ನರೋತ್ತಮಮ್ ।','ದೇವೀಂ ಸರಸ್ವತೀಂ ವ್ಯಾಸಂ ತತೋ ಜಯಮುದೀರಯೇತ್ ॥'],parts:['ನಾರಾಯಣಂ ನಮಸ್ಕೃತ್ಯ','ನರಂ ಚೈವ ನರೋತ್ತಮಮ್','ದೇವೀಂ ಸರಸ್ವತೀಂ ವ್ಯಾಸಂ','ತತೋ ಜಯಮುದೀರಯೇತ್']}
 ];
+const prayerWordComponents=[
+ [
+  {dev:'व्यासाय',iast:'vyāsāya',en:'To Vyāsa',kn:'ವ್ಯಾಸರಿಗೆ'},
+  {dev:'विष्णुरूपाय',iast:'viṣṇurūpāya',en:'Who has the form of Viṣṇu',kn:'ವಿಷ್ಣುವಿನ ರೂಪವುಳ್ಳವರಿಗೆ'},
+  {dev:'व्यासरूपाय',iast:'vyāsarūpāya',en:'Who has the form of Vyāsa',kn:'ವ್ಯಾಸನ ರೂಪವುಳ್ಳವರಿಗೆ'},
+  {dev:'विष्णवे',iast:'viṣṇave',en:'To Viṣṇu',kn:'ವಿಷ್ಣುವಿಗೆ'},
+  {dev:'नमः (नमो)',iast:'namaḥ (namo)',en:'Salutations',kn:'ನಮಸ್ಕಾರ'},
+  {dev:'वै',iast:'vai',en:'Indeed',kn:'ನಿಶ್ಚಯವಾಗಿಯೂ'},
+  {dev:'ब्रह्मनिधये',iast:'brahmanidhaye',en:'To the treasury of sacred wisdom',kn:'ಪವಿತ್ರ ಜ್ಞಾನದ ನಿಧಿಗೆ'},
+  {dev:'वासिष्ठाय',iast:'vāsiṣṭhāya',en:'To the descendant of Vasiṣṭha',kn:'ವಸಿಷ್ಠ ವಂಶಸ್ಥರಿಗೆ'},
+  {dev:'नमः',iast:'namaḥ',en:'Salutations',kn:'ನಮಸ್ಕಾರ'},
+  {dev:'नमः',iast:'namaḥ',en:'Salutations',kn:'ನಮಸ್ಕಾರ'}
+ ],
+ [
+  {dev:'नारायणम्',iast:'nārāyaṇam',en:'To Nārāyaṇa',kn:'ನಾರಾಯಣನಿಗೆ'},
+  {dev:'नमस्कृत्य',iast:'namaskṛtya',en:'Having offered reverence',kn:'ನಮಸ್ಕರಿಸಿ'},
+  {dev:'नरम्',iast:'naram',en:'To Nara',kn:'ನರನಿಗೆ'},
+  {dev:'च एव (चैव)',iast:'ca eva (caiva)',en:'And indeed',kn:'ಮತ್ತು ನಿಜವಾಗಿಯೂ'},
+  {dev:'नरोत्तमम्',iast:'narottamam',en:'The foremost among people',kn:'ನರೋತ್ತಮನಿಗೆ'},
+  {dev:'देवीम्',iast:'devīm',en:'To the Goddess',kn:'ದೇವಿಗೆ'},
+  {dev:'सरस्वतीम्',iast:'sarasvatīm',en:'To Sarasvatī',kn:'ಸರಸ್ವತಿಗೆ'},
+  {dev:'व्यासम्',iast:'vyāsam',en:'To Vyāsa',kn:'ವ್ಯಾಸರಿಗೆ'},
+  {dev:'ततः',iast:'tataḥ',en:'Thereafter',kn:'ಅನಂತರ'},
+  {dev:'जयम्',iast:'jayam',en:'The Jaya (Mahābhārata)',kn:'ಜಯ ಎಂಬ ಮಹಾಭಾರತವನ್ನು'},
+  {dev:'उदीरयेत्',iast:'udīrayet',en:'One should recite',kn:'ಪಠಿಸಬೇಕು'}
+ ]
+];
+const prayerWordGroups=[[[0,1],[2,3],[4,5,6],[7,8,9]],[[0,1],[2,3,4],[5,6,7],[8,9,10]]];
+const prayerMeanings=[
+ [{en:'To Vyāsa, who has the form of Viṣṇu.',kn:'ವಿಷ್ಣುಸ್ವರೂಪಿಯಾದ ವ್ಯಾಸರಿಗೆ.'},
+  {en:'To Viṣṇu, who has the form of Vyāsa.',kn:'ವ್ಯಾಸಸ್ವರೂಪಿಯಾದ ವಿಷ್ಣುವಿಗೆ.'},
+  {en:'Salutations to the treasury of sacred wisdom.',kn:'ಪವಿತ್ರ ಜ್ಞಾನದ ನಿಧಿಗೆ ನಮಸ್ಕಾರ.'},
+  {en:'Repeated salutations to the descendant of Vasiṣṭha.',kn:'ವಸಿಷ್ಠ ವಂಶಸ್ಥರಿಗೆ ಮತ್ತೆ ಮತ್ತೆ ನಮಸ್ಕಾರ.'}],
+ [{en:'Having bowed to Nārāyaṇa.',kn:'ನಾರಾಯಣನಿಗೆ ನಮಸ್ಕರಿಸಿ.'},
+  {en:'And to Nara, the best among people.',kn:'ಮತ್ತು ನರೋತ್ತಮನಾದ ನರನಿಗೆ.'},
+  {en:'To the Goddess Sarasvatī and to Vyāsa.',kn:'ಸರಸ್ವತೀ ದೇವಿಗೆ ಮತ್ತು ವ್ಯಾಸರಿಗೆ.'},
+  {en:'Then one should recite the Jaya (Mahābhārata).',kn:'ಅನಂತರ ಜಯ ಎಂಬ ಮಹಾಭಾರತವನ್ನು ಪಠಿಸಬೇಕು.'}]
+];
 const prayers=prarthana.verses.map((p,i)=>({
 id:p.id,verse_number:i-1,prayerNumber:i+1,isPrayer:true,theme:p.title,
 reading:{dev:p.dev,iast:p.iast,kn:prayerKannada[i].lines},
 meaning:{en:i===0?'An invocation offering reverence to Vyāsa, honored in the prayer as an embodiment of Viṣṇu and a treasury of sacred knowledge.':'An invocation honoring Nārāyaṇa, Nara, Sarasvatī, and Vyāsa before beginning the sacred recitation.',kn:i===0?'ವ್ಯಾಸರಿಗೆ ನಮಸ್ಕಾರ; ಅವರನ್ನು ವಿಷ್ಣುಸ್ವರೂಪ ಮತ್ತು ಜ್ಞಾನದ ನಿಧಿ ಎಂದು ಸ್ತುತಿಸಲಾಗಿದೆ.':'ನಾರಾಯಣ, ನರ, ಸರಸ್ವತಿ ಮತ್ತು ವ್ಯಾಸರನ್ನು ನಮಸ್ಕರಿಸಿ ಪಠಣವನ್ನು ಆರಂಭಿಸುವ ಪ್ರಾರ್ಥನೆ.'},
 deeper_meaning:{en:'Opening invocation from the supplied Samskrita Bharati Viduranīti handout (page 2).',kn:'ಸಂಸ್ಕೃತಭಾರತಿ ವಿದುರನೀತಿ ಪುಸ್ತಕದ ಪ್ರಾರಂಭಿಕ ಪ್ರಾರ್ಥನೆ (ಪುಟ ೨).'},
-word_by_word:[],
-practice:parts[i].map(([dev,iast],j)=>({id:String(j+1),order:j+1,dev,iast,kn:prayerKannada[i].parts[j]}))
+word_by_word:prayerWordComponents[i],
+practice:parts[i].map(([dev,iast],j)=>({id:String(j+1),order:j+1,dev,iast,kn:prayerKannada[i].parts[j],component_indices:prayerWordGroups[i][j],meaning:prayerMeanings[i][j]}))
 }));
 state.verses=[...prayers,...bundles.flat()];verseSelect.innerHTML=state.verses.map(v=>'<option value="'+v.verse_number+'">'+escapeHtml(verseLabel(v))+' · '+escapeHtml(v.theme)+'</option>').join('');
 rangeFrom.innerHTML=verseSelect.innerHTML;rangeTo.innerHTML=verseSelect.innerHTML;verseSelect.value='-1';rangeFrom.value='-1';rangeTo.value='25';render();renderParts();selectRecording();}).catch(e=>{root.textContent='Unable to load Viduranīti content: '+e.message;stateLabel.textContent='Content unavailable';});
