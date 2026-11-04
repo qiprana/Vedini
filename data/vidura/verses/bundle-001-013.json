@@ -94,6 +94,18 @@
         "kn": "ವಿದ್ಯಾರ್ಥಿ; ಜ್ಞಾನಸಾಧಕ"
       },
       {
+        "dev": "वा",
+        "iast": "vā",
+        "en": "Or",
+        "kn": "ಅಥವಾ"
+      },
+      {
+        "dev": "त्यजेत्",
+        "iast": "tyajet",
+        "en": "Should give up or renounce",
+        "kn": "ತ್ಯಜಿಸಬೇಕು"
+      },
+      {
         "dev": "सुखम्",
         "iast": "sukham",
         "en": "Comfort or pleasure (here, to be relinquished)",
@@ -108,7 +120,16 @@
         "kn": "ಸುಖಾರ್ಥಿನಃ ಕುತೋ ವಿದ್ಯಾ",
         "order": 1,
         "audio": "audio/vidura/sloka-001-part-01.mp3",
-        "boundary_source": "pdf-highlight-end"
+        "boundary_source": "pdf-highlight-end",
+        "meaning": {
+          "en": "How can one seeking comfort attain knowledge?",
+          "kn": "ಸುಖವನ್ನೇ ಬಯಸುವವನಿಗೆ ವಿದ್ಯೆ ಹೇಗೆ ದೊರೆಯುವುದು?"
+        },
+        "component_indices": [
+          0,
+          1,
+          2
+        ]
       },
       {
         "id": "b",
@@ -117,7 +138,16 @@
         "kn": "ನಾಸ್ತಿ ವಿದ್ಯಾರ್ಥಿನಃ ಸುಖಮ್",
         "order": 2,
         "audio": "audio/vidura/sloka-001-part-02.mp3",
-        "boundary_source": "pada-end"
+        "boundary_source": "pada-end",
+        "meaning": {
+          "en": "The seeker of knowledge cannot always enjoy comfort.",
+          "kn": "ವಿದ್ಯೆಯನ್ನು ಅರಸುವವನಿಗೆ ಯಾವಾಗಲೂ ಸುಖವಿಲ್ಲ."
+        },
+        "component_indices": [
+          3,
+          4,
+          5
+        ]
       },
       {
         "id": "c",
@@ -126,7 +156,17 @@
         "kn": "ಸುಖಾರ್ಥೀ ವಾ ತ್ಯಜೇದ್ ವಿದ್ಯಾಂ",
         "order": 3,
         "audio": "audio/vidura/sloka-001-part-03.mp3",
-        "boundary_source": "pdf-highlight-end"
+        "boundary_source": "pdf-highlight-end",
+        "meaning": {
+          "en": "The comfort-seeker must relinquish learning,",
+          "kn": "ಸುಖವನ್ನು ಬಯಸುವವನು ವಿದ್ಯೆಯನ್ನು ತ್ಯಜಿಸಬೇಕು,"
+        },
+        "component_indices": [
+          6,
+          7,
+          8,
+          9
+        ]
       },
       {
         "id": "d",
@@ -135,7 +175,17 @@
         "kn": "ವಿದ್ಯಾರ್ಥೀ ವಾ ತ್ಯಜೇತ್ ಸುಖಮ್",
         "order": 4,
         "audio": "audio/vidura/sloka-001-part-04.mp3",
-        "boundary_source": "pada-end"
+        "boundary_source": "pada-end",
+        "meaning": {
+          "en": "or the knowledge-seeker must relinquish comfort.",
+          "kn": "ಅಥವಾ ವಿದ್ಯೆಯನ್ನು ಅರಸುವವನು ಸುಖವನ್ನು ತ್ಯಜಿಸಬೇಕು."
+        },
+        "component_indices": [
+          10,
+          11,
+          12,
+          13
+        ]
       }
     ],
     "practice_source": "pdf-highlight-cut-points",
@@ -268,7 +318,12 @@
         "kn": "ಅಸೂಯೈಕಪದಂ ಮೃತ್ಯುಃ",
         "order": 1,
         "audio": "audio/vidura/sloka-002-part-01.mp3",
-        "boundary_source": "editorial-half-pada"
+        "boundary_source": "editorial-half-pada",
+        "component_indices": [
+          0,
+          1,
+          2
+        ]
       },
       {
         "id": "b",
@@ -277,7 +332,12 @@
         "kn": "ಅತಿವಾದಃ ಶ್ರಿಯೋ ವಧಃ",
         "order": 2,
         "audio": "audio/vidura/sloka-002-part-02.mp3",
-        "boundary_source": "pada-end"
+        "boundary_source": "pada-end",
+        "component_indices": [
+          3,
+          4,
+          5
+        ]
       },
       {
         "id": "c",
@@ -286,7 +346,12 @@
         "kn": "ಅಶುಶ್ರೂಷಾ ತ್ವರಾ ಶ್ಲಾಘಾ",
         "order": 3,
         "audio": "audio/vidura/sloka-002-part-03.mp3",
-        "boundary_source": "editorial-half-pada"
+        "boundary_source": "editorial-half-pada",
+        "component_indices": [
+          6,
+          7,
+          8
+        ]
       },
       {
         "id": "d",
@@ -295,7 +360,12 @@
         "kn": "ವಿದ್ಯಾಯಾಃ ಶತ್ರವಃ ತ್ರಯಃ",
         "order": 4,
         "audio": "audio/vidura/sloka-002-part-04.mp3",
-        "boundary_source": "pada-end"
+        "boundary_source": "pada-end",
+        "component_indices": [
+          9,
+          10,
+          11
+        ]
       }
     ],
     "practice_source": "editorial-four-part-split",
@@ -467,7 +537,12 @@
         "iast": "ālasyaṃ madamohau ca",
         "kn": "ಆಲಸ್ಯಂ ಮದಮೋಹೌ ಚ",
         "audio": "audio/vidura/sloka-003-part-01.mp3",
-        "boundary_source": "editorial-pada-boundary"
+        "boundary_source": "editorial-pada-boundary",
+        "component_indices": [
+          0,
+          1,
+          2
+        ]
       },
       {
         "id": "b",
@@ -476,7 +551,12 @@
         "iast": "cāpalaṃ goṣṭhireva ca",
         "kn": "ಚಾಪಲಂ ಗೋಷ್ಠಿರೇವ ಚ",
         "audio": "audio/vidura/sloka-003-part-02.mp3",
-        "boundary_source": "editorial-pada-boundary"
+        "boundary_source": "editorial-pada-boundary",
+        "component_indices": [
+          3,
+          4,
+          5
+        ]
       },
       {
         "id": "c",
@@ -485,7 +565,11 @@
         "iast": "stabdhatā cābhimānitvaṃ",
         "kn": "ಸ್ತಬ್ಧತಾ ಚಾಭಿಮಾನಿತ್ವಂ",
         "audio": "audio/vidura/sloka-003-part-03.mp3",
-        "boundary_source": "editorial-pada-boundary"
+        "boundary_source": "editorial-pada-boundary",
+        "component_indices": [
+          6,
+          7
+        ]
       },
       {
         "id": "d",
@@ -494,7 +578,11 @@
         "iast": "tathā'tyāgitvameva ca",
         "kn": "ತಥಾಽತ್ಯಾಗಿತ್ವಮೇವ ಚ",
         "audio": "audio/vidura/sloka-003-part-04.mp3",
-        "boundary_source": "editorial-pada-boundary"
+        "boundary_source": "editorial-pada-boundary",
+        "component_indices": [
+          8,
+          9
+        ]
       },
       {
         "id": "e",
@@ -503,7 +591,13 @@
         "iast": "ete vai sapta doṣāḥ",
         "kn": "ಏತೇ ವೈ ಸಪ್ತ ದೋಷಾಃ",
         "audio": "audio/vidura/sloka-003-part-05.mp3",
-        "boundary_source": "editorial-pada-boundary"
+        "boundary_source": "editorial-pada-boundary",
+        "component_indices": [
+          10,
+          11,
+          12,
+          13
+        ]
       },
       {
         "id": "f",
@@ -512,7 +606,13 @@
         "iast": "syuḥ sadā vidyārthināṃ matāḥ",
         "kn": "ಸ್ಯುಃ ಸದಾ ವಿದ್ಯಾರ್ಥಿನಾಂ ಮತಾಃ",
         "audio": "audio/vidura/sloka-003-part-06.mp3",
-        "boundary_source": "editorial-pada-boundary"
+        "boundary_source": "editorial-pada-boundary",
+        "component_indices": [
+          14,
+          15,
+          16,
+          17
+        ]
       }
     ],
     "practice_source": "editorial-pada-boundaries",
@@ -619,7 +719,10 @@
         "iast": "abhivādanaśīlasya",
         "kn": "ಅಭಿವಾದನಶೀಲಸ್ಯ",
         "audio": "audio/vidura/sloka-004-part-01.mp3",
-        "boundary_source": "editorial-pada-boundary"
+        "boundary_source": "editorial-pada-boundary",
+        "component_indices": [
+          0
+        ]
       },
       {
         "id": "b",
@@ -628,7 +731,11 @@
         "iast": "nityaṃ vṛddhopasevinaḥ",
         "kn": "ನಿತ್ಯಂ ವೃದ್ಧೋಪಸೇವಿನಃ",
         "audio": "audio/vidura/sloka-004-part-02.mp3",
-        "boundary_source": "editorial-pada-boundary"
+        "boundary_source": "editorial-pada-boundary",
+        "component_indices": [
+          1,
+          2
+        ]
       },
       {
         "id": "c",
@@ -637,7 +744,11 @@
         "iast": "catvāri sampravardhante",
         "kn": "ಚತ್ವಾರಿ ಸಮ್ಪ್ರವರ್ಧನ್ತೇ",
         "audio": "audio/vidura/sloka-004-part-03.mp3",
-        "boundary_source": "editorial-pada-boundary"
+        "boundary_source": "editorial-pada-boundary",
+        "component_indices": [
+          3,
+          4
+        ]
       },
       {
         "id": "d",
@@ -646,7 +757,11 @@
         "iast": "kīrtirāyuryaśo balam",
         "kn": "ಕೀರ್ತಿರಾಯುರ್ಯಶೋ ಬಲಮ್",
         "audio": "audio/vidura/sloka-004-part-04.mp3",
-        "boundary_source": "editorial-pada-boundary"
+        "boundary_source": "editorial-pada-boundary",
+        "component_indices": [
+          5,
+          6
+        ]
       }
     ],
     "practice_source": "editorial-pada-boundaries",
@@ -763,7 +878,11 @@
         "iast": "niṣevate praśastāni",
         "kn": "ನಿಷೇವತೇ ಪ್ರಶಸ್ತಾನಿ",
         "audio": "audio/vidura/sloka-005-part-01.mp3",
-        "boundary_source": "editorial-pada-boundary"
+        "boundary_source": "editorial-pada-boundary",
+        "component_indices": [
+          0,
+          1
+        ]
       },
       {
         "id": "b",
@@ -772,7 +891,12 @@
         "iast": "ninditāni na sevate",
         "kn": "ನಿನ್ದಿತಾನಿ ನ ಸೇವತೇ",
         "audio": "audio/vidura/sloka-005-part-02.mp3",
-        "boundary_source": "editorial-pada-boundary"
+        "boundary_source": "editorial-pada-boundary",
+        "component_indices": [
+          2,
+          3,
+          4
+        ]
       },
       {
         "id": "c",
@@ -781,7 +905,11 @@
         "iast": "anāstikaḥ śraddadhāna",
         "kn": "ಅನಾಸ್ತಿಕಃ ಶ್ರದ್ದಧಾನ",
         "audio": "audio/vidura/sloka-005-part-03.mp3",
-        "boundary_source": "editorial-pada-boundary"
+        "boundary_source": "editorial-pada-boundary",
+        "component_indices": [
+          5,
+          6
+        ]
       },
       {
         "id": "d",
@@ -790,7 +918,11 @@
         "iast": "etat paṇḍitalakṣaṇam",
         "kn": "ಏತತ್ ಪಣ್ಡಿತಲಕ್ಷಣಮ್",
         "audio": "audio/vidura/sloka-005-part-04.mp3",
-        "boundary_source": "editorial-pada-boundary"
+        "boundary_source": "editorial-pada-boundary",
+        "component_indices": [
+          7,
+          8
+        ]
       }
     ],
     "practice_source": "editorial-pada-boundaries",
@@ -919,7 +1051,12 @@
         "iast": "buddhyā bhayaṃ praṇudati",
         "kn": "ಬುದ್ಧ್ಯಾ ಭಯಂ ಪ್ರಣುದತಿ",
         "audio": "audio/vidura/sloka-006-part-01.mp3",
-        "boundary_source": "editorial-pada-boundary"
+        "boundary_source": "editorial-pada-boundary",
+        "component_indices": [
+          0,
+          1,
+          2
+        ]
       },
       {
         "id": "b",
@@ -928,7 +1065,12 @@
         "iast": "tapasā vindate mahat",
         "kn": "ತಪಸಾ ವಿನ್ದತೇ ಮಹತ್",
         "audio": "audio/vidura/sloka-006-part-02.mp3",
-        "boundary_source": "editorial-pada-boundary"
+        "boundary_source": "editorial-pada-boundary",
+        "component_indices": [
+          3,
+          4,
+          5
+        ]
       },
       {
         "id": "c",
@@ -937,7 +1079,11 @@
         "iast": "guruśuśrūṣayā jñānaṃ",
         "kn": "ಗುರುಶುಶ್ರೂಷಯಾ ಜ್ಞಾನಂ",
         "audio": "audio/vidura/sloka-006-part-03.mp3",
-        "boundary_source": "editorial-pada-boundary"
+        "boundary_source": "editorial-pada-boundary",
+        "component_indices": [
+          6,
+          7
+        ]
       },
       {
         "id": "d",
@@ -946,7 +1092,12 @@
         "iast": "śāntiṃ yogena vindati",
         "kn": "ಶಾನ್ತಿಂ ಯೋಗೇನ ವಿನ್ದತಿ",
         "audio": "audio/vidura/sloka-006-part-04.mp3",
-        "boundary_source": "editorial-pada-boundary"
+        "boundary_source": "editorial-pada-boundary",
+        "component_indices": [
+          8,
+          9,
+          10
+        ]
       }
     ],
     "practice_source": "editorial-pada-boundaries",
@@ -1075,7 +1226,12 @@
         "iast": "yena tvetāni sarvāṇi",
         "kn": "ಯೇನ ತ್ವೇತಾನಿ ಸರ್ವಾಣಿ",
         "audio": "audio/vidura/sloka-007-part-01.mp3",
-        "boundary_source": "editorial-pada-boundary"
+        "boundary_source": "editorial-pada-boundary",
+        "component_indices": [
+          0,
+          1,
+          2
+        ]
       },
       {
         "id": "b",
@@ -1084,7 +1240,11 @@
         "iast": "saṅgṛhītāni bhārata",
         "kn": "ಸಙ್ಗೃಹೀತಾನಿ ಭಾರತ",
         "audio": "audio/vidura/sloka-007-part-02.mp3",
-        "boundary_source": "editorial-pada-boundary"
+        "boundary_source": "editorial-pada-boundary",
+        "component_indices": [
+          3,
+          4
+        ]
       },
       {
         "id": "c",
@@ -1093,7 +1253,13 @@
         "iast": "yad balānāṃ balaṃ śreṣṭhaṃ",
         "kn": "ಯದ್ ಬಲಾನಾಂ ಬಲಂ ಶ್ರೇಷ್ಠಂ",
         "audio": "audio/vidura/sloka-007-part-03.mp3",
-        "boundary_source": "editorial-pada-boundary"
+        "boundary_source": "editorial-pada-boundary",
+        "component_indices": [
+          5,
+          6,
+          7,
+          8
+        ]
       },
       {
         "id": "d",
@@ -1102,7 +1268,11 @@
         "iast": "tat prajñābalamucyate",
         "kn": "ತತ್ ಪ್ರಜ್ಞಾಬಲಮುಚ್ಯತೇ",
         "audio": "audio/vidura/sloka-007-part-04.mp3",
-        "boundary_source": "editorial-pada-boundary"
+        "boundary_source": "editorial-pada-boundary",
+        "component_indices": [
+          9,
+          10
+        ]
       }
     ],
     "practice_source": "editorial-pada-boundaries",
@@ -1231,7 +1401,12 @@
         "iast": "matyā parīkṣya medhāvī",
         "kn": "ಮತ್ಯಾ ಪರೀಕ್ಷ್ಯ ಮೇಧಾವೀ",
         "audio": "audio/vidura/sloka-008-part-01.mp3",
-        "boundary_source": "editorial-pada-boundary"
+        "boundary_source": "editorial-pada-boundary",
+        "component_indices": [
+          0,
+          1,
+          2
+        ]
       },
       {
         "id": "b",
@@ -1240,7 +1415,12 @@
         "iast": "buddhyā sampādya cāsakṛt",
         "kn": "ಬುದ್ಧ್ಯಾ ಸಮ್ಪಾದ್ಯ ಚಾಸಕೃತ್",
         "audio": "audio/vidura/sloka-008-part-02.mp3",
-        "boundary_source": "editorial-pada-boundary"
+        "boundary_source": "editorial-pada-boundary",
+        "component_indices": [
+          3,
+          4,
+          5
+        ]
       },
       {
         "id": "c",
@@ -1249,7 +1429,12 @@
         "iast": "śrutvā dṛṣṭvātha vijñāya",
         "kn": "ಶ್ರುತ್ವಾ ದೃಷ್ಟ್ವಾಥ ವಿಜ್ಞಾಯ",
         "audio": "audio/vidura/sloka-008-part-03.mp3",
-        "boundary_source": "editorial-pada-boundary"
+        "boundary_source": "editorial-pada-boundary",
+        "component_indices": [
+          6,
+          7,
+          8
+        ]
       },
       {
         "id": "d",
@@ -1258,7 +1443,11 @@
         "iast": "prājñairmaitrīṃ samācaret",
         "kn": "ಪ್ರಾಜ್ಞೈರ್ಮೈತ್ರೀಂ ಸಮಾಚರೇತ್",
         "audio": "audio/vidura/sloka-008-part-04.mp3",
-        "boundary_source": "editorial-pada-boundary"
+        "boundary_source": "editorial-pada-boundary",
+        "component_indices": [
+          9,
+          10
+        ]
       }
     ],
     "practice_source": "editorial-pada-boundaries",
@@ -1393,7 +1582,13 @@
         "iast": "yasya kṛtyaṃ na vighnanti",
         "kn": "ಯಸ್ಯ ಕೃತ್ಯಂ ನ ವಿಘ್ನನ್ತಿ",
         "audio": "audio/vidura/sloka-009-part-01.mp3",
-        "boundary_source": "editorial-pada-boundary"
+        "boundary_source": "editorial-pada-boundary",
+        "component_indices": [
+          0,
+          1,
+          2,
+          3
+        ]
       },
       {
         "id": "b",
@@ -1402,7 +1597,12 @@
         "iast": "śītamuṣṇaṃ bhayaṃ ratiḥ",
         "kn": "ಶೀತಮುಷ್ಣಂ ಭಯಂ ರತಿಃ",
         "audio": "audio/vidura/sloka-009-part-02.mp3",
-        "boundary_source": "editorial-pada-boundary"
+        "boundary_source": "editorial-pada-boundary",
+        "component_indices": [
+          4,
+          5,
+          6
+        ]
       },
       {
         "id": "c",
@@ -1411,7 +1611,11 @@
         "iast": "samṛddhirasamṛddhirvā sa",
         "kn": "ಸಮೃದ್ಧಿರಸಮೃದ್ಧಿರ್ವಾ ಸ",
         "audio": "audio/vidura/sloka-009-part-03.mp3",
-        "boundary_source": "editorial-pada-boundary"
+        "boundary_source": "editorial-pada-boundary",
+        "component_indices": [
+          7,
+          8
+        ]
       },
       {
         "id": "d",
@@ -1420,7 +1624,12 @@
         "iast": "vai paṇḍita ucyate",
         "kn": "ವೈ ಪಣ್ಡಿತ ಉಚ್ಯತೇ",
         "audio": "audio/vidura/sloka-009-part-04.mp3",
-        "boundary_source": "editorial-pada-boundary"
+        "boundary_source": "editorial-pada-boundary",
+        "component_indices": [
+          9,
+          10,
+          11
+        ]
       }
     ],
     "practice_source": "editorial-pada-boundaries",
@@ -1549,7 +1758,12 @@
         "iast": "amitraṃ kurute mitraṃ",
         "kn": "ಅಮಿತ್ರಂ ಕುರುತೇ ಮಿತ್ರಂ",
         "audio": "audio/vidura/sloka-010-part-01.mp3",
-        "boundary_source": "editorial-pada-boundary"
+        "boundary_source": "editorial-pada-boundary",
+        "component_indices": [
+          0,
+          1,
+          2
+        ]
       },
       {
         "id": "b",
@@ -1558,7 +1772,13 @@
         "iast": "mitraṃ dveṣṭi hinasti ca",
         "kn": "ಮಿತ್ರಂ ದ್ವೇಷ್ಟಿ ಹಿನಸ್ತಿ ಚ",
         "audio": "audio/vidura/sloka-010-part-02.mp3",
-        "boundary_source": "editorial-pada-boundary"
+        "boundary_source": "editorial-pada-boundary",
+        "component_indices": [
+          3,
+          4,
+          5,
+          6
+        ]
       },
       {
         "id": "c",
@@ -1567,7 +1787,12 @@
         "iast": "karma cārabhate duṣṭaṃ",
         "kn": "ಕರ್ಮ ಚಾರಭತೇ ದುಷ್ಟಂ",
         "audio": "audio/vidura/sloka-010-part-03.mp3",
-        "boundary_source": "editorial-pada-boundary"
+        "boundary_source": "editorial-pada-boundary",
+        "component_indices": [
+          7,
+          8,
+          9
+        ]
       },
       {
         "id": "d",
@@ -1576,7 +1801,10 @@
         "iast": "tamāhurmūḍhacetasam",
         "kn": "ತಮಾಹುರ್ಮೂಢಚೇತಸಮ್",
         "audio": "audio/vidura/sloka-010-part-04.mp3",
-        "boundary_source": "editorial-pada-boundary"
+        "boundary_source": "editorial-pada-boundary",
+        "component_indices": [
+          10
+        ]
       }
     ],
     "practice_source": "editorial-pada-boundaries",
@@ -1699,7 +1927,12 @@
         "iast": "na tathecchanti kalyāṇān",
         "kn": "ನ ತಥೇಚ್ಛನ್ತಿ ಕಲ್ಯಾಣಾನ್",
         "audio": "audio/vidura/sloka-011-part-01.mp3",
-        "boundary_source": "editorial-pada-boundary"
+        "boundary_source": "editorial-pada-boundary",
+        "component_indices": [
+          0,
+          1,
+          2
+        ]
       },
       {
         "id": "b",
@@ -1708,7 +1941,12 @@
         "iast": "pareṣāṃ vedituṃ guṇān",
         "kn": "ಪರೇಷಾಂ ವೇದಿತುಂ ಗುಣಾನ್",
         "audio": "audio/vidura/sloka-011-part-02.mp3",
-        "boundary_source": "editorial-pada-boundary"
+        "boundary_source": "editorial-pada-boundary",
+        "component_indices": [
+          3,
+          4,
+          5
+        ]
       },
       {
         "id": "c",
@@ -1717,7 +1955,11 @@
         "iast": "yathaiṣāṃ jñātumicchanti",
         "kn": "ಯಥೈಷಾಂ ಜ್ಞಾತುಮಿಚ್ಛನ್ತಿ",
         "audio": "audio/vidura/sloka-011-part-03.mp3",
-        "boundary_source": "editorial-pada-boundary"
+        "boundary_source": "editorial-pada-boundary",
+        "component_indices": [
+          6,
+          7
+        ]
       },
       {
         "id": "d",
@@ -1726,7 +1968,11 @@
         "iast": "nairguṇyaṃ pāpacetasaḥ",
         "kn": "ನೈರ್ಗುಣ್ಯಂ ಪಾಪಚೇತಸಃ",
         "audio": "audio/vidura/sloka-011-part-04.mp3",
-        "boundary_source": "editorial-pada-boundary"
+        "boundary_source": "editorial-pada-boundary",
+        "component_indices": [
+          8,
+          9
+        ]
       }
     ],
     "practice_source": "editorial-pada-boundaries",
@@ -1862,7 +2108,12 @@
         "iast": "paraṃ kṣipati doṣeṇa",
         "kn": "ಪರಂ ಕ್ಷಿಪತಿ ದೋಷೇಣ",
         "audio": "audio/vidura/sloka-012-part-01.mp3",
-        "boundary_source": "editorial-pada-boundary"
+        "boundary_source": "editorial-pada-boundary",
+        "component_indices": [
+          0,
+          1,
+          2
+        ]
       },
       {
         "id": "b",
@@ -1871,7 +2122,12 @@
         "iast": "vartamānaḥ svayaṃ tathā",
         "kn": "ವರ್ತಮಾನಃ ಸ್ವಯಂ ತಥಾ",
         "audio": "audio/vidura/sloka-012-part-02.mp3",
-        "boundary_source": "editorial-pada-boundary"
+        "boundary_source": "editorial-pada-boundary",
+        "component_indices": [
+          3,
+          4,
+          5
+        ]
       },
       {
         "id": "c",
@@ -1880,7 +2136,11 @@
         "iast": "yaśca krudhyatyanīśānaḥ",
         "kn": "ಯಶ್ಚ ಕ್ರುಧ್ಯತ್ಯನೀಶಾನಃ",
         "audio": "audio/vidura/sloka-012-part-03.mp3",
-        "boundary_source": "editorial-pada-boundary"
+        "boundary_source": "editorial-pada-boundary",
+        "component_indices": [
+          6,
+          7
+        ]
       },
       {
         "id": "d",
@@ -1889,7 +2149,13 @@
         "iast": "sa ca mūḍhatamo naraḥ",
         "kn": "ಸ ಚ ಮೂಢತಮೋ ನರಃ",
         "audio": "audio/vidura/sloka-012-part-04.mp3",
-        "boundary_source": "editorial-pada-boundary"
+        "boundary_source": "editorial-pada-boundary",
+        "component_indices": [
+          8,
+          9,
+          10,
+          11
+        ]
       }
     ],
     "practice_source": "editorial-pada-boundaries",
@@ -1981,10 +2247,16 @@
         "kn": "ಕೆಟ್ಟದಾಗಿ ಆಡಿದ"
       },
       {
-        "dev": "राजन्ननर्थायोपपद्यते",
-        "iast": "rājannanarthāyopapadyate",
-        "en": "O king, results in misfortune",
-        "kn": "ರಾಜನೇ, ಅನರ್ಥಕ್ಕೆ ಕಾರಣವಾಗುತ್ತದೆ"
+        "dev": "राजन्",
+        "iast": "rājan",
+        "en": "O king",
+        "kn": "ರಾಜನೇ"
+      },
+      {
+        "dev": "अनर्थायोपपद्यते",
+        "iast": "anarthāyopapadyate",
+        "en": "Leads to misfortune",
+        "kn": "ಅನರ್ಥಕ್ಕೆ ಕಾರಣವಾಗುತ್ತದೆ"
       }
     ],
     "practice": [
@@ -1995,7 +2267,11 @@
         "iast": "abhyāvahati kalyāṇaṃ",
         "kn": "ಅಭ್ಯಾವಹತಿ ಕಲ್ಯಾಣಂ",
         "audio": "audio/vidura/sloka-013-part-01.mp3",
-        "boundary_source": "editorial-pada-boundary"
+        "boundary_source": "editorial-pada-boundary",
+        "component_indices": [
+          0,
+          1
+        ]
       },
       {
         "id": "b",
@@ -2004,7 +2280,11 @@
         "iast": "vividhaṃ vāksubhāṣitā",
         "kn": "ವಿವಿಧಂ ವಾಕ್ಸುಭಾಷಿತಾ",
         "audio": "audio/vidura/sloka-013-part-02.mp3",
-        "boundary_source": "editorial-pada-boundary"
+        "boundary_source": "editorial-pada-boundary",
+        "component_indices": [
+          2,
+          3
+        ]
       },
       {
         "id": "c",
@@ -2013,7 +2293,12 @@
         "iast": "saiva durbhāṣitā rājan",
         "kn": "ಸೈವ ದುರ್ಭಾಷಿತಾ ರಾಜನ್",
         "audio": "audio/vidura/sloka-013-part-03.mp3",
-        "boundary_source": "editorial-pada-boundary"
+        "boundary_source": "editorial-pada-boundary",
+        "component_indices": [
+          4,
+          5,
+          6
+        ]
       },
       {
         "id": "d",
@@ -2022,7 +2307,10 @@
         "iast": "anarthāyopapadyate",
         "kn": "ಅನರ್ಥಾಯೋಪಪದ್ಯತೇ",
         "audio": "audio/vidura/sloka-013-part-04.mp3",
-        "boundary_source": "editorial-pada-boundary"
+        "boundary_source": "editorial-pada-boundary",
+        "component_indices": [
+          7
+        ]
       }
     ],
     "practice_source": "editorial-pada-boundaries",
