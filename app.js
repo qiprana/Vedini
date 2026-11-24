@@ -32,13 +32,14 @@ function installAudioFocus(audio){
 }
 
 function kannadaFromDevanagari(s){
+ // Use the usual Kannada anusvāra spelling for ṇḍ and mbh.
  return Array.from(String(s??"")).map(c=>{
  if(c==="ॐ")return "ಓಂ";
  const n=c.codePointAt(0);
  if(n===0x0964||n===0x0965)return c;
  if((n>=0x0900&&n<=0x0963)||(n>=0x0966&&n<=0x096f))return String.fromCodePoint(n+0x380);
  return c;
- }).join("");
+ }).join("").replace(/ಣ್ಡ/g,"ಂಡ").replace(/ಮ್ಭ/g,"ಂಭ");
 }
 async function fetchJSON(p){const r=await fetch("../data/"+p,{cache:"no-store"});if(!r.ok)throw new Error("Missing "+p);return r.json()}
 function msg(id,en,kn){const e=$(id);if(e)e.textContent=langText(en,kn)}
