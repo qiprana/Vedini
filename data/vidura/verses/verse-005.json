@@ -18,12 +18,12 @@
     ]
   },
   "meaning": {
-    "en": "A learned person is one who indulges in good deeds, abstains from despicable deeds, is not atheist, and has faith in God.",
-    "kn": "ಒಳ್ಳೆಯ ಕಾರ್ಯಗಳನ್ನು ಅನುಸರಿಸಿ, ನಿಂದನೀಯ ಕಾರ್ಯಗಳಿಂದ ದೂರವಿದ್ದು, ಶ್ರದ್ಧೆಯುಳ್ಳವನಾಗಿರುವುದು ಪಂಡಿತನ ಲಕ್ಷಣವೆಂದು ಮೂಲದ ಅನುವಾದ ವಿವರಿಸುತ್ತದೆ."
+    "en": "A wise person practises what is praiseworthy, avoids what is blameworthy, and lives with sincere faith and reverence for the divine. These are the marks of wisdom.",
+    "kn": "ಪ್ರಶಂಸನೀಯ ಕಾರ್ಯಗಳನ್ನು ಮಾಡುವ, ನಿಂದನೀಯ ಕಾರ್ಯಗಳಿಂದ ದೂರವಿರುವ ಮತ್ತು ದೇವರಲ್ಲಿ ನಂಬಿಕೆ ಹಾಗೂ ಶ್ರದ್ಧೆ ಹೊಂದಿರುವವನು ಪಂಡಿತ. ಇವು ಜ್ಞಾನಿಯ ಲಕ್ಷಣಗಳು."
   },
   "deeper_meaning": {
-    "en": "Vidura measures wisdom by choices, not by the quantity of information one can recite. The central practical contrast is between actions worthy of respect and actions to avoid. Note that the printed Sanskrit uses 'anāstikaḥ' while the handout's English translation says 'is not atheist'; this discrepancy requires source review.",
-    "kn": "ವಿದ್ಯೆಯ ಗುರುತು ಕೇವಲ ಮಾಹಿತಿ ಅಲ್ಲ; ಒಳ್ಳೆಯ ಕಾರ್ಯಗಳನ್ನು ಮಾಡುವುದೂ ಕೆಟ್ಟ ಕಾರ್ಯಗಳನ್ನು ಬಿಡುವುದೂ ಮುಖ್ಯ. ಮುದ್ರಿತ ‘ಅನಾಸ್ತಿಕಃ’ ಮತ್ತು ಇಂಗ್ಲಿಷ್ ಅರ್ಥದ ನಡುವಿನ ವ್ಯತ್ಯಾಸವನ್ನು ಪರಿಶೀಲಿಸಬೇಕು."
+    "en": "Vidura connects wisdom with both right conduct and inner conviction. A wise person chooses actions worthy of respect and turns away from conduct that causes harm or deserves blame. Faith and reverence give these choices a steady foundation. In daily life, this teaching invites us to let our spiritual values guide how we speak, make decisions, and treat others. Wisdom becomes visible when what we believe is reflected in how we live.",
+    "kn": "ವಿದುರನು ಜ್ಞಾನವನ್ನು ಸನ್ನಡತೆ ಮತ್ತು ಅಂತರಂಗದ ಶ್ರದ್ಧೆಯೊಂದಿಗೆ ಜೋಡಿಸುತ್ತಾನೆ. ಜ್ಞಾನಿಯು ಗೌರವಕ್ಕೆ ಯೋಗ್ಯವಾದ ಕೆಲಸಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ, ಹಾನಿಕರವಾದ ಮತ್ತು ನಿಂದನೀಯವಾದ ಕೆಲಸಗಳಿಂದ ದೂರವಿರುತ್ತಾನೆ. ಶ್ರದ್ಧೆ ಮತ್ತು ಗೌರವವು ಈ ಆಯ್ಕೆಗಳಿಗೆ ಸ್ಥಿರವಾದ ನೆಲೆಯನ್ನು ನೀಡುತ್ತವೆ. ದಿನನಿತ್ಯದ ಜೀವನದಲ್ಲಿ ನಮ್ಮ ಆಧ್ಯಾತ್ಮಿಕ ಮೌಲ್ಯಗಳು ನಮ್ಮ ಮಾತು, ನಿರ್ಧಾರ ಮತ್ತು ಇತರರೊಂದಿಗೆ ನಡೆದುಕೊಳ್ಳುವ ರೀತಿಯಲ್ಲಿ ವ್ಯಕ್ತವಾಗಬೇಕು ಎಂಬುದು ಈ ಶ್ಲೋಕದ ಸಂದೇಶ. ನಮ್ಮ ನಂಬಿಕೆಗಳು ನಮ್ಮ ನಡತೆಯಲ್ಲಿ ವ್ಯಕ್ತವಾದಾಗ ಜ್ಞಾನವು ಬದುಕಿನಲ್ಲಿ ಅರಳುತ್ತದೆ."
   },
   "word_by_word": [
     {
@@ -59,14 +59,14 @@
     {
       "dev": "अनास्तिकः",
       "iast": "anāstikaḥ",
-      "en": "Printed 'anāstikaḥ' (text/translation discrepancy)",
-      "kn": "ಮುದ್ರಿತ ಪದದಲ್ಲಿ ಅರ್ಥವ್ಯತ್ಯಾಸ ಇದೆ"
+      "en": "A believer; not a nāstika (a- + nāstikaḥ)",
+      "kn": "ನಾಸ್ತಿಕನಲ್ಲದವನು; ಆಸ್ತಿಕನು (ಅ + ನಾಸ್ತಿಕಃ)"
     },
     {
       "dev": "श्रद्दधान",
       "iast": "śraddadhāna",
-      "en": "Having faith",
-      "kn": "ಶ್ರದ್ಧೆಯುಳ್ಳ"
+      "en": "Endowed with faith and reverence",
+      "kn": "ಶ್ರದ್ಧೆಯುಳ್ಳವನು"
     },
     {
       "dev": "एतत्",
@@ -89,7 +89,15 @@
       "iast": "niṣevate praśastāni",
       "kn": "ನಿಷೇವತೇ ಪ್ರಶಸ್ತಾನಿ",
       "audio": "audio/vidura/sloka-005-part-01.mp3",
-      "boundary_source": "editorial-pada-boundary"
+      "boundary_source": "editorial-pada-boundary",
+      "component_indices": [
+        0,
+        1
+      ],
+      "meaning": {
+        "en": "A wise person practises praiseworthy deeds.",
+        "kn": "ಜ್ಞಾನಿಯು ಪ್ರಶಂಸನೀಯ ಕಾರ್ಯಗಳನ್ನು ಮಾಡುತ್ತಾನೆ."
+      }
     },
     {
       "id": "b",
@@ -98,7 +106,16 @@
       "iast": "ninditāni na sevate",
       "kn": "ನಿನ್ದಿತಾನಿ ನ ಸೇವತೇ",
       "audio": "audio/vidura/sloka-005-part-02.mp3",
-      "boundary_source": "editorial-pada-boundary"
+      "boundary_source": "editorial-pada-boundary",
+      "component_indices": [
+        2,
+        3,
+        4
+      ],
+      "meaning": {
+        "en": "A wise person avoids blameworthy deeds.",
+        "kn": "ಜ್ಞಾನಿಯು ನಿಂದನೀಯ ಕಾರ್ಯಗಳನ್ನು ಮಾಡುವುದಿಲ್ಲ."
+      }
     },
     {
       "id": "c",
@@ -107,7 +124,15 @@
       "iast": "anāstikaḥ śraddadhāna",
       "kn": "ಅನಾಸ್ತಿಕಃ ಶ್ರದ್ದಧಾನ",
       "audio": "audio/vidura/sloka-005-part-03.mp3",
-      "boundary_source": "editorial-pada-boundary"
+      "boundary_source": "editorial-pada-boundary",
+      "component_indices": [
+        5,
+        6
+      ],
+      "meaning": {
+        "en": "A believer, endowed with sincere faith and reverence.",
+        "kn": "ಆಸ್ತಿಕಭಾವ ಹೊಂದಿರುವ, ಶ್ರದ್ಧೆಯುಳ್ಳ ವ್ಯಕ್ತಿ."
+      }
     },
     {
       "id": "d",
@@ -116,7 +141,15 @@
       "iast": "etat paṇḍitalakṣaṇam",
       "kn": "ಏತತ್ ಪಣ್ಡಿತಲಕ್ಷಣಮ್",
       "audio": "audio/vidura/sloka-005-part-04.mp3",
-      "boundary_source": "editorial-pada-boundary"
+      "boundary_source": "editorial-pada-boundary",
+      "component_indices": [
+        7,
+        8
+      ],
+      "meaning": {
+        "en": "These are the marks of a learned person.",
+        "kn": "ಇವು ಪಂಡಿತನ ಲಕ್ಷಣಗಳು."
+      }
     }
   ],
   "practice_source": "editorial-pada-boundaries",
@@ -137,8 +170,24 @@
   "source": {
     "page": 3,
     "section": "Atha Viduranītiḥ",
-    "translation": "verbatim from supplied PDF",
+    "translation": "Editorial translation checked against Mahābhārata 5.33.16 and the Gita Press Vidura Niti translation, chapter 1, verse 21.",
     "study_meanings": "editorial",
-    "notes": "The handout prints अनास्तिकः / anāstikaḥ, but its English explanation says 'is not atheist'. Keep source wording; flag for review."
+    "notes": "Verified reading: अनास्तिकः / anāstikaḥ is understood here as a- + nāstikaḥ, ‘not a nāstika’, a believer. श्रद्दधान / śraddadhāna is the sandhi form of śraddadhānaḥ before etat. The Sanskrit and the positive sense of faith agree.",
+    "references": [
+      {
+        "title": "Mahābhārata, Udyogaparvan 5.33.16 (BORI text via GRETIL)",
+        "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/mbh_05_u.htm",
+        "location": "05,033.016a–c"
+      },
+      {
+        "title": "Vidura Niti, Gita Press",
+        "url": "https://arshavidya.org/wp-content/uploads/Vidura-Niti-Gita-Press.pdf",
+        "location": "Chapter 1, verse 21, printed page 21"
+      },
+      {
+        "title": "Bharatiya Vidvat Parishat: contextual analysis of anāstikaḥ",
+        "url": "https://groups.google.com/g/bvparishat/c/EUxt-v6oYSs"
+      }
+    ]
   }
 }

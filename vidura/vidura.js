@@ -134,7 +134,7 @@ speed.addEventListener('input',applyChantSpeed);
 applyChantSpeed();
 search.addEventListener('input',()=>{const q=search.value.trim().toLocaleLowerCase();if(q){const hit=state.verses.find(v=>[v.theme,...Object.values(v.reading).flat(),...Object.values(v.meaning),...Object.values(v.deeper_meaning),...v.word_by_word.flatMap(w=>Object.values(w)),...v.practice.flatMap(p=>Object.values(p))].join(' ').toLocaleLowerCase().includes(q));if(hit&&String(hit.verse_number)!==verseSelect.value){stopAudio();verseSelect.value=String(hit.verse_number);render();selectRecording();return;}}render();});
 repeats.disabled=false;
-Promise.all([fetch('../data/vidura/prarthana.json').then(r=>{if(!r.ok)throw Error('Prārthanā data');return r.json();}),...['bundle-001-013.json','bundle-014-025.json'].map(file=>fetch('../data/vidura/verses/'+file).then(r=>{if(!r.ok)throw Error('Verse bundle '+file);return r.json();}))]).then(([prarthana,...bundles])=>{
+Promise.all([fetch('../data/vidura/prarthana.json').then(r=>{if(!r.ok)throw Error('Prārthanā data');return r.json();}),...['bundle-001-013.json','bundle-014-025.json'].map(file=>fetch('../data/vidura/verses/'+file+'?v=20261123-vidura-005-meaning').then(r=>{if(!r.ok)throw Error('Verse bundle '+file);return r.json();}))]).then(([prarthana,...bundles])=>{
 const parts=[
 [['व्यासाय विष्णुरूपाय','vyāsāya viṣṇurūpāya'],['व्यासरूपाय विष्णवे','vyāsarūpāya viṣṇave'],['नमो वै ब्रह्मनिधये','namo vai brahmanidhaye'],['वासिष्ठाय नमो नमः','vāsiṣṭhāya namo namaḥ']],
 [['नारायणं नमस्कृत्य','nārāyaṇaṃ namaskṛtya'],['नरं चैव नरोत्तमम्','naraṃ caiva narottamam'],['देवीं सरस्वतीं व्यासं','devīṃ sarasvatīṃ vyāsaṃ'],['ततो जयमुदीरयेत्','tato jayamudīrayet']]
